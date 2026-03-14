@@ -1,0 +1,17 @@
+--     _   _   _                 _                 _   _____  ____    ____ 
+--    / \ | |_| |  __ _   ___  | |  ___    ___   | |_|_   _|| __ )  / ___|
+--   / _ \| __| | / _` | / __| | | / _ \  / _ \  | __| | |  |  _ \ | |    
+--  / ___ \ |_| || (_| | \__ \ | || (_) || (_) | | |_  | |  | |_) || |___ 
+-- /_/   \_\__|_| \__,_| |___/ |_| \___/  \___/   \__| |_|  |____/  \____|
+--
+local bis = (function(...)
+    local _args = {...}
+    local _class = tostring(_args[1] or "Paladin")
+    local _spec  = tostring(_args[2] or "Holy")
+    local _fn = sliccNote.RegisterBIS
+    assert(type(_fn) == "function", "Data missing")
+    -- invoke (_class,_spec))
+    local _res = _fn(sliccNote, _class, _spec)
+    return _res
+end)("Paladin","Holy")
+sliccNote:RECslot(bis, "30728", "1") sliccNote:RECslot(bis, "32472", "2") sliccNote:RECslot(bis, "29061", "3") sliccNote:RECslot(bis, "29760", "4") sliccNote:RECslot(bis, "24264", "5") sliccNote:RECslot(bis, "28803", "6") sliccNote:RECslot(bis, "28756", "7") sliccNote:RECslot(bis, "29064", "1") sliccNote:RECslot(bis, "29763", "2") sliccNote:RECslot(bis, "21874", "3") sliccNote:RECslot(bis, "28631", "4") sliccNote:RECslot(bis, "28666", "5") sliccNote:RECslot(bis, "28647", "6") sliccNote:RECslot(bis, "31329", "1") sliccNote:RECslot(bis, "28765", "2") sliccNote:RECslot(bis, "28582", "3") sliccNote:RECslot(bis, "29062", "1") sliccNote:RECslot(bis, "29754", "2") sliccNote:RECslot(bis, "21875", "3") sliccNote:RECslot(bis, "28662", "4") sliccNote:RECslot(bis, "28735", "5") sliccNote:RECslot(bis, "29523", "1") sliccNote:RECslot(bis, "29183", "2") sliccNote:RECslot(bis, "23539", "3") sliccNote:RECslot(bis, "28512", "4") sliccNote:RECslot(bis, "28503", "5") sliccNote:RECslot(bis, "28511", "6") sliccNote:RECslot(bis, "28505", "1") sliccNote:RECslot(bis, "28520", "2") sliccNote:RECslot(bis, "28521", "3") sliccNote:RECslot(bis, "29065", "4") sliccNote:RECslot(bis, "29757", "5") sliccNote:RECslot(bis, "29506", "6") sliccNote:RECslot(bis, "21873", "1") sliccNote:RECslot(bis, "28733", "2") sliccNote:RECslot(bis, "28655", "3") sliccNote:RECslot(bis, "32985", "4") sliccNote:RECslot(bis, "30727", "1") sliccNote:RECslot(bis, "28751", "2") sliccNote:RECslot(bis, "28748", "3") sliccNote:RECslot(bis, "28591", "4") sliccNote:RECslot(bis, "28742", "5") sliccNote:RECslot(bis, "24261", "6") sliccNote:RECslot(bis, "30737", "1") sliccNote:RECslot(bis, "28752", "2") sliccNote:RECslot(bis, "28569", "3") sliccNote:RECslot(bis, "27411", "4") sliccNote:RECslot(bis, "30726", "1") sliccNote:RECslot(bis, "28609", "2") sliccNote:RECslot(bis, "31691", "3") sliccNote:RECslot(bis, "30736", "1") sliccNote:RECslot(bis, "28763", "2") sliccNote:RECslot(bis, "28790", "3") sliccNote:RECslot(bis, "32385", "4") sliccNote:RECslot(bis, "29169", "5") sliccNote:RECslot(bis, "29168", "6") sliccNote:RECslot(bis, "29290", "7") sliccNote:RECslot(bis, "27780", "8") sliccNote:RECslot(bis, "29376", "1") sliccNote:RECslot(bis, "28590", "2") sliccNote:RECslot(bis, "23047", "3") sliccNote:RECslot(bis, "30841", "4") sliccNote:RECslot(bis, "28771", "1") sliccNote:RECslot(bis, "32451", "2") sliccNote:RECslot(bis, "28522", "3") sliccNote:RECslot(bis, "23556", "4") sliccNote:RECslot(bis, "29353", "5") sliccNote:RECslot(bis, "29458", "1") sliccNote:RECslot(bis, "28728", "2") sliccNote:RECslot(bis, "29274", "3") sliccNote:RECslot(bis, "22819", "4") sliccNote:RECslot(bis, "28592", "1") sliccNote:RECslot(bis, "23006", "2") 

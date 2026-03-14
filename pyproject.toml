@@ -1,0 +1,14 @@
+[project]
+name = "bis-gear"
+version = "0.1.0"
+description = "TBC Resto Shaman BiS gear checker — compares equipped gear against BiS lists and recommends dungeon/rep upgrades"
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+bis-gear = "bis_gear.check_gear:main"
+bis-parse = "bis_gear.parse_bis:main"

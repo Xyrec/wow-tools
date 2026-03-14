@@ -1,0 +1,232 @@
+{
+  "head": [
+    {
+      "item_id": 29028,
+      "rank": 1
+    },
+    {
+      "item_id": 29760,
+      "rank": 2
+    },
+    {
+      "item_id": 30728,
+      "rank": 3
+    },
+    {
+      "item_id": 24264,
+      "rank": 4
+    }
+  ],
+  "shoulders": [
+    {
+      "item_id": 29031,
+      "rank": 1
+    },
+    {
+      "item_id": 29763,
+      "rank": 2
+    },
+    {
+      "item_id": 21874,
+      "rank": 3
+    },
+    {
+      "item_id": 28631,
+      "rank": 4
+    }
+  ],
+  "back": [
+    {
+      "item_id": 28765,
+      "rank": 1
+    },
+    {
+      "item_id": 31329,
+      "rank": 2
+    }
+  ],
+  "chest": [
+    {
+      "item_id": 29522,
+      "rank": 1
+    },
+    {
+      "item_id": 21875,
+      "rank": 2
+    },
+    {
+      "item_id": 29029,
+      "rank": 3
+    },
+    {
+      "item_id": 29754,
+      "rank": 4
+    }
+  ],
+  "wrists": [
+    {
+      "item_id": 29523,
+      "rank": 1
+    },
+    {
+      "item_id": 28503,
+      "rank": 2
+    }
+  ],
+  "hands": [
+    {
+      "item_id": 28520,
+      "rank": 1
+    },
+    {
+      "item_id": 28521,
+      "rank": 2
+    },
+    {
+      "item_id": 29032,
+      "rank": 3
+    },
+    {
+      "item_id": 29757,
+      "rank": 4
+    }
+  ],
+  "waist": [
+    {
+      "item_id": 29524,
+      "rank": 1
+    },
+    {
+      "item_id": 21873,
+      "rank": 2
+    },
+    {
+      "item_id": 28567,
+      "rank": 3
+    }
+  ],
+  "legs": [
+    {
+      "item_id": 28751,
+      "rank": 1
+    },
+    {
+      "item_id": 28591,
+      "rank": 2
+    },
+    {
+      "item_id": 24261,
+      "rank": 3
+    }
+  ],
+  "feet": [
+    {
+      "item_id": 30737,
+      "rank": 1
+    },
+    {
+      "item_id": 28752,
+      "rank": 2
+    }
+  ],
+  "neck": [
+    {
+      "item_id": 28609,
+      "rank": 1
+    },
+    {
+      "item_id": 30726,
+      "rank": 2
+    },
+    {
+      "item_id": 28822,
+      "rank": 3
+    },
+    {
+      "item_id": 31691,
+      "rank": 4
+    }
+  ],
+  "rings": [
+    {
+      "item_id": 28763,
+      "rank": 1
+    },
+    {
+      "item_id": 28790,
+      "rank": 2
+    },
+    {
+      "item_id": 32385,
+      "rank": 3
+    },
+    {
+      "item_id": 29169,
+      "rank": 4
+    },
+    {
+      "item_id": 29168,
+      "rank": 5
+    },
+    {
+      "item_id": 28259,
+      "rank": 6
+    },
+    {
+      "item_id": 29814,
+      "rank": 7
+    },
+    {
+      "item_id": 31923,
+      "rank": 8
+    }
+  ],
+  "trinkets": [
+    {
+      "item_id": 29376,
+      "rank": 1
+    },
+    {
+      "item_id": 28190,
+      "rank": 2
+    }
+  ],
+  "weapons": [
+    {
+      "item_id": 28771,
+      "rank": 1
+    },
+    {
+      "item_id": 32451,
+      "rank": 2
+    },
+    {
+      "item_id": 28522,
+      "rank": 3
+    }
+  ],
+  "offhands": [
+    {
+      "item_id": 29458,
+      "rank": 1
+    },
+    {
+      "item_id": 28728,
+      "rank": 2
+    },
+    {
+      "item_id": 28754,
+      "rank": 3
+    }
+  ],
+  "totems": [
+    {
+      "item_id": 28523,
+      "rank": 1
+    },
+    {
+      "item_id": 27544,
+      "rank": 2
+    }
+  ]
+}

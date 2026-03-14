@@ -1,0 +1,189 @@
+"""
+Parses Resto Shaman TBC BiS HTML files into a structured JSON file.
+
+Usage:
+    bis-parse
+    bis-parse --output custom_output.json
+"""
+
+import json
+import re
+import sys
+from html.parser import HTMLParser
+from pathlib import Path
+
+DATA_DIR = Path(__file__).parent.parent.parent
+
+
+class BisTableParser(HTMLParser):
+    """Parses the BiS HTML files extracting gear slot tables."""
+
+    def __init__(self):
+        super().__init__()
+        self.results: dict[str, list[dict]] = {}
+
+        # Tracking state
+        self._current_slot: str | None = None
+        self._in_table = False
+        self._in_row = False
+        self._cells: list[str] = []
+        self._cell_idx = -1
+        self._in_cell = False
+        self._cell_text = ""
+        self._is_header_row = False
+
+        # Item link state (per-row, captured from cell index 1)
+        self._row_item_href: str | None = None
+        self._row_item_icon: str | None = None
+        self._current_item_href: str | None = None
+        self._current_item_icon: str | None = None
+
+        # For slot detection from h3 tags
+        self._in_h3 = False
+        self._h3_id: str | None = None
+        self._h3_text = ""
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]):
+        attr = dict(attrs)
+
+        if tag == "h3":
+            self._in_h3 = True
+            self._h3_id = attr.get("id", "")
+            self._h3_text = ""
+        elif tag == "table":
+            self._in_table = True
+        elif tag == "tr" and self._in_table:
+            self._in_row = True
+            self._cells = []
+            self._is_header_row = False
+            self._row_item_href = None
+            self._row_item_icon = None
+        elif tag == "td" and self._in_row:
+            self._in_cell = True
+            self._cell_text = ""
+            self._current_item_href = None
+            self._current_item_icon = None
+            if attr.get("data-background") == "c7":
+                self._is_header_row = True
+        elif tag == "a" and self._in_cell:
+            href = attr.get("href", "")
+            if attr.get("data-entity") == "item" and href:
+                self._current_item_href = href
+        elif tag == "img" and self._in_cell and self._current_item_href:
+            self._current_item_icon = attr.get("src", "")
+
+    def handle_endtag(self, tag: str):
+        if tag == "h3":
+            self._in_h3 = False
+            slot = self._normalize_slot(self._h3_id, self._h3_text)
+            if slot and not slot.startswith("other-"):
+                self._current_slot = slot
+        elif tag == "table":
+            self._in_table = False
+        elif tag == "tr" and self._in_row:
+            self._in_row = False
+            if not self._is_header_row and self._cells and self._current_slot:
+                self._add_item()
+        elif tag == "td" and self._in_cell:
+            self._in_cell = False
+            cell_index = len(self._cells)
+            self._cells.append(self._cell_text.strip())
+            # Capture item link info from the Item column (index 1)
+            if cell_index == 1 and self._current_item_href:
+                self._row_item_href = self._current_item_href
+                self._row_item_icon = self._current_item_icon
+
+    def handle_data(self, data: str):
+        if self._in_h3:
+            self._h3_text += data
+        if self._in_cell:
+            self._cell_text += data
+
+    def _normalize_slot(self, h3_id: str | None, h3_text: str) -> str | None:
+        if not h3_id:
+            return None
+        # Skip non-slot sections
+        skip = {"aldor-vs-scryer", "best-in-slot-gear", "changelog"}
+        if h3_id in skip or h3_id.startswith("best-in-slot") or h3_id.startswith("other-"):
+            return None
+        return h3_id
+
+    def _add_item(self):
+        if len(self._cells) < 2:
+            return
+
+        rank = self._cells[0] if self._cells else ""
+        source = self._cells[2] if len(self._cells) > 2 else ""
+
+        # Extract item name from cell text (the item link text)
+        item_name = self._cells[1] if len(self._cells) > 1 else ""
+
+        # Extract item ID from href
+        item_id = None
+        wowhead_url = None
+        if self._row_item_href:
+            wowhead_url = self._row_item_href
+            m = re.search(r"/item=(\d+)", self._row_item_href)
+            if m:
+                item_id = int(m.group(1))
+
+        item = {
+            "rank": rank,
+            "name": item_name,
+            "source": " ".join(source.split()),  # normalize whitespace
+        }
+        if item_id:
+            item["item_id"] = item_id
+        if wowhead_url:
+            item["wowhead_url"] = wowhead_url
+        if self._row_item_icon:
+            item["icon"] = self._row_item_icon
+
+        self.results.setdefault(self._current_slot, []).append(item)
+
+
+def parse_phase_file(filepath: Path) -> dict[str, list[dict]]:
+    parser = BisTableParser()
+    parser.feed(filepath.read_text(encoding="utf-8"))
+    return parser.results
+
+
+def main():
+    output_path = DATA_DIR / "bis_gear.json"
+    if "--output" in sys.argv:
+        idx = sys.argv.index("--output")
+        if idx + 1 < len(sys.argv):
+            output_path = Path(sys.argv[idx + 1])
+
+    # Read current phase
+    current_phase_file = DATA_DIR / "current-phase.txt"
+    current_phase = current_phase_file.read_text(encoding="utf-8").strip() if current_phase_file.exists() else None
+
+    # Parse all phase files
+    result = {}
+    if current_phase:
+        result["current_phase"] = current_phase
+
+    phase_files = sorted((DATA_DIR / "sources" / "wowhead").glob("phase-*.html"))
+    if not phase_files:
+        print("No phase-*.html files found.")
+        sys.exit(1)
+
+    phases = {}
+    for pf in phase_files:
+        phase_name = pf.stem  # e.g. "phase-0", "phase-1"
+        print(f"Parsing {pf.name}...")
+        slots = parse_phase_file(pf)
+        phases[phase_name] = slots
+
+    result["phases"] = phases
+
+    output_path.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(f"\nWrote {output_path} with {len(phases)} phases.")
+    for phase, slots in phases.items():
+        total_items = sum(len(items) for items in slots.values())
+        print(f"  {phase}: {len(slots)} slots, {total_items} items")
+
+
+if __name__ == "__main__":
+    main()

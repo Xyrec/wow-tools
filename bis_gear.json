@@ -1,0 +1,3093 @@
+{
+  "current_phase": "phase-1",
+  "phases": {
+    "phase-0": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Whitemend Hood",
+          "source": "Profession: Tailoring - can be purchased on the Auction House",
+          "item_id": 24264,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=24264/whitemend-hood",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_53.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Gladiator's Ringmail Helm",
+          "source": "Vendor: Arena Points (Season 1)",
+          "item_id": 31400,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31400/gladiators-ringmail-helm",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_09.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cowl of Naaru Blessings",
+          "source": "Vendor: G'eras (Badges of Justice)",
+          "item_id": 32090,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32090/cowl-of-naaru-blessings",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_30.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Hallowed Crown",
+          "source": "Drop: Harbinger Skyriss (The Arcatraz)",
+          "item_id": 28413,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28413/hallowed-crown",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_62.gif"
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Primal Mooncloth Shoulders",
+          "source": "Profession: Tailoring (Primal Mooncloth Tailoring) - BoP only",
+          "item_id": 21874,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=21874/primal-mooncloth-shoulders",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_02.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Hallowed Pauldrons",
+          "source": "Drop: Grandmaster Vorpil (Shadow Labyrinth)",
+          "item_id": 27775,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=27775/hallowed-pauldrons",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_22.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Gladiator's Ringmail Spaulders",
+          "source": "Vendor: Arena Points (Season 1)",
+          "item_id": 31407,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31407/gladiators-ringmail-spaulders",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_29.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Pauldrons of Sufferance",
+          "source": "Drop: Epoch Hunter (Old Hillsbrad Foothills)",
+          "item_id": 27433,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=27433/pauldrons-of-sufferance",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_26.gif"
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Lifegiving Cloak",
+          "source": "Drop: World Drop",
+          "item_id": 31329,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31329/lifegiving-cloak",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_16.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "White Remedy Cape",
+          "source": "Profession: Tailoring - can be purchased on the Auction House",
+          "item_id": 24254,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=24254/white-remedy-cape",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_11.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Light-Touched Stole of Altruism",
+          "source": "Drop: Exarch Maladaar (Heroic Auchenai Crypts)",
+          "item_id": 29354,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29354/light-touched-stole-of-altruism",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_06.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cloak of Suturing",
+          "source": "Drop: Patchwerk (Classic - Naxxramas)",
+          "item_id": 22960,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=22960/cloak-of-suturing",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_naxxramas_02.gif"
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Primal Mooncloth Robe",
+          "source": "Profession: Tailoring (Primal Mooncloth Tailoring) - BoP only",
+          "item_id": 21875,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=21875/primal-mooncloth-robe",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_cloth_04.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Windhawk Hauberk",
+          "source": "Profession: Leatherworking (Tribal Leatherworking) - BoP only",
+          "item_id": 29522,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29522/windhawk-hauberk",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_leather_01.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Gladiator's Ringmail Armor",
+          "source": "Vendor: Arena Points (Season 1)",
+          "item_id": 31396,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31396/gladiators-ringmail-armor",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_chain_11.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Hallowed Garments",
+          "source": "Drop: Murmur (Shadow Labyrinth)",
+          "item_id": 28230,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28230/hallowed-garments",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_cloth_39.gif"
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Windhawk Bracers",
+          "source": "Profession: Leatherworking (Tribal Leatherworking) - BoP only",
+          "item_id": 29523,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29523/windhawk-bracers",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_07.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Bindings of the Timewalker",
+          "source": "Vendor: Alurmi (Keepers of Time Exalted)",
+          "item_id": 29183,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29183/bindings-of-the-timewalker",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_10.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Bands of the Benevolent",
+          "source": "Drop: Talon King Ikiss (Heroic Sethekk Halls)",
+          "item_id": 29249,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29249/bands-of-the-benevolent",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_13.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Bracelets of Royal Redemption",
+          "source": "Drop: Emperor Vek'nilash (Classic - Ahn'Qiraj)",
+          "item_id": 21604,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=21604/bracelets-of-royal-redemption",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_13.gif"
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Gloves of the Living Touch",
+          "source": "Profession: Leatherworking - can be purchased on the Auction House",
+          "item_id": 29506,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29506/gloves-of-the-living-touch",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_25.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Gladiator's Ringmail Gauntlets",
+          "source": "Vendor: Arena Points (Season 1)",
+          "item_id": 31397,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31397/gladiators-ringmail-gauntlets",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_11.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Bloody Surgeon's Mitts",
+          "source": "Drop: Broggok (The Blood Furnace)",
+          "item_id": 24393,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=24393/bloody-surgeons-mitts",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_surgeonglove_01.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cryo-mitts",
+          "source": "Quest: Someone Else's Hard Work Pays Off (Mana-Tombs)",
+          "item_id": 29327,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29327/cryo-mitts",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_22.gif"
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Windhawk Belt",
+          "source": "Profession: Leatherworking (Tribal Leatherworking) - BoP only",
+          "item_id": 29524,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29524/windhawk-belt",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_03.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Primal Mooncloth Belt",
+          "source": "Profession: Tailoring (Primal Mooncloth Tailoring) - BoP only",
+          "item_id": 21873,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=21873/primal-mooncloth-belt",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_31.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cord of Sanctification",
+          "source": "Drop: Epoch Hunter (Heroic Old Hillsbrad Foothills)",
+          "item_id": 29250,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29250/cord-of-sanctification",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_15.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Grasp of the Old God",
+          "source": "Drop: C'Thun (Classic - Ahn'Qiraj)",
+          "item_id": 21582,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=21582/grasp-of-the-old-god",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_31.gif"
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Pontifex Kilt",
+          "source": "Drop: Warlord Kalithresh (Heroic The Steamvault)",
+          "item_id": 30543,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30543/pontifex-kilt",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_cloth_20.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Whitemend Pants",
+          "source": "Profession: Tailoring - can be purchased on the Auction House",
+          "item_id": 24261,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=24261/whitemend-pants",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_cloth_07.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Kamaei's Cerulean Skirt",
+          "source": "Drop: World Drop",
+          "item_id": 31343,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31343/kamaeis-cerulean-skirt",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_cloth_20.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Pontiff's Pantaloons of Prophecy",
+          "source": "Drop: Captain Skarloc (Heroic Old Hillsbrad Foothills)",
+          "item_id": 28218,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28218/pontiffs-pantaloons-of-prophecy",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_cloth_18.gif"
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Slippers of Serenity",
+          "source": "Drop: Exarch Maladaar (Auchenai Crypts)",
+          "item_id": 27411,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=27411/slippers-of-serenity",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_cloth_14.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Boots of the Pious",
+          "source": "Drop: Pathaleon the Calculator (Heroic The Mechanar)",
+          "item_id": 29251,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29251/boots-of-the-pious",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_cloth_03.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Jeweled Boots of Sanctification",
+          "source": "Drop: Warbringer O'mrogg (The Shattered Halls)",
+          "item_id": 27525,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=27525/jeweled-boots-of-sanctification",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_cloth_12.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Wavefury Boots",
+          "source": "Drop: Rokmar the Crackler (Heroic The Slave Pens)",
+          "item_id": 27549,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=27549/wavefury-boots",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_chain_08.gif"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Natasha's Guardian Cord",
+          "source": "Quest: The Hound-Master",
+          "item_id": 31691,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31691/natashas-guardian-cord",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_31.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Karja's Medallion",
+          "source": "Quest: Shutting Down Manaforge Ara",
+          "item_id": 30377,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30377/karjas-medallion",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_11.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Necklace of Eternal Hope",
+          "source": "Vendor: G'eras (Badges of Justice)",
+          "item_id": 29374,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29374/necklace-of-eternal-hope",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_31.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Amulet of the Fallen God",
+          "source": "Drop: C'Thun (Classic - Ahn'Qiraj)",
+          "item_id": 21712,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=21712/amulet-of-the-fallen-god",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_ahnqiraj_02.gif"
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Ring of Fabled Hope",
+          "source": "Drop: The Black Stalker (Heroic The Underbog)",
+          "item_id": 27780,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=27780/ring-of-fabled-hope",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_31.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Ancestral Band\n              Ring of Convalescence",
+          "source": "Vendor: Quartermaster Urgronn / Logistics Officer Ulrike (Thrallmar / Honor Hold Revered)",
+          "item_id": 29169,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29169/ring-of-convalescence",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_43.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Celestial Jewel Ring",
+          "source": "Quest: Hitting the Motherlode",
+          "item_id": 29814,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29814/celestial-jewel-ring",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_05.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Spiritualist's Mark of the Sha'tar",
+          "source": "Quest: Battle of the Crimson Watch",
+          "item_id": 31383,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31383/spiritualists-mark-of-the-shatar",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_55.gif"
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Essence of the Martyr",
+          "source": "Vendor: G'eras (Badges of Justice)",
+          "item_id": 29376,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29376/essence-of-the-martyr",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_valentineperfumebottle.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Lower City Prayerbook",
+          "source": "Vendor: Nakodu (Lower City Revered)",
+          "item_id": 30841,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30841/lower-city-prayerbook",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_book_11.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Scarab of the Infinite Cycle",
+          "source": "Drop: Aeonus (The Black Morass)",
+          "item_id": 28190,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28190/scarab-of-the-infinite-cycle",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_ahnqirajtrinket_06.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Rejuvenating Gem",
+          "source": "Drop: Flamegor, Firemaw, & Ebonroc (Classic - Blackwing Lair)",
+          "item_id": 19395,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=19395/rejuvenating-gem",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_gem_topaz_02.gif"
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Hand of Eternity",
+          "source": "Profession: Blacksmithing - can be purchased on the Auction House",
+          "item_id": 23556,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=23556/hand-of-eternity",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_16.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Shockwave Truncheon",
+          "source": "Drop: Murmur (Heroic Shadow Labyrinth)",
+          "item_id": 29353,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29353/shockwave-truncheon",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_54.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Gavel of Pure Light",
+          "source": "Vendor: Almaador (The Sha'tar Exalted)",
+          "item_id": 29175,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29175/gavel-of-pure-light",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_hammer_04.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "The Ancient Scepter of Sue-Min",
+          "source": "Drop: World Drop",
+          "item_id": 31342,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31342/the-ancient-scepter-of-sue-min",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_53.gif"
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Light-Bearer's Faith Shield",
+          "source": "Vendor: G'eras, Shattrath City - 33",
+          "item_id": 29267,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29267/light-bearers-faith-shield",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shield_33.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Tears of Heaven",
+          "source": "Vendor: G'eras, Shattrath City - 25",
+          "item_id": 29274,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29274/tears-of-heaven",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_potion_75.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Sapphiron's Right Eye",
+          "source": "Drop: Sapphiron (Naxxramas)",
+          "item_id": 23048,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=23048/sapphirons-right-eye",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_offhand_naxxramas_02.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Windcaller's Orb",
+          "source": "Reputation: Cenarion Expedition Exalted)",
+          "item_id": 29170,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29170/windcallers-orb",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_orb_01.gif"
+        }
+      ],
+      "idols": [
+        {
+          "rank": "BiS",
+          "name": "Totem of Spontaneous Regrowth",
+          "source": "Drop: Mennu the Betrayer (Heroic The Slave Pens)",
+          "item_id": 27544,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=27544/totem-of-spontaneous-regrowth",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_protectionformnature.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Totem of Life",
+          "source": "Drop: Fankriss the Unyielding (Classic - Ahn'Qiraj)",
+          "item_id": 22396,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=22396/totem-of-life",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_relics_totemoflife.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Totem of the Plains",
+          "source": "Quest: The Ultimate Bloodsport (Nagrand)",
+          "item_id": 25645,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=25645/totem-of-the-plains",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_relics_totemoflife.gif"
+        }
+      ]
+    },
+    "phase-1": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Whitemend Hood",
+          "source": "Profession: Tailoring - can be purchased on the Auction House",
+          "item_id": 24264,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=24264/whitemend-hood",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_53.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Fathom-Helm of the Deeps",
+          "source": "Drop: Doomwalker (World Boss in Shadowmoon Valley)",
+          "item_id": 30728,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30728/fathom-helm-of-the-deeps",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_69.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Cyclone Headdress",
+          "source": "Dropped: Prince Malchezaar (Karazhan)",
+          "item_id": 29028,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29028/cyclone-headdress",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_15.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Gladiator's Ringmail Helm",
+          "source": "Vendor: Arena Points (Season 1)",
+          "item_id": 31400,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31400/gladiators-ringmail-helm",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_09.gif"
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Cyclone Shoulderpads",
+          "source": "Drop: High King Maulgar (Gruul's Lair)",
+          "item_id": 29031,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29031/cyclone-shoulderpads",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_14.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cyclone Shoulderguards",
+          "source": "Drop: High King Maulgar (Gruul's Lair)",
+          "item_id": 29037,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29037/cyclone-shoulderguards",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_14.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Primal Mooncloth Shoulders",
+          "source": "Profession: Tailoring (Mooncloth Tailoring) - BoP only",
+          "item_id": 21874,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=21874/primal-mooncloth-shoulders",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_02.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Dragon-Quake Shoulderguards",
+          "source": "Drop: The Curator (Karazhan)",
+          "item_id": 28631,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28631/dragon-quake-shoulderguards",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_14.gif"
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Stainless Cloak of the Pure Hearted",
+          "source": "Drop: Prince Malchezaar (Karazhan)",
+          "item_id": 28765,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28765/stainless-cloak-of-the-pure-hearted",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_06.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Lifegiving Cloak",
+          "source": "Drop: World Drop",
+          "item_id": 31329,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31329/lifegiving-cloak",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_16.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "White Remedy Cape",
+          "source": "Profession: Tailoring - can be purchased on the Auction House",
+          "item_id": 24254,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=24254/white-remedy-cape",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_11.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Light-Touched Stole of Altruism",
+          "source": "Drop: Exarch Maladaar (Heroic Auchenai Crypts)",
+          "item_id": 29354,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29354/light-touched-stole-of-altruism",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_06.gif"
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Windhawk Hauberk",
+          "source": "Profession: Leatherworking (Tribal Leatherworking) – BoP only",
+          "item_id": 29522,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29522/windhawk-hauberk",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_leather_01.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Cyclone Hauberk",
+          "source": "Drop: Magtheridon (Magtheridon's Lair)",
+          "item_id": 29029,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29029/cyclone-hauberk",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_chain_15.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Primal Mooncloth Robe",
+          "source": "Profession: Tailoring (Mooncloth Tailoring) – BoP only",
+          "item_id": 21875,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=21875/primal-mooncloth-robe",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_cloth_04.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Gladiator's Ringmail Armor",
+          "source": "Vendor: Arena Points (Season 1)",
+          "item_id": 31396,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31396/gladiators-ringmail-armor",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_chain_11.gif"
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Windhawk Bracers",
+          "source": "Profession: Leatherworking (Tribal Leatherworking) – BoP only",
+          "item_id": 29523,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29523/windhawk-bracers",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_07.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Bindings of the Timewalker",
+          "source": "Vendor: Alurmi (Keepers of Time Exalted)",
+          "item_id": 29183,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29183/bindings-of-the-timewalker",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_10.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Whirlwind Bracers",
+          "source": "Drop: Attumen the Huntsman (Karazhan)",
+          "item_id": 28503,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28503/whirlwind-bracers",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_02.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Bands of Indwelling",
+          "source": "Drop: Maiden of Virtue (Karazhan)",
+          "item_id": 28511,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28511/bands-of-indwelling",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_13.gif"
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Gloves of Centering",
+          "source": "Drop: Maiden of Virtue (Karazhan)",
+          "item_id": 28520,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28520/gloves-of-centering",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_25.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Mitts of the Treemender",
+          "source": "Drop: Maiden of Virtue (Karazhan)",
+          "item_id": 28521,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28521/mitts-of-the-treemender",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_25.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Gloves of Saintly Blessings",
+          "source": "Drop: Attumen the Huntsman (Karazhan)",
+          "item_id": 28508,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28508/gloves-of-saintly-blessings",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_17.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cyclone Gloves",
+          "source": "Drop: The Curator (Karazhan)",
+          "item_id": 29032,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29032/cyclone-gloves",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_25.gif"
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Windhawk Belt",
+          "source": "Profession: Leatherworking (Tribal Leatherworking) – BoP only",
+          "item_id": 29524,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29524/windhawk-belt",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_03.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Primal Mooncloth Belt",
+          "source": "Profession: Tailoring (Mooncloth Tailoring) – BoP only",
+          "item_id": 21873,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=21873/primal-mooncloth-belt",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_31.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Heart-Flame Leggings",
+          "source": "Drop: Terestian Illhoof (Karazhan)",
+          "item_id": 28751,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28751/heart-flame-leggings",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_mail_15.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cord of Nature's Sustenance",
+          "source": "Drop: Terestian Illhoof (Karazhan)",
+          "item_id": 28655,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28655/cord-of-natures-sustenance",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_22.gif"
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Gilded Trousers of Benediction",
+          "source": "Drop: Doomwalker (World Boss)",
+          "item_id": 30727,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30727/gilded-trousers-of-benediction",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_cloth_15.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Heart-Flame Leggings",
+          "source": "Drop: Chess Event - Karazhan",
+          "item_id": 28751,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28751/heart-flame-leggings",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_mail_15.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Earthsoul Leggings",
+          "source": "Drop: Opera Event - Karazhan",
+          "item_id": 28591,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28591/earthsoul-leggings",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_mail_15.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Pantaloons of Repentance",
+          "source": "Drop: Netherspite (Karazhan)",
+          "item_id": 28742,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28742/pantaloons-of-repentance",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_cloth_13.gif"
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Gold-Leaf Wildboots",
+          "source": "Drop: Doom Lord Kazzak (World Boss)",
+          "item_id": 30737,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30737/gold-leaf-wildboots",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_cloth_08.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Forestlord Striders",
+          "source": "Drop: Echo of Medivh (Karazhan)",
+          "item_id": 28752,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28752/forestlord-striders",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_chain_05.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Slippers of Serenity",
+          "source": "Drop: Exarch Maladaar (Auchenai Crypts)",
+          "item_id": 27411,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=27411/slippers-of-serenity",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_cloth_14.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Boots of the Pious",
+          "source": "Drop: Pathaleon the Calculator (Heroic The Mechanar)",
+          "item_id": 29251,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29251/boots-of-the-pious",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_cloth_03.gif"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Archaic Charm of Presence",
+          "source": "Drop: Doomwalker (World Boss)",
+          "item_id": 30726,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30726/archaic-charm-of-presence",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_29naxxramas.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Emberspur Talisman",
+          "source": "Drop: Nightbane (Karazhan)",
+          "item_id": 28609,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28609/emberspur-talisman",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_17.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Natasha's Guardian Cord",
+          "source": "Quest: The Hound-Master",
+          "item_id": 31691,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31691/natashas-guardian-cord",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_31.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Karja's Medallion",
+          "source": "Quest: Shutting Down Manaforge Ara",
+          "item_id": 30377,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30377/karjas-medallion",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_11.gif"
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Jade Ring of the Everliving",
+          "source": "Drop: Prince Malchezaar (Karazhan)",
+          "item_id": 28763,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28763/jade-ring-of-the-everliving",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_08.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Naaru Lightwarden's Band",
+          "source": "Drop: Magtheridon's Head (Magtheridon's Lair)",
+          "item_id": 28790,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28790/naaru-lightwardens-band",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_70.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Ring of Flowing Light",
+          "source": "Drop: Doom Lord Kazzak (World Boss)",
+          "item_id": 30736,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30736/ring-of-flowing-light",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_60.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Ring of Fabled Hope",
+          "source": "Drop: The Black Stalker (Heroic The Underbog)",
+          "item_id": 27780,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=27780/ring-of-fabled-hope",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_31.gif"
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Essence of the Martyr",
+          "source": "Vendor: Badges of Justice",
+          "item_id": 29376,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29376/essence-of-the-martyr",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_valentineperfumebottle.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Ribbon of Sacrifice",
+          "source": "Drop: Barnes (Karazhan)",
+          "item_id": 28590,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28590/ribbon-of-sacrifice",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_bandage_16.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Lower City Prayerbook",
+          "source": "Vendor: Nakodu (Lower City Revered)",
+          "item_id": 30841,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30841/lower-city-prayerbook",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_book_11.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Scarab of the Infinite Cycle",
+          "source": "Drop: Aeonus (The Black Morass)",
+          "item_id": 28190,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28190/scarab-of-the-infinite-cycle",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_ahnqirajtrinket_06.gif"
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Light's Justice",
+          "source": "Drop: Prince Malchezaar (Karazhan)",
+          "item_id": 28771,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28771/lights-justice",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_46.gif"
+        },
+        {
+          "rank": "PvP",
+          "name": "Gladiator's Salvation",
+          "source": "Vendor: Arena Points (Season 1)",
+          "item_id": 32451,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32451/gladiators-salvation",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_47.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Shard of the Virtuous",
+          "source": "Drop: Maiden of Virtue (Karazhan)",
+          "item_id": 28522,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28522/shard-of-the-virtuous",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_hammer_26.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Hand of Eternity",
+          "source": "Profession: Blacksmithing – can be purchased on the Auction House",
+          "item_id": 23556,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=23556/hand-of-eternity",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_16.gif"
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Tears of Heaven",
+          "source": "Vendor: G'eras, Shattrath City - 25",
+          "item_id": 29274,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29274/tears-of-heaven",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_potion_75.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Aegis of the Vindicator",
+          "source": "Drop: Magtheridon (Magtheridon's Lair)",
+          "item_id": 29458,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29458/aegis-of-the-vindicator",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shield_33.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Windcaller's Orb",
+          "source": "Vendor: Fedryen Swiftspear (Cenarion Expedition Exalted)",
+          "item_id": 29170,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29170/windcallers-orb",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_orb_01.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Sapphiron's Right Eye",
+          "source": "Drop: Sapphiron (Naxxramas)",
+          "item_id": 23048,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=23048/sapphirons-right-eye",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_offhand_naxxramas_02.gif"
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Totem of Healing Rains",
+          "source": "Drop: Maiden of Virtue (Karazhan)",
+          "item_id": 28523,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28523/totem-of-healing-rains",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_giftofthewaterspirit.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Totem of Spontaneous Regrowth",
+          "source": "Drop: Mennu the Betrayer (Heroic The Slave Pens)",
+          "item_id": 27544,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=27544/totem-of-spontaneous-regrowth",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_protectionformnature.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Totem of Life",
+          "source": "Drop: Fankriss the Unyielding (Classic - Ahn'Qiraj)",
+          "item_id": 22396,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=22396/totem-of-life",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_relics_totemoflife.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Totem of the Plains",
+          "source": "Quest: The Ultimate Bloodsport (Nagrand)",
+          "item_id": 25645,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=25645/totem-of-the-plains",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_relics_totemoflife.gif"
+        }
+      ]
+    },
+    "phase-2": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Cataclysm Headguard",
+          "source": "Drop: Lady Vashj (Serpentshrine Cavern)",
+          "item_id": 30166,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30166/cataclysm-headguard",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_54.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Living Replicator Specs",
+          "source": "Profession: Engineering - BoP only",
+          "item_id": 32475,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32475/living-replicator-specs",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gizmo_newgoggles.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cyclone Headdress",
+          "source": "Drop: Prince Malchezaar (Karazhan)",
+          "item_id": 29028,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29028/cyclone-headdress",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_15.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Fathom-Helm of the Deeps",
+          "source": "Drop: Doomwalker (World Boss)",
+          "item_id": 30728,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30728/fathom-helm-of-the-deeps",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_69.gif"
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Cataclysm Shoulderguards",
+          "source": "Drop: Void Reaver (Tempest Keep: The Eye)",
+          "item_id": 30168,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30168/cataclysm-shoulderguards",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_14.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Coral-Barbed Shoulderpads",
+          "source": "Drop: Leotheras the Blind (Serpentshrine Cavern)",
+          "item_id": 30097,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30097/coral-barbed-shoulderpads",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_19.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cyclone Shoulderpads",
+          "source": "Drop: High King Maulgar (Gruul's Lair)",
+          "item_id": 29031,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29031/cyclone-shoulderpads",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_14.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Primal Mooncloth Shoulders",
+          "source": "Profession: Tailoring (Mooncloth Tailoring) - BoP only",
+          "item_id": 21874,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=21874/primal-mooncloth-shoulders",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_02.gif"
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Sunshower Light Cloak",
+          "source": "Drop: Kael'thas Sunstrider (Tempest Keep: The Eye)",
+          "item_id": 29989,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29989/sunshower-light-cloak",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_06.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Stainless Cloak of the Pure Hearted",
+          "source": "Drop: Prince Malchezaar (Karazhan)",
+          "item_id": 28765,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28765/stainless-cloak-of-the-pure-hearted",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_06.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Lifegiving Cloak",
+          "source": "Drop: World Drop",
+          "item_id": 31329,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31329/lifegiving-cloak",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_16.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "White Remedy Cape",
+          "source": "Profession: Tailoring - can be purchased on the Auction House",
+          "item_id": 24254,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=24254/white-remedy-cape",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_11.gif"
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Cataclysm Chestguard",
+          "source": "Drop: Kael'thas Sunstrider (Tempest Keep: The Eye)",
+          "item_id": 30164,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30164/cataclysm-chestguard",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_plate08.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Fire Crest Breastplate",
+          "source": "Drop: Al'ar (Tempest Keep: The Eye)",
+          "item_id": 29921,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29921/fire-crest-breastplate",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_plate03.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Windhawk Hauberk",
+          "source": "Profession: Leatherworking (Tribal Leatherworking) - BoP only",
+          "item_id": 29522,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29522/windhawk-hauberk",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_leather_01.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Primal Mooncloth Robe",
+          "source": "Profession: Tailoring (Mooncloth Tailoring) - BoP only",
+          "item_id": 21875,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=21875/primal-mooncloth-robe",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_cloth_04.gif"
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Blackfathom Warbands",
+          "source": "Drop: Hydross the Unstable (Serpentshrine Cavern)",
+          "item_id": 30047,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30047/blackfathom-warbands",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_02.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Wraps of Purification",
+          "source": "Drop: Hydross the Unstable (Serpentshrine Cavern)",
+          "item_id": 32516,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32516/wraps-of-purification",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_13.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Windhawk Bracers",
+          "source": "Profession: Leatherworking (Tribal Leatherworking) - BoP only",
+          "item_id": 29523,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29523/windhawk-bracers",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_07.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Bindings of the Timewalker",
+          "source": "Vendor: Alurmi (Keepers of Time Exalted)",
+          "item_id": 29183,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29183/bindings-of-the-timewalker",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_10.gif"
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Worldstorm Gauntlets",
+          "source": "Drop: High Astromancer Solarian (Tempest Keep: The Eye)",
+          "item_id": 29976,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29976/worldstorm-gauntlets",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_26.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cataclysm Gloves",
+          "source": "Drop: Leotheras the Blind (Serpentshrine Cavern)",
+          "item_id": 30165,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30165/cataclysm-gloves",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_25.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Gloves of Centering",
+          "source": "Drop: Maiden of Virtue (Karazhan)",
+          "item_id": 28520,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28520/gloves-of-centering",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_25.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Mitts of the Treemender",
+          "source": "Drop: Maiden of Virtue (Karazhan)",
+          "item_id": 28521,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28521/mitts-of-the-treemender",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_25.gif"
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Girdle of Fallen Stars",
+          "source": "Drop: Trash Mobs (Tempest Keep: The Eye)",
+          "item_id": 30030,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30030/girdle-of-fallen-stars",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_22.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Windhawk Belt",
+          "source": "Profession: Leatherworking (Tribal Leatherworking) - BoP only",
+          "item_id": 29524,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29524/windhawk-belt",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_03.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Primal Mooncloth Belt",
+          "source": "Profession: Tailoring (Mooncloth Tailoring) - BoP only",
+          "item_id": 21873,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=21873/primal-mooncloth-belt",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_31.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Belt of Gale Force",
+          "source": "Drop: Moroes (Karazhan)",
+          "item_id": 28567,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28567/belt-of-gale-force",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_22.gif"
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Sunhawk Leggings",
+          "source": "Drop: Kael'thas Sunstrider (Tempest Keep: The Eye)",
+          "item_id": 29991,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29991/sunhawk-leggings",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_plate_07.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cataclysm Legguards",
+          "source": "Drop: Fathom-Lord Karathress (Serpentshrine Cavern)",
+          "item_id": 30167,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30167/cataclysm-legguards",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_mail_15.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Heart-Flame Leggings",
+          "source": "Drop: Echo of Medivh (Karazhan)",
+          "item_id": 28751,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28751/heart-flame-leggings",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_mail_15.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Earthsoul Leggings",
+          "source": "Drop: Opera Event (Karazhan)",
+          "item_id": 28591,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28591/earthsoul-leggings",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_mail_15.gif"
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Gold-Leaf Wildboots",
+          "source": "Drop: Doom Lord Kazzak (World Boss)",
+          "item_id": 30737,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30737/gold-leaf-wildboots",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_cloth_08.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Orca-Hide Boots",
+          "source": "Drop: Leotheras the Blind (Serpentshrine Cavern)",
+          "item_id": 30092,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30092/orca-hide-boots",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_cloth_16.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Forestlord Striders",
+          "source": "Drop: Echo of Medivh (Karazhan)",
+          "item_id": 28752,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28752/forestlord-striders",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_chain_05.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Tempest-Strider Boots",
+          "source": "Drop: The Lurker Below (Serpentshrine Cavern)",
+          "item_id": 30066,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30066/tempest-strider-boots",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_chain_05.gif"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Lord Sanguinar's Claim",
+          "source": "Drop: Kael'thas Sunstrider (Tempest Keep: The Eye)",
+          "item_id": 30018,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30018/lord-sanguinars-claim",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_29naxxramas.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Emberspur Talisman",
+          "source": "Drop: Nightbane (Karazhan)",
+          "item_id": 28609,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28609/emberspur-talisman",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_17.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Archaic Charm of Presence",
+          "source": "Drop: Doomwalker (World Boss)",
+          "item_id": 30726,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30726/archaic-charm-of-presence",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_29naxxramas.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Teeth of Gruul",
+          "source": "Drop: Gruul the Dragonkiller (Gruul's Lair)",
+          "item_id": 28822,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28822/teeth-of-gruul",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_bone_09.gif"
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Phoenix-Ring of Rebirth",
+          "source": "Drop: Al'ar (Tempest Keep: The Eye)",
+          "item_id": 29920,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29920/phoenix-ring-of-rebirth",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_51naxxramas.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Naaru Lightwarden's Band",
+          "source": "Drop: Magtheridon (Magtheridon's Lair)",
+          "item_id": 28790,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28790/naaru-lightwardens-band",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_70.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Band of Eternity",
+          "source": "Quest: Restorer's Pledge",
+          "item_id": 29307,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29307/band-of-eternity",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_54.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Jade Ring of the Everliving",
+          "source": "Drop: Prince Malchezaar (Karazhan)",
+          "item_id": 28763,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28763/jade-ring-of-the-everliving",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_08.gif"
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Essence of the Martyr",
+          "source": "Vendor: G'eras (Badges of Justice)",
+          "item_id": 29376,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29376/essence-of-the-martyr",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_valentineperfumebottle.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Direbrew Hops",
+          "source": "Drop: Coren Direbrew (Brewfest Seasonal Event)",
+          "item_id": 38288,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=38288/direbrew-hops",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_herb_08.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Scarab of the Infinite Cycle",
+          "source": "Drop: Aeonus (The Black Morass)",
+          "item_id": 28190,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28190/scarab-of-the-infinite-cycle",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_ahnqirajtrinket_06.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Ribbon of Sacrifice",
+          "source": "Drop: Opera Event (Karazhan)",
+          "item_id": 28590,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28590/ribbon-of-sacrifice",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_bandage_16.gif"
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Lightfathom Scepter",
+          "source": "Drop: Lady Vashj (Serpentshrine Cavern)",
+          "item_id": 30108,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30108/lightfathom-scepter",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_weapon_shortblade_43.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Merciless Gladiator's Salvation",
+          "source": "Vendor: Arena Points (Season 2)",
+          "item_id": 32964,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32964/merciless-gladiators-salvation",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_47.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Light's Justice",
+          "source": "Drop: Prince Malchezaar (Karazhan)",
+          "item_id": 28771,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28771/lights-justice",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_46.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Gladiator's Salvation",
+          "source": "Vendor: Arena Points (Season 1)",
+          "item_id": 32451,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32451/gladiators-salvation",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_47.gif"
+        }
+      ],
+      "shields-offhands": [
+        {
+          "rank": "BiS",
+          "name": "Aegis of the Vindicator",
+          "source": "Drop: Magtheridon (Magtheridon's Lair)",
+          "item_id": 29458,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29458/aegis-of-the-vindicator",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shield_33.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Tears of Heaven",
+          "source": "Vendor: G'eras (Badges of Justice)",
+          "item_id": 29274,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29274/tears-of-heaven",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_potion_75.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Talisman of the Sun King",
+          "source": "Drop: Al'ar (Tempest Keep: The Eye)",
+          "item_id": 29923,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29923/talisman-of-the-sun-king",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_offhand_blood_02.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Aran's Soothing Sapphire",
+          "source": "Drop: Shade of Aran (Karazhan)",
+          "item_id": 28728,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28728/arans-soothing-sapphire",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_gem_sapphire_02.gif"
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Totem of Healing Rains",
+          "source": "Drop: Maiden of Virtue (Karazhan)",
+          "item_id": 28523,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28523/totem-of-healing-rains",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_giftofthewaterspirit.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Totem of Spontaneous Regrowth",
+          "source": "Drop: Mennu the Betrayer (Heroic The Slave Pens)",
+          "item_id": 27544,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=27544/totem-of-spontaneous-regrowth",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_protectionformnature.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Totem of Life",
+          "source": "Drop: Fankriss the Unyielding (Classic - Ahn'Qiraj)",
+          "item_id": 22396,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=22396/totem-of-life",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_relics_totemoflife.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Totem of the Plains",
+          "source": "Quest: The Ultimate Bloodsport",
+          "item_id": 25645,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=25645/totem-of-the-plains",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_relics_totemoflife.gif"
+        }
+      ]
+    },
+    "phase-3": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Helmet",
+          "source": "Drop: Archimonde (Hyjal Summit)",
+          "item_id": 31012,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31012/skyshatter-helmet",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_97.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Helm of Soothing Currents",
+          "source": "Drop: High Warlord Naj'entus (Black Temple)",
+          "item_id": 32241,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32241/helm-of-soothing-currents",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_97.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cataclysm Headguard",
+          "source": "Drop: Lady Vashj (Serpentshrine Cavern)",
+          "item_id": 30166,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30166/cataclysm-headguard",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_54.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Living Replicator Specs",
+          "source": "Profession: Engineering - BoP only",
+          "item_id": 32475,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32475/living-replicator-specs",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gizmo_newgoggles.gif"
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Shoulderpads",
+          "source": "Drop: Mother Shahraz (Black Temple)",
+          "item_id": 31022,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31022/skyshatter-shoulderpads",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_61.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Living Earth Shoulders",
+          "source": "Profession: Leatherworking - BoP only",
+          "item_id": 32579,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32579/living-earth-shoulders",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_66.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cataclysm Shoulderguards",
+          "source": "Drop: Void Reaver (Tempest Keep: The Eye)",
+          "item_id": 30168,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30168/cataclysm-shoulderguards",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_14.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Coral-Barbed Shoulderpads",
+          "source": "Drop: Leotheras the Blind (Serpentshrine Cavern)",
+          "item_id": 30097,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30097/coral-barbed-shoulderpads",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_19.gif"
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Shroud of the Highborne",
+          "source": "Drop: Illidan Stormrage (Black Temple)",
+          "item_id": 32524,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32524/shroud-of-the-highborne",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_06.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Shroud of the Final Stand",
+          "source": "Drop: Trash Mobs (Black Temple)",
+          "item_id": 34012,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34012/shroud-of-the-final-stand",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_16.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Sunshower Light Cloak",
+          "source": "Drop: Kael'thas Sunstrider (Tempest Keep: The Eye)",
+          "item_id": 29989,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29989/sunshower-light-cloak",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_06.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Stainless Cloak of the Pure Hearted",
+          "source": "Drop: Prince Malchezaar (Karazhan)",
+          "item_id": 28765,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28765/stainless-cloak-of-the-pure-hearted",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_06.gif"
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Chestguard",
+          "source": "Drop: Illidan Stormrage (Black Temple)",
+          "item_id": 31016,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31016/skyshatter-chestguard",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_mail_04.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cataclysm Chestguard",
+          "source": "Drop: Kael'thas Sunstrider (Tempest Keep: The Eye)",
+          "item_id": 30164,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30164/cataclysm-chestguard",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_plate08.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Golden Links of Restoration",
+          "source": "Drop: Anetheron (Hyjal Summit)",
+          "item_id": 30887,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30887/golden-links-of-restoration",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_mail_04.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Fire Crest Breastplate",
+          "source": "Drop: Al'ar (Tempest Keep: The Eye)",
+          "item_id": 29921,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29921/fire-crest-breastplate",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_plate03.gif"
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Living Earth Bindings",
+          "source": "Profession: Leatherworking - can be purchased on the Auction House",
+          "item_id": 32577,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32577/living-earth-bindings",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_02.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Swiftheal Wraps",
+          "source": "Profession: Tailoring - can be purchased on the Auction House",
+          "item_id": 32584,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32584/swiftheal-wraps",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_13.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Bracers of Renewed Life",
+          "source": "Profession: Leatherworking - can be purchased on the Auction House",
+          "item_id": 32582,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32582/bracers-of-renewed-life",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_02.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Howling Wind Bracers",
+          "source": "Drop: Rage Winterchill (Hyjal Summit)",
+          "item_id": 30869,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30869/howling-wind-bracers",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_03.gif"
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Botanist's Gloves of Growth",
+          "source": "Drop: Teron Gorefiend (Black Temple)",
+          "item_id": 32328,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32328/botanists-gloves-of-growth",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_24.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Spiritwalker Gauntlets",
+          "source": "Drop: Shade of Akama (Black Temple)",
+          "item_id": 32275,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32275/spiritwalker-gauntlets",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_61.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Worldstorm Gauntlets",
+          "source": "Drop: High Astromancer Solarian (Tempest Keep: The Eye)",
+          "item_id": 29976,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29976/worldstorm-gauntlets",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_26.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Skyshatter Gloves",
+          "source": "Drop: Azgalor (Hyjal Summit)",
+          "item_id": 31007,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31007/skyshatter-gloves",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_61.gif"
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Naturalist's Preserving Cinch",
+          "source": "Drop: Supremus (Black Temple)",
+          "item_id": 32258,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32258/naturalists-preserving-cinch",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_22.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Belt of Primal Majesty",
+          "source": "Drop: Gurtogg Bloodboil (Black Temple)",
+          "item_id": 32339,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32339/belt-of-primal-majesty",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_24.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Angelista's Sash",
+          "source": "Drop: Kaz'rogal (Hyjal Summit)",
+          "item_id": 30895,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30895/angelistas-sash",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_08.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Girdle of Fallen Stars",
+          "source": "Drop: Trash Mobs (Tempest Keep: The Eye)",
+          "item_id": 30030,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30030/girdle-of-fallen-stars",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_22.gif"
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Leggings",
+          "source": "Drop: The Illidari Council (Black Temple)",
+          "item_id": 31019,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31019/skyshatter-leggings",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_mail_25.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Leggings of Eternity",
+          "source": "Drop: Archimonde (Hyjal Summit)",
+          "item_id": 30912,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30912/leggings-of-eternity",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_cloth_14.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Kilt of Immortal Nature",
+          "source": "Drop: Shade of Akama (Black Temple)",
+          "item_id": 32271,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32271/kilt-of-immortal-nature",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_leather_23.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Sun-touched Chain Leggings",
+          "source": "Drop: Kaz'rogal (Hyjal Summit)",
+          "item_id": 30893,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30893/sun-touched-chain-leggings",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_mail_17.gif"
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Stillwater Boots",
+          "source": "Drop: Rage Winterchill (Hyjal Summit)",
+          "item_id": 30873,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30873/stillwater-boots",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_chain_08.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Boots of the Divine Light",
+          "source": "Drop: Trash Mobs (Hyjal Summit)",
+          "item_id": 32609,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32609/boots-of-the-divine-light",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_cloth_08.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Gold-Leaf Wildboots",
+          "source": "Drop: Doom Lord Kazzak (World Boss)",
+          "item_id": 30737,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30737/gold-leaf-wildboots",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_cloth_08.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Orca-Hide Boots",
+          "source": "Drop: Leotheras the Blind (Serpentshrine Cavern)",
+          "item_id": 30092,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30092/orca-hide-boots",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_cloth_16.gif"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Nadina's Pendant of Purity",
+          "source": "Drop: Mother Shahraz (Black Temple)",
+          "item_id": 32370,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32370/nadinas-pendant-of-purity",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_32.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Lord Sanguinar's Claim",
+          "source": "Drop: Kael'thas Sunstrider (Tempest Keep: The Eye)",
+          "item_id": 30018,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30018/lord-sanguinars-claim",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_29naxxramas.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Vindicator's Pendant of Salvation",
+          "source": "Vendor: Honor Points (Season 3)",
+          "item_id": 33922,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33922/vindicators-pendant-of-salvation",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_36.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Emberspur Talisman",
+          "source": "Drop: Nightbane (Karazhan)",
+          "item_id": 28609,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28609/emberspur-talisman",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_17.gif"
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Blessed Band of Karabor",
+          "source": "Drop: Trash Mobs (Black Temple)",
+          "item_id": 32528,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32528/blessed-band-of-karabor",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_35.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Band of the Eternal Restorer",
+          "source": "Quest: Restorer's Covenant (The Scale of the Sands Exalted)",
+          "item_id": 29309,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29309/band-of-the-eternal-restorer",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_55.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Ring of Calming Waves",
+          "source": "Drop: High Warlord Naj'entus (Black Temple)",
+          "item_id": 32238,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32238/ring-of-calming-waves",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_57.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Phoenix-Ring of Rebirth",
+          "source": "Drop: Al'ar (Tempest Keep: The Eye)",
+          "item_id": 29920,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29920/phoenix-ring-of-rebirth",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_51naxxramas.gif"
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Memento of Tyrande",
+          "source": "Drop: Illidan Stormrage (Black Temple)",
+          "item_id": 32496,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32496/memento-of-tyrande",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_summerfest_fireflower.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Essence of the Martyr",
+          "source": "Vendor: G'eras (Badges of Justice)",
+          "item_id": 29376,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29376/essence-of-the-martyr",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_valentineperfumebottle.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Direbrew Hops",
+          "source": "Drop: Coren Direbrew (Brewfest Seasonal Event)",
+          "item_id": 38288,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=38288/direbrew-hops",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_herb_08.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Scarab of the Infinite Cycle",
+          "source": "Drop: Aeonus (The Black Morass)",
+          "item_id": 28190,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28190/scarab-of-the-infinite-cycle",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_ahnqirajtrinket_06.gif"
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Crystal Spire of Karabor",
+          "source": "Drop: Illidan Stormrage (Black Temple)",
+          "item_id": 32500,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32500/crystal-spire-of-karabor",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_56.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Vengeful Gladiator's Salvation",
+          "source": "Vendor: Arena Points (Season 3)",
+          "item_id": 33743,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33743/vengeful-gladiators-salvation",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_56.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Hammer of Atonement",
+          "source": "Drop: Kaz'rogal (Hyjal Summit)",
+          "item_id": 30918,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30918/hammer-of-atonement",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_57.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Lightfathom Scepter",
+          "source": "Drop: Lady Vashj (Serpentshrine Cavern)",
+          "item_id": 30108,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30108/lightfathom-scepter",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_weapon_shortblade_43.gif"
+        }
+      ],
+      "shields-offhands": [
+        {
+          "rank": "BiS",
+          "name": "Bastion of Light",
+          "source": "Drop: Anetheron (Hyjal Summit)",
+          "item_id": 30882,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30882/bastion-of-light",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shield_38.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Felstone Bulwark",
+          "source": "Drop: Supremus (Black Temple)",
+          "item_id": 32255,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32255/felstone-bulwark",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shield_38.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Aegis of the Vindicator",
+          "source": "Drop: Magtheridon (Magtheridon's Lair)",
+          "item_id": 29458,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29458/aegis-of-the-vindicator",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shield_33.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Vengeful Gladiator's Redoubt",
+          "source": "Vendor: Arena Points (Season 3)",
+          "item_id": 33735,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33735/vengeful-gladiators-redoubt",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shield_31.gif"
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Totem of Healing Rains",
+          "source": "Drop: Maiden of Virtue (Karazhan)",
+          "item_id": 28523,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28523/totem-of-healing-rains",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_giftofthewaterspirit.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Totem of Spontaneous Regrowth",
+          "source": "Drop: Mennu the Betrayer (Heroic The Slave Pens)",
+          "item_id": 27544,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=27544/totem-of-spontaneous-regrowth",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_protectionformnature.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Totem of Life",
+          "source": "Drop: Fankriss the Unyielding (Classic - Ahn'Qiraj)",
+          "item_id": 22396,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=22396/totem-of-life",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_relics_totemoflife.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Totem of the Plains",
+          "source": "Quest: The Ultimate Bloodsport",
+          "item_id": 25645,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=25645/totem-of-the-plains",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_relics_totemoflife.gif"
+        }
+      ]
+    },
+    "phase-4": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Helmet",
+          "source": "Drop: Archimonde (Hyjal Summit)",
+          "item_id": 31012,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31012/skyshatter-helmet",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_97.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Helm of Soothing Currents",
+          "source": "Drop: High Warlord Naj'entus (Black Temple)",
+          "item_id": 32241,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32241/helm-of-soothing-currents",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_97.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cataclysm Headguard",
+          "source": "Drop: Lady Vashj (Serpentshrine Cavern)",
+          "item_id": 30166,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30166/cataclysm-headguard",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_54.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Living Replicator Specs",
+          "source": "Profession: Engineering - BoP only",
+          "item_id": 32475,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32475/living-replicator-specs",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gizmo_newgoggles.gif"
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Shoulderpads",
+          "source": "Drop: Mother Shahraz (Black Temple)",
+          "item_id": 31022,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31022/skyshatter-shoulderpads",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_61.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Living Earth Shoulders",
+          "source": "Profession: Leatherworking - BoP only",
+          "item_id": 32579,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32579/living-earth-shoulders",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_66.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Hex Lord's Voodoo Pauldrons",
+          "source": "Drop: Hex Lord Malacrass (Zul'Aman)",
+          "item_id": 33464,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33464/hex-lords-voodoo-pauldrons",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_86.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cataclysm Shoulderguards",
+          "source": "Drop: Void Reaver (Tempest Keep: The Eye)",
+          "item_id": 30168,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30168/cataclysm-shoulderguards",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_14.gif"
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Shroud of the Highborne",
+          "source": "Drop: Illidan Stormrage (Black Temple)",
+          "item_id": 32524,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32524/shroud-of-the-highborne",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_06.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Shroud of the Final Stand",
+          "source": "Drop: Trash Mobs (Black Temple)",
+          "item_id": 34012,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34012/shroud-of-the-final-stand",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_16.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cloak of Ancient Rituals",
+          "source": "Drop: Hex Lord Malacrass (Zul'Aman)",
+          "item_id": 33592,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33592/cloak-of-ancient-rituals",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_16.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cloak of Swift Reprieve",
+          "source": "Vendor: G'eras (Badges of Justice)",
+          "item_id": 35324,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=35324/cloak-of-swift-reprieve",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_06.gif"
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Chestguard",
+          "source": "Drop: Illidan Stormrage (Black Temple)",
+          "item_id": 31016,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31016/skyshatter-chestguard",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_mail_04.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cataclysm Chestguard",
+          "source": "Drop: Kael'thas Sunstrider (Tempest Keep: The Eye)",
+          "item_id": 30164,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30164/cataclysm-chestguard",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_plate08.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Hauberk of the Empire's Champion",
+          "source": "Drop: Zul'jin (Zul'Aman)",
+          "item_id": 33469,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33469/hauberk-of-the-empires-champion",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_mail_05.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Golden Links of Restoration",
+          "source": "Drop: Anetheron (Hyjal Summit)",
+          "item_id": 30887,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30887/golden-links-of-restoration",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_mail_04.gif"
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Living Earth Bindings",
+          "source": "Profession: Leatherworking - can be purchased on the Auction House",
+          "item_id": 32577,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32577/living-earth-bindings",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_02.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Swiftheal Wraps",
+          "source": "Profession: Tailoring - can be purchased on the Auction House",
+          "item_id": 32584,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32584/swiftheal-wraps",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_13.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Bracers of Renewed Life",
+          "source": "Profession: Leatherworking - can be purchased on the Auction House",
+          "item_id": 32582,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32582/bracers-of-renewed-life",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_02.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Howling Wind Bracers",
+          "source": "Drop: Rage Winterchill (Hyjal Summit)",
+          "item_id": 30869,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30869/howling-wind-bracers",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_03.gif"
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Botanist's Gloves of Growth",
+          "source": "Drop: Teron Gorefiend (Black Temple)",
+          "item_id": 32328,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32328/botanists-gloves-of-growth",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_24.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Spiritwalker Gauntlets",
+          "source": "Drop: Shade of Akama (Black Temple)",
+          "item_id": 32275,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32275/spiritwalker-gauntlets",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_61.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Worldstorm Gauntlets",
+          "source": "Drop: High Astromancer Solarian (Tempest Keep: The Eye)",
+          "item_id": 29976,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29976/worldstorm-gauntlets",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_26.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Skyshatter Gloves",
+          "source": "Drop: Azgalor (Hyjal Summit)",
+          "item_id": 31007,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31007/skyshatter-gloves",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_61.gif"
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Naturalist's Preserving Cinch",
+          "source": "Drop: Supremus (Black Temple)",
+          "item_id": 32258,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32258/naturalists-preserving-cinch",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_22.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Belt of Primal Majesty",
+          "source": "Drop: Gurtogg Bloodboil (Black Temple)",
+          "item_id": 32339,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32339/belt-of-primal-majesty",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_24.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Angelista's Sash",
+          "source": "Drop: Kaz'rogal (Hyjal Summit)",
+          "item_id": 30895,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30895/angelistas-sash",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_08.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Man'kin'do's Belt",
+          "source": "Vendor: G'eras (Badges of Justice)",
+          "item_id": 33386,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33386/mankindos-belt",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_22.gif"
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Leggings",
+          "source": "Drop: The Illidari Council (Black Temple)",
+          "item_id": 31019,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31019/skyshatter-leggings",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_mail_25.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Leggings of Eternity",
+          "source": "Drop: Archimonde (Hyjal Summit)",
+          "item_id": 30912,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30912/leggings-of-eternity",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_cloth_14.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Kilt of Immortal Nature",
+          "source": "Drop: Shade of Akama (Black Temple)",
+          "item_id": 32271,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32271/kilt-of-immortal-nature",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_leather_23.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Sun-touched Chain Leggings",
+          "source": "Drop: Kaz'rogal (Hyjal Summit)",
+          "item_id": 30893,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30893/sun-touched-chain-leggings",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_mail_17.gif"
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Treads of the Life Path",
+          "source": "Vendor: G'eras (Badges of Justice)",
+          "item_id": 33324,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33324/treads-of-the-life-path",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_chain_13.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Two-toed Sandals",
+          "source": "Drop: Zul'jin (Zul'Aman)",
+          "item_id": 33471,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33471/two-toed-sandals",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_fabric_01.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Stillwater Boots",
+          "source": "Drop: Rage Winterchill (Hyjal Summit)",
+          "item_id": 30873,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30873/stillwater-boots",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_chain_08.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Boots of the Divine Light",
+          "source": "Drop: Trash Mobs (Hyjal Summit)",
+          "item_id": 32609,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32609/boots-of-the-divine-light",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_cloth_08.gif"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Brooch of Nature's Mercy",
+          "source": "Drop: Akil'zon (Zul'Aman)",
+          "item_id": 33281,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33281/brooch-of-natures-mercy",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_ahnqiraj_03.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Nadina's Pendant of Purity",
+          "source": "Drop: Mother Shahraz (Black Temple)",
+          "item_id": 32370,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32370/nadinas-pendant-of-purity",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_32.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Vindicator's Pendant of Reprieve",
+          "source": "Vendor: Honor Points (Season 3)",
+          "item_id": 35317,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=35317/vindicators-pendant-of-reprieve",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_36.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Lord Sanguinar's Claim",
+          "source": "Drop: Kael'thas Sunstrider (Tempest Keep: The Eye)",
+          "item_id": 30018,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30018/lord-sanguinars-claim",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_29naxxramas.gif"
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Blessed Band of Karabor",
+          "source": "Drop: Trash Mobs (Black Temple)",
+          "item_id": 32528,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32528/blessed-band-of-karabor",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_35.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Signet of the Quiet Forest",
+          "source": "Drop: Third Timed Chest (Zul'Aman)",
+          "item_id": 33498,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33498/signet-of-the-quiet-forest",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_37.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Band of the Eternal Restorer",
+          "source": "Quest: Restorer's Covenant (The Scale of the Sands Exalted)",
+          "item_id": 29309,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29309/band-of-the-eternal-restorer",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_55.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Ring of Calming Waves",
+          "source": "Drop: High Warlord Naj'entus (Black Temple)",
+          "item_id": 32238,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32238/ring-of-calming-waves",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_57.gif"
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Memento of Tyrande",
+          "source": "Drop: Illidan Stormrage (Black Temple)",
+          "item_id": 32496,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32496/memento-of-tyrande",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_summerfest_fireflower.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Essence of the Martyr",
+          "source": "Vendor: G'eras (Badges of Justice)",
+          "item_id": 29376,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29376/essence-of-the-martyr",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_valentineperfumebottle.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Direbrew Hops",
+          "source": "Drop: Coren Direbrew (Brewfest Seasonal Event)",
+          "item_id": 38288,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=38288/direbrew-hops",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_herb_08.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Tome of Diabolic Remedy",
+          "source": "Drop: Hex Lord Malacrass (Zul'Aman)",
+          "item_id": 33828,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33828/tome-of-diabolic-remedy",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_offhand_stratholme_a_01.gif"
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Crystal Spire of Karabor",
+          "source": "Drop: Illidan Stormrage (Black Temple)",
+          "item_id": 32500,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32500/crystal-spire-of-karabor",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_56.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Dark Blessing",
+          "source": "Drop: Zul'jin (Zul'Aman)",
+          "item_id": 33468,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33468/dark-blessing",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_staff_64.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Vengeful Gladiator's Salvation",
+          "source": "Vendor: Arena Points (Season 3)",
+          "item_id": 33743,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33743/vengeful-gladiators-salvation",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_56.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Hammer of Atonement",
+          "source": "Drop: Kaz'rogal (Hyjal Summit)",
+          "item_id": 30918,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30918/hammer-of-atonement",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_57.gif"
+        }
+      ],
+      "shields-offhands": [
+        {
+          "rank": "BiS",
+          "name": "Bastion of Light",
+          "source": "Drop: Anetheron (Hyjal Summit)",
+          "item_id": 30882,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30882/bastion-of-light",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shield_38.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Felstone Bulwark",
+          "source": "Drop: Supremus (Black Temple)",
+          "item_id": 32255,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32255/felstone-bulwark",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shield_38.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Aegis of the Vindicator",
+          "source": "Drop: Magtheridon (Magtheridon's Lair)",
+          "item_id": 29458,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29458/aegis-of-the-vindicator",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shield_33.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Enamelled Disc of Mojo",
+          "source": "Drop: Jan'alai (Zul'Aman)",
+          "item_id": 33332,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33332/enamelled-disc-of-mojo",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shield_43.gif"
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Totem of Healing Rains",
+          "source": "Drop: Maiden of Virtue (Karazhan)",
+          "item_id": 28523,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28523/totem-of-healing-rains",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_giftofthewaterspirit.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Totem of Living Water",
+          "source": "Vendor: G'eras (Badges of Justice)",
+          "item_id": 33505,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33505/totem-of-living-water",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/spell_frost_summonwaterelemental.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Totem of Spontaneous Regrowth",
+          "source": "Drop: Mennu the Betrayer (Heroic The Slave Pens)",
+          "item_id": 27544,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=27544/totem-of-spontaneous-regrowth",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_protectionformnature.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Totem of Life",
+          "source": "Drop: Fankriss the Unyielding (Classic - Ahn'Qiraj)",
+          "item_id": 22396,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=22396/totem-of-life",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_relics_totemoflife.gif"
+        }
+      ]
+    },
+    "phase-5": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Shroud of Chieftain Ner'zhul",
+          "source": "Vendor: YrmaDrop: Cowl of Gul'dan from Kil'jaeden (Sunwell Plateau) & Sunmote",
+          "item_id": 34402,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34402/shroud-of-chieftain-nerzhul",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet128.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Cowl of Light's Purity",
+          "source": "Drop: Kil'jaeden (Sunwell Plateau)",
+          "item_id": 34339,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34339/cowl-of-lights-purity",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_132.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Primal-Attuned Goggles",
+          "source": "Profession: Engineering - BoP only",
+          "item_id": 35184,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=35184/primal-attuned-goggles",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gizmo_newgoggles.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Skyshatter Helmet",
+          "source": "Drop: Archimonde (Hyjal Summit)",
+          "item_id": 31012,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31012/skyshatter-helmet",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_97.gif"
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Shoulderpads",
+          "source": "Drop: Mother Shahraz (Black Temple)",
+          "item_id": 31022,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31022/skyshatter-shoulderpads",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_61.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Equilibrium Epaulets",
+          "source": "Drop: Lady Sacrolash & Grand Warlock Alythess (Sunwell Plateau)",
+          "item_id": 34208,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34208/equilibrium-epaulets",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_90.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Shawl of Wonderment",
+          "source": "Drop: Lady Sacrolash & Grand Warlock Alythess (Sunwell Plateau)",
+          "item_id": 34202,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34202/shawl-of-wonderment",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_96.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Living Earth Shoulders",
+          "source": "Profession: Leatherworking - BoP only",
+          "item_id": 32579,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32579/living-earth-shoulders",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_66.gif"
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Shroud of the Highborne",
+          "source": "Drop: Illidan Stormrage (Black Temple)",
+          "item_id": 32524,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32524/shroud-of-the-highborne",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_06.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Tattered Cape of Antonidas",
+          "source": "Drop: Kil'jaeden (Sunwell Plateau)",
+          "item_id": 34242,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34242/tattered-cape-of-antonidas",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_20.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Shroud of Redeemed Souls",
+          "source": "Drop: Lady Sacrolash & Grand Warlock Alythess (Sunwell Plateau)",
+          "item_id": 34205,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34205/shroud-of-redeemed-souls",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_06.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Shroud of the Final Stand",
+          "source": "Drop: Trash Mobs (Black Temple)",
+          "item_id": 34012,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34012/shroud-of-the-final-stand",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_cape_16.gif"
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Sun-Drenched Scale Chestguard",
+          "source": "Profession: Leatherworking - BoP only",
+          "item_id": 34375,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34375/sun-drenched-scale-chestguard",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_mail_04.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Sunglow Vest",
+          "source": "Drop: M'uru (Sunwell Plateau)",
+          "item_id": 34212,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34212/sunglow-vest",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_leather_12.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Garments of Serene Shores",
+          "source": "Drop: M'uru (Sunwell Plateau)",
+          "item_id": 34229,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34229/garments-of-serene-shores",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_chain_11.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Skyshatter Chestguard",
+          "source": "Drop: Illidan Stormrage (Black Temple)",
+          "item_id": 31016,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31016/skyshatter-chestguard",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_chest_mail_04.gif"
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Bracers",
+          "source": "Drop: Kalecgos (Sunwell Plateau)",
+          "item_id": 34438,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34438/skyshatter-bracers",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_02.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Living Earth Bindings",
+          "source": "Profession: Leatherworking - can be purchased on the Auction House",
+          "item_id": 32577,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32577/living-earth-bindings",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_02.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Swiftheal Wraps",
+          "source": "Profession: Tailoring - can be purchased on the Auction House",
+          "item_id": 32584,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32584/swiftheal-wraps",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_13.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Bracers of Renewed Life",
+          "source": "Profession: Leatherworking - can be purchased on the Auction House",
+          "item_id": 32582,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32582/bracers-of-renewed-life",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_bracer_02.gif"
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Botanist's Gloves of Growth",
+          "source": "Drop: Teron Gorefiend (Black Temple)",
+          "item_id": 32328,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32328/botanists-gloves-of-growth",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_24.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Leather Gauntlets of the Sun",
+          "source": "Profession: Leatherworking - can be purchased on the Auction House",
+          "item_id": 34372,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34372/leather-gauntlets-of-the-sun",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_24.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Gauntlets of the Ancient Frostwolf",
+          "source": "Vendor: YrmaDrop: Gauntlets of the Ancient Shadowmoon from Trash Mobs (Sunwell Plateau) & Sunmote",
+          "item_id": 34409,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34409/gauntlets-of-the-ancient-frostwolf",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_52.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Sun-Drenched Scale Gloves",
+          "source": "Profession: Leatherworking - can be purchased on the Auction House",
+          "item_id": 34376,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34376/sun-drenched-scale-gloves",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_gauntlets_61.gif"
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Belt",
+          "source": "Drop: Brutallus (Sunwell Plateau)",
+          "item_id": 34543,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34543/skyshatter-belt",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_13.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Naturalist's Preserving Cinch",
+          "source": "Drop: Supremus (Black Temple)",
+          "item_id": 32258,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32258/naturalists-preserving-cinch",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_22.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Belt of Primal Majesty",
+          "source": "Drop: Gurtogg Bloodboil (Black Temple)",
+          "item_id": 32339,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32339/belt-of-primal-majesty",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_24.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Angelista's Sash",
+          "source": "Drop: Kaz'rogal (Hyjal Summit)",
+          "item_id": 30895,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30895/angelistas-sash",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_belt_08.gif"
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Kilt of Spiritual Reconstruction",
+          "source": "Vendor: YrmaDrop: Chain Links of the Tumultuous Storm from Felmyst (Sunwell Plateau) & Sunmote",
+          "item_id": 34383,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34383/kilt-of-spiritual-reconstruction",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_mail_15.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Skyshatter Leggings",
+          "source": "Drop: The Illidari Council (Black Temple)",
+          "item_id": 31019,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=31019/skyshatter-leggings",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_mail_25.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Runed Scales of Antiquity",
+          "source": "Vendor: Smith Hauthaa / Anwehu (Badges of Justice)",
+          "item_id": 34931,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34931/runed-scales-of-antiquity",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_mail_15.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Leggings of Eternity",
+          "source": "Drop: Archimonde (Hyjal Summit)",
+          "item_id": 30912,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30912/leggings-of-eternity",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pants_cloth_14.gif"
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Boots",
+          "source": "Drop: Felmyst (Sunwell Plateau)",
+          "item_id": 34565,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34565/skyshatter-boots",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_chain_08.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Treads of the Life Path",
+          "source": "Vendor: G'eras (Badges of Justice)",
+          "item_id": 33324,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33324/treads-of-the-life-path",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_chain_13.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Two-toed Sandals",
+          "source": "Drop: Zul'jin (Zul'Aman)",
+          "item_id": 33471,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33471/two-toed-sandals",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_fabric_01.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Guardian's Ringmail Sabatons",
+          "source": "Vendor: Honor Points (Season 4)",
+          "item_id": 35147,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=35147/guardians-ringmail-sabatons",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_boots_plate_09.gif"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Amulet of Flowing Life",
+          "source": "Profession: Jewelcrafting - BoP only",
+          "item_id": 34360,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34360/amulet-of-flowing-life",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_30.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Brooch of Nature's Mercy",
+          "source": "Drop: Akil'zon (Zul'Aman)",
+          "item_id": 33281,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33281/brooch-of-natures-mercy",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_ahnqiraj_03.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Brooch of the Highborne",
+          "source": "Drop: Felmyst (Sunwell Plateau)",
+          "item_id": 34184,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34184/brooch-of-the-highborne",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_44.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Guardian's Pendant of Reprieve",
+          "source": "Vendor: Honor Points (Season 4)",
+          "item_id": 37929,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=37929/guardians-pendant-of-reprieve",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_necklace_36.gif"
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Blessed Band of Karabor",
+          "source": "Drop: Trash Mobs (Black Temple)",
+          "item_id": 32528,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32528/blessed-band-of-karabor",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_35.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Ring of Flowing Life",
+          "source": "Profession: Jewelcrafting - can be purchased on the Auction House",
+          "item_id": 34363,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34363/ring-of-flowing-life",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_35.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Band of Lucent Beams",
+          "source": "Drop: Kalecgos (Sunwell Plateau)",
+          "item_id": 34166,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34166/band-of-lucent-beams",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_57.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Signet of the Quiet Forest",
+          "source": "Drop: Third Timed Chest (Zul'Aman)",
+          "item_id": 33498,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33498/signet-of-the-quiet-forest",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_ring_37.gif"
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Redeemer's Alchemist Stone",
+          "source": "Profession: Alchemy - BoP only",
+          "item_id": 35750,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=35750/redeemers-alchemist-stone",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/classic_spell_nature_healingway.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Eye of Gruul",
+          "source": "Drop: Gruul the Dragonkiller (Gruul's Lair)",
+          "item_id": 28823,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28823/eye-of-gruul",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_unholyfrenzy.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Memento of Tyrande",
+          "source": "Drop: Illidan Stormrage (Black Temple)",
+          "item_id": 32496,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32496/memento-of-tyrande",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_summerfest_fireflower.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Glimmering Naaru Sliver",
+          "source": "Drop: M'uru (Sunwell Plateau)",
+          "item_id": 34430,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34430/glimmering-naaru-sliver",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_jewelry_talisman_17.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Essence of the Martyr",
+          "source": "Vendor: G'eras (Badges of Justice)",
+          "item_id": 29376,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=29376/essence-of-the-martyr",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_valentineperfumebottle.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Direbrew Hops",
+          "source": "Drop: Coren Direbrew (Brewfest Seasonal Event)",
+          "item_id": 38288,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=38288/direbrew-hops",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_herb_08.gif"
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Hammer of Sanctification",
+          "source": "Drop: Kil'jaeden (Sunwell Plateau)",
+          "item_id": 34335,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34335/hammer-of-sanctification",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_72.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Archon's Gavel",
+          "source": "Drop: Lady Sacrolash & Grand Warlock Alythess (Sunwell Plateau)",
+          "item_id": 34199,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34199/archons-gavel",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_71.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Crystal Spire of Karabor",
+          "source": "Drop: Illidan Stormrage (Black Temple)",
+          "item_id": 32500,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32500/crystal-spire-of-karabor",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_56.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Brutal Gladiator's Salvation",
+          "source": "Vendor: Arena Points (Season 4)",
+          "item_id": 35082,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=35082/brutal-gladiators-salvation",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_71.gif"
+        }
+      ],
+      "shields-offhands": [
+        {
+          "rank": "BiS",
+          "name": "Book of Highborne Hymns",
+          "source": "Drop: Lady Sacrolash & Grand Warlock Alythess (Sunwell Plateau)",
+          "item_id": 34206,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34206/book-of-highborne-hymns",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_offhand_sunwell_d_01.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Aegis of Angelic Fortune",
+          "source": "Drop: M'uru (Sunwell Plateau)",
+          "item_id": 34231,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=34231/aegis-of-angelic-fortune",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shield_52.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Bastion of Light",
+          "source": "Drop: Anetheron (Hyjal Summit)",
+          "item_id": 30882,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=30882/bastion-of-light",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shield_38.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Felstone Bulwark",
+          "source": "Drop: Supremus (Black Temple)",
+          "item_id": 32255,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=32255/felstone-bulwark",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shield_38.gif"
+        },
+        {
+          "rank": "BiS",
+          "name": "Enamelled Disc of Mojo",
+          "source": "Drop: Jan'alai (Zul'Aman)",
+          "item_id": 33332,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33332/enamelled-disc-of-mojo",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shield_43.gif"
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Totem of Healing Rains",
+          "source": "Drop: Maiden of Virtue (Karazhan)",
+          "item_id": 28523,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=28523/totem-of-healing-rains",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_giftofthewaterspirit.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Totem of Living Water",
+          "source": "Vendor: G'eras (Badges of Justice)",
+          "item_id": 33505,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=33505/totem-of-living-water",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/spell_frost_summonwaterelemental.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Totem of Spontaneous Regrowth",
+          "source": "Drop: Mennu the Betrayer (Heroic The Slave Pens)",
+          "item_id": 27544,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=27544/totem-of-spontaneous-regrowth",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_protectionformnature.gif"
+        },
+        {
+          "rank": "Option",
+          "name": "Totem of Life",
+          "source": "Drop: Fankriss the Unyielding (Classic - Ahn'Qiraj)",
+          "item_id": 22396,
+          "wowhead_url": "https://www.wowhead.com/tbc/item=22396/totem-of-life",
+          "icon": "https://wow.zamimg.com/images/wow/icons/tiny/inv_relics_totemoflife.gif"
+        }
+      ]
+    }
+  }
+}
