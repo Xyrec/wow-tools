@@ -15,3 +15,5 @@ build-backend = "hatchling.build"
 [project.scripts]
 bis-gear = "bis_gear.check_gear:main"
 bis-parse = "bis_gear.parse_bis:main"
+iv-parse = "bis_gear.parse_icy_veins:main"
+bis-compare = "bis_gear.compare_sources:main"
