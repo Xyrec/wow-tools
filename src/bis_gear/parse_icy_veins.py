@@ -77,8 +77,6 @@ class IcyVeinsParser(HTMLParser):
         self._in_li = False
         self._current_item_id: int | None = None
         self._current_item_name = ""
-        self._current_item_icon: str | None = None
-        self._current_item_href: str | None = None
         self._current_rank = "BiS"  # default, overridden by table type
 
         # Source text collection (everything after item span in <li>)
@@ -116,12 +114,9 @@ class IcyVeinsParser(HTMLParser):
             self._in_li = True
             self._current_item_id = None
             self._current_item_name = ""
-            self._current_item_icon = None
-            self._current_item_href = None
             self._source_text = ""
         elif tag == "a" and self._in_li:
             wowhead = attr.get("data-wowhead", "")
-            href = attr.get("href", "")
             css_class = attr.get("class", "")
             # Only capture item links (not npc/quest/spell links)
             if "item=" in wowhead and css_class in ("q4", "q3", "q2", "q1"):
@@ -129,12 +124,6 @@ class IcyVeinsParser(HTMLParser):
                 if m and self._current_item_id is None:
                     # First item link in this <li> is the actual item
                     self._current_item_id = int(m.group(1))
-                    self._current_item_href = href
-        elif tag == "img" and self._in_li and self._current_item_id is None:
-            # Icon before the first item link
-            src = attr.get("src", "")
-            if src and "spell_icon" in attr.get("class", ""):
-                self._current_item_icon = src
 
     def handle_endtag(self, tag: str):
         if tag == "h3":
@@ -203,11 +192,6 @@ class IcyVeinsParser(HTMLParser):
             "item_id": self._current_item_id,
             "source": " ".join(self._source_text.split()),  # normalize whitespace
         }
-        if self._current_item_href:
-            item["wowhead_url"] = self._current_item_href
-        if self._current_item_icon:
-            item["icon"] = self._current_item_icon
-
         self.results.setdefault(self._current_slot, []).append(item)
 
 
@@ -288,8 +272,6 @@ def main():
     result: dict[str, str | dict] = {}
     if current_phase:
         result["current_phase"] = current_phase
-    result["source"] = "icy-veins"
-
     phase_files = sorted((PROJECT_ROOT / "sources" / "icy-veins").glob("phase-*.html"))
     if not phase_files:
         print("No phase-*.html files found in sources/icy-veins/.")

@@ -34,9 +34,7 @@ class BisTableParser(HTMLParser):
 
         # Item link state (per-row, captured from cell index 1)
         self._row_item_href: str | None = None
-        self._row_item_icon: str | None = None
         self._current_item_href: str | None = None
-        self._current_item_icon: str | None = None
 
         # For slot detection from h3 tags
         self._in_h3 = False
@@ -57,20 +55,16 @@ class BisTableParser(HTMLParser):
             self._cells = []
             self._is_header_row = False
             self._row_item_href = None
-            self._row_item_icon = None
         elif tag == "td" and self._in_row:
             self._in_cell = True
             self._cell_text = ""
             self._current_item_href = None
-            self._current_item_icon = None
             if attr.get("data-background") == "c7":
                 self._is_header_row = True
         elif tag == "a" and self._in_cell:
             href = attr.get("href", "")
             if attr.get("data-entity") == "item" and href:
                 self._current_item_href = href
-        elif tag == "img" and self._in_cell and self._current_item_href:
-            self._current_item_icon = attr.get("src", "")
 
     def handle_endtag(self, tag: str):
         if tag == "h3":
@@ -91,7 +85,6 @@ class BisTableParser(HTMLParser):
             # Capture item link info from the Item column (index 1)
             if cell_index == 1 and self._current_item_href:
                 self._row_item_href = self._current_item_href
-                self._row_item_icon = self._current_item_icon
 
     def handle_data(self, data: str):
         if self._in_h3:
@@ -124,9 +117,7 @@ class BisTableParser(HTMLParser):
 
         # Extract item ID from href
         item_id = None
-        wowhead_url = None
         if self._row_item_href:
-            wowhead_url = self._row_item_href
             m = re.search(r"/item=(\d+)", self._row_item_href)
             if m:
                 item_id = int(m.group(1))
@@ -138,10 +129,6 @@ class BisTableParser(HTMLParser):
         }
         if item_id:
             item["item_id"] = item_id
-        if wowhead_url:
-            item["wowhead_url"] = wowhead_url
-        if self._row_item_icon:
-            item["icon"] = self._row_item_icon
 
         if self._current_slot is not None:
             self.results.setdefault(self._current_slot, []).append(item)

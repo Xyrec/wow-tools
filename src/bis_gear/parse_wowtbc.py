@@ -206,8 +206,6 @@ def main():
     result: dict[str, str | dict] = {}
     if current_phase:
         result["current_phase"] = current_phase
-    result["source"] = "wowtbc.gg"
-
     phase_files = sorted((PROJECT_ROOT / "sources" / "wowtbc").glob("phase-*.html"))
     if not phase_files:
         print("No phase-*.html files found in sources/wowtbc/.")
