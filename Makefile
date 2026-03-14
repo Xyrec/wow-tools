@@ -1,4 +1,4 @@
-.PHONY: lint typecheck format check fix
+.PHONY: lint typecheck format check fix character
 
 lint:
 	uv run ruff check .
@@ -14,3 +14,6 @@ check: lint typecheck
 fix:
 	uv run ruff check . --fix
 	uv run ruff format .
+
+character:
+	notepad data/character.json
