@@ -19,7 +19,6 @@ bis-gear/
     parse_bis.py          # HTML parser — regenerates bis_gear.json from source HTML
   sources/
     wowhead/              # phase-0.html through phase-5.html (wowhead BiS pages)
-    atlasloot/            # AtlasBIStooltips addon data + comparison script
 ```
 
 ## How to Use

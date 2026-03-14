@@ -1,3 +1,0 @@
-sliccNote = LibStub("AceAddon-3.0"):NewAddon("sliccNote")
-local addonName, addonTable = ...
-local MainFrameTwo = CreateFrame("FRAME", addonName .. "Events")

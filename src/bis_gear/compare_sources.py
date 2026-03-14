@@ -1,5 +1,5 @@
 """
-Four-way comparison of BiS lists from Wowhead, Icy Veins, AtlasLoot, and wowtbc.gg.
+Three-way comparison of BiS lists from Wowhead, Icy Veins, and wowtbc.gg.
 
 Shows agreement/disagreement across sources for each slot, with majority vote.
 
@@ -39,8 +39,8 @@ SLOT_ALIASES = {
     "idols": "totems",
 }
 
-SOURCE_LABELS = ["WH", "IV", "AL", "WT"]
-SOURCE_NAMES = ["Wowhead", "Icy Veins", "AtlasLoot", "wowtbc.gg"]
+SOURCE_LABELS = ["WH", "IV", "WT"]
+SOURCE_NAMES = ["Wowhead", "Icy Veins", "wowtbc.gg"]
 
 
 def load_item_db() -> dict[int, dict]:
@@ -72,25 +72,6 @@ def load_phase_source(path: Path, phase: str) -> dict[str, dict[int, str]]:
     return result
 
 
-def load_atlasloot() -> dict[str, dict[int, str]]:
-    """Load AtlasLoot BiS data. Returns {slot: {item_id: rank}}.
-    Rank 1 -> 'BiS', rank > 1 -> 'Option'."""
-    path = PROJECT_ROOT / "sources" / "atlasloot" / "atlas_bis_parsed.json"
-    if not path.exists():
-        return {}
-    data = json.loads(path.read_text(encoding="utf-8"))
-    result: dict[str, dict[int, str]] = {}
-    for slot, items in data.items():
-        canon = normalize_slot(slot)
-        slot_dict = result.setdefault(canon, {})
-        for item in items:
-            iid = item.get("item_id")
-            rank_num = item.get("rank", 99)
-            if iid:
-                slot_dict[iid] = "BiS" if rank_num == 1 else "Option"
-    return result
-
-
 def rank_short(rank: str | None) -> str:
     if rank is None:
         return "-"
@@ -104,9 +85,7 @@ def rank_short(rank: str | None) -> str:
 def vote_label(bis_count: int, total_sources: int) -> str:
     if bis_count == total_sources:
         return "UNANIMOUS BiS"
-    if bis_count >= 3:
-        return "STRONG BiS"
-    if bis_count == 2:
+    if bis_count == total_sources - 1:
         return "MAJORITY BiS"
     if bis_count == 1:
         return "1 says BiS"
@@ -122,11 +101,10 @@ def main():
 
     item_db = load_item_db()
 
-    # Load all 4 sources
+    # Load all 3 sources
     sources = [
         load_phase_source(PROJECT_ROOT / "output" / "bis_gear.json", phase),
         load_phase_source(PROJECT_ROOT / "output" / "iv_bis_gear.json", phase),
-        load_atlasloot(),  # no phase dimension
         load_phase_source(PROJECT_ROOT / "output" / "wtbc_bis_gear.json", phase),
     ]
 
@@ -141,7 +119,7 @@ def main():
     num_sources = len(sources)
     label_header = " ".join(f"{lbl:>2s}" for lbl in SOURCE_LABELS)
 
-    print(f"=== FOUR-WAY BIS COMPARISON ({phase.upper()}) ===")
+    print(f"=== THREE-WAY BIS COMPARISON ({phase.upper()}) ===")
     print(
         "Sources: "
         + ", ".join(f"{lbl} = {name}" for lbl, name in zip(SOURCE_LABELS, SOURCE_NAMES))
@@ -151,7 +129,6 @@ def main():
 
     total_items = 0
     unanimous_bis = 0
-    strong_bis = 0
     majority_bis = 0
     contested_bis = 0
 
@@ -176,9 +153,7 @@ def main():
 
             if bis_count == num_sources:
                 unanimous_bis += 1
-            elif bis_count >= 3:
-                strong_bis += 1
-            elif bis_count == 2:
+            elif bis_count == num_sources - 1:
                 majority_bis += 1
             elif bis_count == 1:
                 contested_bis += 1
@@ -186,21 +161,19 @@ def main():
             total_items += 1
             rows.append((iid, name_for(iid), shorts, label, ilvl_for(iid)))
 
-        # Sort: unanimous first, then strong, majority, contested, then by ilvl desc
+        # Sort: unanimous first, then majority, contested, then by ilvl desc
         def sort_key(
             row: tuple[int, str, list[str], str, int],
         ) -> tuple[int, int]:
             label = row[3]
             if "UNANIMOUS" in label:
                 tier = 0
-            elif "STRONG" in label:
-                tier = 1
             elif "MAJORITY" in label:
-                tier = 2
+                tier = 1
             elif "1 says" in label:
-                tier = 3
+                tier = 2
             else:
-                tier = 4
+                tier = 3
             return (tier, -row[4])
 
         rows.sort(key=sort_key)
@@ -216,9 +189,8 @@ def main():
     # Summary
     print("=== SUMMARY ===")
     print(f"Total unique items across all sources: {total_items}")
-    print(f"Unanimous BiS (all 4 agree): {unanimous_bis}")
-    print(f"Strong BiS (3 of 4 agree): {strong_bis}")
-    print(f"Majority BiS (2 of 4 agree): {majority_bis}")
+    print(f"Unanimous BiS (all 3 agree): {unanimous_bis}")
+    print(f"Majority BiS (2 of 3 agree): {majority_bis}")
     print(f"Contested BiS (only 1 says BiS): {contested_bis}")
 
 
