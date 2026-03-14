@@ -18,8 +18,8 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-# Data files live in the project root (two levels up from src/bis_gear/)
-DATA_DIR = Path(__file__).parent.parent.parent
+# Project root is two levels up from src/bis_gear/
+PROJECT_ROOT = Path(__file__).parent.parent.parent
 
 # Map WoW API slot names to bis_gear.json slot keys.
 SLOT_MAP = {
@@ -43,10 +43,20 @@ SLOT_MAP = {
 }
 
 FACTION_NAMES = [
-    "Honor Hold", "Thrallmar", "Cenarion Expedition", "Lower City",
-    "The Sha'tar", "The Aldor", "The Scryers", "Keepers of Time",
-    "Kurenai", "The Mag'har", "Sporeggar", "The Consortium",
-    "Ashtongue Deathsworn", "The Violet Eye",
+    "Honor Hold",
+    "Thrallmar",
+    "Cenarion Expedition",
+    "Lower City",
+    "The Sha'tar",
+    "The Aldor",
+    "The Scryers",
+    "Keepers of Time",
+    "Kurenai",
+    "The Mag'har",
+    "Sporeggar",
+    "The Consortium",
+    "Ashtongue Deathsworn",
+    "The Violet Eye",
 ]
 
 # Hellfire dungeons give rep for Honor Hold (Alliance) or Thrallmar (Horde).
@@ -77,10 +87,25 @@ DUNGEON_REPUTATION_NEUTRAL = {
 }
 
 # Rep standing thresholds (total rep from start of that standing to cap)
-REP_STANDING_ORDER = ["Hated", "Hostile", "Unfriendly", "Neutral", "Friendly", "Honored", "Revered", "Exalted"]
+REP_STANDING_ORDER = [
+    "Hated",
+    "Hostile",
+    "Unfriendly",
+    "Neutral",
+    "Friendly",
+    "Honored",
+    "Revered",
+    "Exalted",
+]
 REP_STANDING_THRESHOLDS = {
-    "Hated": 36000, "Hostile": 3000, "Unfriendly": 3000, "Neutral": 3000,
-    "Friendly": 6000, "Honored": 12000, "Revered": 21000, "Exalted": 999,
+    "Hated": 36000,
+    "Hostile": 3000,
+    "Unfriendly": 3000,
+    "Neutral": 3000,
+    "Friendly": 6000,
+    "Honored": 12000,
+    "Revered": 21000,
+    "Exalted": 999,
 }
 
 HORDE_RACES = {"Orc", "Troll", "Tauren", "Undead", "Blood Elf"}
@@ -102,11 +127,20 @@ def build_dungeon_reputation(rep_lookup: dict) -> dict[str, str]:
     return result
 
 
-def calc_rep_to_standing(current_standing: str, current_remaining: int,
-                         target_standing: str) -> int | None:
+def calc_rep_to_standing(
+    current_standing: str, current_remaining: int, target_standing: str
+) -> int | None:
     """Calculate total rep needed from current progress to reach target standing."""
-    cur_idx = REP_STANDING_ORDER.index(current_standing) if current_standing in REP_STANDING_ORDER else None
-    tgt_idx = REP_STANDING_ORDER.index(target_standing) if target_standing in REP_STANDING_ORDER else None
+    cur_idx = (
+        REP_STANDING_ORDER.index(current_standing)
+        if current_standing in REP_STANDING_ORDER
+        else None
+    )
+    tgt_idx = (
+        REP_STANDING_ORDER.index(target_standing)
+        if target_standing in REP_STANDING_ORDER
+        else None
+    )
     if cur_idx is None or tgt_idx is None:
         return None
     if cur_idx >= tgt_idx:
@@ -147,7 +181,12 @@ def classify_source(source: str) -> list[str]:
         return ["classic_raid"]
     if "arena" in s or "pvp" in s or "gladiator" in s:
         return ["pvp"]
-    if "profession:" in s or "tailoring" in s or "leatherworking" in s or "blacksmithing" in s:
+    if (
+        "profession:" in s
+        or "tailoring" in s
+        or "leatherworking" in s
+        or "blacksmithing" in s
+    ):
         return ["profession"]
 
     tags = []
@@ -163,9 +202,19 @@ def classify_source(source: str) -> list[str]:
         if "dungeon" not in tags:
             tags.append("dungeon")
     elif "drop:" in s:
-        raid_keywords = ["karazhan", "gruul", "magtheridon", "serpentshrine",
-                         "tempest keep", "hyjal", "black temple", "sunwell",
-                         "zul'aman", "naxxramas", "ahn'qiraj"]
+        raid_keywords = [
+            "karazhan",
+            "gruul",
+            "magtheridon",
+            "serpentshrine",
+            "tempest keep",
+            "hyjal",
+            "black temple",
+            "sunwell",
+            "zul'aman",
+            "naxxramas",
+            "ahn'qiraj",
+        ]
         if not any(rk in s for rk in raid_keywords):
             tags.append("dungeon")
         else:
@@ -202,7 +251,13 @@ def load_character(path: str) -> dict:
     if path == "-":
         data = json.load(sys.stdin)
     else:
-        data = json.loads(Path(path).read_text(encoding="utf-8"))
+        p = Path(path)
+        # If not found at given path, try data/ subdirectory
+        if not p.exists():
+            alt = PROJECT_ROOT / "data" / p.name
+            if alt.exists():
+                p = alt
+        data = json.loads(p.read_text(encoding="utf-8"))
     return data if "character" not in data else data["character"]
 
 
@@ -236,8 +291,13 @@ def lookup_item_rank(item_id: int, bis_slot: str, phase_data: dict) -> str | Non
     return None
 
 
-def get_effective_rank(item_id: int, bis_slot: str, current_phase_data: dict,
-                       phase0_data: dict, current_phase: str):
+def get_effective_rank(
+    item_id: int,
+    bis_slot: str,
+    current_phase_data: dict,
+    phase0_data: dict,
+    current_phase: str,
+):
     """
     Determine an item's effective rank using phase priority:
     1. If listed in current phase -> use that rank & phase
@@ -280,7 +340,7 @@ def score_upgrade(rank: str, phase: str, current_phase: str) -> float:
     item_num = int(phase.split("-")[1]) if "-" in phase else 0
 
     phases_behind = max(0, cur_num - item_num)
-    decay = 0.5 ** phases_behind
+    decay = 0.5**phases_behind
 
     base = 100 if rank == "BiS" else 80
     return base * decay
@@ -306,9 +366,17 @@ def main():
     dungeon_reputation = build_dungeon_reputation(rep_lookup)
 
     # Load BiS data
-    bis_data = json.loads((DATA_DIR / "bis_gear.json").read_text(encoding="utf-8"))
-    current_phase = (DATA_DIR / "current-phase.txt").read_text(encoding="utf-8").strip()
-    phases_to_check = ["phase-0", current_phase] if current_phase != "phase-0" else ["phase-0"]
+    bis_data = json.loads(
+        (PROJECT_ROOT / "output" / "bis_gear.json").read_text(encoding="utf-8")
+    )
+    current_phase = (
+        (PROJECT_ROOT / "data" / "current-phase.txt")
+        .read_text(encoding="utf-8")
+        .strip()
+    )
+    phases_to_check = (
+        ["phase-0", current_phase] if current_phase != "phase-0" else ["phase-0"]
+    )
 
     current_phase_data = bis_data["phases"].get(current_phase, {})
     phase0_data = bis_data["phases"].get("phase-0", {})
@@ -385,7 +453,11 @@ def main():
                     source = bis_item.get("source", "")
                     tags = classify_source(source)
                     # Include dungeon drops, rep vendors, and badge vendors
-                    if "dungeon" not in tags and "reputation" not in tags and "badges" not in tags:
+                    if (
+                        "dungeon" not in tags
+                        and "reputation" not in tags
+                        and "badges" not in tags
+                    ):
                         continue
 
                     seen_item_ids.add(bis_id)
@@ -416,7 +488,9 @@ def main():
                     all_upgrades.append(upgrade)
 
             if not slot_upgrades:
-                no_upgrade_slots.append((slot_label, item_name, eq_rank or "Not on list"))
+                no_upgrade_slots.append(
+                    (slot_label, item_name, eq_rank or "Not on list")
+                )
 
     # --- Deduplicate ring/trinket upgrades in scoring ---
     # For shared slots (rings, trinkets), the same upgrade item_id may appear
@@ -475,15 +549,21 @@ def main():
             entry["rep_vendor_items"] = rep_needs[faction]
             rep_score = sum(vi["score"] for vi in rep_needs[faction])
             entry["score"] += rep_score
-            entry["score_breakdown"].append(f"rep toward {faction} vendor items: +{rep_score:.0f}")
+            entry["score_breakdown"].append(
+                f"rep toward {faction} vendor items: +{rep_score:.0f}"
+            )
         if entry["badges"]:
             # Badge bonus = 10% of total badge vendor item value (meaningful but not dominant)
-            badge_items = [u for u in deduped_upgrades_for_scoring if "badges" in u["tags"]]
+            badge_items = [
+                u for u in deduped_upgrades_for_scoring if "badges" in u["tags"]
+            ]
             if badge_items:
                 badge_bonus = round(sum(b["score"] for b in badge_items) * 0.1)
                 if badge_bonus > 0:
                     entry["score"] += badge_bonus
-                    entry["score_breakdown"].append(f"badges toward vendor items: +{badge_bonus}")
+                    entry["score_breakdown"].append(
+                        f"badges toward vendor items: +{badge_bonus}"
+                    )
 
     # Promote normal dungeons to heroic if rep synergy exists
     for key, entry in list(dungeon_actions.items()):
@@ -492,15 +572,26 @@ def main():
             if heroic_key not in dungeon_actions:
                 faction = entry["rep_faction"]
                 if faction and faction in rep_needs:
-                    badge_items = [u for u in deduped_upgrades_for_scoring if "badges" in u["tags"]]
-                    badge_bonus = round(sum(b["score"] for b in badge_items) * 0.1) if badge_items else 0
+                    badge_items = [
+                        u for u in deduped_upgrades_for_scoring if "badges" in u["tags"]
+                    ]
+                    badge_bonus = (
+                        round(sum(b["score"] for b in badge_items) * 0.1)
+                        if badge_items
+                        else 0
+                    )
                     heroic_entry = {
                         "key": heroic_key,
                         "dungeon": entry["dungeon"],
                         "heroic": True,
                         "drops": list(entry["drops"]),  # copy to avoid aliasing
                         "score": entry["score"] + badge_bonus,
-                        "score_breakdown": list(entry["score_breakdown"]) + ([f"badges toward vendor items: +{badge_bonus}"] if badge_bonus > 0 else []),
+                        "score_breakdown": list(entry["score_breakdown"])
+                        + (
+                            [f"badges toward vendor items: +{badge_bonus}"]
+                            if badge_bonus > 0
+                            else []
+                        ),
                         "rep_faction": faction,
                         "rep_vendor_items": rep_needs[faction],
                         "badges": True,
@@ -515,21 +606,27 @@ def main():
             continue
         dungeons_for_rep = [d for d, f in dungeon_reputation.items() if f == faction]
         total_score = sum(i["score"] for i in items)
-        rep_actions.append({
-            "faction": faction,
-            "items": items,
-            "rep_info": rep_info,
-            "dungeons_for_rep": dungeons_for_rep,
-            "score": total_score,
-        })
+        rep_actions.append(
+            {
+                "faction": faction,
+                "items": items,
+                "rep_info": rep_info,
+                "dungeons_for_rep": dungeons_for_rep,
+                "score": total_score,
+            }
+        )
 
-    sorted_dungeons = sorted(dungeon_actions.values(), key=lambda x: x["score"], reverse=True)
+    sorted_dungeons = sorted(
+        dungeon_actions.values(), key=lambda x: x["score"], reverse=True
+    )
     sorted_rep = sorted(rep_actions, key=lambda x: x["score"], reverse=True)
 
     # --- Output ---
     cp = pretty_phase(current_phase)
-    print(f"Character: {char.get('name', '?')} ({char.get('class', '?')}) "
-          f"-- Checking against: {', '.join(pretty_phase(p) for p in phases_to_check)}")
+    print(
+        f"Character: {char.get('name', '?')} ({char.get('class', '?')}) "
+        f"-- Checking against: {', '.join(pretty_phase(p) for p in phases_to_check)}"
+    )
     print(f"   Current phase: {cp} (authoritative) | Phase 0 (fallback)\n")
 
     # Current phase BiS
@@ -575,14 +672,18 @@ def main():
                 else:
                     rep_tag = f" +{entry['rep_faction']} rep"
 
-            print(f"\n  #{i}  {entry['key']}  (score: {entry['score']:.0f}){badge_tag}{rep_tag}")
+            print(
+                f"\n  #{i}  {entry['key']}  (score: {entry['score']:.0f}){badge_tag}{rep_tag}"
+            )
             # Score breakdown
             print(f"       Score: {' | '.join(entry['score_breakdown'])}")
 
             for drop in entry["drops"]:
                 p0_tag = " [Phase 0 only]" if drop["phase0_only"] else ""
                 rank_tag = f"{drop['rank']}{p0_tag}"
-                print(f"       [{rank_tag:16s}]  {drop['name']}  ({drop['slot']} -- replaces {drop['current_item']})")
+                print(
+                    f"       [{rank_tag:16s}]  {drop['name']}  ({drop['slot']} -- replaces {drop['current_item']})"
+                )
 
             if entry["rep_vendor_items"]:
                 print("       Also earns rep toward:")
@@ -597,7 +698,9 @@ def main():
         print("=== REPUTATION GOALS ===")
         for entry in sorted_rep:
             ri = entry["rep_info"]
-            print(f"\n  {entry['faction']}  (You: {ri['standing']}, {ri['remainingRep']:,} rep to next tier)")
+            print(
+                f"\n  {entry['faction']}  (You: {ri['standing']}, {ri['remainingRep']:,} rep to next tier)"
+            )
             for item in entry["items"]:
                 p0_tag = " [Phase 0 only]" if item["phase0_only"] else ""
                 rank_tag = f"{item['rank']}{p0_tag}"
@@ -605,12 +708,16 @@ def main():
                 req = item.get("required_standing")
                 rep_detail = ""
                 if req and ri:
-                    total = calc_rep_to_standing(ri["standing"], ri["remainingRep"], req)
+                    total = calc_rep_to_standing(
+                        ri["standing"], ri["remainingRep"], req
+                    )
                     if total is not None and total > 0:
                         rep_detail = f"  -- need {req}, ~{total:,} rep to go"
                     elif total == 0:
                         rep_detail = f"  -- need {req}, READY TO BUY"
-                print(f"    [{rank_tag:16s}]  {item['name']}  ({item['slot']} -- replaces {item['current_item']}){rep_detail}")
+                print(
+                    f"    [{rank_tag:16s}]  {item['name']}  ({item['slot']} -- replaces {item['current_item']}){rep_detail}"
+                )
             if entry["dungeons_for_rep"]:
                 print(f"    Grind via: {', '.join(entry['dungeons_for_rep'])}")
         print()
@@ -629,7 +736,11 @@ def main():
             rank_note = f" [{current_rank}]" if current_rank != "Not on list" else ""
             print(f"\n  {slot}: {current}{rank_note}")
             for up in items_in_slot:
-                icon = "D" if "dungeon" in up["tags"] else ("R" if "reputation" in up["tags"] else "B")
+                icon = (
+                    "D"
+                    if "dungeon" in up["tags"]
+                    else ("R" if "reputation" in up["tags"] else "B")
+                )
                 heroic = " (H)" if "heroic" in up["tags"] else ""
                 p0_tag = " [Phase 0 only]" if up["phase0_only"] else ""
                 rank_label = f"[{up['rank']}{p0_tag}]"
@@ -638,7 +749,9 @@ def main():
                     ri = up["rep_info"]
                     req = up.get("required_standing")
                     if req:
-                        total = calc_rep_to_standing(ri["standing"], ri["remainingRep"], req)
+                        total = calc_rep_to_standing(
+                            ri["standing"], ri["remainingRep"], req
+                        )
                         if total is not None and total > 0:
                             line += f"  (need {req}, ~{total:,} rep)"
                         elif total == 0:
@@ -656,7 +769,13 @@ def main():
         print()
 
     # Summary
-    total = len(current_bis) + len(current_option) + len(old_bis) + len(old_option) + len(not_listed_slots)
+    total = (
+        len(current_bis)
+        + len(current_option)
+        + len(old_bis)
+        + len(old_option)
+        + len(not_listed_slots)
+    )
     print(f"Summary: {total} slots total")
     print(f"  {cp} BiS: {len(current_bis)}")
     print(f"  {cp} Option: {len(current_option)}")

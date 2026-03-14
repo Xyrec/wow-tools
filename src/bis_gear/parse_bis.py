@@ -12,7 +12,7 @@ import sys
 from html.parser import HTMLParser
 from pathlib import Path
 
-DATA_DIR = Path(__file__).parent.parent.parent
+PROJECT_ROOT = Path(__file__).parent.parent.parent
 
 
 class BisTableParser(HTMLParser):
@@ -104,7 +104,11 @@ class BisTableParser(HTMLParser):
             return None
         # Skip non-slot sections
         skip = {"aldor-vs-scryer", "best-in-slot-gear", "changelog"}
-        if h3_id in skip or h3_id.startswith("best-in-slot") or h3_id.startswith("other-"):
+        if (
+            h3_id in skip
+            or h3_id.startswith("best-in-slot")
+            or h3_id.startswith("other-")
+        ):
             return None
         return h3_id
 
@@ -149,22 +153,26 @@ def parse_phase_file(filepath: Path) -> dict[str, list[dict]]:
 
 
 def main():
-    output_path = DATA_DIR / "bis_gear.json"
+    output_path = PROJECT_ROOT / "output" / "bis_gear.json"
     if "--output" in sys.argv:
         idx = sys.argv.index("--output")
         if idx + 1 < len(sys.argv):
             output_path = Path(sys.argv[idx + 1])
 
     # Read current phase
-    current_phase_file = DATA_DIR / "current-phase.txt"
-    current_phase = current_phase_file.read_text(encoding="utf-8").strip() if current_phase_file.exists() else None
+    current_phase_file = PROJECT_ROOT / "data" / "current-phase.txt"
+    current_phase = (
+        current_phase_file.read_text(encoding="utf-8").strip()
+        if current_phase_file.exists()
+        else None
+    )
 
     # Parse all phase files
     result = {}
     if current_phase:
         result["current_phase"] = current_phase
 
-    phase_files = sorted((DATA_DIR / "sources" / "wowhead").glob("phase-*.html"))
+    phase_files = sorted((PROJECT_ROOT / "sources" / "wowhead").glob("phase-*.html"))
     if not phase_files:
         print("No phase-*.html files found.")
         sys.exit(1)
@@ -178,7 +186,9 @@ def main():
 
     result["phases"] = phases
 
-    output_path.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
+    output_path.write_text(
+        json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
     print(f"\nWrote {output_path} with {len(phases)} phases.")
     for phase, slots in phases.items():
         total_items = sum(len(items) for items in slots.values())

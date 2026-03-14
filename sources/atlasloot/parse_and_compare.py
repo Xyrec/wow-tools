@@ -17,9 +17,21 @@ PROJECT_DIR = SCRIPT_DIR.parent.parent
 # The rank resets to "1" at each new slot.
 
 SLOT_NAMES = [
-    "head", "shoulders", "back", "chest", "wrists", "hands",
-    "waist", "legs", "feet", "neck", "rings", "trinkets",
-    "weapons", "offhands", "totems"
+    "head",
+    "shoulders",
+    "back",
+    "chest",
+    "wrists",
+    "hands",
+    "waist",
+    "legs",
+    "feet",
+    "neck",
+    "rings",
+    "trinkets",
+    "weapons",
+    "offhands",
+    "totems",
 ]
 
 
@@ -49,7 +61,9 @@ def parse_lua_bis(filepath: Path) -> dict[str, list[dict]]:
     if current_slot:
         slots_data.append(current_slot)
 
-    print(f"Found {len(slots_data)} slots with {sum(len(s) for s in slots_data)} total items")
+    print(
+        f"Found {len(slots_data)} slots with {sum(len(s) for s in slots_data)} total items"
+    )
 
     # Map to slot names
     result = {}
@@ -130,10 +144,14 @@ def compare(atlas_data: dict, our_phases: dict):
             name = our_names.get(iid, f"(unknown item {iid})")
             if iid in our_slot:
                 our_label = ", ".join(our_slot[iid])
-                print(f"  MATCH    Atlas #{atlas_rank}  ID:{iid:5d}  {name:40s}  Ours: {our_label}")
+                print(
+                    f"  MATCH    Atlas #{atlas_rank}  ID:{iid:5d}  {name:40s}  Ours: {our_label}"
+                )
                 total_matched += 1
             else:
-                print(f"  ATLAS    Atlas #{atlas_rank}  ID:{iid:5d}  {name:40s}  ** NOT in our data **")
+                print(
+                    f"  ATLAS    Atlas #{atlas_rank}  ID:{iid:5d}  {name:40s}  ** NOT in our data **"
+                )
                 total_atlas_only += 1
 
         # Items in our data but not in AtlasLoot for this slot
@@ -141,11 +159,13 @@ def compare(atlas_data: dict, our_phases: dict):
             if iid not in atlas_ids:
                 name = our_names.get(iid, f"(unknown item {iid})")
                 label = ", ".join(labels)
-                print(f"  OURS     ID:{iid:5d}  {name:40s}  {label}  ** NOT in AtlasLoot **")
+                print(
+                    f"  OURS     ID:{iid:5d}  {name:40s}  {label}  ** NOT in AtlasLoot **"
+                )
                 total_ours_only += 1
 
     print(f"\n{'=' * 80}")
-    print(f"SUMMARY")
+    print("SUMMARY")
     print(f"  AtlasLoot total items: {total_atlas}")
     print(f"  Matched in both:       {total_matched}")
     print(f"  AtlasLoot only:        {total_atlas_only}")

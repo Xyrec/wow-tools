@@ -9,9 +9,11 @@ Compares a WoW TBC Resto Shaman's equipped gear against Best-in-Slot (BiS) lists
 ```
 bis-gear/
   pyproject.toml          # Python project config with CLI entry points
-  current-phase.txt       # Single line like "phase-1" — which phase to check against
-  bis_gear.json           # Generated BiS data (all phases), output of bis-parse
-  character.json          # User's character data (paste updated exports here)
+  data/
+    character.json        # User's character data (paste updated exports here)
+    current-phase.txt     # Single line like "phase-1" — which phase to check against
+  output/
+    bis_gear.json         # Generated BiS data (all phases), output of bis-parse
   src/bis_gear/           # Python package
     check_gear.py         # Main tool — compares gear against BiS lists
     parse_bis.py          # HTML parser — regenerates bis_gear.json from source HTML
@@ -96,7 +98,7 @@ Items are deduplicated across phases and across shared slots (rings, trinkets). 
    - Call out any normal-mode dungeon drops (no heroic key needed) as easy wins.
    - **IMPORTANT: Always specify which phase an item's rank comes from.** Items marked `[Phase 0 only]` in the script output are outdated — they were BiS/Option in Phase 0 but are NOT on the current phase's list. Never call something just "BiS" or "Option" without saying which phase. For example, say "Phase 1 BiS wrists" or "Phase 0 only Option (outdated)" — not just "BiS wrists" or "an Option".
 3. Do NOT read `bis_gear.json` or the source code manually — the script handles all the logic.
-4. If the user pastes character JSON directly in chat instead of updating `character.json`, save it to `character.json` first, then run the script.
+4. If the user pastes character JSON directly in chat instead of updating `character.json`, save it to `data/character.json` first, then run the script.
 
 ## Slot Mapping
 
