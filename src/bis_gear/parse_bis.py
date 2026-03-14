@@ -20,7 +20,7 @@ class BisTableParser(HTMLParser):
 
     def __init__(self):
         super().__init__()
-        self.results: dict[str, list[dict]] = {}
+        self.results: dict[str, list[dict[str, str | int]]] = {}
 
         # Tracking state
         self._current_slot: str | None = None
@@ -131,7 +131,7 @@ class BisTableParser(HTMLParser):
             if m:
                 item_id = int(m.group(1))
 
-        item = {
+        item: dict[str, str | int] = {
             "rank": rank,
             "name": item_name,
             "source": " ".join(source.split()),  # normalize whitespace
@@ -143,10 +143,11 @@ class BisTableParser(HTMLParser):
         if self._row_item_icon:
             item["icon"] = self._row_item_icon
 
-        self.results.setdefault(self._current_slot, []).append(item)
+        if self._current_slot is not None:
+            self.results.setdefault(self._current_slot, []).append(item)
 
 
-def parse_phase_file(filepath: Path) -> dict[str, list[dict]]:
+def parse_phase_file(filepath: Path) -> dict[str, list[dict[str, str | int]]]:
     parser = BisTableParser()
     parser.feed(filepath.read_text(encoding="utf-8"))
     return parser.results
