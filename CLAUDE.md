@@ -34,6 +34,18 @@ echo '{"character": {...}}' | uv run bis-gear -
 uv run bis-parse
 ```
 
+## Development
+
+```bash
+make check      # Run ruff lint + ty type check (must pass before commit)
+make fix        # Auto-fix lint issues + format
+make lint       # Ruff lint only
+make typecheck  # ty type check only
+make format     # Ruff format only
+```
+
+A Claude Code pre-commit hook runs `ruff check`, `ty check`, and `ruff format` automatically before every commit. Commits are blocked if lint or type errors exist. Formatting is applied and staged automatically if checks pass.
+
 ### Expected Input Format
 
 The character JSON should have this structure (top-level `"character"` wrapper is optional):
