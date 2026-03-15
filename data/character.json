@@ -203,10 +203,10 @@
         "factions": [
           {
             "name": "Lower City",
-            "standing": "Honored",
-            "currentRep": 6579,
-            "requiredRep": 12000,
-            "remainingRep": 5421
+            "standing": "Revered",
+            "currentRep": 60,
+            "requiredRep": 21000,
+            "remainingRep": 20940
           },
           {
             "name": "The Aldor",
