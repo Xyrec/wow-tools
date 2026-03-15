@@ -12,6 +12,7 @@ bis-gear/
   data/
     character.json        # User's character data (paste updated exports here)
     current-phase.txt     # Single line like "phase-1" — which phase to check against
+    soft-reserves.txt     # Soft-reserve counts per raid (0 = master looter)
   output/
     bis_gear.json         # Generated BiS data (all phases), output of bis-parse
   src/bis_gear/           # Python package
@@ -86,10 +87,26 @@ The script outputs these sections in order:
    Shows what drops in that dungeon, and what reputation vendor items the run also earns progress toward.
 6. **Reputation Goals** — Factions to grind, what vendor items they unlock, total rep needed to the required standing (e.g. "need Exalted, ~8,415 rep to go"), and which dungeons give that rep.
 7. **All Upgrades by Slot** — Full per-slot breakdown tagged `[D]` (dungeon), `[R]` (reputation), or `[B]` (badges), with `(H)` for heroic-only. Shows rep progress for reputation items.
-8. **No Dungeon/Rep Upgrade** — Slots needing raids, crafting, world bosses, etc.
-9. **Summary** — Slot counts by tier and upgrade availability.
+8. **Raid Upgrades** — Raid BiS/Option items grouped by raid instance (or grouped raids like Gruul+Mag). Shows soft-reserve count from `data/soft-reserves.txt` (0 = "master looter", N = "N soft reserves"). Items sorted by score within each raid.
+9. **No Dungeon/Rep/Raid Upgrade** — Slots needing crafting, world bosses, etc.
+10. **Summary** — Slot counts by tier and upgrade availability (dungeon/rep and raid counted separately).
 
-Items are deduplicated across phases and across shared slots (rings, trinkets). Items already equipped in another slot are excluded from upgrade recommendations. World drops, classic raids, PvP, and profession-only items are filtered out of the upgrade list. The script auto-detects Alliance/Horde based on reputation data for Hellfire dungeon faction mapping.
+Items are deduplicated across phases and across shared slots (rings, trinkets). Items already equipped in another slot are excluded from upgrade recommendations. World drops, classic raids, PvP, and profession-only items are filtered out of the upgrade list. Raid items (Karazhan, Gruul's Lair, etc.) are shown in their own section. The script auto-detects Alliance/Horde based on reputation data for Hellfire dungeon faction mapping.
+
+### Soft-Reserve Config
+
+The file `data/soft-reserves.txt` controls soft-reserve counts per raid. Format:
+
+```
+# Lines starting with # are comments
+karazhan=2
+gruuls-lair+magtheridons-lair=1    # + groups raids sharing an SR pool
+serpentshrine-cavern=0              # 0 = master looter (no SR info shown)
+```
+
+- Use `+` to group raids that share a soft-reserve pool (e.g. Gruul+Mag run together with 1 shared SR).
+- A raid tag must not appear both individually and in a group (the script errors if it does).
+- All TBC and WotLK raids are listed with available tags shown in comments.
 
 ## When the User Asks to Check Gear
 
@@ -99,6 +116,7 @@ Items are deduplicated across phases and across shared slots (rings, trinkets). 
    - The **top 3 priority dungeons** from the ranked list — explain *why* each is high value (e.g. "Heroic Old Hillsbrad drops 2 upgrades AND gives Keepers of Time rep toward your BiS wrist").
    - Any reputation goals that are close to completion (small remaining rep).
    - Call out any normal-mode dungeon drops (no heroic key needed) as easy wins.
+   - Highlight notable **raid upgrades** — mention the raid instance, how many soft reserves the user has, and the highest-value items. If SR count is 0, note it's master looter.
    - **IMPORTANT: Always specify which phase an item's rank comes from.** Items marked `[Phase 0 only]` in the script output are outdated — they were BiS/Option in Phase 0 but are NOT on the current phase's list. Never call something just "BiS" or "Option" without saying which phase. For example, say "Phase 1 BiS wrists" or "Phase 0 only Option (outdated)" — not just "BiS wrists" or "an Option".
 3. Do NOT read `bis_gear.json` or the source code manually — the script handles all the logic.
 4. If the user pastes character JSON directly in chat instead of updating `character.json`, save it to `data/character.json` first, then run the script.

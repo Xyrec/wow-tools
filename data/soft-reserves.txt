@@ -1,0 +1,20 @@
+# The Burning Crusade
+# Available tags: karazhan, gruuls-lair, magtheridons-lair, serpentshrine-cavern, tempest-keep, hyjal-summit, black-temple, zulaman, sunwell-plateau
+karazhan=2
+gruuls-lair+magtheridons-lair=1
+serpentshrine-cavern=0
+tempest-keep=0
+hyjal-summit=0
+black-temple=0
+zulaman=0
+sunwell-plateau=0
+
+# Wrath of the Lich King
+# Available tags: naxxramas, obsidian-sanctum, eye-of-eternity, ulduar, trial-of-the-crusader, onyxias-lair, icecrown-citadel, ruby-sanctum, vault-of-archavon
+naxxramas=0
+obsidian-sanctum+eye-of-eternity=0
+ulduar=0
+trial-of-the-crusader+onyxias-lair=0
+icecrown-citadel=0
+ruby-sanctum=0
+vault-of-archavon=0

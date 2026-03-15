@@ -109,6 +109,7 @@ REP_STANDING_THRESHOLDS = {
 }
 
 RAID_KEYWORDS = [
+    # TBC
     "karazhan",
     "gruul",
     "magtheridon",
@@ -118,9 +119,61 @@ RAID_KEYWORDS = [
     "black temple",
     "sunwell",
     "zul'aman",
+    # WotLK
     "naxxramas",
-    "ahn'qiraj",
+    "obsidian sanctum",
+    "eye of eternity",
+    "ulduar",
+    "trial of the crusader",
+    "onyxia",
+    "icecrown",
+    "ruby sanctum",
+    "vault of archavon",
 ]
+
+# Map RAID_KEYWORDS substrings to soft-reserve config tags.
+RAID_KEYWORD_TO_TAG = {
+    "karazhan": "karazhan",
+    "gruul": "gruuls-lair",
+    "magtheridon": "magtheridons-lair",
+    "serpentshrine": "serpentshrine-cavern",
+    "tempest keep": "tempest-keep",
+    "hyjal": "hyjal-summit",
+    "black temple": "black-temple",
+    "sunwell": "sunwell-plateau",
+    "zul'aman": "zulaman",
+    "naxxramas": "naxxramas",
+    "obsidian sanctum": "obsidian-sanctum",
+    "eye of eternity": "eye-of-eternity",
+    "ulduar": "ulduar",
+    "trial of the crusader": "trial-of-the-crusader",
+    "onyxia": "onyxias-lair",
+    "icecrown": "icecrown-citadel",
+    "ruby sanctum": "ruby-sanctum",
+    "vault of archavon": "vault-of-archavon",
+}
+
+# Pretty names for raid config tags.
+RAID_TAG_PRETTY_NAMES = {
+    "karazhan": "Karazhan",
+    "gruuls-lair": "Gruul's Lair",
+    "magtheridons-lair": "Magtheridon's Lair",
+    "serpentshrine-cavern": "Serpentshrine Cavern",
+    "tempest-keep": "Tempest Keep",
+    "hyjal-summit": "Hyjal Summit",
+    "black-temple": "Black Temple",
+    "zulaman": "Zul'Aman",
+    "sunwell-plateau": "Sunwell Plateau",
+    "naxxramas": "Naxxramas",
+    "obsidian-sanctum": "Obsidian Sanctum",
+    "eye-of-eternity": "Eye of Eternity",
+    "ulduar": "Ulduar",
+    "trial-of-the-crusader": "Trial of the Crusader",
+    "onyxias-lair": "Onyxia's Lair",
+    "icecrown-citadel": "Icecrown Citadel",
+    "ruby-sanctum": "Ruby Sanctum",
+    "vault-of-archavon": "Vault of Archavon",
+}
 
 
 # ---------------------------------------------------------------------------
@@ -286,7 +339,7 @@ def classify_source(source: str) -> list[str]:
     if "world boss" in s:
         return ["world_boss"]
     if "classic -" in s or "classic\u2014" in s:
-        return ["classic_raid"]
+        return ["classic"]
     if "arena" in s or "pvp" in s or "gladiator" in s:
         return ["pvp"]
     if (
@@ -366,6 +419,76 @@ def pretty_phase(phase_key: str) -> str:
     """Convert 'phase-1' to 'Phase 1' for display."""
     m = re.match(r"phase-(\d+)", phase_key)
     return f"Phase {m.group(1)}" if m else phase_key
+
+
+def load_soft_reserves(
+    path: Path | None = None,
+) -> tuple[dict[str, int], dict[str, str]]:
+    """Load soft-reserve config from data/soft-reserves.txt.
+
+    Returns (sr_counts, sr_groups):
+      sr_counts: raid-tag -> SR count  (each tag in a group gets the count)
+      sr_groups: raid-tag -> group key  (e.g. "gruuls-lair" -> "gruuls-lair+magtheridons-lair")
+    """
+    if path is None:
+        path = PROJECT_ROOT / "data" / "soft-reserves.txt"
+    if not path.exists():
+        return {}, {}
+
+    sr_counts: dict[str, int] = {}
+    sr_groups: dict[str, str] = {}
+
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        if "=" not in line:
+            continue
+        key, _, val = line.partition("=")
+        key = key.strip()
+        val_raw = val.partition("#")[0].strip()
+        try:
+            count = int(val_raw)
+        except ValueError:
+            print(
+                f"Error: invalid value '{val_raw}' in soft-reserves.txt "
+                f"(expected integer) on line: {line}",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+        if count < 0:
+            print(
+                f"Error: negative SR count '{count}' in soft-reserves.txt "
+                f"on line: {line}",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+        tags = [t.strip() for t in key.split("+")]
+
+        for tag in tags:
+            if tag in sr_counts:
+                print(
+                    f"Error: raid tag '{tag}' appears multiple times in "
+                    f"soft-reserves.txt (check for duplicate or conflicting groups)",
+                    file=sys.stderr,
+                )
+                sys.exit(1)
+            sr_counts[tag] = count
+            sr_groups[tag] = key
+
+    return sr_counts, sr_groups
+
+
+def match_raid_tag(source: str) -> str | None:
+    """Map a source string to a soft-reserve config tag.
+
+    E.g. "Drop: Prince Malchezaar (Karazhan)" -> "karazhan"
+    """
+    s = source.lower()
+    for keyword, tag in RAID_KEYWORD_TO_TAG.items():
+        if keyword in s:
+            return tag
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -562,7 +685,7 @@ def _find_slot_upgrades(
     rep_lookup: dict,
     item_db: dict[int, dict],
 ) -> list[dict]:
-    """Find all dungeon/rep/badge upgrades for a single equipped slot."""
+    """Find all dungeon/rep/badge/raid upgrades for a single equipped slot."""
     slot_upgrades: list[dict] = []
     seen_item_ids: set[int] = set()
 
@@ -588,6 +711,7 @@ def _find_slot_upgrades(
                 "dungeon" not in tags
                 and "reputation" not in tags
                 and "badges" not in tags
+                and "raid" not in tags
             ):
                 continue
 
@@ -855,11 +979,94 @@ def print_slot_breakdown(all_upgrades: list[dict]):
     print()
 
 
+def print_raid_upgrades(
+    raid_upgrades: list[dict],
+    sr_counts: dict[str, int],
+    sr_groups: dict[str, str],
+):
+    """Print raid upgrades grouped by raid instance with soft-reserve info."""
+    if not raid_upgrades:
+        return
+
+    # Group by SR group key (so grouped raids like Gruul+Mag appear together)
+    group_items: dict[str, list[dict]] = defaultdict(list)
+    for up in raid_upgrades:
+        tag = match_raid_tag(up["source"])
+        if tag:
+            group_key = sr_groups.get(tag, tag)
+            group_items[group_key].append(up)
+        else:
+            group_items["unknown"].append(up)
+
+    # Deduplicate: show each item once (highest-score slot wins for shared slots)
+    seen_ids: set[int] = set()
+    for group_key in group_items:
+        deduped: list[dict] = []
+        for up in group_items[group_key]:
+            if up["item_id"] not in seen_ids:
+                seen_ids.add(up["item_id"])
+                deduped.append(up)
+        group_items[group_key] = deduped
+
+    # Emit all unknown-source warnings to stderr upfront
+    if "unknown" in group_items:
+        for up in group_items["unknown"]:
+            print(
+                f"WARNING: unrecognized raid source: {up['source']}",
+                file=sys.stderr,
+            )
+
+    print("=== RAID UPGRADES ===")
+    for group_key, items in group_items.items():
+        if not items:
+            continue
+        if group_key == "unknown":
+            print("\n  Unknown Raid  (SR: unknown)")
+            items.sort(key=lambda x: x["score"], reverse=True)
+            for up in items:
+                rank_label = f"[{format_rank_tag(up)}]"
+                armor = format_armor_warning(up.get("item_info"))
+                extra = format_item_extras(up.get("item_info"))
+                print(
+                    f"    {rank_label:18s} {up['name']}{armor}{extra}  "
+                    f"({up['slot']} -- replaces {up['current_item']})  --  {up['source']}"
+                )
+            continue
+
+        # Build pretty header from group key
+        tags = [t.strip() for t in group_key.split("+")]
+        pretty_names = [RAID_TAG_PRETTY_NAMES.get(t, t) for t in tags]
+        header = " + ".join(pretty_names)
+
+        # SR info from the first tag in the group (all share the same count)
+        sr_count = sr_counts.get(tags[0], 0)
+        if sr_count == 0:
+            sr_label = "master looter"
+        elif sr_count == 1:
+            sr_label = "1 soft reserve"
+        else:
+            sr_label = f"{sr_count} soft reserves"
+
+        print(f"\n  {header}  ({sr_label})")
+
+        # Sort by score descending within each raid group
+        items.sort(key=lambda x: x["score"], reverse=True)
+        for up in items:
+            rank_label = f"[{format_rank_tag(up)}]"
+            armor = format_armor_warning(up.get("item_info"))
+            extra = format_item_extras(up.get("item_info"))
+            print(
+                f"    {rank_label:18s} {up['name']}{armor}{extra}  "
+                f"({up['slot']} -- replaces {up['current_item']})  --  {up['source']}"
+            )
+    print()
+
+
 def print_no_upgrade(no_upgrade_slots: list[tuple[str, str, str, str]]):
-    """Print slots with no dungeon/rep upgrade available."""
+    """Print slots with no dungeon/rep/raid upgrade available."""
     if not no_upgrade_slots:
         return
-    print("=== NO DUNGEON/REP UPGRADE (craft, raid, or world boss needed) ===")
+    print("=== NO DUNGEON/REP/RAID UPGRADE (craft or world boss needed) ===")
     for slot, name, rank, extras in no_upgrade_slots:
         print(f"  {slot:12s}  {name} [{rank}]{extras}")
     print()
@@ -872,11 +1079,15 @@ def print_summary(
     old_bis: list,
     old_option: list,
     not_listed_slots: list,
-    all_upgrades: list,
+    dungeon_upgrades: list,
+    raid_upgrades: list,
     no_upgrade_slots: list,
 ):
     """Print the summary section."""
-    slot_count = len({up["slot"] for up in all_upgrades}) if all_upgrades else 0
+    dungeon_slot_count = (
+        len({up["slot"] for up in dungeon_upgrades}) if dungeon_upgrades else 0
+    )
+    raid_slot_count = len({up["slot"] for up in raid_upgrades}) if raid_upgrades else 0
     total = (
         len(current_bis)
         + len(current_option)
@@ -891,10 +1102,12 @@ def print_summary(
         print(f"  Phase 0 only (outdated): {len(old_bis) + len(old_option)}")
     if not_listed_slots:
         print(f"  Not on any list: {len(not_listed_slots)}")
-    if slot_count:
-        print(f"  Slots with dungeon/rep upgrades: {slot_count}")
+    if dungeon_slot_count:
+        print(f"  Slots with dungeon/rep upgrades: {dungeon_slot_count}")
+    if raid_slot_count:
+        print(f"  Slots with raid upgrades: {raid_slot_count}")
     if no_upgrade_slots:
-        print(f"  Slots needing raid/craft/other: {len(no_upgrade_slots)}")
+        print(f"  Slots needing craft/other: {len(no_upgrade_slots)}")
 
 
 # ---------------------------------------------------------------------------
@@ -923,6 +1136,9 @@ def main():
 
     # Load item database for enrichment
     item_db = load_item_db()
+
+    # Load soft-reserve config
+    sr_counts, sr_groups = load_soft_reserves()
 
     # Load BiS data
     bis_data = json.loads(
@@ -971,10 +1187,14 @@ def main():
         item_db,
     )
 
-    # Deduplicate ring/trinket upgrades for scoring
+    # Split upgrades into dungeon/rep/badge vs raid
+    dungeon_upgrades_all = [up for up in all_upgrades if "raid" not in up["tags"]]
+    raid_upgrades_all = [up for up in all_upgrades if "raid" in up["tags"]]
+
+    # Deduplicate ring/trinket upgrades for scoring (dungeon/rep/badge only)
     scored_item_ids: set[int] = set()
     deduped_upgrades: list[dict] = []
-    for up in all_upgrades:
+    for up in dungeon_upgrades_all:
         if up["item_id"] not in scored_item_ids:
             scored_item_ids.add(up["item_id"])
             deduped_upgrades.append(up)
@@ -1026,7 +1246,8 @@ def main():
 
     print_dungeon_priority(sorted_dungeons, rep_lookup)
     print_rep_goals(sorted_rep)
-    print_slot_breakdown(all_upgrades)
+    print_slot_breakdown(dungeon_upgrades_all)
+    print_raid_upgrades(raid_upgrades_all, sr_counts, sr_groups)
     print_no_upgrade(no_upgrade_slots)
     print_summary(
         cp,
@@ -1035,7 +1256,8 @@ def main():
         old_bis,
         old_option,
         not_listed_slots,
-        all_upgrades,
+        dungeon_upgrades_all,
+        raid_upgrades_all,
         no_upgrade_slots,
     )
 
