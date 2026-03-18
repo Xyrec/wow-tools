@@ -63,8 +63,8 @@
       {
         "slot": 8,
         "slotName": "Feet",
-        "itemId": 27525,
-        "itemName": "Jeweled Boots of Sanctification"
+        "itemId": 27549,
+        "itemName": "Wavefury Boots"
       },
       {
         "slot": 11,
@@ -99,8 +99,8 @@
       {
         "slot": 18,
         "slotName": "Ranged",
-        "itemId": 25645,
-        "itemName": "Totem of the Plains"
+        "itemId": 27544,
+        "itemName": "Totem of Spontaneous Regrowth"
       }
     ],
     "reputations": [
@@ -157,23 +157,23 @@
           {
             "name": "Cenarion Expedition",
             "standing": "Revered",
-            "currentRep": 18398,
+            "currentRep": 20842,
             "requiredRep": 21000,
-            "remainingRep": 2602
+            "remainingRep": 158
           },
           {
             "name": "Honor Hold",
             "standing": "Revered",
-            "currentRep": 11641,
+            "currentRep": 14107,
             "requiredRep": 21000,
-            "remainingRep": 9359
+            "remainingRep": 6893
           },
           {
             "name": "Kurenai",
             "standing": "Honored",
-            "currentRep": 6048,
+            "currentRep": 8896,
             "requiredRep": 12000,
-            "remainingRep": 5952
+            "remainingRep": 3104
           },
           {
             "name": "Netherwing",
@@ -192,9 +192,9 @@
           {
             "name": "The Consortium",
             "standing": "Honored",
-            "currentRep": 8530,
+            "currentRep": 9580,
             "requiredRep": 12000,
-            "remainingRep": 3470
+            "remainingRep": 2420
           }
         ]
       },
@@ -203,31 +203,31 @@
         "factions": [
           {
             "name": "Lower City",
+            "standing": "Honored",
+            "currentRep": 11660,
+            "requiredRep": 12000,
+            "remainingRep": 340
+          },
+          {
+            "name": "The Aldor",
             "standing": "Revered",
             "currentRep": 60,
             "requiredRep": 21000,
             "remainingRep": 20940
           },
           {
-            "name": "The Aldor",
-            "standing": "Honored",
-            "currentRep": 10410,
-            "requiredRep": 12000,
-            "remainingRep": 1590
-          },
-          {
             "name": "The Scryers",
             "standing": "Hated",
-            "currentRep": 20999,
+            "currentRep": 19184,
             "requiredRep": 36000,
-            "remainingRep": 15001
+            "remainingRep": 16816
           },
           {
             "name": "The Sha'tar",
             "standing": "Revered",
-            "currentRep": 6061,
+            "currentRep": 13337,
             "requiredRep": 21000,
-            "remainingRep": 14939
+            "remainingRep": 7663
           }
         ]
       },
@@ -237,9 +237,9 @@
           {
             "name": "Keepers of Time",
             "standing": "Revered",
-            "currentRep": 14622,
+            "currentRep": 20332,
             "requiredRep": 21000,
-            "remainingRep": 6378
+            "remainingRep": 668
           },
           {
             "name": "The Violet Eye",
