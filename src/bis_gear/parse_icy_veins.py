@@ -1,5 +1,5 @@
 """
-Parses Icy Veins TBC Resto Shaman BiS HTML files into a structured JSON file.
+Parses Icy Veins TBC Shaman BiS HTML files into a structured JSON file.
 
 The icy-veins pages have two tables per phase:
   1. "Best in Slot Table" — items here are ranked as "BiS"
@@ -9,10 +9,14 @@ Each table has rows with <td><strong>SlotName</strong></td> and items in <li> ta
 with <a data-wowhead="item=NNNNN&domain=tbc"> links.
 
 Usage:
-    uv run iv-parse
-    uv run iv-parse --output custom_output.json
+    uv run iv-parse --spec resto
+    uv run iv-parse --spec ele
+    uv run iv-parse --spec resto --output custom_output.json
+
+Spec aliases: resto, resto-shaman | ele, elemental, elemental-shaman
 """
 
+import argparse
 import json
 import re
 import sys
@@ -21,15 +25,36 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 
-# Map icy-veins slot names to our canonical slot keys
+_SPEC_ALIASES: dict[str, str] = {
+    "resto": "resto-shaman",
+    "resto-shaman": "resto-shaman",
+    "ele": "elemental-shaman",
+    "elemental": "elemental-shaman",
+    "elemental-shaman": "elemental-shaman",
+}
+
+
+def resolve_spec(raw: str) -> str:
+    key = raw.strip().lower()
+    if key not in _SPEC_ALIASES:
+        print(f"Unknown spec '{raw}'. Use: resto, ele (or elemental).")
+        sys.exit(1)
+    return _SPEC_ALIASES[key]
+
+
+# Map icy-veins slot names to our canonical slot keys.
+# Elemental pages use slightly different names for some slots (shoulder, cloak, gloves, relics).
 SLOT_NAME_MAP = {
     "helm": "head",
     "neck": "neck",
     "shoulders": "shoulders",
+    "shoulder": "shoulders",  # elemental
     "back": "back",
+    "cloak": "back",  # elemental
     "chest": "chest",
     "wrists": "wrists",
     "hands": "hands",
+    "gloves": "hands",  # elemental
     "belt": "waist",
     "legs": "legs",
     "boots": "feet",
@@ -39,6 +64,7 @@ SLOT_NAME_MAP = {
     "one-hand": "weapons",
     "off-hand": "offhands",
     "relic": "totems",
+    "relics": "totems",  # elemental
 }
 
 
@@ -56,7 +82,8 @@ class IcyVeinsParser(HTMLParser):
         self._bis_table_idx: int | None = None
         self._alt_table_idx: int | None = None
 
-        # Heading detection
+        # Heading detection (h2/h3 signal BiS table; h2/h4 signal alt table)
+        self._in_h2 = False
         self._in_h3 = False
         self._in_h4 = False
         self._heading_text = ""
@@ -85,7 +112,10 @@ class IcyVeinsParser(HTMLParser):
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]):
         attr: dict[str, str] = {k: v or "" for k, v in attrs}
 
-        if tag == "h3":
+        if tag == "h2":
+            self._in_h2 = True
+            self._heading_text = ""
+        elif tag == "h3":
             self._in_h3 = True
             self._heading_text = ""
         elif tag == "h4":
@@ -119,14 +149,27 @@ class IcyVeinsParser(HTMLParser):
             wowhead = attr.get("data-wowhead", "")
             css_class = attr.get("class", "")
             # Only capture item links (not npc/quest/spell links)
-            if "item=" in wowhead and css_class in ("q4", "q3", "q2", "q1"):
+            if "item=" in wowhead and css_class not in (
+                "npc",
+                "quest",
+                "spell",
+                "zone",
+                "achievement",
+            ):
                 m = re.search(r"item=(\d+)", wowhead)
                 if m and self._current_item_id is None:
                     # First item link in this <li> is the actual item
                     self._current_item_id = int(m.group(1))
 
     def handle_endtag(self, tag: str):
-        if tag == "h3":
+        if tag == "h2":
+            self._in_h2 = False
+            h = self._heading_text.lower()
+            if "best in slot" in h:
+                self._bis_table_idx = self._table_count + 1
+            elif "other useful" in h:
+                self._alt_table_idx = self._table_count + 1
+        elif tag == "h3":
             self._in_h3 = False
             if "best in slot" in self._heading_text.lower():
                 # Next table is the BiS table
@@ -157,9 +200,7 @@ class IcyVeinsParser(HTMLParser):
             self._add_item()
 
     def handle_data(self, data: str):
-        if self._in_h3:
-            self._heading_text += data
-        if self._in_h4:
+        if self._in_h2 or self._in_h3 or self._in_h4:
             self._heading_text += data
         if self._in_strong and self._cell_idx == 0:
             self._strong_text += data
@@ -210,7 +251,13 @@ class ItemNameParser(HTMLParser):
         if tag == "a":
             wowhead = attr.get("data-wowhead", "")
             css_class = attr.get("class", "")
-            if "item=" in wowhead and css_class in ("q4", "q3", "q2", "q1"):
+            if "item=" in wowhead and css_class not in (
+                "npc",
+                "quest",
+                "spell",
+                "zone",
+                "achievement",
+            ):
                 m = re.search(r"item=(\d+)", wowhead)
                 if m:
                     self._in_item_link = True
@@ -254,11 +301,24 @@ def parse_phase_file(
 
 
 def main():
-    output_path = PROJECT_ROOT / "output" / "iv_bis_gear.json"
-    if "--output" in sys.argv:
-        idx = sys.argv.index("--output")
-        if idx + 1 < len(sys.argv):
-            output_path = Path(sys.argv[idx + 1])
+    parser = argparse.ArgumentParser(
+        description="Parse Icy Veins Shaman BiS HTML into JSON."
+    )
+    parser.add_argument(
+        "--spec",
+        default="resto-shaman",
+        help="Spec to parse: resto, ele (or elemental). Default: resto-shaman.",
+    )
+    parser.add_argument("--output", default=None, help="Override output JSON path.")
+    args = parser.parse_args()
+
+    spec = resolve_spec(args.spec)
+    output_path = (
+        Path(args.output)
+        if args.output
+        else PROJECT_ROOT / "output" / spec / "iv_bis_gear.json"
+    )
+    output_path.parent.mkdir(parents=True, exist_ok=True)
 
     # Read current phase
     current_phase_file = PROJECT_ROOT / "data" / "current-phase.txt"
@@ -272,9 +332,10 @@ def main():
     result: dict[str, str | dict] = {}
     if current_phase:
         result["current_phase"] = current_phase
-    phase_files = sorted((PROJECT_ROOT / "sources" / "icy-veins").glob("phase-*.html"))
+    source_dir = PROJECT_ROOT / "sources" / "icy-veins" / spec
+    phase_files = sorted(source_dir.glob("phase-*.html"))
     if not phase_files:
-        print("No phase-*.html files found in sources/icy-veins/.")
+        print(f"No phase-*.html files found in {source_dir}.")
         sys.exit(1)
 
     phases: dict[str, dict] = {}
