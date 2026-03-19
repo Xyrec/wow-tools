@@ -1,0 +1,785 @@
+{
+  "current_phase": "phase-1",
+  "phases": {
+    "phase-0": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Storm Master's Helmet",
+          "source": "Vendor — Badge of Justice (50)",
+          "item_id": 32086
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Natasha's Ember Necklace",
+          "source": "Quest Reward — The Hound-Master",
+          "item_id": 31692
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Mana-Etched Spaulders",
+          "source": "Slave Pens (H) — Quagmirran (16%)",
+          "item_id": 27796
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Shawl of Shifting Probabilities",
+          "source": "Vendor — Badge of Justice (25)",
+          "item_id": 29369
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Netherstrike Breastplate",
+          "source": "Leatherworking — Trainer (375)",
+          "item_id": 29519
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Netherstrike Bracers",
+          "source": "Leatherworking — Trainer (375)",
+          "item_id": 29521
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Mana-Etched Gloves",
+          "source": "Ramparts (H) — Omor the Unscarred (16%)",
+          "item_id": 27465
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Netherstrike Belt",
+          "source": "Leatherworking — Trainer (375)",
+          "item_id": 29520
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Spellstrike Pants",
+          "source": "Tailoring — BoP Pattern (375)",
+          "item_id": 24262
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Sigil-Laced Boots",
+          "source": "Arcatraz — Harbinger Skyriss (15%)",
+          "item_id": 28406
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Band of Frigid Elements",
+          "source": "Sethekk Halls (H) — Anzu (Summoned Boss) (20%)",
+          "item_id": 32779
+        },
+        {
+          "rank": "BiS",
+          "name": "Ring of Cryptic Dreams",
+          "source": "Vendor — Badge of Justice (25)",
+          "item_id": 29367
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Quagmirran's Eye",
+          "source": "Slave Pens (H) — Quagmirran (16%)",
+          "item_id": 27683
+        },
+        {
+          "rank": "BiS",
+          "name": "Icon of the Silver Crescent",
+          "source": "Vendor — Badge of Justice (41)",
+          "item_id": 29370
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Gavel of Unearthed Secrets",
+          "source": "Reputation — Lower City - Exalted",
+          "item_id": 30832
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Mazthoril Honor Shield",
+          "source": "Vendor — Badge of Justice (33)",
+          "item_id": 29268
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Totem of the Void",
+          "source": "Mechanar — Cache of the Legion\n            (20%)",
+          "item_id": 28248
+        }
+      ]
+    },
+    "phase-1": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Cyclone Faceguard",
+          "source": "Karazhan — Prince Malchezaar (56%)",
+          "item_id": 29035
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Adornment of Stolen Souls",
+          "source": "Karazhan — Prince Malchezaar (17%)",
+          "item_id": 28762
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Cyclone Shoulderguards",
+          "source": "Gruul's Lair — High King Maulgar (56%)",
+          "item_id": 29037
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Brute Cloak of the Ogre-Magi",
+          "source": "Gruul's Lair — High King Maulgar (17%)",
+          "item_id": 28797
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Netherstrike Breastplate",
+          "source": "Leatherworking — Trainer (375)",
+          "item_id": 29519
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Netherstrike Bracers",
+          "source": "Leatherworking — Trainer (375)",
+          "item_id": 29521
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Soul-Eater's Handwraps",
+          "source": "Magtheridon's Lair — Magtheridon (35%)",
+          "item_id": 28780
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Netherstrike Belt",
+          "source": "Leatherworking — Trainer (375)",
+          "item_id": 29520
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Spellstrike Pants",
+          "source": "Tailoring — BoP Pattern (375)",
+          "item_id": 24262
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Boots of Foretelling",
+          "source": "Karazhan — Maiden of Virtue (16%)",
+          "item_id": 28517
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Ring of Unrelenting Storms",
+          "source": "Karazhan — Trash Drop",
+          "item_id": 30667
+        },
+        {
+          "rank": "BiS",
+          "name": "Ring of Recurrence",
+          "source": "Karazhan — Chess Event (16%)",
+          "item_id": 28753
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "The Lightning Capacitor",
+          "source": "Karazhan — Terestian Illhoof (16%)",
+          "item_id": 28785
+        },
+        {
+          "rank": "BiS",
+          "name": "Icon of the Silver Crescent",
+          "source": "Vendor — Badge of Justice (41)",
+          "item_id": 29370
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Nathrezim Mindblade",
+          "source": "Karazhan — Prince Malchezaar (17%)",
+          "item_id": 28770
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Mazthoril Honor Shield",
+          "source": "Vendor — Badge of Justice (33)",
+          "item_id": 29268
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Totem of the Void",
+          "source": "Mechanar — Cache of the Legion\n            (20%)",
+          "item_id": 28248
+        }
+      ]
+    },
+    "phase-2": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Cyclone Faceguard",
+          "source": "Karazhan — Prince Malchezaar (56%)",
+          "item_id": 29035
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "The Sun King's Talisman",
+          "source": "Quest Reward — Kael'thas and the Verdant Sphere",
+          "item_id": 30015
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Cyclone Shoulderguards",
+          "source": "Gruul's Lair — High King Maulgar (56%)",
+          "item_id": 29037
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Brute Cloak of the Ogre-Magi",
+          "source": "Gruul's Lair — High King Maulgar (17%)",
+          "item_id": 28797
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Cataclysm Chestpiece",
+          "source": "Tempest Keep — Kael'thas Sunstrider (56%)",
+          "item_id": 30169
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Mindstorm Wristbands",
+          "source": "Tempest Keep — Al'ar (15%)",
+          "item_id": 29918
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Soul-Eater's Handwraps",
+          "source": "Magtheridon's Lair — Magtheridon (35%)",
+          "item_id": 28780
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Belt of Blasting",
+          "source": "Tailoring — BoP Pattern (375)",
+          "item_id": 30038
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Cataclysm Leggings",
+          "source": "SSC — Fathom-Lord Karathress (56%)",
+          "item_id": 30172
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Velvet boots of the Guardian",
+          "source": "SSC — The Lurker Below (15%)",
+          "item_id": 30067
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Ring of Unrelenting Storms",
+          "source": "Karazhan — Trash Drop",
+          "item_id": 30667
+        },
+        {
+          "rank": "BiS",
+          "name": "Ring of Endless Coils",
+          "source": "SSC — Lady Vashj (35%)",
+          "item_id": 30109
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "The Lightning Capacitor",
+          "source": "Karazhan — Terestian Illhoof (16%)",
+          "item_id": 28785
+        },
+        {
+          "rank": "BiS",
+          "name": "Icon of the Silver Crescent",
+          "source": "Vendor — Badge of Justice (41)",
+          "item_id": 29370
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "The Nexus Key",
+          "source": "Tempest Keep — Kael'thas Sunstrider (35%)",
+          "item_id": 29988
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Totem of the Void",
+          "source": "Mechanar — Cache of the Legion\n            (20%)",
+          "item_id": 28248
+        }
+      ]
+    },
+    "phase-3": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Headguard",
+          "source": "Hyjal Summit — Archimonde (56%)",
+          "item_id": 31014
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "The Sun King's Talisman",
+          "source": "Quest Reward — Kael'thas and the Verdant Sphere",
+          "item_id": 30015
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Mantle",
+          "source": "Black Temple — Mother Shahraz (56%)",
+          "item_id": 31023
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Shroud of the Highborne",
+          "source": "Black Temple — Illidan Stormrage (37%)",
+          "item_id": 32524
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Breastplate",
+          "source": "Black Temple — Illidan Stormrage (56%)",
+          "item_id": 31017
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Bracers of Nimble Thought",
+          "source": "Tailoring — BoP Pattern (375)",
+          "item_id": 32586
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Gauntlets",
+          "source": "Hyjal Summit — Azgalor (56%)",
+          "item_id": 31008
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Flashfire Girdle",
+          "source": "Black Temple — Shade of Akama (7%)",
+          "item_id": 32276
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Leggings of Channeled Elements",
+          "source": "Hyjal Summit — Kaz'rogal (20%)",
+          "item_id": 30916
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Slippers of the Seacaller",
+          "source": "Black Temple — High Warlord Naj'entus (17%)",
+          "item_id": 32239
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Ring of Ancient Knowledge",
+          "source": "Black Temple — Trash Drop (2%)",
+          "item_id": 32527
+        },
+        {
+          "rank": "BiS",
+          "name": "Ring of Ancient Knowledge",
+          "source": "Black Temple — Trash Drop (2%)",
+          "item_id": 32527
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "The Skull of Gul'dan",
+          "source": "Black Temple — Illidan Stormrage (44%)",
+          "item_id": 32483
+        },
+        {
+          "rank": "BiS",
+          "name": "The Lightning Capacitor",
+          "source": "Karazhan — Terestian Illhoof (16%)",
+          "item_id": 28785
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Zhar'doom, Greatstaff of the Devourer",
+          "source": "Black Temple — Illidan Stormrage (37%)",
+          "item_id": 32374
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Totem of Ancestral Guidance",
+          "source": "Black Temple — Teron Gorefiend (17%)",
+          "item_id": 32330
+        }
+      ]
+    },
+    "phase-4": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Headguard",
+          "source": "Hyjal Summit — Archimonde (56%)",
+          "item_id": 31014
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Brooch of Nature's Mercy",
+          "source": "Zul'Aman — Akil'zon (15%)",
+          "item_id": 33281
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Mantle",
+          "source": "Black Temple — Mother Shahraz (56%)",
+          "item_id": 31023
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Shroud of the Highborne",
+          "source": "Black Temple — Illidan Stormrage (37%)",
+          "item_id": 32524
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Breastplate",
+          "source": "Black Temple — Illidan Stormrage (56%)",
+          "item_id": 31017
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Bracers of Nimble Thought",
+          "source": "Tailoring — BoP Pattern (375)",
+          "item_id": 32586
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Gauntlets",
+          "source": "Hyjal Summit — Azgalor (56%)",
+          "item_id": 31008
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Flashfire Girdle",
+          "source": "Black Temple — Shade of Akama (7%)",
+          "item_id": 32276
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Leggings of Channeled Elements",
+          "source": "Hyjal Summit — Kaz'rogal (20%)",
+          "item_id": 30916
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Slippers of the Seacaller",
+          "source": "Black Temple — High Warlord Naj'entus (17%)",
+          "item_id": 32239
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Ring of Ancient Knowledge",
+          "source": "Black Temple — Trash Drop (2%)",
+          "item_id": 32527
+        },
+        {
+          "rank": "BiS",
+          "name": "Ring of Ancient Knowledge",
+          "source": "Black Temple — Trash Drop (2%)",
+          "item_id": 32527
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "The Skull of Gul'dan",
+          "source": "Black Temple — Illidan Stormrage (44%)",
+          "item_id": 32483
+        },
+        {
+          "rank": "BiS",
+          "name": "Hex Shrunken Head",
+          "source": "Zul'Aman — Hex Lord Malacrass (11%)",
+          "item_id": 33829
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Zhar'doom, Greatstaff of the Devourer",
+          "source": "Black Temple — Illidan Stormrage (37%)",
+          "item_id": 32374
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Totem of Ancestral Guidance",
+          "source": "Black Temple — Teron Gorefiend (17%)",
+          "item_id": 32330
+        }
+      ]
+    },
+    "phase-5": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Cowl of Gul'dan",
+          "source": "Sunwell Plateau — Kil'jaeden (17%)",
+          "item_id": 34332
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Amulet of Unfettered Magics",
+          "source": "Sunwell Plateau — Eredar Twins (19%)",
+          "item_id": 34204
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Mantle",
+          "source": "Black Temple — Mother Shahraz (56%)",
+          "item_id": 31023
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Tattered Cape of Antonidas",
+          "source": "Sunwell Plateau — Kil'jaeden (20%)",
+          "item_id": 34242
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Garments of Crashing Shores",
+          "source": "Sunmote Transmute — Garments of Serene Shores (40%)",
+          "item_id": 34396
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Bands",
+          "source": "Sunwell Plateau — Kalecgos, Eredar Twins (56%)",
+          "item_id": 34437
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Gauntlets of the Ancient Shadowmoon",
+          "source": "Sunwell Plateau — Trash Drop (1%)",
+          "item_id": 34350
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Cord",
+          "source": "Sunwell Plateau — Brutallus, Eredar Twins (56%)",
+          "item_id": 34542
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Chain Links of the Tumultuous Storm",
+          "source": "Sunwell Plateau — Felmyst (23%)",
+          "item_id": 34186
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Treads",
+          "source": "Sunwell Plateau — Felmyst, Eredar Twins (56%)",
+          "item_id": 34566
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Ring of Omnipotence",
+          "source": "Sunwell Plateau — M'uru",
+          "item_id": 34230
+        },
+        {
+          "rank": "BiS",
+          "name": "Loop of Forged Power",
+          "source": "Jewelcrafting — BoP Pattern (365)",
+          "item_id": 34362
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Shifting Naaru Sliver",
+          "source": "Sunwell Plateau — M'uru (40%)",
+          "item_id": 34429
+        },
+        {
+          "rank": "BiS",
+          "name": "The Skull of Gul'dan",
+          "source": "Black Temple — Illidan Stormrage (44%)",
+          "item_id": 32483
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Sunflare",
+          "source": "Sunwell Plateau — Kil'jaeden (24%)",
+          "item_id": 34336
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Heart of the Pit",
+          "source": "Sunwell Plateau — Brutallus (24%)",
+          "item_id": 34179
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Totem of Ancestral Guidance",
+          "source": "Black Temple — Teron Gorefiend (17%)",
+          "item_id": 32330
+        }
+      ]
+    }
+  }
+}

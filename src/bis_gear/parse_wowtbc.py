@@ -1,5 +1,5 @@
 """
-Parses wowtbc.gg TBC Resto Shaman BiS HTML files into a structured JSON file.
+Parses wowtbc.gg TBC Shaman BiS HTML files into a structured JSON file.
 
 The wowtbc pages list items per slot in ranked order. The first item in each slot
 (with item__arrow) is BiS; subsequent items (with item__value) are Options.
@@ -7,16 +7,37 @@ Items are identified by name only (no item IDs in the HTML), so we resolve IDs
 from the item database.
 
 Usage:
-    uv run wtbc-parse
-    uv run wtbc-parse --output custom_output.json
+    uv run wtbc-parse --spec resto
+    uv run wtbc-parse --spec ele
+    uv run wtbc-parse --spec resto --output custom_output.json
+
+Spec aliases: resto, resto-shaman | ele, elemental, elemental-shaman
 """
 
+import argparse
 import json
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).parent.parent.parent
+
+_SPEC_ALIASES: dict[str, str] = {
+    "resto": "resto-shaman",
+    "resto-shaman": "resto-shaman",
+    "ele": "elemental-shaman",
+    "elemental": "elemental-shaman",
+    "elemental-shaman": "elemental-shaman",
+}
+
+
+def resolve_spec(raw: str) -> str:
+    key = raw.strip().lower()
+    if key not in _SPEC_ALIASES:
+        print(f"Unknown spec '{raw}'. Use: resto, ele (or elemental).")
+        sys.exit(1)
+    return _SPEC_ALIASES[key]
+
 
 # Map wowtbc slot IDs to our canonical slot keys
 SLOT_NAME_MAP = {
@@ -71,7 +92,11 @@ class WowtbcParser(HTMLParser):
         attr: dict[str, str] = {k: v or "" for k, v in attrs}
         css = attr.get("class", "")
 
-        if tag == "div" and "bis__card" in css and "bis__card--expanded" in css:
+        if (
+            tag == "div"
+            and "bis__card" in css.split()
+            and attr.get("id") in SLOT_NAME_MAP
+        ):
             # New slot card — flush any pending item from previous slot
             self._flush_pending_item()
             slot_id = attr.get("id", "")
@@ -185,11 +210,24 @@ def parse_phase_file(
 
 
 def main():
-    output_path = PROJECT_ROOT / "output" / "wtbc_bis_gear.json"
-    if "--output" in sys.argv:
-        idx = sys.argv.index("--output")
-        if idx + 1 < len(sys.argv):
-            output_path = Path(sys.argv[idx + 1])
+    parser = argparse.ArgumentParser(
+        description="Parse wowtbc.gg Shaman BiS HTML into JSON."
+    )
+    parser.add_argument(
+        "--spec",
+        default="resto-shaman",
+        help="Spec to parse: resto, ele (or elemental). Default: resto-shaman.",
+    )
+    parser.add_argument("--output", default=None, help="Override output JSON path.")
+    args = parser.parse_args()
+
+    spec = resolve_spec(args.spec)
+    output_path = (
+        Path(args.output)
+        if args.output
+        else PROJECT_ROOT / "output" / spec / "wtbc_bis_gear.json"
+    )
+    output_path.parent.mkdir(parents=True, exist_ok=True)
 
     # Read current phase
     current_phase_file = PROJECT_ROOT / "data" / "current-phase.txt"
@@ -206,9 +244,10 @@ def main():
     result: dict[str, str | dict] = {}
     if current_phase:
         result["current_phase"] = current_phase
-    phase_files = sorted((PROJECT_ROOT / "sources" / "wowtbc").glob("phase-*.html"))
+    source_dir = PROJECT_ROOT / "sources" / "wowtbc" / spec
+    phase_files = sorted(source_dir.glob("phase-*.html"))
     if not phase_files:
-        print("No phase-*.html files found in sources/wowtbc/.")
+        print(f"No phase-*.html files found in {source_dir}.")
         sys.exit(1)
 
     phases: dict[str, dict] = {}
