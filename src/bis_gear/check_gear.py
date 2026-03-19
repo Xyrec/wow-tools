@@ -5,13 +5,17 @@ Priority: current phase is authoritative. Phase 0 is only consulted as a
 fallback when an item or upgrade doesn't appear in the current phase at all.
 
 Usage:
-    bis-gear character.json
-    bis-gear -                    # read from stdin
-    python -m bis_gear character.json
+    bis-gear --spec resto              # loads data/resto.json by default
+    bis-gear --spec ele                # loads data/elemental.json by default
+    bis-gear --spec resto custom.json  # explicit character file
+    bis-gear --spec ele -              # read from stdin
 
-Reads current-phase.txt and bis_gear.json from the project data directory.
+Spec aliases: resto, resto-shaman | ele, elemental, elemental-shaman
+
+Reads current-phase.txt and output/{spec}/bis_gear.json from the project directory.
 """
 
+import argparse
 import json
 import re
 import sys
@@ -1111,17 +1115,64 @@ def print_summary(
 
 
 # ---------------------------------------------------------------------------
+# Spec resolution
+# ---------------------------------------------------------------------------
+
+_SPEC_ALIASES: dict[str, str] = {
+    "resto": "resto-shaman",
+    "resto-shaman": "resto-shaman",
+    "ele": "elemental-shaman",
+    "elemental": "elemental-shaman",
+    "elemental-shaman": "elemental-shaman",
+}
+
+
+def resolve_spec(raw: str) -> str:
+    key = raw.strip().lower()
+    if key not in _SPEC_ALIASES:
+        print(f"Unknown spec '{raw}'. Use: resto, ele (or elemental).")
+        sys.exit(1)
+    return _SPEC_ALIASES[key]
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python check_gear.py <character.json>")
-        print("       echo '{...}' | python check_gear.py -")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(
+        description="Compare equipped gear against BiS lists.",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=(
+            "Examples:\n"
+            "  bis-gear --spec resto\n"
+            "  bis-gear --spec ele\n"
+            "  bis-gear --spec resto custom.json\n"
+            "  echo '{...}' | bis-gear --spec ele -"
+        ),
+    )
+    parser.add_argument(
+        "--spec",
+        required=True,
+        help="Spec to check: resto, ele (or elemental).",
+    )
+    parser.add_argument(
+        "character_file",
+        nargs="?",
+        default=None,
+        help="Path to character JSON (or '-' for stdin). Defaults to data/{spec}.json.",
+    )
+    args = parser.parse_args()
 
-    char = load_character(sys.argv[1])
+    spec = resolve_spec(args.spec)
+    # Derive default character file name from spec slug (resto-shaman → resto.json)
+    default_char_file = spec.split("-")[0] + ".json"
+    char_path = (
+        args.character_file if args.character_file is not None else default_char_file
+    )
+
+    char = load_character(char_path)
     equipped = char.get("equippedItems", [])
     reputations_raw = char.get("reputations", [])
 
@@ -1141,9 +1192,13 @@ def main():
     sr_counts, sr_groups = load_soft_reserves()
 
     # Load BiS data
-    bis_data = json.loads(
-        (PROJECT_ROOT / "output" / "bis_gear.json").read_text(encoding="utf-8")
-    )
+    bis_path = PROJECT_ROOT / "output" / spec / "bis_gear.json"
+    if not bis_path.exists():
+        print(
+            f"BiS data not found at {bis_path}. Run: uv run bis-parse --spec {spec.split('-')[0]}"
+        )
+        sys.exit(1)
+    bis_data = json.loads(bis_path.read_text(encoding="utf-8"))
     current_phase = (
         (PROJECT_ROOT / "data" / "current-phase.txt")
         .read_text(encoding="utf-8")

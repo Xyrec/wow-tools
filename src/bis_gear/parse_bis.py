@@ -1,11 +1,15 @@
 """
-Parses Resto Shaman TBC BiS HTML files into a structured JSON file.
+Parses TBC Shaman BiS HTML files into a structured JSON file.
 
 Usage:
-    bis-parse
-    bis-parse --output custom_output.json
+    bis-parse --spec resto
+    bis-parse --spec ele
+    bis-parse --spec resto --output custom_output.json
+
+Spec aliases: resto, resto-shaman | ele, elemental, elemental-shaman
 """
 
+import argparse
 import json
 import re
 import sys
@@ -13,6 +17,22 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).parent.parent.parent
+
+
+def resolve_spec(raw: str) -> str:
+    """Normalize spec alias to canonical slug."""
+    aliases = {
+        "resto": "resto-shaman",
+        "resto-shaman": "resto-shaman",
+        "ele": "elemental-shaman",
+        "elemental": "elemental-shaman",
+        "elemental-shaman": "elemental-shaman",
+    }
+    key = raw.strip().lower()
+    if key not in aliases:
+        print(f"Unknown spec '{raw}'. Use: resto, ele (or elemental).")
+        sys.exit(1)
+    return aliases[key]
 
 
 class BisTableParser(HTMLParser):
@@ -141,11 +161,22 @@ def parse_phase_file(filepath: Path) -> dict[str, list[dict[str, str | int]]]:
 
 
 def main():
-    output_path = PROJECT_ROOT / "output" / "bis_gear.json"
-    if "--output" in sys.argv:
-        idx = sys.argv.index("--output")
-        if idx + 1 < len(sys.argv):
-            output_path = Path(sys.argv[idx + 1])
+    parser = argparse.ArgumentParser(description="Parse Shaman BiS HTML into JSON.")
+    parser.add_argument(
+        "--spec",
+        default="resto-shaman",
+        help="Spec to parse: resto, ele (or elemental). Default: resto-shaman.",
+    )
+    parser.add_argument("--output", default=None, help="Override output JSON path.")
+    args = parser.parse_args()
+
+    spec = resolve_spec(args.spec)
+    output_path = (
+        Path(args.output)
+        if args.output
+        else PROJECT_ROOT / "output" / spec / "bis_gear.json"
+    )
+    output_path.parent.mkdir(parents=True, exist_ok=True)
 
     # Read current phase
     current_phase_file = PROJECT_ROOT / "data" / "current-phase.txt"
@@ -160,9 +191,10 @@ def main():
     if current_phase:
         result["current_phase"] = current_phase
 
-    phase_files = sorted((PROJECT_ROOT / "sources" / "wowhead").glob("phase-*.html"))
+    source_dir = PROJECT_ROOT / "sources" / "wowhead" / spec
+    phase_files = sorted(source_dir.glob("phase-*.html"))
     if not phase_files:
-        print("No phase-*.html files found.")
+        print(f"No phase-*.html files found in {source_dir}.")
         sys.exit(1)
 
     phases = {}

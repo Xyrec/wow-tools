@@ -1,8 +1,8 @@
-# Resto Shaman TBC BiS Gear Checker
+# TBC Shaman BiS Gear Checker (Resto / Elemental)
 
 ## What This Project Does
 
-Compares a WoW TBC Resto Shaman's equipped gear against Best-in-Slot (BiS) lists to find actionable upgrades from dungeons and reputations.
+Compares a WoW TBC Shaman's equipped gear against Best-in-Slot (BiS) lists to find actionable upgrades from dungeons and reputations. Supports Resto and Elemental specs.
 
 ## Project Structure
 
@@ -10,28 +10,38 @@ Compares a WoW TBC Resto Shaman's equipped gear against Best-in-Slot (BiS) lists
 bis-gear/
   pyproject.toml          # Python project config with CLI entry points
   data/
-    character.json        # User's character data (paste updated exports here)
+    resto.json            # Resto Shaman character data (paste updated exports here)
+    elemental.json        # Elemental Shaman character data
     current-phase.txt     # Single line like "phase-1" — which phase to check against
     soft-reserves.txt     # Soft-reserve counts per raid (0 = master looter)
   output/
-    bis_gear.json         # Generated BiS data (all phases), output of bis-parse
+    resto-shaman/
+      bis_gear.json       # Generated BiS data for Resto (all phases), output of bis-parse
+    elemental-shaman/
+      bis_gear.json       # Generated BiS data for Elemental (all phases), output of bis-parse
   src/bis_gear/           # Python package
     check_gear.py         # Main tool — compares gear against BiS lists
     parse_bis.py          # HTML parser — regenerates bis_gear.json from source HTML
   sources/
-    wowhead/              # phase-0.html through phase-5.html (wowhead BiS pages)
+    wowhead/
+      resto-shaman/       # phase-0.html through phase-5.html (Resto BiS pages)
+      elemental-shaman/   # phase-0.html through phase-5.html (Elemental BiS pages)
 ```
 
 ## How to Use
 
 ```bash
-# Check gear against BiS lists:
-uv run bis-gear character.json
-# or via stdin:
-echo '{"character": {...}}' | uv run bis-gear -
+# Check gear against BiS lists (--spec required):
+uv run bis-gear --spec resto              # loads data/resto.json by default
+uv run bis-gear --spec ele                # loads data/elemental.json by default
+uv run bis-gear --spec resto custom.json  # explicit character file
+echo '{"character": {...}}' | uv run bis-gear --spec ele -
+
+# Spec aliases: resto, resto-shaman | ele, elemental, elemental-shaman
 
 # Regenerate bis_gear.json from source HTML (only if HTML files change):
-uv run bis-parse
+uv run bis-parse --spec resto
+uv run bis-parse --spec ele
 ```
 
 ## Development
@@ -110,8 +120,9 @@ serpentshrine-cavern=0              # 0 = master looter (no SR info shown)
 
 ## When the User Asks to Check Gear
 
-1. Run `uv run bis-gear character.json` (or whatever file they provide).
-2. Present the results to the user with a concise summary. Focus on:
+1. **Ask which spec** if the user hasn't specified: "Which spec should I check — Resto or Elemental?"
+2. Run `uv run bis-gear --spec resto` or `uv run bis-gear --spec ele` (no filename needed — defaults to `data/resto.json` or `data/elemental.json`).
+3. Present the results to the user with a concise summary. Focus on:
    - How many slots are already BiS vs. have available upgrades.
    - The **top 3 priority dungeons** from the ranked list — explain *why* each is high value (e.g. "Heroic Old Hillsbrad drops 2 upgrades AND gives Keepers of Time rep toward your BiS wrist").
    - Any reputation goals that are close to completion (small remaining rep).
@@ -120,8 +131,8 @@ serpentshrine-cavern=0              # 0 = master looter (no SR info shown)
    - For each raid with SR > 0, provide a **soft-reserve priority list**: rank ALL upgrade items from that raid by value (BiS before Option, higher score first), not just the top N matching the SR count. The user needs to see the full ranked list so they can pick alternatives if someone else has already soft-reserved their top choice. Format as a numbered list like "1. Light's Justice [BiS] (main hand) 2. Jade Ring [BiS] (ring) 3. ..." with a note like "With 2 SRs, your best picks are #1 and #2 — but if either is taken, #3-#5 are strong fallbacks."
    - Single items can be soft-reserved more than once. This lets the player roll on that item multiple times and increases their odds of winning it. High-value items will often be soft-reserved more than once by the same player in a single raid, so take that into consideration when recommending SR priorities.
    - **IMPORTANT: Always specify which phase an item's rank comes from.** Items marked `[Phase 0 only]` in the script output are outdated — they were BiS/Option in Phase 0 but are NOT on the current phase's list. Never call something just "BiS" or "Option" without saying which phase. For example, say "Phase 1 BiS wrists" or "Phase 0 only Option (outdated)" — not just "BiS wrists" or "an Option".
-3. Do NOT read `bis_gear.json` or the source code manually — the script handles all the logic.
-4. If the user pastes character JSON directly in chat instead of updating `character.json`, save it to `data/character.json` first, then run the script.
+4. Do NOT read `bis_gear.json` or the source code manually — the script handles all the logic.
+5. If the user pastes character JSON directly in chat instead of updating the spec file, save it to `data/resto.json` or `data/elemental.json` (ask which spec if unclear), then run the script.
 
 ## Slot Mapping
 

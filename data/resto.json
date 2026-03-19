@@ -39,8 +39,8 @@
       {
         "slot": 9,
         "slotName": "Wrist",
-        "itemId": 27522,
-        "itemName": "World's End Bracers"
+        "itemId": 29183,
+        "itemName": "Bindings of the Timewalker"
       },
       {
         "slot": 10,
@@ -164,9 +164,9 @@
           {
             "name": "Honor Hold",
             "standing": "Revered",
-            "currentRep": 14107,
+            "currentRep": 15478,
             "requiredRep": 21000,
-            "remainingRep": 6893
+            "remainingRep": 5522
           },
           {
             "name": "Kurenai",
@@ -211,16 +211,16 @@
           {
             "name": "The Aldor",
             "standing": "Revered",
-            "currentRep": 60,
+            "currentRep": 1085,
             "requiredRep": 21000,
-            "remainingRep": 20940
+            "remainingRep": 19915
           },
           {
             "name": "The Scryers",
             "standing": "Hated",
-            "currentRep": 19184,
+            "currentRep": 18057,
             "requiredRep": 36000,
-            "remainingRep": 16816
+            "remainingRep": 17943
           },
           {
             "name": "The Sha'tar",
@@ -236,10 +236,10 @@
         "factions": [
           {
             "name": "Keepers of Time",
-            "standing": "Revered",
-            "currentRep": 20332,
-            "requiredRep": 21000,
-            "remainingRep": 668
+            "standing": "Exalted",
+            "currentRep": 999,
+            "requiredRep": 1000,
+            "remainingRep": 1
           },
           {
             "name": "The Violet Eye",
