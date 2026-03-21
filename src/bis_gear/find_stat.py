@@ -18,6 +18,8 @@ from pathlib import Path
 
 from bis_gear.item_lookup import ARMOR_SUBCLASS, DB_PATH
 
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
 # Maps our --stat argument to the stat_type ID in item_template
 STAT_ALIASES: dict[str, int] = {
     "defense": 12,
@@ -31,9 +33,26 @@ STAT_ALIASES: dict[str, int] = {
     "resilience": 35,
 }
 
+# Maps cmangos stat_type IDs to wowsims stat names (for gem/enchant lookup)
+STAT_TO_WOWSIMS: dict[int, str] = {
+    12: "Defense",
+    13: "Dodge",
+    14: "Parry",
+    15: "BlockValue",
+    31: "MeleeHit",
+    32: "MeleeCrit",
+    35: "Resilience",
+    36: "SpellHaste",
+    37: "Expertise",
+}
+
 # Defense rating to defense skill conversion at level 70
 DEFENSE_RATING_PER_SKILL = 2.3653
 BASE_DEFENSE_SKILL = 350
+
+# Crit cap constants (defense + resilience)
+DEFENSE_SKILL_FOR_CAP = 140
+RESILIENCE_RATING_FOR_CAP = 221
 
 # Equippable slot IDs
 EQUIP_SLOTS: dict[int, str] = {
@@ -104,6 +123,63 @@ SLOT_ORDER = [
     "Held In Off-Hand",
     "Relic",
 ]
+
+
+@cache
+def _load_gems_db() -> dict[int, dict]:
+    """Load wowsims gems.json keyed by gem item ID."""
+    path = PROJECT_ROOT / "sources" / "wowsims-tbc" / "gems.json"
+    if not path.exists():
+        return {}
+    return {g["id"]: g for g in json.loads(path.read_text(encoding="utf-8"))}
+
+
+@cache
+def _load_enchants_db() -> dict[int, dict]:
+    """Load wowsims enchants.json keyed by effect_id."""
+    path = PROJECT_ROOT / "sources" / "wowsims-tbc" / "enchants.json"
+    if not path.exists():
+        return {}
+    return {e["effect_id"]: e for e in json.loads(path.read_text(encoding="utf-8"))}
+
+
+# Talent bonuses that grant defense skill (not rating).
+# Key: (class, talent_tree_index, talent_position), Value: skill_per_point
+DEFENSE_SKILL_TALENTS: dict[tuple[str, int, int], int] = {
+    ("paladin", 1, 8): 4,  # Anticipation: +4 defense skill per point
+}
+
+
+def _get_talent_defense_skill(char_class: str, talents: str) -> int:
+    """Parse talent string for defense skill bonuses."""
+    if not talents:
+        return 0
+    trees = talents.split("-")
+    total = 0
+    for (cls, tree_idx, pos), skill_per_pt in DEFENSE_SKILL_TALENTS.items():
+        if char_class.lower() != cls:
+            continue
+        if tree_idx < len(trees) and pos < len(trees[tree_idx]):
+            points = int(trees[tree_idx][pos])
+            total += points * skill_per_pt
+    return total
+
+
+def _get_wse_bonus_stat(raw_data: dict, wowsims_stat: str) -> float:
+    """Sum gem + enchant contributions for a stat from WSE raw data."""
+    gems_db = _load_gems_db()
+    enchants_db = _load_enchants_db()
+    total = 0.0
+    for item in raw_data.get("gear", {}).get("items", []):
+        if item is None:
+            continue
+        for gem_id in item.get("gems", []):
+            if gem_id and gem_id in gems_db:
+                total += gems_db[gem_id].get("stats", {}).get(wowsims_stat, 0)
+        enchant_id = item.get("enchant")
+        if enchant_id and enchant_id in enchants_db:
+            total += enchants_db[enchant_id].get("stats", {}).get(wowsims_stat, 0)
+    return total
 
 
 def _get_conn() -> sqlite3.Connection:
@@ -339,7 +415,9 @@ def _load_character(path: Path) -> dict:
         return {
             "name": data.get("name", "Unknown"),
             "class": data.get("class", ""),
+            "talents": data.get("talents", ""),
             "equippedItems": equipped,
+            "_wse_raw": data,  # Preserve for gem/enchant parsing
         }
 
     return data.get("character", data)
@@ -418,7 +496,7 @@ def find_stat_upgrades(
     }
     class_bit = class_bitmasks.get(char_class, 0)
 
-    # Get current stat values per slot
+    # Get current stat values per slot (base items from cmangos)
     current_stats: dict[str, int] = {}
     total_current = 0
     for eq in equipped:
@@ -427,18 +505,68 @@ def find_stat_upgrades(
         current_stats[slot_name] = val
         total_current += val
 
-    # Defense gap calculation
-    if stat_name == "defense" and target > 0:
-        current_defense = BASE_DEFENSE_SKILL + total_current / DEFENSE_RATING_PER_SKILL
-        needed_rating = (target - BASE_DEFENSE_SKILL) * DEFENSE_RATING_PER_SKILL
-        gap = needed_rating - total_current
-        print(
-            f"Current: {total_current:.0f} rating = {current_defense:.1f} defense skill"
+    # Add gem + enchant contributions from WSE data
+    wse_raw = char.get("_wse_raw")
+    wowsims_stat = STAT_TO_WOWSIMS.get(stat_type_id, "")
+    gem_enchant_bonus = 0.0
+    if wse_raw and wowsims_stat:
+        gem_enchant_bonus = _get_wse_bonus_stat(wse_raw, wowsims_stat)
+    total_with_gems = total_current + gem_enchant_bonus
+
+    # Talent-based defense skill bonus
+    talent_defense_skill = 0
+    if stat_name == "defense":
+        talent_defense_skill = _get_talent_defense_skill(
+            char.get("class", ""), char.get("talents", "")
         )
+
+    # Defense gap calculation with crit cap
+    if stat_name == "defense" and target > 0:
+        base_def = BASE_DEFENSE_SKILL + talent_defense_skill
+        current_defense = base_def + total_with_gems / DEFENSE_RATING_PER_SKILL
+        needed_rating = (target - base_def) * DEFENSE_RATING_PER_SKILL
+        gap = needed_rating - total_with_gems
+
+        print(
+            f"Base defense skill: {base_def} (350 base + {talent_defense_skill} talents)"
+        )
+        print(
+            f"Current: {total_with_gems:.0f} rating = {current_defense:.1f} defense skill"
+        )
+        if gem_enchant_bonus > 0:
+            print(
+                f"  (items: {total_current}, gems/enchants: +{gem_enchant_bonus:.0f})"
+            )
         print(f"Target:  {needed_rating:.0f} rating = {target} defense skill")
-        print(f"Gap:     {gap:.0f} more defense rating needed")
+
+        if gap > 0:
+            print(f"Gap:     {gap:.0f} more defense rating needed")
+            # Show resilience alternative
+            def_fraction = (
+                current_defense - BASE_DEFENSE_SKILL
+            ) / DEFENSE_SKILL_FOR_CAP
+            resil_needed = max(
+                0, round((1.0 - def_fraction) * RESILIENCE_RATING_FOR_CAP)
+            )
+            # Get current resilience from WSE if available
+            current_resil = 0.0
+            if wse_raw:
+                current_resil = _get_wse_bonus_stat(wse_raw, "Resilience")
+                for eq in equipped:
+                    current_resil += _get_stat_value(conn, eq["itemId"], 35)
+            resil_gap = max(0, resil_needed - current_resil)
+            print(
+                f"  Or: {resil_needed} resilience rating at current defense"
+                f" (have {current_resil:.0f}, need {resil_gap:.0f} more)"
+            )
+        else:
+            print("CRIT CAPPED!")
     else:
-        print(f"Current total {stat_name} rating from gear: {total_current}")
+        print(f"Current total {stat_name} rating from gear: {total_with_gems:.0f}")
+        if gem_enchant_bonus > 0:
+            print(
+                f"  (items: {total_current}, gems/enchants: +{gem_enchant_bonus:.0f})"
+            )
     print()
 
     # Find all candidate items with this stat

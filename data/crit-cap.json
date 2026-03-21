@@ -1,0 +1,14 @@
+{
+  "boss_crit_chance_pct": 5.60,
+  "base_defense_skill": 350,
+  "defense_skill_for_cap": 140,
+  "defense_rating_per_skill": 2.3653,
+  "resilience_rating_for_cap": 221,
+  "notes": {
+    "crit_cap_formula": "defense_fraction + resilience_fraction >= 1.0 means capped",
+    "defense_fraction": "(total_defense_skill - base_defense_skill) / defense_skill_for_cap",
+    "resilience_fraction": "total_resilience_rating / resilience_rating_for_cap",
+    "defense_per_pct": "25 defense skill = 1% crit reduction",
+    "resilience_per_pct": "39.4231 resilience rating = 1% crit reduction"
+  }
+}
