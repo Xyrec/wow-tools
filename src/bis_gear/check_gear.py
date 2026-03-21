@@ -185,16 +185,19 @@ RAID_TAG_PRETTY_NAMES = {
 # ---------------------------------------------------------------------------
 
 
-def build_dungeon_reputation(rep_lookup: dict) -> dict[str, str]:
+ALLIANCE_RACES = {"Human", "Dwarf", "Night Elf", "Gnome", "Draenei"}
+HORDE_RACES = {"Orc", "Undead", "Tauren", "Troll", "Blood Elf"}
+
+
+def build_dungeon_reputation(rep_lookup: dict, race: str = "") -> dict[str, str]:
     """Build dungeon-to-faction mapping, resolving Horde/Alliance for Hellfire."""
     result = dict(DUNGEON_REPUTATION_NEUTRAL)
-    # Detect faction by checking which rep the character has
-    if "Honor Hold" in rep_lookup:
+    # Detect faction by rep data or race
+    if "Honor Hold" in rep_lookup or race in ALLIANCE_RACES:
         result.update(DUNGEON_REPUTATION_ALLIANCE)
-    elif "Thrallmar" in rep_lookup:
+    elif "Thrallmar" in rep_lookup or race in HORDE_RACES:
         result.update(DUNGEON_REPUTATION_HORDE)
     else:
-        # Fallback: include both, whichever matches will work
         result.update(DUNGEON_REPUTATION_ALLIANCE)
         result.update(DUNGEON_REPUTATION_HORDE)
     return result
@@ -268,6 +271,7 @@ def load_item_db() -> dict[int, dict]:
     for item in items:
         entry: dict = {
             "itemId": item["id"],
+            "name": item["name"],
             "itemLevel": item.get("ilvl", 0),
             "quality": quality_map.get(
                 item.get("quality", ""), item.get("quality", "")
@@ -402,17 +406,71 @@ def extract_dungeon(source: str, dungeon_reputation: dict) -> str | None:
 # ---------------------------------------------------------------------------
 
 
+WSE_SLOT_ORDER = [
+    "Head",
+    "Neck",
+    "Shoulder",
+    "Back",
+    "Chest",
+    "Wrist",
+    "Hands",
+    "Waist",
+    "Legs",
+    "Feet",
+    "Finger 1",
+    "Finger 2",
+    "Trinket 1",
+    "Trinket 2",
+    "Main Hand",
+    "Off Hand",
+    "Ranged",
+]
+
+
+def _normalize_wse(data: dict) -> dict:
+    """Convert WowSims Exporter format to internal character format."""
+    item_db = load_item_db()
+    items = data.get("gear", {}).get("items", [])
+    equipped: list[dict] = []
+    for i, item in enumerate(items):
+        if item is None or i >= len(WSE_SLOT_ORDER):
+            continue
+        item_id = item.get("id", 0)
+        if not item_id:
+            continue
+        info = item_db.get(item_id)
+        item_name = info["name"] if info else f"ID:{item_id}"
+        equipped.append(
+            {
+                "slot": i + 1,
+                "slotName": WSE_SLOT_ORDER[i],
+                "itemId": item_id,
+                "itemName": item_name,
+            }
+        )
+    return {
+        "name": data.get("name", "Unknown"),
+        "class": data.get("class", ""),
+        "race": data.get("race", ""),
+        "equippedItems": equipped,
+        "reputations": [],
+    }
+
+
 def load_character(path: str) -> dict:
     if path == "-":
         data = json.load(sys.stdin)
     else:
         p = Path(path)
-        # If not found at given path, try data/ subdirectory
         if not p.exists():
             alt = PROJECT_ROOT / "data" / p.name
             if alt.exists():
                 p = alt
         data = json.loads(p.read_text(encoding="utf-8"))
+
+    # Detect WSE format (has gear.items) vs old format (has character.equippedItems)
+    if "gear" in data and "items" in data.get("gear", {}):
+        return _normalize_wse(data)
     return data if "character" not in data else data["character"]
 
 
@@ -1180,7 +1238,7 @@ def main():
             rep_lookup[faction["name"]] = faction
 
     # Build faction-aware dungeon rep mapping
-    dungeon_reputation = build_dungeon_reputation(rep_lookup)
+    dungeon_reputation = build_dungeon_reputation(rep_lookup, char.get("race", ""))
 
     # Load item database for enrichment
     item_db = load_item_db()

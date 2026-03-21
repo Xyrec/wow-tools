@@ -293,9 +293,55 @@ def _classify_source(item: dict, sources: list[dict]) -> str:
     return "other"
 
 
+WSE_SLOT_ORDER = [
+    "Head",
+    "Neck",
+    "Shoulder",
+    "Back",
+    "Chest",
+    "Wrist",
+    "Hands",
+    "Waist",
+    "Legs",
+    "Feet",
+    "Finger 1",
+    "Finger 2",
+    "Trinket 1",
+    "Trinket 2",
+    "Main Hand",
+    "Off Hand",
+    "Ranged",
+]
+
+
 def _load_character(path: Path) -> dict:
     with open(path) as f:
         data = json.load(f)
+
+    # Detect WSE format
+    if "gear" in data and "items" in data.get("gear", {}):
+        items = data["gear"]["items"]
+        equipped: list[dict] = []
+        for i, item in enumerate(items):
+            if item is None or i >= len(WSE_SLOT_ORDER):
+                continue
+            item_id = item.get("id", 0)
+            if not item_id:
+                continue
+            equipped.append(
+                {
+                    "slot": i + 1,
+                    "slotName": WSE_SLOT_ORDER[i],
+                    "itemId": item_id,
+                    "itemName": f"ID:{item_id}",
+                }
+            )
+        return {
+            "name": data.get("name", "Unknown"),
+            "class": data.get("class", ""),
+            "equippedItems": equipped,
+        }
+
     return data.get("character", data)
 
 
