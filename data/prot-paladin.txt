@@ -1,0 +1,383 @@
+{
+  "character": {
+    "name": "Xyrekk",
+    "realm": "Thunderstrike",
+    "level": 70,
+    "class": "Paladin",
+    "race": "Human",
+    "equippedItems": [
+      {
+        "slot": 1,
+        "slotName": "Head",
+        "itemId": 28180,
+        "itemName": "Myrmidon's Headdress"
+      },
+      {
+        "slot": 2,
+        "slotName": "Neck",
+        "itemId": 29336,
+        "itemName": "Mark of the Ravenguard"
+      },
+      {
+        "slot": 3,
+        "slotName": "Shoulder",
+        "itemId": 27803,
+        "itemName": "Shoulderguards of the Bold"
+      },
+      {
+        "slot": 15,
+        "slotName": "Back",
+        "itemId": 27981,
+        "itemName": "Sethekk Oracle Cloak"
+      },
+      {
+        "slot": 5,
+        "slotName": "Chest",
+        "itemId": 28262,
+        "itemName": "Jade-Skull Breastplate"
+      },
+      {
+        "slot": 9,
+        "slotName": "Wrist",
+        "itemId": 28167,
+        "itemName": "Sha'tari Wrought Armguards"
+      },
+      {
+        "slot": 10,
+        "slotName": "Hands",
+        "itemId": 23517,
+        "itemName": "Felsteel Gloves"
+      },
+      {
+        "slot": 6,
+        "slotName": "Waist",
+        "itemId": 27985,
+        "itemName": "Deathforge Girdle"
+      },
+      {
+        "slot": 7,
+        "slotName": "Legs",
+        "itemId": 27893,
+        "itemName": "Ornate Leggings of the Venerated"
+      },
+      {
+        "slot": 8,
+        "slotName": "Feet",
+        "itemId": 28176,
+        "itemName": "Sha'tari Wrought Greaves"
+      },
+      {
+        "slot": 11,
+        "slotName": "Finger 1",
+        "itemId": 28555,
+        "itemName": "Seal of the Exorcist"
+      },
+      {
+        "slot": 12,
+        "slotName": "Finger 2",
+        "itemId": 29323,
+        "itemName": "Andormu's Tear"
+      },
+      {
+        "slot": 13,
+        "slotName": "Trinket 1",
+        "itemId": 27891,
+        "itemName": "Adamantine Figurine"
+      },
+      {
+        "slot": 14,
+        "slotName": "Trinket 2",
+        "itemId": 26055,
+        "itemName": "Oculus of the Hidden Eye"
+      },
+      {
+        "slot": 16,
+        "slotName": "Main Hand",
+        "itemId": 31002,
+        "itemName": "Summoner's Blade"
+      },
+      {
+        "slot": 17,
+        "slotName": "Off Hand",
+        "itemId": 28166,
+        "itemName": "Shield of the Void"
+      },
+      {
+        "slot": 18,
+        "slotName": "Ranged",
+        "itemId": 27917,
+        "itemName": "Libram of the Eternal Rest"
+      }
+    ],
+    "reputations": [
+      {
+        "group": "Alliance",
+        "factions": [
+          {
+            "name": "Darnassus",
+            "standing": "Revered",
+            "currentRep": 6622,
+            "requiredRep": 21000,
+            "remainingRep": 14378
+          },
+          {
+            "name": "Exodar",
+            "standing": "Honored",
+            "currentRep": 7703,
+            "requiredRep": 12000,
+            "remainingRep": 4297
+          },
+          {
+            "name": "Gnomeregan Exiles",
+            "standing": "Revered",
+            "currentRep": 1631,
+            "requiredRep": 21000,
+            "remainingRep": 19369
+          },
+          {
+            "name": "Ironforge",
+            "standing": "Revered",
+            "currentRep": 8315,
+            "requiredRep": 21000,
+            "remainingRep": 12685
+          },
+          {
+            "name": "Stormwind",
+            "standing": "Revered",
+            "currentRep": 19673,
+            "requiredRep": 21000,
+            "remainingRep": 1327
+          }
+        ]
+      },
+      {
+        "group": "Alliance Forces",
+        "factions": [
+          {
+            "name": "Silverwing Sentinels",
+            "standing": "Neutral",
+            "currentRep": 346,
+            "requiredRep": 3000,
+            "remainingRep": 2654
+          },
+          {
+            "name": "Stormpike Guard",
+            "standing": "Friendly",
+            "currentRep": 3883,
+            "requiredRep": 6000,
+            "remainingRep": 2117
+          },
+          {
+            "name": "The League of Arathor",
+            "standing": "Neutral",
+            "currentRep": 88,
+            "requiredRep": 3000,
+            "remainingRep": 2912
+          }
+        ]
+      },
+      {
+        "group": "Outland",
+        "factions": [
+          {
+            "name": "Ashtongue Deathsworn",
+            "standing": "Neutral",
+            "currentRep": 302,
+            "requiredRep": 3000,
+            "remainingRep": 2698
+          },
+          {
+            "name": "Cenarion Expedition",
+            "standing": "Honored",
+            "currentRep": 5257,
+            "requiredRep": 12000,
+            "remainingRep": 6743
+          },
+          {
+            "name": "Honor Hold",
+            "standing": "Honored",
+            "currentRep": 8508,
+            "requiredRep": 12000,
+            "remainingRep": 3492
+          },
+          {
+            "name": "Kurenai",
+            "standing": "Friendly",
+            "currentRep": 772,
+            "requiredRep": 6000,
+            "remainingRep": 5228
+          },
+          {
+            "name": "Sporeggar",
+            "standing": "Friendly",
+            "currentRep": 4334,
+            "requiredRep": 6000,
+            "remainingRep": 1666
+          },
+          {
+            "name": "The Consortium",
+            "standing": "Honored",
+            "currentRep": 2584,
+            "requiredRep": 12000,
+            "remainingRep": 9416
+          }
+        ]
+      },
+      {
+        "group": "Shattrath City",
+        "factions": [
+          {
+            "name": "Lower City",
+            "standing": "Revered",
+            "currentRep": 2384,
+            "requiredRep": 21000,
+            "remainingRep": 18616
+          },
+          {
+            "name": "The Aldor",
+            "standing": "Hated",
+            "currentRep": 29217,
+            "requiredRep": 36000,
+            "remainingRep": 6783
+          },
+          {
+            "name": "The Scryers",
+            "standing": "Honored",
+            "currentRep": 2621,
+            "requiredRep": 12000,
+            "remainingRep": 9379
+          },
+          {
+            "name": "The Sha'tar",
+            "standing": "Honored",
+            "currentRep": 2421,
+            "requiredRep": 12000,
+            "remainingRep": 9579
+          }
+        ]
+      },
+      {
+        "group": "Steamwheedle Cartel",
+        "factions": [
+          {
+            "name": "Booty Bay",
+            "standing": "Honored",
+            "currentRep": 1595,
+            "requiredRep": 12000,
+            "remainingRep": 10405
+          },
+          {
+            "name": "Everlook",
+            "standing": "Honored",
+            "currentRep": 333,
+            "requiredRep": 12000,
+            "remainingRep": 11667
+          },
+          {
+            "name": "Gadgetzan",
+            "standing": "Honored",
+            "currentRep": 663,
+            "requiredRep": 12000,
+            "remainingRep": 11337
+          },
+          {
+            "name": "Ratchet",
+            "standing": "Friendly",
+            "currentRep": 5310,
+            "requiredRep": 6000,
+            "remainingRep": 690
+          }
+        ]
+      },
+      {
+        "group": "Other",
+        "factions": [
+          {
+            "name": "Argent Dawn",
+            "standing": "Exalted",
+            "currentRep": 999,
+            "requiredRep": 1000,
+            "remainingRep": 1
+          },
+          {
+            "name": "Bloodsail Buccaneers",
+            "standing": "Hated",
+            "currentRep": 13950,
+            "requiredRep": 36000,
+            "remainingRep": 22050
+          },
+          {
+            "name": "Cenarion Circle",
+            "standing": "Friendly",
+            "currentRep": 927,
+            "requiredRep": 6000,
+            "remainingRep": 5073
+          },
+          {
+            "name": "Gelkis Clan Centaur",
+            "standing": "Friendly",
+            "currentRep": 303,
+            "requiredRep": 6000,
+            "remainingRep": 5697
+          },
+          {
+            "name": "Hydraxian Waterlords",
+            "standing": "Neutral",
+            "currentRep": 225,
+            "requiredRep": 3000,
+            "remainingRep": 2775
+          },
+          {
+            "name": "Keepers of Time",
+            "standing": "Honored",
+            "currentRep": 9987,
+            "requiredRep": 12000,
+            "remainingRep": 2013
+          },
+          {
+            "name": "Magram Clan Centaur",
+            "standing": "Hostile",
+            "currentRep": 1775,
+            "requiredRep": 3000,
+            "remainingRep": 1225
+          },
+          {
+            "name": "Ravenholdt",
+            "standing": "Neutral",
+            "currentRep": 5,
+            "requiredRep": 3000,
+            "remainingRep": 2995
+          },
+          {
+            "name": "Syndicate",
+            "standing": "Hated",
+            "currentRep": 31975,
+            "requiredRep": 36000,
+            "remainingRep": 4025
+          },
+          {
+            "name": "The Violet Eye",
+            "standing": "Neutral",
+            "currentRep": 2398,
+            "requiredRep": 3000,
+            "remainingRep": 602
+          },
+          {
+            "name": "Thorium Brotherhood",
+            "standing": "Neutral",
+            "currentRep": 2255,
+            "requiredRep": 3000,
+            "remainingRep": 745
+          },
+          {
+            "name": "Timbermaw Hold",
+            "standing": "Neutral",
+            "currentRep": 1175,
+            "requiredRep": 3000,
+            "remainingRep": 1825
+          }
+        ]
+      }
+    ]
+  }
+}
