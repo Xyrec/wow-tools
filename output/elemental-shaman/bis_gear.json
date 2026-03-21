@@ -450,7 +450,7 @@
           "item_id": 24250
         },
         {
-          "rank": "PvP",
+          "rank": "Option",
           "name": "General's Mail Bracers",
           "source": "Vendor: 9199 Honor Points + 20 Warsong Gulch Mark of Honor (PvP)",
           "item_id": 28638
@@ -634,7 +634,7 @@
           "item_id": 28770
         },
         {
-          "rank": "PvP",
+          "rank": "Option",
           "name": "Gladiator's Gavel",
           "source": "Vendor: Arena Points (Season 1)",
           "item_id": 32450
@@ -982,7 +982,7 @@
       ],
       "trinkets": [
         {
-          "rank": "Special",
+          "rank": "Option",
           "name": "Mark of the Champion",
           "source": "Drop: Kel'Thuzad (Classic - Naxxramas)",
           "item_id": 23207
@@ -1362,7 +1362,7 @@
       ],
       "trinkets": [
         {
-          "rank": "Special",
+          "rank": "Option",
           "name": "Mark of the Champion",
           "source": "Quest: The Fall of Kel'Thuzad (Classic - Naxxramas)",
           "item_id": 23207
@@ -1518,7 +1518,7 @@
           "item_id": 33970
         },
         {
-          "rank": "Option (Tailoring)",
+          "rank": "Option",
           "name": "Mantle of Nimble Thought",
           "source": "Profession: Tailoring - BoP only",
           "item_id": 32587
@@ -1760,13 +1760,13 @@
       ],
       "trinkets": [
         {
-          "rank": "Special",
+          "rank": "Option",
           "name": "Mark of the Champion",
           "source": "Quest: The Fall of Kel'Thuzad (Classic - Naxxramas)",
           "item_id": 23207
         },
         {
-          "rank": "BiS (Small Upgrade)",
+          "rank": "Option",
           "name": "The Skull of Gul'dan",
           "source": "Drop: Illidan Stormrage (Black Temple)",
           "item_id": 32483
@@ -2176,7 +2176,7 @@
           "item_id": 33829
         },
         {
-          "rank": "Special",
+          "rank": "Option",
           "name": "Mark of the Champion",
           "source": "Drop: Kel'Thuzad (Classic - Naxxramas)",
           "item_id": 23207

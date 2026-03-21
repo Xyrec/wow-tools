@@ -27,10 +27,13 @@ def resolve_spec(raw: str) -> str:
         "ele": "elemental-shaman",
         "elemental": "elemental-shaman",
         "elemental-shaman": "elemental-shaman",
+        "prot": "prot-paladin",
+        "protection": "prot-paladin",
+        "prot-paladin": "prot-paladin",
     }
     key = raw.strip().lower()
     if key not in aliases:
-        print(f"Unknown spec '{raw}'. Use: resto, ele (or elemental).")
+        print(f"Unknown spec '{raw}'. Use: resto, ele, prot.")
         sys.exit(1)
     return aliases[key]
 
@@ -112,30 +115,52 @@ class BisTableParser(HTMLParser):
         if self._in_cell:
             self._cell_text += data
 
+    # Normalize wowhead h3 IDs to canonical slot keys
+    _SLOT_NORMALIZE: dict[str, str] = {
+        "shoulder": "shoulders",
+        "shield": "shields",
+        "libram": "librams",
+    }
+
     def _normalize_slot(self, h3_id: str | None, h3_text: str) -> str | None:
         if not h3_id:
             return None
-        # Skip non-slot sections
         skip = {"aldor-vs-scryer", "best-in-slot-gear", "changelog"}
+        # Skip non-slot sections and sub-category headers
         if (
             h3_id in skip
             or h3_id.startswith("best-in-slot")
             or h3_id.startswith("other-")
+            or h3_id.startswith("crit-")
+            or h3_id.startswith("stamina-")
+            or h3_id.startswith("threat-")
         ):
             return None
-        return h3_id
+        return self._SLOT_NORMALIZE.get(h3_id, h3_id)
+
+    def _normalize_rank(self, raw_rank: str) -> str:
+        """Normalize rank text to BiS/Option."""
+        r = raw_rank.lower().strip()
+        if r in ("rank", ""):
+            return ""  # header row
+        if r == "bis" or r.startswith("best"):
+            return "BiS"
+        if r in ("alternative", "option") or r.startswith("alternative"):
+            return "Option"
+        return "Option"  # treat unknown ranks as options
 
     def _add_item(self):
         if len(self._cells) < 2:
             return
 
-        rank = self._cells[0] if self._cells else ""
-        source = self._cells[2] if len(self._cells) > 2 else ""
+        raw_rank = self._cells[0] if self._cells else ""
+        rank = self._normalize_rank(raw_rank)
+        if not rank:
+            return  # skip header rows
 
-        # Extract item name from cell text (the item link text)
+        source = self._cells[2] if len(self._cells) > 2 else ""
         item_name = self._cells[1] if len(self._cells) > 1 else ""
 
-        # Extract item ID from href
         item_id = None
         if self._row_item_href:
             m = re.search(r"/item=(\d+)", self._row_item_href)
@@ -145,7 +170,7 @@ class BisTableParser(HTMLParser):
         item: dict[str, str | int] = {
             "rank": rank,
             "name": item_name,
-            "source": " ".join(source.split()),  # normalize whitespace
+            "source": " ".join(source.split()),
         }
         if item_id:
             item["item_id"] = item_id

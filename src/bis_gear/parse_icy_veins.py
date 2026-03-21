@@ -1,19 +1,21 @@
 """
-Parses Icy Veins TBC Shaman BiS HTML files into a structured JSON file.
+Parses Icy Veins TBC BiS HTML files into a structured JSON file.
 
-The icy-veins pages have two tables per phase:
+The icy-veins pages have one or two tables per phase:
   1. "Best in Slot Table" — items here are ranked as "BiS"
-  2. "Other Useful ... Gear" — items here are ranked as "Option"
+  2. "Other Useful ... Gear" — items here are ranked as "Option" (optional)
 
-Each table has rows with <td><strong>SlotName</strong></td> and items in <li> tags
-with <a data-wowhead="item=NNNNN&domain=tbc"> links.
+Slot names may appear in <td><strong>SlotName</strong></td> (shaman pages) or
+plain <td>SlotName</td> (paladin pages). Items may be in <li> tags or directly
+in the item <td> cell without list wrappers.
 
 Usage:
     uv run iv-parse --spec resto
     uv run iv-parse --spec ele
+    uv run iv-parse --spec prot
     uv run iv-parse --spec resto --output custom_output.json
 
-Spec aliases: resto, resto-shaman | ele, elemental, elemental-shaman
+Spec aliases: resto, resto-shaman | ele, elemental, elemental-shaman | prot, prot-paladin
 """
 
 import argparse
@@ -31,13 +33,16 @@ _SPEC_ALIASES: dict[str, str] = {
     "ele": "elemental-shaman",
     "elemental": "elemental-shaman",
     "elemental-shaman": "elemental-shaman",
+    "prot": "prot-paladin",
+    "protection": "prot-paladin",
+    "prot-paladin": "prot-paladin",
 }
 
 
 def resolve_spec(raw: str) -> str:
     key = raw.strip().lower()
     if key not in _SPEC_ALIASES:
-        print(f"Unknown spec '{raw}'. Use: resto, ele (or elemental).")
+        print(f"Unknown spec '{raw}'. Use: resto, ele, prot.")
         sys.exit(1)
     return _SPEC_ALIASES[key]
 
@@ -48,23 +53,37 @@ SLOT_NAME_MAP = {
     "helm": "head",
     "neck": "neck",
     "shoulders": "shoulders",
-    "shoulder": "shoulders",  # elemental
+    "shoulder": "shoulders",  # elemental / prot-paladin phases 1-5
     "back": "back",
-    "cloak": "back",  # elemental
+    "cloak": "back",  # elemental / prot-paladin phases 1-5
     "chest": "chest",
     "wrists": "wrists",
+    "bracer": "wrists",  # prot-paladin phases 1-5
+    "bracers": "wrists",  # prot-paladin
     "hands": "hands",
-    "gloves": "hands",  # elemental
+    "gloves": "hands",  # elemental / prot-paladin phases 1-5
     "belt": "waist",
+    "waist": "waist",  # prot-paladin phase-0
     "legs": "legs",
     "boots": "feet",
+    "feet": "feet",  # prot-paladin phase-0
     "rings": "rings",
+    "ring 1": "rings",  # prot-paladin phases 1-5 (individual ring slots)
+    "ring 2": "rings",  # prot-paladin phases 1-5
     "trinkets": "trinkets",
+    "trinket 1": "trinkets",  # prot-paladin phases 1-5 (individual trinket slots)
+    "trinket 2": "trinkets",  # prot-paladin phases 1-5
     "two-hand": "weapons",
     "one-hand": "weapons",
+    "weapon": "weapons",  # prot-paladin phases 1-5
+    "weapons": "weapons",  # prot-paladin phase-0
     "off-hand": "offhands",
+    "shield": "shields-offhands",  # prot paladin
+    "shields": "shields-offhands",  # prot paladin
     "relic": "totems",
     "relics": "totems",  # elemental
+    "libram": "totems",  # prot paladin (same canonical slot)
+    "librams": "totems",  # prot paladin
 }
 
 
@@ -96,6 +115,7 @@ class IcyVeinsParser(HTMLParser):
         self._is_slot_cell = False
         self._in_strong = False
         self._strong_text = ""
+        self._has_strong = False
 
         # Current slot
         self._current_slot: str | None = None
@@ -132,20 +152,24 @@ class IcyVeinsParser(HTMLParser):
         elif tag == "tr" and (self._in_bis_table or self._in_alt_table):
             self._in_row = True
             self._cell_idx = -1
+            self._current_item_id = None
+            self._source_text = ""
         elif tag == "td" and self._in_row:
             self._in_cell = True
             self._cell_idx += 1
             self._cell_text = ""
             self._is_slot_cell = False
+            self._has_strong = False
         elif tag == "strong" and self._in_cell and self._cell_idx == 0:
             self._in_strong = True
             self._strong_text = ""
+            self._has_strong = True
         elif tag == "li" and self._in_cell:
             self._in_li = True
             self._current_item_id = None
             self._current_item_name = ""
             self._source_text = ""
-        elif tag == "a" and self._in_li:
+        elif tag == "a" and self._in_cell:
             wowhead = attr.get("data-wowhead", "")
             css_class = attr.get("class", "")
             # Only capture item links (not npc/quest/spell links)
@@ -157,9 +181,12 @@ class IcyVeinsParser(HTMLParser):
                 "achievement",
             ):
                 m = re.search(r"item=(\d+)", wowhead)
-                if m and self._current_item_id is None:
-                    # First item link in this <li> is the actual item
-                    self._current_item_id = int(m.group(1))
+                if m:
+                    if self._in_li and self._current_item_id is None:
+                        self._current_item_id = int(m.group(1))
+                    elif not self._in_li and self._cell_idx == 1:
+                        # Direct item in cell (no <li> wrapper) — paladin format
+                        self._current_item_id = int(m.group(1))
 
     def handle_endtag(self, tag: str):
         if tag == "h2":
@@ -184,10 +211,20 @@ class IcyVeinsParser(HTMLParser):
             self._in_alt_table = False
         elif tag == "tr" and self._in_row:
             self._in_row = False
+            # Flush any item captured directly in a cell (no <li> wrapper)
+            if self._current_item_id and not self._in_li:
+                self._add_item()
+                self._current_item_id = None
         elif tag == "td" and self._in_cell:
             self._in_cell = False
             if self._in_strong and self._cell_idx == 0:
                 self._in_strong = False
+            # Detect slot names from plain <td>SlotName</td> (no <strong>)
+            if self._cell_idx == 0 and not self._has_strong:
+                slot_name = self._cell_text.strip().lower()
+                mapped = SLOT_NAME_MAP.get(slot_name)
+                if mapped:
+                    self._current_slot = mapped
         elif tag == "strong" and self._in_strong:
             self._in_strong = False
             if self._cell_idx == 0:
@@ -204,11 +241,12 @@ class IcyVeinsParser(HTMLParser):
             self._heading_text += data
         if self._in_strong and self._cell_idx == 0:
             self._strong_text += data
+        if self._in_cell:
+            self._cell_text += data
         if self._in_li:
-            # Collect item name from the first item link
-            if self._current_item_id is not None and not self._current_item_name:
-                # Check if we're currently inside the item's <a> tag
-                pass
+            self._source_text += data
+        elif self._in_cell and self._cell_idx == 2:
+            # Source column text for non-li format
             self._source_text += data
 
     def handle_entityref(self, name: str):

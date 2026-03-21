@@ -48,7 +48,7 @@ STAT_TO_WOWSIMS: dict[int, str] = {
 }
 
 # Defense rating to defense skill conversion at level 70
-DEFENSE_RATING_PER_SKILL = 2.3653
+DEFENSE_RATING_PER_SKILL = 2.3654
 BASE_DEFENSE_SKILL = 350
 
 # Crit cap constants (defense + resilience)

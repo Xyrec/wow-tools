@@ -28,13 +28,16 @@ _SPEC_ALIASES: dict[str, str] = {
     "ele": "elemental-shaman",
     "elemental": "elemental-shaman",
     "elemental-shaman": "elemental-shaman",
+    "prot": "prot-paladin",
+    "protection": "prot-paladin",
+    "prot-paladin": "prot-paladin",
 }
 
 
 def resolve_spec(raw: str) -> str:
     key = raw.strip().lower()
     if key not in _SPEC_ALIASES:
-        print(f"Unknown spec '{raw}'. Use: resto, ele (or elemental).")
+        print(f"Unknown spec '{raw}'. Use: resto, ele, prot.")
         sys.exit(1)
     return _SPEC_ALIASES[key]
 

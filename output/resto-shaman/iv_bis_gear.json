@@ -10,6 +10,12 @@
           "name": "Cyclone Headdress"
         },
         {
+          "rank": "BiS",
+          "item_id": 29028,
+          "source": "Cyclone Headdress ( Helm of the Fallen Champion): Prince Malchezaar — Karazhan",
+          "name": "Cyclone Headdress"
+        },
+        {
           "rank": "Option",
           "item_id": 30728,
           "source": "Fathom-Helm of the Deeps: Doomwalker — Shadowmoon Valley",
@@ -44,9 +50,21 @@
           "item_id": 28348,
           "source": "Moonglade Cowl: Warp Splinter — The Botanica",
           "name": "Moonglade Cowl"
+        },
+        {
+          "rank": "Option",
+          "item_id": 28348,
+          "source": "Moonglade Cowl: Warp Splinter — The Botanica",
+          "name": "Moonglade Cowl"
         }
       ],
       "neck": [
+        {
+          "rank": "BiS",
+          "item_id": 28609,
+          "source": "Emberspur Talisman: Nightbane — Karazhan",
+          "name": "Emberspur Talisman"
+        },
         {
           "rank": "BiS",
           "item_id": 28609,
@@ -82,9 +100,21 @@
           "item_id": 29334,
           "source": "Sethekk Oracle's Focus: Brother Against Brother — Sethekk Halls",
           "name": "Sethekk Oracle's Focus"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29334,
+          "source": "Sethekk Oracle's Focus: Brother Against Brother — Sethekk Halls",
+          "name": "Sethekk Oracle's Focus"
         }
       ],
       "shoulders": [
+        {
+          "rank": "BiS",
+          "item_id": 29031,
+          "source": "Cyclone Shoulderpads ( Pauldrons of the Fallen Champion): High King Maulgar — Gruul's Lair",
+          "name": "Cyclone Shoulderpads"
+        },
         {
           "rank": "BiS",
           "item_id": 29031,
@@ -120,9 +150,21 @@
           "item_id": 28250,
           "source": "Vestia's Pauldrons of Inner Grace: Cache of the Legion — The Mechanar",
           "name": "Vestia's Pauldrons of Inner Grace"
+        },
+        {
+          "rank": "Option",
+          "item_id": 28250,
+          "source": "Vestia's Pauldrons of Inner Grace: Cache of the Legion — The Mechanar",
+          "name": "Vestia's Pauldrons of Inner Grace"
         }
       ],
       "back": [
+        {
+          "rank": "BiS",
+          "item_id": 28765,
+          "source": "Stainless Cloak of the Pure Hearted: Prince Malchezaar — Karazhan",
+          "name": "Stainless Cloak of the Pure Hearted"
+        },
         {
           "rank": "BiS",
           "item_id": 28765,
@@ -152,6 +194,12 @@
           "item_id": 24254,
           "source": "White Remedy Cape: Tailoring",
           "name": "White Remedy Cape"
+        },
+        {
+          "rank": "Option",
+          "item_id": 24254,
+          "source": "White Remedy Cape: Tailoring",
+          "name": "White Remedy Cape"
         }
       ],
       "chest": [
@@ -160,6 +208,12 @@
           "item_id": 29522,
           "source": "Windhawk Hauberk: Tribal Leatherworking",
           "name": "Windhawk Hauberk"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 21875,
+          "source": "Primal Mooncloth Robe: Mooncloth Tailoring",
+          "name": "Primal Mooncloth Robe"
         },
         {
           "rank": "BiS",
@@ -196,9 +250,21 @@
           "item_id": 30298,
           "source": "Void Slayer's Tunic: Dimensius the All-Devouring — Netherstorm",
           "name": "Void Slayer's Tunic"
+        },
+        {
+          "rank": "Option",
+          "item_id": 30298,
+          "source": "Void Slayer's Tunic: Dimensius the All-Devouring — Netherstorm",
+          "name": "Void Slayer's Tunic"
         }
       ],
       "wrists": [
+        {
+          "rank": "BiS",
+          "item_id": 29523,
+          "source": "Windhawk Bracers: Tribal Leatherworking",
+          "name": "Windhawk Bracers"
+        },
         {
           "rank": "BiS",
           "item_id": 29523,
@@ -228,9 +294,21 @@
           "item_id": 29249,
           "source": "Bands of the Benevolent: Talon King Ikiss — Sethekk Halls",
           "name": "Bands of the Benevolent"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29249,
+          "source": "Bands of the Benevolent: Talon King Ikiss — Sethekk Halls",
+          "name": "Bands of the Benevolent"
         }
       ],
       "hands": [
+        {
+          "rank": "BiS",
+          "item_id": 28520,
+          "source": "Gloves of Centering: Maiden of Virtue — Karazhan",
+          "name": "Gloves of Centering"
+        },
         {
           "rank": "BiS",
           "item_id": 28520,
@@ -272,6 +350,12 @@
           "item_id": 31397,
           "source": "Gladiator's Ringmail Gauntlets: PvP Vendor",
           "name": "Gladiator's Ringmail Gauntlets"
+        },
+        {
+          "rank": "Option",
+          "item_id": 31397,
+          "source": "Gladiator's Ringmail Gauntlets: PvP Vendor",
+          "name": "Gladiator's Ringmail Gauntlets"
         }
       ],
       "waist": [
@@ -280,6 +364,12 @@
           "item_id": 29524,
           "source": "Windhawk Belt: Tribal Leatherworking",
           "name": "Windhawk Belt"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 21873,
+          "source": "Primal Mooncloth Belt: Mooncloth Tailoring",
+          "name": "Primal Mooncloth Belt"
         },
         {
           "rank": "BiS",
@@ -310,6 +400,12 @@
           "item_id": 30463,
           "source": "Lifeblood Belt: Leatherworking",
           "name": "Lifeblood Belt"
+        },
+        {
+          "rank": "Option",
+          "item_id": 30463,
+          "source": "Lifeblood Belt: Leatherworking",
+          "name": "Lifeblood Belt"
         }
       ],
       "legs": [
@@ -318,6 +414,12 @@
           "item_id": 30727,
           "source": "Gilded Trousers of Benediction: Doomwalker — Shadowmoon Valley",
           "name": "Gilded Trousers of Benediction"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 28751,
+          "source": "Heart-Flame Leggings: Echo of Medivh — Karazhan",
+          "name": "Heart-Flame Leggings"
         },
         {
           "rank": "BiS",
@@ -354,6 +456,12 @@
           "item_id": 27875,
           "source": "Hallowed Trousers: Talon King Ikiss — Sethekk Halls",
           "name": "Hallowed Trousers"
+        },
+        {
+          "rank": "Option",
+          "item_id": 27875,
+          "source": "Hallowed Trousers: Talon King Ikiss — Sethekk Halls",
+          "name": "Hallowed Trousers"
         }
       ],
       "feet": [
@@ -362,6 +470,12 @@
           "item_id": 30737,
           "source": "Gold-Leaf Wildboots: Doom-Lord Kazzak — Hellfire Peninsula",
           "name": "Gold-Leaf Wildboots"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 28752,
+          "source": "Forestlord Striders: Echo of Medivh — Karazhan",
+          "name": "Forestlord Striders"
         },
         {
           "rank": "BiS",
@@ -392,6 +506,12 @@
           "item_id": 27411,
           "source": "Slippers of Serenity: Exarch Maladaar — Auchenai Crypts",
           "name": "Slippers of Serenity"
+        },
+        {
+          "rank": "Option",
+          "item_id": 27411,
+          "source": "Slippers of Serenity: Exarch Maladaar — Auchenai Crypts",
+          "name": "Slippers of Serenity"
         }
       ],
       "rings": [
@@ -400,6 +520,12 @@
           "item_id": 28763,
           "source": "Jade Ring of the Everliving: Prince Malchezaar in Karazhan",
           "name": "Jade Ring of the Everliving"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 28790,
+          "source": "Naaru Lightwarden's Band: Magtheridon — Magtheridon's Lair",
+          "name": "Naaru Lightwarden's Band"
         },
         {
           "rank": "BiS",
@@ -436,6 +562,12 @@
           "item_id": 29373,
           "source": "Band of Halos: 25 Badge of Justice",
           "name": "Band of Halos"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29373,
+          "source": "Band of Halos: 25 Badge of Justice",
+          "name": "Band of Halos"
         }
       ],
       "trinkets": [
@@ -444,6 +576,12 @@
           "item_id": 29376,
           "source": "Essence of the Martyr: 41 Badge of Justice",
           "name": "Essence of the Martyr"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 28190,
+          "source": "Scarab of the Infinite Cycle: Aeonus — The Black Morass",
+          "name": "Scarab of the Infinite Cycle"
         },
         {
           "rank": "BiS",
@@ -474,6 +612,12 @@
           "item_id": 21625,
           "source": "Scarab Brooch: Viscidus — AQ40",
           "name": "Scarab Brooch"
+        },
+        {
+          "rank": "Option",
+          "item_id": 21625,
+          "source": "Scarab Brooch: Viscidus — AQ40",
+          "name": "Scarab Brooch"
         }
       ],
       "weapons": [
@@ -488,6 +632,18 @@
           "item_id": 28782,
           "source": "Crystalheart Pulse-Staff: Magtheridon — Magtheridon's Lair",
           "name": "Crystalheart Pulse-Staff"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 28782,
+          "source": "Crystalheart Pulse-Staff: Magtheridon — Magtheridon's Lair",
+          "name": "Crystalheart Pulse-Staff"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 28771,
+          "source": "Light's Justice: Prince Malchezaar — Karazhan",
+          "name": "Light's Justice"
         },
         {
           "rank": "BiS",
@@ -521,6 +677,12 @@
         },
         {
           "rank": "Option",
+          "item_id": 27791,
+          "source": "Serpentcrest Life-Staff: Mekgineer Steamrigger — The Steamvault",
+          "name": "Serpentcrest Life-Staff"
+        },
+        {
+          "rank": "Option",
           "item_id": 32451,
           "source": "Gladiator's Salvation: PvP Vendo",
           "name": "Gladiator's Salvation"
@@ -542,9 +704,21 @@
           "item_id": 31342,
           "source": "The Ancient Scepter of Sue-Min: World drop BoE",
           "name": "The Ancient Scepter of Sue-Min"
+        },
+        {
+          "rank": "Option",
+          "item_id": 31342,
+          "source": "The Ancient Scepter of Sue-Min: World drop BoE",
+          "name": "The Ancient Scepter of Sue-Min"
         }
       ],
       "offhands": [
+        {
+          "rank": "BiS",
+          "item_id": 29458,
+          "source": "Aegis of the Vindicator: Magtheridon — Magtheridon's Lair",
+          "name": "Aegis of the Vindicator"
+        },
         {
           "rank": "BiS",
           "item_id": 29458,
@@ -586,9 +760,21 @@
           "item_id": 31292,
           "source": "Crystal Pulse Shield: World drop BoE",
           "name": "Crystal Pulse Shield"
+        },
+        {
+          "rank": "Option",
+          "item_id": 31292,
+          "source": "Crystal Pulse Shield: World drop BoE",
+          "name": "Crystal Pulse Shield"
         }
       ],
       "totems": [
+        {
+          "rank": "BiS",
+          "item_id": 28523,
+          "source": "Totem of Healing Rains: Maiden of Virtue — Karazhan",
+          "name": "Totem of Healing Rains"
+        },
         {
           "rank": "BiS",
           "item_id": 28523,
@@ -612,11 +798,23 @@
           "item_id": 25645,
           "source": "Totem of the Plains: The Ultimate Bloodsport — Nagrand",
           "name": "Totem of the Plains"
+        },
+        {
+          "rank": "Option",
+          "item_id": 25645,
+          "source": "Totem of the Plains: The Ultimate Bloodsport — Nagrand",
+          "name": "Totem of the Plains"
         }
       ]
     },
     "phase-1": {
       "head": [
+        {
+          "rank": "BiS",
+          "item_id": 29028,
+          "source": "Cyclone Headdress ( Helm of the Fallen Champion): Prince Malchezaar — Karazhan",
+          "name": "Cyclone Headdress"
+        },
         {
           "rank": "BiS",
           "item_id": 29028,
@@ -658,9 +856,21 @@
           "item_id": 28348,
           "source": "Moonglade Cowl: Warp Splinter — The Botanica",
           "name": "Moonglade Cowl"
+        },
+        {
+          "rank": "Option",
+          "item_id": 28348,
+          "source": "Moonglade Cowl: Warp Splinter — The Botanica",
+          "name": "Moonglade Cowl"
         }
       ],
       "neck": [
+        {
+          "rank": "BiS",
+          "item_id": 28609,
+          "source": "Emberspur Talisman: Nightbane — Karazhan",
+          "name": "Emberspur Talisman"
+        },
         {
           "rank": "BiS",
           "item_id": 28609,
@@ -696,9 +906,21 @@
           "item_id": 29334,
           "source": "Sethekk Oracle's Focus: Brother Against Brother — Sethekk Halls",
           "name": "Sethekk Oracle's Focus"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29334,
+          "source": "Sethekk Oracle's Focus: Brother Against Brother — Sethekk Halls",
+          "name": "Sethekk Oracle's Focus"
         }
       ],
       "shoulders": [
+        {
+          "rank": "BiS",
+          "item_id": 29031,
+          "source": "Cyclone Shoulderpads ( Pauldrons of the Fallen Champion): High King Maulgar — Gruul's Lair",
+          "name": "Cyclone Shoulderpads"
+        },
         {
           "rank": "BiS",
           "item_id": 29031,
@@ -734,9 +956,21 @@
           "item_id": 28250,
           "source": "Vestia's Pauldrons of Inner Grace: Cache of the Legion — The Mechanar",
           "name": "Vestia's Pauldrons of Inner Grace"
+        },
+        {
+          "rank": "Option",
+          "item_id": 28250,
+          "source": "Vestia's Pauldrons of Inner Grace: Cache of the Legion — The Mechanar",
+          "name": "Vestia's Pauldrons of Inner Grace"
         }
       ],
       "back": [
+        {
+          "rank": "BiS",
+          "item_id": 28765,
+          "source": "Stainless Cloak of the Pure Hearted: Prince Malchezaar — Karazhan",
+          "name": "Stainless Cloak of the Pure Hearted"
+        },
         {
           "rank": "BiS",
           "item_id": 28765,
@@ -766,6 +1000,12 @@
           "item_id": 24254,
           "source": "White Remedy Cape: Tailoring",
           "name": "White Remedy Cape"
+        },
+        {
+          "rank": "Option",
+          "item_id": 24254,
+          "source": "White Remedy Cape: Tailoring",
+          "name": "White Remedy Cape"
         }
       ],
       "chest": [
@@ -774,6 +1014,12 @@
           "item_id": 29522,
           "source": "Windhawk Hauberk: Tribal Leatherworking",
           "name": "Windhawk Hauberk"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 21875,
+          "source": "Primal Mooncloth Robe: Mooncloth Tailoring",
+          "name": "Primal Mooncloth Robe"
         },
         {
           "rank": "BiS",
@@ -810,9 +1056,21 @@
           "item_id": 30298,
           "source": "Void Slayer's Tunic: Dimensius the All-Devouring — Netherstorm",
           "name": "Void Slayer's Tunic"
+        },
+        {
+          "rank": "Option",
+          "item_id": 30298,
+          "source": "Void Slayer's Tunic: Dimensius the All-Devouring — Netherstorm",
+          "name": "Void Slayer's Tunic"
         }
       ],
       "wrists": [
+        {
+          "rank": "BiS",
+          "item_id": 29523,
+          "source": "Windhawk Bracers: Tribal Leatherworking",
+          "name": "Windhawk Bracers"
+        },
         {
           "rank": "BiS",
           "item_id": 29523,
@@ -842,9 +1100,21 @@
           "item_id": 29249,
           "source": "Bands of the Benevolent: Talon King Ikiss — Sethekk Halls",
           "name": "Bands of the Benevolent"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29249,
+          "source": "Bands of the Benevolent: Talon King Ikiss — Sethekk Halls",
+          "name": "Bands of the Benevolent"
         }
       ],
       "hands": [
+        {
+          "rank": "BiS",
+          "item_id": 28520,
+          "source": "Gloves of Centering: Maiden of Virtue — Karazhan",
+          "name": "Gloves of Centering"
+        },
         {
           "rank": "BiS",
           "item_id": 28520,
@@ -886,6 +1156,12 @@
           "item_id": 31397,
           "source": "Gladiator's Ringmail Gauntlets: PvP Vendor",
           "name": "Gladiator's Ringmail Gauntlets"
+        },
+        {
+          "rank": "Option",
+          "item_id": 31397,
+          "source": "Gladiator's Ringmail Gauntlets: PvP Vendor",
+          "name": "Gladiator's Ringmail Gauntlets"
         }
       ],
       "waist": [
@@ -894,6 +1170,12 @@
           "item_id": 29524,
           "source": "Windhawk Belt: Tribal Leatherworking",
           "name": "Windhawk Belt"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 21873,
+          "source": "Primal Mooncloth Belt: Mooncloth Tailoring",
+          "name": "Primal Mooncloth Belt"
         },
         {
           "rank": "BiS",
@@ -924,6 +1206,12 @@
           "item_id": 30463,
           "source": "Lifeblood Belt: Leatherworking",
           "name": "Lifeblood Belt"
+        },
+        {
+          "rank": "Option",
+          "item_id": 30463,
+          "source": "Lifeblood Belt: Leatherworking",
+          "name": "Lifeblood Belt"
         }
       ],
       "legs": [
@@ -932,6 +1220,12 @@
           "item_id": 30727,
           "source": "Gilded Trousers of Benediction: Doomwalker — Shadowmoon Valley",
           "name": "Gilded Trousers of Benediction"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 28751,
+          "source": "Heart-Flame Leggings: Echo of Medivh — Karazhan",
+          "name": "Heart-Flame Leggings"
         },
         {
           "rank": "BiS",
@@ -968,6 +1262,12 @@
           "item_id": 27875,
           "source": "Hallowed Trousers: Talon King Ikiss — Sethekk Halls",
           "name": "Hallowed Trousers"
+        },
+        {
+          "rank": "Option",
+          "item_id": 27875,
+          "source": "Hallowed Trousers: Talon King Ikiss — Sethekk Halls",
+          "name": "Hallowed Trousers"
         }
       ],
       "feet": [
@@ -976,6 +1276,12 @@
           "item_id": 30737,
           "source": "Gold-Leaf Wildboots: Doom-Lord Kazzak — Hellfire Peninsula",
           "name": "Gold-Leaf Wildboots"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 28752,
+          "source": "Forestlord Striders: Echo of Medivh — Karazhan",
+          "name": "Forestlord Striders"
         },
         {
           "rank": "BiS",
@@ -1006,6 +1312,12 @@
           "item_id": 27411,
           "source": "Slippers of Serenity: Exarch Maladaar — Auchenai Crypts",
           "name": "Slippers of Serenity"
+        },
+        {
+          "rank": "Option",
+          "item_id": 27411,
+          "source": "Slippers of Serenity: Exarch Maladaar — Auchenai Crypts",
+          "name": "Slippers of Serenity"
         }
       ],
       "rings": [
@@ -1014,6 +1326,12 @@
           "item_id": 28763,
           "source": "Jade Ring of the Everliving: Prince Malchezaar in Karazhan",
           "name": "Jade Ring of the Everliving"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 28790,
+          "source": "Naaru Lightwarden's Band: Magtheridon — Magtheridon's Lair",
+          "name": "Naaru Lightwarden's Band"
         },
         {
           "rank": "BiS",
@@ -1050,6 +1368,12 @@
           "item_id": 29373,
           "source": "Band of Halos: 25 Badge of Justice",
           "name": "Band of Halos"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29373,
+          "source": "Band of Halos: 25 Badge of Justice",
+          "name": "Band of Halos"
         }
       ],
       "trinkets": [
@@ -1058,6 +1382,12 @@
           "item_id": 29376,
           "source": "Essence of the Martyr: 41 Badge of Justice",
           "name": "Essence of the Martyr"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 28190,
+          "source": "Scarab of the Infinite Cycle: Aeonus — The Black Morass",
+          "name": "Scarab of the Infinite Cycle"
         },
         {
           "rank": "BiS",
@@ -1088,6 +1418,12 @@
           "item_id": 21625,
           "source": "Scarab Brooch: Viscidus — AQ40",
           "name": "Scarab Brooch"
+        },
+        {
+          "rank": "Option",
+          "item_id": 21625,
+          "source": "Scarab Brooch: Viscidus — AQ40",
+          "name": "Scarab Brooch"
         }
       ],
       "weapons": [
@@ -1102,6 +1438,18 @@
           "item_id": 28782,
           "source": "Crystalheart Pulse-Staff: Magtheridon — Magtheridon's Lair",
           "name": "Crystalheart Pulse-Staff"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 28782,
+          "source": "Crystalheart Pulse-Staff: Magtheridon — Magtheridon's Lair",
+          "name": "Crystalheart Pulse-Staff"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 28771,
+          "source": "Light's Justice: Prince Malchezaar — Karazhan",
+          "name": "Light's Justice"
         },
         {
           "rank": "BiS",
@@ -1135,6 +1483,12 @@
         },
         {
           "rank": "Option",
+          "item_id": 27791,
+          "source": "Serpentcrest Life-Staff: Mekgineer Steamrigger — The Steamvault",
+          "name": "Serpentcrest Life-Staff"
+        },
+        {
+          "rank": "Option",
           "item_id": 32451,
           "source": "Gladiator's Salvation: PvP Vendo",
           "name": "Gladiator's Salvation"
@@ -1156,9 +1510,21 @@
           "item_id": 31342,
           "source": "The Ancient Scepter of Sue-Min: World drop BoE",
           "name": "The Ancient Scepter of Sue-Min"
+        },
+        {
+          "rank": "Option",
+          "item_id": 31342,
+          "source": "The Ancient Scepter of Sue-Min: World drop BoE",
+          "name": "The Ancient Scepter of Sue-Min"
         }
       ],
       "offhands": [
+        {
+          "rank": "BiS",
+          "item_id": 29458,
+          "source": "Aegis of the Vindicator: Magtheridon — Magtheridon's Lair",
+          "name": "Aegis of the Vindicator"
+        },
         {
           "rank": "BiS",
           "item_id": 29458,
@@ -1200,9 +1566,21 @@
           "item_id": 31292,
           "source": "Crystal Pulse Shield: World drop BoE",
           "name": "Crystal Pulse Shield"
+        },
+        {
+          "rank": "Option",
+          "item_id": 31292,
+          "source": "Crystal Pulse Shield: World drop BoE",
+          "name": "Crystal Pulse Shield"
         }
       ],
       "totems": [
+        {
+          "rank": "BiS",
+          "item_id": 28523,
+          "source": "Totem of Healing Rains: Maiden of Virtue — Karazhan",
+          "name": "Totem of Healing Rains"
+        },
         {
           "rank": "BiS",
           "item_id": 28523,
@@ -1226,11 +1604,23 @@
           "item_id": 25645,
           "source": "Totem of the Plains: The Ultimate Bloodsport — Nagrand",
           "name": "Totem of the Plains"
+        },
+        {
+          "rank": "Option",
+          "item_id": 25645,
+          "source": "Totem of the Plains: The Ultimate Bloodsport — Nagrand",
+          "name": "Totem of the Plains"
         }
       ]
     },
     "phase-2": {
       "head": [
+        {
+          "rank": "BiS",
+          "item_id": 30166,
+          "source": "Cataclysm Headguard ( Helm of the Vanquished Champion): Lady Vashj — Serpentshrine Cavern",
+          "name": "Cataclysm Headguard"
+        },
         {
           "rank": "BiS",
           "item_id": 30166,
@@ -1284,9 +1674,21 @@
           "item_id": 28348,
           "source": "Moonglade Cowl: Warp Splinter — The Botanica",
           "name": "Moonglade Cowl"
+        },
+        {
+          "rank": "Option",
+          "item_id": 28348,
+          "source": "Moonglade Cowl: Warp Splinter — The Botanica",
+          "name": "Moonglade Cowl"
         }
       ],
       "neck": [
+        {
+          "rank": "BiS",
+          "item_id": 30018,
+          "source": "Lord Sanguinar's Claim: Kael'thas Sunstrider — Tempest Keep",
+          "name": "Lord Sanguinar's Claim"
+        },
         {
           "rank": "BiS",
           "item_id": 30018,
@@ -1328,9 +1730,21 @@
           "item_id": 29334,
           "source": "Sethekk Oracle's Focus: Brother Against Brother — Sethekk Halls",
           "name": "Sethekk Oracle's Focus"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29334,
+          "source": "Sethekk Oracle's Focus: Brother Against Brother — Sethekk Halls",
+          "name": "Sethekk Oracle's Focus"
         }
       ],
       "shoulders": [
+        {
+          "rank": "BiS",
+          "item_id": 30168,
+          "source": "Cataclysm Shoulderguards ( Pauldrons of the Vanquished Champion): Void Reaver — Tempest Keep",
+          "name": "Cataclysm Shoulderguards"
+        },
         {
           "rank": "BiS",
           "item_id": 30168,
@@ -1378,9 +1792,21 @@
           "item_id": 28250,
           "source": "Vestia's Pauldrons of Inner Grace: Cache of the Legion — The Mechanar",
           "name": "Vestia's Pauldrons of Inner Grace"
+        },
+        {
+          "rank": "Option",
+          "item_id": 28250,
+          "source": "Vestia's Pauldrons of Inner Grace: Cache of the Legion — The Mechanar",
+          "name": "Vestia's Pauldrons of Inner Grace"
         }
       ],
       "back": [
+        {
+          "rank": "BiS",
+          "item_id": 29989,
+          "source": "Sunshower Light Cloak: Kael'thas Sunstrider — Tempest Keep",
+          "name": "Sunshower Light Cloak"
+        },
         {
           "rank": "BiS",
           "item_id": 29989,
@@ -1416,9 +1842,21 @@
           "item_id": 24254,
           "source": "White Remedy Cape: Tailoring",
           "name": "White Remedy Cape"
+        },
+        {
+          "rank": "Option",
+          "item_id": 24254,
+          "source": "White Remedy Cape: Tailoring",
+          "name": "White Remedy Cape"
         }
       ],
       "chest": [
+        {
+          "rank": "BiS",
+          "item_id": 30164,
+          "source": "Cataclysm Chestguard ( Chestguard of the Vanquished Champion): Kael'thas Sunstrider — Tempest Keep",
+          "name": "Cataclysm Chestguard"
+        },
         {
           "rank": "BiS",
           "item_id": 30164,
@@ -1472,9 +1910,21 @@
           "item_id": 30298,
           "source": "Void Slayer's Tunic: Dimensius the All-Devouring — Netherstorm",
           "name": "Void Slayer's Tunic"
+        },
+        {
+          "rank": "Option",
+          "item_id": 30298,
+          "source": "Void Slayer's Tunic: Dimensius the All-Devouring — Netherstorm",
+          "name": "Void Slayer's Tunic"
         }
       ],
       "wrists": [
+        {
+          "rank": "BiS",
+          "item_id": 30047,
+          "source": "Blackfathom Warbands: Hydross the Unstable — Serpentshrine Cavern",
+          "name": "Blackfathom Warbands"
+        },
         {
           "rank": "BiS",
           "item_id": 30047,
@@ -1516,9 +1966,21 @@
           "item_id": 29249,
           "source": "Bands of the Benevolent: Talon King Ikiss — Sethekk Halls",
           "name": "Bands of the Benevolent"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29249,
+          "source": "Bands of the Benevolent: Talon King Ikiss — Sethekk Halls",
+          "name": "Bands of the Benevolent"
         }
       ],
       "hands": [
+        {
+          "rank": "BiS",
+          "item_id": 29976,
+          "source": "Worldstorm Gauntlets: High Astromancer Solarian — Tempest Keep",
+          "name": "Worldstorm Gauntlets"
+        },
         {
           "rank": "BiS",
           "item_id": 29976,
@@ -1572,9 +2034,21 @@
           "item_id": 31397,
           "source": "Gladiator's Ringmail Gauntlets: PvP Vendor",
           "name": "Gladiator's Ringmail Gauntlets"
+        },
+        {
+          "rank": "Option",
+          "item_id": 31397,
+          "source": "Gladiator's Ringmail Gauntlets: PvP Vendor",
+          "name": "Gladiator's Ringmail Gauntlets"
         }
       ],
       "waist": [
+        {
+          "rank": "BiS",
+          "item_id": 30030,
+          "source": "Girdle of Fallen Stars: Trash mobs — Tempest Keep",
+          "name": "Girdle of Fallen Stars"
+        },
         {
           "rank": "BiS",
           "item_id": 30030,
@@ -1616,9 +2090,21 @@
           "item_id": 30463,
           "source": "Lifeblood Belt: Leatherworking",
           "name": "Lifeblood Belt"
+        },
+        {
+          "rank": "Option",
+          "item_id": 30463,
+          "source": "Lifeblood Belt: Leatherworking",
+          "name": "Lifeblood Belt"
         }
       ],
       "legs": [
+        {
+          "rank": "BiS",
+          "item_id": 29991,
+          "source": "Sunhawk Leggings: Kael'thas Sunstrider — Tempest Keep",
+          "name": "Sunhawk Leggings"
+        },
         {
           "rank": "BiS",
           "item_id": 29991,
@@ -1672,9 +2158,21 @@
           "item_id": 27875,
           "source": "Hallowed Trousers: Talon King Ikiss — Sethekk Halls",
           "name": "Hallowed Trousers"
+        },
+        {
+          "rank": "Option",
+          "item_id": 27875,
+          "source": "Hallowed Trousers: Talon King Ikiss — Sethekk Halls",
+          "name": "Hallowed Trousers"
         }
       ],
       "feet": [
+        {
+          "rank": "BiS",
+          "item_id": 30092,
+          "source": "Orca-Hide Boots: Leotheras the Blind — Serpentshrine Cavern",
+          "name": "Orca-Hide Boots"
+        },
         {
           "rank": "BiS",
           "item_id": 30092,
@@ -1710,6 +2208,12 @@
           "item_id": 27919,
           "source": "Light-Woven Slippers: Darkweaver Syth — Sethekk Halls",
           "name": "Light-Woven Slippers"
+        },
+        {
+          "rank": "Option",
+          "item_id": 27411,
+          "source": "Slippers of Serenity: Exarch Maladaar — Auchenai Crypts",
+          "name": "Slippers of Serenity"
         },
         {
           "rank": "Option",
@@ -1738,6 +2242,12 @@
           "name": "Naaru Lightwarden's Band"
         },
         {
+          "rank": "BiS",
+          "item_id": 28790,
+          "source": "Naaru Lightwarden's Band: Magtheridon — Magtheridon's Lair",
+          "name": "Naaru Lightwarden's Band"
+        },
+        {
           "rank": "Option",
           "item_id": 28763,
           "source": "Jade Ring of the Everliving: Prince Malchezaar in Karazhan",
@@ -1772,6 +2282,12 @@
           "item_id": 29373,
           "source": "Band of Halos: 25 Badge of Justice",
           "name": "Band of Halos"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29373,
+          "source": "Band of Halos: 25 Badge of Justice",
+          "name": "Band of Halos"
         }
       ],
       "trinkets": [
@@ -1786,6 +2302,12 @@
           "item_id": 38288,
           "source": "Direbrew Hops: Coren Direbrew — Blackrock Depths during Brewfest",
           "name": "Direbrew Hops"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 28190,
+          "source": "Scarab of the Infinite Cycle: Aeonus — The Black Morass",
+          "name": "Scarab of the Infinite Cycle"
         },
         {
           "rank": "BiS",
@@ -1822,9 +2344,21 @@
           "item_id": 21625,
           "source": "Scarab Brooch: Viscidus — AQ40",
           "name": "Scarab Brooch"
+        },
+        {
+          "rank": "Option",
+          "item_id": 21625,
+          "source": "Scarab Brooch: Viscidus — AQ40",
+          "name": "Scarab Brooch"
         }
       ],
       "weapons": [
+        {
+          "rank": "BiS",
+          "item_id": 30108,
+          "source": "Lightfathom Scepter: Lady Vashj — Serpentshrine Cavern",
+          "name": "Lightfathom Scepter"
+        },
         {
           "rank": "BiS",
           "item_id": 30108,
@@ -1860,6 +2394,12 @@
           "item_id": 31038,
           "source": "Staff of the Redeemer: The Cipher of Damnation — Shadowmoon Valley",
           "name": "Staff of the Redeemer"
+        },
+        {
+          "rank": "Option",
+          "item_id": 27791,
+          "source": "Serpentcrest Life-Staff: Mekgineer Steamrigger — The Steamvault",
+          "name": "Serpentcrest Life-Staff"
         },
         {
           "rank": "Option",
@@ -1908,9 +2448,21 @@
           "item_id": 31342,
           "source": "The Ancient Scepter of Sue-Min: World drop BoE",
           "name": "The Ancient Scepter of Sue-Min"
+        },
+        {
+          "rank": "Option",
+          "item_id": 31342,
+          "source": "The Ancient Scepter of Sue-Min: World drop BoE",
+          "name": "The Ancient Scepter of Sue-Min"
         }
       ],
       "offhands": [
+        {
+          "rank": "BiS",
+          "item_id": 29458,
+          "source": "Aegis of the Vindicator: Magtheridon — Magtheridon's Lair",
+          "name": "Aegis of the Vindicator"
+        },
         {
           "rank": "BiS",
           "item_id": 29458,
@@ -1952,9 +2504,21 @@
           "item_id": 31292,
           "source": "Crystal Pulse Shield: World drop BoE",
           "name": "Crystal Pulse Shield"
+        },
+        {
+          "rank": "Option",
+          "item_id": 31292,
+          "source": "Crystal Pulse Shield: World drop BoE",
+          "name": "Crystal Pulse Shield"
         }
       ],
       "totems": [
+        {
+          "rank": "BiS",
+          "item_id": 28523,
+          "source": "Totem of Healing Rains: Maiden of Virtue — Karazhan",
+          "name": "Totem of Healing Rains"
+        },
         {
           "rank": "BiS",
           "item_id": 28523,
@@ -1972,6 +2536,12 @@
           "item_id": 22396,
           "source": "Totem of Life: Fankriss The Unyielding — AQ40",
           "name": "Totem of Life"
+        },
+        {
+          "rank": "Option",
+          "item_id": 25645,
+          "source": "Totem of the Plains: The Ultimate Bloodsport — Nagrand",
+          "name": "Totem of the Plains"
         },
         {
           "rank": "Option",
@@ -1990,6 +2560,12 @@
           "name": "Skyshatter Helmet"
         },
         {
+          "rank": "BiS",
+          "item_id": 31012,
+          "source": "Skyshatter Helmet ( Helm of the Forgotten Protector): Archimonde — Hyjal Summit",
+          "name": "Skyshatter Helmet"
+        },
+        {
           "rank": "Option",
           "item_id": 30166,
           "source": "Cataclysm Headguard ( Helm of the Vanquished Champion): Lady Vashj — Serpentshrine Cavern",
@@ -2042,9 +2618,21 @@
           "item_id": 28348,
           "source": "Moonglade Cowl: Warp Splinter — The Botanica",
           "name": "Moonglade Cowl"
+        },
+        {
+          "rank": "Option",
+          "item_id": 28348,
+          "source": "Moonglade Cowl: Warp Splinter — The Botanica",
+          "name": "Moonglade Cowl"
         }
       ],
       "neck": [
+        {
+          "rank": "BiS",
+          "item_id": 33281,
+          "source": "Brooch of Nature's Mercy: Akil'zon — Zul'Aman",
+          "name": "Brooch of Nature's Mercy"
+        },
         {
           "rank": "BiS",
           "item_id": 33281,
@@ -2098,9 +2686,21 @@
           "item_id": 29334,
           "source": "Sethekk Oracle's Focus: Brother Against Brother — Sethekk Halls",
           "name": "Sethekk Oracle's Focus"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29334,
+          "source": "Sethekk Oracle's Focus: Brother Against Brother — Sethekk Halls",
+          "name": "Sethekk Oracle's Focus"
         }
       ],
       "shoulders": [
+        {
+          "rank": "BiS",
+          "item_id": 31022,
+          "source": "Skyshatter Shoulderpads ( Pauldrons of the Forgotten Protector): Mother Shahraz — Black Temple",
+          "name": "Skyshatter Shoulderpads"
+        },
         {
           "rank": "BiS",
           "item_id": 31022,
@@ -2154,9 +2754,21 @@
           "item_id": 28250,
           "source": "Vestia's Pauldrons of Inner Grace: Cache of the Legion — The Mechanar",
           "name": "Vestia's Pauldrons of Inner Grace"
+        },
+        {
+          "rank": "Option",
+          "item_id": 28250,
+          "source": "Vestia's Pauldrons of Inner Grace: Cache of the Legion — The Mechanar",
+          "name": "Vestia's Pauldrons of Inner Grace"
         }
       ],
       "back": [
+        {
+          "rank": "BiS",
+          "item_id": 32524,
+          "source": "Shroud of the Highborne: Illidan Stormrage — Black Temple",
+          "name": "Shroud of the Highborne"
+        },
         {
           "rank": "BiS",
           "item_id": 32524,
@@ -2216,9 +2828,21 @@
           "item_id": 24254,
           "source": "White Remedy Cape: Tailoring",
           "name": "White Remedy Cape"
+        },
+        {
+          "rank": "Option",
+          "item_id": 24254,
+          "source": "White Remedy Cape: Tailoring",
+          "name": "White Remedy Cape"
         }
       ],
       "chest": [
+        {
+          "rank": "BiS",
+          "item_id": 31016,
+          "source": "Skyshatter Chestguard ( Chestguard of the Forgotten Protector): Illidan Stormrage — Black Temple",
+          "name": "Skyshatter Chestguard"
+        },
         {
           "rank": "BiS",
           "item_id": 31016,
@@ -2284,9 +2908,21 @@
           "item_id": 30298,
           "source": "Void Slayer's Tunic: Dimensius the All-Devouring — Netherstorm",
           "name": "Void Slayer's Tunic"
+        },
+        {
+          "rank": "Option",
+          "item_id": 30298,
+          "source": "Void Slayer's Tunic: Dimensius the All-Devouring — Netherstorm",
+          "name": "Void Slayer's Tunic"
         }
       ],
       "wrists": [
+        {
+          "rank": "BiS",
+          "item_id": 32577,
+          "source": "Living Earth Bindings: Leatherworking",
+          "name": "Living Earth Bindings"
+        },
         {
           "rank": "BiS",
           "item_id": 32577,
@@ -2334,9 +2970,21 @@
           "item_id": 29249,
           "source": "Bands of the Benevolent: Talon King Ikiss — Sethekk Halls",
           "name": "Bands of the Benevolent"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29249,
+          "source": "Bands of the Benevolent: Talon King Ikiss — Sethekk Halls",
+          "name": "Bands of the Benevolent"
         }
       ],
       "hands": [
+        {
+          "rank": "BiS",
+          "item_id": 32328,
+          "source": "Botanist's Gloves of Growth: Teron Gorefiend — Black Temple",
+          "name": "Botanist's Gloves of Growth"
+        },
         {
           "rank": "BiS",
           "item_id": 32328,
@@ -2402,6 +3050,12 @@
           "item_id": 32030,
           "source": "Merciless Gladiator's Ringmail Gauntlets: PvP Vendor",
           "name": "Merciless Gladiator's Ringmail Gauntlets"
+        },
+        {
+          "rank": "Option",
+          "item_id": 32030,
+          "source": "Merciless Gladiator's Ringmail Gauntlets: PvP Vendor",
+          "name": "Merciless Gladiator's Ringmail Gauntlets"
         }
       ],
       "waist": [
@@ -2416,6 +3070,12 @@
           "item_id": 32339,
           "source": "Belt of Primal Majesty: Gurtogg Bloodboil — Black Temple",
           "name": "Belt of Primal Majesty"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 30895,
+          "source": "Angelista's Sash: Kaz'rogal — Hyjal Summit",
+          "name": "Angelista's Sash"
         },
         {
           "rank": "BiS",
@@ -2470,9 +3130,21 @@
           "item_id": 30463,
           "source": "Lifeblood Belt: Leatherworking",
           "name": "Lifeblood Belt"
+        },
+        {
+          "rank": "Option",
+          "item_id": 30463,
+          "source": "Lifeblood Belt: Leatherworking",
+          "name": "Lifeblood Belt"
         }
       ],
       "legs": [
+        {
+          "rank": "BiS",
+          "item_id": 31019,
+          "source": "Skyshatter Leggings ( Leggings of the Forgotten Protector): The Illidari Council — Black Temple",
+          "name": "Skyshatter Leggings"
+        },
         {
           "rank": "BiS",
           "item_id": 31019,
@@ -2538,6 +3210,12 @@
           "item_id": 27875,
           "source": "Hallowed Trousers: Talon King Ikiss — Sethekk Halls",
           "name": "Hallowed Trousers"
+        },
+        {
+          "rank": "Option",
+          "item_id": 27875,
+          "source": "Hallowed Trousers: Talon King Ikiss — Sethekk Halls",
+          "name": "Hallowed Trousers"
         }
       ],
       "feet": [
@@ -2546,6 +3224,12 @@
           "item_id": 33324,
           "source": "Treads of the Life Path: G'eras in Shattrath — 60 Badge of Justice",
           "name": "Treads of the Life Path"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 33471,
+          "source": "Two-toed Sandals: Zul'jin — Zul'Aman",
+          "name": "Two-toed Sandals"
         },
         {
           "rank": "BiS",
@@ -2606,6 +3290,12 @@
           "item_id": 27411,
           "source": "Slippers of Serenity: Exarch Maladaar — Auchenai Crypts",
           "name": "Slippers of Serenity"
+        },
+        {
+          "rank": "Option",
+          "item_id": 27411,
+          "source": "Slippers of Serenity: Exarch Maladaar — Auchenai Crypts",
+          "name": "Slippers of Serenity"
         }
       ],
       "rings": [
@@ -2620,6 +3310,12 @@
           "item_id": 33498,
           "source": "Signet of the Quiet Forest: Third chest in a Zul'Aman timed run",
           "name": "Signet of the Quiet Forest"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 29309,
+          "source": "Band of the Eternal Restorer: Exalted with The Scale of the Sands",
+          "name": "Band of the Eternal Restorer"
         },
         {
           "rank": "BiS",
@@ -2680,6 +3376,12 @@
           "item_id": 29373,
           "source": "Band of Halos: 25 Badge of Justice",
           "name": "Band of Halos"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29373,
+          "source": "Band of Halos: 25 Badge of Justice",
+          "name": "Band of Halos"
         }
       ],
       "trinkets": [
@@ -2700,6 +3402,12 @@
           "item_id": 38288,
           "source": "Direbrew Hops: Coren Direbrew — Blackrock Depths during Brewfest",
           "name": "Direbrew Hops"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 28190,
+          "source": "Scarab of the Infinite Cycle: Aeonus — The Black Morass",
+          "name": "Scarab of the Infinite Cycle"
         },
         {
           "rank": "BiS",
@@ -2742,9 +3450,21 @@
           "item_id": 21625,
           "source": "Scarab Brooch: Viscidus — AQ40",
           "name": "Scarab Brooch"
+        },
+        {
+          "rank": "Option",
+          "item_id": 21625,
+          "source": "Scarab Brooch: Viscidus — AQ40",
+          "name": "Scarab Brooch"
         }
       ],
       "weapons": [
+        {
+          "rank": "BiS",
+          "item_id": 32500,
+          "source": "Crystal Spire of Karabor: Illidan Stormrage — Black Temple",
+          "name": "Crystal Spire of Karabor"
+        },
         {
           "rank": "BiS",
           "item_id": 32500,
@@ -2792,6 +3512,12 @@
           "item_id": 31038,
           "source": "Staff of the Redeemer: The Cipher of Damnation — Shadowmoon Valley",
           "name": "Staff of the Redeemer"
+        },
+        {
+          "rank": "Option",
+          "item_id": 27791,
+          "source": "Serpentcrest Life-Staff: Mekgineer Steamrigger — The Steamvault",
+          "name": "Serpentcrest Life-Staff"
         },
         {
           "rank": "Option",
@@ -2858,6 +3584,12 @@
           "item_id": 31342,
           "source": "The Ancient Scepter of Sue-Min: World drop BoE",
           "name": "The Ancient Scepter of Sue-Min"
+        },
+        {
+          "rank": "Option",
+          "item_id": 31342,
+          "source": "The Ancient Scepter of Sue-Min: World drop BoE",
+          "name": "The Ancient Scepter of Sue-Min"
         }
       ],
       "offhands": [
@@ -2866,6 +3598,12 @@
           "item_id": 30882,
           "source": "Bastion of Light: Anetheron — Hyjal Summit",
           "name": "Bastion of Light"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 32255,
+          "source": "Felstone Bulwark: Supremus — Black Temple",
+          "name": "Felstone Bulwark"
         },
         {
           "rank": "BiS",
@@ -2920,9 +3658,21 @@
           "item_id": 31292,
           "source": "Crystal Pulse Shield: World drop BoE",
           "name": "Crystal Pulse Shield"
+        },
+        {
+          "rank": "Option",
+          "item_id": 31292,
+          "source": "Crystal Pulse Shield: World drop BoE",
+          "name": "Crystal Pulse Shield"
         }
       ],
       "totems": [
+        {
+          "rank": "BiS",
+          "item_id": 28523,
+          "source": "Totem of Healing Rains: Maiden of Virtue — Karazhan",
+          "name": "Totem of Healing Rains"
+        },
         {
           "rank": "BiS",
           "item_id": 28523,
@@ -2952,11 +3702,23 @@
           "item_id": 25645,
           "source": "Totem of the Plains: The Ultimate Bloodsport — Nagrand",
           "name": "Totem of the Plains"
+        },
+        {
+          "rank": "Option",
+          "item_id": 25645,
+          "source": "Totem of the Plains: The Ultimate Bloodsport — Nagrand",
+          "name": "Totem of the Plains"
         }
       ]
     },
     "phase-4": {
       "head": [
+        {
+          "rank": "BiS",
+          "item_id": 31012,
+          "source": "Skyshatter Helmet ( Helm of the Forgotten Protector): Archimonde — Hyjal Summit",
+          "name": "Skyshatter Helmet"
+        },
         {
           "rank": "BiS",
           "item_id": 31012,
@@ -3016,9 +3778,21 @@
           "item_id": 28348,
           "source": "Moonglade Cowl: Warp Splinter — The Botanica",
           "name": "Moonglade Cowl"
+        },
+        {
+          "rank": "Option",
+          "item_id": 28348,
+          "source": "Moonglade Cowl: Warp Splinter — The Botanica",
+          "name": "Moonglade Cowl"
         }
       ],
       "neck": [
+        {
+          "rank": "BiS",
+          "item_id": 33281,
+          "source": "Brooch of Nature's Mercy: Akil'zon — Zul'Aman",
+          "name": "Brooch of Nature's Mercy"
+        },
         {
           "rank": "BiS",
           "item_id": 33281,
@@ -3072,9 +3846,21 @@
           "item_id": 29334,
           "source": "Sethekk Oracle's Focus: Brother Against Brother — Sethekk Halls",
           "name": "Sethekk Oracle's Focus"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29334,
+          "source": "Sethekk Oracle's Focus: Brother Against Brother — Sethekk Halls",
+          "name": "Sethekk Oracle's Focus"
         }
       ],
       "shoulders": [
+        {
+          "rank": "BiS",
+          "item_id": 31022,
+          "source": "Skyshatter Shoulderpads ( Pauldrons of the Forgotten Protector): Mother Shahraz — Black Temple",
+          "name": "Skyshatter Shoulderpads"
+        },
         {
           "rank": "BiS",
           "item_id": 31022,
@@ -3128,9 +3914,21 @@
           "item_id": 28250,
           "source": "Vestia's Pauldrons of Inner Grace: Cache of the Legion — The Mechanar",
           "name": "Vestia's Pauldrons of Inner Grace"
+        },
+        {
+          "rank": "Option",
+          "item_id": 28250,
+          "source": "Vestia's Pauldrons of Inner Grace: Cache of the Legion — The Mechanar",
+          "name": "Vestia's Pauldrons of Inner Grace"
         }
       ],
       "back": [
+        {
+          "rank": "BiS",
+          "item_id": 32524,
+          "source": "Shroud of the Highborne: Illidan Stormrage — Black Temple",
+          "name": "Shroud of the Highborne"
+        },
         {
           "rank": "BiS",
           "item_id": 32524,
@@ -3190,9 +3988,21 @@
           "item_id": 24254,
           "source": "White Remedy Cape: Tailoring",
           "name": "White Remedy Cape"
+        },
+        {
+          "rank": "Option",
+          "item_id": 24254,
+          "source": "White Remedy Cape: Tailoring",
+          "name": "White Remedy Cape"
         }
       ],
       "chest": [
+        {
+          "rank": "BiS",
+          "item_id": 31016,
+          "source": "Skyshatter Chestguard ( Chestguard of the Forgotten Protector): Illidan Stormrage — Black Temple",
+          "name": "Skyshatter Chestguard"
+        },
         {
           "rank": "BiS",
           "item_id": 31016,
@@ -3258,9 +4068,21 @@
           "item_id": 30298,
           "source": "Void Slayer's Tunic: Dimensius the All-Devouring — Netherstorm",
           "name": "Void Slayer's Tunic"
+        },
+        {
+          "rank": "Option",
+          "item_id": 30298,
+          "source": "Void Slayer's Tunic: Dimensius the All-Devouring — Netherstorm",
+          "name": "Void Slayer's Tunic"
         }
       ],
       "wrists": [
+        {
+          "rank": "BiS",
+          "item_id": 32577,
+          "source": "Living Earth Bindings: Leatherworking",
+          "name": "Living Earth Bindings"
+        },
         {
           "rank": "BiS",
           "item_id": 32577,
@@ -3308,9 +4130,21 @@
           "item_id": 29249,
           "source": "Bands of the Benevolent: Talon King Ikiss — Sethekk Halls",
           "name": "Bands of the Benevolent"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29249,
+          "source": "Bands of the Benevolent: Talon King Ikiss — Sethekk Halls",
+          "name": "Bands of the Benevolent"
         }
       ],
       "hands": [
+        {
+          "rank": "BiS",
+          "item_id": 32328,
+          "source": "Botanist's Gloves of Growth: Teron Gorefiend — Black Temple",
+          "name": "Botanist's Gloves of Growth"
+        },
         {
           "rank": "BiS",
           "item_id": 32328,
@@ -3376,6 +4210,12 @@
           "item_id": 32030,
           "source": "Merciless Gladiator's Ringmail Gauntlets: PvP Vendor",
           "name": "Merciless Gladiator's Ringmail Gauntlets"
+        },
+        {
+          "rank": "Option",
+          "item_id": 32030,
+          "source": "Merciless Gladiator's Ringmail Gauntlets: PvP Vendor",
+          "name": "Merciless Gladiator's Ringmail Gauntlets"
         }
       ],
       "waist": [
@@ -3390,6 +4230,12 @@
           "item_id": 32339,
           "source": "Belt of Primal Majesty: Gurtogg Bloodboil — Black Temple",
           "name": "Belt of Primal Majesty"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 30895,
+          "source": "Angelista's Sash: Kaz'rogal — Hyjal Summit",
+          "name": "Angelista's Sash"
         },
         {
           "rank": "BiS",
@@ -3444,9 +4290,21 @@
           "item_id": 30463,
           "source": "Lifeblood Belt: Leatherworking",
           "name": "Lifeblood Belt"
+        },
+        {
+          "rank": "Option",
+          "item_id": 30463,
+          "source": "Lifeblood Belt: Leatherworking",
+          "name": "Lifeblood Belt"
         }
       ],
       "legs": [
+        {
+          "rank": "BiS",
+          "item_id": 31019,
+          "source": "Skyshatter Leggings ( Leggings of the Forgotten Protector): The Illidari Council — Black Temple",
+          "name": "Skyshatter Leggings"
+        },
         {
           "rank": "BiS",
           "item_id": 31019,
@@ -3512,6 +4370,12 @@
           "item_id": 27875,
           "source": "Hallowed Trousers: Talon King Ikiss — Sethekk Halls",
           "name": "Hallowed Trousers"
+        },
+        {
+          "rank": "Option",
+          "item_id": 27875,
+          "source": "Hallowed Trousers: Talon King Ikiss — Sethekk Halls",
+          "name": "Hallowed Trousers"
         }
       ],
       "feet": [
@@ -3520,6 +4384,12 @@
           "item_id": 33324,
           "source": "Treads of the Life Path: G'eras in Shattrath — 60 Badge of Justice",
           "name": "Treads of the Life Path"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 33471,
+          "source": "Two-toed Sandals: Zul'jin — Zul'Aman",
+          "name": "Two-toed Sandals"
         },
         {
           "rank": "BiS",
@@ -3580,6 +4450,12 @@
           "item_id": 27411,
           "source": "Slippers of Serenity: Exarch Maladaar — Auchenai Crypts",
           "name": "Slippers of Serenity"
+        },
+        {
+          "rank": "Option",
+          "item_id": 27411,
+          "source": "Slippers of Serenity: Exarch Maladaar — Auchenai Crypts",
+          "name": "Slippers of Serenity"
         }
       ],
       "rings": [
@@ -3594,6 +4470,12 @@
           "item_id": 33498,
           "source": "Signet of the Quiet Forest: Third chest in a Zul'Aman timed run",
           "name": "Signet of the Quiet Forest"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 29309,
+          "source": "Band of the Eternal Restorer: Exalted with The Scale of the Sands",
+          "name": "Band of the Eternal Restorer"
         },
         {
           "rank": "BiS",
@@ -3654,6 +4536,12 @@
           "item_id": 29373,
           "source": "Band of Halos: 25 Badge of Justice",
           "name": "Band of Halos"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29373,
+          "source": "Band of Halos: 25 Badge of Justice",
+          "name": "Band of Halos"
         }
       ],
       "trinkets": [
@@ -3674,6 +4562,12 @@
           "item_id": 38288,
           "source": "Direbrew Hops: Coren Direbrew — Blackrock Depths during Brewfest",
           "name": "Direbrew Hops"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 28190,
+          "source": "Scarab of the Infinite Cycle: Aeonus — The Black Morass",
+          "name": "Scarab of the Infinite Cycle"
         },
         {
           "rank": "BiS",
@@ -3716,9 +4610,21 @@
           "item_id": 21625,
           "source": "Scarab Brooch: Viscidus — AQ40",
           "name": "Scarab Brooch"
+        },
+        {
+          "rank": "Option",
+          "item_id": 21625,
+          "source": "Scarab Brooch: Viscidus — AQ40",
+          "name": "Scarab Brooch"
         }
       ],
       "weapons": [
+        {
+          "rank": "BiS",
+          "item_id": 32500,
+          "source": "Crystal Spire of Karabor: Illidan Stormrage — Black Temple",
+          "name": "Crystal Spire of Karabor"
+        },
         {
           "rank": "BiS",
           "item_id": 32500,
@@ -3766,6 +4672,12 @@
           "item_id": 31038,
           "source": "Staff of the Redeemer: The Cipher of Damnation — Shadowmoon Valley",
           "name": "Staff of the Redeemer"
+        },
+        {
+          "rank": "Option",
+          "item_id": 27791,
+          "source": "Serpentcrest Life-Staff: Mekgineer Steamrigger — The Steamvault",
+          "name": "Serpentcrest Life-Staff"
         },
         {
           "rank": "Option",
@@ -3832,6 +4744,12 @@
           "item_id": 31342,
           "source": "The Ancient Scepter of Sue-Min: World drop BoE",
           "name": "The Ancient Scepter of Sue-Min"
+        },
+        {
+          "rank": "Option",
+          "item_id": 31342,
+          "source": "The Ancient Scepter of Sue-Min: World drop BoE",
+          "name": "The Ancient Scepter of Sue-Min"
         }
       ],
       "offhands": [
@@ -3840,6 +4758,12 @@
           "item_id": 30882,
           "source": "Bastion of Light: Anetheron — Hyjal Summit",
           "name": "Bastion of Light"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 32255,
+          "source": "Felstone Bulwark: Supremus — Black Temple",
+          "name": "Felstone Bulwark"
         },
         {
           "rank": "BiS",
@@ -3894,9 +4818,21 @@
           "item_id": 31292,
           "source": "Crystal Pulse Shield: World drop BoE",
           "name": "Crystal Pulse Shield"
+        },
+        {
+          "rank": "Option",
+          "item_id": 31292,
+          "source": "Crystal Pulse Shield: World drop BoE",
+          "name": "Crystal Pulse Shield"
         }
       ],
       "totems": [
+        {
+          "rank": "BiS",
+          "item_id": 28523,
+          "source": "Totem of Healing Rains: Maiden of Virtue — Karazhan",
+          "name": "Totem of Healing Rains"
+        },
         {
           "rank": "BiS",
           "item_id": 28523,
@@ -3926,11 +4862,23 @@
           "item_id": 25645,
           "source": "Totem of the Plains: The Ultimate Bloodsport — Nagrand",
           "name": "Totem of the Plains"
+        },
+        {
+          "rank": "Option",
+          "item_id": 25645,
+          "source": "Totem of the Plains: The Ultimate Bloodsport — Nagrand",
+          "name": "Totem of the Plains"
         }
       ]
     },
     "phase-5": {
       "head": [
+        {
+          "rank": "BiS",
+          "item_id": 34402,
+          "source": "Shroud of Chieftain Ner'zhul ( Sunmote swap): Kil'jaeden — Sunwell Plateau",
+          "name": "Shroud of Chieftain Ner'zhul"
+        },
         {
           "rank": "BiS",
           "item_id": 34402,
@@ -4008,6 +4956,12 @@
           "item_id": 28348,
           "source": "Moonglade Cowl: Warp Splinter — The Botanica",
           "name": "Moonglade Cowl"
+        },
+        {
+          "rank": "Option",
+          "item_id": 28348,
+          "source": "Moonglade Cowl: Warp Splinter — The Botanica",
+          "name": "Moonglade Cowl"
         }
       ],
       "neck": [
@@ -4016,6 +4970,12 @@
           "item_id": 34360,
           "source": "Amulet of Flowing Life: Jewelcrafting",
           "name": "Amulet of Flowing Life"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 33281,
+          "source": "Brooch of Nature's Mercy: Akil'zon — Zul'Aman",
+          "name": "Brooch of Nature's Mercy"
         },
         {
           "rank": "BiS",
@@ -4082,6 +5042,12 @@
           "item_id": 29334,
           "source": "Sethekk Oracle's Focus: Brother Against Brother — Sethekk Halls",
           "name": "Sethekk Oracle's Focus"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29334,
+          "source": "Sethekk Oracle's Focus: Brother Against Brother — Sethekk Halls",
+          "name": "Sethekk Oracle's Focus"
         }
       ],
       "shoulders": [
@@ -4096,6 +5062,12 @@
           "item_id": 34208,
           "source": "Equilibrium Epaulets: Eredar Twins — Sunwell Plateau",
           "name": "Equilibrium Epaulets"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 34202,
+          "source": "Shawl of Wonderment: Eredar Twins — Sunwell Plateau",
+          "name": "Shawl of Wonderment"
         },
         {
           "rank": "BiS",
@@ -4150,9 +5122,21 @@
           "item_id": 28250,
           "source": "Vestia's Pauldrons of Inner Grace: Cache of the Legion — The Mechanar",
           "name": "Vestia's Pauldrons of Inner Grace"
+        },
+        {
+          "rank": "Option",
+          "item_id": 28250,
+          "source": "Vestia's Pauldrons of Inner Grace: Cache of the Legion — The Mechanar",
+          "name": "Vestia's Pauldrons of Inner Grace"
         }
       ],
       "back": [
+        {
+          "rank": "BiS",
+          "item_id": 32524,
+          "source": "Shroud of the Highborne: Illidan Stormrage — Black Temple",
+          "name": "Shroud of the Highborne"
+        },
         {
           "rank": "BiS",
           "item_id": 32524,
@@ -4224,6 +5208,12 @@
           "item_id": 24254,
           "source": "White Remedy Cape: Tailoring",
           "name": "White Remedy Cape"
+        },
+        {
+          "rank": "Option",
+          "item_id": 24254,
+          "source": "White Remedy Cape: Tailoring",
+          "name": "White Remedy Cape"
         }
       ],
       "chest": [
@@ -4232,6 +5222,12 @@
           "item_id": 34375,
           "source": "Sun-Drenched Scale Chestguard: Leatherworking",
           "name": "Sun-Drenched Scale Chestguard"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 34212,
+          "source": "Sunglow Vest: M'uru — Sunwell Plateau",
+          "name": "Sunglow Vest"
         },
         {
           "rank": "BiS",
@@ -4316,9 +5312,21 @@
           "item_id": 30298,
           "source": "Void Slayer's Tunic: Dimensius the All-Devouring — Netherstorm",
           "name": "Void Slayer's Tunic"
+        },
+        {
+          "rank": "Option",
+          "item_id": 30298,
+          "source": "Void Slayer's Tunic: Dimensius the All-Devouring — Netherstorm",
+          "name": "Void Slayer's Tunic"
         }
       ],
       "wrists": [
+        {
+          "rank": "BiS",
+          "item_id": 34438,
+          "source": "Skyshatter Bracers ( Bracers of the Forgotten Protector): Kalecgos — Sunwell Plateau",
+          "name": "Skyshatter Bracers"
+        },
         {
           "rank": "BiS",
           "item_id": 34438,
@@ -4372,6 +5380,12 @@
           "item_id": 29249,
           "source": "Bands of the Benevolent: Talon King Ikiss — Sethekk Halls",
           "name": "Bands of the Benevolent"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29249,
+          "source": "Bands of the Benevolent: Talon King Ikiss — Sethekk Halls",
+          "name": "Bands of the Benevolent"
         }
       ],
       "hands": [
@@ -4380,6 +5394,12 @@
           "item_id": 34376,
           "source": "Sun-Drenched Scale Gloves: Leatherworking",
           "name": "Sun-Drenched Scale Gloves"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 34409,
+          "source": "Gauntlets of the Ancient Frostwolf ( Sunmote swap): Trash in Sunwell Plateau",
+          "name": "Gauntlets of the Ancient Frostwolf"
         },
         {
           "rank": "BiS",
@@ -4452,9 +5472,21 @@
           "item_id": 32030,
           "source": "Merciless Gladiator's Ringmail Gauntlets: PvP Vendor",
           "name": "Merciless Gladiator's Ringmail Gauntlets"
+        },
+        {
+          "rank": "Option",
+          "item_id": 32030,
+          "source": "Merciless Gladiator's Ringmail Gauntlets: PvP Vendor",
+          "name": "Merciless Gladiator's Ringmail Gauntlets"
         }
       ],
       "waist": [
+        {
+          "rank": "BiS",
+          "item_id": 34543,
+          "source": "Skyshatter Belt ( Belt of the Forgotten Protector): Brutallus — Sunwell Plateau",
+          "name": "Skyshatter Belt"
+        },
         {
           "rank": "BiS",
           "item_id": 34543,
@@ -4526,9 +5558,21 @@
           "item_id": 30463,
           "source": "Lifeblood Belt: Leatherworking",
           "name": "Lifeblood Belt"
+        },
+        {
+          "rank": "Option",
+          "item_id": 30463,
+          "source": "Lifeblood Belt: Leatherworking",
+          "name": "Lifeblood Belt"
         }
       ],
       "legs": [
+        {
+          "rank": "BiS",
+          "item_id": 34383,
+          "source": "Kilt of Spiritual Reconstruction ( Sunmote swap): Felmyst — Sunwell Plateau",
+          "name": "Kilt of Spiritual Reconstruction"
+        },
         {
           "rank": "BiS",
           "item_id": 34383,
@@ -4606,9 +5650,21 @@
           "item_id": 27875,
           "source": "Hallowed Trousers: Talon King Ikiss — Sethekk Halls",
           "name": "Hallowed Trousers"
+        },
+        {
+          "rank": "Option",
+          "item_id": 27875,
+          "source": "Hallowed Trousers: Talon King Ikiss — Sethekk Halls",
+          "name": "Hallowed Trousers"
         }
       ],
       "feet": [
+        {
+          "rank": "BiS",
+          "item_id": 34565,
+          "source": "Skyshatter Boots ( Boots of the Forgotten Protector): Felmyst — Sunwell Plateau",
+          "name": "Skyshatter Boots"
+        },
         {
           "rank": "BiS",
           "item_id": 34565,
@@ -4680,9 +5736,21 @@
           "item_id": 27411,
           "source": "Slippers of Serenity: Exarch Maladaar — Auchenai Crypts",
           "name": "Slippers of Serenity"
+        },
+        {
+          "rank": "Option",
+          "item_id": 27411,
+          "source": "Slippers of Serenity: Exarch Maladaar — Auchenai Crypts",
+          "name": "Slippers of Serenity"
         }
       ],
       "rings": [
+        {
+          "rank": "BiS",
+          "item_id": 32528,
+          "source": "Blessed Band of Karabor (2x): Trash Packs — Black Temple",
+          "name": "Blessed Band of Karabor"
+        },
         {
           "rank": "BiS",
           "item_id": 32528,
@@ -4766,6 +5834,12 @@
           "item_id": 29373,
           "source": "Band of Halos: 25 Badge of Justice",
           "name": "Band of Halos"
+        },
+        {
+          "rank": "Option",
+          "item_id": 29373,
+          "source": "Band of Halos: 25 Badge of Justice",
+          "name": "Band of Halos"
         }
       ],
       "trinkets": [
@@ -4798,6 +5872,12 @@
           "item_id": 38288,
           "source": "Direbrew Hops: Coren Direbrew — Blackrock Depths during Brewfest",
           "name": "Direbrew Hops"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 28190,
+          "source": "Scarab of the Infinite Cycle: Aeonus — The Black Morass",
+          "name": "Scarab of the Infinite Cycle"
         },
         {
           "rank": "BiS",
@@ -4840,9 +5920,21 @@
           "item_id": 21625,
           "source": "Scarab Brooch: Viscidus — AQ40",
           "name": "Scarab Brooch"
+        },
+        {
+          "rank": "Option",
+          "item_id": 21625,
+          "source": "Scarab Brooch: Viscidus — AQ40",
+          "name": "Scarab Brooch"
         }
       ],
       "weapons": [
+        {
+          "rank": "BiS",
+          "item_id": 34335,
+          "source": "Hammer of Sanctification: Kil'jaeden — Sunwell Plateau",
+          "name": "Hammer of Sanctification"
+        },
         {
           "rank": "BiS",
           "item_id": 34335,
@@ -4890,6 +5982,12 @@
           "item_id": 31038,
           "source": "Staff of the Redeemer: The Cipher of Damnation — Shadowmoon Valley",
           "name": "Staff of the Redeemer"
+        },
+        {
+          "rank": "Option",
+          "item_id": 27791,
+          "source": "Serpentcrest Life-Staff: Mekgineer Steamrigger — The Steamvault",
+          "name": "Serpentcrest Life-Staff"
         },
         {
           "rank": "Option",
@@ -4974,6 +6072,12 @@
           "item_id": 31342,
           "source": "The Ancient Scepter of Sue-Min: World drop BoE",
           "name": "The Ancient Scepter of Sue-Min"
+        },
+        {
+          "rank": "Option",
+          "item_id": 31342,
+          "source": "The Ancient Scepter of Sue-Min: World drop BoE",
+          "name": "The Ancient Scepter of Sue-Min"
         }
       ],
       "offhands": [
@@ -4982,6 +6086,12 @@
           "item_id": 34206,
           "source": "Book of Highborne Hymns: Eredar Twins — Sunwell Plateau",
           "name": "Book of Highborne Hymns"
+        },
+        {
+          "rank": "BiS",
+          "item_id": 34231,
+          "source": "Aegis of Angelic Fortune: M'uru — Sunwell Plateau",
+          "name": "Aegis of Angelic Fortune"
         },
         {
           "rank": "BiS",
@@ -5048,9 +6158,21 @@
           "item_id": 31292,
           "source": "Crystal Pulse Shield: World drop BoE",
           "name": "Crystal Pulse Shield"
+        },
+        {
+          "rank": "Option",
+          "item_id": 31292,
+          "source": "Crystal Pulse Shield: World drop BoE",
+          "name": "Crystal Pulse Shield"
         }
       ],
       "totems": [
+        {
+          "rank": "BiS",
+          "item_id": 28523,
+          "source": "Totem of Healing Rains: Maiden of Virtue — Karazhan",
+          "name": "Totem of Healing Rains"
+        },
         {
           "rank": "BiS",
           "item_id": 28523,
@@ -5074,6 +6196,12 @@
           "item_id": 22396,
           "source": "Totem of Life: Fankriss The Unyielding — AQ40",
           "name": "Totem of Life"
+        },
+        {
+          "rank": "Option",
+          "item_id": 25645,
+          "source": "Totem of the Plains: The Ultimate Bloodsport — Nagrand",
+          "name": "Totem of the Plains"
         },
         {
           "rank": "Option",

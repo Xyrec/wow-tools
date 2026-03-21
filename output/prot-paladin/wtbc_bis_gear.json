@@ -1,0 +1,809 @@
+{
+  "current_phase": "phase-1",
+  "phases": {
+    "phase-0": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Faceguard of Determination",
+          "source": "Vendor — Badge of Justice (50)",
+          "item_id": 32083
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Strength of the Untamed",
+          "source": "Reputation — Cenarion Expedition - Revered",
+          "item_id": 29173
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Spaulders of the Righteous",
+          "source": "Botanica — Laj (20%)",
+          "item_id": 27739
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Devilshark Cape",
+          "source": "The Steamvault — Warlord Kalithresh\n            (16%)",
+          "item_id": 27804
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Breastplate of the Righteous",
+          "source": "The Steamvault — Warlord Kalithresh (16%)",
+          "item_id": 28203
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Bracers of Dignity",
+          "source": "Arcatraz (HC) — Harbinger Skyriss\n            (25%)",
+          "item_id": 29252
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Felsteel Gloves",
+          "source": "Blacksmithing — BoP Pattern (360)",
+          "item_id": 23517
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Girdle of Valorous Deeds",
+          "source": "The Black Morass (HC) — Aeonus (25%)",
+          "item_id": 29253
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Timewarden's Leggings",
+          "source": "Reputation — Keepers of Time - Revered",
+          "item_id": 29184
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Boots of the Righteous Path",
+          "source": "The Shattered Halls (HC) — Warchief Kargath Bladefist (25%)",
+          "item_id": 29254
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Elementium Band of the Sentry",
+          "source": "The Arcatraz — Harbinger Skyriss (16%)",
+          "item_id": 28407
+        },
+        {
+          "rank": "BiS",
+          "name": "Andormu's Tear",
+          "source": "Quest Reward — Hero of the Brood",
+          "item_id": 29323
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Icon of the Silver Crescent",
+          "source": "Vendor — Badge of Justice (41)",
+          "item_id": 29370
+        },
+        {
+          "rank": "BiS",
+          "name": "Figurine of the Colossus",
+          "source": "The Shattered Halls — Warchief Kargath Bladefist (16%)",
+          "item_id": 27529
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Gavel of Unearthed Secrets",
+          "source": "Reputation — Lower City - Exalted",
+          "item_id": 30832
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Azure-Shield of Coldarra",
+          "source": "Vendor — Badge of Justice (33)",
+          "item_id": 29266
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Libram of Repentance",
+          "source": "Vendor — Badge of Justice (15)",
+          "item_id": 29388
+        }
+      ]
+    },
+    "phase-1": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Justicar Faceguard",
+          "source": "Karazhan — Prince Malchezaar (56%)",
+          "item_id": 29068
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Barbed Choker of Discipline",
+          "source": "Karazhan — Maiden of Virtue (16%)",
+          "item_id": 28516
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Justicar Shoulderguards",
+          "source": "Gruul's Lair — High King Maulgar (56%)",
+          "item_id": 29070
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Devilshark Cape",
+          "source": "The Steamvault — Warlord Kalithresh\n            (16%)",
+          "item_id": 27804
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Justicar Chestguard",
+          "source": "Magtheridon's Lair — Magtheridon (56%)",
+          "item_id": 29066
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Bracers of Dignity",
+          "source": "Arcatraz (HC) — Harbinger Skyriss\n            (25%)",
+          "item_id": 29252
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Iron Gauntlets of the Maiden",
+          "source": "Karazhan — Maiden of Virtue (16%)",
+          "item_id": 28518
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Crimson Girdle of the Indomitable",
+          "source": "Karazhan — Moroes (16%)",
+          "item_id": 28566
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Justicar Legguards",
+          "source": "Gruul's Lair — Gruul the Dragonkiller (56%)",
+          "item_id": 29069
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Boots of Elusion",
+          "source": "Karazhan — Trash Drop",
+          "item_id": 30641
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Violet Signet of the Great Protector",
+          "source": "Reputation — The Violet Eye - Exalted",
+          "item_id": 29279
+        },
+        {
+          "rank": "BiS",
+          "name": "Ashyen's Gift",
+          "source": "Reputation — Cenarion Expedition - Exalted",
+          "item_id": 29172
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Icon of the Silver Crescent",
+          "source": "Vendor — Badge of Justice (41)",
+          "item_id": 29370
+        },
+        {
+          "rank": "BiS",
+          "name": "Eye of Magtheridon",
+          "source": "Magtheridon's Lair — Magtheridon (35%)",
+          "item_id": 28789
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Bloodmaw Magus-Blade",
+          "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
+          "item_id": 28802
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Aldori Legacy Defender",
+          "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
+          "item_id": 28825
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Libram of Repentance",
+          "source": "Vendor — Badge of Justice (15)",
+          "item_id": 29388
+        }
+      ]
+    },
+    "phase-2": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Crystalforge Faceguard",
+          "source": "SSC — Lady Vashj (56%)",
+          "item_id": 30125
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Veteran's Pendant of Dominance",
+          "source": "PvP — Honor & EotS Marks",
+          "item_id": 33065
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Justicar Shoulderguards",
+          "source": "Gruul's Lair — High King Maulgar (56%)",
+          "item_id": 29070
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Phoenix-Wing Cloak",
+          "source": "Tempest Keep — Al'ar (15%)",
+          "item_id": 29925
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Justicar Chestguard",
+          "source": "Magtheridon's Lair — Magtheridon (56%)",
+          "item_id": 29066
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Wristguards of Determination",
+          "source": "Tempest Keep — Void Reaver (14%)",
+          "item_id": 32515
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Crystalforge Handguards",
+          "source": "SSC — Leotheras the Blind (56%)",
+          "item_id": 30124
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Girdle of the Invulnerable",
+          "source": "SSC — Leotheras the Blind (17%)",
+          "item_id": 30096
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Crystalforge Legguards",
+          "source": "SSC — Fathom-Lord Karanthress (56%)",
+          "item_id": 30126
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Boots of the Resilient",
+          "source": "Tempest Keep — High Astromancer Solarian (15%)",
+          "item_id": 32267
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "The Seal of Danzalar",
+          "source": "SSC — The Lurker Below (15%)",
+          "item_id": 33054
+        },
+        {
+          "rank": "BiS",
+          "name": "Ashyen's Gift",
+          "source": "Reputation — Cenarion Expedition - Exalted",
+          "item_id": 29172
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Icon of the Silver Crescent",
+          "source": "Vendor — Badge of Justice (41)",
+          "item_id": 29370
+        },
+        {
+          "rank": "BiS",
+          "name": "Tome of Fiery Redemption",
+          "source": "Tempest Keep — Al'ar (15%)",
+          "item_id": 30447
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Fang of the Leviathan",
+          "source": "SSC — Leotheras the Blind (17%)",
+          "item_id": 30095
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Aldori Legacy Defender",
+          "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
+          "item_id": 28825
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Libram of the Eternal Rest",
+          "source": "Sethekk Halls — Darkweaver Syth (17%)",
+          "item_id": 27917
+        }
+      ]
+    },
+    "phase-3": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Faceplate of the Impenetrable",
+          "source": "Black Temple — Illidan Stormrage (37%)",
+          "item_id": 32521
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Vindicator's Pendant of Dominance",
+          "source": "PvP — Honor & EotS Marks",
+          "item_id": 33921
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Shoulderguards",
+          "source": "Black Temple — Mother Shahraz (56%)",
+          "item_id": 30998
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Phoenix-Wing Cloak",
+          "source": "Tempest Keep — Al'ar (15%)",
+          "item_id": 29925
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Chestguard",
+          "source": "Black Temple — Illidan Stormrage (56%)",
+          "item_id": 30991
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "The Seeker's Wristguards",
+          "source": "Black Temple — Shade of Akama (10%)",
+          "item_id": 32279
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Handguards",
+          "source": "Hyjal Summit — Azgalor (56%)",
+          "item_id": 30985
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Girdle of Mighty Resolve",
+          "source": "Black Temple — Gurtogg Bloddboil (8%)",
+          "item_id": 32342
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Legguards",
+          "source": "Black Temple — The Illidari Council (56%)",
+          "item_id": 30995
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Tide-Stomper's Greaves",
+          "source": "Black Temple — High Warlord Naj'entus (6%)",
+          "item_id": 32245
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "The Seal of Danzalar",
+          "source": "SSC — The Lurker Below (15%)",
+          "item_id": 33054
+        },
+        {
+          "rank": "BiS",
+          "name": "Ashyen's Gift",
+          "source": "Reputation — Cenarion Expedition - Exalted",
+          "item_id": 29172
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Icon of the Silver Crescent",
+          "source": "Vendor — Badge of Justice (41)",
+          "item_id": 29370
+        },
+        {
+          "rank": "BiS",
+          "name": "Tome of Fiery Redemption",
+          "source": "Tempest Keep — Al'ar (15%)",
+          "item_id": 30447
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Tempest of Chaos",
+          "source": "Hyjal Summit — Archimonde (20%)",
+          "item_id": 30910
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Bulwark of Azzinoth",
+          "source": "Black Temple — Illidan Stormrage (38%)",
+          "item_id": 32375
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Libram of the Eternal Rest",
+          "source": "Sethekk Halls — Darkweaver Syth (17%)",
+          "item_id": 27917
+        }
+      ]
+    },
+    "phase-4": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Faceplate of the Impenetrable",
+          "source": "Black Temple — Illidan Stormrage (37%)",
+          "item_id": 32521
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Vindicator's Pendant of Dominance",
+          "source": "PvP — Honor & EotS Marks",
+          "item_id": 33921
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Shoulderguards",
+          "source": "Black Temple — Mother Shahraz (56%)",
+          "item_id": 30998
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Phoenix-Wing Cloak",
+          "source": "Tempest Keep — Al'ar (15%)",
+          "item_id": 29925
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Chestguard",
+          "source": "Black Temple — Illidan Stormrage (56%)",
+          "item_id": 30991
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "The Seeker's Wristguards",
+          "source": "Black Temple — Shade of Akama (10%)",
+          "item_id": 32279
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Handguards",
+          "source": "Hyjal Summit — Azgalor (56%)",
+          "item_id": 30985
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Girdle of Mighty Resolve",
+          "source": "Black Temple — Gurtogg Bloddboil (8%)",
+          "item_id": 32342
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Legguards",
+          "source": "Black Temple — The Illidari Council (56%)",
+          "item_id": 30995
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Tide-Stomper's Greaves",
+          "source": "Black Temple — High Warlord Naj'entus (6%)",
+          "item_id": 32245
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "The Seal of Danzalar",
+          "source": "SSC — The Lurker Below (15%)",
+          "item_id": 33054
+        },
+        {
+          "rank": "BiS",
+          "name": "Ashyen's Gift",
+          "source": "Reputation — Cenarion Expedition - Exalted",
+          "item_id": 29172
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Hex Shrunken Head",
+          "source": "Zul'Aman — Hex Lord Malacrass (11%)",
+          "item_id": 33829
+        },
+        {
+          "rank": "BiS",
+          "name": "Tome of Fiery Redemption",
+          "source": "Tempest Keep — Al'ar (15%)",
+          "item_id": 30447
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Tempest of Chaos",
+          "source": "Hyjal Summit — Archimonde (20%)",
+          "item_id": 30910
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Bulwark of Azzinoth",
+          "source": "Black Temple — Illidan Stormrage (38%)",
+          "item_id": 32375
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Libram of the Eternal Rest",
+          "source": "Sethekk Halls — Darkweaver Syth (17%)",
+          "item_id": 27917
+        }
+      ]
+    },
+    "phase-5": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Helm of Uther's Resolve",
+          "source": "Sunmote Transmute — Helm of Burning Righteousness (21%)",
+          "item_id": 34401
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Collar of the Pit Lord",
+          "source": "Sunwell Plateau — Brutallus (24%)",
+          "item_id": 34178
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Shoulderguards",
+          "source": "Black Temple — Mother Shahraz (56%)",
+          "item_id": 30998
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Crimson Paragon's Cover",
+          "source": "Sunwell Plateau — Eredar Twins (18%)",
+          "item_id": 34190
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Heroic Judicator's Chestguard",
+          "source": "Sunwell Plateau — M'uru (40%)",
+          "item_id": 34216
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Wristguards",
+          "source": "Sunwell Plateau — Kalecgos, Eredar Twins (56%)",
+          "item_id": 34433
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Handguards",
+          "source": "Hyjal Summit — Azgalor (56%)",
+          "item_id": 30985
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Waistguard",
+          "source": "Sunwell Plateau — Brutallus, Eredar Twins (56%)",
+          "item_id": 34488
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Judicator's Legguards",
+          "source": "Sunmote Transmute — Legplates of the Holy Juggernaut (15%)",
+          "item_id": 34382
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Blue's Greaves of the Righteous Guardian",
+          "source": "Vendor — Badge of Justice (75)",
+          "item_id": 34947
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Fused Nethergon Band",
+          "source": "Vendor — Badge of Justice (60)",
+          "item_id": 34889
+        },
+        {
+          "rank": "BiS",
+          "name": "Ashyen's Gift",
+          "source": "Reputation — Cenarion Expedition - Exalted",
+          "item_id": 29172
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Hex Shrunken Head",
+          "source": "Zul'Aman — Hex Lord Malacrass (11%)",
+          "item_id": 33829
+        },
+        {
+          "rank": "BiS",
+          "name": "Tome of Fiery Redemption",
+          "source": "Tempest Keep — Al'ar (15%)",
+          "item_id": 30447
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Tempest of Chaos",
+          "source": "Hyjal Summit — Archimonde (20%)",
+          "item_id": 30910
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Sword Breaker's Bulwark",
+          "source": "Sunwell Plateau — Felmyst (25%)",
+          "item_id": 34185
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Libram of the Eternal Rest",
+          "source": "Sethekk Halls — Darkweaver Syth (17%)",
+          "item_id": 27917
+        }
+      ]
+    }
+  }
+}

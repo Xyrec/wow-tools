@@ -25,7 +25,8 @@ from pathlib import Path
 # Project root is two levels up from src/bis_gear/
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 
-# Map WoW API slot names to bis_gear.json slot keys.
+# Map character slot names to BiS JSON slot keys.
+# resolve_slot_key() handles variant keys across specs/phases.
 SLOT_MAP = {
     "Head": "head",
     "Neck": "neck",
@@ -292,14 +293,16 @@ def format_ilvl_quality(item_info: dict | None) -> str:
     return f"ilvl {ilvl} {quality}" if ilvl else ""
 
 
+_preferred_armor = "Mail"  # Set at runtime based on spec
+
+
 def format_armor_warning(item_info: dict | None) -> str:
-    """Return a warning if an armor piece is not Mail (Shaman's native type)."""
+    """Return a warning if an armor piece is not the spec's native type."""
     if not item_info:
         return ""
     subclass = item_info.get("subclass", "")
-    # Only warn for armor slots where type matters (not trinkets, necks, etc.)
     armor_types = {"Cloth", "Leather", "Mail", "Plate"}
-    if subclass in armor_types and subclass != "Mail":
+    if subclass in armor_types and subclass != _preferred_armor:
         return f" [{subclass}]"
     return ""
 
@@ -556,17 +559,24 @@ def match_raid_tag(source: str) -> str | None:
 
 
 def resolve_slot_key(bis_slot: str, phase_data: dict) -> str:
-    """Handle slot name variance across phases (totems/idols, offhands/shields-offhands)."""
-    if bis_slot == "totems" and bis_slot not in phase_data:
-        return "idols"
-    if bis_slot == "idols" and bis_slot not in phase_data:
-        return "totems"
-    if bis_slot == "offhands" and bis_slot not in phase_data:
-        if "shields-offhands" in phase_data:
-            return "shields-offhands"
-    if bis_slot == "shields-offhands" and bis_slot not in phase_data:
-        if "offhands" in phase_data:
-            return "offhands"
+    """Handle slot name variance across specs/phases."""
+    if bis_slot in phase_data:
+        return bis_slot
+    # Relic slot: totems / idols / librams
+    if bis_slot in ("totems", "idols", "librams"):
+        for alt in ("totems", "idols", "librams"):
+            if alt in phase_data:
+                return alt
+    # Off-hand slot: offhands / shields-offhands / shields
+    if bis_slot in ("offhands", "shields-offhands", "shields"):
+        for alt in ("offhands", "shields-offhands", "shields"):
+            if alt in phase_data:
+                return alt
+    # Shoulder slot: shoulders / shoulder
+    if bis_slot in ("shoulders", "shoulder"):
+        for alt in ("shoulders", "shoulder"):
+            if alt in phase_data:
+                return alt
     return bis_slot
 
 
@@ -1179,13 +1189,23 @@ _SPEC_ALIASES: dict[str, str] = {
     "ele": "elemental-shaman",
     "elemental": "elemental-shaman",
     "elemental-shaman": "elemental-shaman",
+    "prot": "prot-paladin",
+    "protection": "prot-paladin",
+    "prot-paladin": "prot-paladin",
+}
+
+# Preferred armor type per spec (for armor warnings)
+_SPEC_ARMOR: dict[str, str] = {
+    "resto-shaman": "Mail",
+    "elemental-shaman": "Mail",
+    "prot-paladin": "Plate",
 }
 
 
 def resolve_spec(raw: str) -> str:
     key = raw.strip().lower()
     if key not in _SPEC_ALIASES:
-        print(f"Unknown spec '{raw}'. Use: resto, ele (or elemental).")
+        print(f"Unknown spec '{raw}'. Use: resto, ele, prot.")
         sys.exit(1)
     return _SPEC_ALIASES[key]
 
@@ -1221,8 +1241,16 @@ def main():
     args = parser.parse_args()
 
     spec = resolve_spec(args.spec)
-    # Derive default character file name from spec slug (resto-shaman → resto.json)
-    default_char_file = spec.split("-")[0] + ".json"
+    global _preferred_armor
+    _preferred_armor = _SPEC_ARMOR.get(spec, "Mail")
+    # Derive default character file name from spec slug
+    # resto-shaman → resto.json, prot-paladin → prot-paladin.json
+    _default_char_files: dict[str, str] = {
+        "resto-shaman": "resto.json",
+        "elemental-shaman": "elemental.json",
+        "prot-paladin": "prot-paladin.json",
+    }
+    default_char_file = _default_char_files.get(spec, spec + ".json")
     char_path = (
         args.character_file if args.character_file is not None else default_char_file
     )
