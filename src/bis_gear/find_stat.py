@@ -573,9 +573,13 @@ def find_stat_upgrades(
                 f" + {skill_from_rating} from {total_with_gems:.0f} rating)"
             )
         print(f"  Resilience: {current_resil:.0f} rating = {resil_crit_pct:.2f}%")
-        print(f"  Total:      {total_crit_pct:.2f}% / {BOSS_CRIT_PCT:.2f}%")
+        # Show extra precision when very close to cap
+        if abs(BOSS_CRIT_PCT - total_crit_pct) < 0.05:
+            print(f"  Total:      {total_crit_pct:.4f}% / {BOSS_CRIT_PCT:.2f}%")
+        else:
+            print(f"  Total:      {total_crit_pct:.2f}% / {BOSS_CRIT_PCT:.2f}%")
 
-        if remaining_pct < 0.01:
+        if remaining_pct <= 0:
             print("  CRIT CAPPED!")
             print()
             return
