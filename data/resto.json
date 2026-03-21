@@ -33,14 +33,14 @@
       {
         "slot": 5,
         "slotName": "Chest",
-        "itemId": 27912,
-        "itemName": "Harness of the Deep Currents"
+        "itemId": 28735,
+        "itemName": "Earthblood Chestguard"
       },
       {
         "slot": 9,
         "slotName": "Wrist",
-        "itemId": 29183,
-        "itemName": "Bindings of the Timewalker"
+        "itemId": 28503,
+        "itemName": "Whirlwind Bracers"
       },
       {
         "slot": 10,
@@ -63,8 +63,8 @@
       {
         "slot": 8,
         "slotName": "Feet",
-        "itemId": 27549,
-        "itemName": "Wavefury Boots"
+        "itemId": 28752,
+        "itemName": "Forestlord Striders"
       },
       {
         "slot": 11,
@@ -164,9 +164,9 @@
           {
             "name": "Honor Hold",
             "standing": "Revered",
-            "currentRep": 15478,
+            "currentRep": 15778,
             "requiredRep": 21000,
-            "remainingRep": 5522
+            "remainingRep": 5222
           },
           {
             "name": "Kurenai",
@@ -192,9 +192,9 @@
           {
             "name": "The Consortium",
             "standing": "Honored",
-            "currentRep": 9580,
+            "currentRep": 9930,
             "requiredRep": 12000,
-            "remainingRep": 2420
+            "remainingRep": 2070
           }
         ]
       },
@@ -225,9 +225,9 @@
           {
             "name": "The Sha'tar",
             "standing": "Revered",
-            "currentRep": 13337,
+            "currentRep": 19410,
             "requiredRep": 21000,
-            "remainingRep": 7663
+            "remainingRep": 1590
           }
         ]
       },
@@ -243,10 +243,10 @@
           },
           {
             "name": "The Violet Eye",
-            "standing": "Honored",
-            "currentRep": 7142,
-            "requiredRep": 12000,
-            "remainingRep": 4858
+            "standing": "Revered",
+            "currentRep": 1684,
+            "requiredRep": 21000,
+            "remainingRep": 19316
           }
         ]
       }

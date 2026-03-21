@@ -1,0 +1,255 @@
+{
+  "character": {
+    "name": "Yrsadriel",
+    "realm": "Thunderstrike",
+    "level": 70,
+    "class": "Shaman",
+    "race": "Draenei",
+    "equippedItems": [
+      {
+        "slot": 1,
+        "slotName": "Head",
+        "itemId": 29028,
+        "itemName": "Cyclone Headdress"
+      },
+      {
+        "slot": 2,
+        "slotName": "Neck",
+        "itemId": 28254,
+        "itemName": "Warp Engineer's Prismatic Chain"
+      },
+      {
+        "slot": 3,
+        "slotName": "Shoulder",
+        "itemId": 29031,
+        "itemName": "Cyclone Shoulderpads"
+      },
+      {
+        "slot": 15,
+        "slotName": "Back",
+        "itemId": 29375,
+        "itemName": "Bishop's Cloak"
+      },
+      {
+        "slot": 5,
+        "slotName": "Chest",
+        "itemId": 28342,
+        "itemName": "Warp Infused Drape"
+      },
+      {
+        "slot": 9,
+        "slotName": "Wrist",
+        "itemId": 29255,
+        "itemName": "Bands of Rarefied Magic"
+      },
+      {
+        "slot": 10,
+        "slotName": "Hands",
+        "itemId": 28520,
+        "itemName": "Gloves of Centering"
+      },
+      {
+        "slot": 6,
+        "slotName": "Waist",
+        "itemId": 28567,
+        "itemName": "Belt of Gale Force"
+      },
+      {
+        "slot": 7,
+        "slotName": "Legs",
+        "itemId": 28591,
+        "itemName": "Earthsoul Leggings"
+      },
+      {
+        "slot": 8,
+        "slotName": "Feet",
+        "itemId": 28406,
+        "itemName": "Sigil-Laced Boots"
+      },
+      {
+        "slot": 11,
+        "slotName": "Finger 1",
+        "itemId": 30667,
+        "itemName": "Ring of Unrelenting Storms"
+      },
+      {
+        "slot": 12,
+        "slotName": "Finger 2",
+        "itemId": 29320,
+        "itemName": "Band of the Guardian"
+      },
+      {
+        "slot": 13,
+        "slotName": "Trinket 1",
+        "itemId": 29376,
+        "itemName": "Essence of the Martyr"
+      },
+      {
+        "slot": 14,
+        "slotName": "Trinket 2",
+        "itemId": 27683,
+        "itemName": "Quagmirran's Eye"
+      },
+      {
+        "slot": 16,
+        "slotName": "Main Hand",
+        "itemId": 28782,
+        "itemName": "Crystalheart Pulse-Staff"
+      },
+      {
+        "slot": 18,
+        "slotName": "Ranged",
+        "itemId": 25645,
+        "itemName": "Totem of the Plains"
+      }
+    ],
+    "reputations": [
+      {
+        "group": "Alliance",
+        "factions": [
+          {
+            "name": "Darnassus",
+            "standing": "Friendly",
+            "currentRep": 1433,
+            "requiredRep": 6000,
+            "remainingRep": 4567
+          },
+          {
+            "name": "Exodar",
+            "standing": "Honored",
+            "currentRep": 1022,
+            "requiredRep": 12000,
+            "remainingRep": 10978
+          },
+          {
+            "name": "Gnomeregan Exiles",
+            "standing": "Friendly",
+            "currentRep": 1433,
+            "requiredRep": 6000,
+            "remainingRep": 4567
+          },
+          {
+            "name": "Ironforge",
+            "standing": "Friendly",
+            "currentRep": 1808,
+            "requiredRep": 6000,
+            "remainingRep": 4192
+          },
+          {
+            "name": "Stormwind",
+            "standing": "Friendly",
+            "currentRep": 1621,
+            "requiredRep": 6000,
+            "remainingRep": 4379
+          }
+        ]
+      },
+      {
+        "group": "Outland",
+        "factions": [
+          {
+            "name": "Ashtongue Deathsworn",
+            "standing": "Neutral",
+            "currentRep": 1925,
+            "requiredRep": 3000,
+            "remainingRep": 1075
+          },
+          {
+            "name": "Cenarion Expedition",
+            "standing": "Revered",
+            "currentRep": 20842,
+            "requiredRep": 21000,
+            "remainingRep": 158
+          },
+          {
+            "name": "Honor Hold",
+            "standing": "Revered",
+            "currentRep": 15778,
+            "requiredRep": 21000,
+            "remainingRep": 5222
+          },
+          {
+            "name": "Kurenai",
+            "standing": "Honored",
+            "currentRep": 8896,
+            "requiredRep": 12000,
+            "remainingRep": 3104
+          },
+          {
+            "name": "Netherwing",
+            "standing": "Neutral",
+            "currentRep": 0,
+            "requiredRep": 3000,
+            "remainingRep": 3000
+          },
+          {
+            "name": "Sporeggar",
+            "standing": "Honored",
+            "currentRep": 455,
+            "requiredRep": 12000,
+            "remainingRep": 11545
+          },
+          {
+            "name": "The Consortium",
+            "standing": "Honored",
+            "currentRep": 9930,
+            "requiredRep": 12000,
+            "remainingRep": 2070
+          }
+        ]
+      },
+      {
+        "group": "Shattrath City",
+        "factions": [
+          {
+            "name": "Lower City",
+            "standing": "Honored",
+            "currentRep": 11660,
+            "requiredRep": 12000,
+            "remainingRep": 340
+          },
+          {
+            "name": "The Aldor",
+            "standing": "Revered",
+            "currentRep": 1085,
+            "requiredRep": 21000,
+            "remainingRep": 19915
+          },
+          {
+            "name": "The Scryers",
+            "standing": "Hated",
+            "currentRep": 18057,
+            "requiredRep": 36000,
+            "remainingRep": 17943
+          },
+          {
+            "name": "The Sha'tar",
+            "standing": "Revered",
+            "currentRep": 19410,
+            "requiredRep": 21000,
+            "remainingRep": 1590
+          }
+        ]
+      },
+      {
+        "group": "Other",
+        "factions": [
+          {
+            "name": "Keepers of Time",
+            "standing": "Exalted",
+            "currentRep": 999,
+            "requiredRep": 1000,
+            "remainingRep": 1
+          },
+          {
+            "name": "The Violet Eye",
+            "standing": "Revered",
+            "currentRep": 1684,
+            "requiredRep": 21000,
+            "remainingRep": 19316
+          }
+        ]
+      }
+    ]
+  }
+}
