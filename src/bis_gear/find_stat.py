@@ -579,13 +579,53 @@ def find_stat_upgrades(
         else:
             print(f"  Total:      {total_crit_pct:.2f}% / {BOSS_CRIT_PCT:.2f}%")
 
+        # Count empty gem sockets from WSE data
+        empty_sockets: dict[str, list[str]] = {}  # slot_name -> [color, ...]
+        total_empty = 0
+        if wse_raw:
+            wse_items = wse_raw.get("gear", {}).get("items", [])
+            for idx, wse_item in enumerate(wse_items):
+                if wse_item is None or idx >= len(WSE_SLOT_ORDER):
+                    continue
+                item_id = wse_item.get("id", 0)
+                if not item_id:
+                    continue
+                # Get socket colors from cmangos
+                cur.execute(
+                    "SELECT socketColor_1, socketColor_2, socketColor_3"
+                    " FROM item_template WHERE entry=?",
+                    (item_id,),
+                )
+                row = cur.fetchone()
+                if not row:
+                    continue
+                socket_colors = {1: "Meta", 2: "Red", 4: "Yellow", 8: "Blue"}
+                sockets = [
+                    socket_colors.get(row[j], "") for j in range(3) if row[j] != 0
+                ]
+                if not sockets:
+                    continue
+                gems_equipped = wse_item.get("gems", [])
+                for s_idx, color in enumerate(sockets):
+                    gem_id = gems_equipped[s_idx] if s_idx < len(gems_equipped) else 0
+                    if not gem_id:
+                        slot_name = WSE_SLOT_ORDER[idx]
+                        empty_sockets.setdefault(slot_name, []).append(color)
+                        total_empty += 1
+
         if remaining_pct <= 0:
             print("  CRIT CAPPED!")
+            if total_empty > 0:
+                print(
+                    f"\n  ({total_empty} empty gem sockets — cap reached without them)"
+                )
             print()
             return
         else:
-            print(f"  Short:      {remaining_pct:.2f}%")
-            # Show what's needed to close the gap
+            if remaining_pct < 0.01:
+                print(f"  Short:      {remaining_pct:.4f}%")
+            else:
+                print(f"  Short:      {remaining_pct:.2f}%")
             def_rating_needed = math.ceil(
                 remaining_pct * DEFENSE_SKILL_PER_PCT * DEFENSE_RATING_PER_SKILL
             )
@@ -594,6 +634,47 @@ def find_stat_upgrades(
                 f"  Need: {def_rating_needed} more defense rating"
                 f" OR {resil_rating_needed} more resilience rating"
             )
+
+            # Show empty gem slots and suggestions
+            if total_empty > 0:
+                print(f"\n  Empty gem sockets ({total_empty} total):")
+                for slot_name, colors in empty_sockets.items():
+                    print(f"    {slot_name}: {', '.join(colors)}")
+
+                # Suggest cheapest gems to close the gap
+                gems_db = _load_gems_db()
+                def_gems = sorted(
+                    [
+                        g
+                        for g in gems_db.values()
+                        if g.get("stats", {}).get("Defense", 0) > 0
+                    ],
+                    key=lambda g: -g["stats"]["Defense"],
+                )
+                if def_gems:
+                    best = def_gems[0]
+                    cheap = next(
+                        (g for g in def_gems if g.get("quality") == "Uncommon"),
+                        None,
+                    )
+                    print("\n  Gem suggestions:")
+                    gems_to_cap = math.ceil(
+                        def_rating_needed / best["stats"]["Defense"]
+                    )
+                    print(
+                        f"    Best: {best['name']} ({best['color']})"
+                        f" +{best['stats']['Defense']:.0f} def"
+                        f" - need {gems_to_cap} to cap"
+                    )
+                    if cheap and cheap["id"] != best["id"]:
+                        gems_to_cap_cheap = math.ceil(
+                            def_rating_needed / cheap["stats"]["Defense"]
+                        )
+                        print(
+                            f"    Cheap: {cheap['name']} ({cheap['color']})"
+                            f" +{cheap['stats']['Defense']:.0f} def"
+                            f" - need {gems_to_cap_cheap} to cap"
+                        )
     else:
         print(f"Current total {stat_name} rating from gear: {total_with_gems:.0f}")
         if gem_enchant_bonus > 0:
