@@ -1,8 +1,8 @@
-# TBC Shaman BiS Gear Checker (Resto / Elemental)
+# TBC BiS Gear Checker & Item Tools
 
 ## What This Project Does
 
-Compares a WoW TBC Shaman's equipped gear against Best-in-Slot (BiS) lists to find actionable upgrades from dungeons and reputations. Supports Resto and Elemental specs.
+Compares a WoW TBC character's equipped gear against Best-in-Slot (BiS) lists to find actionable upgrades from dungeons and reputations. Currently supports Shaman (Resto / Elemental) for BiS checking, with class-agnostic item lookup and stat-finder tools.
 
 ## Project Structure
 
@@ -22,10 +22,16 @@ bis-gear/
   src/bis_gear/           # Python package
     check_gear.py         # Main tool — compares gear against BiS lists
     parse_bis.py          # HTML parser — regenerates bis_gear.json from source HTML
+    item_lookup.py        # TBC item stat lookup from cmangos SQLite DB
+    find_stat.py          # Find gear upgrades for a specific stat (e.g. defense cap)
   sources/
     wowhead/
       resto-shaman/       # phase-0.html through phase-5.html (Resto BiS pages)
       elemental-shaman/   # phase-0.html through phase-5.html (Elemental BiS pages)
+    cmangos-tbc-db/       # TBC 2.4.3 SQLite database + source headers
+      tbcmangos.sqlite    # Main world DB — items, creatures, loot, spells, factions
+      src/                # C++ headers parsed at runtime for enum mappings
+        SpellAuraDefines.h  # AuraType enum (262 aura IDs → stat names)
 ```
 
 ## How to Use
@@ -42,6 +48,19 @@ echo '{"character": {...}}' | uv run bis-gear --spec ele -
 # Regenerate bis_gear.json from source HTML (only if HTML files change):
 uv run bis-parse --spec resto
 uv run bis-parse --spec ele
+
+# Look up TBC item stats (accurate TBC data, not WotLK):
+uv run item-lookup 29183                       # single item
+uv run item-lookup 29183 28503                 # multiple items
+uv run item-lookup --compare 29183 28503       # side-by-side with diff column
+
+# Find gear upgrades for a specific stat target:
+uv run find-stat data/prot-paladin.txt --stat defense --target 490
+uv run find-stat data/prot-paladin.txt --stat defense --target 490 --source easy    # default: dungeons + honored rep + rare BoE
+uv run find-stat data/prot-paladin.txt --stat defense --target 490 --source dungeon # dungeon drops only
+uv run find-stat data/prot-paladin.txt --stat defense --target 490 --source all     # everything including raids
+
+# Supported --stat values: defense, dodge, parry, block, hit, crit, haste, expertise, resilience
 ```
 
 ## Development
@@ -133,6 +152,33 @@ serpentshrine-cavern=0              # 0 = master looter (no SR info shown)
    - **IMPORTANT: Always specify which phase an item's rank comes from.** Items marked `[Phase 0 only]` in the script output are outdated — they were BiS/Option in Phase 0 but are NOT on the current phase's list. Never call something just "BiS" or "Option" without saying which phase. For example, say "Phase 1 BiS wrists" or "Phase 0 only Option (outdated)" — not just "BiS wrists" or "an Option".
 4. Do NOT read `bis_gear.json` or the source code manually — the script handles all the logic.
 5. If the user pastes character JSON directly in chat instead of updating the spec file, save it to `data/resto.json` or `data/elemental.json` (ask which spec if unclear), then run the script.
+
+## Item Lookup Tool (`item-lookup`)
+
+Queries the cmangos TBC 2.4.3 SQLite database for accurate item stats. This uses real TBC data with separate `+Healing` and `+Spell Damage` stats (not WotLK's unified spell power). Stats come from two places in the DB: `item_template.stat_type1-10` columns and equip spell effects decoded via `spell_template`. Aura type names are parsed at runtime from `SpellAuraDefines.h`.
+
+Features:
+- Shows armor, sockets (Meta/Red/Yellow/Blue), and all stats
+- Collapses equal `Mod Healing Done` + `Mod Damage Done` into `Spell Damage and Healing`
+- `--compare` mode shows side-by-side table with diff column
+- `lookup_item(conn, item_id)` is importable for use by other scripts
+
+**IMPORTANT**: The old `sources/item-data/items.json` contains WotLK-era data with incorrect stat values (unified spell power instead of separate +healing/+spell damage). Scripts should migrate to using the cmangos SQLite DB via `item_lookup.py` instead. Currently `check_gear.py`, `parse_wowtbc.py`, and `compare_sources.py` still reference `items.json`.
+
+## Stat Finder Tool (`find-stat`)
+
+Finds gear upgrades for a specific stat target (e.g. defense cap for tanks). Works with any class — filters by `AllowableClass` bitmask automatically.
+
+Source filters:
+- `--source easy` (default): Normal/heroic dungeon drops + Honored-or-lower rep items + Rare BoE items. Excludes raids.
+- `--source dungeon`: Only dungeon drops (5-man instances, determined via `instance_template.maxPlayers`)
+- `--source boe`: Only Bind on Equip items
+- `--source rep`: Only reputation vendor items
+- `--source all`: Everything including raids
+
+Output shows per-slot comparison with current gear, defense rating diff, source type (Dungeon/Raid/BoE/Rep with faction name), heroic-only labels `(H)`, and armor type tags `[Leather]`/`[Cloth]` for non-optimal armor types.
+
+For defense stat, `--target 490` calculates the gap: current rating → defense skill → how much more rating is needed (using 2.3653 rating per skill point at level 70, base 350).
 
 ## Slot Mapping
 

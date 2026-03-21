@@ -177,11 +177,11 @@ class WowtbcParser(HTMLParser):
 
 
 def build_name_to_id() -> dict[str, int]:
-    """Build a name-to-item-ID mapping from items.json.
+    """Build a name-to-item-ID mapping from wowsims items.json.
 
     Stores exact-case keys and lowercase keys separately for fallback.
     """
-    items_path = PROJECT_ROOT / "sources" / "item-data" / "items.json"
+    items_path = PROJECT_ROOT / "sources" / "wowsims-tbc" / "items.json"
     if not items_path.exists():
         return {}
     items = json.loads(items_path.read_text(encoding="utf-8"))
@@ -191,10 +191,10 @@ def build_name_to_id() -> dict[str, int]:
         name = item.get("name", "")
         if name:
             if name not in exact:
-                exact[name] = item["itemId"]
+                exact[name] = item["id"]
             low = name.lower()
             if low not in lower:
-                lower[low] = item["itemId"]
+                lower[low] = item["id"]
     # Merge: exact keys take priority over lowercase keys
     lower.update(exact)
     return lower

@@ -248,12 +248,35 @@ def sanitize_name(name: str) -> str:
 
 
 def load_item_db() -> dict[int, dict]:
-    """Load items.json into a dict keyed by itemId for O(1) lookups."""
-    items_path = PROJECT_ROOT / "sources" / "item-data" / "items.json"
+    """Load wowsims items.json into a dict keyed by item ID.
+
+    Maps wowsims fields to the keys expected by format helpers:
+    itemLevel, quality, subclass (armor type).
+    """
+    items_path = PROJECT_ROOT / "sources" / "wowsims-tbc" / "items.json"
     if not items_path.exists():
         return {}
+    quality_map = {
+        "Common": "Common",
+        "Uncommon": "Uncommon",
+        "Rare": "Rare",
+        "Epic": "Epic",
+        "Legendary": "Legendary",
+    }
     items = json.loads(items_path.read_text(encoding="utf-8"))
-    return {item["itemId"]: item for item in items}
+    result: dict[int, dict] = {}
+    for item in items:
+        entry: dict = {
+            "itemId": item["id"],
+            "itemLevel": item.get("ilvl", 0),
+            "quality": quality_map.get(
+                item.get("quality", ""), item.get("quality", "")
+            ),
+        }
+        if "armor_type" in item:
+            entry["subclass"] = item["armor_type"]
+        result[item["id"]] = entry
+    return result
 
 
 def format_ilvl_quality(item_info: dict | None) -> str:
@@ -277,36 +300,10 @@ def format_armor_warning(item_info: dict | None) -> str:
     return ""
 
 
-def get_drop_chance(item_info: dict | None) -> float | None:
-    """Extract drop chance from item info source data."""
-    if not item_info:
-        return None
-    source = item_info.get("source")
-    if isinstance(source, dict):
-        return source.get("dropChance")
-    if isinstance(source, list):
-        for s in source:
-            if "dropChance" in s:
-                return s["dropChance"]
-    return None
-
-
-def format_drop_chance(item_info: dict | None) -> str:
-    """Format drop chance for display, e.g. '~17% drop'."""
-    chance = get_drop_chance(item_info)
-    if chance is None:
-        return ""
-    # Some data sources store as 0-1 fraction, others as 0-100 percentage
-    pct = chance if chance > 1 else chance * 100
-    return f"~{pct:.0f}% drop"
-
-
 def format_item_extras(item_info: dict | None) -> str:
-    """Build parenthesized suffix with ilvl, quality, and drop chance."""
+    """Build parenthesized suffix with ilvl and quality."""
     ilvl = format_ilvl_quality(item_info)
-    drop = format_drop_chance(item_info)
-    parts = [p for p in (ilvl, drop) if p]
-    return f"  ({', '.join(parts)})" if parts else ""
+    return f"  ({ilvl})" if ilvl else ""
 
 
 def format_rank_tag(upgrade: dict) -> str:

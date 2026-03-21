@@ -44,11 +44,14 @@ SOURCE_NAMES = ["Wowhead", "Icy Veins", "wowtbc.gg"]
 
 
 def load_item_db() -> dict[int, dict]:
-    items_path = PROJECT_ROOT / "sources" / "item-data" / "items.json"
+    items_path = PROJECT_ROOT / "sources" / "wowsims-tbc" / "items.json"
     if not items_path.exists():
         return {}
     items = json.loads(items_path.read_text(encoding="utf-8"))
-    return {item["itemId"]: item for item in items}
+    return {
+        item["id"]: {"name": item["name"], "itemLevel": item.get("ilvl", 0)}
+        for item in items
+    }
 
 
 def normalize_slot(slot: str) -> str:
