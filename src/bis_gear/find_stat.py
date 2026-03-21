@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import sqlite3
 import sys
 from functools import cache
@@ -523,24 +524,27 @@ def find_stat_upgrades(
     # Defense gap calculation with crit cap
     if stat_name == "defense" and target > 0:
         base_def = BASE_DEFENSE_SKILL + talent_defense_skill
-        current_defense = base_def + total_with_gems / DEFENSE_RATING_PER_SKILL
-        needed_rating = (target - base_def) * DEFENSE_RATING_PER_SKILL
-        gap = needed_rating - total_with_gems
+        # WoW floors the rating-to-skill conversion
+        skill_from_rating = math.floor(total_with_gems / DEFENSE_RATING_PER_SKILL)
+        current_defense = base_def + skill_from_rating
+        needed_skill = target - current_defense
+        needed_rating = math.ceil(needed_skill * DEFENSE_RATING_PER_SKILL)
+        gap = needed_rating
 
         print(
             f"Base defense skill: {base_def} (350 base + {talent_defense_skill} talents)"
         )
         print(
-            f"Current: {total_with_gems:.0f} rating = {current_defense:.1f} defense skill"
+            f"Current: {total_with_gems:.0f} rating = {current_defense} defense skill"
         )
         if gem_enchant_bonus > 0:
             print(
                 f"  (items: {total_current}, gems/enchants: +{gem_enchant_bonus:.0f})"
             )
-        print(f"Target:  {needed_rating:.0f} rating = {target} defense skill")
+        print(f"Target:  {target} defense skill ({needed_skill} more skill needed)")
 
         if gap > 0:
-            print(f"Gap:     {gap:.0f} more defense rating needed")
+            print(f"Gap:     {gap} more defense rating needed")
             # Show resilience alternative
             def_fraction = (
                 current_defense - BASE_DEFENSE_SKILL
