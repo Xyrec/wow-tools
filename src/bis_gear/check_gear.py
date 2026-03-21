@@ -1279,7 +1279,7 @@ def main():
     # Load soft-reserve config
     sr_counts, sr_groups = load_soft_reserves()
 
-    # Load BiS data
+    # Load BiS data — merge all sources, wowhead primary with iv/wtbc filling gaps
     bis_path = PROJECT_ROOT / "output" / spec / "bis_gear.json"
     if not bis_path.exists():
         print(
@@ -1287,6 +1287,19 @@ def main():
         )
         sys.exit(1)
     bis_data = json.loads(bis_path.read_text(encoding="utf-8"))
+
+    # Merge in icy-veins and wowtbc data for slots missing from wowhead
+    for alt_name in ("iv_bis_gear.json", "wtbc_bis_gear.json"):
+        alt_path = PROJECT_ROOT / "output" / spec / alt_name
+        if not alt_path.exists():
+            continue
+        alt_data = json.loads(alt_path.read_text(encoding="utf-8"))
+        for phase_key, phase_slots in alt_data.get("phases", {}).items():
+            if phase_key not in bis_data["phases"]:
+                bis_data["phases"][phase_key] = {}
+            for slot_key, items in phase_slots.items():
+                if slot_key not in bis_data["phases"][phase_key]:
+                    bis_data["phases"][phase_key][slot_key] = items
     current_phase = (
         (PROJECT_ROOT / "data" / "current-phase.txt")
         .read_text(encoding="utf-8")
