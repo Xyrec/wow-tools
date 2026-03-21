@@ -781,6 +781,7 @@ def _find_slot_upgrades(
                 and "reputation" not in tags
                 and "badges" not in tags
                 and "raid" not in tags
+                and "pvp" not in tags
             ):
                 continue
 
@@ -1029,7 +1030,11 @@ def print_slot_breakdown(all_upgrades: list[dict]):
             icon = (
                 "D"
                 if "dungeon" in up["tags"]
-                else ("R" if "reputation" in up["tags"] else "B")
+                else (
+                    "R"
+                    if "reputation" in up["tags"]
+                    else ("P" if "pvp" in up["tags"] else "B")
+                )
             )
             heroic = " (H)" if "heroic" in up["tags"] else ""
             rank_label = f"[{format_rank_tag(up)}]"

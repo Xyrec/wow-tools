@@ -5,7 +5,7 @@
   "unit": "player",
   "professions": [
     { "name": "Blacksmithing", "level": 310 },
-    { "name": "Mining", "level": 327 }
+    { "name": "Mining", "level": 328 }
   ],
   "race": "Human",
   "name": "Xyrekk",
