@@ -6,11 +6,13 @@ description: Check a shaman's equipped gear against BiS lists and show upgrade p
 Run the bis-gear checker for a specific spec. If the user did not provide a spec argument, ask: "Which spec should I check -- Resto, Elemental, or Prot Paladin?"
 
 Spec aliases:
+
 - "resto" or "resto-shaman" -> --spec resto
 - "ele", "elemental", or "elemental-shaman" -> --spec ele
 - "prot", "prot-paladin", or "prot-pala" -> --spec prot-paladin
 
 Run the command:
+
 ```
 uv run bis-gear --spec {spec}
 ```

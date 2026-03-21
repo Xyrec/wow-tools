@@ -18,10 +18,10 @@ fix:
 	uv run ruff format .
 
 resto:
-	$(EDITOR) data/resto.json
+	$(EDITOR) . data/resto.json
 
 ele elemental:
-	$(EDITOR) data/elemental.json
+	$(EDITOR) . data/elemental.json
 
 prot protection prot-paladin:
-	$(EDITOR) data/prot-paladin.txt
+	$(EDITOR) . data/prot-paladin.json

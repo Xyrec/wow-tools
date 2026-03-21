@@ -6,10 +6,11 @@ description: Find defense rating gear upgrades for Prot Paladin toward the 490 c
 Find defense rating gear upgrades to help reach the 490 defense cap. Run the command:
 
 ```
-uv run find-stat data/prot-paladin.txt --stat defense --target 490 --source easy
+uv run find-stat data/prot-paladin.json --stat defense --target 490 --source easy
 ```
 
 If the user provides arguments, they may override defaults:
+
 - A different target number (e.g. "485") -> use --target {value}
 - A different source filter (e.g. "all", "heroic", "raid") -> use --source {value}
 

@@ -1,0 +1,38 @@
+{
+  "talents": "00000000000000000000-0530513350000151521051-0520500030000000000000",
+  "id": "Player-6409-049454C3",
+  "class": "paladin",
+  "unit": "player",
+  "professions": [
+    { "name": "Blacksmithing", "level": 310 },
+    { "name": "Mining", "level": 327 }
+  ],
+  "race": "Human",
+  "name": "Xyrekk",
+  "spec": "protection",
+  "gear": {
+    "items": [
+      { "id": 28180, "gems": [] },
+      { "id": 29336, "gems": [] },
+      { "id": 27803, "gems": [] },
+      { "id": 27981, "gems": [] },
+      { "id": 28262, "gems": [] },
+      { "id": 28167, "gems": [] },
+      { "id": 23517, "gems": [] },
+      { "id": 27985, "gems": [] },
+      { "id": 23518, "gems": [] },
+      { "id": 28176, "gems": [] },
+      { "id": 28555, "gems": [] },
+      { "id": 29323, "gems": [] },
+      { "id": 27891, "gems": [] },
+      { "id": 28042, "gems": [] },
+      { "id": 31002, "gems": [] },
+      { "id": 28166, "gems": [] },
+      { "id": 27917, "gems": [] }
+    ],
+    "version": "v3.2.1"
+  },
+  "level": 70,
+  "version": "v3.2.1",
+  "realm": "Thunderstrike"
+}
