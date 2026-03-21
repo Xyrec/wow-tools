@@ -483,7 +483,7 @@ def find_stat_upgrades(
         equipped_by_slot[eq["slotName"]] = eq
 
     # Paladin class bitmask (class 2 = bit 1)
-    char_class = char.get("class", "")
+    char_class = char.get("class", "").title()
     class_bitmasks: dict[str, int] = {
         "Paladin": 2,
         "Warrior": 1,
@@ -496,6 +496,21 @@ def find_stat_upgrades(
         "Warlock": 256,
     }
     class_bit = class_bitmasks.get(char_class, 0)
+
+    # Highest armor subclass each class can wear (item_template.subclass for class=4)
+    # 1=Cloth, 2=Leather, 3=Mail, 4=Plate
+    class_armor_type: dict[str, int] = {
+        "Paladin": 4,
+        "Warrior": 4,
+        "Shaman": 3,
+        "Hunter": 3,
+        "Druid": 2,
+        "Rogue": 2,
+        "Priest": 1,
+        "Mage": 1,
+        "Warlock": 1,
+    }
+    max_armor = class_armor_type.get(char_class, 0)
 
     # Get current stat values per slot (base items from cmangos)
     current_stats: dict[str, int] = {}
@@ -611,12 +626,21 @@ def find_stat_upgrades(
         if stat_val <= 0:
             continue
 
+        # Filter armor pieces to the character's highest armor type
+        # Armor subclass: 0=Misc, 1=Cloth, 2=Leather, 3=Mail, 4=Plate, 6=Shield
+        # Only filter actual armor slots (subclass 1-4), not shields/misc/jewelry
+        if item_class == 4 and max_armor and item_subclass in (1, 2, 3, 4):
+            if item_subclass != max_armor:
+                continue
+
         sources = _get_item_source(conn, item_id)
 
-        # Determine armor type tag for non-optimal armor
+        # Tag armor type for display (only if below optimal — shouldn't happen
+        # now with filtering, but kept for --source all edge cases)
         armor_tag = ""
-        if item_class == 4 and item_subclass in (1, 2, 3):  # Cloth/Leather/Mail
-            armor_tag = f" [{ARMOR_SUBCLASS.get(item_subclass, '')}]"
+        if item_class == 4 and max_armor and item_subclass in (1, 2, 3, 4):
+            if item_subclass < max_armor:
+                armor_tag = f" [{ARMOR_SUBCLASS.get(item_subclass, '')}]"
 
         item_info = {
             "id": item_id,
