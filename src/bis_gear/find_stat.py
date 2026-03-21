@@ -537,49 +537,59 @@ def find_stat_upgrades(
         )
 
     # Defense gap calculation with crit cap
+    # Boss crit chance: 5.60%. Defense: 25 skill = 1%. Resilience: 39.4231 rating = 1%.
+    BOSS_CRIT_PCT = 5.60
+    DEFENSE_SKILL_PER_PCT = 25.0
+    RESILIENCE_RATING_PER_PCT = 39.4231
+
     if stat_name == "defense" and target > 0:
         base_def = BASE_DEFENSE_SKILL + talent_defense_skill
-        # WoW floors the rating-to-skill conversion
         skill_from_rating = math.floor(total_with_gems / DEFENSE_RATING_PER_SKILL)
         current_defense = base_def + skill_from_rating
-        needed_skill = target - current_defense
-        needed_rating = math.ceil(needed_skill * DEFENSE_RATING_PER_SKILL)
-        gap = needed_rating
 
-        print(
-            f"Base defense skill: {base_def} (350 base + {talent_defense_skill} talents)"
-        )
-        print(
-            f"Current: {total_with_gems:.0f} rating = {current_defense} defense skill"
-        )
-        if gem_enchant_bonus > 0:
-            print(
-                f"  (items: {total_current}, gems/enchants: +{gem_enchant_bonus:.0f})"
-            )
-        print(f"Target:  {target} defense skill ({needed_skill} more skill needed)")
+        # Get current resilience
+        current_resil = 0.0
+        if wse_raw:
+            current_resil = _get_wse_bonus_stat(wse_raw, "Resilience")
+        for eq in equipped:
+            current_resil += _get_stat_value(conn, eq["itemId"], 35)
 
-        if gap > 0:
-            print(f"Gap:     {gap} more defense rating needed")
-            # Show resilience alternative
-            def_fraction = (
-                current_defense - BASE_DEFENSE_SKILL
-            ) / DEFENSE_SKILL_FOR_CAP
-            resil_needed = max(
-                0, round((1.0 - def_fraction) * RESILIENCE_RATING_FOR_CAP)
-            )
-            # Get current resilience from WSE if available
-            current_resil = 0.0
-            if wse_raw:
-                current_resil = _get_wse_bonus_stat(wse_raw, "Resilience")
-                for eq in equipped:
-                    current_resil += _get_stat_value(conn, eq["itemId"], 35)
-            resil_gap = max(0, resil_needed - current_resil)
+        # Calculate crit reduction percentages
+        def_crit_pct = (current_defense - BASE_DEFENSE_SKILL) / DEFENSE_SKILL_PER_PCT
+        resil_crit_pct = current_resil / RESILIENCE_RATING_PER_PCT
+        total_crit_pct = def_crit_pct + resil_crit_pct
+        remaining_pct = max(0, BOSS_CRIT_PCT - total_crit_pct)
+
+        print(f"Crit Cap: {BOSS_CRIT_PCT:.2f}% reduction needed")
+        print(
+            f"  Defense:    {current_defense} skill "
+            f"({current_defense - BASE_DEFENSE_SKILL} above {BASE_DEFENSE_SKILL} base)"
+            f" = {def_crit_pct:.2f}%"
+        )
+        if talent_defense_skill:
             print(
-                f"  Or: {resil_needed} resilience rating at current defense"
-                f" (have {current_resil:.0f}, need {resil_gap:.0f} more)"
+                f"              ({BASE_DEFENSE_SKILL - talent_defense_skill} base"
+                f" + {talent_defense_skill} talents"
+                f" + {skill_from_rating} from {total_with_gems:.0f} rating)"
             )
+        print(f"  Resilience: {current_resil:.0f} rating = {resil_crit_pct:.2f}%")
+        print(f"  Total:      {total_crit_pct:.2f}% / {BOSS_CRIT_PCT:.2f}%")
+
+        if remaining_pct < 0.01:
+            print("  CRIT CAPPED!")
+            print()
+            return
         else:
-            print("CRIT CAPPED!")
+            print(f"  Short:      {remaining_pct:.2f}%")
+            # Show what's needed to close the gap
+            def_rating_needed = math.ceil(
+                remaining_pct * DEFENSE_SKILL_PER_PCT * DEFENSE_RATING_PER_SKILL
+            )
+            resil_rating_needed = math.ceil(remaining_pct * RESILIENCE_RATING_PER_PCT)
+            print(
+                f"  Need: {def_rating_needed} more defense rating"
+                f" OR {resil_rating_needed} more resilience rating"
+            )
     else:
         print(f"Current total {stat_name} rating from gear: {total_with_gems:.0f}")
         if gem_enchant_bonus > 0:
