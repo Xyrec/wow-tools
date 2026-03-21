@@ -1,9 +1,11 @@
-.PHONY: lint typecheck format check fix resto ele elemental
+.PHONY: lint typecheck ty type types tsc format check fix resto ele elemental prot protection prot-paladin
+
+EDITOR := $(or $(shell which cursor 2>/dev/null),$(shell which code 2>/dev/null),notepad)
 
 lint:
 	uv run ruff check .
 
-typecheck:
+typecheck ty type types tsc:
 	uv run ty check .
 
 format:
@@ -16,7 +18,10 @@ fix:
 	uv run ruff format .
 
 resto:
-	notepad data/resto.json
+	$(EDITOR) data/resto.json
 
 ele elemental:
-	notepad data/elemental.json
+	$(EDITOR) data/elemental.json
+
+prot protection prot-paladin:
+	$(EDITOR) data/prot-paladin.txt
