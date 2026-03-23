@@ -1279,27 +1279,25 @@ def main():
     # Load soft-reserve config
     sr_counts, sr_groups = load_soft_reserves()
 
-    # Load BiS data — merge all sources, wowhead primary with iv/wtbc filling gaps
-    bis_path = PROJECT_ROOT / "output" / spec / "bis_gear.json"
-    if not bis_path.exists():
-        print(
-            f"BiS data not found at {bis_path}. Run: uv run bis-parse --spec {spec.split('-')[0]}"
-        )
-        sys.exit(1)
-    bis_data = json.loads(bis_path.read_text(encoding="utf-8"))
-
-    # Merge in icy-veins and wowtbc data for slots missing from wowhead
-    for alt_name in ("iv_bis_gear.json", "wtbc_bis_gear.json"):
-        alt_path = PROJECT_ROOT / "output" / spec / alt_name
-        if not alt_path.exists():
+    # Load BiS data — icy-veins primary, wowtbc fills missing slots
+    bis_data: dict = {"phases": {}}
+    for src_name in ("iv_bis_gear.json", "wtbc_bis_gear.json"):
+        src_path = PROJECT_ROOT / "output" / spec / src_name
+        if not src_path.exists():
             continue
-        alt_data = json.loads(alt_path.read_text(encoding="utf-8"))
-        for phase_key, phase_slots in alt_data.get("phases", {}).items():
+        src_data = json.loads(src_path.read_text(encoding="utf-8"))
+        for phase_key, phase_slots in src_data.get("phases", {}).items():
             if phase_key not in bis_data["phases"]:
                 bis_data["phases"][phase_key] = {}
             for slot_key, items in phase_slots.items():
                 if slot_key not in bis_data["phases"][phase_key]:
                     bis_data["phases"][phase_key][slot_key] = items
+    if not bis_data["phases"]:
+        print(
+            f"No BiS data found in {PROJECT_ROOT / 'output' / spec}. "
+            f"Expected iv_bis_gear.json or wtbc_bis_gear.json."
+        )
+        sys.exit(1)
     current_phase = (
         (PROJECT_ROOT / "data" / "current-phase.txt")
         .read_text(encoding="utf-8")

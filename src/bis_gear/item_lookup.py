@@ -116,6 +116,47 @@ ARMOR_SUBCLASS: dict[int, str] = {
     9: "Totem",
 }
 
+WEAPON_SUBCLASS: dict[int, str] = {
+    0: "Axe (1H)",
+    1: "Axe (2H)",
+    2: "Bow",
+    3: "Gun",
+    4: "Mace (1H)",
+    5: "Mace (2H)",
+    6: "Polearm",
+    7: "Sword (1H)",
+    8: "Sword (2H)",
+    10: "Staff",
+    11: "Exotic (1H)",
+    13: "Fist Weapon",
+    14: "Misc",
+    15: "Dagger",
+    16: "Thrown",
+    17: "Spear",
+    18: "Crossbow",
+    19: "Wand",
+    20: "Fishing Pole",
+}
+
+DAMAGE_SCHOOL: dict[int, str] = {
+    0: "Physical",
+    1: "Holy",
+    2: "Fire",
+    3: "Nature",
+    4: "Frost",
+    5: "Shadow",
+    6: "Arcane",
+}
+
+RESISTANCE_FIELDS: list[tuple[str, str]] = [
+    ("holy_res", "Holy Resistance"),
+    ("fire_res", "Fire Resistance"),
+    ("nature_res", "Nature Resistance"),
+    ("frost_res", "Frost Resistance"),
+    ("shadow_res", "Shadow Resistance"),
+    ("arcane_res", "Arcane Resistance"),
+]
+
 SOCKET_COLORS: dict[int, str] = {
     1: "Meta",
     2: "Red",
@@ -201,7 +242,42 @@ def lookup_item(conn: sqlite3.Connection, item_id: int) -> dict | None:
     if item_class == 4:  # Armor
         result["type"] = ARMOR_SUBCLASS.get(item["subclass"], str(item["subclass"]))
     elif item_class == 2:  # Weapon
-        result["type"] = "Weapon"
+        result["type"] = WEAPON_SUBCLASS.get(item["subclass"], "Weapon")
+
+    # Block value (shields)
+    if item["block"]:
+        result["block_value"] = item["block"]
+
+    # Weapon damage and speed
+    delay_ms = item["delay"]
+    dmg_ranges: list[dict] = []
+    for i in range(1, 6):
+        dmin = item[f"dmg_min{i}"]
+        dmax = item[f"dmg_max{i}"]
+        dtype = item[f"dmg_type{i}"]
+        if dmin > 0 or dmax > 0:
+            dmg_ranges.append(
+                {
+                    "min": dmin,
+                    "max": dmax,
+                    "school": DAMAGE_SCHOOL.get(dtype, f"Unknown({dtype})"),
+                }
+            )
+    if dmg_ranges:
+        speed = delay_ms / 1000
+        total_avg = sum((d["min"] + d["max"]) / 2 for d in dmg_ranges)
+        dps = total_avg / speed if speed > 0 else 0
+        result["weapon"] = {
+            "speed": speed,
+            "dps": round(dps, 1),
+            "damage": dmg_ranges,
+        }
+
+    # Resistances
+    for col, label in RESISTANCE_FIELDS:
+        val = item[col]
+        if val:
+            result["stats"][label] = val
 
     # Stat columns
     for i in range(1, 11):
@@ -255,6 +331,13 @@ def print_item(item: dict) -> None:
     )
     if item["armor"]:
         print(f"  Armor: {item['armor']}")
+    if block_val := item.get("block_value"):
+        print(f"  Block: {block_val}")
+    if weapon := item.get("weapon"):
+        for dmg in weapon["damage"]:
+            school = f" {dmg['school']}" if dmg["school"] != "Physical" else ""
+            print(f"  {dmg['min']:.0f} - {dmg['max']:.0f}{school} Damage")
+        print(f"  Speed {weapon['speed']:.2f}  |  DPS {weapon['dps']}")
     if sockets := item.get("sockets"):
         print(f"  Sockets: {', '.join(sockets)}")
     print("  Stats:")
@@ -266,6 +349,10 @@ def print_item(item: dict) -> None:
 def print_compare(items: list[dict]) -> None:
     """Print a side-by-side comparison table with diff column."""
     all_stats: list[str] = ["Armor"]
+    if any(item.get("block_value") for item in items):
+        all_stats.append("Block Value")
+    if any(item.get("weapon") for item in items):
+        all_stats.extend(["DPS", "Speed"])
     for item in items:
         for s in item["stats"]:
             if s not in all_stats:
@@ -292,26 +379,43 @@ def print_compare(items: list[dict]) -> None:
     print("-" * len(header))
 
     for stat in all_stats:
-        vals: list[int] = []
+        vals: list[float] = []
         for item in items:
             if stat == "Armor":
                 vals.append(item.get("armor", 0))
+            elif stat == "Block Value":
+                vals.append(item.get("block_value", 0))
+            elif stat == "DPS":
+                w = item.get("weapon")
+                vals.append(w["dps"] if w else 0)
+            elif stat == "Speed":
+                w = item.get("weapon")
+                vals.append(w["speed"] if w else 0)
             else:
                 vals.append(item["stats"].get(stat, 0))
 
+        is_float = stat in ("DPS", "Speed")
+
         row = f"{stat:<{max_stat_w}}  "
         for v in vals:
-            cell = f"+{v}" if v > 0 else ("-" if v == 0 else str(v))
+            if v == 0:
+                cell = "-"
+            elif is_float:
+                cell = f"{v:.1f}" if stat == "DPS" else f"{v:.2f}"
+            else:
+                cell = f"+{int(v)}"
             row += f"{cell:>{col_w}}  "
 
         if len(items) == 2:
             diff = vals[0] - vals[1]
-            if diff > 0:
-                cell = f"+{diff}"
-            elif diff < 0:
-                cell = str(diff)
-            else:
+            if diff == 0:
                 cell = "-"
+            elif is_float:
+                cell = f"{diff:+.1f}" if stat == "DPS" else f"{diff:+.2f}"
+            elif diff > 0:
+                cell = f"+{int(diff)}"
+            else:
+                cell = str(int(diff))
             row += f"{cell:>{col_w}}"
 
         print(row)
