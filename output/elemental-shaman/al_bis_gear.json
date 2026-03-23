@@ -30,13 +30,13 @@
         {
           "rank": "Option",
           "item_id": 24266,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Spellstrike Hood"
         },
         {
           "rank": "Option",
           "item_id": 31330,
-          "source": "Drop: Ashtongue Battlelord — Black Temple",
+          "source": "Auction House — BoE World Drop",
           "name": "Lightning Crown"
         }
       ],
@@ -112,13 +112,13 @@
         {
           "rank": "BiS",
           "item_id": 31149,
-          "source": "Drop: Shadowmoon Technician (Blood Furnace)",
+          "source": "Auction House — BoE World Drop",
           "name": "Gloves of Pandemonium"
         },
         {
           "rank": "Option",
           "item_id": 31280,
-          "source": "Drop: Auchenai Monk (Auchenai Crypts)",
+          "source": "Auction House — BoE World Drop",
           "name": "Thundercaller's Gauntlets"
         }
       ],
@@ -132,7 +132,7 @@
         {
           "rank": "BiS",
           "item_id": 24256,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Girdle of Ruination"
         },
         {
@@ -146,7 +146,7 @@
         {
           "rank": "BiS",
           "item_id": 24262,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Spellstrike Pants"
         },
         {
@@ -212,7 +212,7 @@
         {
           "rank": "Option",
           "item_id": 31290,
-          "source": "Drop: Spectral Servant — Karazhan",
+          "source": "Auction House — BoE World Drop",
           "name": "Band of Dominion"
         },
         {
@@ -270,7 +270,7 @@
         {
           "rank": "BiS",
           "item_id": 23554,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Eternium Runed Blade"
         },
         {
@@ -296,7 +296,7 @@
         {
           "rank": "BiS",
           "item_id": 31287,
-          "source": "Drop: Spectral Servant — Karazhan",
+          "source": "Auction House — BoE World Drop",
           "name": "Draenei Honor Guard Shield"
         },
         {
@@ -310,13 +310,13 @@
         {
           "rank": "BiS",
           "item_id": 28248,
-          "source": "Drop: Cache of the Legion (Mechanar)",
+          "source": "Other (Classic, Seasonal Event, Etc.)",
           "name": "Totem of the Void"
         },
         {
           "rank": "BiS",
           "item_id": 23199,
-          "source": "World Drop BoE",
+          "source": "Auction House — BoE World Drop",
           "name": "Totem of the Storm"
         }
       ]
@@ -416,7 +416,7 @@
         {
           "rank": "BiS",
           "item_id": 24256,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Girdle of Ruination"
         },
         {
@@ -430,7 +430,7 @@
         {
           "rank": "BiS",
           "item_id": 24262,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Spellstrike Pants"
         }
       ],
@@ -466,13 +466,13 @@
         {
           "rank": "BiS",
           "item_id": 30667,
-          "source": "Drop: Trash — Karazhan",
+          "source": "Drop: Spell Shade — Karazhan",
           "name": "Ring of Unrelenting Storms"
         },
         {
           "rank": "BiS",
           "item_id": 28753,
-          "source": "Drop: Chess Event — Karazhan",
+          "source": "Other (Classic, Seasonal Event, Etc.)",
           "name": "Ring of Recurrence"
         },
         {
@@ -506,7 +506,7 @@
         {
           "rank": "BiS",
           "item_id": 30723,
-          "source": "World Boss: Doomwalker",
+          "source": "Auction House — BoE World Drop",
           "name": "Talon of the Tempest"
         },
         {
@@ -627,7 +627,7 @@
         {
           "rank": "BiS",
           "item_id": 30038,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Belt of Blasting"
         },
         {
@@ -645,7 +645,7 @@
         {
           "rank": "Option",
           "item_id": 24256,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Girdle of Ruination"
         }
       ],
@@ -689,7 +689,7 @@
         {
           "rank": "BiS",
           "item_id": 30667,
-          "source": "Drop: Trash — Karazhan",
+          "source": "Drop: Spell Shade — Karazhan",
           "name": "Ring of Unrelenting Storms"
         },
         {
@@ -707,7 +707,7 @@
         {
           "rank": "Option",
           "item_id": 32664,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Dreamcrystal Band"
         },
         {
@@ -753,7 +753,7 @@
         {
           "rank": "BiS",
           "item_id": 30723,
-          "source": "World Boss: Doomwalker",
+          "source": "Auction House — BoE World Drop",
           "name": "Talon of the Tempest"
         }
       ],

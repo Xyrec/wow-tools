@@ -12,13 +12,13 @@
         {
           "rank": "BiS",
           "item_id": 24264,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Whitemend Hood"
         },
         {
           "rank": "BiS",
           "item_id": 29508,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Living Dragonscale Helm"
         },
         {
@@ -46,13 +46,13 @@
         {
           "rank": "BiS",
           "item_id": 31329,
-          "source": "Drop: Ashtongue Battlelord — Black Temple",
+          "source": "Auction House — BoE World Drop",
           "name": "Lifegiving Cloak"
         },
         {
           "rank": "BiS",
           "item_id": 24254,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "White Remedy Cape"
         }
       ],
@@ -72,7 +72,7 @@
         {
           "rank": "BiS",
           "item_id": 23527,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Earthpeace Breastplate"
         }
       ],
@@ -122,7 +122,7 @@
         {
           "rank": "BiS",
           "item_id": 24261,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Whitemend Pants"
         },
         {
@@ -134,7 +134,7 @@
         {
           "rank": "BiS",
           "item_id": 31343,
-          "source": "Drop: Ashtongue Battlelord — Black Temple",
+          "source": "Auction House — BoE World Drop",
           "name": "Kamaei's Cerulean Skirt"
         }
       ],
@@ -176,7 +176,7 @@
         {
           "rank": "BiS",
           "item_id": 32535,
-          "source": "World Drop BoE",
+          "source": "Auction House — BoE World Drop",
           "name": "Gift of the Talonpriests"
         },
         {
@@ -200,7 +200,7 @@
         {
           "rank": "Option",
           "item_id": 31923,
-          "source": "Drop: Yor <Void Hound of Shaffar> (Mana-Tombs)",
+          "source": "Drop: Yor (Mana-Tombs)",
           "name": "Band of the Crystalline Void"
         },
         {
@@ -270,7 +270,7 @@
         {
           "rank": "BiS",
           "item_id": 23556,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Hand of Eternity"
         },
         {
@@ -282,7 +282,7 @@
         {
           "rank": "Option",
           "item_id": 31342,
-          "source": "Drop: Ashtongue Battlelord — Black Temple",
+          "source": "Auction House — BoE World Drop",
           "name": "The Ancient Scepter of Sue-Min"
         }
       ],
@@ -344,7 +344,7 @@
         {
           "rank": "BiS",
           "item_id": 30728,
-          "source": "World Boss: Doomwalker",
+          "source": "Auction House — BoE World Drop",
           "name": "Fathom-Helm of the Deeps"
         }
       ],
@@ -436,13 +436,13 @@
         {
           "rank": "BiS",
           "item_id": 28751,
-          "source": "Drop: Chess Event — Karazhan",
+          "source": "Other (Classic, Seasonal Event, Etc.)",
           "name": "Heart-Flame Leggings"
         },
         {
           "rank": "BiS",
           "item_id": 28591,
-          "source": "Drop: The Wizard of Oz — Karazhan",
+          "source": "Other (Classic, Seasonal Event, Etc.)",
           "name": "Earthsoul Leggings"
         }
       ],
@@ -450,7 +450,7 @@
         {
           "rank": "BiS",
           "item_id": 30737,
-          "source": "World Boss: Doom Lord Kazzak",
+          "source": "Auction House — BoE World Drop",
           "name": "Gold-Leaf Wildboots"
         }
       ],
@@ -464,7 +464,7 @@
         {
           "rank": "BiS",
           "item_id": 30726,
-          "source": "World Boss: Doomwalker",
+          "source": "Auction House — BoE World Drop",
           "name": "Archaic Charm of Presence"
         },
         {
@@ -658,7 +658,7 @@
         {
           "rank": "BiS",
           "item_id": 30030,
-          "source": "Drop: Trash — Tempest Keep",
+          "source": "Drop: Bloodwarder Legionnaire — Tempest Keep",
           "name": "Girdle of Fallen Stars"
         },
         {
@@ -686,7 +686,7 @@
         {
           "rank": "BiS",
           "item_id": 30737,
-          "source": "World Boss: Doom Lord Kazzak",
+          "source": "Auction House — BoE World Drop",
           "name": "Gold-Leaf Wildboots"
         },
         {
@@ -752,7 +752,7 @@
         {
           "rank": "Option",
           "item_id": 28590,
-          "source": "Drop: The Wizard of Oz — Karazhan",
+          "source": "Other (Classic, Seasonal Event, Etc.)",
           "name": "Ribbon of Sacrifice"
         }
       ],

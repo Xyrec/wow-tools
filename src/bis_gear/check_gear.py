@@ -338,6 +338,21 @@ def format_rep_progress(rep_info: dict | None, required_standing: str | None) ->
 # ---------------------------------------------------------------------------
 
 
+_PROFESSION_KEYWORDS: dict[str, str] = {
+    "tailoring": "Tailoring",
+    "mooncloth tailoring": "Tailoring",
+    "leatherworking": "Leatherworking",
+    "tribal leatherworking": "Leatherworking",
+    "dragonscale leatherworking": "Leatherworking",
+    "blacksmithing": "Blacksmithing",
+    "engineering": "Engineering",
+    "jewelcrafting": "Jewelcrafting",
+    "alchemy": "Alchemy",
+    "enchanting": "Enchanting",
+    "profession:": "Crafted",
+}
+
+
 def classify_source(source: str) -> list[str]:
     """Return tags like 'dungeon', 'heroic', 'reputation', 'profession', etc."""
     s = source.lower()
@@ -348,15 +363,13 @@ def classify_source(source: str) -> list[str]:
         return ["world_boss"]
     if "classic -" in s or "classic\u2014" in s:
         return ["classic"]
+    if "other (classic" in s:
+        return ["classic"]
     if "arena" in s or "pvp" in s or "gladiator" in s:
         return ["pvp"]
-    if (
-        "profession:" in s
-        or "tailoring" in s
-        or "leatherworking" in s
-        or "blacksmithing" in s
-    ):
-        return ["profession"]
+    for kw, prof_name in _PROFESSION_KEYWORDS.items():
+        if kw in s:
+            return ["profession", f"profession:{prof_name}"]
 
     tags = []
     for faction in FACTION_NAMES:
@@ -654,6 +667,7 @@ def categorize_equipped(
     dungeon_reputation: dict[str, str],
     rep_lookup: dict,
     item_db: dict[int, dict],
+    allowed_tags: set[str] | None = None,
 ):
     """Categorize each equipped item into tiers and find available upgrades."""
     current_bis: list[tuple[str, str, str, str]] = []
@@ -718,6 +732,7 @@ def categorize_equipped(
                 dungeon_reputation,
                 rep_lookup,
                 item_db,
+                allowed_tags,
             )
             all_upgrades.extend(slot_upgrades)
 
@@ -753,8 +768,11 @@ def _find_slot_upgrades(
     dungeon_reputation: dict[str, str],
     rep_lookup: dict,
     item_db: dict[int, dict],
+    allowed_tags: set[str] | None = None,
 ) -> list[dict]:
     """Find all dungeon/rep/badge/raid upgrades for a single equipped slot."""
+    if allowed_tags is None:
+        allowed_tags = {"dungeon", "heroic", "reputation", "badges", "raid", "pvp"}
     slot_upgrades: list[dict] = []
     seen_item_ids: set[int] = set()
 
@@ -776,13 +794,7 @@ def _find_slot_upgrades(
 
             source = bis_item.get("source", "")
             tags = classify_source(source)
-            if (
-                "dungeon" not in tags
-                and "reputation" not in tags
-                and "badges" not in tags
-                and "raid" not in tags
-                and "pvp" not in tags
-            ):
+            if not any(t in allowed_tags for t in tags):
                 continue
 
             seen_item_ids.add(bis_id)
@@ -1027,20 +1039,11 @@ def print_slot_breakdown(all_upgrades: list[dict]):
         rank_note = f" [{current_rank}]" if current_rank != "Not on list" else ""
         print(f"\n  {slot}: {current}{cur_armor}{rank_note}{cur_extra}")
         for up in items_in_slot:
-            icon = (
-                "D"
-                if "dungeon" in up["tags"]
-                else (
-                    "R"
-                    if "reputation" in up["tags"]
-                    else ("P" if "pvp" in up["tags"] else "B")
-                )
-            )
             heroic = " (H)" if "heroic" in up["tags"] else ""
             rank_label = f"[{format_rank_tag(up)}]"
             armor = format_armor_warning(up.get("item_info"))
             extra = format_item_extras(up.get("item_info"))
-            line = f"    [{icon}] {rank_label:18s} {up['name']}{armor}{extra}{heroic}  --  {up['source']}"
+            line = f"    {rank_label:18s} {up['name']}{armor}{extra}{heroic}  --  {up['source']}"
             if up["rep_info"]:
                 ri = up["rep_info"]
                 req = up.get("required_standing")
@@ -1243,6 +1246,11 @@ def main():
         default=None,
         help="Path to character JSON (or '-' for stdin). Defaults to data/{spec}.json.",
     )
+    parser.add_argument(
+        "--include-deferred",
+        action="store_true",
+        help="Include deferred sources (PvP, classic raids) in upgrade list.",
+    )
     args = parser.parse_args()
 
     spec = resolve_spec(args.spec)
@@ -1264,6 +1272,42 @@ def main():
     equipped = char.get("equippedItems", [])
     reputations_raw = char.get("reputations", [])
 
+    # Build set of allowed source tags based on character professions + flags
+    char_professions = {p["name"] for p in char.get("professions", [])}
+    # Default allowed tags (rep/badge vendors are tagged separately, not as "vendor")
+    allowed_tags = {
+        "dungeon",
+        "heroic",
+        "reputation",
+        "badges",
+        "raid",
+        "world_drop",
+        "world_boss",
+        "quest",
+    }
+    # Add profession tags for professions the character actually has
+    for prof_name in char_professions:
+        allowed_tags.add(f"profession:{prof_name}")
+    # Generic "Crafted" tag also allowed if character has ANY crafting profession
+    crafting_professions = {
+        "Tailoring",
+        "Leatherworking",
+        "Blacksmithing",
+        "Engineering",
+        "Jewelcrafting",
+        "Alchemy",
+        "Enchanting",
+    }
+    if char_professions & crafting_professions:
+        allowed_tags.add("profession:Crafted")
+    if args.include_deferred:
+        allowed_tags.update(
+            {"pvp", "classic", "other", "profession", "profession:Crafted"}
+        )
+        # Include all profession tags when deferred
+        for prof_name in crafting_professions:
+            allowed_tags.add(f"profession:{prof_name}")
+
     # Flatten reputations
     rep_lookup: dict[str, dict] = {}
     for group in reputations_raw:
@@ -1279,8 +1323,10 @@ def main():
     # Load soft-reserve config
     sr_counts, sr_groups = load_soft_reserves()
 
-    # Load BiS data — icy-veins primary, wowtbc and atlasloot fill missing slots
+    # Load BiS data — merge items across all sources, dedup by item_id per slot.
+    # If an item appears in multiple sources, keep the best rank (BiS > Option).
     bis_data: dict = {"phases": {}}
+    _rank_priority = {"BiS": 0, "Option": 1}
     for src_name in ("iv_bis_gear.json", "wtbc_bis_gear.json", "al_bis_gear.json"):
         src_path = PROJECT_ROOT / "output" / spec / src_name
         if not src_path.exists():
@@ -1291,7 +1337,23 @@ def main():
                 bis_data["phases"][phase_key] = {}
             for slot_key, items in phase_slots.items():
                 if slot_key not in bis_data["phases"][phase_key]:
-                    bis_data["phases"][phase_key][slot_key] = items
+                    bis_data["phases"][phase_key][slot_key] = []
+                existing = bis_data["phases"][phase_key][slot_key]
+                seen_ids = {it["item_id"] for it in existing}
+                for item in items:
+                    iid = item.get("item_id")
+                    if iid in seen_ids:
+                        # Upgrade rank if this source ranks it higher
+                        for ex in existing:
+                            if ex["item_id"] == iid:
+                                if _rank_priority.get(
+                                    item.get("rank"), 9
+                                ) < _rank_priority.get(ex.get("rank"), 9):
+                                    ex["rank"] = item["rank"]
+                                break
+                    else:
+                        existing.append(item)
+                        seen_ids.add(iid)
     if not bis_data["phases"]:
         print(
             f"No BiS data found in {PROJECT_ROOT / 'output' / spec}. "
@@ -1339,6 +1401,7 @@ def main():
         dungeon_reputation,
         rep_lookup,
         item_db,
+        allowed_tags,
     )
 
     # Split upgrades into dungeon/rep/badge vs raid

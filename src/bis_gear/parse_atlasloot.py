@@ -200,24 +200,51 @@ def _build_dungeon_item_lookup() -> dict[int, str]:
             )
             boss_block = inst_block[start:end]
 
-            # Extract all item IDs from both NORMAL_DIFF and HEROIC_DIFF
-            item_ids = [
-                int(m) for m in re.findall(r"\{\s*\d+\s*,\s*(\d+)\s*\}", boss_block)
-            ]
+            # Extract item IDs separately for normal and heroic
+            normal_ids: set[int] = set()
+            heroic_ids: set[int] = set()
 
-            # Build source string
-            if is_world_boss:
-                source = f"World Boss: {boss_name}"
-            elif max_players <= 5:
-                source = f"Drop: {boss_name} ({inst_name})"
-            else:
-                source = f"Drop: {boss_name} — {inst_name}"
+            # Split boss_block into NORMAL_DIFF and HEROIC_DIFF sections
+            normal_match = re.search(
+                r"\[NORMAL_DIFF\]\s*=\s*\{(.*?)\}\s*,",
+                boss_block,
+                re.DOTALL,
+            )
+            heroic_match = re.search(
+                r"\[HEROIC_DIFF\]\s*=\s*\{(.*?)\}\s*,",
+                boss_block,
+                re.DOTALL,
+            )
+            if normal_match:
+                normal_ids = {
+                    int(m)
+                    for m in re.findall(
+                        r"\{\s*\d+\s*,\s*(\d+)\s*\}", normal_match.group(1)
+                    )
+                }
+            if heroic_match:
+                heroic_ids = {
+                    int(m)
+                    for m in re.findall(
+                        r"\{\s*\d+\s*,\s*(\d+)\s*\}", heroic_match.group(1)
+                    )
+                }
+            # Items only in heroic (not in normal) are heroic-only
+            heroic_only = heroic_ids - normal_ids
+            all_ids = normal_ids | heroic_ids
 
-            for item_id in item_ids:
-                # Don't overwrite — first match wins (some items appear in
-                # multiple difficulties, we want the boss association)
-                if item_id not in result:
-                    result[item_id] = source
+            # Build source strings
+            for item_id in all_ids:
+                if item_id in result:
+                    continue
+                heroic_tag = " (H)" if item_id in heroic_only else ""
+                if is_world_boss:
+                    source = f"World Boss: {boss_name}"
+                elif max_players <= 5:
+                    source = f"Drop: {boss_name}{heroic_tag} ({inst_name})"
+                else:
+                    source = f"Drop: {boss_name} — {inst_name}"
+                result[item_id] = source
 
     return result
 
@@ -261,7 +288,17 @@ def _classify_item_sources(
     sources: dict[int, str] = {}
     remaining = set(item_ids)
 
-    # --- Step 0: AtlasLoot dungeon/raid data (most reliable source) ---
+    # --- Step 0a: BoE items are world drops regardless of loot tables ---
+    placeholders = ",".join("?" for _ in remaining)
+    cur.execute(
+        f"SELECT entry FROM item_template WHERE entry IN ({placeholders}) AND bonding = 2",  # noqa: S608
+        list(remaining),
+    )
+    for (item_id,) in cur.fetchall():
+        sources[item_id] = "Auction House — BoE World Drop"
+        remaining.discard(item_id)
+
+    # --- Step 0b: AtlasLoot dungeon/raid data (most reliable source) ---
     al_dungeon_lookup = _build_dungeon_item_lookup()
     for item_id in list(remaining):
         if item_id in al_dungeon_lookup:
@@ -504,7 +541,7 @@ def _classify_item_sources(
         )
         for item_id, bonding in cur.fetchall():
             if bonding == 2:  # BoE
-                sources[item_id] = "World Drop BoE"
+                sources[item_id] = "Auction House — BoE World Drop"
                 remaining.discard(item_id)
 
     # Anything left is non-TBC content (classic raids, seasonal events, etc.)

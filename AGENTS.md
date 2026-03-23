@@ -51,7 +51,7 @@ uv run bis-parse --spec ele
 
 # Look up TBC item stats (accurate TBC data, not WotLK):
 uv run item-lookup 29183                       # single item
-uv run item-lookup 29183 28503                 # multiple items
+uv run item-lookup 29183 28503 29376 28771     # multiple items
 uv run item-lookup --compare 29183 28503       # side-by-side with diff column
 
 # Find gear upgrades for a specific stat target:
@@ -115,7 +115,7 @@ The script outputs these sections in order:
    - Rep toward needed faction vendor items: **sum of those items' individual scores**
    Shows what drops in that dungeon, and what reputation vendor items the run also earns progress toward.
 6. **Reputation Goals** — Factions to grind, what vendor items they unlock, total rep needed to the required standing (e.g. "need Exalted, ~8,415 rep to go"), and which dungeons give that rep.
-7. **All Upgrades by Slot** — Full per-slot breakdown tagged `[D]` (dungeon), `[R]` (reputation), or `[B]` (badges), with `(H)` for heroic-only. Shows rep progress for reputation items.
+7. **All Upgrades by Slot** — Full per-slot breakdown with `(H)` for heroic-only. Each item shows its source (dungeon drop, reputation vendor, badges, crafted, quest, world boss, etc.). Shows rep progress for reputation items.
 8. **Raid Upgrades** — Raid BiS/Option items grouped by raid instance (or grouped raids like Gruul+Mag). Shows soft-reserve count from `data/soft-reserves.txt` (0 = "master looter", N = "N soft reserves"). Items sorted by score within each raid.
 9. **No Dungeon/Rep/Raid Upgrade** — Slots needing crafting, world bosses, etc.
 10. **Summary** — Slot counts by tier and upgrade availability (dungeon/rep and raid counted separately).

@@ -46,7 +46,7 @@
         {
           "rank": "BiS",
           "item_id": 24253,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Cloak of Eternity"
         }
       ],
@@ -80,7 +80,7 @@
         {
           "rank": "BiS",
           "item_id": 23538,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Bracers of the Green Fortress"
         }
       ],
@@ -88,7 +88,7 @@
         {
           "rank": "BiS",
           "item_id": 30741,
-          "source": "World Boss: Doom Lord Kazzak",
+          "source": "Auction House — BoE World Drop",
           "name": "Topaz-Studded Battlegrips"
         },
         {
@@ -254,7 +254,7 @@
         {
           "rank": "BiS",
           "item_id": 28593,
-          "source": "Drop: The Wizard of Oz — Karazhan",
+          "source": "Other (Classic, Seasonal Event, Etc.)",
           "name": "Eternium Greathelm"
         },
         {
@@ -266,13 +266,13 @@
         {
           "rank": "Option",
           "item_id": 23536,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Oathkeeper's Helm"
         },
         {
           "rank": "Option",
           "item_id": 23535,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Helm of the Stalwart Defender"
         },
         {
@@ -284,7 +284,7 @@
         {
           "rank": "Option",
           "item_id": 23519,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Felsteel Helm"
         },
         {
@@ -336,7 +336,7 @@
         {
           "rank": "BiS",
           "item_id": 24253,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Cloak of Eternity"
         },
         {
@@ -398,7 +398,7 @@
         {
           "rank": "Option",
           "item_id": 23507,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Adamantite Breastplate"
         }
       ],
@@ -412,7 +412,7 @@
         {
           "rank": "BiS",
           "item_id": 23538,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Bracers of the Green Fortress"
         },
         {
@@ -436,7 +436,7 @@
         {
           "rank": "Option",
           "item_id": 27459,
-          "source": "Drop: Nazan & Vazruden (Hellfire Ramparts)",
+          "source": "Other (Classic, Seasonal Event, Etc.)",
           "name": "Vambraces of Daring"
         }
       ],
@@ -456,7 +456,7 @@
         {
           "rank": "BiS",
           "item_id": 30741,
-          "source": "World Boss: Doom Lord Kazzak",
+          "source": "Auction House — BoE World Drop",
           "name": "Topaz-Studded Battlegrips"
         },
         {
@@ -474,7 +474,7 @@
         {
           "rank": "Option",
           "item_id": 23532,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Gauntlets of the Iron Tower"
         },
         {
@@ -486,7 +486,7 @@
         {
           "rank": "Option",
           "item_id": 23517,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Felsteel Gloves"
         },
         {
@@ -524,7 +524,7 @@
         {
           "rank": "Option",
           "item_id": 29238,
-          "source": "Drop: Nazan & Vazruden (Hellfire Ramparts)",
+          "source": "Other (Classic, Seasonal Event, Etc.)",
           "name": "Lion's Heart Girdle"
         },
         {
@@ -568,7 +568,7 @@
         {
           "rank": "Option",
           "item_id": 23518,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Felsteel Leggings"
         },
         {
@@ -594,13 +594,13 @@
         {
           "rank": "BiS",
           "item_id": 30641,
-          "source": "Drop: Trash — Karazhan",
+          "source": "Drop: Spell Shade — Karazhan",
           "name": "Boots of Elusion"
         },
         {
           "rank": "BiS",
           "item_id": 28747,
-          "source": "Drop: Chess Event — Karazhan",
+          "source": "Other (Classic, Seasonal Event, Etc.)",
           "name": "Battlescar Boots"
         },
         {
@@ -724,7 +724,7 @@
         {
           "rank": "Option",
           "item_id": 31319,
-          "source": "Drop: Ashtongue Battlelord — Black Temple",
+          "source": "Auction House — BoE World Drop",
           "name": "Band of Impenetrable Defenses"
         },
         {
@@ -818,7 +818,7 @@
         {
           "rank": "BiS",
           "item_id": 28749,
-          "source": "Drop: Chess Event — Karazhan",
+          "source": "Other (Classic, Seasonal Event, Etc.)",
           "name": "King's Defender"
         },
         {
@@ -1006,7 +1006,7 @@
         {
           "rank": "BiS",
           "item_id": 30034,
-          "source": "Profession: Crafted",
+          "source": "Auction House — BoE World Drop",
           "name": "Belt of the Guardian"
         },
         {
@@ -1052,7 +1052,7 @@
         {
           "rank": "BiS",
           "item_id": 30641,
-          "source": "Drop: Trash — Karazhan",
+          "source": "Drop: Spell Shade — Karazhan",
           "name": "Boots of Elusion"
         },
         {
@@ -1116,7 +1116,7 @@
         {
           "rank": "BiS",
           "item_id": 30028,
-          "source": "Drop: Trash — Tempest Keep",
+          "source": "Drop: Bloodwarder Legionnaire — Tempest Keep",
           "name": "Seventh Ring of the Tirisfalen"
         },
         {
