@@ -1279,9 +1279,9 @@ def main():
     # Load soft-reserve config
     sr_counts, sr_groups = load_soft_reserves()
 
-    # Load BiS data — icy-veins primary, wowtbc fills missing slots
+    # Load BiS data — icy-veins primary, wowtbc and atlasloot fill missing slots
     bis_data: dict = {"phases": {}}
-    for src_name in ("iv_bis_gear.json", "wtbc_bis_gear.json"):
+    for src_name in ("iv_bis_gear.json", "wtbc_bis_gear.json", "al_bis_gear.json"):
         src_path = PROJECT_ROOT / "output" / spec / src_name
         if not src_path.exists():
             continue
@@ -1295,7 +1295,7 @@ def main():
     if not bis_data["phases"]:
         print(
             f"No BiS data found in {PROJECT_ROOT / 'output' / spec}. "
-            f"Expected iv_bis_gear.json or wtbc_bis_gear.json."
+            f"Expected iv_bis_gear.json, wtbc_bis_gear.json, or al_bis_gear.json."
         )
         sys.exit(1)
     current_phase = (

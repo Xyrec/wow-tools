@@ -5,7 +5,7 @@
   "unit": "player",
   "professions": [
     { "name": "Jewelcrafting", "level": 355 },
-    { "name": "Mining", "level": 341 }
+    { "name": "Mining", "level": 346 }
   ],
   "race": "Draenei",
   "name": "Yrsadriel",
