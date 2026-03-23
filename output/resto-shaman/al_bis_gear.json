@@ -24,7 +24,7 @@
         {
           "rank": "Option",
           "item_id": 27759,
-          "source": "Drop: Ghaz'an (Underbog)",
+          "source": "Drop: Ghaz'an (H) (Underbog)",
           "name": "Headdress of the Tides"
         }
       ],
@@ -38,7 +38,7 @@
         {
           "rank": "BiS",
           "item_id": 27826,
-          "source": "Drop: Tavarok (Mana-Tombs)",
+          "source": "Drop: Tavarok (H) (Mana-Tombs)",
           "name": "Mantle of the Sea Wolf"
         }
       ],
@@ -128,7 +128,7 @@
         {
           "rank": "BiS",
           "item_id": 30543,
-          "source": "Drop: Warlord Kalithresh (Steamvault)",
+          "source": "Drop: Warlord Kalithresh (H) (Steamvault)",
           "name": "Pontifex Kilt"
         },
         {
@@ -148,7 +148,7 @@
         {
           "rank": "BiS",
           "item_id": 27549,
-          "source": "Drop: Rokmar the Crackler (Slave Pens)",
+          "source": "Drop: Rokmar the Crackler (H) (Slave Pens)",
           "name": "Wavefury Boots"
         }
       ],
@@ -168,7 +168,7 @@
         {
           "rank": "BiS",
           "item_id": 28233,
-          "source": "Drop: Epoch Hunter (Old Hillsbrad Foothills)",
+          "source": "Drop: Epoch Hunter (H) (Old Hillsbrad Foothills)",
           "name": "Necklace of Resplendent Hope"
         }
       ],
@@ -200,7 +200,7 @@
         {
           "rank": "Option",
           "item_id": 31923,
-          "source": "Drop: Yor (Mana-Tombs)",
+          "source": "Drop: Yor <Void Hound of Shaffar> (H) (Mana-Tombs)",
           "name": "Band of the Crystalline Void"
         },
         {
@@ -276,7 +276,7 @@
         {
           "rank": "BiS",
           "item_id": 29353,
-          "source": "Drop: Murmur (Shadow Labyrinth)",
+          "source": "Drop: Murmur (H) (Shadow Labyrinth)",
           "name": "Shockwave Truncheon"
         },
         {
@@ -308,13 +308,13 @@
         {
           "rank": "Option",
           "item_id": 27477,
-          "source": "Drop: Omor the Unscarred (Hellfire Ramparts)",
+          "source": "Drop: Omor the Unscarred (H) (Hellfire Ramparts)",
           "name": "Faol's Signet of Cleansing"
         },
         {
           "rank": "Option",
           "item_id": 27772,
-          "source": "Drop: The Black Stalker (Underbog)",
+          "source": "Drop: The Black Stalker (H) (Underbog)",
           "name": "Stormshield of Renewal"
         }
       ],
@@ -322,7 +322,7 @@
         {
           "rank": "BiS",
           "item_id": 27544,
-          "source": "Drop: Mennu the Betrayer (Slave Pens)",
+          "source": "Drop: Mennu the Betrayer (H) (Slave Pens)",
           "name": "Totem of Spontaneous Regrowth"
         },
         {
@@ -436,13 +436,13 @@
         {
           "rank": "BiS",
           "item_id": 28751,
-          "source": "Other (Classic, Seasonal Event, Etc.)",
+          "source": "Drop: Chess Event — Karazhan",
           "name": "Heart-Flame Leggings"
         },
         {
           "rank": "BiS",
           "item_id": 28591,
-          "source": "Other (Classic, Seasonal Event, Etc.)",
+          "source": "Drop: The Wizard of Oz — Karazhan",
           "name": "Earthsoul Leggings"
         }
       ],
@@ -658,7 +658,7 @@
         {
           "rank": "BiS",
           "item_id": 30030,
-          "source": "Drop: Bloodwarder Legionnaire — Tempest Keep",
+          "source": "Drop: Trash — Tempest Keep",
           "name": "Girdle of Fallen Stars"
         },
         {
@@ -752,7 +752,7 @@
         {
           "rank": "Option",
           "item_id": 28590,
-          "source": "Other (Classic, Seasonal Event, Etc.)",
+          "source": "Drop: The Wizard of Oz — Karazhan",
           "name": "Ribbon of Sacrifice"
         }
       ],

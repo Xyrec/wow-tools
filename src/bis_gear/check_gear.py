@@ -379,7 +379,7 @@ def classify_source(source: str) -> list[str]:
     if not tags and ("exalted" in s or "revered" in s or "honored" in s):
         tags.append("reputation")
 
-    if "heroic" in s:
+    if "heroic" in s or "(h)" in s:
         tags.append("heroic")
         if "dungeon" not in tags:
             tags.append("dungeon")
@@ -409,11 +409,24 @@ def extract_faction(source: str) -> str | None:
 
 
 def extract_dungeon(source: str, dungeon_reputation: dict) -> str | None:
+    # Build a lookup that also matches without "The " prefix
+    name_map: dict[str, str] = {}
+    for key in dungeon_reputation:
+        name_map[key] = key
+        if key.startswith("The "):
+            name_map[key.removeprefix("The ")] = key
+
+    # Try last parenthesized group first — handles "Boss (H) (Instance)" format
+    parens = re.findall(r"\(([^)]+)\)", source)
+    for name in reversed(parens):
+        if name in name_map:
+            return name_map[name]
+    # Also try "Heroic Instance" prefix stripping
     m = re.search(r"\((?:Heroic\s+)?(.+?)\)", source)
     if m:
         name = m.group(1)
-        if name in dungeon_reputation:
-            return name
+        if name in name_map:
+            return name_map[name]
     return None
 
 
@@ -897,30 +910,44 @@ def build_dungeon_priority(
                 f"badges toward vendor items: +{badge_bonus}"
             )
 
-    # Promote normal dungeons to heroic if rep synergy exists
+    # Merge normal drops into heroic entries (heroic runs drop both)
+    # and create heroic entries for normal-only dungeons with rep synergy
     for entry in list(dungeon_actions.values()):
-        if not entry["heroic"]:
-            heroic_key = f"Heroic {entry['dungeon']}"
-            if heroic_key not in dungeon_actions:
-                faction = entry["rep_faction"]
-                if faction and faction in rep_needs:
-                    heroic_entry = {
-                        "key": heroic_key,
-                        "dungeon": entry["dungeon"],
-                        "heroic": True,
-                        "drops": list(entry["drops"]),
-                        "score": entry["score"] + badge_bonus,
-                        "score_breakdown": list(entry["score_breakdown"])
-                        + (
-                            [f"badges toward vendor items: +{badge_bonus}"]
-                            if badge_bonus > 0
-                            else []
-                        ),
-                        "rep_faction": faction,
-                        "rep_vendor_items": rep_needs[faction],
-                        "badges": True,
-                    }
-                    dungeon_actions[heroic_key] = heroic_entry
+        if entry["heroic"]:
+            continue
+        heroic_key = f"Heroic {entry['dungeon']}"
+        if heroic_key in dungeon_actions:
+            # Heroic entry exists — merge normal drops into it
+            heroic_entry = dungeon_actions[heroic_key]
+            heroic_drop_ids = {d["item_id"] for d in heroic_entry["drops"]}
+            for drop in entry["drops"]:
+                if drop["item_id"] not in heroic_drop_ids:
+                    heroic_entry["drops"].append(drop)
+                    heroic_entry["score"] += drop["score"]
+                    heroic_entry["score_breakdown"].append(
+                        f"{format_rank_tag(drop)} drop: +{drop['score']:.0f}"
+                    )
+        else:
+            # No heroic entry — create one if there's rep synergy
+            faction = entry["rep_faction"]
+            if faction and faction in rep_needs:
+                heroic_entry = {
+                    "key": heroic_key,
+                    "dungeon": entry["dungeon"],
+                    "heroic": True,
+                    "drops": list(entry["drops"]),
+                    "score": entry["score"] + badge_bonus,
+                    "score_breakdown": list(entry["score_breakdown"])
+                    + (
+                        [f"badges toward vendor items: +{badge_bonus}"]
+                        if badge_bonus > 0
+                        else []
+                    ),
+                    "rep_faction": faction,
+                    "rep_vendor_items": rep_needs[faction],
+                    "badges": True,
+                }
+                dungeon_actions[heroic_key] = heroic_entry
 
     return sorted(dungeon_actions.values(), key=lambda x: x["score"], reverse=True)
 

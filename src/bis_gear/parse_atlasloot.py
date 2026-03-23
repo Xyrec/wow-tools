@@ -204,14 +204,16 @@ def _build_dungeon_item_lookup() -> dict[int, str]:
             normal_ids: set[int] = set()
             heroic_ids: set[int] = set()
 
-            # Split boss_block into NORMAL_DIFF and HEROIC_DIFF sections
+            # Split boss_block into NORMAL_DIFF and HEROIC_DIFF sections.
+            # Use lookahead to capture everything up to the next [*_DIFF] or
+            # end of boss block, avoiding the nested-brace truncation issue.
             normal_match = re.search(
-                r"\[NORMAL_DIFF\]\s*=\s*\{(.*?)\}\s*,",
+                r"\[NORMAL_DIFF\]\s*=\s*\{(.*?)(?=\[HEROIC_DIFF\]|\[NORMAL_DIFF\]|\Z)",
                 boss_block,
                 re.DOTALL,
             )
             heroic_match = re.search(
-                r"\[HEROIC_DIFF\]\s*=\s*\{(.*?)\}\s*,",
+                r"\[HEROIC_DIFF\]\s*=\s*\{(.*?)(?=\[NORMAL_DIFF\]|\[HEROIC_DIFF\]|\Z)",
                 boss_block,
                 re.DOTALL,
             )

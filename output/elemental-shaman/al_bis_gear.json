@@ -44,7 +44,7 @@
         {
           "rank": "BiS",
           "item_id": 32078,
-          "source": "Drop: Quagmirran (Slave Pens)",
+          "source": "Drop: Quagmirran (H) (Slave Pens)",
           "name": "Pauldrons of Wild Magic"
         },
         {
@@ -78,7 +78,7 @@
         {
           "rank": "BiS",
           "item_id": 28191,
-          "source": "Drop: Epoch Hunter (Old Hillsbrad Foothills)",
+          "source": "Drop: Epoch Hunter (H) (Old Hillsbrad Foothills)",
           "name": "Mana-Etched Vestments"
         }
       ],
@@ -100,7 +100,7 @@
         {
           "rank": "BiS",
           "item_id": 27465,
-          "source": "Drop: Omor the Unscarred (Hellfire Ramparts)",
+          "source": "Drop: Omor the Unscarred (H) (Hellfire Ramparts)",
           "name": "Mana-Etched Gloves"
         },
         {
@@ -152,7 +152,7 @@
         {
           "rank": "BiS",
           "item_id": 30541,
-          "source": "Drop: The Black Stalker (Underbog)",
+          "source": "Drop: The Black Stalker (H) (Underbog)",
           "name": "Stormsong Kilt"
         },
         {
@@ -206,7 +206,7 @@
         {
           "rank": "BiS",
           "item_id": 29352,
-          "source": "Drop: Nexus-Prince Shaffar (Mana-Tombs)",
+          "source": "Drop: Nexus-Prince Shaffar (H) (Mana-Tombs)",
           "name": "Cobalt Band of Tyrigosa"
         },
         {
@@ -238,7 +238,7 @@
         {
           "rank": "BiS",
           "item_id": 27683,
-          "source": "Drop: Quagmirran (Slave Pens)",
+          "source": "Drop: Quagmirran (H) (Slave Pens)",
           "name": "Quagmirran's Eye"
         },
         {
@@ -310,7 +310,7 @@
         {
           "rank": "BiS",
           "item_id": 28248,
-          "source": "Other (Classic, Seasonal Event, Etc.)",
+          "source": "Drop: Cache of the Legion (H) (Mechanar)",
           "name": "Totem of the Void"
         },
         {
@@ -466,13 +466,13 @@
         {
           "rank": "BiS",
           "item_id": 30667,
-          "source": "Drop: Spell Shade — Karazhan",
+          "source": "Drop: Trash — Karazhan",
           "name": "Ring of Unrelenting Storms"
         },
         {
           "rank": "BiS",
           "item_id": 28753,
-          "source": "Other (Classic, Seasonal Event, Etc.)",
+          "source": "Drop: Chess Event — Karazhan",
           "name": "Ring of Recurrence"
         },
         {
@@ -689,7 +689,7 @@
         {
           "rank": "BiS",
           "item_id": 30667,
-          "source": "Drop: Spell Shade — Karazhan",
+          "source": "Drop: Trash — Karazhan",
           "name": "Ring of Unrelenting Storms"
         },
         {
@@ -713,7 +713,7 @@
         {
           "rank": "Option",
           "item_id": 32779,
-          "source": "Drop: Anzu (Sethekk Halls)",
+          "source": "Drop: Anzu (H) (Sethekk Halls)",
           "name": "Band of Frigid Elements"
         }
       ],
