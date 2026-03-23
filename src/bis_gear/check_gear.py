@@ -314,9 +314,14 @@ def format_item_extras(item_info: dict | None) -> str:
 
 
 def format_rank_tag(upgrade: dict) -> str:
-    """Format rank with Phase 0 only marker, e.g. 'BiS [Phase 0 only]'."""
-    p0 = " [Phase 0 only]" if upgrade["phase0_only"] else ""
-    return f"{upgrade['rank']}{p0}"
+    """Format rank with Phase 0 only marker and future-phase longevity note."""
+    p0 = " [Phase 0 only]" if upgrade.get("phase0_only") else ""
+    next_rank = upgrade.get("next_phase_rank")
+    if next_rank:
+        future = f" + Future Phase {next_rank}"
+    else:
+        future = ""
+    return f"{upgrade['rank']}{p0}{future}"
 
 
 def format_rep_progress(rep_info: dict | None, required_standing: str | None) -> str:
@@ -641,9 +646,14 @@ def get_effective_rank(
     return None, None, False
 
 
-def score_upgrade(rank: str, phase: str, current_phase: str) -> float:
+def score_upgrade(
+    rank: str,
+    phase: str,
+    current_phase: str,
+    next_phase_rank: str | None = None,
+) -> float:
     """
-    Score an upgrade on a 100-point scale with phase decay.
+    Score an upgrade on a 100-point scale with phase decay and longevity bonus.
 
     Base scores (current phase):
       BiS:    100  (1.0x multiplier)
@@ -653,6 +663,11 @@ def score_upgrade(rank: str, phase: str, current_phase: str) -> float:
       1 phase behind: 0.5x  -> BiS=50, Option=40
       2 phases behind: 0.25x -> BiS=25, Option=20
       etc.
+
+    Longevity bonus: if the item also appears in the next phase's BiS list,
+    it stays relevant longer and gets a significant bonus:
+      Still BiS next phase:    +50  (half the BiS base — huge)
+      Still Option next phase: +30
     """
     cur_num = int(current_phase.split("-")[1]) if "-" in current_phase else 0
     item_num = int(phase.split("-")[1]) if "-" in phase else 0
@@ -661,7 +676,14 @@ def score_upgrade(rank: str, phase: str, current_phase: str) -> float:
     decay = 0.5**phases_behind
 
     base = 100 if rank == "BiS" else 80
-    return base * decay
+    score = base * decay
+
+    if next_phase_rank == "BiS":
+        score += 50
+    elif next_phase_rank == "Option":
+        score += 30
+
+    return score
 
 
 # ---------------------------------------------------------------------------
@@ -827,7 +849,16 @@ def _find_slot_upgrades(
             faction = extract_faction(source)
             rep_info = rep_lookup.get(faction) if faction else None
             dungeon = extract_dungeon(source, dungeon_reputation)
-            item_score = score_upgrade(up_rank, up_phase, current_phase)
+
+            # Check if item appears in the next phase for longevity bonus
+            cur_num = int(current_phase.split("-")[1]) if "-" in current_phase else 0
+            next_phase_key = f"phase-{cur_num + 1}"
+            next_phase_data = bis_data["phases"].get(next_phase_key, {})
+            next_phase_rank = lookup_item_rank(bis_id, bis_slot, next_phase_data)
+
+            item_score = score_upgrade(
+                up_rank, up_phase, current_phase, next_phase_rank
+            )
             required_standing = extract_required_standing(source)
 
             upgrade = {
@@ -836,6 +867,7 @@ def _find_slot_upgrades(
                 "rank": up_rank,
                 "phase": up_phase,
                 "phase0_only": up_p0_only,
+                "next_phase_rank": next_phase_rank,
                 "source": source,
                 "tags": tags,
                 "faction": faction,
