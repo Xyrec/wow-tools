@@ -14,7 +14,6 @@ build-backend = "hatchling.build"
 
 [project.scripts]
 bis-gear = "bis_gear.check_gear:main"
-iv-parse = "bis_gear.parse_icy_veins:main"
 wtbc-parse = "bis_gear.parse_wowtbc:main"
 al-parse = "bis_gear.parse_atlasloot:main"
 item-lookup = "bis_gear.item_lookup:main"

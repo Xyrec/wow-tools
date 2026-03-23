@@ -779,11 +779,24 @@ def _find_slot_upgrades(
     for phase in phases_to_check:
         phase_data = bis_data["phases"].get(phase, {})
         slot_key = resolve_slot_key(bis_slot, phase_data)
-        for bis_item in phase_data.get(slot_key, []):
+        slot_items = phase_data.get(slot_key, [])
+
+        # Find the equipped item's position in this slot's list.
+        # Only suggest items ranked higher (earlier in the list).
+        equipped_pos = None
+        for idx, si in enumerate(slot_items):
+            if si.get("item_id") == item_id:
+                equipped_pos = idx
+                break
+
+        for idx, bis_item in enumerate(slot_items):
             bis_id = bis_item.get("item_id")
             if bis_id == item_id or bis_id in seen_item_ids:
                 continue
             if bis_id in all_equipped_ids:
+                continue
+            # Skip items ranked lower than the equipped item in the list
+            if equipped_pos is not None and idx >= equipped_pos:
                 continue
 
             up_rank, up_phase, up_p0_only = get_effective_rank(
@@ -1327,7 +1340,7 @@ def main():
     # If an item appears in multiple sources, keep the best rank (BiS > Option).
     bis_data: dict = {"phases": {}}
     _rank_priority = {"BiS": 0, "Option": 1}
-    for src_name in ("iv_bis_gear.json", "wtbc_bis_gear.json", "al_bis_gear.json"):
+    for src_name in ("al_bis_gear.json", "wtbc_bis_gear.json"):
         src_path = PROJECT_ROOT / "output" / spec / src_name
         if not src_path.exists():
             continue
@@ -1357,7 +1370,7 @@ def main():
     if not bis_data["phases"]:
         print(
             f"No BiS data found in {PROJECT_ROOT / 'output' / spec}. "
-            f"Expected iv_bis_gear.json, wtbc_bis_gear.json, or al_bis_gear.json."
+            f"Expected al_bis_gear.json or wtbc_bis_gear.json."
         )
         sys.exit(1)
     current_phase = (
