@@ -5,7 +5,7 @@
   "unit": "player",
   "professions": [
     { "name": "Blacksmithing", "level": 310 },
-    { "name": "Mining", "level": 328 }
+    { "name": "Mining", "level": 330 }
   ],
   "race": "Human",
   "name": "Xyrekk",
@@ -13,9 +13,9 @@
   "gear": {
     "items": [
       { "id": 28285, "gems": [23118] },
-      { "id": 29336, "gems": [] },
+      { "id": 29173, "gems": [] },
       { "id": 28743, "gems": [23118, 23118] },
-      { "id": 24253, "gems": [] },
+      { "id": 27804, "gems": [] },
       { "id": 28262, "gems": [] },
       { "id": 28167, "gems": [23118] },
       { "id": 23517, "gems": [23118, 23118] },
