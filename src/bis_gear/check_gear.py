@@ -396,7 +396,11 @@ def classify_source(source: str) -> list[str]:
 
     if "quest:" in s:
         tags.append("quest")
-    if "badges of justice" in s or "badges" in s.split("(")[-1]:
+    if (
+        "badge of justice" in s
+        or "badges of justice" in s
+        or "badges" in s.split("(")[-1]
+    ):
         tags.append("badges")
     if "vendor:" in s and "reputation" not in tags and "badges" not in tags:
         tags.append("vendor")
