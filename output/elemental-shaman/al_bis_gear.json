@@ -326,7 +326,7 @@
         {
           "rank": "BiS",
           "item_id": 29035,
-          "source": "Vendor: Arodis Sunblade",
+          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
           "name": "Cyclone Faceguard"
         }
       ],
@@ -334,7 +334,7 @@
         {
           "rank": "BiS",
           "item_id": 29037,
-          "source": "Vendor: Arodis Sunblade",
+          "source": "Drop: High King Maulgar — Gruul's Lair (Tier Token)",
           "name": "Cyclone Shoulderguards"
         }
       ],
@@ -368,7 +368,7 @@
         {
           "rank": "BiS",
           "item_id": 29033,
-          "source": "Vendor: Arodis Sunblade",
+          "source": "Drop: Magtheridon — Magtheridon's Lair (Tier Token)",
           "name": "Cyclone Chestguard"
         }
       ],
@@ -402,7 +402,7 @@
         {
           "rank": "BiS",
           "item_id": 29034,
-          "source": "Vendor: Arodis Sunblade",
+          "source": "Drop: The Curator — Karazhan (Tier Token)",
           "name": "Cyclone Handguards"
         }
       ],
@@ -543,13 +543,13 @@
         {
           "rank": "BiS",
           "item_id": 29035,
-          "source": "Vendor: Arodis Sunblade",
+          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
           "name": "Cyclone Faceguard"
         },
         {
           "rank": "BiS",
           "item_id": 30171,
-          "source": "Vendor: Veynna Dawnstar",
+          "source": "Drop: Lady Vashj — Serpentshrine Cavern (Tier Token)",
           "name": "Cataclysm Headpiece"
         }
       ],
@@ -557,13 +557,13 @@
         {
           "rank": "BiS",
           "item_id": 29037,
-          "source": "Vendor: Arodis Sunblade",
+          "source": "Drop: High King Maulgar — Gruul's Lair (Tier Token)",
           "name": "Cyclone Shoulderguards"
         },
         {
           "rank": "BiS",
           "item_id": 30173,
-          "source": "Vendor: Veynna Dawnstar",
+          "source": "Drop: Void Reaver — Tempest Keep (Tier Token)",
           "name": "Cataclysm Shoulderpads"
         }
       ],
@@ -579,7 +579,7 @@
         {
           "rank": "BiS",
           "item_id": 30169,
-          "source": "Vendor: Veynna Dawnstar",
+          "source": "Drop: Kael'thas Sunstrider — Tempest Keep (Tier Token)",
           "name": "Cataclysm Chestpiece"
         },
         {
@@ -619,7 +619,7 @@
         {
           "rank": "BiS",
           "item_id": 30170,
-          "source": "Vendor: Veynna Dawnstar",
+          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern (Tier Token)",
           "name": "Cataclysm Handgrips"
         }
       ],
@@ -653,7 +653,7 @@
         {
           "rank": "BiS",
           "item_id": 30172,
-          "source": "Vendor: Veynna Dawnstar",
+          "source": "Drop: Fathom-Lord Karathress — Serpentshrine Cavern (Tier Token)",
           "name": "Cataclysm Leggings"
         }
       ],

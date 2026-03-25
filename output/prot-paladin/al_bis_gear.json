@@ -242,7 +242,7 @@
         {
           "rank": "BiS",
           "item_id": 29068,
-          "source": "Vendor: Arodis Sunblade",
+          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
           "name": "Justicar Faceguard"
         },
         {
@@ -298,7 +298,7 @@
         {
           "rank": "BiS",
           "item_id": 29070,
-          "source": "Vendor: Arodis Sunblade",
+          "source": "Drop: High King Maulgar — Gruul's Lair (Tier Token)",
           "name": "Justicar Shoulderguards"
         },
         {
@@ -362,7 +362,7 @@
         {
           "rank": "BiS",
           "item_id": 29066,
-          "source": "Vendor: Arodis Sunblade",
+          "source": "Drop: Magtheridon — Magtheridon's Lair (Tier Token)",
           "name": "Justicar Chestguard"
         },
         {
@@ -444,7 +444,7 @@
         {
           "rank": "BiS",
           "item_id": 29067,
-          "source": "Vendor: Arodis Sunblade",
+          "source": "Drop: The Curator — Karazhan (Tier Token)",
           "name": "Justicar Handguards"
         },
         {
@@ -538,7 +538,7 @@
         {
           "rank": "BiS",
           "item_id": 29069,
-          "source": "Vendor: Arodis Sunblade",
+          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair (Tier Token)",
           "name": "Justicar Legguards"
         },
         {
@@ -916,13 +916,13 @@
         {
           "rank": "BiS",
           "item_id": 30125,
-          "source": "Vendor: Veynna Dawnstar",
+          "source": "Drop: Lady Vashj — Serpentshrine Cavern (Tier Token)",
           "name": "Crystalforge Faceguard"
         },
         {
           "rank": "BiS",
           "item_id": 29068,
-          "source": "Vendor: Arodis Sunblade",
+          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
           "name": "Justicar Faceguard"
         }
       ],
@@ -930,13 +930,13 @@
         {
           "rank": "BiS",
           "item_id": 29070,
-          "source": "Vendor: Arodis Sunblade",
+          "source": "Drop: High King Maulgar — Gruul's Lair (Tier Token)",
           "name": "Justicar Shoulderguards"
         },
         {
           "rank": "BiS",
           "item_id": 30127,
-          "source": "Vendor: Veynna Dawnstar",
+          "source": "Drop: Void Reaver — Tempest Keep (Tier Token)",
           "name": "Crystalforge Shoulderguards"
         }
       ],
@@ -952,13 +952,13 @@
         {
           "rank": "BiS",
           "item_id": 29066,
-          "source": "Vendor: Arodis Sunblade",
+          "source": "Drop: Magtheridon — Magtheridon's Lair (Tier Token)",
           "name": "Justicar Chestguard"
         },
         {
           "rank": "BiS",
           "item_id": 30123,
-          "source": "Vendor: Veynna Dawnstar",
+          "source": "Drop: Kael'thas Sunstrider — Tempest Keep (Tier Token)",
           "name": "Crystalforge Chestguard"
         },
         {
@@ -992,13 +992,13 @@
         {
           "rank": "BiS",
           "item_id": 30124,
-          "source": "Vendor: Veynna Dawnstar",
+          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern (Tier Token)",
           "name": "Crystalforge Handguards"
         },
         {
           "rank": "BiS",
           "item_id": 29067,
-          "source": "Vendor: Arodis Sunblade",
+          "source": "Drop: The Curator — Karazhan (Tier Token)",
           "name": "Justicar Handguards"
         }
       ],
@@ -1026,7 +1026,7 @@
         {
           "rank": "BiS",
           "item_id": 30126,
-          "source": "Vendor: Veynna Dawnstar",
+          "source": "Drop: Fathom-Lord Karathress — Serpentshrine Cavern (Tier Token)",
           "name": "Crystalforge Legguards"
         },
         {
@@ -1038,7 +1038,7 @@
         {
           "rank": "BiS",
           "item_id": 29069,
-          "source": "Vendor: Arodis Sunblade",
+          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair (Tier Token)",
           "name": "Justicar Legguards"
         }
       ],

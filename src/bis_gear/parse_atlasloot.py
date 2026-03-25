@@ -131,6 +131,27 @@ _BADGE_VENDORS: set[int] = {18525, 25046, 27666}
 # Known PvP vendor NPC entries
 _PVP_VENDOR_NAMES = {"arena", "gladiator", "pvp", "honor", "conquest", "battleground"}
 
+# Tier token vendors → {InventoryType: (boss_name, instance_name)}.
+# Maps the vendor who redeems tier tokens to the raid boss that drops each slot's token.
+_TIER_TOKEN_SOURCES: dict[str, dict[int, tuple[str, str]]] = {
+    "arodis sunblade": {  # T4
+        1: ("Prince Malchezaar", "Karazhan"),  # Head
+        3: ("High King Maulgar", "Gruul's Lair"),  # Shoulders
+        5: ("Magtheridon", "Magtheridon's Lair"),  # Chest
+        7: ("Gruul the Dragonkiller", "Gruul's Lair"),  # Legs
+        10: ("The Curator", "Karazhan"),  # Hands
+        20: ("Magtheridon", "Magtheridon's Lair"),  # Chest (Robe)
+    },
+    "veynna dawnstar": {  # T5
+        1: ("Lady Vashj", "Serpentshrine Cavern"),  # Head
+        3: ("Void Reaver", "Tempest Keep"),  # Shoulders
+        5: ("Kael'thas Sunstrider", "Tempest Keep"),  # Chest
+        7: ("Fathom-Lord Karathress", "Serpentshrine Cavern"),  # Legs
+        10: ("Leotheras the Blind", "Serpentshrine Cavern"),  # Hands
+        20: ("Kael'thas Sunstrider", "Tempest Keep"),  # Chest (Robe)
+    },
+}
+
 
 def _build_dungeon_item_lookup() -> dict[int, str]:
     """Parse AtlasLoot DungeonsAndRaids data-tbc.lua into {item_id: source_string}.
@@ -496,8 +517,23 @@ def _classify_item_sources(
                 vendor_name = ct_row[0].lower()
                 if any(kw in vendor_name for kw in _PVP_VENDOR_NAMES):
                     sources[item_id] = "PvP Vendor"
+                elif vendor_name in _TIER_TOKEN_SOURCES:
+                    # Tier token vendor — resolve to the raid boss that drops the token
+                    cur.execute(
+                        "SELECT InventoryType FROM item_template WHERE entry=?",
+                        (item_id,),
+                    )
+                    inv_row = cur.fetchone()
+                    slot_map = _TIER_TOKEN_SOURCES[vendor_name]
+                    token_info = slot_map.get(inv_row[0]) if inv_row else None
+                    if token_info:
+                        boss_name, inst_name = token_info
+                        sources[item_id] = (
+                            f"Drop: {boss_name} — {inst_name} (Tier Token)"
+                        )
+                    else:
+                        sources[item_id] = f"Vendor: {ct_row[0]}"
                 else:
-                    # Tier token vendor or other NPC vendor
                     sources[item_id] = f"Vendor: {ct_row[0]}"
                 remaining.discard(item_id)
                 break
