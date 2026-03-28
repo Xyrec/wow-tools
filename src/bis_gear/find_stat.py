@@ -39,7 +39,7 @@ STAT_TO_WOWSIMS: dict[int, str] = {
     12: "Defense",
     13: "Dodge",
     14: "Parry",
-    15: "BlockValue",
+    15: "Block",  # Block Rating (no TBC gems have this stat)
     31: "MeleeHit",
     32: "MeleeCrit",
     35: "Resilience",
@@ -50,10 +50,6 @@ STAT_TO_WOWSIMS: dict[int, str] = {
 # Defense rating to defense skill conversion at level 70
 DEFENSE_RATING_PER_SKILL = 2.3654
 BASE_DEFENSE_SKILL = 350
-
-# Crit cap constants (defense + resilience)
-DEFENSE_SKILL_FOR_CAP = 140
-RESILIENCE_RATING_FOR_CAP = 221
 
 # Equippable slot IDs
 EQUIP_SLOTS: dict[int, str] = {
@@ -721,17 +717,10 @@ def find_stat_upgrades(
         if stat_val <= 0:
             continue
 
-        # Filter armor pieces to the character's highest armor type
-        # Armor subclass: 0=Misc, 1=Cloth, 2=Leather, 3=Mail, 4=Plate, 6=Shield
-        # Only filter actual armor slots (subclass 1-4), not shields/misc/jewelry
-        if item_class == 4 and max_armor and item_subclass in (1, 2, 3, 4):
-            if item_subclass != max_armor:
-                continue
-
         sources = _get_item_source(conn, item_id)
 
-        # Tag armor type for display (only if below optimal — shouldn't happen
-        # now with filtering, but kept for --source all edge cases)
+        # Tag non-optimal armor types for display
+        # Armor subclass: 0=Misc, 1=Cloth, 2=Leather, 3=Mail, 4=Plate, 6=Shield
         armor_tag = ""
         if item_class == 4 and max_armor and item_subclass in (1, 2, 3, 4):
             if item_subclass < max_armor:
@@ -783,46 +772,48 @@ def find_stat_upgrades(
         if not candidates:
             continue
 
-        current_val = 0
-        current_item_name = "(empty)"
+        # For dual slots (Finger, Trinket), show each equipped item separately
         match_slots = SLOT_ALIASES.get(slot_name, []) + [slot_name]
+        equipped_items: list[tuple[str, str, int]] = []
         for eq_slot, eq_data in equipped_by_slot.items():
             if eq_slot in match_slots or eq_slot.startswith(slot_name):
                 v = _get_stat_value(conn, eq_data["itemId"], stat_type_id)
-                if v >= current_val:
-                    current_val = v
-                    current_item_name = eq_data["itemName"]
+                equipped_items.append((eq_slot, eq_data["itemName"], v))
 
-        print(
-            f"=== {slot_name} (current: {current_item_name}, "
-            f"{stat_name}+{current_val}) ==="
-        )
+        if not equipped_items:
+            equipped_items = [(slot_name, "(empty)", 0)]
 
         candidates.sort(key=lambda c: c["stat_value"], reverse=True)
 
-        seen: set[int] = set()
-        shown = 0
-        for c in candidates:
-            if c["id"] in seen:
-                continue
-            seen.add(c["id"])
-            if shown >= 10:
-                break
-            shown += 1
-
-            diff = c["stat_value"] - current_val
-            diff_str = f"+{diff}" if diff > 0 else str(diff)
-            qual = QUALITY_NAMES.get(c["quality"], "?")
-            source_str = _format_source(conn, c)
-            tag = c.get("armor_tag", "")
-
+        for eq_slot, current_item_name, current_val in equipped_items:
             print(
-                f"  {c['name'] + tag:45s} ilvl{c['ilvl']:3d} {qual:6s} "
-                f"{stat_name}+{c['stat_value']:<3d} ({diff_str:>4s})  "
-                f"{source_str}"
+                f"=== {eq_slot} (current: {current_item_name}, "
+                f"{stat_name}+{current_val}) ==="
             )
 
-        print()
+            seen: set[int] = set()
+            shown = 0
+            for c in candidates:
+                if c["id"] in seen:
+                    continue
+                seen.add(c["id"])
+                if shown >= 10:
+                    break
+                shown += 1
+
+                diff = c["stat_value"] - current_val
+                diff_str = f"+{diff}" if diff > 0 else str(diff)
+                qual = QUALITY_NAMES.get(c["quality"], "?")
+                source_str = _format_source(conn, c)
+                tag = c.get("armor_tag", "")
+
+                print(
+                    f"  {c['name'] + tag:45s} ilvl{c['ilvl']:3d} {qual:6s} "
+                    f"{stat_name}+{c['stat_value']:<3d} ({diff_str:>4s})  "
+                    f"{source_str}"
+                )
+
+            print()
 
 
 def main() -> None:
@@ -840,7 +831,7 @@ def main() -> None:
         "--target",
         type=int,
         default=0,
-        help="Target stat value (e.g. 490 for defense cap)",
+        help="Target stat value — triggers cap analysis for defense (e.g. 490)",
     )
     parser.add_argument(
         "--source",

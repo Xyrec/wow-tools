@@ -147,7 +147,12 @@ class WowtbcParser(HTMLParser):
             return
 
         self._slot_item_count += 1
-        rank = "BiS" if self._slot_item_count == 1 else "Option"
+        if self._slot_item_count == 1:
+            rank = "BiS"
+        elif self._slot_item_count <= 5:
+            rank = "Optional"
+        else:
+            return  # Cap at 1 BiS + 4 Optional
 
         source_parts = []
         instance = self._instance_text.strip()

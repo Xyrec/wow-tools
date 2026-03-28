@@ -62,6 +62,8 @@ FACTION_NAMES = [
     "The Consortium",
     "Ashtongue Deathsworn",
     "The Violet Eye",
+    "The Scale of the Sands",
+    "Shattered Sun Offensive",
 ]
 
 # Hellfire dungeons give rep for Honor Hold (Alliance) or Thrallmar (Horde).
@@ -89,6 +91,20 @@ DUNGEON_REPUTATION_NEUTRAL = {
     "The Mechanar": "The Sha'tar",
     "The Botanica": "The Sha'tar",
     "The Arcatraz": "The Sha'tar",
+}
+
+# Aliases for dungeon names used by WowTBC that differ from canonical names above.
+DUNGEON_NAME_ALIASES: dict[str, str] = {
+    "Steamvaults": "The Steamvault",
+    "Arcatraz": "The Arcatraz",
+    "Botanica": "The Botanica",
+    "Mechanar": "The Mechanar",
+    "Underbog": "The Underbog",
+    "Slave Pens": "The Slave Pens",
+    "Ramparts": "Hellfire Ramparts",
+    "Shattered Halls": "The Shattered Halls",
+    "Mana Tombs": "Mana-Tombs",
+    "Black Morass": "The Black Morass",
 }
 
 # Rep standing thresholds (total rep from start of that standing to cap)
@@ -119,6 +135,7 @@ RAID_KEYWORDS = [
     "gruul",
     "magtheridon",
     "serpentshrine",
+    "ssc",
     "tempest keep",
     "hyjal",
     "black temple",
@@ -142,6 +159,7 @@ RAID_KEYWORD_TO_TAG = {
     "gruul": "gruuls-lair",
     "magtheridon": "magtheridons-lair",
     "serpentshrine": "serpentshrine-cavern",
+    "ssc": "serpentshrine-cavern",
     "tempest keep": "tempest-keep",
     "hyjal": "hyjal-summit",
     "black temple": "black-temple",
@@ -384,17 +402,40 @@ def classify_source(source: str) -> list[str]:
     if not tags and ("exalted" in s or "revered" in s or "honored" in s):
         tags.append("reputation")
 
-    if "heroic" in s or "(h)" in s:
-        tags.append("heroic")
-        if "dungeon" not in tags:
-            tags.append("dungeon")
-    elif "drop:" in s:
+    # Heroic detection — only when not already classified as reputation
+    # (avoids "(H)" meaning Horde on rep items like "Thrallmar - Revered (H)")
+    if "reputation" not in tags:
+        if "heroic" in s or "(h)" in s or "(hc)" in s:
+            tags.append("heroic")
+            if "dungeon" not in tags:
+                tags.append("dungeon")
+
+    if "drop:" in s:
         if not any(rk in s for rk in RAID_KEYWORDS):
-            tags.append("dungeon")
+            if "dungeon" not in tags:
+                tags.append("dungeon")
         else:
             tags.append("raid")
 
-    if "quest:" in s:
+    # Detect WowTBC-format sources ("Instance — Boss (16%)") that lack "Drop:" prefix
+    if "dungeon" not in tags and "raid" not in tags and "reputation" not in tags:
+        _all_dungeon_names = (
+            set(DUNGEON_REPUTATION_NEUTRAL)
+            | set(DUNGEON_REPUTATION_ALLIANCE)
+            | set(DUNGEON_REPUTATION_HORDE)
+            | set(DUNGEON_NAME_ALIASES)
+        )
+        for dname in _all_dungeon_names:
+            if dname.lower() in s:
+                tags.append("dungeon")
+                break
+        if "dungeon" not in tags:
+            for rk in RAID_KEYWORDS:
+                if rk in s:
+                    tags.append("raid")
+                    break
+
+    if "quest:" in s or "quest reward" in s:
         tags.append("quest")
     if (
         "badge of justice" in s
@@ -418,12 +459,15 @@ def extract_faction(source: str) -> str | None:
 
 
 def extract_dungeon(source: str, dungeon_reputation: dict) -> str | None:
-    # Build a lookup that also matches without "The " prefix
+    # Build a lookup that also matches without "The " prefix and via aliases
     name_map: dict[str, str] = {}
     for key in dungeon_reputation:
         name_map[key] = key
         if key.startswith("The "):
             name_map[key.removeprefix("The ")] = key
+    for alias, canonical in DUNGEON_NAME_ALIASES.items():
+        if canonical in dungeon_reputation:
+            name_map[alias] = canonical
 
     # Try last parenthesized group first — handles "Boss (H) (Instance)" format
     parens = re.findall(r"\(([^)]+)\)", source)
@@ -436,6 +480,12 @@ def extract_dungeon(source: str, dungeon_reputation: dict) -> str | None:
         name = m.group(1)
         if name in name_map:
             return name_map[name]
+    # Fallback: check if any known dungeon name appears anywhere in the source
+    # (handles WowTBC format "Steamvaults (HC) — Boss (16%)")
+    s_lower = source.lower()
+    for map_name, canonical in name_map.items():
+        if map_name.lower() in s_lower:
+            return canonical
     return None
 
 
@@ -616,7 +666,7 @@ def resolve_slot_key(bis_slot: str, phase_data: dict) -> str:
 
 
 def lookup_item_rank(item_id: int, bis_slot: str, phase_data: dict) -> str | None:
-    """Find an item's rank (BiS/Option/PvP) in a single phase's data."""
+    """Find an item's rank (BiS/Optional/Alternative/PvP) in a single phase's data."""
     slot_key = resolve_slot_key(bis_slot, phase_data)
     for bis_item in phase_data.get(slot_key, []):
         if bis_item.get("item_id") == item_id:
@@ -650,6 +700,9 @@ def get_effective_rank(
     return None, None, False
 
 
+RANK_SCORES: dict[str, int] = {"BiS": 100, "Optional": 75, "Alternative": 50}
+
+
 def score_upgrade(
     rank: str,
     phase: str,
@@ -660,18 +713,19 @@ def score_upgrade(
     Score an upgrade on a 100-point scale with phase decay and longevity bonus.
 
     Base scores (current phase):
-      BiS:    100  (1.0x multiplier)
-      Option:  80  (0.8x multiplier)
+      BiS:         100
+      Optional:     75
+      Alternative:  50
 
     Each phase behind current halves the base score:
-      1 phase behind: 0.5x  -> BiS=50, Option=40
-      2 phases behind: 0.25x -> BiS=25, Option=20
+      1 phase behind: 0.5x  -> BiS=50, Optional=37, Alternative=25
+      2 phases behind: 0.25x -> BiS=25, Optional=18, Alternative=12
       etc.
 
     Longevity bonus: if the item also appears in the next phase's BiS list,
     it stays relevant longer and gets a significant bonus:
       Still BiS next phase:    +50  (half the BiS base — huge)
-      Still Option next phase: +30
+      Still Optional next phase: +30
     """
     cur_num = int(current_phase.split("-")[1]) if "-" in current_phase else 0
     item_num = int(phase.split("-")[1]) if "-" in phase else 0
@@ -679,12 +733,12 @@ def score_upgrade(
     phases_behind = max(0, cur_num - item_num)
     decay = 0.5**phases_behind
 
-    base = 100 if rank == "BiS" else 80
+    base = RANK_SCORES.get(rank, 50)
     score = base * decay
 
     if next_phase_rank == "BiS":
         score += 50
-    elif next_phase_rank == "Option":
+    elif next_phase_rank in ("Optional", "Option"):
         score += 30
 
     return score
@@ -739,11 +793,11 @@ def categorize_equipped(
             if eq_rank == "BiS" and not eq_p0_only:
                 current_bis.append(eq_display)
                 continue
-            elif eq_rank == "Option" and not eq_p0_only:
+            elif eq_rank in ("Option", "Optional", "Alternative") and not eq_p0_only:
                 current_option.append(eq_display)
             elif eq_rank == "BiS" and eq_p0_only:
                 old_bis.append(eq_display)
-            elif eq_rank == "Option" and eq_p0_only:
+            elif eq_rank in ("Option", "Optional", "Alternative") and eq_p0_only:
                 old_option.append(eq_display)
             elif eq_rank == "PvP":
                 if eq_p0_only:
@@ -1016,7 +1070,7 @@ def print_equipped_section(
     items: list[tuple[str, str, str, str]],
     suffix_fn=None,
 ):
-    """Print an equipped item tier section (BiS, Option, Phase 0, Not listed)."""
+    """Print an equipped item tier section (BiS, Optional, Phase 0, Not listed)."""
     if not items:
         return
     print(f"=== {title} ===")
@@ -1243,7 +1297,7 @@ def print_summary(
     )
     print(f"Summary: {total} slots total")
     print(f"  {cp} BiS: {len(current_bis)}")
-    print(f"  {cp} Option: {len(current_option)}")
+    print(f"  {cp} Optional: {len(current_option)}")
     if old_bis or old_option:
         print(f"  Phase 0 only (outdated): {len(old_bis) + len(old_option)}")
     if not_listed_slots:
@@ -1357,13 +1411,18 @@ def main():
     sr_counts, sr_groups = load_soft_reserves()
 
     # Load BiS data — merge items across all sources, dedup by item_id per slot.
-    # If an item appears in multiple sources, keep the best rank (BiS > Option).
+    # If an item appears in multiple sources, keep the best rank.
+    # Primary sources (AL, WTBC) preserve their BiS/Optional ranks.
+    # Secondary sources (IV, WH) have all ranks downgraded to Alternative.
     bis_data: dict = {"phases": {}}
-    _rank_priority = {"BiS": 0, "Option": 1}
-    for src_name in ("al_bis_gear.json", "wtbc_bis_gear.json"):
+    _rank_priority = {"BiS": 0, "Optional": 1, "Option": 1, "Alternative": 2}
+    _PRIMARY_SOURCES = ("al_bis_gear.json", "wtbc_bis_gear.json")
+    _SECONDARY_SOURCES = ("iv_bis_gear.json", "wh_bis_gear.json")
+    for src_name in (*_PRIMARY_SOURCES, *_SECONDARY_SOURCES):
         src_path = PROJECT_ROOT / "output" / spec / src_name
         if not src_path.exists():
             continue
+        is_secondary = src_name in _SECONDARY_SOURCES
         src_data = json.loads(src_path.read_text(encoding="utf-8"))
         for phase_key, phase_slots in src_data.get("phases", {}).items():
             if phase_key not in bis_data["phases"]:
@@ -1372,21 +1431,35 @@ def main():
                 if slot_key not in bis_data["phases"][phase_key]:
                     bis_data["phases"][phase_key][slot_key] = []
                 existing = bis_data["phases"][phase_key][slot_key]
-                seen_ids = {it["item_id"] for it in existing}
+                seen_ids = {
+                    it.get("item_id")
+                    for it in existing
+                    if it.get("item_id") is not None
+                }
                 for item in items:
                     iid = item.get("item_id")
-                    if iid in seen_ids:
+                    # Downgrade secondary source ranks to Alternative
+                    effective_rank = item.get("rank", "Alternative")
+                    if is_secondary:
+                        effective_rank = "Alternative"
+                    # Normalize legacy "Option" to "Optional"
+                    if effective_rank == "Option":
+                        effective_rank = "Optional"
+                    if iid is not None and iid in seen_ids:
                         # Upgrade rank if this source ranks it higher
                         for ex in existing:
-                            if ex["item_id"] == iid:
+                            if ex.get("item_id") == iid:
                                 if _rank_priority.get(
-                                    item.get("rank"), 9
+                                    effective_rank, 9
                                 ) < _rank_priority.get(ex.get("rank"), 9):
-                                    ex["rank"] = item["rank"]
+                                    ex["rank"] = effective_rank
                                 break
                     else:
-                        existing.append(item)
-                        seen_ids.add(iid)
+                        merged_item = dict(item)
+                        merged_item["rank"] = effective_rank
+                        existing.append(merged_item)
+                        if iid is not None:
+                            seen_ids.add(iid)
     if not bis_data["phases"]:
         print(
             f"No BiS data found in {PROJECT_ROOT / 'output' / spec}. "
@@ -1479,7 +1552,7 @@ def main():
 
     print_equipped_section(f"{cp.upper()} BIS (you're set)", current_bis)
     print_equipped_section(
-        f"{cp.upper()} OPTION (upgrade available this phase)", current_option
+        f"{cp.upper()} OPTIONAL (upgrade available this phase)", current_option
     )
     if old_bis or old_option:
         print_equipped_section(
@@ -1488,7 +1561,7 @@ def main():
             suffix_fn=lambda s, n: (
                 "  [was Phase 0 BiS]"
                 if (s, n) in {(x[0], x[1]) for x in old_bis}
-                else "  [was Phase 0 Option]"
+                else "  [was Phase 0 Optional]"
             ),
         )
     print_equipped_section("NOT ON ANY BIS LIST", not_listed_slots)

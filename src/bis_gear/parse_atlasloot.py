@@ -150,6 +150,19 @@ _TIER_TOKEN_SOURCES: dict[str, dict[int, tuple[str, str]]] = {
         10: ("Leotheras the Blind", "Serpentshrine Cavern"),  # Hands
         20: ("Kael'thas Sunstrider", "Tempest Keep"),  # Chest (Robe)
     },
+    "tydormu": {  # T6 (Hyjal Summit / Black Temple)
+        1: ("Archimonde", "Hyjal Summit"),  # Head
+        3: ("Mother Shahraz", "Black Temple"),  # Shoulders
+        5: ("Illidan Stormrage", "Black Temple"),  # Chest
+        7: ("The Illidari Council", "Black Temple"),  # Legs
+        10: ("Azgalor", "Hyjal Summit"),  # Hands
+        20: ("Illidan Stormrage", "Black Temple"),  # Chest (Robe)
+    },
+    "theremis": {  # T6 (Sunwell Plateau)
+        6: ("Eredar Twins", "Sunwell Plateau"),  # Waist
+        8: ("Eredar Twins", "Sunwell Plateau"),  # Feet
+        9: ("Eredar Twins", "Sunwell Plateau"),  # Wrist
+    },
 }
 
 
@@ -256,10 +269,15 @@ def _build_dungeon_item_lookup() -> dict[int, str]:
             heroic_only = heroic_ids - normal_ids
             all_ids = normal_ids | heroic_ids
 
-            # Build source strings
+            # Build source strings — prefer named bosses over trash/zone drops
+            _trash_indicators = {"trash", "zone drop", "boe", "random"}
             for item_id in all_ids:
                 if item_id in result:
-                    continue
+                    existing_is_trash = any(
+                        t in result[item_id].lower() for t in _trash_indicators
+                    )
+                    if not existing_is_trash:
+                        continue
                 heroic_tag = " (H)" if item_id in heroic_only else ""
                 if is_world_boss:
                     source = f"World Boss: {boss_name}"
@@ -310,16 +328,6 @@ def _classify_item_sources(
     cur = conn.cursor()
     sources: dict[int, str] = {}
     remaining = set(item_ids)
-
-    # --- Step 0a: BoE items are world drops regardless of loot tables ---
-    placeholders = ",".join("?" for _ in remaining)
-    cur.execute(
-        f"SELECT entry FROM item_template WHERE entry IN ({placeholders}) AND bonding = 2",  # noqa: S608
-        list(remaining),
-    )
-    for (item_id,) in cur.fetchall():
-        sources[item_id] = "Auction House — BoE World Drop"
-        remaining.discard(item_id)
 
     # --- Step 0b: AtlasLoot dungeon/raid data (most reliable source) ---
     al_dungeon_lookup = _build_dungeon_item_lookup()
@@ -420,13 +428,23 @@ def _classify_item_sources(
             creatures.update(ref_to_creatures.get(ref_entry, []))
         creatures.update(direct_drops.get(item_id, []))
 
+        _generic_names = {"trash", "zone drop", "trash mobs"}
         best: tuple[str, str, int] | None = None
         for cid in creatures:
             info = _get_creature_instance(cid)
             if not info:
                 continue
-            if best is None or info[2] > best[2]:
+            if best is None:
                 best = info
+            else:
+                best_is_generic = best[0].lower() in _generic_names
+                new_is_generic = info[0].lower() in _generic_names
+                if best_is_generic and not new_is_generic:
+                    best = info  # Named boss > trash
+                elif not best_is_generic and new_is_generic:
+                    pass  # Keep named boss
+                elif info[2] < best[2]:
+                    best = info  # Prefer lower max_players (dungeon > raid)
 
         if best:
             creature_name, inst_name, max_players = best
@@ -487,6 +505,24 @@ def _classify_item_sources(
                     vname_lower = vrow[0].lower()
                     if any(kw in vname_lower for kw in _PVP_VENDOR_NAMES):
                         sources[item_id] = "PvP Vendor"
+                        remaining.discard(item_id)
+                        break
+                    # T6 tier token vendors use npc_vendor (not npc_vendor_template)
+                    if vname_lower in _TIER_TOKEN_SOURCES:
+                        cur.execute(
+                            "SELECT InventoryType FROM item_template WHERE entry=?",
+                            (item_id,),
+                        )
+                        inv_row = cur.fetchone()
+                        slot_map = _TIER_TOKEN_SOURCES[vname_lower]
+                        token_info = slot_map.get(inv_row[0]) if inv_row else None
+                        if token_info:
+                            boss_name, inst_name = token_info
+                            sources[item_id] = (
+                                f"Drop: {boss_name} — {inst_name} (Tier Token)"
+                            )
+                        else:
+                            sources[item_id] = f"Vendor: {vrow[0]}"
                         remaining.discard(item_id)
                         break
 
@@ -630,7 +666,18 @@ def parse_spec_from_lua(lua_text: str, spec_key: str) -> dict[str, list[int]]:
 
         if canonical in slots:
             # Some specs have both "Main Hand" and "Twohand" mapping to "weapons"
-            slots[canonical].extend(item_ids)
+            # Interleave so both weapon styles get fair ranking representation
+            existing = slots[canonical]
+            combined = []
+            i, j = 0, 0
+            while i < len(existing) or j < len(item_ids):
+                if i < len(existing):
+                    combined.append(existing[i])
+                    i += 1
+                if j < len(item_ids):
+                    combined.append(item_ids[j])
+                    j += 1
+            slots[canonical] = combined
         else:
             slots[canonical] = item_ids
 
@@ -731,16 +778,20 @@ def main() -> None:
                 info = item_info.get(item_id)
                 if info and info[1] == 0:  # InventoryType 0 = Non-equippable
                     continue
-                # Top 3 = BiS, 4-9 = Option, rest dropped
-                if rank_idx < 3:
+                # Top 1 = BiS, 2-5 = Optional, rest dropped
+                if rank_idx < 1:
                     rank = "BiS"
-                elif rank_idx < 9:
-                    rank = "Option"
+                elif rank_idx < 5:
+                    rank = "Optional"
                 else:
                     break
                 rank_idx += 1
                 name = info[0] if info else f"Unknown ({item_id})"
                 source = item_sources.get(item_id, "Unknown")
+                # Filter out seasonal/classic items
+                if source.startswith("Other (Classic"):
+                    rank_idx -= 1  # Don't count toward rank limit
+                    continue
                 items.append(
                     {
                         "rank": rank,

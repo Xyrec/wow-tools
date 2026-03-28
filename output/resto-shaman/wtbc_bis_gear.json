@@ -10,72 +10,59 @@
           "item_id": 32090
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Whitemend Hood",
           "source": "Tailoring — BoP Pattern (375)",
           "item_id": 24264
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Ringmail Helm",
           "source": "PvP — Arena Season 1",
           "item_id": 31400
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Living Dragonscale Helm",
           "source": "Leatherworking — BoE Patern (375)",
           "item_id": 29508
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Hallowed Crown",
           "source": "Arcatraz — Harbinger Skyriss (16%)",
           "item_id": 28413
-        },
-        {
-          "rank": "Option",
-          "name": "Moonglade Cowl",
-          "source": "Botanica — Warp Splinter (15%)",
-          "item_id": 28348
         }
       ],
       "neck": [
         {
           "rank": "BiS",
           "name": "Natasha's Guardian Cord",
-          "source": "Quest Reward — The Hound-Master",
-          "item_id": 31691
+          "source": "Quest Reward — The Hound-Master"
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Necklace of Resplendent Hope",
           "source": "Old Hillsbrad Foothills (HC) — Epoch Hunter (16%)",
           "item_id": 28233
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Necklace of Eternal Hope",
           "source": "Vendor — Badge of Justice (25)",
           "item_id": 29374
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Karja's Medallion",
           "source": "Quest Reward — Shutting Down Manaforge Ara (Aldor)",
           "item_id": 30377
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Sethekk Oracle's Focus",
           "source": "Quest Reward — Brother Against Brother",
           "item_id": 29334
-        },
-        {
-          "rank": "Option",
-          "name": "Living Ruby Pendant",
-          "source": "Jewelcrafting — BoE Patern (350)",
-          "item_id": 24110
         }
       ],
       "shoulders": [
@@ -86,34 +73,27 @@
           "item_id": 21874
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Ringmail Spaulders",
           "source": "PvP — Arena Season 1",
           "item_id": 31407
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Hallowed Pauldrons",
           "source": "Shadow Labyrinth — Grandmaster Vorpil (20%)",
           "item_id": 27775
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "High Warlord's Ringmail Shoulderpads",
           "source": "PvP — Honor & AB Marks",
           "item_id": 31650
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Pauldrons of Sufferance",
-          "source": "Old Hillsbrad Foothills — Epoch Hunter (20%)",
-          "item_id": 27433
-        },
-        {
-          "rank": "Option",
-          "name": "Mantle of the Sea Wolf",
-          "source": "Mana Tombs (HC) — Tavarok (17%)",
-          "item_id": 27826
+          "source": "Old Hillsbrad Foothills — Epoch Hunter (20%)"
         }
       ],
       "back": [
@@ -124,34 +104,28 @@
           "item_id": 24254
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lifegiving Cloak",
           "source": "Auction House — BoE World Drop",
           "item_id": 31329
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bishop's Cloak",
           "source": "Vendor — Badge of Justice (25)",
           "item_id": 29375
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Light-Touched Stole of Altruism",
           "source": "Auchenai Crypts (HC) — Exarch Maladaar (33%)",
           "item_id": 29354
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cloak of the Everliving",
           "source": "Ramparts (HC) — Watchkeeper Gargolmar (20%)",
           "item_id": 27448
-        },
-        {
-          "rank": "Option",
-          "name": "Vicar's Cloak",
-          "source": "Quest Reward — The Will of the Warchief (H)",
-          "item_id": 25810
         }
       ],
       "chest": [
@@ -162,34 +136,28 @@
           "item_id": 21875
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Ringmail Armor",
           "source": "PvP — Arena Season 1",
           "item_id": 31396
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Hallowed Garments",
           "source": "Shadow Labyrinth — Murmur (16%)",
           "item_id": 28230
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Moonglade Robe",
           "source": "Mechanar — Pathaleon the Calculator (16%)",
           "item_id": 28202
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Earthpeace Breastplate",
           "source": "Blacksmithing — BoP Pattern (375)",
           "item_id": 23527
-        },
-        {
-          "rank": "Option",
-          "name": "Windhawk Hauberk",
-          "source": "Leatherworking — Trainer (375)",
-          "item_id": 29522
         }
       ],
       "wrists": [
@@ -200,34 +168,28 @@
           "item_id": 29183
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bands of the Benevolent",
           "source": "Sethekk Halls (HC) — Talon King Ikiss (25%)",
           "item_id": 29249
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Primal Surge Bracers",
           "source": "Black Morass — Aeonus (16%)",
           "item_id": 28194
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Windhawk Bracers",
           "source": "Leatherworking — Trainer (375)",
           "item_id": 29523
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "General's Mail Bracers",
           "source": "PvP — Honor & WSG Marks",
           "item_id": 28638
-        },
-        {
-          "rank": "Option",
-          "name": "Bracers of Havok",
-          "source": "Tailoring — BoE Pattern (350)",
-          "item_id": 24250
         }
       ],
       "hands": [
@@ -238,34 +200,27 @@
           "item_id": 28304
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gloves of the Living Touch",
           "source": "Leatherworking — BoE Pattern (375)",
           "item_id": 29506
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Ringmail Gauntlets",
           "source": "PvP — Arena Season 1",
           "item_id": 31397
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Fathomheart Gauntlets",
           "source": "Steamvaults — Warlord Kalithresh (16%)",
           "item_id": 27806
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bloody Surgeon's Mitts",
-          "source": "The Blood Furnace — Broggok (20%)",
-          "item_id": 24393
-        },
-        {
-          "rank": "Option",
-          "name": "Stormfront Gauntlets",
-          "source": "Old Hillsbrad Foothills — Captain Skarloc (20%)",
-          "item_id": 27428
+          "source": "The Blood Furnace — Broggok (20%)"
         }
       ],
       "waist": [
@@ -276,34 +231,28 @@
           "item_id": 21873
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cord of Sanctification",
           "source": "Old Hillsbrad Foothills (HC) — Epoch Hunter (25%)",
           "item_id": 29250
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Stillwater Girdle",
           "source": "Mana Tombs (HC) — Nexus-Prince Shaffar (16%)",
           "item_id": 27835
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lifeblood Belt",
           "source": "Tailoring — BoE Pattern (350)",
           "item_id": 30463
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Girdle of Ruination",
           "source": "Tailoring — BoE Pattern (365)",
           "item_id": 24256
-        },
-        {
-          "rank": "Option",
-          "name": "Windhawk Belt",
-          "source": "Leatherworking — Trainer (375)",
-          "item_id": 29524
         }
       ],
       "legs": [
@@ -314,72 +263,59 @@
           "item_id": 30543
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Whitemend Pants",
           "source": "Tailoring — BoP Pattern (375)",
           "item_id": 24261
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Kamaei's Cerulean Skirt",
           "source": "Auction House — BoE World Drop",
           "item_id": 31343
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Ringmail Leggings",
           "source": "PvP — Arena Season 1",
           "item_id": 31406
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Pontiff's Pantaloons of Prophecy",
           "source": "Old Hillsbrad Foothills (HC) — Captain Skarloc (17%)",
           "item_id": 28218
-        },
-        {
-          "rank": "Option",
-          "name": "Stormsong Kilt",
-          "source": "Underbog (HC) — The Black Stalker (25%)",
-          "item_id": 30541
         }
       ],
       "feet": [
         {
           "rank": "BiS",
           "name": "Slippers of Serenity",
-          "source": "Auchenai Crypts — Exarch Maladaar (17%)",
-          "item_id": 27411
+          "source": "Auchenai Crypts — Exarch Maladaar (17%)"
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Wavefury Boots",
           "source": "Slave Pens (HC) — Rokmar the Crackler (17%)",
           "item_id": 27549
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Jeweled Boots of Sanctification",
           "source": "Shattered Halls — Warbringer O'mrogg (20%)",
           "item_id": 27525
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Boots of the Pious",
           "source": "Mechanar (HC) — Pathaleon the Calculator (25%)",
           "item_id": 29251
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Curate's Boots",
           "source": "Quest Reward — Fel Embers (A)",
           "item_id": 25792
-        },
-        {
-          "rank": "Option",
-          "name": "Sigil-Laced Boots",
-          "source": "Arcatraz — Harbinger Skyriss (15%)",
-          "item_id": 28406
         }
       ],
       "rings": [
@@ -390,34 +326,28 @@
           "item_id": 29168
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Celestial Jewel Ring",
           "source": "Quest Reward — Hitting the Motherlode",
           "item_id": 29814
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cosmic Lifeband",
           "source": "Mechanar — Nethermancer Sepethrea (20%)",
           "item_id": 28259
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Band of the Crystalline Void",
           "source": "Mana-Tombs (HC) — Yor (Summoned Boss) (2%)",
           "item_id": 31923
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Band of Halos",
           "source": "Vendor — Badge of Justice (25)",
           "item_id": 29373
-        },
-        {
-          "rank": "Option",
-          "name": "Ring of Fabled Hope",
-          "source": "Underbog (HC) — The Black Stalker (16%)",
-          "item_id": 27780
         },
         {
           "rank": "BiS",
@@ -426,34 +356,28 @@
           "item_id": 29814
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ancestral Band",
           "source": "Reputation — Thrallmar - Revered (H)",
           "item_id": 29168
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cosmic Lifeband",
           "source": "Mechanar — Nethermancer Sepethrea (20%)",
           "item_id": 28259
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Band of the Crystalline Void",
           "source": "Mana-Tombs (HC) — Yor (Summoned Boss) (2%)",
           "item_id": 31923
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Band of Halos",
           "source": "Vendor — Badge of Justice (25)",
           "item_id": 29373
-        },
-        {
-          "rank": "Option",
-          "name": "Ring of Fabled Hope",
-          "source": "Underbog (HC) — The Black Stalker (16%)",
-          "item_id": 27780
         }
       ],
       "trinkets": [
@@ -464,34 +388,28 @@
           "item_id": 29376
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Scarab of the Infinite Cycle",
           "source": "Black Morass — Aeonus (16%)",
           "item_id": 28190
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lower City Prayerbook",
           "source": "Reputation — Lower City - Revered",
           "item_id": 30841
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bangle of Endless Blessings",
           "source": "Botanica — Warp Splinter (15%)",
           "item_id": 28370
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Alchemist's Stone",
           "source": "Alchemy — BoP Pattern (350)",
           "item_id": 13503
-        },
-        {
-          "rank": "Option",
-          "name": "Figurine - Talasite Owl",
-          "source": "Jewelcrafting — The Sha'tar Quartermaster",
-          "item_id": 24127
         },
         {
           "rank": "BiS",
@@ -500,34 +418,28 @@
           "item_id": 28190
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Essence of the Martyr",
           "source": "Vendor — Badge of Justice (41)",
           "item_id": 29376
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lower City Prayerbook",
           "source": "Reputation — Lower City - Revered",
           "item_id": 30841
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bangle of Endless Blessings",
           "source": "Botanica — Warp Splinter (15%)",
           "item_id": 28370
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Alchemist's Stone",
           "source": "Alchemy — BoP Pattern (350)",
           "item_id": 13503
-        },
-        {
-          "rank": "Option",
-          "name": "Figurine - Talasite Owl",
-          "source": "Jewelcrafting — The Sha'tar Quartermaster",
-          "item_id": 24127
         }
       ],
       "weapons": [
@@ -538,34 +450,28 @@
           "item_id": 23556
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Salvation",
           "source": "PvP — Arena Season 1",
           "item_id": 32451
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Shockwave Truncheon",
           "source": "Shadow Labyrinth (HC) — Murmur (25%)",
           "item_id": 29353
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "The Ancient Scepter of Sue-Min",
           "source": "Auction House — BoE World Drop",
           "item_id": 31342
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gavel of Pure Light",
           "source": "Reputation — The Sha'tar - Exalted",
           "item_id": 29175
-        },
-        {
-          "rank": "Option",
-          "name": "Lightsworn Hammer",
-          "source": "Shattered Halls — Warchief Kargath Bladefist (16%)",
-          "item_id": 27538
         }
       ],
       "offhands": [
@@ -576,34 +482,28 @@
           "item_id": 29274
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Light-Bearer's Faith Shield",
           "source": "Vendor — Badge of Justice (33)",
           "item_id": 29267
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Windcaller's Orb",
           "source": "Reputation — Cenarion Expedition - Exalted",
           "item_id": 29170
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Stormshield of Renewal",
           "source": "The Underbog (HC) — The Black Stalker (16%)",
           "item_id": 27772
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Faol's Signet of Cleansing",
           "source": "Ramparts (HC) — Omor the Unscarred (16%)",
           "item_id": 27477
-        },
-        {
-          "rank": "Option",
-          "name": "Swamplight Lantern",
-          "source": "Slave Pens (HC) — Quagmirran (16%)",
-          "item_id": 27714
         }
       ],
       "totems": [
@@ -614,10 +514,9 @@
           "item_id": 27544
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of the Plains",
-          "source": "Quest Reward — The Ultimate Bloodsport",
-          "item_id": 25645
+          "source": "Quest Reward — The Ultimate Bloodsport"
         }
       ]
     },
@@ -630,34 +529,28 @@
           "item_id": 29028
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Fathom-Helm of the Deeps",
           "source": "World Boss — Doomwalker (19%)",
           "item_id": 30728
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Whitemend Hood",
           "source": "Tailoring — BoP Pattern (375)",
           "item_id": 24264
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cowl of Naaru Blessings",
           "source": "Vendor — Badge of Justice (50)",
           "item_id": 32090
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Ringmail Helm",
           "source": "PvP — Arena Season 1",
           "item_id": 31400
-        },
-        {
-          "rank": "Option",
-          "name": "Living Dragonscale Helm",
-          "source": "Leatherworking — BoE Patern (375)",
-          "item_id": 29508
         }
       ],
       "neck": [
@@ -668,34 +561,27 @@
           "item_id": 28609
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Archaic Charm of Presence",
           "source": "World Boss — Doomwalker (19%)",
           "item_id": 30726
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Teeth of Gruul",
           "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
           "item_id": 28822
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Natasha's Guardian Cord",
-          "source": "Quest Reward — The Hound-Master",
-          "item_id": 31691
+          "source": "Quest Reward — The Hound-Master"
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Necklace of Resplendent Hope",
           "source": "Old Hillsbrad Foothills (HC) — Epoch Hunter (16%)",
           "item_id": 28233
-        },
-        {
-          "rank": "Option",
-          "name": "Necklace of Eternal Hope",
-          "source": "Vendor — Badge of Justice (25)",
-          "item_id": 29374
         }
       ],
       "shoulders": [
@@ -706,34 +592,28 @@
           "item_id": 29031
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Primal Mooncloth Shoulders",
           "source": "Tailoring — Trainer (375)",
           "item_id": 21874
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Ringmail Spaulders",
           "source": "PvP — Arena Season 1",
           "item_id": 31407
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Dragon-Quake Shoulderguards",
           "source": "Karazhan — The Curator (17%)",
           "item_id": 28631
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Pauldrons of the Solace-Giver",
           "source": "Karazhan — The Curator (17%)",
           "item_id": 28612
-        },
-        {
-          "rank": "Option",
-          "name": "Hallowed Pauldrons",
-          "source": "Shadow Labyrinth — Grandmaster Vorpil (20%)",
-          "item_id": 27775
         }
       ],
       "back": [
@@ -744,34 +624,28 @@
           "item_id": 28765
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lifegiving Cloak",
           "source": "Auction House — BoE World Drop",
           "item_id": 31329
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Red Riding Hood's Cloak",
           "source": "Karazhan — Opera Event (Red Riding Hood) (25%)",
           "item_id": 28582
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "White Remedy Cape",
           "source": "Tailoring — BoE Pattern (350)",
           "item_id": 24254
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bishop's Cloak",
           "source": "Vendor — Badge of Justice (25)",
           "item_id": 29375
-        },
-        {
-          "rank": "Option",
-          "name": "Light-Touched Stole of Altruism",
-          "source": "Auchenai Crypts (HC) — Exarch Maladaar (33%)",
-          "item_id": 29354
         }
       ],
       "chest": [
@@ -782,34 +656,28 @@
           "item_id": 21875
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cyclone Hauberk",
           "source": "Magtheridon's Lair — Magtheridon (56%)",
           "item_id": 29029
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Ringmail Armor",
           "source": "PvP — Arena Season 1",
           "item_id": 31396
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Hallowed Garments",
           "source": "Shadow Labyrinth — Murmur (16%)",
           "item_id": 28230
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Earthblood Chestguard",
           "source": "Karazhan — Netherspite (16%)",
           "item_id": 28735
-        },
-        {
-          "rank": "Option",
-          "name": "Moonglade Robe",
-          "source": "Mechanar — Pathaleon the Calculator (16%)",
-          "item_id": 28202
         }
       ],
       "wrists": [
@@ -820,34 +688,28 @@
           "item_id": 29183
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Whirlwind Bracers",
           "source": "Karazhan — Attumen the Huntsman (16%)",
           "item_id": 28503
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bands of the Benevolent",
           "source": "Sethekk Halls (HC) — Talon King Ikiss (25%)",
           "item_id": 29249
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bands of Indwelling",
           "source": "Karazhan — Maiden of Virtue (16%)",
           "item_id": 28511
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Primal Surge Bracers",
           "source": "Black Morass — Aeonus (16%)",
           "item_id": 28194
-        },
-        {
-          "rank": "Option",
-          "name": "Windhawk Bracers",
-          "source": "Leatherworking — Trainer (375)",
-          "item_id": 29523
         }
       ],
       "hands": [
@@ -858,34 +720,28 @@
           "item_id": 28520
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Mitts of the Treemender",
           "source": "Karazhan — Maiden of Virtue (16%)",
           "item_id": 28521
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cyclone Gloves",
           "source": "Karazhan — The Curator (56%)",
           "item_id": 29032
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gloves of Saintly Blessings",
           "source": "Karazhan — Attumen the Huntsman (16%)",
           "item_id": 28508
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gloves of the Living Touch",
           "source": "Leatherworking — BoE Pattern (375)",
           "item_id": 29506
-        },
-        {
-          "rank": "Option",
-          "name": "Prismatic Mittens of Mending",
-          "source": "Botanica — Commander Sarannis (20%)",
-          "item_id": 28304
         }
       ],
       "waist": [
@@ -896,34 +752,28 @@
           "item_id": 21873
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cord of Nature's Sustenance",
           "source": "Karazhan — Terestian Illhoof (16%)",
           "item_id": 28655
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Belt of Gale Force",
           "source": "Karazhan — Moroes (16%)",
           "item_id": 28567
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cord of Sanctification",
           "source": "Old Hillsbrad Foothills (HC) — Epoch Hunter (25%)",
           "item_id": 29250
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Stillwater Girdle",
           "source": "Mana Tombs (HC) — Nexus-Prince Shaffar (16%)",
           "item_id": 27835
-        },
-        {
-          "rank": "Option",
-          "name": "Lifeblood Belt",
-          "source": "Tailoring — BoE Pattern (350)",
-          "item_id": 30463
         }
       ],
       "legs": [
@@ -934,34 +784,28 @@
           "item_id": 28751
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gilded Trousers of Benediction",
           "source": "World Boss — Doomwalker (19%)",
           "item_id": 30727
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Earthsoul Leggings",
           "source": "Karazhan — Opera Event (Shared) (17%)",
           "item_id": 28591
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Whitemend Pants",
           "source": "Tailoring — BoP Pattern (375)",
           "item_id": 24261
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Pantaloons of Repentance",
           "source": "Karazhan — Netherspite (16%)",
           "item_id": 28742
-        },
-        {
-          "rank": "Option",
-          "name": "Pontifex Kilt",
-          "source": "Steamvaults (HC) — Warlord Kalithresh (25%)",
-          "item_id": 30543
         }
       ],
       "feet": [
@@ -972,34 +816,27 @@
           "item_id": 28752
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gold-Leaf Wildboots",
           "source": "World Boss — Doom Lord Kazzak (19%)",
           "item_id": 30737
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Slippers of Serenity",
-          "source": "Auchenai Crypts — Exarch Maladaar (17%)",
-          "item_id": 27411
+          "source": "Auchenai Crypts — Exarch Maladaar (17%)"
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Boots of the Incorrupt",
           "source": "Karazhan — Shade of Aran (16%)",
           "item_id": 28663
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Wavefury Boots",
           "source": "Slave Pens (HC) — Rokmar the Crackler (17%)",
           "item_id": 27549
-        },
-        {
-          "rank": "Option",
-          "name": "Jeweled Boots of Sanctification",
-          "source": "Shattered Halls — Warbringer O'mrogg (20%)",
-          "item_id": 27525
         }
       ],
       "rings": [
@@ -1010,34 +847,28 @@
           "item_id": 28763
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ring of Flowing Light",
           "source": "World Boss — Doom Lord Kazzak (19%)",
           "item_id": 30736
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Naaru Lightwarden's Band",
           "source": "Quest Reward — The Fall of Magtheridon",
           "item_id": 28790
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ancestral Band",
           "source": "Reputation — Thrallmar - Revered (H)",
           "item_id": 29168
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Celestial Jewel Ring",
           "source": "Quest Reward — Hitting the Motherlode",
           "item_id": 29814
-        },
-        {
-          "rank": "Option",
-          "name": "Violet Signet of the Grand Restorer",
-          "source": "Reputation — The Violet Eye - Exalted",
-          "item_id": 29290
         },
         {
           "rank": "BiS",
@@ -1046,34 +877,28 @@
           "item_id": 28790
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ring of Flowing Light",
           "source": "World Boss — Doom Lord Kazzak (19%)",
           "item_id": 30736
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Jade Ring of the Everliving",
           "source": "Karazhan — Prince Malchezaar (17%)",
           "item_id": 28763
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ancestral Band",
           "source": "Reputation — Thrallmar - Revered (H)",
           "item_id": 29168
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Celestial Jewel Ring",
           "source": "Quest Reward — Hitting the Motherlode",
           "item_id": 29814
-        },
-        {
-          "rank": "Option",
-          "name": "Violet Signet of the Grand Restorer",
-          "source": "Reputation — The Violet Eye - Exalted",
-          "item_id": 29290
         }
       ],
       "trinkets": [
@@ -1084,34 +909,28 @@
           "item_id": 29376
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Scarab of the Infinite Cycle",
           "source": "Black Morass — Aeonus (16%)",
           "item_id": 28190
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Eye of Gruul",
           "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
           "item_id": 28823
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ribbon of Sacrifice",
           "source": "Karazhan — Opera Event (Shared) (17%)",
           "item_id": 28590
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lower City Prayerbook",
           "source": "Reputation — Lower City - Revered",
           "item_id": 30841
-        },
-        {
-          "rank": "Option",
-          "name": "Pendant of the Violet Eye",
-          "source": "Karazhan — Shade of Aran (16%)",
-          "item_id": 28727
         },
         {
           "rank": "BiS",
@@ -1120,34 +939,28 @@
           "item_id": 28190
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Essence of the Martyr",
           "source": "Vendor — Badge of Justice (41)",
           "item_id": 29376
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Eye of Gruul",
           "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
           "item_id": 28823
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ribbon of Sacrifice",
           "source": "Karazhan — Opera Event (Shared) (17%)",
           "item_id": 28590
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lower City Prayerbook",
           "source": "Reputation — Lower City - Revered",
           "item_id": 30841
-        },
-        {
-          "rank": "Option",
-          "name": "Pendant of the Violet Eye",
-          "source": "Karazhan — Shade of Aran (16%)",
-          "item_id": 28727
         }
       ],
       "weapons": [
@@ -1158,34 +971,28 @@
           "item_id": 28771
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Salvation",
           "source": "PvP — Arena Season 1",
           "item_id": 32451
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Exodar Life-Staff",
           "source": "World Boss — Doom Lord Kazzak (19%)",
           "item_id": 30732
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Shard of the Virtuous",
           "source": "Karazhan — Maiden of Virtue (16%)",
           "item_id": 28522
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Crystalheart Pulse-Staff",
           "source": "Magtheridon's Lair — Magtheridon (35%)",
           "item_id": 28782
-        },
-        {
-          "rank": "Option",
-          "name": "Hand of Eternity",
-          "source": "Blacksmithing — BoE Pattern (375)",
-          "item_id": 23556
         }
       ],
       "offhands": [
@@ -1196,34 +1003,28 @@
           "item_id": 29458
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Tears of Heaven",
           "source": "Vendor — Badge of Justice (25)",
           "item_id": 29274
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Aran's Soothing Sapphire",
           "source": "Karazhan — Shade of Aran (16%)",
           "item_id": 28728
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Light-Bearer's Faith Shield",
           "source": "Vendor — Badge of Justice (33)",
           "item_id": 29267
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Windcaller's Orb",
           "source": "Reputation — Cenarion Expedition - Exalted",
           "item_id": 29170
-        },
-        {
-          "rank": "Option",
-          "name": "Stormshield of Renewal",
-          "source": "The Underbog (HC) — The Black Stalker (16%)",
-          "item_id": 27772
         }
       ],
       "totems": [
@@ -1234,16 +1035,15 @@
           "item_id": 28523
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Spontaneous Regrowth",
           "source": "Slave Pens (HC) — Mennu the Betrayer (17%)",
           "item_id": 27544
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of the Plains",
-          "source": "Quest Reward — The Ultimate Bloodsport",
-          "item_id": 25645
+          "source": "Quest Reward — The Ultimate Bloodsport"
         }
       ]
     },
@@ -1256,34 +1056,28 @@
           "item_id": 30166
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Fathom-Helm of the Deeps",
           "source": "World Boss — Doomwalker (19%)",
           "item_id": 30728
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Living Replicator Specs",
           "source": "Engineering — Trainer (375)",
           "item_id": 32475
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Whitemend Hood",
           "source": "Tailoring — BoP Pattern (375)",
           "item_id": 24264
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cyclone Headdress",
           "source": "Karazhan — Prince Malchezaar (56%)",
           "item_id": 29028
-        },
-        {
-          "rank": "Option",
-          "name": "Crown of the Sun",
-          "source": "Tempest Keep — Kael'thas Sunstrider (35%)",
-          "item_id": 29990
         }
       ],
       "neck": [
@@ -1294,34 +1088,28 @@
           "item_id": 30018
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Archaic Charm of Presence",
           "source": "World Boss — Doomwalker (19%)",
           "item_id": 30726
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Emberspur Talisman",
           "source": "Karazhan — Nightbane (16%)",
           "item_id": 28609
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gezzarak's Fang",
           "source": "Skettis Summoned Boss — Gezzarak the Huntress (8%)",
           "item_id": 32531
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Teeth of Gruul",
           "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
           "item_id": 28822
-        },
-        {
-          "rank": "Option",
-          "name": "Natasha's Guardian Cord",
-          "source": "Quest Reward — The Hound-Master",
-          "item_id": 31691
         }
       ],
       "shoulders": [
@@ -1332,34 +1120,28 @@
           "item_id": 30168
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Coral-Barbed Shoulderpads",
           "source": "SSC — Leotheras the Blind (17%)",
           "item_id": 30097
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cyclone Shoulderpads",
           "source": "Gruul's Lair — High King Maulgar (56%)",
           "item_id": 29031
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Runetotem's Mantle",
           "source": "SSC — Lady Vashj (35%)",
           "item_id": 30111
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Primal Mooncloth Shoulders",
           "source": "Tailoring — Trainer (375)",
           "item_id": 21874
-        },
-        {
-          "rank": "Option",
-          "name": "Gladiator's Ringmail Spaulders",
-          "source": "PvP — Arena Season 1",
-          "item_id": 31407
         }
       ],
       "back": [
@@ -1370,34 +1152,28 @@
           "item_id": 29989
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lifegiving Cloak",
           "source": "Auction House — BoE World Drop",
           "item_id": 31329
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Stainless Cloak of the Pure Hearted",
           "source": "Karazhan — Prince Malchezaar (17%)",
           "item_id": 28765
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Red Riding Hood's Cloak",
           "source": "Karazhan — Opera Event (Red Riding Hood) (25%)",
           "item_id": 28582
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "White Remedy Cape",
           "source": "Tailoring — BoE Pattern (350)",
           "item_id": 24254
-        },
-        {
-          "rank": "Option",
-          "name": "Bishop's Cloak",
-          "source": "Vendor — Badge of Justice (25)",
-          "item_id": 29375
         }
       ],
       "chest": [
@@ -1408,34 +1184,28 @@
           "item_id": 30164
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Primal Mooncloth Robe",
           "source": "Tailoring — Trainer (375)",
           "item_id": 21875
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cyclone Hauberk",
           "source": "Magtheridon's Lair — Magtheridon (56%)",
           "item_id": 29029
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Ringmail Armor",
           "source": "PvP — Arena Season 1",
           "item_id": 31396
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gnarled Chestpiece of the Ancients",
           "source": "SSC — Morogrim Tidewalker (15%)",
           "item_id": 30075
-        },
-        {
-          "rank": "Option",
-          "name": "Hallowed Garments",
-          "source": "Shadow Labyrinth — Murmur (16%)",
-          "item_id": 28230
         }
       ],
       "wrists": [
@@ -1446,34 +1216,28 @@
           "item_id": 30047
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Wraps of Purification",
           "source": "SSC — Hydross the Unstable (14%)",
           "item_id": 32516
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Grove-Bands of Remulos",
           "source": "SSC — The Lurker Below (15%)",
           "item_id": 30062
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bindings of the Timewalker",
           "source": "Reputation — Keepers of Time - Exalted",
           "item_id": 29183
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Whirlwind Bracers",
           "source": "Karazhan — Attumen the Huntsman (16%)",
           "item_id": 28503
-        },
-        {
-          "rank": "Option",
-          "name": "Bands of the Benevolent",
-          "source": "Sethekk Halls (HC) — Talon King Ikiss (25%)",
-          "item_id": 29249
         }
       ],
       "hands": [
@@ -1484,34 +1248,28 @@
           "item_id": 29976
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gloves of Centering",
           "source": "Karazhan — Maiden of Virtue (16%)",
           "item_id": 28520
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cataclysm Gloves",
           "source": "SSC — Leotheras the Blind (56%)",
           "item_id": 30165
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Mitts of the Treemender",
           "source": "Karazhan — Maiden of Virtue (16%)",
           "item_id": 28521
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cyclone Gloves",
           "source": "Karazhan — The Curator (56%)",
           "item_id": 29032
-        },
-        {
-          "rank": "Option",
-          "name": "Gloves of Saintly Blessings",
-          "source": "Karazhan — Attumen the Huntsman (16%)",
-          "item_id": 28508
         }
       ],
       "waist": [
@@ -1522,34 +1280,28 @@
           "item_id": 21873
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Girdle of Fallen Stars",
           "source": "Tempest Keep — Trash Mobs",
           "item_id": 30030
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Girdle of Zaetar",
           "source": "Tempest Keep — Void Reaver (14%)",
           "item_id": 29984
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Belt of the Long Road",
           "source": "Tailoring — BoE Pattern (375)",
           "item_id": 30036
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cord of Nature's Sustenance",
           "source": "Karazhan — Terestian Illhoof (16%)",
           "item_id": 28655
-        },
-        {
-          "rank": "Option",
-          "name": "Belt of Gale Force",
-          "source": "Karazhan — Moroes (16%)",
-          "item_id": 28567
         }
       ],
       "legs": [
@@ -1560,34 +1312,28 @@
           "item_id": 29991
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gilded Trousers of Benediction",
           "source": "World Boss — Doomwalker (19%)",
           "item_id": 30727
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Heart-Flame Leggings",
           "source": "Karazhan — Chess Event (16%)",
           "item_id": 28751
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cataclysm Legguards",
           "source": "SSC — Fathom-Lord Karathress (56%)",
           "item_id": 30167
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Earthsoul Leggings",
           "source": "Karazhan — Opera Event (Shared) (17%)",
           "item_id": 28591
-        },
-        {
-          "rank": "Option",
-          "name": "Whitemend Pants",
-          "source": "Tailoring — BoP Pattern (375)",
-          "item_id": 24261
         }
       ],
       "feet": [
@@ -1598,34 +1344,28 @@
           "item_id": 30092
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gold-Leaf Wildboots",
           "source": "World Boss — Doom Lord Kazzak (19%)",
           "item_id": 30737
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Soul-Strider Boots",
           "source": "SSC — Fathom-Lord Karathress (17%)",
           "item_id": 30100
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Forestlord Striders",
           "source": "Karazhan — Chess Event (16%)",
           "item_id": 28752
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Boots of the Long Road",
           "source": "Tailoring — BoP Pattern (375)",
           "item_id": 30035
-        },
-        {
-          "rank": "Option",
-          "name": "Tempest-Strider Boots",
-          "source": "SSC — The Lurker Below (15%)",
-          "item_id": 30066
         }
       ],
       "rings": [
@@ -1636,34 +1376,28 @@
           "item_id": 28763
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ring of Flowing Light",
           "source": "World Boss — Doom Lord Kazzak (19%)",
           "item_id": 30736
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Phoenix-Ring of Rebirth",
           "source": "Tempest Keep — Al'ar (15%)",
           "item_id": 29920
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Coral Band of the Revived",
           "source": "SSC — Lady Vashj (35%)",
           "item_id": 30110
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Naaru Lightwarden's Band",
           "source": "Quest Reward — The Fall of Magtheridon",
           "item_id": 28790
-        },
-        {
-          "rank": "Option",
-          "name": "Gift of the Talonpriests",
-          "source": "Skettis Summoned Boss — Terokk (14%)",
-          "item_id": 32535
         },
         {
           "rank": "BiS",
@@ -1672,34 +1406,28 @@
           "item_id": 29920
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ring of Flowing Light",
           "source": "World Boss — Doom Lord Kazzak (19%)",
           "item_id": 30736
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Jade Ring of the Everliving",
           "source": "Karazhan — Prince Malchezaar (17%)",
           "item_id": 28763
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Coral Band of the Revived",
           "source": "SSC — Lady Vashj (35%)",
           "item_id": 30110
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Naaru Lightwarden's Band",
           "source": "Quest Reward — The Fall of Magtheridon",
           "item_id": 28790
-        },
-        {
-          "rank": "Option",
-          "name": "Gift of the Talonpriests",
-          "source": "Skettis Summoned Boss — Terokk (14%)",
-          "item_id": 32535
         }
       ],
       "trinkets": [
@@ -1710,34 +1438,28 @@
           "item_id": 29376
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Scarab of the Infinite Cycle",
           "source": "Black Morass — Aeonus (16%)",
           "item_id": 28190
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Eye of Gruul",
           "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
           "item_id": 28823
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ribbon of Sacrifice",
           "source": "Karazhan — Opera Event (Shared) (17%)",
           "item_id": 28590
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Fel Reaver's Piston",
           "source": "Tempest Keep — Void Reaver (14%)",
           "item_id": 30619
-        },
-        {
-          "rank": "Option",
-          "name": "Lower City Prayerbook",
-          "source": "Reputation — Lower City - Revered",
-          "item_id": 30841
         },
         {
           "rank": "BiS",
@@ -1746,34 +1468,28 @@
           "item_id": 28190
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Essence of the Martyr",
           "source": "Vendor — Badge of Justice (41)",
           "item_id": 29376
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Eye of Gruul",
           "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
           "item_id": 28823
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ribbon of Sacrifice",
           "source": "Karazhan — Opera Event (Shared) (17%)",
           "item_id": 28590
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Fel Reaver's Piston",
           "source": "Tempest Keep — Void Reaver (14%)",
           "item_id": 30619
-        },
-        {
-          "rank": "Option",
-          "name": "Lower City Prayerbook",
-          "source": "Reputation — Lower City - Revered",
-          "item_id": 30841
         }
       ],
       "weapons": [
@@ -1784,34 +1500,28 @@
           "item_id": 30108
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Light's Justice",
           "source": "Karazhan — Prince Malchezaar (17%)",
           "item_id": 28771
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Salvation",
           "source": "PvP — Arena Season 1",
           "item_id": 32451
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Exodar Life-Staff",
           "source": "World Boss — Doom Lord Kazzak (19%)",
           "item_id": 30732
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Shard of the Virtuous",
           "source": "Karazhan — Maiden of Virtue (16%)",
           "item_id": 28522
-        },
-        {
-          "rank": "Option",
-          "name": "Crystalheart Pulse-Staff",
-          "source": "Magtheridon's Lair — Magtheridon (35%)",
-          "item_id": 28782
         }
       ],
       "offhands": [
@@ -1822,34 +1532,28 @@
           "item_id": 29458
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Tears of Heaven",
           "source": "Vendor — Badge of Justice (25)",
           "item_id": 29274
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Talisman of the Sun King",
           "source": "Tempest Keep — Al'ar (15%)",
           "item_id": 29923
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Aran's Soothing Sapphire",
           "source": "Karazhan — Shade of Aran (16%)",
           "item_id": 28728
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Light-Bearer's Faith Shield",
           "source": "Vendor — Badge of Justice (33)",
           "item_id": 29267
-        },
-        {
-          "rank": "Option",
-          "name": "Windcaller's Orb",
-          "source": "Reputation — Cenarion Expedition - Exalted",
-          "item_id": 29170
         }
       ],
       "totems": [
@@ -1860,22 +1564,21 @@
           "item_id": 28523
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of the Maelstrom",
           "source": "SSC — Trash Mobs",
           "item_id": 30023
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Spontaneous Regrowth",
           "source": "Slave Pens (HC) — Mennu the Betrayer (17%)",
           "item_id": 27544
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of the Plains",
-          "source": "Quest Reward — The Ultimate Bloodsport",
-          "item_id": 25645
+          "source": "Quest Reward — The Ultimate Bloodsport"
         }
       ]
     },
@@ -1888,34 +1591,28 @@
           "item_id": 31012
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Helm of Soothing Currents",
           "source": "Black Temple — High Warlord Naj'entus (9%)",
           "item_id": 32241
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Fathom-Helm of the Deeps",
           "source": "World Boss — Doomwalker (19%)",
           "item_id": 30728
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Guise of the Tidal Lurker",
           "source": "Black Temple — High Warlord Naj'entus (16%)",
           "item_id": 32240
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Living Replicator Specs",
           "source": "Engineering — Trainer (375)",
           "item_id": 32475
-        },
-        {
-          "rank": "Option",
-          "name": "Cataclysm Headguard",
-          "source": "SSC — Lady Vashj (56%)",
-          "item_id": 30166
         }
       ],
       "neck": [
@@ -1926,34 +1623,28 @@
           "item_id": 32370
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lord Sanguinar's Claim",
           "source": "Quest Reward — Kael'thas and the Verdant Sphere",
           "item_id": 30018
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Archaic Charm of Presence",
           "source": "World Boss — Doomwalker (19%)",
           "item_id": 30726
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Emberspur Talisman",
           "source": "Karazhan — Nightbane (16%)",
           "item_id": 28609
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gezzarak's Fang",
           "source": "Skettis Summoned Boss — Gezzarak the Huntress (8%)",
           "item_id": 32531
-        },
-        {
-          "rank": "Option",
-          "name": "Teeth of Gruul",
-          "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
-          "item_id": 28822
         }
       ],
       "shoulders": [
@@ -1964,34 +1655,28 @@
           "item_id": 31022
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Living Earth Shoulders",
           "source": "Leatherworking — BoE Pattern (375)",
           "item_id": 32579
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Swiftheal Mantle",
           "source": "Tailoring — BoE Pattern (375)",
           "item_id": 32585
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cataclysm Shoulderguards",
           "source": "Tempest Keep — Void Reaver (56%)",
           "item_id": 30168
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Coral-Barbed Shoulderpads",
           "source": "SSC — Leotheras the Blind (17%)",
           "item_id": 30097
-        },
-        {
-          "rank": "Option",
-          "name": "Cyclone Shoulderpads",
-          "source": "Gruul's Lair — High King Maulgar (56%)",
-          "item_id": 29031
         }
       ],
       "back": [
@@ -2002,34 +1687,28 @@
           "item_id": 32524
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Shroud of the Final Stand",
           "source": "Black Temple — Trash Drop (2%)",
           "item_id": 34012
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Sunshower Light Cloak",
           "source": "Tempest Keep — Kael'thas Sunstrider (35%)",
           "item_id": 29989
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Shroud of Forgiveness",
           "source": "Black Temple — Gurtogg Bloddboil (20%)",
           "item_id": 32337
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lifegiving Cloak",
           "source": "Auction House — BoE World Drop",
           "item_id": 31329
-        },
-        {
-          "rank": "Option",
-          "name": "Stainless Cloak of the Pure Hearted",
-          "source": "Karazhan — Prince Malchezaar (17%)",
-          "item_id": 28765
         }
       ],
       "chest": [
@@ -2040,34 +1719,28 @@
           "item_id": 31016
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cataclysm Chestguard",
           "source": "Tempest Keep — Kael'thas Sunstrider (56%)",
           "item_id": 30164
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Primal Mooncloth Robe",
           "source": "Tailoring — Trainer (375)",
           "item_id": 21875
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Garments of Temperance",
           "source": "Black Temple — Gurtogg Bloddboil (19%)",
           "item_id": 32340
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Golden Links of Restoration",
           "source": "Hyjal Summit — Anetheron (20%)",
           "item_id": 30887
-        },
-        {
-          "rank": "Option",
-          "name": "Cyclone Hauberk",
-          "source": "Magtheridon's Lair — Magtheridon (56%)",
-          "item_id": 29029
         }
       ],
       "wrists": [
@@ -2078,34 +1751,28 @@
           "item_id": 32584
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Living Earth Bindings",
           "source": "Leatherworking — BoP Pattern (375)",
           "item_id": 32577
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Howling Wind Bracers",
           "source": "Hyjal Summit — Rage Winterchill (12%)",
           "item_id": 30869
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bracers of Martyrdom",
           "source": "Hyjal Summit — Rage Winterchill (18%)",
           "item_id": 30871
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Rejuvenating Bracers",
           "source": "Hyjal Summit — Rage Winterchill (17%)",
           "item_id": 30868
-        },
-        {
-          "rank": "Option",
-          "name": "Blackfathom Warbands",
-          "source": "SSC — Hydross the Unstable (14%)",
-          "item_id": 30047
         }
       ],
       "hands": [
@@ -2116,34 +1783,28 @@
           "item_id": 32328
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Spiritwalker Gauntlets",
           "source": "Black Temple — Shade of Akama (11%)",
           "item_id": 32275
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gloves of Unfailing Faith",
           "source": "Black Temple — Reliquary of the Lost (21%)",
           "item_id": 32353
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Worldstorm Gauntlets",
           "source": "Tempest Keep — High Astromancer Solarian (15%)",
           "item_id": 29976
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Skyshatter Gloves",
           "source": "Hyjal Summit — Azgalor (56%)",
           "item_id": 31007
-        },
-        {
-          "rank": "Option",
-          "name": "Gloves of Centering",
-          "source": "Karazhan — Maiden of Virtue (16%)",
-          "item_id": 28520
         }
       ],
       "waist": [
@@ -2154,34 +1815,28 @@
           "item_id": 32258
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Angelista's Sash",
           "source": "Hyjal Summit — Kaz'rogal (17%)",
           "item_id": 30895
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Belt of Primal Majesty",
           "source": "Black Temple — Gurtogg Bloddboil (16%)",
           "item_id": 32339
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Primal Mooncloth Belt",
           "source": "Tailoring — Trainer (375)",
           "item_id": 21873
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Girdle of Fallen Stars",
           "source": "Tempest Keep — Trash Mobs",
           "item_id": 30030
-        },
-        {
-          "rank": "Option",
-          "name": "Girdle of Zaetar",
-          "source": "Tempest Keep — Void Reaver (14%)",
-          "item_id": 29984
         }
       ],
       "legs": [
@@ -2192,34 +1847,28 @@
           "item_id": 31019
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Leggings of Eternity",
           "source": "Hyjal Summit — Archimonde (19%)",
           "item_id": 30912
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Kilt of Immortal Nature",
           "source": "Black Temple — Shade of Akama (16%)",
           "item_id": 32271
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Sun-Touched Chain Leggings",
           "source": "Hyjal Summit — Kaz'rogal (16%)",
           "item_id": 30893
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gilded Trousers of Benediction",
           "source": "World Boss — Doomwalker (19%)",
           "item_id": 30727
-        },
-        {
-          "rank": "Option",
-          "name": "Sunhawk Leggings",
-          "source": "Tempest Keep — Kael'thas Sunstrider (35%)",
-          "item_id": 29991
         }
       ],
       "feet": [
@@ -2230,34 +1879,28 @@
           "item_id": 30092
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gold-Leaf Wildboots",
           "source": "World Boss — Doom Lord Kazzak (19%)",
           "item_id": 30737
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Boots of the Divine Light",
           "source": "Hyjal Summit — Trash Drop (1%)",
           "item_id": 32609
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Stillwater Boots",
           "source": "Hyjal Summit — Rage Winterchill (12%)",
           "item_id": 30873
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Soul-Strider Boots",
           "source": "SSC — Fathom-Lord Karathress (17%)",
           "item_id": 30100
-        },
-        {
-          "rank": "Option",
-          "name": "Forestlord Striders",
-          "source": "Karazhan — Chess Event (16%)",
-          "item_id": 28752
         }
       ],
       "rings": [
@@ -2268,34 +1911,28 @@
           "item_id": 32528
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Band of the Eternal Restorer",
           "source": "Reputation — The Scale of the Sands - Exalted",
           "item_id": 29309
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ring of Calming Waves",
           "source": "Black Temple — High Warlord Naj'entus (19%)",
           "item_id": 32238
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ring of Flowing Light",
           "source": "World Boss — Doom Lord Kazzak (19%)",
           "item_id": 30736
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Jade Ring of the Everliving",
           "source": "Karazhan — Prince Malchezaar (17%)",
           "item_id": 28763
-        },
-        {
-          "rank": "Option",
-          "name": "Phoenix-Ring of Rebirth",
-          "source": "Tempest Keep — Al'ar (15%)",
-          "item_id": 29920
         },
         {
           "rank": "BiS",
@@ -2304,34 +1941,28 @@
           "item_id": 29309
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Blessed Band of Karabor",
           "source": "Black Temple — Trash Drop (2%)",
           "item_id": 32528
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ring of Calming Waves",
           "source": "Black Temple — High Warlord Naj'entus (19%)",
           "item_id": 32238
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ring of Flowing Light",
           "source": "World Boss — Doom Lord Kazzak (19%)",
           "item_id": 30736
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Jade Ring of the Everliving",
           "source": "Karazhan — Prince Malchezaar (17%)",
           "item_id": 28763
-        },
-        {
-          "rank": "Option",
-          "name": "Phoenix-Ring of Rebirth",
-          "source": "Tempest Keep — Al'ar (15%)",
-          "item_id": 29920
         }
       ],
       "trinkets": [
@@ -2342,34 +1973,28 @@
           "item_id": 29376
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Memento of Tyrande",
           "source": "Black Temple — Illidan Stormrage (39%)",
           "item_id": 32496
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Scarab of the Infinite Cycle",
           "source": "Black Morass — Aeonus (16%)",
           "item_id": 28190
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Eye of Gruul",
           "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
           "item_id": 28823
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ribbon of Sacrifice",
           "source": "Karazhan — Opera Event (Shared) (17%)",
           "item_id": 28590
-        },
-        {
-          "rank": "Option",
-          "name": "Fel Reaver's Piston",
-          "source": "Tempest Keep — Void Reaver (14%)",
-          "item_id": 30619
         },
         {
           "rank": "BiS",
@@ -2378,34 +2003,28 @@
           "item_id": 32496
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Essence of the Martyr",
           "source": "Vendor — Badge of Justice (41)",
           "item_id": 29376
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Scarab of the Infinite Cycle",
           "source": "Black Morass — Aeonus (16%)",
           "item_id": 28190
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Eye of Gruul",
           "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
           "item_id": 28823
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ribbon of Sacrifice",
           "source": "Karazhan — Opera Event (Shared) (17%)",
           "item_id": 28590
-        },
-        {
-          "rank": "Option",
-          "name": "Fel Reaver's Piston",
-          "source": "Tempest Keep — Void Reaver (14%)",
-          "item_id": 30619
         }
       ],
       "weapons": [
@@ -2416,34 +2035,28 @@
           "item_id": 32500
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lightfathom Scepter",
           "source": "SSC — Lady Vashj (35%)",
           "item_id": 30108
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Hammer of Atonement",
           "source": "Hyjal Summit — Kaz'rogal (20%)",
           "item_id": 30918
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Apostle of Argus",
           "source": "Hyjal Summit — Archimonde (19%)",
           "item_id": 30908
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Staff of Immaculate Recovery",
           "source": "Black Temple — Gurtogg Bloddboil (21%)",
           "item_id": 32344
-        },
-        {
-          "rank": "Option",
-          "name": "Light's Justice",
-          "source": "Karazhan — Prince Malchezaar (17%)",
-          "item_id": 28771
         }
       ],
       "offhands": [
@@ -2454,34 +2067,28 @@
           "item_id": 30882
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Felstone Bulwark",
           "source": "Black Temple — Supremus (18%)",
           "item_id": 32255
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Touch of Inspiration",
           "source": "Black Temple — Reliquary of the Lost (16%)",
           "item_id": 32350
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Aegis of the Vindicator",
           "source": "Magtheridon's Lair — Magtheridon (35%)",
           "item_id": 29458
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Scepter of Purification",
           "source": "Hyjal Summit — Archimonde (20%)",
           "item_id": 30911
-        },
-        {
-          "rank": "Option",
-          "name": "Tears of Heaven",
-          "source": "Vendor — Badge of Justice (25)",
-          "item_id": 29274
         }
       ],
       "totems": [
@@ -2492,22 +2099,21 @@
           "item_id": 28523
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of the Maelstrom",
           "source": "SSC — Trash Mobs",
           "item_id": 30023
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Spontaneous Regrowth",
           "source": "Slave Pens (HC) — Mennu the Betrayer (17%)",
           "item_id": 27544
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of the Plains",
-          "source": "Quest Reward — The Ultimate Bloodsport",
-          "item_id": 25645
+          "source": "Quest Reward — The Ultimate Bloodsport"
         }
       ]
     },
@@ -2520,34 +2126,28 @@
           "item_id": 31012
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Helm of Soothing Currents",
           "source": "Black Temple — High Warlord Naj'entus (9%)",
           "item_id": 32241
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Fathom-Helm of the Deeps",
           "source": "World Boss — Doomwalker (19%)",
           "item_id": 30728
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Guise of the Tidal Lurker",
           "source": "Black Temple — High Warlord Naj'entus (16%)",
           "item_id": 32240
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Living Replicator Specs",
           "source": "Engineering — Trainer (375)",
           "item_id": 32475
-        },
-        {
-          "rank": "Option",
-          "name": "Cataclysm Headguard",
-          "source": "SSC — Lady Vashj (56%)",
-          "item_id": 30166
         }
       ],
       "neck": [
@@ -2558,34 +2158,28 @@
           "item_id": 33281
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Vindicator's Pendant of Reprieve",
           "source": "PvP — Honor & EotS Marks",
           "item_id": 35317
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Nadina's Pendant of Purity",
           "source": "Black Temple — Mother Shahraz (18%)",
           "item_id": 32370
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lord Sanguinar's Claim",
           "source": "Quest Reward — Kael'thas and the Verdant Sphere",
           "item_id": 30018
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Archaic Charm of Presence",
           "source": "World Boss — Doomwalker (19%)",
           "item_id": 30726
-        },
-        {
-          "rank": "Option",
-          "name": "Emberspur Talisman",
-          "source": "Karazhan — Nightbane (16%)",
-          "item_id": 28609
         }
       ],
       "shoulders": [
@@ -2596,34 +2190,28 @@
           "item_id": 31022
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Living Earth Shoulders",
           "source": "Leatherworking — BoE Pattern (375)",
           "item_id": 32579
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Hex Lord's Voodoo Pauldrons",
           "source": "Zul'Aman — Hex Lord Malacrass (12%)",
           "item_id": 33464
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Swiftheal Mantle",
           "source": "Tailoring — BoE Pattern (375)",
           "item_id": 32585
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cataclysm Shoulderguards",
           "source": "Tempest Keep — Void Reaver (56%)",
           "item_id": 30168
-        },
-        {
-          "rank": "Option",
-          "name": "Coral-Barbed Shoulderpads",
-          "source": "SSC — Leotheras the Blind (17%)",
-          "item_id": 30097
         }
       ],
       "back": [
@@ -2634,34 +2222,28 @@
           "item_id": 32524
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cloak of Ancient Rituals",
           "source": "Zul'Aman — Hex Lord Malacrass (11%)",
           "item_id": 33592
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Shroud of the Final Stand",
           "source": "Black Temple — Trash Drop (2%)",
           "item_id": 34012
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Sunshower Light Cloak",
           "source": "Tempest Keep — Kael'thas Sunstrider (35%)",
           "item_id": 29989
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Shroud of Forgiveness",
           "source": "Black Temple — Gurtogg Bloddboil (20%)",
           "item_id": 32337
-        },
-        {
-          "rank": "Option",
-          "name": "Lifegiving Cloak",
-          "source": "Auction House — BoE World Drop",
-          "item_id": 31329
         }
       ],
       "chest": [
@@ -2672,34 +2254,28 @@
           "item_id": 31016
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Hauberk of the Empire's Champion",
           "source": "Zul'Aman — Zul'jin (14%)",
           "item_id": 33469
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cataclysm Chestguard",
           "source": "Tempest Keep — Kael'thas Sunstrider (56%)",
           "item_id": 30164
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Primal Mooncloth Robe",
           "source": "Tailoring — Trainer (375)",
           "item_id": 21875
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Garments of Temperance",
           "source": "Black Temple — Gurtogg Bloddboil (19%)",
           "item_id": 32340
-        },
-        {
-          "rank": "Option",
-          "name": "Golden Links of Restoration",
-          "source": "Hyjal Summit — Anetheron (20%)",
-          "item_id": 30887
         }
       ],
       "wrists": [
@@ -2710,34 +2286,28 @@
           "item_id": 32584
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Living Earth Bindings",
           "source": "Leatherworking — BoP Pattern (375)",
           "item_id": 32577
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Howling Wind Bracers",
           "source": "Hyjal Summit — Rage Winterchill (12%)",
           "item_id": 30869
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bracers of Martyrdom",
           "source": "Hyjal Summit — Rage Winterchill (18%)",
           "item_id": 30871
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Rejuvenating Bracers",
           "source": "Hyjal Summit — Rage Winterchill (17%)",
           "item_id": 30868
-        },
-        {
-          "rank": "Option",
-          "name": "Blackfathom Warbands",
-          "source": "SSC — Hydross the Unstable (14%)",
-          "item_id": 30047
         }
       ],
       "hands": [
@@ -2748,34 +2318,28 @@
           "item_id": 32328
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Spiritwalker Gauntlets",
           "source": "Black Temple — Shade of Akama (11%)",
           "item_id": 32275
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gloves of Unfailing Faith",
           "source": "Black Temple — Reliquary of the Lost (21%)",
           "item_id": 32353
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Worldstorm Gauntlets",
           "source": "Tempest Keep — High Astromancer Solarian (15%)",
           "item_id": 29976
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Skyshatter Gloves",
           "source": "Hyjal Summit — Azgalor (56%)",
           "item_id": 31007
-        },
-        {
-          "rank": "Option",
-          "name": "Gloves of Centering",
-          "source": "Karazhan — Maiden of Virtue (16%)",
-          "item_id": 28520
         }
       ],
       "waist": [
@@ -2786,34 +2350,28 @@
           "item_id": 32258
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Angelista's Sash",
           "source": "Hyjal Summit — Kaz'rogal (17%)",
           "item_id": 30895
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Belt of Primal Majesty",
           "source": "Black Temple — Gurtogg Bloddboil (16%)",
           "item_id": 32339
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Man'kin'do's Belt",
           "source": "Vendor — Badge of Justice (60)",
           "item_id": 33386
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cord of Braided Troll Hair",
           "source": "Zul'Aman — Timed Chest (1) (13%)",
           "item_id": 33480
-        },
-        {
-          "rank": "Option",
-          "name": "Primal Mooncloth Belt",
-          "source": "Tailoring — Trainer (375)",
-          "item_id": 21873
         }
       ],
       "legs": [
@@ -2824,34 +2382,28 @@
           "item_id": 31019
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Achromic Trousers of the Naaru",
           "source": "Vendor — Badge of Justice (75)",
           "item_id": 33585
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Leggings of Eternity",
           "source": "Hyjal Summit — Archimonde (19%)",
           "item_id": 30912
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Kilt of Immortal Nature",
           "source": "Black Temple — Shade of Akama (16%)",
           "item_id": 32271
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Sun-Touched Chain Leggings",
           "source": "Hyjal Summit — Kaz'rogal (16%)",
           "item_id": 30893
-        },
-        {
-          "rank": "Option",
-          "name": "Gilded Trousers of Benediction",
-          "source": "World Boss — Doomwalker (19%)",
-          "item_id": 30727
         }
       ],
       "feet": [
@@ -2862,34 +2414,28 @@
           "item_id": 33324
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gold-Leaf Wildboots",
           "source": "World Boss — Doom Lord Kazzak (19%)",
           "item_id": 30737
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Two-Toed Sandals",
           "source": "Zul'Aman — Zul'jin (14%)",
           "item_id": 33471
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Orca-Hide Boots",
           "source": "SSC — Leotheras the Blind (17%)",
           "item_id": 30092
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Boots of the Divine Light",
           "source": "Hyjal Summit — Trash Drop (1%)",
           "item_id": 32609
-        },
-        {
-          "rank": "Option",
-          "name": "Stillwater Boots",
-          "source": "Hyjal Summit — Rage Winterchill (12%)",
-          "item_id": 30873
         }
       ],
       "rings": [
@@ -2900,34 +2446,28 @@
           "item_id": 32528
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Signet of the Quiet Forest",
           "source": "Zul'Aman — Timed Chest (3) (20%)",
           "item_id": 33498
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Band of the Eternal Restorer",
           "source": "Reputation — The Scale of the Sands - Exalted",
           "item_id": 29309
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ring of Calming Waves",
           "source": "Black Temple — High Warlord Naj'entus (19%)",
           "item_id": 32238
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ring of Flowing Light",
           "source": "World Boss — Doom Lord Kazzak (19%)",
           "item_id": 30736
-        },
-        {
-          "rank": "Option",
-          "name": "Jade Ring of the Everliving",
-          "source": "Karazhan — Prince Malchezaar (17%)",
-          "item_id": 28763
         },
         {
           "rank": "BiS",
@@ -2936,34 +2476,28 @@
           "item_id": 33498
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Blessed Band of Karabor",
           "source": "Black Temple — Trash Drop (2%)",
           "item_id": 32528
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Band of the Eternal Restorer",
           "source": "Reputation — The Scale of the Sands - Exalted",
           "item_id": 29309
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ring of Calming Waves",
           "source": "Black Temple — High Warlord Naj'entus (19%)",
           "item_id": 32238
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ring of Flowing Light",
           "source": "World Boss — Doom Lord Kazzak (19%)",
           "item_id": 30736
-        },
-        {
-          "rank": "Option",
-          "name": "Jade Ring of the Everliving",
-          "source": "Karazhan — Prince Malchezaar (17%)",
-          "item_id": 28763
         }
       ],
       "trinkets": [
@@ -2974,34 +2508,28 @@
           "item_id": 29376
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Memento of Tyrande",
           "source": "Black Temple — Illidan Stormrage (39%)",
           "item_id": 32496
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Scarab of the Infinite Cycle",
           "source": "Black Morass — Aeonus (16%)",
           "item_id": 28190
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Eye of Gruul",
           "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
           "item_id": 28823
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ribbon of Sacrifice",
           "source": "Karazhan — Opera Event (Shared) (17%)",
           "item_id": 28590
-        },
-        {
-          "rank": "Option",
-          "name": "Fel Reaver's Piston",
-          "source": "Tempest Keep — Void Reaver (14%)",
-          "item_id": 30619
         },
         {
           "rank": "BiS",
@@ -3010,34 +2538,28 @@
           "item_id": 32496
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Essence of the Martyr",
           "source": "Vendor — Badge of Justice (41)",
           "item_id": 29376
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Scarab of the Infinite Cycle",
           "source": "Black Morass — Aeonus (16%)",
           "item_id": 28190
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Eye of Gruul",
           "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
           "item_id": 28823
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ribbon of Sacrifice",
           "source": "Karazhan — Opera Event (Shared) (17%)",
           "item_id": 28590
-        },
-        {
-          "rank": "Option",
-          "name": "Fel Reaver's Piston",
-          "source": "Tempest Keep — Void Reaver (14%)",
-          "item_id": 30619
         }
       ],
       "weapons": [
@@ -3048,34 +2570,28 @@
           "item_id": 32500
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Dark Blessing",
           "source": "Zul'Aman — Zul'jin (16%)",
           "item_id": 33468
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lightfathom Scepter",
           "source": "SSC — Lady Vashj (35%)",
           "item_id": 30108
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Hammer of Atonement",
           "source": "Hyjal Summit — Kaz'rogal (20%)",
           "item_id": 30918
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Apostle of Argus",
           "source": "Hyjal Summit — Archimonde (19%)",
           "item_id": 30908
-        },
-        {
-          "rank": "Option",
-          "name": "Staff of Dark Mending",
-          "source": "Zul'Aman — Timed Chest (2) (17%)",
-          "item_id": 33490
         }
       ],
       "offhands": [
@@ -3086,34 +2602,28 @@
           "item_id": 30882
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Enamelled Disc of Mojo",
           "source": "Zul'Aman — Jan'alai (8%)",
           "item_id": 33332
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Felstone Bulwark",
           "source": "Black Temple — Supremus (18%)",
           "item_id": 32255
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Touch of Inspiration",
           "source": "Black Temple — Reliquary of the Lost (16%)",
           "item_id": 32350
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Aegis of the Vindicator",
           "source": "Magtheridon's Lair — Magtheridon (35%)",
           "item_id": 29458
-        },
-        {
-          "rank": "Option",
-          "name": "Scepter of Purification",
-          "source": "Hyjal Summit — Archimonde (20%)",
-          "item_id": 30911
         }
       ],
       "totems": [
@@ -3124,28 +2634,27 @@
           "item_id": 28523
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Living Water",
           "source": "Vendor — Badge of Justice (20)",
           "item_id": 33505
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of the Maelstrom",
           "source": "SSC — Trash Mobs",
           "item_id": 30023
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Spontaneous Regrowth",
           "source": "Slave Pens (HC) — Mennu the Betrayer (17%)",
           "item_id": 27544
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of the Plains",
-          "source": "Quest Reward — The Ultimate Bloodsport",
-          "item_id": 25645
+          "source": "Quest Reward — The Ultimate Bloodsport"
         }
       ]
     },
@@ -3158,34 +2667,28 @@
           "item_id": 34402
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cowl of Light's Purity",
           "source": "Sunwell Plateau — Kil'jaeden (19%)",
           "item_id": 34339
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Primal-Attuned Goggles",
           "source": "Engineering — BoE Pattern (375)",
           "item_id": 35184
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cover of Ursol the Wise",
           "source": "Sunwell Plateau — Kil'jaeden (19%)",
           "item_id": 34245
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Skyshatter Helmet",
           "source": "Hyjal Summit — Archimonde (56%)",
           "item_id": 31012
-        },
-        {
-          "rank": "Option",
-          "name": "Helm of Soothing Currents",
-          "source": "Black Temple — High Warlord Naj'entus (9%)",
-          "item_id": 32241
         }
       ],
       "neck": [
@@ -3196,34 +2699,28 @@
           "item_id": 33281
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Amulet of Flowing Life",
           "source": "Jewelcrafting — BoE Pattern (365)",
           "item_id": 34360
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Guardian's Pendant of Reprieve",
           "source": "PvP — Honor & EotS Marks",
           "item_id": 37929
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Brooch of the Highborne",
           "source": "Sunwell Plateau — Felmyst (23%)",
           "item_id": 34184
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Nadina's Pendant of Purity",
           "source": "Black Temple — Mother Shahraz (18%)",
           "item_id": 32370
-        },
-        {
-          "rank": "Option",
-          "name": "Lord Sanguinar's Claim",
-          "source": "Quest Reward — Kael'thas and the Verdant Sphere",
-          "item_id": 30018
         }
       ],
       "shoulders": [
@@ -3234,34 +2731,28 @@
           "item_id": 31022
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Shawl of Wonderment",
           "source": "Sunwell Plateau — Eredar Twins (21%)",
           "item_id": 34202
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Equilibrium Epaulets",
           "source": "Sunwell Plateau — Eredar Twins (18%)",
           "item_id": 34208
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Spaulders of Reclamation",
           "source": "Sunwell Plateau — Eredar Twins (20%)",
           "item_id": 34209
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Living Earth Shoulders",
           "source": "Leatherworking — BoE Pattern (375)",
           "item_id": 32579
-        },
-        {
-          "rank": "Option",
-          "name": "Hex Lord's Voodoo Pauldrons",
-          "source": "Zul'Aman — Hex Lord Malacrass (12%)",
-          "item_id": 33464
         }
       ],
       "back": [
@@ -3272,34 +2763,28 @@
           "item_id": 32524
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cloak of Ancient Rituals",
           "source": "Zul'Aman — Hex Lord Malacrass (11%)",
           "item_id": 33592
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Shroud of Redeemed Souls",
           "source": "Sunwell Plateau — Eredar Twins (17%)",
           "item_id": 34205
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cloak of Swift Reprieve",
           "source": "Vendor — Badge of Justice (60)",
           "item_id": 35324
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Shroud of the Final Stand",
           "source": "Black Temple — Trash Drop (2%)",
           "item_id": 34012
-        },
-        {
-          "rank": "Option",
-          "name": "Sunshower Light Cloak",
-          "source": "Tempest Keep — Kael'thas Sunstrider (35%)",
-          "item_id": 29989
         }
       ],
       "chest": [
@@ -3310,34 +2795,28 @@
           "item_id": 34212
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Robe of Eternal Light",
           "source": "Tailoring — BoE Pattern (365)",
           "item_id": 34365
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Sun-Drenched Scale Chestguard",
           "source": "Leatherworking — BoE Pattern (365)",
           "item_id": 34375
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Robes of Faltered Light",
           "source": "Sunwell Plateau — M'uru (40%)",
           "item_id": 34233
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Hauberk of the Empire's Champion",
           "source": "Zul'Aman — Zul'jin (14%)",
           "item_id": 33469
-        },
-        {
-          "rank": "Option",
-          "name": "Skyshatter Chestguard",
-          "source": "Black Temple — Illidan Stormrage (56%)",
-          "item_id": 31016
         }
       ],
       "wrists": [
@@ -3348,34 +2827,28 @@
           "item_id": 34438
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Swiftheal Wraps",
           "source": "Tailoring — BoP Pattern (375)",
           "item_id": 32584
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Living Earth Bindings",
           "source": "Leatherworking — BoP Pattern (375)",
           "item_id": 32577
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Howling Wind Bracers",
           "source": "Hyjal Summit — Rage Winterchill (12%)",
           "item_id": 30869
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bracers of Martyrdom",
           "source": "Hyjal Summit — Rage Winterchill (18%)",
           "item_id": 30871
-        },
-        {
-          "rank": "Option",
-          "name": "Rejuvenating Bracers",
-          "source": "Hyjal Summit — Rage Winterchill (17%)",
-          "item_id": 30868
         }
       ],
       "hands": [
@@ -3386,34 +2859,28 @@
           "item_id": 34372
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Botanist's Gloves of Growth",
           "source": "Black Temple — Teron Gorefiend (39%)",
           "item_id": 32328
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Sun-Drenched Scale Gloves",
           "source": "Leatherworking — BoP Pattern (365)",
           "item_id": 34376
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gauntlets of the Ancient Frostwolf",
           "source": "Sunmote Transmute — Gauntlets of the Ancient Shadowmoon (1%)",
           "item_id": 34409
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Handguards of the Dawn",
           "source": "Sunwell Plateau — Kil'jaeden (18%)",
           "item_id": 34342
-        },
-        {
-          "rank": "Option",
-          "name": "Spiritwalker Gauntlets",
-          "source": "Black Temple — Shade of Akama (11%)",
-          "item_id": 32275
         }
       ],
       "waist": [
@@ -3424,34 +2891,28 @@
           "item_id": 34543
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Naturalist's Preserving Cinch",
           "source": "Black Temple — Supremus (12%)",
           "item_id": 32258
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Angelista's Sash",
           "source": "Hyjal Summit — Kaz'rogal (17%)",
           "item_id": 30895
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Belt of Primal Majesty",
           "source": "Black Temple — Gurtogg Bloddboil (16%)",
           "item_id": 32339
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Man'kin'do's Belt",
           "source": "Vendor — Badge of Justice (60)",
           "item_id": 33386
-        },
-        {
-          "rank": "Option",
-          "name": "Cord of Braided Troll Hair",
-          "source": "Zul'Aman — Timed Chest (1) (13%)",
-          "item_id": 33480
         }
       ],
       "legs": [
@@ -3462,34 +2923,28 @@
           "item_id": 34383
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Achromic Trousers of the Naaru",
           "source": "Vendor — Badge of Justice (75)",
           "item_id": 33585
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Pantaloons of Calming Strife",
           "source": "Sunwell Plateau — Kalecgos (15%)",
           "item_id": 34170
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Leggings of Eternity",
           "source": "Hyjal Summit — Archimonde (19%)",
           "item_id": 30912
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Breeches of Natural Splendor",
           "source": "Sunmote Transmute — Breeches of Natural Aggression (15%)",
           "item_id": 34384
-        },
-        {
-          "rank": "Option",
-          "name": "Kilt of Immortal Nature",
-          "source": "Black Temple — Shade of Akama (16%)",
-          "item_id": 32271
         }
       ],
       "feet": [
@@ -3500,34 +2955,28 @@
           "item_id": 34565
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Treads of the Life Path",
           "source": "Vendor — Badge of Justice (60)",
           "item_id": 33324
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gold-Leaf Wildboots",
           "source": "World Boss — Doom Lord Kazzak (19%)",
           "item_id": 30737
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Two-Toed Sandals",
           "source": "Zul'Aman — Zul'jin (14%)",
           "item_id": 33471
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Orca-Hide Boots",
           "source": "SSC — Leotheras the Blind (17%)",
           "item_id": 30092
-        },
-        {
-          "rank": "Option",
-          "name": "Boots of the Divine Light",
-          "source": "Hyjal Summit — Trash Drop (1%)",
-          "item_id": 32609
         }
       ],
       "rings": [
@@ -3538,34 +2987,28 @@
           "item_id": 32528
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ring of Flowing Life",
           "source": "Jewelcrafting — BoP Pattern (365)",
           "item_id": 34363
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Signet of the Quiet Forest",
           "source": "Zul'Aman — Timed Chest (3) (20%)",
           "item_id": 33498
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Band of Lucent Beams",
           "source": "Sunwell Plateau — Kalecgos (15%)",
           "item_id": 34166
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Band of the Eternal Restorer",
           "source": "Reputation — The Scale of the Sands - Exalted",
           "item_id": 29309
-        },
-        {
-          "rank": "Option",
-          "name": "Kharmaa's Ring of Fate",
-          "source": "Magister's Terrace — Kael'thas Sunstrider (17%)",
-          "item_id": 34625
         },
         {
           "rank": "BiS",
@@ -3574,34 +3017,28 @@
           "item_id": 34363
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Blessed Band of Karabor",
           "source": "Black Temple — Trash Drop (2%)",
           "item_id": 32528
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Signet of the Quiet Forest",
           "source": "Zul'Aman — Timed Chest (3) (20%)",
           "item_id": 33498
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Band of Lucent Beams",
           "source": "Sunwell Plateau — Kalecgos (15%)",
           "item_id": 34166
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Band of the Eternal Restorer",
           "source": "Reputation — The Scale of the Sands - Exalted",
           "item_id": 29309
-        },
-        {
-          "rank": "Option",
-          "name": "Kharmaa's Ring of Fate",
-          "source": "Magister's Terrace — Kael'thas Sunstrider (17%)",
-          "item_id": 34625
         }
       ],
       "trinkets": [
@@ -3612,34 +3049,28 @@
           "item_id": 29376
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Redeemer's Alchemist Stone",
           "source": "Alchemy — BoP Pattern (375)",
           "item_id": 35750
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Memento of Tyrande",
           "source": "Black Temple — Illidan Stormrage (39%)",
           "item_id": 32496
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Glimmering Naaru Sliver",
           "source": "Sunwell Plateau — M'uru (40%)",
           "item_id": 34430
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Scarab of the Infinite Cycle",
           "source": "Black Morass — Aeonus (16%)",
           "item_id": 28190
-        },
-        {
-          "rank": "Option",
-          "name": "Eye of Gruul",
-          "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
-          "item_id": 28823
         },
         {
           "rank": "BiS",
@@ -3648,34 +3079,28 @@
           "item_id": 32496
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Redeemer's Alchemist Stone",
           "source": "Alchemy — BoP Pattern (375)",
           "item_id": 35750
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Essence of the Martyr",
           "source": "Vendor — Badge of Justice (41)",
           "item_id": 29376
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Glimmering Naaru Sliver",
           "source": "Sunwell Plateau — M'uru (40%)",
           "item_id": 34430
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Scarab of the Infinite Cycle",
           "source": "Black Morass — Aeonus (16%)",
           "item_id": 28190
-        },
-        {
-          "rank": "Option",
-          "name": "Eye of Gruul",
-          "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
-          "item_id": 28823
         }
       ],
       "weapons": [
@@ -3686,34 +3111,28 @@
           "item_id": 34335
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Golden Staff of the Sin'dorei",
           "source": "Sunwell Plateau — Kil'jaeden (17%)",
           "item_id": 34337
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Archon's Gavel",
           "source": "Sunwell Plateau — Eredar Twins (20%)",
           "item_id": 34199
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Crystal Spire of Karabor",
           "source": "Black Temple — Illidan Stormrage (41%)",
           "item_id": 32500
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Dark Blessing",
           "source": "Zul'Aman — Zul'jin (16%)",
           "item_id": 33468
-        },
-        {
-          "rank": "Option",
-          "name": "Lightfathom Scepter",
-          "source": "SSC — Lady Vashj (35%)",
-          "item_id": 30108
         }
       ],
       "offhands": [
@@ -3724,34 +3143,28 @@
           "item_id": 34206
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bastion of Light",
           "source": "Hyjal Summit — Anetheron (16%)",
           "item_id": 30882
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Enamelled Disc of Mojo",
           "source": "Zul'Aman — Jan'alai (8%)",
           "item_id": 33332
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Felstone Bulwark",
           "source": "Black Temple — Supremus (18%)",
           "item_id": 32255
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Touch of Inspiration",
           "source": "Black Temple — Reliquary of the Lost (16%)",
           "item_id": 32350
-        },
-        {
-          "rank": "Option",
-          "name": "Aegis of the Vindicator",
-          "source": "Magtheridon's Lair — Magtheridon (35%)",
-          "item_id": 29458
         }
       ],
       "totems": [
@@ -3762,28 +3175,27 @@
           "item_id": 28523
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Living Water",
           "source": "Vendor — Badge of Justice (20)",
           "item_id": 33505
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of the Maelstrom",
           "source": "SSC — Trash Mobs",
           "item_id": 30023
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Spontaneous Regrowth",
           "source": "Slave Pens (HC) — Mennu the Betrayer (17%)",
           "item_id": 27544
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of the Plains",
-          "source": "Quest Reward — The Ultimate Bloodsport",
-          "item_id": 25645
+          "source": "Quest Reward — The Ultimate Bloodsport"
         }
       ]
     }
