@@ -312,6 +312,7 @@ def format_ilvl_quality(item_info: dict | None) -> str:
 
 
 _preferred_armor = "Mail"  # Set at runtime based on spec
+_show_crafted = False  # Set at runtime via --show-crafted flag
 
 
 def format_armor_warning(item_info: dict | None) -> str:
@@ -920,6 +921,10 @@ def _find_slot_upgrades(
             if "classic" in tags:
                 continue
 
+            # Skip crafted items unless --show-crafted is set
+            if not _show_crafted and "profession" in tags:
+                continue
+
             faction = extract_faction(source)
 
             # Skip rep items from the opposing faction
@@ -1409,11 +1414,17 @@ def main():
         action="store_true",
         help="Include deferred sources (PvP, classic raids) in upgrade list.",
     )
+    parser.add_argument(
+        "--show-crafted",
+        action="store_true",
+        help="Include crafted/profession items in upgrade suggestions (hidden by default).",
+    )
     args = parser.parse_args()
 
     spec = resolve_spec(args.spec)
-    global _preferred_armor
+    global _preferred_armor, _show_crafted
     _preferred_armor = _SPEC_ARMOR.get(spec, "Mail")
+    _show_crafted = args.show_crafted
     # Derive default character file name from spec slug
     # resto-shaman → resto.json, prot-paladin → prot-paladin.json
     _default_char_files: dict[str, str] = {
