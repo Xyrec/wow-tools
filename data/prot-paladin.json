@@ -5,7 +5,7 @@
   "unit": "player",
   "professions": [
     { "name": "Blacksmithing", "level": 310 },
-    { "name": "Mining", "level": 330 }
+    { "name": "Mining", "level": 333 }
   ],
   "race": "Human",
   "name": "Xyrekk",
@@ -15,17 +15,17 @@
       { "id": 28285, "gems": [23118] },
       { "id": 29173, "gems": [] },
       { "id": 28743, "gems": [23118, 23118] },
-      { "id": 27804, "gems": [] },
+      { "enchant": 2662, "gems": [], "id": 27804 },
       { "id": 28262, "gems": [] },
       { "id": 27459, "gems": [] },
       { "id": 23517, "gems": [23118, 23118] },
-      { "id": 31460, "gems": [] },
+      { "id": 27672, "gems": [] },
       { "enchant": 3011, "gems": [23118, 23118, 23118], "id": 29184 },
       { "id": 28747, "gems": [23118, 23118] },
       { "id": 28265, "gems": [] },
       { "id": 27869, "gems": [] },
       { "id": 27891, "gems": [] },
-      { "id": 27770, "gems": [] },
+      { "id": 29370, "gems": [] },
       { "id": 29185, "gems": [] },
       { "enchant": 1071, "gems": [], "id": 28316 },
       { "id": 29388, "gems": [] }
