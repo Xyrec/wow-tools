@@ -5,7 +5,7 @@
   "unit": "player",
   "professions": [
     { "name": "Jewelcrafting", "level": 355 },
-    { "name": "Mining", "level": 346 }
+    { "name": "Mining", "level": 351 }
   ],
   "race": "Draenei",
   "name": "Yrsadriel",
@@ -14,20 +14,20 @@
     "items": [
       { "id": 29028, "gems": [25897, 24057] },
       { "id": 28134, "gems": [] },
-      { "enchant": 2979, "gems": [23109, 30603], "id": 29031 },
+      { "enchant": 2979, "gems": [31117, 30603], "id": 29031 },
       { "id": 29375, "gems": [] },
       { "id": 28342, "gems": [] },
-      { "id": 29255, "gems": [] },
+      { "enchant": 369, "gems": [], "id": 29255 },
       { "id": 28520, "gems": [23109, 23094] },
-      { "id": 28567, "gems": [] },
+      { "id": 29244, "gems": [] },
       { "id": 30532, "gems": [0, 30551] },
       { "id": 28406, "gems": [] },
       { "id": 30667, "gems": [] },
       { "id": 29172, "gems": [] },
       { "id": 29370, "gems": [] },
-      { "id": 27683, "gems": [] },
-      { "id": 28782, "gems": [] },
-      null,
+      { "id": 28785, "gems": [] },
+      { "id": 27937, "gems": [] },
+      { "id": 29273, "gems": [] },
       { "id": 28248, "gems": [] }
     ],
     "version": "v3.2.1"
