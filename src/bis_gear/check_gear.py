@@ -388,6 +388,18 @@ def classify_source(source: str) -> list[str]:
         return ["classic"]
     if "other (classic" in s:
         return ["classic"]
+    # Classic raid instances (detect IV/WH format: "Item: Boss — Instance")
+    _classic_raids = (
+        "naxxramas",
+        "blackwing lair",
+        "aq40",
+        "aq20",
+        "molten core",
+        "temple of ahn'qiraj",
+        "ruins of ahn'qiraj",
+    )
+    if any(cr in s for cr in _classic_raids):
+        return ["classic"]
     if "arena" in s or "pvp" in s or "gladiator" in s:
         return ["pvp"]
     for kw, prof_name in _PROFESSION_KEYWORDS.items():
@@ -792,7 +804,7 @@ def categorize_equipped(
             # Classify into tier
             if eq_rank == "BiS" and not eq_p0_only:
                 current_bis.append(eq_display)
-                continue
+                # Don't skip — still check for raid/other BiS upgrades below
             elif eq_rank in ("Option", "Optional", "Alternative") and not eq_p0_only:
                 current_option.append(eq_display)
             elif eq_rank == "BiS" and eq_p0_only:
@@ -883,9 +895,12 @@ def _find_slot_upgrades(
                 continue
             if bis_id in all_equipped_ids:
                 continue
-            # Skip items ranked lower than the equipped item in the list
+            # Skip items ranked lower than the equipped item in the list,
+            # UNLESS the equipped item is BiS — then still show other BiS items
+            # (e.g. raid BiS when wearing a dungeon BiS piece)
             if equipped_pos is not None and idx >= equipped_pos:
-                continue
+                if eq_rank != "BiS":
+                    continue
 
             up_rank, up_phase, up_p0_only = get_effective_rank(
                 bis_id, bis_slot, current_phase_data, phase0_data, current_phase
@@ -893,11 +908,31 @@ def _find_slot_upgrades(
             if not up_rank:
                 continue
 
+            # When equipped item is BiS, only show other BiS items (not downgrades)
+            if eq_rank == "BiS" and equipped_pos is not None and idx >= equipped_pos:
+                if up_rank != "BiS":
+                    continue
+
             source = bis_item.get("source", "")
             tags = classify_source(source)
 
-            seen_item_ids.add(bis_id)
+            # Skip classic raid items (Naxx, BWL, AQ, etc.)
+            if "classic" in tags:
+                continue
+
             faction = extract_faction(source)
+
+            # Skip rep items from the opposing faction
+            if faction and "reputation" in tags:
+                if faction in ("Thrallmar", "Honor Hold"):
+                    # Determine player faction from rep data or dungeon_reputation map
+                    player_hf_faction = dungeon_reputation.get("Hellfire Ramparts")
+                    if player_hf_faction == "Honor Hold" and faction == "Thrallmar":
+                        continue
+                    if player_hf_faction == "Thrallmar" and faction == "Honor Hold":
+                        continue
+
+            seen_item_ids.add(bis_id)
             rep_info = rep_lookup.get(faction) if faction else None
             dungeon = extract_dungeon(source, dungeon_reputation)
 
