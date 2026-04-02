@@ -14,7 +14,7 @@ Spec aliases:
 Run the command:
 
 ```
-uv run bis-gear --spec {spec}
+cargo run -- check --spec {spec}
 ```
 
 Present the results with a concise summary focusing on:
