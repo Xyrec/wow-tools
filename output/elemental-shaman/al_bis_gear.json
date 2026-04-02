@@ -2,752 +2,752 @@
   "current_phase": "phase-1",
   "phases": {
     "phase-0": {
-      "head": [
+      "weapons": [
         {
           "rank": "BiS",
-          "item_id": 32476,
+          "name": "Gladiator's Gavel",
+          "source": "Vendor: Vixton Pinchwhistle",
+          "item_id": 32450
+        },
+        {
+          "rank": "Optional",
+          "name": "Eternium Runed Blade",
           "source": "Profession: Crafted",
-          "name": "Gadgetstorm Goggles"
+          "item_id": 23554
         },
         {
           "rank": "Optional",
-          "item_id": 32086,
-          "source": "Badge of Justice Vendor",
-          "name": "Storm Master's Helmet"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 28415,
-          "source": "Drop: Harbinger Skyriss (Arcatraz)",
-          "name": "Hood of Oblivion"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 28278,
-          "source": "Drop: Pathaleon the Calculator (Mechanar)",
-          "name": "Incanter's Cowl"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 24266,
-          "source": "Profession: Crafted",
-          "name": "Spellstrike Hood"
-        }
-      ],
-      "shoulders": [
-        {
-          "rank": "BiS",
-          "item_id": 32078,
-          "source": "Drop: Quagmirran (H) (Slave Pens)",
-          "name": "Pauldrons of Wild Magic"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 30925,
-          "source": "Quest: The Cipher of Damnation - The Third Fragment Recovered",
-          "name": "Spaulders of the Torn-heart"
-        }
-      ],
-      "back": [
-        {
-          "rank": "BiS",
-          "item_id": 29369,
-          "source": "Badge of Justice Vendor",
-          "name": "Shawl of Shifting Probabilities"
-        }
-      ],
-      "chest": [
-        {
-          "rank": "BiS",
-          "item_id": 29519,
-          "source": "Profession: Crafted",
-          "name": "Netherstrike Breastplate"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 29522,
-          "source": "Profession: Crafted",
-          "name": "Windhawk Hauberk"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 28191,
-          "source": "Drop: Epoch Hunter (H) (Old Hillsbrad Foothills)",
-          "name": "Mana-Etched Vestments"
-        }
-      ],
-      "wrists": [
-        {
-          "rank": "BiS",
-          "item_id": 29521,
-          "source": "Profession: Crafted",
-          "name": "Netherstrike Bracers"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 29523,
-          "source": "Profession: Crafted",
-          "name": "Windhawk Bracers"
+          "name": "Gavel of Unearthed Secrets",
+          "source": "Lower City — Exalted",
+          "item_id": 30832
         }
       ],
       "hands": [
         {
           "rank": "BiS",
-          "item_id": 27465,
+          "name": "Mana-Etched Gloves",
           "source": "Drop: Omor the Unscarred (H) (Hellfire Ramparts)",
-          "name": "Mana-Etched Gloves"
+          "item_id": 27465
         },
         {
           "rank": "Optional",
-          "item_id": 27793,
+          "name": "Earth Mantle Handwraps",
           "source": "Drop: Mekgineer Steamrigger (Steamvault)",
-          "name": "Earth Mantle Handwraps"
+          "item_id": 27793
         },
         {
           "rank": "Optional",
-          "item_id": 31149,
-          "source": "Drop: Shadowmoon Technician (Blood Furnace)",
-          "name": "Gloves of Pandemonium"
+          "name": "Gloves of Pandemonium",
+          "source": "Drop: Bleeding Hollow Darkcaster (Hellfire Ramparts)",
+          "item_id": 31149
         },
         {
           "rank": "Optional",
-          "item_id": 31280,
-          "source": "Drop: Auchenai Monk (Auchenai Crypts)",
-          "name": "Thundercaller's Gauntlets"
+          "name": "Thundercaller's Gauntlets",
+          "source": "Drop: Arcatraz Warder (Arcatraz)",
+          "item_id": 31280
         }
       ],
       "waist": [
         {
           "rank": "BiS",
-          "item_id": 29520,
+          "name": "Netherstrike Belt",
           "source": "Profession: Crafted",
-          "name": "Netherstrike Belt"
+          "item_id": 29520
         },
         {
           "rank": "Optional",
-          "item_id": 24256,
+          "name": "Girdle of Ruination",
           "source": "Profession: Crafted",
-          "name": "Girdle of Ruination"
+          "item_id": 24256
         },
         {
           "rank": "Optional",
-          "item_id": 29524,
+          "name": "Windhawk Belt",
           "source": "Profession: Crafted",
-          "name": "Windhawk Belt"
+          "item_id": 29524
         }
       ],
       "legs": [
         {
           "rank": "BiS",
-          "item_id": 24262,
+          "name": "Spellstrike Pants",
           "source": "Profession: Crafted",
-          "name": "Spellstrike Pants"
+          "item_id": 24262
         },
         {
           "rank": "Optional",
-          "item_id": 30541,
+          "name": "Stormsong Kilt",
           "source": "Drop: The Black Stalker (H) (Underbog)",
-          "name": "Stormsong Kilt"
+          "item_id": 30541
         },
         {
           "rank": "Optional",
-          "item_id": 29142,
+          "name": "Kurenai Kilt",
           "source": "Kurenai — Revered",
-          "name": "Kurenai Kilt"
+          "item_id": 29142
         },
         {
           "rank": "Optional",
-          "item_id": 29141,
+          "name": "Tempest Leggings",
           "source": "The Mag'har — Revered",
-          "name": "Tempest Leggings"
+          "item_id": 29141
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Netherstrike Breastplate",
+          "source": "Profession: Crafted",
+          "item_id": 29519
+        },
+        {
+          "rank": "Optional",
+          "name": "Windhawk Hauberk",
+          "source": "Profession: Crafted",
+          "item_id": 29522
+        },
+        {
+          "rank": "Optional",
+          "name": "Mana-Etched Vestments",
+          "source": "Drop: Epoch Hunter (H) (Old Hillsbrad Foothills)",
+          "item_id": 28191
+        }
+      ],
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Gadgetstorm Goggles",
+          "source": "Profession: Crafted",
+          "item_id": 32476
+        },
+        {
+          "rank": "Optional",
+          "name": "Storm Master's Helmet",
+          "source": "Badge of Justice Vendor",
+          "item_id": 32086
+        },
+        {
+          "rank": "Optional",
+          "name": "Hood of Oblivion",
+          "source": "Drop: Harbinger Skyriss (Arcatraz)",
+          "item_id": 28415
+        },
+        {
+          "rank": "Optional",
+          "name": "Incanter's Cowl",
+          "source": "Drop: Pathaleon the Calculator (Mechanar)",
+          "item_id": 28278
+        },
+        {
+          "rank": "Optional",
+          "name": "Spellstrike Hood",
+          "source": "Profession: Crafted",
+          "item_id": 24266
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Netherstrike Bracers",
+          "source": "Profession: Crafted",
+          "item_id": 29521
+        },
+        {
+          "rank": "Optional",
+          "name": "Windhawk Bracers",
+          "source": "Profession: Crafted",
+          "item_id": 29523
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Shawl of Shifting Probabilities",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29369
         }
       ],
       "feet": [
         {
           "rank": "BiS",
-          "item_id": 28406,
+          "name": "Sigil-Laced Boots",
           "source": "Drop: Harbinger Skyriss (Arcatraz)",
-          "name": "Sigil-Laced Boots"
+          "item_id": 28406
         }
       ],
       "neck": [
         {
           "rank": "BiS",
-          "item_id": 28134,
+          "name": "Brooch of Heightened Potential",
           "source": "Drop: Blackheart the Inciter (Shadow Labyrinth)",
-          "name": "Brooch of Heightened Potential"
+          "item_id": 28134
         },
         {
           "rank": "Optional",
-          "item_id": 31692,
+          "name": "Natasha's Ember Necklace",
           "source": "Quest: The Hound-Master",
-          "name": "Natasha's Ember Necklace"
+          "item_id": 31692
         }
       ],
       "rings": [
         {
           "rank": "BiS",
-          "item_id": 29126,
+          "name": "Seer's Signet",
           "source": "The Scryers — Exalted",
-          "name": "Seer's Signet"
+          "item_id": 29126
         },
         {
           "rank": "Optional",
-          "item_id": 29367,
+          "name": "Ring of Cryptic Dreams",
           "source": "Badge of Justice Vendor",
-          "name": "Ring of Cryptic Dreams"
+          "item_id": 29367
         },
         {
           "rank": "Optional",
-          "item_id": 29352,
+          "name": "Cobalt Band of Tyrigosa",
           "source": "Drop: Nexus-Prince Shaffar (H) (Mana-Tombs)",
-          "name": "Cobalt Band of Tyrigosa"
+          "item_id": 29352
         },
         {
           "rank": "Optional",
-          "item_id": 31290,
-          "source": "Drop: Durnholde Tracking Hound (Old Hillsbrad Foothills)",
-          "name": "Band of Dominion"
+          "name": "Band of Dominion",
+          "source": "Drop: Cabal Acolyte (Shadow Labyrinth)",
+          "item_id": 31290
         },
         {
           "rank": "Optional",
-          "item_id": 29172,
+          "name": "Ashyen's Gift",
           "source": "Cenarion Expedition — Exalted",
-          "name": "Ashyen's Gift"
+          "item_id": 29172
         }
       ],
       "trinkets": [
         {
           "rank": "BiS",
-          "item_id": 29370,
+          "name": "Icon of the Silver Crescent",
           "source": "Badge of Justice Vendor",
-          "name": "Icon of the Silver Crescent"
+          "item_id": 29370
         },
         {
           "rank": "Optional",
-          "item_id": 27683,
+          "name": "Quagmirran's Eye",
           "source": "Drop: Quagmirran (H) (Slave Pens)",
-          "name": "Quagmirran's Eye"
+          "item_id": 27683
         },
         {
           "rank": "Optional",
-          "item_id": 29179,
+          "name": "Xi'ri's Gift",
           "source": "The Sha'tar — Revered",
-          "name": "Xi'ri's Gift"
+          "item_id": 29179
         },
         {
           "rank": "Optional",
-          "item_id": 29132,
+          "name": "Scryer's Bloodgem",
           "source": "The Scryers — Revered",
-          "name": "Scryer's Bloodgem"
+          "item_id": 29132
         },
         {
           "rank": "Optional",
-          "item_id": 28418,
+          "name": "Shiffar's Nexus-Horn",
           "source": "Drop: Harbinger Skyriss (Arcatraz)",
-          "name": "Shiffar's Nexus-Horn"
-        }
-      ],
-      "weapons": [
-        {
-          "rank": "BiS",
-          "item_id": 32450,
-          "source": "Vendor: Vixton Pinchwhistle",
-          "name": "Gladiator's Gavel"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 23554,
-          "source": "Profession: Crafted",
-          "name": "Eternium Runed Blade"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 30832,
-          "source": "Lower City — Exalted",
-          "name": "Gavel of Unearthed Secrets"
+          "item_id": 28418
         }
       ],
       "offhands": [
         {
           "rank": "BiS",
-          "item_id": 29273,
+          "name": "Khadgar's Knapsack",
           "source": "Badge of Justice Vendor",
-          "name": "Khadgar's Knapsack"
+          "item_id": 29273
         },
         {
           "rank": "Optional",
-          "item_id": 29268,
+          "name": "Mazthoril Honor Shield",
           "source": "Badge of Justice Vendor",
-          "name": "Mazthoril Honor Shield"
+          "item_id": 29268
         },
         {
           "rank": "Optional",
-          "item_id": 31287,
-          "source": "Drop: Durnholde Tracking Hound (Old Hillsbrad Foothills)",
-          "name": "Draenei Honor Guard Shield"
+          "name": "Draenei Honor Guard Shield",
+          "source": "Drop: Shattered Hand Sentry (Shattered Halls)",
+          "item_id": 31287
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Pauldrons of Wild Magic",
+          "source": "Drop: Quagmirran (H) (Slave Pens)",
+          "item_id": 32078
+        },
+        {
+          "rank": "Optional",
+          "name": "Spaulders of the Torn-heart",
+          "source": "Quest: The Cipher of Damnation - The Third Fragment Recovered",
+          "item_id": 30925
         }
       ],
       "totems": [
         {
           "rank": "BiS",
-          "item_id": 28248,
+          "name": "Totem of the Void",
           "source": "Drop: Cache of the Legion (H) (Mechanar)",
-          "name": "Totem of the Void"
+          "item_id": 28248
         },
         {
           "rank": "Optional",
-          "item_id": 23199,
+          "name": "Totem of the Storm",
           "source": "Auction House — BoE World Drop",
-          "name": "Totem of the Storm"
+          "item_id": 23199
         }
       ]
     },
     "phase-1": {
-      "head": [
-        {
-          "rank": "BiS",
-          "item_id": 29035,
-          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
-          "name": "Cyclone Faceguard"
-        }
-      ],
-      "shoulders": [
-        {
-          "rank": "BiS",
-          "item_id": 29037,
-          "source": "Drop: High King Maulgar — Gruul's Lair (Tier Token)",
-          "name": "Cyclone Shoulderguards"
-        }
-      ],
-      "back": [
-        {
-          "rank": "BiS",
-          "item_id": 28797,
-          "source": "Drop: High King Maulgar — Gruul's Lair",
-          "name": "Brute Cloak of the Ogre-Magi"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 28766,
-          "source": "Drop: Prince Malchezaar — Karazhan",
-          "name": "Ruby Drape of the Mysticant"
-        }
-      ],
-      "chest": [
-        {
-          "rank": "BiS",
-          "item_id": 29519,
-          "source": "Profession: Crafted",
-          "name": "Netherstrike Breastplate"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 29522,
-          "source": "Profession: Crafted",
-          "name": "Windhawk Hauberk"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 29033,
-          "source": "Drop: Magtheridon — Magtheridon's Lair (Tier Token)",
-          "name": "Cyclone Chestguard"
-        }
-      ],
-      "wrists": [
-        {
-          "rank": "BiS",
-          "item_id": 29521,
-          "source": "Profession: Crafted",
-          "name": "Netherstrike Bracers"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 29523,
-          "source": "Profession: Crafted",
-          "name": "Windhawk Bracers"
-        }
-      ],
-      "hands": [
-        {
-          "rank": "BiS",
-          "item_id": 28780,
-          "source": "Drop: Magtheridon — Magtheridon's Lair",
-          "name": "Soul-Eater's Handwraps"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 28507,
-          "source": "Drop: Attumen the Huntsman — Karazhan",
-          "name": "Handwraps of Flowing Thought"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 29034,
-          "source": "Drop: The Curator — Karazhan (Tier Token)",
-          "name": "Cyclone Handguards"
-        }
-      ],
-      "waist": [
-        {
-          "rank": "BiS",
-          "item_id": 29520,
-          "source": "Profession: Crafted",
-          "name": "Netherstrike Belt"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 24256,
-          "source": "Profession: Crafted",
-          "name": "Girdle of Ruination"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 29524,
-          "source": "Profession: Crafted",
-          "name": "Windhawk Belt"
-        }
-      ],
-      "legs": [
-        {
-          "rank": "BiS",
-          "item_id": 24262,
-          "source": "Profession: Crafted",
-          "name": "Spellstrike Pants"
-        }
-      ],
-      "feet": [
-        {
-          "rank": "BiS",
-          "item_id": 28517,
-          "source": "Drop: Maiden of Virtue — Karazhan",
-          "name": "Boots of Foretelling"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 28810,
-          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
-          "name": "Windshear Boots"
-        }
-      ],
-      "neck": [
-        {
-          "rank": "BiS",
-          "item_id": 28762,
-          "source": "Drop: Prince Malchezaar — Karazhan",
-          "name": "Adornment of Stolen Souls"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 28530,
-          "source": "Drop: Moroes — Karazhan",
-          "name": "Brooch of Unquenchable Fury"
-        }
-      ],
       "rings": [
         {
           "rank": "BiS",
-          "item_id": 30667,
+          "name": "Ring of Unrelenting Storms",
           "source": "Drop: Trash — Karazhan",
-          "name": "Ring of Unrelenting Storms"
+          "item_id": 30667
         },
         {
           "rank": "Optional",
-          "item_id": 28753,
+          "name": "Ring of Recurrence",
           "source": "Drop: Chess Event — Karazhan",
-          "name": "Ring of Recurrence"
+          "item_id": 28753
         },
         {
           "rank": "Optional",
-          "item_id": 29287,
+          "name": "Violet Signet of the Archmage",
           "source": "Quest: Eminence Among the Violet Eye",
-          "name": "Violet Signet of the Archmage"
+          "item_id": 29287
         },
         {
           "rank": "Optional",
-          "item_id": 29126,
+          "name": "Seer's Signet",
           "source": "The Scryers — Exalted",
-          "name": "Seer's Signet"
-        }
-      ],
-      "trinkets": [
-        {
-          "rank": "BiS",
-          "item_id": 28785,
-          "source": "Drop: Terestian Illhoof — Karazhan",
-          "name": "The Lightning Capacitor"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 29370,
-          "source": "Badge of Justice Vendor",
-          "name": "Icon of the Silver Crescent"
+          "item_id": 29126
         }
       ],
       "weapons": [
         {
           "rank": "BiS",
-          "item_id": 30723,
+          "name": "Talon of the Tempest",
           "source": "World Boss: Doomwalker",
-          "name": "Talon of the Tempest"
+          "item_id": 30723
         },
         {
           "rank": "Optional",
-          "item_id": 28770,
+          "name": "Nathrezim Mindblade",
           "source": "Drop: Prince Malchezaar — Karazhan",
-          "name": "Nathrezim Mindblade"
+          "item_id": 28770
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Netherstrike Bracers",
+          "source": "Profession: Crafted",
+          "item_id": 29521
+        },
+        {
+          "rank": "Optional",
+          "name": "Windhawk Bracers",
+          "source": "Profession: Crafted",
+          "item_id": 29523
+        }
+      ],
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Cyclone Faceguard",
+          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
+          "item_id": 29035
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Boots of Foretelling",
+          "source": "Drop: Maiden of Virtue — Karazhan",
+          "item_id": 28517
+        },
+        {
+          "rank": "Optional",
+          "name": "Windshear Boots",
+          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
+          "item_id": 28810
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Brute Cloak of the Ogre-Magi",
+          "source": "Drop: High King Maulgar — Gruul's Lair",
+          "item_id": 28797
+        },
+        {
+          "rank": "Optional",
+          "name": "Ruby Drape of the Mysticant",
+          "source": "Drop: Prince Malchezaar — Karazhan",
+          "item_id": 28766
         }
       ],
       "offhands": [
         {
           "rank": "BiS",
-          "item_id": 29273,
+          "name": "Khadgar's Knapsack",
           "source": "Badge of Justice Vendor",
-          "name": "Khadgar's Knapsack"
+          "item_id": 29273
         },
         {
           "rank": "Optional",
-          "item_id": 29268,
+          "name": "Mazthoril Honor Shield",
           "source": "Badge of Justice Vendor",
-          "name": "Mazthoril Honor Shield"
+          "item_id": 29268
         },
         {
           "rank": "Optional",
-          "item_id": 28734,
+          "name": "Jewel of Infinite Possibilities",
           "source": "Drop: Netherspite — Karazhan",
-          "name": "Jewel of Infinite Possibilities"
+          "item_id": 28734
         }
       ],
-      "totems": []
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Netherstrike Belt",
+          "source": "Profession: Crafted",
+          "item_id": 29520
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of Ruination",
+          "source": "Profession: Crafted",
+          "item_id": 24256
+        },
+        {
+          "rank": "Optional",
+          "name": "Windhawk Belt",
+          "source": "Profession: Crafted",
+          "item_id": 29524
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Soul-Eater's Handwraps",
+          "source": "Drop: Magtheridon — Magtheridon's Lair",
+          "item_id": 28780
+        },
+        {
+          "rank": "Optional",
+          "name": "Handwraps of Flowing Thought",
+          "source": "Drop: Attumen the Huntsman — Karazhan",
+          "item_id": 28507
+        },
+        {
+          "rank": "Optional",
+          "name": "Cyclone Handguards",
+          "source": "Drop: The Curator — Karazhan (Tier Token)",
+          "item_id": 29034
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Cyclone Shoulderguards",
+          "source": "Drop: High King Maulgar — Gruul's Lair (Tier Token)",
+          "item_id": 29037
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Spellstrike Pants",
+          "source": "Profession: Crafted",
+          "item_id": 24262
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Adornment of Stolen Souls",
+          "source": "Drop: Prince Malchezaar — Karazhan",
+          "item_id": 28762
+        },
+        {
+          "rank": "Optional",
+          "name": "Brooch of Unquenchable Fury",
+          "source": "Drop: Moroes — Karazhan",
+          "item_id": 28530
+        }
+      ],
+      "totems": [],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Netherstrike Breastplate",
+          "source": "Profession: Crafted",
+          "item_id": 29519
+        },
+        {
+          "rank": "Optional",
+          "name": "Windhawk Hauberk",
+          "source": "Profession: Crafted",
+          "item_id": 29522
+        },
+        {
+          "rank": "Optional",
+          "name": "Cyclone Chestguard",
+          "source": "Drop: Magtheridon — Magtheridon's Lair (Tier Token)",
+          "item_id": 29033
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "The Lightning Capacitor",
+          "source": "Drop: Terestian Illhoof — Karazhan",
+          "item_id": 28785
+        },
+        {
+          "rank": "Optional",
+          "name": "Icon of the Silver Crescent",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29370
+        }
+      ]
     },
     "phase-2": {
-      "head": [
-        {
-          "rank": "BiS",
-          "item_id": 29035,
-          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
-          "name": "Cyclone Faceguard"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 30171,
-          "source": "Drop: Lady Vashj — Serpentshrine Cavern (Tier Token)",
-          "name": "Cataclysm Headpiece"
-        }
-      ],
-      "shoulders": [
-        {
-          "rank": "BiS",
-          "item_id": 29037,
-          "source": "Drop: High King Maulgar — Gruul's Lair (Tier Token)",
-          "name": "Cyclone Shoulderguards"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 30173,
-          "source": "Drop: Void Reaver — Tempest Keep (Tier Token)",
-          "name": "Cataclysm Shoulderpads"
-        }
-      ],
-      "back": [
-        {
-          "rank": "BiS",
-          "item_id": 28797,
-          "source": "Drop: High King Maulgar — Gruul's Lair",
-          "name": "Brute Cloak of the Ogre-Magi"
-        }
-      ],
-      "chest": [
-        {
-          "rank": "BiS",
-          "item_id": 30169,
-          "source": "Drop: Kael'thas Sunstrider — Tempest Keep (Tier Token)",
-          "name": "Cataclysm Chestpiece"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 30107,
-          "source": "Drop: Lady Vashj — Serpentshrine Cavern",
-          "name": "Vestments of the Sea-Witch"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 29519,
-          "source": "Profession: Crafted",
-          "name": "Netherstrike Breastplate"
-        }
-      ],
-      "wrists": [
-        {
-          "rank": "BiS",
-          "item_id": 29918,
-          "source": "Drop: Al'ar — Tempest Keep",
-          "name": "Mindstorm Wristbands"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 29521,
-          "source": "Profession: Crafted",
-          "name": "Netherstrike Bracers"
-        }
-      ],
-      "hands": [
-        {
-          "rank": "BiS",
-          "item_id": 28780,
-          "source": "Drop: Magtheridon — Magtheridon's Lair",
-          "name": "Soul-Eater's Handwraps"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 30170,
-          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern (Tier Token)",
-          "name": "Cataclysm Handgrips"
-        }
-      ],
-      "waist": [
-        {
-          "rank": "BiS",
-          "item_id": 30038,
-          "source": "Profession: Crafted",
-          "name": "Belt of Blasting"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 30064,
-          "source": "Drop: The Lurker Below — Serpentshrine Cavern",
-          "name": "Cord of Screaming Terrors"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 29520,
-          "source": "Profession: Crafted",
-          "name": "Netherstrike Belt"
-        },
-        {
-          "rank": "Optional",
-          "item_id": 24256,
-          "source": "Profession: Crafted",
-          "name": "Girdle of Ruination"
-        }
-      ],
-      "legs": [
-        {
-          "rank": "BiS",
-          "item_id": 30172,
-          "source": "Drop: Fathom-Lord Karathress — Serpentshrine Cavern (Tier Token)",
-          "name": "Cataclysm Leggings"
-        }
-      ],
       "feet": [
         {
           "rank": "BiS",
-          "item_id": 30067,
+          "name": "Velvet Boots of the Guardian",
           "source": "Drop: The Lurker Below — Serpentshrine Cavern",
-          "name": "Velvet Boots of the Guardian"
+          "item_id": 30067
         },
         {
           "rank": "Optional",
-          "item_id": 30037,
+          "name": "Boots of Blasting",
           "source": "Profession: Crafted",
-          "name": "Boots of Blasting"
+          "item_id": 30037
         },
         {
           "rank": "Optional",
-          "item_id": 30043,
+          "name": "Hurricane Boots",
           "source": "Profession: Crafted",
-          "name": "Hurricane Boots"
-        }
-      ],
-      "neck": [
-        {
-          "rank": "BiS",
-          "item_id": 30015,
-          "source": "Quest: Kael'thas and the Verdant Sphere",
-          "name": "The Sun King's Talisman"
+          "item_id": 30043
         }
       ],
       "rings": [
         {
           "rank": "BiS",
-          "item_id": 30667,
+          "name": "Ring of Unrelenting Storms",
           "source": "Drop: Trash — Karazhan",
-          "name": "Ring of Unrelenting Storms"
+          "item_id": 30667
         },
         {
           "rank": "Optional",
-          "item_id": 29302,
+          "name": "Band of Eternity",
           "source": "Quest: Sage's Pledge",
-          "name": "Band of Eternity"
+          "item_id": 29302
         },
         {
           "rank": "Optional",
-          "item_id": 30109,
+          "name": "Ring of Endless Coils",
           "source": "Drop: Lady Vashj — Serpentshrine Cavern",
-          "name": "Ring of Endless Coils"
+          "item_id": 30109
         },
         {
           "rank": "Optional",
-          "item_id": 32664,
+          "name": "Dreamcrystal Band",
           "source": "Profession: Crafted",
-          "name": "Dreamcrystal Band"
+          "item_id": 32664
         },
         {
           "rank": "Optional",
-          "item_id": 32779,
+          "name": "Band of Frigid Elements",
           "source": "Drop: Anzu (H) (Sethekk Halls)",
-          "name": "Band of Frigid Elements"
+          "item_id": 32779
         }
       ],
-      "trinkets": [
+      "hands": [
         {
           "rank": "BiS",
-          "item_id": 28785,
-          "source": "Drop: Terestian Illhoof — Karazhan",
-          "name": "The Lightning Capacitor"
+          "name": "Soul-Eater's Handwraps",
+          "source": "Drop: Magtheridon — Magtheridon's Lair",
+          "item_id": 28780
         },
         {
           "rank": "Optional",
-          "item_id": 29370,
-          "source": "Badge of Justice Vendor",
-          "name": "Icon of the Silver Crescent"
+          "name": "Cataclysm Handgrips",
+          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern (Tier Token)",
+          "item_id": 30170
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Cataclysm Leggings",
+          "source": "Drop: Fathom-Lord Karathress — Serpentshrine Cavern (Tier Token)",
+          "item_id": 30172
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Brute Cloak of the Ogre-Magi",
+          "source": "Drop: High King Maulgar — Gruul's Lair",
+          "item_id": 28797
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "The Sun King's Talisman",
+          "source": "Quest: Kael'thas and the Verdant Sphere",
+          "item_id": 30015
         }
       ],
       "weapons": [
         {
           "rank": "BiS",
-          "item_id": 29988,
+          "name": "The Nexus Key",
           "source": "Drop: Kael'thas Sunstrider — Tempest Keep",
-          "name": "The Nexus Key"
+          "item_id": 29988
         },
         {
           "rank": "Optional",
-          "item_id": 32963,
+          "name": "Merciless Gladiator's Gavel",
           "source": "Vendor: Krixel Pinchwhistle",
-          "name": "Merciless Gladiator's Gavel"
+          "item_id": 32963
         },
         {
           "rank": "Optional",
-          "item_id": 30723,
+          "name": "Talon of the Tempest",
           "source": "World Boss: Doomwalker",
-          "name": "Talon of the Tempest"
+          "item_id": 30723
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Cyclone Shoulderguards",
+          "source": "Drop: High King Maulgar — Gruul's Lair (Tier Token)",
+          "item_id": 29037
+        },
+        {
+          "rank": "Optional",
+          "name": "Cataclysm Shoulderpads",
+          "source": "Drop: Void Reaver — Tempest Keep (Tier Token)",
+          "item_id": 30173
         }
       ],
       "offhands": [
         {
           "rank": "BiS",
-          "item_id": 30049,
+          "name": "Fathomstone",
           "source": "Drop: Hydross the Unstable — Serpentshrine Cavern",
-          "name": "Fathomstone"
+          "item_id": 30049
         },
         {
           "rank": "Optional",
-          "item_id": 29268,
+          "name": "Mazthoril Honor Shield",
           "source": "Badge of Justice Vendor",
-          "name": "Mazthoril Honor Shield"
+          "item_id": 29268
         }
       ],
-      "totems": []
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Mindstorm Wristbands",
+          "source": "Drop: Al'ar — Tempest Keep",
+          "item_id": 29918
+        },
+        {
+          "rank": "Optional",
+          "name": "Netherstrike Bracers",
+          "source": "Profession: Crafted",
+          "item_id": 29521
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Belt of Blasting",
+          "source": "Profession: Crafted",
+          "item_id": 30038
+        },
+        {
+          "rank": "Optional",
+          "name": "Cord of Screaming Terrors",
+          "source": "Drop: The Lurker Below — Serpentshrine Cavern",
+          "item_id": 30064
+        },
+        {
+          "rank": "Optional",
+          "name": "Netherstrike Belt",
+          "source": "Profession: Crafted",
+          "item_id": 29520
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of Ruination",
+          "source": "Profession: Crafted",
+          "item_id": 24256
+        }
+      ],
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Cyclone Faceguard",
+          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
+          "item_id": 29035
+        },
+        {
+          "rank": "Optional",
+          "name": "Cataclysm Headpiece",
+          "source": "Drop: Lady Vashj — Serpentshrine Cavern (Tier Token)",
+          "item_id": 30171
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Cataclysm Chestpiece",
+          "source": "Drop: Kael'thas Sunstrider — Tempest Keep (Tier Token)",
+          "item_id": 30169
+        },
+        {
+          "rank": "Optional",
+          "name": "Vestments of the Sea-Witch",
+          "source": "Drop: Lady Vashj — Serpentshrine Cavern",
+          "item_id": 30107
+        },
+        {
+          "rank": "Optional",
+          "name": "Netherstrike Breastplate",
+          "source": "Profession: Crafted",
+          "item_id": 29519
+        }
+      ],
+      "totems": [],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "The Lightning Capacitor",
+          "source": "Drop: Terestian Illhoof — Karazhan",
+          "item_id": 28785
+        },
+        {
+          "rank": "Optional",
+          "name": "Icon of the Silver Crescent",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29370
+        }
+      ]
     }
   }
 }

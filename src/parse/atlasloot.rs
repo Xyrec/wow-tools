@@ -11,7 +11,10 @@ use super::{ParsedItem, ParsedOutput, write_output};
 use crate::common;
 
 /// Map our spec slugs to AtlasLoot data keys per phase file.
+/// Keys vary across phases (e.g. "ShamanResto" in P0, "ShamanRestoration" in P1).
+/// Some specs share a key in certain phases (e.g. Rogue has one entry in P0/P1).
 static SPEC_LUA_KEYS: &[(&str, &[(&str, &str)])] = &[
+    // Shaman
     (
         "resto-shaman",
         &[
@@ -29,11 +32,210 @@ static SPEC_LUA_KEYS: &[(&str, &[(&str, &str)])] = &[
         ],
     ),
     (
+        "enhancement-shaman",
+        &[
+            ("prebisDB.lua", "ShamanEnh"),
+            ("phaseoneDB.lua", "ShamanEnhancement"),
+            ("phasetwoDB.lua", "ShamanEnhancement_P2"),
+        ],
+    ),
+    // Paladin
+    (
+        "holy-paladin",
+        &[
+            ("prebisDB.lua", "PalHoly"),
+            ("phaseoneDB.lua", "PaladinHoly_P1"),
+            ("phasetwoDB.lua", "PaladinHoly_P2"),
+        ],
+    ),
+    (
         "prot-paladin",
         &[
             ("prebisDB.lua", "PalProt"),
             ("phaseoneDB.lua", "PaladinProtection_P1"),
             ("phasetwoDB.lua", "PaladinProtection_P2"),
+        ],
+    ),
+    (
+        "ret-paladin",
+        &[
+            ("prebisDB.lua", "PalRet"),
+            ("phaseoneDB.lua", "PaladinRetribution"),
+            ("phasetwoDB.lua", "PaladinRetribution_P2"),
+        ],
+    ),
+    // Priest
+    (
+        "holy-priest",
+        &[
+            ("prebisDB.lua", "PriestHoly"),
+            ("phaseoneDB.lua", "PriestHoly"),
+            ("phasetwoDB.lua", "PriestHoly_P2"),
+        ],
+    ),
+    (
+        "shadow-priest",
+        &[
+            ("prebisDB.lua", "PriestShadow"),
+            ("phaseoneDB.lua", "PriestShadow"),
+            ("phasetwoDB.lua", "PriestShadow_P2"),
+        ],
+    ),
+    // Druid
+    (
+        "balance-druid",
+        &[
+            ("prebisDB.lua", "DruidBalance"),
+            ("phaseoneDB.lua", "DruidBalance_P1"),
+            ("phasetwoDB.lua", "DruidBalance_P2"),
+        ],
+    ),
+    (
+        "feral-tank-druid",
+        &[
+            ("prebisDB.lua", "DruidBear"),
+            ("phaseoneDB.lua", "DruidBear_P1"),
+            ("phasetwoDB.lua", "DruidBear_P2"),
+        ],
+    ),
+    (
+        "feral-dps-druid",
+        &[
+            ("prebisDB.lua", "DruidCat"),
+            ("phaseoneDB.lua", "DruidCat_P1"),
+            ("phasetwoDB.lua", "DruidCat_P2"),
+        ],
+    ),
+    (
+        "resto-druid",
+        &[
+            ("prebisDB.lua", "DruidResto"),
+            ("phaseoneDB.lua", "DruidRestoration_P1"),
+            ("phasetwoDB.lua", "DruidRestoration_P2"),
+        ],
+    ),
+    // Warrior
+    (
+        "arms-warrior",
+        &[
+            ("prebisDB.lua", "WarriorArms"),
+            ("phaseoneDB.lua", "WarriorArms"),
+            ("phasetwoDB.lua", "WarriorArms_P2"),
+        ],
+    ),
+    (
+        "fury-warrior",
+        &[
+            ("prebisDB.lua", "WarriorFury"),
+            ("phaseoneDB.lua", "WarriorFury"),
+            ("phasetwoDB.lua", "WarriorFury_P2"),
+        ],
+    ),
+    (
+        "prot-warrior",
+        &[
+            ("prebisDB.lua", "WarriorProtection"),
+            ("phaseoneDB.lua", "WarriorProt"),
+            ("phasetwoDB.lua", "WarriorProt_P2"),
+        ],
+    ),
+    // Hunter
+    (
+        "bm-hunter",
+        &[
+            ("prebisDB.lua", "HunterBM"),
+            ("phaseoneDB.lua", "HunterBM_P1"),
+            ("phasetwoDB.lua", "HunterBM_P2"),
+        ],
+    ),
+    (
+        "marks-hunter",
+        &[
+            ("prebisDB.lua", "HunterMM"),
+            ("phaseoneDB.lua", "HunterMM_P1"),
+            ("phasetwoDB.lua", "HunterMM_P2"),
+        ],
+    ),
+    (
+        "survival-hunter",
+        &[
+            ("prebisDB.lua", "HunterSV"),
+            ("phaseoneDB.lua", "HunterSurv_P1"),
+            ("phasetwoDB.lua", "HunterSurv_P2"),
+        ],
+    ),
+    // Rogue (single entry in P0/P1, per-spec in P2)
+    (
+        "assassination-rogue",
+        &[
+            ("prebisDB.lua", "Rogue"),
+            ("phaseoneDB.lua", "Rogue"),
+            ("phasetwoDB.lua", "Rogue_P2"),
+        ],
+    ),
+    (
+        "combat-rogue",
+        &[
+            ("prebisDB.lua", "Rogue"),
+            ("phaseoneDB.lua", "Rogue"),
+            ("phasetwoDB.lua", "Rogue_P2"),
+        ],
+    ),
+    (
+        "subtlety-rogue",
+        &[
+            ("prebisDB.lua", "Rogue"),
+            ("phaseoneDB.lua", "Rogue"),
+            ("phasetwoDB.lua", "Rogue_P2"),
+        ],
+    ),
+    // Mage
+    (
+        "arcane-mage",
+        &[
+            ("prebisDB.lua", "MageArc"),
+            ("phaseoneDB.lua", "MageArcane_P1"),
+            ("phasetwoDB.lua", "MageArcane_P2"),
+        ],
+    ),
+    (
+        "fire-mage",
+        &[
+            ("prebisDB.lua", "Mage Fire"),
+            ("phaseoneDB.lua", "MageFire_P1"),
+            ("phasetwoDB.lua", "MageFire_P2"),
+        ],
+    ),
+    (
+        "frost-mage",
+        &[
+            ("prebisDB.lua", "MageFrost"),
+            ("phaseoneDB.lua", "MageFrost_P1"),
+            ("phasetwoDB.lua", "MageFrost_P2"),
+        ],
+    ),
+    // Warlock (Demonology missing from P1)
+    (
+        "affliction-warlock",
+        &[
+            ("prebisDB.lua", "WarlockAff"),
+            ("phaseoneDB.lua", "WarlockAffliction"),
+            ("phasetwoDB.lua", "WarlockAffliction_P2"),
+        ],
+    ),
+    (
+        "demo-warlock",
+        &[
+            ("prebisDB.lua", "WarlockDemonology"),
+            ("phasetwoDB.lua", "WarlockDemonology_P2"),
+        ],
+    ),
+    (
+        "destro-warlock",
+        &[
+            ("prebisDB.lua", "WarlockDestruction"),
+            ("phaseoneDB.lua", "WarlockDestruction"),
+            ("phasetwoDB.lua", "WarlockDestruction_P2"),
         ],
     ),
 ];

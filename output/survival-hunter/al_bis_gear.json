@@ -1,0 +1,811 @@
+{
+  "current_phase": "phase-1",
+  "phases": {
+    "phase-0": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Beast Lord Helm",
+          "source": "Drop: Pathaleon the Calculator (Mechanar)",
+          "item_id": 28275
+        },
+        {
+          "rank": "Optional",
+          "name": "Cryptstalker Headpiece",
+          "source": "Quest: Cryptstalker Headpiece",
+          "item_id": 22438
+        },
+        {
+          "rank": "Optional",
+          "name": "Stalker's Helmet of Second Sight",
+          "source": "Quest: Teron Gorefiend, I am...",
+          "item_id": 31106
+        },
+        {
+          "rank": "Optional",
+          "name": "Mok'Nathal Beast-Mask",
+          "source": "Drop: Exarch Maladaar (Auchenai Crypts)",
+          "item_id": 27414
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Wrathtide Longbow",
+          "source": "Drop: Warlord Kalithresh (H) (Steamvault)",
+          "item_id": 29351
+        },
+        {
+          "rank": "Optional",
+          "name": "Veteran's Musket",
+          "source": "Honor Hold — Exalted",
+          "item_id": 29151
+        },
+        {
+          "rank": "Optional",
+          "name": "Marksman's Bow",
+          "source": "Thrallmar — Exalted",
+          "item_id": 29152
+        },
+        {
+          "rank": "Optional",
+          "name": "Merciless Gladiator's Crossbow of the Phoenix",
+          "source": "Vendor: Krixel Pinchwhistle",
+          "item_id": 31986
+        },
+        {
+          "rank": "Optional",
+          "name": "Don Santos' Famous Hunting Rifle",
+          "source": "Drop: Tidal Surger (Steamvault)",
+          "item_id": 31323
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Truestrike Ring",
+          "source": "Drop: Wastewalker Slave (Slave Pens)",
+          "item_id": 31326
+        },
+        {
+          "rank": "Optional",
+          "name": "Ravenclaw Band",
+          "source": "Drop: Talon King Ikiss (Sethekk Halls)",
+          "item_id": 27925
+        },
+        {
+          "rank": "Optional",
+          "name": "Pathfinder's Band",
+          "source": "Drop: Protean Horror (Arcatraz)",
+          "item_id": 31277
+        },
+        {
+          "rank": "Optional",
+          "name": "Slayer's Mark of the Redemption",
+          "source": "Quest: Dissension Amongst the Ranks...",
+          "item_id": 31077
+        },
+        {
+          "rank": "Optional",
+          "name": "Band of Anguish",
+          "source": "Quest: News of Victory",
+          "item_id": 30973
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Boots of the Endless Hunt",
+          "source": "Drop: Warp Splinter (H) (Botanica)",
+          "item_id": 29262
+        },
+        {
+          "rank": "Optional",
+          "name": "The Master's Treads",
+          "source": "Drop: Shattered Hand Heathen (Shattered Halls)",
+          "item_id": 31288
+        },
+        {
+          "rank": "Optional",
+          "name": "Cryptstalker Boots",
+          "source": "Quest: Cryptstalker Boots",
+          "item_id": 22440
+        },
+        {
+          "rank": "Optional",
+          "name": "Fel Leather Boots",
+          "source": "Profession: Crafted",
+          "item_id": 25686
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Beast Lord Handguards",
+          "source": "Drop: Warchief Kargath Bladefist (Shattered Halls)",
+          "item_id": 27474
+        },
+        {
+          "rank": "Optional",
+          "name": "Ar'tor's Mainstay",
+          "source": "Quest: The Cipher of Damnation - The Third Fragment Recovered",
+          "item_id": 30951
+        },
+        {
+          "rank": "Optional",
+          "name": "Marshal's Chain Grips",
+          "source": "Vendor: Sergeant Major Clate",
+          "item_id": 16463
+        },
+        {
+          "rank": "Optional",
+          "name": "General's Chain Gloves",
+          "source": "Vendor: First Sergeant Hola'mahi",
+          "item_id": 16571
+        },
+        {
+          "rank": "Optional",
+          "name": "Cryptstalker Handguards",
+          "source": "Quest: Cryptstalker Handguards",
+          "item_id": 22441
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Stellaris",
+          "source": "Drop: Nethermancer Sepethrea (Mechanar)",
+          "item_id": 28263
+        },
+        {
+          "rank": "Optional",
+          "name": "Mooncleaver",
+          "source": "Profession: Crafted",
+          "item_id": 28435
+        },
+        {
+          "rank": "Optional",
+          "name": "Guile of Khoraazi",
+          "source": "The Consortium — Exalted",
+          "item_id": 29121
+        },
+        {
+          "rank": "Optional",
+          "name": "Sonic Spear",
+          "source": "Drop: Murmur (Shadow Labyrinth)",
+          "item_id": 27903
+        },
+        {
+          "rank": "Optional",
+          "name": "Claw of the Watcher",
+          "source": "Drop: Shirrak the Dead Watcher (H) (Auchenai Crypts)",
+          "item_id": 27846
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Blood Knight War Cloak",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29382
+        },
+        {
+          "rank": "Optional",
+          "name": "Vengeance Wrap",
+          "source": "Profession: Crafted",
+          "item_id": 24259
+        },
+        {
+          "rank": "Optional",
+          "name": "Cloak of the Craft",
+          "source": "Drop: Ethereal Spellbinder (Mana-Tombs)",
+          "item_id": 31255
+        },
+        {
+          "rank": "Optional",
+          "name": "Auchenai Death Shroud",
+          "source": "Drop: Avatar of the Martyred (H) (Auchenai Crypts)",
+          "item_id": 27878
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Jagged Bark Pendant",
+          "source": "Drop: Warp Splinter (Botanica)",
+          "item_id": 28343
+        },
+        {
+          "rank": "Optional",
+          "name": "Choker of Vile Intent",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29381
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Felstalker Bracers",
+          "source": "Profession: Crafted",
+          "item_id": 25697
+        },
+        {
+          "rank": "Optional",
+          "name": "Nightfall Wristguards",
+          "source": "Drop: Epoch Hunter (H) (Old Hillsbrad Foothills)",
+          "item_id": 29246
+        },
+        {
+          "rank": "Optional",
+          "name": "Primalstrike Bracers",
+          "source": "Profession: Crafted",
+          "item_id": 29527
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Dunewind Sash",
+          "source": "Drop: Ghaz'an (H) (Underbog)",
+          "item_id": 27760
+        },
+        {
+          "rank": "Optional",
+          "name": "Primalstrike Belt",
+          "source": "Profession: Crafted",
+          "item_id": 29526
+        },
+        {
+          "rank": "Optional",
+          "name": "Felstalker Belt",
+          "source": "Profession: Crafted",
+          "item_id": 25695
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Talon of Anzu",
+          "source": "Drop: Anzu (H) (Sethekk Halls)",
+          "item_id": 32781
+        },
+        {
+          "rank": "Optional",
+          "name": "Void-Talon",
+          "source": "Auction House — BoE World Drop",
+          "item_id": 29372
+        },
+        {
+          "rank": "Optional",
+          "name": "Stormreaver Warblades",
+          "source": "Drop: High Botanist Freywinn (Botanica)",
+          "item_id": 28315
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Hourglass of the Unraveller",
+          "source": "Drop: Temporus (Black Morass)",
+          "item_id": 28034
+        },
+        {
+          "rank": "Optional",
+          "name": "Bloodlust Brooch",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29383
+        },
+        {
+          "rank": "Optional",
+          "name": "Abacus of Violent Odds",
+          "source": "Drop: Pathaleon the Calculator (Mechanar)",
+          "item_id": 28288
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Beast Lord Cuirass",
+          "source": "Drop: Warp Splinter (Botanica)",
+          "item_id": 28228
+        },
+        {
+          "rank": "Optional",
+          "name": "Primalstrike Vest",
+          "source": "Profession: Crafted",
+          "item_id": 29525
+        },
+        {
+          "rank": "Optional",
+          "name": "Hauberk of Karabor",
+          "source": "Quest: Varedis Must Be Stopped",
+          "item_id": 30933
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Beast Lord Mantle",
+          "source": "Drop: Warlord Kalithresh (Steamvault)",
+          "item_id": 27801
+        },
+        {
+          "rank": "Optional",
+          "name": "Expedition Scout's Epaulets",
+          "source": "Quest: Fel Embers",
+          "item_id": 25790
+        },
+        {
+          "rank": "Optional",
+          "name": "Cryptstalker Spaulders",
+          "source": "Quest: Cryptstalker Spaulders",
+          "item_id": 22439
+        },
+        {
+          "rank": "Optional",
+          "name": "Wastewalker Shoulderpads",
+          "source": "Drop: Avatar of the Martyred (H) (Auchenai Crypts)",
+          "item_id": 27797
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Wastewalker Leggings",
+          "source": "Drop: Nexus-Prince Shaffar (H) (Mana-Tombs)",
+          "item_id": 27837
+        },
+        {
+          "rank": "Optional",
+          "name": "Beast Lord Leggings",
+          "source": "Drop: Warlord Kalithresh (Steamvault)",
+          "item_id": 27874
+        },
+        {
+          "rank": "Optional",
+          "name": "Emerald-Scale Greaves",
+          "source": "Drop: Captain Skarloc (H) (Old Hillsbrad Foothills)",
+          "item_id": 28219
+        },
+        {
+          "rank": "Optional",
+          "name": "Scaled Greaves of Patience",
+          "source": "Drop: Captain Skarloc (Old Hillsbrad Foothills)",
+          "item_id": 27430
+        },
+        {
+          "rank": "Optional",
+          "name": "Cryptstalker Legguards",
+          "source": "Quest: Cryptstalker Legguards",
+          "item_id": 22437
+        }
+      ]
+    },
+    "phase-1": {
+      "shoulders": [],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Edgewalker Longboots",
+          "source": "Drop: Moroes — Karazhan",
+          "item_id": 28545
+        },
+        {
+          "rank": "Optional",
+          "name": "Fiend Slayer Boots",
+          "source": "Drop: Chess Event — Karazhan",
+          "item_id": 28746
+        },
+        {
+          "rank": "Optional",
+          "name": "Shadowstep Striders",
+          "source": "Drop: Harbinger Skyriss (H) (Arcatraz)",
+          "item_id": 29248
+        }
+      ],
+      "chest": [],
+      "offhands": [],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Stellaris",
+          "source": "Drop: Nethermancer Sepethrea (Mechanar)",
+          "item_id": 28263
+        },
+        {
+          "rank": "Optional",
+          "name": "Legacy",
+          "source": "Drop: The Wizard of Oz — Karazhan",
+          "item_id": 28587
+        },
+        {
+          "rank": "Optional",
+          "name": "Claw of the Watcher",
+          "source": "Drop: Shirrak the Dead Watcher (H) (Auchenai Crypts)",
+          "item_id": 27846
+        },
+        {
+          "rank": "Optional",
+          "name": "Emerald Ripper",
+          "source": "Drop: Moroes — Karazhan",
+          "item_id": 28524
+        }
+      ],
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Beast Lord Helm",
+          "source": "Drop: Pathaleon the Calculator (Mechanar)",
+          "item_id": 28275
+        },
+        {
+          "rank": "Optional",
+          "name": "Demon Stalker Greathelm",
+          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
+          "item_id": 29081
+        }
+      ],
+      "wrists": [],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Ring of the Recalcitrant",
+          "source": "Quest: The Fall of Magtheridon",
+          "item_id": 28791
+        },
+        {
+          "rank": "Optional",
+          "name": "Pathfinder's Band",
+          "source": "Drop: Protean Horror (Arcatraz)",
+          "item_id": 31277
+        },
+        {
+          "rank": "Optional",
+          "name": "Garona's Signet Ring",
+          "source": "Drop: The Curator — Karazhan",
+          "item_id": 28649
+        },
+        {
+          "rank": "Optional",
+          "name": "Ravenclaw Band",
+          "source": "Drop: Talon King Ikiss (Sethekk Halls)",
+          "item_id": 27925
+        },
+        {
+          "rank": "Optional",
+          "name": "Ring of a Thousand Marks",
+          "source": "Drop: Prince Malchezaar — Karazhan",
+          "item_id": 28757
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Beast Lord Handguards",
+          "source": "Drop: Warchief Kargath Bladefist (Shattered Halls)",
+          "item_id": 27474
+        },
+        {
+          "rank": "Optional",
+          "name": "Gloves of Dexterous Manipulation",
+          "source": "Drop: Attumen the Huntsman — Karazhan",
+          "item_id": 28506
+        },
+        {
+          "rank": "Optional",
+          "name": "Gauntlets of the Dragonslayer",
+          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
+          "item_id": 28827
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Jagged Bark Pendant",
+          "source": "Drop: Warp Splinter (Botanica)",
+          "item_id": 28343
+        },
+        {
+          "rank": "Optional",
+          "name": "Worgen Claw Necklace",
+          "source": "Drop: Attumen the Huntsman — Karazhan",
+          "item_id": 28509
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Dragonspine Trophy",
+          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
+          "item_id": 28830
+        },
+        {
+          "rank": "Optional",
+          "name": "Bloodlust Brooch",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29383
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Girdle of Treachery",
+          "source": "Drop: Chess Event — Karazhan",
+          "item_id": 28750
+        },
+        {
+          "rank": "Optional",
+          "name": "Dunewind Sash",
+          "source": "Drop: Ghaz'an (H) (Underbog)",
+          "item_id": 27760
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of the Deathdealer",
+          "source": "Drop: Aeonus (H) (Black Morass)",
+          "item_id": 29247
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of the Prowler",
+          "source": "Drop: Terestian Illhoof — Karazhan",
+          "item_id": 28656
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Scaled Greaves of the Marksman",
+          "source": "World Boss: Doom Lord Kazzak",
+          "item_id": 30739
+        },
+        {
+          "rank": "Optional",
+          "name": "Skulker's Greaves",
+          "source": "Drop: Netherspite — Karazhan",
+          "item_id": 28741
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Barrel-Blade Longrifle",
+          "source": "World Boss: Doomwalker",
+          "item_id": 30724
+        },
+        {
+          "rank": "Optional",
+          "name": "Sunfury Bow of the Phoenix",
+          "source": "Drop: Prince Malchezaar — Karazhan",
+          "item_id": 28772
+        },
+        {
+          "rank": "Optional",
+          "name": "Wrathtide Longbow",
+          "source": "Drop: Warlord Kalithresh (H) (Steamvault)",
+          "item_id": 29351
+        },
+        {
+          "rank": "Optional",
+          "name": "Wolfslayer Sniper Rifle",
+          "source": "Drop: The Big Bad Wolf — Karazhan",
+          "item_id": 28581
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Drape of the Dark Reavers",
+          "source": "Drop: Shade of Aran — Karazhan",
+          "item_id": 28672
+        },
+        {
+          "rank": "Optional",
+          "name": "Blood Knight War Cloak",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29382
+        }
+      ]
+    },
+    "phase-2": {
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Serpent Spine Longbow",
+          "source": "Drop: Lady Vashj — Serpentshrine Cavern",
+          "item_id": 30105
+        },
+        {
+          "rank": "Optional",
+          "name": "Arcanite Steam-Pistol",
+          "source": "Drop: Al'ar — Tempest Keep",
+          "item_id": 29949
+        },
+        {
+          "rank": "Optional",
+          "name": "Barrel-Blade Longrifle",
+          "source": "World Boss: Doomwalker",
+          "item_id": 30724
+        }
+      ],
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Rift Stalker Helm",
+          "source": "Drop: Lady Vashj — Serpentshrine Cavern (Tier Token)",
+          "item_id": 30141
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Cobra-Lash Boots",
+          "source": "Drop: Lady Vashj — Serpentshrine Cavern",
+          "item_id": 30104
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Netherbane",
+          "source": "Drop: Al'ar — Tempest Keep",
+          "item_id": 29924
+        },
+        {
+          "rank": "Optional",
+          "name": "Twinblade of the Phoenix",
+          "source": "Drop: Kael'thas Sunstrider — Tempest Keep",
+          "item_id": 29993
+        },
+        {
+          "rank": "Optional",
+          "name": "Stellaris",
+          "source": "Drop: Nethermancer Sepethrea (Mechanar)",
+          "item_id": 28263
+        },
+        {
+          "rank": "Optional",
+          "name": "Bloodmoon",
+          "source": "Profession: Crafted",
+          "item_id": 28436
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Gloves of Dexterous Manipulation",
+          "source": "Drop: Attumen the Huntsman — Karazhan",
+          "item_id": 28506
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Belt of Deep Shadow",
+          "source": "Profession: Crafted",
+          "item_id": 30040
+        },
+        {
+          "rank": "Optional",
+          "name": "Belt of One-Hundred Deaths",
+          "source": "Drop: Lady Vashj — Serpentshrine Cavern",
+          "item_id": 30106
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Dragonspine Trophy",
+          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
+          "item_id": 28830
+        },
+        {
+          "rank": "Optional",
+          "name": "Bloodlust Brooch",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29383
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Vambraces of Ending",
+          "source": "Drop: High Astromancer Solarian — Tempest Keep",
+          "item_id": 29966
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Thalassian Wildercloak",
+          "source": "Drop: Kael'thas Sunstrider — Tempest Keep",
+          "item_id": 29994
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Rift Stalker Hauberk",
+          "source": "Drop: Kael'thas Sunstrider — Tempest Keep (Tier Token)",
+          "item_id": 30139
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Rift Stalker Leggings",
+          "source": "Drop: Fathom-Lord Karathress — Serpentshrine Cavern (Tier Token)",
+          "item_id": 30142
+        },
+        {
+          "rank": "Optional",
+          "name": "Scaled Greaves of the Marksman",
+          "source": "World Boss: Doom Lord Kazzak",
+          "item_id": 30739
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Telonicus's Pendant of Mayhem",
+          "source": "Quest: Kael'thas and the Verdant Sphere",
+          "item_id": 30017
+        },
+        {
+          "rank": "Optional",
+          "name": "Necklace of the Deep",
+          "source": "Profession: Crafted",
+          "item_id": 32508
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Ring of the Recalcitrant",
+          "source": "Quest: The Fall of Magtheridon",
+          "item_id": 28791
+        },
+        {
+          "rank": "Optional",
+          "name": "Band of Eternity",
+          "source": "Quest: Champion's Pledge",
+          "item_id": 29298
+        },
+        {
+          "rank": "Optional",
+          "name": "Ring of Lethality",
+          "source": "Drop: Hydross the Unstable — Serpentshrine Cavern",
+          "item_id": 30052
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Claw of the Phoenix",
+          "source": "Drop: Al'ar — Tempest Keep",
+          "item_id": 29948
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Rift Stalker Mantle",
+          "source": "Drop: Void Reaver — Tempest Keep (Tier Token)",
+          "item_id": 30143
+        },
+        {
+          "rank": "Optional",
+          "name": "Beast Lord Mantle",
+          "source": "Drop: Warlord Kalithresh (Steamvault)",
+          "item_id": 27801
+        },
+        {
+          "rank": "Optional",
+          "name": "Shoulderpads of the Stranger",
+          "source": "Drop: Hydross the Unstable — Serpentshrine Cavern",
+          "item_id": 30055
+        }
+      ]
+    }
+  }
+}

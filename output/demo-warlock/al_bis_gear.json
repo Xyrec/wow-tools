@@ -1,0 +1,669 @@
+{
+  "current_phase": "phase-1",
+  "phases": {
+    "phase-0": {
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Gloves of Pandemonium",
+          "source": "Drop: Underbog Lurker (Underbog)",
+          "item_id": 31149
+        },
+        {
+          "rank": "Optional",
+          "name": "Mana-Etched Gloves",
+          "source": "Drop: Omor the Unscarred (H) (Hellfire Ramparts)",
+          "item_id": 27465
+        },
+        {
+          "rank": "Optional",
+          "name": "Gloves of Oblivion",
+          "source": "Drop: Warchief Kargath Bladefist (Shattered Halls)",
+          "item_id": 27537
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Frozen Shadoweave Shoulders",
+          "source": "Profession: Crafted",
+          "item_id": 21869
+        },
+        {
+          "rank": "Optional",
+          "name": "Plagueheart Shoulderpads",
+          "source": "Quest: Plagueheart Shoulderpads",
+          "item_id": 22507
+        },
+        {
+          "rank": "Optional",
+          "name": "Mana-Etched Spaulders",
+          "source": "Drop: Quagmirran (H) (Slave Pens)",
+          "item_id": 27796
+        },
+        {
+          "rank": "Optional",
+          "name": "Mantle of Three Terrors",
+          "source": "Drop: Chrono Lord Deja (Black Morass)",
+          "item_id": 27994
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Spellstrike Pants",
+          "source": "Profession: Crafted",
+          "item_id": 24262
+        },
+        {
+          "rank": "Optional",
+          "name": "Breeches of the Occultist",
+          "source": "Drop: Aeonus (H) (Black Morass)",
+          "item_id": 30531
+        },
+        {
+          "rank": "Optional",
+          "name": "Trousers of Oblivion",
+          "source": "Drop: Talon King Ikiss (Sethekk Halls)",
+          "item_id": 27948
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Ashyen's Gift",
+          "source": "Cenarion Expedition — Exalted",
+          "item_id": 29172
+        },
+        {
+          "rank": "Optional",
+          "name": "Sparking Arcanite Ring",
+          "source": "Drop: Epoch Hunter (H) (Old Hillsbrad Foothills)",
+          "item_id": 28227
+        },
+        {
+          "rank": "Optional",
+          "name": "Seal of the Exorcist",
+          "source": "Vendor: Spirit Sage Gartok",
+          "item_id": 28555
+        },
+        {
+          "rank": "Optional",
+          "name": "Seer's Signet",
+          "source": "The Scryers — Exalted",
+          "item_id": 29126
+        },
+        {
+          "rank": "Optional",
+          "name": "Ring of the Fallen God",
+          "source": "Quest: The Savior of Kalimdor",
+          "item_id": 21709
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Sethekk Oracle Cloak",
+          "source": "Drop: Talon King Ikiss (Sethekk Halls)",
+          "item_id": 27981
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Belt of Blasting",
+          "source": "Profession: Crafted",
+          "item_id": 30038
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of Ruination",
+          "source": "Profession: Crafted",
+          "item_id": 24256
+        },
+        {
+          "rank": "Optional",
+          "name": "Belt of Depravity",
+          "source": "Drop: Harbinger Skyriss (H) (Arcatraz)",
+          "item_id": 29241
+        },
+        {
+          "rank": "Optional",
+          "name": "A'dal's Gift",
+          "source": "Quest: How to Break Into the Arcatraz",
+          "item_id": 31461
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Frozen Shadoweave Boots",
+          "source": "Profession: Crafted",
+          "item_id": 21870
+        },
+        {
+          "rank": "Optional",
+          "name": "Extravagant Boots of Malice",
+          "source": "Drop: Tavarok (H) (Mana-Tombs)",
+          "item_id": 27821
+        },
+        {
+          "rank": "Optional",
+          "name": "Sigil-Laced Boots",
+          "source": "Drop: Harbinger Skyriss (Arcatraz)",
+          "item_id": 28406
+        },
+        {
+          "rank": "Optional",
+          "name": "Shattrath Jumpers",
+          "source": "Quest: Into the Heart of the Labyrinth",
+          "item_id": 28179
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Frozen Shadoweave Robe",
+          "source": "Profession: Crafted",
+          "item_id": 21871
+        },
+        {
+          "rank": "Optional",
+          "name": "Robe of the Crimson Order",
+          "source": "Drop: Tarren Mill Lookout (Old Hillsbrad Foothills)",
+          "item_id": 31297
+        },
+        {
+          "rank": "Optional",
+          "name": "Plagueheart Robe",
+          "source": "Quest: Plagueheart Robe",
+          "item_id": 22504
+        },
+        {
+          "rank": "Optional",
+          "name": "Auchenai Anchorite's Robe",
+          "source": "Quest: Everything Will Be Alright",
+          "item_id": 29341
+        },
+        {
+          "rank": "Optional",
+          "name": "Mana-Etched Vestments",
+          "source": "Drop: Epoch Hunter (H) (Old Hillsbrad Foothills)",
+          "item_id": 28191
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Blade of Wizardry",
+          "source": "Drop: Fel Overseer (Shadow Labyrinth)",
+          "item_id": 31336
+        },
+        {
+          "rank": "Optional",
+          "name": "Illidari-Bane Mageblade",
+          "source": "Quest: Quenching the Blade",
+          "item_id": 30787
+        },
+        {
+          "rank": "Optional",
+          "name": "Stormcaller",
+          "source": "Thrallmar — Exalted",
+          "item_id": 29155
+        },
+        {
+          "rank": "Optional",
+          "name": "Blade of the Archmage",
+          "source": "Honor Hold — Exalted",
+          "item_id": 29153
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Rockfury Bracers",
+          "source": "Quest: Stalwart's Battlegear",
+          "item_id": 21186
+        },
+        {
+          "rank": "Optional",
+          "name": "Bracers of Havok",
+          "source": "Profession: Crafted",
+          "item_id": 24250
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Icon of the Silver Crescent",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29370
+        },
+        {
+          "rank": "Optional",
+          "name": "Quagmirran's Eye",
+          "source": "Drop: Quagmirran (H) (Slave Pens)",
+          "item_id": 27683
+        },
+        {
+          "rank": "Optional",
+          "name": "Scryer's Bloodgem",
+          "source": "The Scryers — Revered",
+          "item_id": 29132
+        }
+      ],
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Destruction Holo-gogs",
+          "source": "Profession: Crafted",
+          "item_id": 32494
+        },
+        {
+          "rank": "Optional",
+          "name": "Spellstrike Hood",
+          "source": "Profession: Crafted",
+          "item_id": 24266
+        },
+        {
+          "rank": "Optional",
+          "name": "Evoker's Helmet of Second Sight",
+          "source": "Quest: Teron Gorefiend, I am...",
+          "item_id": 31104
+        },
+        {
+          "rank": "Optional",
+          "name": "Incanter's Cowl",
+          "source": "Drop: Pathaleon the Calculator (Mechanar)",
+          "item_id": 28278
+        },
+        {
+          "rank": "Optional",
+          "name": "Hood of Oblivion",
+          "source": "Drop: Harbinger Skyriss (Arcatraz)",
+          "item_id": 28415
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Brooch of Heightened Potential",
+          "source": "Drop: Blackheart the Inciter (Shadow Labyrinth)",
+          "item_id": 28134
+        },
+        {
+          "rank": "Optional",
+          "name": "Hydra-fang Necklace",
+          "source": "Drop: Ghaz'an (H) (Underbog)",
+          "item_id": 27758
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Nether Core's Control Rod",
+          "source": "Drop: Dalliah the Doomsayer (Arcatraz)",
+          "item_id": 28386
+        },
+        {
+          "rank": "Optional",
+          "name": "The Black Stalk",
+          "source": "Drop: The Black Stalker (H) (Underbog)",
+          "item_id": 29350
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Khadgar's Knapsack",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29273
+        },
+        {
+          "rank": "Optional",
+          "name": "Orb of the Soul-Eater",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29272
+        },
+        {
+          "rank": "Optional",
+          "name": "Lamp of Peaceful Radiance",
+          "source": "Drop: Harbinger Skyriss (Arcatraz)",
+          "item_id": 28412
+        }
+      ]
+    },
+    "phase-2": {
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Boots of the Shifting Nightmare",
+          "source": "Drop: Hydross the Unstable — Serpentshrine Cavern",
+          "item_id": 30050
+        },
+        {
+          "rank": "Optional",
+          "name": "Frozen Shadoweave Boots",
+          "source": "Profession: Crafted",
+          "item_id": 21870
+        },
+        {
+          "rank": "Optional",
+          "name": "Boots of Blasting",
+          "source": "Profession: Crafted",
+          "item_id": 30037
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Belt of Blasting",
+          "source": "Profession: Crafted",
+          "item_id": 30038
+        },
+        {
+          "rank": "Optional",
+          "name": "Cord of Screaming Terrors",
+          "source": "Drop: The Lurker Below — Serpentshrine Cavern",
+          "item_id": 30064
+        }
+      ],
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Destruction Holo-gogs",
+          "source": "Profession: Crafted",
+          "item_id": 32494
+        },
+        {
+          "rank": "Optional",
+          "name": "Hood of the Corruptor",
+          "source": "Drop: Lady Vashj — Serpentshrine Cavern (Tier Token)",
+          "item_id": 30212
+        },
+        {
+          "rank": "Optional",
+          "name": "Voidheart Crown",
+          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
+          "item_id": 28963
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Khadgar's Knapsack",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29273
+        },
+        {
+          "rank": "Optional",
+          "name": "Orb of the Soul-Eater",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29272
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Voidheart Mantle",
+          "source": "Drop: High King Maulgar — Gruul's Lair (Tier Token)",
+          "item_id": 28967
+        },
+        {
+          "rank": "Optional",
+          "name": "Mantle of the Corruptor",
+          "source": "Drop: Void Reaver — Tempest Keep (Tier Token)",
+          "item_id": 30215
+        },
+        {
+          "rank": "Optional",
+          "name": "Mantle of the Elven Kings",
+          "source": "Drop: Trash — Tempest Keep",
+          "item_id": 30024
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Void Star Talisman",
+          "source": "Drop: High Astromancer Solarian — Tempest Keep",
+          "item_id": 30449
+        },
+        {
+          "rank": "Optional",
+          "name": "Icon of the Silver Crescent",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29370
+        },
+        {
+          "rank": "Optional",
+          "name": "Quagmirran's Eye",
+          "source": "Drop: Quagmirran (H) (Slave Pens)",
+          "item_id": 27683
+        },
+        {
+          "rank": "Optional",
+          "name": "Eye of Magtheridon",
+          "source": "Drop: Magtheridon — Magtheridon's Lair",
+          "item_id": 28789
+        },
+        {
+          "rank": "Optional",
+          "name": "Scryer's Bloodgem",
+          "source": "The Scryers — Revered",
+          "item_id": 29132
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Royal Cloak of the Sunstriders",
+          "source": "Drop: Kael'thas Sunstrider — Tempest Keep",
+          "item_id": 29992
+        },
+        {
+          "rank": "Optional",
+          "name": "Ruby Drape of the Mysticant",
+          "source": "Drop: Prince Malchezaar — Karazhan",
+          "item_id": 28766
+        },
+        {
+          "rank": "Optional",
+          "name": "Ancient Spellcloak of the Highborne",
+          "source": "World Boss: Doom Lord Kazzak",
+          "item_id": 30735
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Eye of the Night",
+          "source": "Profession: Crafted",
+          "item_id": 24116
+        },
+        {
+          "rank": "Optional",
+          "name": "The Sun King's Talisman",
+          "source": "Quest: Kael'thas and the Verdant Sphere",
+          "item_id": 30015
+        },
+        {
+          "rank": "Optional",
+          "name": "Ritssyn's Lost Pendant",
+          "source": "Drop: Trash — Karazhan",
+          "item_id": 30666
+        },
+        {
+          "rank": "Optional",
+          "name": "Brooch of Unquenchable Fury",
+          "source": "Drop: Moroes — Karazhan",
+          "item_id": 28530
+        },
+        {
+          "rank": "Optional",
+          "name": "Pendant of the Lost Ages",
+          "source": "Drop: Morogrim Tidewalker — Serpentshrine Cavern",
+          "item_id": 30008
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Leggings of the Corruptor",
+          "source": "Drop: Fathom-Lord Karathress — Serpentshrine Cavern (Tier Token)",
+          "item_id": 30213
+        },
+        {
+          "rank": "Optional",
+          "name": "Leggings of the Seventh Circle",
+          "source": "World Boss: Doom Lord Kazzak",
+          "item_id": 30734
+        },
+        {
+          "rank": "Optional",
+          "name": "Spellstrike Pants",
+          "source": "Profession: Crafted",
+          "item_id": 24262
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Wand of the Forgotten Star",
+          "source": "Drop: High Astromancer Solarian — Tempest Keep",
+          "item_id": 29982
+        },
+        {
+          "rank": "Optional",
+          "name": "Eredar Wand of Obliteration",
+          "source": "Drop: Magtheridon — Magtheridon's Lair",
+          "item_id": 28783
+        },
+        {
+          "rank": "Optional",
+          "name": "Tirisfal Wand of Ascendancy",
+          "source": "Drop: Shade of Aran — Karazhan",
+          "item_id": 28673
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Anger-Spark Gloves",
+          "source": "World Boss: Doomwalker",
+          "item_id": 30725
+        },
+        {
+          "rank": "Optional",
+          "name": "Gauntlets of the Sun King",
+          "source": "Drop: Kael'thas Sunstrider — Tempest Keep",
+          "item_id": 29987
+        },
+        {
+          "rank": "Optional",
+          "name": "Gloves of the Corruptor",
+          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern (Tier Token)",
+          "item_id": 30211
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Vestments of the Sea-Witch",
+          "source": "Drop: Lady Vashj — Serpentshrine Cavern",
+          "item_id": 30107
+        },
+        {
+          "rank": "Optional",
+          "name": "Robe of the Corruptor",
+          "source": "Drop: Kael'thas Sunstrider — Tempest Keep (Tier Token)",
+          "item_id": 30214
+        },
+        {
+          "rank": "Optional",
+          "name": "Robe of Hateful Echoes",
+          "source": "Drop: Hydross the Unstable — Serpentshrine Cavern",
+          "item_id": 30056
+        },
+        {
+          "rank": "Optional",
+          "name": "Voidheart Robe",
+          "source": "Drop: Magtheridon — Magtheridon's Lair (Tier Token)",
+          "item_id": 28964
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Mindstorm Wristbands",
+          "source": "Drop: Al'ar — Tempest Keep",
+          "item_id": 29918
+        },
+        {
+          "rank": "Optional",
+          "name": "Bracers of Havok",
+          "source": "Profession: Crafted",
+          "item_id": 24250
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Ring of Endless Coils",
+          "source": "Drop: Lady Vashj — Serpentshrine Cavern",
+          "item_id": 30109
+        },
+        {
+          "rank": "Optional",
+          "name": "Band of Eternity",
+          "source": "Quest: Sage's Pledge",
+          "item_id": 29302
+        },
+        {
+          "rank": "Optional",
+          "name": "Band of Crimson Fury",
+          "source": "Quest: The Fall of Magtheridon",
+          "item_id": 28793
+        },
+        {
+          "rank": "Optional",
+          "name": "Ring of the Fallen God",
+          "source": "Quest: The Savior of Kalimdor",
+          "item_id": 21709
+        },
+        {
+          "rank": "Optional",
+          "name": "Band of Al'ar",
+          "source": "Drop: Al'ar — Tempest Keep",
+          "item_id": 29922
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Atiesh, Greatstaff of the Guardian",
+          "source": "Quest: Atiesh, Greatstaff of the Guardian",
+          "item_id": 22630
+        },
+        {
+          "rank": "Optional",
+          "name": "Merciless Gladiator's Spellblade",
+          "source": "Vendor: Krixel Pinchwhistle",
+          "item_id": 32053
+        },
+        {
+          "rank": "Optional",
+          "name": "Merciless Gladiator's War Staff",
+          "source": "Vendor: Krixel Pinchwhistle",
+          "item_id": 32055
+        },
+        {
+          "rank": "Optional",
+          "name": "Fang of the Leviathan",
+          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern",
+          "item_id": 30095
+        }
+      ]
+    }
+  }
+}
