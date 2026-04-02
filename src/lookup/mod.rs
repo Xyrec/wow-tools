@@ -1,9 +1,9 @@
 pub mod aura;
 pub mod display;
 
-use std::collections::HashMap;
 use anyhow::{Context, Result};
 use rusqlite::Connection;
+use std::collections::HashMap;
 
 use crate::common;
 
@@ -129,12 +129,7 @@ pub static RESISTANCE_FIELDS: &[(&str, &str)] = &[
     ("arcane_res", "Arcane Resistance"),
 ];
 
-pub static SOCKET_COLORS: &[(u32, &str)] = &[
-    (1, "Meta"),
-    (2, "Red"),
-    (4, "Yellow"),
-    (8, "Blue"),
-];
+pub static SOCKET_COLORS: &[(u32, &str)] = &[(1, "Meta"), (2, "Red"), (4, "Yellow"), (8, "Blue")];
 
 fn lookup_map<'a>(table: &'a [(u32, &'a str)], key: u32) -> &'a str {
     table
@@ -208,15 +203,9 @@ fn decode_spell_effects(
     spell_id: u32,
     aura_names: &HashMap<u32, String>,
 ) -> Result<Vec<(String, i32)>> {
-    let mut stmt = conn.prepare_cached(
-        "SELECT * FROM spell_template WHERE Id=?1",
-    )?;
+    let mut stmt = conn.prepare_cached("SELECT * FROM spell_template WHERE Id=?1")?;
 
-    let col_names: Vec<String> = stmt
-        .column_names()
-        .iter()
-        .map(|c| c.to_string())
-        .collect();
+    let col_names: Vec<String> = stmt.column_names().iter().map(|c| c.to_string()).collect();
 
     let row = stmt.query_row([spell_id], |row| {
         let mut values: HashMap<String, f64> = HashMap::new();
@@ -244,24 +233,19 @@ fn decode_spell_effects(
         let aura = *values
             .get(&format!("EffectApplyAuraName{i}"))
             .unwrap_or(&0.0) as u32;
-        let base = *values
-            .get(&format!("EffectBasePoints{i}"))
-            .unwrap_or(&0.0) as i32;
+        let base = *values.get(&format!("EffectBasePoints{i}")).unwrap_or(&0.0) as i32;
         if aura == 0 || base == 0 {
             continue;
         }
         let value = base + 1; // cmangos stores base-1
 
-        let name = aura_names
-            .get(&aura)
-            .cloned()
-            .unwrap_or_else(|| {
-                if spell_name.is_empty() {
-                    format!("Aura {aura}")
-                } else {
-                    spell_name.clone()
-                }
-            });
+        let name = aura_names.get(&aura).cloned().unwrap_or_else(|| {
+            if spell_name.is_empty() {
+                format!("Aura {aura}")
+            } else {
+                spell_name.clone()
+            }
+        });
 
         effects.push((name, value));
     }
@@ -273,16 +257,14 @@ fn decode_spell_effects(
 // ---------------------------------------------------------------------------
 
 /// Look up an item from the cmangos TBC database and return structured data.
-pub fn lookup_item(conn: &Connection, item_id: u32, aura_names: &HashMap<u32, String>) -> Result<Option<ItemData>> {
-    let mut stmt = conn.prepare_cached(
-        "SELECT * FROM item_template WHERE entry=?1",
-    )?;
+pub fn lookup_item(
+    conn: &Connection,
+    item_id: u32,
+    aura_names: &HashMap<u32, String>,
+) -> Result<Option<ItemData>> {
+    let mut stmt = conn.prepare_cached("SELECT * FROM item_template WHERE entry=?1")?;
 
-    let col_names: Vec<String> = stmt
-        .column_names()
-        .iter()
-        .map(|c| c.to_string())
-        .collect();
+    let col_names: Vec<String> = stmt.column_names().iter().map(|c| c.to_string()).collect();
 
     let row_result = stmt.query_row([item_id], |row| {
         let mut values: HashMap<String, f64> = HashMap::new();
@@ -374,7 +356,11 @@ pub fn lookup_item(conn: &Connection, item_id: u32, aura_names: &HashMap<u32, St
         slot: lookup_map(INVENTORY_TYPES, inventory_type).to_string(),
         item_type,
         armor: armor_val,
-        block_value: if block_val != 0 { Some(block_val) } else { None },
+        block_value: if block_val != 0 {
+            Some(block_val)
+        } else {
+            None
+        },
         weapon,
         sockets,
         socket_bonus_id,
@@ -415,8 +401,12 @@ pub fn lookup_item(conn: &Connection, item_id: u32, aura_names: &HashMap<u32, St
     let healing = result.stat_value("Mod Healing Done");
     let damage = result.stat_value("Mod Damage Done");
     if healing != 0 && damage != 0 && healing == damage {
-        result.stats.retain(|(n, _)| n != "Mod Healing Done" && n != "Mod Damage Done");
-        result.stats.push(("Spell Damage and Healing".to_string(), healing));
+        result
+            .stats
+            .retain(|(n, _)| n != "Mod Healing Done" && n != "Mod Damage Done");
+        result
+            .stats
+            .push(("Spell Damage and Healing".to_string(), healing));
     }
 
     Ok(Some(result))

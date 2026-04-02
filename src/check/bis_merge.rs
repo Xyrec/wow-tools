@@ -91,9 +91,7 @@ pub fn merge_bis_sources(
                     if iid != 0 {
                         if let Some(&idx) = seen.get(&iid) {
                             let existing_rank = &slot_entry[idx].rank;
-                            if rank_priority(&effective_rank)
-                                < rank_priority(existing_rank)
-                            {
+                            if rank_priority(&effective_rank) < rank_priority(existing_rank) {
                                 slot_entry[idx].rank = effective_rank;
                             }
                         } else {

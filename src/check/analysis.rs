@@ -4,8 +4,8 @@ use crate::common::types::BisItem;
 
 use super::classify::{classify_source, extract_dungeon, extract_faction};
 use super::{
-    EquippedSlotItem, ItemInfo, RepInfo, Upgrade,
-    extract_required_standing, format_rank_tag, sanitize_name,
+    EquippedSlotItem, ItemInfo, RepInfo, Upgrade, extract_required_standing, format_rank_tag,
+    sanitize_name,
 };
 
 // ---------------------------------------------------------------------------
@@ -192,12 +192,8 @@ pub fn categorize_equipped(
             let eq_info = ctx.item_db.get(&item_id);
             let eq_extras = super::format_item_extras(eq_info);
             let eq_armor = super::format_armor_warning(eq_info, ctx.preferred_armor);
-            let eq_display: EquippedDisplay = (
-                slot_label.clone(),
-                item_name.clone(),
-                eq_armor,
-                eq_extras,
-            );
+            let eq_display: EquippedDisplay =
+                (slot_label.clone(), item_name.clone(), eq_armor, eq_extras);
 
             // Classify into tier
             match eq_rank.as_deref() {
@@ -331,16 +327,11 @@ fn find_slot_upgrades(
                 if tags.contains(&"reputation".to_string())
                     && (fac == "Thrallmar" || fac == "Honor Hold")
                 {
-                    let player_hf_faction =
-                        ctx.dungeon_reputation.get("Hellfire Ramparts");
-                    if player_hf_faction == Some(&"Honor Hold".to_string())
-                        && fac == "Thrallmar"
-                    {
+                    let player_hf_faction = ctx.dungeon_reputation.get("Hellfire Ramparts");
+                    if player_hf_faction == Some(&"Honor Hold".to_string()) && fac == "Thrallmar" {
                         continue;
                     }
-                    if player_hf_faction == Some(&"Thrallmar".to_string())
-                        && fac == "Honor Hold"
-                    {
+                    if player_hf_faction == Some(&"Thrallmar".to_string()) && fac == "Honor Hold" {
                         continue;
                     }
                 }
@@ -361,8 +352,8 @@ fn find_slot_upgrades(
                 .unwrap_or(0);
             let next_phase_key = format!("phase-{}", cur_num + 1);
             let next_phase_data = ctx.bis_data.get(next_phase_key.as_str());
-            let next_phase_rank = next_phase_data
-                .and_then(|npd| lookup_item_rank(bis_id, bis_slot, npd));
+            let next_phase_rank =
+                next_phase_data.and_then(|npd| lookup_item_rank(bis_id, bis_slot, npd));
 
             let item_score = score_upgrade(
                 &up_rank,
@@ -439,8 +430,9 @@ pub fn build_dungeon_priority(
             dungeon.clone()
         };
 
-        let entry = dungeon_actions.entry(key.clone()).or_insert_with(|| {
-            DungeonEntry {
+        let entry = dungeon_actions
+            .entry(key.clone())
+            .or_insert_with(|| DungeonEntry {
                 key: key.clone(),
                 dungeon: dungeon.clone(),
                 heroic: is_heroic,
@@ -450,8 +442,7 @@ pub fn build_dungeon_priority(
                 rep_faction: dungeon_reputation.get(dungeon.as_str()).cloned(),
                 rep_vendor_items: Vec::new(),
                 badges: is_heroic,
-            }
-        });
+            });
 
         entry.drops.push((*up).clone());
         entry.score += up.score;
@@ -468,8 +459,7 @@ pub fn build_dungeon_priority(
         if let Some(ref fac) = faction {
             if let Some(items) = rep_needs.get(fac) {
                 let rep_score: f64 = items.iter().map(|vi| vi.score).sum();
-                let vendor_items: Vec<Upgrade> =
-                    items.iter().map(|vi| (*vi).clone()).collect();
+                let vendor_items: Vec<Upgrade> = items.iter().map(|vi| (*vi).clone()).collect();
                 let entry = dungeon_actions.get_mut(key).expect("invariant: key exists");
                 entry.rep_vendor_items = vendor_items;
                 entry.score += rep_score;
@@ -499,15 +489,19 @@ pub fn build_dungeon_priority(
         if dungeon_actions.contains_key(&heroic_key) {
             // Merge normal drops into existing heroic entry
             let normal_drops: Vec<Upgrade> = dungeon_actions[&key].drops.clone();
-            let heroic_entry = dungeon_actions.get_mut(&heroic_key).expect("invariant: key exists");
+            let heroic_entry = dungeon_actions
+                .get_mut(&heroic_key)
+                .expect("invariant: key exists");
             let heroic_drop_ids: HashSet<u32> =
                 heroic_entry.drops.iter().map(|d| d.item_id).collect();
             for drop in normal_drops {
                 if !heroic_drop_ids.contains(&drop.item_id) {
                     heroic_entry.score += drop.score;
-                    heroic_entry
-                        .score_breakdown
-                        .push(format!("{} drop: +{:.0}", format_rank_tag(&drop), drop.score));
+                    heroic_entry.score_breakdown.push(format!(
+                        "{} drop: +{:.0}",
+                        format_rank_tag(&drop),
+                        drop.score
+                    ));
                     heroic_entry.drops.push(drop);
                 }
             }

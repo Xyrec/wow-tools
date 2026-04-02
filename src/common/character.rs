@@ -28,12 +28,10 @@ pub fn load_character(
         let resolved = if p.exists() {
             p.to_path_buf()
         } else {
-            let alt = project_root.join("data").join(p.file_name().unwrap_or(p.as_ref()));
-            if alt.exists() {
-                alt
-            } else {
-                p.to_path_buf()
-            }
+            let alt = project_root
+                .join("data")
+                .join(p.file_name().unwrap_or(p.as_ref()));
+            if alt.exists() { alt } else { p.to_path_buf() }
         };
         let content = std::fs::read_to_string(&resolved)
             .with_context(|| format!("failed to read {}", resolved.display()))?;

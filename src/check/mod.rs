@@ -269,10 +269,7 @@ pub fn extract_required_standing(source: &str) -> Option<&'static str> {
     }
 }
 
-pub fn format_rep_progress(
-    rep_info: Option<&RepInfo>,
-    required_standing: Option<&str>,
-) -> String {
+pub fn format_rep_progress(rep_info: Option<&RepInfo>, required_standing: Option<&str>) -> String {
     let (Some(ri), Some(req)) = (rep_info, required_standing) else {
         return String::new();
     };
@@ -301,7 +298,10 @@ pub struct RepInfo {
 // Dungeon reputation mapping
 // ---------------------------------------------------------------------------
 
-pub fn build_dungeon_reputation(rep_lookup: &HashMap<String, RepInfo>, race: &str) -> HashMap<String, String> {
+pub fn build_dungeon_reputation(
+    rep_lookup: &HashMap<String, RepInfo>,
+    race: &str,
+) -> HashMap<String, String> {
     let mut result: HashMap<String, String> = HashMap::new();
 
     // Neutral dungeons
@@ -429,9 +429,8 @@ pub fn run(spec_raw: &str, file: Option<&str>, show_crafted: bool) -> Result<()>
         .collect();
 
     // Load character
-    let character =
-        common::character::load_character(&char_path, &root, Some(&name_resolver))
-            .context("failed to load character")?;
+    let character = common::character::load_character(&char_path, &root, Some(&name_resolver))
+        .context("failed to load character")?;
 
     // Build rep lookup
     let mut rep_lookup: HashMap<String, RepInfo> = HashMap::new();
@@ -461,22 +460,17 @@ pub fn run(spec_raw: &str, file: Option<&str>, show_crafted: bool) -> Result<()>
     let bis_data = merge_bis_sources(spec, &root)?;
 
     // Determine phases
-    let current_phase = common::load_current_phase(&root)?
-        .unwrap_or_else(|| "phase-0".to_string());
+    let current_phase = common::load_current_phase(&root)?.unwrap_or_else(|| "phase-0".to_string());
     let phases_to_check: Vec<String> = if current_phase != "phase-0" {
         vec!["phase-0".to_string(), current_phase.clone()]
     } else {
         vec!["phase-0".to_string()]
     };
 
-    let current_phase_data: HashMap<String, Vec<BisItem>> = bis_data
-        .get(&current_phase)
-        .cloned()
-        .unwrap_or_default();
-    let phase0_data: HashMap<String, Vec<BisItem>> = bis_data
-        .get("phase-0")
-        .cloned()
-        .unwrap_or_default();
+    let current_phase_data: HashMap<String, Vec<BisItem>> =
+        bis_data.get(&current_phase).cloned().unwrap_or_default();
+    let phase0_data: HashMap<String, Vec<BisItem>> =
+        bis_data.get("phase-0").cloned().unwrap_or_default();
 
     // Build equipped lookup by bis_slot
     let mut equipped_by_slot: Vec<(String, Vec<EquippedSlotItem>)> = Vec::new();
@@ -498,11 +492,8 @@ pub fn run(spec_raw: &str, file: Option<&str>, show_crafted: bool) -> Result<()>
         }
     }
 
-    let all_equipped_ids: HashSet<u32> = character
-        .equipped_items
-        .iter()
-        .map(|i| i.item_id)
-        .collect();
+    let all_equipped_ids: HashSet<u32> =
+        character.equipped_items.iter().map(|i| i.item_id).collect();
 
     // Categorize equipped items and find upgrades
     let ctx = AnalysisContext {
@@ -575,8 +566,7 @@ pub fn run(spec_raw: &str, file: Option<&str>, show_crafted: bool) -> Result<()>
         &rep_lookup,
         badge_bonus,
     );
-    let sorted_rep =
-        analysis::build_rep_actions(&rep_needs, &rep_lookup, &dungeon_reputation);
+    let sorted_rep = analysis::build_rep_actions(&rep_needs, &rep_lookup, &dungeon_reputation);
 
     // --- Output ---
     let cp = pretty_phase(&current_phase);
@@ -587,9 +577,7 @@ pub fn run(spec_raw: &str, file: Option<&str>, show_crafted: bool) -> Result<()>
         character.class,
         phase_list.join(", ")
     );
-    println!(
-        "   Current phase: {cp} (authoritative) | Phase 0 (fallback)\n"
-    );
+    println!("   Current phase: {cp} (authoritative) | Phase 0 (fallback)\n");
 
     print_equipped_section(
         &format!("{} BIS (you're set)", cp.to_uppercase()),

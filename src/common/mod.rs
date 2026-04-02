@@ -112,7 +112,10 @@ mod tests {
         assert_eq!(resolve_spec("resto").unwrap(), "resto-shaman");
         assert_eq!(resolve_spec("Resto").unwrap(), "resto-shaman");
         assert_eq!(resolve_spec("ele").unwrap(), "elemental-shaman");
-        assert_eq!(resolve_spec("elemental-shaman").unwrap(), "elemental-shaman");
+        assert_eq!(
+            resolve_spec("elemental-shaman").unwrap(),
+            "elemental-shaman"
+        );
         assert_eq!(resolve_spec("prot").unwrap(), "prot-paladin");
         assert!(resolve_spec("warrior").is_err());
     }

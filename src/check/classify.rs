@@ -124,10 +124,7 @@ pub fn classify_source(source: &str, dungeon_reputation: &HashMap<String, String
     }
     for &(kw, prof_name) in PROFESSION_KEYWORDS {
         if s.contains(kw) {
-            return vec![
-                "profession".to_string(),
-                format!("profession:{prof_name}"),
-            ];
+            return vec!["profession".to_string(), format!("profession:{prof_name}")];
         }
     }
 
@@ -195,7 +192,9 @@ pub fn classify_source(source: &str, dungeon_reputation: &HashMap<String, String
     }
     if s.contains("badge of justice")
         || s.contains("badges of justice")
-        || s.split('(').last().map_or(false, |part| part.contains("badges"))
+        || s.split('(')
+            .last()
+            .map_or(false, |part| part.contains("badges"))
     {
         tags.push("badges".to_string());
     }
@@ -230,7 +229,10 @@ pub fn extract_faction(source: &str) -> Option<String> {
 // extract_dungeon
 // ---------------------------------------------------------------------------
 
-pub fn extract_dungeon(source: &str, dungeon_reputation: &HashMap<String, String>) -> Option<String> {
+pub fn extract_dungeon(
+    source: &str,
+    dungeon_reputation: &HashMap<String, String>,
+) -> Option<String> {
     // Build a lookup that also matches without "The " prefix and via aliases
     let mut name_map: HashMap<String, String> = HashMap::new();
     for key in dungeon_reputation.keys() {

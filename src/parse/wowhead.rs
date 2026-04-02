@@ -16,13 +16,7 @@ fn normalize_slot(h3_id: &str) -> Option<String> {
     if skip.contains(&h3_id) {
         return None;
     }
-    let skip_prefixes = [
-        "best-in-slot",
-        "other-",
-        "crit-",
-        "stamina-",
-        "threat-",
-    ];
+    let skip_prefixes = ["best-in-slot", "other-", "crit-", "stamina-", "threat-"];
     if skip_prefixes.iter().any(|p| h3_id.starts_with(p)) {
         return None;
     }
@@ -152,7 +146,12 @@ fn parse_phase_file(filepath: &Path) -> Result<IndexMap<String, Vec<ParsedItem>>
 
             let item_name = cells[1].text().collect::<String>().trim().to_string();
             let source = if cells.len() > 2 {
-                cells[2].text().collect::<String>().split_whitespace().collect::<Vec<_>>().join(" ")
+                cells[2]
+                    .text()
+                    .collect::<String>()
+                    .split_whitespace()
+                    .collect::<Vec<_>>()
+                    .join(" ")
             } else {
                 String::new()
             };

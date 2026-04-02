@@ -3,8 +3,8 @@ use std::collections::{HashMap, HashSet};
 use super::analysis::{DungeonEntry, EquippedDisplay, RepAction};
 use super::soft_reserve::{match_raid_tag, raid_tag_pretty_name};
 use super::{
-    Upgrade, comma_format, format_armor_warning, format_item_extras, format_rank_tag,
-    format_rep_progress, RepInfo,
+    RepInfo, Upgrade, comma_format, format_armor_warning, format_item_extras, format_rank_tag,
+    format_rep_progress,
 };
 
 // ---------------------------------------------------------------------------
@@ -65,10 +65,7 @@ pub fn print_dungeon_priority(
             entry.key,
             entry.score
         );
-        println!(
-            "       Score: {}",
-            entry.score_breakdown.join(" | ")
-        );
+        println!("       Score: {}", entry.score_breakdown.join(" | "));
 
         for drop in &entry.drops {
             let rank_tag = format_rank_tag(drop);
@@ -125,10 +122,7 @@ pub fn print_rep_goals(
             let rank_tag = format_rank_tag(item);
             let armor = format_armor_warning(item.item_info.as_ref(), preferred_armor);
             let extra = format_item_extras(item.item_info.as_ref());
-            let rep_prog = format_rep_progress(
-                Some(&entry.rep_info),
-                item.required_standing,
-            );
+            let rep_prog = format_rep_progress(Some(&entry.rep_info), item.required_standing);
             println!(
                 "    [{:<16}]  {}{armor}{extra}  ({} -- replaces {}){rep_prog}",
                 rank_tag, item.name, item.slot, item.current_item
@@ -166,8 +160,7 @@ pub fn print_slot_breakdown(all_upgrades: &[&Upgrade], preferred_armor: &str) {
         let first = items_in_slot[0];
         let current = &first.current_item;
         let current_rank = &first.current_rank;
-        let cur_armor =
-            format_armor_warning(first.current_item_info.as_ref(), preferred_armor);
+        let cur_armor = format_armor_warning(first.current_item_info.as_ref(), preferred_armor);
         let cur_extra = format_item_extras(first.current_item_info.as_ref());
         let rank_note = if current_rank != "Not on list" {
             format!(" [{current_rank}]")
@@ -192,7 +185,13 @@ pub fn print_slot_breakdown(all_upgrades: &[&Upgrade], preferred_armor: &str) {
             if let Some(ref ri) = up.rep_info {
                 let rep_prog = format_rep_progress(Some(ri), up.required_standing);
                 if !rep_prog.is_empty() {
-                    line += &format!("  ({})", rep_prog.trim_start_matches(" -").trim_start_matches("- ").trim());
+                    line += &format!(
+                        "  ({})",
+                        rep_prog
+                            .trim_start_matches(" -")
+                            .trim_start_matches("- ")
+                            .trim()
+                    );
                 } else {
                     line += &format!(
                         "  (You: {} -- {} rep to next tier)",
@@ -240,7 +239,9 @@ pub fn print_raid_upgrades(
     // Deduplicate within each group
     let mut seen_ids: HashSet<u32> = HashSet::new();
     for group_key in &group_order {
-        let items = group_items.get_mut(group_key).expect("invariant: key exists in map");
+        let items = group_items
+            .get_mut(group_key)
+            .expect("invariant: key exists in map");
         let mut deduped: Vec<&Upgrade> = Vec::new();
         for up in items.iter() {
             if seen_ids.insert(up.item_id) {
@@ -259,7 +260,9 @@ pub fn print_raid_upgrades(
 
     println!("=== RAID UPGRADES ===");
     for group_key in &group_order {
-        let items = group_items.get_mut(group_key).expect("invariant: key exists");
+        let items = group_items
+            .get_mut(group_key)
+            .expect("invariant: key exists");
         if items.is_empty() {
             continue;
         }
@@ -285,8 +288,7 @@ pub fn print_raid_upgrades(
 
         // Build pretty header from group key
         let tags: Vec<&str> = group_key.split('+').map(|t| t.trim()).collect();
-        let pretty_names: Vec<&str> =
-            tags.iter().map(|t| raid_tag_pretty_name(t)).collect();
+        let pretty_names: Vec<&str> = tags.iter().map(|t| raid_tag_pretty_name(t)).collect();
         let header = pretty_names.join(" + ");
 
         // SR info from the first tag

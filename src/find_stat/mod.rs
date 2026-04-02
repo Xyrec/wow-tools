@@ -71,9 +71,23 @@ static SLOT_ALIASES: &[(&str, &[&str])] = &[
 ];
 
 static SLOT_ORDER: &[&str] = &[
-    "Head", "Neck", "Shoulder", "Back", "Chest", "Wrist", "Hands", "Waist",
-    "Legs", "Feet", "Finger", "Trinket", "Main Hand", "One-Hand", "Shield",
-    "Held In Off-Hand", "Relic",
+    "Head",
+    "Neck",
+    "Shoulder",
+    "Back",
+    "Chest",
+    "Wrist",
+    "Hands",
+    "Waist",
+    "Legs",
+    "Feet",
+    "Finger",
+    "Trinket",
+    "Main Hand",
+    "One-Hand",
+    "Shield",
+    "Held In Off-Hand",
+    "Relic",
 ];
 
 static CLASS_BITMASKS: &[(&str, u32)] = &[
@@ -149,8 +163,12 @@ fn get_talent_defense_skill(char_class: &str, talents: &str) -> i32 {
 fn get_wse_bonus_stat(raw_data: &serde_json::Value, wowsims_stat: &str) -> f64 {
     let root = common::project_root().unwrap_or_default();
     let gems_db = load_json_db(&root.join("sources").join("wowsims-tbc").join("gems.json"));
-    let enchants_db =
-        load_json_db(&root.join("sources").join("wowsims-tbc").join("enchants.json"));
+    let enchants_db = load_json_db(
+        &root
+            .join("sources")
+            .join("wowsims-tbc")
+            .join("enchants.json"),
+    );
 
     let mut total = 0.0;
     let items = raw_data
@@ -335,7 +353,11 @@ fn find_stat_upgrades(
         let mut empty_sockets: Vec<(String, Vec<String>)> = Vec::new();
         let mut total_empty = 0u32;
         if let Some(ref wse) = char.wse_raw {
-            if let Some(items) = wse.get("gear").and_then(|g| g.get("items")).and_then(|i| i.as_array()) {
+            if let Some(items) = wse
+                .get("gear")
+                .and_then(|g| g.get("items"))
+                .and_then(|i| i.as_array())
+            {
                 for (idx, wse_item) in items.iter().enumerate() {
                     if wse_item.is_null() || idx >= common::WSE_SLOT_ORDER.len() {
                         continue;
@@ -362,11 +384,7 @@ fn find_stat_upgrades(
                     let gems_equipped: Vec<u32> = wse_item
                         .get("gems")
                         .and_then(|g| g.as_array())
-                        .map(|arr| {
-                            arr.iter()
-                                .map(|v| v.as_u64().unwrap_or(0) as u32)
-                                .collect()
-                        })
+                        .map(|arr| arr.iter().map(|v| v.as_u64().unwrap_or(0) as u32).collect())
                         .unwrap_or_default();
                     let mut slot_empties = Vec::new();
                     for (s_idx, color) in socket_colors.iter().enumerate() {
@@ -386,9 +404,7 @@ fn find_stat_upgrades(
         if remaining_pct <= 0.0 {
             println!("  CRIT CAPPED!");
             if total_empty > 0 {
-                println!(
-                    "\n  ({total_empty} empty gem sockets — cap reached without them)"
-                );
+                println!("\n  ({total_empty} empty gem sockets — cap reached without them)");
             }
             println!();
             return Ok(());
@@ -400,8 +416,7 @@ fn find_stat_upgrades(
             }
             let def_rating_needed =
                 (remaining_pct * DEFENSE_SKILL_PER_PCT * DEFENSE_RATING_PER_SKILL).ceil() as i32;
-            let resil_rating_needed =
-                (remaining_pct * RESILIENCE_RATING_PER_PCT).ceil() as i32;
+            let resil_rating_needed = (remaining_pct * RESILIENCE_RATING_PER_PCT).ceil() as i32;
             println!(
                 "  Need: {def_rating_needed} more defense rating OR {resil_rating_needed} more resilience rating"
             );
@@ -414,7 +429,8 @@ fn find_stat_upgrades(
 
                 // Gem suggestions
                 let root = common::project_root()?;
-                let gems_db = load_json_db(&root.join("sources").join("wowsims-tbc").join("gems.json"));
+                let gems_db =
+                    load_json_db(&root.join("sources").join("wowsims-tbc").join("gems.json"));
                 let mut def_gems: Vec<(String, String, f64, String)> = gems_db
                     .values()
                     .filter_map(|g| {
@@ -424,9 +440,15 @@ fn find_stat_upgrades(
                         }
                         Some((
                             g.get("name")?.as_str()?.to_string(),
-                            g.get("color").and_then(|c| c.as_str()).unwrap_or("").to_string(),
+                            g.get("color")
+                                .and_then(|c| c.as_str())
+                                .unwrap_or("")
+                                .to_string(),
                             def_val,
-                            g.get("quality").and_then(|q| q.as_str()).unwrap_or("").to_string(),
+                            g.get("quality")
+                                .and_then(|q| q.as_str())
+                                .unwrap_or("")
+                                .to_string(),
                         ))
                     })
                     .collect();
@@ -492,7 +514,20 @@ fn find_stat_upgrades(
     );
 
     let mut stmt = conn.prepare(&sql)?;
-    let rows: Vec<(u32, String, u32, u32, u32, u32, u32, u32, u32, i64, u32, u32)> = stmt
+    let rows: Vec<(
+        u32,
+        String,
+        u32,
+        u32,
+        u32,
+        u32,
+        u32,
+        u32,
+        u32,
+        i64,
+        u32,
+        u32,
+    )> = stmt
         .query_map([], |row| {
             Ok((
                 row.get(0)?,
@@ -514,7 +549,21 @@ fn find_stat_upgrades(
 
     // Group by slot
     let mut candidates_by_slot: HashMap<String, Vec<CandidateItem>> = HashMap::new();
-    for (item_id, name, quality, ilvl, _req_level, inv_type, bonding, rep_faction, rep_rank, _allow_class, item_class, item_subclass) in rows {
+    for (
+        item_id,
+        name,
+        quality,
+        ilvl,
+        _req_level,
+        inv_type,
+        bonding,
+        rep_faction,
+        rep_rank,
+        _allow_class,
+        item_class,
+        item_subclass,
+    ) in rows
+    {
         let Some(slot_name) = equip_slot_name(inv_type) else {
             continue;
         };
@@ -598,9 +647,7 @@ fn find_stat_upgrades(
         sorted_candidates.sort_by(|a, b| b.stat_value.cmp(&a.stat_value));
 
         for (eq_slot, current_name, current_val) in &equipped_items {
-            println!(
-                "=== {eq_slot} (current: {current_name}, {stat_name}+{current_val}) ==="
-            );
+            println!("=== {eq_slot} (current: {current_name}, {stat_name}+{current_val}) ===");
 
             let mut seen = std::collections::HashSet::new();
             let mut shown = 0;
@@ -621,8 +668,13 @@ fn find_stat_upgrades(
                     format!("{diff}")
                 };
                 let qual = quality_name(c.quality);
-                let source_str =
-                    format_source(conn, &c.classification, c.rep_faction, c.rep_rank, &c.sources);
+                let source_str = format_source(
+                    conn,
+                    &c.classification,
+                    c.rep_faction,
+                    c.rep_rank,
+                    &c.sources,
+                );
                 let name_with_tag = format!("{}{}", c.name, c.armor_tag);
                 println!(
                     "  {:<45} ilvl{:3} {:6} {stat_name}+{:<3} ({:>4})  {}",
@@ -659,10 +711,7 @@ pub fn run(file: &str, stat: &str, target: f64, source: &str) -> Result<()> {
     let root = common::project_root()?;
     let db = common::db_path(&root);
     if !db.exists() {
-        anyhow::bail!(
-            "TBC database not found at {}",
-            db.display()
-        );
+        anyhow::bail!("TBC database not found at {}", db.display());
     }
     let conn = Connection::open(&db)
         .with_context(|| format!("failed to open database {}", db.display()))?;
@@ -691,16 +740,19 @@ pub fn run(file: &str, stat: &str, target: f64, source: &str) -> Result<()> {
                 .collect()
         });
 
-    let char = common::character::load_character(
-        file,
-        &root,
-        name_resolver.as_ref(),
-    )?;
+    let char = common::character::load_character(file, &root, name_resolver.as_ref())?;
 
     println!("Finding {stat} rating upgrades for {}", char.name);
     println!();
 
-    find_stat_upgrades(&conn, &char, stat_type_id, stat, target, source_filter.as_deref())?;
+    find_stat_upgrades(
+        &conn,
+        &char,
+        stat_type_id,
+        stat,
+        target,
+        source_filter.as_deref(),
+    )?;
 
     Ok(())
 }

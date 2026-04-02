@@ -9,10 +9,8 @@ pub fn load_aura_names(path: &Path) -> Result<HashMap<u32, String>> {
     let text = std::fs::read_to_string(path)
         .with_context(|| format!("failed to read {}", path.display()))?;
 
-    let enum_re =
-        Regex::new(r"enum AuraType\s*\{([\s\S]*?)\}").expect("invariant: valid regex");
-    let entry_re =
-        Regex::new(r"(SPELL_AURA_\w+)\s*=\s*(\d+)").expect("invariant: valid regex");
+    let enum_re = Regex::new(r"enum AuraType\s*\{([\s\S]*?)\}").expect("invariant: valid regex");
+    let entry_re = Regex::new(r"(SPELL_AURA_\w+)\s*=\s*(\d+)").expect("invariant: valid regex");
 
     let mut result = HashMap::new();
     if let Some(m) = enum_re.find(&text) {

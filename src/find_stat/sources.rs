@@ -113,16 +113,16 @@ pub fn get_item_sources(conn: &Connection, item_id: u32) -> Vec<ItemSource> {
 
     // Direct creature loot
     {
-        let mut stmt = conn.prepare(
-            "SELECT clt.entry, ct.Name, clt.ChanceOrQuestChance
+        let mut stmt = conn
+            .prepare(
+                "SELECT clt.entry, ct.Name, clt.ChanceOrQuestChance
              FROM creature_loot_template clt
              JOIN creature_template ct ON ct.entry = clt.entry
              WHERE clt.item = ? ORDER BY clt.ChanceOrQuestChance DESC",
-        ).unwrap();
+            )
+            .unwrap();
         let rows: Vec<(u32, String, f64)> = stmt
-            .query_map([item_id], |row| {
-                Ok((row.get(0)?, row.get(1)?, row.get(2)?))
-            })
+            .query_map([item_id], |row| Ok((row.get(0)?, row.get(1)?, row.get(2)?)))
             .unwrap()
             .filter_map(|r| r.ok())
             .collect();
@@ -149,12 +149,14 @@ pub fn get_item_sources(conn: &Connection, item_id: u32) -> Vec<ItemSource> {
             .filter_map(|r| r.ok())
             .collect();
         for ref_id in ref_ids {
-            let mut stmt2 = conn.prepare(
-                "SELECT clt.entry, ct.Name, clt.ChanceOrQuestChance
+            let mut stmt2 = conn
+                .prepare(
+                    "SELECT clt.entry, ct.Name, clt.ChanceOrQuestChance
                  FROM creature_loot_template clt
                  JOIN creature_template ct ON ct.entry = clt.entry
                  WHERE clt.mincountOrRef = ? ORDER BY clt.ChanceOrQuestChance DESC",
-            ).unwrap();
+                )
+                .unwrap();
             let rows: Vec<(u32, String, f64)> = stmt2
                 .query_map([-(ref_id as i64)], |row| {
                     Ok((row.get(0)?, row.get(1)?, row.get(2)?))
@@ -174,20 +176,20 @@ pub fn get_item_sources(conn: &Connection, item_id: u32) -> Vec<ItemSource> {
 
     // Vendor tables
     {
-        let mut stmt = conn.prepare(
-            "SELECT ct.Name FROM npc_vendor nv
+        let mut stmt = conn
+            .prepare(
+                "SELECT ct.Name FROM npc_vendor nv
              JOIN creature_template ct ON ct.entry = nv.entry
              WHERE nv.item = ?",
-        ).unwrap();
+            )
+            .unwrap();
         let rows: Vec<String> = stmt
             .query_map([item_id], |row| row.get(0))
             .unwrap()
             .filter_map(|r| r.ok())
             .collect();
         for name in rows {
-            sources.push(ItemSource::Vendor(VendorSource {
-                vendor_name: name,
-            }));
+            sources.push(ItemSource::Vendor(VendorSource { vendor_name: name }));
         }
     }
 
@@ -211,9 +213,7 @@ pub fn get_item_sources(conn: &Connection, item_id: u32) -> Vec<ItemSource> {
                 .filter_map(|r| r.ok())
                 .collect();
             for name in names {
-                sources.push(ItemSource::Vendor(VendorSource {
-                    vendor_name: name,
-                }));
+                sources.push(ItemSource::Vendor(VendorSource { vendor_name: name }));
             }
         }
     }
@@ -258,7 +258,13 @@ pub fn classify_source(bonding: u32, rep_faction: u32, sources: &[ItemSource]) -
     "other"
 }
 
-pub fn format_source(conn: &Connection, classification: &str, rep_faction: u32, rep_rank: u32, sources: &[ItemSource]) -> String {
+pub fn format_source(
+    conn: &Connection,
+    classification: &str,
+    rep_faction: u32,
+    rep_rank: u32,
+    sources: &[ItemSource],
+) -> String {
     let mut parts: Vec<String> = Vec::new();
 
     if classification == "boe" {

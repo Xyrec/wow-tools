@@ -67,10 +67,18 @@ fn main() -> Result<()> {
     let cli = Cli::parse();
 
     match cli.command {
-        Commands::Check { spec, file, show_crafted } => {
+        Commands::Check {
+            spec,
+            file,
+            show_crafted,
+        } => {
             check::run(&spec, file.as_deref(), show_crafted)?;
         }
-        Commands::Parse { spec, parser, output } => {
+        Commands::Parse {
+            spec,
+            parser,
+            output,
+        } => {
             let resolved = common::resolve_spec(&spec)?;
             let out = output.as_deref();
             match parser.as_str() {
@@ -84,7 +92,9 @@ fn main() -> Result<()> {
                     parse::icy_veins::run(resolved, None)?;
                     parse::atlasloot::run(resolved, None)?;
                 }
-                other => anyhow::bail!("Unknown parser '{other}'. Use: wowhead, wowtbc, icy-veins, atlasloot, all."),
+                other => anyhow::bail!(
+                    "Unknown parser '{other}'. Use: wowhead, wowtbc, icy-veins, atlasloot, all."
+                ),
             }
         }
         Commands::Lookup { item_ids, compare } => {

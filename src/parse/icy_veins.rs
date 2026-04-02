@@ -51,9 +51,9 @@ fn parse_phase_file(filepath: &Path) -> Result<IndexMap<String, Vec<ParsedItem>>
             if let Some(cap) = item_re.captures(wowhead) {
                 let id: u32 = cap[1].parse().unwrap_or(0);
                 if id != 0 {
-                    item_names.entry(id).or_insert_with(|| {
-                        a.text().collect::<String>().trim().to_string()
-                    });
+                    item_names
+                        .entry(id)
+                        .or_insert_with(|| a.text().collect::<String>().trim().to_string());
                 }
             }
         }
@@ -127,12 +127,12 @@ fn parse_phase_file(filepath: &Path) -> Result<IndexMap<String, Vec<ParsedItem>>
 
                     // First cell: slot name
                     if let Some(first_cell) = cells.first() {
-                        let slot_text =
-                            if let Some(strong) = first_cell.select(&strong_sel).next() {
-                                strong.text().collect::<String>().trim().to_lowercase()
-                            } else {
-                                first_cell.text().collect::<String>().trim().to_lowercase()
-                            };
+                        let slot_text = if let Some(strong) = first_cell.select(&strong_sel).next()
+                        {
+                            strong.text().collect::<String>().trim().to_lowercase()
+                        } else {
+                            first_cell.text().collect::<String>().trim().to_lowercase()
+                        };
 
                         if let Some(slot) = map_slot(&slot_text) {
                             current_slot = Some(slot);
@@ -154,12 +154,9 @@ fn parse_phase_file(filepath: &Path) -> Result<IndexMap<String, Vec<ParsedItem>>
                         for li in lis {
                             let mut li_item_id: Option<u32> = None;
                             for a in li.select(&a_sel) {
-                                let wowhead =
-                                    a.value().attr("data-wowhead").unwrap_or("");
+                                let wowhead = a.value().attr("data-wowhead").unwrap_or("");
                                 let css = a.value().attr("class").unwrap_or("");
-                                if wowhead.contains("item=")
-                                    && !skip_classes.contains(&css)
-                                {
+                                if wowhead.contains("item=") && !skip_classes.contains(&css) {
                                     if let Some(cap) = item_re.captures(wowhead) {
                                         li_item_id = cap[1].parse().ok();
                                         break;
@@ -174,17 +171,17 @@ fn parse_phase_file(filepath: &Path) -> Result<IndexMap<String, Vec<ParsedItem>>
                                     .split_whitespace()
                                     .collect::<Vec<_>>()
                                     .join(" ");
-                                let name =
-                                    item_names.get(&id).cloned().unwrap_or_default();
+                                let name = item_names.get(&id).cloned().unwrap_or_default();
 
-                                results.entry(slot.to_string()).or_default().push(
-                                    ParsedItem {
+                                results
+                                    .entry(slot.to_string())
+                                    .or_default()
+                                    .push(ParsedItem {
                                         rank: current_rank.to_string(),
                                         name,
                                         source,
                                         item_id: Some(id),
-                                    },
-                                );
+                                    });
                             }
                         }
                     } else {
@@ -192,8 +189,7 @@ fn parse_phase_file(filepath: &Path) -> Result<IndexMap<String, Vec<ParsedItem>>
                         for a in item_cell.select(&a_sel) {
                             let wowhead = a.value().attr("data-wowhead").unwrap_or("");
                             let css = a.value().attr("class").unwrap_or("");
-                            if wowhead.contains("item=") && !skip_classes.contains(&css)
-                            {
+                            if wowhead.contains("item=") && !skip_classes.contains(&css) {
                                 if let Some(cap) = item_re.captures(wowhead) {
                                     let id: u32 = cap[1].parse().unwrap_or(0);
                                     if id != 0 {
@@ -207,20 +203,16 @@ fn parse_phase_file(filepath: &Path) -> Result<IndexMap<String, Vec<ParsedItem>>
                                         } else {
                                             String::new()
                                         };
-                                        let name = item_names
-                                            .get(&id)
-                                            .cloned()
-                                            .unwrap_or_default();
+                                        let name = item_names.get(&id).cloned().unwrap_or_default();
 
-                                        results
-                                            .entry(slot.to_string())
-                                            .or_default()
-                                            .push(ParsedItem {
+                                        results.entry(slot.to_string()).or_default().push(
+                                            ParsedItem {
                                                 rank: current_rank.to_string(),
                                                 name,
                                                 source,
                                                 item_id: Some(id),
-                                            });
+                                            },
+                                        );
                                     }
                                 }
                             }

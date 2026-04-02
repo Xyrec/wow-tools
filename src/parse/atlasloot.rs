@@ -207,8 +207,7 @@ fn build_dungeon_item_lookup(root: &Path) -> HashMap<u32, String> {
         return HashMap::new();
     };
 
-    let instance_re =
-        Regex::new(r#"data\["([^"]+)"\]\s*=\s*\{"#).expect("invariant: valid regex");
+    let instance_re = Regex::new(r#"data\["([^"]+)"\]\s*=\s*\{"#).expect("invariant: valid regex");
     let boss_re = Regex::new(
         r#"name\s*=\s*(?:AL\["([^"]+)"\]|format\([^,]+,\s*AL\["([^"]+)"\]\)|"([^"]+)")"#,
     )
@@ -236,15 +235,11 @@ fn build_dungeon_item_lookup(root: &Path) -> HashMap<u32, String> {
         let map_id = iid_re
             .captures(inst_block)
             .and_then(|c| c[1].parse::<u32>().ok());
-        let inst_name = map_id
-            .and_then(instance_name)
-            .unwrap_or(inst_key);
+        let inst_name = map_id.and_then(instance_name).unwrap_or(inst_key);
 
         let is_world_boss = inst_key.contains("WorldBoss");
         let items_start = inst_block.find("items");
-        let is_raid = items_start.map_or(false, |pos| {
-            inst_block[..pos].contains("RAID")
-        });
+        let is_raid = items_start.map_or(false, |pos| inst_block[..pos].contains("RAID"));
 
         let max_players: u32 = if is_world_boss {
             0
@@ -357,7 +352,10 @@ fn load_item_info(conn: &Connection, item_ids: &HashSet<u32>) -> HashMap<u32, (S
     );
     let mut stmt = conn.prepare(&sql).unwrap();
     let params: Vec<_> = item_ids.iter().map(|id| *id as i64).collect();
-    let param_refs: Vec<&dyn rusqlite::types::ToSql> = params.iter().map(|p| p as &dyn rusqlite::types::ToSql).collect();
+    let param_refs: Vec<&dyn rusqlite::types::ToSql> = params
+        .iter()
+        .map(|p| p as &dyn rusqlite::types::ToSql)
+        .collect();
     let rows = stmt
         .query_map(param_refs.as_slice(), |row| {
             Ok((
@@ -409,9 +407,7 @@ fn classify_item_sources(
 
     // Helper: resolve creature to instance
     let get_creature_instance =
-        |conn: &Connection,
-         creature_id: u32|
-         -> Option<(String, &'static str, u32)> {
+        |conn: &Connection, creature_id: u32| -> Option<(String, &'static str, u32)> {
             let name: String = conn
                 .query_row(
                     "SELECT name FROM creature_template WHERE entry=?",
@@ -469,8 +465,10 @@ fn classify_item_sources(
     if !remaining.is_empty() {
         let placeholders: String = remaining.iter().map(|_| "?").collect::<Vec<_>>().join(",");
         let params: Vec<i64> = remaining.iter().map(|&id| id as i64).collect();
-        let param_refs: Vec<&dyn rusqlite::types::ToSql> =
-            params.iter().map(|p| p as &dyn rusqlite::types::ToSql).collect();
+        let param_refs: Vec<&dyn rusqlite::types::ToSql> = params
+            .iter()
+            .map(|p| p as &dyn rusqlite::types::ToSql)
+            .collect();
 
         // Reference loot
         let mut ref_map: HashMap<u32, Vec<u32>> = HashMap::new();
@@ -494,8 +492,10 @@ fn classify_item_sources(
         if !all_ref_entries.is_empty() {
             let neg_refs: Vec<i64> = all_ref_entries.iter().map(|&r| -(r as i64)).collect();
             let neg_ph: String = neg_refs.iter().map(|_| "?").collect::<Vec<_>>().join(",");
-            let neg_refs_sql: Vec<&dyn rusqlite::types::ToSql> =
-                neg_refs.iter().map(|p| p as &dyn rusqlite::types::ToSql).collect();
+            let neg_refs_sql: Vec<&dyn rusqlite::types::ToSql> = neg_refs
+                .iter()
+                .map(|p| p as &dyn rusqlite::types::ToSql)
+                .collect();
             let sql = format!(
                 "SELECT mincountOrRef, entry FROM creature_loot_template WHERE mincountOrRef IN ({neg_ph})"
             );
@@ -546,11 +546,11 @@ fn classify_item_sources(
             for cid in &creatures {
                 if let Some(info) = get_creature_instance(conn, *cid) {
                     if let Some(ref b) = best {
-                        let best_generic =
-                            generic_names.contains(&b.0.to_lowercase().as_str());
-                        let new_generic =
-                            generic_names.contains(&info.0.to_lowercase().as_str());
-                        if (best_generic && !new_generic) || (!best_generic && !new_generic && info.2 < b.2) {
+                        let best_generic = generic_names.contains(&b.0.to_lowercase().as_str());
+                        let new_generic = generic_names.contains(&info.0.to_lowercase().as_str());
+                        if (best_generic && !new_generic)
+                            || (!best_generic && !new_generic && info.2 < b.2)
+                        {
                             best = Some(info);
                         }
                     } else {
@@ -575,8 +575,10 @@ fn classify_item_sources(
     if !remaining.is_empty() {
         let placeholders: String = remaining.iter().map(|_| "?").collect::<Vec<_>>().join(",");
         let params: Vec<i64> = remaining.iter().map(|&id| id as i64).collect();
-        let param_refs: Vec<&dyn rusqlite::types::ToSql> =
-            params.iter().map(|p| p as &dyn rusqlite::types::ToSql).collect();
+        let param_refs: Vec<&dyn rusqlite::types::ToSql> = params
+            .iter()
+            .map(|p| p as &dyn rusqlite::types::ToSql)
+            .collect();
 
         let sql = format!(
             "SELECT entry, RequiredReputationFaction, RequiredReputationRank FROM item_template WHERE entry IN ({placeholders}) AND RequiredReputationFaction > 0"
@@ -602,10 +604,7 @@ fn classify_item_sources(
                         )
                         .unwrap_or_else(|_| format!("Faction {faction_id}"));
                     let rank_name = rep_rank_name(rank_id);
-                    sources.insert(
-                        item_id,
-                        format!("{faction_name} — {rank_name}"),
-                    );
+                    sources.insert(item_id, format!("{faction_name} — {rank_name}"));
                     remaining.remove(&item_id);
                 }
             }
@@ -616,8 +615,10 @@ fn classify_item_sources(
     if !remaining.is_empty() {
         let placeholders: String = remaining.iter().map(|_| "?").collect::<Vec<_>>().join(",");
         let params: Vec<i64> = remaining.iter().map(|&id| id as i64).collect();
-        let param_refs: Vec<&dyn rusqlite::types::ToSql> =
-            params.iter().map(|p| p as &dyn rusqlite::types::ToSql).collect();
+        let param_refs: Vec<&dyn rusqlite::types::ToSql> = params
+            .iter()
+            .map(|p| p as &dyn rusqlite::types::ToSql)
+            .collect();
 
         let sql = format!(
             "SELECT item, entry, ExtendedCost FROM npc_vendor WHERE item IN ({placeholders})"
@@ -664,7 +665,10 @@ fn classify_item_sources(
                     continue;
                 };
                 let vname_lower = vname.to_lowercase();
-                if PVP_VENDOR_KEYWORDS.iter().any(|kw| vname_lower.contains(kw)) {
+                if PVP_VENDOR_KEYWORDS
+                    .iter()
+                    .any(|kw| vname_lower.contains(kw))
+                {
                     sources.insert(*item_id, "PvP Vendor".to_string());
                     remaining.remove(item_id);
                     break;
@@ -684,10 +688,7 @@ fn classify_item_sources(
                         tier_token_source(&vname_lower, inv_type)
                     })
                 {
-                    sources.insert(
-                        *item_id,
-                        format!("Drop: {_boss} — {_inst} (Tier Token)"),
-                    );
+                    sources.insert(*item_id, format!("Drop: {_boss} — {_inst} (Tier Token)"));
                     remaining.remove(item_id);
                     break;
                 } else if TIER_TOKEN_SOURCES
@@ -706,8 +707,10 @@ fn classify_item_sources(
     if !remaining.is_empty() {
         let placeholders: String = remaining.iter().map(|_| "?").collect::<Vec<_>>().join(",");
         let params: Vec<i64> = remaining.iter().map(|&id| id as i64).collect();
-        let param_refs: Vec<&dyn rusqlite::types::ToSql> =
-            params.iter().map(|p| p as &dyn rusqlite::types::ToSql).collect();
+        let param_refs: Vec<&dyn rusqlite::types::ToSql> = params
+            .iter()
+            .map(|p| p as &dyn rusqlite::types::ToSql)
+            .collect();
 
         let sql = format!(
             "SELECT item, entry, ExtendedCost FROM npc_vendor_template WHERE item IN ({placeholders})"
@@ -740,7 +743,10 @@ fn classify_item_sources(
                     continue;
                 };
                 let vendor_lower = vname.to_lowercase();
-                if PVP_VENDOR_KEYWORDS.iter().any(|kw| vendor_lower.contains(kw)) {
+                if PVP_VENDOR_KEYWORDS
+                    .iter()
+                    .any(|kw| vendor_lower.contains(kw))
+                {
                     sources.insert(*item_id, "PvP Vendor".to_string());
                 } else if let Some((boss, inst)) = TIER_TOKEN_SOURCES
                     .iter()
@@ -756,10 +762,7 @@ fn classify_item_sources(
                         tier_token_source(&vendor_lower, inv_type)
                     })
                 {
-                    sources.insert(
-                        *item_id,
-                        format!("Drop: {boss} — {inst} (Tier Token)"),
-                    );
+                    sources.insert(*item_id, format!("Drop: {boss} — {inst} (Tier Token)"));
                 } else {
                     sources.insert(*item_id, format!("Vendor: {vname}"));
                 }
@@ -773,15 +776,23 @@ fn classify_item_sources(
     if !remaining.is_empty() {
         let placeholders: String = remaining.iter().map(|_| "?").collect::<Vec<_>>().join(",");
         let params: Vec<i64> = remaining.iter().map(|&id| id as i64).collect();
-        let param_refs: Vec<&dyn rusqlite::types::ToSql> =
-            params.iter().map(|p| p as &dyn rusqlite::types::ToSql).collect();
+        let param_refs: Vec<&dyn rusqlite::types::ToSql> = params
+            .iter()
+            .map(|p| p as &dyn rusqlite::types::ToSql)
+            .collect();
 
         // Build WHERE clause checking all reward columns
         let mut all_params: Vec<i64> = Vec::new();
         let mut conditions = Vec::new();
         for col in &[
-            "RewChoiceItemId1", "RewChoiceItemId2", "RewChoiceItemId3", "RewChoiceItemId4",
-            "RewItemId1", "RewItemId2", "RewItemId3", "RewItemId4",
+            "RewChoiceItemId1",
+            "RewChoiceItemId2",
+            "RewChoiceItemId3",
+            "RewChoiceItemId4",
+            "RewItemId1",
+            "RewItemId2",
+            "RewItemId3",
+            "RewItemId4",
         ] {
             conditions.push(format!("{col} IN ({placeholders})"));
             all_params.extend_from_slice(&params);
@@ -790,8 +801,10 @@ fn classify_item_sources(
             "SELECT Title, RewChoiceItemId1, RewChoiceItemId2, RewChoiceItemId3, RewChoiceItemId4, RewItemId1, RewItemId2, RewItemId3, RewItemId4 FROM quest_template WHERE {}",
             conditions.join(" OR ")
         );
-        let all_refs: Vec<&dyn rusqlite::types::ToSql> =
-            all_params.iter().map(|p| p as &dyn rusqlite::types::ToSql).collect();
+        let all_refs: Vec<&dyn rusqlite::types::ToSql> = all_params
+            .iter()
+            .map(|p| p as &dyn rusqlite::types::ToSql)
+            .collect();
         if let Ok(mut stmt) = conn.prepare(&sql) {
             if let Ok(rows) = stmt.query_map(all_refs.as_slice(), |row| {
                 let title: String = row.get(0)?;
@@ -821,8 +834,10 @@ fn classify_item_sources(
     if !remaining.is_empty() {
         let placeholders: String = remaining.iter().map(|_| "?").collect::<Vec<_>>().join(",");
         let params: Vec<i64> = remaining.iter().map(|&id| id as i64).collect();
-        let param_refs: Vec<&dyn rusqlite::types::ToSql> =
-            params.iter().map(|p| p as &dyn rusqlite::types::ToSql).collect();
+        let param_refs: Vec<&dyn rusqlite::types::ToSql> = params
+            .iter()
+            .map(|p| p as &dyn rusqlite::types::ToSql)
+            .collect();
 
         let sql = format!(
             "SELECT EffectItemType1 FROM spell_template WHERE EffectItemType1 IN ({placeholders})"
@@ -841,22 +856,20 @@ fn classify_item_sources(
     if !remaining.is_empty() {
         let placeholders: String = remaining.iter().map(|_| "?").collect::<Vec<_>>().join(",");
         let params: Vec<i64> = remaining.iter().map(|&id| id as i64).collect();
-        let param_refs: Vec<&dyn rusqlite::types::ToSql> =
-            params.iter().map(|p| p as &dyn rusqlite::types::ToSql).collect();
+        let param_refs: Vec<&dyn rusqlite::types::ToSql> = params
+            .iter()
+            .map(|p| p as &dyn rusqlite::types::ToSql)
+            .collect();
 
-        let sql = format!(
-            "SELECT entry, bonding FROM item_template WHERE entry IN ({placeholders})"
-        );
+        let sql =
+            format!("SELECT entry, bonding FROM item_template WHERE entry IN ({placeholders})");
         if let Ok(mut stmt) = conn.prepare(&sql) {
             if let Ok(rows) = stmt.query_map(param_refs.as_slice(), |row| {
                 Ok((row.get::<_, u32>(0)?, row.get::<_, u32>(1)?))
             }) {
                 for row in rows.flatten() {
                     if row.1 == 2 {
-                        sources.insert(
-                            row.0,
-                            "Auction House — BoE World Drop".to_string(),
-                        );
+                        sources.insert(row.0, "Auction House — BoE World Drop".to_string());
                         remaining.remove(&row.0);
                     }
                 }
@@ -866,10 +879,7 @@ fn classify_item_sources(
 
     // Anything left
     for &item_id in &remaining {
-        sources.insert(
-            item_id,
-            "Other (Classic, Seasonal Event, Etc.)".to_string(),
-        );
+        sources.insert(item_id, "Other (Classic, Seasonal Event, Etc.)".to_string());
     }
 
     sources
@@ -896,10 +906,9 @@ fn parse_spec_from_lua(lua_text: &str, spec_key: &str) -> HashMap<String, Vec<u3
         .unwrap_or(lua_text.len());
     let block = &lua_text[block_start..block_end];
 
-    let slot_re = Regex::new(
-        r#"format\(AL\["([^"]+)"\][^}]*\[NORMAL_DIFF\]\s*=\s*\{(.*?)\}\s*,\s*\}"#,
-    )
-    .expect("invariant: valid regex");
+    let slot_re =
+        Regex::new(r#"format\(AL\["([^"]+)"\][^}]*\[NORMAL_DIFF\]\s*=\s*\{(.*?)\}\s*,\s*\}"#)
+            .expect("invariant: valid regex");
     let item_re = Regex::new(r"\{\s*\d+\s*,\s*(\d+)\s*\}").expect("invariant: valid regex");
 
     let mut slots: HashMap<String, Vec<u32>> = HashMap::new();
