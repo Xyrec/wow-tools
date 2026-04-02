@@ -430,6 +430,12 @@ pub fn run(
     let character = common::character::load_character(&char_path, &root, Some(&name_resolver))
         .context("failed to load character")?;
 
+    if character.equipped_items.is_empty() {
+        anyhow::bail!(
+            "No character data for {spec}. Paste your character export into data/{spec}.json"
+        );
+    }
+
     // Build rep lookup
     let mut rep_lookup: HashMap<String, RepInfo> = HashMap::new();
     for group in &character.reputations {

@@ -742,6 +742,10 @@ pub fn run(file: &str, stat: &str, target: f64, source: &str) -> Result<()> {
 
     let char = common::character::load_character(file, &root, name_resolver.as_ref())?;
 
+    if char.equipped_items.is_empty() {
+        anyhow::bail!("No character data in {file}. Paste your character export into this file.");
+    }
+
     println!("Finding {stat} rating upgrades for {}", char.name);
     println!();
 
