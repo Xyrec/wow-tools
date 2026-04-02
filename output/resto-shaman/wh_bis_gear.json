@@ -10,19 +10,19 @@
           "item_id": 24264
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Ringmail Helm",
           "source": "Vendor: Arena Points (Season 1)",
           "item_id": 31400
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cowl of Naaru Blessings",
           "source": "Vendor: G'eras (Badges of Justice)",
           "item_id": 32090
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Hallowed Crown",
           "source": "Drop: Harbinger Skyriss (The Arcatraz)",
           "item_id": 28413
@@ -36,19 +36,19 @@
           "item_id": 21874
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Hallowed Pauldrons",
           "source": "Drop: Grandmaster Vorpil (Shadow Labyrinth)",
           "item_id": 27775
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Ringmail Spaulders",
           "source": "Vendor: Arena Points (Season 1)",
           "item_id": 31407
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Pauldrons of Sufferance",
           "source": "Drop: Epoch Hunter (Old Hillsbrad Foothills)",
           "item_id": 27433
@@ -68,13 +68,13 @@
           "item_id": 24254
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Light-Touched Stole of Altruism",
           "source": "Drop: Exarch Maladaar (Heroic Auchenai Crypts)",
           "item_id": 29354
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cloak of Suturing",
           "source": "Drop: Patchwerk (Classic - Naxxramas)",
           "item_id": 22960
@@ -88,19 +88,19 @@
           "item_id": 21875
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Windhawk Hauberk",
           "source": "Profession: Leatherworking (Tribal Leatherworking) - BoP only",
           "item_id": 29522
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Ringmail Armor",
           "source": "Vendor: Arena Points (Season 1)",
           "item_id": 31396
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Hallowed Garments",
           "source": "Drop: Murmur (Shadow Labyrinth)",
           "item_id": 28230
@@ -120,13 +120,13 @@
           "item_id": 29183
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bands of the Benevolent",
           "source": "Drop: Talon King Ikiss (Heroic Sethekk Halls)",
           "item_id": 29249
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bracelets of Royal Redemption",
           "source": "Drop: Emperor Vek'nilash (Classic - Ahn'Qiraj)",
           "item_id": 21604
@@ -140,19 +140,19 @@
           "item_id": 29506
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Ringmail Gauntlets",
           "source": "Vendor: Arena Points (Season 1)",
           "item_id": 31397
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bloody Surgeon's Mitts",
           "source": "Drop: Broggok (The Blood Furnace)",
           "item_id": 24393
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cryo-mitts",
           "source": "Quest: Someone Else's Hard Work Pays Off (Mana-Tombs)",
           "item_id": 29327
@@ -166,19 +166,19 @@
           "item_id": 29524
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Primal Mooncloth Belt",
           "source": "Profession: Tailoring (Primal Mooncloth Tailoring) - BoP only",
           "item_id": 21873
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cord of Sanctification",
           "source": "Drop: Epoch Hunter (Heroic Old Hillsbrad Foothills)",
           "item_id": 29250
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Grasp of the Old God",
           "source": "Drop: C'Thun (Classic - Ahn'Qiraj)",
           "item_id": 21582
@@ -192,19 +192,19 @@
           "item_id": 30543
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Whitemend Pants",
           "source": "Profession: Tailoring - can be purchased on the Auction House",
           "item_id": 24261
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Kamaei's Cerulean Skirt",
           "source": "Drop: World Drop",
           "item_id": 31343
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Pontiff's Pantaloons of Prophecy",
           "source": "Drop: Captain Skarloc (Heroic Old Hillsbrad Foothills)",
           "item_id": 28218
@@ -218,19 +218,19 @@
           "item_id": 27411
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Boots of the Pious",
           "source": "Drop: Pathaleon the Calculator (Heroic The Mechanar)",
           "item_id": 29251
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Jeweled Boots of Sanctification",
           "source": "Drop: Warbringer O'mrogg (The Shattered Halls)",
           "item_id": 27525
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Wavefury Boots",
           "source": "Drop: Rokmar the Crackler (Heroic The Slave Pens)",
           "item_id": 27549
@@ -250,13 +250,13 @@
           "item_id": 30377
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Necklace of Eternal Hope",
           "source": "Vendor: G'eras (Badges of Justice)",
           "item_id": 29374
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Amulet of the Fallen God",
           "source": "Drop: C'Thun (Classic - Ahn'Qiraj)",
           "item_id": 21712
@@ -282,7 +282,7 @@
           "item_id": 29814
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Spiritualist's Mark of the Sha'tar",
           "source": "Quest: Battle of the Crimson Watch",
           "item_id": 31383
@@ -302,13 +302,13 @@
           "item_id": 30841
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Scarab of the Infinite Cycle",
           "source": "Drop: Aeonus (The Black Morass)",
           "item_id": 28190
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Rejuvenating Gem",
           "source": "Drop: Flamegor, Firemaw, & Ebonroc (Classic - Blackwing Lair)",
           "item_id": 19395
@@ -328,13 +328,13 @@
           "item_id": 29353
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gavel of Pure Light",
           "source": "Vendor: Almaador (The Sha'tar Exalted)",
           "item_id": 29175
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "The Ancient Scepter of Sue-Min",
           "source": "Drop: World Drop",
           "item_id": 31342
@@ -354,13 +354,13 @@
           "item_id": 29274
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Sapphiron's Right Eye",
           "source": "Drop: Sapphiron (Naxxramas)",
           "item_id": 23048
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Windcaller's Orb",
           "source": "Reputation: Cenarion Expedition Exalted)",
           "item_id": 29170
@@ -374,13 +374,13 @@
           "item_id": 27544
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Life",
           "source": "Drop: Fankriss the Unyielding (Classic - Ahn'Qiraj)",
           "item_id": 22396
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of the Plains",
           "source": "Quest: The Ultimate Bloodsport (Nagrand)",
           "item_id": 25645
@@ -408,7 +408,7 @@
           "item_id": 29028
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Ringmail Helm",
           "source": "Vendor: Arena Points (Season 1)",
           "item_id": 31400
@@ -422,19 +422,19 @@
           "item_id": 29031
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cyclone Shoulderguards",
           "source": "Drop: High King Maulgar (Gruul's Lair)",
           "item_id": 29037
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Primal Mooncloth Shoulders",
           "source": "Profession: Tailoring (Mooncloth Tailoring) - BoP only",
           "item_id": 21874
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Dragon-Quake Shoulderguards",
           "source": "Drop: The Curator (Karazhan)",
           "item_id": 28631
@@ -454,13 +454,13 @@
           "item_id": 31329
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "White Remedy Cape",
           "source": "Profession: Tailoring - can be purchased on the Auction House",
           "item_id": 24254
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Light-Touched Stole of Altruism",
           "source": "Drop: Exarch Maladaar (Heroic Auchenai Crypts)",
           "item_id": 29354
@@ -486,7 +486,7 @@
           "item_id": 21875
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Ringmail Armor",
           "source": "Vendor: Arena Points (Season 1)",
           "item_id": 31396
@@ -506,13 +506,13 @@
           "item_id": 29183
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Whirlwind Bracers",
           "source": "Drop: Attumen the Huntsman (Karazhan)",
           "item_id": 28503
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bands of Indwelling",
           "source": "Drop: Maiden of Virtue (Karazhan)",
           "item_id": 28511
@@ -526,19 +526,19 @@
           "item_id": 28520
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Mitts of the Treemender",
           "source": "Drop: Maiden of Virtue (Karazhan)",
           "item_id": 28521
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gloves of Saintly Blessings",
           "source": "Drop: Attumen the Huntsman (Karazhan)",
           "item_id": 28508
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cyclone Gloves",
           "source": "Drop: The Curator (Karazhan)",
           "item_id": 29032
@@ -564,7 +564,7 @@
           "item_id": 28751
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cord of Nature's Sustenance",
           "source": "Drop: Terestian Illhoof (Karazhan)",
           "item_id": 28655
@@ -584,13 +584,13 @@
           "item_id": 28751
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Earthsoul Leggings",
           "source": "Drop: Opera Event - Karazhan",
           "item_id": 28591
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Pantaloons of Repentance",
           "source": "Drop: Netherspite (Karazhan)",
           "item_id": 28742
@@ -610,13 +610,13 @@
           "item_id": 28752
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Slippers of Serenity",
           "source": "Drop: Exarch Maladaar (Auchenai Crypts)",
           "item_id": 27411
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Boots of the Pious",
           "source": "Drop: Pathaleon the Calculator (Heroic The Mechanar)",
           "item_id": 29251
@@ -636,13 +636,13 @@
           "item_id": 28609
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Natasha's Guardian Cord",
           "source": "Quest: The Hound-Master",
           "item_id": 31691
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Karja's Medallion",
           "source": "Quest: Shutting Down Manaforge Ara",
           "item_id": 30377
@@ -668,7 +668,7 @@
           "item_id": 30736
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ring of Fabled Hope",
           "source": "Drop: The Black Stalker (Heroic The Underbog)",
           "item_id": 27780
@@ -688,13 +688,13 @@
           "item_id": 28590
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lower City Prayerbook",
           "source": "Vendor: Nakodu (Lower City Revered)",
           "item_id": 30841
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Scarab of the Infinite Cycle",
           "source": "Drop: Aeonus (The Black Morass)",
           "item_id": 28190
@@ -708,19 +708,19 @@
           "item_id": 28771
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Salvation",
           "source": "Vendor: Arena Points (Season 1)",
           "item_id": 32451
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Shard of the Virtuous",
           "source": "Drop: Maiden of Virtue (Karazhan)",
           "item_id": 28522
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Hand of Eternity",
           "source": "Profession: Blacksmithing – can be purchased on the Auction House",
           "item_id": 23556
@@ -740,13 +740,13 @@
           "item_id": 29458
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Windcaller's Orb",
           "source": "Vendor: Fedryen Swiftspear (Cenarion Expedition Exalted)",
           "item_id": 29170
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Sapphiron's Right Eye",
           "source": "Drop: Sapphiron (Naxxramas)",
           "item_id": 23048
@@ -760,19 +760,19 @@
           "item_id": 28523
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Spontaneous Regrowth",
           "source": "Drop: Mennu the Betrayer (Heroic The Slave Pens)",
           "item_id": 27544
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Life",
           "source": "Drop: Fankriss the Unyielding (Classic - Ahn'Qiraj)",
           "item_id": 22396
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of the Plains",
           "source": "Quest: The Ultimate Bloodsport (Nagrand)",
           "item_id": 25645
@@ -794,13 +794,13 @@
           "item_id": 32475
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cyclone Headdress",
           "source": "Drop: Prince Malchezaar (Karazhan)",
           "item_id": 29028
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Fathom-Helm of the Deeps",
           "source": "Drop: Doomwalker (World Boss)",
           "item_id": 30728
@@ -820,13 +820,13 @@
           "item_id": 30097
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cyclone Shoulderpads",
           "source": "Drop: High King Maulgar (Gruul's Lair)",
           "item_id": 29031
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Primal Mooncloth Shoulders",
           "source": "Profession: Tailoring (Mooncloth Tailoring) - BoP only",
           "item_id": 21874
@@ -840,19 +840,19 @@
           "item_id": 29989
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Stainless Cloak of the Pure Hearted",
           "source": "Drop: Prince Malchezaar (Karazhan)",
           "item_id": 28765
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lifegiving Cloak",
           "source": "Drop: World Drop",
           "item_id": 31329
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "White Remedy Cape",
           "source": "Profession: Tailoring - can be purchased on the Auction House",
           "item_id": 24254
@@ -866,19 +866,19 @@
           "item_id": 30164
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Fire Crest Breastplate",
           "source": "Drop: Al'ar (Tempest Keep: The Eye)",
           "item_id": 29921
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Windhawk Hauberk",
           "source": "Profession: Leatherworking (Tribal Leatherworking) - BoP only",
           "item_id": 29522
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Primal Mooncloth Robe",
           "source": "Profession: Tailoring (Mooncloth Tailoring) - BoP only",
           "item_id": 21875
@@ -892,19 +892,19 @@
           "item_id": 30047
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Wraps of Purification",
           "source": "Drop: Hydross the Unstable (Serpentshrine Cavern)",
           "item_id": 32516
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Windhawk Bracers",
           "source": "Profession: Leatherworking (Tribal Leatherworking) - BoP only",
           "item_id": 29523
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bindings of the Timewalker",
           "source": "Vendor: Alurmi (Keepers of Time Exalted)",
           "item_id": 29183
@@ -918,19 +918,19 @@
           "item_id": 29976
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cataclysm Gloves",
           "source": "Drop: Leotheras the Blind (Serpentshrine Cavern)",
           "item_id": 30165
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gloves of Centering",
           "source": "Drop: Maiden of Virtue (Karazhan)",
           "item_id": 28520
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Mitts of the Treemender",
           "source": "Drop: Maiden of Virtue (Karazhan)",
           "item_id": 28521
@@ -944,19 +944,19 @@
           "item_id": 30030
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Windhawk Belt",
           "source": "Profession: Leatherworking (Tribal Leatherworking) - BoP only",
           "item_id": 29524
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Primal Mooncloth Belt",
           "source": "Profession: Tailoring (Mooncloth Tailoring) - BoP only",
           "item_id": 21873
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Belt of Gale Force",
           "source": "Drop: Moroes (Karazhan)",
           "item_id": 28567
@@ -970,19 +970,19 @@
           "item_id": 29991
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cataclysm Legguards",
           "source": "Drop: Fathom-Lord Karathress (Serpentshrine Cavern)",
           "item_id": 30167
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Heart-Flame Leggings",
           "source": "Drop: Echo of Medivh (Karazhan)",
           "item_id": 28751
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Earthsoul Leggings",
           "source": "Drop: Opera Event (Karazhan)",
           "item_id": 28591
@@ -1002,13 +1002,13 @@
           "item_id": 30092
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Forestlord Striders",
           "source": "Drop: Echo of Medivh (Karazhan)",
           "item_id": 28752
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Tempest-Strider Boots",
           "source": "Drop: The Lurker Below (Serpentshrine Cavern)",
           "item_id": 30066
@@ -1022,19 +1022,19 @@
           "item_id": 30018
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Emberspur Talisman",
           "source": "Drop: Nightbane (Karazhan)",
           "item_id": 28609
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Archaic Charm of Presence",
           "source": "Drop: Doomwalker (World Boss)",
           "item_id": 30726
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Teeth of Gruul",
           "source": "Drop: Gruul the Dragonkiller (Gruul's Lair)",
           "item_id": 28822
@@ -1060,7 +1060,7 @@
           "item_id": 29307
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Jade Ring of the Everliving",
           "source": "Drop: Prince Malchezaar (Karazhan)",
           "item_id": 28763
@@ -1100,19 +1100,19 @@
           "item_id": 30108
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Merciless Gladiator's Salvation",
           "source": "Vendor: Arena Points (Season 2)",
           "item_id": 32964
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Light's Justice",
           "source": "Drop: Prince Malchezaar (Karazhan)",
           "item_id": 28771
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gladiator's Salvation",
           "source": "Vendor: Arena Points (Season 1)",
           "item_id": 32451
@@ -1126,19 +1126,19 @@
           "item_id": 29458
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Tears of Heaven",
           "source": "Vendor: G'eras (Badges of Justice)",
           "item_id": 29274
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Talisman of the Sun King",
           "source": "Drop: Al'ar (Tempest Keep: The Eye)",
           "item_id": 29923
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Aran's Soothing Sapphire",
           "source": "Drop: Shade of Aran (Karazhan)",
           "item_id": 28728
@@ -1152,19 +1152,19 @@
           "item_id": 28523
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Spontaneous Regrowth",
           "source": "Drop: Mennu the Betrayer (Heroic The Slave Pens)",
           "item_id": 27544
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Life",
           "source": "Drop: Fankriss the Unyielding (Classic - Ahn'Qiraj)",
           "item_id": 22396
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of the Plains",
           "source": "Quest: The Ultimate Bloodsport",
           "item_id": 25645
@@ -1180,19 +1180,19 @@
           "item_id": 31012
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Helm of Soothing Currents",
           "source": "Drop: High Warlord Naj'entus (Black Temple)",
           "item_id": 32241
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cataclysm Headguard",
           "source": "Drop: Lady Vashj (Serpentshrine Cavern)",
           "item_id": 30166
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Living Replicator Specs",
           "source": "Profession: Engineering - BoP only",
           "item_id": 32475
@@ -1206,19 +1206,19 @@
           "item_id": 31022
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Living Earth Shoulders",
           "source": "Profession: Leatherworking - BoP only",
           "item_id": 32579
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cataclysm Shoulderguards",
           "source": "Drop: Void Reaver (Tempest Keep: The Eye)",
           "item_id": 30168
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Coral-Barbed Shoulderpads",
           "source": "Drop: Leotheras the Blind (Serpentshrine Cavern)",
           "item_id": 30097
@@ -1232,19 +1232,19 @@
           "item_id": 32524
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Shroud of the Final Stand",
           "source": "Drop: Trash Mobs (Black Temple)",
           "item_id": 34012
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Sunshower Light Cloak",
           "source": "Drop: Kael'thas Sunstrider (Tempest Keep: The Eye)",
           "item_id": 29989
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Stainless Cloak of the Pure Hearted",
           "source": "Drop: Prince Malchezaar (Karazhan)",
           "item_id": 28765
@@ -1258,19 +1258,19 @@
           "item_id": 31016
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cataclysm Chestguard",
           "source": "Drop: Kael'thas Sunstrider (Tempest Keep: The Eye)",
           "item_id": 30164
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Golden Links of Restoration",
           "source": "Drop: Anetheron (Hyjal Summit)",
           "item_id": 30887
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Fire Crest Breastplate",
           "source": "Drop: Al'ar (Tempest Keep: The Eye)",
           "item_id": 29921
@@ -1296,7 +1296,7 @@
           "item_id": 32582
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Howling Wind Bracers",
           "source": "Drop: Rage Winterchill (Hyjal Summit)",
           "item_id": 30869
@@ -1310,19 +1310,19 @@
           "item_id": 32328
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Spiritwalker Gauntlets",
           "source": "Drop: Shade of Akama (Black Temple)",
           "item_id": 32275
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Worldstorm Gauntlets",
           "source": "Drop: High Astromancer Solarian (Tempest Keep: The Eye)",
           "item_id": 29976
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Skyshatter Gloves",
           "source": "Drop: Azgalor (Hyjal Summit)",
           "item_id": 31007
@@ -1348,7 +1348,7 @@
           "item_id": 30895
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Girdle of Fallen Stars",
           "source": "Drop: Trash Mobs (Tempest Keep: The Eye)",
           "item_id": 30030
@@ -1362,19 +1362,19 @@
           "item_id": 31019
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Leggings of Eternity",
           "source": "Drop: Archimonde (Hyjal Summit)",
           "item_id": 30912
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Kilt of Immortal Nature",
           "source": "Drop: Shade of Akama (Black Temple)",
           "item_id": 32271
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Sun-touched Chain Leggings",
           "source": "Drop: Kaz'rogal (Hyjal Summit)",
           "item_id": 30893
@@ -1394,13 +1394,13 @@
           "item_id": 32609
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Gold-Leaf Wildboots",
           "source": "Drop: Doom Lord Kazzak (World Boss)",
           "item_id": 30737
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Orca-Hide Boots",
           "source": "Drop: Leotheras the Blind (Serpentshrine Cavern)",
           "item_id": 30092
@@ -1414,19 +1414,19 @@
           "item_id": 32370
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lord Sanguinar's Claim",
           "source": "Drop: Kael'thas Sunstrider (Tempest Keep: The Eye)",
           "item_id": 30018
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Vindicator's Pendant of Salvation",
           "source": "Vendor: Honor Points (Season 3)",
           "item_id": 33922
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Emberspur Talisman",
           "source": "Drop: Nightbane (Karazhan)",
           "item_id": 28609
@@ -1440,19 +1440,19 @@
           "item_id": 32528
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Band of the Eternal Restorer",
           "source": "Quest: Restorer's Covenant (The Scale of the Sands Exalted)",
           "item_id": 29309
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ring of Calming Waves",
           "source": "Drop: High Warlord Naj'entus (Black Temple)",
           "item_id": 32238
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Phoenix-Ring of Rebirth",
           "source": "Drop: Al'ar (Tempest Keep: The Eye)",
           "item_id": 29920
@@ -1478,7 +1478,7 @@
           "item_id": 38288
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Scarab of the Infinite Cycle",
           "source": "Drop: Aeonus (The Black Morass)",
           "item_id": 28190
@@ -1492,19 +1492,19 @@
           "item_id": 32500
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Vengeful Gladiator's Salvation",
           "source": "Vendor: Arena Points (Season 3)",
           "item_id": 33743
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Hammer of Atonement",
           "source": "Drop: Kaz'rogal (Hyjal Summit)",
           "item_id": 30918
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lightfathom Scepter",
           "source": "Drop: Lady Vashj (Serpentshrine Cavern)",
           "item_id": 30108
@@ -1524,13 +1524,13 @@
           "item_id": 32255
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Aegis of the Vindicator",
           "source": "Drop: Magtheridon (Magtheridon's Lair)",
           "item_id": 29458
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Vengeful Gladiator's Redoubt",
           "source": "Vendor: Arena Points (Season 3)",
           "item_id": 33735
@@ -1544,19 +1544,19 @@
           "item_id": 28523
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Spontaneous Regrowth",
           "source": "Drop: Mennu the Betrayer (Heroic The Slave Pens)",
           "item_id": 27544
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Life",
           "source": "Drop: Fankriss the Unyielding (Classic - Ahn'Qiraj)",
           "item_id": 22396
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of the Plains",
           "source": "Quest: The Ultimate Bloodsport",
           "item_id": 25645
@@ -1572,19 +1572,19 @@
           "item_id": 31012
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Helm of Soothing Currents",
           "source": "Drop: High Warlord Naj'entus (Black Temple)",
           "item_id": 32241
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cataclysm Headguard",
           "source": "Drop: Lady Vashj (Serpentshrine Cavern)",
           "item_id": 30166
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Living Replicator Specs",
           "source": "Profession: Engineering - BoP only",
           "item_id": 32475
@@ -1598,19 +1598,19 @@
           "item_id": 31022
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Living Earth Shoulders",
           "source": "Profession: Leatherworking - BoP only",
           "item_id": 32579
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Hex Lord's Voodoo Pauldrons",
           "source": "Drop: Hex Lord Malacrass (Zul'Aman)",
           "item_id": 33464
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cataclysm Shoulderguards",
           "source": "Drop: Void Reaver (Tempest Keep: The Eye)",
           "item_id": 30168
@@ -1624,19 +1624,19 @@
           "item_id": 32524
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Shroud of the Final Stand",
           "source": "Drop: Trash Mobs (Black Temple)",
           "item_id": 34012
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cloak of Ancient Rituals",
           "source": "Drop: Hex Lord Malacrass (Zul'Aman)",
           "item_id": 33592
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cloak of Swift Reprieve",
           "source": "Vendor: G'eras (Badges of Justice)",
           "item_id": 35324
@@ -1650,19 +1650,19 @@
           "item_id": 31016
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cataclysm Chestguard",
           "source": "Drop: Kael'thas Sunstrider (Tempest Keep: The Eye)",
           "item_id": 30164
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Hauberk of the Empire's Champion",
           "source": "Drop: Zul'jin (Zul'Aman)",
           "item_id": 33469
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Golden Links of Restoration",
           "source": "Drop: Anetheron (Hyjal Summit)",
           "item_id": 30887
@@ -1688,7 +1688,7 @@
           "item_id": 32582
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Howling Wind Bracers",
           "source": "Drop: Rage Winterchill (Hyjal Summit)",
           "item_id": 30869
@@ -1702,19 +1702,19 @@
           "item_id": 32328
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Spiritwalker Gauntlets",
           "source": "Drop: Shade of Akama (Black Temple)",
           "item_id": 32275
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Worldstorm Gauntlets",
           "source": "Drop: High Astromancer Solarian (Tempest Keep: The Eye)",
           "item_id": 29976
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Skyshatter Gloves",
           "source": "Drop: Azgalor (Hyjal Summit)",
           "item_id": 31007
@@ -1740,7 +1740,7 @@
           "item_id": 30895
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Man'kin'do's Belt",
           "source": "Vendor: G'eras (Badges of Justice)",
           "item_id": 33386
@@ -1754,19 +1754,19 @@
           "item_id": 31019
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Leggings of Eternity",
           "source": "Drop: Archimonde (Hyjal Summit)",
           "item_id": 30912
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Kilt of Immortal Nature",
           "source": "Drop: Shade of Akama (Black Temple)",
           "item_id": 32271
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Sun-touched Chain Leggings",
           "source": "Drop: Kaz'rogal (Hyjal Summit)",
           "item_id": 30893
@@ -1786,13 +1786,13 @@
           "item_id": 33471
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Stillwater Boots",
           "source": "Drop: Rage Winterchill (Hyjal Summit)",
           "item_id": 30873
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Boots of the Divine Light",
           "source": "Drop: Trash Mobs (Hyjal Summit)",
           "item_id": 32609
@@ -1812,13 +1812,13 @@
           "item_id": 32370
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Vindicator's Pendant of Reprieve",
           "source": "Vendor: Honor Points (Season 3)",
           "item_id": 35317
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Lord Sanguinar's Claim",
           "source": "Drop: Kael'thas Sunstrider (Tempest Keep: The Eye)",
           "item_id": 30018
@@ -1832,19 +1832,19 @@
           "item_id": 32528
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Signet of the Quiet Forest",
           "source": "Drop: Third Timed Chest (Zul'Aman)",
           "item_id": 33498
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Band of the Eternal Restorer",
           "source": "Quest: Restorer's Covenant (The Scale of the Sands Exalted)",
           "item_id": 29309
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ring of Calming Waves",
           "source": "Drop: High Warlord Naj'entus (Black Temple)",
           "item_id": 32238
@@ -1870,7 +1870,7 @@
           "item_id": 38288
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Tome of Diabolic Remedy",
           "source": "Drop: Hex Lord Malacrass (Zul'Aman)",
           "item_id": 33828
@@ -1884,19 +1884,19 @@
           "item_id": 32500
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Dark Blessing",
           "source": "Drop: Zul'jin (Zul'Aman)",
           "item_id": 33468
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Vengeful Gladiator's Salvation",
           "source": "Vendor: Arena Points (Season 3)",
           "item_id": 33743
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Hammer of Atonement",
           "source": "Drop: Kaz'rogal (Hyjal Summit)",
           "item_id": 30918
@@ -1916,13 +1916,13 @@
           "item_id": 32255
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Aegis of the Vindicator",
           "source": "Drop: Magtheridon (Magtheridon's Lair)",
           "item_id": 29458
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Enamelled Disc of Mojo",
           "source": "Drop: Jan'alai (Zul'Aman)",
           "item_id": 33332
@@ -1936,19 +1936,19 @@
           "item_id": 28523
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Living Water",
           "source": "Vendor: G'eras (Badges of Justice)",
           "item_id": 33505
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Spontaneous Regrowth",
           "source": "Drop: Mennu the Betrayer (Heroic The Slave Pens)",
           "item_id": 27544
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Life",
           "source": "Drop: Fankriss the Unyielding (Classic - Ahn'Qiraj)",
           "item_id": 22396
@@ -1964,19 +1964,19 @@
           "item_id": 34402
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Cowl of Light's Purity",
           "source": "Drop: Kil'jaeden (Sunwell Plateau)",
           "item_id": 34339
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Primal-Attuned Goggles",
           "source": "Profession: Engineering - BoP only",
           "item_id": 35184
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Skyshatter Helmet",
           "source": "Drop: Archimonde (Hyjal Summit)",
           "item_id": 31012
@@ -1990,19 +1990,19 @@
           "item_id": 31022
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Equilibrium Epaulets",
           "source": "Drop: Lady Sacrolash & Grand Warlock Alythess (Sunwell Plateau)",
           "item_id": 34208
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Shawl of Wonderment",
           "source": "Drop: Lady Sacrolash & Grand Warlock Alythess (Sunwell Plateau)",
           "item_id": 34202
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Living Earth Shoulders",
           "source": "Profession: Leatherworking - BoP only",
           "item_id": 32579
@@ -2022,13 +2022,13 @@
           "item_id": 34242
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Shroud of Redeemed Souls",
           "source": "Drop: Lady Sacrolash & Grand Warlock Alythess (Sunwell Plateau)",
           "item_id": 34205
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Shroud of the Final Stand",
           "source": "Drop: Trash Mobs (Black Temple)",
           "item_id": 34012
@@ -2042,19 +2042,19 @@
           "item_id": 34375
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Sunglow Vest",
           "source": "Drop: M'uru (Sunwell Plateau)",
           "item_id": 34212
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Garments of Serene Shores",
           "source": "Drop: M'uru (Sunwell Plateau)",
           "item_id": 34229
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Skyshatter Chestguard",
           "source": "Drop: Illidan Stormrage (Black Temple)",
           "item_id": 31016
@@ -2068,19 +2068,19 @@
           "item_id": 34438
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Living Earth Bindings",
           "source": "Profession: Leatherworking - can be purchased on the Auction House",
           "item_id": 32577
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Swiftheal Wraps",
           "source": "Profession: Tailoring - can be purchased on the Auction House",
           "item_id": 32584
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Bracers of Renewed Life",
           "source": "Profession: Leatherworking - can be purchased on the Auction House",
           "item_id": 32582
@@ -2106,7 +2106,7 @@
           "item_id": 34409
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Sun-Drenched Scale Gloves",
           "source": "Profession: Leatherworking - can be purchased on the Auction House",
           "item_id": 34376
@@ -2120,19 +2120,19 @@
           "item_id": 34543
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Naturalist's Preserving Cinch",
           "source": "Drop: Supremus (Black Temple)",
           "item_id": 32258
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Belt of Primal Majesty",
           "source": "Drop: Gurtogg Bloodboil (Black Temple)",
           "item_id": 32339
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Angelista's Sash",
           "source": "Drop: Kaz'rogal (Hyjal Summit)",
           "item_id": 30895
@@ -2146,19 +2146,19 @@
           "item_id": 34383
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Skyshatter Leggings",
           "source": "Drop: The Illidari Council (Black Temple)",
           "item_id": 31019
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Runed Scales of Antiquity",
           "source": "Vendor: Smith Hauthaa / Anwehu (Badges of Justice)",
           "item_id": 34931
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Leggings of Eternity",
           "source": "Drop: Archimonde (Hyjal Summit)",
           "item_id": 30912
@@ -2172,19 +2172,19 @@
           "item_id": 34565
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Treads of the Life Path",
           "source": "Vendor: G'eras (Badges of Justice)",
           "item_id": 33324
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Two-toed Sandals",
           "source": "Drop: Zul'jin (Zul'Aman)",
           "item_id": 33471
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Guardian's Ringmail Sabatons",
           "source": "Vendor: Honor Points (Season 4)",
           "item_id": 35147
@@ -2204,13 +2204,13 @@
           "item_id": 33281
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Brooch of the Highborne",
           "source": "Drop: Felmyst (Sunwell Plateau)",
           "item_id": 34184
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Guardian's Pendant of Reprieve",
           "source": "Vendor: Honor Points (Season 4)",
           "item_id": 37929
@@ -2224,19 +2224,19 @@
           "item_id": 32528
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Ring of Flowing Life",
           "source": "Profession: Jewelcrafting - can be purchased on the Auction House",
           "item_id": 34363
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Band of Lucent Beams",
           "source": "Drop: Kalecgos (Sunwell Plateau)",
           "item_id": 34166
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Signet of the Quiet Forest",
           "source": "Drop: Third Timed Chest (Zul'Aman)",
           "item_id": 33498
@@ -2288,19 +2288,19 @@
           "item_id": 34335
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Archon's Gavel",
           "source": "Drop: Lady Sacrolash & Grand Warlock Alythess (Sunwell Plateau)",
           "item_id": 34199
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Crystal Spire of Karabor",
           "source": "Drop: Illidan Stormrage (Black Temple)",
           "item_id": 32500
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Brutal Gladiator's Salvation",
           "source": "Vendor: Arena Points (Season 4)",
           "item_id": 35082
@@ -2346,19 +2346,19 @@
           "item_id": 28523
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Living Water",
           "source": "Vendor: G'eras (Badges of Justice)",
           "item_id": 33505
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Spontaneous Regrowth",
           "source": "Drop: Mennu the Betrayer (Heroic The Slave Pens)",
           "item_id": 27544
         },
         {
-          "rank": "Option",
+          "rank": "Optional",
           "name": "Totem of Life",
           "source": "Drop: Fankriss the Unyielding (Classic - Ahn'Qiraj)",
           "item_id": 22396

@@ -1,0 +1,293 @@
+Character: Yrsadriel (shaman) -- Checking against: Phase 0, Phase 1
+   Current phase: Phase 1 (authoritative) | Phase 0 (fallback)
+
+=== PHASE 1 BIS (you're set) ===
+  Head          Cyclone Headdress  (ilvl 120 Epic)
+  Shoulder      Cyclone Shoulderpads  (ilvl 120 Epic)
+  Hands         Gloves of Centering  (ilvl 115 Epic)
+  Feet          Forestlord Striders [Leather]  (ilvl 115 Epic)
+  Trinket 1     Essence of the Martyr  (ilvl 110 Epic)
+
+=== PHASE 1 OPTIONAL (upgrade available this phase) ===
+  Back          Bishop's Cloak  (ilvl 110 Epic)
+  Chest         Earthblood Chestguard  (ilvl 115 Epic)
+  Wrist         Whirlwind Bracers  (ilvl 115 Epic)
+  Waist         Belt of Gale Force  (ilvl 115 Epic)
+  Legs          Earthsoul Leggings [Leather]  (ilvl 115 Epic)
+  Finger 1      Ring of Convalescence  (ilvl 115 Rare)
+  Trinket 2     Ribbon of Sacrifice  (ilvl 115 Epic)
+  Main Hand     Crystalheart Pulse-Staff  (ilvl 125 Epic)
+  Ranged        Totem of Spontaneous Regrowth  (ilvl 115 Rare)
+
+=== PHASE 0 ONLY (not in Phase 1 list -- outdated) ===
+  Neck          Necklace of Eternal Hope  (ilvl 110 Epic)  [was Phase 0 Optional]
+
+=== NOT ON ANY BIS LIST ===
+  Finger 2      Violet Signet  (ilvl 120 Epic)
+
+=== PRIORITY: DUNGEONS TO RUN (ranked by value per run) ===
+
+  #1  Heroic Old Hillsbrad Foothills  (score: 534) +badges +Keepers of Time rep
+       Score: Optional + Future Phase Alternative drop: +75 | Optional + Future Phase Alternative drop: +75 | Optional [Phase 0 only] drop: +38 | rep toward Keepers of Time vendor items: +130 | badges toward vendor items: +12 | Optional + Future Phase Optional drop: +105 | Alternative + Future Phase Alternative drop: +50 | Alternative + Future Phase Alternative drop: +50
+       [Optional + Future Phase Alternative]  Necklace of Resplendent Hope  (ilvl 115 Rare)  (Neck -- replaces Necklace of Eternal Hope  (ilvl 110 Epic))
+       [Optional + Future Phase Alternative]  Cord of Sanctification [Cloth]  (ilvl 110 Epic)  (Waist -- replaces Belt of Gale Force  (ilvl 115 Epic))
+       [Optional [Phase 0 only]]  Pontiff's Pantaloons of Prophecy [Cloth]  (ilvl 115 Rare)  (Legs -- replaces Earthsoul Leggings  (ilvl 115 Epic))
+       [Optional + Future Phase Optional]  Lifegiving Cloak  (ilvl 100 Epic)  (Back -- replaces Bishop's Cloak  (ilvl 110 Epic))
+       [Alternative + Future Phase Alternative]  Kamaei's Cerulean Skirt [Cloth]  (ilvl 100 Epic)  (Legs -- replaces Earthsoul Leggings  (ilvl 115 Epic))
+       [Alternative + Future Phase Alternative]  The Ancient Scepter of Sue-Min  (ilvl 100 Epic)  (Main Hand -- replaces Crystalheart Pulse-Staff  (ilvl 125 Epic))
+       Also earns rep toward:
+         [BiS + Future Phase Optional]  Bindings of the Timewalker [Cloth]  (ilvl 105 Epic)  (Wrist)
+
+  #2  Heroic The Black Morass  (score: 367) +badges +Keepers of Time rep
+       Score: Optional + Future Phase Alternative drop: +75 | BiS + Future Phase BiS drop: +150 | rep toward Keepers of Time vendor items: +130 | badges toward vendor items: +12
+       [Optional + Future Phase Alternative]  Primal Surge Bracers  (ilvl 115 Rare)  (Wrist -- replaces Whirlwind Bracers  (ilvl 115 Epic))
+       [BiS + Future Phase BiS]  Scarab of the Infinite Cycle  (ilvl 115 Rare)  (Trinket 1 -- replaces Essence of the Martyr  (ilvl 110 Epic))
+       Also earns rep toward:
+         [BiS + Future Phase Optional]  Bindings of the Timewalker [Cloth]  (ilvl 105 Epic)  (Wrist)
+
+  #3  The Black Morass  (score: 355) +Keepers of Time rep
+       Score: Optional + Future Phase Alternative drop: +75 | BiS + Future Phase BiS drop: +150 | rep toward Keepers of Time vendor items: +130
+       [Optional + Future Phase Alternative]  Primal Surge Bracers  (ilvl 115 Rare)  (Wrist -- replaces Whirlwind Bracers  (ilvl 115 Epic))
+       [BiS + Future Phase BiS]  Scarab of the Infinite Cycle  (ilvl 115 Rare)  (Trinket 1 -- replaces Essence of the Martyr  (ilvl 110 Epic))
+       Also earns rep toward:
+         [BiS + Future Phase Optional]  Bindings of the Timewalker [Cloth]  (ilvl 105 Epic)  (Wrist)
+
+  #4  Old Hillsbrad Foothills  (score: 335) +Keepers of Time rep
+       Score: Optional + Future Phase Optional drop: +105 | Alternative + Future Phase Alternative drop: +50 | Alternative + Future Phase Alternative drop: +50 | rep toward Keepers of Time vendor items: +130
+       [Optional + Future Phase Optional]  Lifegiving Cloak  (ilvl 100 Epic)  (Back -- replaces Bishop's Cloak  (ilvl 110 Epic))
+       [Alternative + Future Phase Alternative]  Kamaei's Cerulean Skirt [Cloth]  (ilvl 100 Epic)  (Legs -- replaces Earthsoul Leggings  (ilvl 115 Epic))
+       [Alternative + Future Phase Alternative]  The Ancient Scepter of Sue-Min  (ilvl 100 Epic)  (Main Hand -- replaces Crystalheart Pulse-Staff  (ilvl 125 Epic))
+       Also earns rep toward:
+         [BiS + Future Phase Optional]  Bindings of the Timewalker [Cloth]  (ilvl 105 Epic)  (Wrist)
+
+  #5  Heroic Shadow Labyrinth  (score: 250) +badges +Lower City rep
+       Score: Alternative + Future Phase Alternative drop: +50 | rep toward Lower City vendor items: +75 | badges toward vendor items: +12 | Optional [Phase 0 only] drop: +38 | Optional drop: +75
+       [Alternative + Future Phase Alternative]  Shockwave Truncheon  (ilvl 105 Epic)  (Main Hand -- replaces Crystalheart Pulse-Staff  (ilvl 125 Epic))
+       [Optional [Phase 0 only]]  Hallowed Pauldrons [Cloth]  (ilvl 115 Rare)  (Shoulder -- replaces Cyclone Shoulderpads  (ilvl 120 Epic))
+       [Optional        ]  Hallowed Garments [Cloth]  (ilvl 115 Rare)  (Chest -- replaces Earthblood Chestguard  (ilvl 115 Epic))
+       Also earns rep toward:
+         [Optional + Future Phase Alternative]  Lower City Prayerbook  (ilvl 115 Rare)  (Trinket 2)
+
+  #6  Heroic Sethekk Halls  (score: 212) +badges +Lower City rep
+       Score: Optional + Future Phase Alternative drop: +75 | rep toward Lower City vendor items: +75 | badges toward vendor items: +12 | Alternative + Future Phase Alternative drop: +50
+       [Optional + Future Phase Alternative]  Bands of the Benevolent [Cloth]  (ilvl 110 Epic)  (Wrist -- replaces Whirlwind Bracers  (ilvl 115 Epic))
+       [Alternative + Future Phase Alternative]  Sethekk Oracle's Focus  (ilvl 115 Rare)  (Neck -- replaces Necklace of Eternal Hope  (ilvl 110 Epic))
+       Also earns rep toward:
+         [Optional + Future Phase Alternative]  Lower City Prayerbook  (ilvl 115 Rare)  (Trinket 2)
+
+  #7  Heroic The Mechanar  (score: 212) +badges +The Sha'tar rep
+       Score: Alternative drop: +50 | rep toward The Sha'tar vendor items: +38 | badges toward vendor items: +12 | Optional [Phase 0 only] drop: +38 | Optional + Future Phase Alternative drop: +75
+       [Alternative     ]  Boots of the Pious [Cloth]  (ilvl 110 Epic)  (Feet -- replaces Forestlord Striders  (ilvl 115 Epic))
+       [Optional [Phase 0 only]]  Moonglade Robe [Leather]  (ilvl 115 Rare)  (Chest -- replaces Earthblood Chestguard  (ilvl 115 Epic))
+       [Optional + Future Phase Alternative]  Cosmic Lifeband  (ilvl 115 Rare)  (Finger 2 -- replaces Violet Signet  (ilvl 120 Epic))
+       Also earns rep toward:
+         [Optional [Phase 0 only]]  Gavel of Pure Light  (ilvl 100 Epic)  (Main Hand)
+
+  #8  Shadow Labyrinth  (score: 188) +Lower City rep
+       Score: Optional [Phase 0 only] drop: +38 | Optional drop: +75 | rep toward Lower City vendor items: +75
+       [Optional [Phase 0 only]]  Hallowed Pauldrons [Cloth]  (ilvl 115 Rare)  (Shoulder -- replaces Cyclone Shoulderpads  (ilvl 120 Epic))
+       [Optional        ]  Hallowed Garments [Cloth]  (ilvl 115 Rare)  (Chest -- replaces Earthblood Chestguard  (ilvl 115 Epic))
+       Also earns rep toward:
+         [Optional + Future Phase Alternative]  Lower City Prayerbook  (ilvl 115 Rare)  (Trinket 2)
+
+  #9  Heroic Mana-Tombs  (score: 187) +badges +The Consortium rep
+       Score: Alternative + Future Phase Alternative drop: +50 | Optional + Future Phase Alternative drop: +75 | Alternative + Future Phase Alternative drop: +50 | badges toward vendor items: +12
+       [Alternative + Future Phase Alternative]  Mantle of the Sea Wolf  (ilvl 115 Rare)  (Shoulder -- replaces Cyclone Shoulderpads  (ilvl 120 Epic))
+       [Optional + Future Phase Alternative]  Stillwater Girdle  (ilvl 115 Rare)  (Waist -- replaces Belt of Gale Force  (ilvl 115 Epic))
+       [Alternative + Future Phase Alternative]  Band of the Crystalline Void  (ilvl 100 Epic)  (Finger 2 -- replaces Violet Signet  (ilvl 120 Epic))
+
+  #10  The Mechanar  (score: 150) +The Sha'tar rep
+       Score: Optional [Phase 0 only] drop: +38 | Optional + Future Phase Alternative drop: +75 | rep toward The Sha'tar vendor items: +38
+       [Optional [Phase 0 only]]  Moonglade Robe [Leather]  (ilvl 115 Rare)  (Chest -- replaces Earthblood Chestguard  (ilvl 115 Epic))
+       [Optional + Future Phase Alternative]  Cosmic Lifeband  (ilvl 115 Rare)  (Finger 2 -- replaces Violet Signet  (ilvl 120 Epic))
+       Also earns rep toward:
+         [Optional [Phase 0 only]]  Gavel of Pure Light  (ilvl 100 Epic)  (Main Hand)
+
+  #11  Heroic The Botanica  (score: 137) +badges +The Sha'tar rep
+       Score: Alternative + Future Phase Alternative drop: +50 | Optional [Phase 0 only] drop: +38 | rep toward The Sha'tar vendor items: +38 | badges toward vendor items: +12
+       [Alternative + Future Phase Alternative]  Prismatic Mittens of Mending [Cloth]  (ilvl 115 Rare)  (Hands -- replaces Gloves of Centering  (ilvl 115 Epic))
+       [Optional [Phase 0 only]]  Bangle of Endless Blessings  (ilvl 115 Rare)  (Trinket 2 -- replaces Ribbon of Sacrifice  (ilvl 115 Epic))
+       Also earns rep toward:
+         [Optional [Phase 0 only]]  Gavel of Pure Light  (ilvl 100 Epic)  (Main Hand)
+
+  #12  Heroic Auchenai Crypts  (score: 137) +badges +Lower City rep
+       Score: Alternative + Future Phase Alternative drop: +50 | rep toward Lower City vendor items: +75 | badges toward vendor items: +12
+       [Alternative + Future Phase Alternative]  Slippers of Serenity  (Feet -- replaces Forestlord Striders  (ilvl 115 Epic))
+       Also earns rep toward:
+         [Optional + Future Phase Alternative]  Lower City Prayerbook  (ilvl 115 Rare)  (Trinket 2)
+
+  #13  Sethekk Halls  (score: 125) +Lower City rep
+       Score: Alternative + Future Phase Alternative drop: +50 | rep toward Lower City vendor items: +75
+       [Alternative + Future Phase Alternative]  Sethekk Oracle's Focus  (ilvl 115 Rare)  (Neck -- replaces Necklace of Eternal Hope  (ilvl 110 Epic))
+       Also earns rep toward:
+         [Optional + Future Phase Alternative]  Lower City Prayerbook  (ilvl 115 Rare)  (Trinket 2)
+
+  #14  The Botanica  (score: 125) +The Sha'tar rep
+       Score: Alternative + Future Phase Alternative drop: +50 | Optional [Phase 0 only] drop: +38 | rep toward The Sha'tar vendor items: +38
+       [Alternative + Future Phase Alternative]  Prismatic Mittens of Mending [Cloth]  (ilvl 115 Rare)  (Hands -- replaces Gloves of Centering  (ilvl 115 Epic))
+       [Optional [Phase 0 only]]  Bangle of Endless Blessings  (ilvl 115 Rare)  (Trinket 2 -- replaces Ribbon of Sacrifice  (ilvl 115 Epic))
+       Also earns rep toward:
+         [Optional [Phase 0 only]]  Gavel of Pure Light  (ilvl 100 Epic)  (Main Hand)
+
+  #15  Auchenai Crypts  (score: 125) +Lower City rep
+       Score: Alternative + Future Phase Alternative drop: +50 | rep toward Lower City vendor items: +75
+       [Alternative + Future Phase Alternative]  Slippers of Serenity  (Feet -- replaces Forestlord Striders  (ilvl 115 Epic))
+       Also earns rep toward:
+         [Optional + Future Phase Alternative]  Lower City Prayerbook  (ilvl 115 Rare)  (Trinket 2)
+
+  #16  Heroic The Steamvault  (score: 112) +badges +Cenarion Expedition rep
+       Score: BiS [Phase 0 only] drop: +50 | badges toward vendor items: +12 | Alternative + Future Phase Alternative drop: +50
+       [BiS [Phase 0 only]]  Pontifex Kilt [Cloth]  (ilvl 110 Epic)  (Legs -- replaces Earthsoul Leggings  (ilvl 115 Epic))
+       [Alternative + Future Phase Alternative]  Fathomheart Gauntlets  (ilvl 115 Rare)  (Hands -- replaces Gloves of Centering  (ilvl 115 Epic))
+
+  #17  Heroic The Underbog  (score: 100) +badges +Cenarion Expedition rep
+       Score: Optional [Phase 0 only] drop: +38 | Alternative drop: +50 | badges toward vendor items: +12
+       [Optional [Phase 0 only]]  Headdress of the Tides  (ilvl 115 Rare)  (Head -- replaces Cyclone Headdress  (ilvl 120 Epic))
+       [Alternative     ]  Ring of Fabled Hope  (ilvl 115 Rare)  (Finger 2 -- replaces Violet Signet  (ilvl 120 Epic))
+
+  #18  Heroic The Arcatraz  (score: 100) +badges +The Sha'tar rep
+       Score: Alternative + Future Phase Alternative drop: +50 | rep toward The Sha'tar vendor items: +38 | badges toward vendor items: +12
+       [Alternative + Future Phase Alternative]  Hallowed Crown [Cloth]  (ilvl 115 Rare)  (Head -- replaces Cyclone Headdress  (ilvl 120 Epic))
+       Also earns rep toward:
+         [Optional [Phase 0 only]]  Gavel of Pure Light  (ilvl 100 Epic)  (Main Hand)
+
+  #19  The Arcatraz  (score: 88) +The Sha'tar rep
+       Score: Alternative + Future Phase Alternative drop: +50 | rep toward The Sha'tar vendor items: +38
+       [Alternative + Future Phase Alternative]  Hallowed Crown [Cloth]  (ilvl 115 Rare)  (Head -- replaces Cyclone Headdress  (ilvl 120 Epic))
+       Also earns rep toward:
+         [Optional [Phase 0 only]]  Gavel of Pure Light  (ilvl 100 Epic)  (Main Hand)
+
+  #20  Heroic The Slave Pens  (score: 87) +badges +Cenarion Expedition rep
+       Score: Optional + Future Phase Alternative drop: +75 | badges toward vendor items: +12
+       [Optional + Future Phase Alternative]  Wavefury Boots  (ilvl 115 Rare)  (Feet -- replaces Forestlord Striders  (ilvl 115 Epic))
+
+  #21  The Steamvault  (score: 50) +Cenarion Expedition rep
+       Score: Alternative + Future Phase Alternative drop: +50
+       [Alternative + Future Phase Alternative]  Fathomheart Gauntlets  (ilvl 115 Rare)  (Hands -- replaces Gloves of Centering  (ilvl 115 Epic))
+
+  #22  The Shattered Halls  (score: 50) +Honor Hold rep
+       Score: Alternative + Future Phase Alternative drop: +50
+       [Alternative + Future Phase Alternative]  Jeweled Boots of Sanctification [Cloth]  (ilvl 112 Rare)  (Feet -- replaces Forestlord Striders  (ilvl 115 Epic))
+
+  #23  The Blood Furnace  (score: 38) +Honor Hold rep
+       Score: Optional [Phase 0 only] drop: +38
+       [Optional [Phase 0 only]]  Auslese's Light Channeler  (Trinket 2 -- replaces Ribbon of Sacrifice  (ilvl 115 Epic))
+
+=== ALL UPGRADES BY SLOT ===
+
+  Head: Cyclone Headdress [BiS]  (ilvl 120 Epic)
+    [Optional [Phase 0 only]] Headdress of the Tides  (ilvl 115 Rare) (H)  --  Drop: Ghaz'an (H) (Underbog)
+    [Optional]         Cowl of Naaru Blessings [Cloth]  (ilvl 110 Epic)  --  Vendor — Badge of Justice (50)
+    [Optional + Future Phase Alternative] Gladiator's Ringmail Helm  (ilvl 123 Epic)  --  PvP — Arena Season 1
+    [Alternative + Future Phase Alternative] Hallowed Crown [Cloth]  (ilvl 115 Rare)  --  Arcatraz — Harbinger Skyriss (16%)
+
+  Neck: Necklace of Eternal Hope [Optional]  (ilvl 110 Epic)
+    [Optional + Future Phase Alternative] Necklace of Resplendent Hope  (ilvl 115 Rare) (H)  --  Drop: Epoch Hunter (H) (Old Hillsbrad Foothills)
+    [Optional]         Natasha's Guardian Cord  --  Quest Reward — The Hound-Master
+    [Optional + Future Phase Optional] Archaic Charm of Presence  (ilvl 120 Epic)  --  World Boss: Doomwalker
+    [Alternative + Future Phase Alternative] Natasha's Guardian Cord  --  Natasha's Guardian Cord: The Hound-Master — Blade's Edge Mountains
+    [Alternative + Future Phase Alternative] Sethekk Oracle's Focus  (ilvl 115 Rare)  --  Sethekk Oracle's Focus: Brother Against Brother — Sethekk Halls
+    [Alternative]      Karja's Medallion  (ilvl 109 Rare)  --  Quest: Shutting Down Manaforge Ara
+
+  Shoulder: Cyclone Shoulderpads [BiS]  (ilvl 120 Epic)
+    [Alternative + Future Phase Alternative] Mantle of the Sea Wolf  (ilvl 115 Rare) (H)  --  Drop: Tavarok (H) (Mana-Tombs)
+    [Optional + Future Phase Alternative] Gladiator's Ringmail Spaulders  (ilvl 123 Epic)  --  PvP — Arena Season 1
+    [Optional [Phase 0 only]] Hallowed Pauldrons [Cloth]  (ilvl 115 Rare)  --  Shadow Labyrinth — Grandmaster Vorpil (20%)
+    [Optional [Phase 0 only]] High Warlord's Ringmail Shoulderpads  (ilvl 115 Rare)  --  PvP — Honor & AB Marks
+    [Optional [Phase 0 only]] Pauldrons of Sufferance  --  Old Hillsbrad Foothills — Epoch Hunter (20%)
+
+  Back: Bishop's Cloak [Optional]  (ilvl 110 Epic)
+    [Optional + Future Phase Optional] Lifegiving Cloak  (ilvl 100 Epic)  --  Drop: Durnholde Rifleman (Old Hillsbrad Foothills)
+
+  Chest: Earthblood Chestguard [Optional]  (ilvl 115 Epic)
+    [Optional + Future Phase Optional] Gladiator's Ringmail Armor  (ilvl 123 Epic)  --  PvP — Arena Season 1
+    [Optional]         Hallowed Garments [Cloth]  (ilvl 115 Rare)  --  Shadow Labyrinth — Murmur (16%)
+    [Optional [Phase 0 only]] Moonglade Robe [Leather]  (ilvl 115 Rare)  --  Mechanar — Pathaleon the Calculator (16%)
+
+  Wrist: Whirlwind Bracers [Optional]  (ilvl 115 Epic)
+    [BiS + Future Phase Optional] Bindings of the Timewalker [Cloth]  (ilvl 105 Epic)  --  Keepers of Time — Exalted
+    [Optional + Future Phase Alternative] Bands of the Benevolent [Cloth]  (ilvl 110 Epic) (H)  --  Sethekk Halls (HC) — Talon King Ikiss (25%)
+    [Optional + Future Phase Alternative] Primal Surge Bracers  (ilvl 115 Rare)  --  Black Morass — Aeonus (16%)
+    [Optional [Phase 0 only]] General's Mail Bracers  (ilvl 113 Epic)  --  PvP — Honor & WSG Marks
+
+  Hands: Gloves of Centering [BiS]  (ilvl 115 Epic)
+    [Alternative + Future Phase Alternative] Fathomheart Gauntlets  (ilvl 115 Rare)  --  Drop: Warlord Kalithresh (Steamvault)
+    [Alternative + Future Phase Alternative] Prismatic Mittens of Mending [Cloth]  (ilvl 115 Rare)  --  Drop: Commander Sarannis (Botanica)
+    [Alternative + Future Phase Alternative] Gladiator's Ringmail Gauntlets  (ilvl 123 Epic)  --  PvP — Arena Season 1
+    [Optional [Phase 0 only]] Bloody Surgeon's Mitts  --  The Blood Furnace — Broggok (20%)
+
+  Waist: Belt of Gale Force [Optional]  (ilvl 115 Epic)
+    [Optional + Future Phase Alternative] Cord of Sanctification [Cloth]  (ilvl 110 Epic) (H)  --  Old Hillsbrad Foothills (HC) — Epoch Hunter (25%)
+    [Optional + Future Phase Alternative] Stillwater Girdle  (ilvl 115 Rare) (H)  --  Mana Tombs (HC) — Nexus-Prince Shaffar (16%)
+
+  Legs: Earthsoul Leggings [Leather] [Optional]  (ilvl 115 Epic)
+    [BiS [Phase 0 only]] Pontifex Kilt [Cloth]  (ilvl 110 Epic) (H)  --  Drop: Warlord Kalithresh (H) (Steamvault)
+    [Alternative + Future Phase Alternative] Kamaei's Cerulean Skirt [Cloth]  (ilvl 100 Epic)  --  Drop: Durnholde Rifleman (Old Hillsbrad Foothills)
+    [Alternative + Future Phase Alternative] Gladiator's Ringmail Leggings  (ilvl 123 Epic)  --  PvP — Arena Season 1
+    [Optional [Phase 0 only]] Pontiff's Pantaloons of Prophecy [Cloth]  (ilvl 115 Rare) (H)  --  Old Hillsbrad Foothills (HC) — Captain Skarloc (17%)
+    [Optional + Future Phase Optional] Gilded Trousers of Benediction [Cloth]  (ilvl 120 Epic)  --  Gilded Trousers of Benediction: Doomwalker — Shadowmoon Valley
+
+  Feet: Forestlord Striders [Leather] [BiS]  (ilvl 115 Epic)
+    [Alternative + Future Phase Alternative] Slippers of Serenity  --  Drop: Exarch Maladaar (Auchenai Crypts)
+    [Optional + Future Phase Alternative] Wavefury Boots  (ilvl 115 Rare) (H)  --  Drop: Rokmar the Crackler (H) (Slave Pens)
+    [Optional]         Slippers of Serenity  --  Auchenai Crypts — Exarch Maladaar (17%)
+    [Alternative + Future Phase Alternative] Jeweled Boots of Sanctification [Cloth]  (ilvl 112 Rare)  --  Shattered Halls — Warbringer O'mrogg (20%)
+    [Alternative]      Boots of the Pious [Cloth]  (ilvl 110 Epic) (H)  --  Mechanar (HC) — Pathaleon the Calculator (25%)
+    [Optional [Phase 0 only]] Curate's Boots [Cloth]  (ilvl 114 Rare)  --  Quest Reward — Fel Embers (A)
+    [BiS + Future Phase BiS] Gold-Leaf Wildboots [Leather]  (ilvl 120 Epic)  --  Gold-Leaf Wildboots: Doom-Lord Kazzak — Hellfire Peninsula
+
+  Finger 1: Ring of Convalescence [Optional]  (ilvl 115 Rare)
+    [BiS [Phase 0 only]] Gift of the Talonpriests  (ilvl 115 Rare)  --  Auction House — BoE World Drop
+
+  Finger 2: Violet Signet  (ilvl 120 Epic)
+    [BiS [Phase 0 only]] Gift of the Talonpriests  (ilvl 115 Rare)  --  Auction House — BoE World Drop
+    [Optional + Future Phase Alternative] Cosmic Lifeband  (ilvl 115 Rare)  --  Drop: Nethermancer Sepethrea (Mechanar)
+    [Alternative + Future Phase Alternative] Band of the Crystalline Void  (ilvl 100 Epic) (H)  --  Drop: Yor <Void Hound of Shaffar> (H) (Mana-Tombs)
+    [Optional]         Celestial Jewel Ring  (ilvl 106 Rare)  --  Quest Reward — Hitting the Motherlode
+    [Alternative + Future Phase Alternative] Band of Halos  (ilvl 110 Epic)  --  Vendor — Badge of Justice (25)
+    [Alternative]      Ring of Fabled Hope  (ilvl 115 Rare) (H)  --  Drop: The Black Stalker (Heroic The Underbog)
+    [Alternative [Phase 0 only]] Spiritualist's Mark of the Sha'tar  (ilvl 109 Rare)  --  Quest: Battle of the Crimson Watch
+    [Optional + Future Phase Optional] Ring of Flowing Light  (ilvl 120 Epic)  --  World Boss — Doom Lord Kazzak (19%)
+
+  Trinket 1: Essence of the Martyr [BiS]  (ilvl 110 Epic)
+    [BiS + Future Phase BiS] Scarab of the Infinite Cycle  (ilvl 115 Rare)  --  Drop: Aeonus (Black Morass)
+
+  Trinket 2: Ribbon of Sacrifice [Optional]  (ilvl 115 Epic)
+    [BiS + Future Phase BiS] Scarab of the Infinite Cycle  (ilvl 115 Rare)  --  Drop: Aeonus (Black Morass)
+    [Optional + Future Phase Alternative] Lower City Prayerbook  (ilvl 115 Rare)  --  Lower City — Revered
+    [Optional [Phase 0 only]] Auslese's Light Channeler  --  Drop: Broggok (Blood Furnace)
+    [Optional [Phase 0 only]] Bangle of Endless Blessings  (ilvl 115 Rare)  --  Botanica — Warp Splinter (15%)
+
+  Main Hand: Crystalheart Pulse-Staff [Optional]  (ilvl 125 Epic)
+    [Optional + Future Phase Optional] Gladiator's Salvation  (ilvl 123 Epic)  --  Vendor: Vixton Pinchwhistle
+    [Alternative + Future Phase Alternative] Shockwave Truncheon  (ilvl 105 Epic) (H)  --  Drop: Murmur (H) (Shadow Labyrinth)
+    [Alternative + Future Phase Alternative] The Ancient Scepter of Sue-Min  (ilvl 100 Epic)  --  Drop: Durnholde Rifleman (Old Hillsbrad Foothills)
+    [Optional [Phase 0 only]] Gavel of Pure Light  (ilvl 100 Epic)  --  Reputation — The Sha'tar - Exalted
+    [Optional + Future Phase Optional] Exodar Life-Staff  (ilvl 120 Epic)  --  Exodar Life-Staff: Doom-Lord Kazzak — Hellfire Peninsula
+
+=== RAID UPGRADES ===
+
+  Karazhan  (2 soft reserves)
+    [BiS + Future Phase BiS] Jade Ring of the Everliving  (ilvl 125 Epic)  (Finger 1 -- replaces Ring of Convalescence)  --  Drop: Prince Malchezaar — Karazhan
+    [BiS + Future Phase BiS] Totem of Healing Rains  (ilvl 115 Epic)  (Ranged -- replaces Totem of Spontaneous Regrowth)  --  Drop: Maiden of Virtue — Karazhan
+    [BiS + Future Phase Optional] Emberspur Talisman  (ilvl 115 Epic)  (Neck -- replaces Necklace of Eternal Hope)  --  Drop: Nightbane — Karazhan
+    [BiS + Future Phase Optional] Stainless Cloak of the Pure Hearted  (ilvl 125 Epic)  (Back -- replaces Bishop's Cloak)  --  Drop: Prince Malchezaar — Karazhan
+    [BiS + Future Phase Optional] Heart-Flame Leggings  (ilvl 115 Epic)  (Legs -- replaces Earthsoul Leggings)  --  Heart-Flame Leggings: Echo of Medivh — Karazhan
+    [BiS + Future Phase Optional] Light's Justice  (ilvl 125 Epic)  (Main Hand -- replaces Crystalheart Pulse-Staff)  --  Drop: Prince Malchezaar — Karazhan
+    [Optional + Future Phase Optional] Red Riding Hood's Cloak  (ilvl 115 Epic)  (Back -- replaces Bishop's Cloak)  --  Karazhan — Opera Event (Red Riding Hood) (25%)
+    [Optional + Future Phase Optional] Cord of Nature's Sustenance [Leather]  (ilvl 115 Epic)  (Waist -- replaces Belt of Gale Force)  --  Karazhan — Terestian Illhoof (16%)
+    [Optional + Future Phase Optional] Shard of the Virtuous  (ilvl 115 Epic)  (Main Hand -- replaces Crystalheart Pulse-Staff)  --  Karazhan — Maiden of Virtue (16%)
+
+  Gruul's Lair + Magtheridon's Lair  (1 soft reserve)
+    [BiS + Future Phase Optional] Naaru Lightwarden's Band  (ilvl 125 Epic)  (Finger 1 -- replaces Ring of Convalescence)  --  Quest: The Fall of Magtheridon
+    [Optional + Future Phase Optional] Teeth of Gruul  (ilvl 125 Epic)  (Neck -- replaces Necklace of Eternal Hope)  --  Drop: Gruul the Dragonkiller — Gruul's Lair
+    [Optional + Future Phase Optional] Cyclone Hauberk  (ilvl 120 Epic)  (Chest -- replaces Earthblood Chestguard)  --  Cyclone Hauberk ( Chestguard of the Fallen Champion): Magtheridon — Magtheridon's Lair
+    [Optional + Future Phase Optional] Eye of Gruul  (ilvl 125 Epic)  (Trinket 2 -- replaces Ribbon of Sacrifice)  --  Gruul's Lair — Gruul the Dragonkiller (33%)
+
+Summary: 16 slots total
+  Phase 1 BiS: 5
+  Phase 1 Optional: 9
+  Phase 0 only (outdated): 1
+  Not on any list: 1
+  Slots with dungeon/rep upgrades: 15
+  Slots with raid upgrades: 10
