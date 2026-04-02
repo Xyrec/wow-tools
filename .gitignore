@@ -12,5 +12,8 @@ Cargo.lock
 # sccache
 .sccache/
 
+# cmangos TBC database (large, synced separately)
+sources/cmangos-tbc-db/
+
 # AtlasLoot source data (large, synced separately)
 sources/atlasloot/AtlasLootClassic*/
