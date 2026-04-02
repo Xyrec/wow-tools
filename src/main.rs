@@ -8,7 +8,7 @@ use anyhow::Result;
 use clap::{Parser, Subcommand};
 
 #[derive(Parser)]
-#[command(name = "bis-gear", about = "TBC BiS gear checker and item tools")]
+#[command(name = "wow-tools", about = "TBC BiS gear checker and item tools")]
 struct Cli {
     #[command(subcommand)]
     command: Commands,

@@ -7,7 +7,7 @@ Compares a WoW TBC character's equipped gear against Best-in-Slot (BiS) lists to
 ## Project Structure
 
 ```
-bis-gear/
+wow-tools/
   Cargo.toml              # Rust project config
   data/
     resto.json            # Resto Shaman character data (paste updated exports here)
