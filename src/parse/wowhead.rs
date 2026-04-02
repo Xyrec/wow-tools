@@ -68,25 +68,7 @@ fn parse_phase_file(filepath: &Path) -> Result<IndexMap<String, Vec<ParsedItem>>
     // Get all elements in document order
     let h3_elements: Vec<_> = body.select(&h3_sel).collect();
 
-    // For each h3, find the slot and then find the next table
-    let mut current_slot: Option<String> = None;
-
-    // We need to process elements in document order: h3 sets the slot, table provides items.
-    // Use a different approach: iterate all children and track state.
-
-    // Actually, let's use the node tree directly. Walk all nodes:
-    for node in body.descendants() {
-        if let Some(element) = node.value().as_element() {
-            if element.name() == "h3" {
-                if let Some(id) = element.attr("id") {
-                    current_slot = normalize_slot(id);
-                }
-            }
-        }
-    }
-
-    // Better approach: pair h3s with their following tables by using element references
-    // Walk through pairs of (h3, next table)
+    // Pair h3s with their following tables by using element references
     let all_h3: Vec<_> = h3_elements.iter().collect();
     let all_tables: Vec<_> = body.select(&table_sel).collect();
 

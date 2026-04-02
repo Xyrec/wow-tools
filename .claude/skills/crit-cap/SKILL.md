@@ -6,7 +6,7 @@ description: Check if the Prot Paladin is crit-capped and suggest upgrades if no
 Check the Prot Paladin's crit cap status. Run the command:
 
 ```
-cargo run -- find-stat data/prot-paladin.json --stat defense --target 490 --source easy
+target/release/wow-tools find-stat data/prot-paladin.json --stat defense --target 490 --source easy
 ```
 
 If the user provides arguments, they may override defaults:

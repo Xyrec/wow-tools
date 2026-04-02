@@ -28,7 +28,7 @@ pub struct ParsedOutput {
 
 /// Discover phase-*.html files in `source_dir`, sorted by name.
 pub fn find_phase_files(source_dir: &Path, ext: &str) -> Result<Vec<std::path::PathBuf>> {
-    let pattern = format!("phase-*.{ext}");
+    let _pattern = format!("phase-*.{ext}");
     let mut files: Vec<_> = std::fs::read_dir(source_dir)
         .with_context(|| format!("failed to read {}", source_dir.display()))?
         .filter_map(|e| e.ok())

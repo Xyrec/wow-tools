@@ -776,7 +776,7 @@ fn classify_item_sources(
     if !remaining.is_empty() {
         let placeholders: String = remaining.iter().map(|_| "?").collect::<Vec<_>>().join(",");
         let params: Vec<i64> = remaining.iter().map(|&id| id as i64).collect();
-        let param_refs: Vec<&dyn rusqlite::types::ToSql> = params
+        let _param_refs: Vec<&dyn rusqlite::types::ToSql> = params
             .iter()
             .map(|p| p as &dyn rusqlite::types::ToSql)
             .collect();

@@ -63,16 +63,16 @@ fn parse_phase_file(filepath: &Path) -> Result<IndexMap<String, Vec<ParsedItem>>
     // Track: current rank (BiS/Optional from heading), current slot (from row).
     let mut current_rank = "BiS";
     let mut current_slot: Option<&'static str> = None;
-    let mut in_table = false;
+    let _in_table = false;
 
-    let table_sel = Selector::parse("table").expect("invariant: valid selector");
+    let _table_sel = Selector::parse("table").expect("invariant: valid selector");
     let tr_sel = Selector::parse("tr").expect("invariant: valid selector");
     let td_sel = Selector::parse("td").expect("invariant: valid selector");
     let strong_sel = Selector::parse("strong").expect("invariant: valid selector");
     let li_sel = Selector::parse("li").expect("invariant: valid selector");
-    let h2_sel = Selector::parse("h2").expect("invariant: valid selector");
-    let h3_sel = Selector::parse("h3").expect("invariant: valid selector");
-    let h4_sel = Selector::parse("h4").expect("invariant: valid selector");
+    let _h2_sel = Selector::parse("h2").expect("invariant: valid selector");
+    let _h3_sel = Selector::parse("h3").expect("invariant: valid selector");
+    let _h4_sel = Selector::parse("h4").expect("invariant: valid selector");
 
     // Since scraper is DOM-based, collect all elements in document order
     // by iterating descendants and checking element types.

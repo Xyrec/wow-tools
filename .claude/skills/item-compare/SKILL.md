@@ -13,7 +13,7 @@ Parse the arguments to extract two numeric item IDs. They may be provided as:
 Run the command:
 
 ```
-cargo run -- lookup --compare {id1} {id2}
+target/release/wow-tools lookup --compare {id1} {id2}
 ```
 
 Present the results clearly, highlighting:

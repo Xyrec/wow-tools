@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 mod check;
 mod common;
 mod find_stat;

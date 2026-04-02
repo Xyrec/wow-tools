@@ -14,7 +14,7 @@ Spec aliases:
 Run the command:
 
 ```
-cargo run -- check --spec {spec}
+target/release/wow-tools check --spec {spec}
 ```
 
 Present the results with a concise summary focusing on:
