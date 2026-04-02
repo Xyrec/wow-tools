@@ -8,7 +8,7 @@ Compares a WoW TBC character's equipped gear against Best-in-Slot (BiS) lists to
 
 ```
 bis-gear/
-  pyproject.toml          # Python project config with CLI entry points
+  Cargo.toml              # Rust project config
   data/
     resto.json            # Resto Shaman character data (paste updated exports here)
     elemental.json        # Elemental Shaman character data
@@ -16,14 +16,16 @@ bis-gear/
     soft-reserves.txt     # Soft-reserve counts per raid (0 = master looter)
   output/
     resto-shaman/
-      bis_gear.json       # Generated BiS data for Resto (all phases), output of bis-parse
+      *_bis_gear.json     # Generated BiS data for Resto (all phases), output of parse
     elemental-shaman/
-      bis_gear.json       # Generated BiS data for Elemental (all phases), output of bis-parse
-  src/bis_gear/           # Python package
-    check_gear.py         # Main tool — compares gear against BiS lists
-    parse_bis.py          # HTML parser — regenerates bis_gear.json from source HTML
-    item_lookup.py        # TBC item stat lookup from cmangos SQLite DB
-    find_stat.py          # Find gear upgrades for a specific stat (e.g. defense cap)
+      *_bis_gear.json     # Generated BiS data for Elemental (all phases), output of parse
+  src/
+    main.rs               # CLI entry point (clap subcommands: check, parse, lookup, find-stat)
+    common/               # Shared types, character loading, project root discovery
+    check/                # Gear comparison against BiS lists
+    parse/                # HTML/Lua parsers (wowhead, wowtbc, icy-veins, atlasloot)
+    lookup/               # Item stat lookup from cmangos SQLite DB
+    find_stat/            # Stat-targeted upgrade finder (e.g. defense cap)
   sources/
     wowhead/
       resto-shaman/       # phase-0.html through phase-5.html (Resto BiS pages)
@@ -38,34 +40,31 @@ bis-gear/
 
 ```bash
 # Check gear against BiS lists (--spec required):
-uv run bis-gear --spec resto              # loads data/resto.json by default
-uv run bis-gear --spec ele                # loads data/elemental.json by default
-uv run bis-gear --spec resto custom.json  # explicit character file
-echo '{"character": {...}}' | uv run bis-gear --spec ele -
+cargo run -- check --spec resto              # loads data/resto.json by default
+cargo run -- check --spec ele                # loads data/elemental.json by default
+cargo run -- check --spec resto custom.json  # explicit character file
 
 # Spec aliases: resto, resto-shaman | ele, elemental, elemental-shaman
 
-# Regenerate bis_gear.json from source HTML (only if HTML files change):
-uv run bis-parse --spec resto
-uv run bis-parse --spec ele
+# Regenerate BiS JSON from source HTML (only if HTML files change):
+cargo run -- parse --spec resto                     # all parsers
+cargo run -- parse --spec resto --parser wowhead     # single parser
 
 # Look up TBC item stats (accurate TBC data, not WotLK):
-uv run item-lookup 29183                       # single item
-uv run item-lookup 29183 28503 29376 28771     # multiple items
-uv run item-lookup --compare 29183 28503       # side-by-side with diff column
+cargo run -- lookup 29183                       # single item
+cargo run -- lookup 29183 28503 29376 28771     # multiple items
+cargo run -- lookup --compare 29183 28503       # side-by-side with diff column
 
 # Find gear upgrades for a specific stat target:
-uv run find-stat data/prot-paladin.txt --stat defense --target 490
-uv run find-stat data/prot-paladin.txt --stat defense --target 490 --source easy    # default: dungeons + honored rep + rare BoE
-uv run find-stat data/prot-paladin.txt --stat defense --target 490 --source dungeon # dungeon drops only
-uv run find-stat data/prot-paladin.txt --stat defense --target 490 --source all     # everything including raids
+cargo run -- find-stat data/prot-paladin.json --stat defense --target 490
+cargo run -- find-stat data/prot-paladin.json --stat defense --target 490 --source easy    # default
+cargo run -- find-stat data/prot-paladin.json --stat defense --target 490 --source dungeon # dungeon drops only
+cargo run -- find-stat data/prot-paladin.json --stat defense --target 490 --source all     # everything including raids
 
 # Supported --stat values: defense, dodge, parry, block, hit, crit, haste, expertise, resilience
 ```
 
 ## Development
-
-A git pre-commit hook runs `ruff check`, `ty check`, and `ruff format` automatically before every commit. Commits are blocked if lint or type errors exist. Formatting is applied and staged automatically if checks pass.
 
 ### Expected Input Format
 
@@ -140,7 +139,7 @@ serpentshrine-cavern=0              # 0 = master looter (no SR info shown)
 ## When the User Asks to Check Gear
 
 1. **Ask which spec** if the user hasn't specified: "Which spec should I check — Resto or Elemental?"
-2. Run `uv run bis-gear --spec resto` or `uv run bis-gear --spec ele` (no filename needed — defaults to `data/resto.json` or `data/elemental.json`).
+2. Run `cargo run -- check --spec resto` or `cargo run -- check --spec ele` (no filename needed — defaults to `data/resto.json` or `data/elemental.json`).
 3. Present the results to the user with a concise summary. Focus on:
    - How many slots are already BiS vs. have available upgrades.
    - The **top 3 priority dungeons** from the ranked list — explain *why* each is high value (e.g. "Heroic Old Hillsbrad drops 2 upgrades AND gives Keepers of Time rep toward your BiS wrist").
@@ -150,10 +149,10 @@ serpentshrine-cavern=0              # 0 = master looter (no SR info shown)
    - For each raid with SR > 0, provide a **soft-reserve priority list**: rank ALL upgrade items from that raid by value (BiS before Option, higher score first), not just the top N matching the SR count. The user needs to see the full ranked list so they can pick alternatives if someone else has already soft-reserved their top choice. Format as a numbered list like "1. Light's Justice [BiS] (main hand) 2. Jade Ring [BiS] (ring) 3. ..." with a note like "With 2 SRs, your best picks are #1 and #2 — but if either is taken, #3-#5 are strong fallbacks."
    - Single items can be soft-reserved more than once. This lets the player roll on that item multiple times and increases their odds of winning it. High-value items will often be soft-reserved more than once by the same player in a single raid, so take that into consideration when recommending SR priorities.
    - **IMPORTANT: Always specify which phase an item's rank comes from.** Items marked `[Phase 0 only]` in the script output are outdated — they were BiS/Option in Phase 0 but are NOT on the current phase's list. Never call something just "BiS" or "Option" without saying which phase. For example, say "Phase 1 BiS wrists" or "Phase 0 only Option (outdated)" — not just "BiS wrists" or "an Option".
-4. Do NOT read `bis_gear.json` or the source code manually — the script handles all the logic.
-5. If the user pastes character JSON directly in chat instead of updating the spec file, save it to `data/resto.json` or `data/elemental.json` (ask which spec if unclear), then run the script.
+4. Do NOT read `bis_gear.json` or the source code manually — the binary handles all the logic.
+5. If the user pastes character JSON directly in chat instead of updating the spec file, save it to `data/resto.json` or `data/elemental.json` (ask which spec if unclear), then run the command.
 
-## Item Lookup Tool (`item-lookup`)
+## Item Lookup Tool (`lookup`)
 
 Queries the cmangos TBC 2.4.3 SQLite database for accurate item stats. This uses real TBC data with separate `+Healing` and `+Spell Damage` stats (not WotLK's unified spell power). Stats come from two places in the DB: `item_template.stat_type1-10` columns and equip spell effects decoded via `spell_template`. Aura type names are parsed at runtime from `SpellAuraDefines.h`.
 
@@ -161,9 +160,7 @@ Features:
 - Shows armor, sockets (Meta/Red/Yellow/Blue), and all stats
 - Collapses equal `Mod Healing Done` + `Mod Damage Done` into `Spell Damage and Healing`
 - `--compare` mode shows side-by-side table with diff column
-- `lookup_item(conn, item_id)` is importable for use by other scripts
-
-**IMPORTANT**: The old `sources/item-data/items.json` contains WotLK-era data with incorrect stat values (unified spell power instead of separate +healing/+spell damage). Scripts should migrate to using the cmangos SQLite DB via `item_lookup.py` instead. Currently `check_gear.py`, `parse_wowtbc.py`, and `compare_sources.py` still reference `items.json`.
+- `lookup_item()` in `src/lookup/mod.rs` is reusable by other modules
 
 ## Stat Finder Tool (`find-stat`)
 
