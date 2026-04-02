@@ -38,7 +38,7 @@ enum Commands {
         /// Spec slug (e.g. resto-shaman, prot-warrior)
         #[arg(long)]
         spec: String,
-        /// Parser to use (wowhead, wowtbc, icy-veins, atlasloot, all). Default: all
+        /// Parser to use (wowtbc, icy-veins, atlasloot, all). Default: all
         #[arg(long, default_value = "all")]
         parser: String,
         /// Override output JSON path
@@ -94,18 +94,16 @@ fn main() -> Result<()> {
             let resolved = common::resolve_spec(&spec)?;
             let out = output.as_deref();
             match parser.as_str() {
-                "wowhead" | "wh" => parse::wowhead::run(resolved, out)?,
                 "wowtbc" | "wtbc" => parse::wowtbc::run(resolved, out)?,
                 "icy-veins" | "iv" => parse::icy_veins::run(resolved, out)?,
                 "atlasloot" | "al" => parse::atlasloot::run(resolved, out)?,
                 "all" => {
-                    parse::wowhead::run(resolved, None)?;
                     parse::wowtbc::run(resolved, None)?;
                     parse::icy_veins::run(resolved, None)?;
                     parse::atlasloot::run(resolved, None)?;
                 }
                 other => anyhow::bail!(
-                    "Unknown parser '{other}'. Use: wowhead, wowtbc, icy-veins, atlasloot, all."
+                    "Unknown parser '{other}'. Use: wowtbc, icy-veins, atlasloot, all."
                 ),
             }
         }

@@ -1,6 +1,5 @@
 pub mod atlasloot;
 pub mod icy_veins;
-pub mod wowhead;
 pub mod wowtbc;
 
 use indexmap::IndexMap;

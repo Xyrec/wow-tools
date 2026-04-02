@@ -16,7 +16,7 @@ fn rank_priority(rank: &str) -> u32 {
 }
 
 const PRIMARY_SOURCES: &[&str] = &["al_bis_gear.json", "wtbc_bis_gear.json"];
-const SECONDARY_SOURCES: &[&str] = &["iv_bis_gear.json", "wh_bis_gear.json"];
+const SECONDARY_SOURCES: &[&str] = &["iv_bis_gear.json"];
 
 /// Load and merge BiS data from all sources for a spec.
 ///
