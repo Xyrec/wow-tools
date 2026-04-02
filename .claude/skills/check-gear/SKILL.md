@@ -14,7 +14,7 @@ Spec aliases:
 Run the command:
 
 ```
-target/release/wow-tools check --spec {spec}
+make check-{spec}
 ```
 
 Present the results with a concise summary focusing on:
