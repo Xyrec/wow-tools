@@ -2,94 +2,24 @@
   "current_phase": "phase-1",
   "phases": {
     "phase-0": {
-      "rings": [
+      "head": [
         {
           "rank": "BiS",
-          "name": "Elementium Band of the Sentry",
-          "source": "Drop: Harbinger Skyriss (Arcatraz)",
-          "item_id": 28407
-        },
-        {
-          "rank": "Optional",
-          "name": "Ashyen's Gift",
-          "source": "Cenarion Expedition — Exalted",
-          "item_id": 29172
-        },
-        {
-          "rank": "Optional",
-          "name": "Seal of the Exorcist",
-          "source": "Vendor: Spirit Sage Gartok",
-          "item_id": 28555
-        }
-      ],
-      "shoulders": [
-        {
-          "rank": "BiS",
-          "name": "Gladiator's Lamellar Shoulders",
-          "source": "Vendor: Vixton Pinchwhistle",
-          "item_id": 27706
-        },
-        {
-          "rank": "Optional",
-          "name": "Fanblade Pauldrons",
-          "source": "Drop: Shirrak the Dead Watcher (H) (Auchenai Crypts)",
-          "item_id": 27847
-        },
-        {
-          "rank": "Optional",
-          "name": "Spaulders of the Righteous",
-          "source": "Drop: Laj (Botanica)",
-          "item_id": 27739
-        }
-      ],
-      "totems": [
-        {
-          "rank": "BiS",
-          "name": "Libram of Repentance",
+          "name": "Faceguard of Determination",
           "source": "Badge of Justice Vendor",
-          "item_id": 29388
+          "item_id": 32083
         },
         {
           "rank": "Optional",
-          "name": "Libram of the Eternal Rest",
-          "source": "Drop: Darkweaver Syth (Sethekk Halls)",
-          "item_id": 27917
-        }
-      ],
-      "feet": [
-        {
-          "rank": "BiS",
-          "name": "Boots of the Righteous Path",
-          "source": "Drop: Warchief Kargath Bladefist (H) (Shattered Halls)",
-          "item_id": 29254
-        }
-      ],
-      "waist": [
-        {
-          "rank": "BiS",
-          "name": "Girdle of Valorous Deeds",
-          "source": "Drop: Aeonus (H) (Black Morass)",
-          "item_id": 29253
+          "name": "Gladiator's Lamellar Helm",
+          "source": "Vendor: Vixton Pinchwhistle",
+          "item_id": 27704
         },
         {
           "rank": "Optional",
-          "name": "General's Lamellar Belt",
-          "source": "Vendor: Lady Palanseer",
-          "item_id": 28641
-        }
-      ],
-      "wrists": [
-        {
-          "rank": "BiS",
-          "name": "Bracers of Dignity",
-          "source": "Drop: Harbinger Skyriss (H) (Arcatraz)",
-          "item_id": 29252
-        },
-        {
-          "rank": "Optional",
-          "name": "Bracers of the Green Fortress",
+          "name": "Oathkeeper's Helm",
           "source": "Profession: Crafted",
-          "item_id": 23538
+          "item_id": 23536
         }
       ],
       "legs": [
@@ -104,42 +34,12 @@
           "name": "Legplates of the Righteous",
           "source": "Drop: Aeonus (Black Morass)",
           "item_id": 27839
-        }
-      ],
-      "neck": [
-        {
-          "rank": "BiS",
-          "name": "Maladaar's Blessed Chaplet",
-          "source": "Drop: Exarch Maladaar (H) (Auchenai Crypts)",
-          "item_id": 27871
-        }
-      ],
-      "back": [
-        {
-          "rank": "BiS",
-          "name": "Devilshark Cape",
-          "source": "Drop: Warlord Kalithresh (Steamvault)",
-          "item_id": 27804
         },
         {
           "rank": "Optional",
-          "name": "Cloak of Eternity",
+          "name": "Felsteel Leggings",
           "source": "Profession: Crafted",
-          "item_id": 24253
-        }
-      ],
-      "offhands": [
-        {
-          "rank": "BiS",
-          "name": "Crest of the Sha'tar",
-          "source": "The Sha'tar — Exalted",
-          "item_id": 29176
-        },
-        {
-          "rank": "Optional",
-          "name": "Azure-Shield of Coldarra",
-          "source": "Badge of Justice Vendor",
-          "item_id": 29266
+          "item_id": 23518
         }
       ],
       "weapons": [
@@ -160,20 +60,26 @@
           "name": "Blade of the Archmage",
           "source": "Honor Hold — Exalted",
           "item_id": 29153
-        }
-      ],
-      "head": [
-        {
-          "rank": "BiS",
-          "name": "Faceguard of Determination",
-          "source": "Badge of Justice Vendor",
-          "item_id": 32083
         },
         {
           "rank": "Optional",
-          "name": "Gladiator's Lamellar Helm",
-          "source": "Vendor: Vixton Pinchwhistle",
-          "item_id": 27704
+          "name": "Stormcaller",
+          "source": "Thrallmar — Exalted",
+          "item_id": 29155
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Libram of Repentance",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29388
+        },
+        {
+          "rank": "Optional",
+          "name": "Libram of the Eternal Rest",
+          "source": "Drop: Darkweaver Syth (Sethekk Halls)",
+          "item_id": 27917
         }
       ],
       "chest": [
@@ -194,20 +100,26 @@
           "name": "Gladiator's Lamellar Chestpiece",
           "source": "Vendor: Vixton Pinchwhistle",
           "item_id": 27702
-        }
-      ],
-      "hands": [
-        {
-          "rank": "BiS",
-          "name": "Topaz-Studded Battlegrips",
-          "source": "World Boss: Doom Lord Kazzak",
-          "item_id": 30741
         },
         {
           "rank": "Optional",
-          "name": "Gauntlets of the Righteous",
-          "source": "Drop: Warchief Kargath Bladefist (Shattered Halls)",
-          "item_id": 27535
+          "name": "Vindicator's Hauberk",
+          "source": "The Aldor — Revered",
+          "item_id": 29127
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Maladaar's Blessed Chaplet",
+          "source": "Drop: Exarch Maladaar (H) (Auchenai Crypts)",
+          "item_id": 27871
+        },
+        {
+          "rank": "Optional",
+          "name": "Mark of the Ravenguard",
+          "source": "Quest: Brother Against Brother",
+          "item_id": 29336
         }
       ],
       "trinkets": [
@@ -222,72 +134,112 @@
           "name": "Icon of the Silver Crescent",
           "source": "Badge of Justice Vendor",
           "item_id": 29370
+        },
+        {
+          "rank": "Optional",
+          "name": "Goblin Rocket Launcher",
+          "source": "Profession: Crafted",
+          "item_id": 23836
         }
-      ]
-    },
-    "phase-1": {
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Devilshark Cape",
+          "source": "Drop: Warlord Kalithresh (Steamvault)",
+          "item_id": 27804
+        },
+        {
+          "rank": "Optional",
+          "name": "Cloak of Eternity",
+          "source": "Profession: Crafted",
+          "item_id": 24253
+        },
+        {
+          "rank": "Optional",
+          "name": "Burnoose of Shifting Ages",
+          "source": "Drop: Chrono Lord Deja (Black Morass)",
+          "item_id": 27988
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Crest of the Sha'tar",
+          "source": "The Sha'tar — Exalted",
+          "item_id": 29176
+        },
+        {
+          "rank": "Optional",
+          "name": "Azure-Shield of Coldarra",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29266
+        },
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Shield Wall",
+          "source": "Vendor: Vixton Pinchwhistle",
+          "item_id": 28358
+        }
+      ],
       "hands": [
         {
           "rank": "BiS",
-          "name": "Justicar Handguards",
-          "source": "Drop: The Curator — Karazhan (Tier Token)",
-          "item_id": 29067
-        },
-        {
-          "rank": "Optional",
-          "name": "Iron Gauntlets of the Maiden",
-          "source": "Drop: Maiden of Virtue — Karazhan",
-          "item_id": 28518
-        },
-        {
-          "rank": "Optional",
           "name": "Topaz-Studded Battlegrips",
           "source": "World Boss: Doom Lord Kazzak",
           "item_id": 30741
         },
         {
           "rank": "Optional",
+          "name": "Gauntlets of the Righteous",
+          "source": "Drop: Warchief Kargath Bladefist (Shattered Halls)",
+          "item_id": 27535
+        },
+        {
+          "rank": "Optional",
           "name": "Gladiator's Lamellar Gauntlets",
           "source": "Vendor: Vixton Pinchwhistle",
           "item_id": 27703
-        },
-        {
-          "rank": "Optional",
-          "name": "Gauntlets of Dissension",
-          "source": "Drop: Warp Splinter (H) (Botanica)",
-          "item_id": 32072
         }
       ],
-      "trinkets": [
+      "shoulders": [
         {
           "rank": "BiS",
-          "name": "Moroes' Lucky Pocket Watch",
-          "source": "Drop: Moroes — Karazhan",
-          "item_id": 28528
+          "name": "Gladiator's Lamellar Shoulders",
+          "source": "Vendor: Vixton Pinchwhistle",
+          "item_id": 27706
         },
         {
           "rank": "Optional",
-          "name": "Figurine of the Colossus",
-          "source": "Drop: Warchief Kargath Bladefist (Shattered Halls)",
-          "item_id": 27529
+          "name": "Fanblade Pauldrons",
+          "source": "Drop: Shirrak the Dead Watcher (H) (Auchenai Crypts)",
+          "item_id": 27847
         },
         {
           "rank": "Optional",
-          "name": "Adamantine Figurine",
-          "source": "Drop: Blackheart the Inciter (Shadow Labyrinth)",
-          "item_id": 27891
+          "name": "Spaulders of the Righteous",
+          "source": "Drop: Laj (Botanica)",
+          "item_id": 27739
         },
         {
           "rank": "Optional",
-          "name": "Dabiri's Enigma",
-          "source": "Quest: Dimensius the All-Devouring",
-          "item_id": 30300
+          "name": "Shoulderguards of the Bold",
+          "source": "Drop: Murmur (Shadow Labyrinth)",
+          "item_id": 27803
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Boots of the Righteous Path",
+          "source": "Drop: Warchief Kargath Bladefist (H) (Shattered Halls)",
+          "item_id": 29254
         },
         {
           "rank": "Optional",
-          "name": "Figurine - Dawnstone Crab",
-          "source": "Profession: Crafted",
-          "item_id": 24125
+          "name": "General's Lamellar Greaves",
+          "source": "Vendor: Lady Palanseer",
+          "item_id": 28642
         }
       ],
       "wrists": [
@@ -305,85 +257,89 @@
         },
         {
           "rank": "Optional",
-          "name": "Vambraces of Courage",
-          "source": "Drop: Attumen the Huntsman — Karazhan",
-          "item_id": 28502
+          "name": "General's Lamellar Bracers",
+          "source": "Vendor: Lady Palanseer",
+          "item_id": 28643
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Girdle of Valorous Deeds",
+          "source": "Drop: Aeonus (H) (Black Morass)",
+          "item_id": 29253
         },
         {
           "rank": "Optional",
-          "name": "Amber Bands of the Aggressor",
-          "source": "Drop: Warlord Kalithresh (H) (Steamvault)",
-          "item_id": 29463
+          "name": "General's Lamellar Belt",
+          "source": "Vendor: Lady Palanseer",
+          "item_id": 28641
         },
         {
           "rank": "Optional",
-          "name": "Sha'tari Wrought Armguards",
-          "source": "Quest: The Soul Devices",
-          "item_id": 28167
+          "name": "Girdle of the Immovable",
+          "source": "Drop: Quagmirran (H) (Slave Pens)",
+          "item_id": 27672
         }
       ],
       "rings": [
         {
           "rank": "BiS",
-          "name": "Violet Signet of the Great Protector",
-          "source": "Quest: Eminence Among the Violet Eye",
-          "item_id": 29279
-        },
-        {
-          "rank": "Optional",
-          "name": "Band of Crimson Fury",
-          "source": "Quest: The Fall of Magtheridon",
-          "item_id": 28793
-        },
-        {
-          "rank": "Optional",
           "name": "Elementium Band of the Sentry",
           "source": "Drop: Harbinger Skyriss (Arcatraz)",
           "item_id": 28407
         },
         {
           "rank": "Optional",
-          "name": "Shermanar Great-Ring",
-          "source": "Drop: Shade of Aran — Karazhan",
-          "item_id": 28675
+          "name": "Ashyen's Gift",
+          "source": "Cenarion Expedition — Exalted",
+          "item_id": 29172
         },
         {
           "rank": "Optional",
-          "name": "A'dal's Signet of Defense",
-          "source": "Quest: The Fall of Magtheridon",
-          "item_id": 28792
+          "name": "Seal of the Exorcist",
+          "source": "Vendor: Spirit Sage Gartok",
+          "item_id": 28555
+        },
+        {
+          "rank": "Optional",
+          "name": "Andormu's Tear",
+          "source": "Quest: Hero of the Brood",
+          "item_id": 29323
         }
-      ],
-      "offhands": [
+      ]
+    },
+    "phase-1": {
+      "feet": [
         {
           "rank": "BiS",
-          "name": "Aldori Legacy Defender",
-          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
-          "item_id": 28825
+          "name": "Boots of the Righteous Path",
+          "source": "Drop: Warchief Kargath Bladefist (H) (Shattered Halls)",
+          "item_id": 29254
         },
         {
           "rank": "Optional",
-          "name": "Gladiator's Shield Wall",
-          "source": "Vendor: Vixton Pinchwhistle",
-          "item_id": 28358
+          "name": "Boots of Elusion",
+          "source": "Drop: Trash — Karazhan",
+          "item_id": 30641
         },
         {
           "rank": "Optional",
-          "name": "Shield of Impenetrable Darkness",
-          "source": "Drop: Nightbane — Karazhan",
-          "item_id": 28606
+          "name": "Battlescar Boots",
+          "source": "Drop: Chess Event — Karazhan",
+          "item_id": 28747
         },
         {
           "rank": "Optional",
-          "name": "The Fel Barrier",
-          "source": "Drop: Nexus-Prince Shaffar (H) (Mana-Tombs)",
-          "item_id": 32082
+          "name": "Eaglecrest Warboots",
+          "source": "Drop: Keli'dan the Breaker (H) (Blood Furnace)",
+          "item_id": 29239
         },
         {
           "rank": "Optional",
-          "name": "Aegis of the Sunbird",
-          "source": "Drop: High Botanist Freywinn (Botanica)",
-          "item_id": 28316
+          "name": "Boots of the Colossus",
+          "source": "Drop: Pandemonius (H) (Mana-Tombs)",
+          "item_id": 27813
         }
       ],
       "neck": [
@@ -418,32 +374,6 @@
           "item_id": 31696
         }
       ],
-      "shoulders": [
-        {
-          "rank": "BiS",
-          "name": "Justicar Shoulderguards",
-          "source": "Drop: High King Maulgar — Gruul's Lair (Tier Token)",
-          "item_id": 29070
-        },
-        {
-          "rank": "Optional",
-          "name": "Mantle of Abrahmis",
-          "source": "Drop: Netherspite — Karazhan",
-          "item_id": 28743
-        },
-        {
-          "rank": "Optional",
-          "name": "Gladiator's Lamellar Shoulders",
-          "source": "Vendor: Vixton Pinchwhistle",
-          "item_id": 27706
-        },
-        {
-          "rank": "Optional",
-          "name": "Spaulders of Dementia",
-          "source": "Drop: Talon King Ikiss (H) (Sethekk Halls)",
-          "item_id": 32073
-        }
-      ],
       "back": [
         {
           "rank": "BiS",
@@ -474,6 +404,38 @@
           "name": "Burnoose of Shifting Ages",
           "source": "Drop: Chrono Lord Deja (Black Morass)",
           "item_id": 27988
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Violet Signet of the Great Protector",
+          "source": "Quest: Eminence Among the Violet Eye",
+          "item_id": 29279
+        },
+        {
+          "rank": "Optional",
+          "name": "Band of Crimson Fury",
+          "source": "Quest: The Fall of Magtheridon",
+          "item_id": 28793
+        },
+        {
+          "rank": "Optional",
+          "name": "Elementium Band of the Sentry",
+          "source": "Drop: Harbinger Skyriss (Arcatraz)",
+          "item_id": 28407
+        },
+        {
+          "rank": "Optional",
+          "name": "Shermanar Great-Ring",
+          "source": "Drop: Shade of Aran — Karazhan",
+          "item_id": 28675
+        },
+        {
+          "rank": "Optional",
+          "name": "A'dal's Signet of Defense",
+          "source": "Quest: The Fall of Magtheridon",
+          "item_id": 28792
         }
       ],
       "legs": [
@@ -508,44 +470,68 @@
           "item_id": 27839
         }
       ],
-      "head": [
+      "offhands": [
         {
           "rank": "BiS",
-          "name": "Justicar Faceguard",
-          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
-          "item_id": 29068
+          "name": "Aldori Legacy Defender",
+          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
+          "item_id": 28825
         },
         {
           "rank": "Optional",
-          "name": "Faceguard of Determination",
-          "source": "Badge of Justice Vendor",
-          "item_id": 32083
-        },
-        {
-          "rank": "Optional",
-          "name": "Eternium Greathelm",
-          "source": "Drop: The Wizard of Oz — Karazhan",
-          "item_id": 28593
-        },
-        {
-          "rank": "Optional",
-          "name": "Gladiator's Lamellar Helm",
+          "name": "Gladiator's Shield Wall",
           "source": "Vendor: Vixton Pinchwhistle",
-          "item_id": 27704
+          "item_id": 28358
         },
         {
           "rank": "Optional",
-          "name": "Oathkeeper's Helm",
-          "source": "Profession: Crafted",
-          "item_id": 23536
+          "name": "Shield of Impenetrable Darkness",
+          "source": "Drop: Nightbane — Karazhan",
+          "item_id": 28606
+        },
+        {
+          "rank": "Optional",
+          "name": "The Fel Barrier",
+          "source": "Drop: Nexus-Prince Shaffar (H) (Mana-Tombs)",
+          "item_id": 32082
+        },
+        {
+          "rank": "Optional",
+          "name": "Aegis of the Sunbird",
+          "source": "Drop: High Botanist Freywinn (Botanica)",
+          "item_id": 28316
         }
       ],
-      "totems": [
+      "weapons": [
         {
           "rank": "BiS",
-          "name": "Libram of Repentance",
-          "source": "Badge of Justice Vendor",
-          "item_id": 29388
+          "name": "Bloodmaw Magus-Blade",
+          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
+          "item_id": 28802
+        },
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Gavel",
+          "source": "Vendor: Vixton Pinchwhistle",
+          "item_id": 32450
+        },
+        {
+          "rank": "Optional",
+          "name": "King's Defender",
+          "source": "Drop: Chess Event — Karazhan",
+          "item_id": 28749
+        },
+        {
+          "rank": "Optional",
+          "name": "Gavel of Unearthed Secrets",
+          "source": "Lower City — Exalted",
+          "item_id": 30832
+        },
+        {
+          "rank": "Optional",
+          "name": "Honor's Call",
+          "source": "Honor Hold — Exalted",
+          "item_id": 29156
         }
       ],
       "chest": [
@@ -580,6 +566,142 @@
           "item_id": 28262
         }
       ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Bracers of Dignity",
+          "source": "Drop: Harbinger Skyriss (H) (Arcatraz)",
+          "item_id": 29252
+        },
+        {
+          "rank": "Optional",
+          "name": "Bracers of the Green Fortress",
+          "source": "Profession: Crafted",
+          "item_id": 23538
+        },
+        {
+          "rank": "Optional",
+          "name": "Vambraces of Courage",
+          "source": "Drop: Attumen the Huntsman — Karazhan",
+          "item_id": 28502
+        },
+        {
+          "rank": "Optional",
+          "name": "Amber Bands of the Aggressor",
+          "source": "Drop: Warlord Kalithresh (H) (Steamvault)",
+          "item_id": 29463
+        },
+        {
+          "rank": "Optional",
+          "name": "Sha'tari Wrought Armguards",
+          "source": "Quest: The Soul Devices",
+          "item_id": 28167
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Justicar Handguards",
+          "source": "Drop: The Curator — Karazhan (Tier Token)",
+          "item_id": 29067
+        },
+        {
+          "rank": "Optional",
+          "name": "Iron Gauntlets of the Maiden",
+          "source": "Drop: Maiden of Virtue — Karazhan",
+          "item_id": 28518
+        },
+        {
+          "rank": "Optional",
+          "name": "Topaz-Studded Battlegrips",
+          "source": "World Boss: Doom Lord Kazzak",
+          "item_id": 30741
+        },
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Lamellar Gauntlets",
+          "source": "Vendor: Vixton Pinchwhistle",
+          "item_id": 27703
+        },
+        {
+          "rank": "Optional",
+          "name": "Gauntlets of Dissension",
+          "source": "Drop: Warp Splinter (H) (Botanica)",
+          "item_id": 32072
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Libram of Repentance",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29388
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Justicar Shoulderguards",
+          "source": "Drop: High King Maulgar — Gruul's Lair (Tier Token)",
+          "item_id": 29070
+        },
+        {
+          "rank": "Optional",
+          "name": "Mantle of Abrahmis",
+          "source": "Drop: Netherspite — Karazhan",
+          "item_id": 28743
+        },
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Lamellar Shoulders",
+          "source": "Vendor: Vixton Pinchwhistle",
+          "item_id": 27706
+        },
+        {
+          "rank": "Optional",
+          "name": "Spaulders of Dementia",
+          "source": "Drop: Talon King Ikiss (H) (Sethekk Halls)",
+          "item_id": 32073
+        },
+        {
+          "rank": "Optional",
+          "name": "Kaylaan's Spaulders",
+          "source": "Quest: Aldor No More",
+          "item_id": 30381
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Moroes' Lucky Pocket Watch",
+          "source": "Drop: Moroes — Karazhan",
+          "item_id": 28528
+        },
+        {
+          "rank": "Optional",
+          "name": "Figurine of the Colossus",
+          "source": "Drop: Warchief Kargath Bladefist (Shattered Halls)",
+          "item_id": 27529
+        },
+        {
+          "rank": "Optional",
+          "name": "Adamantine Figurine",
+          "source": "Drop: Blackheart the Inciter (Shadow Labyrinth)",
+          "item_id": 27891
+        },
+        {
+          "rank": "Optional",
+          "name": "Dabiri's Enigma",
+          "source": "Quest: Dimensius the All-Devouring",
+          "item_id": 30300
+        },
+        {
+          "rank": "Optional",
+          "name": "Figurine - Dawnstone Crab",
+          "source": "Profession: Crafted",
+          "item_id": 24125
+        }
+      ],
       "waist": [
         {
           "rank": "BiS",
@@ -612,68 +734,36 @@
           "item_id": 30371
         }
       ],
-      "feet": [
+      "head": [
         {
           "rank": "BiS",
-          "name": "Boots of the Righteous Path",
-          "source": "Drop: Warchief Kargath Bladefist (H) (Shattered Halls)",
-          "item_id": 29254
+          "name": "Justicar Faceguard",
+          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
+          "item_id": 29068
         },
         {
           "rank": "Optional",
-          "name": "Boots of Elusion",
-          "source": "Drop: Trash — Karazhan",
-          "item_id": 30641
+          "name": "Faceguard of Determination",
+          "source": "Badge of Justice Vendor",
+          "item_id": 32083
         },
         {
           "rank": "Optional",
-          "name": "Battlescar Boots",
-          "source": "Drop: Chess Event — Karazhan",
-          "item_id": 28747
+          "name": "Eternium Greathelm",
+          "source": "Drop: The Wizard of Oz — Karazhan",
+          "item_id": 28593
         },
         {
           "rank": "Optional",
-          "name": "Eaglecrest Warboots",
-          "source": "Drop: Keli'dan the Breaker (H) (Blood Furnace)",
-          "item_id": 29239
-        },
-        {
-          "rank": "Optional",
-          "name": "Boots of the Colossus",
-          "source": "Drop: Pandemonius (H) (Mana-Tombs)",
-          "item_id": 27813
-        }
-      ],
-      "weapons": [
-        {
-          "rank": "BiS",
-          "name": "Bloodmaw Magus-Blade",
-          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
-          "item_id": 28802
-        },
-        {
-          "rank": "Optional",
-          "name": "Gladiator's Gavel",
+          "name": "Gladiator's Lamellar Helm",
           "source": "Vendor: Vixton Pinchwhistle",
-          "item_id": 32450
+          "item_id": 27704
         },
         {
           "rank": "Optional",
-          "name": "King's Defender",
-          "source": "Drop: Chess Event — Karazhan",
-          "item_id": 28749
-        },
-        {
-          "rank": "Optional",
-          "name": "Gavel of Unearthed Secrets",
-          "source": "Lower City — Exalted",
-          "item_id": 30832
-        },
-        {
-          "rank": "Optional",
-          "name": "Honor's Call",
-          "source": "Honor Hold — Exalted",
-          "item_id": 29156
+          "name": "Oathkeeper's Helm",
+          "source": "Profession: Crafted",
+          "item_id": 23536
         }
       ]
     },
@@ -690,68 +780,12 @@
           "name": "Bracers of Dignity",
           "source": "Drop: Harbinger Skyriss (H) (Arcatraz)",
           "item_id": 29252
-        }
-      ],
-      "waist": [
+        },
         {
-          "rank": "BiS",
-          "name": "Belt of the Guardian",
+          "rank": "Optional",
+          "name": "Bracers of the Green Fortress",
           "source": "Profession: Crafted",
-          "item_id": 30034
-        },
-        {
-          "rank": "Optional",
-          "name": "Girdle of the Invulnerable",
-          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern",
-          "item_id": 30096
-        },
-        {
-          "rank": "Optional",
-          "name": "Girdle of Valorous Deeds",
-          "source": "Drop: Aeonus (H) (Black Morass)",
-          "item_id": 29253
-        }
-      ],
-      "back": [
-        {
-          "rank": "BiS",
-          "name": "Phoenix-Wing Cloak",
-          "source": "Drop: Al'ar — Tempest Keep",
-          "item_id": 29925
-        }
-      ],
-      "legs": [
-        {
-          "rank": "BiS",
-          "name": "Crystalforge Legguards",
-          "source": "Drop: Fathom-Lord Karathress — Serpentshrine Cavern (Tier Token)",
-          "item_id": 30126
-        },
-        {
-          "rank": "Optional",
-          "name": "Wrynn Dynasty Greaves",
-          "source": "Drop: The Curator — Karazhan",
-          "item_id": 28621
-        },
-        {
-          "rank": "Optional",
-          "name": "Justicar Legguards",
-          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair (Tier Token)",
-          "item_id": 29069
-        }
-      ],
-      "shoulders": [
-        {
-          "rank": "BiS",
-          "name": "Justicar Shoulderguards",
-          "source": "Drop: High King Maulgar — Gruul's Lair (Tier Token)",
-          "item_id": 29070
-        },
-        {
-          "rank": "Optional",
-          "name": "Crystalforge Shoulderguards",
-          "source": "Drop: Void Reaver — Tempest Keep (Tier Token)",
-          "item_id": 30127
+          "item_id": 23538
         }
       ],
       "rings": [
@@ -784,158 +818,6 @@
           "name": "Band of Al'ar",
           "source": "Drop: Al'ar — Tempest Keep",
           "item_id": 29922
-        }
-      ],
-      "neck": [
-        {
-          "rank": "BiS",
-          "name": "The Darkener's Grasp",
-          "source": "Quest: Kael'thas and the Verdant Sphere",
-          "item_id": 30007
-        },
-        {
-          "rank": "Optional",
-          "name": "Barbed Choker of Discipline",
-          "source": "Drop: Maiden of Virtue — Karazhan",
-          "item_id": 28516
-        },
-        {
-          "rank": "Optional",
-          "name": "Frayed Tether of the Drowned",
-          "source": "Drop: Fathom-Lord Karathress — Serpentshrine Cavern",
-          "item_id": 30099
-        },
-        {
-          "rank": "Optional",
-          "name": "Necklace of the Juggernaut",
-          "source": "Badge of Justice Vendor",
-          "item_id": 29386
-        },
-        {
-          "rank": "Optional",
-          "name": "The Sun King's Talisman",
-          "source": "Quest: Kael'thas and the Verdant Sphere",
-          "item_id": 30015
-        }
-      ],
-      "offhands": [
-        {
-          "rank": "BiS",
-          "name": "Merciless Gladiator's Shield Wall",
-          "source": "Vendor: Krixel Pinchwhistle",
-          "item_id": 32045
-        },
-        {
-          "rank": "Optional",
-          "name": "Merciless Gladiator's Barrier",
-          "source": "Vendor: Krixel Pinchwhistle",
-          "item_id": 33313
-        }
-      ],
-      "hands": [
-        {
-          "rank": "BiS",
-          "name": "Royal Gauntlets of Silvermoon",
-          "source": "Drop: Kael'thas Sunstrider — Tempest Keep",
-          "item_id": 29998
-        },
-        {
-          "rank": "Optional",
-          "name": "Crystalforge Handguards",
-          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern (Tier Token)",
-          "item_id": 30124
-        },
-        {
-          "rank": "Optional",
-          "name": "Justicar Handguards",
-          "source": "Drop: The Curator — Karazhan (Tier Token)",
-          "item_id": 29067
-        }
-      ],
-      "head": [
-        {
-          "rank": "BiS",
-          "name": "Crystalforge Faceguard",
-          "source": "Drop: Lady Vashj — Serpentshrine Cavern (Tier Token)",
-          "item_id": 30125
-        },
-        {
-          "rank": "Optional",
-          "name": "Justicar Faceguard",
-          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
-          "item_id": 29068
-        }
-      ],
-      "chest": [
-        {
-          "rank": "BiS",
-          "name": "Justicar Chestguard",
-          "source": "Drop: Magtheridon — Magtheridon's Lair (Tier Token)",
-          "item_id": 29066
-        },
-        {
-          "rank": "Optional",
-          "name": "Crystalforge Chestguard",
-          "source": "Drop: Kael'thas Sunstrider — Tempest Keep (Tier Token)",
-          "item_id": 30123
-        },
-        {
-          "rank": "Optional",
-          "name": "Panzar'Thar Breastplate",
-          "source": "Drop: Nightbane — Karazhan",
-          "item_id": 28597
-        }
-      ],
-      "feet": [
-        {
-          "rank": "BiS",
-          "name": "Boots of the Protector",
-          "source": "Profession: Crafted",
-          "item_id": 30033
-        },
-        {
-          "rank": "Optional",
-          "name": "Boots of Elusion",
-          "source": "Drop: Trash — Karazhan",
-          "item_id": 30641
-        },
-        {
-          "rank": "Optional",
-          "name": "Boots of the Resilient",
-          "source": "Drop: High Astromancer Solarian — Tempest Keep",
-          "item_id": 32267
-        },
-        {
-          "rank": "Optional",
-          "name": "Boots of the Righteous Path",
-          "source": "Drop: Warchief Kargath Bladefist (H) (Shattered Halls)",
-          "item_id": 29254
-        }
-      ],
-      "weapons": [
-        {
-          "rank": "BiS",
-          "name": "Merciless Gladiator's Gavel",
-          "source": "Vendor: Krixel Pinchwhistle",
-          "item_id": 32963
-        },
-        {
-          "rank": "Optional",
-          "name": "Fang of the Leviathan",
-          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern",
-          "item_id": 30095
-        },
-        {
-          "rank": "Optional",
-          "name": "Bloodmaw Magus-Blade",
-          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
-          "item_id": 28802
-        },
-        {
-          "rank": "Optional",
-          "name": "Gladiator's Gavel",
-          "source": "Vendor: Vixton Pinchwhistle",
-          "item_id": 32450
         }
       ],
       "trinkets": [
@@ -976,6 +858,274 @@
           "name": "Libram of Repentance",
           "source": "Badge of Justice Vendor",
           "item_id": 29388
+        },
+        {
+          "rank": "Optional",
+          "name": "Libram of the Eternal Rest",
+          "source": "Drop: Darkweaver Syth (Sethekk Halls)",
+          "item_id": 27917
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Royal Gauntlets of Silvermoon",
+          "source": "Drop: Kael'thas Sunstrider — Tempest Keep",
+          "item_id": 29998
+        },
+        {
+          "rank": "Optional",
+          "name": "Crystalforge Handguards",
+          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern (Tier Token)",
+          "item_id": 30124
+        },
+        {
+          "rank": "Optional",
+          "name": "Justicar Handguards",
+          "source": "Drop: The Curator — Karazhan (Tier Token)",
+          "item_id": 29067
+        },
+        {
+          "rank": "Optional",
+          "name": "Iron Gauntlets of the Maiden",
+          "source": "Drop: Maiden of Virtue — Karazhan",
+          "item_id": 28518
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Justicar Shoulderguards",
+          "source": "Drop: High King Maulgar — Gruul's Lair (Tier Token)",
+          "item_id": 29070
+        },
+        {
+          "rank": "Optional",
+          "name": "Crystalforge Shoulderguards",
+          "source": "Drop: Void Reaver — Tempest Keep (Tier Token)",
+          "item_id": 30127
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Crystalforge Legguards",
+          "source": "Drop: Fathom-Lord Karathress — Serpentshrine Cavern (Tier Token)",
+          "item_id": 30126
+        },
+        {
+          "rank": "Optional",
+          "name": "Wrynn Dynasty Greaves",
+          "source": "Drop: The Curator — Karazhan",
+          "item_id": 28621
+        },
+        {
+          "rank": "Optional",
+          "name": "Justicar Legguards",
+          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair (Tier Token)",
+          "item_id": 29069
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Merciless Gladiator's Gavel",
+          "source": "Vendor: Krixel Pinchwhistle",
+          "item_id": 32963
+        },
+        {
+          "rank": "Optional",
+          "name": "Fang of the Leviathan",
+          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern",
+          "item_id": 30095
+        },
+        {
+          "rank": "Optional",
+          "name": "Bloodmaw Magus-Blade",
+          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
+          "item_id": 28802
+        },
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Gavel",
+          "source": "Vendor: Vixton Pinchwhistle",
+          "item_id": 32450
+        },
+        {
+          "rank": "Optional",
+          "name": "Gavel of Unearthed Secrets",
+          "source": "Lower City — Exalted",
+          "item_id": 30832
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Merciless Gladiator's Shield Wall",
+          "source": "Vendor: Krixel Pinchwhistle",
+          "item_id": 32045
+        },
+        {
+          "rank": "Optional",
+          "name": "Merciless Gladiator's Barrier",
+          "source": "Vendor: Krixel Pinchwhistle",
+          "item_id": 33313
+        },
+        {
+          "rank": "Optional",
+          "name": "Aldori Legacy Defender",
+          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
+          "item_id": 28825
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Belt of the Guardian",
+          "source": "Profession: Crafted",
+          "item_id": 30034
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of the Invulnerable",
+          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern",
+          "item_id": 30096
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of Valorous Deeds",
+          "source": "Drop: Aeonus (H) (Black Morass)",
+          "item_id": 29253
+        },
+        {
+          "rank": "Optional",
+          "name": "Crimson Girdle of the Indomitable",
+          "source": "Drop: Moroes — Karazhan",
+          "item_id": 28566
+        }
+      ],
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Crystalforge Faceguard",
+          "source": "Drop: Lady Vashj — Serpentshrine Cavern (Tier Token)",
+          "item_id": 30125
+        },
+        {
+          "rank": "Optional",
+          "name": "Justicar Faceguard",
+          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
+          "item_id": 29068
+        },
+        {
+          "rank": "Optional",
+          "name": "Faceguard of Determination",
+          "source": "Badge of Justice Vendor",
+          "item_id": 32083
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Justicar Chestguard",
+          "source": "Drop: Magtheridon — Magtheridon's Lair (Tier Token)",
+          "item_id": 29066
+        },
+        {
+          "rank": "Optional",
+          "name": "Crystalforge Chestguard",
+          "source": "Drop: Kael'thas Sunstrider — Tempest Keep (Tier Token)",
+          "item_id": 30123
+        },
+        {
+          "rank": "Optional",
+          "name": "Panzar'Thar Breastplate",
+          "source": "Drop: Nightbane — Karazhan",
+          "item_id": 28597
+        },
+        {
+          "rank": "Optional",
+          "name": "Breastplate of the Righteous",
+          "source": "Drop: Warlord Kalithresh (Steamvault)",
+          "item_id": 28203
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "The Darkener's Grasp",
+          "source": "Quest: Kael'thas and the Verdant Sphere",
+          "item_id": 30007
+        },
+        {
+          "rank": "Optional",
+          "name": "Barbed Choker of Discipline",
+          "source": "Drop: Maiden of Virtue — Karazhan",
+          "item_id": 28516
+        },
+        {
+          "rank": "Optional",
+          "name": "Frayed Tether of the Drowned",
+          "source": "Drop: Fathom-Lord Karathress — Serpentshrine Cavern",
+          "item_id": 30099
+        },
+        {
+          "rank": "Optional",
+          "name": "Necklace of the Juggernaut",
+          "source": "Badge of Justice Vendor",
+          "item_id": 29386
+        },
+        {
+          "rank": "Optional",
+          "name": "The Sun King's Talisman",
+          "source": "Quest: Kael'thas and the Verdant Sphere",
+          "item_id": 30015
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Phoenix-Wing Cloak",
+          "source": "Drop: Al'ar — Tempest Keep",
+          "item_id": 29925
+        },
+        {
+          "rank": "Optional",
+          "name": "Devilshark Cape",
+          "source": "Drop: Warlord Kalithresh (Steamvault)",
+          "item_id": 27804
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Boots of the Protector",
+          "source": "Profession: Crafted",
+          "item_id": 30033
+        },
+        {
+          "rank": "Optional",
+          "name": "Boots of Elusion",
+          "source": "Drop: Trash — Karazhan",
+          "item_id": 30641
+        },
+        {
+          "rank": "Optional",
+          "name": "Boots of the Resilient",
+          "source": "Drop: High Astromancer Solarian — Tempest Keep",
+          "item_id": 32267
+        },
+        {
+          "rank": "Optional",
+          "name": "Boots of the Righteous Path",
+          "source": "Drop: Warchief Kargath Bladefist (H) (Shattered Halls)",
+          "item_id": 29254
+        },
+        {
+          "rank": "Optional",
+          "name": "Red Havoc Boots",
+          "source": "Profession: Crafted",
+          "item_id": 30031
         }
       ]
     }

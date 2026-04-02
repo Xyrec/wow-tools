@@ -9,6 +9,7 @@ mod scrape;
 
 use anyhow::Result;
 use clap::{Parser, Subcommand};
+use rayon::prelude::*;
 
 #[derive(Parser)]
 #[command(name = "wow-tools", about = "TBC BiS gear checker and item tools")]
@@ -35,9 +36,9 @@ enum Commands {
     },
     /// Regenerate bis_gear.json from source HTML
     Parse {
-        /// Spec slug (e.g. resto-shaman, prot-warrior)
+        /// Spec slug (e.g. resto-shaman, prot-warrior). Omit for all specs.
         #[arg(long)]
-        spec: String,
+        spec: Option<String>,
         /// Parser to use (wowtbc, icy-veins, atlasloot, all). Default: all
         #[arg(long, default_value = "all")]
         parser: String,
@@ -91,21 +92,34 @@ fn main() -> Result<()> {
             parser,
             output,
         } => {
-            let resolved = common::resolve_spec(&spec)?;
+            let specs: Vec<&str> = if let Some(ref s) = spec {
+                vec![common::resolve_spec(s)?]
+            } else {
+                common::specs::ALL_SPECS.iter().map(|s| s.slug).collect()
+            };
             let out = output.as_deref();
+            // Validate parser name before spawning threads
             match parser.as_str() {
-                "wowtbc" | "wtbc" => parse::wowtbc::run(resolved, out)?,
-                "icy-veins" | "iv" => parse::icy_veins::run(resolved, out)?,
-                "atlasloot" | "al" => parse::atlasloot::run(resolved, out)?,
-                "all" => {
-                    parse::wowtbc::run(resolved, None)?;
-                    parse::icy_veins::run(resolved, None)?;
-                    parse::atlasloot::run(resolved, None)?;
-                }
+                "wowtbc" | "wtbc" | "icy-veins" | "iv" | "atlasloot" | "al" | "all" => {}
                 other => anyhow::bail!(
                     "Unknown parser '{other}'. Use: wowtbc, icy-veins, atlasloot, all."
                 ),
             }
+            specs.par_iter().try_for_each(|resolved| -> Result<()> {
+                let run_out = if specs.len() == 1 { out } else { None };
+                match parser.as_str() {
+                    "wowtbc" | "wtbc" => parse::wowtbc::run(resolved, run_out)?,
+                    "icy-veins" | "iv" => parse::icy_veins::run(resolved, run_out)?,
+                    "atlasloot" | "al" => parse::atlasloot::run(resolved, run_out)?,
+                    "all" => {
+                        parse::wowtbc::run(resolved, None)?;
+                        parse::icy_veins::run(resolved, None)?;
+                        parse::atlasloot::run(resolved, None)?;
+                    }
+                    _ => unreachable!(),
+                }
+                Ok(())
+            })?;
         }
         Commands::Lookup { item_ids, compare } => {
             lookup::run(&item_ids, compare)?;

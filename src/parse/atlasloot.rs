@@ -1109,7 +1109,7 @@ fn parse_spec_from_lua(lua_text: &str, spec_key: &str) -> HashMap<String, Vec<u3
     let block = &lua_text[block_start..block_end];
 
     let slot_re =
-        Regex::new(r#"format\(AL\["([^"]+)"\][^}]*\[NORMAL_DIFF\]\s*=\s*\{(.*?)\}\s*,\s*\}"#)
+        Regex::new(r#"format\(AL\["([^"]+)"\][^}]*\[NORMAL_DIFF\]\s*=\s*\{(.*?\})\s*,\s*\}"#)
             .expect("invariant: valid regex");
     let item_re = Regex::new(r"\{\s*\d+\s*,\s*(\d+)\s*\}").expect("invariant: valid regex");
 

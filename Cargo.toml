@@ -13,3 +13,4 @@ rusqlite = { version = "0.34", features = ["bundled"] }
 scraper = "0.22"
 regex = "1"
 indexmap = { version = "2", features = ["serde"] }
+rayon = "1"
