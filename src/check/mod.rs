@@ -399,7 +399,12 @@ pub fn format_rank_tag(up: &Upgrade) -> String {
 // Entry point
 // ---------------------------------------------------------------------------
 
-pub fn run(spec_raw: &str, file: Option<&str>, show_crafted: bool) -> Result<()> {
+pub fn run(
+    spec_raw: &str,
+    file: Option<&str>,
+    show_crafted: bool,
+    include_old_phases: bool,
+) -> Result<()> {
     let spec = common::resolve_spec(spec_raw)?;
     let root = common::project_root()?;
     let pref_armor = preferred_armor(spec);
@@ -454,16 +459,25 @@ pub fn run(spec_raw: &str, file: Option<&str>, show_crafted: bool) -> Result<()>
 
     // Determine phases
     let current_phase = common::load_current_phase(&root)?.unwrap_or_else(|| "phase-0".to_string());
-    let phases_to_check: Vec<String> = if current_phase != "phase-0" {
-        vec!["phase-0".to_string(), current_phase.clone()]
+    let phases_to_check: Vec<String> = if current_phase == "phase-0" || include_old_phases {
+        // Include phase-0 as fallback when explicitly requested or when it IS the current phase
+        if current_phase != "phase-0" {
+            vec!["phase-0".to_string(), current_phase.clone()]
+        } else {
+            vec!["phase-0".to_string()]
+        }
     } else {
-        vec!["phase-0".to_string()]
+        // Default: only check the current phase
+        vec![current_phase.clone()]
     };
 
     let current_phase_data: HashMap<String, Vec<BisItem>> =
         bis_data.get(&current_phase).cloned().unwrap_or_default();
-    let phase0_data: HashMap<String, Vec<BisItem>> =
-        bis_data.get("phase-0").cloned().unwrap_or_default();
+    let phase0_data: HashMap<String, Vec<BisItem>> = if include_old_phases {
+        bis_data.get("phase-0").cloned().unwrap_or_default()
+    } else {
+        HashMap::new()
+    };
 
     // Build equipped lookup by bis_slot
     let mut equipped_by_slot: Vec<(String, Vec<EquippedSlotItem>)> = Vec::new();
@@ -570,7 +584,11 @@ pub fn run(spec_raw: &str, file: Option<&str>, show_crafted: bool) -> Result<()>
         character.class,
         phase_list.join(", ")
     );
-    println!("   Current phase: {cp} (authoritative) | Phase 0 (fallback)\n");
+    if include_old_phases {
+        println!("   Current phase: {cp} (authoritative) | Phase 0 (fallback)\n");
+    } else {
+        println!("   Current phase: {cp}\n");
+    }
 
     print_equipped_section(
         &format!("{} BIS (you're set)", cp.to_uppercase()),

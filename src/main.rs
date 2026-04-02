@@ -29,6 +29,9 @@ enum Commands {
         /// Show crafted items in upgrades
         #[arg(long)]
         show_crafted: bool,
+        /// Include old phases (phase-0) as fallback data
+        #[arg(long)]
+        include_old_phases: bool,
     },
     /// Regenerate bis_gear.json from source HTML
     Parse {
@@ -79,8 +82,9 @@ fn main() -> Result<()> {
             spec,
             file,
             show_crafted,
+            include_old_phases,
         } => {
-            check::run(&spec, file.as_deref(), show_crafted)?;
+            check::run(&spec, file.as_deref(), show_crafted, include_old_phases)?;
         }
         Commands::Parse {
             spec,
