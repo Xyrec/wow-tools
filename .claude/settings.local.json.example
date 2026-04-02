@@ -1,0 +1,12 @@
+{
+  "_comment": "Local overrides — this file is gitignored. Copy settings.local.json.example to settings.local.json and customize.",
+  "env": {
+    "RUST_CHECK_MAX_ERRORS": "30",
+    "RUST_CHECK_MAX_WARNINGS": "10",
+    "RUST_CHECK_PACKAGE": "",
+    "RUST_CHECK_CMD": "cargo check",
+    "RUST_GATE_TESTS": "true",
+    "RUST_GATE_CLIPPY": "false",
+    "RUST_GATE_FMT": "false"
+  }
+}

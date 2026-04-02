@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/rust-check.sh",
+            "statusMessage": "Checking Rust compilation..."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/rust-gate.sh",
+            "statusMessage": "Running quality gate..."
+          }
+        ]
+      }
+    ]
+  }
+}
