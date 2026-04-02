@@ -7,6 +7,7 @@ mod soft_reserve;
 use std::collections::{HashMap, HashSet};
 
 use anyhow::{Context, Result};
+use rusqlite::Connection;
 
 use crate::common;
 use crate::common::types::BisItem;
@@ -120,6 +121,62 @@ fn load_item_db(root: &std::path::Path) -> HashMap<u32, ItemInfo> {
         );
     }
     result
+}
+
+/// Read item IDs from a character JSON file and fill in any names missing from
+/// the wowsims resolver by querying the cmangos SQLite DB.
+fn backfill_names_from_db(
+    char_path: &str,
+    root: &std::path::Path,
+    resolver: &mut HashMap<u32, String>,
+) {
+    let content = match std::fs::read_to_string(char_path) {
+        Ok(c) => c,
+        Err(_) => return,
+    };
+    let data: serde_json::Value = match serde_json::from_str(&content) {
+        Ok(v) => v,
+        Err(_) => return,
+    };
+
+    // Collect item IDs not already in the resolver
+    let items = data
+        .get("gear")
+        .and_then(|g| g.get("items"))
+        .and_then(|i| i.as_array());
+    let Some(items) = items else { return };
+
+    let missing: Vec<u32> = items
+        .iter()
+        .filter_map(|item| {
+            item.get("id")
+                .and_then(|id| id.as_u64())
+                .map(|id| id as u32)
+        })
+        .filter(|id| *id != 0 && !resolver.contains_key(id))
+        .collect();
+
+    if missing.is_empty() {
+        return;
+    }
+
+    let db = common::db_path(root);
+    let conn = match Connection::open(&db) {
+        Ok(c) => c,
+        Err(_) => return,
+    };
+
+    for item_id in missing {
+        if let Ok(name) = conn.query_row(
+            "SELECT name FROM item_template WHERE entry=?1",
+            [item_id],
+            |row| row.get::<_, String>(0),
+        ) {
+            if !name.is_empty() {
+                resolver.insert(item_id, name);
+            }
+        }
+    }
 }
 
 // ---------------------------------------------------------------------------
@@ -419,12 +476,15 @@ pub fn run(
         }
     };
 
-    // Load item database
+    // Load item database and build name resolver
     let item_db = load_item_db(&root);
-    let name_resolver: HashMap<u32, String> = item_db
+    let mut name_resolver: HashMap<u32, String> = item_db
         .iter()
         .map(|(&id, info)| (id, info.name.clone()))
         .collect();
+
+    // Fill in missing names from cmangos DB (handles random-suffix greens etc.)
+    backfill_names_from_db(&char_path, &root, &mut name_resolver);
 
     // Load character
     let character = common::character::load_character(&char_path, &root, Some(&name_resolver))
