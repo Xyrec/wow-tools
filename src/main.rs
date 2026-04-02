@@ -5,6 +5,7 @@ mod common;
 mod find_stat;
 mod lookup;
 mod parse;
+mod scrape;
 
 use anyhow::Result;
 use clap::{Parser, Subcommand};
@@ -20,7 +21,7 @@ struct Cli {
 enum Commands {
     /// Compare equipped gear against BiS lists
     Check {
-        /// Spec to check (resto, ele, prot)
+        /// Spec slug (e.g. resto-shaman, prot-warrior, fury-warrior)
         #[arg(long)]
         spec: String,
         /// Character data file (default: auto from spec)
@@ -31,7 +32,7 @@ enum Commands {
     },
     /// Regenerate bis_gear.json from source HTML
     Parse {
-        /// Spec to parse (resto, ele, prot)
+        /// Spec slug (e.g. resto-shaman, prot-warrior)
         #[arg(long)]
         spec: String,
         /// Parser to use (wowhead, wowtbc, icy-veins, atlasloot, all). Default: all
@@ -48,6 +49,11 @@ enum Commands {
         /// Show side-by-side comparison with diff column
         #[arg(long)]
         compare: bool,
+    },
+    /// Scrape BiS data from wowtbc.gg for all specs
+    Scrape {
+        /// Spec filter (e.g. "shaman", "holy-paladin"). Omit for all specs.
+        spec: Option<String>,
     },
     /// Find gear upgrades for a specific stat target
     FindStat {
@@ -101,6 +107,9 @@ fn main() -> Result<()> {
         }
         Commands::Lookup { item_ids, compare } => {
             lookup::run(&item_ids, compare)?;
+        }
+        Commands::Scrape { spec } => {
+            scrape::run(spec.as_deref())?;
         }
         Commands::FindStat {
             file,

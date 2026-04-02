@@ -1,4 +1,5 @@
 pub mod character;
+pub mod specs;
 pub mod types;
 
 use std::path::{Path, PathBuf};
@@ -35,23 +36,13 @@ pub fn project_root() -> Result<PathBuf> {
 // ---------------------------------------------------------------------------
 
 pub fn resolve_spec(raw: &str) -> Result<&'static str> {
-    match raw.trim().to_lowercase().as_str() {
-        "resto" | "resto-shaman" => Ok("resto-shaman"),
-        "ele" | "elemental" | "elemental-shaman" => Ok("elemental-shaman"),
-        "prot" | "protection" | "prot-paladin" => Ok("prot-paladin"),
-        other => bail!("Unknown spec '{}'. Use: resto, ele, prot.", other),
-    }
+    let spec = specs::find_spec(raw)?;
+    Ok(spec.slug)
 }
 
 /// Return the default character data file for a resolved spec.
 pub fn default_data_path(root: &Path, spec: &str) -> PathBuf {
-    let filename = match spec {
-        "resto-shaman" => "resto.json",
-        "elemental-shaman" => "elemental.json",
-        "prot-paladin" => "prot-paladin.txt",
-        _ => "resto.json",
-    };
-    root.join("data").join(filename)
+    root.join("data").join(format!("{spec}.json"))
 }
 
 // ---------------------------------------------------------------------------
@@ -109,14 +100,19 @@ mod tests {
 
     #[test]
     fn test_resolve_spec() {
-        assert_eq!(resolve_spec("resto").unwrap(), "resto-shaman");
-        assert_eq!(resolve_spec("Resto").unwrap(), "resto-shaman");
-        assert_eq!(resolve_spec("ele").unwrap(), "elemental-shaman");
+        assert_eq!(resolve_spec("resto-shaman").unwrap(), "resto-shaman");
+        assert_eq!(resolve_spec("Resto-Shaman").unwrap(), "resto-shaman");
+        assert_eq!(resolve_spec("ele-shaman").unwrap(), "elemental-shaman");
         assert_eq!(
             resolve_spec("elemental-shaman").unwrap(),
             "elemental-shaman"
         );
-        assert_eq!(resolve_spec("prot").unwrap(), "prot-paladin");
+        assert_eq!(resolve_spec("prot-paladin").unwrap(), "prot-paladin");
+        assert_eq!(resolve_spec("prot-warrior").unwrap(), "prot-warrior");
+        assert_eq!(resolve_spec("fury-warrior").unwrap(), "fury-warrior");
+        // Bare names without class suffix should fail
+        assert!(resolve_spec("resto").is_err());
+        assert!(resolve_spec("prot").is_err());
         assert!(resolve_spec("warrior").is_err());
     }
 

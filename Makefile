@@ -1,7 +1,9 @@
-.PHONY: build release lint format check fix resto ele elemental prot protection prot-paladin check-resto check-ele check-prot crit-cap lookup compare
+.PHONY: build release lint format check-code fix check scrape crit-cap find-stat lookup compare edit
 
 EDITOR := $(or $(shell which cursor 2>/dev/null),$(shell which code 2>/dev/null),notepad)
 BIN := powershell -Command "& .\target\release\wow-tools.exe
+
+# --- Build & dev ---
 
 build:
 	cargo build
@@ -15,26 +17,26 @@ lint:
 format:
 	cargo fmt
 
-check:
+check-code:
 	cargo check
 
 fix:
 	cargo fmt
 	cargo clippy --fix --allow-dirty --allow-staged
 
-# --- Tool commands (run via release binary) ---
+# --- Tool commands (require SPEC= for spec-specific ones) ---
 
-check-resto:
-	$(BIN) check --spec resto"
+check:
+	$(BIN) check --spec $(SPEC)"
 
-check-ele:
-	$(BIN) check --spec ele"
-
-check-prot:
-	$(BIN) check --spec prot"
+scrape:
+	$(BIN) scrape $(SPEC)"
 
 crit-cap:
-	$(BIN) find-stat data/prot-paladin.json --stat defense --target 490 --source easy"
+	$(BIN) find-stat data/$(SPEC).json --stat defense --target 490 --source easy"
+
+find-stat:
+	$(BIN) find-stat data/$(SPEC).json --stat $(STAT) --target $(TARGET) --source $(or $(SOURCE),easy)"
 
 lookup:
 	$(BIN) lookup $(ARGS)"
@@ -42,13 +44,7 @@ lookup:
 compare:
 	$(BIN) lookup --compare $(ARGS)"
 
-# --- Editor shortcuts ---
+# --- Editor shortcut ---
 
-resto:
-	$(EDITOR) . data/resto.json
-
-ele elemental:
-	$(EDITOR) . data/elemental.json
-
-prot protection prot-paladin:
-	$(EDITOR) . data/prot-paladin.json
+edit:
+	$(EDITOR) . data/$(SPEC).json

@@ -2,806 +2,2409 @@
   "current_phase": "phase-1",
   "phases": {
     "phase-0": {
+      "offhands": [
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Shield Wall",
+          "source": "PvP — Arena Season 1"
+        },
+        {
+          "rank": "BiS",
+          "name": "Azure-Shield of Coldarra",
+          "source": "Vendor — Badge of Justice (33)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Crest of the Sha'tar",
+          "source": "Reputation — The Sha'tar - Exalted"
+        },
+        {
+          "rank": "Optional",
+          "name": "Mazthoril Honor Shield",
+          "source": "Vendor — Badge of Justice (33)"
+        },
+        {
+          "rank": "Optional",
+          "name": "The Fel Barrier",
+          "source": "Mana-Tombs (HC) — Nexus-Prince Shaffar — 25%"
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Gavel",
+          "source": "PvP — Arena Season 1"
+        },
+        {
+          "rank": "BiS",
+          "name": "Gavel of Unearthed Secrets",
+          "source": "Reputation — Lower City - Exalted"
+        },
+        {
+          "rank": "Optional",
+          "name": "Stormcaller",
+          "source": "Reputation — Thrallmar - Exalted (H)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Greatsword of Horrid Dreams",
+          "source": "Shadow Labyrinth — Murmur — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Continuum Blade",
+          "source": "Reputation — Keepers of Time - Revered"
+        }
+      ],
       "head": [
+        {
+          "rank": "Optional",
+          "name": "Tankatronic Goggles",
+          "source": "Engineering — Trainer (375)"
+        },
         {
           "rank": "BiS",
           "name": "Faceguard of Determination",
-          "source": "Vendor — Badge of Justice (50)",
-          "item_id": 32083
-        }
-      ],
-      "neck": [
+          "source": "Vendor — Badge of Justice (50)"
+        },
         {
-          "rank": "BiS",
-          "name": "Strength of the Untamed",
-          "source": "Reputation — Cenarion Expedition - Revered",
-          "item_id": 29173
-        }
-      ],
-      "shoulders": [
+          "rank": "Optional",
+          "name": "Gladiator's Lamellar Helm",
+          "source": "PvP — Arena Season 1"
+        },
         {
-          "rank": "BiS",
-          "name": "Spaulders of the Righteous",
-          "source": "Botanica — Laj (20%)",
-          "item_id": 27739
-        }
-      ],
-      "back": [
+          "rank": "Optional",
+          "name": "Oathkeeper's Helm",
+          "source": "Blacksmithing — BoE Pattern (365)"
+        },
         {
-          "rank": "BiS",
-          "name": "Devilshark Cape",
-          "source": "The Steamvault — Warlord Kalithresh\n            (16%)",
-          "item_id": 27804
+          "rank": "Optional",
+          "name": "Helm of the Righteous",
+          "source": "Mechanar — Pathaleon the Calculator — 16%"
         }
       ],
       "chest": [
         {
           "rank": "BiS",
           "name": "Breastplate of the Righteous",
-          "source": "The Steamvault — Warlord Kalithresh (16%)",
-          "item_id": 28203
+          "source": "The Steamvault — Warlord Kalithresh — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Jade-Skull Breastplate",
+          "source": "The Mechanar — Nethermancer Sepethrea — 20%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vindicator's Hauberk",
+          "source": "Reputation — The Aldor - Revered"
+        },
+        {
+          "rank": "Optional",
+          "name": "Adamantite Breastplate",
+          "source": "Blacksmithing — Vendor Pattern (340)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Breastplate of the Warbringer",
+          "source": "Quest Reward — Forge Camp: Annihilated"
         }
       ],
-      "wrists": [
+      "legs": [
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Lamellar Legguards",
+          "source": "PvP — Arena Season 1"
+        },
         {
           "rank": "BiS",
-          "name": "Bracers of Dignity",
-          "source": "Arcatraz (HC) — Harbinger Skyriss\n            (25%)",
-          "item_id": 29252
-        }
-      ],
-      "hands": [
+          "name": "Timewarden's Leggings",
+          "source": "Reputation — Keepers of Time - Revered"
+        },
         {
-          "rank": "BiS",
-          "name": "Felsteel Gloves",
-          "source": "Blacksmithing — BoP Pattern (360)",
-          "item_id": 23517
+          "rank": "Optional",
+          "name": "Felsteel Leggings",
+          "source": "Blacksmithing — BoP Pattern (360)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Greaves of the Shatterer",
+          "source": "The Shattered Halls — Warchief Kargath Bladefist — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Legguards of the Resolute Defender",
+          "source": "Quest Reward — Destroy Naberius"
         }
       ],
       "waist": [
         {
           "rank": "BiS",
           "name": "Girdle of Valorous Deeds",
-          "source": "The Black Morass (HC) — Aeonus (25%)",
-          "item_id": 29253
-        }
-      ],
-      "legs": [
+          "source": "The Black Morass (HC) — Aeonus — 25%"
+        },
         {
-          "rank": "BiS",
-          "name": "Timewarden's Leggings",
-          "source": "Reputation — Keepers of Time - Revered",
-          "item_id": 29184
+          "rank": "Optional",
+          "name": "Girdle of the Immovable",
+          "source": "Slave Pens (HC) — Quagmirran — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Sha'tari Vindicator's Waistguard",
+          "source": "Quest Reward — How to Break Into the Arcatraz"
+        },
+        {
+          "rank": "Optional",
+          "name": "Lightwarden's Girdle",
+          "source": "Quest Reward — Deathblow to the Legion (Aldor)"
+        },
+        {
+          "rank": "Optional",
+          "name": "General's Lamellar Belt",
+          "source": "PvP — Honor & AB Marks"
         }
       ],
       "feet": [
         {
           "rank": "BiS",
           "name": "Boots of the Righteous Path",
-          "source": "The Shattered Halls (HC) — Warchief Kargath Bladefist (25%)",
-          "item_id": 29254
-        }
-      ],
-      "rings": [
-        {
-          "rank": "BiS",
-          "name": "Elementium Band of the Sentry",
-          "source": "The Arcatraz — Harbinger Skyriss (16%)",
-          "item_id": 28407
+          "source": "The Shattered Halls (HC) — Warchief Kargath Bladefist — 25%"
         },
         {
-          "rank": "BiS",
-          "name": "Andormu's Tear",
-          "source": "Quest Reward — Hero of the Brood",
-          "item_id": 29323
-        }
-      ],
-      "trinkets": [
-        {
-          "rank": "BiS",
-          "name": "Icon of the Silver Crescent",
-          "source": "Vendor — Badge of Justice (41)",
-          "item_id": 29370
+          "rank": "Optional",
+          "name": "General's Lamellar Greaves",
+          "source": "PvP — Honor & EotS Marks"
         },
         {
-          "rank": "BiS",
-          "name": "Figurine of the Colossus",
-          "source": "The Shattered Halls — Warchief Kargath Bladefist (16%)",
-          "item_id": 27529
-        }
-      ],
-      "weapons": [
+          "rank": "Optional",
+          "name": "Eaglecrest Warboots",
+          "source": "The Blood Furnace — Keli'dan the Breaker — 25%"
+        },
         {
-          "rank": "BiS",
-          "name": "Gavel of Unearthed Secrets",
-          "source": "Reputation — Lower City - Exalted",
-          "item_id": 30832
-        }
-      ],
-      "offhands": [
+          "rank": "Optional",
+          "name": "Boots of the Colossus",
+          "source": "Mana-Tombs (HC) — Pandemonius — 17%"
+        },
         {
-          "rank": "BiS",
-          "name": "Azure-Shield of Coldarra",
-          "source": "Vendor — Badge of Justice (33)",
-          "item_id": 29266
-        }
-      ],
-      "totems": [
-        {
-          "rank": "BiS",
-          "name": "Libram of Repentance",
-          "source": "Vendor — Badge of Justice (15)",
-          "item_id": 29388
-        }
-      ]
-    },
-    "phase-1": {
-      "head": [
-        {
-          "rank": "BiS",
-          "name": "Justicar Faceguard",
-          "source": "Karazhan — Prince Malchezaar (56%)",
-          "item_id": 29068
-        }
-      ],
-      "neck": [
-        {
-          "rank": "BiS",
-          "name": "Barbed Choker of Discipline",
-          "source": "Karazhan — Maiden of Virtue (16%)",
-          "item_id": 28516
+          "rank": "Optional",
+          "name": "Ascendant's Boots",
+          "source": "Quest Reward — A Job Unfinished..."
         }
       ],
       "shoulders": [
         {
-          "rank": "BiS",
-          "name": "Justicar Shoulderguards",
-          "source": "Gruul's Lair — High King Maulgar (56%)",
-          "item_id": 29070
-        }
-      ],
-      "back": [
+          "rank": "Optional",
+          "name": "Gladiator's Lamellar Shoulders",
+          "source": "PvP — Arena Season 1"
+        },
         {
           "rank": "BiS",
-          "name": "Devilshark Cape",
-          "source": "The Steamvault — Warlord Kalithresh\n            (16%)",
-          "item_id": 27804
+          "name": "Spaulders of the Righteous",
+          "source": "Botanica — Laj — 20%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Spaulders of Dementia",
+          "source": "Sethekk Halls (HC) — Talon King Ikiss — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Fanblade Pauldrons",
+          "source": "Auchenai Crypts (HC) — Shirrak the Dead Watcher — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Kaylaan's Spaulders",
+          "source": "Quest Reward — Aldor No More"
         }
       ],
-      "chest": [
+      "hands": [
+        {
+          "rank": "Optional",
+          "name": "Gauntlets of Dissension",
+          "source": "The Botanica (HC) — Warp Splinter — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Lamellar Gauntlets",
+          "source": "PvP — Arena Season 1"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gauntlets of the Iron Tower",
+          "source": "Blacksmithing — BoE Pattern (365)"
+        },
         {
           "rank": "BiS",
-          "name": "Justicar Chestguard",
-          "source": "Magtheridon's Lair — Magtheridon (56%)",
-          "item_id": 29066
+          "name": "Felsteel Gloves",
+          "source": "Blacksmithing — BoP Pattern (360)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gauntlets of the Righteous",
+          "source": "Shattered Halls — Warchief Kargath Bladefist — 16%"
         }
       ],
       "wrists": [
         {
           "rank": "BiS",
           "name": "Bracers of Dignity",
-          "source": "Arcatraz (HC) — Harbinger Skyriss\n            (25%)",
-          "item_id": 29252
-        }
-      ],
-      "hands": [
+          "source": "Arcatraz (HC) — Harbinger Skyriss — 25%"
+        },
         {
-          "rank": "BiS",
-          "name": "Iron Gauntlets of the Maiden",
-          "source": "Karazhan — Maiden of Virtue (16%)",
-          "item_id": 28518
-        }
-      ],
-      "waist": [
+          "rank": "Optional",
+          "name": "Bracers of the Green Fortress",
+          "source": "Blacksmithing — BoE Pattern (375)"
+        },
         {
-          "rank": "BiS",
-          "name": "Crimson Girdle of the Indomitable",
-          "source": "Karazhan — Moroes (16%)",
-          "item_id": 28566
-        }
-      ],
-      "legs": [
+          "rank": "Optional",
+          "name": "General's Lamellar Bracers",
+          "source": "PvP — Honor & WSG Marks"
+        },
         {
-          "rank": "BiS",
-          "name": "Justicar Legguards",
-          "source": "Gruul's Lair — Gruul the Dragonkiller (56%)",
-          "item_id": 29069
-        }
-      ],
-      "feet": [
+          "rank": "Optional",
+          "name": "Amber Bands of the Aggressor",
+          "source": "The Steamvault (HC) — Warlord Kalithresh — 25%"
+        },
         {
-          "rank": "BiS",
-          "name": "Boots of Elusion",
-          "source": "Karazhan — Trash Drop",
-          "item_id": 30641
+          "rank": "Optional",
+          "name": "Vambraces of Daring",
+          "source": "Hellfire Ramparts (HC) — Vazruden the Herald"
         }
       ],
       "rings": [
         {
-          "rank": "BiS",
-          "name": "Violet Signet of the Great Protector",
-          "source": "Reputation — The Violet Eye - Exalted",
-          "item_id": 29279
+          "rank": "Optional",
+          "name": "Ashyen's Gift",
+          "source": "Reputation — Cenarion Expedition - Exalted"
+        },
+        {
+          "rank": "Optional",
+          "name": "Ashyen's Gift",
+          "source": "Reputation — Cenarion Expedition - Exalted"
+        },
+        {
+          "rank": "Optional",
+          "name": "Seal of the Exorcist",
+          "source": "Vendor — Spirit Shards (50)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Seal of the Exorcist",
+          "source": "Vendor — Spirit Shards (50)"
         },
         {
           "rank": "BiS",
-          "name": "Ashyen's Gift",
-          "source": "Reputation — Cenarion Expedition - Exalted",
-          "item_id": 29172
+          "name": "Elementium Band of the Sentry",
+          "source": "The Arcatraz — Harbinger Skyriss — 16%"
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Devilshark Cape",
+          "source": "The Steamvault — Warlord Kalithresh — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Sergeant's Heavy Cape",
+          "source": "PvP — Honor & AB Marks"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cloak of Eternity",
+          "source": "Tailoring — BoE Pattern (350)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Burnoose of Shifting Ages",
+          "source": "The Black Morass — Chrono Lord Deja — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Ironscale War Cloak",
+          "source": "Slave Pens (HC) — Rokmar the Crackler — 17%"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "Optional",
+          "name": "Pendant of Dominance",
+          "source": "PvP — Honor & EotS Marks"
+        },
+        {
+          "rank": "BiS",
+          "name": "Strength of the Untamed",
+          "source": "Reputation — Cenarion Expedition - Revered"
+        },
+        {
+          "rank": "Optional",
+          "name": "Necklace of the Juggernaut",
+          "source": "Vendor — Badge of Justice (25)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Maladaar's Blessed Chaplet",
+          "source": "Auchenai Crypts (HC) — Exarch Maladaar — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Mark of the Ravenguard",
+          "source": "Quest Reward — Brother Against Brother"
         }
       ],
       "trinkets": [
         {
           "rank": "BiS",
           "name": "Icon of the Silver Crescent",
-          "source": "Vendor — Badge of Justice (41)",
-          "item_id": 29370
+          "source": "Vendor — Badge of Justice (41)"
         },
         {
-          "rank": "BiS",
-          "name": "Eye of Magtheridon",
-          "source": "Magtheridon's Lair — Magtheridon (35%)",
-          "item_id": 28789
-        }
-      ],
-      "weapons": [
+          "rank": "Optional",
+          "name": "Icon of the Silver Crescent",
+          "source": "Vendor — Badge of Justice (41)"
+        },
         {
-          "rank": "BiS",
-          "name": "Bloodmaw Magus-Blade",
-          "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
-          "item_id": 28802
-        }
-      ],
-      "offhands": [
+          "rank": "Optional",
+          "name": "Goblin Rocket Launcher",
+          "source": "Engineering — Trainer (350)"
+        },
         {
-          "rank": "BiS",
-          "name": "Aldori Legacy Defender",
-          "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
-          "item_id": 28825
+          "rank": "Optional",
+          "name": "Goblin Rocket Launcher",
+          "source": "Engineering — Trainer (350)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Adamantine Figurine",
+          "source": "Shadow Labyrinth — Blackheart the Inciter — 17%"
         }
       ],
       "totems": [
         {
           "rank": "BiS",
           "name": "Libram of Repentance",
-          "source": "Vendor — Badge of Justice (15)",
-          "item_id": 29388
+          "source": "Vendor — Badge of Justice (15)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Libram of the Eternal Rest",
+          "source": "Sethekk Halls — Darkweaver Syth — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Libram of Truth",
+          "source": "Blackrock Depths — Magmus — 13%"
         }
       ]
     },
-    "phase-2": {
-      "head": [
+    "phase-1": {
+      "offhands": [
         {
           "rank": "BiS",
-          "name": "Crystalforge Faceguard",
-          "source": "SSC — Lady Vashj (56%)",
-          "item_id": 30125
+          "name": "Aldori Legacy Defender",
+          "source": "Gruul's Lair — Gruul the Dragonkiller — 33%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shield of Impenetrable Darkness",
+          "source": "Karazhan — Nightbane — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Shield Wall",
+          "source": "PvP — Arena Season 1"
+        },
+        {
+          "rank": "Optional",
+          "name": "Azure-Shield of Coldarra",
+          "source": "Vendor — Badge of Justice (33)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Dragonheart Flameshield",
+          "source": "Karazhan — Nightbane — 16%"
         }
       ],
-      "neck": [
+      "weapons": [
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Gavel",
+          "source": "PvP — Arena Season 1"
+        },
         {
           "rank": "BiS",
-          "name": "Veteran's Pendant of Dominance",
-          "source": "PvP — Honor & EotS Marks",
-          "item_id": 33065
-        }
-      ],
-      "shoulders": [
+          "name": "Bloodmaw Magus-Blade",
+          "source": "Gruul's Lair — Gruul the Dragonkiller — 33%"
+        },
         {
-          "rank": "BiS",
-          "name": "Justicar Shoulderguards",
-          "source": "Gruul's Lair — High King Maulgar (56%)",
-          "item_id": 29070
-        }
-      ],
-      "back": [
+          "rank": "Optional",
+          "name": "Gavel of Unearthed Secrets",
+          "source": "Reputation — Lower City - Exalted"
+        },
         {
-          "rank": "BiS",
-          "name": "Phoenix-Wing Cloak",
-          "source": "Tempest Keep — Al'ar (15%)",
-          "item_id": 29925
+          "rank": "Optional",
+          "name": "Stormcaller",
+          "source": "Reputation — Thrallmar - Exalted (H)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Greatsword of Horrid Dreams",
+          "source": "Shadow Labyrinth — Murmur — 16%"
         }
       ],
       "chest": [
         {
           "rank": "BiS",
           "name": "Justicar Chestguard",
-          "source": "Magtheridon's Lair — Magtheridon (56%)",
-          "item_id": 29066
+          "source": "Magtheridon's Lair — Magtheridon — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Panzar'Thar Breastplate",
+          "source": "Karazhan — Nightbane — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Breastplate of the Righteous",
+          "source": "The Steamvault — Warlord Kalithresh — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Jade-Skull Breastplate",
+          "source": "The Mechanar — Nethermancer Sepethrea — 20%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vindicator's Hauberk",
+          "source": "Reputation — The Aldor - Revered"
         }
       ],
-      "wrists": [
+      "head": [
         {
           "rank": "BiS",
-          "name": "Wristguards of Determination",
-          "source": "Tempest Keep — Void Reaver (14%)",
-          "item_id": 32515
-        }
-      ],
-      "hands": [
+          "name": "Justicar Faceguard",
+          "source": "Karazhan — Prince Malchezaar — 56%"
+        },
         {
-          "rank": "BiS",
-          "name": "Crystalforge Handguards",
-          "source": "SSC — Leotheras the Blind (56%)",
-          "item_id": 30124
-        }
-      ],
-      "waist": [
+          "rank": "Optional",
+          "name": "Tankatronic Goggles",
+          "source": "Engineering — Trainer (375)"
+        },
         {
-          "rank": "BiS",
-          "name": "Girdle of the Invulnerable",
-          "source": "SSC — Leotheras the Blind (17%)",
-          "item_id": 30096
+          "rank": "Optional",
+          "name": "Faceguard of the Endless Watch",
+          "source": "World Boss — Doomwalker — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Faceguard of Determination",
+          "source": "Vendor — Badge of Justice (50)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Lamellar Helm",
+          "source": "PvP — Arena Season 1"
         }
       ],
       "legs": [
         {
           "rank": "BiS",
-          "name": "Crystalforge Legguards",
-          "source": "SSC — Fathom-Lord Karanthress (56%)",
-          "item_id": 30126
+          "name": "Justicar Legguards",
+          "source": "Gruul's Lair — Gruul the Dragonkiller — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Wrynn Dynasty Greaves",
+          "source": "Karazhan — The Curator — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Lamellar Legguards",
+          "source": "PvP — Arena Season 1"
+        },
+        {
+          "rank": "Optional",
+          "name": "Timewarden's Leggings",
+          "source": "Reputation — Keepers of Time - Revered"
+        },
+        {
+          "rank": "Optional",
+          "name": "Felsteel Leggings",
+          "source": "Blacksmithing — BoP Pattern (360)"
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Justicar Shoulderguards",
+          "source": "Gruul's Lair — High King Maulgar — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Mantle of Abrahmis",
+          "source": "Karazhan — Netherspite — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Lamellar Shoulders",
+          "source": "PvP — Arena Season 1"
+        },
+        {
+          "rank": "Optional",
+          "name": "Spaulders of the Righteous",
+          "source": "Botanica — Laj — 20%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Spaulders of Dementia",
+          "source": "Sethekk Halls (HC) — Talon King Ikiss — 25%"
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Crimson Girdle of the Indomitable",
+          "source": "Karazhan — Moroes — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of Valorous Deeds",
+          "source": "The Black Morass (HC) — Aeonus — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of the Immovable",
+          "source": "Slave Pens (HC) — Quagmirran — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Sha'tari Vindicator's Waistguard",
+          "source": "Quest Reward — How to Break Into the Arcatraz"
+        },
+        {
+          "rank": "Optional",
+          "name": "Lightwarden's Girdle",
+          "source": "Quest Reward — Deathblow to the Legion (Aldor)"
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Iron Gauntlets of the Maiden",
+          "source": "Karazhan — Maiden of Virtue — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Justicar Handguards",
+          "source": "Karazhan — The Curator — 33%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Topaz-Studded Battlegrips",
+          "source": "World Boss — Doom Lord Kazzak — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gauntlets of Dissension",
+          "source": "The Botanica (HC) — Warp Splinter — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Lamellar Gauntlets",
+          "source": "PvP — Arena Season 1"
         }
       ],
       "feet": [
         {
           "rank": "BiS",
-          "name": "Boots of the Resilient",
-          "source": "Tempest Keep — High Astromancer Solarian (15%)",
-          "item_id": 32267
+          "name": "Boots of Elusion",
+          "source": "Karazhan — Trash Drop"
+        },
+        {
+          "rank": "Optional",
+          "name": "Boots of the Righteous Path",
+          "source": "The Shattered Halls (HC) — Warchief Kargath Bladefist — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Battlescar Boots",
+          "source": "Karazhan — Chess Event — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "General's Lamellar Greaves",
+          "source": "PvP — Honor & EotS Marks"
+        },
+        {
+          "rank": "Optional",
+          "name": "Eaglecrest Warboots",
+          "source": "The Blood Furnace — Keli'dan the Breaker — 25%"
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Bracers of Dignity",
+          "source": "Arcatraz (HC) — Harbinger Skyriss — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vambraces of Courage",
+          "source": "Karazhan — Attumen the Huntsman — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bracers of the Green Fortress",
+          "source": "Blacksmithing — BoE Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "General's Lamellar Bracers",
+          "source": "PvP — Honor & WSG Marks"
+        },
+        {
+          "rank": "Optional",
+          "name": "Amber Bands of the Aggressor",
+          "source": "The Steamvault (HC) — Warlord Kalithresh — 25%"
         }
       ],
       "rings": [
         {
-          "rank": "BiS",
-          "name": "The Seal of Danzalar",
-          "source": "SSC — The Lurker Below (15%)",
-          "item_id": 33054
+          "rank": "Optional",
+          "name": "Band of Crimson Fury",
+          "source": "Quest Reward — The Fall of Magtheridon"
+        },
+        {
+          "rank": "Optional",
+          "name": "Band of Crimson Fury",
+          "source": "Quest Reward — The Fall of Magtheridon"
+        },
+        {
+          "rank": "Optional",
+          "name": "Ashyen's Gift",
+          "source": "Reputation — Cenarion Expedition - Exalted"
         },
         {
           "rank": "BiS",
           "name": "Ashyen's Gift",
-          "source": "Reputation — Cenarion Expedition - Exalted",
-          "item_id": 29172
+          "source": "Reputation — Cenarion Expedition - Exalted"
+        },
+        {
+          "rank": "Optional",
+          "name": "Violet Signet of the Great Protector",
+          "source": "Reputation — The Violet Eye - Exalted"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Barbed Choker of Discipline",
+          "source": "Karazhan — Maiden of Virtue — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Pendant of Dominance",
+          "source": "PvP — Honor & EotS Marks"
+        },
+        {
+          "rank": "Optional",
+          "name": "Strength of the Untamed",
+          "source": "Reputation — Cenarion Expedition - Revered"
+        },
+        {
+          "rank": "Optional",
+          "name": "Necklace of the Juggernaut",
+          "source": "Vendor — Badge of Justice (25)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Maladaar's Blessed Chaplet",
+          "source": "Auchenai Crypts (HC) — Exarch Maladaar — 17%"
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Devilshark Cape",
+          "source": "The Steamvault — Warlord Kalithresh — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gilded Thorium Cloak",
+          "source": "Karazhan — Terestian Illhoof — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Sergeant's Heavy Cape",
+          "source": "PvP — Honor & AB Marks"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cloak of Eternity",
+          "source": "Tailoring — BoE Pattern (350)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Burnoose of Shifting Ages",
+          "source": "The Black Morass — Chrono Lord Deja — 17%"
         }
       ],
       "trinkets": [
         {
           "rank": "BiS",
           "name": "Icon of the Silver Crescent",
-          "source": "Vendor — Badge of Justice (41)",
-          "item_id": 29370
+          "source": "Vendor — Badge of Justice (41)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Icon of the Silver Crescent",
+          "source": "Vendor — Badge of Justice (41)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Moroes' Lucky Pocket Watch",
+          "source": "Karazhan — Moroes — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Moroes' Lucky Pocket Watch",
+          "source": "Karazhan — Moroes — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Goblin Rocket Launcher",
+          "source": "Engineering — Trainer (350)"
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Libram of Repentance",
+          "source": "Vendor — Badge of Justice (15)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Libram of the Eternal Rest",
+          "source": "Sethekk Halls — Darkweaver Syth — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Libram of Truth",
+          "source": "Blackrock Depths — Magmus — 13%"
+        }
+      ]
+    },
+    "phase-2": {
+      "weapons": [
+        {
+          "rank": "Optional",
+          "name": "Merciless Gladiator's Gavel",
+          "source": "PvP — Arena Season 2"
         },
         {
           "rank": "BiS",
-          "name": "Tome of Fiery Redemption",
-          "source": "Tempest Keep — Al'ar (15%)",
-          "item_id": 30447
-        }
-      ],
-      "weapons": [
-        {
-          "rank": "BiS",
           "name": "Fang of the Leviathan",
-          "source": "SSC — Leotheras the Blind (17%)",
-          "item_id": 30095
+          "source": "SSC — Leotheras the Blind — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bloodmaw Magus-Blade",
+          "source": "Gruul's Lair — Gruul the Dragonkiller — 33%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gavel of Unearthed Secrets",
+          "source": "Reputation — Lower City - Exalted"
+        },
+        {
+          "rank": "Optional",
+          "name": "Stormcaller",
+          "source": "Reputation — Thrallmar - Exalted (H)"
         }
       ],
       "offhands": [
         {
           "rank": "BiS",
           "name": "Aldori Legacy Defender",
-          "source": "Gruul's Lair — Gruul the Dragonkiller (33%)",
-          "item_id": 28825
+          "source": "Gruul's Lair — Gruul the Dragonkiller — 33%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shield of Impenetrable Darkness",
+          "source": "Karazhan — Nightbane — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Shield Wall",
+          "source": "PvP — Arena Season 1"
+        },
+        {
+          "rank": "Optional",
+          "name": "Azure-Shield of Coldarra",
+          "source": "Vendor — Badge of Justice (33)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Dragonheart Flameshield",
+          "source": "Karazhan — Nightbane — 16%"
         }
       ],
-      "totems": [
+      "legs": [
         {
           "rank": "BiS",
-          "name": "Libram of the Eternal Rest",
-          "source": "Sethekk Halls — Darkweaver Syth (17%)",
-          "item_id": 27917
+          "name": "Crystalforge Legguards",
+          "source": "SSC — Fathom-Lord Karanthress — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Justicar Legguards",
+          "source": "Gruul's Lair — Gruul the Dragonkiller — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Wrynn Dynasty Greaves",
+          "source": "Karazhan — The Curator — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Lamellar Legguards",
+          "source": "PvP — Arena Season 1"
+        },
+        {
+          "rank": "Optional",
+          "name": "Timewarden's Leggings",
+          "source": "Reputation — Keepers of Time - Revered"
         }
-      ]
-    },
-    "phase-3": {
+      ],
+      "chest": [
+        {
+          "rank": "Optional",
+          "name": "Crystalforge Chestguard",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 56%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Justicar Chestguard",
+          "source": "Magtheridon's Lair — Magtheridon — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Panzar'Thar Breastplate",
+          "source": "Karazhan — Nightbane — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Breastplate of the Righteous",
+          "source": "The Steamvault — Warlord Kalithresh — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Jade-Skull Breastplate",
+          "source": "The Mechanar — Nethermancer Sepethrea — 20%"
+        }
+      ],
       "head": [
         {
           "rank": "BiS",
-          "name": "Faceplate of the Impenetrable",
-          "source": "Black Temple — Illidan Stormrage (37%)",
-          "item_id": 32521
+          "name": "Crystalforge Faceguard",
+          "source": "SSC — Lady Vashj — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Justicar Faceguard",
+          "source": "Karazhan — Prince Malchezaar — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Tankatronic Goggles",
+          "source": "Engineering — Trainer (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Faceguard of the Endless Watch",
+          "source": "World Boss — Doomwalker — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Faceguard of Determination",
+          "source": "Vendor — Badge of Justice (50)"
         }
       ],
-      "neck": [
+      "hands": [
         {
           "rank": "BiS",
-          "name": "Vindicator's Pendant of Dominance",
-          "source": "PvP — Honor & EotS Marks",
-          "item_id": 33921
+          "name": "Crystalforge Handguards",
+          "source": "SSC — Leotheras the Blind — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Royal Gauntlets of Silvermoon",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Iron Gauntlets of the Maiden",
+          "source": "Karazhan — Maiden of Virtue — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Justicar Handguards",
+          "source": "Karazhan — The Curator — 33%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Topaz-Studded Battlegrips",
+          "source": "World Boss — Doom Lord Kazzak — 19%"
         }
       ],
       "shoulders": [
         {
+          "rank": "Optional",
+          "name": "Crystalforge Shoulderguards",
+          "source": "Tempest Keep — Void Reaver — 56%"
+        },
+        {
           "rank": "BiS",
-          "name": "Lightbringer Shoulderguards",
-          "source": "Black Temple — Mother Shahraz (56%)",
-          "item_id": 30998
+          "name": "Justicar Shoulderguards",
+          "source": "Gruul's Lair — High King Maulgar — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Mantle of Abrahmis",
+          "source": "Karazhan — Netherspite — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Lamellar Shoulders",
+          "source": "PvP — Arena Season 1"
+        },
+        {
+          "rank": "Optional",
+          "name": "Spaulders of the Righteous",
+          "source": "Botanica — Laj — 20%"
+        }
+      ],
+      "feet": [
+        {
+          "rank": "Optional",
+          "name": "Boots of the Protector",
+          "source": "Blacksmithing — BoE Pattern (375)"
+        },
+        {
+          "rank": "BiS",
+          "name": "Boots of the Resilient",
+          "source": "Tempest Keep — High Astromancer Solarian — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Red Havoc Boots",
+          "source": "Blacksmithing — BoP Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Boots of Elusion",
+          "source": "Karazhan — Trash Drop"
+        },
+        {
+          "rank": "Optional",
+          "name": "Boots of the Righteous Path",
+          "source": "The Shattered Halls (HC) — Warchief Kargath Bladefist — 25%"
+        }
+      ],
+      "waist": [
+        {
+          "rank": "Optional",
+          "name": "Belt of the Guardian",
+          "source": "Blacksmithing — BoP Pattern (375)"
+        },
+        {
+          "rank": "BiS",
+          "name": "Girdle of the Invulnerable",
+          "source": "SSC — Leotheras the Blind — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Crimson Girdle of the Indomitable",
+          "source": "Karazhan — Moroes — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of Valorous Deeds",
+          "source": "The Black Morass (HC) — Aeonus — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of the Immovable",
+          "source": "Slave Pens (HC) — Quagmirran — 16%"
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Wristguards of Determination",
+          "source": "Tempest Keep — Void Reaver — 14%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bracers of Dignity",
+          "source": "Arcatraz (HC) — Harbinger Skyriss — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vambraces of Courage",
+          "source": "Karazhan — Attumen the Huntsman — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bracers of the Green Fortress",
+          "source": "Blacksmithing — BoE Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "General's Lamellar Bracers",
+          "source": "PvP — Honor & WSG Marks"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "Optional",
+          "name": "The Darkener's Grasp",
+          "source": "Quest Reward — Kael'thas and the Verdant Sphere"
+        },
+        {
+          "rank": "BiS",
+          "name": "Veteran's Pendant of Dominance",
+          "source": "PvP — Honor & EotS Marks"
+        },
+        {
+          "rank": "Optional",
+          "name": "Barbed Choker of Discipline",
+          "source": "Karazhan — Maiden of Virtue — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Pendant of Dominance",
+          "source": "PvP — Honor & EotS Marks"
+        },
+        {
+          "rank": "Optional",
+          "name": "Frayed Tether of the Drowned",
+          "source": "SSC — Fathom-Lord Karathress — 17%"
         }
       ],
       "back": [
         {
           "rank": "BiS",
           "name": "Phoenix-Wing Cloak",
-          "source": "Tempest Keep — Al'ar (15%)",
-          "item_id": 29925
-        }
-      ],
-      "chest": [
+          "source": "Tempest Keep — Al'ar — 15%"
+        },
         {
-          "rank": "BiS",
-          "name": "Lightbringer Chestguard",
-          "source": "Black Temple — Illidan Stormrage (56%)",
-          "item_id": 30991
-        }
-      ],
-      "wrists": [
+          "rank": "Optional",
+          "name": "Royal Cloak of the Sunstriders",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
         {
-          "rank": "BiS",
-          "name": "The Seeker's Wristguards",
-          "source": "Black Temple — Shade of Akama (10%)",
-          "item_id": 32279
-        }
-      ],
-      "hands": [
+          "rank": "Optional",
+          "name": "Devilshark Cape",
+          "source": "The Steamvault — Warlord Kalithresh — 16%"
+        },
         {
-          "rank": "BiS",
-          "name": "Lightbringer Handguards",
-          "source": "Hyjal Summit — Azgalor (56%)",
-          "item_id": 30985
-        }
-      ],
-      "waist": [
+          "rank": "Optional",
+          "name": "Gilded Thorium Cloak",
+          "source": "Karazhan — Terestian Illhoof — 16%"
+        },
         {
-          "rank": "BiS",
-          "name": "Girdle of Mighty Resolve",
-          "source": "Black Temple — Gurtogg Bloddboil (8%)",
-          "item_id": 32342
-        }
-      ],
-      "legs": [
-        {
-          "rank": "BiS",
-          "name": "Lightbringer Legguards",
-          "source": "Black Temple — The Illidari Council (56%)",
-          "item_id": 30995
-        }
-      ],
-      "feet": [
-        {
-          "rank": "BiS",
-          "name": "Tide-Stomper's Greaves",
-          "source": "Black Temple — High Warlord Naj'entus (6%)",
-          "item_id": 32245
+          "rank": "Optional",
+          "name": "Sergeant's Heavy Cape",
+          "source": "PvP — Honor & AB Marks"
         }
       ],
       "rings": [
         {
-          "rank": "BiS",
-          "name": "The Seal of Danzalar",
-          "source": "SSC — The Lurker Below (15%)",
-          "item_id": 33054
+          "rank": "Optional",
+          "name": "Ring of Sundered Souls",
+          "source": "SSC — Morogrim Tidewalker — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Ring of Sundered Souls",
+          "source": "SSC — Morogrim Tidewalker — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Seventh Ring of the Tirisfalen",
+          "source": "Tempest Keep — Trash Drop"
+        },
+        {
+          "rank": "Optional",
+          "name": "Seventh Ring of the Tirisfalen",
+          "source": "Tempest Keep — Trash Drop"
         },
         {
           "rank": "BiS",
           "name": "Ashyen's Gift",
-          "source": "Reputation — Cenarion Expedition - Exalted",
-          "item_id": 29172
+          "source": "Reputation — Cenarion Expedition - Exalted"
         }
       ],
       "trinkets": [
         {
-          "rank": "BiS",
-          "name": "Icon of the Silver Crescent",
-          "source": "Vendor — Badge of Justice (41)",
-          "item_id": 29370
+          "rank": "Optional",
+          "name": "Scarab of Displacement",
+          "source": "SSC — Hydross the Unstable — 14%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Scarab of Displacement",
+          "source": "SSC — Hydross the Unstable — 14%"
         },
         {
           "rank": "BiS",
-          "name": "Tome of Fiery Redemption",
-          "source": "Tempest Keep — Al'ar (15%)",
-          "item_id": 30447
+          "name": "Icon of the Silver Crescent",
+          "source": "Vendor — Badge of Justice (41)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Icon of the Silver Crescent",
+          "source": "Vendor — Badge of Justice (41)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Moroes' Lucky Pocket Watch",
+          "source": "Karazhan — Moroes — 16%"
+        }
+      ],
+      "totems": [
+        {
+          "rank": "Optional",
+          "name": "Libram of Repentance",
+          "source": "Vendor — Badge of Justice (15)"
+        },
+        {
+          "rank": "BiS",
+          "name": "Libram of the Eternal Rest",
+          "source": "Sethekk Halls — Darkweaver Syth — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Libram of Truth",
+          "source": "Blackrock Depths — Magmus — 13%"
+        }
+      ]
+    },
+    "phase-3": {
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Bulwark of Azzinoth",
+          "source": "Black Temple — Illidan Stormrage — 38%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Antonidas's Aegis of Rapt Concentration",
+          "source": "Hyjal Summit — Archimonde — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vengeful Gladiator's Barrier",
+          "source": "PvP — Arena Season 3"
+        },
+        {
+          "rank": "Optional",
+          "name": "Illidari Runeshield",
+          "source": "Black Temple — Trash Drop — 2%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Kaz'rogal's Hardened Heart",
+          "source": "Hyjal Summit — Kaz'rogal — 16%"
         }
       ],
       "weapons": [
         {
           "rank": "BiS",
           "name": "Tempest of Chaos",
-          "source": "Hyjal Summit — Archimonde (20%)",
-          "item_id": 30910
-        }
-      ],
-      "offhands": [
+          "source": "Hyjal Summit — Archimonde — 20%"
+        },
         {
-          "rank": "BiS",
-          "name": "Bulwark of Azzinoth",
-          "source": "Black Temple — Illidan Stormrage (38%)",
-          "item_id": 32375
-        }
-      ],
-      "totems": [
+          "rank": "Optional",
+          "name": "Vengeful Gladiator's Gavel",
+          "source": "PvP — Arena Season 3"
+        },
         {
-          "rank": "BiS",
-          "name": "Libram of the Eternal Rest",
-          "source": "Sethekk Halls — Darkweaver Syth (17%)",
-          "item_id": 27917
-        }
-      ]
-    },
-    "phase-4": {
-      "head": [
+          "rank": "Optional",
+          "name": "Hammer of Judgement",
+          "source": "Hyjal Summit — Trash Drop — 1%"
+        },
         {
-          "rank": "BiS",
-          "name": "Faceplate of the Impenetrable",
-          "source": "Black Temple — Illidan Stormrage (37%)",
-          "item_id": 32521
-        }
-      ],
-      "neck": [
+          "rank": "Optional",
+          "name": "Fang of the Leviathan",
+          "source": "SSC — Leotheras the Blind — 17%"
+        },
         {
-          "rank": "BiS",
-          "name": "Vindicator's Pendant of Dominance",
-          "source": "PvP — Honor & EotS Marks",
-          "item_id": 33921
-        }
-      ],
-      "shoulders": [
-        {
-          "rank": "BiS",
-          "name": "Lightbringer Shoulderguards",
-          "source": "Black Temple — Mother Shahraz (56%)",
-          "item_id": 30998
-        }
-      ],
-      "back": [
-        {
-          "rank": "BiS",
-          "name": "Phoenix-Wing Cloak",
-          "source": "Tempest Keep — Al'ar (15%)",
-          "item_id": 29925
+          "rank": "Optional",
+          "name": "Bloodmaw Magus-Blade",
+          "source": "Gruul's Lair — Gruul the Dragonkiller — 33%"
         }
       ],
       "chest": [
         {
           "rank": "BiS",
           "name": "Lightbringer Chestguard",
-          "source": "Black Temple — Illidan Stormrage (56%)",
-          "item_id": 30991
+          "source": "Black Temple — Illidan Stormrage — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Crystalforge Chestguard",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Glory of the Defender",
+          "source": "Hyjal Summit — Azgalor — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Justicar Chestguard",
+          "source": "Magtheridon's Lair — Magtheridon — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Panzar'Thar Breastplate",
+          "source": "Karazhan — Nightbane — 16%"
         }
       ],
-      "wrists": [
+      "head": [
         {
           "rank": "BiS",
-          "name": "The Seeker's Wristguards",
-          "source": "Black Temple — Shade of Akama (10%)",
-          "item_id": 32279
-        }
-      ],
-      "hands": [
+          "name": "Faceplate of the Impenetrable",
+          "source": "Black Temple — Illidan Stormrage — 37%"
+        },
         {
-          "rank": "BiS",
-          "name": "Lightbringer Handguards",
-          "source": "Hyjal Summit — Azgalor (56%)",
-          "item_id": 30985
-        }
-      ],
-      "waist": [
+          "rank": "Optional",
+          "name": "Lightbringer Faceguard",
+          "source": "Hyjal Summit — Archimonde — 56%"
+        },
         {
-          "rank": "BiS",
-          "name": "Girdle of Mighty Resolve",
-          "source": "Black Temple — Gurtogg Bloddboil (8%)",
-          "item_id": 32342
+          "rank": "Optional",
+          "name": "Crystalforge Faceguard",
+          "source": "SSC — Lady Vashj — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Justicar Faceguard",
+          "source": "Karazhan — Prince Malchezaar — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Tankatronic Goggles",
+          "source": "Engineering — Trainer (375)"
         }
       ],
       "legs": [
         {
           "rank": "BiS",
           "name": "Lightbringer Legguards",
-          "source": "Black Temple — The Illidari Council (56%)",
-          "item_id": 30995
+          "source": "Black Temple — The Illidari Council — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Crystalforge Legguards",
+          "source": "SSC — Fathom-Lord Karanthress — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Praetorian's Legguards",
+          "source": "Black Temple — Shade of Akama — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Justicar Legguards",
+          "source": "Gruul's Lair — Gruul the Dragonkiller — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Wrynn Dynasty Greaves",
+          "source": "Karazhan — The Curator — 17%"
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Handguards",
+          "source": "Hyjal Summit — Azgalor — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Crystalforge Handguards",
+          "source": "SSC — Leotheras the Blind — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Royal Gauntlets of Silvermoon",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gauntlets of Enforcement",
+          "source": "Black Temple — Teron Gorefiend — 39%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Iron Gauntlets of the Maiden",
+          "source": "Karazhan — Maiden of Virtue — 16%"
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Girdle of Mighty Resolve",
+          "source": "Black Temple — Gurtogg Bloddboil — 8%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of Stability",
+          "source": "Black Temple — Gurtogg Bloddboil — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Belt of the Guardian",
+          "source": "Blacksmithing — BoP Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of the Invulnerable",
+          "source": "SSC — Leotheras the Blind — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Crimson Girdle of the Indomitable",
+          "source": "Karazhan — Moroes — 16%"
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Shoulderguards",
+          "source": "Black Temple — Mother Shahraz — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Pauldrons of Abyssal Fury",
+          "source": "Black Temple — Supremus — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Crystalforge Shoulderguards",
+          "source": "Tempest Keep — Void Reaver — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Justicar Shoulderguards",
+          "source": "Gruul's Lair — High King Maulgar — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Mantle of Abrahmis",
+          "source": "Karazhan — Netherspite — 16%"
         }
       ],
       "feet": [
         {
           "rank": "BiS",
           "name": "Tide-Stomper's Greaves",
-          "source": "Black Temple — High Warlord Naj'entus (6%)",
-          "item_id": 32245
+          "source": "Black Temple — High Warlord Naj'entus — 6%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Myrmidon's Treads",
+          "source": "Black Temple — Shade of Akama — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Boots of the Protector",
+          "source": "Blacksmithing — BoE Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Boots of the Resilient",
+          "source": "Tempest Keep — High Astromancer Solarian — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Red Havoc Boots",
+          "source": "Blacksmithing — BoP Pattern (375)"
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "The Seeker's Wristguards",
+          "source": "Black Temple — Shade of Akama — 10%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Eternium Shell Bracers",
+          "source": "Black Temple — High Warlord Naj'entus — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Wristguards of Determination",
+          "source": "Tempest Keep — Void Reaver — 14%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vindicator's Lamellar Bracers",
+          "source": "PvP — Honor & WSG Marks"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bracers of Dignity",
+          "source": "Arcatraz (HC) — Harbinger Skyriss — 25%"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "Optional",
+          "name": "The Darkener's Grasp",
+          "source": "Quest Reward — Kael'thas and the Verdant Sphere"
+        },
+        {
+          "rank": "Optional",
+          "name": "Pendant of Titans",
+          "source": "Black Temple — Reliquary of the Lost — 13%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Vindicator's Pendant of Dominance",
+          "source": "PvP — Honor & EotS Marks"
+        },
+        {
+          "rank": "Optional",
+          "name": "Veteran's Pendant of Dominance",
+          "source": "PvP — Honor & EotS Marks"
+        },
+        {
+          "rank": "Optional",
+          "name": "Barbed Choker of Discipline",
+          "source": "Karazhan — Maiden of Virtue — 16%"
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Phoenix-Wing Cloak",
+          "source": "Tempest Keep — Al'ar — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Royal Cloak of the Sunstriders",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cloak of the Illidari Council",
+          "source": "Black Temple — The Illidari Council — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Pepe's Shroud of Pacification",
+          "source": "Hyjal Summit — Trash Drop — 1%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Devilshark Cape",
+          "source": "The Steamvault — Warlord Kalithresh — 16%"
         }
       ],
       "rings": [
         {
-          "rank": "BiS",
-          "name": "The Seal of Danzalar",
-          "source": "SSC — The Lurker Below (15%)",
-          "item_id": 33054
+          "rank": "Optional",
+          "name": "Ring of Sundered Souls",
+          "source": "SSC — Morogrim Tidewalker — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Ring of Sundered Souls",
+          "source": "SSC — Morogrim Tidewalker — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Band of the Eternal Defender",
+          "source": "Reputation — The Scale of the Sands - Exalted"
+        },
+        {
+          "rank": "Optional",
+          "name": "Seventh Ring of the Tirisfalen",
+          "source": "Tempest Keep — Trash Drop"
         },
         {
           "rank": "BiS",
           "name": "Ashyen's Gift",
-          "source": "Reputation — Cenarion Expedition - Exalted",
-          "item_id": 29172
+          "source": "Reputation — Cenarion Expedition - Exalted"
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "Optional",
+          "name": "Scarab of Displacement",
+          "source": "SSC — Hydross the Unstable — 14%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Scarab of Displacement",
+          "source": "SSC — Hydross the Unstable — 14%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Icon of the Silver Crescent",
+          "source": "Vendor — Badge of Justice (41)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Icon of the Silver Crescent",
+          "source": "Vendor — Badge of Justice (41)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Darkmoon Card: Vengeance",
+          "source": "Darkmoon Faire — Furies Deck"
+        }
+      ],
+      "totems": [
+        {
+          "rank": "Optional",
+          "name": "Libram of Repentance",
+          "source": "Vendor — Badge of Justice (15)"
+        },
+        {
+          "rank": "BiS",
+          "name": "Libram of the Eternal Rest",
+          "source": "Sethekk Halls — Darkweaver Syth — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Tome of the Lightbringer",
+          "source": "Black Temple — Mother Shahraz — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Libram of Truth",
+          "source": "Blackrock Depths — Magmus — 13%"
+        }
+      ]
+    },
+    "phase-4": {
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Bulwark of Azzinoth",
+          "source": "Black Temple — Illidan Stormrage — 38%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Antonidas's Aegis of Rapt Concentration",
+          "source": "Hyjal Summit — Archimonde — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vengeful Gladiator's Barrier",
+          "source": "PvP — Arena Season 3"
+        },
+        {
+          "rank": "Optional",
+          "name": "Illidari Runeshield",
+          "source": "Black Temple — Trash Drop — 2%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Kaz'rogal's Hardened Heart",
+          "source": "Hyjal Summit — Kaz'rogal — 16%"
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Tempest of Chaos",
+          "source": "Hyjal Summit — Archimonde — 20%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vengeful Gladiator's Gavel",
+          "source": "PvP — Arena Season 3"
+        },
+        {
+          "rank": "Optional",
+          "name": "Hammer of Judgement",
+          "source": "Hyjal Summit — Trash Drop — 1%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Amani Punisher",
+          "source": "Zul'Aman — Akil'zon — 12%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Blade of Twisted Visions",
+          "source": "Zul'Aman — Zul'jin — 19%"
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Chestguard",
+          "source": "Black Temple — Illidan Stormrage — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Chestguard of the Stoic Guardian",
+          "source": "Vendor — Badge of Justice (75)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Crystalforge Chestguard",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Glory of the Defender",
+          "source": "Hyjal Summit — Azgalor — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Justicar Chestguard",
+          "source": "Magtheridon's Lair — Magtheridon — 56%"
+        }
+      ],
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Faceplate of the Impenetrable",
+          "source": "Black Temple — Illidan Stormrage — 37%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Lightbringer Faceguard",
+          "source": "Hyjal Summit — Archimonde — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Crystalforge Faceguard",
+          "source": "SSC — Lady Vashj — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Battleworn Tuskguard",
+          "source": "Zul'Aman — Hex Lord Malacrass — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Justicar Faceguard",
+          "source": "Karazhan — Prince Malchezaar — 56%"
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Legguards",
+          "source": "Black Temple — The Illidari Council — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Crystalforge Legguards",
+          "source": "SSC — Fathom-Lord Karanthress — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Unwavering Legguards",
+          "source": "Vendor — Badge of Justice (75)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Praetorian's Legguards",
+          "source": "Black Temple — Shade of Akama — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Justicar Legguards",
+          "source": "Gruul's Lair — Gruul the Dragonkiller — 56%"
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Handguards",
+          "source": "Hyjal Summit — Azgalor — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Crystalforge Handguards",
+          "source": "SSC — Leotheras the Blind — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Royal Gauntlets of Silvermoon",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gauntlets of Enforcement",
+          "source": "Black Temple — Teron Gorefiend — 39%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Iron Gauntlets of the Maiden",
+          "source": "Karazhan — Maiden of Virtue — 16%"
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Girdle of Mighty Resolve",
+          "source": "Black Temple — Gurtogg Bloddboil — 8%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of the Protector",
+          "source": "Vendor — Badge of Justice (60)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of Stability",
+          "source": "Black Temple — Gurtogg Bloddboil — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Belt of the Guardian",
+          "source": "Blacksmithing — BoP Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of the Invulnerable",
+          "source": "SSC — Leotheras the Blind — 17%"
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Shoulderguards",
+          "source": "Black Temple — Mother Shahraz — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Pauldrons of Abyssal Fury",
+          "source": "Black Temple — Supremus — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Crystalforge Shoulderguards",
+          "source": "Tempest Keep — Void Reaver — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Justicar Shoulderguards",
+          "source": "Gruul's Lair — High King Maulgar — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Pauldrons of Stone Resolve",
+          "source": "Zul'Aman — Timed Chest (1) — 13%"
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Tide-Stomper's Greaves",
+          "source": "Black Temple — High Warlord Naj'entus — 6%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Myrmidon's Treads",
+          "source": "Black Temple — Shade of Akama — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Boots of the Protector",
+          "source": "Blacksmithing — BoE Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Boots of the Resilient",
+          "source": "Tempest Keep — High Astromancer Solarian — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Red Havoc Boots",
+          "source": "Blacksmithing — BoP Pattern (375)"
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "The Seeker's Wristguards",
+          "source": "Black Temple — Shade of Akama — 10%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Eternium Shell Bracers",
+          "source": "Black Temple — High Warlord Naj'entus — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Wristguards of Determination",
+          "source": "Tempest Keep — Void Reaver — 14%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vindicator's Lamellar Bracers",
+          "source": "PvP — Honor & WSG Marks"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bracers of Dignity",
+          "source": "Arcatraz (HC) — Harbinger Skyriss — 25%"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "Optional",
+          "name": "The Darkener's Grasp",
+          "source": "Quest Reward — Kael'thas and the Verdant Sphere"
+        },
+        {
+          "rank": "Optional",
+          "name": "Pendant of Titans",
+          "source": "Black Temple — Reliquary of the Lost — 13%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Vindicator's Pendant of Dominance",
+          "source": "PvP — Honor & EotS Marks"
+        },
+        {
+          "rank": "Optional",
+          "name": "Veteran's Pendant of Dominance",
+          "source": "PvP — Honor & EotS Marks"
+        },
+        {
+          "rank": "Optional",
+          "name": "Barbed Choker of Discipline",
+          "source": "Karazhan — Maiden of Virtue — 16%"
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Phoenix-Wing Cloak",
+          "source": "Tempest Keep — Al'ar — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Slikk's Cloak of Placation",
+          "source": "Vendor — Badge of Justice (35)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Royal Cloak of the Sunstriders",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cloak of the Illidari Council",
+          "source": "Black Temple — The Illidari Council — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Pepe's Shroud of Pacification",
+          "source": "Hyjal Summit — Trash Drop — 1%"
+        }
+      ],
+      "rings": [
+        {
+          "rank": "Optional",
+          "name": "Ring of Sundered Souls",
+          "source": "SSC — Morogrim Tidewalker — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Ring of Sundered Souls",
+          "source": "SSC — Morogrim Tidewalker — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Band of the Eternal Defender",
+          "source": "Reputation — The Scale of the Sands - Exalted"
+        },
+        {
+          "rank": "Optional",
+          "name": "Seventh Ring of the Tirisfalen",
+          "source": "Tempest Keep — Trash Drop"
+        },
+        {
+          "rank": "BiS",
+          "name": "Ashyen's Gift",
+          "source": "Reputation — Cenarion Expedition - Exalted"
         }
       ],
       "trinkets": [
         {
           "rank": "BiS",
           "name": "Hex Shrunken Head",
-          "source": "Zul'Aman — Hex Lord Malacrass (11%)",
-          "item_id": 33829
+          "source": "Zul'Aman — Hex Lord Malacrass — 11%"
         },
         {
-          "rank": "BiS",
-          "name": "Tome of Fiery Redemption",
-          "source": "Tempest Keep — Al'ar (15%)",
-          "item_id": 30447
-        }
-      ],
-      "weapons": [
+          "rank": "Optional",
+          "name": "Hex Shrunken Head",
+          "source": "Zul'Aman — Hex Lord Malacrass — 11%"
+        },
         {
-          "rank": "BiS",
-          "name": "Tempest of Chaos",
-          "source": "Hyjal Summit — Archimonde (20%)",
-          "item_id": 30910
-        }
-      ],
-      "offhands": [
+          "rank": "Optional",
+          "name": "Scarab of Displacement",
+          "source": "SSC — Hydross the Unstable — 14%"
+        },
         {
-          "rank": "BiS",
-          "name": "Bulwark of Azzinoth",
-          "source": "Black Temple — Illidan Stormrage (38%)",
-          "item_id": 32375
+          "rank": "Optional",
+          "name": "Scarab of Displacement",
+          "source": "SSC — Hydross the Unstable — 14%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Icon of the Silver Crescent",
+          "source": "Vendor — Badge of Justice (41)"
         }
       ],
       "totems": [
         {
+          "rank": "Optional",
+          "name": "Libram of Repentance",
+          "source": "Vendor — Badge of Justice (15)"
+        },
+        {
           "rank": "BiS",
           "name": "Libram of the Eternal Rest",
-          "source": "Sethekk Halls — Darkweaver Syth (17%)",
-          "item_id": 27917
+          "source": "Sethekk Halls — Darkweaver Syth — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Libram of Divine Purpose",
+          "source": "Vendor — Badge of Justice (20)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Tome of the Lightbringer",
+          "source": "Black Temple — Mother Shahraz — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Libram of Truth",
+          "source": "Blackrock Depths — Magmus — 13%"
         }
       ]
     },
     "phase-5": {
-      "head": [
+      "offhands": [
         {
           "rank": "BiS",
-          "name": "Helm of Uther's Resolve",
-          "source": "Sunmote Transmute — Helm of Burning Righteousness (21%)",
-          "item_id": 34401
+          "name": "Sword Breaker's Bulwark",
+          "source": "Sunwell Plateau — Felmyst — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Brutal Gladiator's Barrier",
+          "source": "PvP — Arena Season 4"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bulwark of Azzinoth",
+          "source": "Black Temple — Illidan Stormrage — 38%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Antonidas's Aegis of Rapt Concentration",
+          "source": "Hyjal Summit — Archimonde — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Illidari Runeshield",
+          "source": "Black Temple — Trash Drop — 2%"
         }
       ],
-      "neck": [
+      "weapons": [
+        {
+          "rank": "Optional",
+          "name": "Brutal Gladiator's Gavel",
+          "source": "PvP — Arena Season 4"
+        },
         {
           "rank": "BiS",
-          "name": "Collar of the Pit Lord",
-          "source": "Sunwell Plateau — Brutallus (24%)",
-          "item_id": 34178
-        }
-      ],
-      "shoulders": [
+          "name": "Tempest of Chaos",
+          "source": "Hyjal Summit — Archimonde — 20%"
+        },
         {
-          "rank": "BiS",
-          "name": "Lightbringer Shoulderguards",
-          "source": "Black Temple — Mother Shahraz (56%)",
-          "item_id": 30998
-        }
-      ],
-      "back": [
+          "rank": "Optional",
+          "name": "Reign of Misery",
+          "source": "Sunwell Plateau — Brutallus — 22%"
+        },
         {
-          "rank": "BiS",
-          "name": "Crimson Paragon's Cover",
-          "source": "Sunwell Plateau — Eredar Twins (18%)",
-          "item_id": 34190
+          "rank": "Optional",
+          "name": "Hammer of Judgement",
+          "source": "Hyjal Summit — Trash Drop — 1%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Amani Punisher",
+          "source": "Zul'Aman — Akil'zon — 12%"
         }
       ],
       "chest": [
         {
           "rank": "BiS",
           "name": "Heroic Judicator's Chestguard",
-          "source": "Sunwell Plateau — M'uru (40%)",
-          "item_id": 34216
-        }
-      ],
-      "wrists": [
+          "source": "Sunwell Plateau — M'uru — 40%"
+        },
         {
-          "rank": "BiS",
-          "name": "Lightbringer Wristguards",
-          "source": "Sunwell Plateau — Kalecgos, Eredar Twins (56%)",
-          "item_id": 34433
-        }
-      ],
-      "hands": [
+          "rank": "Optional",
+          "name": "Lightbringer Chestguard",
+          "source": "Black Temple — Illidan Stormrage — 56%"
+        },
         {
-          "rank": "BiS",
-          "name": "Lightbringer Handguards",
-          "source": "Hyjal Summit — Azgalor (56%)",
-          "item_id": 30985
-        }
-      ],
-      "waist": [
+          "rank": "Optional",
+          "name": "Shattrath Protectorate's Breastplate",
+          "source": "Vendor — Badge of Justice (100)"
+        },
         {
-          "rank": "BiS",
-          "name": "Lightbringer Waistguard",
-          "source": "Sunwell Plateau — Brutallus, Eredar Twins (56%)",
-          "item_id": 34488
+          "rank": "Optional",
+          "name": "Breastplate of Agony's Aversion",
+          "source": "Sunmote Transmute — Warharness of Reckless Fury — 40%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Chestguard of the Stoic Guardian",
+          "source": "Vendor — Badge of Justice (75)"
         }
       ],
       "legs": [
         {
           "rank": "BiS",
           "name": "Judicator's Legguards",
-          "source": "Sunmote Transmute — Legplates of the Holy Juggernaut (15%)",
-          "item_id": 34382
+          "source": "Sunmote Transmute — Legplates of the Holy Juggernaut — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Lightbringer Legguards",
+          "source": "Black Temple — The Illidari Council — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Felstrength Legplates",
+          "source": "Sunmote Transmute — Felfury Legplates — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Inscribed Legplates of the Aldor",
+          "source": "Vendor — Badge of Justice (100)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Crystalforge Legguards",
+          "source": "SSC — Fathom-Lord Karanthress — 56%"
+        }
+      ],
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Helm of Uther's Resolve",
+          "source": "Sunmote Transmute — Helm of Burning Righteousness — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Crown of Dath'Remar",
+          "source": "Sunmote Transmute — Crown of Anasterian — 18%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Faceplate of the Impenetrable",
+          "source": "Black Temple — Illidan Stormrage — 37%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Lightbringer Faceguard",
+          "source": "Hyjal Summit — Archimonde — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Hard Khorium Goggles",
+          "source": "Engineering — BoE Pattern (375)"
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Waistguard",
+          "source": "Sunwell Plateau — Brutallus, Eredar Twins — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of Mighty Resolve",
+          "source": "Black Temple — Gurtogg Bloddboil — 8%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of the Protector",
+          "source": "Vendor — Badge of Justice (60)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of Stability",
+          "source": "Black Temple — Gurtogg Bloddboil — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Belt of the Guardian",
+          "source": "Blacksmithing — BoP Pattern (375)"
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "Optional",
+          "name": "Spaulders of the Thalassian Defender",
+          "source": "Sunmote Transmute — Spaulders of the Thalassian Savior — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Pauldrons of Perseverance",
+          "source": "Sunwell Plateau — Eredar Twins — 19%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Shoulderguards",
+          "source": "Black Temple — Mother Shahraz — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Pauldrons of Abyssal Fury",
+          "source": "Black Temple — Supremus — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Crystalforge Shoulderguards",
+          "source": "Tempest Keep — Void Reaver — 56%"
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Handguards",
+          "source": "Hyjal Summit — Azgalor — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Borderland Fortress Grips",
+          "source": "Sunwell Plateau — Felmyst — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Crystalforge Handguards",
+          "source": "SSC — Leotheras the Blind — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Royal Gauntlets of Silvermoon",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gauntlets of Enforcement",
+          "source": "Black Temple — Teron Gorefiend — 39%"
         }
       ],
       "feet": [
         {
+          "rank": "Optional",
+          "name": "Lightbringer Stompers",
+          "source": "Sunwell Plateau — Felmyst, Eredar Twins — 56%"
+        },
+        {
           "rank": "BiS",
           "name": "Blue's Greaves of the Righteous Guardian",
-          "source": "Vendor — Badge of Justice (75)",
-          "item_id": 34947
+          "source": "Vendor — Badge of Justice (75)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Tide-Stomper's Greaves",
+          "source": "Black Temple — High Warlord Naj'entus — 6%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Myrmidon's Treads",
+          "source": "Black Temple — Shade of Akama — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Boots of the Protector",
+          "source": "Blacksmithing — BoE Pattern (375)"
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Lightbringer Wristguards",
+          "source": "Sunwell Plateau — Kalecgos, Eredar Twins — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "The Seeker's Wristguards",
+          "source": "Black Temple — Shade of Akama — 10%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Eternium Shell Bracers",
+          "source": "Black Temple — High Warlord Naj'entus — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Wristguards of Determination",
+          "source": "Tempest Keep — Void Reaver — 14%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Guardian's Lamellar Bracers",
+          "source": "PvP — Honor & WSG Marks"
         }
       ],
       "rings": [
         {
-          "rank": "BiS",
-          "name": "Fused Nethergon Band",
-          "source": "Vendor — Badge of Justice (60)",
-          "item_id": 34889
+          "rank": "Optional",
+          "name": "Ring of Hardened Resolve",
+          "source": "Sunwell Plateau — M'uru — 40%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Ring of Hardened Resolve",
+          "source": "Sunwell Plateau — M'uru — 40%"
         },
         {
           "rank": "BiS",
-          "name": "Ashyen's Gift",
-          "source": "Reputation — Cenarion Expedition - Exalted",
-          "item_id": 29172
+          "name": "Fused Nethergon Band",
+          "source": "Vendor — Badge of Justice (60)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Fused Nethergon Band",
+          "source": "Vendor — Badge of Justice (60)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Ring of Sundered Souls",
+          "source": "SSC — Morogrim Tidewalker — 15%"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "Optional",
+          "name": "The Darkener's Grasp",
+          "source": "Quest Reward — Kael'thas and the Verdant Sphere"
+        },
+        {
+          "rank": "Optional",
+          "name": "Guardian's Pendant of Dominance",
+          "source": "PvP — Honor & EotS Marks"
+        },
+        {
+          "rank": "BiS",
+          "name": "Collar of the Pit Lord",
+          "source": "Sunwell Plateau — Brutallus — 24%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Pendant of Titans",
+          "source": "Black Temple — Reliquary of the Lost — 13%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Pendant of Sunfire",
+          "source": "Jewelcrafting — BoE Pattern (365)"
+        }
+      ],
+      "back": [
+        {
+          "rank": "Optional",
+          "name": "Tattered Cape of Antonidas",
+          "source": "Sunwell Plateau — Kil'jaeden — 20%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Crimson Paragon's Cover",
+          "source": "Sunwell Plateau — Eredar Twins — 18%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Phoenix-Wing Cloak",
+          "source": "Tempest Keep — Al'ar — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Slikk's Cloak of Placation",
+          "source": "Vendor — Badge of Justice (35)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Royal Cloak of the Sunstriders",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
         }
       ],
       "trinkets": [
         {
           "rank": "BiS",
           "name": "Hex Shrunken Head",
-          "source": "Zul'Aman — Hex Lord Malacrass (11%)",
-          "item_id": 33829
+          "source": "Zul'Aman — Hex Lord Malacrass — 11%"
         },
         {
-          "rank": "BiS",
-          "name": "Tome of Fiery Redemption",
-          "source": "Tempest Keep — Al'ar (15%)",
-          "item_id": 30447
-        }
-      ],
-      "weapons": [
+          "rank": "Optional",
+          "name": "Hex Shrunken Head",
+          "source": "Zul'Aman — Hex Lord Malacrass — 11%"
+        },
         {
-          "rank": "BiS",
-          "name": "Tempest of Chaos",
-          "source": "Hyjal Summit — Archimonde (20%)",
-          "item_id": 30910
-        }
-      ],
-      "offhands": [
+          "rank": "Optional",
+          "name": "Scarab of Displacement",
+          "source": "SSC — Hydross the Unstable — 14%"
+        },
         {
-          "rank": "BiS",
-          "name": "Sword Breaker's Bulwark",
-          "source": "Sunwell Plateau — Felmyst (25%)",
-          "item_id": 34185
+          "rank": "Optional",
+          "name": "Scarab of Displacement",
+          "source": "SSC — Hydross the Unstable — 14%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Commendation of Kael'thas",
+          "source": "Magister's Terrace (H) — Priestess Delrissa — 25%"
         }
       ],
       "totems": [
         {
+          "rank": "Optional",
+          "name": "Libram of Repentance",
+          "source": "Vendor — Badge of Justice (15)"
+        },
+        {
           "rank": "BiS",
           "name": "Libram of the Eternal Rest",
-          "source": "Sethekk Halls — Darkweaver Syth (17%)",
-          "item_id": 27917
+          "source": "Sethekk Halls — Darkweaver Syth — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Libram of Divine Purpose",
+          "source": "Vendor — Badge of Justice (20)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Tome of the Lightbringer",
+          "source": "Black Temple — Mother Shahraz — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Libram of Truth",
+          "source": "Blackrock Depths — Magmus — 13%"
         }
       ]
     }

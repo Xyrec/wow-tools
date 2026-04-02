@@ -1,12 +1,14 @@
 ---
 name: crit-cap
-description: Check if the Prot Paladin is crit-capped and suggest upgrades if not
+description: Check if a tank spec is crit-capped and suggest upgrades if not
 ---
 
-Check the Prot Paladin's crit cap status. Run the command:
+Check a tank's crit cap status. If the user did not provide a spec argument, ask which tank spec: prot-paladin, prot-warrior, or feral-tank-druid.
+
+Run the command:
 
 ```
-make crit-cap
+make crit-cap SPEC={spec}
 ```
 
 If the user provides arguments, they may override defaults:

@@ -39,16 +39,21 @@ wow-tools/
 ## How to Use
 
 ```bash
-# Check gear against BiS lists (--spec required):
-cargo run -- check --spec resto              # loads data/resto.json by default
-cargo run -- check --spec ele                # loads data/elemental.json by default
-cargo run -- check --spec resto custom.json  # explicit character file
+# Check gear against BiS lists (--spec required, use {spec}-{class} format):
+cargo run -- check --spec resto-shaman              # loads data/resto-shaman.json by default
+cargo run -- check --spec prot-warrior               # loads data/prot-warrior.json by default
+cargo run -- check --spec resto-shaman custom.json   # explicit character file
 
-# Spec aliases: resto, resto-shaman | ele, elemental, elemental-shaman
+# Spec aliases: resto-shaman | ele-shaman, elemental-shaman | prot-paladin | prot-warrior | etc.
+# All 27 TBC specs supported. Run 'cargo run -- scrape' to see full list.
+
+# Scrape BiS data from wowtbc.gg:
+cargo run -- scrape                                  # all 27 specs
+cargo run -- scrape shaman                           # filter by class
 
 # Regenerate BiS JSON from source HTML (only if HTML files change):
-cargo run -- parse --spec resto                     # all parsers
-cargo run -- parse --spec resto --parser wowhead     # single parser
+cargo run -- parse --spec resto-shaman                     # all parsers
+cargo run -- parse --spec resto-shaman --parser wowhead     # single parser
 
 # Look up TBC item stats (accurate TBC data, not WotLK):
 cargo run -- lookup 29183                       # single item

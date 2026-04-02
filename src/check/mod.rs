@@ -51,23 +51,16 @@ fn slot_map_lookup(slot_name: &str) -> Option<&'static str> {
         .map(|(_, v)| *v)
 }
 
-/// Preferred armor type per spec.
+/// Preferred armor type per spec (looked up from spec registry).
 fn preferred_armor(spec: &str) -> &'static str {
-    match spec {
-        "resto-shaman" | "elemental-shaman" => "Mail",
-        "prot-paladin" => "Plate",
-        _ => "Mail",
-    }
+    crate::common::specs::find_spec(spec)
+        .map(|s| s.armor_type)
+        .unwrap_or("Mail")
 }
 
-/// Default character file per spec.
-fn default_char_file(spec: &str) -> &'static str {
-    match spec {
-        "resto-shaman" => "resto.json",
-        "elemental-shaman" => "elemental.json",
-        "prot-paladin" => "prot-paladin.json",
-        _ => "resto.json",
-    }
+/// Default character file per spec: `{slug}.json`.
+fn default_char_file(spec: &str) -> String {
+    format!("{spec}.json")
 }
 
 // ---------------------------------------------------------------------------

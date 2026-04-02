@@ -1,20 +1,16 @@
 ---
 name: check-gear
-description: Check a shaman's equipped gear against BiS lists and show upgrade priorities
+description: Check a character's equipped gear against BiS lists and show upgrade priorities
 ---
 
-Run the bis-gear checker for a specific spec. If the user did not provide a spec argument, ask: "Which spec should I check -- Resto, Elemental, or Prot Paladin?"
+Run the bis-gear checker for a specific spec. If the user did not provide a spec argument, ask which spec to check using the `{spec}-{class}` format (e.g. resto-shaman, prot-warrior).
 
-Spec aliases:
-
-- "resto" or "resto-shaman" -> --spec resto
-- "ele", "elemental", or "elemental-shaman" -> --spec ele
-- "prot", "prot-paladin", or "prot-pala" -> --spec prot-paladin
+Spec slugs use `{spec}-{class}` format. Examples: resto-shaman, elemental-shaman, enhancement-shaman, holy-paladin, prot-paladin, ret-paladin, holy-priest, shadow-priest, balance-druid, feral-tank-druid, feral-dps-druid, resto-druid, arms-warrior, fury-warrior, prot-warrior, bm-hunter, marks-hunter, survival-hunter, assassination-rogue, combat-rogue, subtlety-rogue, arcane-mage, fire-mage, frost-mage, affliction-warlock, demo-warlock, destro-warlock.
 
 Run the command:
 
 ```
-make check-{spec}
+make check SPEC={spec}
 ```
 
 Present the results with a concise summary focusing on:
@@ -28,4 +24,4 @@ Present the results with a concise summary focusing on:
 
 Do NOT have a separate "Easy Wins" or "Normal Mode" section -- this is redundant with the priority dungeon list. All dungeon recommendations should be in one unified list.
 
-Do NOT read bis_gear.json or source code manually -- the script handles all logic.
+Do NOT read bis_gear.json or source code manually -- the binary handles all logic.

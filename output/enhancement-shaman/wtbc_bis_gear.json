@@ -1,0 +1,2367 @@
+{
+  "current_phase": "phase-1",
+  "phases": {
+    "phase-0": {
+      "head": [
+        {
+          "rank": "Optional",
+          "name": "Mask of the Deceiver",
+          "source": "Vendor — Badge of Justice (50)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Helm of the Claw",
+          "source": "Quest Reward — The Warlord's Hideout"
+        },
+        {
+          "rank": "BiS",
+          "name": "Wastewalker Helm",
+          "source": "Old Hillsbrad Foothills (H) — Epoch Hunter — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Helm of Assassination",
+          "source": "Arcatraz — Harbinger Skyriss — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Helm of Desolation",
+          "source": "Black Morass — Aeonus — 16%"
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Midnight Legguards",
+          "source": "Slave Pens (H) — Quagmirran — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Fel Leather Leggings",
+          "source": "Leatherworking — BoP Pattern (350)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Clefthoof Hide Leggings",
+          "source": "Quest Reward — Showdown"
+        },
+        {
+          "rank": "Optional",
+          "name": "Forestwalker Kilt",
+          "source": "Mana Tombs (H) — Nexus-Prince Shaffar — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shattrath Leggings",
+          "source": "Quest Reward — Special Delivery to Shattrath City"
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Ebon Netherscale Breastplate",
+          "source": "Leatherworking — Trainer (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vest of Vengeance",
+          "source": "The Blood Furnace — Keli'dan the Breaker — 20%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Wastewalker Tunic",
+          "source": "The Blood Furnace (H) — Keli'dan the Breaker — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Tunic of Assassination",
+          "source": "Mechanar — Pathaleon the Calculator — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Felstalker Breastplate",
+          "source": "Leatherworking — BoP Pattern (350)"
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Fel Leather Boots",
+          "source": "Leatherworking — BoP Pattern (350)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Boots of the Unjust",
+          "source": "Auchenai Crypts (H) — Exarch Maladaar — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Boots of the Shifting Sands",
+          "source": "Botanica — Laj — 20%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Felboar Hide Shoes",
+          "source": "Quest Reward — The Cipher of Damnation - The Third Fragment Recovered"
+        },
+        {
+          "rank": "Optional",
+          "name": "The Master's Treads",
+          "source": "Auction House — BoE World Drop"
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Fel Leather Gloves",
+          "source": "Leatherworking — BoP Pattern (340)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Windstrike Gloves",
+          "source": "Leatherworking — BoE Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gloves of the Unbound",
+          "source": "Arcatraz — Wrath-Scryer Soccothrates — 20%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Flesh Handler's Gauntlets",
+          "source": "Quest Reward — The Flesh Lies..."
+        },
+        {
+          "rank": "Optional",
+          "name": "Handgrips of Assassination",
+          "source": "Black Morass — Aeonus — 16%"
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Wastewalker Shoulderpads",
+          "source": "Auchenai Crypts (H) — Avatar of the Martyred — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Mantle of Perenolde",
+          "source": "Old Hillsbrad Foothills — Epoch Hunter — 20%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Expedition Scout's Epaulets",
+          "source": "Quest Reward — Fel Embers (A)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Talbuk Hide Spaulders",
+          "source": "Reputation — The Mag'har - Revered (H)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shoulderpads of Assassination",
+          "source": "Sethekk Halls — Talon King Ikiss — 17%"
+        }
+      ],
+      "waist": [
+        {
+          "rank": "Optional",
+          "name": "Girdle of the Deathdealer",
+          "source": "Black Morass (H) — Aeonus — 25%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Ebon Netherscale Belt",
+          "source": "Leatherworking — Trainer (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Rune-Engraved Belt",
+          "source": "Quest Reward — Fel Embers (A)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Dunewind Sash",
+          "source": "Underbog (H) — Ghaz'an — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Belt of the Raven Lord",
+          "source": "Sethekk Halls (H) — Anzu (Summoned Boss) — 20%"
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Vengeance Wrap",
+          "source": "Tailoring — BoE Pattern (365)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Auchenai Death Shroud",
+          "source": "Auchenai Crypts (H) — Avatar of the Martyred — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cloak of the Inciter",
+          "source": "Shadow Labyrinth — Blackheart the Inciter — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Blood Knight War Cloak",
+          "source": "Vendor — Badge of Justice (25)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cloak of the Craft",
+          "source": "Auction House — BoE World Drop"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Choker of Vile Intent",
+          "source": "Vendor — Badge of Justice (25)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Necklace of Trophies",
+          "source": "Auction House — World Drop"
+        },
+        {
+          "rank": "Optional",
+          "name": "Haramad's Bargain",
+          "source": "Reputation — The Consortium - Exalted"
+        },
+        {
+          "rank": "Optional",
+          "name": "Natasha's Choker",
+          "source": "Quest Reward — The Hound-Master"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bone Chain Necklace",
+          "source": "Underbog (H) — The Black Stalker — 16%"
+        }
+      ],
+      "rings": [
+        {
+          "rank": "Optional",
+          "name": "Shaffar's Band of Brutality",
+          "source": "Mana-Tombs (H) — Yor (Summoned Boss) — 2%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shaffar's Band of Brutality",
+          "source": "Mana-Tombs (H) — Yor (Summoned Boss) — 2%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Overseer's Signet",
+          "source": "Quest Reward — Shutting Down Manaforge Ara (Aldor)"
+        },
+        {
+          "rank": "BiS",
+          "name": "Overseer's Signet",
+          "source": "Quest Reward — Shutting Down Manaforge Ara (Aldor)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shapeshifter's Signet",
+          "source": "Reputation — Lower City - Exalted"
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Cleaver",
+          "source": "PvP — Arena Season 1"
+        },
+        {
+          "rank": "BiS",
+          "name": "The Bladefist",
+          "source": "Shattered Halls (H) — Warchief Kargath Bladefist — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "High Warlord's Cleaver",
+          "source": "PvP — Honor & AV Marks"
+        },
+        {
+          "rank": "Optional",
+          "name": "Demonblood Eviscerator",
+          "source": "Shattered Halls — Warchief Kargath Bladefist — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "The Harvester of Souls",
+          "source": "Auchenai Crypts (H) — Exarch Maladaar — 17%"
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "Optional",
+          "name": "Felstalker Bracers",
+          "source": "Leatherworking — BoP Pattern (350)"
+        },
+        {
+          "rank": "Optional",
+          "name": "General's Linked Bracers",
+          "source": "PvP — Honor & WSG Marks"
+        },
+        {
+          "rank": "BiS",
+          "name": "Ebon Netherscale Bracers",
+          "source": "Leatherworking — Trainer (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Nightfall Wristguards",
+          "source": "Old Hillsbrad Foothills (H) — Epoch Hunter — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Nightstalker's Wristguards",
+          "source": "Quest Reward — Down With Daellis"
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Bloodlust Brooch",
+          "source": "Vendor — Badge of Justice (41)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bloodlust Brooch",
+          "source": "Vendor — Badge of Justice (41)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Slayer's Crest",
+          "source": "Naxxramas — Sapphiron — 22%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Abacus of Violent Odds",
+          "source": "Mechanar — Pathaleon the Calculator — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Slayer's Crest",
+          "source": "Naxxramas — Sapphiron — 22%"
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Cleaver",
+          "source": "PvP — Arena Season 1"
+        },
+        {
+          "rank": "Optional",
+          "name": "High Warlord's Cleaver",
+          "source": "PvP — Honor & AV Marks"
+        },
+        {
+          "rank": "BiS",
+          "name": "The Harvester of Souls",
+          "source": "Auchenai Crypts (H) — Exarch Maladaar — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bloodskull Destroyer",
+          "source": "Old Hillsbrad Foothills (H) — Lieutentant Drake — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Boggspine Knuckles",
+          "source": "The Underbog (H) — Hungarfen — 17%"
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Totem of the Astral Winds",
+          "source": "Mana Tombs (H) — Pandemonius — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Totem of Impact",
+          "source": "Vendor — 15 Marks of Honor Hold / Thrallmar"
+        }
+      ]
+    },
+    "phase-1": {
+      "chest": [
+        {
+          "rank": "Optional",
+          "name": "Terrorweave Tunic",
+          "source": "World Boss — Doomwalker — 19%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Ebon Netherscale Breastplate",
+          "source": "Leatherworking — Trainer (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Chestguard of the Conniver",
+          "source": "Karazhan — Nightbane — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cyclone Breastplate",
+          "source": "Magtheridon's Lair — Magtheridon — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vest of Vengeance",
+          "source": "The Blood Furnace — Keli'dan the Breaker — 20%"
+        }
+      ],
+      "head": [
+        {
+          "rank": "Optional",
+          "name": "Mask of the Deceiver",
+          "source": "Vendor — Badge of Justice (50)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Helm of the Claw",
+          "source": "Quest Reward — The Warlord's Hideout"
+        },
+        {
+          "rank": "BiS",
+          "name": "Cyclone Helm",
+          "source": "Karazhan — Prince Malchezaar — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Wastewalker Helm",
+          "source": "Old Hillsbrad Foothills (H) — Epoch Hunter — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Helm of Assassination",
+          "source": "Arcatraz — Harbinger Skyriss — 16%"
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Skulker's Greaves",
+          "source": "Karazhan — Netherspite — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Scaled Greaves of the Marksman",
+          "source": "World Boss — Doom Lord Kazzak — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Midnight Legguards",
+          "source": "Slave Pens (H) — Quagmirran — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Fel Leather Leggings",
+          "source": "Leatherworking — BoP Pattern (350)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Clefthoof Hide Leggings",
+          "source": "Quest Reward — Showdown"
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Liar's Tongue Gloves",
+          "source": "Magtheridon's Lair — Magtheridon — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Grips of Deftness",
+          "source": "Karazhan — Trash Drop"
+        },
+        {
+          "rank": "Optional",
+          "name": "Fel Leather Gloves",
+          "source": "Leatherworking — BoP Pattern (340)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gloves of Dexterous Manipulation",
+          "source": "Karazhan — Attumen the Huntsman — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Windstrike Gloves",
+          "source": "Leatherworking — BoE Pattern (375)"
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "Optional",
+          "name": "Bladed Shoulderpads of the Merciless",
+          "source": "Karazhan — Chess Event — 16%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Cyclone Shoulderplates",
+          "source": "Gruul's Lair — High King Maulgar — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Wastewalker Shoulderpads",
+          "source": "Auchenai Crypts (H) — Avatar of the Martyred — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Mantle of Perenolde",
+          "source": "Old Hillsbrad Foothills — Epoch Hunter — 20%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Expedition Scout's Epaulets",
+          "source": "Quest Reward — Fel Embers (A)"
+        }
+      ],
+      "waist": [
+        {
+          "rank": "Optional",
+          "name": "Gronn-Stitched Girdle",
+          "source": "Gruul's Lair — Gruul the Dragonkiller — 33%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of the Deathdealer",
+          "source": "Black Morass (H) — Aeonus — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Girdle of Treachery",
+          "source": "Karazhan — Chess Event — 16%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Ebon Netherscale Belt",
+          "source": "Leatherworking — Trainer (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Rune-Engraved Belt",
+          "source": "Quest Reward — Fel Embers (A)"
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Edgewalker Longboots",
+          "source": "Karazhan — Moroes — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Fiend Slayer Boots",
+          "source": "Karazhan — Chess Event — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Fel Leather Boots",
+          "source": "Leatherworking — BoP Pattern (350)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Ferocious Swift-Kickers",
+          "source": "Karazhan — Nightbane — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Rapscallion Boots",
+          "source": "Karazhan — Shade of Aran — 16%"
+        }
+      ],
+      "rings": [
+        {
+          "rank": "Optional",
+          "name": "Ring of Reciprocity",
+          "source": "World Boss — Doom Lord Kazzak — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Ring of Reciprocity",
+          "source": "World Boss — Doom Lord Kazzak — 19%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Ring of a Thousand Marks",
+          "source": "Karazhan — Prince Malchezaar — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Ring of a Thousand Marks",
+          "source": "Karazhan — Prince Malchezaar — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shaffar's Band of Brutality",
+          "source": "Mana-Tombs (H) — Yor (Summoned Boss) — 2%"
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Vengeance Wrap",
+          "source": "Tailoring — BoE Pattern (365)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Black-Iron Battlecloak",
+          "source": "World Boss — Doomwalker — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Drape of the Dark Reavers",
+          "source": "Karazhan — Shade of Aran — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cloak of the Pit Stalker",
+          "source": "Magtheridon's Lair — Magtheridon — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Auchenai Death Shroud",
+          "source": "Auchenai Crypts (H) — Avatar of the Martyred — 17%"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Choker of Vile Intent",
+          "source": "Vendor — Badge of Justice (25)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Worgen Claw Necklace",
+          "source": "Karazhan — Attumen the Huntsman — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Mithril Chain of Heroism",
+          "source": "Karazhan — Chess Event — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Necklace of Trophies",
+          "source": "Auction House — World Drop"
+        },
+        {
+          "rank": "Optional",
+          "name": "Haramad's Bargain",
+          "source": "Reputation — The Consortium - Exalted"
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "The Decapitator",
+          "source": "Karazhan — Prince Malchezaar — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Cleaver",
+          "source": "PvP — Arena Season 1"
+        },
+        {
+          "rank": "Optional",
+          "name": "Fool's Bane",
+          "source": "Karazhan — Terestian Illhoof — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "The Bladefist",
+          "source": "Shattered Halls (H) — Warchief Kargath Bladefist — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "High Warlord's Cleaver",
+          "source": "PvP — Honor & AV Marks"
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "Optional",
+          "name": "Felstalker Bracers",
+          "source": "Leatherworking — BoP Pattern (350)"
+        },
+        {
+          "rank": "Optional",
+          "name": "General's Linked Bracers",
+          "source": "PvP — Honor & WSG Marks"
+        },
+        {
+          "rank": "BiS",
+          "name": "Ebon Netherscale Bracers",
+          "source": "Leatherworking — Trainer (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bracers of Maliciousness",
+          "source": "Karazhan — Maiden of Virtue — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Nightfall Wristguards",
+          "source": "Old Hillsbrad Foothills (H) — Epoch Hunter — 25%"
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "Optional",
+          "name": "Bloodlust Brooch",
+          "source": "Vendor — Badge of Justice (41)"
+        },
+        {
+          "rank": "BiS",
+          "name": "Bloodlust Brooch",
+          "source": "Vendor — Badge of Justice (41)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Slayer's Crest",
+          "source": "Naxxramas — Sapphiron — 22%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Abacus of Violent Odds",
+          "source": "Mechanar — Pathaleon the Calculator — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Slayer's Crest",
+          "source": "Naxxramas — Sapphiron — 22%"
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Cleaver",
+          "source": "PvP — Arena Season 1"
+        },
+        {
+          "rank": "Optional",
+          "name": "High Warlord's Cleaver",
+          "source": "PvP — Honor & AV Marks"
+        },
+        {
+          "rank": "BiS",
+          "name": "The Harvester of Souls",
+          "source": "Auchenai Crypts (H) — Exarch Maladaar — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bloodskull Destroyer",
+          "source": "Old Hillsbrad Foothills (H) — Lieutentant Drake — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Boggspine Knuckles",
+          "source": "The Underbog (H) — Hungarfen — 17%"
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Totem of the Astral Winds",
+          "source": "Mana Tombs (H) — Pandemonius — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Totem of Impact",
+          "source": "Vendor — 15 Marks of Honor Hold / Thrallmar"
+        }
+      ]
+    },
+    "phase-2": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Cataclysm Helm",
+          "source": "SSC — Lady Vashj — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Surestrike Goggles v2.0",
+          "source": "Engineering — Trainer (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Mask of the Deceiver",
+          "source": "Vendor — Badge of Justice (50)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Helm of the Claw",
+          "source": "Quest Reward — The Warlord's Hideout"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cyclone Helm",
+          "source": "Karazhan — Prince Malchezaar — 56%"
+        }
+      ],
+      "chest": [
+        {
+          "rank": "Optional",
+          "name": "Bloodsea Brigand's Vest",
+          "source": "SSC — Fathom-Lord Karathress — 17%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Cataclysm Chestplate",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Terrorweave Tunic",
+          "source": "World Boss — Doomwalker — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Ranger-General's Chestguard",
+          "source": "SSC — Hydross the Unstable — 14%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Ebon Netherscale Breastplate",
+          "source": "Leatherworking — Trainer (375)"
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Belt of One-Hundred Deaths",
+          "source": "SSC — Lady Vashj — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Belt of Deep Shadow",
+          "source": "Leatherworking — BoP Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Belt of the Black Eagle",
+          "source": "Leatherworking — BoP Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gronn-Stitched Girdle",
+          "source": "Gruul's Lair — Gruul the Dragonkiller — 33%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Belt of Natural Power",
+          "source": "Leatherworking — BoP Pattern (375)"
+        }
+      ],
+      "legs": [
+        {
+          "rank": "Optional",
+          "name": "Skulker's Greaves",
+          "source": "Karazhan — Netherspite — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Scaled Greaves of the Marksman",
+          "source": "World Boss — Doom Lord Kazzak — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Void Reaver Greaves",
+          "source": "Tempest Keep — Void Reaver — 14%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Leggings of Murderous Intent",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Cataclysm Legplates",
+          "source": "SSC — Fathom-Lord Karathress — 56%"
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Shoulderpads of the Stranger",
+          "source": "SSC — Hydross the Unstable — 14%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bladed Shoulderpads of the Merciless",
+          "source": "Karazhan — Chess Event — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cyclone Shoulderplates",
+          "source": "Gruul's Lair — High King Maulgar — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Mantle of the Tireless Tracker",
+          "source": "SSC — Morogrim Tidewalker — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cataclysm Shoulderplates",
+          "source": "Tempest Keep — Void Reaver — 56%"
+        }
+      ],
+      "hands": [
+        {
+          "rank": "Optional",
+          "name": "Gloves of the Searing Grip",
+          "source": "Tempest Keep — Al'ar — 15%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Cataclysm Gauntlets",
+          "source": "SSC — Leotheras the Blind — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Liar's Tongue Gloves",
+          "source": "Magtheridon's Lair — Magtheridon — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Grips of Deftness",
+          "source": "Karazhan — Trash Drop"
+        },
+        {
+          "rank": "Optional",
+          "name": "Fel Leather Gloves",
+          "source": "Leatherworking — BoP Pattern (340)"
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Cobra-Lash Boots",
+          "source": "SSC — Lady Vashj — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Star-Strider Boots",
+          "source": "Tempest Keep — High  Astromancer Solarian — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Edgewalker Longboots",
+          "source": "Karazhan — Moroes — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Boots of Utter Darkness",
+          "source": "Leatherworking — BoE Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Fiend Slayer Boots",
+          "source": "Karazhan — Chess Event — 16%"
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Band of the Ranger-General",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Band of the Ranger-General",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Ring of Lethality",
+          "source": "SSC — Hydross the Unstable — 14%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Ring of Reciprocity",
+          "source": "World Boss — Doom Lord Kazzak — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Ring of Reciprocity",
+          "source": "World Boss — Doom Lord Kazzak — 19%"
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "True-Aim Stalker Bands",
+          "source": "SSC — Leotheras the Blind — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vambraces of Ending",
+          "source": "Tempest Keep — High Astromancer Solarian — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bands of the Celestial Archer",
+          "source": "Tempest Keep — Trash Mobs"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shard-Bound Bracers",
+          "source": "Reputation — Ogri'la - Exalted"
+        },
+        {
+          "rank": "Optional",
+          "name": "Felstalker Bracers",
+          "source": "Leatherworking — BoP Pattern (350)"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Telonicus's Pendant of Mayhem",
+          "source": "Quest Reward — Kael'thas and the Verdant Sphere"
+        },
+        {
+          "rank": "Optional",
+          "name": "Pendant of the Perilous",
+          "source": "SSC — Trash Mobs"
+        },
+        {
+          "rank": "Optional",
+          "name": "Choker of Vile Intent",
+          "source": "Vendor — Badge of Justice (25)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Worgen Claw Necklace",
+          "source": "Karazhan — Attumen the Huntsman — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Choker of Animalistic Fury",
+          "source": "SSC — Lurker Below — 15%"
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Thalassian Wildercloak",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vengeance Wrap",
+          "source": "Tailoring — BoE Pattern (365)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Razor-Scale Battlecloak",
+          "source": "SSC — Morogrim Tidewalker — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Black-Iron Battlecloak",
+          "source": "World Boss — Doomwalker — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Drape of the Dark Reavers",
+          "source": "Karazhan — Shade of Aran — 16%"
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "Optional",
+          "name": "Rod of the Sun King",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Dragonstrike",
+          "source": "Blacksmithing — Trainer (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Merciless Gladiator's Cleaver",
+          "source": "PvP — Arena Season 2"
+        },
+        {
+          "rank": "BiS",
+          "name": "Talon of the Phoenix",
+          "source": "Tempest Keep — Al'ar — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "The Decapitator",
+          "source": "Karazhan — Prince Malchezaar — 17%"
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "Optional",
+          "name": "Netherbane",
+          "source": "Tempest Keep — Al'ar — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Merciless Gladiator's Cleaver",
+          "source": "PvP — Arena Season 2"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gladiator's Cleaver",
+          "source": "PvP — Arena Season 1"
+        },
+        {
+          "rank": "Optional",
+          "name": "High Warlord's Cleaver",
+          "source": "PvP — Honor & AV Marks"
+        },
+        {
+          "rank": "BiS",
+          "name": "Rod of the Sun King",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "Optional",
+          "name": "Bloodlust Brooch",
+          "source": "Vendor — Badge of Justice (41)"
+        },
+        {
+          "rank": "BiS",
+          "name": "Bloodlust Brooch",
+          "source": "Vendor — Badge of Justice (41)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Tsunami Talisman",
+          "source": "SSC — Leotheras the Blind — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Tsunami Talisman",
+          "source": "SSC — Leotheras the Blind — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Slayer's Crest",
+          "source": "Naxxramas — Sapphiron — 22%"
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Totem of the Astral Winds",
+          "source": "Mana Tombs (H) — Pandemonius — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Totem of Impact",
+          "source": "Vendor — 15 Marks of Honor Hold / Thrallmar"
+        }
+      ]
+    },
+    "phase-3": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Cursed Vision of Sargeras",
+          "source": "Black Temple — Illidan Stormrage — 37%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Skyshatter Cover",
+          "source": "Hyjal Summit — Archimonde — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Forest Prowler's Helm",
+          "source": "Black Temple — The Illidari Council — 24%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cataclysm Helm",
+          "source": "SSC — Lady Vashj — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Surestrike Goggles v2.0",
+          "source": "Engineering — Trainer (375)"
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Midnight Chestguard",
+          "source": "Hyjal Summit — Archimonde — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Nether Shadow Tunic",
+          "source": "Black Temple — Supremus — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bloodsea Brigand's Vest",
+          "source": "SSC — Fathom-Lord Karathress — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cataclysm Chestplate",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Skyshatter Tunic",
+          "source": "Black Temple — The Illidari Council — 56%"
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Bow-Stitched Leggings",
+          "source": "Hyjal Summit — Azgalor — 18%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shady Dealer's Pantaloons",
+          "source": "Hyjal Summit — Azgalor — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Skulker's Greaves",
+          "source": "Karazhan — Netherspite — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Scaled Greaves of the Marksman",
+          "source": "World Boss — Doom Lord Kazzak — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Skyshatter Pants",
+          "source": "Black Temple — The Illidari Council — 56%"
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Belt of One-Hundred Deaths",
+          "source": "SSC — Lady Vashj — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Boneweave Girdle",
+          "source": "Black Temple — Reliquary of the Lost — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Don Alejandro's Money Belt",
+          "source": "Hyjal Summit — Anetheron — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Belt of Deep Shadow",
+          "source": "Leatherworking — BoP Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Valestalker Girdle",
+          "source": "Hyjal Summit — Kaz'rogal — 19%"
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Shadowmaster's Boots",
+          "source": "Black Temple — Mother Shahraz — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Softstep Boots of Tracking",
+          "source": "Black Temple — Teron Gorefiend — 41%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Quickstrider Moccasins",
+          "source": "Hyjal Summit — Anetheron — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cobra-Lash Boots",
+          "source": "SSC — Lady Vashj — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Star-Strider Boots",
+          "source": "Tempest Keep — High  Astromancer Solarian — 15%"
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Swiftstrike Shoulders",
+          "source": "Leatherworking — BoE Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shoulders of Lightning Reflexes",
+          "source": "Leatherworking — BoE Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shoulderpads of the Stranger",
+          "source": "SSC — Hydross the Unstable — 14%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Mantle of Darkness",
+          "source": "Black Temple — High Warlord Naj'entus — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Skyshatter Pauldrons",
+          "source": "Black Temple — Mother Shahraz — 56%"
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Fists of Mukoa",
+          "source": "Black Temple — High Warlord Naj'entus — 18%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Grips of Damnation",
+          "source": "Black Temple — Reliquary of the Lost — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Skyshatter Grips",
+          "source": "Hyjal Summit — Azgalor — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gloves of the Searing Grip",
+          "source": "Tempest Keep — Al'ar — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cataclysm Gauntlets",
+          "source": "SSC — Leotheras the Blind — 56%"
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Stormrage Signet Ring",
+          "source": "Black Temple — Illidan Stormrage — 37%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Stormrage Signet Ring",
+          "source": "Black Temple — Illidan Stormrage — 37%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Band of the Ranger-General",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Unstoppable Aggressor's Ring",
+          "source": "Black Temple — Gurtogg Bloddboil — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Unstoppable Aggressor's Ring",
+          "source": "Black Temple — Gurtogg Bloddboil — 17%"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Choker of Endless Nightmares",
+          "source": "Black Temple — Supremus — 18%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Choker of Serrated Blades",
+          "source": "Hyjal Summit — Trash Drop — 1%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Telonicus's Pendant of Mayhem",
+          "source": "Quest Reward — Kael'thas and the Verdant Sphere"
+        },
+        {
+          "rank": "Optional",
+          "name": "Pendant of the Perilous",
+          "source": "SSC — Trash Mobs"
+        },
+        {
+          "rank": "Optional",
+          "name": "Choker of Vile Intent",
+          "source": "Vendor — Badge of Justice (25)"
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Deadly Cuffs",
+          "source": "Hyjal Summit — Rage Winterchill — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Insidious Bands",
+          "source": "Black Temple — Teron Gorefiend — 39%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bindings of Lightning Reflexes",
+          "source": "Leatherworking — BoP Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Swiftstrike Bracers",
+          "source": "Leatherworking — BoP Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Wraps of Precise Flight",
+          "source": "Black Temple — Supremus — 17%"
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Shadowmoon Destroyer's Drape",
+          "source": "Black Temple — Teron Gorefiend — 39%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Thalassian Wildercloak",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vengeance Wrap",
+          "source": "Tailoring — BoE Pattern (365)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cloak of Darkness",
+          "source": "Leatherworking — BoP Pattern (360)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Razor-Scale Battlecloak",
+          "source": "SSC — Morogrim Tidewalker — 15%"
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "Optional",
+          "name": "Madness of the Betrayer",
+          "source": "Black Temple — The Illidari Council — 21%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Madness of the Betrayer",
+          "source": "Black Temple — The Illidari Council — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bloodlust Brooch",
+          "source": "Vendor — Badge of Justice (41)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bloodlust Brooch",
+          "source": "Vendor — Badge of Justice (41)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Tsunami Talisman",
+          "source": "SSC — Leotheras the Blind — 17%"
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "Optional",
+          "name": "Vengeful Gladiator's Cleaver",
+          "source": "PvP — Arena Season 3"
+        },
+        {
+          "rank": "Optional",
+          "name": "Rod of the Sun King",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Claw of Molten Fury",
+          "source": "Hyjal Summit — Trash Drop — 1%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Rising Tide",
+          "source": "Black Temple — High Warlord Naj'entus — 15%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Syphon of the Nathrezim",
+          "source": "Black Temple — Supremus — 17%"
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "Optional",
+          "name": "Vengeful Gladiator's Cleaver",
+          "source": "PvP — Arena Season 3"
+        },
+        {
+          "rank": "Optional",
+          "name": "Rising Tide",
+          "source": "Black Temple — High Warlord Naj'entus — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Netherbane",
+          "source": "Tempest Keep — Al'ar — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Merciless Gladiator's Cleaver",
+          "source": "PvP — Arena Season 2"
+        },
+        {
+          "rank": "BiS",
+          "name": "Syphon of the Nathrezim",
+          "source": "Black Temple — Supremus — 17%"
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Totem of the Astral Winds",
+          "source": "Mana Tombs (H) — Pandemonius — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Totem of Impact",
+          "source": "Vendor — 15 Marks of Honor Hold / Thrallmar"
+        }
+      ]
+    },
+    "phase-4": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Cursed Vision of Sargeras",
+          "source": "Black Temple — Illidan Stormrage — 37%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Skyshatter Cover",
+          "source": "Hyjal Summit — Archimonde — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Forest Prowler's Helm",
+          "source": "Black Temple — The Illidari Council — 24%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cataclysm Helm",
+          "source": "SSC — Lady Vashj — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Surestrike Goggles v2.0",
+          "source": "Engineering — Trainer (375)"
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Midnight Chestguard",
+          "source": "Hyjal Summit — Archimonde — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Nether Shadow Tunic",
+          "source": "Black Temple — Supremus — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bloodsea Brigand's Vest",
+          "source": "SSC — Fathom-Lord Karathress — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cataclysm Chestplate",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Skyshatter Tunic",
+          "source": "Black Temple — The Illidari Council — 56%"
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Bow-Stitched Leggings",
+          "source": "Hyjal Summit — Azgalor — 18%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shady Dealer's Pantaloons",
+          "source": "Hyjal Summit — Azgalor — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Skulker's Greaves",
+          "source": "Karazhan — Netherspite — 16%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Scaled Greaves of the Marksman",
+          "source": "World Boss — Doom Lord Kazzak — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Skyshatter Pants",
+          "source": "Black Temple — The Illidari Council — 56%"
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Belt of One-Hundred Deaths",
+          "source": "SSC — Lady Vashj — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Boneweave Girdle",
+          "source": "Black Temple — Reliquary of the Lost — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Don Alejandro's Money Belt",
+          "source": "Hyjal Summit — Anetheron — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Belt of Deep Shadow",
+          "source": "Leatherworking — BoP Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Valestalker Girdle",
+          "source": "Hyjal Summit — Kaz'rogal — 19%"
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Shadowmaster's Boots",
+          "source": "Black Temple — Mother Shahraz — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Softstep Boots of Tracking",
+          "source": "Black Temple — Teron Gorefiend — 41%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Nyn'jah's Tabi Boots",
+          "source": "Vendor — Badge of Justice (60)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Quickstrider Moccasins",
+          "source": "Hyjal Summit — Anetheron — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cobra-Lash Boots",
+          "source": "SSC — Lady Vashj — 35%"
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Swiftstrike Shoulders",
+          "source": "Leatherworking — BoE Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shoulders of Lightning Reflexes",
+          "source": "Leatherworking — BoE Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shoulderpads of the Stranger",
+          "source": "SSC — Hydross the Unstable — 14%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Mantle of Darkness",
+          "source": "Black Temple — High Warlord Naj'entus — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Skyshatter Pauldrons",
+          "source": "Black Temple — Mother Shahraz — 56%"
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Fists of Mukoa",
+          "source": "Black Temple — High Warlord Naj'entus — 18%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Grips of Damnation",
+          "source": "Black Temple — Reliquary of the Lost — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gauntlets of Sniping",
+          "source": "Vendor — Badge of Justice (60)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Skyshatter Grips",
+          "source": "Hyjal Summit — Azgalor — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gloves of the Searing Grip",
+          "source": "Tempest Keep — Al'ar — 15%"
+        }
+      ],
+      "rings": [
+        {
+          "rank": "BiS",
+          "name": "Stormrage Signet Ring",
+          "source": "Black Temple — Illidan Stormrage — 37%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Stormrage Signet Ring",
+          "source": "Black Temple — Illidan Stormrage — 37%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Signet of Primal Wrath",
+          "source": "Zul'Aman — Timed Chest (3) — 20%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Band of the Ranger-General",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Band of the Ranger-General",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "BiS",
+          "name": "Choker of Endless Nightmares",
+          "source": "Black Temple — Supremus — 18%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Choker of Serrated Blades",
+          "source": "Hyjal Summit — Trash Drop — 1%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Telonicus's Pendant of Mayhem",
+          "source": "Quest Reward — Kael'thas and the Verdant Sphere"
+        },
+        {
+          "rank": "Optional",
+          "name": "Pendant of the Perilous",
+          "source": "SSC — Trash Mobs"
+        },
+        {
+          "rank": "Optional",
+          "name": "Choker of Vile Intent",
+          "source": "Vendor — Badge of Justice (25)"
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Deadly Cuffs",
+          "source": "Hyjal Summit — Rage Winterchill — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Insidious Bands",
+          "source": "Black Temple — Teron Gorefiend — 39%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bindings of Lightning Reflexes",
+          "source": "Leatherworking — BoP Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Swiftstrike Bracers",
+          "source": "Leatherworking — BoP Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Master Assassin Wristwraps",
+          "source": "Vendor — Badge of Justice (35)"
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Shadowmoon Destroyer's Drape",
+          "source": "Black Temple — Teron Gorefiend — 39%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cloak of Fiends",
+          "source": "Zul'Aman — Timed Chest (1) — 13%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Thalassian Wildercloak",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vengeance Wrap",
+          "source": "Tailoring — BoE Pattern (365)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cloak of Darkness",
+          "source": "Leatherworking — BoP Pattern (360)"
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "Optional",
+          "name": "Madness of the Betrayer",
+          "source": "Black Temple — The Illidari Council — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Madness of the Betrayer",
+          "source": "Black Temple — The Illidari Council — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Berserker's Call",
+          "source": "Zul'Aman — Zul'jin — 15%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Berserker's Call",
+          "source": "Zul'Aman — Zul'jin — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bloodlust Brooch",
+          "source": "Vendor — Badge of Justice (41)"
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "Optional",
+          "name": "Vengeful Gladiator's Cleaver",
+          "source": "PvP — Arena Season 3"
+        },
+        {
+          "rank": "Optional",
+          "name": "Rod of the Sun King",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Claw of Molten Fury",
+          "source": "Hyjal Summit — Trash Drop — 1%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Rising Tide",
+          "source": "Black Temple — High Warlord Naj'entus — 15%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Syphon of the Nathrezim",
+          "source": "Black Temple — Supremus — 17%"
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "Optional",
+          "name": "Vengeful Gladiator's Cleaver",
+          "source": "PvP — Arena Season 3"
+        },
+        {
+          "rank": "Optional",
+          "name": "Rising Tide",
+          "source": "Black Temple — High Warlord Naj'entus — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Netherbane",
+          "source": "Tempest Keep — Al'ar — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Merciless Gladiator's Cleaver",
+          "source": "PvP — Arena Season 2"
+        },
+        {
+          "rank": "BiS",
+          "name": "Syphon of the Nathrezim",
+          "source": "Black Temple — Supremus — 17%"
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Stonebreaker's Totem",
+          "source": "Vendor — Badge of Justice (20)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Totem of the Astral Winds",
+          "source": "Mana Tombs (H) — Pandemonius — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Totem of Impact",
+          "source": "Vendor — 15 Marks of Honor Hold / Thrallmar"
+        }
+      ]
+    },
+    "phase-5": {
+      "head": [
+        {
+          "rank": "BiS",
+          "name": "Coif of Alleria",
+          "source": "Sunwell Plateau — Kil'jaeden — 18%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Duplicitous Guise",
+          "source": "Sunwell Plateau — Kil'jaeden — 18%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cursed Vision of Sargeras",
+          "source": "Black Temple — Illidan Stormrage — 37%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Surestrike Goggles v3.0",
+          "source": "Engineering — BoE Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Skyshatter Cover",
+          "source": "Hyjal Summit — Archimonde — 56%"
+        }
+      ],
+      "legs": [
+        {
+          "rank": "BiS",
+          "name": "Leggings of the Immortal Night",
+          "source": "Sunwell Plateau — Felmyst — 22%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Starstalker Legguards",
+          "source": "Sunwell Plateau — Kalecgos — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bow-Stitched Leggings",
+          "source": "Hyjal Summit — Azgalor — 18%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Trousers of the Scryer's Retainer",
+          "source": "Vendor — Badge of Justice (100)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Leggings of the Pursuit",
+          "source": "Vendor — Badge of Justice (100)"
+        }
+      ],
+      "chest": [
+        {
+          "rank": "BiS",
+          "name": "Bladed Chaos Tunic",
+          "source": "Sunmote Transmute — Harness of Carnal Instinct — 40%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Carapace of Sun and Shadow",
+          "source": "Leatherworking — BoE Pattern (365)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Embrace of the Phoenix",
+          "source": "Leatherworking — BoE Pattern (365)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Harness of Carnal Instinct",
+          "source": "Sunwell Plateau — M'uru — 40%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Midnight Chestguard",
+          "source": "Hyjal Summit — Archimonde — 19%"
+        }
+      ],
+      "feet": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Greaves",
+          "source": "Sunwell Plateau — Felmyst, Eredar Twins — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shadowmaster's Boots",
+          "source": "Black Temple — Mother Shahraz — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Softstep Boots of Tracking",
+          "source": "Black Temple — Teron Gorefiend — 41%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Nyn'jah's Tabi Boots",
+          "source": "Vendor — Badge of Justice (60)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Quickstrider Moccasins",
+          "source": "Hyjal Summit — Anetheron — 17%"
+        }
+      ],
+      "hands": [
+        {
+          "rank": "BiS",
+          "name": "Thalassian Ranger Gauntlets",
+          "source": "Sunwell Plateau — Kil'jaeden — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gloves of Immortal Dusk",
+          "source": "Leatherworking — BoP Pattern (365)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shadowed Gauntlets of Paroxysm",
+          "source": "Sunwell Plateau — M'uru — 40%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Fletcher's Gloves of the Phoenix",
+          "source": "Leatherworking — BoP Pattern (365)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gloves of the Forest Drifter",
+          "source": "Sunmote Transmute — Shadowed Gauntlets of Paroxysm — 40%"
+        }
+      ],
+      "waist": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Girdle",
+          "source": "Sunwell Plateau — Brutallus, Eredar Twins — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Belt of One-Hundred Deaths",
+          "source": "SSC — Lady Vashj — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Boneweave Girdle",
+          "source": "Black Temple — Reliquary of the Lost — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Don Alejandro's Money Belt",
+          "source": "Hyjal Summit — Anetheron — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Belt of the Silent Path",
+          "source": "Vendor — Badge of Justice (75)"
+        }
+      ],
+      "shoulders": [
+        {
+          "rank": "BiS",
+          "name": "Demontooth Shoulderpads",
+          "source": "Sunmote Transmute — Shoulderpads of Vehemence — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Mantle of the Golden Forest",
+          "source": "Sunwell Plateau — Eredar Twins — 20%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shoulderpads of Vehemence",
+          "source": "Sunwell Plateau — Eredar Twins — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Swiftstrike Shoulders",
+          "source": "Leatherworking — BoE Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shoulders of Lightning Reflexes",
+          "source": "Leatherworking — BoE Pattern (375)"
+        }
+      ],
+      "wrists": [
+        {
+          "rank": "BiS",
+          "name": "Skyshatter Wristguards",
+          "source": "Sunwell Plateau — Kalecgos, Eredar Twins — 56%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Deadly Cuffs",
+          "source": "Hyjal Summit — Rage Winterchill — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Insidious Bands",
+          "source": "Black Temple — Teron Gorefiend — 39%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bindings of Lightning Reflexes",
+          "source": "Leatherworking — BoP Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Swiftstrike Bracers",
+          "source": "Leatherworking — BoP Pattern (375)"
+        }
+      ],
+      "back": [
+        {
+          "rank": "BiS",
+          "name": "Cloak of Unforgivable Sin",
+          "source": "Sunwell Plateau — Kil'jaeden — 13%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shadowmoon Destroyer's Drape",
+          "source": "Black Temple — Teron Gorefiend — 39%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Cloak of Fiends",
+          "source": "Zul'Aman — Timed Chest (1) — 13%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Thalassian Wildercloak",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vengeance Wrap",
+          "source": "Tailoring — BoE Pattern (365)"
+        }
+      ],
+      "neck": [
+        {
+          "rank": "Optional",
+          "name": "Hard Khorium Choker",
+          "source": "Jewelcrafting — BoE Pattern (365)"
+        },
+        {
+          "rank": "BiS",
+          "name": "Clutch of Demise",
+          "source": "Sunwell Plateau — Brutallus — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Choker of Endless Nightmares",
+          "source": "Black Temple — Supremus — 18%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Choker of Serrated Blades",
+          "source": "Hyjal Summit — Trash Drop — 1%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Sin'dorei Pendant of Triumph",
+          "source": "Sunwell Plateau — Eredar Twins — 27%"
+        }
+      ],
+      "rings": [
+        {
+          "rank": "Optional",
+          "name": "Band of Ruinous Delight",
+          "source": "Sunwell Plateau — Eredar Twins — 21%"
+        },
+        {
+          "rank": "BiS",
+          "name": "Band of Ruinous Delight",
+          "source": "Sunwell Plateau — Eredar Twins — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Stormrage Signet Ring",
+          "source": "Black Temple — Illidan Stormrage — 37%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Hard Khorium Band",
+          "source": "Jewelcrafting — BoP Pattern (365)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Hard Khorium Band",
+          "source": "Jewelcrafting — BoP Pattern (365)"
+        }
+      ],
+      "offhands": [
+        {
+          "rank": "BiS",
+          "name": "Mounting Vengeance",
+          "source": "Sunwell Plateau — Trash Drop — 1%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Brutal Gladiator's Cleaver",
+          "source": "PvP — Arena Season 4"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vengeful Gladiator's Cleaver",
+          "source": "PvP — Arena Season 3"
+        },
+        {
+          "rank": "Optional",
+          "name": "Rising Tide",
+          "source": "Black Temple — High Warlord Naj'entus — 15%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Netherbane",
+          "source": "Tempest Keep — Al'ar — 15%"
+        }
+      ],
+      "trinkets": [
+        {
+          "rank": "BiS",
+          "name": "Shard of Contempt",
+          "source": "Magister's Terrace (H) — Priestess Delrissa — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Shard of Contempt",
+          "source": "Magister's Terrace (H) — Priestess Delrissa — 25%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Madness of the Betrayer",
+          "source": "Black Temple — The Illidari Council — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Madness of the Betrayer",
+          "source": "Black Temple — The Illidari Council — 21%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Blackened Naaru Sliver",
+          "source": "Sunwell Plateau — M'uru — 40%"
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "BiS",
+          "name": "Hand of the Deceiver",
+          "source": "Sunwell Plateau — Kil'jaeden — 20%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Brutal Gladiator's Cleaver",
+          "source": "PvP — Arena Season 4"
+        },
+        {
+          "rank": "Optional",
+          "name": "Vengeful Gladiator's Cleaver",
+          "source": "PvP — Arena Season 3"
+        },
+        {
+          "rank": "Optional",
+          "name": "Rod of the Sun King",
+          "source": "Tempest Keep — Kael'thas Sunstrider — 35%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Claw of Molten Fury",
+          "source": "Hyjal Summit — Trash Drop — 1%"
+        }
+      ],
+      "totems": [
+        {
+          "rank": "BiS",
+          "name": "Stonebreaker's Totem",
+          "source": "Vendor — Badge of Justice (20)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Totem of the Astral Winds",
+          "source": "Mana Tombs (H) — Pandemonius — 17%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Totem of Impact",
+          "source": "Vendor — 15 Marks of Honor Hold / Thrallmar"
+        }
+      ]
+    }
+  }
+}
