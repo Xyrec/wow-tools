@@ -12,6 +12,9 @@ Cargo.lock
 # sccache
 .sccache/
 
+# Windows crash dumps
+*.stackdump
+
 # cmangos TBC database (large, synced separately)
 sources/cmangos-tbc-db/
 
