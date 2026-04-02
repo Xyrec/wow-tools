@@ -1,21 +1,25 @@
-.PHONY: lint typecheck ty type types tsc format check fix resto ele elemental prot protection prot-paladin
+.PHONY: build release lint format check fix resto ele elemental prot protection prot-paladin
 
 EDITOR := $(or $(shell which cursor 2>/dev/null),$(shell which code 2>/dev/null),notepad)
 
-lint:
-	uv run ruff check .
+build:
+	cargo build
 
-typecheck ty type types tsc:
-	uv run ty check .
+release:
+	cargo build --release
+
+lint:
+	cargo clippy --all-targets --all-features
 
 format:
-	uv run ruff format .
+	cargo fmt
 
-check: lint typecheck
+check:
+	cargo check
 
 fix:
-	uv run ruff check . --fix
-	uv run ruff format .
+	cargo fmt
+	cargo clippy --fix --allow-dirty --allow-staged
 
 resto:
 	$(EDITOR) . data/resto.json
