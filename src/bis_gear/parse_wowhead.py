@@ -16,26 +16,7 @@ import sys
 from html.parser import HTMLParser
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).parent.parent.parent
-
-
-def resolve_spec(raw: str) -> str:
-    """Normalize spec alias to canonical slug."""
-    aliases = {
-        "resto": "resto-shaman",
-        "resto-shaman": "resto-shaman",
-        "ele": "elemental-shaman",
-        "elemental": "elemental-shaman",
-        "elemental-shaman": "elemental-shaman",
-        "prot": "prot-paladin",
-        "protection": "prot-paladin",
-        "prot-paladin": "prot-paladin",
-    }
-    key = raw.strip().lower()
-    if key not in aliases:
-        print(f"Unknown spec '{raw}'. Use: resto, ele, prot.")
-        sys.exit(1)
-    return aliases[key]
+from bis_gear.common import PROJECT_ROOT, load_current_phase, resolve_spec
 
 
 class BisTableParser(HTMLParser):
@@ -118,8 +99,8 @@ class BisTableParser(HTMLParser):
     # Normalize wowhead h3 IDs to canonical slot keys
     _SLOT_NORMALIZE: dict[str, str] = {
         "shoulder": "shoulders",
-        "shield": "shields",
-        "libram": "librams",
+        "shield": "offhands",
+        "libram": "totems",
     }
 
     def _normalize_slot(self, h3_id: str | None, h3_text: str) -> str | None:
@@ -146,8 +127,8 @@ class BisTableParser(HTMLParser):
         if r == "bis" or r.startswith("best"):
             return "BiS"
         if r in ("alternative", "option") or r.startswith("alternative"):
-            return "Option"
-        return "Option"  # treat unknown ranks as options
+            return "Optional"
+        return "Optional"  # treat unknown ranks as options
 
     def _add_item(self):
         if len(self._cells) < 2:
@@ -185,7 +166,7 @@ def parse_phase_file(filepath: Path) -> dict[str, list[dict[str, str | int]]]:
     return parser.results
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(description="Parse WoWHead BiS HTML into JSON.")
     parser.add_argument(
         "--spec",
@@ -203,13 +184,7 @@ def main():
     )
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    # Read current phase
-    current_phase_file = PROJECT_ROOT / "data" / "current-phase.txt"
-    current_phase = (
-        current_phase_file.read_text(encoding="utf-8").strip()
-        if current_phase_file.exists()
-        else None
-    )
+    current_phase = load_current_phase()
 
     # Parse all phase files
     result = {}

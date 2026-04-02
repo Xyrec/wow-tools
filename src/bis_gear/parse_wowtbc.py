@@ -20,26 +20,7 @@ import sys
 from html.parser import HTMLParser
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).parent.parent.parent
-
-_SPEC_ALIASES: dict[str, str] = {
-    "resto": "resto-shaman",
-    "resto-shaman": "resto-shaman",
-    "ele": "elemental-shaman",
-    "elemental": "elemental-shaman",
-    "elemental-shaman": "elemental-shaman",
-    "prot": "prot-paladin",
-    "protection": "prot-paladin",
-    "prot-paladin": "prot-paladin",
-}
-
-
-def resolve_spec(raw: str) -> str:
-    key = raw.strip().lower()
-    if key not in _SPEC_ALIASES:
-        print(f"Unknown spec '{raw}'. Use: resto, ele, prot.")
-        sys.exit(1)
-    return _SPEC_ALIASES[key]
+from bis_gear.common import PROJECT_ROOT, load_current_phase, resolve_spec
 
 
 # Map wowtbc slot IDs to our canonical slot keys
@@ -217,7 +198,7 @@ def parse_phase_file(
     return parser.results
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(
         description="Parse wowtbc.gg Shaman BiS HTML into JSON."
     )
@@ -237,13 +218,7 @@ def main():
     )
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    # Read current phase
-    current_phase_file = PROJECT_ROOT / "data" / "current-phase.txt"
-    current_phase = (
-        current_phase_file.read_text(encoding="utf-8").strip()
-        if current_phase_file.exists()
-        else None
-    )
+    current_phase = load_current_phase()
 
     # Build name-to-ID mapping
     name_to_id = build_name_to_id()

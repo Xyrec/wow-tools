@@ -10,10 +10,9 @@ Usage:
 
 import argparse
 import json
-import sys
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).parent.parent.parent
+from bis_gear.common import PROJECT_ROOT, resolve_spec
 
 # Canonical slot order for display
 SLOT_ORDER = [
@@ -50,17 +49,6 @@ SOURCE_FILES = [
     "iv_bis_gear.json",
     "wh_bis_gear.json",
 ]
-
-_SPEC_ALIASES = {
-    "resto": "resto-shaman",
-    "resto-shaman": "resto-shaman",
-    "ele": "elemental-shaman",
-    "elemental": "elemental-shaman",
-    "elemental-shaman": "elemental-shaman",
-    "prot": "prot-paladin",
-    "protection": "prot-paladin",
-    "prot-paladin": "prot-paladin",
-}
 
 
 def load_item_db() -> dict[int, dict]:
@@ -119,7 +107,7 @@ def vote_label(bis_count: int, total_sources: int) -> str:
     return ""
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(description="Compare BiS lists across 4 sources")
     parser.add_argument("--spec", required=True, help="Spec: resto, ele, prot")
     parser.add_argument(
@@ -127,20 +115,13 @@ def main():
     )
     args = parser.parse_args()
 
-    key = args.spec.strip().lower()
-    if key not in _SPEC_ALIASES:
-        print(f"Unknown spec '{args.spec}'. Use: resto, ele, prot.")
-        sys.exit(1)
-    spec = _SPEC_ALIASES[key]
+    spec = resolve_spec(args.spec)
 
     phase = args.phase
     if not phase:
-        phase_file = PROJECT_ROOT / "data" / "current-phase.txt"
-        phase = (
-            phase_file.read_text(encoding="utf-8").strip()
-            if phase_file.exists()
-            else "phase-1"
-        )
+        from bis_gear.common import load_current_phase
+
+        phase = load_current_phase() or "phase-1"
 
     item_db = load_item_db()
 

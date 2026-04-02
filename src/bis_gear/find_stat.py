@@ -13,13 +13,17 @@ import argparse
 import json
 import math
 import sqlite3
-import sys
 from functools import cache
 from pathlib import Path
 
-from bis_gear.item_lookup import ARMOR_SUBCLASS, DB_PATH
-
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+from bis_gear.common import (
+    PROJECT_ROOT,
+    QUALITY_NAMES,
+    WSE_SLOT_ORDER,
+    get_db_conn,
+    load_character,
+)
+from bis_gear.item_lookup import ARMOR_SUBCLASS, SOCKET_COLORS
 
 # Maps our --stat argument to the stat_type ID in item_template
 STAT_ALIASES: dict[str, int] = {
@@ -47,9 +51,12 @@ STAT_TO_WOWSIMS: dict[int, str] = {
     37: "Expertise",
 }
 
-# Defense rating to defense skill conversion at level 70
+# Level 70 combat rating constants
 DEFENSE_RATING_PER_SKILL = 2.3654
 BASE_DEFENSE_SKILL = 350
+BOSS_CRIT_PCT = 5.60
+DEFENSE_SKILL_PER_PCT = 25.0
+RESILIENCE_RATING_PER_PCT = 39.4231
 
 # Equippable slot IDs
 EQUIP_SLOTS: dict[int, str] = {
@@ -90,15 +97,6 @@ REP_RANK_NAMES: dict[int, str] = {
     5: "Honored",
     6: "Revered",
     7: "Exalted",
-}
-
-QUALITY_NAMES: dict[int, str] = {
-    0: "Poor",
-    1: "Common",
-    2: "Uncommon",
-    3: "Rare",
-    4: "Epic",
-    5: "Legendary",
 }
 
 SLOT_ORDER = [
@@ -177,13 +175,6 @@ def _get_wse_bonus_stat(raw_data: dict, wowsims_stat: str) -> float:
         if enchant_id and enchant_id in enchants_db:
             total += enchants_db[enchant_id].get("stats", {}).get(wowsims_stat, 0)
     return total
-
-
-def _get_conn() -> sqlite3.Connection:
-    if not DB_PATH.exists():
-        print(f"Error: TBC database not found at {DB_PATH}", file=sys.stderr)
-        sys.exit(1)
-    return sqlite3.connect(str(DB_PATH))
 
 
 def _get_stat_value(conn: sqlite3.Connection, item_id: int, stat_type_id: int) -> int:
@@ -366,60 +357,6 @@ def _classify_source(item: dict, sources: list[dict]) -> str:
     return "other"
 
 
-WSE_SLOT_ORDER = [
-    "Head",
-    "Neck",
-    "Shoulder",
-    "Back",
-    "Chest",
-    "Wrist",
-    "Hands",
-    "Waist",
-    "Legs",
-    "Feet",
-    "Finger 1",
-    "Finger 2",
-    "Trinket 1",
-    "Trinket 2",
-    "Main Hand",
-    "Off Hand",
-    "Ranged",
-]
-
-
-def _load_character(path: Path) -> dict:
-    with open(path) as f:
-        data = json.load(f)
-
-    # Detect WSE format
-    if "gear" in data and "items" in data.get("gear", {}):
-        items = data["gear"]["items"]
-        equipped: list[dict] = []
-        for i, item in enumerate(items):
-            if item is None or i >= len(WSE_SLOT_ORDER):
-                continue
-            item_id = item.get("id", 0)
-            if not item_id:
-                continue
-            equipped.append(
-                {
-                    "slot": i + 1,
-                    "slotName": WSE_SLOT_ORDER[i],
-                    "itemId": item_id,
-                    "itemName": f"ID:{item_id}",
-                }
-            )
-        return {
-            "name": data.get("name", "Unknown"),
-            "class": data.get("class", ""),
-            "talents": data.get("talents", ""),
-            "equippedItems": equipped,
-            "_wse_raw": data,  # Preserve for gem/enchant parsing
-        }
-
-    return data.get("character", data)
-
-
 def _format_source(conn: sqlite3.Connection, item_info: dict) -> str:
     """Format source info for display."""
     parts: list[str] = []
@@ -533,10 +470,6 @@ def find_stat_upgrades(
         )
 
     # Defense gap calculation with crit cap
-    # Boss crit chance: 5.60%. Defense: 25 skill = 1%. Resilience: 39.4231 rating = 1%.
-    BOSS_CRIT_PCT = 5.60
-    DEFENSE_SKILL_PER_PCT = 25.0
-    RESILIENCE_RATING_PER_PCT = 39.4231
 
     if stat_name == "defense" and target > 0:
         base_def = BASE_DEFENSE_SKILL + talent_defense_skill
@@ -595,7 +528,7 @@ def find_stat_upgrades(
                 row = cur.fetchone()
                 if not row:
                     continue
-                socket_colors = {1: "Meta", 2: "Red", 4: "Yellow", 8: "Blue"}
+                socket_colors = SOCKET_COLORS
                 sockets = [
                     socket_colors.get(row[j], "") for j in range(3) if row[j] != 0
                 ]
@@ -841,8 +774,8 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    conn = _get_conn()
-    char = _load_character(args.character_file)
+    conn = get_db_conn()
+    char = load_character(args.character_file)
     stat_type_id = STAT_ALIASES[args.stat]
 
     source_filter = None if args.source == "all" else args.source

@@ -20,10 +20,15 @@ import json
 import re
 import sys
 from collections import defaultdict
+from dataclasses import dataclass, field
 from pathlib import Path
 
-# Project root is two levels up from src/bis_gear/
-PROJECT_ROOT = Path(__file__).parent.parent.parent
+from bis_gear.common import (
+    PROJECT_ROOT,
+    load_character,
+    load_current_phase,
+    resolve_spec,
+)
 
 # Map character slot names to BiS JSON slot keys.
 # resolve_slot_key() handles variant keys across specs/phases.
@@ -130,7 +135,6 @@ REP_STANDING_THRESHOLDS = {
 }
 
 RAID_KEYWORDS = [
-    # TBC
     "karazhan",
     "gruul",
     "magtheridon",
@@ -141,16 +145,6 @@ RAID_KEYWORDS = [
     "black temple",
     "sunwell",
     "zul'aman",
-    # WotLK
-    "naxxramas",
-    "obsidian sanctum",
-    "eye of eternity",
-    "ulduar",
-    "trial of the crusader",
-    "onyxia",
-    "icecrown",
-    "ruby sanctum",
-    "vault of archavon",
 ]
 
 # Map RAID_KEYWORDS substrings to soft-reserve config tags.
@@ -165,15 +159,6 @@ RAID_KEYWORD_TO_TAG = {
     "black temple": "black-temple",
     "sunwell": "sunwell-plateau",
     "zul'aman": "zulaman",
-    "naxxramas": "naxxramas",
-    "obsidian sanctum": "obsidian-sanctum",
-    "eye of eternity": "eye-of-eternity",
-    "ulduar": "ulduar",
-    "trial of the crusader": "trial-of-the-crusader",
-    "onyxia": "onyxias-lair",
-    "icecrown": "icecrown-citadel",
-    "ruby sanctum": "ruby-sanctum",
-    "vault of archavon": "vault-of-archavon",
 }
 
 # Pretty names for raid config tags.
@@ -187,15 +172,6 @@ RAID_TAG_PRETTY_NAMES = {
     "black-temple": "Black Temple",
     "zulaman": "Zul'Aman",
     "sunwell-plateau": "Sunwell Plateau",
-    "naxxramas": "Naxxramas",
-    "obsidian-sanctum": "Obsidian Sanctum",
-    "eye-of-eternity": "Eye of Eternity",
-    "ulduar": "Ulduar",
-    "trial-of-the-crusader": "Trial of the Crusader",
-    "onyxias-lair": "Onyxia's Lair",
-    "icecrown-citadel": "Icecrown Citadel",
-    "ruby-sanctum": "Ruby Sanctum",
-    "vault-of-archavon": "Vault of Archavon",
 }
 
 
@@ -278,13 +254,6 @@ def load_item_db() -> dict[int, dict]:
     items_path = PROJECT_ROOT / "sources" / "wowsims-tbc" / "items.json"
     if not items_path.exists():
         return {}
-    quality_map = {
-        "Common": "Common",
-        "Uncommon": "Uncommon",
-        "Rare": "Rare",
-        "Epic": "Epic",
-        "Legendary": "Legendary",
-    }
     items = json.loads(items_path.read_text(encoding="utf-8"))
     result: dict[int, dict] = {}
     for item in items:
@@ -292,9 +261,7 @@ def load_item_db() -> dict[int, dict]:
             "itemId": item["id"],
             "name": item["name"],
             "itemLevel": item.get("ilvl", 0),
-            "quality": quality_map.get(
-                item.get("quality", ""), item.get("quality", "")
-            ),
+            "quality": item.get("quality", ""),
         }
         if "armor_type" in item:
             entry["subclass"] = item["armor_type"]
@@ -311,17 +278,13 @@ def format_ilvl_quality(item_info: dict | None) -> str:
     return f"ilvl {ilvl} {quality}" if ilvl else ""
 
 
-_preferred_armor = "Mail"  # Set at runtime based on spec
-_show_crafted = False  # Set at runtime via --show-crafted flag
-
-
-def format_armor_warning(item_info: dict | None) -> str:
+def format_armor_warning(item_info: dict | None, preferred_armor: str = "Mail") -> str:
     """Return a warning if an armor piece is not the spec's native type."""
     if not item_info:
         return ""
     subclass = item_info.get("subclass", "")
     armor_types = {"Cloth", "Leather", "Mail", "Plate"}
-    if subclass in armor_types and subclass != _preferred_armor:
+    if subclass in armor_types and subclass != preferred_armor:
         return f" [{subclass}]"
     return ""
 
@@ -377,6 +340,26 @@ _PROFESSION_KEYWORDS: dict[str, str] = {
 }
 
 
+_CLASSIC_RAIDS = frozenset(
+    {
+        "naxxramas",
+        "blackwing lair",
+        "aq40",
+        "aq20",
+        "molten core",
+        "temple of ahn'qiraj",
+        "ruins of ahn'qiraj",
+    }
+)
+
+_ALL_DUNGEON_NAMES = frozenset(
+    set(DUNGEON_REPUTATION_NEUTRAL)
+    | set(DUNGEON_REPUTATION_ALLIANCE)
+    | set(DUNGEON_REPUTATION_HORDE)
+    | set(DUNGEON_NAME_ALIASES)
+)
+
+
 def classify_source(source: str) -> list[str]:
     """Return tags like 'dungeon', 'heroic', 'reputation', 'profession', etc."""
     s = source.lower()
@@ -389,17 +372,7 @@ def classify_source(source: str) -> list[str]:
         return ["classic"]
     if "other (classic" in s:
         return ["classic"]
-    # Classic raid instances (detect IV/WH format: "Item: Boss — Instance")
-    _classic_raids = (
-        "naxxramas",
-        "blackwing lair",
-        "aq40",
-        "aq20",
-        "molten core",
-        "temple of ahn'qiraj",
-        "ruins of ahn'qiraj",
-    )
-    if any(cr in s for cr in _classic_raids):
+    if any(cr in s for cr in _CLASSIC_RAIDS):
         return ["classic"]
     if "arena" in s or "pvp" in s or "gladiator" in s:
         return ["pvp"]
@@ -432,13 +405,7 @@ def classify_source(source: str) -> list[str]:
 
     # Detect WowTBC-format sources ("Instance — Boss (16%)") that lack "Drop:" prefix
     if "dungeon" not in tags and "raid" not in tags and "reputation" not in tags:
-        _all_dungeon_names = (
-            set(DUNGEON_REPUTATION_NEUTRAL)
-            | set(DUNGEON_REPUTATION_ALLIANCE)
-            | set(DUNGEON_REPUTATION_HORDE)
-            | set(DUNGEON_NAME_ALIASES)
-        )
-        for dname in _all_dungeon_names:
+        for dname in _ALL_DUNGEON_NAMES:
             if dname.lower() in s:
                 tags.append("dungeon")
                 break
@@ -505,74 +472,6 @@ def extract_dungeon(source: str, dungeon_reputation: dict) -> str | None:
 # ---------------------------------------------------------------------------
 # Data loading
 # ---------------------------------------------------------------------------
-
-
-WSE_SLOT_ORDER = [
-    "Head",
-    "Neck",
-    "Shoulder",
-    "Back",
-    "Chest",
-    "Wrist",
-    "Hands",
-    "Waist",
-    "Legs",
-    "Feet",
-    "Finger 1",
-    "Finger 2",
-    "Trinket 1",
-    "Trinket 2",
-    "Main Hand",
-    "Off Hand",
-    "Ranged",
-]
-
-
-def _normalize_wse(data: dict) -> dict:
-    """Convert WowSims Exporter format to internal character format."""
-    item_db = load_item_db()
-    items = data.get("gear", {}).get("items", [])
-    equipped: list[dict] = []
-    for i, item in enumerate(items):
-        if item is None or i >= len(WSE_SLOT_ORDER):
-            continue
-        item_id = item.get("id", 0)
-        if not item_id:
-            continue
-        info = item_db.get(item_id)
-        item_name = info["name"] if info else f"ID:{item_id}"
-        equipped.append(
-            {
-                "slot": i + 1,
-                "slotName": WSE_SLOT_ORDER[i],
-                "itemId": item_id,
-                "itemName": item_name,
-            }
-        )
-    return {
-        "name": data.get("name", "Unknown"),
-        "class": data.get("class", ""),
-        "race": data.get("race", ""),
-        "equippedItems": equipped,
-        "reputations": [],
-    }
-
-
-def load_character(path: str) -> dict:
-    if path == "-":
-        data = json.load(sys.stdin)
-    else:
-        p = Path(path)
-        if not p.exists():
-            alt = PROJECT_ROOT / "data" / p.name
-            if alt.exists():
-                p = alt
-        data = json.loads(p.read_text(encoding="utf-8"))
-
-    # Detect WSE format (has gear.items) vs old format (has character.equippedItems)
-    if "gear" in data and "items" in data.get("gear", {}):
-        return _normalize_wse(data)
-    return data if "character" not in data else data["character"]
 
 
 def pretty_phase(phase_key: str) -> str:
@@ -762,26 +661,42 @@ def score_upgrade(
 # ---------------------------------------------------------------------------
 
 
+@dataclass
+class EquippedCategories:
+    """Result of categorizing equipped items into tiers."""
+
+    current_bis: list[tuple[str, str, str, str]] = field(default_factory=list)
+    current_option: list[tuple[str, str, str, str]] = field(default_factory=list)
+    old_bis: list[tuple[str, str, str, str]] = field(default_factory=list)
+    old_option: list[tuple[str, str, str, str]] = field(default_factory=list)
+    not_listed: list[tuple[str, str, str, str]] = field(default_factory=list)
+    all_upgrades: list[dict] = field(default_factory=list)
+    no_upgrade: list[tuple[str, str, str, str]] = field(default_factory=list)
+
+
+@dataclass
+class AnalysisContext:
+    """Shared context passed through the analysis pipeline."""
+
+    bis_data: dict
+    current_phase: str
+    current_phase_data: dict
+    phase0_data: dict
+    phases_to_check: list[str]
+    dungeon_reputation: dict[str, str]
+    rep_lookup: dict
+    item_db: dict[int, dict]
+    all_equipped_ids: set[int]
+    preferred_armor: str = "Mail"
+    show_crafted: bool = False
+
+
 def categorize_equipped(
     equipped_by_slot: dict[str, list[dict]],
-    all_equipped_ids: set[int],
-    bis_data: dict,
-    current_phase: str,
-    current_phase_data: dict,
-    phase0_data: dict,
-    phases_to_check: list[str],
-    dungeon_reputation: dict[str, str],
-    rep_lookup: dict,
-    item_db: dict[int, dict],
-):
+    ctx: AnalysisContext,
+) -> EquippedCategories:
     """Categorize each equipped item into tiers and find available upgrades."""
-    current_bis: list[tuple[str, str, str, str]] = []
-    current_option: list[tuple[str, str, str, str]] = []
-    old_bis: list[tuple[str, str, str, str]] = []
-    old_option: list[tuple[str, str, str, str]] = []
-    not_listed_slots: list[tuple[str, str, str, str]] = []
-    all_upgrades: list[dict] = []
-    no_upgrade_slots: list[tuple[str, str, str, str]] = []
+    result = EquippedCategories()
 
     for bis_slot, items in equipped_by_slot.items():
         for eq_item in items:
@@ -789,38 +704,36 @@ def categorize_equipped(
             item_name = eq_item["itemName"]
             slot_label = eq_item["slotName"]
 
-            # Determine equipped item's rank with phase priority
             eq_rank, eq_phase, eq_p0_only = get_effective_rank(
-                item_id, bis_slot, current_phase_data, phase0_data, current_phase
+                item_id,
+                bis_slot,
+                ctx.current_phase_data,
+                ctx.phase0_data,
+                ctx.current_phase,
             )
 
-            # Look up equipped item in item DB for enrichment
-            eq_info = item_db.get(item_id)
+            eq_info = ctx.item_db.get(item_id)
             eq_extras = format_item_extras(eq_info)
-            eq_armor = format_armor_warning(eq_info)
-
-            # Build display tuple: (slot, name, armor_warning, extras)
+            eq_armor = format_armor_warning(eq_info, ctx.preferred_armor)
             eq_display = (slot_label, item_name, eq_armor, eq_extras)
 
             # Classify into tier
             if eq_rank == "BiS" and not eq_p0_only:
-                current_bis.append(eq_display)
-                # Don't skip — still check for raid/other BiS upgrades below
+                result.current_bis.append(eq_display)
             elif eq_rank in ("Option", "Optional", "Alternative") and not eq_p0_only:
-                current_option.append(eq_display)
+                result.current_option.append(eq_display)
             elif eq_rank == "BiS" and eq_p0_only:
-                old_bis.append(eq_display)
+                result.old_bis.append(eq_display)
             elif eq_rank in ("Option", "Optional", "Alternative") and eq_p0_only:
-                old_option.append(eq_display)
+                result.old_option.append(eq_display)
             elif eq_rank == "PvP":
                 if eq_p0_only:
-                    old_option.append(eq_display)
+                    result.old_option.append(eq_display)
                 else:
-                    current_option.append(eq_display)
+                    result.current_option.append(eq_display)
             else:
-                not_listed_slots.append(eq_display)
+                result.not_listed.append(eq_display)
 
-            # Find upgrades from dungeons/reps/badges for this slot
             slot_upgrades = _find_slot_upgrades(
                 bis_slot,
                 slot_label,
@@ -828,32 +741,16 @@ def categorize_equipped(
                 item_name,
                 eq_rank,
                 eq_info,
-                all_equipped_ids,
-                bis_data,
-                current_phase,
-                current_phase_data,
-                phase0_data,
-                phases_to_check,
-                dungeon_reputation,
-                rep_lookup,
-                item_db,
+                ctx,
             )
-            all_upgrades.extend(slot_upgrades)
+            result.all_upgrades.extend(slot_upgrades)
 
             if not slot_upgrades:
-                no_upgrade_slots.append(
+                result.no_upgrade.append(
                     (slot_label, item_name, eq_rank or "Not on list", eq_extras)
                 )
 
-    return (
-        current_bis,
-        current_option,
-        old_bis,
-        old_option,
-        not_listed_slots,
-        all_upgrades,
-        no_upgrade_slots,
-    )
+    return result
 
 
 def _find_slot_upgrades(
@@ -863,22 +760,14 @@ def _find_slot_upgrades(
     item_name: str,
     eq_rank: str | None,
     eq_info: dict | None,
-    all_equipped_ids: set[int],
-    bis_data: dict,
-    current_phase: str,
-    current_phase_data: dict,
-    phase0_data: dict,
-    phases_to_check: list[str],
-    dungeon_reputation: dict[str, str],
-    rep_lookup: dict,
-    item_db: dict[int, dict],
+    ctx: AnalysisContext,
 ) -> list[dict]:
     """Find all upgrades for a single equipped slot."""
     slot_upgrades: list[dict] = []
     seen_item_ids: set[int] = set()
 
-    for phase in phases_to_check:
-        phase_data = bis_data["phases"].get(phase, {})
+    for phase in ctx.phases_to_check:
+        phase_data = ctx.bis_data["phases"].get(phase, {})
         slot_key = resolve_slot_key(bis_slot, phase_data)
         slot_items = phase_data.get(slot_key, [])
 
@@ -894,7 +783,7 @@ def _find_slot_upgrades(
             bis_id = bis_item.get("item_id")
             if bis_id == item_id or bis_id in seen_item_ids:
                 continue
-            if bis_id in all_equipped_ids:
+            if bis_id in ctx.all_equipped_ids:
                 continue
             # Skip items ranked lower than the equipped item in the list,
             # UNLESS the equipped item is BiS — then still show other BiS items
@@ -904,7 +793,11 @@ def _find_slot_upgrades(
                     continue
 
             up_rank, up_phase, up_p0_only = get_effective_rank(
-                bis_id, bis_slot, current_phase_data, phase0_data, current_phase
+                bis_id,
+                bis_slot,
+                ctx.current_phase_data,
+                ctx.phase0_data,
+                ctx.current_phase,
             )
             if not up_rank:
                 continue
@@ -917,12 +810,10 @@ def _find_slot_upgrades(
             source = bis_item.get("source", "")
             tags = classify_source(source)
 
-            # Skip classic raid items (Naxx, BWL, AQ, etc.)
             if "classic" in tags:
                 continue
 
-            # Skip crafted items unless --show-crafted is set
-            if not _show_crafted and "profession" in tags:
+            if not ctx.show_crafted and "profession" in tags:
                 continue
 
             faction = extract_faction(source)
@@ -930,25 +821,26 @@ def _find_slot_upgrades(
             # Skip rep items from the opposing faction
             if faction and "reputation" in tags:
                 if faction in ("Thrallmar", "Honor Hold"):
-                    # Determine player faction from rep data or dungeon_reputation map
-                    player_hf_faction = dungeon_reputation.get("Hellfire Ramparts")
+                    player_hf_faction = ctx.dungeon_reputation.get("Hellfire Ramparts")
                     if player_hf_faction == "Honor Hold" and faction == "Thrallmar":
                         continue
                     if player_hf_faction == "Thrallmar" and faction == "Honor Hold":
                         continue
 
             seen_item_ids.add(bis_id)
-            rep_info = rep_lookup.get(faction) if faction else None
-            dungeon = extract_dungeon(source, dungeon_reputation)
+            rep_info = ctx.rep_lookup.get(faction) if faction else None
+            dungeon = extract_dungeon(source, ctx.dungeon_reputation)
 
             # Check if item appears in the next phase for longevity bonus
-            cur_num = int(current_phase.split("-")[1]) if "-" in current_phase else 0
+            cur_num = (
+                int(ctx.current_phase.split("-")[1]) if "-" in ctx.current_phase else 0
+            )
             next_phase_key = f"phase-{cur_num + 1}"
-            next_phase_data = bis_data["phases"].get(next_phase_key, {})
+            next_phase_data = ctx.bis_data["phases"].get(next_phase_key, {})
             next_phase_rank = lookup_item_rank(bis_id, bis_slot, next_phase_data)
 
             item_score = score_upgrade(
-                up_rank, up_phase, current_phase, next_phase_rank
+                up_rank, up_phase, ctx.current_phase, next_phase_rank
             )
             required_standing = extract_required_standing(source)
 
@@ -969,7 +861,7 @@ def _find_slot_upgrades(
                 "current_item": item_name,
                 "current_rank": eq_rank or "Not on list",
                 "score": item_score,
-                "item_info": item_db.get(bis_id),
+                "item_info": ctx.item_db.get(bis_id),
                 "current_item_info": eq_info,
             }
             slot_upgrades.append(upgrade)
@@ -1120,7 +1012,11 @@ def print_equipped_section(
     print()
 
 
-def print_dungeon_priority(sorted_dungeons: list[dict], rep_lookup: dict):
+def print_dungeon_priority(
+    sorted_dungeons: list[dict],
+    rep_lookup: dict,
+    preferred_armor: str = "Mail",
+):
     """Print the dungeon priority ranking."""
     if not sorted_dungeons:
         return
@@ -1142,7 +1038,7 @@ def print_dungeon_priority(sorted_dungeons: list[dict], rep_lookup: dict):
 
         for drop in entry["drops"]:
             rank_tag = format_rank_tag(drop)
-            armor = format_armor_warning(drop.get("item_info"))
+            armor = format_armor_warning(drop.get("item_info"), preferred_armor)
             extra = format_item_extras(drop.get("item_info"))
             cur_extra = format_item_extras(drop.get("current_item_info"))
             print(
@@ -1153,7 +1049,7 @@ def print_dungeon_priority(sorted_dungeons: list[dict], rep_lookup: dict):
             print("       Also earns rep toward:")
             for vi in entry["rep_vendor_items"]:
                 rank_tag = format_rank_tag(vi)
-                armor = format_armor_warning(vi.get("item_info"))
+                armor = format_armor_warning(vi.get("item_info"), preferred_armor)
                 extra = format_item_extras(vi.get("item_info"))
                 print(
                     f"         [{rank_tag:16s}]  {vi['name']}{armor}{extra}  ({vi['slot']})"
@@ -1161,7 +1057,7 @@ def print_dungeon_priority(sorted_dungeons: list[dict], rep_lookup: dict):
     print()
 
 
-def print_rep_goals(sorted_rep: list[dict]):
+def print_rep_goals(sorted_rep: list[dict], preferred_armor: str = "Mail"):
     """Print reputation goals section."""
     if not sorted_rep:
         return
@@ -1173,7 +1069,7 @@ def print_rep_goals(sorted_rep: list[dict]):
         )
         for item in entry["items"]:
             rank_tag = format_rank_tag(item)
-            armor = format_armor_warning(item.get("item_info"))
+            armor = format_armor_warning(item.get("item_info"), preferred_armor)
             extra = format_item_extras(item.get("item_info"))
             rep_prog = format_rep_progress(ri, item.get("required_standing"))
             print(
@@ -1184,7 +1080,7 @@ def print_rep_goals(sorted_rep: list[dict]):
     print()
 
 
-def print_slot_breakdown(all_upgrades: list[dict]):
+def print_slot_breakdown(all_upgrades: list[dict], preferred_armor: str = "Mail"):
     """Print per-slot upgrade breakdown."""
     slot_groups: dict[str, list[dict]] = defaultdict(list)
     for up in all_upgrades:
@@ -1197,14 +1093,17 @@ def print_slot_breakdown(all_upgrades: list[dict]):
         items_in_slot = slot_groups[slot]
         current = items_in_slot[0]["current_item"]
         current_rank = items_in_slot[0]["current_rank"]
-        cur_armor = format_armor_warning(items_in_slot[0].get("current_item_info"))
+        cur_armor = format_armor_warning(
+            items_in_slot[0].get("current_item_info"),
+            preferred_armor,
+        )
         cur_extra = format_item_extras(items_in_slot[0].get("current_item_info"))
         rank_note = f" [{current_rank}]" if current_rank != "Not on list" else ""
         print(f"\n  {slot}: {current}{cur_armor}{rank_note}{cur_extra}")
         for up in items_in_slot:
             heroic = " (H)" if "heroic" in up["tags"] else ""
             rank_label = f"[{format_rank_tag(up)}]"
-            armor = format_armor_warning(up.get("item_info"))
+            armor = format_armor_warning(up.get("item_info"), preferred_armor)
             extra = format_item_extras(up.get("item_info"))
             line = f"    {rank_label:18s} {up['name']}{armor}{extra}{heroic}  --  {up['source']}"
             if up["rep_info"]:
@@ -1223,6 +1122,7 @@ def print_raid_upgrades(
     raid_upgrades: list[dict],
     sr_counts: dict[str, int],
     sr_groups: dict[str, str],
+    preferred_armor: str = "Mail",
 ):
     """Print raid upgrades grouped by raid instance with soft-reserve info."""
     if not raid_upgrades:
@@ -1265,7 +1165,7 @@ def print_raid_upgrades(
             items.sort(key=lambda x: x["score"], reverse=True)
             for up in items:
                 rank_label = f"[{format_rank_tag(up)}]"
-                armor = format_armor_warning(up.get("item_info"))
+                armor = format_armor_warning(up.get("item_info"), preferred_armor)
                 extra = format_item_extras(up.get("item_info"))
                 print(
                     f"    {rank_label:18s} {up['name']}{armor}{extra}  "
@@ -1293,7 +1193,7 @@ def print_raid_upgrades(
         items.sort(key=lambda x: x["score"], reverse=True)
         for up in items:
             rank_label = f"[{format_rank_tag(up)}]"
-            armor = format_armor_warning(up.get("item_info"))
+            armor = format_armor_warning(up.get("item_info"), preferred_armor)
             extra = format_item_extras(up.get("item_info"))
             print(
                 f"    {rank_label:18s} {up['name']}{armor}{extra}  "
@@ -1354,16 +1254,70 @@ def print_summary(
 # Spec resolution
 # ---------------------------------------------------------------------------
 
-_SPEC_ALIASES: dict[str, str] = {
-    "resto": "resto-shaman",
-    "resto-shaman": "resto-shaman",
-    "ele": "elemental-shaman",
-    "elemental": "elemental-shaman",
-    "elemental-shaman": "elemental-shaman",
-    "prot": "prot-paladin",
-    "protection": "prot-paladin",
-    "prot-paladin": "prot-paladin",
-}
+# ---------------------------------------------------------------------------
+# BiS data merging
+# ---------------------------------------------------------------------------
+
+_RANK_PRIORITY = {"BiS": 0, "Optional": 1, "Option": 1, "Alternative": 2}
+_PRIMARY_SOURCES = ("al_bis_gear.json", "wtbc_bis_gear.json")
+_SECONDARY_SOURCES = ("iv_bis_gear.json", "wh_bis_gear.json")
+
+
+def merge_bis_sources(spec: str) -> dict:
+    """Load and merge BiS data from all sources for a spec.
+
+    Primary sources (AL, WTBC) preserve their BiS/Optional ranks.
+    Secondary sources (IV, WH) have all ranks downgraded to Alternative.
+    If an item appears in multiple sources, the best rank wins.
+    """
+    bis_data: dict = {"phases": {}}
+    for src_name in (*_PRIMARY_SOURCES, *_SECONDARY_SOURCES):
+        src_path = PROJECT_ROOT / "output" / spec / src_name
+        if not src_path.exists():
+            continue
+        is_secondary = src_name in _SECONDARY_SOURCES
+        src_data = json.loads(src_path.read_text(encoding="utf-8"))
+        for phase_key, phase_slots in src_data.get("phases", {}).items():
+            if phase_key not in bis_data["phases"]:
+                bis_data["phases"][phase_key] = {}
+            for slot_key, items in phase_slots.items():
+                if slot_key not in bis_data["phases"][phase_key]:
+                    bis_data["phases"][phase_key][slot_key] = []
+                existing = bis_data["phases"][phase_key][slot_key]
+                # Use a dict for O(1) lookups instead of linear scan
+                seen: dict[int, dict] = {
+                    it["item_id"]: it
+                    for it in existing
+                    if it.get("item_id") is not None
+                }
+                for item in items:
+                    iid = item.get("item_id")
+                    effective_rank = item.get("rank", "Alternative")
+                    if is_secondary:
+                        effective_rank = "Alternative"
+                    if effective_rank == "Option":
+                        effective_rank = "Optional"
+                    if iid is not None and iid in seen:
+                        ex = seen[iid]
+                        ex_rank = ex.get("rank", "")
+                        if _RANK_PRIORITY.get(effective_rank, 9) < _RANK_PRIORITY.get(
+                            ex_rank, 9
+                        ):
+                            ex["rank"] = effective_rank
+                    else:
+                        merged_item = dict(item)
+                        merged_item["rank"] = effective_rank
+                        existing.append(merged_item)
+                        if iid is not None:
+                            seen[iid] = merged_item
+    if not bis_data["phases"]:
+        print(
+            f"No BiS data found in {PROJECT_ROOT / 'output' / spec}. "
+            f"Expected al_bis_gear.json or wtbc_bis_gear.json."
+        )
+        sys.exit(1)
+    return bis_data
+
 
 # Preferred armor type per spec (for armor warnings)
 _SPEC_ARMOR: dict[str, str] = {
@@ -1373,20 +1327,12 @@ _SPEC_ARMOR: dict[str, str] = {
 }
 
 
-def resolve_spec(raw: str) -> str:
-    key = raw.strip().lower()
-    if key not in _SPEC_ALIASES:
-        print(f"Unknown spec '{raw}'. Use: resto, ele, prot.")
-        sys.exit(1)
-    return _SPEC_ALIASES[key]
-
-
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(
         description="Compare equipped gear against BiS lists.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -1422,9 +1368,8 @@ def main():
     args = parser.parse_args()
 
     spec = resolve_spec(args.spec)
-    global _preferred_armor, _show_crafted
-    _preferred_armor = _SPEC_ARMOR.get(spec, "Mail")
-    _show_crafted = args.show_crafted
+    preferred_armor = _SPEC_ARMOR.get(spec, "Mail")
+    show_crafted = args.show_crafted
     # Derive default character file name from spec slug
     # resto-shaman → resto.json, prot-paladin → prot-paladin.json
     _default_char_files: dict[str, str] = {
@@ -1437,7 +1382,11 @@ def main():
         args.character_file if args.character_file is not None else default_char_file
     )
 
-    char = load_character(char_path)
+    # Load item database for enrichment (needed before load_character for name resolution)
+    item_db = load_item_db()
+    name_resolver = {iid: info["name"] for iid, info in item_db.items()}
+
+    char = load_character(char_path, item_name_resolver=name_resolver)
     equipped = char.get("equippedItems", [])
     reputations_raw = char.get("reputations", [])
 
@@ -1450,73 +1399,11 @@ def main():
     # Build faction-aware dungeon rep mapping
     dungeon_reputation = build_dungeon_reputation(rep_lookup, char.get("race", ""))
 
-    # Load item database for enrichment
-    item_db = load_item_db()
-
     # Load soft-reserve config
     sr_counts, sr_groups = load_soft_reserves()
 
-    # Load BiS data — merge items across all sources, dedup by item_id per slot.
-    # If an item appears in multiple sources, keep the best rank.
-    # Primary sources (AL, WTBC) preserve their BiS/Optional ranks.
-    # Secondary sources (IV, WH) have all ranks downgraded to Alternative.
-    bis_data: dict = {"phases": {}}
-    _rank_priority = {"BiS": 0, "Optional": 1, "Option": 1, "Alternative": 2}
-    _PRIMARY_SOURCES = ("al_bis_gear.json", "wtbc_bis_gear.json")
-    _SECONDARY_SOURCES = ("iv_bis_gear.json", "wh_bis_gear.json")
-    for src_name in (*_PRIMARY_SOURCES, *_SECONDARY_SOURCES):
-        src_path = PROJECT_ROOT / "output" / spec / src_name
-        if not src_path.exists():
-            continue
-        is_secondary = src_name in _SECONDARY_SOURCES
-        src_data = json.loads(src_path.read_text(encoding="utf-8"))
-        for phase_key, phase_slots in src_data.get("phases", {}).items():
-            if phase_key not in bis_data["phases"]:
-                bis_data["phases"][phase_key] = {}
-            for slot_key, items in phase_slots.items():
-                if slot_key not in bis_data["phases"][phase_key]:
-                    bis_data["phases"][phase_key][slot_key] = []
-                existing = bis_data["phases"][phase_key][slot_key]
-                seen_ids = {
-                    it.get("item_id")
-                    for it in existing
-                    if it.get("item_id") is not None
-                }
-                for item in items:
-                    iid = item.get("item_id")
-                    # Downgrade secondary source ranks to Alternative
-                    effective_rank = item.get("rank", "Alternative")
-                    if is_secondary:
-                        effective_rank = "Alternative"
-                    # Normalize legacy "Option" to "Optional"
-                    if effective_rank == "Option":
-                        effective_rank = "Optional"
-                    if iid is not None and iid in seen_ids:
-                        # Upgrade rank if this source ranks it higher
-                        for ex in existing:
-                            if ex.get("item_id") == iid:
-                                if _rank_priority.get(
-                                    effective_rank, 9
-                                ) < _rank_priority.get(ex.get("rank"), 9):
-                                    ex["rank"] = effective_rank
-                                break
-                    else:
-                        merged_item = dict(item)
-                        merged_item["rank"] = effective_rank
-                        existing.append(merged_item)
-                        if iid is not None:
-                            seen_ids.add(iid)
-    if not bis_data["phases"]:
-        print(
-            f"No BiS data found in {PROJECT_ROOT / 'output' / spec}. "
-            f"Expected al_bis_gear.json or wtbc_bis_gear.json."
-        )
-        sys.exit(1)
-    current_phase = (
-        (PROJECT_ROOT / "data" / "current-phase.txt")
-        .read_text(encoding="utf-8")
-        .strip()
-    )
+    bis_data = merge_bis_sources(spec)
+    current_phase = load_current_phase() or "phase-0"
     phases_to_check = (
         ["phase-0", current_phase] if current_phase != "phase-0" else ["phase-0"]
     )
@@ -1534,30 +1421,24 @@ def main():
     all_equipped_ids = {item["itemId"] for item in equipped}
 
     # Categorize equipped items and find upgrades
-    (
-        current_bis,
-        current_option,
-        old_bis,
-        old_option,
-        not_listed_slots,
-        all_upgrades,
-        no_upgrade_slots,
-    ) = categorize_equipped(
-        equipped_by_slot,
-        all_equipped_ids,
-        bis_data,
-        current_phase,
-        current_phase_data,
-        phase0_data,
-        phases_to_check,
-        dungeon_reputation,
-        rep_lookup,
-        item_db,
+    ctx = AnalysisContext(
+        bis_data=bis_data,
+        current_phase=current_phase,
+        current_phase_data=current_phase_data,
+        phase0_data=phase0_data,
+        phases_to_check=phases_to_check,
+        dungeon_reputation=dungeon_reputation,
+        rep_lookup=rep_lookup,
+        item_db=item_db,
+        all_equipped_ids=all_equipped_ids,
+        preferred_armor=preferred_armor,
+        show_crafted=show_crafted,
     )
+    cats = categorize_equipped(equipped_by_slot, ctx)
 
     # Split upgrades into dungeon/rep/badge vs raid
-    dungeon_upgrades_all = [up for up in all_upgrades if "raid" not in up["tags"]]
-    raid_upgrades_all = [up for up in all_upgrades if "raid" in up["tags"]]
+    dungeon_upgrades_all = [up for up in cats.all_upgrades if "raid" not in up["tags"]]
+    raid_upgrades_all = [up for up in cats.all_upgrades if "raid" in up["tags"]]
 
     # Deduplicate ring/trinket upgrades for scoring (dungeon/rep/badge only)
     scored_item_ids: set[int] = set()
@@ -1596,37 +1477,37 @@ def main():
     )
     print(f"   Current phase: {cp} (authoritative) | Phase 0 (fallback)\n")
 
-    print_equipped_section(f"{cp.upper()} BIS (you're set)", current_bis)
+    print_equipped_section(f"{cp.upper()} BIS (you're set)", cats.current_bis)
     print_equipped_section(
-        f"{cp.upper()} OPTIONAL (upgrade available this phase)", current_option
+        f"{cp.upper()} OPTIONAL (upgrade available this phase)", cats.current_option
     )
-    if old_bis or old_option:
+    if cats.old_bis or cats.old_option:
         print_equipped_section(
             f"PHASE 0 ONLY (not in {cp} list -- outdated)",
-            old_bis + old_option,
+            cats.old_bis + cats.old_option,
             suffix_fn=lambda s, n: (
                 "  [was Phase 0 BiS]"
-                if (s, n) in {(x[0], x[1]) for x in old_bis}
+                if (s, n) in {(x[0], x[1]) for x in cats.old_bis}
                 else "  [was Phase 0 Optional]"
             ),
         )
-    print_equipped_section("NOT ON ANY BIS LIST", not_listed_slots)
+    print_equipped_section("NOT ON ANY BIS LIST", cats.not_listed)
 
-    print_dungeon_priority(sorted_dungeons, rep_lookup)
-    print_rep_goals(sorted_rep)
-    print_slot_breakdown(dungeon_upgrades_all)
-    print_raid_upgrades(raid_upgrades_all, sr_counts, sr_groups)
-    print_no_upgrade(no_upgrade_slots)
+    print_dungeon_priority(sorted_dungeons, rep_lookup, preferred_armor)
+    print_rep_goals(sorted_rep, preferred_armor)
+    print_slot_breakdown(dungeon_upgrades_all, preferred_armor)
+    print_raid_upgrades(raid_upgrades_all, sr_counts, sr_groups, preferred_armor)
+    print_no_upgrade(cats.no_upgrade)
     print_summary(
         cp,
-        current_bis,
-        current_option,
-        old_bis,
-        old_option,
-        not_listed_slots,
+        cats.current_bis,
+        cats.current_option,
+        cats.old_bis,
+        cats.old_option,
+        cats.not_listed,
         dungeon_upgrades_all,
         raid_upgrades_all,
-        no_upgrade_slots,
+        cats.no_upgrade,
     )
 
 
