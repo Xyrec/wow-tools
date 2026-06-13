@@ -1,1 +1,37 @@
-{}
+{
+  "talents": "50000000000000000000-5032010000000000000000-0523005120033125331051",
+  "id": "Player-6409-049454C3",
+  "class": "paladin",
+  "unit": "player",
+  "professions": [
+    { "name": "Blacksmithing", "level": 310 },
+    { "name": "Mining", "level": 337 }
+  ],
+  "race": "Human",
+  "name": "Xyrekk",
+  "spec": "retribution",
+  "gear": {
+    "items": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      { "id": 30644, "gems": [] },
+      null,
+      { "id": 29074, "gems": [] },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      { "id": 27917, "gems": [] }
+    ]
+  },
+  "level": 70,
+  "version": "v3.2.2",
+  "realm": "Thunderstrike"
+}

@@ -153,6 +153,8 @@ pub struct EquippedCategories {
     pub old_bis: Vec<EquippedDisplay>,
     pub old_option: Vec<EquippedDisplay>,
     pub not_listed: Vec<EquippedDisplay>,
+    /// Slots with nothing equipped — every BiS item is an upgrade.
+    pub empty: Vec<EquippedDisplay>,
     pub all_upgrades: Vec<Upgrade>,
     pub no_upgrade: Vec<EquippedDisplay>,
 }
@@ -171,6 +173,7 @@ pub fn categorize_equipped(
         old_bis: Vec::new(),
         old_option: Vec::new(),
         not_listed: Vec::new(),
+        empty: Vec::new(),
         all_upgrades: Vec::new(),
         no_upgrade: Vec::new(),
     };
@@ -181,6 +184,23 @@ pub fn categorize_equipped(
             let item_name = &eq_item.item_name;
             let slot_label = &eq_item.slot_name;
 
+            let eq_info = ctx.item_db.get(&item_id);
+            let eq_extras = super::format_item_extras(eq_info);
+            let eq_armor = super::format_armor_warning(eq_info, ctx.preferred_armor);
+            let eq_display: EquippedDisplay =
+                (slot_label.clone(), item_name.clone(), eq_armor, eq_extras);
+
+            // Empty slot (item_id 0): every item in this slot's BiS list is an
+            // upgrade over an empty slot. No equipped position to compare, so
+            // find_slot_upgrades lists the whole slot.
+            if item_id == 0 {
+                result.empty.push(eq_display);
+                let slot_upgrades =
+                    find_slot_upgrades(bis_slot, slot_label, 0, item_name, None, None, ctx);
+                result.all_upgrades.extend(slot_upgrades);
+                continue;
+            }
+
             let (eq_rank, _eq_phase, eq_p0_only) = get_effective_rank(
                 item_id,
                 bis_slot,
@@ -188,12 +208,6 @@ pub fn categorize_equipped(
                 ctx.phase0_data,
                 ctx.current_phase,
             );
-
-            let eq_info = ctx.item_db.get(&item_id);
-            let eq_extras = super::format_item_extras(eq_info);
-            let eq_armor = super::format_armor_warning(eq_info, ctx.preferred_armor);
-            let eq_display: EquippedDisplay =
-                (slot_label.clone(), item_name.clone(), eq_armor, eq_extras);
 
             // Classify into tier
             match eq_rank.as_deref() {

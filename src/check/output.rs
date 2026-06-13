@@ -144,10 +144,16 @@ pub fn print_slot_breakdown(all_upgrades: &[&Upgrade], preferred_armor: &str) {
         return;
     }
 
-    // Group by slot, preserving order of first occurrence
+    // Group by slot, preserving order of first occurrence. Dedup by item_id
+    // within each slot so paired empty slots (two rings/trinkets) don't list
+    // the same upgrade twice.
     let mut slot_order: Vec<String> = Vec::new();
     let mut slot_groups: HashMap<String, Vec<&Upgrade>> = HashMap::new();
+    let mut seen_per_slot: HashMap<String, HashSet<u32>> = HashMap::new();
     for up in all_upgrades {
+        if !seen_per_slot.entry(up.slot.clone()).or_default().insert(up.item_id) {
+            continue;
+        }
         if !slot_groups.contains_key(&up.slot) {
             slot_order.push(up.slot.clone());
         }
@@ -325,6 +331,17 @@ pub fn print_raid_upgrades(
 // No upgrade slots
 // ---------------------------------------------------------------------------
 
+pub fn print_empty_slots(empty_slots: &[EquippedDisplay]) {
+    if empty_slots.is_empty() {
+        return;
+    }
+    println!("=== EMPTY SLOTS (nothing equipped -- anything is an upgrade) ===");
+    for (slot, _name, _armor, _extras) in empty_slots {
+        println!("  {slot}");
+    }
+    println!();
+}
+
 pub fn print_no_upgrade(no_upgrade_slots: &[EquippedDisplay]) {
     if no_upgrade_slots.is_empty() {
         return;
@@ -347,6 +364,7 @@ pub fn print_summary(
     old_bis: &[EquippedDisplay],
     old_option: &[EquippedDisplay],
     not_listed: &[EquippedDisplay],
+    empty: &[EquippedDisplay],
     dungeon_upgrades: &[&Upgrade],
     raid_upgrades: &[&Upgrade],
     no_upgrade_slots: &[EquippedDisplay],
@@ -367,10 +385,14 @@ pub fn print_summary(
         + current_option.len()
         + old_bis.len()
         + old_option.len()
-        + not_listed.len();
+        + not_listed.len()
+        + empty.len();
     println!("Summary: {total} slots total");
     println!("  {cp} BiS: {}", current_bis.len());
     println!("  {cp} Optional: {}", current_option.len());
+    if !empty.is_empty() {
+        println!("  Empty (need anything): {}", empty.len());
+    }
     if !old_bis.is_empty() || !old_option.is_empty() {
         println!(
             "  Phase 0 only (outdated): {}",

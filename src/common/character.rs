@@ -114,13 +114,29 @@ fn normalize_wse(
 
     let mut equipped = Vec::new();
     for (i, item) in items.iter().enumerate() {
-        if item.is_null() || i >= WSE_SLOT_ORDER.len() {
+        if i >= WSE_SLOT_ORDER.len() {
             continue;
         }
-        let item_id = item.get("id").and_then(|id| id.as_u64()).unwrap_or(0) as u32;
+        let slot_name = WSE_SLOT_ORDER[i].to_string();
+        let item_id = if item.is_null() {
+            0
+        } else {
+            item.get("id").and_then(|id| id.as_u64()).unwrap_or(0) as u32
+        };
+
+        // An empty slot (null entry or missing id) is recorded with item_id 0
+        // and name "(empty)" so the checker can recommend gear for it —
+        // anything in that slot's BiS list is an upgrade over nothing.
         if item_id == 0 {
+            equipped.push(EquippedItem {
+                slot: (i + 1) as u32,
+                slot_name,
+                item_id: 0,
+                item_name: "(empty)".to_string(),
+            });
             continue;
         }
+
         let name = item_name_resolver
             .and_then(|r| r.get(&item_id))
             .cloned()
@@ -128,7 +144,7 @@ fn normalize_wse(
 
         equipped.push(EquippedItem {
             slot: (i + 1) as u32,
-            slot_name: WSE_SLOT_ORDER[i].to_string(),
+            slot_name,
             item_id,
             item_name: name,
         });

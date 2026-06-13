@@ -15,8 +15,8 @@ use crate::common::types::BisItem;
 use analysis::{AnalysisContext, categorize_equipped};
 use bis_merge::merge_bis_sources;
 use output::{
-    print_dungeon_priority, print_equipped_section, print_no_upgrade, print_raid_upgrades,
-    print_rep_goals, print_slot_breakdown, print_summary,
+    print_dungeon_priority, print_empty_slots, print_equipped_section, print_no_upgrade,
+    print_raid_upgrades, print_rep_goals, print_slot_breakdown, print_summary,
 };
 use soft_reserve::load_soft_reserves;
 
@@ -692,6 +692,7 @@ pub fn run(
     }
 
     print_equipped_section("NOT ON ANY BIS LIST", &cats.not_listed, None);
+    print_empty_slots(&cats.empty);
 
     print_dungeon_priority(&sorted_dungeons, &rep_lookup, pref_armor);
     print_rep_goals(&sorted_rep, &rep_lookup, &dungeon_reputation, pref_armor);
@@ -705,6 +706,7 @@ pub fn run(
         &cats.old_bis,
         &cats.old_option,
         &cats.not_listed,
+        &cats.empty,
         &dungeon_upgrades_all,
         &raid_upgrades_all,
         &cats.no_upgrade,
