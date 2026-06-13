@@ -1,3 +1,2 @@
-# Force LF line endings on bash scripts — Git Bash on Windows
-# chokes on CRLF shebangs
+# Force LF line endings on bash scripts so shebangs stay valid
 *.sh text eol=lf

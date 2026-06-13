@@ -51,7 +51,7 @@ CLAUDE.md                        # Project rules for Rust development
    cp rust-claude-scaffold/CLAUDE.md /path/to/your/project/
    ```
 
-2. **Make hooks executable (Linux/macOS only):**
+2. **Make hooks executable:**
 
    ```bash
    chmod +x .claude/hooks/*.sh
@@ -151,17 +151,6 @@ Token economy. A cascading Rust error (e.g., changing a core type) can produce 2
 ## Limitations
 
 - **Large workspace compilation is slow.** `cargo check` on a 100-crate workspace can take 10+ seconds. For large projects, set `RUST_CHECK_PACKAGE` to scope checks to the crate the agent is working on.
-
----
-
-## Windows compatibility
-
-This scaffold is cross-platform. Claude Code on Windows uses Git Bash, so all bash scripts run correctly. A few things are handled automatically:
-
-- **Line endings.** The included `.gitattributes` forces `*.sh` files to LF line endings. Without this, Git's default `core.autocrlf=true` on Windows adds `\r` to shebangs and breaks script execution.
-- **File permissions.** `chmod +x` is a no-op on Windows, but this doesn't matter — the hooks invoke scripts via `bash .claude/hooks/rust-check.sh` (explicit interpreter), not via direct execution.
-
-**No changes needed** — just clone/unzip and use as documented.
 
 ---
 
