@@ -20,12 +20,15 @@ def _walk(node, path, aura_id, out):
         for key, value in node.items():
             p = f"{path}.{key}"
             if key in NAME_KEYS and isinstance(value, str) and value:
-                out.append(("name", value, p, aura_id))
+                # WA accepts spell IDs as digit-strings wherever names go
+                kind = "id" if value.isdigit() else "name"
+                out.append((kind, int(value) if kind == "id" else value, p, aura_id))
             elif key in NAME_LIST_KEYS and isinstance(value, (list, dict)):
                 items = value if isinstance(value, list) else value.values()
                 for v in items:
                     if isinstance(v, str) and v:
-                        out.append(("name", v, p, aura_id))
+                        kind = "id" if v.isdigit() else "name"
+                        out.append((kind, int(v) if kind == "id" else v, p, aura_id))
             elif key in ID_KEYS and isinstance(value, (int, str)) and str(value).isdigit():
                 out.append(("id", int(value), p, aura_id))
             elif key in ID_LIST_KEYS and isinstance(value, (list, dict)):
