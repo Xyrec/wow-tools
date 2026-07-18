@@ -77,8 +77,14 @@ commands["pull-groundtruth"] = function()
   print("ground truth updated in data/ground-truth/")
 end
 
+commands["dump-displays"] = function()
+  local sv = require("sv")
+  local env = sv.load(sv.LIVE_PATH)
+  io.write(json.to_json(env.WeakAurasSaved.displays))
+end
+
 local cmd = table.remove(arg, 1)
 if not cmd or not commands[cmd] then
-  io.stderr:write("usage: wa <decode|encode|backup|restore|extract|land|pull-groundtruth> ...\n"); os.exit(2)
+  io.stderr:write("usage: wa <decode|encode|backup|restore|extract|land|pull-groundtruth|dump-displays> ...\n"); os.exit(2)
 end
 commands[cmd](arg)
