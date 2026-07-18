@@ -177,6 +177,44 @@ def port_live_tweaks(aura, old_id, live_by_id, report):
         report.append(f'{aura["id"]}: ported {ported} presentation fields from live')
 
 
+# pixel-valued fields that must be multiplied when baking the root scale
+BAKE_REGION_FIELDS = ["width", "height", "xOffset", "yOffset", "borderSize", "borderOffset",
+                      "borderInset", "space", "stagger", "radius", "rowSpace", "columnSpace",
+                      "sparkWidth", "sparkHeight", "sparkOffsetX", "sparkOffsetY"]
+BAKE_SUBREGION_FIELDS = ["anchorXOffset", "anchorYOffset", "border_offset", "border_size",
+                         "text_anchorXOffset", "text_anchorYOffset", "text_fixedWidth",
+                         "text_fontSize", "text_shadowXOffset", "text_shadowYOffset"]
+
+
+def bake_root_scale(auras, report):
+    """Multiply all pixel dimensions by the root's scale and set scale to 1, so
+    borders/sizes land on the integer pixel grid (kills the 1px/2px flicker a
+    fractional scale transform causes). WoW offsets are measured in the frame's
+    own scale, so the root's screen offsets are multiplied as well."""
+    root = auras[0]
+    factor = root.get("scale") or 1
+    if factor == 1:
+        return
+    def mul(v):
+        return int(round(v * factor))
+    for aura in auras:
+        for f in BAKE_REGION_FIELDS:
+            if isinstance(aura.get(f), (int, float)) and not isinstance(aura.get(f), bool):
+                aura[f] = mul(aura[f])
+        for sub in (aura.get("subRegions") or []):
+            for f in BAKE_SUBREGION_FIELDS:
+                if isinstance(sub.get(f), (int, float)) and not isinstance(sub.get(f), bool):
+                    sub[f] = mul(sub[f])
+        for cond in (aura.get("conditions") or []):
+            for ch in (cond.get("changes") or []):
+                prop = str(ch.get("property") or "")
+                if isinstance(ch.get("value"), (int, float)) and not isinstance(ch.get("value"), bool) \
+                        and (prop.endswith("text_fontSize") or prop in ("width", "height")):
+                    ch["value"] = mul(ch["value"])
+    root["scale"] = 1
+    report.append(f"baked root scale x{factor} into pixel fields (scale reset to 1)")
+
+
 def main() -> int:
     payload = json.loads(SRC.read_text())
     live_payload = json.loads(LIVE_SRC.read_text())
@@ -228,6 +266,7 @@ def main() -> int:
     root = kept[0]
     assert root["id"] == ROOT_NEW, "first aura must be the renamed root"
     root.pop("parent", None)
+    bake_root_scale(kept, report)
     out_payload = {"m": "d", "v": 2000, "s": payload.get("s", "5.21.8"),
                    "d": root, "c": kept[1:]}
     OUT.parent.mkdir(parents=True, exist_ok=True)

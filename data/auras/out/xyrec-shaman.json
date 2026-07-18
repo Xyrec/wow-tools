@@ -49,11 +49,11 @@
         1
       ],
       "borderEdge": "Square Full White",
-      "borderInset": 1,
-      "borderOffset": 4,
-      "borderSize": 2,
+      "borderInset": 2,
+      "borderOffset": 6,
+      "borderSize": 3,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -93,10 +93,10 @@
         }
       },
       "parent": "Xyrec - Shaman",
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.4.4",
@@ -142,7 +142,7 @@
       "useLimit": true,
       "version": 15,
       "xOffset": 0,
-      "yOffset": 35
+      "yOffset": 52
     },
     {
       "actions": {
@@ -282,7 +282,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 1,
-      "height": 32,
+      "height": 48,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Stormstrike",
@@ -344,8 +344,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -361,9 +361,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 18,
+          "text_fontSize": 27,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -431,7 +431,7 @@
       "useCooldownModRate": true,
       "useTooltip": false,
       "version": 15,
-      "width": 38,
+      "width": 57,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -591,7 +591,7 @@
       "desaturate": true,
       "displayIcon": 135813,
       "frameStrata": 1,
-      "height": 32,
+      "height": 48,
       "icon": true,
       "iconSource": 0,
       "id": "Xyrec Shaman - Flame Shock",
@@ -654,8 +654,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -671,9 +671,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 18,
+          "text_fontSize": 27,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -713,8 +713,8 @@
           "anchorYOffset": 0,
           "anchor_point": "BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorXOffset": -1,
-          "text_anchorYOffset": 1,
+          "text_anchorXOffset": -2,
+          "text_anchorYOffset": 2,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -722,9 +722,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOMRIGHT",
@@ -830,7 +830,7 @@
       "useCooldownModRate": true,
       "useTooltip": false,
       "version": 15,
-      "width": 38,
+      "width": 57,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -973,7 +973,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 1,
-      "height": 32,
+      "height": 48,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Earth Shock",
@@ -1035,8 +1035,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -1052,9 +1052,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 18,
+          "text_fontSize": 27,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -1123,7 +1123,7 @@
       "useCooldownModRate": true,
       "useTooltip": false,
       "version": 15,
-      "width": 38,
+      "width": 57,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -1266,7 +1266,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 1,
-      "height": 32,
+      "height": 48,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Lightning Bolt",
@@ -1330,8 +1330,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -1347,9 +1347,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 18,
+          "text_fontSize": 27,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -1417,7 +1417,7 @@
       "useCooldownModRate": true,
       "useTooltip": false,
       "version": 15,
-      "width": 38,
+      "width": 57,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -1560,7 +1560,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 1,
-      "height": 32,
+      "height": 48,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Chain Lightning",
@@ -1622,8 +1622,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -1639,9 +1639,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 18,
+          "text_fontSize": 27,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -1709,7 +1709,7 @@
       "useCooldownModRate": true,
       "useTooltip": false,
       "version": 15,
-      "width": 38,
+      "width": 57,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -1775,7 +1775,7 @@
           "changes": [
             {
               "property": "sub.3.text_fontSize",
-              "value": 10
+              "value": 15
             }
           ],
           "check": {
@@ -1849,7 +1849,7 @@
       "desaturate": true,
       "displayIcon": 136050,
       "frameStrata": 1,
-      "height": 32,
+      "height": 48,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Personal Shield",
@@ -1912,8 +1912,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -1929,9 +1929,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 18,
+          "text_fontSize": 27,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -1959,8 +1959,8 @@
           "anchorYOffset": 0,
           "anchor_point": "BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorXOffset": -1,
-          "text_anchorYOffset": 1,
+          "text_anchorXOffset": -2,
+          "text_anchorYOffset": 2,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -1968,9 +1968,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOMRIGHT",
@@ -2044,7 +2044,7 @@
       "useCooldownModRate": true,
       "useTooltip": false,
       "version": 15,
-      "width": 38,
+      "width": 57,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -2123,7 +2123,7 @@
           "changes": [
             {
               "property": "sub.3.text_fontSize",
-              "value": 10
+              "value": 15
             }
           ],
           "check": {
@@ -2202,7 +2202,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 1,
-      "height": 32,
+      "height": 48,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Earth Shield",
@@ -2264,8 +2264,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -2281,9 +2281,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 18,
+          "text_fontSize": 27,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -2311,8 +2311,8 @@
           "anchorYOffset": 0,
           "anchor_point": "BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorXOffset": -1,
-          "text_anchorYOffset": 1,
+          "text_anchorXOffset": -2,
+          "text_anchorYOffset": 2,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -2320,9 +2320,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOMRIGHT",
@@ -2358,9 +2358,9 @@
             0.98823535442352,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -2464,7 +2464,7 @@
       "useCooldownModRate": true,
       "useTooltip": false,
       "version": 15,
-      "width": 38,
+      "width": 57,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -2514,9 +2514,9 @@
         1
       ],
       "borderEdge": "Square Full White",
-      "borderInset": 1,
-      "borderOffset": 4,
-      "borderSize": 2,
+      "borderInset": 2,
+      "borderOffset": 6,
+      "borderSize": 3,
       "conditions": [],
       "config": [],
       "controlledChildren": [
@@ -2705,7 +2705,7 @@
       "fontFlags": "OUTLINE",
       "frameStrata": 3,
       "gradientOrientation": "HORIZONTAL",
-      "height": 7,
+      "height": 10,
       "icon": false,
       "iconSource": -1,
       "icon_color": [
@@ -2802,14 +2802,14 @@
         1
       ],
       "sparkDesature": false,
-      "sparkHeight": 15,
+      "sparkHeight": 22,
       "sparkHidden": "NEVER",
       "sparkOffsetX": 0,
       "sparkOffsetY": 0,
       "sparkRotation": 0,
       "sparkRotationMode": "AUTO",
       "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-      "sparkWidth": 10,
+      "sparkWidth": 15,
       "stickyDuration": false,
       "subRegions": [
         {
@@ -2827,8 +2827,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         }
@@ -2900,9 +2900,9 @@
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "version": 15,
-      "width": 266,
-      "xOffset": 7.62939453125e-06,
-      "yOffset": 14,
+      "width": 399,
+      "xOffset": 0,
+      "yOffset": 21,
       "zoom": 0
     },
     {
@@ -3028,7 +3028,7 @@
       "fontFlags": "OUTLINE",
       "frameStrata": 3,
       "gradientOrientation": "HORIZONTAL",
-      "height": 20,
+      "height": 30,
       "icon": false,
       "iconSource": -1,
       "icon_color": [
@@ -3127,14 +3127,14 @@
         1
       ],
       "sparkDesature": false,
-      "sparkHeight": 30,
+      "sparkHeight": 45,
       "sparkHidden": "NEVER",
       "sparkOffsetX": 0,
       "sparkOffsetY": 0,
       "sparkRotation": 0,
       "sparkRotationMode": "AUTO",
       "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-      "sparkWidth": 10,
+      "sparkWidth": 15,
       "stickyDuration": false,
       "subRegions": [
         {
@@ -3152,8 +3152,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -3170,9 +3170,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -3182,8 +3182,8 @@
             0,
             0.49999988079071
           ],
-          "text_shadowXOffset": 1,
-          "text_shadowYOffset": -1,
+          "text_shadowXOffset": 2,
+          "text_shadowYOffset": -2,
           "text_text": "%1.power",
           "text_text_format_1.power_big_number_format": "AbbreviateNumbers",
           "text_text_format_1.power_decimal_precision": 1,
@@ -3244,7 +3244,7 @@
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "version": 15,
-      "width": 266,
+      "width": 399,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0
@@ -3362,7 +3362,7 @@
       "enableGradient": false,
       "frameStrata": 4,
       "gradientOrientation": "HORIZONTAL",
-      "height": 20,
+      "height": 30,
       "icon": false,
       "iconSource": -1,
       "icon_color": [
@@ -3418,14 +3418,14 @@
         1,
         1
       ],
-      "sparkHeight": 30,
+      "sparkHeight": 45,
       "sparkHidden": "NEVER",
       "sparkOffsetX": 0,
       "sparkOffsetY": 0,
       "sparkRotation": 0,
       "sparkRotationMode": "AUTO",
       "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-      "sparkWidth": 20,
+      "sparkWidth": 30,
       "stickyDuration": false,
       "subRegions": [
         {
@@ -3439,8 +3439,8 @@
           "anchorYOffset": 0,
           "anchor_point": "SPARK",
           "rotateText": "NONE",
-          "text_anchorXOffset": 15,
-          "text_anchorYOffset": -10,
+          "text_anchorXOffset": 22,
+          "text_anchorYOffset": -15,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -3448,9 +3448,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
+          "text_fontSize": 30,
           "text_fontType": "None",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -3460,8 +3460,8 @@
             0,
             1
           ],
-          "text_shadowXOffset": 1,
-          "text_shadowYOffset": -1,
+          "text_shadowXOffset": 2,
+          "text_shadowYOffset": -2,
           "text_text": "%p",
           "text_text_format_p_format": "timed",
           "text_text_format_p_time_dynamic_threshold": 60,
@@ -3508,7 +3508,7 @@
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "version": 15,
-      "width": 260,
+      "width": 390,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0
@@ -3561,11 +3561,11 @@
         1
       ],
       "borderEdge": "Square Full White",
-      "borderInset": 1,
-      "borderOffset": 4,
-      "borderSize": 2,
+      "borderInset": 2,
+      "borderOffset": 6,
+      "borderSize": 3,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -3612,10 +3612,10 @@
         }
       },
       "parent": "Xyrec - Shaman",
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.4.4",
@@ -3662,7 +3662,7 @@
       "useLimit": true,
       "version": 15,
       "xOffset": 0,
-      "yOffset": -26
+      "yOffset": -39
     },
     {
       "actions": {
@@ -3764,7 +3764,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 1,
-      "height": 30,
+      "height": 45,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Shamanistic Rage",
@@ -3826,8 +3826,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -3843,9 +3843,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -3935,7 +3935,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 30,
+      "width": 45,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -4042,7 +4042,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 1,
-      "height": 30,
+      "height": 45,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Elemental Mastery",
@@ -4105,8 +4105,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -4122,9 +4122,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -4214,7 +4214,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 30,
+      "width": 45,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -4321,7 +4321,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 1,
-      "height": 30,
+      "height": 45,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Nature's Swiftness",
@@ -4384,8 +4384,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -4401,9 +4401,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -4493,7 +4493,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 30,
+      "width": 45,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -4600,7 +4600,7 @@
       "desaturate": false,
       "displayIcon": 136090,
       "frameStrata": 1,
-      "height": 30,
+      "height": 45,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Blood Fury",
@@ -4663,8 +4663,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -4680,9 +4680,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -4772,7 +4772,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 30,
+      "width": 45,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -4879,7 +4879,7 @@
       "desaturate": false,
       "displayIcon": 136090,
       "frameStrata": 1,
-      "height": 30,
+      "height": 45,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Berserking",
@@ -4942,8 +4942,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -4959,9 +4959,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -5051,7 +5051,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 30,
+      "width": 45,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -5146,7 +5146,7 @@
       "desaturate": false,
       "displayIcon": 132089,
       "frameStrata": 1,
-      "height": 30,
+      "height": 45,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - War Stomp",
@@ -5210,8 +5210,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -5227,9 +5227,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -5297,7 +5297,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 30,
+      "width": 45,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -5392,7 +5392,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 1,
-      "height": 30,
+      "height": 45,
       "icon": true,
       "iconSource": 1,
       "id": "Xyrec Shaman - Trinket 1 CD",
@@ -5454,8 +5454,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -5471,9 +5471,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -5539,7 +5539,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 30,
+      "width": 45,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -5634,7 +5634,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 1,
-      "height": 30,
+      "height": 45,
       "icon": true,
       "iconSource": 1,
       "id": "Xyrec Shaman - Trinket 2 CD",
@@ -5696,8 +5696,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -5713,9 +5713,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -5781,7 +5781,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 30,
+      "width": 45,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -5876,7 +5876,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 1,
-      "height": 30,
+      "height": 45,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Reincarnation",
@@ -5940,8 +5940,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -5957,9 +5957,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -6027,7 +6027,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 30,
+      "width": 45,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -6122,7 +6122,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 1,
-      "height": 30,
+      "height": 45,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Mana Tide Totem",
@@ -6186,8 +6186,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -6203,9 +6203,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -6273,7 +6273,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 30,
+      "width": 45,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -6368,7 +6368,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 1,
-      "height": 30,
+      "height": 45,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Fire Nova Totem",
@@ -6432,8 +6432,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -6449,9 +6449,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -6519,7 +6519,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 30,
+      "width": 45,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -6614,7 +6614,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 1,
-      "height": 30,
+      "height": 45,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Stoneclaw Totem",
@@ -6678,8 +6678,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -6695,9 +6695,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -6765,7 +6765,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 30,
+      "width": 45,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -6860,7 +6860,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 1,
-      "height": 30,
+      "height": 45,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Earthbind Totem",
@@ -6924,8 +6924,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -6941,9 +6941,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -7011,7 +7011,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 30,
+      "width": 45,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -7106,7 +7106,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 1,
-      "height": 30,
+      "height": 45,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Grounding Totem",
@@ -7170,8 +7170,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -7187,9 +7187,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -7257,7 +7257,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 30,
+      "width": 45,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -7310,11 +7310,11 @@
         1
       ],
       "borderEdge": "Square Full White",
-      "borderInset": 1,
-      "borderOffset": 4,
-      "borderSize": 2,
+      "borderInset": 2,
+      "borderOffset": 6,
+      "borderSize": 3,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -7351,10 +7351,10 @@
         }
       },
       "parent": "Xyrec - Shaman",
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.4.4",
@@ -7390,7 +7390,7 @@
       "useLimit": false,
       "version": 15,
       "xOffset": 0,
-      "yOffset": -475
+      "yOffset": -712
     },
     {
       "actions": {
@@ -7465,7 +7465,7 @@
       "desaturate": false,
       "displayIcon": 136200,
       "frameStrata": 1,
-      "height": 44,
+      "height": 66,
       "icon": true,
       "iconSource": -1,
       "id": "Xyrec Shaman - Drink Expiring",
@@ -7530,8 +7530,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -7547,9 +7547,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
+          "text_fontSize": 30,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -7588,7 +7588,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -12,
+          "text_anchorYOffset": -18,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -7596,9 +7596,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -7684,7 +7684,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 44,
+      "width": 66,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -7780,7 +7780,7 @@
       "desc": "When entering a dungeon, reloading your UI, or logging in: you may need to equip and un-equip your weapon for the tracker to begin working again.",
       "displayIcon": 136086,
       "frameStrata": 3,
-      "height": 44,
+      "height": 66,
       "icon": true,
       "iconSource": 0,
       "id": "Xyrec Shaman - Imbue [MH]",
@@ -7970,8 +7970,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "text_color": [],
           "type": "subborder"
@@ -7991,9 +7991,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
+          "text_fontSize": 30,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -8023,8 +8023,8 @@
           "anchor_point": "BOTTOMRIGHT",
           "border_color": [],
           "rotateText": "NONE",
-          "text_anchorXOffset": -1,
-          "text_anchorYOffset": 1,
+          "text_anchorXOffset": -2,
+          "text_anchorYOffset": 2,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -8032,9 +8032,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOMRIGHT",
@@ -8065,7 +8065,7 @@
           "border_color": [],
           "rotateText": "NONE",
           "text_anchorXOffset": 0,
-          "text_anchorYOffset": -5,
+          "text_anchorYOffset": -8,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -8073,9 +8073,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -8197,7 +8197,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 44,
+      "width": 66,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -8293,7 +8293,7 @@
       "desc": "When entering a dungeon, reloading your UI, or logging in: you may need to equip and un-equip your weapon for the tracker to begin working again.",
       "displayIcon": 135814,
       "frameStrata": 3,
-      "height": 44,
+      "height": 66,
       "icon": true,
       "iconSource": 0,
       "id": "Xyrec Shaman - Imbue [OH]",
@@ -8482,8 +8482,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "text_color": [],
           "type": "subborder"
@@ -8503,9 +8503,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
+          "text_fontSize": 30,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -8535,8 +8535,8 @@
           "anchor_point": "BOTTOMRIGHT",
           "border_color": [],
           "rotateText": "NONE",
-          "text_anchorXOffset": -1,
-          "text_anchorYOffset": 1,
+          "text_anchorXOffset": -2,
+          "text_anchorYOffset": 2,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -8544,9 +8544,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOMRIGHT",
@@ -8577,7 +8577,7 @@
           "border_color": [],
           "rotateText": "NONE",
           "text_anchorXOffset": 0,
-          "text_anchorYOffset": -5,
+          "text_anchorYOffset": -8,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -8585,9 +8585,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -8785,7 +8785,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 44,
+      "width": 66,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -8863,7 +8863,7 @@
       "desaturate": false,
       "displayIcon": 135932,
       "frameStrata": 1,
-      "height": 44,
+      "height": 66,
       "icon": true,
       "iconSource": 1,
       "id": "Xyrec Shaman - Lightning/Water Shield",
@@ -8934,8 +8934,8 @@
             1
           ],
           "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
+          "border_offset": 2,
+          "border_size": 2,
           "border_visible": true,
           "type": "subborder"
         },
@@ -8951,9 +8951,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
+          "text_fontSize": 30,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -8992,7 +8992,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -12,
+          "text_anchorYOffset": -18,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -9000,9 +9000,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 64,
+          "text_fixedWidth": 96,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
+          "text_fontSize": 21,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -9089,7 +9089,7 @@
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 44,
+      "width": 66,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -9140,9 +9140,9 @@
       1
     ],
     "borderEdge": "Square Full White",
-    "borderInset": 1,
-    "borderOffset": 4,
-    "borderSize": 2,
+    "borderInset": 2,
+    "borderOffset": 6,
+    "borderSize": 3,
     "conditions": [],
     "config": [],
     "controlledChildren": [
@@ -9173,7 +9173,7 @@
       }
     },
     "regionType": "group",
-    "scale": 1.5,
+    "scale": 1,
     "selfPoint": "CENTER",
     "semver": "1.4.4",
     "subRegions": [],
@@ -9196,7 +9196,7 @@
     "url": "",
     "version": 15,
     "xOffset": 0,
-    "yOffset": -242
+    "yOffset": -363
   },
   "m": "d",
   "s": "5.12.6",
