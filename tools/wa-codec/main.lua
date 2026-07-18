@@ -70,8 +70,15 @@ commands.land = function(args)
   print("landed: " .. table.concat(landed, ", "))
 end
 
+commands["pull-groundtruth"] = function()
+  local gt = require("groundtruth")
+  os.execute("mkdir -p data/ground-truth")
+  gt.import(gt.DUMP_PATH, "data/ground-truth")
+  print("ground truth updated in data/ground-truth/")
+end
+
 local cmd = table.remove(arg, 1)
 if not cmd or not commands[cmd] then
-  io.stderr:write("usage: wa <decode|encode|backup|restore|extract|land> ...\n"); os.exit(2)
+  io.stderr:write("usage: wa <decode|encode|backup|restore|extract|land|pull-groundtruth> ...\n"); os.exit(2)
 end
 commands[cmd](arg)
