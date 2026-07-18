@@ -266,7 +266,10 @@ def main() -> int:
     root = kept[0]
     assert root["id"] == ROOT_NEW, "first aura must be the renamed root"
     root.pop("parent", None)
-    bake_root_scale(kept, report)
+    if "--bake-scale" in sys.argv:
+        # opt-in: integer-pixel baking caused awkward overlaps in the dynamic
+        # groups (rounding shifted child layout); default stays scale=1.5
+        bake_root_scale(kept, report)
     out_payload = {"m": "d", "v": 2000, "s": payload.get("s", "5.21.8"),
                    "d": root, "c": kept[1:]}
     OUT.parent.mkdir(parents=True, exist_ok=True)
