@@ -8,7 +8,9 @@ from groundtruth import GroundTruth
 
 GT_DIR = pathlib.Path(__file__).resolve().parents[2] / "data" / "ground-truth"
 
-# trigger keys whose value is a spell NAME / a spell ID / a list of either
+# trigger keys whose value is a spell NAME / a spell ID / a list of either.
+# combatlog triggers store spellId/spellName as LISTS; others as scalars —
+# scalar keys therefore also accept list values in _walk.
 NAME_KEYS = {"spellName", "realSpellName", "itemName"}
 NAME_LIST_KEYS = {"auranames"}
 ID_KEYS = {"spellId"}
@@ -23,6 +25,17 @@ def _walk(node, path, aura_id, out):
                 # WA accepts spell IDs as digit-strings wherever names go
                 kind = "id" if value.isdigit() else "name"
                 out.append((kind, int(value) if kind == "id" else value, p, aura_id))
+            elif key in NAME_KEYS and isinstance(value, (list, dict)):
+                items = value if isinstance(value, list) else value.values()
+                for v in items:
+                    if isinstance(v, str) and v:
+                        kind = "id" if v.isdigit() else "name"
+                        out.append((kind, int(v) if kind == "id" else v, p, aura_id))
+            elif key in ID_KEYS and isinstance(value, (list, dict)):
+                items = value if isinstance(value, list) else value.values()
+                for v in items:
+                    if isinstance(v, (int, str)) and str(v).isdigit():
+                        out.append(("id", int(v), p, aura_id))
             elif key in NAME_LIST_KEYS and isinstance(value, (list, dict)):
                 items = value if isinstance(value, list) else value.values()
                 for v in items:
