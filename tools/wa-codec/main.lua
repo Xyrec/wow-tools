@@ -24,8 +24,22 @@ commands.encode = function(args)
   io.write(codec.encode(payload) .. "\n")
 end
 
+commands.backup = function()
+  local safety = require("safety")
+  local sv = require("sv")
+  print(safety.backup(sv.LIVE_PATH))
+end
+
+commands.restore = function(args)
+  assert(args[1], "usage: wa restore <backups/WeakAuras-....lua>")
+  local safety = require("safety")
+  local sv = require("sv")
+  safety.restore(args[1], sv.LIVE_PATH)
+  print("restored " .. args[1] .. " -> " .. sv.LIVE_PATH)
+end
+
 local cmd = table.remove(arg, 1)
 if not cmd or not commands[cmd] then
-  io.stderr:write("usage: wa <decode|encode> ...\n"); os.exit(2)
+  io.stderr:write("usage: wa <decode|encode|backup|restore> ...\n"); os.exit(2)
 end
 commands[cmd](arg)
