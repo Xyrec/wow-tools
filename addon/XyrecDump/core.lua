@@ -66,6 +66,31 @@ local function dump_auras()
     :format(#XyrecDumpDB.aura_snapshots, #snap.buffs, #snap.debuffs))
 end
 
+local function dump_book()
+  local class = select(2, UnitClass("player"))
+  local book = {}
+  local i = 1
+  while true do
+    local name, rank
+    if GetSpellBookItemName then
+      name, rank = GetSpellBookItemName(i, "spell")
+    else
+      name, rank = GetSpellName(i, "spell")
+    end
+    if not name then break end
+    local spellId
+    if GetSpellBookItemInfo then
+      local kind, id = GetSpellBookItemInfo(i, "spell")
+      if kind == "SPELL" then spellId = id end
+    end
+    book[i] = { name = name, rank = rank ~= "" and rank or nil, spellId = spellId }
+    i = i + 1
+  end
+  XyrecDumpDB.spellbook = XyrecDumpDB.spellbook or {}
+  XyrecDumpDB.spellbook[class] = book
+  print(("XyrecDump: spellbook dumped for %s (%d entries). /reload to persist."):format(class, #book))
+end
+
 SLASH_XDUMP1 = "/xdump"
 SlashCmdList["XDUMP"] = function(msg)
   local cmd, a, b = msg:match("^(%S*)%s*(%S*)%s*(%S*)")
@@ -73,8 +98,12 @@ SlashCmdList["XDUMP"] = function(msg)
     dump_spells(tonumber(a) or 1, tonumber(b) or 200000)
   elseif cmd == "talents" then dump_talents()
   elseif cmd == "auras" then dump_auras()
+  elseif cmd == "book" then dump_book()
+  elseif cmd == "all" then
+    dump_talents(); dump_book(); dump_auras()
+    dump_spells(tonumber(a) or 1, tonumber(b) or 200000)
   else
-    print("XyrecDump usage: /xdump spells [from] [to] | /xdump talents | /xdump auras")
+    print("XyrecDump usage: /xdump spells [from] [to] | /xdump talents | /xdump book | /xdump auras | /xdump all")
     print("NOTE: data persists to SavedVariables on /reload or logout.")
   end
 end
