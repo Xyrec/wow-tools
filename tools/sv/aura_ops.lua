@@ -53,6 +53,11 @@ local function remove_aura(displays, id)
   displays[id] = nil
 end
 
+function M.remove(displays, id)
+  assert(displays[id], "no display named " .. tostring(id))
+  remove_aura(displays, id)
+end
+
 function M.land(displays, payload, opts)
   opts = opts or {}
   assert(payload.d and payload.d.id, "payload has no root aura")

@@ -77,6 +77,17 @@ commands["pull-groundtruth"] = function()
   print("ground truth updated in data/ground-truth/")
 end
 
+commands.delete = function(args)
+  local id = assert(args[1], "usage: wa delete <aura-id>")
+  local sv = require("sv")
+  local safety = require("safety")
+  local ops = require("aura_ops")
+  local env = sv.load(sv.LIVE_PATH)
+  ops.remove(env.WeakAurasSaved.displays, id)
+  safety.atomic_save(sv.LIVE_PATH, env)
+  print("deleted: " .. id)
+end
+
 commands["dump-displays"] = function()
   local sv = require("sv")
   local env = sv.load(sv.LIVE_PATH)

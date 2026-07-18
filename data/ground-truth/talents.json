@@ -1,0 +1,452 @@
+{
+  "SHAMAN": {
+    "class": "SHAMAN",
+    "tabs": [
+      {
+        "name": 261,
+        "pointsSpent": "",
+        "talents": [
+          {
+            "column": 3,
+            "maxRank": 3,
+            "name": "Call of Flame",
+            "rank": 0,
+            "tier": 2
+          },
+          {
+            "column": 3,
+            "maxRank": 5,
+            "name": "Call of Thunder",
+            "rank": 0,
+            "tier": 3
+          },
+          {
+            "column": 3,
+            "maxRank": 5,
+            "name": "Concussion",
+            "rank": 2,
+            "tier": 1
+          },
+          {
+            "column": 2,
+            "maxRank": 5,
+            "name": "Convection",
+            "rank": 0,
+            "tier": 1
+          },
+          {
+            "column": 2,
+            "maxRank": 1,
+            "name": "Elemental Fury",
+            "rank": 0,
+            "tier": 5
+          },
+          {
+            "column": 1,
+            "maxRank": 2,
+            "name": "Improved Fire Totems",
+            "rank": 0,
+            "tier": 4
+          },
+          {
+            "column": 1,
+            "maxRank": 2,
+            "name": "Earth's Grasp",
+            "rank": 0,
+            "tier": 2
+          },
+          {
+            "column": 2,
+            "maxRank": 1,
+            "name": "Elemental Mastery",
+            "rank": 0,
+            "tier": 7
+          },
+          {
+            "column": 1,
+            "maxRank": 1,
+            "name": "Elemental Focus",
+            "rank": 0,
+            "tier": 3
+          },
+          {
+            "column": 2,
+            "maxRank": 5,
+            "name": "Reverberation",
+            "rank": 0,
+            "tier": 3
+          },
+          {
+            "column": 3,
+            "maxRank": 5,
+            "name": "Lightning Mastery",
+            "rank": 0,
+            "tier": 6
+          },
+          {
+            "column": 2,
+            "maxRank": 3,
+            "name": "Elemental Warding",
+            "rank": 0,
+            "tier": 2
+          },
+          {
+            "column": 1,
+            "maxRank": 2,
+            "name": "Storm Reach",
+            "rank": 0,
+            "tier": 5
+          },
+          {
+            "column": 2,
+            "maxRank": 3,
+            "name": "Eye of the Storm",
+            "rank": 0,
+            "tier": 4
+          },
+          {
+            "column": 4,
+            "maxRank": 3,
+            "name": "Elemental Devastation",
+            "rank": 0,
+            "tier": 4
+          },
+          {
+            "column": 4,
+            "maxRank": 5,
+            "name": "Unrelenting Storm",
+            "rank": 0,
+            "tier": 5
+          },
+          {
+            "column": 3,
+            "maxRank": 3,
+            "name": "Elemental Shields",
+            "rank": 0,
+            "tier": 7
+          },
+          {
+            "column": 1,
+            "maxRank": 3,
+            "name": "Elemental Precision",
+            "rank": 0,
+            "tier": 6
+          },
+          {
+            "column": 2,
+            "maxRank": 5,
+            "name": "Lightning Overload",
+            "rank": 0,
+            "tier": 8
+          },
+          {
+            "column": 2,
+            "maxRank": 1,
+            "name": "Totem of Wrath",
+            "rank": 0,
+            "tier": 9
+          }
+        ]
+      },
+      {
+        "name": 263,
+        "pointsSpent": "",
+        "talents": [
+          {
+            "column": 4,
+            "maxRank": 5,
+            "name": "Anticipation",
+            "rank": 0,
+            "tier": 3
+          },
+          {
+            "column": 2,
+            "maxRank": 5,
+            "name": "Flurry",
+            "rank": 5,
+            "tier": 4
+          },
+          {
+            "column": 3,
+            "maxRank": 2,
+            "name": "Improved Ghost Wolf",
+            "rank": 2,
+            "tier": 2
+          },
+          {
+            "column": 4,
+            "maxRank": 3,
+            "name": "Improved Lightning Shield",
+            "rank": 0,
+            "tier": 2
+          },
+          {
+            "column": 1,
+            "maxRank": 2,
+            "name": "Guardian Totems",
+            "rank": 0,
+            "tier": 2
+          },
+          {
+            "column": 1,
+            "maxRank": 2,
+            "name": "Enhancing Totems",
+            "rank": 2,
+            "tier": 3
+          },
+          {
+            "column": 3,
+            "maxRank": 3,
+            "name": "Elemental Weapons",
+            "rank": 3,
+            "tier": 5
+          },
+          {
+            "column": 3,
+            "maxRank": 5,
+            "name": "Shield Specialization",
+            "rank": 0,
+            "tier": 1
+          },
+          {
+            "column": 2,
+            "maxRank": 5,
+            "name": "Thundering Strikes",
+            "rank": 5,
+            "tier": 2
+          },
+          {
+            "column": 2,
+            "maxRank": 5,
+            "name": "Ancestral Knowledge",
+            "rank": 5,
+            "tier": 1
+          },
+          {
+            "column": 3,
+            "maxRank": 5,
+            "name": "Toughness",
+            "rank": 0,
+            "tier": 4
+          },
+          {
+            "column": 2,
+            "maxRank": 1,
+            "name": "Spirit Weapons",
+            "rank": 1,
+            "tier": 5
+          },
+          {
+            "column": 3,
+            "maxRank": 1,
+            "name": "Shamanistic Focus",
+            "rank": 1,
+            "tier": 3
+          },
+          {
+            "column": 3,
+            "maxRank": 1,
+            "name": "Stormstrike",
+            "rank": 1,
+            "tier": 7
+          },
+          {
+            "column": 4,
+            "maxRank": 5,
+            "name": "Weapon Mastery",
+            "rank": 5,
+            "tier": 6
+          },
+          {
+            "column": 1,
+            "maxRank": 2,
+            "name": "Improved Weapon Totems",
+            "rank": 2,
+            "tier": 5
+          },
+          {
+            "column": 2,
+            "maxRank": 5,
+            "name": "Unleashed Rage",
+            "rank": 5,
+            "tier": 8
+          },
+          {
+            "column": 2,
+            "maxRank": 1,
+            "name": "Dual Wield",
+            "rank": 1,
+            "tier": 7
+          },
+          {
+            "column": 1,
+            "maxRank": 3,
+            "name": "Mental Quickness",
+            "rank": 3,
+            "tier": 6
+          },
+          {
+            "column": 1,
+            "maxRank": 3,
+            "name": "Dual Wield Specialization",
+            "rank": 3,
+            "tier": 7
+          },
+          {
+            "column": 2,
+            "maxRank": 1,
+            "name": "Shamanistic Rage",
+            "rank": 1,
+            "tier": 9
+          }
+        ]
+      },
+      {
+        "name": 262,
+        "pointsSpent": "",
+        "talents": [
+          {
+            "column": 2,
+            "maxRank": 3,
+            "name": "Ancestral Healing",
+            "rank": 0,
+            "tier": 2
+          },
+          {
+            "column": 3,
+            "maxRank": 1,
+            "name": "Totemic Mastery",
+            "rank": 1,
+            "tier": 3
+          },
+          {
+            "column": 1,
+            "maxRank": 3,
+            "name": "Nature's Guidance",
+            "rank": 3,
+            "tier": 3
+          },
+          {
+            "column": 2,
+            "maxRank": 5,
+            "name": "Improved Healing Wave",
+            "rank": 0,
+            "tier": 1
+          },
+          {
+            "column": 2,
+            "maxRank": 5,
+            "name": "Healing Focus",
+            "rank": 0,
+            "tier": 3
+          },
+          {
+            "column": 2,
+            "maxRank": 5,
+            "name": "Restorative Totems",
+            "rank": 0,
+            "tier": 4
+          },
+          {
+            "column": 1,
+            "maxRank": 2,
+            "name": "Improved Reincarnation",
+            "rank": 0,
+            "tier": 2
+          },
+          {
+            "column": 2,
+            "maxRank": 1,
+            "name": "Mana Tide Totem",
+            "rank": 0,
+            "tier": 7
+          },
+          {
+            "column": 3,
+            "maxRank": 1,
+            "name": "Nature's Swiftness",
+            "rank": 0,
+            "tier": 5
+          },
+          {
+            "column": 3,
+            "maxRank": 5,
+            "name": "Purification",
+            "rank": 0,
+            "tier": 6
+          },
+          {
+            "column": 3,
+            "maxRank": 5,
+            "name": "Tidal Focus",
+            "rank": 5,
+            "tier": 1
+          },
+          {
+            "column": 3,
+            "maxRank": 5,
+            "name": "Tidal Mastery",
+            "rank": 0,
+            "tier": 4
+          },
+          {
+            "column": 3,
+            "maxRank": 5,
+            "name": "Totemic Focus",
+            "rank": 5,
+            "tier": 2
+          },
+          {
+            "column": 4,
+            "maxRank": 3,
+            "name": "Healing Grace",
+            "rank": 0,
+            "tier": 3
+          },
+          {
+            "column": 1,
+            "maxRank": 3,
+            "name": "Healing Way",
+            "rank": 0,
+            "tier": 5
+          },
+          {
+            "column": 4,
+            "maxRank": 3,
+            "name": "Focused Mind",
+            "rank": 0,
+            "tier": 5
+          },
+          {
+            "column": 2,
+            "maxRank": 3,
+            "name": "Nature's Blessing",
+            "rank": 0,
+            "tier": 8
+          },
+          {
+            "column": 3,
+            "maxRank": 2,
+            "name": "Improved Chain Heal",
+            "rank": 0,
+            "tier": 8
+          },
+          {
+            "column": 2,
+            "maxRank": 1,
+            "name": "Earth Shield",
+            "rank": 0,
+            "tier": 9
+          },
+          {
+            "column": 3,
+            "maxRank": 5,
+            "name": "Nature's Guardian",
+            "rank": 0,
+            "tier": 7
+          }
+        ]
+      }
+    ]
+  }
+}

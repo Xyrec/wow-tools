@@ -56,3 +56,12 @@ local nouid = { m = "d", v = 2000, s = "5.21.8",
 ops.land(dst, nouid, {})
 assert(dst["NoUid"].uid and #dst["NoUid"].uid == 11, "uid not generated")
 print("OK test_aura_ops")
+
+-- remove deletes an aura and unlinks it from its parent
+local d2 = mkdisplays()
+require("aura_ops").remove(d2, "Child B")
+assert(d2["Child B"] == nil and d2["Grandchild"] == nil, "remove must delete subtree")
+for _, c in ipairs(d2["Group"].controlledChildren) do
+  assert(c ~= "Child B", "removed child still referenced by parent")
+end
+print("OK test_aura_ops remove")
