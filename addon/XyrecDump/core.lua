@@ -31,21 +31,31 @@ local function dump_spells(from, to)
   print(("XyrecDump: scanning spell ids %d-%d..."):format(from, to))
 end
 
+-- capture ALL returns positionally; API signatures drift between client flavors,
+-- so interpretation happens tool-side against this raw data (nils become false).
+local function pack_returns(...)
+  local n = select("#", ...)
+  local t = {}
+  for i = 1, n do
+    local v = select(i, ...)
+    if v == nil then v = false end
+    t[i] = v
+  end
+  return t
+end
+
 local function dump_talents()
   local db = { class = select(2, UnitClass("player")), tabs = {} }
   for tab = 1, GetNumTalentTabs() do
-    local tabName, _, pointsSpent = GetTalentTabInfo(tab)
-    local t = { name = tabName, pointsSpent = pointsSpent, talents = {} }
+    local t = { raw = pack_returns(GetTalentTabInfo(tab)), talents = {} }
     for i = 1, GetNumTalents(tab) do
-      local name, icon, tier, column, rank, maxRank = GetTalentInfo(tab, i)
-      t.talents[i] = { name = name, tier = tier, column = column,
-                       rank = rank, maxRank = maxRank }
+      t.talents[i] = pack_returns(GetTalentInfo(tab, i))
     end
     db.tabs[tab] = t
   end
   XyrecDumpDB.talents = XyrecDumpDB.talents or {}
   XyrecDumpDB.talents[db.class] = db
-  print("XyrecDump: talents dumped for " .. db.class)
+  print("XyrecDump: talents dumped for " .. db.class .. " (raw returns)")
 end
 
 local function dump_auras()
