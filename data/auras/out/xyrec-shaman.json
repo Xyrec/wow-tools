@@ -73,9 +73,11 @@
       "groupIcon": 237582,
       "grow": "HORIZONTAL",
       "id": "Xyrec Shaman - Core Abilities",
-      "information": [],
-      "internalVersion": 72,
-      "limit": 7,
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 10,
       "load": {
         "class": {
           "multi": []
@@ -99,11 +101,28 @@
       "selfPoint": "CENTER",
       "semver": "1.4.4",
       "sort": "none",
+      "sortHybridTable": {
+        "Shaman - Chain Lightning": false,
+        "Shaman - Earth Shield": false,
+        "Shaman - Earth Shock": false,
+        "Shaman - Fire Nova": false,
+        "Shaman - Flame Shock [Dps]": false,
+        "Shaman - Flame Shock [Tank]": false,
+        "Shaman - Healing Rain": false,
+        "Shaman - Lava Burst": false,
+        "Shaman - Lava Lash": false,
+        "Shaman - Lightning Bolt": false,
+        "Shaman - Molten Blast": false,
+        "Shaman - Personal Shield": false,
+        "Shaman - Riptide": false,
+        "Shaman - Stormstrike": false,
+        "Shaman - Tidal Waves": false
+      },
       "space": 0,
       "stagger": 0,
       "stepAngle": 15,
       "subRegions": [],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": [
         {
           "trigger": {
@@ -119,7 +138,7 @@
           "untrigger": []
         }
       ],
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useLimit": true,
       "version": 15,
       "xOffset": 0,
@@ -134,7 +153,9 @@
           "do_glow": false
         }
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -227,6 +248,30 @@
             "value": 1,
             "variable": "insufficientResources"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -243,9 +288,10 @@
       "id": "Xyrec Shaman - Stormstrike",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": true,
       "keepAspectRatio": true,
       "load": {
@@ -306,8 +352,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -341,7 +387,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -379,7 +425,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -403,7 +449,9 @@
           "sound": "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AcousticGuitar.ogg"
         }
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -509,6 +557,30 @@
             "value": 1,
             "variable": "insufficientResources"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -525,9 +597,10 @@
       "id": "Xyrec Shaman - Flame Shock",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": true,
       "load": {
@@ -589,8 +662,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -638,8 +711,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "BOTTOMRIGHT",
           "text_anchorXOffset": -1,
           "text_anchorYOffset": 1,
           "text_automaticWidth": "Auto",
@@ -681,7 +754,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -751,7 +824,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -771,7 +844,9 @@
           "do_glow": false
         }
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -864,6 +939,30 @@
             "value": 1,
             "variable": "insufficientResources"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -880,9 +979,10 @@
       "id": "Xyrec Shaman - Earth Shock",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": true,
       "keepAspectRatio": true,
       "load": {
@@ -943,8 +1043,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -978,7 +1078,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -1017,7 +1117,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "any"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -1037,7 +1137,9 @@
           "do_glow": false
         }
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -1130,6 +1232,30 @@
             "value": 1,
             "variable": "insufficientResources"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -1146,9 +1272,10 @@
       "id": "Xyrec Shaman - Lightning Bolt",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": true,
       "keepAspectRatio": true,
       "load": {
@@ -1211,8 +1338,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -1246,7 +1373,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -1284,7 +1411,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -1304,7 +1431,9 @@
           "do_glow": false
         }
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -1397,6 +1526,30 @@
             "value": 1,
             "variable": "insufficientResources"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -1413,9 +1566,10 @@
       "id": "Xyrec Shaman - Chain Lightning",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": true,
       "keepAspectRatio": true,
       "load": {
@@ -1476,8 +1630,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -1511,7 +1665,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -1549,7 +1703,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -1569,7 +1723,9 @@
           "do_glow": false
         }
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -1659,6 +1815,30 @@
             "value": 1,
             "variable": "insufficientResources"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -1675,9 +1855,10 @@
       "id": "Xyrec Shaman - Personal Shield",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": true,
       "load": {
@@ -1739,8 +1920,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -1776,8 +1957,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "BOTTOMRIGHT",
           "text_anchorXOffset": -1,
           "text_anchorYOffset": 1,
           "text_automaticWidth": "Auto",
@@ -1814,7 +1995,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -1857,7 +2038,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -1877,7 +2058,9 @@
           "do_glow": false
         }
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -1985,6 +2168,30 @@
             "value": 1,
             "variable": "insufficientResources"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -2001,9 +2208,10 @@
       "id": "Xyrec Shaman - Earth Shield",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": true,
       "load": {
@@ -2064,8 +2272,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -2101,8 +2309,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "BOTTOMRIGHT",
           "text_anchorXOffset": -1,
           "text_anchorYOffset": 1,
           "text_automaticWidth": "Auto",
@@ -2141,8 +2349,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "TOP",
           "rotateText": "NONE",
-          "text_anchorPoint": "TOP",
           "text_automaticWidth": "Auto",
           "text_color": [
             0.98823535442352,
@@ -2169,6 +2377,9 @@
           "text_text_format_1.unitName_abbreviate_max": 5,
           "text_text_format_1.unitName_color": "class",
           "text_text_format_1.unitName_format": "Unit",
+          "text_text_format_1.unitName_pad": false,
+          "text_text_format_1.unitName_pad_max": 8,
+          "text_text_format_1.unitName_pad_mode": "left",
           "text_text_format_1.unitName_realm_name": "never",
           "text_text_format_p_format": "timed",
           "text_text_format_p_time_dynamic_threshold": 0,
@@ -2181,7 +2392,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -2247,7 +2458,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -2316,8 +2527,10 @@
       "frameStrata": 1,
       "groupIcon": 135861,
       "id": "Xyrec Shaman - Resources",
-      "information": [],
-      "internalVersion": 72,
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
       "load": {
         "class": {
           "multi": []
@@ -2338,7 +2551,7 @@
       "selfPoint": "CENTER",
       "semver": "1.4.4",
       "subRegions": [],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": [
         {
           "trigger": {
@@ -2354,7 +2567,7 @@
           "untrigger": []
         }
       ],
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "version": 15,
       "xOffset": 0,
       "yOffset": 0
@@ -2368,7 +2581,9 @@
         },
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameFrame": "WeakAuras:Xyrec Shaman - Mana Bar",
       "anchorFrameType": "SELECTFRAME",
       "anchorPoint": "CENTER",
@@ -2457,6 +2672,30 @@
             "value": 1,
             "variable": "show"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -2479,9 +2718,10 @@
       "id": "Xyrec Shaman - Swing Timer [MH]",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": true,
       "load": {
         "class": {
@@ -2579,7 +2819,7 @@
           "type": "subforeground"
         },
         {
-          "border_anchor": "bar",
+          "anchor_area": "bar",
           "border_color": [
             0,
             0,
@@ -2594,7 +2834,9 @@
         }
       ],
       "texture": "Clean",
-      "tocversion": 11502,
+      "textureSource": "LSM",
+      "tocversion": 20506,
+      "toolTipArea": "ICON",
       "triggers": {
         "1": {
           "trigger": {
@@ -2654,7 +2896,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "version": 15,
@@ -2672,7 +2914,9 @@
         },
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -2751,6 +2995,30 @@
             "value": 1,
             "variable": "show"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -2773,9 +3041,10 @@
       "id": "Xyrec Shaman - Mana Bar",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "load": {
         "class": {
@@ -2875,7 +3144,7 @@
           "type": "subforeground"
         },
         {
-          "border_anchor": "bar",
+          "anchor_area": "bar",
           "border_color": [
             0,
             0,
@@ -2891,8 +3160,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_anchorYOffset": 0,
           "text_automaticWidth": "Auto",
           "text_color": [
@@ -2926,7 +3195,9 @@
         }
       ],
       "texture": "Clean",
-      "tocversion": 11502,
+      "textureSource": "LSM",
+      "tocversion": 20506,
+      "toolTipArea": "ICON",
       "triggers": {
         "1": {
           "trigger": {
@@ -2969,7 +3240,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "version": 15,
@@ -2990,7 +3261,9 @@
         },
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameFrame": "WeakAuras:Xyrec Shaman - Mana Bar",
       "anchorFrameType": "SELECTFRAME",
       "anchorPoint": "CENTER",
@@ -3058,6 +3331,30 @@
             "value": "5",
             "variable": "duration"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -3078,9 +3375,10 @@
       "id": "Xyrec Shaman - Mana Tick",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "load": {
         "class": {
@@ -3139,8 +3437,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "SPARK",
           "rotateText": "NONE",
-          "text_anchorPoint": "SPARK",
           "text_anchorXOffset": 15,
           "text_anchorYOffset": -10,
           "text_automaticWidth": "Auto",
@@ -3177,7 +3475,9 @@
         }
       ],
       "texture": "Clean",
-      "tocversion": 11502,
+      "textureSource": "LSM",
+      "tocversion": 20506,
+      "toolTipArea": "ICON",
       "triggers": {
         "1": {
           "trigger": {
@@ -3204,7 +3504,7 @@
         },
         "activeTriggerMode": -10
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "version": 15,
@@ -3292,8 +3592,10 @@
       "groupIcon": 136115,
       "grow": "HORIZONTAL",
       "id": "Xyrec Shaman - Cooldowns",
-      "information": [],
-      "internalVersion": 72,
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
       "limit": 9,
       "load": {
         "class": {
@@ -3318,11 +3620,29 @@
       "selfPoint": "CENTER",
       "semver": "1.4.4",
       "sort": "none",
+      "sortHybridTable": {
+        "Shaman - Ancestral Guidance": false,
+        "Shaman - Berserking": false,
+        "Shaman - Blood Fury": false,
+        "Shaman - Decoy Totem": false,
+        "Shaman - Earthbind Totem": false,
+        "Shaman - Elemental Mastery": false,
+        "Shaman - Fire Nova Totem": false,
+        "Shaman - Grounding Totem": false,
+        "Shaman - Mana Tide Totem": false,
+        "Shaman - Nature's Swiftness": false,
+        "Shaman - Reincarnation": false,
+        "Shaman - Shamanistic Rage": false,
+        "Shaman - Stoneclaw Totem": false,
+        "Shaman - Trinket 1 CD": false,
+        "Shaman - Trinket 2 CD": false,
+        "Shaman - War Stomp": false
+      },
       "space": 0,
       "stagger": 0,
       "stepAngle": 15,
       "subRegions": [],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": [
         {
           "trigger": {
@@ -3338,7 +3658,7 @@
           "untrigger": []
         }
       ],
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useLimit": true,
       "version": 15,
       "xOffset": 0,
@@ -3350,7 +3670,7 @@
         "init": [],
         "start": []
       },
-      "alpha": 1,
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -3410,6 +3730,30 @@
             "variable": "AND"
           },
           "linked": false
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -3602,7 +3946,9 @@
         "init": [],
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -3662,6 +4008,30 @@
             "variable": "AND"
           },
           "linked": false
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -3678,9 +4048,10 @@
       "id": "Xyrec Shaman - Elemental Mastery",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -3742,8 +4113,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -3777,7 +4148,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -3838,7 +4209,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -3854,7 +4225,9 @@
         "init": [],
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -3914,6 +4287,30 @@
             "variable": "AND"
           },
           "linked": false
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -3930,9 +4327,10 @@
       "id": "Xyrec Shaman - Nature's Swiftness",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -3994,8 +4392,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -4029,7 +4427,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -4090,7 +4488,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -4106,7 +4504,9 @@
         "init": [],
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -4166,6 +4566,30 @@
             "variable": "AND"
           },
           "linked": false
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -4182,9 +4606,10 @@
       "id": "Xyrec Shaman - Blood Fury",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -4246,8 +4671,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -4281,7 +4706,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -4342,7 +4767,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -4358,7 +4783,9 @@
         "init": [],
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -4418,6 +4845,30 @@
             "variable": "AND"
           },
           "linked": false
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -4434,9 +4885,10 @@
       "id": "Xyrec Shaman - Berserking",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -4498,8 +4950,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -4533,7 +4985,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -4594,7 +5046,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -4610,7 +5062,9 @@
         "init": [],
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -4658,6 +5112,30 @@
             "value": 1,
             "variable": "show"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -4674,9 +5152,10 @@
       "id": "Xyrec Shaman - War Stomp",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -4739,8 +5218,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -4774,7 +5253,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -4813,7 +5292,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -4829,7 +5308,9 @@
         "init": [],
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -4877,6 +5358,30 @@
             "value": 1,
             "variable": "show"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -4893,9 +5398,10 @@
       "id": "Xyrec Shaman - Trinket 1 CD",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -4956,8 +5462,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -4991,7 +5497,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -5028,7 +5534,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -5044,7 +5550,9 @@
         "init": [],
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -5092,6 +5600,30 @@
             "value": 1,
             "variable": "show"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -5108,9 +5640,10 @@
       "id": "Xyrec Shaman - Trinket 2 CD",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -5171,8 +5704,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -5206,7 +5739,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -5243,7 +5776,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -5259,7 +5792,9 @@
         "init": [],
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -5307,6 +5842,30 @@
             "value": 1,
             "variable": "show"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -5323,9 +5882,10 @@
       "id": "Xyrec Shaman - Reincarnation",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -5388,8 +5948,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -5423,7 +5983,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -5462,7 +6022,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -5478,7 +6038,9 @@
         "init": [],
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -5526,6 +6088,30 @@
             "value": 1,
             "variable": "show"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -5542,9 +6128,10 @@
       "id": "Xyrec Shaman - Mana Tide Totem",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -5607,8 +6194,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -5642,7 +6229,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -5681,7 +6268,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -5697,7 +6284,9 @@
         "init": [],
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -5745,6 +6334,30 @@
             "value": 1,
             "variable": "show"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -5761,9 +6374,10 @@
       "id": "Xyrec Shaman - Fire Nova Totem",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -5826,8 +6440,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -5861,7 +6475,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -5900,7 +6514,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -5916,7 +6530,9 @@
         "init": [],
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -5964,6 +6580,30 @@
             "value": 1,
             "variable": "show"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -5980,9 +6620,10 @@
       "id": "Xyrec Shaman - Stoneclaw Totem",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -6045,8 +6686,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -6080,7 +6721,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -6119,7 +6760,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -6135,7 +6776,9 @@
         "init": [],
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -6183,6 +6826,30 @@
             "value": 1,
             "variable": "show"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -6199,9 +6866,10 @@
       "id": "Xyrec Shaman - Earthbind Totem",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -6264,8 +6932,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -6299,7 +6967,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -6338,7 +7006,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -6354,7 +7022,9 @@
         "init": [],
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -6402,6 +7072,30 @@
             "value": 1,
             "variable": "show"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -6418,9 +7112,10 @@
       "id": "Xyrec Shaman - Grounding Totem",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -6483,8 +7178,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -6518,7 +7213,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -6557,7 +7252,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -6636,8 +7331,10 @@
       "groupIcon": 132315,
       "grow": "HORIZONTAL",
       "id": "Xyrec Shaman - Reminders",
-      "information": [],
-      "internalVersion": 72,
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
       "limit": 5,
       "load": {
         "class": {
@@ -6662,11 +7359,18 @@
       "selfPoint": "CENTER",
       "semver": "1.4.4",
       "sort": "none",
+      "sortHybridTable": {
+        "Shaman - Drink Expiring": false,
+        "Shaman - Imbue [MH]": false,
+        "Shaman - Imbue [OH]": false,
+        "Shaman - Lightning/Water Shield": false,
+        "Shaman - Spirit of the Alpha": false
+      },
       "space": 0,
       "stagger": 0,
       "stepAngle": 15,
       "subRegions": [],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": [
         {
           "trigger": {
@@ -6682,11 +7386,11 @@
           "untrigger": []
         }
       ],
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useLimit": false,
       "version": 15,
       "xOffset": 0,
-      "yOffset": -120
+      "yOffset": -475
     },
     {
       "actions": {
@@ -6694,7 +7398,9 @@
         "init": [],
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -6725,7 +7431,32 @@
         1,
         1
       ],
-      "conditions": [],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
       "config": [],
       "cooldown": true,
       "cooldownEdge": false,
@@ -6740,9 +7471,10 @@
       "id": "Xyrec Shaman - Drink Expiring",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -6806,8 +7538,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -6854,8 +7586,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorPoint": "OUTER_BOTTOM",
           "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
@@ -6890,7 +7622,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -6947,7 +7679,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -6966,7 +7698,9 @@
         },
         "start": []
       },
-      "alpha": 0.8,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameParent": false,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
@@ -7011,6 +7745,30 @@
             "value": 1,
             "variable": "show"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -7028,9 +7786,10 @@
       "id": "Xyrec Shaman - Imbue [MH]",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -7220,9 +7979,9 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "border_color": [],
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_anchorXOffset": 0,
           "text_anchorYOffset": 0,
           "text_automaticWidth": "Auto",
@@ -7261,9 +8020,9 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "BOTTOMRIGHT",
           "border_color": [],
           "rotateText": "NONE",
-          "text_anchorPoint": "BOTTOMRIGHT",
           "text_anchorXOffset": -1,
           "text_anchorYOffset": 1,
           "text_automaticWidth": "Auto",
@@ -7302,9 +8061,9 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "OUTER_BOTTOM",
           "border_color": [],
           "rotateText": "NONE",
-          "text_anchorPoint": "OUTER_BOTTOM",
           "text_anchorXOffset": 0,
           "text_anchorYOffset": -5,
           "text_automaticWidth": "Auto",
@@ -7341,7 +8100,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -7433,7 +8192,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -7452,7 +8211,9 @@
         },
         "start": []
       },
-      "alpha": 0.8,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameParent": false,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
@@ -7497,6 +8258,30 @@
             "value": 1,
             "variable": "show"
           }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
         }
       ],
       "config": [],
@@ -7514,9 +8299,10 @@
       "id": "Xyrec Shaman - Imbue [OH]",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -7705,9 +8491,9 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "border_color": [],
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_anchorXOffset": 0,
           "text_anchorYOffset": 0,
           "text_automaticWidth": "Auto",
@@ -7746,9 +8532,9 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "BOTTOMRIGHT",
           "border_color": [],
           "rotateText": "NONE",
-          "text_anchorPoint": "BOTTOMRIGHT",
           "text_anchorXOffset": -1,
           "text_anchorYOffset": 1,
           "text_automaticWidth": "Auto",
@@ -7787,9 +8573,9 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "OUTER_BOTTOM",
           "border_color": [],
           "rotateText": "NONE",
-          "text_anchorPoint": "OUTER_BOTTOM",
           "text_anchorXOffset": 0,
           "text_anchorYOffset": -5,
           "text_automaticWidth": "Auto",
@@ -7826,7 +8612,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -7994,7 +8780,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3] and (t[4] or t[5] or t[6] or t[7])\nend",
         "disjunctive": "custom"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -8010,7 +8796,9 @@
         "init": [],
         "start": []
       },
-      "alpha": 1,
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
@@ -8041,7 +8829,32 @@
         1,
         1
       ],
-      "conditions": [],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
       "config": [],
       "cooldown": true,
       "cooldownEdge": false,
@@ -8056,9 +8869,10 @@
       "id": "Xyrec Shaman - Lightning/Water Shield",
       "information": {
         "forceEvents": true,
-        "ignoreOptionsEventErrors": true
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
       },
-      "internalVersion": 72,
+      "internalVersion": 90,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -8128,8 +8942,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "CENTER",
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -8176,8 +8990,8 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorPoint": "OUTER_BOTTOM",
           "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
@@ -8212,7 +9026,7 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 11502,
+      "tocversion": 20506,
       "triggers": {
         "1": {
           "trigger": {
@@ -8270,7 +9084,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "url": "https://wago.io/8MyJNekEa/15",
+      "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
@@ -8340,8 +9154,10 @@
     "frameStrata": 1,
     "groupIcon": "626006",
     "id": "Xyrec - Shaman",
-    "information": [],
-    "internalVersion": 72,
+    "information": {
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
     "load": {
       "class": {
         "multi": []
@@ -8357,11 +9173,11 @@
       }
     },
     "regionType": "group",
-    "scale": 1,
+    "scale": 1.5,
     "selfPoint": "CENTER",
     "semver": "1.4.4",
     "subRegions": [],
-    "tocversion": 11502,
+    "tocversion": 20506,
     "triggers": [
       {
         "trigger": {
@@ -8377,10 +9193,10 @@
         "untrigger": []
       }
     ],
-    "url": "https://wago.io/8MyJNekEa/15",
+    "url": "",
     "version": 15,
     "xOffset": 0,
-    "yOffset": -211
+    "yOffset": -242
   },
   "m": "d",
   "s": "5.12.6",

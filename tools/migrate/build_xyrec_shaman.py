@@ -123,8 +123,65 @@ def fix_load(aura, report):
         report.append(f'{aura["id"]}: WARNING spellknown={int(sk)} still SoD — aura will never load')
 
 
+LIVE_SRC = REPO / "data" / "auras" / "mine" / "sabimaru-live.json"
+
+# fields that carry the properly-migrated logic — NEVER ported from live
+LOGIC_KEEP = {"id", "uid", "parent", "controlledChildren", "wagoID", "triggers", "load"}
+
+# the user's group-wide "dim to 0.3 unless (attackable target OR in combat)" tweak
+GLOBAL_ALPHA_CONDITION = {
+    "changes": [{"property": "alpha", "value": 1}],
+    "check": {"trigger": -2, "variable": "OR",
+              "checks": [{"trigger": -1, "value": 1, "variable": "attackabletarget"},
+                         {"trigger": -1, "value": 1, "variable": "incombat"}]},
+}
+
+LIVE_ID_MAP = {  # old-id -> live-id where they differ
+    "Shaman - Flame Shock [Dps]": "Shaman - Flame Shock",
+}
+
+
+def trigger_keys(aura):
+    t = aura.get("triggers", {})
+    if isinstance(t, list):
+        return {str(i + 1) for i in range(len(t))}
+    return {str(k) for k in t if str(k).isdigit()}
+
+
+def port_live_tweaks(aura, old_id, live_by_id, report):
+    """Adopt the live group's presentation (the user's accumulated look) while
+    keeping this build's migrated logic. Conditions port only when the trigger
+    layout matches, since they reference triggers by number."""
+    live = live_by_id.get(LIVE_ID_MAP.get(old_id, old_id))
+    if live is None:
+        # restored aura with no live counterpart: apply the group-wide alpha pattern
+        aura["alpha"] = 0.3
+        conds = aura.setdefault("conditions", [])
+        if not any("attackabletarget" in json.dumps(c) for c in conds):
+            conds.append(json.loads(json.dumps(GLOBAL_ALPHA_CONDITION)))
+        report.append(f'{aura["id"]}: no live counterpart — applied group alpha pattern')
+        return
+    ported = 0
+    for key, value in live.items():
+        if key in LOGIC_KEEP or key == "conditions":
+            continue
+        if json.dumps(aura.get(key), sort_keys=True) != json.dumps(value, sort_keys=True):
+            aura[key] = json.loads(json.dumps(value))
+            ported += 1
+    if "conditions" in live:
+        if trigger_keys(aura) == trigger_keys(live):
+            aura["conditions"] = json.loads(json.dumps(live["conditions"]))
+        else:
+            report.append(f'{aura["id"]}: trigger layout differs from live — conditions NOT ported, review')
+    if ported:
+        report.append(f'{aura["id"]}: ported {ported} presentation fields from live')
+
+
 def main() -> int:
     payload = json.loads(SRC.read_text())
+    live_payload = json.loads(LIVE_SRC.read_text())
+    live_by_id = {a["id"]: a for a in [live_payload["d"]] + list(live_payload.get("c") or [])}
+    live_by_id["Sabimaru - Shaman Classic [SoD]"] = live_payload["d"]
     auras = [payload["d"]] + list(payload.get("c") or [])
     by_id = {a["id"]: a for a in auras}
 
@@ -150,6 +207,7 @@ def main() -> int:
         clean_item_trigger_residue(aura, report)
         fix_swing_timer_proc(aura, report)
         old_id = aura["id"]
+        port_live_tweaks(aura, old_id, live_by_id, report)
         aura["id"] = rename(old_id)
         if aura.get("parent"):
             if aura["parent"] in drop:
