@@ -72,6 +72,9 @@ def main() -> int:
               "xOffset", "yOffset", "frameStrata"):
         if old.get(k) is not None:
             root[k] = old[k]
+    # the old slot fit ONE bar; shift up by the OH offset so the BOTTOM bar (OH)
+    # occupies the old bar's span and nothing overlaps the Mana Bar below
+    root["yOffset"] = old["yOffset"] + abs(OH_Y)
     root.pop("parent")           # land --parent wires it
 
     def skin_bar(a, y_offset, bar_color):
