@@ -3,13 +3,19 @@ local sv = require("sv")
 local safety = require("safety")
 local deepeq = require("deepeq")
 
-os.execute("mkdir -p tmp backups")
+-- keep test backups out of the real backups/ dir (indistinguishable names);
+-- os.setenv doesn't exist in Lua 5.1, so tests/run.sh exports CCWOW_BACKUP_DIR
+local BDIR = "tmp/test-backups"
+assert(os.getenv("CCWOW_BACKUP_DIR") == BDIR,
+  "run via tests/run.sh (sets CCWOW_BACKUP_DIR=" .. BDIR .. ")")
+os.execute("mkdir -p tmp " .. BDIR)
 local target = "tmp/safety_target.lua"
 sv.save(target, { TestDB = { a = 1 } })
 
--- backup creates a timestamped copy
+-- backup creates a timestamped copy (plain prefix compare: '-' is a Lua
+-- pattern quantifier, so no pattern matching against BDIR)
 local bpath = safety.backup(target)
-assert(bpath:match("^backups/"), "backup not in backups/: " .. tostring(bpath))
+assert(bpath:sub(1, #BDIR) == BDIR, "backup not in " .. BDIR .. ": " .. tostring(bpath))
 assert(io.open(bpath, "r"), "backup file missing")
 
 -- atomic_save writes loadable content and preserves a backup of the previous state

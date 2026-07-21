@@ -219,3 +219,11 @@ This project uses hooks that automatically run `cargo check` after every file yo
 - Do not fight the borrow checker with `Rc<RefCell<>>` or `Arc<Mutex<>>` as a first resort. Restructure ownership first.
 - Do not use `unsafe` unless explicitly approved.
 - Do not create deeply nested generic types. If a type signature exceeds one line, introduce a type alias.
+
+## WeakAura Dev Environment (separate sub-project)
+
+`wa-dev-env/` is an unrelated sub-project: a WeakAura migration/dev pipeline for
+TBC Anniversary with its own `CLAUDE.md`, tests, and workflow. For any WeakAura,
+SavedVariables, or aura-migration task: `cd wa-dev-env/` and follow
+`wa-dev-env/CLAUDE.md` + `wa-dev-env/HANDOFF.md`. The Rust instructions in this
+file do not apply there (and vice versa).

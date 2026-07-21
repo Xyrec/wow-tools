@@ -12,11 +12,13 @@ function M.assert_game_closed()
 end
 
 function M.backup(src)
+  -- CCWOW_BACKUP_DIR override exists so tests never pollute the real backups/
+  local dir = os.getenv("CCWOW_BACKUP_DIR") or "backups"
   local stamp = os.date("%Y%m%d-%H%M%S")
-  local dst = string.format("backups/WeakAuras-%s.lua", stamp)
+  local dst = string.format("%s/WeakAuras-%s.lua", dir, stamp)
   local i = assert(io.open(src, "rb"), "cannot read " .. src)
   local data = i:read("*a"); i:close()
-  os.execute("mkdir -p backups")
+  os.execute("mkdir -p '" .. dir .. "'")
   local o = assert(io.open(dst, "wb")); o:write(data); o:close()
   return dst
 end

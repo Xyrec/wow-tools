@@ -1,5 +1,12 @@
 # World of Warcraft Development Environment for Claude
 
+> **Post-merge location note:** this environment lives in `wa-dev-env/` inside the
+> `wow-tools` repo (repo root is a separate Rust BiS-checker project — see root
+> `AGENTS.md`). ALL commands below (`./tools/wa`, `./tests/run.sh`,
+> `python3 tools/migrate/...`) are relative to THIS directory — `cd wa-dev-env/`
+> first. Lua runtime is `luajit` (Lua 5.1-compatible; Homebrew's `lua@5.1`
+> formula is discontinued — the plan doc's Task 1 predates this).
+
 This is a folder for scaffolding and testing various projects.
 
 I will primarily be developing my own addons, debugging existing addons, or asking questions related to World of Warcraft.
