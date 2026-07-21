@@ -1,0 +1,147 @@
+{
+  "actions": {
+    "finish": [],
+    "init": {
+      "custom": "\n\n",
+      "do_custom": false
+    },
+    "start": []
+  },
+  "alpha": 0.3,
+  "anchorFrameType": "SCREEN",
+  "anchorPoint": "CENTER",
+  "animation": {
+    "finish": {
+      "duration_type": "seconds",
+      "easeStrength": 3,
+      "easeType": "none",
+      "type": "none"
+    },
+    "main": {
+      "duration_type": "seconds",
+      "easeStrength": 3,
+      "easeType": "none",
+      "type": "none"
+    },
+    "start": {
+      "duration_type": "seconds",
+      "easeStrength": 3,
+      "easeType": "none",
+      "type": "none"
+    }
+  },
+  "backdropColor": [
+    0,
+    0,
+    0,
+    1
+  ],
+  "backgroundColor": [
+    0.15294118225574,
+    0.56078433990479,
+    1,
+    0.30000001192093
+  ],
+  "barColor": [
+    0.15294118225574,
+    0.56078433990479,
+    1,
+    1
+  ],
+  "barColor2": [
+    1,
+    1,
+    0,
+    1
+  ],
+  "borderBackdrop": "None",
+  "desaturate": false,
+  "frameStrata": 3,
+  "height": 20,
+  "icon_color": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "icon_side": "RIGHT",
+  "inverse": false,
+  "orientation": "HORIZONTAL",
+  "regionType": "aurabar",
+  "selfPoint": "CENTER",
+  "spark": false,
+  "sparkColor": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "sparkHeight": 30,
+  "sparkHidden": "NEVER",
+  "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+  "sparkWidth": 10,
+  "subRegions": [
+    {
+      "type": "subbackground"
+    },
+    {
+      "type": "subforeground"
+    },
+    {
+      "anchor_area": "bar",
+      "border_color": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "border_edge": "Square Full White",
+      "border_offset": 1,
+      "border_size": 1,
+      "border_visible": true,
+      "type": "subborder"
+    },
+    {
+      "anchorXOffset": 0,
+      "anchorYOffset": 0,
+      "anchor_point": "CENTER",
+      "rotateText": "NONE",
+      "text_anchorYOffset": 0,
+      "text_automaticWidth": "Auto",
+      "text_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "text_fixedWidth": 64,
+      "text_font": "PT Sans Narrow",
+      "text_fontSize": 14,
+      "text_fontType": "OUTLINE",
+      "text_justify": "CENTER",
+      "text_selfPoint": "CENTER",
+      "text_shadowColor": [
+        0,
+        0,
+        0,
+        0.49999988079071
+      ],
+      "text_shadowXOffset": 1,
+      "text_shadowYOffset": -1,
+      "text_text": "%1.power",
+      "text_text_format_1.power_big_number_format": "AbbreviateNumbers",
+      "text_text_format_1.power_decimal_precision": 1,
+      "text_text_format_1.power_format": "none",
+      "text_text_format_c_format": "none",
+      "text_visible": true,
+      "text_wordWrap": "WordWrap",
+      "type": "subtext"
+    }
+  ],
+  "texture": "Clean",
+  "textureSource": "LSM",
+  "width": 266,
+  "xOffset": 0,
+  "yOffset": 0,
+  "zoom": 0
+}

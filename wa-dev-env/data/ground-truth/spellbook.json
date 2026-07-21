@@ -1,0 +1,333 @@
+{
+  "SHAMAN": [
+    {
+      "name": "Alchemy",
+      "rank": "Master",
+      "spellId": 28596
+    },
+    {
+      "name": "Attack",
+      "spellId": 6603
+    },
+    {
+      "name": "Basic Campfire",
+      "spellId": 818
+    },
+    {
+      "name": "Block",
+      "rank": "Passive",
+      "spellId": 107
+    },
+    {
+      "name": "Cooking",
+      "rank": "Master",
+      "spellId": 33359
+    },
+    {
+      "name": "Dodge",
+      "rank": "Passive",
+      "spellId": 81
+    },
+    {
+      "name": "Dual Wield",
+      "rank": "Passive",
+      "spellId": 674
+    },
+    {
+      "name": "First Aid",
+      "rank": "Master",
+      "spellId": 27028
+    },
+    {
+      "name": "Fishing",
+      "rank": "Apprentice",
+      "spellId": 7620
+    },
+    {
+      "name": "Gemcutting",
+      "rank": "Racial Passive",
+      "spellId": 28875
+    },
+    {
+      "name": "Gift of the Naaru",
+      "rank": "Racial",
+      "spellId": 28880
+    },
+    {
+      "name": "Inspiring Presence",
+      "rank": "Racial Passive",
+      "spellId": 28878
+    },
+    {
+      "name": "Jewelcrafting",
+      "rank": "Master",
+      "spellId": 28897
+    },
+    {
+      "name": "Prospecting",
+      "spellId": 31252
+    },
+    {
+      "name": "Shadow Resistance",
+      "rank": "Racial Passive",
+      "spellId": 20579
+    },
+    {
+      "name": "Spirit Weapons",
+      "rank": "Passive",
+      "spellId": 18848
+    },
+    {
+      "name": "Transmutation Master",
+      "spellId": 28672
+    },
+    {
+      "name": "Chain Lightning",
+      "rank": "Rank 6",
+      "spellId": 25442
+    },
+    {
+      "name": "Earth Shock",
+      "rank": "Rank 8",
+      "spellId": 25454
+    },
+    {
+      "name": "Earthbind Totem",
+      "spellId": 2484
+    },
+    {
+      "name": "Fire Elemental Totem",
+      "rank": "Rank 1",
+      "spellId": 2894
+    },
+    {
+      "name": "Fire Nova Totem",
+      "rank": "Rank 7",
+      "spellId": 25547
+    },
+    {
+      "name": "Flame Shock",
+      "rank": "Rank 7",
+      "spellId": 25457
+    },
+    {
+      "name": "Frost Shock",
+      "rank": "Rank 5",
+      "spellId": 25464
+    },
+    {
+      "name": "Lightning Bolt",
+      "rank": "Rank 12",
+      "spellId": 25449
+    },
+    {
+      "name": "Magma Totem",
+      "rank": "Rank 5",
+      "spellId": 25552
+    },
+    {
+      "name": "Purge",
+      "rank": "Rank 2",
+      "spellId": 8012
+    },
+    {
+      "name": "Searing Totem",
+      "rank": "Rank 7",
+      "spellId": 25533
+    },
+    {
+      "name": "Stoneclaw Totem",
+      "rank": "Rank 7",
+      "spellId": 25525
+    },
+    {
+      "name": "Astral Recall",
+      "spellId": 556
+    },
+    {
+      "name": "Earth Elemental Totem",
+      "rank": "Rank 1",
+      "spellId": 2062
+    },
+    {
+      "name": "Far Sight",
+      "spellId": 6196
+    },
+    {
+      "name": "Fire Resistance Totem",
+      "rank": "Rank 4",
+      "spellId": 25563
+    },
+    {
+      "name": "Flametongue Totem",
+      "rank": "Rank 5",
+      "spellId": 25557
+    },
+    {
+      "name": "Flametongue Weapon",
+      "rank": "Rank 7",
+      "spellId": 25489
+    },
+    {
+      "name": "Frost Resistance Totem",
+      "rank": "Rank 4",
+      "spellId": 25560
+    },
+    {
+      "name": "Frostbrand Weapon",
+      "rank": "Rank 6",
+      "spellId": 25500
+    },
+    {
+      "name": "Ghost Wolf",
+      "spellId": 2645
+    },
+    {
+      "name": "Grace of Air Totem",
+      "rank": "Rank 3",
+      "spellId": 25359
+    },
+    {
+      "name": "Grounding Totem",
+      "spellId": 8177
+    },
+    {
+      "name": "Heroism",
+      "spellId": 32182
+    },
+    {
+      "name": "Lightning Shield",
+      "rank": "Rank 9",
+      "spellId": 25472
+    },
+    {
+      "name": "Nature Resistance Totem",
+      "rank": "Rank 4",
+      "spellId": 25574
+    },
+    {
+      "name": "Rockbiter Weapon",
+      "rank": "Rank 9",
+      "spellId": 25485
+    },
+    {
+      "name": "Sentry Totem",
+      "spellId": 6495
+    },
+    {
+      "name": "Shamanistic Rage",
+      "rank": "Rank 1",
+      "spellId": 30823
+    },
+    {
+      "name": "Stoneskin Totem",
+      "rank": "Rank 8",
+      "spellId": 25509
+    },
+    {
+      "name": "Stormstrike",
+      "spellId": 17364
+    },
+    {
+      "name": "Strength of Earth Totem",
+      "rank": "Rank 6",
+      "spellId": 25528
+    },
+    {
+      "name": "Water Breathing",
+      "spellId": 131
+    },
+    {
+      "name": "Water Walking",
+      "spellId": 546
+    },
+    {
+      "name": "Windfury Totem",
+      "rank": "Rank 5",
+      "spellId": 25587
+    },
+    {
+      "name": "Windfury Weapon",
+      "rank": "Rank 5",
+      "spellId": 25505
+    },
+    {
+      "name": "Windwall Totem",
+      "rank": "Rank 4",
+      "spellId": 25577
+    },
+    {
+      "name": "Wrath of Air Totem",
+      "rank": "Rank 1",
+      "spellId": 3738
+    },
+    {
+      "name": "Ancestral Spirit",
+      "rank": "Rank 5",
+      "spellId": 20777
+    },
+    {
+      "name": "Chain Heal",
+      "rank": "Rank 5",
+      "spellId": 25423
+    },
+    {
+      "name": "Cure Disease",
+      "spellId": 2870
+    },
+    {
+      "name": "Cure Poison",
+      "spellId": 526
+    },
+    {
+      "name": "Disease Cleansing Totem",
+      "spellId": 8170
+    },
+    {
+      "name": "Healing Stream Totem",
+      "rank": "Rank 6",
+      "spellId": 25567
+    },
+    {
+      "name": "Healing Wave",
+      "rank": "Rank 12",
+      "spellId": 25396
+    },
+    {
+      "name": "Lesser Healing Wave",
+      "rank": "Rank 7",
+      "spellId": 25420
+    },
+    {
+      "name": "Mana Spring Totem",
+      "rank": "Rank 5",
+      "spellId": 25570
+    },
+    {
+      "name": "Poison Cleansing Totem",
+      "spellId": 8166
+    },
+    {
+      "name": "Reincarnation",
+      "rank": "Passive",
+      "spellId": 20608
+    },
+    {
+      "name": "Totemic Call",
+      "spellId": 36936
+    },
+    {
+      "name": "Tranquil Air Totem",
+      "spellId": 25908
+    },
+    {
+      "name": "Tremor Totem",
+      "spellId": 8143
+    },
+    {
+      "name": "Water Shield",
+      "rank": "Rank 2",
+      "spellId": 33736
+    }
+  ]
+}

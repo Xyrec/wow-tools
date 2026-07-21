@@ -1,0 +1,5 @@
+## Interface: 20505, 20506
+## Title: XyrecDump
+## Notes: Ground-truth oracle: dumps spell/talent/aura facts to SavedVariables
+## SavedVariables: XyrecDumpDB
+core.lua

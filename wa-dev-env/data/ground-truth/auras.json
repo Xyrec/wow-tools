@@ -1,0 +1,38 @@
+[
+  {
+    "buffs": [
+      {
+        "count": 0,
+        "duration": 7200.036,
+        "name": "Flask of Relentless Assault",
+        "spellId": 28520
+      },
+      {
+        "count": 0,
+        "duration": 3600.036,
+        "name": "Fire-toasted Bun",
+        "spellId": 29332
+      },
+      {
+        "count": 0,
+        "duration": 3600.036,
+        "name": "Prayer of Spirit",
+        "spellId": 32999
+      },
+      {
+        "count": 0,
+        "duration": 3600.036,
+        "name": "Prayer of Fortitude",
+        "spellId": 25392
+      },
+      {
+        "count": 0,
+        "duration": 3600.036,
+        "name": "Gift of the Wild",
+        "spellId": 26991
+      }
+    ],
+    "debuffs": [],
+    "when": "2026-07-18 21:09"
+  }
+]

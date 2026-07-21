@@ -1,0 +1,5 @@
+#!/bin/bash
+# WeakAura dev-environment CLI. Run from anywhere; operates on the repo root.
+set -e
+cd "$(dirname "$0")/.."
+exec luajit tools/wa-codec/main.lua "$@"
