@@ -195,11 +195,9 @@ The BiS JSON uses these slot keys: `head`, `shoulders`, `back`, `chest`, `wrists
 - `cargo fmt` — format code
 
 ## Compilation Feedback
-This project uses hooks that automatically run `cargo check` after every file you edit.
-- If you see "✓ cargo check passed" — continue working.
-- If you see "✗ cargo check failed" — fix the errors shown before editing other files.
-- If you see "⚠ cargo check passed with warnings" — fix warnings if they're trivial, note them if not.
-- **Do not run `cargo check` manually** unless you need the full verbose output. The hook handles it.
+Rely on the built-in Rust LSP diagnostics while editing. Run `cargo check` before
+claiming a change is done, and `cargo clippy --all-targets --all-features -- -D warnings`
+before committing.
 
 ## Code Conventions
 - Error handling: use `thiserror` for library error types, `anyhow` for binary/application code
