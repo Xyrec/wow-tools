@@ -2,7 +2,7 @@
 -- Save = deterministic Blizzard-style serialization (tabs, ["k"] = v, sorted keys).
 local M = {}
 
-M.LIVE_PATH = "/Applications/World of Warcraft/_anniversary_/WTF/Account/THESNUB/SavedVariables/WeakAuras.lua"
+M.LIVE_PATH = "/home/xyrec/Games/battlenet/drive_c/Program Files (x86)/World of Warcraft/_anniversary_/WTF/Account/THESNUB/SavedVariables/WeakAuras.lua"
 
 function M.load(path)
   local chunk, err = loadfile(path)
