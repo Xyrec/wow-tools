@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
-"""Transplant the wago swing-sync timer (MH/OH bars + Flurry-sync spark overlay)
-into the Xyrec group: its logic verbatim, our old Swing Timer [MH]'s skin & slot.
+"""Transplant the wago swing-sync timer into the Xyrec group as a SINGLE bar:
+its logic verbatim, our old Swing Timer [MH]'s skin & exact slot.
 
-Keeps from wago: all triggers, sync/WF/imbue conditions, config + Learning Mode.
-Takes from ours: size (266x7 per bar), Mana Bar anchor slot, Clean texture, blue
-palette, 1px borders, spark proportions, global-alpha dimming, load, versions.
-Wago's own out-of-combat styling condition is replaced by our alpha pattern.
-Text overlays are hidden (not removed — sub.N condition indices must stay valid).
+The wago MH aura already tracks BOTH hands (t1 main / t3 off swing) and the
+OHTick sync spark has its own independent swing triggers — wago's separate
+OHBar readout is redundant and is dropped entirely (2026-07-22, user call).
+
+Keeps from wago: all triggers, sync/WF/imbue conditions, config + Learning Mode
+(training ticks refitted flush into the thin bar). Takes from ours: 266x7 size,
+the old bar's slot above the Mana Bar, Clean texture, blue palette, 1px borders,
+protruding white leading spark, global-alpha dimming, load, versions. Wago's own
+out-of-combat styling condition is replaced by our alpha pattern. Text overlays
+are hidden (not removed — sub.N condition indices must stay valid).
 """
 import json
 import pathlib
@@ -19,7 +24,6 @@ OUT = REPO / "data" / "auras" / "out" / "xyrec-swingtimer.json"
 RENAME = {
     "SwingTimer": "Xyrec Shaman - Swing Timer",
     "MH": "Xyrec Shaman - Swing Timer MH",
-    "OHBar": "Xyrec Shaman - Swing Timer OH",
     "OHTick": "Xyrec Shaman - Swing Timer Sync",
 }
 
@@ -31,7 +35,6 @@ ALPHA_CONDITION = {
 }
 
 BAR_W, BAR_H = 266, 7
-OH_Y = -(BAR_H + 2)          # OH bar 2px below MH
 
 
 def is_ooc_styling_cond(c):
@@ -67,14 +70,14 @@ def main() -> int:
     base_transform(root)
     root["id"] = RENAME["SwingTimer"]
     root["parent"] = "PLACEHOLDER-SET-AT-LAND"
-    root["controlledChildren"] = [RENAME["MH"], RENAME["OHBar"], RENAME["OHTick"]]
+    root["controlledChildren"] = [RENAME["MH"], RENAME["OHTick"]]
     for k in ("anchorPoint", "selfPoint", "anchorFrameType", "anchorFrameFrame",
               "xOffset", "yOffset", "frameStrata"):
         if old.get(k) is not None:
             root[k] = old[k]
-    # the old slot fit ONE bar; shift up by the OH offset so the BOTTOM bar (OH)
-    # occupies the old bar's span and nothing overlaps the Mana Bar below
-    root["yOffset"] = old["yOffset"] + abs(OH_Y)
+    # single bar -> it fits the old bar's exact Sabimaru slot (above the Mana
+    # Bar, below the icon row); zero the float-noise xOffset from the donor
+    root["xOffset"] = 0
     root.pop("parent")           # land --parent wires it
 
     def skin_bar(a, y_offset, bar_color):
@@ -84,40 +87,56 @@ def main() -> int:
         a["barColor"] = bar_color
         a["sparkWidth"], a["sparkHeight"] = old["sparkWidth"], old["sparkHeight"]
         a["sparkColor"] = old["sparkColor"]
+        old_border = next((s for s in old.get("subRegions", [])
+                           if s.get("type") == "subborder"), None)
         for s in a.get("subRegions", []):
-            if s.get("type") == "subborder" and s.get("border_size"):
-                s["border_size"] = 1
+            if s.get("type") == "subborder" and old_border:
+                # wago ships border_visible=false/edge "None"; adopt the old
+                # bar's 1px black border wholesale (update in place — sub.N
+                # condition indices must stay valid)
+                for k in ("border_color", "border_edge", "border_offset",
+                          "border_size", "border_visible"):
+                    s[k] = json.loads(json.dumps(old_border.get(k)))
             if s.get("type") == "subtext":
                 s["text_visible"] = False
+            if s.get("type") == "subtick":
+                # wago's training ticks were offset for a 30px bar; fit them
+                # flush inside our thin bar
+                s["tick_yOffset"] = 0
+                s["tick_length"] = BAR_H
         conds = [c for c in a.get("conditions", []) if not is_ooc_styling_cond(c)]
         conds.append(json.loads(json.dumps(ALPHA_CONDITION)))
         a["conditions"] = conds
 
-    mh, ohb, oht = by_id["MH"], by_id["OHBar"], by_id["OHTick"]
-    for a in (mh, ohb, oht):
+    mh, oht = by_id["MH"], by_id["OHTick"]
+    for a in (mh, oht):
         base_transform(a)
     skin_bar(mh, 0, our_blue)
-    skin_bar(ohb, OH_Y, our_blue)
+    # Sabimaru identity: the MH bar keeps the old bar's protruding white
+    # leading-edge spark (wago marked the MH position by the fill edge alone)
+    mh["spark"] = True
     # overlay: keep transparent bar + red sync spark; only resize + dim pattern
     oht["width"], oht["height"] = BAR_W, BAR_H
     oht["xOffset"], oht["yOffset"] = 0, 0
     oht["frameStrata"] = old["frameStrata"]
     oht["alpha"] = old["alpha"]
-    oht["sparkHeight"] = old["sparkHeight"]      # keep wago's 2px width (sync line)
+    oht["sparkHeight"] = BAR_H   # sync line flush INSIDE the bar (wago: 30-on-30);
+                                 # keep wago's 2px spark width
     oht["conditions"] = list(oht.get("conditions", [])) + [json.loads(json.dumps(ALPHA_CONDITION))]
 
-    for a in (mh, ohb, oht):
+    for a in (mh, oht):
         old_id = a["id"]
         a["id"] = RENAME[old_id]
         a["parent"] = RENAME["SwingTimer"]
-    report.append("skinned MH/OH to 266x7 Clean/blue, 1px borders, texts hidden")
-    report.append("wago OOC styling replaced with group alpha pattern on all 3 bars")
+    report.append("single-bar transplant: wago OHBar dropped (MH tracks both hands)")
+    report.append("skinned MH to 266x7 Clean/blue, 1px border, white spark, texts hidden")
+    report.append("wago OOC styling replaced with group alpha pattern on both auras")
 
-    payload = {"m": "d", "v": 2000, "s": "5.21.8", "d": root, "c": [mh, ohb, oht]}
+    payload = {"m": "d", "v": 2000, "s": "5.21.8", "d": root, "c": [mh, oht]}
     OUT.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
     for line in report:
         print(line)
-    print(f"4 auras -> {OUT}")
+    print(f"3 auras -> {OUT}")
     return 0
 
 

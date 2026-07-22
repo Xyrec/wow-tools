@@ -3243,7 +3243,6 @@
       "config": [],
       "controlledChildren": [
         "Xyrec Shaman - Swing Timer MH",
-        "Xyrec Shaman - Swing Timer OH",
         "Xyrec Shaman - Swing Timer Sync"
       ],
       "frameStrata": 3,
@@ -3328,8 +3327,8 @@
       "uid": "bvpmbJkcYcH",
       "url": "",
       "version": 15,
-      "xOffset": 7.62939453125e-06,
-      "yOffset": 23
+      "xOffset": 0,
+      "yOffset": 14
     },
     {
       "actions": {
@@ -3583,7 +3582,7 @@
       "selfPoint": "CENTER",
       "semver": "3.0.5",
       "smoothProgress": false,
-      "spark": false,
+      "spark": true,
       "sparkBlendMode": "ADD",
       "sparkColor": [
         1,
@@ -3693,10 +3692,10 @@
             0,
             1
           ],
-          "border_edge": "None",
+          "border_edge": "Square Full White",
           "border_offset": 1,
           "border_size": 1,
-          "border_visible": false,
+          "border_visible": true,
           "text_color": [],
           "type": "subborder"
         },
@@ -3716,7 +3715,7 @@
             1
           ],
           "tick_desaturate": false,
-          "tick_length": 10,
+          "tick_length": 7,
           "tick_mirror": false,
           "tick_placement_mode": "AtPercent",
           "tick_placements": [
@@ -3727,7 +3726,7 @@
           "tick_thickness": 1,
           "tick_visible": false,
           "tick_xOffset": 0,
-          "tick_yOffset": 10,
+          "tick_yOffset": 0,
           "type": "subtick",
           "use_texture": false
         },
@@ -3747,7 +3746,7 @@
             1
           ],
           "tick_desaturate": false,
-          "tick_length": 10,
+          "tick_length": 7,
           "tick_mirror": false,
           "tick_placement_mode": "AtPercent",
           "tick_placements": [
@@ -3758,7 +3757,7 @@
           "tick_thickness": 1,
           "tick_visible": false,
           "tick_xOffset": 0,
-          "tick_yOffset": 10,
+          "tick_yOffset": 0,
           "type": "subtick",
           "use_texture": false
         }
@@ -3920,503 +3919,6 @@
       "width": 266,
       "xOffset": 0,
       "yOffset": 0,
-      "zoom": 0
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": {
-          "custom": "if aura_env.mh_hilight then\n    return true\nelse return false\nend\n\n\n\n",
-          "do_custom": false
-        },
-        "start": {
-          "custom": "\n    if aura_env.mh_hilight then\n        return true\n    else return false\n    end\n\n\n\n",
-          "do_custom": false,
-          "do_message": false,
-          "message": "",
-          "message_custom": "function ()\n    if aura_env.mh_hilight then\n        return true\n    else return false\n    end\nend\n\n\n",
-          "message_type": "PRINT"
-        }
-      },
-      "adjustedMax": "",
-      "adjustedMin": "",
-      "alpha": 0.3,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "auto": true,
-      "backdropColor": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "backdropInFront": false,
-      "backgroundColor": [
-        1,
-        1,
-        1,
-        0.30000001192093
-      ],
-      "barColor": [
-        0,
-        0.43921571969986,
-        0.8666667342186,
-        1
-      ],
-      "barColor2": [
-        1,
-        1,
-        0,
-        1
-      ],
-      "borderBackdrop": "None",
-      "borderInFront": true,
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "barColor",
-              "value": [
-                0.55294117647059,
-                0.56862745098039,
-                0.53333333333333,
-                1
-              ]
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "value": 1,
-                "variable": "show"
-              }
-            ],
-            "trigger": 3,
-            "value": 1,
-            "variable": "show"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "barColor"
-            }
-          ],
-          "check": {
-            "trigger": 4,
-            "value": 1,
-            "variable": "show"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": [],
-      "desaturate": false,
-      "enableGradient": false,
-      "fontFlags": "OUTLINE",
-      "frameStrata": 3,
-      "gradientOrientation": "HORIZONTAL",
-      "height": 7,
-      "icon": false,
-      "iconSource": -1,
-      "icon_color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "icon_side": "LEFT",
-      "id": "Xyrec Shaman - Swing Timer OH",
-      "information": {
-        "forceEvents": true,
-        "ignoreOptionsEventErrors": true
-      },
-      "internalVersion": 90,
-      "inverse": true,
-      "load": {
-        "class": {
-          "multi": {
-            "PALADIN": true
-          },
-          "single": "SHAMAN"
-        },
-        "difficulty": {
-          "multi": []
-        },
-        "faction": {
-          "multi": []
-        },
-        "ingroup": {
-          "multi": []
-        },
-        "pvptalent": {
-          "multi": []
-        },
-        "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
-        },
-        "role": {
-          "multi": []
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": {
-            "1": true,
-            "3": true
-          },
-          "single": 1
-        },
-        "talent": {
-          "multi": []
-        },
-        "talent2": {
-          "multi": []
-        },
-        "use_class": true,
-        "use_never": false,
-        "use_not_spellknown": false,
-        "use_petbattle": false,
-        "zoneIds": ""
-      },
-      "orientation": "HORIZONTAL",
-      "parent": "Xyrec Shaman - Swing Timer",
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "aurabar",
-      "selfPoint": "CENTER",
-      "semver": "3.0.5",
-      "smoothProgress": false,
-      "spark": false,
-      "sparkBlendMode": "ADD",
-      "sparkColor": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "sparkDesature": false,
-      "sparkHeight": 15,
-      "sparkHidden": "NEVER",
-      "sparkOffsetX": 0,
-      "sparkOffsetY": 0,
-      "sparkRotation": 0,
-      "sparkRotationMode": "AUTO",
-      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-      "sparkWidth": 10,
-      "stickyDuration": false,
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "type": "subforeground"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_anchorXOffset": 0,
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PEPSI",
-          "text_fontSize": 14,
-          "text_fontType": "None",
-          "text_justify": "CENTER",
-          "text_selfPoint": "CENTER",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 1,
-          "text_shadowYOffset": -1,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 60,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": true,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": false,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "INNER_CENTER",
-          "rotateText": "NONE",
-          "text_anchorXOffset": 0,
-          "text_anchorYOffset": 60,
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PEPSI",
-          "text_fontSize": 30,
-          "text_fontType": "None",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 1,
-          "text_shadowYOffset": -1,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 60,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": true,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": false,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "anchor_area": "bar",
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "None",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": false,
-          "text_color": [],
-          "type": "subborder"
-        },
-        {
-          "automatic_length": false,
-          "progressSources": [
-            [
-              -2,
-              ""
-            ]
-          ],
-          "tick_blend_mode": "ADD",
-          "tick_color": [
-            1,
-            0.83921568627451,
-            0.53333333333333,
-            1
-          ],
-          "tick_desaturate": false,
-          "tick_length": 10,
-          "tick_mirror": false,
-          "tick_placement_mode": "AtPercent",
-          "tick_placements": [
-            "50"
-          ],
-          "tick_rotation": 0,
-          "tick_texture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-          "tick_thickness": 1,
-          "tick_visible": false,
-          "tick_xOffset": 0,
-          "tick_yOffset": 10,
-          "type": "subtick",
-          "use_texture": false
-        },
-        {
-          "automatic_length": false,
-          "progressSources": [
-            [
-              -2,
-              ""
-            ]
-          ],
-          "tick_blend_mode": "ADD",
-          "tick_color": [
-            0.5921568627451,
-            1,
-            0.56862745098039,
-            1
-          ],
-          "tick_desaturate": false,
-          "tick_length": 10,
-          "tick_mirror": false,
-          "tick_placement_mode": "AtPercent",
-          "tick_placements": [
-            "40"
-          ],
-          "tick_rotation": 0,
-          "tick_texture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-          "tick_thickness": 1,
-          "tick_visible": false,
-          "tick_xOffset": 0,
-          "tick_yOffset": 10,
-          "type": "subtick",
-          "use_texture": false
-        }
-      ],
-      "texture": "Clean",
-      "textureSource": "LSM",
-      "tocversion": 20506,
-      "triggers": {
-        "1": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "duration": "1",
-            "event": "Swing Timer",
-            "genericShowOn": "showOnActive",
-            "hand": "off",
-            "names": [],
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "unit",
-            "unevent": "auto",
-            "unit": "player",
-            "use_absorbMode": true,
-            "use_hand": true,
-            "use_unit": true
-          },
-          "untrigger": []
-        },
-        "2": {
-          "trigger": {
-            "duration": "1",
-            "event": "Conditions",
-            "genericShowOn": "showOnActive",
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "unit",
-            "unevent": "auto",
-            "unit": "player",
-            "use_absorbMode": true,
-            "use_alwaystrue": true,
-            "use_unit": true
-          },
-          "untrigger": []
-        },
-        "3": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "duration": "3",
-            "event": "Combat Log",
-            "sourceUnit": "player",
-            "spellId": [
-              "33750"
-            ],
-            "spellName": [
-              "Windfury Attack"
-            ],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_DAMAGE",
-            "type": "combatlog",
-            "unit": "player",
-            "use_sourceUnit": true,
-            "use_spellId": true,
-            "use_spellName": false
-          },
-          "untrigger": []
-        },
-        "4": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "enchant": "2636",
-            "event": "Weapon Enchant",
-            "genericShowOn": "showOnCooldown",
-            "itemName": 0,
-            "realSpellName": 0,
-            "showOn": "showOnMissing",
-            "spellName": 0,
-            "type": "item",
-            "unit": "player",
-            "use_enchant": true,
-            "use_genericShowOn": true,
-            "use_itemName": true,
-            "use_showOn": true,
-            "use_spellName": true,
-            "use_track": true,
-            "use_weapon": true,
-            "weapon": "off"
-          },
-          "untrigger": []
-        },
-        "activeTriggerMode": -10,
-        "customTriggerLogic": "function(t)\n    return t[1] or t[2]\nend",
-        "disjunctive": "custom"
-      },
-      "uid": "3g8EGNboWr8",
-      "url": "",
-      "useAdjustedMax": false,
-      "useAdjustedMin": false,
-      "useAdjustededMax": false,
-      "useAdjustededMin": false,
-      "version": 15,
-      "width": 266,
-      "xOffset": 0,
-      "yOffset": -9,
       "zoom": 0
     },
     {
@@ -4715,7 +4217,7 @@
         0.03921568627451,
         1
       ],
-      "sparkHeight": 15,
+      "sparkHeight": 7,
       "sparkHidden": "FULL",
       "sparkOffsetX": 0,
       "sparkOffsetY": 0,
