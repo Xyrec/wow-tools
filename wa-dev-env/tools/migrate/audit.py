@@ -7,12 +7,36 @@ import sys
 
 GROUP_TYPES = {"group", "dynamicgroup"}
 
+# canonical centered cooldown/timer text on Xyrec icons. Size follows the
+# row's icon width (Reminders 44 -> 20pt, main row 38 -> 18pt, Cooldowns
+# 30 -> 14pt); %s counters may deviate deliberately (Personal Shield stacks)
+CENTER_TEXT_CANON = {"text_font": "PT Sans Narrow",
+                     "text_fontType": "OUTLINE", "text_color": [1, 1, 1, 1]}
+CENTER_TEXT_SIZE_BY_WIDTH = {44: 20, 38: 18, 30: 14}
+
+
+def check_center_text(key, aura, issues):
+    if aura.get("regionType") != "icon" or not key.startswith("Xyrec"):
+        return
+    canon = dict(CENTER_TEXT_CANON)
+    size = CENTER_TEXT_SIZE_BY_WIDTH.get(aura.get("width"))
+    if size:
+        canon["text_fontSize"] = size
+    for i, s in enumerate(aura.get("subRegions") or []):
+        if (s.get("type") == "subtext" and s.get("text_text") == "%p"
+                and s.get("text_selfPoint") == "AUTO" and s.get("text_visible")):
+            for field, want in canon.items():
+                if s.get(field) != want:
+                    issues.append(f"{key}: sub.{i + 1} center text {field}="
+                                  f"{s.get(field)!r} (canon: {want!r})")
+
 
 def audit_displays(displays: dict) -> list:
     issues = []
     uids = {}
     for key, aura in displays.items():
         aura_id = aura.get("id")
+        check_center_text(key, aura, issues)
         if aura_id != key:
             issues.append(f"{key}: key/id mismatch (id={aura_id!r})")
         if not aura.get("uid"):
