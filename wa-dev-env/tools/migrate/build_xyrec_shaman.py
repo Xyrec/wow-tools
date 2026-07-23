@@ -52,6 +52,43 @@ RENAME_SPECIAL = {
 }
 
 
+def _alpha_or_checks(aura):
+    """The OR-combined checks list of the group-wide alpha-dim condition."""
+    for cond in aura.get("conditions", []):
+        chk = cond.get("check", {})
+        if (chk.get("variable") == "OR"
+                and any(ch.get("property") == "alpha" for ch in cond.get("changes", []))):
+            return chk.setdefault("checks", [])
+    return None
+
+
+def tweak_mana_bar_alpha(aura, report):
+    """OOC dimming only at FULL mana: stay bright while mana is regening so a
+    non-full bar is easy to spot (t1 is the Power trigger; percentpower is a
+    stored state value)."""
+    checks = _alpha_or_checks(aura)
+    if checks is not None and not any(c.get("variable") == "percentpower" for c in checks):
+        checks.append({"trigger": 1, "variable": "percentpower", "op": "<", "value": "100"})
+        report.append(f'{aura["id"]}: alpha condition also brightens below 100% mana')
+
+
+def tweak_mana_tick_alpha(aura, report):
+    """Match the Mana Bar: the tick spark's states only exist while mana is
+    regening/spent, so brighten whenever its trigger is active."""
+    checks = _alpha_or_checks(aura)
+    if checks is not None and not any(c.get("variable") == "show" for c in checks):
+        checks.append({"trigger": 1, "variable": "show", "value": 1})
+        report.append(f'{aura["id"]}: alpha condition also brightens while tick active')
+
+
+# per-aura behavior tweaks applied AFTER rename + port_live_tweaks, so they
+# survive rebuilds (ported donor conditions would otherwise win)
+LOCAL_TWEAKS = {
+    "Xyrec Shaman - Mana Bar": tweak_mana_bar_alpha,
+    "Xyrec Shaman - Mana Tick": tweak_mana_tick_alpha,
+}
+
+
 def rename(old_id: str) -> str:
     if old_id in RENAME_SPECIAL:
         return RENAME_SPECIAL[old_id]
@@ -247,6 +284,9 @@ def main() -> int:
         old_id = aura["id"]
         port_live_tweaks(aura, old_id, live_by_id, report)
         aura["id"] = rename(old_id)
+        tweak = LOCAL_TWEAKS.get(aura["id"])
+        if tweak:
+            tweak(aura, report)
         if aura.get("parent"):
             if aura["parent"] in drop:
                 raise SystemExit(f"{old_id}: parent {aura['parent']} was dropped — inconsistent DROP set")

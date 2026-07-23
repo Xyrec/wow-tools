@@ -3014,6 +3014,12 @@
                 "trigger": -1,
                 "value": 1,
                 "variable": "incombat"
+              },
+              {
+                "op": "<",
+                "trigger": 1,
+                "value": "100",
+                "variable": "percentpower"
               }
             ],
             "trigger": -2,
@@ -3350,6 +3356,11 @@
                 "trigger": -1,
                 "value": 1,
                 "variable": "incombat"
+              },
+              {
+                "trigger": 1,
+                "value": 1,
+                "variable": "show"
               }
             ],
             "trigger": -2,
