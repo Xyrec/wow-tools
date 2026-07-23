@@ -72,13 +72,89 @@ def tweak_mana_bar_alpha(aura, report):
         report.append(f'{aura["id"]}: alpha condition also brightens below 100% mana')
 
 
+# TBC has multiple mana streams (Mana Spring ticks, Water Shield, potions) that
+# all fire UNIT_POWER_FREQUENT and reset the classic tick animation. Those are
+# attributable SPELL_(PERIODIC_)ENERGIZE combat-log events; the global 2s
+# spirit/mp5 regen tick is a silent gain. Track energize amounts per instant
+# and consume them against gains — only the unexplained remainder is the tick.
+MANA_TICK_EVENTS = ("UNIT_SPELLCAST_SUCCEEDED:player UNIT_POWER_FREQUENT:player"
+                    " CLEU:SPELL_ENERGIZE CLEU:SPELL_PERIODIC_ENERGIZE")
+MANA_TICK_CUSTOM = """function(a, e, ...)
+    local currentMana = UnitPower("player", 0)
+    local fsrDuration = 5
+
+    if e == "COMBAT_LOG_EVENT_UNFILTERED" then
+        -- attributable mana gain (Mana Spring, Water Shield, potions...):
+        -- remember it so it doesn't count as the global regen tick.
+        -- "Drink" is deliberately NOT filtered: drink ticks driving the spark
+        -- is intended (drink-walking reads the sip timing off this spark)
+        local destGUID = select(8, ...)
+        local spellName = select(13, ...)
+        local amount = select(15, ...)
+        if spellName ~= "Drink" and destGUID == UnitGUID("player") and type(amount) == "number" then
+            local now = GetTime()
+            if aura_env.energizeTime ~= now then
+                aura_env.energizeTime = now
+                aura_env.energizeAmount = 0
+            end
+            aura_env.energizeAmount = aura_env.energizeAmount + amount
+        end
+        return false
+    end
+
+    if currentMana >= UnitPowerMax("player", 0) then
+        return false
+    end
+
+    if e == "UNIT_POWER_FREQUENT" and currentMana > aura_env.lastMana then
+        local gained = currentMana - aura_env.lastMana
+        local energized = 0
+        if aura_env.energizeTime and GetTime() - aura_env.energizeTime < 0.25 then
+            energized = aura_env.energizeAmount or 0
+        end
+        aura_env.energizeAmount = math.max(0, energized - gained)
+        -- only a gain beyond recent energizes is the global 2s regen tick;
+        -- ignore ticks inside the FSR (Meditation-style partial regen)
+        if gained > energized and GetTime() >= aura_env.lastCast + fsrDuration then
+            local duration = 2
+            a[""] = {
+                show = true,
+                changed = true,
+                duration = duration,
+                expirationTime = GetTime() + duration,
+                progressType = "timed",
+                autoHide = true
+            }
+        end
+        aura_env.lastMana = currentMana
+    elseif e == "UNIT_SPELLCAST_SUCCEEDED" and currentMana < aura_env.lastMana then
+        local duration = fsrDuration
+        a[""] = {
+            show = true,
+            changed = true,
+            duration = duration,
+            expirationTime = GetTime() + duration,
+            progressType = "timed",
+            autoHide = true
+        }
+        aura_env.lastMana = currentMana
+        aura_env.lastCast = GetTime()
+    end
+    return true
+end"""
+
+
 def tweak_mana_tick_alpha(aura, report):
-    """Match the Mana Bar: the tick spark's states only exist while mana is
-    regening/spent, so brighten whenever its trigger is active."""
+    """Match the Mana Bar (brighten while active) and install the
+    energize-aware tick logic (see MANA_TICK_CUSTOM)."""
     checks = _alpha_or_checks(aura)
     if checks is not None and not any(c.get("variable") == "show" for c in checks):
         checks.append({"trigger": 1, "variable": "show", "value": 1})
         report.append(f'{aura["id"]}: alpha condition also brightens while tick active')
+    tr = aura["triggers"]["1"]["trigger"]
+    tr["events"] = MANA_TICK_EVENTS
+    tr["custom"] = MANA_TICK_CUSTOM
+    report.append(f'{aura["id"]}: tick trigger filters combat-log energizes (TBC mp5 fix)')
 
 
 # per-aura behavior tweaks applied AFTER rename + port_live_tweaks, so they
