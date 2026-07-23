@@ -59,11 +59,10 @@
       "constantFactor": "RADIUS",
       "controlledChildren": [
         "Xyrec Shaman - Stormstrike",
+        "Xyrec Shaman - Fire Nova Totem",
         "Xyrec Shaman - Flame Shock",
         "Xyrec Shaman - Earth Shock",
-        "Xyrec Shaman - Lightning Bolt",
         "Xyrec Shaman - Chain Lightning",
-        "Xyrec Shaman - Personal Shield",
         "Xyrec Shaman - Earth Shield"
       ],
       "frameStrata": 1,
@@ -441,6 +440,323 @@
     {
       "actions": {
         "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            },
+            {
+              "property": "inverse",
+              "value": true
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": 2,
+                "value": 1,
+                "variable": "onCooldown"
+              },
+              {
+                "trigger": 1,
+                "value": 0,
+                "variable": "show"
+              }
+            ],
+            "trigger": -2,
+            "variable": "AND"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "sub.3.text_color",
+              "value": [
+                0.25,
+                1,
+                0.25,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "trigger": 3,
+            "value": 1,
+            "variable": "show"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "displayIcon": "",
+      "frameStrata": 1,
+      "height": 32,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Xyrec Shaman - Fire Nova Totem",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": false,
+      "keepAspectRatio": true,
+      "load": {
+        "class": {
+          "multi": {
+            "PALADIN": true
+          },
+          "single": "SHAMAN"
+        },
+        "not_spellknown": 642,
+        "race": {
+          "multi": {
+            "Dwarf": true,
+            "Human": true
+          },
+          "single": "Human"
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "spellknown": 1535,
+        "talent": {
+          "multi": []
+        },
+        "use_class": true,
+        "use_never": false,
+        "use_not_spellknown": false,
+        "use_spellknown": true,
+        "zoneIds": ""
+      },
+      "parent": "Xyrec Shaman - Core Abilities",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 18,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%p",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        }
+      ],
+      "tocversion": 20506,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Totem",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "totemNamePattern": "Fire Nova Totem",
+            "totemNamePattern_operator": "find('%s')",
+            "totemType": 1,
+            "type": "spell",
+            "unit": "player",
+            "use_totemNamePattern": true,
+            "use_totemType": true,
+            "use_unit": true
+          },
+          "untrigger": []
+        },
+        "2": {
+          "trigger": {
+            "auranames": [
+              "Blood Fury"
+            ],
+            "debuffType": "HELPFUL",
+            "duration": "1",
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showAlways",
+            "matchesShowOn": "showAlways",
+            "names": [],
+            "realSpellName": "Fire Nova Totem",
+            "spellIds": [],
+            "spellName": 1535,
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "track": "auto",
+            "type": "spell",
+            "unevent": "auto",
+            "unit": "player",
+            "unitExists": true,
+            "useName": true,
+            "use_charges": false,
+            "use_genericShowOn": true,
+            "use_remaining": false,
+            "use_spellName": true,
+            "use_track": true,
+            "use_unit": true
+          },
+          "untrigger": {
+            "genericShowOn": "showAlways",
+            "track": "auto"
+          }
+        },
+        "3": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Totem",
+            "names": [],
+            "remaining": "1",
+            "remaining_operator": "<",
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "totemNamePattern": "Fire Nova Totem",
+            "totemNamePattern_operator": "find('%s')",
+            "totemType": 1,
+            "type": "spell",
+            "unit": "player",
+            "use_remaining": true,
+            "use_totemNamePattern": true,
+            "use_totemType": true,
+            "use_unit": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": -10,
+        "disjunctive": "any"
+      },
+      "uid": "vIl57c6t5H8",
+      "url": "",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 15,
+      "width": 38,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
+    },
+    {
+      "actions": {
+        "finish": [],
         "init": {
           "do_custom": false
         },
@@ -687,7 +1003,7 @@
           ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
-          "text_text": "%1.p",
+          "text_text": "%p",
           "text_text_format_1.p_format": "timed",
           "text_text_format_1.p_time_dynamic_threshold": 0,
           "text_text_format_1.p_time_format": 0,
@@ -1273,301 +1589,6 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Lightning Bolt",
-      "information": {
-        "forceEvents": true,
-        "ignoreOptionsEventErrors": true,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "inverse": true,
-      "keepAspectRatio": true,
-      "load": {
-        "class": {
-          "multi": {
-            "PALADIN": true
-          },
-          "single": "SHAMAN"
-        },
-        "not_spellknown": 421,
-        "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": []
-        },
-        "spellknown": 403,
-        "talent": {
-          "multi": []
-        },
-        "use_class": true,
-        "use_never": false,
-        "use_not_spellknown": true,
-        "use_spellknown": true,
-        "zoneIds": ""
-      },
-      "parent": "Xyrec Shaman - Core Abilities",
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "icon",
-      "selfPoint": "CENTER",
-      "semver": "1.4.4",
-      "source": "import",
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 18,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        }
-      ],
-      "tocversion": 20506,
-      "triggers": {
-        "1": {
-          "trigger": {
-            "auranames": [
-              "Immolate"
-            ],
-            "debuffType": "HARMFUL",
-            "duration": "1",
-            "event": "Cooldown Progress (Spell)",
-            "genericShowOn": "showAlways",
-            "matchesShowOn": "showAlways",
-            "names": [],
-            "realSpellName": "Lightning Bolt",
-            "spellIds": [],
-            "spellName": 403,
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "track": "auto",
-            "type": "spell",
-            "unevent": "auto",
-            "unit": "target",
-            "unitExists": true,
-            "useName": true,
-            "use_genericShowOn": true,
-            "use_remaining": false,
-            "use_showgcd": true,
-            "use_spellName": true,
-            "use_track": true,
-            "use_unit": true
-          },
-          "untrigger": {
-            "genericShowOn": "showAlways"
-          }
-        },
-        "activeTriggerMode": -10,
-        "disjunctive": "any"
-      },
-      "uid": "o6QH7v5cKvA",
-      "url": "",
-      "useAdjustededMax": false,
-      "useAdjustededMin": false,
-      "useCooldownModRate": true,
-      "useTooltip": false,
-      "version": 15,
-      "width": 38,
-      "xOffset": 0,
-      "yOffset": 0,
-      "zoom": 0.3
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": {
-          "do_custom": false,
-          "do_glow": false
-        }
-      },
-      "adjustedMax": "",
-      "adjustedMin": "",
-      "alpha": 0.3,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "auto": false,
-      "color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "sub.3.text_visible"
-            }
-          ],
-          "check": {
-            "op": "<",
-            "trigger": 1,
-            "value": "2",
-            "variable": "duration"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "desaturate",
-              "value": true
-            }
-          ],
-          "check": {
-            "trigger": 1,
-            "value": 1,
-            "variable": "onCooldown"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "color",
-              "value": [
-                1,
-                0.50196081399918,
-                0.50196081399918,
-                1
-              ]
-            }
-          ],
-          "check": {
-            "trigger": 1,
-            "value": 0,
-            "variable": "spellInRange"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "color",
-              "value": [
-                0.50196081399918,
-                0.50196081399918,
-                1,
-                1
-              ]
-            }
-          ],
-          "check": {
-            "trigger": 1,
-            "value": 1,
-            "variable": "insufficientResources"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": [],
-      "cooldown": true,
-      "cooldownEdge": true,
-      "cooldownSwipe": true,
-      "cooldownTextDisabled": true,
-      "desaturate": false,
-      "displayIcon": "",
-      "frameStrata": 1,
-      "height": 32,
-      "icon": true,
-      "iconSource": -1,
       "id": "Xyrec Shaman - Chain Lightning",
       "information": {
         "forceEvents": true,
@@ -1709,342 +1730,6 @@
         "disjunctive": "any"
       },
       "uid": "hCARbxmMzWT",
-      "url": "",
-      "useAdjustededMax": false,
-      "useAdjustededMin": false,
-      "useCooldownModRate": true,
-      "useTooltip": false,
-      "version": 15,
-      "width": 38,
-      "xOffset": 0,
-      "yOffset": 0,
-      "zoom": 0.3
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": {
-          "do_custom": false,
-          "do_glow": false
-        }
-      },
-      "adjustedMax": "",
-      "adjustedMin": "",
-      "alpha": 0.3,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "auto": false,
-      "color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "iconSource",
-              "value": 0
-            }
-          ],
-          "check": {
-            "op": "==",
-            "trigger": 1,
-            "value": "9",
-            "variable": "totalStacks"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "sub.3.text_fontSize",
-              "value": 10
-            }
-          ],
-          "check": {
-            "op": ">",
-            "trigger": 1,
-            "value": "30",
-            "variable": "expirationTime"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "desaturate",
-              "value": false
-            }
-          ],
-          "check": {
-            "trigger": 1,
-            "value": 1,
-            "variable": "buffed"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "color",
-              "value": [
-                0.50196081399918,
-                0.50196081399918,
-                1,
-                1
-              ]
-            }
-          ],
-          "check": {
-            "trigger": 2,
-            "value": 1,
-            "variable": "insufficientResources"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": [],
-      "cooldown": true,
-      "cooldownEdge": true,
-      "cooldownSwipe": true,
-      "cooldownTextDisabled": true,
-      "desaturate": true,
-      "displayIcon": 136050,
-      "frameStrata": 1,
-      "height": 32,
-      "icon": true,
-      "iconSource": -1,
-      "id": "Xyrec Shaman - Personal Shield",
-      "information": {
-        "forceEvents": true,
-        "ignoreOptionsEventErrors": true,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "inverse": false,
-      "keepAspectRatio": true,
-      "load": {
-        "class": {
-          "multi": {
-            "PALADIN": true
-          },
-          "single": "SHAMAN"
-        },
-        "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": []
-        },
-        "spellknown": 324,
-        "talent": {
-          "multi": []
-        },
-        "use_class": true,
-        "use_never": false,
-        "use_not_spellknown": false,
-        "use_spellknown": true,
-        "zoneIds": ""
-      },
-      "parent": "Xyrec Shaman - Core Abilities",
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "icon",
-      "selfPoint": "CENTER",
-      "semver": "1.4.4",
-      "source": "import",
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 18,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "BOTTOMRIGHT",
-          "rotateText": "NONE",
-          "text_anchorXOffset": -1,
-          "text_anchorYOffset": 1,
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "BOTTOMRIGHT",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%s",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_text_format_s_format": "none",
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        }
-      ],
-      "tocversion": 20506,
-      "triggers": {
-        "1": {
-          "trigger": {
-            "auranames": [
-              "324",
-              "24398"
-            ],
-            "debuffType": "HELPFUL",
-            "event": "Health",
-            "matchesShowOn": "showAlways",
-            "names": [],
-            "ownOnly": true,
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "aura2",
-            "unit": "player",
-            "useName": true
-          },
-          "untrigger": []
-        },
-        "2": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "event": "Cooldown Progress (Spell)",
-            "genericShowOn": "showAlways",
-            "realSpellName": "Lightning Shield",
-            "spellName": 324,
-            "track": "auto",
-            "type": "spell",
-            "unit": "player",
-            "use_genericShowOn": true,
-            "use_showgcd": true,
-            "use_spellName": true,
-            "use_track": true
-          },
-          "untrigger": []
-        },
-        "activeTriggerMode": 1,
-        "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
-        "disjunctive": "custom"
-      },
-      "uid": "CqRt0O4pqm9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2690,6 +2375,12 @@
                 "trigger": -1,
                 "value": 1,
                 "variable": "incombat"
+              },
+              {
+                "op": "<",
+                "trigger": 1,
+                "value": "100",
+                "variable": "percentpower"
               }
             ],
             "trigger": -2,
@@ -3026,6 +2717,11 @@
                 "trigger": -1,
                 "value": 1,
                 "variable": "incombat"
+              },
+              {
+                "trigger": 1,
+                "value": 1,
+                "variable": "show"
               }
             ],
             "trigger": -2,
@@ -4340,6 +4036,7 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
+        "Xyrec Shaman - Windfury ICD",
         "Xyrec Shaman - Shamanistic Rage",
         "Xyrec Shaman - Elemental Mastery",
         "Xyrec Shaman - Nature's Swiftness",
@@ -4350,10 +4047,10 @@
         "Xyrec Shaman - Trinket 2 CD",
         "Xyrec Shaman - Reincarnation",
         "Xyrec Shaman - Mana Tide Totem",
-        "Xyrec Shaman - Fire Nova Totem",
         "Xyrec Shaman - Stoneclaw Totem",
         "Xyrec Shaman - Earthbind Totem",
-        "Xyrec Shaman - Grounding Totem"
+        "Xyrec Shaman - Grounding Totem",
+        "Xyrec Shaman - Personal Shield"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -4434,6 +4131,244 @@
       "version": 15,
       "xOffset": 0,
       "yOffset": -26
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            },
+            {
+              "property": "inverse",
+              "value": true
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 1,
+            "variable": "show"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "displayIcon": 136018,
+      "frameStrata": 1,
+      "height": 30,
+      "icon": true,
+      "iconSource": 0,
+      "id": "Xyrec Shaman - Windfury ICD",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": false,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": {
+            "PALADIN": true
+          },
+          "single": "SHAMAN"
+        },
+        "not_spellknown": 642,
+        "race": {
+          "multi": {
+            "Dwarf": true,
+            "Human": true
+          },
+          "single": "Human"
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "spellknown": 1535,
+        "talent": {
+          "multi": []
+        },
+        "use_class": true,
+        "use_never": false,
+        "use_not_spellknown": false,
+        "use_spellknown": true,
+        "zoneIds": ""
+      },
+      "parent": "Xyrec Shaman - Cooldowns",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 14,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%p",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        }
+      ],
+      "tocversion": 20506,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "duration": "3",
+            "event": "Combat Log",
+            "names": [],
+            "sourceUnit": "player",
+            "spellId": [
+              "25504",
+              "33750"
+            ],
+            "spellIds": [],
+            "spellName": [
+              "Windfury Attack"
+            ],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_DAMAGE",
+            "type": "combatlog",
+            "unit": "player",
+            "use_sourceUnit": true,
+            "use_spellId": true,
+            "use_spellName": false
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": -10,
+        "disjunctive": "any"
+      },
+      "uid": "addAfNrUkGu",
+      "url": "",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 15,
+      "width": 30,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
     },
     {
       "actions": {
@@ -7157,253 +7092,6 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Fire Nova Totem",
-      "information": {
-        "forceEvents": true,
-        "ignoreOptionsEventErrors": true,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "inverse": false,
-      "keepAspectRatio": false,
-      "load": {
-        "class": {
-          "multi": {
-            "PALADIN": true
-          },
-          "single": "SHAMAN"
-        },
-        "not_spellknown": 642,
-        "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": []
-        },
-        "spellknown": 1535,
-        "talent": {
-          "multi": []
-        },
-        "use_class": true,
-        "use_never": false,
-        "use_not_spellknown": false,
-        "use_spellknown": true,
-        "zoneIds": ""
-      },
-      "parent": "Xyrec Shaman - Cooldowns",
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "icon",
-      "selfPoint": "CENTER",
-      "semver": "1.4.4",
-      "source": "import",
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        }
-      ],
-      "tocversion": 20506,
-      "triggers": {
-        "1": {
-          "trigger": {
-            "auranames": [
-              "Blood Fury"
-            ],
-            "debuffType": "HELPFUL",
-            "duration": "1",
-            "event": "Cooldown Progress (Spell)",
-            "genericShowOn": "showOnCooldown",
-            "matchesShowOn": "showAlways",
-            "names": [],
-            "realSpellName": "Fire Nova Totem",
-            "spellIds": [],
-            "spellName": 1535,
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "track": "auto",
-            "type": "spell",
-            "unevent": "auto",
-            "unit": "player",
-            "unitExists": true,
-            "useName": true,
-            "use_charges": false,
-            "use_genericShowOn": true,
-            "use_remaining": false,
-            "use_spellName": true,
-            "use_track": true,
-            "use_unit": true
-          },
-          "untrigger": {
-            "genericShowOn": "showAlways",
-            "track": "auto"
-          }
-        },
-        "activeTriggerMode": -10,
-        "disjunctive": "any"
-      },
-      "uid": "vIl57c6t5H8",
-      "url": "",
-      "useAdjustededMax": false,
-      "useAdjustededMin": false,
-      "useCooldownModRate": true,
-      "version": 15,
-      "width": 30,
-      "xOffset": 0,
-      "yOffset": 0,
-      "zoom": 0.3
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": []
-      },
-      "adjustedMax": "",
-      "adjustedMin": "",
-      "alpha": 0.3,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "auto": false,
-      "color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "desaturate",
-              "value": true
-            },
-            {
-              "property": "inverse",
-              "value": true
-            }
-          ],
-          "check": {
-            "trigger": 1,
-            "value": 1,
-            "variable": "show"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": [],
-      "cooldown": true,
-      "cooldownEdge": false,
-      "cooldownSwipe": true,
-      "cooldownTextDisabled": true,
-      "desaturate": false,
-      "displayIcon": "",
-      "frameStrata": 1,
-      "height": 30,
-      "icon": true,
-      "iconSource": -1,
       "id": "Xyrec Shaman - Stoneclaw Totem",
       "information": {
         "forceEvents": true,
@@ -8056,6 +7744,329 @@
       "actions": {
         "finish": [],
         "init": [],
+        "start": {
+          "do_custom": false,
+          "do_glow": false
+        }
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "iconSource",
+              "value": 0
+            }
+          ],
+          "check": {
+            "op": "==",
+            "trigger": 1,
+            "value": "9",
+            "variable": "totalStacks"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": false
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 1,
+            "variable": "buffed"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "color",
+              "value": [
+                0.50196081399918,
+                0.50196081399918,
+                1,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "trigger": 2,
+            "value": 1,
+            "variable": "insufficientResources"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": true,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": true,
+      "displayIcon": 136050,
+      "frameStrata": 1,
+      "height": 30,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Xyrec Shaman - Personal Shield",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": false,
+      "keepAspectRatio": true,
+      "load": {
+        "class": {
+          "multi": {
+            "PALADIN": true
+          },
+          "single": "SHAMAN"
+        },
+        "race": {
+          "multi": {
+            "Dwarf": true,
+            "Human": true
+          },
+          "single": "Human"
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "spellknown": 324,
+        "talent": {
+          "multi": []
+        },
+        "use_class": true,
+        "use_never": false,
+        "use_not_spellknown": false,
+        "use_spellknown": true,
+        "zoneIds": ""
+      },
+      "parent": "Xyrec Shaman - Cooldowns",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "BOTTOMRIGHT",
+          "rotateText": "NONE",
+          "text_anchorXOffset": -1,
+          "text_anchorYOffset": 1,
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 14,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "BOTTOMRIGHT",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%p",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_s_format": "none",
+          "text_visible": false,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 14,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%s",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_s_format": "none",
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        }
+      ],
+      "tocversion": 20506,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "auranames": [
+              "324",
+              "24398"
+            ],
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "matchesShowOn": "showAlways",
+            "names": [],
+            "ownOnly": true,
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player",
+            "useName": true
+          },
+          "untrigger": []
+        },
+        "2": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showAlways",
+            "realSpellName": "Lightning Shield",
+            "spellName": 324,
+            "track": "auto",
+            "type": "spell",
+            "unit": "player",
+            "use_genericShowOn": true,
+            "use_showgcd": true,
+            "use_spellName": true,
+            "use_track": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": 1,
+        "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
+        "disjunctive": "custom"
+      },
+      "uid": "CqRt0O4pqm9",
+      "url": "",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "useTooltip": false,
+      "version": 15,
+      "width": 30,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
         "start": []
       },
       "align": "CENTER",
@@ -8112,7 +8123,8 @@
         "Xyrec Shaman - Drink Expiring",
         "Xyrec Shaman - Imbue [MH]",
         "Xyrec Shaman - Imbue [OH]",
-        "Xyrec Shaman - Lightning/Water Shield"
+        "Xyrec Shaman - Lightning/Water Shield",
+        "Xyrec Shaman - Fire Totem Missing"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -9713,6 +9725,379 @@
         "disjunctive": "custom"
       },
       "uid": "KBuxuDx0FCs",
+      "url": "",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 15,
+      "width": 44,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": {
+          "custom": "\n\n",
+          "do_custom": false
+        },
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameParent": false,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": true,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 1,
+            "variable": "show"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": false,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "desc": "When entering a dungeon, reloading your UI, or logging in: you may need to equip and un-equip your weapon for the tracker to begin working again.",
+      "displayIcon": 135825,
+      "frameStrata": 3,
+      "height": 44,
+      "icon": true,
+      "iconSource": 0,
+      "id": "Xyrec Shaman - Fire Totem Missing",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": false,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": {
+            "DRUID": true,
+            "MAGE": true
+          },
+          "single": "SHAMAN"
+        },
+        "difficulty": {
+          "multi": []
+        },
+        "faction": {
+          "multi": []
+        },
+        "ingroup": {
+          "multi": {
+            "solo": true
+          },
+          "single": "solo"
+        },
+        "pvptalent": {
+          "multi": []
+        },
+        "race": {
+          "multi": []
+        },
+        "role": {
+          "multi": []
+        },
+        "size": {
+          "multi": {
+            "arena": true,
+            "flexible": true,
+            "fortyman": true,
+            "party": true,
+            "pvp": true,
+            "ratedarena": true,
+            "ratedpvp": true,
+            "ten": true,
+            "twenty": true,
+            "twentyfive": true
+          },
+          "single": "none"
+        },
+        "spec": {
+          "multi": [],
+          "single": 1
+        },
+        "spellknown": 3599,
+        "talent": {
+          "multi": {
+            "16": true,
+            "29": true,
+            "33": true,
+            "56": true,
+            "89": true
+          },
+          "single": 29
+        },
+        "talent2": {
+          "multi": []
+        },
+        "use_alive": true,
+        "use_class": true,
+        "use_never": false,
+        "use_spec": true,
+        "use_spellknown": true,
+        "use_vehicle": false,
+        "use_vehicleUi": false,
+        "use_zone": false,
+        "zone": "",
+        "zoneIds": ""
+      },
+      "parent": "Xyrec Shaman - Reminders",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "text_color": [],
+          "type": "subborder"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "border_color": [],
+          "rotateText": "NONE",
+          "text_anchorXOffset": 0,
+          "text_anchorYOffset": 0,
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 20,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%p",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_s_format": "none",
+          "text_visible": false,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "BOTTOMRIGHT",
+          "border_color": [],
+          "rotateText": "NONE",
+          "text_anchorXOffset": -1,
+          "text_anchorYOffset": 1,
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 14,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "BOTTOMRIGHT",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%s",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": true,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_s_format": "none",
+          "text_visible": false,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "OUTER_BOTTOM",
+          "border_color": [],
+          "rotateText": "NONE",
+          "text_anchorXOffset": 0,
+          "text_anchorYOffset": -5,
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 14,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "CENTER",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "FIRE",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": true,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_s_format": "none",
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        }
+      ],
+      "tocversion": 20506,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Totem",
+            "inverse": true,
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "totemType": 1,
+            "type": "spell",
+            "unit": "player",
+            "use_inverse": true,
+            "use_totemType": true,
+            "use_unit": true
+          },
+          "untrigger": []
+        },
+        "2": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Conditions",
+            "type": "unit",
+            "unit": "player",
+            "use_attackable": true,
+            "use_incombat": true,
+            "use_unit": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": -10,
+        "disjunctive": "all"
+      },
+      "uid": "NGw7HkfFYSn",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
