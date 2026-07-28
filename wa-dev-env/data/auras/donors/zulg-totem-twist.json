@@ -1,0 +1,664 @@
+{
+  "c": [
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "9",
+      "adjustedMin": "",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "auraRotation": 0,
+      "authorOptions": [],
+      "backgroundColor": [
+        0,
+        0,
+        0,
+        0.5
+      ],
+      "backgroundOffset": 2,
+      "backgroundTexture": "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura3",
+      "barColor": [
+        0.23137256503105,
+        0.51764708757401,
+        1,
+        1
+      ],
+      "barColor2": [
+        0.35686275362968,
+        0.95686280727386,
+        1,
+        1
+      ],
+      "blendMode": "BLEND",
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "compress": false,
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "sound",
+              "value": {
+                "sound": "Interface\\AddOns\\SharedMedia_ZulginMedia\\sound\\count-2.mp3",
+                "sound_channel": "Master",
+                "sound_type": "Play"
+              }
+            },
+            []
+          ],
+          "check": {
+            "op": "<=",
+            "trigger": 1,
+            "value": "2",
+            "variable": "expirationTime"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "sound",
+              "value": {
+                "sound": "Interface\\AddOns\\SharedMedia_ZulginMedia\\sound\\count-1.mp3",
+                "sound_channel": "Master",
+                "sound_type": "Play"
+              }
+            },
+            {
+              "property": "backgroundColor",
+              "value": [
+                1,
+                0.27450981736183,
+                0.30196079611778,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "op": "<=",
+            "trigger": 1,
+            "value": "1",
+            "variable": "expirationTime"
+          }
+        }
+      ],
+      "config": [],
+      "crop_x": 0.41,
+      "crop_y": 0.41,
+      "desaturate": false,
+      "desaturateBackground": false,
+      "desaturateForeground": false,
+      "enableGradient": true,
+      "endAngle": 360,
+      "font": "Friz Quadrata TT",
+      "fontSize": 12,
+      "foregroundColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "foregroundTexture": "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_Smooth_Border",
+      "frameStrata": 1,
+      "gradientOrientation": "VERTICAL",
+      "height": 100,
+      "icon": false,
+      "iconSource": -1,
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "icon_side": "RIGHT",
+      "id": "TotemTwist",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": false,
+      "load": {
+        "class": {
+          "multi": {
+            "SHAMAN": true
+          },
+          "single": "SHAMAN"
+        },
+        "ingroup": {
+          "multi": {
+            "group": true,
+            "raid": true
+          },
+          "single": "group"
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "use_class": true,
+        "use_ingroup": false,
+        "use_never": false
+      },
+      "mirror": false,
+      "orientation": "ANTICLOCKWISE",
+      "overlays": [
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "parent": "*ZulgAuras* Shaman - Simple Totem Twist",
+      "preferToUpdate": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "progresstexture",
+      "rotate": false,
+      "rotation": 0,
+      "sameTexture": true,
+      "selfPoint": "CENTER",
+      "semver": "1.0.0",
+      "slantMode": "INSIDE",
+      "spark": false,
+      "sparkBlendMode": "ADD",
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "sparkHeight": 30,
+      "sparkHidden": "NEVER",
+      "sparkOffsetX": 0,
+      "sparkOffsetY": 0,
+      "sparkRotation": 0,
+      "sparkRotationMode": "AUTO",
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "sparkWidth": 10,
+      "startAngle": 0,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "INNER_RIGHT",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "|c0000FF2A*Zulgin*|r - |c007dffc3Coolvetica",
+          "text_fontSize": 43,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 1,
+          "text_shadowYOffset": -1,
+          "text_text": "%p",
+          "text_text_format_n_format": "none",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 3,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        }
+      ],
+      "texture": "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_Smooth_Border",
+      "textureSource": "LSM",
+      "textureWrapMode": "CLAMPTOBLACKADDITIVE",
+      "tocversion": 20505,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "auranames": [],
+            "debuffType": "HELPFUL",
+            "duration": "9",
+            "event": "Combat Log",
+            "genericShowOn": "showOnCooldown",
+            "names": [],
+            "power": [
+              "1"
+            ],
+            "power_operator": [
+              ">="
+            ],
+            "powertype": 4,
+            "sourceUnit": "player",
+            "spellIds": [],
+            "spellName": [
+              "Windfury Totem"
+            ],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_SUCCESS",
+            "totemName": "",
+            "type": "combatlog",
+            "unit": "player",
+            "useName": false,
+            "use_direction": true,
+            "use_genericShowOn": true,
+            "use_icon": false,
+            "use_percentpower": false,
+            "use_power": true,
+            "use_powertype": true,
+            "use_showCost": false,
+            "use_sourceName": false,
+            "use_sourceUnit": true,
+            "use_spellName": true,
+            "use_totemName": false,
+            "use_track": true,
+            "use_unit": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": -10
+      },
+      "uid": "p8oPiUExHWr",
+      "url": "https://wago.io/C8jazXozP/1",
+      "useAdjustededMax": true,
+      "useAdjustededMin": true,
+      "user_x": 0,
+      "user_y": 0,
+      "version": 1,
+      "wagoID": "C8jazXozP",
+      "width": 100,
+      "xOffset": 0,
+      "yOffset": 6,
+      "zoom": 0
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "color",
+              "value": [
+                1,
+                0.29411765933037,
+                0.36862745881081,
+                1
+              ]
+            },
+            {
+              "property": "sub.3.text_text",
+              "value": "TWIST!!"
+            }
+          ],
+          "check": {
+            "trigger": 2,
+            "value": 0,
+            "variable": "show"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": false,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "frameStrata": 1,
+      "height": 80,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Air-Totem-Twist",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": false,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": [],
+          "single": "SHAMAN"
+        },
+        "ingroup": {
+          "multi": {
+            "group": true,
+            "raid": true
+          },
+          "single": "group"
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "use_class": true,
+        "use_ingroup": false,
+        "use_never": false
+      },
+      "parent": "*ZulgAuras* Shaman - Simple Totem Twist",
+      "preferToUpdate": false,
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.0.0",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "glow": false,
+          "glowBorder": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowDuration": 1,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowLines": 8,
+          "glowScale": 1,
+          "glowThickness": 1,
+          "glowType": "buttonOverlay",
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "type": "subglow",
+          "useGlowColor": false
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "|c0000FF2A*Zulgin*|r - |c007dffc3Coolvetica",
+          "text_fontSize": 53,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%2.p",
+          "text_text_format_2.p_format": "timed",
+          "text_text_format_2.p_time_dynamic_threshold": 3,
+          "text_text_format_2.p_time_format": 0,
+          "text_text_format_2.p_time_legacy_floor": false,
+          "text_text_format_2.p_time_mod_rate": true,
+          "text_text_format_2.p_time_precision": 1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 60,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        }
+      ],
+      "tocversion": 20505,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Totem",
+            "genericShowOn": "showOnCooldown",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "totemType": 4,
+            "type": "spell",
+            "unit": "player",
+            "use_genericShowOn": true,
+            "use_spellName": true,
+            "use_totemType": true,
+            "use_track": true
+          },
+          "untrigger": []
+        },
+        "2": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "duration": "9",
+            "event": "Combat Log",
+            "sourceUnit": "player",
+            "spellName": [
+              "Windfury Totem"
+            ],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_SUCCESS",
+            "type": "combatlog",
+            "unit": "player",
+            "use_sourceUnit": true,
+            "use_spellName": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": -10,
+        "customTriggerLogic": "function (t)\nreturn t[1]\nend",
+        "disjunctive": "custom"
+      },
+      "uid": "nwjAx8ZIRDZ",
+      "url": "https://wago.io/C8jazXozP/1",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 1,
+      "wagoID": "C8jazXozP",
+      "width": 80,
+      "xOffset": 0,
+      "yOffset": 5,
+      "zoom": 0
+    }
+  ],
+  "d": {
+    "actions": {
+      "finish": [],
+      "init": [],
+      "start": []
+    },
+    "alpha": 1,
+    "anchorFrameType": "SCREEN",
+    "anchorPoint": "CENTER",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "backdropColor": [
+      1,
+      1,
+      1,
+      0.5
+    ],
+    "border": false,
+    "borderBackdrop": "Blizzard Tooltip",
+    "borderColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "borderEdge": "Square Full White",
+    "borderInset": 1,
+    "borderOffset": 4,
+    "borderSize": 2,
+    "conditions": [],
+    "config": [],
+    "controlledChildren": [
+      "TotemTwist",
+      "Air-Totem-Twist"
+    ],
+    "frameStrata": 1,
+    "id": "*ZulgAuras* Shaman - Simple Totem Twist",
+    "information": {
+      "groupOffset": true,
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "load": {
+      "class": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      }
+    },
+    "preferToUpdate": false,
+    "regionType": "group",
+    "scale": 1,
+    "selfPoint": "BOTTOMLEFT",
+    "semver": "1.0.0",
+    "subRegions": [],
+    "tocversion": 20505,
+    "triggers": [
+      {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Health",
+          "names": [],
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "aura2",
+          "unit": "player"
+        },
+        "untrigger": []
+      }
+    ],
+    "uid": "qF2MF3fuVeC",
+    "url": "https://wago.io/C8jazXozP/1",
+    "version": 1,
+    "wagoID": "C8jazXozP",
+    "xOffset": -379.99981689453,
+    "yOffset": 109.99987792969
+  },
+  "m": "d",
+  "s": "5.21.8",
+  "v": 2000
+}

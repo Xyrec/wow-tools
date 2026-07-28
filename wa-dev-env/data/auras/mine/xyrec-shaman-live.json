@@ -58,6 +58,7 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
+        "Xyrec Shaman - Totem Twist",
         "Xyrec Shaman - Stormstrike",
         "Xyrec Shaman - Fire Nova Totem",
         "Xyrec Shaman - Flame Shock",
@@ -143,6 +144,282 @@
       "version": 15,
       "xOffset": 0,
       "yOffset": 35
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": {
+          "do_custom": false,
+          "do_glow": false
+        }
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "sub.3.text_color",
+              "value": [
+                1,
+                0.82,
+                0.25,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "op": "<=",
+            "trigger": 1,
+            "value": "1",
+            "variable": "expirationTime"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "color",
+              "value": [
+                1,
+                0.29411765933037,
+                0.36862745881081,
+                1
+              ]
+            },
+            {
+              "property": "sub.3.text_visible",
+              "value": false
+            }
+          ],
+          "check": {
+            "op": "<=",
+            "trigger": 1,
+            "value": "0",
+            "variable": "expirationTime"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": true,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "displayIcon": 136114,
+      "frameStrata": 1,
+      "height": 32,
+      "icon": true,
+      "iconSource": 2,
+      "id": "Xyrec Shaman - Totem Twist",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": true,
+      "keepAspectRatio": true,
+      "load": {
+        "class": {
+          "multi": {
+            "SHAMAN": true
+          },
+          "single": "SHAMAN"
+        },
+        "ingroup": {
+          "multi": {
+            "group": true,
+            "raid": true
+          },
+          "single": "group"
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "use_alive": true,
+        "use_class": true,
+        "use_ingroup": true,
+        "use_never": false
+      },
+      "parent": "Xyrec Shaman - Core Abilities",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 18,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%p",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        }
+      ],
+      "tocversion": 20506,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "check": "event",
+            "custom": "function(a, e, ...)\n    if e == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n        local subevent = select(2, ...)\n        local sourceGUID = select(4, ...)\n        local spellName = select(13, ...)\n        if subevent == \"SPELL_CAST_SUCCESS\"\n                and sourceGUID == UnitGUID(\"player\")\n                and spellName == \"Windfury Totem\" then\n            -- arm + start the 10s twist window (WF party buff lingers ~10s\n            -- after the totem is swapped away)\n            a[\"\"] = {\n                show = true,\n                changed = true,\n                progressType = \"timed\",\n                duration = 10,\n                expirationTime = GetTime() + 10,\n                autoHide = false\n            }\n            return true\n        end\n        return false\n    end\n    -- PLAYER_REGEN_ENABLED / PLAYER_ENTERING_WORLD: leaving combat disarms\n    if a[\"\"] then\n        a[\"\"] = nil\n        return true\n    end\n    return false\nend",
+            "customVariables": "{\n    expirationTime = true,\n    duration = true\n}",
+            "custom_type": "stateupdate",
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "events": "CLEU:SPELL_CAST_SUCCESS PLAYER_REGEN_ENABLED PLAYER_ENTERING_WORLD",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_SUCCESS",
+            "type": "custom",
+            "unevent": "auto",
+            "unit": "player",
+            "use_unit": true
+          },
+          "untrigger": []
+        },
+        "2": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Totem",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "totemType": 4,
+            "type": "spell",
+            "unit": "player",
+            "use_totemType": true,
+            "use_unit": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": 1,
+        "customTriggerLogic": "function(t)\n    return t[1]\nend",
+        "disjunctive": "custom"
+      },
+      "uid": "NmWUSo0W4gs",
+      "url": "",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "useTooltip": false,
+      "version": 15,
+      "width": 38,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
     },
     {
       "actions": {
