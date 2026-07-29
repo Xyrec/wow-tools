@@ -20,6 +20,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import archetypes  # noqa: E402
 import compose  # noqa: E402
+import scrub  # noqa: E402
 import style as style_mod  # noqa: E402
 
 REPO = pathlib.Path(__file__).resolve().parents[2]
@@ -68,7 +69,7 @@ def compose_leaf(style, definition, quirks, class_dir, parent_id):
     return aura
 
 
-def build(class_name, allow_missing=False):
+def build(class_name, allow_missing=False, scrubbed=False):
     class_dir = REPO / "auras" / class_name
     group = json.loads((class_dir / "group.json").read_text())
     style = style_mod.load()
@@ -110,6 +111,10 @@ def build(class_name, allow_missing=False):
     if extra:
         raise SystemExit(f"defs not listed in child_order: {extra}")
 
+    if scrubbed:
+        root, _ = scrub.apply_scrub(root)
+        children = [scrub.apply_scrub(c)[0] for c in children]
+
     return {"m": "d", "v": 2000, "s": group["wa_version"], "d": root, "c": children}
 
 
@@ -121,8 +126,12 @@ def main():
     ap.add_argument("--displays", action="store_true",
                     help="emit an {id: aura} displays map (audit / luacheck input) "
                          "instead of a landable payload")
+    ap.add_argument("--scrub", action="store_true",
+                    help="apply donor-residue scrub rules to the built auras "
+                         "(the Phase-B cleanup payload)")
     args = ap.parse_args()
-    payload = build(args.class_name, allow_missing=args.allow_missing)
+    payload = build(args.class_name, allow_missing=args.allow_missing,
+                    scrubbed=args.scrub)
     out = pathlib.Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     if args.displays:
