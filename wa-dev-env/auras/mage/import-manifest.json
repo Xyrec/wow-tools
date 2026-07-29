@@ -1,0 +1,11 @@
+{
+  "_notes": "Baseline import. Resources + Improved Scorch Bars stay bespoke passthroughs; icon rows adopt Xyrec archetypes.",
+  "drop": [],
+  "rows": {
+    "Mage - Core Abilities": "core",
+    "Mage - Cooldowns": "cooldowns",
+    "Mage - Reminders": "reminders",
+    "Mage - Group Buffs": "groupbuffs"
+  },
+  "bespoke": []
+}

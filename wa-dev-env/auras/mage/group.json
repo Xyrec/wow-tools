@@ -1,0 +1,1076 @@
+{
+  "child_order": [
+    "Xyrec Mage - Core Abilities",
+    "Xyrec Mage - Regeneration",
+    "Xyrec Mage - Arcane Blast",
+    "Xyrec Mage - Improved Scorch",
+    "Xyrec Mage - Living Bomb",
+    "Xyrec Mage - Fire Blast",
+    "Xyrec Mage - Cone of Cold",
+    "Xyrec Mage - Ice Lance",
+    "Xyrec Mage - Fireball [1-15]",
+    "Xyrec Mage - Frostbolt [1-15]",
+    "Xyrec Mage - Arcane Missles [1-15]",
+    "Xyrec Mage - Resources",
+    "Xyrec Mage - Arcane Blast Bars",
+    "Xyrec Mage - Improved Scorch Bars",
+    "Xyrec Mage - IS1",
+    "Xyrec Mage - IS2",
+    "Xyrec Mage - IS3",
+    "Xyrec Mage - IS4",
+    "Xyrec Mage - IS5",
+    "Xyrec Mage - Wand Swing",
+    "Xyrec Mage - Mana Bar",
+    "Xyrec Mage - Mana Tick",
+    "Xyrec Mage - Cooldowns",
+    "Xyrec Mage - Frostfire Ward",
+    "Xyrec Mage - Mana Shield",
+    "Xyrec Mage - Ice Barrier",
+    "Xyrec Mage - Ice Block",
+    "Xyrec Mage - Cold Snap",
+    "Xyrec Mage - Arcane Surge",
+    "Xyrec Mage - Evocation",
+    "Xyrec Mage - Perception",
+    "Xyrec Mage - Escape Artist",
+    "Xyrec Mage - Berserking",
+    "Xyrec Mage - Will of the Forsaken",
+    "Xyrec Mage - Trinket 1 CD",
+    "Xyrec Mage - Trinket 2 CD",
+    "Xyrec Mage - Arcane Power",
+    "Xyrec Mage - Presence of Mind",
+    "Xyrec Mage - Combustion",
+    "Xyrec Mage - Blast Wave",
+    "Xyrec Mage - Frost Nova",
+    "Xyrec Mage - Displacement",
+    "Xyrec Mage - Blink",
+    "Xyrec Mage - Polymorph",
+    "Xyrec Mage - Counterspell",
+    "Xyrec Mage - Reminders",
+    "Xyrec Mage - Drink Expiring",
+    "Xyrec Mage - Mana Agate",
+    "Xyrec Mage - Mana Jade",
+    "Xyrec Mage - Mana Citrine",
+    "Xyrec Mage - Mana Ruby",
+    "Xyrec Mage - Arcane Intellect",
+    "Xyrec Mage - Armor [Solo]",
+    "Xyrec Mage - Group Buffs",
+    "Xyrec Mage - Arcane Brilliance [Group]"
+  ],
+  "class": "mage",
+  "containers": [
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Mage - Regeneration",
+        "Xyrec Mage - Arcane Blast",
+        "Xyrec Mage - Improved Scorch",
+        "Xyrec Mage - Living Bomb",
+        "Xyrec Mage - Fire Blast",
+        "Xyrec Mage - Cone of Cold",
+        "Xyrec Mage - Ice Lance",
+        "Xyrec Mage - Fireball [1-15]",
+        "Xyrec Mage - Frostbolt [1-15]",
+        "Xyrec Mage - Arcane Missles [1-15]"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 135808,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Mage - Core Abilities",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 10,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Mage",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "sort": "none",
+      "sortHybridTable": {
+        "Mage - Arcane Blast": false,
+        "Mage - Arcane Missles [1-15]": false,
+        "Mage - Balefire Bolt": false,
+        "Mage - Brain Freeze": false,
+        "Mage - Chronostatic Preservation": false,
+        "Mage - Cone of Cold": false,
+        "Mage - Fingers of Frost": false,
+        "Mage - Fire Blast": false,
+        "Mage - Fireball [1-15]": false,
+        "Mage - Frostbolt [1-15]": false,
+        "Mage - Hot Streak": false,
+        "Mage - Ice Lance": false,
+        "Mage - Improved Scorch": false,
+        "Mage - Living Bomb": false,
+        "Mage - Living Flame": false,
+        "Mage - Mass Regeneration": false,
+        "Mage - Missile Barrage": false,
+        "Mage - Regeneration": false,
+        "Mage - Rewind Time": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 35,
+      "wagoID": "6vNSif5yK",
+      "xOffset": 0,
+      "yOffset": 35
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "conditions": [],
+      "config": [],
+      "controlledChildren": [
+        "Xyrec Mage - Arcane Blast Bars",
+        "Xyrec Mage - Improved Scorch Bars",
+        "Xyrec Mage - Wand Swing",
+        "Xyrec Mage - Mana Bar",
+        "Xyrec Mage - Mana Tick"
+      ],
+      "frameStrata": 1,
+      "groupIcon": 136075,
+      "id": "Xyrec Mage - Resources",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Mage",
+      "preferToUpdate": false,
+      "regionType": "group",
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "version": 35,
+      "wagoID": "6vNSif5yK",
+      "xOffset": 0,
+      "yOffset": 0
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "alpha": 1,
+      "anchorFrameFrame": "WeakAuras:Mage - Mana Bar",
+      "anchorFrameType": "SELECTFRAME",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "None",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 0,
+      "borderOffset": 0,
+      "borderSize": 1,
+      "conditions": [],
+      "config": [],
+      "controlledChildren": [],
+      "frameStrata": 1,
+      "groupIcon": 135735,
+      "id": "Xyrec Mage - Arcane Blast Bars",
+      "information": {
+        "forceEvents": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec Mage - Resources",
+      "preferToUpdate": false,
+      "regionType": "group",
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "version": 35,
+      "wagoID": "6vNSif5yK",
+      "xOffset": 0,
+      "yOffset": 14
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "alpha": 1,
+      "anchorFrameFrame": "WeakAuras:Mage - Mana Bar",
+      "anchorFrameType": "SELECTFRAME",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "None",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 0,
+      "borderOffset": 0,
+      "borderSize": 1,
+      "conditions": [],
+      "config": [],
+      "controlledChildren": [
+        "Xyrec Mage - IS1",
+        "Xyrec Mage - IS2",
+        "Xyrec Mage - IS3",
+        "Xyrec Mage - IS4",
+        "Xyrec Mage - IS5"
+      ],
+      "frameStrata": 1,
+      "groupIcon": 135827,
+      "id": "Xyrec Mage - Improved Scorch Bars",
+      "information": {
+        "forceEvents": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec Mage - Resources",
+      "preferToUpdate": false,
+      "regionType": "group",
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "version": 35,
+      "wagoID": "6vNSif5yK",
+      "xOffset": 0,
+      "yOffset": 14
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Mage - Frostfire Ward",
+        "Xyrec Mage - Mana Shield",
+        "Xyrec Mage - Ice Barrier",
+        "Xyrec Mage - Ice Block",
+        "Xyrec Mage - Cold Snap",
+        "Xyrec Mage - Arcane Surge",
+        "Xyrec Mage - Evocation",
+        "Xyrec Mage - Perception",
+        "Xyrec Mage - Escape Artist",
+        "Xyrec Mage - Berserking",
+        "Xyrec Mage - Will of the Forsaken",
+        "Xyrec Mage - Trinket 1 CD",
+        "Xyrec Mage - Trinket 2 CD",
+        "Xyrec Mage - Arcane Power",
+        "Xyrec Mage - Presence of Mind",
+        "Xyrec Mage - Combustion",
+        "Xyrec Mage - Blast Wave",
+        "Xyrec Mage - Frost Nova",
+        "Xyrec Mage - Displacement",
+        "Xyrec Mage - Blink",
+        "Xyrec Mage - Polymorph",
+        "Xyrec Mage - Counterspell"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 135841,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Mage - Cooldowns",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 9,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Mage",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "sort": "none",
+      "sortHybridTable": {
+        "Mage - Arcane Power": false,
+        "Mage - Arcane Surge": false,
+        "Mage - Berserking": false,
+        "Mage - Blast Wave": false,
+        "Mage - Blink": false,
+        "Mage - Cold Snap": false,
+        "Mage - Combustion": false,
+        "Mage - Counterspell": false,
+        "Mage - Deep Freeze": false,
+        "Mage - Displacement": false,
+        "Mage - Escape Artist": false,
+        "Mage - Evocation": false,
+        "Mage - Frost Nova": false,
+        "Mage - Frostfire Ward": false,
+        "Mage - Ice Barrier": false,
+        "Mage - Ice Block": false,
+        "Mage - Mana Shield": false,
+        "Mage - Perception": false,
+        "Mage - Polymorph": false,
+        "Mage - Presence of Mind": false,
+        "Mage - Temporal Anomaly": false,
+        "Mage - Trinket 1 CD": false,
+        "Mage - Trinket 2 CD": false,
+        "Mage - Will of the Forsaken": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 35,
+      "wagoID": "6vNSif5yK",
+      "xOffset": 0,
+      "yOffset": -26
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "UIPARENT",
+      "anchorPoint": "TOP",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Mage - Drink Expiring",
+        "Xyrec Mage - Mana Agate",
+        "Xyrec Mage - Mana Jade",
+        "Xyrec Mage - Mana Citrine",
+        "Xyrec Mage - Mana Ruby",
+        "Xyrec Mage - Arcane Intellect",
+        "Xyrec Mage - Armor [Solo]"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 135932,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Mage - Reminders",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 5,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Mage",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "sort": "none",
+      "sortHybridTable": {
+        "Mage - Arcane Intellect": false,
+        "Mage - Armor [Solo]": false,
+        "Mage - Drink Expiring": false,
+        "Mage - Mana Agate": false,
+        "Mage - Mana Citrine": false,
+        "Mage - Mana Jade": false,
+        "Mage - Mana Ruby": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": false,
+      "version": 35,
+      "wagoID": "6vNSif5yK",
+      "xOffset": 0,
+      "yOffset": -475
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "UIPARENT",
+      "anchorPoint": "TOP",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Mage - Arcane Brilliance [Group]"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 135869,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Mage - Group Buffs",
+      "information": {
+        "forceEvents": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 6,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Mage",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "sort": "none",
+      "sortHybridTable": {
+        "Mage - Amplify Magic [Tank]": false,
+        "Mage - Arcane Brilliance [Group]": false
+      },
+      "source": "import",
+      "space": 1,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 35,
+      "wagoID": "6vNSif5yK",
+      "xOffset": 0,
+      "yOffset": -540
+    }
+  ],
+  "root": {
+    "actions": {
+      "finish": [],
+      "init": [],
+      "start": []
+    },
+    "alpha": 1,
+    "anchorFrameType": "SCREEN",
+    "anchorPoint": "CENTER",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "backdropColor": [
+      1,
+      1,
+      1,
+      0.5
+    ],
+    "border": false,
+    "borderBackdrop": "Blizzard Tooltip",
+    "borderColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "borderEdge": "Square Full White",
+    "borderInset": 1,
+    "borderOffset": 4,
+    "borderSize": 2,
+    "conditions": [],
+    "config": [],
+    "controlledChildren": [
+      "Xyrec Mage - Core Abilities",
+      "Xyrec Mage - Resources",
+      "Xyrec Mage - Cooldowns",
+      "Xyrec Mage - Reminders",
+      "Xyrec Mage - Group Buffs"
+    ],
+    "frameStrata": 1,
+    "groupIcon": "626001",
+    "id": "Xyrec - Mage",
+    "information": {
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "load": {
+      "class": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      }
+    },
+    "preferToUpdate": false,
+    "regionType": "group",
+    "scale": 1.5,
+    "selfPoint": "CENTER",
+    "semver": "1.4.4",
+    "subRegions": [],
+    "tocversion": 20505,
+    "triggers": [
+      {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Health",
+          "names": [],
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "aura2",
+          "unit": "player"
+        },
+        "untrigger": []
+      }
+    ],
+    "url": "",
+    "version": 35,
+    "wagoID": "6vNSif5yK",
+    "xOffset": 0,
+    "yOffset": -242
+  },
+  "wa_version": "5.21.8"
+}

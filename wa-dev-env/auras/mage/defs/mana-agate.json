@@ -1,0 +1,178 @@
+{
+  "archetype": "reminder_icon",
+  "conditions": [],
+  "id": "Xyrec Mage - Mana Agate",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "MAGE"
+    },
+    "ingroup": [],
+    "level": [],
+    "level_operator": [
+      "<"
+    ],
+    "not_spellknown": 10053,
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 759,
+    "talent": {
+      "multi": []
+    },
+    "use_alive": true,
+    "use_class": true,
+    "use_level": false,
+    "use_never": true,
+    "use_not_spellknown": true,
+    "use_spellknown": true,
+    "use_vehicle": false,
+    "use_zone": false,
+    "use_zoneIds": false,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "displayIcon": 134104,
+    "iconSource": 1,
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "type": "subborder"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "CENTER",
+        "rotateText": "NONE",
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 64,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 20,
+        "text_fontType": "OUTLINE",
+        "text_justify": "CENTER",
+        "text_selfPoint": "AUTO",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_shadowXOffset": 0,
+        "text_shadowYOffset": 0,
+        "text_text": "%p",
+        "text_text_format_p_format": "timed",
+        "text_text_format_p_time_dynamic_threshold": 0,
+        "text_text_format_p_time_format": 0,
+        "text_text_format_p_time_legacy_floor": false,
+        "text_text_format_p_time_mod_rate": true,
+        "text_text_format_p_time_precision": 1,
+        "text_visible": true,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "OUTER_BOTTOM",
+        "rotateText": "NONE",
+        "text_anchorYOffset": -12,
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 64,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 14,
+        "text_fontType": "OUTLINE",
+        "text_justify": "CENTER",
+        "text_selfPoint": "BOTTOM",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_shadowXOffset": 0,
+        "text_shadowYOffset": 0,
+        "text_text": "Agate",
+        "text_text_format_p_format": "timed",
+        "text_text_format_p_time_dynamic_threshold": 60,
+        "text_text_format_p_time_format": 0,
+        "text_text_format_p_time_legacy_floor": false,
+        "text_text_format_p_time_mod_rate": true,
+        "text_text_format_p_time_precision": 1,
+        "text_visible": true,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      }
+    ]
+  },
+  "row": "reminders",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "count": "0",
+        "count_operator": "==",
+        "debuffType": "HELPFUL",
+        "duration": "30",
+        "event": "Item Count",
+        "eventtype": "PLAYER_REGEN_ENABLED",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 5514,
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "item",
+        "unit": "player",
+        "use_count": true,
+        "use_eventtype": true,
+        "use_genericShowOn": true,
+        "use_itemName": true
+      },
+      "untrigger": []
+    },
+    "2": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Conditions",
+        "type": "unit",
+        "unit": "player",
+        "use_incombat": false,
+        "use_resting": false,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": 1,
+    "customTriggerLogic": "\n",
+    "disjunctive": "all"
+  }
+}
