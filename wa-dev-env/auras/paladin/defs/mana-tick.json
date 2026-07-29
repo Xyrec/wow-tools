@@ -105,6 +105,11 @@
               "trigger": -1,
               "value": 1,
               "variable": "incombat"
+            },
+            {
+              "trigger": 1,
+              "value": 1,
+              "variable": "show"
             }
           ],
           "trigger": -2,

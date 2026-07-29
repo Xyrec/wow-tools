@@ -104,6 +104,12 @@
               "trigger": -1,
               "value": 1,
               "variable": "incombat"
+            },
+            {
+              "op": "<",
+              "trigger": 1,
+              "value": "100",
+              "variable": "percentpower"
             }
           ],
           "trigger": -2,

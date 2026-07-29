@@ -82,6 +82,57 @@ def find_cruft(aura):
     return out
 
 
+# resource bars stay at full alpha while the resource is INFORMATIVE, even
+# out of combat: mana/energy below max (regening), rage above 0 (decaying).
+# powertype -> (condition variable, op, value)
+POWER_ALPHA_CHECKS = {
+    0: ("percentpower", "<", "100"),   # mana
+    3: ("percentpower", "<", "100"),   # energy
+    1: ("percentpower", ">", "0"),     # rage
+}
+
+
+def normalize_resource_alpha(aura, style):
+    """Bars driven by a unit Power trigger: canonical alpha rule + the
+    resource-informative check. Returns True if the aura was changed."""
+    triggers = aura.get("triggers")
+    if not isinstance(triggers, dict):
+        return False
+    power_key = power_type = None
+    for k, entry in triggers.items():
+        if isinstance(entry, dict) and isinstance(entry.get("trigger"), dict):
+            tr = entry["trigger"]
+            if tr.get("type") == "unit" and tr.get("event") == "Power":
+                power_key, power_type = int(k), tr.get("powertype")
+    if power_key is None or power_type not in POWER_ALPHA_CHECKS:
+        return False
+    var, op, value = POWER_ALPHA_CHECKS[power_type]
+    cond = copy.deepcopy(style["alpha_rule"]["condition"])
+    cond["check"]["checks"].append(
+        {"trigger": power_key, "variable": var, "op": op, "value": value})
+    conds = [c for c in (aura.get("conditions") or [])
+             if not is_ooc_alpha_condition(c)]
+    conds.append(cond)
+    aura["conditions"] = conds
+    aura["alpha"] = style["alpha_rule"]["base"]
+    return True
+
+
+def normalize_tick_alpha(aura, style):
+    """Tick-spark bars (custom stateupdate): bright whenever the spark is
+    active — its states only exist while the resource is moving."""
+    if " Tick" not in aura.get("id", "") or aura.get("regionType") != "aurabar":
+        return False
+    cond = copy.deepcopy(style["alpha_rule"]["condition"])
+    cond["check"]["checks"].append({"trigger": 1, "variable": "show", "value": 1})
+    conds = [c for c in (aura.get("conditions") or [])
+             if not is_ooc_alpha_condition(c)]
+    conds.append(cond)
+    aura["conditions"] = conds
+    aura["alpha"] = style["alpha_rule"]["base"]
+    return True
+
+
 # fields whose values are spell ids (repointed at donor import via spellmap)
 _SPELL_ID_FIELDS = {"spellknown", "not_spellknown", "exact_not_spellknown",
                     "spellName", "itemName"}

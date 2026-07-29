@@ -230,6 +230,8 @@ def apply(donor, class_name):
         else:
             payload = copy.deepcopy(aura)
             payload.pop("parent", None)
+            scrub.normalize_resource_alpha(payload, style) \
+                or scrub.normalize_tick_alpha(payload, style)
             d = {"id": aura["id"], "archetype": "bespoke",
                  "row": row or "loose", "payload": payload}
             lua_map = decompile.externalize_lua(payload, slug, lua_dir)
