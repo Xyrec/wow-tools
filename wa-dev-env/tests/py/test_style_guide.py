@@ -80,11 +80,19 @@ def test_row_sizes_match_snapshot_exemplars():
         assert text["text_font"] == STYLE["fonts"]["family"], row
 
 
+def _r9(value):
+    """Round floats like the parity harness — Lua serialization round-trips
+    perturb the 15th digit; 9 digits is the equality contract."""
+    if isinstance(value, list):
+        return [_r9(v) for v in value]
+    return round(value, 9) if isinstance(value, float) else value
+
+
 def test_bar_skin_matches_swing_bar():
     mh = BY_ID["Xyrec Shaman - Swing Timer MH"]
     skin = STYLE["bar_skin"]
     assert mh["texture"] == skin["texture"]
-    assert mh["barColor"] == STYLE["colors"]["swing_blue"]
+    assert _r9(mh["barColor"]) == _r9(STYLE["colors"]["swing_blue"])
     border = next(s for s in mh["subRegions"] if s.get("type") == "subborder")
     for key, value in skin["border"].items():
         assert border[key] == value, key

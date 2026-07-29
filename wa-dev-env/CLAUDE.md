@@ -63,22 +63,38 @@ needs the in-game dump (or IsSpellKnown checks).
 Refresh: in-game `/xdump spells 1 200000` + `/xdump talents`, `/reload`,
 then `./tools/wa pull-groundtruth`. Offline: `python3 tools/migrate/fetch_db2.py`.
 
-### Commands
+### Build system (primary — tools/build/)
+Groups are DECLARATIVE: `styles/xyrec.json` (the look, as data) + archetypes
++ `auras/<class>/` (group.json, defs/, lua/) compose into full payloads.
+The live snapshots under `data/auras/mine/` are pinned by parity tests —
+never hand-edit built output; edit defs/style and rebuild.
+- `python3 tools/build/build_group.py <class> -o out.json [--scrub] [--displays]`
+- `python3 tools/build/parity.py BUILT.json SNAPSHOT.json [--only "<id>"] [--diff-payloads]`
+- `python3 tools/build/decompile.py SNAPSHOT.json --class <class> [--cruft-report]`
+  — fold in-game hand-tweaks back into defs after a QA session
+- `python3 tools/build/import_donor.py DONOR.json --class <class> [--report]`
+  — new-class baseline from a donor pack (manifest + spellmap contract)
+Sabimaru donor packs (`data/auras/donors/`) are REFERENCE ONLY — inputs to
+import_donor, never modified, never landed. Superseded imperative tools
+live in `tools/migrate/archive/`.
+
+### Commands (codec / gates)
 - `./tools/wa decode <string|@file>` / `./tools/wa encode <json>` — !WA:2! codec
-- `./tools/wa extract "<id>" -o f.json` / `./tools/wa land f.json --parent "<id>" [--delete]`
+- `./tools/wa extract "<id>" -o f.json` / `./tools/wa land f.json [--parent "<id>"] [--delete]`
 - `./tools/wa backup` / `./tools/wa restore backups/<file>` / `./tools/wa dump-displays`
 - `python3 tools/migrate/validate_spells.py <payload.json>` — spell gate (must pass pre-land)
-- `python3 tools/migrate/restyle.py <donor.json> --template tools/migrate/templates/<t>.json -o out.json`
-- `python3 tools/migrate/audit.py` — structural audit of the live file
-- `python3 tools/migrate/extract_custom_code.py -o tmp/snippets && luacheck --config .luacheckrc-wow tmp/snippets/`
+- `python3 tools/migrate/audit.py [displays.json]` — structural + style-canon audit
+- `python3 tools/migrate/extract_custom_code.py [displays.json] -o tmp/snippets && luacheck --config .luacheckrc-wow tmp/snippets/`
 - `./tests/run.sh` — full test suite (Lua via luajit, Python via uv+pytest)
 
-### Migration loop (per aura)
-1. decode/extract donor → data/auras/donors/
-2. validate_spells (fix unknowns via ground truth, never by assumption)
-3. restyle with a template from tools/migrate/templates/
-4. review diff → `wa land` (auto-backup) → `audit`
-5. in-game: check visuals + BugSack; `/xdump` new facts back in
+### Build loop (per class)
+1. edit `styles/xyrec.json` or `auras/<class>/` (defs, lua, group.json)
+2. `build_group.py <class>` → parity (classes with snapshots) / golden tests
+3. validate_spells + audit + luacheck (via `--displays`)
+4. `wa land` (auto-backup, game-closed guard) → in-game QA + BugSack
+5. `wa extract` → refresh `data/auras/mine/<class>` snapshot + import string
+6. hand-tweaks made in-game? `decompile.py` the fresh snapshot to fold them
+   into defs, re-run parity, commit
 
 ### Safety
 Writes go through tools/sv/safety.lua only: game-closed guard, timestamped
