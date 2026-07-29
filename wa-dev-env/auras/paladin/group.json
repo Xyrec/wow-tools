@@ -1,8 +1,7 @@
 {
   "child_order": [
     "Xyrec Paladin - Core Abilities",
-    "Xyrec Paladin - Seal of Command",
-    "Xyrec Paladin - Seal of Righteousness",
+    "Xyrec Paladin - Active Seal",
     "Xyrec Paladin - Judgement",
     "Xyrec Paladin - Crusader Strike",
     "Xyrec Paladin - Avenger's Shield",
@@ -106,8 +105,7 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Paladin - Seal of Command",
-        "Xyrec Paladin - Seal of Righteousness",
+        "Xyrec Paladin - Active Seal",
         "Xyrec Paladin - Judgement",
         "Xyrec Paladin - Crusader Strike",
         "Xyrec Paladin - Avenger's Shield",
@@ -919,7 +917,7 @@
     ],
     "desc": "",
     "frameStrata": 1,
-    "groupIcon": "626006",
+    "groupIcon": "626003",
     "id": "Xyrec - Paladin",
     "information": {
       "groupOffset": false,

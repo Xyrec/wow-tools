@@ -57,8 +57,7 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Paladin - Seal of Command",
-        "Xyrec Paladin - Seal of Righteousness",
+        "Xyrec Paladin - Active Seal",
         "Xyrec Paladin - Judgement",
         "Xyrec Paladin - Crusader Strike",
         "Xyrec Paladin - Avenger's Shield",
@@ -235,259 +234,12 @@
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
       "desaturate": false,
-      "displayIcon": 132347,
-      "frameStrata": 1,
-      "height": 32,
-      "icon": true,
-      "iconSource": -1,
-      "id": "Xyrec Paladin - Seal of Command",
-      "information": {
-        "forceEvents": true,
-        "ignoreOptionsEventErrors": true,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "inverse": true,
-      "keepAspectRatio": true,
-      "load": {
-        "class": {
-          "multi": {
-            "PALADIN": true
-          },
-          "single": "PALADIN"
-        },
-        "not_spellknown": 0,
-        "race": {
-          "multi": []
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": []
-        },
-        "spellknown": 20375,
-        "talent": {
-          "multi": []
-        },
-        "use_class": true,
-        "use_never": false,
-        "use_not_spellknown": true,
-        "use_spellknown": true,
-        "zoneIds": ""
-      },
-      "parent": "Xyrec Paladin - Core Abilities",
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "icon",
-      "selfPoint": "CENTER",
-      "semver": "1.4.4",
-      "source": "import",
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 18,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        }
-      ],
-      "tocversion": 20506,
-      "triggers": {
-        "1": {
-          "trigger": {
-            "auranames": [
-              "20375",
-              "20154",
-              "21082",
-              "20165",
-              "20166",
-              "20164",
-              "31892"
-            ],
-            "debuffType": "HELPFUL",
-            "duration": "1",
-            "event": "Chat Message",
-            "genericShowOn": "showAlways",
-            "matchesShowOn": "showAlways",
-            "names": [],
-            "realSpellName": "Seal of Righteousness",
-            "spellIds": [],
-            "spellName": 20293,
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "track": "auto",
-            "type": "aura2",
-            "unevent": "timed",
-            "unit": "player",
-            "unitExists": true,
-            "useName": true,
-            "use_genericShowOn": true,
-            "use_remaining": false,
-            "use_spellName": true,
-            "use_track": true,
-            "use_unit": true
-          },
-          "untrigger": {
-            "genericShowOn": "showAlways"
-          }
-        },
-        "activeTriggerMode": -10,
-        "customTriggerLogic": "function (t)\n    return t[1]\nend\n    ",
-        "disjunctive": "any"
-      },
-      "url": "",
-      "useAdjustededMax": false,
-      "useAdjustededMin": false,
-      "useCooldownModRate": true,
-      "useTooltip": false,
-      "version": 15,
-      "width": 38,
-      "xOffset": 0,
-      "yOffset": 0,
-      "zoom": 0.3
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": {
-          "do_custom": false,
-          "do_glow": false
-        }
-      },
-      "adjustedMax": "",
-      "adjustedMin": "",
-      "alpha": 0.3,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "auto": false,
-      "color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "desaturate",
-              "value": true
-            }
-          ],
-          "check": {
-            "trigger": 1,
-            "value": 0,
-            "variable": "buffed"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": [],
-      "cooldown": true,
-      "cooldownEdge": true,
-      "cooldownSwipe": true,
-      "cooldownTextDisabled": true,
-      "desaturate": false,
       "displayIcon": 132325,
       "frameStrata": 1,
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Seal of Righteousness",
+      "id": "Xyrec Paladin - Active Seal",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -512,13 +264,11 @@
         "spec": {
           "multi": []
         },
-        "spellknown": 20154,
         "talent": {
           "multi": []
         },
         "use_class": true,
         "use_never": false,
-        "use_spellknown": true,
         "zoneIds": ""
       },
       "parent": "Xyrec Paladin - Core Abilities",
@@ -592,72 +342,28 @@
             "auranames": [
               "20154",
               "20375",
-              "21082",
               "20165",
               "20166",
               "20164",
-              "31892"
+              "21082",
+              "31892",
+              "31801"
             ],
             "debuffType": "HELPFUL",
-            "duration": "1",
-            "event": "Chat Message",
-            "genericShowOn": "showAlways",
             "matchesShowOn": "showAlways",
             "names": [],
-            "realSpellName": "Seal of Righteousness",
+            "ownOnly": true,
             "spellIds": [],
-            "spellName": 20293,
             "subeventPrefix": "SPELL",
             "subeventSuffix": "_CAST_START",
-            "track": "auto",
             "type": "aura2",
-            "unevent": "timed",
             "unit": "player",
-            "unitExists": true,
-            "useName": true,
-            "use_genericShowOn": true,
-            "use_remaining": false,
-            "use_spellName": true,
-            "use_track": true,
-            "use_unit": true
+            "useName": true
           },
-          "untrigger": {
-            "genericShowOn": "showAlways"
-          }
-        },
-        "2": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "event": "Spell Known",
-            "genericShowOn": "showOnCooldown",
-            "realSpellName": "Seal of Righteousness",
-            "spellName": 20154,
-            "type": "spell",
-            "unit": "player",
-            "use_genericShowOn": true,
-            "use_spellName": true,
-            "use_track": true
-          },
-          "untrigger": []
-        },
-        "3": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "event": "Spell Known",
-            "genericShowOn": "showOnCooldown",
-            "realSpellName": 0,
-            "spellName": 20375,
-            "type": "spell",
-            "unit": "player",
-            "use_genericShowOn": true,
-            "use_spellName": true,
-            "use_track": true
-          },
-          "untrigger": []
+          "untrigger": {}
         },
         "activeTriggerMode": -10,
-        "customTriggerLogic": "function (t)\n    return t[1] and not t[2] and not t[3]\nend\n    ",
-        "disjunctive": "custom"
+        "disjunctive": "any"
       },
       "url": "",
       "useAdjustededMax": false,
@@ -11636,7 +11342,7 @@
     ],
     "desc": "",
     "frameStrata": 1,
-    "groupIcon": "626006",
+    "groupIcon": "626003",
     "id": "Xyrec - Paladin",
     "information": {
       "groupOffset": false,
