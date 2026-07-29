@@ -82,6 +82,63 @@ def find_cruft(aura):
     return out
 
 
+# fields whose values are spell ids (repointed at donor import via spellmap)
+_SPELL_ID_FIELDS = {"spellknown", "not_spellknown", "exact_not_spellknown",
+                    "spellName", "itemName"}
+_SPELL_ID_LIST_FIELDS = {"spellIds", "auranames", "auraspellids", "spellId"}
+
+
+def repoint_ids(node, mapping, applied=None):
+    """Replace SoD spell ids with TBC ids per mapping ({old: new|'drop'}).
+
+    Handles bare ints, numeric strings, and lists of either. Entries mapped
+    to 'drop' are removed from lists / left untouched otherwise (the caller
+    decides what to do with un-repointable auras). Returns the applied list.
+    """
+    if applied is None:
+        applied = []
+
+    def convert(value):
+        key = str(value)
+        if key in mapping and mapping[key] != "drop":
+            applied.append((value, mapping[key]))
+            return type(value)(mapping[key]) if isinstance(value, str) else mapping[key]
+        return value
+
+    if isinstance(node, dict):
+        for k, v in list(node.items()):
+            if k in _SPELL_ID_FIELDS and isinstance(v, (int, str)):
+                node[k] = convert(v)
+            elif k in _SPELL_ID_LIST_FIELDS and isinstance(v, list):
+                kept = []
+                for item in v:
+                    if str(item) in mapping and mapping[str(item)] == "drop":
+                        applied.append((item, "drop"))
+                        continue
+                    kept.append(convert(item))
+                node[k] = kept
+            else:
+                repoint_ids(v, mapping, applied)
+    elif isinstance(node, list):
+        for item in node:
+            repoint_ids(item, mapping, applied)
+    return applied
+
+
+def is_ooc_alpha_condition(cond):
+    """Any out-of-combat alpha-styling condition (canonical or donor variant)."""
+    if not isinstance(cond, dict):
+        return False
+    changes = cond.get("changes") or []
+    touches_alpha = any(isinstance(ch, dict) and ch.get("property") == "alpha"
+                        for ch in changes)
+    if not touches_alpha:
+        return False
+    import json as _json
+    check_str = _json.dumps(cond.get("check") or {})
+    return "incombat" in check_str or "attackabletarget" in check_str
+
+
 def apply_scrub(aura):
     """Return (cleaned copy, applied list). Only removes recognized cruft."""
     cleaned = copy.deepcopy(aura)
