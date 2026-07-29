@@ -246,7 +246,7 @@
         "showNilIsFalse": true
       },
       "internalVersion": 90,
-      "inverse": true,
+      "inverse": false,
       "keepAspectRatio": true,
       "load": {
         "class": {
@@ -1755,6 +1755,90 @@
           "text_text_format_p_time_legacy_floor": false,
           "text_text_format_p_time_mod_rate": true,
           "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 18,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%1.p",
+          "text_text_format_1.p_format": "timed",
+          "text_text_format_1.p_time_dynamic_threshold": 0,
+          "text_text_format_1.p_time_format": 0,
+          "text_text_format_1.p_time_legacy_floor": false,
+          "text_text_format_1.p_time_mod_rate": true,
+          "text_text_format_1.p_time_precision": 1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "BOTTOMRIGHT",
+          "rotateText": "NONE",
+          "text_anchorXOffset": -1,
+          "text_anchorYOffset": 1,
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 14,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "BOTTOMRIGHT",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%2.s",
+          "text_text_format_2.s_format": "none",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": true,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_s_format": "none",
           "text_visible": true,
           "text_wordWrap": "WordWrap",
           "type": "subtext"
@@ -6918,7 +7002,10 @@
     {
       "actions": {
         "finish": [],
-        "init": [],
+        "init": {
+          "custom": "aura_env.stacks = 0",
+          "do_custom": true
+        },
         "start": []
       },
       "adjustedMax": "",
@@ -6985,6 +7072,7 @@
       "cooldownEdge": false,
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
+      "customText": "function()\n    return aura_env.stacks\nend",
       "desaturate": false,
       "desc": "",
       "displayIcon": "135882",
@@ -7082,6 +7170,40 @@
           "text_text_format_p_time_legacy_floor": false,
           "text_text_format_p_time_mod_rate": true,
           "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_anchorXOffset": 0,
+          "text_anchorYOffset": 0,
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 18,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "CENTER",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%c",
+          "text_text_format_c_format": "none",
           "text_visible": true,
           "text_wordWrap": "WordWrap",
           "type": "subtext"

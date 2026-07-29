@@ -166,6 +166,16 @@ def restyle_leaf(style, aura, row, archetype):
     subs = label_subregions(style, archetype, aura)
     if subs is not None:
         overrides["subRegions"] = subs
+    # code-bearing fields are LOGIC: %c closures and custom actions must
+    # survive the restyle or their subtexts render blank
+    for field in ("customText", "customTextUpdate"):
+        if aura.get(field) and str(aura.get(field)).strip():
+            overrides[field] = aura[field]
+    donor_actions = aura.get("actions") or {}
+    if any(isinstance(slot, dict) and (slot.get("do_custom")
+                                       or str(slot.get("custom", "")).strip())
+           for slot in donor_actions.values()):
+        overrides["actions"] = copy.deepcopy(donor_actions)
     if overrides:
         d["overrides"] = overrides
     return d
