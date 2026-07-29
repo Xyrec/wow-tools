@@ -140,7 +140,7 @@
           "untrigger": []
         }
       ],
-      "uid": "wxS0S41tDEd",
+      "uid": "40wdYpFNKZU",
       "url": "",
       "useLimit": true,
       "version": 32,
@@ -351,7 +351,6 @@
               "31801"
             ],
             "debuffType": "HELPFUL",
-            "event": "Health",
             "matchesShowOn": "showAlways",
             "names": [],
             "ownOnly": true,
@@ -367,7 +366,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "VWuWzW59tsN",
+      "uid": "aNiEhxKz7L8",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -680,7 +679,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "BS6f1VKLq76",
+      "uid": "rnktgmvjWm4",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -895,7 +894,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "BBtEWO51moc",
+      "uid": "Ejav0CRwBRo",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1224,7 +1223,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    ",
         "disjunctive": "custom"
       },
-      "uid": "3JCBurT7CQa",
+      "uid": "B2apyxVUqvH",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1512,7 +1511,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "any"
       },
-      "uid": "5Icl0KLqizn",
+      "uid": "OMecDrtV7Iv",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1835,7 +1834,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    ",
         "disjunctive": "custom"
       },
-      "uid": "fiC4zXbmC3b",
+      "uid": "WQxqBxjaZnR",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2103,7 +2102,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "UBSZmYVKIDN",
+      "uid": "W7s0TVtrGsX",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2344,7 +2343,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "JjI56zLzEhl",
+      "uid": "xFhsFe7YthB",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2455,7 +2454,7 @@
           "untrigger": []
         }
       ],
-      "uid": "tRqJTRyayxd",
+      "uid": "sdhVsxog0Hk",
       "url": "",
       "version": 32,
       "wagoID": "zLJ2R3Oua",
@@ -2963,7 +2962,10 @@
         },
         "3": {
           "trigger": {
-            "auranames": [],
+            "auranames": [
+              "31892",
+              "31801"
+            ],
             "debuffType": "HELPFUL",
             "type": "aura2",
             "unit": "player",
@@ -3046,7 +3048,7 @@
         "activeTriggerMode": 1,
         "disjunctive": "any"
       },
-      "uid": "RLWvEOI22qM",
+      "uid": "tNdxRiLITSb",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3380,7 +3382,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "KuTDvD3LZCw",
+      "uid": "twFpWbk2IQY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3611,7 +3613,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "Wkp7UpwpWV9",
+      "uid": "GEQni0dZMIy",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3679,6 +3681,7 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
+        "Xyrec Paladin - Avenging Wrath",
         "Xyrec Paladin - Hammer of Wrath",
         "Xyrec Paladin - Exorcism",
         "Xyrec Paladin - Holy Wrath",
@@ -3779,13 +3782,286 @@
           "untrigger": []
         }
       ],
-      "uid": "pufAX2CfG7Z",
+      "uid": "ZGNBBFL36qB",
       "url": "",
       "useLimit": true,
       "version": 32,
       "wagoID": "zLJ2R3Oua",
       "xOffset": 0,
       "yOffset": -26
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            },
+            {
+              "property": "inverse",
+              "value": true
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": 1,
+                "value": 0,
+                "variable": "show"
+              },
+              {
+                "trigger": 2,
+                "value": 1,
+                "variable": "onCooldown"
+              }
+            ],
+            "trigger": -2,
+            "variable": "AND"
+          },
+          "linked": false
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "displayIcon": "",
+      "frameStrata": 1,
+      "height": 30,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Xyrec Paladin - Avenging Wrath",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": false,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": {
+            "PALADIN": true
+          },
+          "single": "PALADIN"
+        },
+        "race": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "spellknown": 31884,
+        "talent": {
+          "multi": []
+        },
+        "use_class": true,
+        "use_never": false,
+        "use_spellknown": true,
+        "zoneIds": ""
+      },
+      "parent": "Xyrec Paladin - Cooldowns",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 14,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%p",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        }
+      ],
+      "tocversion": 11502,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "auranames": [
+              "31884"
+            ],
+            "debuffType": "HELPFUL",
+            "duration": "1",
+            "event": "Conditions",
+            "names": [],
+            "ownOnly": true,
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unevent": "auto",
+            "unit": "player",
+            "useName": true,
+            "use_alwaystrue": true,
+            "use_unit": true
+          },
+          "untrigger": []
+        },
+        "2": {
+          "trigger": {
+            "auranames": [],
+            "debuffType": "HELPFUL",
+            "duration": "1",
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showOnCooldown",
+            "matchesShowOn": "showAlways",
+            "names": [],
+            "realSpellName": "Avenging Wrath",
+            "spellIds": [],
+            "spellName": 31884,
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "track": "auto",
+            "type": "spell",
+            "unevent": "auto",
+            "unit": "player",
+            "unitExists": true,
+            "useName": true,
+            "use_charges": false,
+            "use_genericShowOn": true,
+            "use_remaining": false,
+            "use_spellName": true,
+            "use_track": true,
+            "use_unit": true
+          },
+          "untrigger": {
+            "genericShowOn": "showAlways",
+            "track": "auto"
+          }
+        },
+        "activeTriggerMode": -10,
+        "disjunctive": "any"
+      },
+      "uid": "6RFVhRprpqO",
+      "url": "https://wago.io/8MyJNekEa/15",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 15,
+      "width": 30,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
     },
     {
       "actions": {
@@ -4035,7 +4311,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "t4QaXzztN8V",
+      "uid": "0Bt8g1lu2VU",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4293,7 +4569,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "nQdRjGwHbaZ",
+      "uid": "JXSuH11RFMx",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4551,7 +4827,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "4l8cMVt2K6D",
+      "uid": "8SAmPVBBG8o",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4829,7 +5105,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "yy1XE1KxEC4",
+      "uid": "KlmgU1iOs4T",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5107,7 +5383,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "2wiTUpAumbQ",
+      "uid": "8FryndQtNX9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5381,7 +5657,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "tcz0XGlpFHh",
+      "uid": "B0KAuUx44TV",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5656,7 +5932,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "H0fKyMQKbep",
+      "uid": "AjRmvn5ePVc",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5930,7 +6206,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "E3QGxE1QECH",
+      "uid": "lLZVkwIeLzd",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6166,7 +6442,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "zLGchaWN1AP",
+      "uid": "7BeT3XIw3lu",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6409,7 +6685,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ec3VlxTX1GN",
+      "uid": "xU0kqNXH891",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6652,7 +6928,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "vpG7eubVEzP",
+      "uid": "E0OGuBxlr09",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6900,7 +7176,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "00lZhTUe2jt",
+      "uid": "IlCM5TmuTZn",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7177,7 +7453,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "kwjs6gJDiCG",
+      "uid": "HtRuSDINFo9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7454,7 +7730,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "WYim8cwcuKT",
+      "uid": "IDzr9jmMOFh",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7670,7 +7946,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "3D0TVFh94uL",
+      "uid": "xicUW4cPSjd",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7925,7 +8201,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "7sF0Mdlm539",
+      "uid": "8Sc1mjNZBnu",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8199,7 +8475,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "qg9ZwFVb4RU",
+      "uid": "Zm8nFCk0cJ1",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8473,7 +8749,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "feNB8jF33nD",
+      "uid": "9kEAFmFptEG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8614,7 +8890,7 @@
           "untrigger": []
         }
       ],
-      "uid": "8D013GxLvnE",
+      "uid": "RHoz28rqfBO",
       "url": "",
       "useLimit": false,
       "version": 32,
@@ -8857,7 +9133,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "84B1MhiBq1z",
+      "uid": "XS8gqyBsnDb",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9134,7 +9410,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "WCr6RWj8dHY",
+      "uid": "hY6vduSgMAb",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9355,7 +9631,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "xrXmbEg8pDy",
+      "uid": "QUMi1elVMmJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9567,7 +9843,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "N0pGn943DWz",
+      "uid": "lSbHMukBvAa",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9825,7 +10101,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n\n",
         "disjunctive": "custom"
       },
-      "uid": "ICi9UEQj4zk",
+      "uid": "cA5EObsaPy8",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9954,7 +10230,7 @@
           "untrigger": []
         }
       ],
-      "uid": "4BclWapWbbg",
+      "uid": "9WstT379hHK",
       "url": "",
       "useLimit": true,
       "version": 32,
@@ -10299,7 +10575,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "JsBRk7Fmgbp",
+      "uid": "NMmPktM8AuX",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10432,7 +10708,7 @@
           "untrigger": []
         }
       ],
-      "uid": "SYgareiKpLT",
+      "uid": "mwPX3PeWh1t",
       "url": "",
       "useLimit": true,
       "version": 32,
@@ -10670,7 +10946,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "cplUxbxR4wK",
+      "uid": "Ih4L10v3uFJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10913,7 +11189,7 @@
         "customTriggerLogic": "\n",
         "disjunctive": "any"
       },
-      "uid": "AtcrdHeVXJo",
+      "uid": "4f0qmZAMIOz",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11156,7 +11432,7 @@
         "customTriggerLogic": "",
         "disjunctive": "any"
       },
-      "uid": "MWKRQtHA0Z6",
+      "uid": "OQZCqSV3Muk",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11325,7 +11601,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "odHSA66fPmj",
+      "uid": "IDW3NaX00Ht",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11442,7 +11718,7 @@
         "untrigger": []
       }
     ],
-    "uid": "AbEzJn5PtR2",
+    "uid": "ywkUdDVPwsG",
     "url": "",
     "version": 32,
     "wagoID": "zLJ2R3Oua",
