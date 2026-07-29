@@ -20,3 +20,4 @@ sources/cmangos-tbc-db/
 
 # AtlasLoot source data (large, synced separately)
 sources/atlasloot/AtlasLootClassic*/
+nether-sim/target/

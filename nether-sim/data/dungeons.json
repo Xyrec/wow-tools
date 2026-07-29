@@ -1,0 +1,17 @@
+[
+  { "name": "Hellfire Ramparts", "bosses": 3 },
+  { "name": "The Blood Furnace", "bosses": 3 },
+  { "name": "The Shattered Halls", "bosses": 4 },
+  { "name": "The Slave Pens", "bosses": 3 },
+  { "name": "The Underbog", "bosses": 4 },
+  { "name": "The Steamvault", "bosses": 3 },
+  { "name": "Mana-Tombs", "bosses": 3 },
+  { "name": "Auchenai Crypts", "bosses": 2 },
+  { "name": "Sethekk Halls", "bosses": 3 },
+  { "name": "Shadow Labyrinth", "bosses": 4 },
+  { "name": "Old Hillsbrad Foothills", "bosses": 3 },
+  { "name": "The Black Morass", "bosses": 3 },
+  { "name": "The Mechanar", "bosses": 5 },
+  { "name": "The Botanica", "bosses": 5 },
+  { "name": "The Arcatraz", "bosses": 4 }
+]
