@@ -128,6 +128,29 @@ def report(donor, class_name):
     print(f"\nrecognized cruft entries (auto-scrubbed on apply): {cruft_total}")
 
 
+def label_subregions(style, archetype, aura):
+    """Canonical subRegions plus the donor's extra label texts (restyled).
+
+    Labels like 'Bless'/'-RF' and unitName readouts are SEMANTIC — a blank
+    reminder icon loses its meaning — so every donor subtext beyond the
+    canonical %p is carried over, wearing the pack font. Returns None when
+    the canonical set already covers the donor (no override needed)."""
+    base = archetypes.base_aura(style, archetype)
+    extras = []
+    for sub in aura.get("subRegions") or []:
+        if sub.get("type") != "subtext" or sub.get("text_text") == "%p":
+            continue
+        kept = copy.deepcopy(sub)
+        kept["text_font"] = style["fonts"]["family"]
+        kept["text_fontType"] = style["fonts"]["type"]
+        kept["text_shadowXOffset"] = style["fonts"]["shadow"]["x"]
+        kept["text_shadowYOffset"] = style["fonts"]["shadow"]["y"]
+        extras.append(kept)
+    if not extras:
+        return None
+    return base["subRegions"] + extras
+
+
 def restyle_leaf(style, aura, row, archetype):
     """Strip donor styling, keep logic + semantic fields, wear the archetype."""
     conds = [c for c in (aura.get("conditions") or [])
@@ -136,11 +159,13 @@ def restyle_leaf(style, aura, row, archetype):
          "triggers": aura.get("triggers"), "load": aura.get("load"),
          "conditions": conds}
     overrides = {}
+    base = archetypes.base_aura(style, archetype)
     for field in _SEMANTIC_KEEP:
-        if field in aura:
-            base = archetypes.base_aura(style, archetype)
-            if aura[field] != base.get(field):
-                overrides[field] = copy.deepcopy(aura[field])
+        if field in aura and aura[field] != base.get(field):
+            overrides[field] = copy.deepcopy(aura[field])
+    subs = label_subregions(style, archetype, aura)
+    if subs is not None:
+        overrides["subRegions"] = subs
     if overrides:
         d["overrides"] = overrides
     return d
