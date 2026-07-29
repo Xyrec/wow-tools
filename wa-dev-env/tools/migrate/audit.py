@@ -7,12 +7,17 @@ import sys
 
 GROUP_TYPES = {"group", "dynamicgroup"}
 
-# canonical centered cooldown/timer text on Xyrec icons. Size follows the
-# row's icon width (Reminders 44 -> 20pt, main row 38 -> 18pt, Cooldowns
-# 30 -> 14pt); %s counters may deviate deliberately (Personal Shield stacks)
-CENTER_TEXT_CANON = {"text_font": "PT Sans Narrow",
-                     "text_fontType": "OUTLINE", "text_color": [1, 1, 1, 1]}
-CENTER_TEXT_SIZE_BY_WIDTH = {44: 20, 38: 18, 30: 14}
+# canonical centered cooldown/timer text on Xyrec icons, read from the style
+# guide. Size follows the row's icon width; %s counters may deviate
+# deliberately (Personal Shield stacks).
+_STYLE = json.loads((pathlib.Path(__file__).resolve().parents[2]
+                     / "styles" / "xyrec.json").read_text())
+CENTER_TEXT_CANON = {"text_font": _STYLE["fonts"]["family"],
+                     "text_fontType": _STYLE["fonts"]["type"],
+                     "text_color": _STYLE["colors"]["white"]}
+CENTER_TEXT_SIZE_BY_WIDTH = {row["width"]: row["text_size"]
+                             for row in _STYLE["icon_rows"].values()}
+ALPHA_RULE = _STYLE["alpha_rule"]
 
 
 def check_center_text(key, aura, issues):
@@ -31,16 +36,49 @@ def check_center_text(key, aura, issues):
                                   f"{s.get(field)!r} (canon: {want!r})")
 
 
+def check_style_rules(key, aura, displays, issues):
+    """Xyrec-group style-guide invariants beyond text canon."""
+    if not key.startswith("Xyrec"):
+        return
+    region = aura.get("regionType")
+    if region in GROUP_TYPES:
+        if region == "dynamicgroup":
+            for child in aura.get("controlledChildren") or []:
+                ca = displays.get(child) or {}
+                if ca.get("xOffset") or ca.get("yOffset"):
+                    issues.append(f"{child}: nonzero offset inside dynamicgroup {key}")
+        return
+    if aura.get("alpha") != ALPHA_RULE["base"]:
+        issues.append(f"{key}: base alpha {aura.get('alpha')!r} "
+                      f"(canon: {ALPHA_RULE['base']})")
+    want_checks = ALPHA_RULE["condition"]["check"]["checks"]
+    for cond in aura.get("conditions") or []:
+        if not isinstance(cond, dict):
+            continue
+        chk = cond.get("check") or {}
+        if chk.get("variable") == "OR" and any(
+                isinstance(ch, dict) and ch.get("property") == "alpha"
+                for ch in cond.get("changes") or []):
+            if all(w in (chk.get("checks") or []) for w in want_checks):
+                return
+    issues.append(f"{key}: missing canonical alpha-dim condition")
+
+
 def audit_displays(displays: dict) -> list:
     issues = []
     uids = {}
+    # built (pre-land) displays have no uids at all — that's fine; a MIX of
+    # with/without uid in a live table is what indicates corruption
+    any_uid = any(a.get("uid") for a in displays.values())
     for key, aura in displays.items():
         aura_id = aura.get("id")
         check_center_text(key, aura, issues)
+        check_style_rules(key, aura, displays, issues)
         if aura_id != key:
             issues.append(f"{key}: key/id mismatch (id={aura_id!r})")
         if not aura.get("uid"):
-            issues.append(f"{key}: missing uid")
+            if any_uid:
+                issues.append(f"{key}: missing uid")
         else:
             uids.setdefault(aura["uid"], []).append(key)
         if not aura.get("regionType"):

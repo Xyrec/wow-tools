@@ -1,0 +1,125 @@
+{
+  "archetype": "rotation_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "sub.3.text_color",
+          "value": [
+            1,
+            0.82,
+            0.25,
+            1
+          ]
+        }
+      ],
+      "check": {
+        "op": "<=",
+        "trigger": 1,
+        "value": "1",
+        "variable": "expirationTime"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "color",
+          "value": [
+            1,
+            0.294117659,
+            0.368627459,
+            1
+          ]
+        },
+        {
+          "property": "sub.3.text_visible",
+          "value": false
+        }
+      ],
+      "check": {
+        "op": "<=",
+        "trigger": 1,
+        "value": "0",
+        "variable": "expirationTime"
+      }
+    }
+  ],
+  "id": "Xyrec Shaman - Totem Twist",
+  "load": {
+    "class": {
+      "multi": {
+        "SHAMAN": true
+      },
+      "single": "SHAMAN"
+    },
+    "ingroup": {
+      "multi": {
+        "group": true,
+        "raid": true
+      },
+      "single": "group"
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "talent": {
+      "multi": []
+    },
+    "use_alive": true,
+    "use_class": true,
+    "use_ingroup": true,
+    "use_never": false
+  },
+  "lua": {
+    "triggers.1.trigger.custom": "lua/totem-twist--triggers-1-trigger-custom.lua"
+  },
+  "overrides": {
+    "displayIcon": 136114,
+    "iconSource": 2
+  },
+  "row": "core",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "check": "event",
+        "custom": "@totem-twist--triggers-1-trigger-custom.lua",
+        "customVariables": "{\n    expirationTime = true,\n    duration = true\n}",
+        "custom_type": "stateupdate",
+        "debuffType": "HELPFUL",
+        "event": "Health",
+        "events": "CLEU:SPELL_CAST_SUCCESS PLAYER_REGEN_ENABLED PLAYER_ENTERING_WORLD",
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_SUCCESS",
+        "type": "custom",
+        "unevent": "auto",
+        "unit": "player",
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "2": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Totem",
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "totemType": 4,
+        "type": "spell",
+        "unit": "player",
+        "use_totemType": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": 1,
+    "customTriggerLogic": "function(t)\n    return t[1]\nend",
+    "disjunctive": "custom"
+  }
+}

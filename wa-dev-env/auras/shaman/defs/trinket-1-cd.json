@@ -1,0 +1,93 @@
+{
+  "archetype": "cooldown_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        },
+        {
+          "property": "inverse",
+          "value": true
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 1,
+        "variable": "show"
+      }
+    }
+  ],
+  "id": "Xyrec Shaman - Trinket 1 CD",
+  "load": {
+    "class": {
+      "multi": {
+        "PALADIN": true
+      },
+      "single": "SHAMAN"
+    },
+    "race": {
+      "multi": {
+        "Dwarf": true,
+        "Human": true
+      },
+      "single": "Human"
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": true,
+    "use_not_spellknown": false,
+    "use_spellknown": false,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "iconSource": 1
+  },
+  "row": "cooldowns",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Equipment Slot)",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 0,
+        "itemSlot": 13,
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "item",
+        "unevent": "auto",
+        "unit": "player",
+        "unitExists": true,
+        "useName": true,
+        "use_charges": false,
+        "use_genericShowOn": true,
+        "use_itemName": true,
+        "use_itemSlot": true,
+        "use_remaining": false,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways",
+        "track": "auto"
+      }
+    },
+    "activeTriggerMode": -10,
+    "disjunctive": "any"
+  }
+}

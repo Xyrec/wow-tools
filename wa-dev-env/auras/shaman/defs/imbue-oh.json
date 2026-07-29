@@ -1,0 +1,413 @@
+{
+  "archetype": "reminder_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 1,
+        "variable": "show"
+      }
+    }
+  ],
+  "id": "Xyrec Shaman - Imbue [OH]",
+  "load": {
+    "class": {
+      "multi": {
+        "DRUID": true,
+        "MAGE": true
+      },
+      "single": "SHAMAN"
+    },
+    "difficulty": {
+      "multi": []
+    },
+    "faction": {
+      "multi": []
+    },
+    "ingroup": {
+      "multi": []
+    },
+    "itemtypeequipped": [],
+    "pvptalent": {
+      "multi": []
+    },
+    "race": {
+      "multi": []
+    },
+    "role": {
+      "multi": []
+    },
+    "size": {
+      "multi": {
+        "arena": true,
+        "flexible": true,
+        "fortyman": true,
+        "party": true,
+        "pvp": true,
+        "ratedarena": true,
+        "ratedpvp": true,
+        "ten": true,
+        "twenty": true,
+        "twentyfive": true
+      },
+      "single": "none"
+    },
+    "spec": {
+      "multi": [],
+      "single": 1
+    },
+    "spellknown": 8017,
+    "talent": {
+      "multi": {
+        "16": true,
+        "29": true,
+        "33": true,
+        "56": true,
+        "89": true
+      },
+      "single": 29
+    },
+    "talent2": {
+      "multi": []
+    },
+    "use_alive": true,
+    "use_class": true,
+    "use_itemequiped": false,
+    "use_never": false,
+    "use_spec": true,
+    "use_spellknown": true,
+    "use_vehicle": false,
+    "use_vehicleUi": false,
+    "use_zone": false,
+    "zone": "",
+    "zoneIds": ""
+  },
+  "overrides": {
+    "actions": {
+      "init": {
+        "custom": "\n\n",
+        "do_custom": false
+      }
+    },
+    "desc": "When entering a dungeon, reloading your UI, or logging in: you may need to equip and un-equip your weapon for the tracker to begin working again.",
+    "displayIcon": 135814,
+    "iconSource": 0,
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "text_color": [],
+        "type": "subborder"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "CENTER",
+        "border_color": [],
+        "rotateText": "NONE",
+        "text_anchorXOffset": 0,
+        "text_anchorYOffset": 0,
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 64,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 20,
+        "text_fontType": "OUTLINE",
+        "text_justify": "CENTER",
+        "text_selfPoint": "AUTO",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_shadowXOffset": 0,
+        "text_shadowYOffset": 0,
+        "text_text": "%p",
+        "text_text_format_p_format": "timed",
+        "text_text_format_p_time_dynamic_threshold": 0,
+        "text_text_format_p_time_format": 0,
+        "text_text_format_p_time_legacy_floor": false,
+        "text_text_format_p_time_mod_rate": true,
+        "text_text_format_p_time_precision": 1,
+        "text_text_format_s_format": "none",
+        "text_visible": true,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "BOTTOMRIGHT",
+        "border_color": [],
+        "rotateText": "NONE",
+        "text_anchorXOffset": -1,
+        "text_anchorYOffset": 1,
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 64,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 14,
+        "text_fontType": "OUTLINE",
+        "text_justify": "CENTER",
+        "text_selfPoint": "BOTTOMRIGHT",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_shadowXOffset": 0,
+        "text_shadowYOffset": 0,
+        "text_text": "%s",
+        "text_text_format_p_format": "timed",
+        "text_text_format_p_time_dynamic_threshold": 0,
+        "text_text_format_p_time_format": 0,
+        "text_text_format_p_time_legacy_floor": true,
+        "text_text_format_p_time_mod_rate": true,
+        "text_text_format_p_time_precision": 1,
+        "text_text_format_s_format": "none",
+        "text_visible": true,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "OUTER_BOTTOM",
+        "border_color": [],
+        "rotateText": "NONE",
+        "text_anchorXOffset": 0,
+        "text_anchorYOffset": -5,
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 64,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 14,
+        "text_fontType": "OUTLINE",
+        "text_justify": "CENTER",
+        "text_selfPoint": "CENTER",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_shadowXOffset": 0,
+        "text_shadowYOffset": 0,
+        "text_text": "OH",
+        "text_text_format_p_format": "timed",
+        "text_text_format_p_time_dynamic_threshold": 0,
+        "text_text_format_p_time_format": 0,
+        "text_text_format_p_time_legacy_floor": true,
+        "text_text_format_p_time_mod_rate": true,
+        "text_text_format_p_time_precision": 1,
+        "text_text_format_s_format": "none",
+        "text_visible": true,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      }
+    ]
+  },
+  "row": "reminders",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "count": "0",
+        "count_operator": "==",
+        "debuffType": "HELPFUL",
+        "duration": "1",
+        "enchant": "",
+        "event": "Weapon Enchant",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 44605,
+        "matchesShowOn": "showOnMissing",
+        "names": [],
+        "showOn": "showOnMissing",
+        "spellIds": [],
+        "subeventPrefix": "",
+        "subeventSuffix": "",
+        "type": "item",
+        "unevent": "auto",
+        "unit": "player",
+        "useName": true,
+        "use_count": true,
+        "use_enchant": false,
+        "use_genericShowOn": true,
+        "use_itemName": true,
+        "use_remaining": false,
+        "use_showOn": true,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true,
+        "use_weapon": true,
+        "weapon": "off"
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways"
+      }
+    },
+    "2": {
+      "trigger": {
+        "count": "0",
+        "count_operator": "==",
+        "debuffType": "HELPFUL",
+        "duration": "1",
+        "enchant": "",
+        "event": "Weapon Enchant",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 44605,
+        "matchesShowOn": "showOnMissing",
+        "names": [],
+        "remaining": "30",
+        "remaining_operator": "<",
+        "showOn": "showOnActive",
+        "stacks": "",
+        "stacks_operator": "<",
+        "subeventPrefix": "",
+        "subeventSuffix": "",
+        "type": "item",
+        "unevent": "auto",
+        "unit": "player",
+        "useName": true,
+        "use_count": true,
+        "use_enchant": false,
+        "use_genericShowOn": true,
+        "use_itemName": true,
+        "use_remaining": true,
+        "use_showOn": true,
+        "use_spellName": true,
+        "use_stacks": false,
+        "use_track": true,
+        "use_unit": true,
+        "use_weapon": true,
+        "weapon": "off"
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways"
+      }
+    },
+    "3": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Conditions",
+        "type": "unit",
+        "unit": "player",
+        "use_resting": false,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "4": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Item Type Equipped",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 0,
+        "itemSlot": 17,
+        "itemTypeName": {
+          "single": 512
+        },
+        "type": "item",
+        "unit": "player",
+        "use_genericShowOn": true,
+        "use_itemName": true,
+        "use_itemSlot": true,
+        "use_itemTypeName": true
+      },
+      "untrigger": []
+    },
+    "5": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Item Type Equipped",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 0,
+        "itemSlot": 17,
+        "itemTypeName": {
+          "single": 516
+        },
+        "type": "item",
+        "unit": "player",
+        "use_genericShowOn": true,
+        "use_itemName": true,
+        "use_itemSlot": true,
+        "use_itemTypeName": true
+      },
+      "untrigger": []
+    },
+    "6": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Item Type Equipped",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 0,
+        "itemSlot": 17,
+        "itemTypeName": {
+          "single": 525
+        },
+        "type": "item",
+        "unit": "player",
+        "use_genericShowOn": true,
+        "use_itemName": true,
+        "use_itemSlot": true,
+        "use_itemTypeName": true
+      },
+      "untrigger": []
+    },
+    "7": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Item Type Equipped",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 0,
+        "itemSlot": 17,
+        "itemTypeName": {
+          "single": 527
+        },
+        "type": "item",
+        "unit": "player",
+        "use_genericShowOn": true,
+        "use_itemName": true,
+        "use_itemSlot": true,
+        "use_itemTypeName": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": -10,
+    "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3] and (t[4] or t[5] or t[6] or t[7])\nend",
+    "disjunctive": "custom"
+  }
+}

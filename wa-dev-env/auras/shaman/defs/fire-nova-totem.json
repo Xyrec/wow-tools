@@ -1,0 +1,171 @@
+{
+  "archetype": "rotation_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        },
+        {
+          "property": "inverse",
+          "value": true
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 2,
+            "value": 1,
+            "variable": "onCooldown"
+          },
+          {
+            "trigger": 1,
+            "value": 0,
+            "variable": "show"
+          }
+        ],
+        "trigger": -2,
+        "variable": "AND"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "sub.3.text_color",
+          "value": [
+            0.25,
+            1,
+            0.25,
+            1
+          ]
+        }
+      ],
+      "check": {
+        "trigger": 3,
+        "value": 1,
+        "variable": "show"
+      }
+    }
+  ],
+  "id": "Xyrec Shaman - Fire Nova Totem",
+  "load": {
+    "class": {
+      "multi": {
+        "PALADIN": true
+      },
+      "single": "SHAMAN"
+    },
+    "not_spellknown": 642,
+    "race": {
+      "multi": {
+        "Dwarf": true,
+        "Human": true
+      },
+      "single": "Human"
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 1535,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_not_spellknown": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "actions": {
+      "start": []
+    },
+    "cooldownEdge": false,
+    "inverse": false,
+    "useTooltip": "__DELETE__"
+  },
+  "row": "core",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Totem",
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "totemNamePattern": "Fire Nova Totem",
+        "totemNamePattern_operator": "find('%s')",
+        "totemType": 1,
+        "type": "spell",
+        "unit": "player",
+        "use_totemNamePattern": true,
+        "use_totemType": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "2": {
+      "trigger": {
+        "auranames": [
+          "Blood Fury"
+        ],
+        "debuffType": "HELPFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showAlways",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "realSpellName": "Fire Nova Totem",
+        "spellIds": [],
+        "spellName": 1535,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "spell",
+        "unevent": "auto",
+        "unit": "player",
+        "unitExists": true,
+        "useName": true,
+        "use_charges": false,
+        "use_genericShowOn": true,
+        "use_remaining": false,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways",
+        "track": "auto"
+      }
+    },
+    "3": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Totem",
+        "names": [],
+        "remaining": "1",
+        "remaining_operator": "<",
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "totemNamePattern": "Fire Nova Totem",
+        "totemNamePattern_operator": "find('%s')",
+        "totemType": 1,
+        "type": "spell",
+        "unit": "player",
+        "use_remaining": true,
+        "use_totemNamePattern": true,
+        "use_totemType": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": -10,
+    "disjunctive": "any"
+  }
+}

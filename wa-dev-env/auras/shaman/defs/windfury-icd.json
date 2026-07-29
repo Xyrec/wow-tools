@@ -1,0 +1,88 @@
+{
+  "archetype": "cooldown_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        },
+        {
+          "property": "inverse",
+          "value": true
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 1,
+        "variable": "show"
+      }
+    }
+  ],
+  "id": "Xyrec Shaman - Windfury ICD",
+  "load": {
+    "class": {
+      "multi": {
+        "PALADIN": true
+      },
+      "single": "SHAMAN"
+    },
+    "not_spellknown": 642,
+    "race": {
+      "multi": {
+        "Dwarf": true,
+        "Human": true
+      },
+      "single": "Human"
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 1535,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_not_spellknown": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "displayIcon": 136018,
+    "iconSource": 0
+  },
+  "row": "cooldowns",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "duration": "3",
+        "event": "Combat Log",
+        "names": [],
+        "sourceUnit": "player",
+        "spellId": [
+          "25504",
+          "33750"
+        ],
+        "spellIds": [],
+        "spellName": [
+          "Windfury Attack"
+        ],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_DAMAGE",
+        "type": "combatlog",
+        "unit": "player",
+        "use_sourceUnit": true,
+        "use_spellId": true,
+        "use_spellName": false
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": -10,
+    "disjunctive": "any"
+  }
+}

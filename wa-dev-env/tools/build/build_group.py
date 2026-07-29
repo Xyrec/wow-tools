@@ -30,12 +30,17 @@ DEF_KEYS = {"id", "archetype", "row", "triggers", "load", "conditions",
 
 def load_defs(class_dir):
     defs = {}
+    sources = {}
     for path in sorted((class_dir / "defs").glob("*.json")):
         d = json.loads(path.read_text())
         unknown = set(d) - DEF_KEYS
         if unknown:
             raise SystemExit(f"{path.name}: unknown def keys {sorted(unknown)}")
+        if d["id"] in defs:
+            raise SystemExit(f"duplicate def id {d['id']!r}: "
+                             f"{sources[d['id']]} and {path.name}")
         defs[d["id"]] = d
+        sources[d["id"]] = path.name
     return defs
 
 
@@ -113,12 +118,20 @@ def main():
     ap.add_argument("class_name")
     ap.add_argument("-o", "--out", required=True)
     ap.add_argument("--allow-missing", action="store_true")
+    ap.add_argument("--displays", action="store_true",
+                    help="emit an {id: aura} displays map (audit / luacheck input) "
+                         "instead of a landable payload")
     args = ap.parse_args()
     payload = build(args.class_name, allow_missing=args.allow_missing)
     out = pathlib.Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
-    print(f"{len(payload['c']) + 1} auras -> {out}")
+    if args.displays:
+        displays = {a["id"]: a for a in [payload["d"]] + payload["c"]}
+        out.write_text(json.dumps(displays, indent=2, sort_keys=True) + "\n")
+        print(f"{len(displays)} displays -> {out}")
+    else:
+        out.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
+        print(f"{len(payload['c']) + 1} auras -> {out}")
 
 
 if __name__ == "__main__":
