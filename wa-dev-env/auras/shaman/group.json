@@ -1,0 +1,816 @@
+{
+  "child_order": [
+    "Xyrec Shaman - Core Abilities",
+    "Xyrec Shaman - Totem Twist",
+    "Xyrec Shaman - Stormstrike",
+    "Xyrec Shaman - Fire Nova Totem",
+    "Xyrec Shaman - Flame Shock",
+    "Xyrec Shaman - Earth Shock",
+    "Xyrec Shaman - Chain Lightning",
+    "Xyrec Shaman - Earth Shield",
+    "Xyrec Shaman - Resources",
+    "Xyrec Shaman - Mana Bar",
+    "Xyrec Shaman - Mana Tick",
+    "Xyrec Shaman - Swing Timer",
+    "Xyrec Shaman - Swing Timer MH",
+    "Xyrec Shaman - Swing Timer Sync",
+    "Xyrec Shaman - Cooldowns",
+    "Xyrec Shaman - Windfury ICD",
+    "Xyrec Shaman - Shamanistic Rage",
+    "Xyrec Shaman - Elemental Mastery",
+    "Xyrec Shaman - Nature's Swiftness",
+    "Xyrec Shaman - Blood Fury",
+    "Xyrec Shaman - Berserking",
+    "Xyrec Shaman - War Stomp",
+    "Xyrec Shaman - Trinket 1 CD",
+    "Xyrec Shaman - Trinket 2 CD",
+    "Xyrec Shaman - Reincarnation",
+    "Xyrec Shaman - Mana Tide Totem",
+    "Xyrec Shaman - Stoneclaw Totem",
+    "Xyrec Shaman - Earthbind Totem",
+    "Xyrec Shaman - Grounding Totem",
+    "Xyrec Shaman - Personal Shield",
+    "Xyrec Shaman - Reminders",
+    "Xyrec Shaman - Drink Expiring",
+    "Xyrec Shaman - Imbue [MH]",
+    "Xyrec Shaman - Imbue [OH]",
+    "Xyrec Shaman - Lightning/Water Shield",
+    "Xyrec Shaman - Fire Totem Missing"
+  ],
+  "class": "shaman",
+  "containers": [
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameParent": true,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Shaman - Totem Twist",
+        "Xyrec Shaman - Stormstrike",
+        "Xyrec Shaman - Fire Nova Totem",
+        "Xyrec Shaman - Flame Shock",
+        "Xyrec Shaman - Earth Shock",
+        "Xyrec Shaman - Chain Lightning",
+        "Xyrec Shaman - Earth Shield"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 237582,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Shaman - Core Abilities",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 10,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Shaman",
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "sort": "none",
+      "sortHybridTable": {
+        "Shaman - Chain Lightning": false,
+        "Shaman - Earth Shield": false,
+        "Shaman - Earth Shock": false,
+        "Shaman - Fire Nova": false,
+        "Shaman - Flame Shock [Dps]": false,
+        "Shaman - Flame Shock [Tank]": false,
+        "Shaman - Healing Rain": false,
+        "Shaman - Lava Burst": false,
+        "Shaman - Lava Lash": false,
+        "Shaman - Lightning Bolt": false,
+        "Shaman - Molten Blast": false,
+        "Shaman - Personal Shield": false,
+        "Shaman - Riptide": false,
+        "Shaman - Stormstrike": false,
+        "Shaman - Tidal Waves": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20506,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 15,
+      "xOffset": 0,
+      "yOffset": 35
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "conditions": [],
+      "config": [],
+      "controlledChildren": [
+        "Xyrec Shaman - Mana Bar",
+        "Xyrec Shaman - Mana Tick",
+        "Xyrec Shaman - Swing Timer"
+      ],
+      "frameStrata": 1,
+      "groupIcon": 135861,
+      "id": "Xyrec Shaman - Resources",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Shaman",
+      "regionType": "group",
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "subRegions": [],
+      "tocversion": 20506,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "version": 15,
+      "xOffset": 0,
+      "yOffset": 0
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "alpha": 1,
+      "anchorFrameFrame": "WeakAuras:Xyrec Shaman - Mana Bar",
+      "anchorFrameType": "SELECTFRAME",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "conditions": [],
+      "config": [],
+      "controlledChildren": [
+        "Xyrec Shaman - Swing Timer MH",
+        "Xyrec Shaman - Swing Timer Sync"
+      ],
+      "frameStrata": 3,
+      "id": "Xyrec Shaman - Swing Timer",
+      "information": {
+        "forceEvents": true
+      },
+      "internalVersion": 90,
+      "load": {
+        "class": {
+          "multi": {
+            "PALADIN": true
+          },
+          "single": "SHAMAN"
+        },
+        "difficulty": {
+          "multi": []
+        },
+        "faction": {
+          "multi": []
+        },
+        "ingroup": {
+          "multi": []
+        },
+        "pvptalent": {
+          "multi": []
+        },
+        "race": {
+          "multi": {
+            "Dwarf": true,
+            "Human": true
+          },
+          "single": "Human"
+        },
+        "role": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": {
+            "1": true,
+            "3": true
+          },
+          "single": 1
+        },
+        "talent": {
+          "multi": []
+        },
+        "talent2": {
+          "multi": []
+        },
+        "use_class": true,
+        "use_never": false,
+        "use_not_spellknown": false,
+        "use_petbattle": false,
+        "zoneIds": ""
+      },
+      "parent": "Xyrec Shaman - Resources",
+      "regionType": "group",
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "3.0.5",
+      "subRegions": [],
+      "tocversion": 20506,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "version": 15,
+      "xOffset": 0,
+      "yOffset": 14
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Shaman - Windfury ICD",
+        "Xyrec Shaman - Shamanistic Rage",
+        "Xyrec Shaman - Elemental Mastery",
+        "Xyrec Shaman - Nature's Swiftness",
+        "Xyrec Shaman - Blood Fury",
+        "Xyrec Shaman - Berserking",
+        "Xyrec Shaman - War Stomp",
+        "Xyrec Shaman - Trinket 1 CD",
+        "Xyrec Shaman - Trinket 2 CD",
+        "Xyrec Shaman - Reincarnation",
+        "Xyrec Shaman - Mana Tide Totem",
+        "Xyrec Shaman - Stoneclaw Totem",
+        "Xyrec Shaman - Earthbind Totem",
+        "Xyrec Shaman - Grounding Totem",
+        "Xyrec Shaman - Personal Shield"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 136115,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Shaman - Cooldowns",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 9,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Shaman",
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "sort": "none",
+      "sortHybridTable": {
+        "Shaman - Ancestral Guidance": false,
+        "Shaman - Berserking": false,
+        "Shaman - Blood Fury": false,
+        "Shaman - Decoy Totem": false,
+        "Shaman - Earthbind Totem": false,
+        "Shaman - Elemental Mastery": false,
+        "Shaman - Fire Nova Totem": false,
+        "Shaman - Grounding Totem": false,
+        "Shaman - Mana Tide Totem": false,
+        "Shaman - Nature's Swiftness": false,
+        "Shaman - Reincarnation": false,
+        "Shaman - Shamanistic Rage": false,
+        "Shaman - Stoneclaw Totem": false,
+        "Shaman - Trinket 1 CD": false,
+        "Shaman - Trinket 2 CD": false,
+        "Shaman - War Stomp": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20506,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 15,
+      "xOffset": 0,
+      "yOffset": -26
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "UIPARENT",
+      "anchorPoint": "TOP",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Shaman - Drink Expiring",
+        "Xyrec Shaman - Imbue [MH]",
+        "Xyrec Shaman - Imbue [OH]",
+        "Xyrec Shaman - Lightning/Water Shield",
+        "Xyrec Shaman - Fire Totem Missing"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 132315,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Shaman - Reminders",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 5,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Shaman",
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "sort": "none",
+      "sortHybridTable": {
+        "Shaman - Drink Expiring": false,
+        "Shaman - Imbue [MH]": false,
+        "Shaman - Imbue [OH]": false,
+        "Shaman - Lightning/Water Shield": false,
+        "Shaman - Spirit of the Alpha": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20506,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": false,
+      "version": 15,
+      "xOffset": 0,
+      "yOffset": -475
+    }
+  ],
+  "root": {
+    "actions": {
+      "finish": [],
+      "init": [],
+      "start": []
+    },
+    "alpha": 1,
+    "anchorFrameType": "SCREEN",
+    "anchorPoint": "CENTER",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "backdropColor": [
+      1,
+      1,
+      1,
+      0.5
+    ],
+    "border": false,
+    "borderBackdrop": "Blizzard Tooltip",
+    "borderColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "borderEdge": "Square Full White",
+    "borderInset": 1,
+    "borderOffset": 4,
+    "borderSize": 2,
+    "conditions": [],
+    "config": [],
+    "controlledChildren": [
+      "Xyrec Shaman - Core Abilities",
+      "Xyrec Shaman - Resources",
+      "Xyrec Shaman - Cooldowns",
+      "Xyrec Shaman - Reminders"
+    ],
+    "frameStrata": 1,
+    "groupIcon": "626006",
+    "id": "Xyrec - Shaman",
+    "information": {
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "load": {
+      "class": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      }
+    },
+    "regionType": "group",
+    "scale": 1.5,
+    "selfPoint": "CENTER",
+    "semver": "1.4.4",
+    "subRegions": [],
+    "tocversion": 20506,
+    "triggers": [
+      {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Health",
+          "names": [],
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "aura2",
+          "unit": "player"
+        },
+        "untrigger": []
+      }
+    ],
+    "url": "",
+    "version": 15,
+    "xOffset": 0,
+    "yOffset": -242
+  },
+  "wa_version": "5.21.8"
+}

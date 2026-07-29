@@ -39,17 +39,41 @@ def row_geometry(style, row):
 
 
 def text_subregion(style, size):
-    """A canonical centered %p subtext in the pack font at the given size."""
+    """The canonical centered %p subtext at the given size.
+
+    Field set matches the live exemplars exactly (incl. the %p time-format
+    block) — a built canonical text is byte-identical to a snapshot one.
+    """
     f = style["fonts"]
     return {
         "type": "subtext",
-        "text_text": "%p",
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "CENTER",
+        "rotateText": "NONE",
+        "text_automaticWidth": "Auto",
+        "text_color": color(style, "white"),
+        "text_fixedWidth": 64,
         "text_font": f["family"],
         "text_fontSize": size,
         "text_fontType": f["type"],
-        "text_color": color(style, "white"),
+        "text_justify": "CENTER",
+        "text_selfPoint": "AUTO",
+        "text_shadowColor": color(style, "black"),
         "text_shadowXOffset": f["shadow"]["x"],
         "text_shadowYOffset": f["shadow"]["y"],
-        "text_selfPoint": "AUTO",
+        "text_text": "%p",
+        "text_text_format_p_format": "timed",
+        "text_text_format_p_time_dynamic_threshold": 0,
+        "text_text_format_p_time_format": 0,
+        "text_text_format_p_time_legacy_floor": False,
+        "text_text_format_p_time_mod_rate": True,
+        "text_text_format_p_time_precision": 1,
         "text_visible": True,
+        "text_wordWrap": "WordWrap",
     }
+
+
+def border_subregion(style):
+    """The canonical 1px black border subregion."""
+    return {"type": "subborder", **copy.deepcopy(style["bar_skin"]["border"])}
