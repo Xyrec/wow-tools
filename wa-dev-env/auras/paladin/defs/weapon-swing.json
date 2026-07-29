@@ -504,7 +504,10 @@
       },
       "3": {
         "trigger": {
-          "auranames": [],
+          "auranames": [
+            "31892",
+            "31801"
+          ],
           "debuffType": "HELPFUL",
           "type": "aura2",
           "unit": "player",

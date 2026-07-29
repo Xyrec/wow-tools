@@ -351,6 +351,7 @@
               "31801"
             ],
             "debuffType": "HELPFUL",
+            "event": "Health",
             "matchesShowOn": "showAlways",
             "names": [],
             "ownOnly": true,

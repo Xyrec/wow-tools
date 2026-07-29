@@ -2952,7 +2952,10 @@
         },
         "3": {
           "trigger": {
-            "auranames": [],
+            "auranames": [
+              "31892",
+              "31801"
+            ],
             "debuffType": "HELPFUL",
             "type": "aura2",
             "unit": "player",
@@ -3665,6 +3668,7 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
+        "Xyrec Paladin - Avenging Wrath",
         "Xyrec Paladin - Hammer of Wrath",
         "Xyrec Paladin - Exorcism",
         "Xyrec Paladin - Holy Wrath",
@@ -3771,6 +3775,278 @@
       "wagoID": "zLJ2R3Oua",
       "xOffset": 0,
       "yOffset": -26
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            },
+            {
+              "property": "inverse",
+              "value": true
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": 1,
+                "value": 0,
+                "variable": "show"
+              },
+              {
+                "trigger": 2,
+                "value": 1,
+                "variable": "onCooldown"
+              }
+            ],
+            "trigger": -2,
+            "variable": "AND"
+          },
+          "linked": false
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "displayIcon": "",
+      "frameStrata": 1,
+      "height": 30,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Xyrec Paladin - Avenging Wrath",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": false,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": {
+            "PALADIN": true
+          },
+          "single": "PALADIN"
+        },
+        "race": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "spellknown": 31884,
+        "talent": {
+          "multi": []
+        },
+        "use_class": true,
+        "use_never": false,
+        "use_spellknown": true,
+        "zoneIds": ""
+      },
+      "parent": "Xyrec Paladin - Cooldowns",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 14,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%p",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        }
+      ],
+      "tocversion": 11502,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "auranames": [
+              "31884"
+            ],
+            "debuffType": "HELPFUL",
+            "duration": "1",
+            "event": "Conditions",
+            "names": [],
+            "ownOnly": true,
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unevent": "auto",
+            "unit": "player",
+            "useName": true,
+            "use_alwaystrue": true,
+            "use_unit": true
+          },
+          "untrigger": []
+        },
+        "2": {
+          "trigger": {
+            "auranames": [],
+            "debuffType": "HELPFUL",
+            "duration": "1",
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showOnCooldown",
+            "matchesShowOn": "showAlways",
+            "names": [],
+            "realSpellName": "Avenging Wrath",
+            "spellIds": [],
+            "spellName": 31884,
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "track": "auto",
+            "type": "spell",
+            "unevent": "auto",
+            "unit": "player",
+            "unitExists": true,
+            "useName": true,
+            "use_charges": false,
+            "use_genericShowOn": true,
+            "use_remaining": false,
+            "use_spellName": true,
+            "use_track": true,
+            "use_unit": true
+          },
+          "untrigger": {
+            "genericShowOn": "showAlways",
+            "track": "auto"
+          }
+        },
+        "activeTriggerMode": -10,
+        "disjunctive": "any"
+      },
+      "url": "https://wago.io/8MyJNekEa/15",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 15,
+      "width": 30,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
     },
     {
       "actions": {
