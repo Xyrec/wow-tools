@@ -571,17 +571,11 @@
       "keepAspectRatio": true,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -666,9 +660,7 @@
       "triggers": {
         "1": {
           "trigger": {
-            "auranames": [
-              "Immolate"
-            ],
+            "auranames": [],
             "debuffType": "HARMFUL",
             "duration": "1",
             "event": "Cooldown Progress (Spell)",
@@ -844,18 +836,11 @@
       "keepAspectRatio": true,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
-        "not_spellknown": 642,
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -960,9 +945,7 @@
         },
         "2": {
           "trigger": {
-            "auranames": [
-              "Blood Fury"
-            ],
+            "auranames": [],
             "debuffType": "HELPFUL",
             "duration": "1",
             "event": "Cooldown Progress (Spell)",
@@ -1196,17 +1179,11 @@
       "keepAspectRatio": true,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -1578,17 +1555,11 @@
       "keepAspectRatio": true,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -1673,9 +1644,7 @@
       "triggers": {
         "1": {
           "trigger": {
-            "auranames": [
-              "Immolate"
-            ],
+            "auranames": [],
             "debuffType": "HARMFUL",
             "duration": "1",
             "event": "Cooldown Progress (Spell)",
@@ -1871,17 +1840,11 @@
       "keepAspectRatio": true,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -1966,9 +1929,7 @@
       "triggers": {
         "1": {
           "trigger": {
-            "auranames": [
-              "Immolate"
-            ],
+            "auranames": [],
             "debuffType": "HARMFUL",
             "duration": "1",
             "event": "Cooldown Progress (Spell)",
@@ -2178,17 +2139,11 @@
       "keepAspectRatio": true,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -2382,9 +2337,7 @@
         },
         "2": {
           "trigger": {
-            "auranames": [
-              "Immolate"
-            ],
+            "auranames": [],
             "charges": "",
             "charges_operator": ">",
             "debuffType": "HARMFUL",
@@ -2683,9 +2636,7 @@
       "inverse": false,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "difficulty": {
@@ -2701,11 +2652,7 @@
           "multi": []
         },
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "role": {
           "multi": []
@@ -2714,11 +2661,7 @@
           "multi": []
         },
         "spec": {
-          "multi": {
-            "1": true,
-            "3": true
-          },
-          "single": 1
+          "multi": []
         },
         "talent": {
           "multi": []
@@ -3021,9 +2964,7 @@
       "inverse": false,
       "load": {
         "class": {
-          "multi": {
-            "DRUID": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "size": {
@@ -3215,9 +3156,7 @@
       "internalVersion": 90,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "difficulty": {
@@ -3233,11 +3172,7 @@
           "multi": []
         },
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "role": {
           "multi": []
@@ -3246,11 +3181,7 @@
           "multi": []
         },
         "spec": {
-          "multi": {
-            "1": true,
-            "3": true
-          },
-          "single": 1
+          "multi": []
         },
         "talent": {
           "multi": []
@@ -3484,9 +3415,7 @@
       "inverse": true,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "difficulty": {
@@ -3502,11 +3431,7 @@
           "multi": []
         },
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "role": {
           "multi": []
@@ -3515,11 +3440,7 @@
           "multi": []
         },
         "spec": {
-          "multi": {
-            "1": true,
-            "3": true
-          },
-          "single": 1
+          "multi": []
         },
         "talent": {
           "multi": []
@@ -4111,9 +4032,7 @@
       "inverse": true,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "difficulty": {
@@ -4129,11 +4048,7 @@
           "multi": []
         },
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "role": {
           "multi": []
@@ -4142,11 +4057,7 @@
           "multi": []
         },
         "spec": {
-          "multi": {
-            "1": true,
-            "3": true
-          },
-          "single": 1
+          "multi": []
         },
         "talent": {
           "multi": []
@@ -4498,18 +4409,11 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
-        "not_spellknown": 642,
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -4747,17 +4651,11 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -4865,9 +4763,7 @@
         },
         "2": {
           "trigger": {
-            "auranames": [
-              "Blood Fury"
-            ],
+            "auranames": [],
             "debuffType": "HELPFUL",
             "duration": "1",
             "event": "Cooldown Progress (Spell)",
@@ -5026,17 +4922,11 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -5144,9 +5034,7 @@
         },
         "2": {
           "trigger": {
-            "auranames": [
-              "Blood Fury"
-            ],
+            "auranames": [],
             "debuffType": "HELPFUL",
             "duration": "1",
             "event": "Cooldown Progress (Spell)",
@@ -5305,17 +5193,11 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -5423,9 +5305,7 @@
         },
         "2": {
           "trigger": {
-            "auranames": [
-              "Blood Fury"
-            ],
+            "auranames": [],
             "debuffType": "HELPFUL",
             "duration": "1",
             "event": "Cooldown Progress (Spell)",
@@ -5584,9 +5464,7 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "race": {
@@ -5702,9 +5580,7 @@
         },
         "2": {
           "trigger": {
-            "auranames": [
-              "Blood Fury"
-            ],
+            "auranames": [],
             "debuffType": "HELPFUL",
             "duration": "1",
             "event": "Cooldown Progress (Spell)",
@@ -5863,9 +5739,7 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "race": {
@@ -5981,9 +5855,7 @@
         },
         "2": {
           "trigger": {
-            "auranames": [
-              "Blood Fury"
-            ],
+            "auranames": [],
             "debuffType": "HELPFUL",
             "duration": "1",
             "event": "Cooldown Progress (Spell)",
@@ -6130,12 +6002,9 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
-        "not_spellknown": 642,
         "race": {
           "multi": {
             "Dwarf": true,
@@ -6227,9 +6096,7 @@
       "triggers": {
         "1": {
           "trigger": {
-            "auranames": [
-              "Blood Fury"
-            ],
+            "auranames": [],
             "debuffType": "HELPFUL",
             "duration": "1",
             "event": "Cooldown Progress (Spell)",
@@ -6376,17 +6243,11 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -6619,17 +6480,11 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -6862,18 +6717,11 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
-        "not_spellknown": 642,
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -6959,9 +6807,7 @@
       "triggers": {
         "1": {
           "trigger": {
-            "auranames": [
-              "Blood Fury"
-            ],
+            "auranames": [],
             "debuffType": "HELPFUL",
             "duration": "1",
             "event": "Cooldown Progress (Spell)",
@@ -7108,18 +6954,11 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
-        "not_spellknown": 642,
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -7205,9 +7044,7 @@
       "triggers": {
         "1": {
           "trigger": {
-            "auranames": [
-              "Blood Fury"
-            ],
+            "auranames": [],
             "debuffType": "HELPFUL",
             "duration": "1",
             "event": "Cooldown Progress (Spell)",
@@ -7354,18 +7191,11 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
-        "not_spellknown": 642,
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -7451,9 +7281,7 @@
       "triggers": {
         "1": {
           "trigger": {
-            "auranames": [
-              "Blood Fury"
-            ],
+            "auranames": [],
             "debuffType": "HELPFUL",
             "duration": "1",
             "event": "Cooldown Progress (Spell)",
@@ -7600,18 +7428,11 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
-        "not_spellknown": 642,
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -7697,9 +7518,7 @@
       "triggers": {
         "1": {
           "trigger": {
-            "auranames": [
-              "Blood Fury"
-            ],
+            "auranames": [],
             "debuffType": "HELPFUL",
             "duration": "1",
             "event": "Cooldown Progress (Spell)",
@@ -7846,18 +7665,11 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
-        "not_spellknown": 642,
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -7943,9 +7755,7 @@
       "triggers": {
         "1": {
           "trigger": {
-            "auranames": [
-              "Blood Fury"
-            ],
+            "auranames": [],
             "debuffType": "HELPFUL",
             "duration": "1",
             "event": "Cooldown Progress (Spell)",
@@ -8123,17 +7933,11 @@
       "keepAspectRatio": true,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -8528,18 +8332,12 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "ingroup": [],
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
           "multi": []
@@ -8843,10 +8641,7 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "DRUID": true,
-            "MAGE": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "difficulty": {
@@ -8856,10 +8651,7 @@
           "multi": []
         },
         "ingroup": {
-          "multi": {
-            "solo": true
-          },
-          "single": "solo"
+          "multi": []
         },
         "pvptalent": {
           "multi": []
@@ -8871,19 +8663,7 @@
           "multi": []
         },
         "size": {
-          "multi": {
-            "arena": true,
-            "flexible": true,
-            "fortyman": true,
-            "party": true,
-            "pvp": true,
-            "ratedarena": true,
-            "ratedpvp": true,
-            "ten": true,
-            "twenty": true,
-            "twentyfive": true
-          },
-          "single": "none"
+          "multi": []
         },
         "spec": {
           "multi": [],
@@ -8891,14 +8671,7 @@
         },
         "spellknown": 8017,
         "talent": {
-          "multi": {
-            "16": true,
-            "29": true,
-            "33": true,
-            "56": true,
-            "89": true
-          },
-          "single": 29
+          "multi": []
         },
         "talent2": {
           "multi": []
@@ -9273,10 +9046,7 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "DRUID": true,
-            "MAGE": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "difficulty": {
@@ -9299,19 +9069,7 @@
           "multi": []
         },
         "size": {
-          "multi": {
-            "arena": true,
-            "flexible": true,
-            "fortyman": true,
-            "party": true,
-            "pvp": true,
-            "ratedarena": true,
-            "ratedpvp": true,
-            "ten": true,
-            "twenty": true,
-            "twentyfive": true
-          },
-          "single": "none"
+          "multi": []
         },
         "spec": {
           "multi": [],
@@ -9319,14 +9077,7 @@
         },
         "spellknown": 8017,
         "talent": {
-          "multi": {
-            "16": true,
-            "29": true,
-            "33": true,
-            "56": true,
-            "89": true
-          },
-          "single": 29
+          "multi": []
         },
         "talent2": {
           "multi": []
@@ -9760,24 +9511,15 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "ingroup": [],
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "size": {
-          "multi": {
-            "none": true,
-            "pvp": true
-          }
+          "multi": []
         },
         "spec": {
           "multi": []
@@ -10082,10 +9824,7 @@
       "keepAspectRatio": false,
       "load": {
         "class": {
-          "multi": {
-            "DRUID": true,
-            "MAGE": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "difficulty": {
@@ -10095,10 +9834,7 @@
           "multi": []
         },
         "ingroup": {
-          "multi": {
-            "solo": true
-          },
-          "single": "solo"
+          "multi": []
         },
         "pvptalent": {
           "multi": []
@@ -10110,19 +9846,7 @@
           "multi": []
         },
         "size": {
-          "multi": {
-            "arena": true,
-            "flexible": true,
-            "fortyman": true,
-            "party": true,
-            "pvp": true,
-            "ratedarena": true,
-            "ratedpvp": true,
-            "ten": true,
-            "twenty": true,
-            "twentyfive": true
-          },
-          "single": "none"
+          "multi": []
         },
         "spec": {
           "multi": [],
@@ -10130,14 +9854,7 @@
         },
         "spellknown": 3599,
         "talent": {
-          "multi": {
-            "16": true,
-            "29": true,
-            "33": true,
-            "56": true,
-            "89": true
-          },
-          "single": 29
+          "multi": []
         },
         "talent2": {
           "multi": []

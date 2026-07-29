@@ -67,17 +67,11 @@
   "id": "Xyrec Shaman - Stormstrike",
   "load": {
     "class": {
-      "multi": {
-        "PALADIN": true
-      },
+      "multi": [],
       "single": "SHAMAN"
     },
     "race": {
-      "multi": {
-        "Dwarf": true,
-        "Human": true
-      },
-      "single": "Human"
+      "multi": []
     },
     "size": {
       "multi": []
@@ -98,9 +92,7 @@
   "triggers": {
     "1": {
       "trigger": {
-        "auranames": [
-          "Immolate"
-        ],
+        "auranames": [],
         "debuffType": "HARMFUL",
         "duration": "1",
         "event": "Cooldown Progress (Spell)",

@@ -6,8 +6,12 @@ local deepeq = require("deepeq")
 -- 1) SavedVariables: load(save(load(live))) deep-equals load(live)
 local env1 = sv.load(sv.LIVE_PATH)
 assert(env1.WeakAurasSaved and env1.WeakAurasSaved.displays, "live file missing WeakAurasSaved.displays")
+-- floor: the two Xyrec groups + the disabled ZulgAuras trio (Sabimaru packs
+-- were purged 2026-07-29; round-trip fidelity below is the real assertion)
 local n = 0; for _ in pairs(env1.WeakAurasSaved.displays) do n = n + 1 end
-assert(n > 400, "expected 400+ displays, got " .. n)
+assert(n > 50, "expected 50+ displays, got " .. n)
+assert(env1.WeakAurasSaved.displays["Xyrec - Shaman"], "Xyrec - Shaman missing")
+assert(env1.WeakAurasSaved.displays["Xyrec - Paladin"], "Xyrec - Paladin missing")
 sv.save("tmp/live_rewrite.lua", env1)
 local env2 = sv.load("tmp/live_rewrite.lua")
 local eq, path = deepeq(env1, env2)

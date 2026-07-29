@@ -22,17 +22,11 @@
   "id": "Xyrec Shaman - Trinket 1 CD",
   "load": {
     "class": {
-      "multi": {
-        "PALADIN": true
-      },
+      "multi": [],
       "single": "SHAMAN"
     },
     "race": {
-      "multi": {
-        "Dwarf": true,
-        "Human": true
-      },
-      "single": "Human"
+      "multi": []
     },
     "size": {
       "multi": []

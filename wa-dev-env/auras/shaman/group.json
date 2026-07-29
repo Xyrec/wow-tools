@@ -349,9 +349,7 @@
       "internalVersion": 90,
       "load": {
         "class": {
-          "multi": {
-            "PALADIN": true
-          },
+          "multi": [],
           "single": "SHAMAN"
         },
         "difficulty": {
@@ -367,11 +365,7 @@
           "multi": []
         },
         "race": {
-          "multi": {
-            "Dwarf": true,
-            "Human": true
-          },
-          "single": "Human"
+          "multi": []
         },
         "role": {
           "multi": []
@@ -380,11 +374,7 @@
           "multi": []
         },
         "spec": {
-          "multi": {
-            "1": true,
-            "3": true
-          },
-          "single": 1
+          "multi": []
         },
         "talent": {
           "multi": []

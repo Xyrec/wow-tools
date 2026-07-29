@@ -22,18 +22,11 @@
   "id": "Xyrec Shaman - Stoneclaw Totem",
   "load": {
     "class": {
-      "multi": {
-        "PALADIN": true
-      },
+      "multi": [],
       "single": "SHAMAN"
     },
-    "not_spellknown": 642,
     "race": {
-      "multi": {
-        "Dwarf": true,
-        "Human": true
-      },
-      "single": "Human"
+      "multi": []
     },
     "size": {
       "multi": []
@@ -55,9 +48,7 @@
   "triggers": {
     "1": {
       "trigger": {
-        "auranames": [
-          "Blood Fury"
-        ],
+        "auranames": [],
         "debuffType": "HELPFUL",
         "duration": "1",
         "event": "Cooldown Progress (Spell)",

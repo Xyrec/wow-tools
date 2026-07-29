@@ -18,10 +18,7 @@
   "id": "Xyrec Shaman - Fire Totem Missing",
   "load": {
     "class": {
-      "multi": {
-        "DRUID": true,
-        "MAGE": true
-      },
+      "multi": [],
       "single": "SHAMAN"
     },
     "difficulty": {
@@ -31,10 +28,7 @@
       "multi": []
     },
     "ingroup": {
-      "multi": {
-        "solo": true
-      },
-      "single": "solo"
+      "multi": []
     },
     "pvptalent": {
       "multi": []
@@ -46,19 +40,7 @@
       "multi": []
     },
     "size": {
-      "multi": {
-        "arena": true,
-        "flexible": true,
-        "fortyman": true,
-        "party": true,
-        "pvp": true,
-        "ratedarena": true,
-        "ratedpvp": true,
-        "ten": true,
-        "twenty": true,
-        "twentyfive": true
-      },
-      "single": "none"
+      "multi": []
     },
     "spec": {
       "multi": [],
@@ -66,14 +48,7 @@
     },
     "spellknown": 3599,
     "talent": {
-      "multi": {
-        "16": true,
-        "29": true,
-        "33": true,
-        "56": true,
-        "89": true
-      },
-      "single": 29
+      "multi": []
     },
     "talent2": {
       "multi": []

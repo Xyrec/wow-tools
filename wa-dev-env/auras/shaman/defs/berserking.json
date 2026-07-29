@@ -34,9 +34,7 @@
   "id": "Xyrec Shaman - Berserking",
   "load": {
     "class": {
-      "multi": {
-        "PALADIN": true
-      },
+      "multi": [],
       "single": "SHAMAN"
     },
     "race": {
@@ -91,9 +89,7 @@
     },
     "2": {
       "trigger": {
-        "auranames": [
-          "Blood Fury"
-        ],
+        "auranames": [],
         "debuffType": "HELPFUL",
         "duration": "1",
         "event": "Cooldown Progress (Spell)",

@@ -51,18 +51,11 @@
   "id": "Xyrec Shaman - Fire Nova Totem",
   "load": {
     "class": {
-      "multi": {
-        "PALADIN": true
-      },
+      "multi": [],
       "single": "SHAMAN"
     },
-    "not_spellknown": 642,
     "race": {
-      "multi": {
-        "Dwarf": true,
-        "Human": true
-      },
-      "single": "Human"
+      "multi": []
     },
     "size": {
       "multi": []
@@ -111,9 +104,7 @@
     },
     "2": {
       "trigger": {
-        "auranames": [
-          "Blood Fury"
-        ],
+        "auranames": [],
         "debuffType": "HELPFUL",
         "duration": "1",
         "event": "Cooldown Progress (Spell)",

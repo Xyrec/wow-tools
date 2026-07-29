@@ -78,17 +78,11 @@
   "id": "Xyrec Shaman - Flame Shock",
   "load": {
     "class": {
-      "multi": {
-        "PALADIN": true
-      },
+      "multi": [],
       "single": "SHAMAN"
     },
     "race": {
-      "multi": {
-        "Dwarf": true,
-        "Human": true
-      },
-      "single": "Human"
+      "multi": []
     },
     "size": {
       "multi": []

@@ -34,17 +34,11 @@
   "id": "Xyrec Shaman - Elemental Mastery",
   "load": {
     "class": {
-      "multi": {
-        "PALADIN": true
-      },
+      "multi": [],
       "single": "SHAMAN"
     },
     "race": {
-      "multi": {
-        "Dwarf": true,
-        "Human": true
-      },
-      "single": "Human"
+      "multi": []
     },
     "size": {
       "multi": []
@@ -88,9 +82,7 @@
     },
     "2": {
       "trigger": {
-        "auranames": [
-          "Blood Fury"
-        ],
+        "auranames": [],
         "debuffType": "HELPFUL",
         "duration": "1",
         "event": "Cooldown Progress (Spell)",

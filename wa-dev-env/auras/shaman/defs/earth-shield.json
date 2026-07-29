@@ -82,17 +82,11 @@
   "id": "Xyrec Shaman - Earth Shield",
   "load": {
     "class": {
-      "multi": {
-        "PALADIN": true
-      },
+      "multi": [],
       "single": "SHAMAN"
     },
     "race": {
-      "multi": {
-        "Dwarf": true,
-        "Human": true
-      },
-      "single": "Human"
+      "multi": []
     },
     "size": {
       "multi": []
@@ -280,9 +274,7 @@
     },
     "2": {
       "trigger": {
-        "auranames": [
-          "Immolate"
-        ],
+        "auranames": [],
         "charges": "",
         "charges_operator": ">",
         "debuffType": "HARMFUL",

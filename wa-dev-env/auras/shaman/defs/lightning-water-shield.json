@@ -4,24 +4,15 @@
   "id": "Xyrec Shaman - Lightning/Water Shield",
   "load": {
     "class": {
-      "multi": {
-        "PALADIN": true
-      },
+      "multi": [],
       "single": "SHAMAN"
     },
     "ingroup": [],
     "race": {
-      "multi": {
-        "Dwarf": true,
-        "Human": true
-      },
-      "single": "Human"
+      "multi": []
     },
     "size": {
-      "multi": {
-        "none": true,
-        "pvp": true
-      }
+      "multi": []
     },
     "spec": {
       "multi": []
