@@ -1,0 +1,215 @@
+{
+  "_provenance": "Extracted byte-exact from data/auras/mine/xyrec-shaman-live.json (the QA'd Sabimaru-inspired look). Values must never be retyped by hand: parity of built groups against live snapshots depends on exactness.",
+  "alpha_rule": {
+    "base": 0.3,
+    "condition": {
+      "changes": [
+        {
+          "property": "alpha",
+          "value": 1
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": -1,
+            "value": 1,
+            "variable": "attackabletarget"
+          },
+          {
+            "trigger": -1,
+            "value": 1,
+            "variable": "incombat"
+          }
+        ],
+        "trigger": -2,
+        "variable": "OR"
+      }
+    }
+  },
+  "bar_skin": {
+    "border": {
+      "border_color": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "border_edge": "Square Full White",
+      "border_offset": 1,
+      "border_size": 1,
+      "border_visible": true
+    },
+    "spark": {
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "width": 10
+    },
+    "texture": "Clean",
+    "textureSource": "LSM"
+  },
+  "colors": {
+    "alarm_red": [
+      1,
+      0.29411765933037,
+      0.36862745881081,
+      1
+    ],
+    "bar_blue": [
+      0.15294118225574,
+      0.56078433990479,
+      1,
+      1
+    ],
+    "black": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "mana_blue": [
+      0.50196081399918,
+      0.50196081399918,
+      1,
+      1
+    ],
+    "range_red": [
+      1,
+      0.50196081399918,
+      0.50196081399918,
+      1
+    ],
+    "safe_green": [
+      0.25,
+      1,
+      0.25,
+      1
+    ],
+    "swing_blue": [
+      0,
+      0.43921571969986,
+      0.8666667342186,
+      1
+    ],
+    "warning_gold": [
+      1,
+      0.82,
+      0.25,
+      1
+    ],
+    "white": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "fonts": {
+    "family": "PT Sans Narrow",
+    "shadow": {
+      "x": 0,
+      "y": 0
+    },
+    "type": "OUTLINE"
+  },
+  "icon_rows": {
+    "cooldowns": {
+      "height": 30,
+      "text_size": 14,
+      "width": 30
+    },
+    "core": {
+      "height": 32,
+      "text_size": 18,
+      "width": 38
+    },
+    "groupbuffs": {
+      "_note": "from donor corpus; no shaman exemplar yet",
+      "height": 36,
+      "text_size": 14,
+      "width": 36
+    },
+    "reminders": {
+      "height": 44,
+      "text_size": 20,
+      "width": 44
+    }
+  },
+  "row_geometry": {
+    "cooldowns": {
+      "align": "CENTER",
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "frameStrata": 1,
+      "grow": "HORIZONTAL",
+      "limit": 9,
+      "regionType": "dynamicgroup",
+      "selfPoint": "CENTER",
+      "space": 0,
+      "useLimit": true,
+      "xOffset": 0,
+      "yOffset": -26
+    },
+    "core": {
+      "align": "CENTER",
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "frameStrata": 1,
+      "grow": "HORIZONTAL",
+      "limit": 10,
+      "regionType": "dynamicgroup",
+      "selfPoint": "CENTER",
+      "space": 0,
+      "useLimit": true,
+      "xOffset": 0,
+      "yOffset": 35
+    },
+    "reminders": {
+      "align": "CENTER",
+      "anchorFrameType": "UIPARENT",
+      "anchorPoint": "TOP",
+      "frameStrata": 1,
+      "grow": "HORIZONTAL",
+      "limit": 5,
+      "regionType": "dynamicgroup",
+      "selfPoint": "CENTER",
+      "space": 0,
+      "useLimit": false,
+      "xOffset": 0,
+      "yOffset": -475
+    },
+    "resources": {
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "frameStrata": 1,
+      "regionType": "group",
+      "selfPoint": "CENTER",
+      "xOffset": 0,
+      "yOffset": 0
+    },
+    "root": {
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "frameStrata": 1,
+      "groupIcon": "626006",
+      "scale": 1.5,
+      "selfPoint": "CENTER",
+      "xOffset": 0,
+      "yOffset": -242
+    },
+    "swing": {
+      "anchorFrameFrame": "WeakAuras:Xyrec Shaman - Mana Bar",
+      "anchorFrameType": "SELECTFRAME",
+      "anchorPoint": "CENTER",
+      "frameStrata": 3,
+      "regionType": "group",
+      "selfPoint": "CENTER",
+      "xOffset": 0,
+      "yOffset": 14
+    }
+  }
+}
