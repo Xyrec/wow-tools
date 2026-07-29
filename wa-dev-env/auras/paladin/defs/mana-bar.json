@@ -1,0 +1,334 @@
+{
+  "archetype": "bespoke",
+  "id": "Xyrec Paladin - Mana Bar",
+  "lua": {
+    "customText": "lua/mana-bar--customText.lua"
+  },
+  "payload": {
+    "actions": {
+      "finish": [],
+      "init": {
+        "custom": "\n\n",
+        "do_custom": false
+      },
+      "start": []
+    },
+    "adjustedMax": "",
+    "adjustedMin": "",
+    "alpha": 0.3,
+    "anchorFrameType": "SCREEN",
+    "anchorPoint": "CENTER",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "auto": true,
+    "backdropColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "backdropInFront": false,
+    "backgroundColor": [
+      0.15294118225574,
+      0.56078433990479,
+      1,
+      0.30000001192093
+    ],
+    "barColor": [
+      0.15294118225574,
+      0.56078433990479,
+      1,
+      1
+    ],
+    "barColor2": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "borderBackdrop": "None",
+    "borderInFront": true,
+    "conditions": [
+      {
+        "changes": [
+          {
+            "property": "barColor",
+            "value": [
+              0,
+              0.50196081399918,
+              1,
+              1
+            ]
+          }
+        ],
+        "check": {
+          "trigger": 2,
+          "value": 1,
+          "variable": "show"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "alpha",
+            "value": 1
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "attackabletarget"
+            },
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "incombat"
+            }
+          ],
+          "trigger": -2,
+          "variable": "OR"
+        }
+      }
+    ],
+    "config": [],
+    "customText": "@mana-bar--customText.lua",
+    "desaturate": false,
+    "enableGradient": false,
+    "fontFlags": "OUTLINE",
+    "frameStrata": 3,
+    "gradientOrientation": "HORIZONTAL",
+    "height": 20,
+    "icon": false,
+    "iconSource": -1,
+    "icon_color": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "icon_side": "RIGHT",
+    "id": "Xyrec Paladin - Mana Bar",
+    "information": {
+      "forceEvents": true,
+      "ignoreOptionsEventErrors": true,
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "inverse": false,
+    "load": {
+      "class": {
+        "multi": {
+          "PALADIN": true
+        },
+        "single": "PALADIN"
+      },
+      "difficulty": {
+        "multi": []
+      },
+      "faction": {
+        "multi": []
+      },
+      "ingroup": {
+        "multi": []
+      },
+      "pvptalent": {
+        "multi": []
+      },
+      "race": {
+        "multi": []
+      },
+      "role": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      },
+      "talent2": {
+        "multi": []
+      },
+      "use_class": true,
+      "use_never": false,
+      "use_petbattle": false,
+      "zoneIds": ""
+    },
+    "orientation": "HORIZONTAL",
+    "overlays": [
+      [
+        0.43529411764706,
+        0,
+        1,
+        0.25
+      ]
+    ],
+    "overlaysTexture": [
+      "Clean"
+    ],
+    "preferToUpdate": false,
+    "progressSource": [
+      -1,
+      ""
+    ],
+    "regionType": "aurabar",
+    "selfPoint": "CENTER",
+    "semver": "1.4.5",
+    "source": "import",
+    "spark": false,
+    "sparkBlendMode": "ADD",
+    "sparkColor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "sparkDesature": false,
+    "sparkHeight": 30,
+    "sparkHidden": "NEVER",
+    "sparkOffsetX": 0,
+    "sparkOffsetY": 0,
+    "sparkRotation": 0,
+    "sparkRotationMode": "AUTO",
+    "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+    "sparkWidth": 10,
+    "stickyDuration": false,
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "type": "subforeground"
+      },
+      {
+        "anchor_area": "bar",
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "type": "subborder"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "CENTER",
+        "rotateText": "NONE",
+        "text_anchorYOffset": 0,
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 64,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 14,
+        "text_fontType": "OUTLINE",
+        "text_justify": "CENTER",
+        "text_selfPoint": "CENTER",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          0.49999988079071
+        ],
+        "text_shadowXOffset": 1,
+        "text_shadowYOffset": -1,
+        "text_text": "%1.power",
+        "text_text_format_1.power_big_number_format": "AbbreviateNumbers",
+        "text_text_format_1.power_decimal_precision": 1,
+        "text_text_format_1.power_format": "none",
+        "text_text_format_c_format": "none",
+        "text_visible": true,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      }
+    ],
+    "texture": "Clean",
+    "textureSource": "LSM",
+    "tocversion": 20505,
+    "toolTipArea": "ICON",
+    "triggers": {
+      "1": {
+        "trigger": {
+          "custom_hide": "timed",
+          "debuffType": "HELPFUL",
+          "duration": "1",
+          "event": "Power",
+          "genericShowOn": "showOnActive",
+          "health": "0",
+          "health_operator": ">=",
+          "names": [],
+          "powertype": 0,
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "unit",
+          "unevent": "auto",
+          "unit": "player",
+          "use_health": true,
+          "use_power": false,
+          "use_powertype": true,
+          "use_showCost": true,
+          "use_unit": true
+        },
+        "untrigger": []
+      },
+      "2": {
+        "trigger": {
+          "auranames": [],
+          "debuffType": "HELPFUL",
+          "ownOnly": true,
+          "type": "aura2",
+          "unit": "player",
+          "useName": true
+        },
+        "untrigger": []
+      },
+      "activeTriggerMode": -10,
+      "customTriggerLogic": "function (t)\n   return t[1]\nend",
+      "disjunctive": "custom"
+    },
+    "url": "",
+    "useAdjustededMax": false,
+    "useAdjustededMin": false,
+    "version": 32,
+    "wagoID": "zLJ2R3Oua",
+    "width": 266,
+    "xOffset": 0,
+    "yOffset": 0,
+    "zoom": 0
+  },
+  "row": "loose"
+}

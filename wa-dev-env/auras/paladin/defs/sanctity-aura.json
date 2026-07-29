@@ -1,0 +1,60 @@
+{
+  "archetype": "reminder_icon",
+  "conditions": [],
+  "id": "Xyrec Paladin - Sanctity Aura",
+  "load": {
+    "class": {
+      "multi": {
+        "PALADIN": true
+      },
+      "single": "PALADIN"
+    },
+    "race": [],
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 20218,
+    "talent": {
+      "multi": []
+    },
+    "use_alive": true,
+    "use_class": true,
+    "use_never": false,
+    "use_not_spellknown": false,
+    "use_spellknown": true,
+    "use_vehicle": false,
+    "use_zone": false,
+    "use_zoneIds": false,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "displayIcon": 135934,
+    "iconSource": 0
+  },
+  "row": "reminders",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [
+          "20218"
+        ],
+        "debuffType": "HELPFUL",
+        "event": "Health",
+        "matchesShowOn": "showOnMissing",
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "aura2",
+        "unit": "player",
+        "useName": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": -10,
+    "disjunctive": "any"
+  }
+}

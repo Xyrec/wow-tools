@@ -52,6 +52,8 @@ def donor_prefix(donor):
 def collect_spell_ids(node, out):
     if isinstance(node, dict):
         for k, v in node.items():
+            if k == "itemName":
+                continue  # item id, not a spell — no item ground truth to check
             if k in scrub._SPELL_ID_FIELDS and isinstance(v, (int, str)) \
                     and str(v).isdigit() and int(str(v)) > 0:
                 out.add(int(str(v)))

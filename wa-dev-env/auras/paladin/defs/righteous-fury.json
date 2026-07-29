@@ -1,0 +1,105 @@
+{
+  "archetype": "reminder_icon",
+  "conditions": [],
+  "id": "Xyrec Paladin - Righteous Fury",
+  "load": {
+    "class": {
+      "multi": [],
+      "single": "PALADIN"
+    },
+    "ingroup": {
+      "multi": []
+    },
+    "raid_role": {
+      "multi": {
+        "MAINTANK": true
+      },
+      "single": "MAINTANK"
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 0,
+    "talent": {
+      "multi": []
+    },
+    "use_alive": true,
+    "use_class": true,
+    "use_ingroup": false,
+    "use_raid_role": true,
+    "use_spellknown": false,
+    "use_vehicle": false,
+    "use_zone": false,
+    "use_zoneIds": false
+  },
+  "overrides": {
+    "displayIcon": 135962
+  },
+  "row": "reminders",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [],
+        "debuffType": "HELPFUL",
+        "event": "Health",
+        "matchesShowOn": "showOnMissing",
+        "names": [],
+        "ownOnly": true,
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "aura2",
+        "unit": "player",
+        "useName": true
+      },
+      "untrigger": []
+    },
+    "2": {
+      "trigger": {
+        "auranames": [
+          "25780"
+        ],
+        "debuffType": "HELPFUL",
+        "event": "Health",
+        "matchesShowOn": "showOnMissing",
+        "names": [],
+        "ownOnly": true,
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "aura2",
+        "unit": "player",
+        "useName": true
+      },
+      "untrigger": []
+    },
+    "3": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "duration": "3",
+        "event": "Combat Events",
+        "eventtype": "PLAYER_REGEN_DISABLED",
+        "genericShowOn": "showOnCooldown",
+        "realSpellName": 0,
+        "spellName": 0,
+        "subeventPrefix": "",
+        "subeventSuffix": "",
+        "type": "event",
+        "unit": "target",
+        "use_eventtype": true,
+        "use_genericShowOn": true,
+        "use_inCombat": true,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": -10,
+    "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n\n",
+    "disjunctive": "custom"
+  }
+}

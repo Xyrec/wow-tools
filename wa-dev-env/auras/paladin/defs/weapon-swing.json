@@ -1,0 +1,601 @@
+{
+  "archetype": "bespoke",
+  "id": "Xyrec Paladin - Weapon Swing",
+  "lua": {
+    "customText": "lua/weapon-swing--customText.lua"
+  },
+  "payload": {
+    "actions": {
+      "finish": [],
+      "init": {
+        "custom": "\n\n",
+        "do_custom": false
+      },
+      "start": []
+    },
+    "adjustedMax": "",
+    "adjustedMin": "",
+    "alpha": 0.3,
+    "anchorFrameFrame": "WeakAuras:Paladin - Mana Bar",
+    "anchorFrameType": "SELECTFRAME",
+    "anchorPoint": "CENTER",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "auto": true,
+    "backdropColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "backdropInFront": false,
+    "backgroundColor": [
+      0.50196081399918,
+      0.50196081399918,
+      0.50196081399918,
+      0.30000001192093
+    ],
+    "barColor": [
+      0.95686280727386,
+      0.54901963472366,
+      0.7294117808342,
+      1
+    ],
+    "barColor2": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "borderBackdrop": "None",
+    "borderInFront": true,
+    "conditions": [
+      {
+        "changes": [
+          {
+            "property": "sparkColor",
+            "value": [
+              1,
+              1,
+              1,
+              0
+            ]
+          }
+        ],
+        "check": {
+          "trigger": -1,
+          "value": 0,
+          "variable": "incombat"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "barColor",
+            "value": [
+              0.77647066116333,
+              0.60784316062927,
+              0.42745101451874,
+              1
+            ]
+          }
+        ],
+        "check": {
+          "trigger": 9,
+          "value": 1,
+          "variable": "show"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "barColor",
+            "value": [
+              0.24705883860588,
+              0.78039222955704,
+              0.9215686917305,
+              1
+            ]
+          }
+        ],
+        "check": {
+          "trigger": 8,
+          "value": 1,
+          "variable": "show"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "barColor",
+            "value": [
+              1,
+              1,
+              0,
+              1
+            ]
+          }
+        ],
+        "check": {
+          "trigger": 7,
+          "value": 1,
+          "variable": "show"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "barColor",
+            "value": [
+              1,
+              0.95294123888016,
+              0.4078431725502,
+              1
+            ]
+          }
+        ],
+        "check": {
+          "trigger": 6,
+          "value": 1,
+          "variable": "show"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "barColor",
+            "value": [
+              0.73333334922791,
+              0.73333334922791,
+              0.73333334922791,
+              1
+            ]
+          }
+        ],
+        "check": {
+          "trigger": 5,
+          "value": 1,
+          "variable": "show"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "barColor",
+            "value": [
+              1,
+              0,
+              0,
+              0.80114695429802
+            ]
+          }
+        ],
+        "check": {
+          "trigger": 4,
+          "value": 1,
+          "variable": "show"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "barColor",
+            "value": [
+              1,
+              0.48627454042435,
+              0.039215687662363,
+              1
+            ]
+          }
+        ],
+        "check": {
+          "trigger": 3,
+          "value": 1,
+          "variable": "show"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "alpha",
+            "value": 1
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "attackabletarget"
+            },
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "incombat"
+            }
+          ],
+          "trigger": -2,
+          "variable": "OR"
+        }
+      }
+    ],
+    "config": [],
+    "customText": "@weapon-swing--customText.lua",
+    "desaturate": false,
+    "enableGradient": false,
+    "fontFlags": "OUTLINE",
+    "frameStrata": 3,
+    "gradientOrientation": "HORIZONTAL",
+    "height": 7,
+    "icon": false,
+    "iconSource": -1,
+    "icon_color": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "icon_side": "RIGHT",
+    "id": "Xyrec Paladin - Weapon Swing",
+    "information": {
+      "forceEvents": true,
+      "ignoreOptionsEventErrors": true,
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "inverse": true,
+    "load": {
+      "class": {
+        "multi": {
+          "PALADIN": true
+        },
+        "single": "PALADIN"
+      },
+      "difficulty": {
+        "multi": []
+      },
+      "faction": {
+        "multi": []
+      },
+      "ingroup": {
+        "multi": []
+      },
+      "pvptalent": {
+        "multi": []
+      },
+      "race": {
+        "multi": []
+      },
+      "role": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      },
+      "talent2": {
+        "multi": []
+      },
+      "use_class": true,
+      "use_never": false,
+      "use_petbattle": false,
+      "zoneIds": ""
+    },
+    "orientation": "HORIZONTAL",
+    "overlays": [
+      [
+        0.43529411764706,
+        0,
+        1,
+        0.25
+      ]
+    ],
+    "preferToUpdate": false,
+    "progressSource": [
+      -1,
+      ""
+    ],
+    "regionType": "aurabar",
+    "selfPoint": "CENTER",
+    "semver": "1.4.5",
+    "source": "import",
+    "spark": true,
+    "sparkBlendMode": "ADD",
+    "sparkColor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "sparkDesature": false,
+    "sparkHeight": 15,
+    "sparkHidden": "NEVER",
+    "sparkMirror": false,
+    "sparkOffsetX": 0,
+    "sparkOffsetY": 0,
+    "sparkRotation": 0,
+    "sparkRotationMode": "AUTO",
+    "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+    "sparkWidth": 10,
+    "stickyDuration": false,
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "type": "subforeground"
+      },
+      {
+        "anchor_area": "bar",
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "type": "subborder"
+      },
+      {
+        "automatic_length": true,
+        "progressSources": [
+          [
+            -2,
+            ""
+          ]
+        ],
+        "tick_blend_mode": "ADD",
+        "tick_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "tick_desaturate": false,
+        "tick_length": 30,
+        "tick_mirror": false,
+        "tick_placement_mode": "AtValue",
+        "tick_placements": [
+          "0.4"
+        ],
+        "tick_rotation": 0,
+        "tick_texture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+        "tick_thickness": 2,
+        "tick_visible": true,
+        "tick_xOffset": 0,
+        "tick_yOffset": 0,
+        "type": "subtick",
+        "use_texture": false
+      },
+      {
+        "automatic_length": true,
+        "progressSources": [
+          [
+            -2,
+            ""
+          ]
+        ],
+        "tick_blend_mode": "ADD",
+        "tick_color": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "tick_desaturate": false,
+        "tick_length": 30,
+        "tick_mirror": false,
+        "tick_placement_mode": "AtValue",
+        "tick_placements": [
+          "1.6"
+        ],
+        "tick_rotation": 0,
+        "tick_texture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+        "tick_thickness": 2,
+        "tick_visible": true,
+        "tick_xOffset": 0,
+        "tick_yOffset": 0,
+        "type": "subtick",
+        "use_texture": false
+      },
+      {
+        "automatic_length": true,
+        "progressSources": [
+          [
+            -2,
+            ""
+          ]
+        ],
+        "tick_blend_mode": "ADD",
+        "tick_color": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "tick_desaturate": false,
+        "tick_length": 30,
+        "tick_mirror": false,
+        "tick_placement_mode": "AtValue",
+        "tick_placements": [
+          "3.1"
+        ],
+        "tick_rotation": 0,
+        "tick_texture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+        "tick_thickness": 2,
+        "tick_visible": true,
+        "tick_xOffset": 0,
+        "tick_yOffset": 0,
+        "type": "subtick",
+        "use_texture": false
+      }
+    ],
+    "texture": "Clean",
+    "textureSource": "LSM",
+    "tocversion": 20505,
+    "toolTipArea": "ICON",
+    "triggers": {
+      "1": {
+        "trigger": {
+          "custom_hide": "timed",
+          "debuffType": "HELPFUL",
+          "duration": "1",
+          "event": "Swing Timer",
+          "genericShowOn": "showOnActive",
+          "hand": "main",
+          "health": "0",
+          "health_operator": ">=",
+          "names": [],
+          "powertype": 0,
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "unit",
+          "unevent": "auto",
+          "unit": "player",
+          "use_hand": true,
+          "use_health": true,
+          "use_inverse": false,
+          "use_power": false,
+          "use_powertype": false,
+          "use_remaining": false,
+          "use_showCost": false,
+          "use_unit": true
+        },
+        "untrigger": []
+      },
+      "2": {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Conditions",
+          "type": "unit",
+          "unit": "player",
+          "use_alwaystrue": true,
+          "use_unit": true
+        },
+        "untrigger": []
+      },
+      "3": {
+        "trigger": {
+          "auranames": [],
+          "debuffType": "HELPFUL",
+          "type": "aura2",
+          "unit": "player",
+          "useName": true
+        },
+        "untrigger": []
+      },
+      "4": {
+        "trigger": {
+          "auranames": [
+            "20375"
+          ],
+          "debuffType": "HELPFUL",
+          "type": "aura2",
+          "unit": "player",
+          "useName": true
+        },
+        "untrigger": []
+      },
+      "5": {
+        "trigger": {
+          "auranames": [
+            "20154"
+          ],
+          "debuffType": "HELPFUL",
+          "type": "aura2",
+          "unit": "player",
+          "useName": true
+        },
+        "untrigger": []
+      },
+      "6": {
+        "trigger": {
+          "auranames": [
+            "21082"
+          ],
+          "debuffType": "HELPFUL",
+          "type": "aura2",
+          "unit": "player",
+          "useName": true
+        },
+        "untrigger": []
+      },
+      "7": {
+        "trigger": {
+          "auranames": [
+            "20165"
+          ],
+          "debuffType": "HELPFUL",
+          "type": "aura2",
+          "unit": "player",
+          "useName": true
+        },
+        "untrigger": []
+      },
+      "8": {
+        "trigger": {
+          "auranames": [
+            "20166"
+          ],
+          "debuffType": "HELPFUL",
+          "type": "aura2",
+          "unit": "player",
+          "useName": true
+        },
+        "untrigger": []
+      },
+      "9": {
+        "trigger": {
+          "auranames": [
+            "20164"
+          ],
+          "debuffType": "HELPFUL",
+          "type": "aura2",
+          "unit": "player",
+          "useName": true
+        },
+        "untrigger": []
+      },
+      "activeTriggerMode": 1,
+      "disjunctive": "any"
+    },
+    "url": "",
+    "useAdjustededMax": false,
+    "useAdjustededMin": false,
+    "version": 32,
+    "wagoID": "zLJ2R3Oua",
+    "width": 266,
+    "xOffset": 0,
+    "yOffset": 14,
+    "zoom": 0
+  },
+  "row": "loose"
+}

@@ -1,0 +1,172 @@
+{
+  "archetype": "bespoke",
+  "id": "Xyrec Paladin - Active Aura [Drag]",
+  "payload": {
+    "actions": {
+      "finish": [],
+      "init": [],
+      "start": []
+    },
+    "adjustedMax": "",
+    "adjustedMin": "",
+    "alpha": 0.3,
+    "anchorFrameType": "UIPARENT",
+    "anchorPoint": "CENTER",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "color": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "conditions": [
+      {
+        "changes": [
+          {
+            "property": "alpha",
+            "value": 1
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "attackabletarget"
+            },
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "incombat"
+            }
+          ],
+          "trigger": -2,
+          "variable": "OR"
+        }
+      }
+    ],
+    "config": [],
+    "cooldown": false,
+    "cooldownEdge": false,
+    "cooldownSwipe": true,
+    "cooldownTextDisabled": false,
+    "desaturate": false,
+    "displayIcon": 135893,
+    "frameStrata": 1,
+    "height": 30,
+    "icon": true,
+    "iconSource": -1,
+    "id": "Xyrec Paladin - Active Aura [Drag]",
+    "information": {
+      "forceEvents": true,
+      "ignoreOptionsEventErrors": true,
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "inverse": false,
+    "keepAspectRatio": false,
+    "load": {
+      "class": {
+        "multi": [],
+        "single": "PALADIN"
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      },
+      "use_alive": true,
+      "use_class": true
+    },
+    "preferToUpdate": false,
+    "progressSource": [
+      -1,
+      ""
+    ],
+    "regionType": "icon",
+    "selfPoint": "CENTER",
+    "semver": "1.4.5",
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "type": "subborder"
+      }
+    ],
+    "tocversion": 20505,
+    "triggers": {
+      "1": {
+        "trigger": {
+          "auranames": [
+            "1032",
+            "8990",
+            "19746",
+            "20218",
+            "19895",
+            "19888",
+            "19891",
+            "32223"
+          ],
+          "debuffType": "HELPFUL",
+          "event": "Health",
+          "names": [],
+          "ownOnly": true,
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "aura2",
+          "unit": "player",
+          "useName": true
+        },
+        "untrigger": []
+      },
+      "activeTriggerMode": -10
+    },
+    "url": "",
+    "useAdjustededMax": false,
+    "useAdjustededMin": false,
+    "useCooldownModRate": true,
+    "version": 32,
+    "wagoID": "zLJ2R3Oua",
+    "width": 30,
+    "xOffset": -393,
+    "yOffset": -207,
+    "zoom": 0.3
+  },
+  "row": "loose"
+}

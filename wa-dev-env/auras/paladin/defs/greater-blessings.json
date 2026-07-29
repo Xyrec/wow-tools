@@ -1,0 +1,198 @@
+{
+  "archetype": "groupbuff_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": false
+        }
+      ],
+      "check": {
+        "value": 1,
+        "variable": "show"
+      }
+    }
+  ],
+  "id": "Xyrec Paladin - Greater Blessings",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "PALADIN"
+    },
+    "difficulty": {
+      "multi": []
+    },
+    "faction": {
+      "multi": []
+    },
+    "ingroup": {
+      "multi": []
+    },
+    "pvptalent": {
+      "multi": []
+    },
+    "race": {
+      "multi": []
+    },
+    "role": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": [],
+      "single": 1
+    },
+    "spellknown": 19740,
+    "talent": {
+      "multi": []
+    },
+    "talent2": {
+      "multi": []
+    },
+    "use_alive": true,
+    "use_class": true,
+    "use_ingroup": false,
+    "use_never": false,
+    "use_size": false,
+    "use_spec": true,
+    "use_spellknown": true,
+    "use_vehicleUi": false,
+    "use_zone": false,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "displayIcon": 135993,
+    "iconSource": 0
+  },
+  "row": "groupbuffs",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [
+          "19740",
+          "19742",
+          "20217",
+          "20911",
+          "1038",
+          "19977",
+          "25782",
+          "25894",
+          "25898",
+          "25899",
+          "25895",
+          "25890",
+          "1022",
+          "6940"
+        ],
+        "combinePerUnit": true,
+        "debuffType": "HELPFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Item)",
+        "fetchRaidMark": false,
+        "genericShowOn": "showOnCooldown",
+        "ignoreDead": true,
+        "ignoreDisconnected": true,
+        "ignoreInvisible": true,
+        "ignoreSelf": true,
+        "itemName": 22832,
+        "match_count": "5",
+        "match_countOperator": "<",
+        "matchesShowOn": "showOnMissing",
+        "names": [],
+        "perUnitMode": "unaffected",
+        "realSpellName": "Redoubt",
+        "showClones": true,
+        "spellIds": [],
+        "spellName": 20130,
+        "subeventPrefix": "",
+        "subeventSuffix": "",
+        "type": "aura2",
+        "unevent": "auto",
+        "unit": "group",
+        "useAffected": true,
+        "useClass": false,
+        "useGroup_count": false,
+        "useMatch_count": false,
+        "useName": true,
+        "use_genericShowOn": true,
+        "use_includePets": false,
+        "use_itemName": true,
+        "use_remaining": false,
+        "use_spellName": true,
+        "use_track": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways"
+      }
+    },
+    "2": {
+      "trigger": {
+        "auranames": [
+          "19740",
+          "19742",
+          "20217",
+          "20911",
+          "1038",
+          "19977",
+          "25782",
+          "25894",
+          "25898",
+          "25899",
+          "25895",
+          "25890",
+          "1022",
+          "6940"
+        ],
+        "combinePerUnit": true,
+        "debuffType": "HELPFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Item)",
+        "fetchRaidMark": false,
+        "genericShowOn": "showOnCooldown",
+        "ignoreDead": true,
+        "ignoreDisconnected": true,
+        "ignoreInvisible": true,
+        "ignoreSelf": true,
+        "itemName": 22832,
+        "match_count": "5",
+        "match_countOperator": "<",
+        "matchesShowOn": "showOnMissing",
+        "names": [],
+        "ownOnly": true,
+        "perUnitMode": "affected",
+        "realSpellName": "Redoubt",
+        "rem": "60",
+        "remOperator": "<",
+        "showClones": true,
+        "spellIds": [],
+        "spellName": 20130,
+        "subeventPrefix": "",
+        "subeventSuffix": "",
+        "type": "aura2",
+        "unevent": "auto",
+        "unit": "group",
+        "useAffected": true,
+        "useClass": false,
+        "useGroup_count": false,
+        "useMatch_count": false,
+        "useName": true,
+        "useRem": true,
+        "use_genericShowOn": true,
+        "use_includePets": false,
+        "use_itemName": true,
+        "use_remaining": false,
+        "use_spellName": true,
+        "use_track": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways"
+      }
+    },
+    "activeTriggerMode": -10,
+    "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
+    "disjunctive": "custom"
+  }
+}

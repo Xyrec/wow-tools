@@ -1,0 +1,107 @@
+{
+  "archetype": "cooldown_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        },
+        {
+          "property": "inverse",
+          "value": true
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 1,
+        "variable": "onCooldown"
+      }
+    }
+  ],
+  "id": "Xyrec Paladin - Turn Undead",
+  "load": {
+    "class": {
+      "multi": {
+        "PALADIN": true
+      },
+      "single": "PALADIN"
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 2878,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "lua": {
+    "triggers.2.trigger.custom": "lua/turn-undead--triggers-2-trigger-custom.lua"
+  },
+  "overrides": {
+    "displayIcon": 135983
+  },
+  "row": "cooldowns",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [],
+        "debuffType": "HARMFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showOnCooldown",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "ownOnly": true,
+        "realSpellName": "Turn Undead",
+        "spellIds": [],
+        "spellName": 2878,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "spell",
+        "unevent": "auto",
+        "unit": "target",
+        "unitExists": true,
+        "useName": true,
+        "use_genericShowOn": true,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways"
+      }
+    },
+    "2": {
+      "trigger": {
+        "check": "event",
+        "classification": [],
+        "custom": "@turn-undead--triggers-2-trigger-custom.lua",
+        "custom_type": "status",
+        "debuffType": "HELPFUL",
+        "event": "Unit Characteristics",
+        "events": "PLAYER_TARGET_CHANGED",
+        "type": "custom",
+        "unit": "target",
+        "use_character": false,
+        "use_class": false,
+        "use_npcId": false,
+        "use_unit": true,
+        "use_unitisunit": false
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": -10,
+    "disjunctive": "any"
+  }
+}

@@ -1,0 +1,972 @@
+{
+  "child_order": [
+    "Xyrec Paladin - Core Abilities",
+    "Xyrec Paladin - Seal of Command",
+    "Xyrec Paladin - Seal of Righteousness",
+    "Xyrec Paladin - Judgement",
+    "Xyrec Paladin - Crusader Strike",
+    "Xyrec Paladin - Avenger's Shield",
+    "Xyrec Paladin - Holy Shock",
+    "Xyrec Paladin - Holy Shield",
+    "Xyrec Paladin - Consecration",
+    "Xyrec Paladin - Light's Grace",
+    "Xyrec Paladin - Resources",
+    "Xyrec Paladin - Weapon Swing",
+    "Xyrec Paladin - Mana Bar",
+    "Xyrec Paladin - Mana Tick",
+    "Xyrec Paladin - Cooldowns",
+    "Xyrec Paladin - Hammer of Wrath",
+    "Xyrec Paladin - Exorcism",
+    "Xyrec Paladin - Holy Wrath",
+    "Xyrec Paladin - Stoneform",
+    "Xyrec Paladin - Perception",
+    "Xyrec Paladin - Divine Favor",
+    "Xyrec Paladin - Divine Protection",
+    "Xyrec Paladin - Divine Shield",
+    "Xyrec Paladin - Lay on Hands",
+    "Xyrec Paladin - Trinket 1 CD",
+    "Xyrec Paladin - Trinket 2 CD",
+    "Xyrec Paladin - Reckoning",
+    "Xyrec Paladin - Blessing of Protection",
+    "Xyrec Paladin - Blessing of Freedom",
+    "Xyrec Paladin - Blessing of Sacrifice",
+    "Xyrec Paladin - Turn Undead",
+    "Xyrec Paladin - Repentence",
+    "Xyrec Paladin - Hammer of Justice",
+    "Xyrec Paladin - Reminders",
+    "Xyrec Paladin - Drink Expiring",
+    "Xyrec Paladin - Blessing",
+    "Xyrec Paladin - Aura",
+    "Xyrec Paladin - Sanctity Aura",
+    "Xyrec Paladin - Righteous Fury",
+    "Xyrec Paladin - Group Buffs",
+    "Xyrec Paladin - Greater Blessings",
+    "Xyrec Paladin - Judgement Bar",
+    "Xyrec Paladin - Judgement of Wisdom",
+    "Xyrec Paladin - Judgement of the Crusade",
+    "Xyrec Paladin - Judgement of Light",
+    "Xyrec Paladin - Active Aura [Drag]"
+  ],
+  "class": "paladin",
+  "containers": [
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Paladin - Seal of Command",
+        "Xyrec Paladin - Seal of Righteousness",
+        "Xyrec Paladin - Judgement",
+        "Xyrec Paladin - Crusader Strike",
+        "Xyrec Paladin - Avenger's Shield",
+        "Xyrec Paladin - Holy Shock",
+        "Xyrec Paladin - Holy Shield",
+        "Xyrec Paladin - Consecration",
+        "Xyrec Paladin - Light's Grace"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 135891,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Paladin - Core Abilities",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 10,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Paladin",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.5",
+      "sort": "none",
+      "sortHybridTable": {
+        "Paladin - Avenger's Shield": false,
+        "Paladin - Beacon of Light": false,
+        "Paladin - Consecration": false,
+        "Paladin - Crusader Strike": false,
+        "Paladin - Divine Storm": false,
+        "Paladin - Exorcism Glyphed": false,
+        "Paladin - Hammer of the Righteous": false,
+        "Paladin - Holy Shield": false,
+        "Paladin - Holy Shock": false,
+        "Paladin - Holy Wrath Glyphed": false,
+        "Paladin - Judgement": false,
+        "Paladin - Light's Grace": false,
+        "Paladin - Sacred Shield": false,
+        "Paladin - Seal of Command": false,
+        "Paladin - Seal of Martyrdom": false,
+        "Paladin - Seal of Righteousness": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 32,
+      "wagoID": "zLJ2R3Oua",
+      "xOffset": 0,
+      "yOffset": 35
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "conditions": [],
+      "config": [],
+      "controlledChildren": [
+        "Xyrec Paladin - Weapon Swing",
+        "Xyrec Paladin - Mana Bar",
+        "Xyrec Paladin - Mana Tick"
+      ],
+      "frameStrata": 1,
+      "groupIcon": 135960,
+      "id": "Xyrec Paladin - Resources",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Paladin",
+      "preferToUpdate": false,
+      "regionType": "group",
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.5",
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "version": 32,
+      "wagoID": "zLJ2R3Oua",
+      "xOffset": 0,
+      "yOffset": 0
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Paladin - Hammer of Wrath",
+        "Xyrec Paladin - Exorcism",
+        "Xyrec Paladin - Holy Wrath",
+        "Xyrec Paladin - Stoneform",
+        "Xyrec Paladin - Perception",
+        "Xyrec Paladin - Divine Favor",
+        "Xyrec Paladin - Divine Protection",
+        "Xyrec Paladin - Divine Shield",
+        "Xyrec Paladin - Lay on Hands",
+        "Xyrec Paladin - Trinket 1 CD",
+        "Xyrec Paladin - Trinket 2 CD",
+        "Xyrec Paladin - Reckoning",
+        "Xyrec Paladin - Blessing of Protection",
+        "Xyrec Paladin - Blessing of Freedom",
+        "Xyrec Paladin - Blessing of Sacrifice",
+        "Xyrec Paladin - Turn Undead",
+        "Xyrec Paladin - Repentence",
+        "Xyrec Paladin - Hammer of Justice"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 135896,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Paladin - Cooldowns",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 9,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Paladin",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.5",
+      "sort": "none",
+      "sortHybridTable": {
+        "Paladin - Blessing of Freedom": false,
+        "Paladin - Blessing of Protection": false,
+        "Paladin - Blessing of Sacrifice": false,
+        "Paladin - Crowd Pummeler": false,
+        "Paladin - Divine Favor": false,
+        "Paladin - Divine Protection": false,
+        "Paladin - Divine Sacrifice": false,
+        "Paladin - Divine Shield": false,
+        "Paladin - Exorcism": false,
+        "Paladin - Hammer of Justice": false,
+        "Paladin - Hammer of Wrath": false,
+        "Paladin - Hammer of Wrath Glyphed": false,
+        "Paladin - Hand of Reckoning": false,
+        "Paladin - Holy Wrath": false,
+        "Paladin - Lay on Hands": false,
+        "Paladin - Perception": false,
+        "Paladin - Rebuke": false,
+        "Paladin - Reckoning": false,
+        "Paladin - Repentence": false,
+        "Paladin - Stoneform": false,
+        "Paladin - Trinket 1 CD": false,
+        "Paladin - Trinket 2 CD": false,
+        "Paladin - Turn Undead": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 32,
+      "wagoID": "zLJ2R3Oua",
+      "xOffset": 0,
+      "yOffset": -26
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "UIPARENT",
+      "anchorPoint": "TOP",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Paladin - Drink Expiring",
+        "Xyrec Paladin - Blessing",
+        "Xyrec Paladin - Aura",
+        "Xyrec Paladin - Sanctity Aura",
+        "Xyrec Paladin - Righteous Fury"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 135995,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Paladin - Reminders",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 5,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Paladin",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.5",
+      "sort": "none",
+      "sortHybridTable": {
+        "Paladin - Aura": false,
+        "Paladin - Blessing": false,
+        "Paladin - Drink Expiring": false,
+        "Paladin - Horn of Lordaeron": false,
+        "Paladin - Inspiration Exemplar": false,
+        "Paladin - Righteous Fury [HoR]": false,
+        "Paladin - Righteous Fury [Tank]": false,
+        "Paladin - Sanctity Aura": false,
+        "Paladin - Sheath of Light [Healer]": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": false,
+      "version": 32,
+      "wagoID": "zLJ2R3Oua",
+      "xOffset": 0,
+      "yOffset": -475
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "UIPARENT",
+      "anchorPoint": "TOP",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Paladin - Greater Blessings"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 135993,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Paladin - Group Buffs",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 6,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Paladin",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.5",
+      "sort": "none",
+      "sortHybridTable": {
+        "Paladin - Greater Blessings": false
+      },
+      "space": 1,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 32,
+      "wagoID": "zLJ2R3Oua",
+      "xOffset": 0,
+      "yOffset": -540
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Paladin - Judgement of Wisdom",
+        "Xyrec Paladin - Judgement of the Crusade",
+        "Xyrec Paladin - Judgement of Light"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 135924,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Paladin - Judgement Bar",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 3,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Paladin",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.5",
+      "sort": "none",
+      "sortHybridTable": {
+        "Paladin - Judgement of Light": false,
+        "Paladin - Judgement of Wisdom": false,
+        "Paladin - Judgement of the Crusade": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 32,
+      "wagoID": "zLJ2R3Oua",
+      "xOffset": 0,
+      "yOffset": 65
+    }
+  ],
+  "root": {
+    "actions": {
+      "finish": [],
+      "init": [],
+      "start": []
+    },
+    "alpha": 1,
+    "anchorFrameType": "SCREEN",
+    "anchorPoint": "CENTER",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "backdropColor": [
+      1,
+      1,
+      1,
+      0.5
+    ],
+    "border": false,
+    "borderBackdrop": "Blizzard Tooltip",
+    "borderColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "borderEdge": "Square Full White",
+    "borderInset": 1,
+    "borderOffset": 4,
+    "borderSize": 2,
+    "conditions": [],
+    "config": [],
+    "controlledChildren": [
+      "Xyrec Paladin - Core Abilities",
+      "Xyrec Paladin - Resources",
+      "Xyrec Paladin - Cooldowns",
+      "Xyrec Paladin - Reminders",
+      "Xyrec Paladin - Group Buffs",
+      "Xyrec Paladin - Judgement Bar",
+      "Xyrec Paladin - Active Aura [Drag]"
+    ],
+    "desc": "",
+    "frameStrata": 1,
+    "groupIcon": "626006",
+    "id": "Xyrec - Paladin",
+    "information": {
+      "groupOffset": false,
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "load": {
+      "class": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      }
+    },
+    "preferToUpdate": false,
+    "regionType": "group",
+    "scale": 1.5,
+    "selfPoint": "CENTER",
+    "semver": "1.4.5",
+    "subRegions": [],
+    "tocversion": 20505,
+    "triggers": [
+      {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Health",
+          "names": [],
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "aura2",
+          "unit": "player"
+        },
+        "untrigger": []
+      }
+    ],
+    "url": "",
+    "version": 32,
+    "wagoID": "zLJ2R3Oua",
+    "xOffset": 0,
+    "yOffset": -242
+  },
+  "wa_version": "5.21.8"
+}

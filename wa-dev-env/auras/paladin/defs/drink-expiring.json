@@ -1,0 +1,93 @@
+{
+  "archetype": "reminder_icon",
+  "conditions": [],
+  "id": "Xyrec Paladin - Drink Expiring",
+  "load": {
+    "class": {
+      "multi": {
+        "PALADIN": true
+      },
+      "single": "PALADIN"
+    },
+    "ingroup": [],
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 15473,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_spellknown": false,
+    "use_zone": false,
+    "use_zoneIds": false,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "displayIcon": 136200
+  },
+  "row": "reminders",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [
+          "430"
+        ],
+        "debuffType": "HELPFUL",
+        "event": "Health",
+        "matchesShowOn": "showOnActive",
+        "names": [],
+        "ownOnly": true,
+        "rem": "5",
+        "remOperator": "<",
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "aura2",
+        "unit": "player",
+        "useName": true,
+        "useRem": true
+      },
+      "untrigger": []
+    },
+    "2": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Power",
+        "percentpower": [
+          "80"
+        ],
+        "percentpower_operator": [
+          "<"
+        ],
+        "type": "unit",
+        "unit": "player",
+        "use_inCombat": false,
+        "use_percentpower": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "3": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Unit Characteristics",
+        "type": "unit",
+        "unit": "player",
+        "use_inCombat": false,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": 1,
+    "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
+    "disjunctive": "custom"
+  }
+}

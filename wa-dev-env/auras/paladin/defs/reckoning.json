@@ -1,0 +1,100 @@
+{
+  "archetype": "cooldown_icon",
+  "conditions": [],
+  "id": "Xyrec Paladin - Reckoning",
+  "load": {
+    "class": {
+      "multi": [],
+      "single": "PALADIN"
+    },
+    "ingroup": {
+      "single": "solo"
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_ingroup": true,
+    "use_talent": false,
+    "zoneIds": ""
+  },
+  "lua": {
+    "triggers.1.trigger.custom": "lua/reckoning--triggers-1-trigger-custom.lua",
+    "triggers.3.trigger.custom": "lua/reckoning--triggers-3-trigger-custom.lua"
+  },
+  "overrides": {
+    "desc": "",
+    "displayIcon": "135882"
+  },
+  "row": "cooldowns",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [],
+        "auraspellids": [
+          "20178"
+        ],
+        "buffShowOn": "showOnActive",
+        "check": "event",
+        "custom": "@reckoning--triggers-1-trigger-custom.lua",
+        "custom_hide": "timed",
+        "custom_type": "status",
+        "debuffType": "HELPFUL",
+        "event": "Health",
+        "events": "CLEU:SPELL_EXTRA_ATTACKS CLEU:SWING_DAMAGE CLEU:SWING_MISSED UNIT_DAMAGE PLAYER_ENTERING_WORLD",
+        "fullscan": true,
+        "name": "\u0420\u0430\u0441\u043f\u043b\u0430\u0442\u0430",
+        "name_operator": "match('%s')",
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "custom",
+        "unit": "player",
+        "useExactSpellId": true,
+        "useName": true,
+        "use_name": true
+      },
+      "untrigger": {
+        "custom": ""
+      }
+    },
+    "2": {
+      "trigger": {
+        "check": "update",
+        "custom_hide": "timed",
+        "custom_type": "status",
+        "event": "Conditions",
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "unit",
+        "unit": "player",
+        "use_alwaystrue": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "3": {
+      "trigger": {
+        "check": "event",
+        "custom": "@reckoning--triggers-3-trigger-custom.lua",
+        "custom_hide": "timed",
+        "custom_type": "status",
+        "debuffType": "HELPFUL",
+        "events": "CLEU:SPELL_EXTRA_ATTACKS CLEU:SWING_DAMAGE CLEU:SWING_MISSED UNIT_DAMAGE PLAYER_ENTERING_WORLD",
+        "type": "custom",
+        "unit": "player"
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": 1,
+    "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and not t[3]\nend",
+    "disjunctive": "custom"
+  }
+}

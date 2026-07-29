@@ -1,0 +1,125 @@
+{
+  "archetype": "reminder_icon",
+  "conditions": [],
+  "id": "Xyrec Paladin - Blessing",
+  "load": {
+    "class": {
+      "multi": {
+        "PALADIN": true
+      },
+      "single": "PALADIN"
+    },
+    "ingroup": {
+      "multi": []
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 19740,
+    "talent": {
+      "multi": []
+    },
+    "use_alive": true,
+    "use_class": true,
+    "use_never": false,
+    "use_spellknown": true,
+    "use_vehicle": false,
+    "use_zone": false,
+    "use_zoneIds": false,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "displayIcon": 135995,
+    "iconSource": 0
+  },
+  "row": "reminders",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [
+          "19740",
+          "19742",
+          "20217",
+          "20911",
+          "1038",
+          "19977",
+          "25782",
+          "25894",
+          "25898",
+          "25899",
+          "25895",
+          "25890",
+          "1022",
+          "6940"
+        ],
+        "debuffType": "HELPFUL",
+        "event": "Health",
+        "matchesShowOn": "showOnActive",
+        "names": [],
+        "ownOnly": true,
+        "rem": "60",
+        "remOperator": "<",
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "aura2",
+        "unit": "player",
+        "useName": true,
+        "useRem": true
+      },
+      "untrigger": []
+    },
+    "2": {
+      "trigger": {
+        "auranames": [
+          "19740",
+          "19742",
+          "20217",
+          "20911",
+          "1038",
+          "19977",
+          "25782",
+          "25894",
+          "25898",
+          "25899",
+          "25895",
+          "25890",
+          "1044",
+          "1022",
+          "6940"
+        ],
+        "debuffType": "HELPFUL",
+        "event": "Health",
+        "matchesShowOn": "showOnMissing",
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "aura2",
+        "unit": "player",
+        "useName": true
+      },
+      "untrigger": []
+    },
+    "3": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Conditions",
+        "type": "unit",
+        "unit": "player",
+        "use_resting": false,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": 1,
+    "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
+    "disjunctive": "custom"
+  }
+}

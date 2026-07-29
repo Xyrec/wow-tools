@@ -1,0 +1,155 @@
+{
+  "archetype": "rotation_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 1,
+            "value": 1,
+            "variable": "onCooldown"
+          },
+          {
+            "trigger": 2,
+            "value": 0,
+            "variable": "buffed"
+          }
+        ],
+        "trigger": -2,
+        "variable": "OR"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "color",
+          "value": [
+            1,
+            0.50196081399918,
+            0.50196081399918,
+            1
+          ]
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 0,
+        "variable": "spellInRange"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "color",
+          "value": [
+            0.50196081399918,
+            0.50196081399918,
+            1,
+            1
+          ]
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 1,
+        "variable": "insufficientResources"
+      }
+    }
+  ],
+  "id": "Xyrec Paladin - Judgement",
+  "load": {
+    "class": {
+      "multi": {
+        "PALADIN": true
+      },
+      "single": "PALADIN"
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 20271,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "row": "core",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showAlways",
+        "names": [],
+        "realSpellName": "Judgement",
+        "spellIds": [],
+        "spellName": 20271,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "spell",
+        "unit": "player",
+        "use_genericShowOn": true,
+        "use_spellName": true,
+        "use_track": true
+      },
+      "untrigger": []
+    },
+    "2": {
+      "trigger": {
+        "auranames": [
+          "20375",
+          "20154",
+          "21082",
+          "20165",
+          "20166",
+          "20164",
+          "31892"
+        ],
+        "debuffType": "HELPFUL",
+        "duration": "1",
+        "event": "Chat Message",
+        "genericShowOn": "showAlways",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "realSpellName": "Seal of Righteousness",
+        "spellIds": [],
+        "spellName": 20293,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "aura2",
+        "unevent": "timed",
+        "unit": "player",
+        "unitExists": true,
+        "useName": true,
+        "use_genericShowOn": true,
+        "use_remaining": false,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways"
+      }
+    },
+    "activeTriggerMode": 1,
+    "customTriggerLogic": "function (t)\n    return t[1]\nend",
+    "disjunctive": "custom"
+  }
+}

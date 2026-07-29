@@ -1,0 +1,11 @@
+{
+  "_notes": "Baseline import decisions. Resources / Judgement Bar children and the loose drag icon stay bespoke passthroughs (donor look preserved) until QA; icon rows adopt the Xyrec archetypes.",
+  "drop": [],
+  "rows": {
+    "Paladin - Core Abilities": "core",
+    "Paladin - Cooldowns": "cooldowns",
+    "Paladin - Reminders": "reminders",
+    "Paladin - Group Buffs": "groupbuffs"
+  },
+  "bespoke": ["Paladin - Active Aura [Drag]"]
+}
