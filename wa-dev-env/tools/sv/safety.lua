@@ -3,13 +3,9 @@ local M = {}
 
 function M.assert_game_closed()
   if os.getenv("CCWOW_ALLOW_RUNNING") == "1" then return end
-  -- Match the process NAME (comm), case-insensitively. Verified against the
-  -- live game on Linux/Proton (2026-07-22): the process is "WoWClassic.exe"
-  -- (capital O) while the file on disk is "WowClassic.exe" — exact-case
-  -- probes missed it twice. Name-only matching can't self-match our shell
-  -- (comm is "sh"), unlike -f cmdline probes which match anything that
-  -- merely mentions the exe path (launcher args, our own arguments).
-  local p = io.popen("pgrep -i wowclassic 2>/dev/null")
+  -- probe comes from the per-machine config (see machines.lua for the
+  -- hard-won platform notes)
+  local p = io.popen(require("machines").guard_cmd)
   local out = p:read("*a"); p:close()
   if out and out:match("%d") then
     error("World of Warcraft is running — it overwrites SavedVariables on logout. "

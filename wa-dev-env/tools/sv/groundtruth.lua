@@ -2,7 +2,7 @@ local sv = require("sv")
 local json = require("json")
 local M = {}
 
-M.DUMP_PATH = "/home/xyrec/Games/battlenet/drive_c/Program Files (x86)/World of Warcraft/_anniversary_/WTF/Account/THESNUB/SavedVariables/XyrecDump.lua"
+M.DUMP_PATH = require("machines").dump_path
 
 local function write_json(path, t)
   local f = assert(io.open(path, "w"))

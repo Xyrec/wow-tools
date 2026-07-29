@@ -11,7 +11,12 @@ import pathlib
 import sys
 import urllib.request
 
-BUILD_INFO = pathlib.Path("/Applications/World of Warcraft/.build.info")
+# .build.info lives one level above _anniversary_, per platform
+_WOW_PARENTS = {
+    "Linux": "/home/xyrec/Games/battlenet/drive_c/Program Files (x86)/World of Warcraft",
+    "Darwin": "/Applications/World of Warcraft",
+}
+BUILD_INFO = pathlib.Path(_WOW_PARENTS[__import__("platform").system()]) / ".build.info"
 PRODUCT = "wow_anniversary"
 OUT_DIR = pathlib.Path(__file__).resolve().parents[2] / "data" / "ground-truth" / "db2"
 DEFAULT_TABLES = ["SpellName", "Spell", "Talent", "TalentTab"]
