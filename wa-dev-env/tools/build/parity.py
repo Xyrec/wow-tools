@@ -18,7 +18,10 @@ import sys
 def normalize_aura(aura):
     def walk(node):
         if isinstance(node, dict):
-            return {k: walk(v) for k, v in sorted(node.items()) if k != "uid"}
+            out = {k: walk(v) for k, v in sorted(node.items()) if k != "uid"}
+            # Lua has one empty table; the codec writes it as [] while
+            # Python-authored defs may say {} — identical to WeakAuras
+            return out if out else []
         if isinstance(node, list):
             return [walk(v) for v in node]
         if isinstance(node, float):
