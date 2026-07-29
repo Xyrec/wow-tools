@@ -1,450 +1,943 @@
 {
-  "SHAMAN": {
-    "class": "SHAMAN",
+  "PALADIN": {
+    "class": "PALADIN",
     "tabs": [
       {
-        "name": 261,
-        "pointsSpent": "",
+        "raw": [
+          382,
+          "Holy",
+          "",
+          135920,
+          5,
+          "PaladinHoly",
+          0,
+          true
+        ],
         "talents": [
-          {
-            "column": 3,
-            "maxRank": 3,
-            "name": "Call of Flame",
-            "rank": 0,
-            "tier": 2
-          },
-          {
-            "column": 3,
-            "maxRank": 5,
-            "name": "Call of Thunder",
-            "rank": 0,
-            "tier": 3
-          },
-          {
-            "column": 3,
-            "maxRank": 5,
-            "name": "Concussion",
-            "rank": 2,
-            "tier": 1
-          },
-          {
-            "column": 2,
-            "maxRank": 5,
-            "name": "Convection",
-            "rank": 0,
-            "tier": 1
-          },
-          {
-            "column": 2,
-            "maxRank": 1,
-            "name": "Elemental Fury",
-            "rank": 0,
-            "tier": 5
-          },
-          {
-            "column": 1,
-            "maxRank": 2,
-            "name": "Improved Fire Totems",
-            "rank": 0,
-            "tier": 4
-          },
-          {
-            "column": 1,
-            "maxRank": 2,
-            "name": "Earth's Grasp",
-            "rank": 0,
-            "tier": 2
-          },
-          {
-            "column": 2,
-            "maxRank": 1,
-            "name": "Elemental Mastery",
-            "rank": 0,
-            "tier": 7
-          },
-          {
-            "column": 1,
-            "maxRank": 1,
-            "name": "Elemental Focus",
-            "rank": 0,
-            "tier": 3
-          },
-          {
-            "column": 2,
-            "maxRank": 5,
-            "name": "Reverberation",
-            "rank": 0,
-            "tier": 3
-          },
-          {
-            "column": 3,
-            "maxRank": 5,
-            "name": "Lightning Mastery",
-            "rank": 0,
-            "tier": 6
-          },
-          {
-            "column": 2,
-            "maxRank": 3,
-            "name": "Elemental Warding",
-            "rank": 0,
-            "tier": 2
-          },
-          {
-            "column": 1,
-            "maxRank": 2,
-            "name": "Storm Reach",
-            "rank": 0,
-            "tier": 5
-          },
-          {
-            "column": 2,
-            "maxRank": 3,
-            "name": "Eye of the Storm",
-            "rank": 0,
-            "tier": 4
-          },
-          {
-            "column": 4,
-            "maxRank": 3,
-            "name": "Elemental Devastation",
-            "rank": 0,
-            "tier": 4
-          },
-          {
-            "column": 4,
-            "maxRank": 5,
-            "name": "Unrelenting Storm",
-            "rank": 0,
-            "tier": 5
-          },
-          {
-            "column": 3,
-            "maxRank": 3,
-            "name": "Elemental Shields",
-            "rank": 0,
-            "tier": 7
-          },
-          {
-            "column": 1,
-            "maxRank": 3,
-            "name": "Elemental Precision",
-            "rank": 0,
-            "tier": 6
-          },
-          {
-            "column": 2,
-            "maxRank": 5,
-            "name": "Lightning Overload",
-            "rank": 0,
-            "tier": 8
-          },
-          {
-            "column": 2,
-            "maxRank": 1,
-            "name": "Totem of Wrath",
-            "rank": 0,
-            "tier": 9
-          }
+          [
+            "Spiritual Focus",
+            135736,
+            2,
+            2,
+            0,
+            5,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1432
+          ],
+          [
+            "Divine Favor",
+            135915,
+            5,
+            2,
+            0,
+            1,
+            true,
+            0,
+            true,
+            true,
+            false,
+            1433
+          ],
+          [
+            "Aura Mastery",
+            135872,
+            3,
+            2,
+            0,
+            1,
+            true,
+            0,
+            true,
+            true,
+            false,
+            1435
+          ],
+          [
+            "Improved Lay on Hands",
+            135928,
+            3,
+            3,
+            0,
+            2,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1443
+          ],
+          [
+            "Healing Light",
+            135920,
+            3,
+            1,
+            0,
+            3,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1444
+          ],
+          [
+            "Improved Blessing of Wisdom",
+            135970,
+            4,
+            3,
+            0,
+            2,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1446
+          ],
+          [
+            "Divine Intellect",
+            136090,
+            1,
+            3,
+            0,
+            5,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1449
+          ],
+          [
+            "Divine Strength",
+            132154,
+            1,
+            2,
+            5,
+            5,
+            true,
+            5,
+            true,
+            false,
+            false,
+            1450
+          ],
+          [
+            "Illumination",
+            135913,
+            4,
+            2,
+            0,
+            5,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1461
+          ],
+          [
+            "Improved Seal of Righteousness",
+            132325,
+            2,
+            3,
+            0,
+            5,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1463
+          ],
+          [
+            "Sanctified Light",
+            135917,
+            5,
+            3,
+            0,
+            3,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1465
+          ],
+          [
+            "Holy Shock",
+            135972,
+            7,
+            2,
+            0,
+            1,
+            true,
+            0,
+            true,
+            true,
+            false,
+            1502
+          ],
+          [
+            "Holy Power",
+            135938,
+            6,
+            3,
+            0,
+            5,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1627
+          ],
+          [
+            "Unyielding Faith",
+            135984,
+            3,
+            4,
+            0,
+            2,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1628
+          ],
+          [
+            "Pure of Heart",
+            135948,
+            5,
+            1,
+            0,
+            3,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1742
+          ],
+          [
+            "Purifying Power",
+            135950,
+            6,
+            1,
+            0,
+            2,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1743
+          ],
+          [
+            "Blessed Life",
+            135876,
+            7,
+            3,
+            0,
+            3,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1744
+          ],
+          [
+            "Light's Grace",
+            135931,
+            7,
+            1,
+            0,
+            3,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1745
+          ],
+          [
+            "Holy Guidance",
+            135921,
+            8,
+            2,
+            0,
+            5,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1746
+          ],
+          [
+            "Divine Illumination",
+            135895,
+            9,
+            2,
+            0,
+            1,
+            true,
+            0,
+            true,
+            true,
+            false,
+            1747
+          ]
         ]
       },
       {
-        "name": 263,
-        "pointsSpent": "",
+        "raw": [
+          383,
+          "Protection",
+          "",
+          135893,
+          11,
+          "PaladinProtection",
+          0,
+          true
+        ],
         "talents": [
-          {
-            "column": 4,
-            "maxRank": 5,
-            "name": "Anticipation",
-            "rank": 0,
-            "tier": 3
-          },
-          {
-            "column": 2,
-            "maxRank": 5,
-            "name": "Flurry",
-            "rank": 5,
-            "tier": 4
-          },
-          {
-            "column": 3,
-            "maxRank": 2,
-            "name": "Improved Ghost Wolf",
-            "rank": 2,
-            "tier": 2
-          },
-          {
-            "column": 4,
-            "maxRank": 3,
-            "name": "Improved Lightning Shield",
-            "rank": 0,
-            "tier": 2
-          },
-          {
-            "column": 1,
-            "maxRank": 2,
-            "name": "Guardian Totems",
-            "rank": 0,
-            "tier": 2
-          },
-          {
-            "column": 1,
-            "maxRank": 2,
-            "name": "Enhancing Totems",
-            "rank": 2,
-            "tier": 3
-          },
-          {
-            "column": 3,
-            "maxRank": 3,
-            "name": "Elemental Weapons",
-            "rank": 3,
-            "tier": 5
-          },
-          {
-            "column": 3,
-            "maxRank": 5,
-            "name": "Shield Specialization",
-            "rank": 0,
-            "tier": 1
-          },
-          {
-            "column": 2,
-            "maxRank": 5,
-            "name": "Thundering Strikes",
-            "rank": 5,
-            "tier": 2
-          },
-          {
-            "column": 2,
-            "maxRank": 5,
-            "name": "Ancestral Knowledge",
-            "rank": 5,
-            "tier": 1
-          },
-          {
-            "column": 3,
-            "maxRank": 5,
-            "name": "Toughness",
-            "rank": 0,
-            "tier": 4
-          },
-          {
-            "column": 2,
-            "maxRank": 1,
-            "name": "Spirit Weapons",
-            "rank": 1,
-            "tier": 5
-          },
-          {
-            "column": 3,
-            "maxRank": 1,
-            "name": "Shamanistic Focus",
-            "rank": 1,
-            "tier": 3
-          },
-          {
-            "column": 3,
-            "maxRank": 1,
-            "name": "Stormstrike",
-            "rank": 1,
-            "tier": 7
-          },
-          {
-            "column": 4,
-            "maxRank": 5,
-            "name": "Weapon Mastery",
-            "rank": 5,
-            "tier": 6
-          },
-          {
-            "column": 1,
-            "maxRank": 2,
-            "name": "Improved Weapon Totems",
-            "rank": 2,
-            "tier": 5
-          },
-          {
-            "column": 2,
-            "maxRank": 5,
-            "name": "Unleashed Rage",
-            "rank": 5,
-            "tier": 8
-          },
-          {
-            "column": 2,
-            "maxRank": 1,
-            "name": "Dual Wield",
-            "rank": 1,
-            "tier": 7
-          },
-          {
-            "column": 1,
-            "maxRank": 3,
-            "name": "Mental Quickness",
-            "rank": 3,
-            "tier": 6
-          },
-          {
-            "column": 1,
-            "maxRank": 3,
-            "name": "Dual Wield Specialization",
-            "rank": 3,
-            "tier": 7
-          },
-          {
-            "column": 2,
-            "maxRank": 1,
-            "name": "Shamanistic Rage",
-            "rank": 1,
-            "tier": 9
-          }
+          [
+            "Redoubt",
+            132110,
+            1,
+            3,
+            0,
+            5,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1421
+          ],
+          [
+            "Improved Devotion Aura",
+            135893,
+            1,
+            2,
+            5,
+            5,
+            true,
+            5,
+            true,
+            false,
+            false,
+            1422
+          ],
+          [
+            "Toughness",
+            135892,
+            2,
+            4,
+            0,
+            5,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1423
+          ],
+          [
+            "Shield Specialization",
+            134952,
+            3,
+            3,
+            0,
+            3,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1424
+          ],
+          [
+            "Guardian's Favor",
+            135964,
+            2,
+            2,
+            2,
+            2,
+            true,
+            2,
+            true,
+            false,
+            false,
+            1425
+          ],
+          [
+            "Reckoning",
+            135882,
+            5,
+            3,
+            0,
+            5,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1426
+          ],
+          [
+            "One-Handed Weapon Specialization",
+            135321,
+            6,
+            3,
+            0,
+            5,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1429
+          ],
+          [
+            "Holy Shield",
+            135880,
+            7,
+            2,
+            0,
+            1,
+            true,
+            0,
+            true,
+            true,
+            false,
+            1430
+          ],
+          [
+            "Blessing of Sanctuary",
+            136051,
+            5,
+            2,
+            0,
+            1,
+            true,
+            0,
+            true,
+            true,
+            false,
+            1431
+          ],
+          [
+            "Blessing of Kings",
+            135995,
+            3,
+            1,
+            1,
+            1,
+            true,
+            1,
+            true,
+            true,
+            false,
+            1442
+          ],
+          [
+            "Improved Righteous Fury",
+            135962,
+            3,
+            2,
+            0,
+            3,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1501
+          ],
+          [
+            "Improved Hammer of Justice",
+            135963,
+            4,
+            2,
+            0,
+            3,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1521
+          ],
+          [
+            "Improved Concentration Aura",
+            135933,
+            4,
+            3,
+            0,
+            3,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1626
+          ],
+          [
+            "Anticipation",
+            135994,
+            3,
+            4,
+            0,
+            5,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1629
+          ],
+          [
+            "Precision",
+            132282,
+            2,
+            1,
+            3,
+            3,
+            true,
+            3,
+            true,
+            false,
+            false,
+            1630
+          ],
+          [
+            "Stoicism",
+            135978,
+            4,
+            1,
+            0,
+            2,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1748
+          ],
+          [
+            "Spell Warding",
+            135925,
+            5,
+            1,
+            0,
+            2,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1749
+          ],
+          [
+            "Sacred Duty",
+            135896,
+            6,
+            1,
+            0,
+            2,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1750
+          ],
+          [
+            "Ardent Defender",
+            135870,
+            7,
+            3,
+            0,
+            5,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1751
+          ],
+          [
+            "Combat Expertise",
+            135986,
+            8,
+            3,
+            0,
+            5,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1753
+          ],
+          [
+            "Avenger's Shield",
+            135874,
+            9,
+            2,
+            0,
+            1,
+            true,
+            0,
+            true,
+            true,
+            false,
+            1754
+          ],
+          [
+            "Improved Holy Shield",
+            135880,
+            7,
+            1,
+            0,
+            2,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1829
+          ]
         ]
       },
       {
-        "name": 262,
-        "pointsSpent": "",
+        "raw": [
+          381,
+          "Retribution",
+          "",
+          135873,
+          45,
+          "PaladinCombat",
+          0,
+          true
+        ],
         "talents": [
-          {
-            "column": 2,
-            "maxRank": 3,
-            "name": "Ancestral Healing",
-            "rank": 0,
-            "tier": 2
-          },
-          {
-            "column": 3,
-            "maxRank": 1,
-            "name": "Totemic Mastery",
-            "rank": 1,
-            "tier": 3
-          },
-          {
-            "column": 1,
-            "maxRank": 3,
-            "name": "Nature's Guidance",
-            "rank": 3,
-            "tier": 3
-          },
-          {
-            "column": 2,
-            "maxRank": 5,
-            "name": "Improved Healing Wave",
-            "rank": 0,
-            "tier": 1
-          },
-          {
-            "column": 2,
-            "maxRank": 5,
-            "name": "Healing Focus",
-            "rank": 0,
-            "tier": 3
-          },
-          {
-            "column": 2,
-            "maxRank": 5,
-            "name": "Restorative Totems",
-            "rank": 0,
-            "tier": 4
-          },
-          {
-            "column": 1,
-            "maxRank": 2,
-            "name": "Improved Reincarnation",
-            "rank": 0,
-            "tier": 2
-          },
-          {
-            "column": 2,
-            "maxRank": 1,
-            "name": "Mana Tide Totem",
-            "rank": 0,
-            "tier": 7
-          },
-          {
-            "column": 3,
-            "maxRank": 1,
-            "name": "Nature's Swiftness",
-            "rank": 0,
-            "tier": 5
-          },
-          {
-            "column": 3,
-            "maxRank": 5,
-            "name": "Purification",
-            "rank": 0,
-            "tier": 6
-          },
-          {
-            "column": 3,
-            "maxRank": 5,
-            "name": "Tidal Focus",
-            "rank": 5,
-            "tier": 1
-          },
-          {
-            "column": 3,
-            "maxRank": 5,
-            "name": "Tidal Mastery",
-            "rank": 0,
-            "tier": 4
-          },
-          {
-            "column": 3,
-            "maxRank": 5,
-            "name": "Totemic Focus",
-            "rank": 5,
-            "tier": 2
-          },
-          {
-            "column": 4,
-            "maxRank": 3,
-            "name": "Healing Grace",
-            "rank": 0,
-            "tier": 3
-          },
-          {
-            "column": 1,
-            "maxRank": 3,
-            "name": "Healing Way",
-            "rank": 0,
-            "tier": 5
-          },
-          {
-            "column": 4,
-            "maxRank": 3,
-            "name": "Focused Mind",
-            "rank": 0,
-            "tier": 5
-          },
-          {
-            "column": 2,
-            "maxRank": 3,
-            "name": "Nature's Blessing",
-            "rank": 0,
-            "tier": 8
-          },
-          {
-            "column": 3,
-            "maxRank": 2,
-            "name": "Improved Chain Heal",
-            "rank": 0,
-            "tier": 8
-          },
-          {
-            "column": 2,
-            "maxRank": 1,
-            "name": "Earth Shield",
-            "rank": 0,
-            "tier": 9
-          },
-          {
-            "column": 3,
-            "maxRank": 5,
-            "name": "Nature's Guardian",
-            "rank": 0,
-            "tier": 7
-          }
+          [
+            "Improved Blessing of Might",
+            135906,
+            1,
+            2,
+            0,
+            5,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1401
+          ],
+          [
+            "Vengeance",
+            132275,
+            6,
+            2,
+            5,
+            5,
+            true,
+            5,
+            true,
+            false,
+            false,
+            1402
+          ],
+          [
+            "Deflection",
+            132269,
+            2,
+            3,
+            0,
+            5,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1403
+          ],
+          [
+            "Improved Retribution Aura",
+            135873,
+            4,
+            3,
+            0,
+            2,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1405
+          ],
+          [
+            "Benediction",
+            135863,
+            1,
+            3,
+            5,
+            5,
+            true,
+            5,
+            true,
+            false,
+            false,
+            1407
+          ],
+          [
+            "Sanctity Aura",
+            135934,
+            5,
+            3,
+            1,
+            1,
+            true,
+            1,
+            true,
+            true,
+            false,
+            1409
+          ],
+          [
+            "Two-Handed Weapon Specialization",
+            133041,
+            5,
+            1,
+            3,
+            3,
+            true,
+            3,
+            true,
+            false,
+            false,
+            1410
+          ],
+          [
+            "Conviction",
+            135957,
+            3,
+            2,
+            5,
+            5,
+            true,
+            5,
+            true,
+            false,
+            false,
+            1411
+          ],
+          [
+            "Repentance",
+            135942,
+            7,
+            2,
+            1,
+            1,
+            true,
+            1,
+            true,
+            true,
+            false,
+            1441
+          ],
+          [
+            "Improved Seal of the Crusader",
+            135924,
+            2,
+            2,
+            3,
+            3,
+            true,
+            3,
+            true,
+            false,
+            false,
+            1464
+          ],
+          [
+            "Seal of Command",
+            132347,
+            3,
+            3,
+            1,
+            1,
+            true,
+            1,
+            true,
+            true,
+            false,
+            1481
+          ],
+          [
+            "Improved Judgement",
+            135959,
+            2,
+            1,
+            2,
+            2,
+            true,
+            2,
+            true,
+            false,
+            false,
+            1631
+          ],
+          [
+            "Eye for an Eye",
+            135904,
+            4,
+            1,
+            0,
+            2,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1632
+          ],
+          [
+            "Vindication",
+            135985,
+            3,
+            1,
+            0,
+            3,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1633
+          ],
+          [
+            "Pursuit of Justice",
+            135937,
+            3,
+            4,
+            2,
+            3,
+            true,
+            2,
+            true,
+            false,
+            false,
+            1634
+          ],
+          [
+            "Crusade",
+            135889,
+            4,
+            4,
+            3,
+            3,
+            true,
+            3,
+            true,
+            false,
+            false,
+            1755
+          ],
+          [
+            "Improved Sanctity Aura",
+            135934,
+            5,
+            4,
+            2,
+            2,
+            true,
+            2,
+            true,
+            false,
+            false,
+            1756
+          ],
+          [
+            "Divine Purpose",
+            135897,
+            7,
+            3,
+            0,
+            3,
+            true,
+            0,
+            true,
+            false,
+            false,
+            1757
+          ],
+          [
+            "Sanctified Judgement",
+            135959,
+            6,
+            3,
+            3,
+            3,
+            true,
+            3,
+            true,
+            false,
+            false,
+            1758
+          ],
+          [
+            "Fanaticism",
+            135905,
+            8,
+            2,
+            5,
+            5,
+            true,
+            5,
+            true,
+            false,
+            false,
+            1759
+          ],
+          [
+            "Sanctified Seals",
+            135924,
+            7,
+            1,
+            3,
+            3,
+            true,
+            3,
+            true,
+            false,
+            false,
+            1761
+          ],
+          [
+            "Crusader Strike",
+            135891,
+            9,
+            2,
+            1,
+            1,
+            true,
+            1,
+            true,
+            true,
+            false,
+            1823
+          ]
         ]
       }
     ]

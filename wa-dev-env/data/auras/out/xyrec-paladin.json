@@ -347,7 +347,8 @@
               "20164",
               "21082",
               "31892",
-              "31801"
+              "31801",
+              "348700"
             ],
             "debuffType": "HELPFUL",
             "matchesShowOn": "showAlways",
@@ -2954,7 +2955,8 @@
           "trigger": {
             "auranames": [
               "31892",
-              "31801"
+              "31801",
+              "348700"
             ],
             "debuffType": "HELPFUL",
             "type": "aura2",
