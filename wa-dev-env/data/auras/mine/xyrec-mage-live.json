@@ -66,7 +66,9 @@
         "Xyrec Mage - Ice Lance",
         "Xyrec Mage - Fireball [1-15]",
         "Xyrec Mage - Frostbolt [1-15]",
-        "Xyrec Mage - Arcane Missles [1-15]"
+        "Xyrec Mage - Arcane Missles [1-15]",
+        "Xyrec Mage - Water Elemental",
+        "Xyrec Mage - Dragon's Breath"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -145,7 +147,7 @@
           "untrigger": []
         }
       ],
-      "uid": "8of1b1Tq993",
+      "uid": "RHhqhMywOck",
       "url": "",
       "useLimit": true,
       "version": 35,
@@ -356,7 +358,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "BeOfjPZ1cA1",
+      "uid": "FD8t9YlCEgz",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -611,7 +613,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "DBtPnBxqBNH",
+      "uid": "dX2YtEsDu2L",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -942,7 +944,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "uGA5X8WColP",
+      "uid": "40hxJfsr5RN",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1342,7 +1344,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "E3pMUBcgqTQ",
+      "uid": "1H62sZHIhrc",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1627,7 +1629,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Fiu6ZzTbJSa",
+      "uid": "NLKnqhTxiLV",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1894,7 +1896,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "uhKhrEJdUCd",
+      "uid": "ayvpOhP2JPa",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2109,7 +2111,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ysLgfnLSEzE",
+      "uid": "VXDdDrUYRl2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2432,7 +2434,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "KxMVQiDfS4u",
+      "uid": "mdF6vmX5brY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2746,7 +2748,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "GyT7GMxC0Yf",
+      "uid": "dsEx8rvxYSo",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3075,7 +3077,577 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "8dk9qRnjg5e",
+      "uid": "Agur7JYgWIY",
+      "url": "",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "useTooltip": false,
+      "version": 15,
+      "width": 38,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": {
+          "do_custom": false,
+          "do_glow": false
+        }
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "sub.3.text_visible"
+            }
+          ],
+          "check": {
+            "op": "<",
+            "trigger": 1,
+            "value": "2",
+            "variable": "duration"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 1,
+            "variable": "onCooldown"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "color",
+              "value": [
+                1,
+                0.50196081399918,
+                0.50196081399918,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 0,
+            "variable": "spellInRange"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "color",
+              "value": [
+                0.50196081399918,
+                0.50196081399918,
+                1,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 1,
+            "variable": "insufficientResources"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": true,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "displayIcon": "",
+      "frameStrata": 1,
+      "height": 32,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Xyrec Mage - Water Elemental",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": true,
+      "keepAspectRatio": true,
+      "load": {
+        "class": {
+          "multi": [],
+          "single": "MAGE"
+        },
+        "race": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "spellknown": 31687,
+        "talent": {
+          "multi": []
+        },
+        "use_class": true,
+        "use_never": false,
+        "use_spellknown": true,
+        "zoneIds": ""
+      },
+      "parent": "Xyrec Mage - Core Abilities",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 18,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%p",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        }
+      ],
+      "tocversion": 20506,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "auranames": [],
+            "debuffType": "HARMFUL",
+            "duration": "1",
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showAlways",
+            "matchesShowOn": "showAlways",
+            "names": [],
+            "realSpellName": "Summon Water Elemental",
+            "spellIds": [],
+            "spellName": 31687,
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "track": "auto",
+            "type": "spell",
+            "unevent": "auto",
+            "unit": "target",
+            "unitExists": true,
+            "useName": true,
+            "use_genericShowOn": true,
+            "use_remaining": false,
+            "use_showgcd": true,
+            "use_spellName": true,
+            "use_track": true,
+            "use_unit": true
+          },
+          "untrigger": {
+            "genericShowOn": "showAlways"
+          }
+        },
+        "activeTriggerMode": -10,
+        "disjunctive": "any"
+      },
+      "uid": "slDpCQtuIc5",
+      "url": "",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "useTooltip": false,
+      "version": 15,
+      "width": 38,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": {
+          "do_custom": false,
+          "do_glow": false
+        }
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "sub.3.text_visible"
+            }
+          ],
+          "check": {
+            "op": "<",
+            "trigger": 1,
+            "value": "2",
+            "variable": "duration"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 1,
+            "variable": "onCooldown"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "color",
+              "value": [
+                1,
+                0.50196081399918,
+                0.50196081399918,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 0,
+            "variable": "spellInRange"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "color",
+              "value": [
+                0.50196081399918,
+                0.50196081399918,
+                1,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 1,
+            "variable": "insufficientResources"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": true,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "displayIcon": "",
+      "frameStrata": 1,
+      "height": 32,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Xyrec Mage - Dragon's Breath",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": true,
+      "keepAspectRatio": true,
+      "load": {
+        "class": {
+          "multi": [],
+          "single": "MAGE"
+        },
+        "race": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "spellknown": 31661,
+        "talent": {
+          "multi": []
+        },
+        "use_class": true,
+        "use_never": false,
+        "use_spellknown": true,
+        "zoneIds": ""
+      },
+      "parent": "Xyrec Mage - Core Abilities",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 18,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%p",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        }
+      ],
+      "tocversion": 20506,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "auranames": [],
+            "debuffType": "HARMFUL",
+            "duration": "1",
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showAlways",
+            "matchesShowOn": "showAlways",
+            "names": [],
+            "realSpellName": "Dragon's Breath",
+            "spellIds": [],
+            "spellName": 31661,
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "track": "auto",
+            "type": "spell",
+            "unevent": "auto",
+            "unit": "target",
+            "unitExists": true,
+            "useName": true,
+            "use_genericShowOn": true,
+            "use_remaining": false,
+            "use_showgcd": true,
+            "use_spellName": true,
+            "use_track": true,
+            "use_unit": true
+          },
+          "untrigger": {
+            "genericShowOn": "showAlways"
+          }
+        },
+        "activeTriggerMode": -10,
+        "disjunctive": "any"
+      },
+      "uid": "oiFUC8cdmQl",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3188,7 +3760,7 @@
           "untrigger": []
         }
       ],
-      "uid": "s9nyigsT7h5",
+      "uid": "VpwBBrfQx72",
       "url": "",
       "version": 35,
       "wagoID": "6vNSif5yK",
@@ -3293,7 +3865,7 @@
           "untrigger": []
         }
       ],
-      "uid": "2J8E0qZCX4a",
+      "uid": "WVZtXoG7pk7",
       "url": "",
       "version": 35,
       "wagoID": "6vNSif5yK",
@@ -3404,7 +3976,7 @@
           "untrigger": []
         }
       ],
-      "uid": "2YT2nrSQgcO",
+      "uid": "8Wqe0sz724S",
       "url": "",
       "version": 35,
       "wagoID": "6vNSif5yK",
@@ -3657,7 +4229,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "0KsV7FMz0a2",
+      "uid": "rHAUFQ3Heuc",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -3914,7 +4486,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "Mf2T53xpNeQ",
+      "uid": "Evdktmc2m25",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -4171,7 +4743,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "RMFdmMp8ig4",
+      "uid": "8uNIWMFx3aP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -4428,7 +5000,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "Z3pMrYawwBA",
+      "uid": "Tsv4Rrn4tHO",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -4685,7 +5257,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "Lj5MV10teRz",
+      "uid": "6hXXP0wbRkw",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -5052,7 +5624,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "Adiy3s7mlCi",
+      "uid": "fZ7V0sF3oPq",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5394,7 +5966,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "jz6nbo3lukl",
+      "uid": "iYu3AsMju13",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5626,7 +6198,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "JLxK8dZEKzU",
+      "uid": "XVcGXwTh6Zk",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5715,7 +6287,9 @@
         "Xyrec Mage - Displacement",
         "Xyrec Mage - Blink",
         "Xyrec Mage - Polymorph",
-        "Xyrec Mage - Counterspell"
+        "Xyrec Mage - Counterspell",
+        "Xyrec Mage - Spellsteal",
+        "Xyrec Mage - Invisibility"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -5799,7 +6373,7 @@
           "untrigger": []
         }
       ],
-      "uid": "dfnmZgIkNWn",
+      "uid": "ML1uPXaPu4M",
       "url": "",
       "useLimit": true,
       "version": 35,
@@ -6069,7 +6643,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "VyRJIOQeYf3",
+      "uid": "dgg73ddo1tT",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6280,7 +6854,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "F4Osbzn4dJQ",
+      "uid": "w9T3VKOXjLy",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6552,7 +7126,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "aWqozxkY5MU",
+      "uid": "fVe6oSEBYZR",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6824,7 +7398,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "tcVxTlbzjBB",
+      "uid": "TTV3vzJcqLI",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7062,7 +7636,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "QHFTrFupV7e",
+      "uid": "zkJ4DKVtRqo",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7273,7 +7847,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ugVtrmNzRpe",
+      "uid": "opIcrWhNyRm",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7511,7 +8085,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "GT44LpAcwIS",
+      "uid": "lWcO1NUIzxQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7787,7 +8361,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "YncRhtt0VMb",
+      "uid": "tLm3fyccMsP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8063,7 +8637,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "cPP9MD8exKV",
+      "uid": "0ihTHbbajZU",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8339,7 +8913,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "CUV8X9NkNFs",
+      "uid": "dRUdTqmlnje",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8615,7 +9189,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "77lN6ckN14O",
+      "uid": "9mLaVJZtw71",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8856,7 +9430,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "4eNl648A805",
+      "uid": "fBUKvkNWovb",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9097,7 +9671,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "gG4tQrwFHLN",
+      "uid": "Q5XcOlg0va0",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9369,7 +9943,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "G45jdYR1QW1",
+      "uid": "PoYiMk4qHRo",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9641,7 +10215,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "sOTvNB1E7Ap",
+      "uid": "sKTuYF7BYao",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9953,7 +10527,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "UTkNXIyirBL",
+      "uid": "f3MX9Szm4se",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10225,7 +10799,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "IaoMy61KIQP",
+      "uid": "SAdg20xCGC6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10497,7 +11071,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "cu80wKyvk8U",
+      "uid": "pkrZ9h6iTEv",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10708,7 +11282,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "k3I2EWRibbY",
+      "uid": "wD7Lc5y1hnq",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10946,7 +11520,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "d1WstkbN22n",
+      "uid": "dCKsIjSOVpS",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11219,7 +11793,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "GPPUpNSzpzB",
+      "uid": "P6G7gvvnAvI",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11491,7 +12065,429 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "I3w4LL3qSue",
+      "uid": "5BHuicW6Tf3",
+      "url": "",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 15,
+      "width": 30,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "displayIcon": "",
+      "frameStrata": 1,
+      "height": 30,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Xyrec Mage - Spellsteal",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": false,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": [],
+          "single": "MAGE"
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "spellknown": 30449,
+        "talent": {
+          "multi": []
+        },
+        "use_class": {
+          "multi": [],
+          "single": "MAGE"
+        },
+        "use_never": false,
+        "use_spellknown": true
+      },
+      "parent": "Xyrec Mage - Cooldowns",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 14,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%p",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        }
+      ],
+      "tocversion": 20506,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "duration": "1",
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showAlways",
+            "names": [],
+            "realSpellName": "Spellsteal",
+            "spellIds": [],
+            "spellName": 30449,
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "spell",
+            "unevent": "auto",
+            "unit": "player",
+            "use_genericShowOn": true,
+            "use_spellName": true,
+            "use_track": true,
+            "use_unit": true
+          },
+          "untrigger": {
+            "genericShowOn": "showAlways"
+          }
+        },
+        "activeTriggerMode": -10,
+        "disjunctive": "any"
+      },
+      "uid": "45yqZAjE7a8",
+      "url": "",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 15,
+      "width": 30,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "displayIcon": "",
+      "frameStrata": 1,
+      "height": 30,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Xyrec Mage - Invisibility",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": false,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": [],
+          "single": "MAGE"
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "spellknown": 66,
+        "talent": {
+          "multi": []
+        },
+        "use_class": {
+          "multi": [],
+          "single": "MAGE"
+        },
+        "use_never": false,
+        "use_spellknown": true
+      },
+      "parent": "Xyrec Mage - Cooldowns",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 14,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%p",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        }
+      ],
+      "tocversion": 20506,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "duration": "1",
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showAlways",
+            "names": [],
+            "realSpellName": "Invisibility",
+            "spellIds": [],
+            "spellName": 66,
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "spell",
+            "unevent": "auto",
+            "unit": "player",
+            "use_genericShowOn": true,
+            "use_spellName": true,
+            "use_track": true,
+            "use_unit": true
+          },
+          "untrigger": {
+            "genericShowOn": "showAlways"
+          }
+        },
+        "activeTriggerMode": -10,
+        "disjunctive": "any"
+      },
+      "uid": "JBgp9QSxOPD",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11560,10 +12556,7 @@
       "constantFactor": "RADIUS",
       "controlledChildren": [
         "Xyrec Mage - Drink Expiring",
-        "Xyrec Mage - Mana Agate",
-        "Xyrec Mage - Mana Jade",
-        "Xyrec Mage - Mana Citrine",
-        "Xyrec Mage - Mana Ruby",
+        "Xyrec Mage - Mana Gem",
         "Xyrec Mage - Arcane Intellect",
         "Xyrec Mage - Armor [Solo]"
       ],
@@ -11632,7 +12625,7 @@
           "untrigger": []
         }
       ],
-      "uid": "bvnuB2bVt06",
+      "uid": "wBzasiWehtA",
       "url": "",
       "useLimit": false,
       "version": 35,
@@ -11911,7 +12904,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "QPHX7jAtyXa",
+      "uid": "3Ds2dAY6Pyc",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11966,6 +12959,19 @@
         {
           "changes": [
             {
+              "property": "desaturate",
+              "value": true
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 1,
+            "variable": "show"
+          }
+        },
+        {
+          "changes": [
+            {
               "property": "alpha",
               "value": 1
             }
@@ -11994,12 +13000,12 @@
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
       "desaturate": false,
-      "displayIcon": 134104,
+      "displayIcon": 134134,
       "frameStrata": 3,
       "height": 44,
       "icon": true,
-      "iconSource": 1,
-      "id": "Xyrec Mage - Mana Agate",
+      "iconSource": 0,
+      "id": "Xyrec Mage - Mana Gem",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12018,7 +13024,6 @@
         "level_operator": [
           "<"
         ],
-        "not_spellknown": 10053,
         "race": {
           "multi": []
         },
@@ -12029,828 +13034,6 @@
           "multi": []
         },
         "spellknown": 759,
-        "talent": {
-          "multi": []
-        },
-        "use_alive": true,
-        "use_class": true,
-        "use_level": false,
-        "use_never": true,
-        "use_not_spellknown": true,
-        "use_spellknown": true,
-        "use_vehicle": false,
-        "use_zone": false,
-        "use_zoneIds": false,
-        "zoneIds": ""
-      },
-      "parent": "Xyrec Mage - Reminders",
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "icon",
-      "selfPoint": "CENTER",
-      "semver": "1.4.4",
-      "source": "import",
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "OUTER_BOTTOM",
-          "rotateText": "NONE",
-          "text_anchorYOffset": -12,
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "BOTTOM",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "Agate",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 60,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        }
-      ],
-      "tocversion": 20506,
-      "triggers": {
-        "1": {
-          "trigger": {
-            "count": "0",
-            "count_operator": "==",
-            "debuffType": "HELPFUL",
-            "duration": "30",
-            "event": "Item Count",
-            "eventtype": "PLAYER_REGEN_ENABLED",
-            "genericShowOn": "showOnCooldown",
-            "itemName": 5514,
-            "names": [],
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "item",
-            "unit": "player",
-            "use_count": true,
-            "use_eventtype": true,
-            "use_genericShowOn": true,
-            "use_itemName": true
-          },
-          "untrigger": []
-        },
-        "2": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "event": "Conditions",
-            "type": "unit",
-            "unit": "player",
-            "use_incombat": false,
-            "use_resting": false,
-            "use_unit": true
-          },
-          "untrigger": []
-        },
-        "activeTriggerMode": 1,
-        "customTriggerLogic": "\n",
-        "disjunctive": "all"
-      },
-      "uid": "9ILbvLlQMSZ",
-      "url": "",
-      "useAdjustededMax": false,
-      "useAdjustededMin": false,
-      "useCooldownModRate": true,
-      "version": 15,
-      "width": 44,
-      "xOffset": 0,
-      "yOffset": 0,
-      "zoom": 0.3
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": []
-      },
-      "adjustedMax": "",
-      "adjustedMin": "",
-      "alpha": 0.3,
-      "anchorFrameParent": false,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "auto": true,
-      "color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": [],
-      "cooldown": false,
-      "cooldownEdge": false,
-      "cooldownSwipe": true,
-      "cooldownTextDisabled": true,
-      "desaturate": false,
-      "displayIcon": 134105,
-      "frameStrata": 3,
-      "height": 44,
-      "icon": true,
-      "iconSource": 1,
-      "id": "Xyrec Mage - Mana Jade",
-      "information": {
-        "forceEvents": true,
-        "ignoreOptionsEventErrors": true,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "inverse": false,
-      "keepAspectRatio": false,
-      "load": {
-        "class": {
-          "multi": [],
-          "single": "MAGE"
-        },
-        "ingroup": [],
-        "level": [],
-        "level_operator": [
-          "<"
-        ],
-        "not_spellknown": 10054,
-        "race": {
-          "multi": []
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": []
-        },
-        "spellknown": 3552,
-        "talent": {
-          "multi": []
-        },
-        "use_alive": true,
-        "use_class": true,
-        "use_level": false,
-        "use_never": true,
-        "use_not_spellknown": true,
-        "use_spellknown": true,
-        "use_vehicle": false,
-        "use_zone": false,
-        "use_zoneIds": false,
-        "zoneIds": ""
-      },
-      "parent": "Xyrec Mage - Reminders",
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "icon",
-      "selfPoint": "CENTER",
-      "semver": "1.4.4",
-      "source": "import",
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "OUTER_BOTTOM",
-          "rotateText": "NONE",
-          "text_anchorYOffset": -12,
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "BOTTOM",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "Jade",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 60,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        }
-      ],
-      "tocversion": 20506,
-      "triggers": {
-        "1": {
-          "trigger": {
-            "count": "0",
-            "count_operator": "==",
-            "debuffType": "HELPFUL",
-            "duration": "30",
-            "event": "Item Count",
-            "eventtype": "PLAYER_REGEN_ENABLED",
-            "genericShowOn": "showOnCooldown",
-            "itemName": 5513,
-            "names": [],
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "item",
-            "unit": "player",
-            "use_count": true,
-            "use_eventtype": true,
-            "use_genericShowOn": true,
-            "use_itemName": true
-          },
-          "untrigger": []
-        },
-        "2": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "event": "Conditions",
-            "type": "unit",
-            "unit": "player",
-            "use_incombat": false,
-            "use_resting": false,
-            "use_unit": true
-          },
-          "untrigger": []
-        },
-        "activeTriggerMode": 1,
-        "customTriggerLogic": "\n",
-        "disjunctive": "all"
-      },
-      "uid": "IsMgX9j6aKs",
-      "url": "",
-      "useAdjustededMax": false,
-      "useAdjustededMin": false,
-      "useCooldownModRate": true,
-      "version": 15,
-      "width": 44,
-      "xOffset": 0,
-      "yOffset": 0,
-      "zoom": 0.3
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": []
-      },
-      "adjustedMax": "",
-      "adjustedMin": "",
-      "alpha": 0.3,
-      "anchorFrameParent": false,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "auto": true,
-      "color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": [],
-      "cooldown": false,
-      "cooldownEdge": false,
-      "cooldownSwipe": true,
-      "cooldownTextDisabled": true,
-      "desaturate": false,
-      "displayIcon": 134116,
-      "frameStrata": 3,
-      "height": 44,
-      "icon": true,
-      "iconSource": 1,
-      "id": "Xyrec Mage - Mana Citrine",
-      "information": {
-        "forceEvents": true,
-        "ignoreOptionsEventErrors": true,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "inverse": false,
-      "keepAspectRatio": false,
-      "load": {
-        "class": {
-          "multi": [],
-          "single": "MAGE"
-        },
-        "ingroup": [],
-        "level": [],
-        "level_operator": [
-          "<"
-        ],
-        "race": {
-          "multi": []
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": []
-        },
-        "spellknown": 10053,
-        "talent": {
-          "multi": []
-        },
-        "use_alive": true,
-        "use_class": true,
-        "use_level": false,
-        "use_never": true,
-        "use_spellknown": true,
-        "use_vehicle": false,
-        "use_zone": false,
-        "use_zoneIds": false,
-        "zoneIds": ""
-      },
-      "parent": "Xyrec Mage - Reminders",
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "icon",
-      "selfPoint": "CENTER",
-      "semver": "1.4.4",
-      "source": "import",
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "OUTER_BOTTOM",
-          "rotateText": "NONE",
-          "text_anchorYOffset": -12,
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "BOTTOM",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "Citrine",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 60,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        }
-      ],
-      "tocversion": 20506,
-      "triggers": {
-        "1": {
-          "trigger": {
-            "count": "0",
-            "count_operator": "==",
-            "debuffType": "HELPFUL",
-            "duration": "30",
-            "event": "Item Count",
-            "eventtype": "PLAYER_REGEN_ENABLED",
-            "genericShowOn": "showOnCooldown",
-            "itemName": 8007,
-            "names": [],
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "item",
-            "unit": "player",
-            "use_count": true,
-            "use_eventtype": true,
-            "use_genericShowOn": true,
-            "use_itemName": true
-          },
-          "untrigger": []
-        },
-        "2": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "event": "Conditions",
-            "type": "unit",
-            "unit": "player",
-            "use_incombat": false,
-            "use_resting": false,
-            "use_unit": true
-          },
-          "untrigger": []
-        },
-        "activeTriggerMode": 1,
-        "customTriggerLogic": "\n",
-        "disjunctive": "all"
-      },
-      "uid": "n9I1nffCzzY",
-      "url": "",
-      "useAdjustededMax": false,
-      "useAdjustededMin": false,
-      "useCooldownModRate": true,
-      "version": 15,
-      "width": 44,
-      "xOffset": 0,
-      "yOffset": 0,
-      "zoom": 0.3
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": []
-      },
-      "adjustedMax": "",
-      "adjustedMin": "",
-      "alpha": 0.3,
-      "anchorFrameParent": false,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "auto": true,
-      "color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": [],
-      "cooldown": false,
-      "cooldownEdge": false,
-      "cooldownSwipe": true,
-      "cooldownTextDisabled": true,
-      "desaturate": false,
-      "displayIcon": 134128,
-      "frameStrata": 3,
-      "height": 44,
-      "icon": true,
-      "iconSource": 1,
-      "id": "Xyrec Mage - Mana Ruby",
-      "information": {
-        "forceEvents": true,
-        "ignoreOptionsEventErrors": true,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "inverse": false,
-      "keepAspectRatio": false,
-      "load": {
-        "class": {
-          "multi": [],
-          "single": "MAGE"
-        },
-        "ingroup": [],
-        "level": [],
-        "level_operator": [
-          "<"
-        ],
-        "race": {
-          "multi": []
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": []
-        },
-        "spellknown": 10054,
         "talent": {
           "multi": []
         },
@@ -12954,7 +13137,7 @@
           ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
-          "text_text": "Ruby",
+          "text_text": "Gem",
           "text_text_format_p_format": "timed",
           "text_text_format_p_time_dynamic_threshold": 60,
           "text_text_format_p_time_format": 0,
@@ -12977,7 +13160,7 @@
             "event": "Item Count",
             "eventtype": "PLAYER_REGEN_ENABLED",
             "genericShowOn": "showOnCooldown",
-            "itemName": 22044,
+            "itemName": 5514,
             "names": [],
             "spellIds": [],
             "subeventPrefix": "SPELL",
@@ -12993,21 +13176,100 @@
         },
         "2": {
           "trigger": {
+            "count": "0",
+            "count_operator": "==",
             "debuffType": "HELPFUL",
-            "event": "Conditions",
-            "type": "unit",
+            "duration": "30",
+            "event": "Item Count",
+            "eventtype": "PLAYER_REGEN_ENABLED",
+            "genericShowOn": "showOnCooldown",
+            "itemName": 5513,
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "item",
             "unit": "player",
-            "use_incombat": false,
-            "use_resting": false,
-            "use_unit": true
+            "use_count": true,
+            "use_eventtype": true,
+            "use_genericShowOn": true,
+            "use_itemName": true
           },
           "untrigger": []
         },
-        "activeTriggerMode": 1,
-        "customTriggerLogic": "\n",
+        "3": {
+          "trigger": {
+            "count": "0",
+            "count_operator": "==",
+            "debuffType": "HELPFUL",
+            "duration": "30",
+            "event": "Item Count",
+            "eventtype": "PLAYER_REGEN_ENABLED",
+            "genericShowOn": "showOnCooldown",
+            "itemName": 8007,
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "item",
+            "unit": "player",
+            "use_count": true,
+            "use_eventtype": true,
+            "use_genericShowOn": true,
+            "use_itemName": true
+          },
+          "untrigger": []
+        },
+        "4": {
+          "trigger": {
+            "count": "0",
+            "count_operator": "==",
+            "debuffType": "HELPFUL",
+            "duration": "30",
+            "event": "Item Count",
+            "eventtype": "PLAYER_REGEN_ENABLED",
+            "genericShowOn": "showOnCooldown",
+            "itemName": 8008,
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "item",
+            "unit": "player",
+            "use_count": true,
+            "use_eventtype": true,
+            "use_genericShowOn": true,
+            "use_itemName": true
+          },
+          "untrigger": []
+        },
+        "5": {
+          "trigger": {
+            "count": "0",
+            "count_operator": "==",
+            "debuffType": "HELPFUL",
+            "duration": "30",
+            "event": "Item Count",
+            "eventtype": "PLAYER_REGEN_ENABLED",
+            "genericShowOn": "showOnCooldown",
+            "itemName": 22044,
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "item",
+            "unit": "player",
+            "use_count": true,
+            "use_eventtype": true,
+            "use_genericShowOn": true,
+            "use_itemName": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "i3pBtqFL5kf",
+      "uid": "kKWzsuvYf1e",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13292,7 +13554,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "oh3nGv7lwcu",
+      "uid": "i0SiZsDOI0S",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13581,7 +13843,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "Ibygw4jMeIT",
+      "uid": "l60YiENkRl4",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13713,7 +13975,7 @@
           "untrigger": []
         }
       ],
-      "uid": "gYrqCSMzrxx",
+      "uid": "gAPE45lXPce",
       "url": "",
       "useLimit": true,
       "version": 35,
@@ -14154,7 +14416,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "UrHbbuWrP6V",
+      "uid": "uE4BSpzt5UY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14266,7 +14528,7 @@
         "untrigger": []
       }
     ],
-    "uid": "UyJqyh24h31",
+    "uid": "FzzFCfNoUEy",
     "url": "",
     "version": 35,
     "wagoID": "6vNSif5yK",

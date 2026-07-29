@@ -1,7 +1,21 @@
 {
   "archetype": "reminder_icon",
-  "conditions": [],
-  "id": "Xyrec Mage - Mana Jade",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 1,
+        "variable": "show"
+      }
+    }
+  ],
+  "id": "Xyrec Mage - Mana Gem",
   "load": {
     "class": {
       "multi": {},
@@ -12,7 +26,6 @@
     "level_operator": [
       "<"
     ],
-    "not_spellknown": 10054,
     "race": {
       "multi": []
     },
@@ -22,15 +35,14 @@
     "spec": {
       "multi": []
     },
-    "spellknown": 3552,
+    "spellknown": 759,
     "talent": {
       "multi": []
     },
     "use_alive": true,
     "use_class": true,
     "use_level": false,
-    "use_never": true,
-    "use_not_spellknown": true,
+    "use_never": false,
     "use_spellknown": true,
     "use_vehicle": false,
     "use_zone": false,
@@ -38,8 +50,8 @@
     "zoneIds": ""
   },
   "overrides": {
-    "displayIcon": 134105,
-    "iconSource": 1,
+    "displayIcon": 134134,
+    "iconSource": 0,
     "subRegions": [
       {
         "type": "subbackground"
@@ -121,7 +133,7 @@
         ],
         "text_shadowXOffset": 0,
         "text_shadowYOffset": 0,
-        "text_text": "Jade",
+        "text_text": "Gem",
         "text_text_format_p_format": "timed",
         "text_text_format_p_time_dynamic_threshold": 60,
         "text_text_format_p_time_format": 0,
@@ -145,7 +157,7 @@
         "event": "Item Count",
         "eventtype": "PLAYER_REGEN_ENABLED",
         "genericShowOn": "showOnCooldown",
-        "itemName": 5513,
+        "itemName": 5514,
         "names": [],
         "spellIds": [],
         "subeventPrefix": "SPELL",
@@ -161,18 +173,97 @@
     },
     "2": {
       "trigger": {
+        "count": "0",
+        "count_operator": "==",
         "debuffType": "HELPFUL",
-        "event": "Conditions",
-        "type": "unit",
+        "duration": "30",
+        "event": "Item Count",
+        "eventtype": "PLAYER_REGEN_ENABLED",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 5513,
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "item",
         "unit": "player",
-        "use_incombat": false,
-        "use_resting": false,
-        "use_unit": true
+        "use_count": true,
+        "use_eventtype": true,
+        "use_genericShowOn": true,
+        "use_itemName": true
       },
       "untrigger": []
     },
-    "activeTriggerMode": 1,
-    "customTriggerLogic": "\n",
+    "3": {
+      "trigger": {
+        "count": "0",
+        "count_operator": "==",
+        "debuffType": "HELPFUL",
+        "duration": "30",
+        "event": "Item Count",
+        "eventtype": "PLAYER_REGEN_ENABLED",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 8007,
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "item",
+        "unit": "player",
+        "use_count": true,
+        "use_eventtype": true,
+        "use_genericShowOn": true,
+        "use_itemName": true
+      },
+      "untrigger": []
+    },
+    "4": {
+      "trigger": {
+        "count": "0",
+        "count_operator": "==",
+        "debuffType": "HELPFUL",
+        "duration": "30",
+        "event": "Item Count",
+        "eventtype": "PLAYER_REGEN_ENABLED",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 8008,
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "item",
+        "unit": "player",
+        "use_count": true,
+        "use_eventtype": true,
+        "use_genericShowOn": true,
+        "use_itemName": true
+      },
+      "untrigger": []
+    },
+    "5": {
+      "trigger": {
+        "count": "0",
+        "count_operator": "==",
+        "debuffType": "HELPFUL",
+        "duration": "30",
+        "event": "Item Count",
+        "eventtype": "PLAYER_REGEN_ENABLED",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 22044,
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "item",
+        "unit": "player",
+        "use_count": true,
+        "use_eventtype": true,
+        "use_genericShowOn": true,
+        "use_itemName": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": -10,
     "disjunctive": "all"
   }
 }

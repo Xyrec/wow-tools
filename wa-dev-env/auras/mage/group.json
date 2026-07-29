@@ -47,14 +47,15 @@
     "Xyrec Mage - Counterspell",
     "Xyrec Mage - Reminders",
     "Xyrec Mage - Drink Expiring",
-    "Xyrec Mage - Mana Agate",
-    "Xyrec Mage - Mana Jade",
-    "Xyrec Mage - Mana Citrine",
-    "Xyrec Mage - Mana Ruby",
+    "Xyrec Mage - Mana Gem",
     "Xyrec Mage - Arcane Intellect",
     "Xyrec Mage - Armor [Solo]",
     "Xyrec Mage - Group Buffs",
-    "Xyrec Mage - Arcane Brilliance [Group]"
+    "Xyrec Mage - Arcane Brilliance [Group]",
+    "Xyrec Mage - Water Elemental",
+    "Xyrec Mage - Dragon's Breath",
+    "Xyrec Mage - Spellsteal",
+    "Xyrec Mage - Invisibility"
   ],
   "class": "mage",
   "containers": [
@@ -124,7 +125,9 @@
         "Xyrec Mage - Ice Lance",
         "Xyrec Mage - Fireball [1-15]",
         "Xyrec Mage - Frostbolt [1-15]",
-        "Xyrec Mage - Arcane Missles [1-15]"
+        "Xyrec Mage - Arcane Missles [1-15]",
+        "Xyrec Mage - Water Elemental",
+        "Xyrec Mage - Dragon's Breath"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -609,7 +612,9 @@
         "Xyrec Mage - Displacement",
         "Xyrec Mage - Blink",
         "Xyrec Mage - Polymorph",
-        "Xyrec Mage - Counterspell"
+        "Xyrec Mage - Counterspell",
+        "Xyrec Mage - Spellsteal",
+        "Xyrec Mage - Invisibility"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -758,10 +763,7 @@
       "constantFactor": "RADIUS",
       "controlledChildren": [
         "Xyrec Mage - Drink Expiring",
-        "Xyrec Mage - Mana Agate",
-        "Xyrec Mage - Mana Jade",
-        "Xyrec Mage - Mana Citrine",
-        "Xyrec Mage - Mana Ruby",
+        "Xyrec Mage - Mana Gem",
         "Xyrec Mage - Arcane Intellect",
         "Xyrec Mage - Armor [Solo]"
       ],
