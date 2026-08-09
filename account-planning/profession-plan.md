@@ -102,14 +102,17 @@ during the rep grind, long before Exalted.
 Specialization doubles the output of your chosen cloth, which flips it from a loss to a real
 earner. Run it whenever it's up:
 
-| Cloth | Unspecialized | Specialized (×2) |
-|---|---|---|
-| Shadowcloth | −5g | **+45g** |
-| Primal Mooncloth | −4g | **+36g** |
-| Spellcloth | −9g | **+31g** |
+Cooldown is **3 days 20 hours** (~92h, ≈1.83 crafts/week), so this is minor but free income:
 
-*Unverified:* the cooldown length in TBC (daily vs 4-day) — check the tooltip; it scales this
-from ~31–45g/day down to ~8–11g/day.
+| Cloth | Unspecialized | Specialized (×2) | Per day | Per month |
+|---|---|---|---|---|
+| Shadowcloth | −5g | **+45g** | ~11.7g | ~355g |
+| Primal Mooncloth | −4g | **+36g** | ~9.5g | ~290g |
+| Spellcloth | −9g | **+31g** | ~8.1g | ~245g |
+
+About a fifth of an Alchemy transmute alt (whose CD is effectively daily) — click it when it's
+up, don't plan around it, and don't specialize a second tailor for it. The mage's existing
+specialization dictates which cloth she can make; Shadowcloth pays best at current prices.
 
 ## Step-by-step (lowest-hanging fruit first)
 
