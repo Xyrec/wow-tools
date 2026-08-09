@@ -36,10 +36,10 @@ Target steady state: **~780–860g/day ≈ 23–26k g/month** at 3 heroics/day
 | Yrsadriel (main) | Shaman | 70 | Alchemy 350+ **TM** + Jewelcrafting | none (recipe owned, keep TM; EM pivot is a phase-launch decision) | 0g |
 | Xyrec | Mage | 70 | Tailoring + Enchanting | none | 0g |
 | Xyrekk (tank) | Paladin | 70 | Blacksmithing + **Enchanting** | 2nd slot → Enchanting; buy BS plans | ~1,190g plans + ~800–1,200g enchanting |
-| Xycaelis | Druid | 70 | **Alchemy** (+ free slot) | Alchemy 350 + TM + Skyfire recipe | ~600g |
-| Hektorion | Warrior | 58 | **Alchemy** (+ free slot) | Alchemy 350 + recipe now; TM at 68 | ~200g now + ~400g at 68 |
-| Hunter (restore) | Hunter | ~63 | **Alchemy** (+ free slot) | Alchemy 350 + recipe now; TM at 68 | ~200g now + ~400g at 68 (+ paid restore) |
-| **Total** | | | | | **~3,000–3,400g now, ~800g deferred** |
+| Xycaelis | Druid | 70 | **Alchemy TM** + **Herbalism** | Alchemy 350 + TM + recipe; Herbalism (flight-form gathering feeds the alchemy fleet) | ~600g |
+| Hektorion | Warrior | 58 | **Alchemy TM** + **Leatherworking** | Alchemy 350 + recipe now, TM at 68; LW for leg armors + drums | ~200g now + ~400g at 68 + ~3,080g LW |
+| Hunter (restore) | Hunter | ~63 | **Alchemy TM** + LW *(optional)* | Alchemy 350 + recipe now, TM at 68. LW **not prioritised** — may stay parked, or take a gathering profession if a farm becomes relevant (pet tanking makes hunters strong farmers) | ~200g now + ~400g at 68 (+ paid restore) |
+| **Total** | | | | | **~3,000–3,400g now, ~800g deferred, +~3,080g if/when LW** |
 
 Payback of the full outlay: **~4–5 days** of the running engine, or ~1 week of tanking alone.
 
@@ -53,6 +53,63 @@ Payback of the full outlay: **~4–5 days** of the running engine, or ~1 week of
   ~4–6 sales/week can absorb (LW takes everything at ~115g/nether; nethers bank fine meanwhile).
 - **Mage unchanged**: tailoring is sunk and passively earns (bags, Mystic Spellthread @ Scryers Honored, cloth CD); her enchanting DEs world-farm BoEs. Alchemy is fungible — parked alts take it.
 - **TM stays on Yrsadriel through the lull**; Elixir Master is the *active* pivot at content launch (flasks are currently below-cost without a spec; EM is the entire margin — see "Phase-launch playbook").
+- **Warrior takes LW, not Engineering**: a nether-earning character needs a *repeatable sellable*
+  outlet. Engineering has 23 nether recipes but 22 are BoP goggles (5 nethers total, one-time);
+  only the Gyro-Balanced Khorium Destroyer is BoE, at 0.22 sold/day. LW converts every nether at
+  ~115g and additionally gives him **drums for his own tanking**.
+- **Hunter's LW is optional** — he only needs a nether outlet if he actually runs heroics.
+  Parked, Alchemy alone is the whole point of the character.
+- **Druid takes Herbalism** — she's the parked AH character, won't run heroics (so no nethers
+  wasted), and flight-form gathering is fast.
+
+## Verified game rules (cmangos TBC 2.4.3 DB, checked 2026-08-09)
+
+Local DB now at `sources/cmangos-tbc-db/tbcmangos.sqlite` (285 MB, gitignored; from
+github.com/cmangos/tbc-db releases → `tbc-sqlite-db.zip`, plus `src/SpellAuraDefines.h`
+from the mangos-tbc repo). Query it for item bind type, `RequiredSkill`, and rep gates
+instead of guessing.
+
+| Question | Answer |
+|---|---|
+| Drums usable by non-leatherworkers? | **No** — Drums of Battle `RequiredSkill 165 (LW) rank 350`. Whole line is LW-gated. |
+| Bombs/grenades sellable to rogues etc.? | **No** — every bomb/sapper/grenade is `RequiredSkill 202 (Eng)`. Engineer-to-engineer trade only. |
+| Engineering goggles | All BoP, `RequiredSkill 202`. ilvl 127 = 1 nether; ilvl 159 = 4 nethers + the 127 goggle. |
+| BS bracer/glove socketing | **Does not exist in TBC** (zero "Socket" spells) — that's WotLK. |
+| Ring enchants | Enchanter-only: Striking/Spellpower (360), Healing Power (370), Stats (375). |
+| Leg armors / spellthreads | `RequiredSkill 0` — anyone can use them. That's why the markets are deep. |
+| Scopes / ammo / potion injectors | `RequiredSkill 0` — Engineering's only genuinely open markets. |
+
+### Leg enhancement reps and stats
+
+**Leatherworking has no Aldor/Scryers-style fork** — Honor Hold (946) and Thrallmar (947) are
+just the Alliance/Horde mirrors of the same pattern, and Cenarion Expedition (942) is neutral.
+A leatherworker gets **both** leg armors. Only Tailoring's spellthreads are mutually exclusive.
+
+| Enchant | Stats | Faction | Standing |
+|---|---|---|---|
+| Nethercobra Leg Armor | +50 AP, +12 melee crit | Honor Hold / Thrallmar | Exalted |
+| Cobrahide Leg Armor | +40 AP, +10 melee crit | Honor Hold / Thrallmar | **Honored** |
+| Nethercleft Leg Armor | +40 Sta, +12 Agi | Cenarion Expedition | Exalted |
+| Clefthide Leg Armor | +30 Sta, +10 Agi | Cenarion Expedition | **Honored** |
+| Runic Spellthread | +20 Sta, +35 Heal, +35 SpDmg | The Scryers | Exalted |
+| Golden Spellthread | +20 Sta, +66 Heal, +22 SpDmg | The Aldor | Exalted |
+
+The Honored-tier rares need **no Primal Nether** and sell 14–17/day region — an LW alt earns
+during the rep grind, long before Exalted.
+
+## Tailoring cloth cooldown (mage)
+
+Specialization doubles the output of your chosen cloth, which flips it from a loss to a real
+earner. Run it whenever it's up:
+
+| Cloth | Unspecialized | Specialized (×2) |
+|---|---|---|
+| Shadowcloth | −5g | **+45g** |
+| Primal Mooncloth | −4g | **+36g** |
+| Spellcloth | −9g | **+31g** |
+
+*Unverified:* the cooldown length in TBC (daily vs 4-day) — check the tooltip; it scales this
+from ~31–45g/day down to ~8–11g/day.
 
 ## Step-by-step (lowest-hanging fruit first)
 
@@ -85,6 +142,7 @@ tanking income — do not skip. Finish to 375 whenever convenient.
 Alchemy 1→350 (~197g mats; near-free if leveling potions are TSM-posted),
 TM quest (4× Primal Might ~400g — buy, or self-transmute for ~365g over 4 CDs),
 Skyfire recipe (~5g, needs Hellfire-fort Honored — a few Ramparts runs if she skipped HFP).
+Second slot: **Herbalism** (free; flight-form gathering supplies the alchemy fleet).
 → ~50g/day parked at the AH. Breakeven ~12 days.
 
 **5. Hektorion + restored hunter — alchemy now, spec later (~200g each now).**
@@ -92,6 +150,15 @@ Alchemy 1→350 immediately (usable regardless of level), recipe at Honored
 (free via Hellfire questing). They transmute **un-specced** (~22g/day each) while
 being leveled at leisure; at 68, TM quest (~400g each) doubles them to ~50g/day.
 Leveling itself is the fun budget, not a cost.
+
+**5b. Warrior's Leatherworking — once he's 70 and tanking (~3,080g, or ~650g net if
+selling as he levels).** Only worth starting when he actually runs heroics: nethers →
+Nethercobra/Nethercleft at ~115g each, Cobrahide/Clefthide (Honored, no nether) earning
+during the rep grind, and **Drums of Battle for his own tanking** (LW 350 to use).
+Hellfire heroics fill Thrallmar/Honor Hold, Coilfang fills Cenarion — the same runs that
+drop the nethers. **Hunter's LW is optional** and deliberately unprioritised; if he ends up
+parked, Alchemy alone is the point, and a gathering profession beats LW if a farm becomes
+relevant (pet tanking makes hunters efficient farmers).
 
 **6. Optional — Xyrec's Scryers exalted (~615g in Sunfury Signets).**
 Only if the mage sees play/heroics: 1,042 signets @ ≤70–80s (snipe over days, book is
