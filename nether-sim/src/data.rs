@@ -118,6 +118,8 @@ pub struct Reagent {
 
 #[derive(Deserialize, Clone)]
 pub struct Dungeon {
+    /// Kept for readability of data/dungeons.json; the sim only needs the boss count.
+    #[allow(dead_code)]
     pub name: String,
     pub bosses: u32,
 }

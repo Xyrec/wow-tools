@@ -43,6 +43,10 @@ struct Args {
     /// Craft-ahead multiplier on daily demand
     #[arg(long, default_value_t = 2.0)]
     headroom: f64,
+    /// Badges per nether at G'eras (0 = vendor not available this phase, the
+    /// current SSC/TK situation — badges then only buy gear, not nethers)
+    #[arg(long, default_value_t = 0)]
+    badges_per_nether: u32,
     #[arg(long, default_value_t = 42)]
     seed: u64,
     /// WoW AddOns directory
@@ -118,6 +122,7 @@ fn main() -> Result<()> {
         flat_gold: args.flat_gold * 10_000.0,
         repairs: args.repairs * 10_000.0,
         headroom: args.headroom,
+        badges_per_nether: (args.badges_per_nether > 0).then_some(args.badges_per_nether),
         run_min: 15.0,
         run_mode: 35.0,
         run_max: 45.0,

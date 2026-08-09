@@ -1,13 +1,27 @@
 # Account Profession Plan — Gold Engine
 
-*Drafted 2026-07-30, Thunderstrike (Anniversary TBC, SSC/TK phase, ~2–3 weeks before next content drop).*
-*Prices from the TSM app snapshot of 2026-07-26; re-run the tooling (below) after major market moves.*
+*Drafted 2026-07-30, revised 2026-08-09. Thunderstrike (Anniversary TBC, SSC/TK phase, content drop imminent).*
+*Prices from the TSM app snapshot of 2026-08-09; re-run the tooling (below) after major market moves.*
+
+> **2026-08-09 revisions**
+> 1. **Badges cannot buy Primal Nethers this phase** (G'eras doesn't stock them yet) — heroic
+>    drops are the only source. Nether supply at 3 runs/day: ~2.4/day, not ~3.6/day.
+>    `nether-sim` now defaults `--badges-per-nether 0`; pass `10` to model the later-phase vendor.
+> 2. **Adamantite Bar crashed to ~1g36** (24 auctions, 250/day region — a real move, not a bad tick),
+>    gutting mat costs on BS armor. Combined with scarcer nethers (scarcity favours margin over
+>    velocity), **Blacksmithing now leads the sim at 1–4 runs/day**; LW only overtakes at 5.
+>    This *reinforces* keeping BS on the paladin. Re-check monthly: if adamantite recovers,
+>    LW's flatter curve reasserts.
+> 3. Faction check: TSM has both Thunderstrike factions and the tooling defaults to **Horde**.
+>    Alliance values run ~5–10% lower (Nethercobra 113g vs 124g; Runic and shards near-identical),
+>    so conclusions hold either way — but flip the default in the scripts if playing Alliance.
 
 ## Goal
 
 Convert a mostly-parked roster into a semi-afk gold engine around three pillars:
 
-1. **Tanking heroics** on the paladin → Primal Nethers (BoP) + BoP blues + badges.
+1. **Tanking heroics** on the paladin → Primal Nethers (BoP, ~80% per run, drops only)
+   + BoP blues (→ shards) + badges (gear/gems only this phase).
 2. **Transmute Master cooldowns** on every parked alchemist (Skyfire Diamond, ~15.5% proc,
    ~20–30% extra yield → ~46–58g/day per character with near-free uncut gems).
 3. **Passive AH postings** (bags, threads, bracers) via TSM, 1–2 posts/day.
@@ -32,7 +46,11 @@ Payback of the full outlay: **~4–5 days** of the running engine, or ~1 week of
 ### Why these choices (one line each)
 
 - **Nethers/badges/heroic blues are all BoP** → they only monetize through the *paladin's own* professions. His two slots are the scarcest resource on the account: nether sink (BS) + BoP-blue disenchanting (Enchanting). Alchemy never goes here.
-- **BS stays over LW**: sim scores BS-with-shards ~606g/day vs LW ~689g at 3 runs — not worth 3,080g releveling + losing banked-bracer income now. Revisit only if nether output permanently exceeds ~6 bracer sales/week (LW absorbs everything at ~115g/nether; nethers bank fine meanwhile).
+- **BS stays over LW**: as of 2026-08-09 the sim scores BS **ahead** at 1–4 runs/day
+  (629g vs 585g at 3 runs) on cheap adamantite + drops-only nether supply; LW leads only at
+  5 runs (943g vs 854g). Releveling LW costs ~3,080g to chase a lead that only exists at max
+  activity. Revisit if adamantite recovers or nether output permanently outgrows what BS's
+  ~4–6 sales/week can absorb (LW takes everything at ~115g/nether; nethers bank fine meanwhile).
 - **Mage unchanged**: tailoring is sunk and passively earns (bags, Mystic Spellthread @ Scryers Honored, cloth CD); her enchanting DEs world-farm BoEs. Alchemy is fungible — parked alts take it.
 - **TM stays on Yrsadriel through the lull**; Elixir Master is the *active* pivot at content launch (flasks are currently below-cost without a spec; EM is the entire margin — see "Phase-launch playbook").
 
@@ -52,8 +70,11 @@ sell uncut otherwise. ~60–70g/day.
 - Commission plans, dirt cheap: *Runic Hammer* (~50g), *Felsteel Reaper* (~83g),
   *Felsteel Longblade* (~48g) — advertise "my nether, your gold" in trade.
 - Tank 1–5 heroics/day. Nethers → bracers (~300g each, market absorbs ~4–6/wk);
-  surplus nethers/badges **bank** (they don't expire; phase 3 wants them).
-- Rep from tanking later unlocks vendor plans: Wildguard (CE exalted), Iceguard (Thrallmar).
+  surplus nethers **bank** (they don't expire; phase 3 wants them). Badges buy gear/gems
+  only this phase — no nethers from G'eras yet.
+- Rep from tanking unlocks the vendor plans — Wildguard (CE exalted), Iceguard (Thrallmar) —
+  and with adamantite at ~1g36 those are now the **top earners on the account**
+  (~475–630g profit per craft). Prioritise that rep.
 
 **3. Xyrekk — Enchanting in the 2nd slot (week 1, ~800–1,200g cash).**
 Level it off run loot + cheap AH mats to ~325 (enough to DE heroic blues → Large
@@ -114,7 +135,10 @@ Primal Might (~24–34g, deepest market at ~124 sold/day region), or sell uncut.
 
 ## Key numbers to remember
 
-- Primal Nether ≈ **120g** (LW), **~300g** via BS bracers (first ~5/wk), Badge ≈ **12g**.
+- Primal Nether ≈ **120g** (LW leg armor), **~300–600g** via BS bracers/Iceguard (first ~5/wk).
+  Badges buy no nethers this phase. TSM mat-cost tip: set Primal Nether to `0c` and encode the
+  opportunity cost as the Crafting operation's **Min Profit (~100g)** — a single mat price can't
+  be right for every character since nethers are BoP and the setting is factionrealm-wide.
 - Skyfire transmute EV ≈ **46–58g/day** (free gems); un-specced ≈ 22g/day.
 - Heroic tanking ≈ **165–210g/run** all-in ≈ 230–320g/hour.
 - Break-even snapshots: bracer plans ~1–2 crafts; TM alt ~12 days; enchanting-on-tank

@@ -16,6 +16,9 @@ pub struct Params {
     pub flat_gold: f64,        // copper per run (loot gold, vendor trash, cloth)
     pub repairs: f64,          // copper per run
     pub headroom: f64,         // craft-ahead multiplier on daily demand
+    /// Badges needed to buy a nether from G'eras; None until that vendor exists
+    /// (not available in the current phase).
+    pub badges_per_nether: Option<u32>,
     pub run_min: f64,
     pub run_mode: f64,
     pub run_max: f64,
@@ -69,9 +72,11 @@ pub fn run_iteration(
         if p.runs_per_day > 0 {
             badges += 2; // daily heroic quest
         }
-        while badges >= 10 {
-            badges -= 10;
-            nethers += 1;
+        if let Some(cost) = p.badges_per_nether {
+            while badges >= cost {
+                badges -= cost;
+                nethers += 1;
+            }
         }
 
         // --- craft: best profit/nether first, bounded by sales headroom ---
