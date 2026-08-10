@@ -351,6 +351,7 @@
               "348700"
             ],
             "debuffType": "HELPFUL",
+            "event": "Health",
             "matchesShowOn": "showAlways",
             "names": [],
             "ownOnly": true,
@@ -4737,7 +4738,7 @@
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
       "desaturate": false,
-      "displayIcon": 135903,
+      "displayIcon": 135902,
       "frameStrata": 1,
       "height": 30,
       "icon": true,

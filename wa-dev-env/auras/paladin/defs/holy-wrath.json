@@ -52,7 +52,7 @@
     "triggers.2.trigger.custom": "lua/holy-wrath--triggers-2-trigger-custom.lua"
   },
   "overrides": {
-    "displayIcon": 135903
+    "displayIcon": 135902
   },
   "row": "cooldowns",
   "triggers": {

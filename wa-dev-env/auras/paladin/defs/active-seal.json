@@ -59,6 +59,7 @@
           "348700"
         ],
         "debuffType": "HELPFUL",
+        "event": "Health",
         "matchesShowOn": "showAlways",
         "names": [],
         "ownOnly": true,
