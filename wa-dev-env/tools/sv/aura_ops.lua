@@ -47,7 +47,11 @@ local function remove_aura(displays, id)
     local cc = displays[a.parent].controlledChildren
     for i = #cc, 1, -1 do if cc[i] == id then table.remove(cc, i) end end
   end
-  for _, childId in ipairs(a.controlledChildren or {}) do
+  -- iterate a copy: each recursive removal table.remove()s from this very
+  -- list (via the parent unlink above), which makes ipairs skip siblings
+  local children = {}
+  for i, childId in ipairs(a.controlledChildren or {}) do children[i] = childId end
+  for _, childId in ipairs(children) do
     remove_aura(displays, childId)
   end
   displays[id] = nil

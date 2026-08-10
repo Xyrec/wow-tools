@@ -65,3 +65,25 @@ for _, c in ipairs(d2["Group"].controlledChildren) do
   assert(c ~= "Child B", "removed child still referenced by parent")
 end
 print("OK test_aura_ops remove")
+
+-- removing a multi-child group must delete ALL children (the child unlink
+-- mutates the parent's controlledChildren mid-walk; regression for the
+-- every-other-sibling orphan bug)
+local d3 = mkdisplays()
+require("aura_ops").remove(d3, "Group")
+assert(d3["Group"] == nil and d3["Child A"] == nil and d3["Child B"] == nil
+       and d3["Grandchild"] == nil, "remove must delete every descendant")
+assert(d3["Other"], "unrelated aura must survive")
+
+-- land --delete over a root whose OLD tree has differently-named children:
+-- the whole old tree must be replaced, no orphans (the rename-land scenario)
+local d4 = mkdisplays()
+local renamed = { m = "d", v = 2000, s = "5.21.8",
+                  d = { id = "Group", regionType = "group", uid = "GGGGGGGGGGG",
+                        controlledChildren = { "New A" } },
+                  c = { { id = "New A", regionType = "icon", parent = "Group" } } }
+ops.land(d4, renamed, { delete = true })
+assert(d4["Group"] and d4["New A"], "renamed land failed")
+assert(d4["Child A"] == nil and d4["Child B"] == nil and d4["Grandchild"] == nil,
+       "old children must not linger after root-collision replace")
+print("OK test_aura_ops orphan regression")
