@@ -32,6 +32,8 @@
     "zoneIds": ""
   },
   "overrides": {
+    "cooldown": true,
+    "customTextUpdate": "update",
     "displayIcon": 135893,
     "subRegions": [
       {

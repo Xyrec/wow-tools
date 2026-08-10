@@ -42,7 +42,8 @@
     "zoneIds": ""
   },
   "overrides": {
-    "displayIcon": "135931"
+    "displayIcon": "135931",
+    "inverse": false
   },
   "row": "core",
   "triggers": {

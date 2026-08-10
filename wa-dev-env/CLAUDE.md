@@ -103,6 +103,13 @@ in-game audits.
 - **Ground truth refresh:** in-game `/xdump spells 1 400000` (covers the
   3xxxxx Anniversary backports; e.g. Seal of the Martyr 348700) +
   `/xdump talents`, `/reload`, then `./tools/wa pull-groundtruth`.
+- **Importer changes reimport EVERY donor-imported class** — QA'd ones too,
+  not just the raw baselines. Reimport in place, `git diff`, restore the
+  QA-owned hunks from HEAD, keep the importer improvements, verify with
+  build + audit before landing. Spot-auditing the QA'd classes instead
+  missed real drift once (and the skip-list used to silence known diffs
+  silenced theirs too). Shaman is exempt: decompiled from live, never
+  imported.
 - **Import coverage gap:** the importer validates donor *references*, not
   *coverage* — TBC spells the SoD-era donor never knew (Avenging Wrath,
   Water Elemental) must be checked by name against ground truth and added
