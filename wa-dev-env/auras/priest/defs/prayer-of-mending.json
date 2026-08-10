@@ -1,0 +1,56 @@
+{
+  "archetype": "rotation_icon",
+  "conditions": [],
+  "id": "Xyrec Priest - Prayer of Mending",
+  "load": {
+    "class": {
+      "multi": [],
+      "single": "PRIEST"
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 33076,
+    "talent": {
+      "multi": []
+    },
+    "use_class": {
+      "multi": [],
+      "single": "PRIEST"
+    },
+    "use_never": false,
+    "use_spellknown": true
+  },
+  "row": "core",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showAlways",
+        "names": [],
+        "realSpellName": "Prayer of Mending",
+        "spellIds": [],
+        "spellName": 33076,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "spell",
+        "unevent": "auto",
+        "unit": "player",
+        "use_genericShowOn": true,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways"
+      }
+    },
+    "activeTriggerMode": -10,
+    "disjunctive": "any"
+  }
+}

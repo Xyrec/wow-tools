@@ -1,0 +1,856 @@
+{
+  "child_order": [
+    "Xyrec Warlock - Core Abilities",
+    "Xyrec Warlock - Curse [Own]",
+    "Xyrec Warlock - Corruption",
+    "Xyrec Warlock - Unstable Affliction",
+    "Xyrec Warlock - Incinerate",
+    "Xyrec Warlock - Immolate",
+    "Xyrec Warlock - Conflagrate",
+    "Xyrec Warlock - Siphon Life",
+    "Xyrec Warlock - Resources",
+    "Xyrec Warlock - Wand Swing [Fear Range 14+]",
+    "Xyrec Warlock - Mana Bar",
+    "Xyrec Warlock - Mana Tick",
+    "Xyrec Warlock - Cooldowns",
+    "Xyrec Warlock - Vengeance",
+    "Xyrec Warlock - Shadowflame",
+    "Xyrec Warlock - Shadowburn",
+    "Xyrec Warlock - Soul Fire",
+    "Xyrec Warlock - Amplify Curse",
+    "Xyrec Warlock - Perception",
+    "Xyrec Warlock - Escape Artist",
+    "Xyrec Warlock - Will of the Forsaken",
+    "Xyrec Warlock - Blood Fury",
+    "Xyrec Warlock - Trinket 1 CD",
+    "Xyrec Warlock - Trinket 2 CD",
+    "Xyrec Warlock - Healthstone CD",
+    "Xyrec Warlock - Soulstone CD",
+    "Xyrec Warlock - Fel Domination",
+    "Xyrec Warlock - Shadow Ward",
+    "Xyrec Warlock - Death Coil",
+    "Xyrec Warlock - Howl of Terror",
+    "Xyrec Warlock - Fear",
+    "Xyrec Warlock - Banish",
+    "Xyrec Warlock - Seduce",
+    "Xyrec Warlock - Devour Magic",
+    "Xyrec Warlock - Suffering",
+    "Xyrec Warlock - Reminders",
+    "Xyrec Warlock - Drink Expiring",
+    "Xyrec Warlock - Create Healthstone",
+    "Xyrec Warlock - Create/Use Soulstone",
+    "Xyrec Warlock - Drain Soul",
+    "Xyrec Warlock - Pet Low Mana",
+    "Xyrec Warlock - Pet Attack",
+    "Xyrec Warlock - Summon Pet",
+    "Xyrec Warlock - Soul Link",
+    "Xyrec Warlock - Demon Armor",
+    "Xyrec Warlock - Demonic Sacrifice",
+    "Xyrec Warlock - Fire Shield [Solo]",
+    "Xyrec Warlock - Group Buffs",
+    "Xyrec Warlock - Fire Shield",
+    "Xyrec Warlock - Soul Shard [Drag]"
+  ],
+  "class": "warlock",
+  "containers": [
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Warlock - Curse [Own]",
+        "Xyrec Warlock - Corruption",
+        "Xyrec Warlock - Unstable Affliction",
+        "Xyrec Warlock - Incinerate",
+        "Xyrec Warlock - Immolate",
+        "Xyrec Warlock - Conflagrate",
+        "Xyrec Warlock - Siphon Life"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Warlock - Core Abilities",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 10,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Warlock",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.8",
+      "sort": "none",
+      "sortHybridTable": {
+        "Warlock - Chaos Bolt": false,
+        "Warlock - Conflagrate": false,
+        "Warlock - Corruption": false,
+        "Warlock - Curse [Own]": false,
+        "Warlock - Demonic Grace": false,
+        "Warlock - Haunt": false,
+        "Warlock - Immolate": false,
+        "Warlock - Incinerate": false,
+        "Warlock - Master Channeler": false,
+        "Warlock - Shadow Cleave": false,
+        "Warlock - Siphon Life": false,
+        "Warlock - Unstable Affliction": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 37,
+      "wagoID": "XejlH_0_F",
+      "xOffset": 0,
+      "yOffset": 35
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "conditions": [],
+      "config": [],
+      "controlledChildren": [
+        "Xyrec Warlock - Wand Swing [Fear Range 14+]",
+        "Xyrec Warlock - Mana Bar",
+        "Xyrec Warlock - Mana Tick"
+      ],
+      "frameStrata": 1,
+      "groupIcon": 136126,
+      "id": "Xyrec Warlock - Resources",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Warlock",
+      "preferToUpdate": false,
+      "regionType": "group",
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.8",
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "version": 37,
+      "wagoID": "XejlH_0_F",
+      "xOffset": 0,
+      "yOffset": 0
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Warlock - Vengeance",
+        "Xyrec Warlock - Shadowflame",
+        "Xyrec Warlock - Shadowburn",
+        "Xyrec Warlock - Soul Fire",
+        "Xyrec Warlock - Amplify Curse",
+        "Xyrec Warlock - Perception",
+        "Xyrec Warlock - Escape Artist",
+        "Xyrec Warlock - Will of the Forsaken",
+        "Xyrec Warlock - Blood Fury",
+        "Xyrec Warlock - Trinket 1 CD",
+        "Xyrec Warlock - Trinket 2 CD",
+        "Xyrec Warlock - Healthstone CD",
+        "Xyrec Warlock - Soulstone CD",
+        "Xyrec Warlock - Fel Domination",
+        "Xyrec Warlock - Shadow Ward",
+        "Xyrec Warlock - Death Coil",
+        "Xyrec Warlock - Howl of Terror",
+        "Xyrec Warlock - Fear",
+        "Xyrec Warlock - Banish",
+        "Xyrec Warlock - Seduce",
+        "Xyrec Warlock - Devour Magic",
+        "Xyrec Warlock - Suffering"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 136145,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Warlock - Cooldowns",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 9,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Warlock",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.8",
+      "sort": "none",
+      "sortHybridTable": {
+        "Warlock - Amplify Curse": false,
+        "Warlock - Banish": false,
+        "Warlock - Blood Fury": false,
+        "Warlock - Death Coil": false,
+        "Warlock - Demonic Charge": false,
+        "Warlock - Demonic Howl": false,
+        "Warlock - Devour Magic": false,
+        "Warlock - Escape Artist": false,
+        "Warlock - Fear": false,
+        "Warlock - Fel Domination": false,
+        "Warlock - Healthstone CD": false,
+        "Warlock - Howl of Terror": false,
+        "Warlock - Immolation Aura": false,
+        "Warlock - Menace": false,
+        "Warlock - Perception": false,
+        "Warlock - Seduce": false,
+        "Warlock - Shadow Ward": false,
+        "Warlock - Shadowburn": false,
+        "Warlock - Shadowflame": false,
+        "Warlock - Soul Fire": false,
+        "Warlock - Soulstone CD": false,
+        "Warlock - Suffering": false,
+        "Warlock - Trinket 1 CD": false,
+        "Warlock - Trinket 2 CD": false,
+        "Warlock - Vengeance": false,
+        "Warlock - Will of the Forsaken": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 37,
+      "wagoID": "XejlH_0_F",
+      "xOffset": 0,
+      "yOffset": -26
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "UIPARENT",
+      "anchorPoint": "TOP",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Warlock - Drink Expiring",
+        "Xyrec Warlock - Create Healthstone",
+        "Xyrec Warlock - Create/Use Soulstone",
+        "Xyrec Warlock - Drain Soul",
+        "Xyrec Warlock - Pet Low Mana",
+        "Xyrec Warlock - Pet Attack",
+        "Xyrec Warlock - Summon Pet",
+        "Xyrec Warlock - Soul Link",
+        "Xyrec Warlock - Demon Armor",
+        "Xyrec Warlock - Demonic Sacrifice",
+        "Xyrec Warlock - Fire Shield [Solo]"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 136185,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Warlock - Reminders",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 5,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Warlock",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.8",
+      "sort": "none",
+      "sortHybridTable": {
+        "Warlock - Create Healthstone": false,
+        "Warlock - Create/Use Soulstone": false,
+        "Warlock - Demon Armor": false,
+        "Warlock - Demonic Sacrifice": false,
+        "Warlock - Drain Soul": false,
+        "Warlock - Drink Expiring": false,
+        "Warlock - Fire Shield [Solo]": false,
+        "Warlock - Grimoire of Synergy": false,
+        "Warlock - Metamorphosis": false,
+        "Warlock - Pet Attack": false,
+        "Warlock - Pet Low Mana": false,
+        "Warlock - Soul Link": false,
+        "Warlock - Summon Pet": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": false,
+      "version": 37,
+      "wagoID": "XejlH_0_F",
+      "xOffset": 0,
+      "yOffset": -475
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "UIPARENT",
+      "anchorPoint": "TOP",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Warlock - Fire Shield"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 135806,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Warlock - Group Buffs",
+      "information": {
+        "forceEvents": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 6,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Warlock",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.8",
+      "sort": "none",
+      "sortHybridTable": {
+        "Warlock - Fire Shield [Tank]": false
+      },
+      "source": "import",
+      "space": 1,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 37,
+      "wagoID": "XejlH_0_F",
+      "xOffset": 0,
+      "yOffset": -540
+    }
+  ],
+  "root": {
+    "actions": {
+      "finish": [],
+      "init": [],
+      "start": []
+    },
+    "alpha": 1,
+    "anchorFrameType": "SCREEN",
+    "anchorPoint": "CENTER",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "backdropColor": [
+      1,
+      1,
+      1,
+      0.5
+    ],
+    "border": false,
+    "borderBackdrop": "Blizzard Tooltip",
+    "borderColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "borderEdge": "Square Full White",
+    "borderInset": 1,
+    "borderOffset": 4,
+    "borderSize": 2,
+    "conditions": [],
+    "config": [],
+    "controlledChildren": [
+      "Xyrec Warlock - Core Abilities",
+      "Xyrec Warlock - Resources",
+      "Xyrec Warlock - Cooldowns",
+      "Xyrec Warlock - Reminders",
+      "Xyrec Warlock - Group Buffs",
+      "Xyrec Warlock - Soul Shard [Drag]"
+    ],
+    "frameStrata": 1,
+    "groupIcon": "626007",
+    "id": "Xyrec - Warlock",
+    "information": {
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "load": {
+      "class": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      }
+    },
+    "preferToUpdate": false,
+    "regionType": "group",
+    "scale": 1.5,
+    "selfPoint": "CENTER",
+    "semver": "1.4.8",
+    "subRegions": [],
+    "tocversion": 20505,
+    "triggers": [
+      {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Health",
+          "names": [],
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "aura2",
+          "unit": "player"
+        },
+        "untrigger": []
+      }
+    ],
+    "url": "",
+    "version": 37,
+    "wagoID": "XejlH_0_F",
+    "xOffset": 0,
+    "yOffset": -242
+  },
+  "wa_version": "5.21.8"
+}

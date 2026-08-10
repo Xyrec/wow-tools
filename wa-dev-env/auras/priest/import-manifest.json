@@ -1,0 +1,5 @@
+{ "_notes": "Void Zone dropped (SoD raid mechanic, spell gone in TBC).",
+  "drop": ["Priest - Void Zone"],
+  "rows": {"Priest - Core Abilities": "core", "Priest - Cooldowns": "cooldowns",
+           "Priest - Reminders": "reminders", "Priest - Group Buffs": "groupbuffs"},
+  "bespoke": [] }

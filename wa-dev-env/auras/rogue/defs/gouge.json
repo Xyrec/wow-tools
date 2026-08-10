@@ -1,0 +1,121 @@
+{
+  "archetype": "cooldown_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        },
+        {
+          "property": "inverse",
+          "value": true
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 1,
+            "value": 0,
+            "variable": "show"
+          },
+          {
+            "trigger": 2,
+            "value": 1,
+            "variable": "onCooldown"
+          }
+        ],
+        "trigger": -2,
+        "variable": "AND"
+      },
+      "linked": false
+    }
+  ],
+  "id": "Xyrec Rogue - Gouge",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "ROGUE"
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 1776,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_not_spellknown": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "displayIcon": 132155
+  },
+  "row": "cooldowns",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [
+          "1776"
+        ],
+        "debuffType": "HARMFUL",
+        "duration": "1",
+        "event": "Conditions",
+        "names": [],
+        "ownOnly": true,
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "aura2",
+        "unevent": "auto",
+        "unit": "target",
+        "useName": true,
+        "use_alwaystrue": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "2": {
+      "trigger": {
+        "auranames": [],
+        "debuffType": "HELPFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showOnCooldown",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "realSpellName": "Gouge",
+        "spellIds": [],
+        "spellName": 1776,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "spell",
+        "unevent": "auto",
+        "unit": "player",
+        "unitExists": true,
+        "useName": true,
+        "use_charges": false,
+        "use_genericShowOn": true,
+        "use_remaining": false,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways",
+        "track": "auto"
+      }
+    },
+    "activeTriggerMode": -10,
+    "disjunctive": "any"
+  }
+}

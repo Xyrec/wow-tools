@@ -1,0 +1,64 @@
+{
+  "archetype": "cooldown_icon",
+  "conditions": [],
+  "id": "Xyrec Priest - Shadowguard",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "PRIEST"
+    },
+    "race": {
+      "multi": {
+        "Dwarf": true,
+        "Human": true
+      },
+      "single": "Troll"
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 18137,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_not_spellknown": false,
+    "use_race": true,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "displayIcon": 136051
+  },
+  "row": "cooldowns",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [
+          "18137"
+        ],
+        "debuffType": "HELPFUL",
+        "duration": "1",
+        "event": "Conditions",
+        "names": [],
+        "ownOnly": true,
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "aura2",
+        "unevent": "auto",
+        "unit": "player",
+        "useName": true,
+        "use_alwaystrue": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": -10,
+    "disjunctive": "any"
+  }
+}

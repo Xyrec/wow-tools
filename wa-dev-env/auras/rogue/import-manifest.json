@@ -1,0 +1,5 @@
+{ "_notes": "Combo Points + Resources bespoke; energy tick keeps classic code (no mp5-style interference).",
+  "drop": [],
+  "rows": {"Rogue - Core Abilities": "core", "Rogue - Cooldowns": "cooldowns",
+           "Rogue - Reminders": "reminders"},
+  "bespoke": ["Rogue - Ammo [Drag]"] }

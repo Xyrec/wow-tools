@@ -1,0 +1,5 @@
+{ "_notes": "Soul Shard drag counter bespoke.",
+  "drop": [],
+  "rows": {"Warlock - Core Abilities": "core", "Warlock - Cooldowns": "cooldowns",
+           "Warlock - Reminders": "reminders", "Warlock - Group Buffs": "groupbuffs"},
+  "bespoke": ["Warlock - Soul Shard [Drag]"] }

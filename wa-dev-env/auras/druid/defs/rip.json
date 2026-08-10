@@ -1,0 +1,100 @@
+{
+  "archetype": "rotation_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 0,
+        "variable": "buffed"
+      }
+    }
+  ],
+  "id": "Xyrec Druid - Rip",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "DRUID"
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 1079,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_not_spellknown": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "displayIcon": 132152
+  },
+  "row": "core",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [
+          "1079"
+        ],
+        "debuffType": "HARMFUL",
+        "event": "Health",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "ownOnly": true,
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "aura2",
+        "unit": "target",
+        "useName": true
+      },
+      "untrigger": []
+    },
+    "2": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Conditions",
+        "type": "unit",
+        "unit": "player",
+        "use_alwaystrue": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "3": {
+      "trigger": {
+        "auranames": [
+          "768"
+        ],
+        "debuffType": "HELPFUL",
+        "event": "Stance/Form/Aura",
+        "form": {
+          "single": 3
+        },
+        "type": "aura2",
+        "unit": "player",
+        "useName": true,
+        "use_form": false,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": 1,
+    "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
+    "disjunctive": "custom"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "archetype": "rotation_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 0,
+        "variable": "buffed"
+      }
+    }
+  ],
+  "id": "Xyrec Rogue - Slice and Dice",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "ROGUE"
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 5171,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "row": "core",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [
+          "5171"
+        ],
+        "debuffType": "HELPFUL",
+        "event": "Health",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "aura2",
+        "unit": "player",
+        "useName": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": 1,
+    "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
+    "disjunctive": "custom"
+  }
+}

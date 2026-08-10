@@ -1,0 +1,374 @@
+{
+  "archetype": "bespoke",
+  "id": "Xyrec Priest - Wand Swing [Flay Range]",
+  "lua": {
+    "customText": "lua/wand-swing-flay-range--customText.lua"
+  },
+  "payload": {
+    "actions": {
+      "finish": [],
+      "init": {
+        "custom": "\n\n",
+        "do_custom": false
+      },
+      "start": []
+    },
+    "adjustedMax": "",
+    "adjustedMin": "",
+    "alpha": 0.3,
+    "anchorFrameFrame": "WeakAuras:Priest - Mana Bar",
+    "anchorFrameType": "SELECTFRAME",
+    "anchorPoint": "CENTER",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "auto": true,
+    "backdropColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "backdropInFront": false,
+    "backgroundColor": [
+      0.50196081399918,
+      0.50196081399918,
+      0.50196081399918,
+      0.30000001192093
+    ],
+    "barColor": [
+      0.98823535442352,
+      0.98823535442352,
+      0.98823535442352,
+      1
+    ],
+    "barColor2": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "borderBackdrop": "None",
+    "borderInFront": true,
+    "conditions": [
+      {
+        "changes": [
+          {
+            "property": "sparkColor",
+            "value": [
+              1,
+              1,
+              1,
+              0
+            ]
+          }
+        ],
+        "check": {
+          "trigger": -1,
+          "value": 0,
+          "variable": "incombat"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "barColor",
+            "value": [
+              0.62745100259781,
+              0,
+              1,
+              1
+            ]
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": 4,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 5,
+              "value": 1,
+              "variable": "spellInRange"
+            }
+          ],
+          "trigger": -2,
+          "variable": "AND"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "alpha",
+            "value": 1
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "attackabletarget"
+            },
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "incombat"
+            }
+          ],
+          "trigger": -2,
+          "variable": "OR"
+        }
+      }
+    ],
+    "config": [],
+    "customText": "@wand-swing-flay-range--customText.lua",
+    "desaturate": false,
+    "enableGradient": false,
+    "fontFlags": "OUTLINE",
+    "frameStrata": 1,
+    "gradientOrientation": "HORIZONTAL",
+    "height": 7,
+    "icon": false,
+    "iconSource": -1,
+    "icon_color": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "icon_side": "RIGHT",
+    "id": "Xyrec Priest - Wand Swing [Flay Range]",
+    "information": {
+      "forceEvents": true,
+      "ignoreOptionsEventErrors": true,
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "inverse": true,
+    "load": {
+      "class": {
+        "multi": {},
+        "single": "PRIEST"
+      },
+      "difficulty": {
+        "multi": []
+      },
+      "faction": {
+        "multi": []
+      },
+      "ingroup": {
+        "multi": []
+      },
+      "not_spellknown": 0,
+      "pvptalent": {
+        "multi": []
+      },
+      "race": {
+        "multi": []
+      },
+      "role": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      },
+      "talent2": {
+        "multi": []
+      },
+      "use_class": true,
+      "use_never": false,
+      "use_not_spellknown": true,
+      "use_petbattle": false,
+      "zoneIds": ""
+    },
+    "orientation": "HORIZONTAL",
+    "overlays": [
+      [
+        0.43529411764706,
+        0,
+        1,
+        0.25
+      ]
+    ],
+    "preferToUpdate": false,
+    "progressSource": [
+      -1,
+      ""
+    ],
+    "regionType": "aurabar",
+    "selfPoint": "CENTER",
+    "semver": "1.4.4",
+    "source": "import",
+    "spark": false,
+    "sparkBlendMode": "ADD",
+    "sparkColor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "sparkDesature": false,
+    "sparkHeight": 15,
+    "sparkHidden": "NEVER",
+    "sparkOffsetX": 0,
+    "sparkOffsetY": 0,
+    "sparkRotation": 0,
+    "sparkRotationMode": "AUTO",
+    "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+    "sparkWidth": 10,
+    "stickyDuration": false,
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "type": "subforeground"
+      },
+      {
+        "anchor_area": "bar",
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "type": "subborder"
+      }
+    ],
+    "texture": "Clean",
+    "textureSource": "LSM",
+    "tocversion": 20505,
+    "toolTipArea": "ICON",
+    "triggers": {
+      "1": {
+        "trigger": {
+          "custom_hide": "timed",
+          "debuffType": "HELPFUL",
+          "duration": "1",
+          "event": "Swing Timer",
+          "genericShowOn": "showOnActive",
+          "hand": "ranged",
+          "health": "0",
+          "health_operator": ">=",
+          "names": [],
+          "powertype": 0,
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "unit",
+          "unevent": "auto",
+          "unit": "player",
+          "use_hand": true,
+          "use_health": true,
+          "use_inverse": false,
+          "use_power": false,
+          "use_powertype": false,
+          "use_remaining": false,
+          "use_showCost": false,
+          "use_unit": true
+        },
+        "untrigger": []
+      },
+      "2": {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Conditions",
+          "type": "unit",
+          "unit": "player",
+          "use_alwaystrue": true,
+          "use_unit": true
+        },
+        "untrigger": []
+      },
+      "3": {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Spell Known",
+          "genericShowOn": "showOnCooldown",
+          "realSpellName": 0,
+          "spellName": 0,
+          "type": "spell",
+          "unit": "player",
+          "use_genericShowOn": true,
+          "use_spellName": true,
+          "use_track": true
+        },
+        "untrigger": []
+      },
+      "4": {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Spell Known",
+          "genericShowOn": "showOnCooldown",
+          "realSpellName": "Mind Flay",
+          "spellName": 15407,
+          "type": "spell",
+          "unit": "player",
+          "use_genericShowOn": true,
+          "use_spellName": true,
+          "use_track": true
+        },
+        "untrigger": []
+      },
+      "5": {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Cooldown Progress (Spell)",
+          "genericShowOn": "showAlways",
+          "realSpellName": "Mind Flay",
+          "spellName": 15407,
+          "type": "spell",
+          "unit": "player",
+          "use_genericShowOn": true,
+          "use_spellName": true,
+          "use_track": true
+        },
+        "untrigger": []
+      },
+      "activeTriggerMode": 1,
+      "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and not t[3]\nend",
+      "disjunctive": "custom"
+    },
+    "url": "",
+    "useAdjustededMax": false,
+    "useAdjustededMin": false,
+    "version": 33,
+    "wagoID": "gFd6I4vVo",
+    "width": 266,
+    "xOffset": 7.62939453125e-06,
+    "yOffset": 14,
+    "zoom": 0
+  },
+  "row": "loose"
+}

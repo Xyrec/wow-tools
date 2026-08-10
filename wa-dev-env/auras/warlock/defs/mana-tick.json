@@ -1,0 +1,237 @@
+{
+  "archetype": "bespoke",
+  "id": "Xyrec Warlock - Mana Tick",
+  "lua": {
+    "triggers.1.trigger.custom": "lua/mana-tick--triggers-1-trigger-custom.lua"
+  },
+  "payload": {
+    "actions": {
+      "finish": {
+        "custom": "WeakAuras.ScanEvents(\"TICKUPDATE\", true)",
+        "do_custom": false
+      },
+      "init": {
+        "custom": "aura_env.lastMana = UnitPower(\"player\" , 0)\naura_env.lastCast = 0",
+        "do_custom": true
+      },
+      "start": []
+    },
+    "adjustedMax": "",
+    "adjustedMin": "",
+    "alpha": 0.3,
+    "anchorFrameFrame": "WeakAuras:Warlock - Mana Bar",
+    "anchorFrameType": "SELECTFRAME",
+    "anchorPoint": "CENTER",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "auto": true,
+    "backdropColor": [
+      1,
+      1,
+      1,
+      0.5
+    ],
+    "backdropInFront": false,
+    "backgroundColor": [
+      0,
+      0.22352941176471,
+      1,
+      0
+    ],
+    "barColor": [
+      0,
+      0.23529411764706,
+      1,
+      0
+    ],
+    "barColor2": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "borderBackdrop": "Blizzard Tooltip",
+    "borderInFront": true,
+    "color": [],
+    "conditions": [
+      {
+        "changes": [
+          {
+            "property": "inverse",
+            "value": true
+          }
+        ],
+        "check": {
+          "op": "<",
+          "trigger": 1,
+          "value": "5",
+          "variable": "duration"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "alpha",
+            "value": 1
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "attackabletarget"
+            },
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "incombat"
+            },
+            {
+              "trigger": 1,
+              "value": 1,
+              "variable": "show"
+            }
+          ],
+          "trigger": -2,
+          "variable": "OR"
+        }
+      }
+    ],
+    "config": [],
+    "desaturate": false,
+    "enableGradient": false,
+    "frameStrata": 4,
+    "gradientOrientation": "HORIZONTAL",
+    "height": 20,
+    "icon": false,
+    "iconSource": -1,
+    "icon_color": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "icon_side": "RIGHT",
+    "id": "Xyrec Warlock - Mana Tick",
+    "information": {
+      "forceEvents": true,
+      "ignoreOptionsEventErrors": true,
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "inverse": false,
+    "load": {
+      "class": {
+        "multi": {},
+        "single": "WARLOCK"
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      },
+      "use_class": true,
+      "zoneIds": ""
+    },
+    "orientation": "HORIZONTAL",
+    "preferToUpdate": false,
+    "progressSource": [
+      -1,
+      ""
+    ],
+    "regionType": "aurabar",
+    "selfPoint": "CENTER",
+    "semver": "1.4.8",
+    "smoothProgress": false,
+    "source": "import",
+    "spark": true,
+    "sparkBlendMode": "ADD",
+    "sparkColor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "sparkHeight": 30,
+    "sparkHidden": "NEVER",
+    "sparkOffsetX": 0,
+    "sparkOffsetY": 0,
+    "sparkRotation": 0,
+    "sparkRotationMode": "AUTO",
+    "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+    "sparkWidth": 20,
+    "stickyDuration": false,
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "type": "subforeground"
+      }
+    ],
+    "texture": "Clean",
+    "textureSource": "LSM",
+    "tocversion": 20505,
+    "toolTipArea": "ICON",
+    "triggers": {
+      "1": {
+        "trigger": {
+          "check": "event",
+          "custom": "@mana-tick--triggers-1-trigger-custom.lua",
+          "customVariables": "{\n    duration = true\n}",
+          "custom_type": "stateupdate",
+          "debuffType": "HELPFUL",
+          "duration": "2",
+          "event": "Health",
+          "events": "UNIT_SPELLCAST_SUCCEEDED:player UNIT_POWER_FREQUENT:player CLEU:SPELL_ENERGIZE CLEU:SPELL_PERIODIC_ENERGIZE",
+          "names": [],
+          "sourceUnit": "player",
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_ENERGIZE",
+          "type": "custom",
+          "unevent": "auto",
+          "unit": "player",
+          "use_sourceUnit": true,
+          "use_unit": true
+        },
+        "untrigger": []
+      },
+      "activeTriggerMode": -10
+    },
+    "url": "",
+    "useAdjustededMax": false,
+    "useAdjustededMin": false,
+    "version": 37,
+    "wagoID": "XejlH_0_F",
+    "width": 260,
+    "xOffset": 0.00018310546875,
+    "yOffset": 0,
+    "zoom": 0
+  },
+  "row": "loose"
+}

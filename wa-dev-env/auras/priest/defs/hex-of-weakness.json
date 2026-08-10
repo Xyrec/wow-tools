@@ -1,0 +1,77 @@
+{
+  "archetype": "cooldown_icon",
+  "conditions": [],
+  "id": "Xyrec Priest - Hex of Weakness",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "PRIEST"
+    },
+    "race": {
+      "multi": {
+        "Dwarf": true,
+        "Human": true
+      },
+      "single": "Troll"
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 9035,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_not_spellknown": false,
+    "use_race": true,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "displayIcon": 136157
+  },
+  "row": "cooldowns",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [
+          "9035"
+        ],
+        "debuffType": "HARMFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showOnCooldown",
+        "matchesShowOn": "showOnActive",
+        "names": [],
+        "ownOnly": true,
+        "realSpellName": "Touch of Weakness",
+        "spellIds": [],
+        "spellName": 2652,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "aura2",
+        "unevent": "auto",
+        "unit": "target",
+        "unitExists": false,
+        "useName": true,
+        "use_charges": false,
+        "use_genericShowOn": true,
+        "use_remaining": false,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways",
+        "track": "auto"
+      }
+    },
+    "activeTriggerMode": -10,
+    "disjunctive": "any"
+  }
+}

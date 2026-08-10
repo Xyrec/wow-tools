@@ -1,0 +1,168 @@
+{
+  "archetype": "rotation_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "sub.3.text_visible",
+          "value": false
+        }
+      ],
+      "check": {
+        "op": "<",
+        "trigger": 1,
+        "value": "2",
+        "variable": "duration"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "color",
+          "value": [
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "property": "desaturate",
+          "value": true
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 2,
+            "value": 0,
+            "variable": "show"
+          },
+          {
+            "trigger": 3,
+            "value": 0,
+            "variable": "show"
+          }
+        ],
+        "trigger": -2,
+        "variable": "OR"
+      }
+    }
+  ],
+  "id": "Xyrec Rogue - Mutilate",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "ROGUE"
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 34411,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_not_spellknown": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "row": "core",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [],
+        "debuffType": "HARMFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showAlways",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "realSpellName": "Mutilate",
+        "spellIds": [],
+        "spellName": 34411,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "spell",
+        "unevent": "auto",
+        "unit": "target",
+        "unitExists": true,
+        "useName": true,
+        "use_genericShowOn": true,
+        "use_remaining": false,
+        "use_showgcd": true,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways"
+      }
+    },
+    "2": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Item Type Equipped",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 0,
+        "itemSlot": 16,
+        "itemTypeName": {
+          "multi": {
+            "527": true
+          }
+        },
+        "realSpellName": 0,
+        "spellName": 0,
+        "type": "item",
+        "unit": "player",
+        "use_equipped": true,
+        "use_genericShowOn": true,
+        "use_itemName": true,
+        "use_itemSetId": true,
+        "use_itemSlot": true,
+        "use_itemTypeName": false,
+        "use_spellName": true,
+        "use_track": true
+      },
+      "untrigger": []
+    },
+    "3": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Item Type Equipped",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 0,
+        "itemSlot": 17,
+        "itemTypeName": {
+          "multi": {
+            "527": true
+          }
+        },
+        "realSpellName": 0,
+        "spellName": 0,
+        "type": "item",
+        "unit": "player",
+        "use_equipped": true,
+        "use_genericShowOn": true,
+        "use_itemName": true,
+        "use_itemSetId": true,
+        "use_itemSlot": true,
+        "use_itemTypeName": false,
+        "use_spellName": true,
+        "use_track": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": -10,
+    "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
+    "disjunctive": "custom"
+  }
+}

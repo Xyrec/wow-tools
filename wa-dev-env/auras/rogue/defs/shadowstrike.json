@@ -1,0 +1,135 @@
+{
+  "archetype": "rotation_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "sub.3.text_visible"
+        }
+      ],
+      "check": {
+        "op": "<",
+        "trigger": 1,
+        "value": "2",
+        "variable": "duration"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 2,
+            "value": 0,
+            "variable": "show"
+          },
+          {
+            "trigger": 1,
+            "value": 1,
+            "variable": "onCooldown"
+          }
+        ],
+        "trigger": -2,
+        "variable": "OR"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "color",
+          "value": [
+            1,
+            0.50196081399918,
+            0.50196081399918,
+            1
+          ]
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 0,
+        "variable": "spellInRange"
+      }
+    }
+  ],
+  "id": "Xyrec Rogue - Shadowstrike",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "ROGUE"
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 33914,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "row": "core",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [],
+        "debuffType": "HARMFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showAlways",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "realSpellName": "Shadowstrike",
+        "spellIds": [],
+        "spellName": 33914,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "spell",
+        "unevent": "auto",
+        "unit": "target",
+        "unitExists": true,
+        "useName": true,
+        "use_genericShowOn": true,
+        "use_remaining": false,
+        "use_showgcd": true,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways"
+      }
+    },
+    "2": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Stance/Form/Aura",
+        "form": {
+          "single": 1
+        },
+        "type": "unit",
+        "unit": "player",
+        "use_form": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": -10,
+    "customTriggerLogic": "function (t)\n   return t[1]\nend",
+    "disjunctive": "custom"
+  }
+}

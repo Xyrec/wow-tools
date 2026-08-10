@@ -1,0 +1,313 @@
+{
+  "archetype": "bespoke",
+  "id": "Xyrec Druid - Swing Timer [Bear]",
+  "lua": {
+    "customText": "lua/swing-timer-bear--customText.lua"
+  },
+  "payload": {
+    "actions": {
+      "finish": [],
+      "init": {
+        "custom": "\n\n",
+        "do_custom": false
+      },
+      "start": []
+    },
+    "adjustedMax": "",
+    "adjustedMin": "",
+    "alpha": 0.3,
+    "anchorFrameFrame": "WeakAuras:Druid - Rage Bar",
+    "anchorFrameType": "SELECTFRAME",
+    "anchorPoint": "TOP",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "auto": true,
+    "backdropColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "backdropInFront": false,
+    "backgroundColor": [
+      0.50196081399918,
+      0.50196081399918,
+      0.50196081399918,
+      0.30000001192093
+    ],
+    "barColor": [
+      1,
+      0.48627454042435,
+      0.039215687662363,
+      1
+    ],
+    "barColor2": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "borderBackdrop": "None",
+    "borderInFront": true,
+    "conditions": [
+      {
+        "changes": [
+          {
+            "property": "sparkColor",
+            "value": [
+              1,
+              1,
+              1,
+              0
+            ]
+          }
+        ],
+        "check": {
+          "trigger": -1,
+          "value": 0,
+          "variable": "incombat"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "alpha",
+            "value": 1
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "attackabletarget"
+            },
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "incombat"
+            }
+          ],
+          "trigger": -2,
+          "variable": "OR"
+        }
+      }
+    ],
+    "config": [],
+    "customText": "@swing-timer-bear--customText.lua",
+    "desaturate": false,
+    "enableGradient": false,
+    "fontFlags": "OUTLINE",
+    "frameStrata": 1,
+    "gradientOrientation": "HORIZONTAL",
+    "height": 10,
+    "icon": false,
+    "iconSource": -1,
+    "icon_color": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "icon_side": "RIGHT",
+    "id": "Xyrec Druid - Swing Timer [Bear]",
+    "information": {
+      "forceEvents": true,
+      "ignoreOptionsEventErrors": true,
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "inverse": true,
+    "load": {
+      "class": {
+        "multi": {},
+        "single": "DRUID"
+      },
+      "difficulty": {
+        "multi": []
+      },
+      "faction": {
+        "multi": []
+      },
+      "ingroup": {
+        "multi": []
+      },
+      "pvptalent": {
+        "multi": []
+      },
+      "race": {
+        "multi": []
+      },
+      "role": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      },
+      "talent2": {
+        "multi": []
+      },
+      "use_class": true,
+      "use_never": false,
+      "use_petbattle": false,
+      "use_spellknown": false,
+      "zoneIds": ""
+    },
+    "orientation": "HORIZONTAL",
+    "overlays": [
+      [
+        0.43529411764706,
+        0,
+        1,
+        0.25
+      ]
+    ],
+    "preferToUpdate": false,
+    "progressSource": [
+      -1,
+      ""
+    ],
+    "regionType": "aurabar",
+    "selfPoint": "BOTTOM",
+    "semver": "1.5.8",
+    "source": "import",
+    "spark": false,
+    "sparkBlendMode": "ADD",
+    "sparkColor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "sparkDesature": false,
+    "sparkHeight": 15,
+    "sparkHidden": "NEVER",
+    "sparkOffsetX": 0,
+    "sparkOffsetY": 0,
+    "sparkRotation": 0,
+    "sparkRotationMode": "AUTO",
+    "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+    "sparkWidth": 10,
+    "stickyDuration": false,
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "type": "subforeground"
+      },
+      {
+        "anchor_area": "bar",
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "type": "subborder"
+      }
+    ],
+    "texture": "Clean",
+    "textureSource": "LSM",
+    "tocversion": 20505,
+    "toolTipArea": "ICON",
+    "triggers": {
+      "1": {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Swing Timer",
+          "hand": "main",
+          "names": [],
+          "remaining": "",
+          "remaining_operator": ">",
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "unit",
+          "unit": "player",
+          "use_hand": true,
+          "use_inverse": false,
+          "use_remaining": false,
+          "use_unit": true
+        },
+        "untrigger": []
+      },
+      "2": {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Conditions",
+          "type": "unit",
+          "unit": "player",
+          "use_alwaystrue": true,
+          "use_unit": true
+        },
+        "untrigger": []
+      },
+      "3": {
+        "trigger": {
+          "auranames": [
+            "5487",
+            "9634"
+          ],
+          "debuffType": "HELPFUL",
+          "event": "Stance/Form/Aura",
+          "form": {
+            "multi": {
+              "3": true
+            },
+            "single": 1
+          },
+          "type": "aura2",
+          "unit": "player",
+          "useName": true,
+          "use_form": false,
+          "use_inverse": false,
+          "use_unit": true
+        },
+        "untrigger": []
+      },
+      "activeTriggerMode": 1,
+      "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3]\nend",
+      "disjunctive": "custom"
+    },
+    "url": "",
+    "useAdjustededMax": false,
+    "useAdjustededMin": false,
+    "version": 45,
+    "wagoID": "bQynAWaKe",
+    "width": 266,
+    "xOffset": 7.62939453125e-06,
+    "yOffset": 1,
+    "zoom": 0
+  },
+  "row": "loose"
+}

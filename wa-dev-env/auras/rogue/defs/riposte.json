@@ -1,0 +1,416 @@
+{
+  "archetype": "rotation_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate"
+        },
+        {
+          "property": "sub.4.text_visible",
+          "value": true
+        },
+        {
+          "property": "inverse"
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 2,
+            "value": 0,
+            "variable": "show"
+          },
+          {
+            "trigger": 3,
+            "value": 1,
+            "variable": "show"
+          }
+        ],
+        "op": ">",
+        "trigger": -2,
+        "variable": "AND"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "desaturate"
+        },
+        {
+          "property": "sub.5.text_visible",
+          "value": true
+        },
+        {
+          "property": "inverse",
+          "value": false
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 2,
+            "value": 0,
+            "variable": "show"
+          },
+          {
+            "trigger": 4,
+            "value": 1,
+            "variable": "show"
+          }
+        ],
+        "op": ">",
+        "trigger": -2,
+        "variable": "AND"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "color",
+          "value": [
+            0.75294125080109,
+            0.75294125080109,
+            0.75294125080109,
+            1
+          ]
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 2,
+            "value": 0,
+            "variable": "show"
+          },
+          {
+            "checks": [
+              {
+                "trigger": 3,
+                "value": 1,
+                "variable": "show"
+              },
+              {
+                "trigger": 4,
+                "value": 1,
+                "variable": "show"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          },
+          {
+            "trigger": 1,
+            "value": 0,
+            "variable": "spellUsable"
+          }
+        ],
+        "trigger": -2,
+        "variable": "AND"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "sound",
+          "value": {
+            "sound": "Interface\\Addons\\Plater\\sounds\\Plater Hit.ogg",
+            "sound_channel": "Master",
+            "sound_type": "Play"
+          }
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 3,
+            "value": 1,
+            "variable": "show"
+          },
+          {
+            "trigger": 4,
+            "value": 1,
+            "variable": "show"
+          }
+        ],
+        "trigger": -2,
+        "variable": "OR"
+      }
+    }
+  ],
+  "id": "Xyrec Rogue - Riposte",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "ROGUE"
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 14251,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "type": "subborder"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "CENTER",
+        "rotateText": "NONE",
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 64,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 18,
+        "text_fontType": "OUTLINE",
+        "text_justify": "CENTER",
+        "text_selfPoint": "AUTO",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_shadowXOffset": 0,
+        "text_shadowYOffset": 0,
+        "text_text": "%p",
+        "text_text_format_p_format": "timed",
+        "text_text_format_p_time_dynamic_threshold": 0,
+        "text_text_format_p_time_format": 0,
+        "text_text_format_p_time_legacy_floor": false,
+        "text_text_format_p_time_mod_rate": true,
+        "text_text_format_p_time_precision": 1,
+        "text_visible": true,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "CENTER",
+        "rotateText": "NONE",
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 64,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 18,
+        "text_fontType": "OUTLINE",
+        "text_justify": "CENTER",
+        "text_selfPoint": "AUTO",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_shadowXOffset": 0,
+        "text_shadowYOffset": 0,
+        "text_text": "%3.p",
+        "text_text_format_1.p_format": "timed",
+        "text_text_format_1.p_time_dynamic_threshold": 0,
+        "text_text_format_1.p_time_format": 0,
+        "text_text_format_1.p_time_legacy_floor": true,
+        "text_text_format_1.p_time_mod_rate": true,
+        "text_text_format_1.p_time_precision": 1,
+        "text_text_format_3.p_format": "timed",
+        "text_text_format_3.p_time_dynamic_threshold": 0,
+        "text_text_format_3.p_time_format": 0,
+        "text_text_format_3.p_time_legacy_floor": false,
+        "text_text_format_3.p_time_mod_rate": true,
+        "text_text_format_3.p_time_precision": 1,
+        "text_text_format_p_format": "timed",
+        "text_text_format_p_time_dynamic_threshold": 0,
+        "text_text_format_p_time_format": 0,
+        "text_text_format_p_time_legacy_floor": true,
+        "text_text_format_p_time_mod_rate": true,
+        "text_text_format_p_time_precision": 1,
+        "text_visible": false,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "CENTER",
+        "rotateText": "NONE",
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 64,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 18,
+        "text_fontType": "OUTLINE",
+        "text_justify": "CENTER",
+        "text_selfPoint": "AUTO",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_shadowXOffset": 0,
+        "text_shadowYOffset": 0,
+        "text_text": "%4.p",
+        "text_text_format_1.p_format": "timed",
+        "text_text_format_1.p_time_dynamic_threshold": 0,
+        "text_text_format_1.p_time_format": 0,
+        "text_text_format_1.p_time_legacy_floor": true,
+        "text_text_format_1.p_time_mod_rate": true,
+        "text_text_format_1.p_time_precision": 1,
+        "text_text_format_4.p_format": "timed",
+        "text_text_format_4.p_time_dynamic_threshold": 0,
+        "text_text_format_4.p_time_format": 0,
+        "text_text_format_4.p_time_legacy_floor": false,
+        "text_text_format_4.p_time_mod_rate": true,
+        "text_text_format_4.p_time_precision": 1,
+        "text_text_format_p_format": "timed",
+        "text_text_format_p_time_dynamic_threshold": 0,
+        "text_text_format_p_time_format": 0,
+        "text_text_format_p_time_legacy_floor": true,
+        "text_text_format_p_time_mod_rate": true,
+        "text_text_format_p_time_precision": 1,
+        "text_visible": false,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      }
+    ]
+  },
+  "row": "core",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [],
+        "debuffType": "HARMFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showAlways",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "realSpellName": "Riposte",
+        "spellIds": [],
+        "spellName": 14251,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "spell",
+        "unevent": "auto",
+        "unit": "target",
+        "unitExists": true,
+        "useName": true,
+        "use_genericShowOn": true,
+        "use_remaining": false,
+        "use_showgcd": false,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways"
+      }
+    },
+    "2": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "destUnit": "player",
+        "duration": "6",
+        "event": "Combat Log",
+        "missType": "PARRY",
+        "sourceUnit": "player",
+        "spellId": [
+          14251
+        ],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_SUCCESS",
+        "type": "combatlog",
+        "unit": "player",
+        "use_destUnit": false,
+        "use_missType": true,
+        "use_sourceUnit": true,
+        "use_spellId": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "3": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "destUnit": "player",
+        "duration": "5",
+        "event": "Combat Log",
+        "missType": "PARRY",
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SWING",
+        "subeventSuffix": "_MISSED",
+        "type": "combatlog",
+        "unit": "player",
+        "use_destUnit": true,
+        "use_missType": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "4": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "destUnit": "player",
+        "duration": "5",
+        "event": "Combat Log",
+        "missType": "PARRY",
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_MISSED",
+        "type": "combatlog",
+        "unit": "player",
+        "use_destUnit": true,
+        "use_missType": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": 1,
+    "customTriggerLogic": "function (t)\n     return t[1]\nend",
+    "disjunctive": "custom"
+  }
+}

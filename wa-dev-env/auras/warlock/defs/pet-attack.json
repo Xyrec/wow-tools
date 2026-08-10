@@ -1,0 +1,189 @@
+{
+  "archetype": "reminder_icon",
+  "conditions": [],
+  "id": "Xyrec Warlock - Pet Attack",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "WARLOCK"
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 688,
+    "talent": {
+      "multi": []
+    },
+    "use_alive": true,
+    "use_class": true,
+    "use_spellknown": true,
+    "use_vehicle": false,
+    "zoneIds": ""
+  },
+  "lua": {
+    "triggers.2.trigger.custom": "lua/pet-attack--triggers-2-trigger-custom.lua"
+  },
+  "overrides": {
+    "customTextUpdate": "update",
+    "desc": "",
+    "displayIcon": 132152,
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "type": "subborder"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "CENTER",
+        "rotateText": "NONE",
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 64,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 20,
+        "text_fontType": "OUTLINE",
+        "text_justify": "CENTER",
+        "text_selfPoint": "AUTO",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_shadowXOffset": 0,
+        "text_shadowYOffset": 0,
+        "text_text": "%p",
+        "text_text_format_p_format": "timed",
+        "text_text_format_p_time_dynamic_threshold": 0,
+        "text_text_format_p_time_format": 0,
+        "text_text_format_p_time_legacy_floor": false,
+        "text_text_format_p_time_mod_rate": true,
+        "text_text_format_p_time_precision": 1,
+        "text_visible": true,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "OUTER_BOTTOM",
+        "rotateText": "NONE",
+        "text_anchorYOffset": -12,
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 64,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 14,
+        "text_fontType": "OUTLINE",
+        "text_justify": "CENTER",
+        "text_selfPoint": "BOTTOM",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_shadowXOffset": 0,
+        "text_shadowYOffset": 0,
+        "text_text": "Attack",
+        "text_text_format_p_format": "timed",
+        "text_text_format_p_time_dynamic_threshold": 60,
+        "text_text_format_p_time_format": 0,
+        "text_text_format_p_time_legacy_floor": false,
+        "text_text_format_p_time_mod_rate": true,
+        "text_text_format_p_time_precision": 1,
+        "text_visible": true,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      }
+    ]
+  },
+  "row": "reminders",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Conditions",
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "unit",
+        "unit": "player",
+        "use_HasPet": true,
+        "use_incombat": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "2": {
+      "trigger": {
+        "check": "update",
+        "custom": "@pet-attack--triggers-2-trigger-custom.lua",
+        "custom_type": "status",
+        "debuffType": "HELPFUL",
+        "type": "custom",
+        "unit": "player"
+      },
+      "untrigger": []
+    },
+    "3": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Power",
+        "percentpower": [
+          "50"
+        ],
+        "percentpower_operator": [
+          ">"
+        ],
+        "type": "unit",
+        "unit": "pet",
+        "use_percentpower": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "4": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "duration": "2",
+        "event": "Combat Events",
+        "eventtype": "PLAYER_REGEN_DISABLED",
+        "type": "event",
+        "unit": "player",
+        "use_eventtype": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": -10,
+    "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3] and not t[4]\nend",
+    "disjunctive": "custom"
+  }
+}

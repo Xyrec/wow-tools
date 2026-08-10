@@ -1,0 +1,98 @@
+{
+  "archetype": "rotation_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 1,
+        "variable": "onCooldown"
+      }
+    }
+  ],
+  "id": "Xyrec Druid - Growl",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "DRUID"
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 6795,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "row": "core",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [],
+        "debuffType": "HARMFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showAlways",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "realSpellName": "Growl",
+        "spellIds": [],
+        "spellName": 6795,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "spell",
+        "unevent": "auto",
+        "unit": "target",
+        "unitExists": true,
+        "useName": true,
+        "use_genericShowOn": true,
+        "use_remaining": false,
+        "use_showgcd": false,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways"
+      }
+    },
+    "2": {
+      "trigger": {
+        "auranames": [
+          "5487",
+          "9634"
+        ],
+        "debuffType": "HELPFUL",
+        "event": "Stance/Form/Aura",
+        "form": {
+          "single": 1
+        },
+        "type": "aura2",
+        "unit": "player",
+        "useName": true,
+        "use_debuffClass": false,
+        "use_form": false,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": 1,
+    "disjunctive": "all"
+  }
+}

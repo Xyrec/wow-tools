@@ -1,0 +1,1109 @@
+{
+  "child_order": [
+    "Xyrec Druid - Caster Abilities",
+    "Xyrec Druid - Faerie Fire [Caster]",
+    "Xyrec Druid - Moonfire",
+    "Xyrec Druid - Swiftmend",
+    "Xyrec Druid - Lifebloom",
+    "Xyrec Druid - Wild Growth",
+    "Xyrec Druid - Regrowth",
+    "Xyrec Druid - Rejuventation",
+    "Xyrec Druid - Feral Abilities",
+    "Xyrec Druid - Faerie Fire [Feral]",
+    "Xyrec Druid - Mangle [Cat]",
+    "Xyrec Druid - Rip",
+    "Xyrec Druid - Rake",
+    "Xyrec Druid - Mangle [Bear]",
+    "Xyrec Druid - Lacerate",
+    "Xyrec Druid - Growl",
+    "Xyrec Druid - Demoralizing Roar",
+    "Xyrec Druid - Feral Charge",
+    "Xyrec Druid - Resources",
+    "Xyrec Druid - Combo Points",
+    "Xyrec Druid - CP1",
+    "Xyrec Druid - CP2",
+    "Xyrec Druid - CP3",
+    "Xyrec Druid - CP4",
+    "Xyrec Druid - CP5",
+    "Xyrec Druid - Swing Timer [Caster]",
+    "Xyrec Druid - Swing Timer [Bear]",
+    "Xyrec Druid - Rage Bar",
+    "Xyrec Druid - Energy Bar",
+    "Xyrec Druid - Energy Tick",
+    "Xyrec Druid - Mana Bar",
+    "Xyrec Druid - Mana Tick",
+    "Xyrec Druid - Cooldowns",
+    "Xyrec Druid - Prowl",
+    "Xyrec Druid - Shadowmeld",
+    "Xyrec Druid - War Stomp",
+    "Xyrec Druid - Cower",
+    "Xyrec Druid - Tiger's Fury",
+    "Xyrec Druid - Berserk",
+    "Xyrec Druid - Dash",
+    "Xyrec Druid - Trinket 1 CD",
+    "Xyrec Druid - Trinket 2 CD",
+    "Xyrec Druid - Hurricane",
+    "Xyrec Druid - Rebirth",
+    "Xyrec Druid - Tranquility",
+    "Xyrec Druid - Nature's Swiftness",
+    "Xyrec Druid - Innervate",
+    "Xyrec Druid - Nature's Grasp",
+    "Xyrec Druid - Survival Instincts",
+    "Xyrec Druid - Frenzied Regeneration",
+    "Xyrec Druid - Barkskin",
+    "Xyrec Druid - Enrage",
+    "Xyrec Druid - Bash",
+    "Xyrec Druid - Reminders",
+    "Xyrec Druid - Drink Expiring",
+    "Xyrec Druid - Moonkin Form",
+    "Xyrec Druid - Mark of the Wild",
+    "Xyrec Druid - Thorns",
+    "Xyrec Druid - Omen of Clarity",
+    "Xyrec Druid - Group Buffs",
+    "Xyrec Druid - Gift of the Wild [Group]"
+  ],
+  "class": "druid",
+  "containers": [
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Druid - Faerie Fire [Caster]",
+        "Xyrec Druid - Moonfire",
+        "Xyrec Druid - Swiftmend",
+        "Xyrec Druid - Lifebloom",
+        "Xyrec Druid - Wild Growth",
+        "Xyrec Druid - Regrowth",
+        "Xyrec Druid - Rejuventation"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 135730,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Druid - Caster Abilities",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 10,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Druid",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.5.8",
+      "sort": "none",
+      "sortHybridTable": {
+        "Druid - Efflorescence": false,
+        "Druid - Faerie Fire [Caster]": false,
+        "Druid - Fury of the Stormrage": false,
+        "Druid - Lifebloom": false,
+        "Druid - Moonfire": false,
+        "Druid - Regrowth": false,
+        "Druid - Rejuventation": false,
+        "Druid - Starsurge": false,
+        "Druid - Sunfire [Caster]": false,
+        "Druid - Swiftmend": false,
+        "Druid - Wild Growth": false
+      },
+      "source": "import",
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 45,
+      "wagoID": "bQynAWaKe",
+      "xOffset": 0,
+      "yOffset": 35
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Druid - Faerie Fire [Feral]",
+        "Xyrec Druid - Mangle [Cat]",
+        "Xyrec Druid - Rip",
+        "Xyrec Druid - Rake",
+        "Xyrec Druid - Mangle [Bear]",
+        "Xyrec Druid - Lacerate",
+        "Xyrec Druid - Growl",
+        "Xyrec Druid - Demoralizing Roar",
+        "Xyrec Druid - Feral Charge"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 132135,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Druid - Feral Abilities",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 10,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Druid",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.5.8",
+      "sort": "none",
+      "sortHybridTable": {
+        "Druid - Demoralizing Roar": false,
+        "Druid - Faerie Fire [Feral]": false,
+        "Druid - Feral Charge": false,
+        "Druid - Growl": false,
+        "Druid - Lacerate": false,
+        "Druid - Mangle [Bear]": false,
+        "Druid - Mangle [Cat]": false,
+        "Druid - Rake": false,
+        "Druid - Rip": false,
+        "Druid - Savage Roar": false,
+        "Druid - Skull Bash": false,
+        "Druid - Sunfire [Feral]": false
+      },
+      "source": "import",
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 45,
+      "wagoID": "bQynAWaKe",
+      "xOffset": 0,
+      "yOffset": 35
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "conditions": [],
+      "config": [],
+      "controlledChildren": [
+        "Xyrec Druid - Combo Points",
+        "Xyrec Druid - Swing Timer [Caster]",
+        "Xyrec Druid - Swing Timer [Bear]",
+        "Xyrec Druid - Rage Bar",
+        "Xyrec Druid - Energy Bar",
+        "Xyrec Druid - Energy Tick",
+        "Xyrec Druid - Mana Bar",
+        "Xyrec Druid - Mana Tick"
+      ],
+      "frameStrata": 1,
+      "groupIcon": 136048,
+      "id": "Xyrec Druid - Resources",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Druid",
+      "preferToUpdate": false,
+      "regionType": "group",
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.5.8",
+      "source": "import",
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "version": 45,
+      "wagoID": "bQynAWaKe",
+      "xOffset": 0,
+      "yOffset": 0
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 0,
+      "borderOffset": 0,
+      "borderSize": 1,
+      "conditions": [],
+      "config": [],
+      "controlledChildren": [
+        "Xyrec Druid - CP1",
+        "Xyrec Druid - CP2",
+        "Xyrec Druid - CP3",
+        "Xyrec Druid - CP4",
+        "Xyrec Druid - CP5"
+      ],
+      "frameStrata": 1,
+      "groupIcon": 132142,
+      "id": "Xyrec Druid - Combo Points",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec Druid - Resources",
+      "preferToUpdate": false,
+      "regionType": "group",
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.5.8",
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "version": 45,
+      "wagoID": "bQynAWaKe",
+      "xOffset": 0,
+      "yOffset": 24
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Druid - Prowl",
+        "Xyrec Druid - Shadowmeld",
+        "Xyrec Druid - War Stomp",
+        "Xyrec Druid - Cower",
+        "Xyrec Druid - Tiger's Fury",
+        "Xyrec Druid - Berserk",
+        "Xyrec Druid - Dash",
+        "Xyrec Druid - Trinket 1 CD",
+        "Xyrec Druid - Trinket 2 CD",
+        "Xyrec Druid - Hurricane",
+        "Xyrec Druid - Rebirth",
+        "Xyrec Druid - Tranquility",
+        "Xyrec Druid - Nature's Swiftness",
+        "Xyrec Druid - Innervate",
+        "Xyrec Druid - Nature's Grasp",
+        "Xyrec Druid - Survival Instincts",
+        "Xyrec Druid - Frenzied Regeneration",
+        "Xyrec Druid - Barkskin",
+        "Xyrec Druid - Enrage",
+        "Xyrec Druid - Bash"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 136097,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Druid - Cooldowns",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 9,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Druid",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.5.8",
+      "sort": "none",
+      "sortHybridTable": {
+        "Druid - Barkskin": false,
+        "Druid - Bash": false,
+        "Druid - Berserk": false,
+        "Druid - Cower": false,
+        "Druid - Crowd Pummeler": false,
+        "Druid - Dash": false,
+        "Druid - Enrage": false,
+        "Druid - Frenzied Regeneration": false,
+        "Druid - Hurricane": false,
+        "Druid - Innervate": false,
+        "Druid - Nature's Grasp": false,
+        "Druid - Nature's Swiftness": false,
+        "Druid - Prowl": false,
+        "Druid - Rebirth": false,
+        "Druid - Shadowmeld": false,
+        "Druid - Survival Instincts": false,
+        "Druid - Tiger's Fury": false,
+        "Druid - Tranquility": false,
+        "Druid - Trinket 1 CD": false,
+        "Druid - Trinket 2 CD": false,
+        "Druid - War Stomp": false
+      },
+      "source": "import",
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 45,
+      "wagoID": "bQynAWaKe",
+      "xOffset": 0,
+      "yOffset": -26
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "UIPARENT",
+      "anchorPoint": "TOP",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Druid - Drink Expiring",
+        "Xyrec Druid - Moonkin Form",
+        "Xyrec Druid - Mark of the Wild",
+        "Xyrec Druid - Thorns",
+        "Xyrec Druid - Omen of Clarity"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 136104,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Druid - Reminders",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 5,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Druid",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.5.8",
+      "sort": "none",
+      "sortHybridTable": {
+        "Druid - Drink Expiring": false,
+        "Druid - Mark of the Wild": false,
+        "Druid - Moonkin Form": false,
+        "Druid - Omen of Clarity": false,
+        "Druid - Thorns": false
+      },
+      "source": "import",
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": false,
+      "version": 45,
+      "wagoID": "bQynAWaKe",
+      "xOffset": 0,
+      "yOffset": -475
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "UIPARENT",
+      "anchorPoint": "TOP",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Druid - Gift of the Wild [Group]"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 136078,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Druid - Group Buffs",
+      "information": {
+        "forceEvents": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 5,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Druid",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.5.8",
+      "sort": "none",
+      "sortHybridTable": {
+        "Druid - Gift of the Wild [Group]": false,
+        "Druid - Thorns [Tank]": false
+      },
+      "source": "import",
+      "space": 1,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 45,
+      "wagoID": "bQynAWaKe",
+      "xOffset": 0,
+      "yOffset": -540
+    }
+  ],
+  "root": {
+    "actions": {
+      "finish": [],
+      "init": [],
+      "start": []
+    },
+    "alpha": 1,
+    "anchorFrameType": "SCREEN",
+    "anchorPoint": "CENTER",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "backdropColor": [
+      1,
+      1,
+      1,
+      0.5
+    ],
+    "border": false,
+    "borderBackdrop": "Blizzard Tooltip",
+    "borderColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "borderEdge": "Square Full White",
+    "borderInset": 1,
+    "borderOffset": 4,
+    "borderSize": 2,
+    "conditions": [],
+    "config": [],
+    "controlledChildren": [
+      "Xyrec Druid - Caster Abilities",
+      "Xyrec Druid - Feral Abilities",
+      "Xyrec Druid - Resources",
+      "Xyrec Druid - Cooldowns",
+      "Xyrec Druid - Reminders",
+      "Xyrec Druid - Group Buffs"
+    ],
+    "frameStrata": 1,
+    "groupIcon": "625999",
+    "id": "Xyrec - Druid",
+    "information": {
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "load": {
+      "class": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      }
+    },
+    "preferToUpdate": false,
+    "regionType": "group",
+    "scale": 1.5,
+    "selfPoint": "CENTER",
+    "semver": "1.5.8",
+    "source": "import",
+    "subRegions": [],
+    "tocversion": 20505,
+    "triggers": [
+      {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Health",
+          "names": [],
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "aura2",
+          "unit": "player"
+        },
+        "untrigger": []
+      }
+    ],
+    "url": "",
+    "version": 45,
+    "wagoID": "bQynAWaKe",
+    "xOffset": 0,
+    "yOffset": -242
+  },
+  "wa_version": "5.21.8"
+}

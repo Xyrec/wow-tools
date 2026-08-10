@@ -1,0 +1,823 @@
+{
+  "child_order": [
+    "Xyrec Rogue - Core Abilities",
+    "Xyrec Rogue - Riposte",
+    "Xyrec Rogue - Ghostly Strike",
+    "Xyrec Rogue - Envenom",
+    "Xyrec Rogue - Blade Dance",
+    "Xyrec Rogue - Slice and Dice",
+    "Xyrec Rogue - Expose Armor",
+    "Xyrec Rogue - Rupture & Garrote",
+    "Xyrec Rogue - Kidney & Cheap Shot",
+    "Xyrec Rogue - Shadowstrike",
+    "Xyrec Rogue - Mutilate",
+    "Xyrec Rogue - Resources",
+    "Xyrec Rogue - Combo Points",
+    "Xyrec Rogue - CP1",
+    "Xyrec Rogue - CP2",
+    "Xyrec Rogue - CP3",
+    "Xyrec Rogue - CP4",
+    "Xyrec Rogue - CP5",
+    "Xyrec Rogue - Envenom Progress Bar",
+    "Xyrec Rogue - Swing Timer",
+    "Xyrec Rogue - Energy Bar",
+    "Xyrec Rogue - Energy Tick",
+    "Xyrec Rogue - Cooldowns",
+    "Xyrec Rogue - Stealth",
+    "Xyrec Rogue - Feint",
+    "Xyrec Rogue - Distract",
+    "Xyrec Rogue - Perception",
+    "Xyrec Rogue - Escape Artist",
+    "Xyrec Rogue - Will of the Forsaken",
+    "Xyrec Rogue - Berserking",
+    "Xyrec Rogue - Blood Fury",
+    "Xyrec Rogue - Trinket 1 CD",
+    "Xyrec Rogue - Trinket 2 CD",
+    "Xyrec Rogue - Blind",
+    "Xyrec Rogue - Adrenaline Rush",
+    "Xyrec Rogue - Blade Flurry",
+    "Xyrec Rogue - Cold Blood",
+    "Xyrec Rogue - Premeditation",
+    "Xyrec Rogue - Preparation",
+    "Xyrec Rogue - Vanish",
+    "Xyrec Rogue - Evasion",
+    "Xyrec Rogue - Sprint",
+    "Xyrec Rogue - Shadowstep",
+    "Xyrec Rogue - Gouge",
+    "Xyrec Rogue - Kick",
+    "Xyrec Rogue - Reminders",
+    "Xyrec Rogue - Poison [MH - No Group]",
+    "Xyrec Rogue - Poison [OH]",
+    "Xyrec Rogue - Ammo [Drag]"
+  ],
+  "class": "rogue",
+  "containers": [
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Rogue - Riposte",
+        "Xyrec Rogue - Ghostly Strike",
+        "Xyrec Rogue - Envenom",
+        "Xyrec Rogue - Blade Dance",
+        "Xyrec Rogue - Slice and Dice",
+        "Xyrec Rogue - Expose Armor",
+        "Xyrec Rogue - Rupture & Garrote",
+        "Xyrec Rogue - Kidney & Cheap Shot",
+        "Xyrec Rogue - Shadowstrike",
+        "Xyrec Rogue - Mutilate"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 132304,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Rogue - Core Abilities",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 10,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Rogue",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.3",
+      "sort": "none",
+      "sortHybridTable": {
+        "Rogue - Between the Eyes": false,
+        "Rogue - Blade Dance": false,
+        "Rogue - Envenom": false,
+        "Rogue - Expose Armor": false,
+        "Rogue - Ghostly Strike": false,
+        "Rogue - Kidney & Cheap Shot": false,
+        "Rogue - Main Gauche": false,
+        "Rogue - Mutilate": false,
+        "Rogue - Quick Draw": false,
+        "Rogue - Riposte": false,
+        "Rogue - Rupture & Garrote": false,
+        "Rogue - Saber Slash": false,
+        "Rogue - Shadowstrike": false,
+        "Rogue - Slice and Dice": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 30,
+      "wagoID": "YWmuM5cC9",
+      "xOffset": 0,
+      "yOffset": 35
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "conditions": [],
+      "config": [],
+      "controlledChildren": [
+        "Xyrec Rogue - Combo Points",
+        "Xyrec Rogue - Envenom Progress Bar",
+        "Xyrec Rogue - Swing Timer",
+        "Xyrec Rogue - Energy Bar",
+        "Xyrec Rogue - Energy Tick"
+      ],
+      "frameStrata": 1,
+      "groupIcon": 132320,
+      "id": "Xyrec Rogue - Resources",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Rogue",
+      "preferToUpdate": false,
+      "regionType": "group",
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.3",
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "version": 30,
+      "wagoID": "YWmuM5cC9",
+      "xOffset": 0,
+      "yOffset": 0
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 0,
+      "borderOffset": 0,
+      "borderSize": 1,
+      "conditions": [],
+      "config": [],
+      "controlledChildren": [
+        "Xyrec Rogue - CP1",
+        "Xyrec Rogue - CP2",
+        "Xyrec Rogue - CP3",
+        "Xyrec Rogue - CP4",
+        "Xyrec Rogue - CP5"
+      ],
+      "frameStrata": 1,
+      "groupIcon": 132320,
+      "id": "Xyrec Rogue - Combo Points",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec Rogue - Resources",
+      "preferToUpdate": false,
+      "regionType": "group",
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.3",
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "version": 30,
+      "wagoID": "YWmuM5cC9",
+      "xOffset": 0,
+      "yOffset": 23.5
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Rogue - Stealth",
+        "Xyrec Rogue - Feint",
+        "Xyrec Rogue - Distract",
+        "Xyrec Rogue - Perception",
+        "Xyrec Rogue - Escape Artist",
+        "Xyrec Rogue - Will of the Forsaken",
+        "Xyrec Rogue - Berserking",
+        "Xyrec Rogue - Blood Fury",
+        "Xyrec Rogue - Trinket 1 CD",
+        "Xyrec Rogue - Trinket 2 CD",
+        "Xyrec Rogue - Blind",
+        "Xyrec Rogue - Adrenaline Rush",
+        "Xyrec Rogue - Blade Flurry",
+        "Xyrec Rogue - Cold Blood",
+        "Xyrec Rogue - Premeditation",
+        "Xyrec Rogue - Preparation",
+        "Xyrec Rogue - Vanish",
+        "Xyrec Rogue - Evasion",
+        "Xyrec Rogue - Sprint",
+        "Xyrec Rogue - Shadowstep",
+        "Xyrec Rogue - Gouge",
+        "Xyrec Rogue - Kick"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 132350,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Rogue - Cooldowns",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 9,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Rogue",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.3",
+      "sort": "none",
+      "sortHybridTable": {
+        "Rogue - Adrenaline Rush": false,
+        "Rogue - Berserking": false,
+        "Rogue - Blade Flurry": false,
+        "Rogue - Blind": false,
+        "Rogue - Blood Fury": false,
+        "Rogue - Cold Blood": false,
+        "Rogue - Distract": false,
+        "Rogue - Escape Artist": false,
+        "Rogue - Evasion": false,
+        "Rogue - Feint": false,
+        "Rogue - Gouge": false,
+        "Rogue - Kick": false,
+        "Rogue - Perception": false,
+        "Rogue - Poisoned Knife": false,
+        "Rogue - Premeditation": false,
+        "Rogue - Preparation": false,
+        "Rogue - Rolling with the Punches": false,
+        "Rogue - Shadowstep": false,
+        "Rogue - Shuriken Toss": false,
+        "Rogue - Sprint": false,
+        "Rogue - Stealth": false,
+        "Rogue - Tease": false,
+        "Rogue - Trinket 1 CD": false,
+        "Rogue - Trinket 2 CD": false,
+        "Rogue - Vanish": false,
+        "Rogue - Will of the Forsaken": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 30,
+      "wagoID": "YWmuM5cC9",
+      "xOffset": 0,
+      "yOffset": -26
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "UIPARENT",
+      "anchorPoint": "TOP",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Rogue - Poison [MH - No Group]",
+        "Xyrec Rogue - Poison [OH]"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 132290,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Rogue - Reminders",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 5,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Rogue",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.3",
+      "sort": "none",
+      "sortHybridTable": {
+        "Rogue - Poison [MH - No Group]": false,
+        "Rogue - Poison [OH]": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": false,
+      "version": 30,
+      "wagoID": "YWmuM5cC9",
+      "xOffset": 0,
+      "yOffset": -475
+    }
+  ],
+  "root": {
+    "actions": {
+      "finish": [],
+      "init": [],
+      "start": []
+    },
+    "alpha": 1,
+    "anchorFrameType": "SCREEN",
+    "anchorPoint": "CENTER",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "backdropColor": [
+      1,
+      1,
+      1,
+      0.5
+    ],
+    "border": false,
+    "borderBackdrop": "Blizzard Tooltip",
+    "borderColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "borderEdge": "Square Full White",
+    "borderInset": 1,
+    "borderOffset": 4,
+    "borderSize": 2,
+    "conditions": [],
+    "config": [],
+    "controlledChildren": [
+      "Xyrec Rogue - Core Abilities",
+      "Xyrec Rogue - Resources",
+      "Xyrec Rogue - Cooldowns",
+      "Xyrec Rogue - Reminders",
+      "Xyrec Rogue - Ammo [Drag]"
+    ],
+    "frameStrata": 1,
+    "groupIcon": 135428,
+    "id": "Xyrec - Rogue",
+    "information": {
+      "groupOffset": false,
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "load": {
+      "class": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      }
+    },
+    "preferToUpdate": false,
+    "regionType": "group",
+    "scale": 1.5,
+    "selfPoint": "CENTER",
+    "semver": "1.4.3",
+    "subRegions": [],
+    "tocversion": 20505,
+    "triggers": [
+      {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Health",
+          "names": [],
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "aura2",
+          "unit": "player"
+        },
+        "untrigger": []
+      }
+    ],
+    "url": "",
+    "version": 30,
+    "wagoID": "YWmuM5cC9",
+    "xOffset": 0,
+    "yOffset": -242
+  },
+  "wa_version": "5.21.8"
+}

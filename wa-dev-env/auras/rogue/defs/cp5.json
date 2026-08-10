@@ -1,0 +1,217 @@
+{
+  "archetype": "bespoke",
+  "id": "Xyrec Rogue - CP5",
+  "payload": {
+    "actions": {
+      "finish": [],
+      "init": [],
+      "start": []
+    },
+    "adjustedMax": "5",
+    "adjustedMin": "4",
+    "alpha": 0.3,
+    "anchorFrameParent": false,
+    "anchorFrameType": "SCREEN",
+    "anchorPoint": "CENTER",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "backgroundColor": [
+      0.50196081399918,
+      0.50196081399918,
+      0.50196081399918,
+      0.30000001192093
+    ],
+    "barColor": [
+      1,
+      0.22352941176471,
+      0,
+      1
+    ],
+    "barColor2": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "conditions": [
+      {
+        "changes": [
+          {
+            "property": "alpha",
+            "value": 1
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "attackabletarget"
+            },
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "incombat"
+            }
+          ],
+          "trigger": -2,
+          "variable": "OR"
+        }
+      }
+    ],
+    "config": [],
+    "desaturate": false,
+    "enableGradient": false,
+    "frameStrata": 1,
+    "gradientOrientation": "HORIZONTAL",
+    "height": 9,
+    "icon": false,
+    "iconSource": -1,
+    "icon_color": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "icon_side": "RIGHT",
+    "id": "Xyrec Rogue - CP5",
+    "information": {
+      "forceEvents": true,
+      "ignoreOptionsEventErrors": true,
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "inverse": false,
+    "load": {
+      "class": {
+        "multi": [],
+        "single": "ROGUE"
+      },
+      "level": [],
+      "level_operator": [
+        ">="
+      ],
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      },
+      "use_class": true,
+      "use_level": false,
+      "use_never": false
+    },
+    "orientation": "HORIZONTAL",
+    "preferToUpdate": false,
+    "progressSource": [
+      -1,
+      ""
+    ],
+    "regionType": "aurabar",
+    "selfPoint": "CENTER",
+    "semver": "1.4.3",
+    "source": "import",
+    "spark": false,
+    "sparkBlendMode": "ADD",
+    "sparkColor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "sparkHeight": 30,
+    "sparkHidden": "NEVER",
+    "sparkOffsetX": 0,
+    "sparkOffsetY": 0,
+    "sparkRotation": 0,
+    "sparkRotationMode": "AUTO",
+    "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+    "sparkWidth": 10,
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "type": "subforeground"
+      },
+      {
+        "anchor_area": "bar",
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "type": "subborder"
+      }
+    ],
+    "texture": "Clean",
+    "textureSource": "LSM",
+    "tocversion": 20505,
+    "toolTipArea": "ICON",
+    "triggers": {
+      "1": {
+        "trigger": {
+          "customVariables": "{\n    furorPointsTalented = \"number\",\n    value = \"number\",\n}",
+          "debuffType": "HELPFUL",
+          "event": "Power",
+          "names": [],
+          "power": [
+            "5"
+          ],
+          "power_operator": [
+            ">="
+          ],
+          "powertype": 4,
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "unit",
+          "unit": "player",
+          "use_power": false,
+          "use_powertype": true,
+          "use_requirePowerType": false,
+          "use_unit": true
+        },
+        "untrigger": []
+      },
+      "activeTriggerMode": -10
+    },
+    "url": "",
+    "useAdjustededMax": true,
+    "useAdjustededMin": true,
+    "version": 30,
+    "wagoID": "YWmuM5cC9",
+    "width": 53.2,
+    "xOffset": 106.5,
+    "yOffset": 0,
+    "zoom": 0
+  },
+  "row": "loose"
+}

@@ -1,0 +1,222 @@
+{
+  "archetype": "rotation_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "sub.4.text_fontSize",
+          "value": 12
+        }
+      ],
+      "check": {
+        "op": ">",
+        "trigger": 1,
+        "value": "30",
+        "variable": "duration"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 0,
+        "variable": "buffed"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "sub.3.glow",
+          "value": true
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 4,
+            "value": 1,
+            "variable": "show"
+          },
+          {
+            "op": "<",
+            "trigger": 3,
+            "value": "6",
+            "variable": "expirationTime"
+          }
+        ],
+        "trigger": -2,
+        "variable": "AND"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "color",
+          "value": [
+            1,
+            0.50196081399918,
+            0.50196081399918,
+            1
+          ]
+        }
+      ],
+      "check": {
+        "trigger": 2,
+        "value": 0,
+        "variable": "spellInRange"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "color",
+          "value": [
+            0.50196081399918,
+            0.50196081399918,
+            1,
+            1
+          ]
+        }
+      ],
+      "check": {
+        "trigger": 2,
+        "value": 1,
+        "variable": "insufficientResources"
+      }
+    }
+  ],
+  "id": "Xyrec Warlock - Curse [Own]",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "WARLOCK"
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 702,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "row": "core",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [
+          "980",
+          "603",
+          "702",
+          "1490",
+          "17862",
+          "704",
+          "1714",
+          "18223"
+        ],
+        "debuffType": "HARMFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showAlways",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "ownOnly": true,
+        "realSpellName": "Shadow Word: Pain",
+        "spellIds": [],
+        "spellName": 589,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "aura2",
+        "unevent": "auto",
+        "unit": "target",
+        "unitExists": true,
+        "useName": true,
+        "use_genericShowOn": true,
+        "use_remaining": false,
+        "use_showgcd": true,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways"
+      }
+    },
+    "2": {
+      "trigger": {
+        "auranames": [],
+        "debuffType": "HELPFUL",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showAlways",
+        "names": [],
+        "realSpellName": "Curse of Weakness",
+        "spellIds": [],
+        "spellName": 702,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "spell",
+        "unit": "player",
+        "useName": true,
+        "use_genericShowOn": true,
+        "use_showgcd": true,
+        "use_spellName": true,
+        "use_track": true
+      },
+      "untrigger": []
+    },
+    "3": {
+      "trigger": {
+        "auranames": [
+          "980"
+        ],
+        "debuffType": "HARMFUL",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showOnCooldown",
+        "ownOnly": true,
+        "realSpellName": 0,
+        "spellName": 0,
+        "type": "aura2",
+        "unit": "target",
+        "useName": true,
+        "use_genericShowOn": true,
+        "use_spellName": true,
+        "use_track": true
+      },
+      "untrigger": []
+    },
+    "4": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Spell Known",
+        "genericShowOn": "showOnCooldown",
+        "realSpellName": 0,
+        "spellName": 0,
+        "type": "spell",
+        "unit": "player",
+        "use_genericShowOn": true,
+        "use_spellName": true,
+        "use_track": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": -10,
+    "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
+    "disjunctive": "custom"
+  }
+}

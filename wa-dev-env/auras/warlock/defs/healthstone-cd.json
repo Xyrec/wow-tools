@@ -1,0 +1,180 @@
+{
+  "archetype": "cooldown_icon",
+  "conditions": [],
+  "id": "Xyrec Warlock - Healthstone CD",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "WARLOCK"
+    },
+    "ingroup": [],
+    "level": [],
+    "level_operator": [
+      "<"
+    ],
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 6201,
+    "talent": {
+      "multi": []
+    },
+    "use_alive": true,
+    "use_class": true,
+    "use_level": false,
+    "use_never": false,
+    "use_not_spellknown": false,
+    "use_spellknown": true,
+    "use_vehicle": false,
+    "use_zone": false,
+    "use_zoneIds": false,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "displayIcon": 135230,
+    "iconSource": 1
+  },
+  "row": "cooldowns",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "count": "0",
+        "count_operator": "==",
+        "debuffType": "HELPFUL",
+        "duration": "30",
+        "event": "Cooldown Progress (Item)",
+        "eventtype": "PLAYER_REGEN_ENABLED",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 5512,
+        "names": [],
+        "remaining": "2",
+        "remaining_operator": ">",
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "item",
+        "unit": "player",
+        "use_count": true,
+        "use_eventtype": true,
+        "use_genericShowOn": true,
+        "use_itemName": true,
+        "use_itemSlot": true,
+        "use_remaining": true
+      },
+      "untrigger": []
+    },
+    "2": {
+      "trigger": {
+        "count": "0",
+        "count_operator": "==",
+        "debuffType": "HELPFUL",
+        "duration": "30",
+        "event": "Cooldown Progress (Item)",
+        "eventtype": "PLAYER_REGEN_ENABLED",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 5511,
+        "names": [],
+        "remaining": "2",
+        "remaining_operator": ">",
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "item",
+        "unit": "player",
+        "use_count": true,
+        "use_eventtype": true,
+        "use_genericShowOn": true,
+        "use_itemName": true,
+        "use_remaining": true
+      },
+      "untrigger": []
+    },
+    "3": {
+      "trigger": {
+        "count": "0",
+        "count_operator": "==",
+        "debuffType": "HELPFUL",
+        "duration": "30",
+        "event": "Cooldown Progress (Item)",
+        "eventtype": "PLAYER_REGEN_ENABLED",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 5509,
+        "names": [],
+        "remaining": "2",
+        "remaining_operator": ">",
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "item",
+        "unit": "player",
+        "use_count": true,
+        "use_eventtype": true,
+        "use_genericShowOn": true,
+        "use_itemName": true,
+        "use_remaining": true
+      },
+      "untrigger": []
+    },
+    "4": {
+      "trigger": {
+        "count": "0",
+        "count_operator": "==",
+        "debuffType": "HELPFUL",
+        "duration": "30",
+        "event": "Cooldown Progress (Item)",
+        "eventtype": "PLAYER_REGEN_ENABLED",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 5510,
+        "names": [],
+        "remaining": "2",
+        "remaining_operator": ">",
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "item",
+        "unit": "player",
+        "use_count": true,
+        "use_eventtype": true,
+        "use_genericShowOn": true,
+        "use_itemName": true,
+        "use_remaining": true
+      },
+      "untrigger": []
+    },
+    "5": {
+      "trigger": {
+        "count": "0",
+        "count_operator": "==",
+        "debuffType": "HELPFUL",
+        "duration": "30",
+        "event": "Cooldown Progress (Item)",
+        "eventtype": "PLAYER_REGEN_ENABLED",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 9421,
+        "names": [],
+        "remaining": "2",
+        "remaining_operator": ">",
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "item",
+        "unit": "player",
+        "use_count": true,
+        "use_eventtype": true,
+        "use_genericShowOn": true,
+        "use_itemName": true,
+        "use_remaining": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": -10,
+    "customTriggerLogic": "function (t)\n   return (t[1] or t[2] or t[3] or t[4] or t[5])\nend\n",
+    "disjunctive": "custom"
+  }
+}

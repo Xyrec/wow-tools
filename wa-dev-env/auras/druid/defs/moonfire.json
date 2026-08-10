@@ -1,0 +1,179 @@
+{
+  "archetype": "rotation_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 0,
+        "variable": "buffed"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "color",
+          "value": [
+            1,
+            0.50196081399918,
+            0.50196081399918,
+            1
+          ]
+        },
+        {
+          "property": "desaturate"
+        }
+      ],
+      "check": {
+        "trigger": 4,
+        "value": 0,
+        "variable": "spellInRange"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "color",
+          "value": [
+            0.50196081399918,
+            0.50196081399918,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "desaturate"
+        }
+      ],
+      "check": {
+        "trigger": 4,
+        "value": 1,
+        "variable": "insufficientResources"
+      }
+    }
+  ],
+  "id": "Xyrec Druid - Moonfire",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "DRUID"
+    },
+    "not_spellknown": 0,
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 8921,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_not_spellknown": true,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "row": "core",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [
+          "8921"
+        ],
+        "debuffType": "HARMFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showAlways",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "ownOnly": true,
+        "realSpellName": "Moonfire",
+        "spellIds": [],
+        "spellName": 8921,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "aura2",
+        "unevent": "auto",
+        "unit": "target",
+        "unitExists": false,
+        "useName": true,
+        "use_genericShowOn": true,
+        "use_remaining": false,
+        "use_showgcd": true,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways"
+      }
+    },
+    "2": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Conditions",
+        "type": "unit",
+        "unit": "player",
+        "use_alwaystrue": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "3": {
+      "trigger": {
+        "auranames": [
+          "5487",
+          "9634",
+          "768"
+        ],
+        "debuffType": "HELPFUL",
+        "event": "Stance/Form/Aura",
+        "form": {
+          "multi": {
+            "1": true,
+            "3": true
+          }
+        },
+        "matchesShowOn": "showOnMissing",
+        "type": "aura2",
+        "unit": "player",
+        "useName": true,
+        "use_form": false,
+        "use_inverse": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "4": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showAlways",
+        "realSpellName": "Moonfire",
+        "spellName": 8921,
+        "track": "auto",
+        "type": "spell",
+        "unit": "player",
+        "use_genericShowOn": true,
+        "use_showgcd": false,
+        "use_spellName": true,
+        "use_track": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": 1,
+    "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
+    "disjunctive": "custom"
+  }
+}

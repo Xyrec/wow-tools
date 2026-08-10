@@ -1,0 +1,132 @@
+{
+  "archetype": "rotation_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 0,
+        "variable": "buffed"
+      }
+    }
+  ],
+  "id": "Xyrec Druid - Mangle [Cat]",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "DRUID"
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 33982,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "displayIcon": 132135
+  },
+  "row": "core",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [
+          "33982"
+        ],
+        "debuffType": "HARMFUL",
+        "event": "Health",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "aura2",
+        "unit": "target",
+        "useName": true
+      },
+      "untrigger": []
+    },
+    "2": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Conditions",
+        "type": "unit",
+        "unit": "player",
+        "use_alwaystrue": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "3": {
+      "trigger": {
+        "auranames": [
+          "768"
+        ],
+        "debuffType": "HELPFUL",
+        "event": "Stance/Form/Aura",
+        "form": {
+          "multi": {
+            "3": true
+          },
+          "single": 3
+        },
+        "type": "aura2",
+        "unit": "player",
+        "useName": true,
+        "use_form": false,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "4": {
+      "trigger": {
+        "auranames": [],
+        "debuffType": "HARMFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showAlways",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "realSpellName": "Claw",
+        "spellIds": [],
+        "spellName": 1082,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "spell",
+        "unevent": "auto",
+        "unit": "target",
+        "unitExists": true,
+        "useName": true,
+        "use_genericShowOn": true,
+        "use_remaining": false,
+        "use_showgcd": true,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways"
+      }
+    },
+    "activeTriggerMode": 1,
+    "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
+    "disjunctive": "custom"
+  }
+}

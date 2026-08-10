@@ -1,0 +1,56 @@
+{
+  "archetype": "rotation_icon",
+  "conditions": [],
+  "id": "Xyrec Warlock - Incinerate",
+  "load": {
+    "class": {
+      "multi": [],
+      "single": "WARLOCK"
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 29722,
+    "talent": {
+      "multi": []
+    },
+    "use_class": {
+      "multi": [],
+      "single": "WARLOCK"
+    },
+    "use_never": false,
+    "use_spellknown": true
+  },
+  "row": "core",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showAlways",
+        "names": [],
+        "realSpellName": "Incinerate",
+        "spellIds": [],
+        "spellName": 29722,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "spell",
+        "unevent": "auto",
+        "unit": "player",
+        "use_genericShowOn": true,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways"
+      }
+    },
+    "activeTriggerMode": -10,
+    "disjunctive": "any"
+  }
+}

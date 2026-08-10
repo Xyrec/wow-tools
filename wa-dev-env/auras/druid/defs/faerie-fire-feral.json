@@ -1,0 +1,147 @@
+{
+  "archetype": "rotation_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 0,
+        "variable": "buffed"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "color",
+          "value": [
+            1,
+            0.50196081399918,
+            0.50196081399918,
+            1
+          ]
+        },
+        {
+          "property": "desaturate"
+        }
+      ],
+      "check": {
+        "trigger": 4,
+        "value": 0,
+        "variable": "spellInRange"
+      }
+    }
+  ],
+  "id": "Xyrec Druid - Faerie Fire [Feral]",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "DRUID"
+    },
+    "ingroup": {
+      "multi": []
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 16857,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "displayIcon": 136033
+  },
+  "row": "core",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [
+          "16857",
+          "770"
+        ],
+        "debuffType": "HARMFUL",
+        "event": "Health",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "aura2",
+        "unit": "target",
+        "useName": true
+      },
+      "untrigger": []
+    },
+    "2": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Conditions",
+        "type": "unit",
+        "unit": "player",
+        "use_alwaystrue": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "3": {
+      "trigger": {
+        "auranames": [
+          "5487",
+          "9634",
+          "768"
+        ],
+        "debuffType": "HELPFUL",
+        "event": "Stance/Form/Aura",
+        "form": {
+          "multi": {
+            "1": true,
+            "3": true
+          },
+          "single": 3
+        },
+        "type": "aura2",
+        "unit": "player",
+        "useName": true,
+        "use_form": false,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "4": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showAlways",
+        "realSpellName": "Faerie Fire (Feral)",
+        "spellName": 16857,
+        "track": "auto",
+        "type": "spell",
+        "unit": "player",
+        "use_genericShowOn": true,
+        "use_remaining": false,
+        "use_showgcd": true,
+        "use_spellName": true,
+        "use_track": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": 1,
+    "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
+    "disjunctive": "custom"
+  }
+}

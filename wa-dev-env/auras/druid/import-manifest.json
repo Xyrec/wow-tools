@@ -1,0 +1,6 @@
+{ "_notes": "Caster+Feral ability rows both map to core — form-gating makes them mutually exclusive at the same slot. Eclipse Bars auto-drops (empty).",
+  "drop": [],
+  "rows": {"Druid - Caster Abilities": "core", "Druid - Feral Abilities": "core",
+           "Druid - Cooldowns": "cooldowns", "Druid - Reminders": "reminders",
+           "Druid - Group Buffs": "groupbuffs"},
+  "bespoke": [] }

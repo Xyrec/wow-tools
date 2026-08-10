@@ -1,0 +1,1062 @@
+{
+  "child_order": [
+    "Xyrec Priest - Core Abilities",
+    "Xyrec Priest - Shadow Word: Pain",
+    "Xyrec Priest - Mind Blast",
+    "Xyrec Priest - Shadow Word: Death",
+    "Xyrec Priest - Vampiric Embrace",
+    "Xyrec Priest - Circle of Healing",
+    "Xyrec Priest - Power Word: Shield",
+    "Xyrec Priest - Prayer of Mending",
+    "Xyrec Priest - Surge of Light",
+    "Xyrec Priest - Resources",
+    "Xyrec Priest - Mind Spike Bars",
+    "Xyrec Priest - Serendipity Bars",
+    "Xyrec Priest - Wand Swing [Flay Range]",
+    "Xyrec Priest - Mana Bar",
+    "Xyrec Priest - Mana Tick",
+    "Xyrec Priest - Cooldowns",
+    "Xyrec Priest - Fade",
+    "Xyrec Priest - Will of the Forsaken",
+    "Xyrec Priest - Berserking",
+    "Xyrec Priest - Shadowmeld",
+    "Xyrec Priest - Perception",
+    "Xyrec Priest - Stoneform",
+    "Xyrec Priest - Touch of Weakness",
+    "Xyrec Priest - Devouring Plague",
+    "Xyrec Priest - Hex of Weakness",
+    "Xyrec Priest - Shadowguard",
+    "Xyrec Priest - Elune's Grace",
+    "Xyrec Priest - Feedback",
+    "Xyrec Priest - Desperate Prayer",
+    "Xyrec Priest - Fear Ward",
+    "Xyrec Priest - Trinket 1 CD",
+    "Xyrec Priest - Trinket 2 CD",
+    "Xyrec Priest - Power Infusion",
+    "Xyrec Priest - Inner Focus",
+    "Xyrec Priest - Lightwell",
+    "Xyrec Priest - Pain Suppression",
+    "Xyrec Priest - Shadowfiend",
+    "Xyrec Priest - Silence",
+    "Xyrec Priest - Pyshic Scream",
+    "Xyrec Priest - Reminders",
+    "Xyrec Priest - Drink Expiring",
+    "Xyrec Priest - Shadowform",
+    "Xyrec Priest - Power Word: Fortitude",
+    "Xyrec Priest - Divine Spirit",
+    "Xyrec Priest - Shadow Protection [Disabled]",
+    "Xyrec Priest - Fear Ward [Self]",
+    "Xyrec Priest - Inner Fire",
+    "Xyrec Priest - Group Buffs",
+    "Xyrec Priest - Prayer of Fortitude [Group]",
+    "Xyrec Priest - Prayer of Spirit [Group]"
+  ],
+  "class": "priest",
+  "containers": [
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Priest - Shadow Word: Pain",
+        "Xyrec Priest - Mind Blast",
+        "Xyrec Priest - Shadow Word: Death",
+        "Xyrec Priest - Vampiric Embrace",
+        "Xyrec Priest - Circle of Healing",
+        "Xyrec Priest - Power Word: Shield",
+        "Xyrec Priest - Prayer of Mending",
+        "Xyrec Priest - Surge of Light"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Priest - Core Abilities",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 10,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Priest",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "sort": "none",
+      "sortHybridTable": {
+        "Priest - Circle of Healing": false,
+        "Priest - Mind Blast": false,
+        "Priest - Penance": false,
+        "Priest - Power Word: Shield": false,
+        "Priest - Prayer of Mending": false,
+        "Priest - Serendipity": false,
+        "Priest - Shadow Word: Death": false,
+        "Priest - Shadow Word: Pain": false,
+        "Priest - Surge of Light": false,
+        "Priest - Vampiric Embrace": false,
+        "Priest - Void Plague": false,
+        "Priest - Void Zone": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 33,
+      "wagoID": "gFd6I4vVo",
+      "xOffset": 0,
+      "yOffset": 35
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "conditions": [],
+      "config": [],
+      "controlledChildren": [
+        "Xyrec Priest - Mind Spike Bars",
+        "Xyrec Priest - Serendipity Bars",
+        "Xyrec Priest - Wand Swing [Flay Range]",
+        "Xyrec Priest - Mana Bar",
+        "Xyrec Priest - Mana Tick"
+      ],
+      "frameStrata": 1,
+      "groupIcon": 132317,
+      "id": "Xyrec Priest - Resources",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Priest",
+      "preferToUpdate": false,
+      "regionType": "group",
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "version": 33,
+      "wagoID": "gFd6I4vVo",
+      "xOffset": 0,
+      "yOffset": 0
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "alpha": 1,
+      "anchorFrameFrame": "WeakAuras:Priest - Mana Bar",
+      "anchorFrameType": "SELECTFRAME",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "None",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 0,
+      "borderOffset": 0,
+      "borderSize": 1,
+      "conditions": [],
+      "config": [],
+      "controlledChildren": [],
+      "frameStrata": 1,
+      "groupIcon": 136181,
+      "id": "Xyrec Priest - Mind Spike Bars",
+      "information": {
+        "forceEvents": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec Priest - Resources",
+      "preferToUpdate": false,
+      "regionType": "group",
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "version": 33,
+      "wagoID": "gFd6I4vVo",
+      "xOffset": 0,
+      "yOffset": 14
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "alpha": 1,
+      "anchorFrameFrame": "WeakAuras:Priest - Mana Bar",
+      "anchorFrameType": "SELECTFRAME",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "None",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 0,
+      "borderOffset": 0,
+      "borderSize": 1,
+      "conditions": [],
+      "config": [],
+      "controlledChildren": [],
+      "frameStrata": 1,
+      "id": "Xyrec Priest - Serendipity Bars",
+      "information": {
+        "forceEvents": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec Priest - Resources",
+      "preferToUpdate": false,
+      "regionType": "group",
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "version": 33,
+      "wagoID": "gFd6I4vVo",
+      "xOffset": 0,
+      "yOffset": 14
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Priest - Fade",
+        "Xyrec Priest - Will of the Forsaken",
+        "Xyrec Priest - Berserking",
+        "Xyrec Priest - Shadowmeld",
+        "Xyrec Priest - Perception",
+        "Xyrec Priest - Stoneform",
+        "Xyrec Priest - Touch of Weakness",
+        "Xyrec Priest - Devouring Plague",
+        "Xyrec Priest - Hex of Weakness",
+        "Xyrec Priest - Shadowguard",
+        "Xyrec Priest - Elune's Grace",
+        "Xyrec Priest - Feedback",
+        "Xyrec Priest - Desperate Prayer",
+        "Xyrec Priest - Fear Ward",
+        "Xyrec Priest - Trinket 1 CD",
+        "Xyrec Priest - Trinket 2 CD",
+        "Xyrec Priest - Power Infusion",
+        "Xyrec Priest - Inner Focus",
+        "Xyrec Priest - Lightwell",
+        "Xyrec Priest - Pain Suppression",
+        "Xyrec Priest - Shadowfiend",
+        "Xyrec Priest - Silence",
+        "Xyrec Priest - Pyshic Scream"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 135939,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Priest - Cooldowns",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 9,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Priest",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "sort": "none",
+      "sortHybridTable": {
+        "Priest - Berserking": false,
+        "Priest - Desperate Prayer": false,
+        "Priest - Devouring Plague": false,
+        "Priest - Dispersion": false,
+        "Priest - Elune's Grace": false,
+        "Priest - Eye of the Void": false,
+        "Priest - Fade": false,
+        "Priest - Fear Ward": false,
+        "Priest - Feedback": false,
+        "Priest - Hex of Weakness": false,
+        "Priest - Homunculi": false,
+        "Priest - Inner Focus": false,
+        "Priest - Lightwell": false,
+        "Priest - Pain Suppression": false,
+        "Priest - Perception": false,
+        "Priest - Power Infusion": false,
+        "Priest - Power Word: Barrier": false,
+        "Priest - Pyshic Scream": false,
+        "Priest - Shadowfiend": false,
+        "Priest - Shadowguard": false,
+        "Priest - Shadowmeld": false,
+        "Priest - Silence": false,
+        "Priest - Spirit of the Redeemer": false,
+        "Priest - Stoneform": false,
+        "Priest - Touch of Weakness": false,
+        "Priest - Trinket 1 CD": false,
+        "Priest - Trinket 2 CD": false,
+        "Priest - Will of the Forsaken": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 33,
+      "wagoID": "gFd6I4vVo",
+      "xOffset": 0,
+      "yOffset": -26
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "UIPARENT",
+      "anchorPoint": "TOP",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Priest - Drink Expiring",
+        "Xyrec Priest - Shadowform",
+        "Xyrec Priest - Power Word: Fortitude",
+        "Xyrec Priest - Divine Spirit",
+        "Xyrec Priest - Shadow Protection [Disabled]",
+        "Xyrec Priest - Fear Ward [Self]",
+        "Xyrec Priest - Inner Fire"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 135987,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Priest - Reminders",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 5,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Priest",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "sort": "none",
+      "sortHybridTable": {
+        "Priest - Divine Spirit": false,
+        "Priest - Drink Expiring": false,
+        "Priest - Eye of the Void Available": false,
+        "Priest - Fear Ward [Self]": false,
+        "Priest - Homunculi Available": false,
+        "Priest - Inner Fire": false,
+        "Priest - Power Word: Fortitude": false,
+        "Priest - Shadow Protection [Disabled]": false,
+        "Priest - Shadowform": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": false,
+      "version": 33,
+      "wagoID": "gFd6I4vVo",
+      "xOffset": 0,
+      "yOffset": -475
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "UIPARENT",
+      "anchorPoint": "TOP",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Priest - Prayer of Fortitude [Group]",
+        "Xyrec Priest - Prayer of Spirit [Group]"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 135941,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Priest - Group Buffs",
+      "information": {
+        "forceEvents": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 6,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Priest",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "sort": "none",
+      "sortHybridTable": {
+        "Priest - Prayer of Fortitude [Group]": false,
+        "Priest - Prayer of Spirit [Group]": false
+      },
+      "source": "import",
+      "space": 1,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 33,
+      "wagoID": "gFd6I4vVo",
+      "xOffset": 0,
+      "yOffset": -540
+    }
+  ],
+  "root": {
+    "actions": {
+      "finish": [],
+      "init": [],
+      "start": []
+    },
+    "alpha": 1,
+    "anchorFrameType": "SCREEN",
+    "anchorPoint": "CENTER",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "backdropColor": [
+      1,
+      1,
+      1,
+      0.5
+    ],
+    "border": false,
+    "borderBackdrop": "Blizzard Tooltip",
+    "borderColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "borderEdge": "Square Full White",
+    "borderInset": 1,
+    "borderOffset": 4,
+    "borderSize": 2,
+    "conditions": [],
+    "config": [],
+    "controlledChildren": [
+      "Xyrec Priest - Core Abilities",
+      "Xyrec Priest - Resources",
+      "Xyrec Priest - Cooldowns",
+      "Xyrec Priest - Reminders",
+      "Xyrec Priest - Group Buffs"
+    ],
+    "frameStrata": 1,
+    "groupIcon": "626004",
+    "id": "Xyrec - Priest",
+    "information": {
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "load": {
+      "class": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      }
+    },
+    "preferToUpdate": false,
+    "regionType": "group",
+    "scale": 1.5,
+    "selfPoint": "CENTER",
+    "semver": "1.4.4",
+    "subRegions": [],
+    "tocversion": 20505,
+    "triggers": [
+      {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Health",
+          "names": [],
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "aura2",
+          "unit": "player"
+        },
+        "untrigger": []
+      }
+    ],
+    "url": "",
+    "version": 33,
+    "wagoID": "gFd6I4vVo",
+    "xOffset": 0,
+    "yOffset": -242
+  },
+  "wa_version": "5.21.8"
+}
