@@ -1,0 +1,125 @@
+{
+  "archetype": "cooldown_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        },
+        {
+          "property": "inverse",
+          "value": true
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 1,
+            "value": 0,
+            "variable": "show"
+          },
+          {
+            "trigger": 2,
+            "value": 1,
+            "variable": "onCooldown"
+          }
+        ],
+        "trigger": -2,
+        "variable": "AND"
+      },
+      "linked": false
+    }
+  ],
+  "id": "Xyrec Warrior - Shadowmeld",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "WARRIOR"
+    },
+    "race": {
+      "multi": {
+        "Dwarf": true,
+        "Human": true
+      },
+      "single": "NightElf"
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_not_spellknown": false,
+    "use_race": true,
+    "use_spellknown": false,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "displayIcon": 132089
+  },
+  "row": "cooldowns",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [
+          "20580"
+        ],
+        "debuffType": "HELPFUL",
+        "duration": "1",
+        "event": "Conditions",
+        "names": [],
+        "ownOnly": true,
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "aura2",
+        "unevent": "auto",
+        "unit": "player",
+        "useName": true,
+        "use_alwaystrue": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "2": {
+      "trigger": {
+        "auranames": [],
+        "debuffType": "HELPFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showOnCooldown",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "realSpellName": "Shadowmeld",
+        "spellIds": [],
+        "spellName": 20580,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "spell",
+        "unevent": "auto",
+        "unit": "player",
+        "unitExists": true,
+        "useName": true,
+        "use_charges": false,
+        "use_genericShowOn": true,
+        "use_remaining": false,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways",
+        "track": "auto"
+      }
+    },
+    "activeTriggerMode": -10,
+    "disjunctive": "any"
+  }
+}

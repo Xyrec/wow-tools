@@ -1,0 +1,144 @@
+{
+  "archetype": "rotation_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 0,
+        "variable": "buffed"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "color",
+          "value": [
+            1,
+            0.50196081399918,
+            0.50196081399918,
+            1
+          ]
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 1,
+            "value": 0,
+            "variable": "buffed"
+          },
+          {
+            "trigger": 3,
+            "value": 0,
+            "variable": "spellInRange"
+          }
+        ],
+        "trigger": -2,
+        "variable": "AND"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "color",
+          "value": [
+            0.50196081399918,
+            0.50196081399918,
+            1,
+            1
+          ]
+        }
+      ],
+      "check": {
+        "trigger": 3,
+        "value": 1,
+        "variable": "insufficientResources"
+      }
+    }
+  ],
+  "id": "Xyrec Hunter - Serpent Sting",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "HUNTER"
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 1978,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_not_spellknown": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "displayIcon": 132302
+  },
+  "row": "core",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [
+          "1978"
+        ],
+        "debuffType": "HARMFUL",
+        "event": "Health",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "ownOnly": true,
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "type": "aura2",
+        "unit": "target",
+        "useName": true
+      },
+      "untrigger": []
+    },
+    "2": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Conditions",
+        "type": "unit",
+        "unit": "player",
+        "use_alwaystrue": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "3": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showAlways",
+        "realSpellName": "Serpent Sting",
+        "spellName": 1978,
+        "type": "spell",
+        "unit": "player",
+        "use_genericShowOn": true,
+        "use_spellName": true,
+        "use_track": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": 1,
+    "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
+    "disjunctive": "custom"
+  }
+}

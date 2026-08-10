@@ -1,0 +1,245 @@
+{
+  "archetype": "bespoke",
+  "id": "Xyrec Hunter - Cover Bar",
+  "lua": {
+    "triggers.1.trigger.custom": "lua/cover-bar--triggers-1-trigger-custom.lua"
+  },
+  "payload": {
+    "actions": {
+      "finish": [],
+      "init": [],
+      "start": []
+    },
+    "adjustedMax": "",
+    "adjustedMin": "",
+    "alpha": 0.3,
+    "anchorFrameFrame": "WeakAuras:Hunter - Mana Bars",
+    "anchorFrameType": "SELECTFRAME",
+    "anchorPoint": "TOP",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "backgroundColor": [
+      0.67058825492859,
+      0.82745105028152,
+      0.45098042488098,
+      1
+    ],
+    "barColor": [
+      0.75294125080109,
+      0.75294125080109,
+      0.75294125080109,
+      0
+    ],
+    "barColor2": [
+      0.75294125080109,
+      0.75294125080109,
+      0.75294125080109,
+      1
+    ],
+    "blendMode": "BLEND",
+    "color": [
+      0.94901960784314,
+      1,
+      0.98039215686274,
+      1
+    ],
+    "conditions": [
+      {
+        "changes": [
+          {
+            "property": "alpha",
+            "value": 1
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "attackabletarget"
+            },
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "incombat"
+            }
+          ],
+          "trigger": -2,
+          "variable": "OR"
+        }
+      }
+    ],
+    "config": [],
+    "customText": "\n\n",
+    "customTextUpdate": "update",
+    "desaturate": false,
+    "desc": "",
+    "discrete_rotation": 0,
+    "enableGradient": false,
+    "frameStrata": 3,
+    "gradientOrientation": "HORIZONTAL",
+    "height": 17,
+    "icon": false,
+    "iconSource": -1,
+    "icon_color": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "icon_side": "RIGHT",
+    "id": "Xyrec Hunter - Cover Bar",
+    "information": {
+      "forceEvents": true,
+      "ignoreOptionsEventErrors": true,
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "inverse": false,
+    "load": {
+      "class": {
+        "multi": [],
+        "single": "HUNTER"
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "spellknown": 2974,
+      "talent": {
+        "multi": []
+      },
+      "use_class": true,
+      "use_level": false,
+      "use_never": false,
+      "use_spellknown": false,
+      "zoneIds": ""
+    },
+    "mirror": false,
+    "orientation": "HORIZONTAL",
+    "preferToUpdate": false,
+    "progressSource": [
+      -1,
+      ""
+    ],
+    "regionType": "aurabar",
+    "rotate": false,
+    "rotation": 0,
+    "selfPoint": "BOTTOM",
+    "semver": "1.5.8",
+    "source": "import",
+    "spark": false,
+    "sparkBlendMode": "ADD",
+    "sparkColor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "sparkHeight": 30,
+    "sparkHidden": "NEVER",
+    "sparkOffsetX": 0,
+    "sparkOffsetY": 0,
+    "sparkRotation": 0,
+    "sparkRotationMode": "AUTO",
+    "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+    "sparkWidth": 10,
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "type": "subforeground"
+      },
+      {
+        "anchor_area": "bar",
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "type": "subborder"
+      }
+    ],
+    "texture": "Clean",
+    "textureSource": "LSM",
+    "textureWrapMode": "CLAMP",
+    "tocversion": 20505,
+    "toolTipArea": "ICON",
+    "triggers": {
+      "1": {
+        "trigger": {
+          "check": "event",
+          "custom": "@cover-bar--triggers-1-trigger-custom.lua",
+          "custom_type": "status",
+          "debuffType": "HELPFUL",
+          "event": "Health",
+          "events": "PLAYER_TARGET_CHANGED",
+          "names": [],
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "custom",
+          "unit": "player"
+        },
+        "untrigger": []
+      },
+      "2": {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Conditions",
+          "genericShowOn": "showOnCooldown",
+          "realSpellName": 0,
+          "spellName": 0,
+          "type": "unit",
+          "unit": "player",
+          "use_genericShowOn": true,
+          "use_incombat": false,
+          "use_spellName": true,
+          "use_track": true,
+          "use_unit": true
+        },
+        "untrigger": []
+      },
+      "activeTriggerMode": -10,
+      "customTriggerLogic": "function (t)\n    return (not t[1] and t[2]) and t[2]\nend",
+      "disjunctive": "custom"
+    },
+    "url": "",
+    "useAdjustededMax": false,
+    "useAdjustededMin": false,
+    "version": 42,
+    "wagoID": "B2G4lZKVE",
+    "width": 266,
+    "xOffset": 7.62939453125e-06,
+    "yOffset": 1,
+    "zoom": 0
+  },
+  "row": "loose"
+}

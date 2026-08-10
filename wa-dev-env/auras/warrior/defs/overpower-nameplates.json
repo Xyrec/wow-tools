@@ -1,0 +1,314 @@
+{
+  "archetype": "bespoke",
+  "id": "Xyrec Warrior - Overpower [Nameplates]",
+  "lua": {
+    "triggers.1.trigger.custom": "lua/overpower-nameplates--triggers-1-trigger-custom.lua"
+  },
+  "payload": {
+    "actions": {
+      "finish": [],
+      "init": {
+        "custom": "aura_env.overpower = {\n    [7384] = true,\n    [7887] = true,\n    [11584] = true,\n    [11585] = true\n}\n\naura_env.units = {}",
+        "do_custom": true
+      },
+      "start": {
+        "custom": "\n\n",
+        "do_custom": false
+      }
+    },
+    "adjustedMax": "",
+    "adjustedMin": "",
+    "alpha": 0.3,
+    "anchorFrameFrame": "WeakAuras:Nameplate Point Anchor",
+    "anchorFrameType": "NAMEPLATE",
+    "anchorPoint": "LEFT",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [
+      {
+        "default": 0,
+        "key": "duration",
+        "max": 5,
+        "min": 0,
+        "name": "Duration",
+        "step": 1,
+        "type": "range",
+        "useDesc": false,
+        "width": 2
+      }
+    ],
+    "auto": false,
+    "blendMode": "BLEND",
+    "color": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "conditions": [
+      {
+        "changes": [
+          {
+            "property": "sub.4.glow",
+            "value": false
+          },
+          {
+            "property": "desaturate",
+            "value": true
+          }
+        ],
+        "check": {
+          "trigger": 2,
+          "value": 1,
+          "variable": "onCooldown"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "alpha",
+            "value": 1
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "attackabletarget"
+            },
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "incombat"
+            }
+          ],
+          "trigger": -2,
+          "variable": "OR"
+        }
+      }
+    ],
+    "config": {
+      "duration": 5
+    },
+    "cooldown": false,
+    "cooldownEdge": false,
+    "cooldownSwipe": true,
+    "cooldownTextDisabled": false,
+    "customText": "\n\n\n",
+    "customTextUpdate": "event",
+    "desaturate": false,
+    "discrete_rotation": 0,
+    "displayIcon": 132223,
+    "frameStrata": 1,
+    "height": 20,
+    "icon": true,
+    "iconSource": 0,
+    "id": "Xyrec Warrior - Overpower [Nameplates]",
+    "information": {
+      "forceEvents": true,
+      "ignoreOptionsEventErrors": true,
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "inverse": false,
+    "keepAspectRatio": false,
+    "load": {
+      "class": {
+        "multi": [],
+        "single": "WARRIOR"
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "spellknown": 7384,
+      "talent": {
+        "multi": []
+      },
+      "use_class": true,
+      "use_never": false,
+      "use_spellknown": true,
+      "zoneIds": ""
+    },
+    "mirror": false,
+    "preferToUpdate": false,
+    "progressSource": [
+      -1,
+      ""
+    ],
+    "regionType": "icon",
+    "rotate": true,
+    "rotation": 0,
+    "selfPoint": "RIGHT",
+    "semver": "1.4.7",
+    "source": "import",
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "type": "subborder"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "CENTER",
+        "rotateText": "NONE",
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 64,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 12,
+        "text_fontType": "OUTLINE",
+        "text_justify": "CENTER",
+        "text_selfPoint": "AUTO",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_shadowXOffset": 0,
+        "text_shadowYOffset": 0,
+        "text_text": "%1.p",
+        "text_text_format_1.p_format": "timed",
+        "text_text_format_1.p_time_dynamic_threshold": 0,
+        "text_text_format_1.p_time_format": 0,
+        "text_text_format_1.p_time_legacy_floor": false,
+        "text_text_format_1.p_time_mod_rate": true,
+        "text_text_format_1.p_time_precision": 1,
+        "text_text_format_2.p_format": "timed",
+        "text_text_format_2.p_time_dynamic_threshold": 60,
+        "text_text_format_2.p_time_format": 0,
+        "text_text_format_2.p_time_legacy_floor": true,
+        "text_text_format_2.p_time_mod_rate": true,
+        "text_text_format_2.p_time_precision": 1,
+        "text_visible": true,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      },
+      {
+        "glow": true,
+        "glowBorder": false,
+        "glowColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "glowDuration": 1,
+        "glowFrequency": 0.25,
+        "glowLength": 10,
+        "glowLines": 6,
+        "glowScale": 1,
+        "glowThickness": 1,
+        "glowType": "Pixel",
+        "glowXOffset": 0,
+        "glowYOffset": 0,
+        "type": "subglow",
+        "useGlowColor": false
+      }
+    ],
+    "texture": "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura53",
+    "tocversion": 20505,
+    "triggers": {
+      "1": {
+        "trigger": {
+          "check": "event",
+          "custom": "@overpower-nameplates--triggers-1-trigger-custom.lua",
+          "custom_hide": "timed",
+          "custom_type": "stateupdate",
+          "debuffType": "HELPFUL",
+          "duration": "1",
+          "event": "Health",
+          "events": "CLEU:SWING_MISSED:SPELL_MISSED,UNIT_SPELLCAST_SUCCEEDED:player,NAME_PLATE_UNIT_ADDED,NAME_PLATE_UNIT_REMOVED,PLAYER_TARGET_CHANGED",
+          "genericShowOn": "showOnCooldown",
+          "names": [],
+          "realSpellName": 0,
+          "spellIds": [],
+          "spellName": 0,
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "custom",
+          "unevent": "auto",
+          "unit": "player",
+          "use_genericShowOn": true,
+          "use_spellName": true,
+          "use_track": true,
+          "use_unit": true
+        },
+        "untrigger": []
+      },
+      "2": {
+        "trigger": {
+          "duration": "1",
+          "event": "Cooldown Progress (Spell)",
+          "genericShowOn": "showAlways",
+          "realSpellName": "Overpower",
+          "spellName": 7887,
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "spell",
+          "unevent": "auto",
+          "unit": "player",
+          "use_genericShowOn": true,
+          "use_spellName": true,
+          "use_track": true,
+          "use_unit": true
+        },
+        "untrigger": {
+          "genericShowOn": "showAlways"
+        }
+      },
+      "activeTriggerMode": -10,
+      "disjunctive": "all"
+    },
+    "url": "",
+    "useAdjustededMax": false,
+    "useAdjustededMin": false,
+    "useCooldownModRate": true,
+    "version": 38,
+    "wagoID": "HV-7izFl4",
+    "width": 20,
+    "xOffset": -3,
+    "yOffset": 0,
+    "zoom": 0.3
+  },
+  "row": "loose"
+}

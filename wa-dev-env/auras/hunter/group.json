@@ -1,0 +1,967 @@
+{
+  "child_order": [
+    "Xyrec Hunter - Passive Bar",
+    "Xyrec Hunter - Hunter's Mark",
+    "Xyrec Hunter - Core Abilities",
+    "Xyrec Hunter - Explosive Shot",
+    "Xyrec Hunter - Multi-Shot",
+    "Xyrec Hunter - Aimed Shot",
+    "Xyrec Hunter - Arcane Shot",
+    "Xyrec Hunter - Serpent Sting",
+    "Xyrec Hunter - Raptor Strike [Ranged]",
+    "Xyrec Hunter - Resources",
+    "Xyrec Hunter - Auto Shot Bars",
+    "Xyrec Hunter - Auto Shot Bar",
+    "Xyrec Hunter - Range Check",
+    "Xyrec Hunter - Cover Bar",
+    "Xyrec Hunter - Quick Shots Tick",
+    "Xyrec Hunter - Swing Timer [MH]",
+    "Xyrec Hunter - Mana Bars",
+    "Xyrec Hunter - Mana Tick",
+    "Xyrec Hunter - Cooldowns",
+    "Xyrec Hunter - Hunter Traps",
+    "Xyrec Hunter - Flare",
+    "Xyrec Hunter - Scare Beast",
+    "Xyrec Hunter - Feign Death",
+    "Xyrec Hunter - Shadowmeld",
+    "Xyrec Hunter - Stoneform",
+    "Xyrec Hunter - Blood Fury",
+    "Xyrec Hunter - Berserking",
+    "Xyrec Hunter - War Stomp",
+    "Xyrec Hunter - Trinket 1 CD",
+    "Xyrec Hunter - Trinket 2 CD",
+    "Xyrec Hunter - Deterrence",
+    "Xyrec Hunter - Rapid Fire",
+    "Xyrec Hunter - Bestial Wrath",
+    "Xyrec Hunter - Kill Command",
+    "Xyrec Hunter - Volley",
+    "Xyrec Hunter - Wyvern Sting",
+    "Xyrec Hunter - Intimidation",
+    "Xyrec Hunter - Scatter Shot",
+    "Xyrec Hunter - Concussive Shot",
+    "Xyrec Hunter - Distracting Shot",
+    "Xyrec Hunter - Disengage",
+    "Xyrec Hunter - Growl",
+    "Xyrec Hunter - Counterattack",
+    "Xyrec Hunter - Reminders",
+    "Xyrec Hunter - Drink Expiring",
+    "Xyrec Hunter - Pet Hungry",
+    "Xyrec Hunter - Feeding Pet",
+    "Xyrec Hunter - No Pet",
+    "Xyrec Hunter - Revive Pet",
+    "Xyrec Hunter - Pet Attack",
+    "Xyrec Hunter - Aspect of the Pack",
+    "Xyrec Hunter - Aspects",
+    "Xyrec Hunter - Trueshot Aura",
+    "Xyrec Hunter - Ammo [Drag]"
+  ],
+  "class": "hunter",
+  "containers": [
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Hunter - Hunter's Mark"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 132212,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Hunter - Passive Bar",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 5,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Hunter",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.5.8",
+      "sort": "none",
+      "sortHybridTable": {
+        "Hunter - Focus Fire": false,
+        "Hunter - Hunter's Mark": false,
+        "Hunter - Pet Frenzy": false,
+        "Hunter - Raptor's Fury": false,
+        "Hunter - Sniper Training": false
+      },
+      "space": 2,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": false,
+      "version": 42,
+      "wagoID": "B2G4lZKVE",
+      "xOffset": 0,
+      "yOffset": 79
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Hunter - Explosive Shot",
+        "Xyrec Hunter - Multi-Shot",
+        "Xyrec Hunter - Aimed Shot",
+        "Xyrec Hunter - Arcane Shot",
+        "Xyrec Hunter - Serpent Sting",
+        "Xyrec Hunter - Raptor Strike [Ranged]"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Hunter - Core Abilities",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 10,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Hunter",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.5.8",
+      "sort": "none",
+      "sortHybridTable": {
+        "Hunter - Aimed Shot": false,
+        "Hunter - Arcane Shot": false,
+        "Hunter - Carve": false,
+        "Hunter - Chimera Shot": false,
+        "Hunter - Explosive Shot": false,
+        "Hunter - Flanking Strike": false,
+        "Hunter - Multi-Shot": false,
+        "Hunter - Raptor Strike [Melee]": false,
+        "Hunter - Raptor Strike [Ranged]": false,
+        "Hunter - Serpent Sting": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 42,
+      "wagoID": "B2G4lZKVE",
+      "xOffset": 0,
+      "yOffset": 35
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "conditions": [],
+      "config": [],
+      "controlledChildren": [
+        "Xyrec Hunter - Auto Shot Bars",
+        "Xyrec Hunter - Quick Shots Tick",
+        "Xyrec Hunter - Swing Timer [MH]",
+        "Xyrec Hunter - Mana Bars",
+        "Xyrec Hunter - Mana Tick"
+      ],
+      "frameStrata": 1,
+      "groupIcon": 132157,
+      "id": "Xyrec Hunter - Resources",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Hunter",
+      "preferToUpdate": false,
+      "regionType": "group",
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.5.8",
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "version": 42,
+      "wagoID": "B2G4lZKVE",
+      "xOffset": 0,
+      "yOffset": 0
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "alpha": 1,
+      "anchorFrameFrame": "WeakAuras:Hunter - Mana Bars",
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "conditions": [],
+      "config": [],
+      "controlledChildren": [
+        "Xyrec Hunter - Auto Shot Bar",
+        "Xyrec Hunter - Range Check",
+        "Xyrec Hunter - Cover Bar"
+      ],
+      "desc": "Bouk's Hunter Castbar: https://wago.io/YSKP1xUe2",
+      "frameStrata": 3,
+      "groupIcon": 132222,
+      "id": "Xyrec Hunter - Auto Shot Bars",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec Hunter - Resources",
+      "preferToUpdate": false,
+      "regionType": "group",
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.5.8",
+      "source": "import",
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "version": 42,
+      "wagoID": "B2G4lZKVE",
+      "xOffset": 0,
+      "yOffset": 0
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Hunter - Hunter Traps",
+        "Xyrec Hunter - Flare",
+        "Xyrec Hunter - Scare Beast",
+        "Xyrec Hunter - Feign Death",
+        "Xyrec Hunter - Shadowmeld",
+        "Xyrec Hunter - Stoneform",
+        "Xyrec Hunter - Blood Fury",
+        "Xyrec Hunter - Berserking",
+        "Xyrec Hunter - War Stomp",
+        "Xyrec Hunter - Trinket 1 CD",
+        "Xyrec Hunter - Trinket 2 CD",
+        "Xyrec Hunter - Deterrence",
+        "Xyrec Hunter - Rapid Fire",
+        "Xyrec Hunter - Bestial Wrath",
+        "Xyrec Hunter - Kill Command",
+        "Xyrec Hunter - Volley",
+        "Xyrec Hunter - Wyvern Sting",
+        "Xyrec Hunter - Intimidation",
+        "Xyrec Hunter - Scatter Shot",
+        "Xyrec Hunter - Concussive Shot",
+        "Xyrec Hunter - Distracting Shot",
+        "Xyrec Hunter - Disengage",
+        "Xyrec Hunter - Growl",
+        "Xyrec Hunter - Counterattack"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 132208,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Hunter - Cooldowns",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 9,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Hunter",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.5.8",
+      "sort": "none",
+      "sortHybridTable": {
+        "Hunter - Berserking": false,
+        "Hunter - Bestial Wrath": false,
+        "Hunter - Blood Fury": false,
+        "Hunter - Concussive Shot": false,
+        "Hunter - Counterattack": false,
+        "Hunter - Deterrence": false,
+        "Hunter - Disengage": false,
+        "Hunter - Distracting Shot": false,
+        "Hunter - Feign Death": false,
+        "Hunter - Flare": false,
+        "Hunter - Growl": false,
+        "Hunter - Hunter Traps": false,
+        "Hunter - Intimidation": false,
+        "Hunter - Kill Command": false,
+        "Hunter - Mongoose Strike": false,
+        "Hunter - Rapid Fire": false,
+        "Hunter - Scare Beast": false,
+        "Hunter - Scatter Shot": false,
+        "Hunter - Shadowmeld": false,
+        "Hunter - Stoneform": false,
+        "Hunter - Trap Launcher [Fire]": false,
+        "Hunter - Trap Launcher [Frost]": false,
+        "Hunter - Trinket 1 CD": false,
+        "Hunter - Trinket 2 CD": false,
+        "Hunter - Volley": false,
+        "Hunter - War Stomp": false,
+        "Hunter - Wyvern Sting": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 42,
+      "wagoID": "B2G4lZKVE",
+      "xOffset": 0,
+      "yOffset": -26
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "UIPARENT",
+      "anchorPoint": "TOP",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Hunter - Drink Expiring",
+        "Xyrec Hunter - Pet Hungry",
+        "Xyrec Hunter - Feeding Pet",
+        "Xyrec Hunter - No Pet",
+        "Xyrec Hunter - Revive Pet",
+        "Xyrec Hunter - Pet Attack",
+        "Xyrec Hunter - Aspect of the Pack",
+        "Xyrec Hunter - Aspects",
+        "Xyrec Hunter - Trueshot Aura"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 132161,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Hunter - Reminders",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 5,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Hunter",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.5.8",
+      "sort": "none",
+      "sortHybridTable": {
+        "Hunter - Aspect of the Pack": false,
+        "Hunter - Aspects": false,
+        "Hunter - Drink Expiring": false,
+        "Hunter - Feeding Pet": false,
+        "Hunter - Heart of the Lion": false,
+        "Hunter - No Pet": false,
+        "Hunter - Pet Attack": false,
+        "Hunter - Pet Hungry": false,
+        "Hunter - Revive Pet": false,
+        "Hunter - Trueshot Aura": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": false,
+      "version": 42,
+      "wagoID": "B2G4lZKVE",
+      "xOffset": 0,
+      "yOffset": -475
+    }
+  ],
+  "root": {
+    "actions": {
+      "finish": [],
+      "init": [],
+      "start": []
+    },
+    "alpha": 1,
+    "anchorFrameType": "SCREEN",
+    "anchorPoint": "CENTER",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "backdropColor": [
+      1,
+      1,
+      1,
+      0.5
+    ],
+    "border": false,
+    "borderBackdrop": "Blizzard Tooltip",
+    "borderColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "borderEdge": "Square Full White",
+    "borderInset": 1,
+    "borderOffset": 4,
+    "borderSize": 2,
+    "conditions": [],
+    "config": [],
+    "controlledChildren": [
+      "Xyrec Hunter - Passive Bar",
+      "Xyrec Hunter - Core Abilities",
+      "Xyrec Hunter - Resources",
+      "Xyrec Hunter - Cooldowns",
+      "Xyrec Hunter - Reminders",
+      "Xyrec Hunter - Ammo [Drag]"
+    ],
+    "frameStrata": 1,
+    "groupIcon": "626000",
+    "id": "Xyrec - Hunter",
+    "information": {
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "load": {
+      "class": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      }
+    },
+    "preferToUpdate": false,
+    "regionType": "group",
+    "scale": 1.5,
+    "selfPoint": "CENTER",
+    "semver": "1.5.8",
+    "subRegions": [],
+    "tocversion": 20505,
+    "triggers": [
+      {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Health",
+          "names": [],
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "aura2",
+          "unit": "player"
+        },
+        "untrigger": []
+      }
+    ],
+    "url": "",
+    "version": 42,
+    "wagoID": "B2G4lZKVE",
+    "xOffset": 0,
+    "yOffset": -242
+  },
+  "wa_version": "5.21.8"
+}

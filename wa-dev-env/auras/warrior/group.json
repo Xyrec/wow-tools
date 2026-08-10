@@ -1,0 +1,878 @@
+{
+  "child_order": [
+    "Xyrec Warrior - Enrage Bar",
+    "Xyrec Warrior - Enrage/CBR",
+    "Rampage",
+    "Xyrec Warrior - Core Abilities",
+    "Xyrec Warrior - Mortal Strike",
+    "Xyrec Warrior - Bloodthrist",
+    "Xyrec Warrior - Shield Slam",
+    "Xyrec Warrior - Whirlwind",
+    "Xyrec Warrior - Overpower",
+    "Xyrec Warrior - Revenge",
+    "Xyrec Warrior - Shield Block",
+    "Xyrec Warrior - Execute",
+    "Xyrec Warrior - Devastate",
+    "Xyrec Warrior - Sunder Armor",
+    "Xyrec Warrior - Victory Rush",
+    "Xyrec Warrior - Rend",
+    "Xyrec Warrior - Resources",
+    "Xyrec Warrior - Overpower [Nameplates]",
+    "Xyrec Warrior - Swing Timer [MH]",
+    "Xyrec Warrior - Rage Bar",
+    "Xyrec Warrior - Cooldowns",
+    "Xyrec Warrior - Charge",
+    "Xyrec Warrior - Intercept",
+    "Xyrec Warrior - Intervene",
+    "Xyrec Warrior - Thunder Clap",
+    "Xyrec Warrior - Bloodrage",
+    "Xyrec Warrior - Berserker Rage",
+    "Xyrec Warrior - Perception",
+    "Xyrec Warrior - Stoneform",
+    "Xyrec Warrior - Escape Artist",
+    "Xyrec Warrior - Shadowmeld",
+    "Xyrec Warrior - Blood Fury",
+    "Xyrec Warrior - Berserking",
+    "Xyrec Warrior - Will of the Forsaken",
+    "Xyrec Warrior - War Stomp",
+    "Xyrec Warrior - Trinket 1 CD",
+    "Xyrec Warrior - Trinket 2 CD",
+    "Xyrec Warrior - Death Wish",
+    "Xyrec Warrior - Sweeping Strikes",
+    "Xyrec Warrior - Recklessness",
+    "Xyrec Warrior - Retaliation",
+    "Xyrec Warrior - Shield Wall",
+    "Xyrec Warrior - Last Stand",
+    "Xyrec Warrior - Frenzied Regeneration",
+    "Xyrec Warrior - Intimidating Shout",
+    "Xyrec Warrior - Disarm",
+    "Xyrec Warrior - Concussive Blow",
+    "Xyrec Warrior - Challenging Shout",
+    "Xyrec Warrior - Mocking Blow",
+    "Xyrec Warrior - Taunt",
+    "Xyrec Warrior - Shield Bash",
+    "Xyrec Warrior - Pummel",
+    "Xyrec Warrior - Reminders",
+    "Xyrec Warrior - Battle Shout",
+    "Xyrec Warrior - Commanding Shout",
+    "Xyrec Warrior - Demoralizing Shout"
+  ],
+  "class": "warrior",
+  "containers": [
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Warrior - Enrage/CBR",
+        "Rampage"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 133495,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Warrior - Enrage Bar",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 5,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Warrior",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.7",
+      "sort": "none",
+      "sortHybridTable": {
+        "Warrior - Enrage/CBR": false,
+        "Warrior - Flagellation": false
+      },
+      "source": "import",
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": false,
+      "version": 38,
+      "wagoID": "HV-7izFl4",
+      "xOffset": 0,
+      "yOffset": 67
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Warrior - Mortal Strike",
+        "Xyrec Warrior - Bloodthrist",
+        "Xyrec Warrior - Shield Slam",
+        "Xyrec Warrior - Whirlwind",
+        "Xyrec Warrior - Overpower",
+        "Xyrec Warrior - Revenge",
+        "Xyrec Warrior - Shield Block",
+        "Xyrec Warrior - Execute",
+        "Xyrec Warrior - Devastate",
+        "Xyrec Warrior - Sunder Armor",
+        "Xyrec Warrior - Victory Rush",
+        "Xyrec Warrior - Rend"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 132215,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Warrior - Core Abilities",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 10,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Warrior",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.7",
+      "sort": "none",
+      "sortHybridTable": {
+        "Warrior - Blood Surge": false,
+        "Warrior - Bloodthrist": false,
+        "Warrior - Devastate": false,
+        "Warrior - Execute": false,
+        "Warrior - Furious Thunder": false,
+        "Warrior - Mortal Strike": false,
+        "Warrior - Overpower": false,
+        "Warrior - Precise Timing": false,
+        "Warrior - Quick Strike": false,
+        "Warrior - Raging Blow": false,
+        "Warrior - Rend": false,
+        "Warrior - Revenge": false,
+        "Warrior - Shield Block": false,
+        "Warrior - Shield Slam": false,
+        "Warrior - Sunder Armor": false,
+        "Warrior - Victory Rush": false,
+        "Warrior - Whirlwind": false
+      },
+      "source": "import",
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 38,
+      "wagoID": "HV-7izFl4",
+      "xOffset": 0,
+      "yOffset": 35
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "conditions": [],
+      "config": [],
+      "controlledChildren": [
+        "Xyrec Warrior - Overpower [Nameplates]",
+        "Xyrec Warrior - Swing Timer [MH]",
+        "Xyrec Warrior - Rage Bar"
+      ],
+      "frameStrata": 1,
+      "groupIcon": 136009,
+      "id": "Xyrec Warrior - Resources",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Warrior",
+      "preferToUpdate": false,
+      "regionType": "group",
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.7",
+      "source": "import",
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "version": 38,
+      "wagoID": "HV-7izFl4",
+      "xOffset": 0,
+      "yOffset": 0
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Warrior - Charge",
+        "Xyrec Warrior - Intercept",
+        "Xyrec Warrior - Intervene",
+        "Xyrec Warrior - Thunder Clap",
+        "Xyrec Warrior - Bloodrage",
+        "Xyrec Warrior - Berserker Rage",
+        "Xyrec Warrior - Perception",
+        "Xyrec Warrior - Stoneform",
+        "Xyrec Warrior - Escape Artist",
+        "Xyrec Warrior - Shadowmeld",
+        "Xyrec Warrior - Blood Fury",
+        "Xyrec Warrior - Berserking",
+        "Xyrec Warrior - Will of the Forsaken",
+        "Xyrec Warrior - War Stomp",
+        "Xyrec Warrior - Trinket 1 CD",
+        "Xyrec Warrior - Trinket 2 CD",
+        "Xyrec Warrior - Death Wish",
+        "Xyrec Warrior - Sweeping Strikes",
+        "Xyrec Warrior - Recklessness",
+        "Xyrec Warrior - Retaliation",
+        "Xyrec Warrior - Shield Wall",
+        "Xyrec Warrior - Last Stand",
+        "Xyrec Warrior - Frenzied Regeneration",
+        "Xyrec Warrior - Intimidating Shout",
+        "Xyrec Warrior - Disarm",
+        "Xyrec Warrior - Concussive Blow",
+        "Xyrec Warrior - Challenging Shout",
+        "Xyrec Warrior - Mocking Blow",
+        "Xyrec Warrior - Taunt",
+        "Xyrec Warrior - Shield Bash",
+        "Xyrec Warrior - Pummel"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 132336,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Warrior - Cooldowns",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 9,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Warrior",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.7",
+      "sort": "none",
+      "sortHybridTable": {
+        "Warrior - Berserker Rage": false,
+        "Warrior - Berserking": false,
+        "Warrior - Blood Fury": false,
+        "Warrior - Bloodrage": false,
+        "Warrior - Challenging Shout": false,
+        "Warrior - Charge": false,
+        "Warrior - Concussive Blow": false,
+        "Warrior - Death Wish": false,
+        "Warrior - Disarm": false,
+        "Warrior - Escape Artist": false,
+        "Warrior - Frenzied Regeneration": false,
+        "Warrior - Intercept": false,
+        "Warrior - Intervene": false,
+        "Warrior - Intimidating Shout": false,
+        "Warrior - Last Stand": false,
+        "Warrior - Mocking Blow": false,
+        "Warrior - Perception": false,
+        "Warrior - Pummel": false,
+        "Warrior - Rallying Cry": false,
+        "Warrior - Recklessness": false,
+        "Warrior - Retaliation": false,
+        "Warrior - Shadowmeld": false,
+        "Warrior - Shield Bash": false,
+        "Warrior - Shield Wall": false,
+        "Warrior - Stoneform": false,
+        "Warrior - Sweeping Strikes": false,
+        "Warrior - Taunt": false,
+        "Warrior - Thunder Clap": false,
+        "Warrior - Trinket 1 CD": false,
+        "Warrior - Trinket 2 CD": false,
+        "Warrior - War Stomp": false,
+        "Warrior - Will of the Forsaken": false
+      },
+      "source": "import",
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 38,
+      "wagoID": "HV-7izFl4",
+      "xOffset": 0,
+      "yOffset": -26
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "UIPARENT",
+      "anchorPoint": "TOP",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Xyrec Warrior - Battle Shout",
+        "Xyrec Warrior - Commanding Shout",
+        "Xyrec Warrior - Demoralizing Shout"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 132333,
+      "grow": "HORIZONTAL",
+      "id": "Xyrec Warrior - Reminders",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 5,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Warrior",
+      "preferToUpdate": false,
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.7",
+      "sort": "none",
+      "sortHybridTable": {
+        "Warrior - Battle Shout": false,
+        "Warrior - Commanding Shout": false,
+        "Warrior - Demoralizing Shout [Tank]": false,
+        "Warrior - Gladiator Stance": false,
+        "Warrior - Thunder Clap [Tank]": false,
+        "Warrior - Vigilance": false
+      },
+      "source": "import",
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20505,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": false,
+      "version": 38,
+      "wagoID": "HV-7izFl4",
+      "xOffset": 0,
+      "yOffset": -475
+    }
+  ],
+  "root": {
+    "actions": {
+      "finish": [],
+      "init": [],
+      "start": []
+    },
+    "alpha": 1,
+    "anchorFrameType": "SCREEN",
+    "anchorPoint": "CENTER",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "backdropColor": [
+      1,
+      1,
+      1,
+      0.5
+    ],
+    "border": false,
+    "borderBackdrop": "Blizzard Tooltip",
+    "borderColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "borderEdge": "Square Full White",
+    "borderInset": 1,
+    "borderOffset": 4,
+    "borderSize": 2,
+    "conditions": [],
+    "config": [],
+    "controlledChildren": [
+      "Xyrec Warrior - Enrage Bar",
+      "Xyrec Warrior - Core Abilities",
+      "Xyrec Warrior - Resources",
+      "Xyrec Warrior - Cooldowns",
+      "Xyrec Warrior - Reminders"
+    ],
+    "frameStrata": 1,
+    "groupIcon": 135328,
+    "id": "Xyrec - Warrior",
+    "information": {
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "load": {
+      "class": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      }
+    },
+    "preferToUpdate": false,
+    "regionType": "group",
+    "scale": 1.5,
+    "selfPoint": "CENTER",
+    "semver": "1.4.7",
+    "source": "import",
+    "subRegions": [],
+    "tocversion": 20505,
+    "triggers": [
+      {
+        "trigger": {
+          "debuffType": "HELPFUL",
+          "event": "Health",
+          "names": [],
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "aura2",
+          "unit": "player"
+        },
+        "untrigger": []
+      }
+    ],
+    "url": "",
+    "version": 38,
+    "wagoID": "HV-7izFl4",
+    "xOffset": 0,
+    "yOffset": -242
+  },
+  "wa_version": "5.21.8"
+}

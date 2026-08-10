@@ -1,0 +1,216 @@
+{
+  "archetype": "bespoke",
+  "id": "Xyrec Hunter - Quick Shots Tick",
+  "payload": {
+    "actions": {
+      "finish": {
+        "custom": "WeakAuras.ScanEvents(\"TICKUPDATE\", true)",
+        "do_custom": false
+      },
+      "init": {
+        "custom": "aura_env.lastMana = UnitPower(\"player\" , 0)\naura_env.lastCast = 0",
+        "do_custom": true
+      },
+      "start": []
+    },
+    "adjustedMax": "",
+    "adjustedMin": "",
+    "alpha": 0.3,
+    "anchorFrameFrame": "WeakAuras:Hunter - Swing Timer [MH]",
+    "anchorFrameType": "SELECTFRAME",
+    "anchorPoint": "CENTER",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [],
+    "auto": true,
+    "backdropColor": [
+      1,
+      1,
+      1,
+      0.5
+    ],
+    "backdropInFront": false,
+    "backgroundColor": [
+      0,
+      0.22352941176471,
+      1,
+      0
+    ],
+    "barColor": [
+      0,
+      0.23529411764706,
+      1,
+      0
+    ],
+    "barColor2": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "borderBackdrop": "Blizzard Tooltip",
+    "borderInFront": true,
+    "color": [],
+    "conditions": [
+      {
+        "changes": [
+          {
+            "property": "alpha",
+            "value": 1
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "attackabletarget"
+            },
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "incombat"
+            },
+            {
+              "trigger": 1,
+              "value": 1,
+              "variable": "show"
+            }
+          ],
+          "trigger": -2,
+          "variable": "OR"
+        }
+      }
+    ],
+    "config": [],
+    "desaturate": false,
+    "enableGradient": false,
+    "frameStrata": 4,
+    "gradientOrientation": "HORIZONTAL",
+    "height": 8,
+    "icon": false,
+    "iconSource": -1,
+    "icon_color": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "icon_side": "RIGHT",
+    "id": "Xyrec Hunter - Quick Shots Tick",
+    "information": {
+      "forceEvents": true,
+      "ignoreOptionsEventErrors": true,
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "inverse": false,
+    "load": {
+      "class": {
+        "multi": {},
+        "single": "HUNTER"
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      },
+      "use_class": true,
+      "use_spellknown": false,
+      "use_talent": false,
+      "zoneIds": ""
+    },
+    "orientation": "HORIZONTAL",
+    "preferToUpdate": false,
+    "progressSource": [
+      -1,
+      ""
+    ],
+    "regionType": "aurabar",
+    "selfPoint": "CENTER",
+    "semver": "1.5.8",
+    "smoothProgress": false,
+    "source": "import",
+    "spark": true,
+    "sparkBlendMode": "ADD",
+    "sparkColor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "sparkHeight": 16,
+    "sparkHidden": "NEVER",
+    "sparkOffsetX": 0,
+    "sparkOffsetY": 0,
+    "sparkRotation": 0,
+    "sparkRotationMode": "AUTO",
+    "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+    "sparkWidth": 8,
+    "stickyDuration": false,
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "type": "subforeground"
+      }
+    ],
+    "texture": "Clean",
+    "textureSource": "LSM",
+    "tocversion": 20505,
+    "toolTipArea": "ICON",
+    "triggers": {
+      "1": {
+        "trigger": {
+          "auranames": [
+            "6150"
+          ],
+          "debuffType": "HELPFUL",
+          "event": "Health",
+          "names": [],
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "aura2",
+          "unit": "player",
+          "useName": true
+        },
+        "untrigger": []
+      },
+      "activeTriggerMode": -10
+    },
+    "url": "",
+    "useAdjustededMax": false,
+    "useAdjustededMin": false,
+    "version": 42,
+    "wagoID": "B2G4lZKVE",
+    "width": 260,
+    "xOffset": 0.00018310546875,
+    "yOffset": 0,
+    "zoom": 0
+  },
+  "row": "loose"
+}

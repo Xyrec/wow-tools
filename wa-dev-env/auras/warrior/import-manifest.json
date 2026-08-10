@@ -1,0 +1,10 @@
+{
+  "_notes": "Baseline. Enrage Bar + Resources bespoke; stance-gated triggers pass through untouched.",
+  "drop": [],
+  "rows": {
+    "Warrior - Core Abilities": "core",
+    "Warrior - Cooldowns": "cooldowns",
+    "Warrior - Reminders": "reminders"
+  },
+  "bespoke": []
+}

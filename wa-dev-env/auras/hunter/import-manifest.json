@@ -1,0 +1,10 @@
+{
+  "_notes": "Baseline. Passive Bar / Resources / Auto Shot Bars bespoke; Ammo drag icon bespoke.",
+  "drop": [],
+  "rows": {
+    "Hunter - Core Abilities": "core",
+    "Hunter - Cooldowns": "cooldowns",
+    "Hunter - Reminders": "reminders"
+  },
+  "bespoke": ["Hunter - Ammo [Drag]"]
+}

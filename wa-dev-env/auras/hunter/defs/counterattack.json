@@ -1,0 +1,101 @@
+{
+  "archetype": "cooldown_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        },
+        {
+          "property": "inverse",
+          "value": true
+        },
+        []
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 1,
+        "variable": "onCooldown"
+      }
+    }
+  ],
+  "id": "Xyrec Hunter - Counterattack",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "HUNTER"
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 19306,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_not_spellknown": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "row": "cooldowns",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [],
+        "debuffType": "HELPFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showOnCooldown",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "realSpellName": "Counterattack",
+        "spellIds": [],
+        "spellName": 19306,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "spell",
+        "unevent": "auto",
+        "unit": "player",
+        "unitExists": true,
+        "useName": true,
+        "use_charges": false,
+        "use_genericShowOn": true,
+        "use_remaining": false,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways",
+        "track": "auto"
+      }
+    },
+    "2": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Action Usable",
+        "genericShowOn": "showOnCooldown",
+        "realSpellName": "Counterattack",
+        "spellName": 19306,
+        "type": "spell",
+        "unit": "player",
+        "use_genericShowOn": true,
+        "use_spellName": true,
+        "use_track": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": -10,
+    "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
+    "disjunctive": "custom"
+  }
+}

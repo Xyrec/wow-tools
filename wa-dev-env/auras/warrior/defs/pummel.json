@@ -1,0 +1,87 @@
+{
+  "archetype": "cooldown_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        },
+        {
+          "property": "inverse",
+          "value": true
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 1,
+        "variable": "show"
+      }
+    }
+  ],
+  "id": "Xyrec Warrior - Pummel",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "WARRIOR"
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 6552,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_not_spellknown": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "displayIcon": 132938
+  },
+  "row": "cooldowns",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [],
+        "debuffType": "HELPFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showOnCooldown",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "realSpellName": "Pummel",
+        "spellIds": [],
+        "spellName": 6552,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "spell",
+        "unevent": "auto",
+        "unit": "player",
+        "unitExists": true,
+        "useName": true,
+        "use_charges": false,
+        "use_genericShowOn": true,
+        "use_remaining": false,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways",
+        "track": "auto"
+      }
+    },
+    "activeTriggerMode": -10,
+    "disjunctive": "any"
+  }
+}

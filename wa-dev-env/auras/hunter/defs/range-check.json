@@ -1,0 +1,1119 @@
+{
+  "archetype": "bespoke",
+  "id": "Xyrec Hunter - Range Check",
+  "lua": {
+    "actions.init.custom": "lua/range-check--actions-init-custom.lua",
+    "customText": "lua/range-check--customText.lua",
+    "triggers.1.trigger.custom": "lua/range-check--triggers-1-trigger-custom.lua",
+    "triggers.10.trigger.custom": "lua/range-check--triggers-10-trigger-custom.lua",
+    "triggers.11.trigger.custom": "lua/range-check--triggers-11-trigger-custom.lua",
+    "triggers.12.trigger.custom": "lua/range-check--triggers-12-trigger-custom.lua",
+    "triggers.2.trigger.custom": "lua/range-check--triggers-2-trigger-custom.lua",
+    "triggers.3.trigger.custom": "lua/range-check--triggers-3-trigger-custom.lua",
+    "triggers.4.trigger.custom": "lua/range-check--triggers-4-trigger-custom.lua",
+    "triggers.5.trigger.custom": "lua/range-check--triggers-5-trigger-custom.lua",
+    "triggers.6.trigger.custom": "lua/range-check--triggers-6-trigger-custom.lua",
+    "triggers.7.trigger.custom": "lua/range-check--triggers-7-trigger-custom.lua",
+    "triggers.8.trigger.custom": "lua/range-check--triggers-8-trigger-custom.lua",
+    "triggers.9.trigger.custom": "lua/range-check--triggers-9-trigger-custom.lua"
+  },
+  "payload": {
+    "actions": {
+      "finish": [],
+      "init": {
+        "custom": "@range-check--actions-init-custom.lua",
+        "do_custom": false
+      },
+      "start": []
+    },
+    "adjustedMax": "",
+    "adjustedMin": "",
+    "alpha": 0.3,
+    "anchorFrameFrame": "WeakAuras:Hunter - Mana Bars",
+    "anchorFrameType": "SELECTFRAME",
+    "anchorPoint": "TOP",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [
+      {
+        "fontSize": "large",
+        "text": "Settings    (Scroll down for instructions)\n\n",
+        "type": "description",
+        "width": 2
+      },
+      {
+        "default": true,
+        "desc": "Toggles off Sweet Spot, \"Sweet Spot\" will be included in \"Short Range\" if Sweet Spot toggled on, if not \"Medium Range\"",
+        "key": "sweetspotr",
+        "name": "Sweet Spot Toggle",
+        "type": "toggle",
+        "useDesc": true,
+        "width": 1
+      },
+      {
+        "default": true,
+        "desc": "Toggles on Short Range, \"Short Range\" will be included in \"Medium Range\" if toggled off",
+        "key": "shortranger",
+        "name": "Short Range Toggle",
+        "type": "toggle",
+        "useDesc": true,
+        "width": 1
+      },
+      {
+        "default": true,
+        "desc": "Toggles off Long Range, \"Long Range\" will be included in \"Medium Range\" if toggled off",
+        "key": "longranger",
+        "name": "Long Range Toggle",
+        "type": "toggle",
+        "useDesc": true,
+        "width": 1
+      },
+      {
+        "default": false,
+        "desc": "Toggles off Over 40 Yards, \"Over 40 Yards\" will be included in \"Max Range\" if toggled off",
+        "key": "40yardsr",
+        "name": "Over 40 Yards Toggle",
+        "type": "toggle",
+        "useDesc": true,
+        "width": 1
+      },
+      {
+        "default": true,
+        "desc": "Toggles off HM Out of Range, \"HM Out of Range\" will be included in \"Out of Range\" if toggled off",
+        "key": "hmoutofranger",
+        "name": "HM Out of Range Toggle",
+        "type": "toggle",
+        "useDesc": true,
+        "width": 2
+      },
+      {
+        "default": 0.05,
+        "desc": "How often the triggers & custom text update in seconds (0 will update every frame)",
+        "key": "throttle",
+        "max": 1,
+        "min": 0,
+        "name": "Throttle (how often the aura updates)",
+        "step": 0.01,
+        "type": "range",
+        "useDesc": true,
+        "width": 2
+      },
+      {
+        "default": "Melee Range",
+        "desc": "Change text shown while in Melee Range",
+        "key": "melee",
+        "length": 10,
+        "multiline": false,
+        "name": "Melee Range",
+        "type": "input",
+        "useDesc": true,
+        "useLength": false,
+        "width": 1
+      },
+      {
+        "default": "Dead Zone",
+        "desc": "Change text shown while in Dead Zone",
+        "key": "deadzone",
+        "length": 10,
+        "multiline": false,
+        "name": "Dead Zone",
+        "type": "input",
+        "useDesc": true,
+        "useLength": false,
+        "width": 1
+      },
+      {
+        "default": "Sweet Spot",
+        "desc": "Change text shown while between 8-10 yards",
+        "key": "sweetspot",
+        "length": 10,
+        "multiline": false,
+        "name": "Sweet Spot",
+        "type": "input",
+        "useDesc": true,
+        "useLength": false,
+        "width": 1
+      },
+      {
+        "default": "Short Range",
+        "desc": "Change text shown while between 10-15 yards",
+        "key": "shortrange",
+        "length": 10,
+        "multiline": false,
+        "name": "Short Range",
+        "type": "input",
+        "useDesc": true,
+        "useLength": false,
+        "width": 1
+      },
+      {
+        "default": "Medium Range",
+        "desc": "Change text shown while between 15-28 yards",
+        "key": "inrange",
+        "length": 10,
+        "multiline": false,
+        "name": "Medium Range",
+        "type": "input",
+        "useDesc": true,
+        "useLength": false,
+        "width": 1
+      },
+      {
+        "default": "Long Range",
+        "desc": "Change text shown while between 28-35 yards",
+        "key": "longrange",
+        "length": 10,
+        "multiline": false,
+        "name": "Long Range",
+        "type": "input",
+        "useDesc": true,
+        "useLength": false,
+        "width": 1
+      },
+      {
+        "default": "Max Range",
+        "desc": "Change text shown while between 35-41 yards",
+        "key": "maxrange",
+        "length": 10,
+        "multiline": false,
+        "name": "Max Range",
+        "type": "input",
+        "useDesc": true,
+        "useLength": false,
+        "width": 1
+      },
+      {
+        "default": "Over 40 Yards",
+        "desc": "Change text shown while between 40-41 yards",
+        "key": "40yards",
+        "length": 10,
+        "multiline": false,
+        "name": "Over 40 Yards",
+        "type": "input",
+        "useDesc": true,
+        "useLength": false,
+        "width": 1
+      },
+      {
+        "default": "Out of Range",
+        "desc": "Change text shown while 42+ yards",
+        "key": "outofrange",
+        "length": 10,
+        "multiline": false,
+        "name": "Out of Range",
+        "type": "input",
+        "useDesc": true,
+        "useLength": false,
+        "width": 1
+      },
+      {
+        "default": "HM Out of Range",
+        "desc": "Change text shown while 100+ yards",
+        "key": "hmoutofrange",
+        "length": 10,
+        "multiline": false,
+        "name": "HM Out of Range",
+        "type": "input",
+        "useDesc": true,
+        "useLength": false,
+        "width": 1
+      },
+      {
+        "fontSize": "large",
+        "text": "How to make a sound play in a certain range:",
+        "type": "description",
+        "width": 2
+      },
+      {
+        "fontSize": "medium",
+        "text": "\nIf you want a sound to play when you enter a certain range please follow these instructions.\n\nMelee Range: \n\nPress on the Conditions tab, go to the bottom of Condition 3 and press \"Add Property Change\"\n\nThis will make a new box come up, that says \"and\" above it. Select these options\n\nSound  -  Play  -  *Sound of your choice*  - Master\n\nFor all other ranges use the exact same method just using a different condition instead of \"Condition 3\".\n\nDead Zone = Condition 5\n\nSweet Spot = Condition 6\n\nYou can find the rest by looking at the conditions colour.\n\nFrom testing this appears to work with any of the ranges.\n",
+        "type": "description",
+        "width": 2
+      },
+      {
+        "fontSize": "large",
+        "text": "\nChanging Colour:",
+        "type": "description",
+        "width": 2
+      },
+      {
+        "fontSize": "medium",
+        "text": "\nFind the condition that you want to change the colour, click on the little square of the colour and pick the colour you want.\n\nIf this doesnt make sense please read the above regarding sound.\n\n",
+        "type": "description",
+        "width": 2
+      },
+      {
+        "fontSize": "large",
+        "text": "\nChanging Size:",
+        "type": "description",
+        "width": 2
+      },
+      {
+        "fontSize": "medium",
+        "text": "\nClick on the Display Tab\n\nIn Position Settings change the Width and Height\n\n\n\n\nContact me on Discord if you have any questions Smarnz#6696",
+        "type": "description",
+        "width": 2
+      }
+    ],
+    "backgroundColor": [
+      0.75294125080109,
+      0.75294125080109,
+      0.75294125080109,
+      0
+    ],
+    "barColor": [
+      0.75294125080109,
+      0.75294125080109,
+      0.75294125080109,
+      0
+    ],
+    "barColor2": [
+      0.75294125080109,
+      0.75294125080109,
+      0.75294125080109,
+      1
+    ],
+    "blendMode": "BLEND",
+    "color": [
+      0.94901960784314,
+      1,
+      0.98039215686274,
+      1
+    ],
+    "conditions": [
+      {
+        "changes": [
+          {
+            "property": "backgroundColor",
+            "value": [
+              1,
+              0.25098040699959,
+              0.25098040699959,
+              1
+            ]
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": 1,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 2,
+              "value": 0,
+              "variable": "show"
+            },
+            {
+              "trigger": 3,
+              "value": 0,
+              "variable": "show"
+            },
+            {
+              "trigger": 4,
+              "value": 0,
+              "variable": "show"
+            },
+            {
+              "trigger": 8,
+              "value": 1,
+              "variable": "show"
+            }
+          ],
+          "trigger": -2,
+          "variable": "AND"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "backgroundColor",
+            "value": [
+              1,
+              0.50196081399918,
+              0.50196081399918,
+              1
+            ]
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": 1,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 2,
+              "value": 0,
+              "variable": "show"
+            },
+            {
+              "trigger": 3,
+              "value": 0,
+              "variable": "show"
+            },
+            {
+              "trigger": 4,
+              "value": 0,
+              "variable": "show"
+            },
+            {
+              "trigger": 8,
+              "value": 0,
+              "variable": "show"
+            }
+          ],
+          "trigger": -2,
+          "variable": "AND"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "backgroundColor",
+            "value": [
+              0.67058825492859,
+              0.83137261867523,
+              0.45098042488098,
+              1
+            ]
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": 1,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 2,
+              "value": 1,
+              "variable": "show"
+            }
+          ],
+          "trigger": -2,
+          "variable": "AND"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "backgroundColor",
+            "value": [
+              0.50196081399918,
+              0.50196081399918,
+              1,
+              0
+            ]
+          },
+          {
+            "property": "sub.3.text_visible",
+            "value": true
+          },
+          {
+            "property": "sub.4.border_visible",
+            "value": true
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": 1,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 3,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 7,
+              "value": 0,
+              "variable": "show"
+            },
+            {
+              "trigger": 6,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 11,
+              "value": 1,
+              "variable": "show"
+            }
+          ],
+          "trigger": -2,
+          "variable": "AND"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "backgroundColor",
+            "value": [
+              1,
+              0.50196081399918,
+              0.50196081399918,
+              1
+            ]
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": 1,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 4,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 2,
+              "value": 0,
+              "variable": "show"
+            },
+            {
+              "trigger": 3,
+              "value": 0,
+              "variable": "show"
+            }
+          ],
+          "trigger": -2,
+          "variable": "AND"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "backgroundColor",
+            "value": [
+              1,
+              1,
+              0.50196081399918,
+              0
+            ]
+          },
+          {
+            "property": "sub.4.border_visible"
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": 1,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 5,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 3,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 2,
+              "value": 0,
+              "variable": "show"
+            },
+            {
+              "trigger": 4,
+              "value": 1,
+              "variable": "show"
+            }
+          ],
+          "trigger": -2,
+          "variable": "AND"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "backgroundColor",
+            "value": [
+              0.50196081399918,
+              0.50196081399918,
+              1,
+              0
+            ]
+          },
+          {
+            "property": "sub.3.text_visible",
+            "value": false
+          },
+          {
+            "property": "sub.4.border_visible",
+            "value": true
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": 1,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 3,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 6,
+              "value": 0,
+              "variable": "show"
+            }
+          ],
+          "trigger": -2,
+          "variable": "AND"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "backgroundColor",
+            "value": [
+              0.50196081399918,
+              0.50196081399918,
+              1,
+              0
+            ]
+          },
+          {
+            "property": "sub.3.text_visible",
+            "value": false
+          },
+          {
+            "property": "sub.4.border_visible",
+            "value": true
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": 1,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 3,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 5,
+              "value": 0,
+              "variable": "show"
+            },
+            {
+              "trigger": 9,
+              "value": 0,
+              "variable": "show"
+            },
+            {
+              "trigger": 10,
+              "value": 1,
+              "variable": "show"
+            }
+          ],
+          "trigger": -2,
+          "variable": "AND"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "backgroundColor",
+            "value": [
+              0.50196081399918,
+              0.50196081399918,
+              1,
+              0
+            ]
+          },
+          {
+            "property": "sub.3.text_visible",
+            "value": false
+          },
+          {
+            "property": "sub.4.border_visible",
+            "value": true
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": 1,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 3,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 5,
+              "value": 0,
+              "variable": "show"
+            },
+            {
+              "trigger": 7,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "trigger": 9,
+              "value": 1,
+              "variable": "show"
+            }
+          ],
+          "trigger": -2,
+          "variable": "AND"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "color",
+            "value": [
+              0.94117647058824,
+              0.13333333333333,
+              0.95686274509804,
+              1
+            ]
+          },
+          {
+            "property": "glowexternal",
+            "value": {
+              "glow_action": "show",
+              "glow_color": [
+                0.92549019607843,
+                0.5921568627451,
+                0.24705882352941,
+                1
+              ],
+              "glow_frame": "WeakAuras:Hunter - Range Check",
+              "glow_frame_type": "FRAMESELECTOR",
+              "glow_frequency": 0.25,
+              "glow_length": 2.85,
+              "glow_lines": 8,
+              "glow_thickness": 3.6,
+              "glow_type": "Pixel",
+              "use_glow_color": true
+            }
+          }
+        ],
+        "check": {
+          "trigger": 12,
+          "value": 1,
+          "variable": "show"
+        },
+        "linked": false
+      },
+      {
+        "changes": [
+          {
+            "property": "glowexternal",
+            "value": {
+              "glow_action": "hide",
+              "glow_frame": "WeakAuras:Hunter - Range Check",
+              "glow_frame_type": "FRAMESELECTOR"
+            }
+          }
+        ],
+        "check": {
+          "trigger": 12,
+          "value": 0,
+          "variable": "show"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "alpha",
+            "value": 1
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "attackabletarget"
+            },
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "incombat"
+            }
+          ],
+          "trigger": -2,
+          "variable": "OR"
+        }
+      }
+    ],
+    "config": {
+      "40yards": "Max",
+      "40yardsr": true,
+      "deadzone": "Deadzone",
+      "hmoutofrange": "HM Out of Range",
+      "hmoutofranger": true,
+      "inrange": "",
+      "longrange": "Far",
+      "longranger": true,
+      "maxrange": "Max",
+      "melee": "Melee",
+      "outofrange": "Out of Range",
+      "shortrange": "",
+      "shortranger": true,
+      "sweetspot": "Close",
+      "sweetspotr": true,
+      "throttle": 0.1
+    },
+    "customText": "@range-check--customText.lua",
+    "customTextUpdate": "update",
+    "desaturate": false,
+    "desc": "https://wago.io/-EGVBCgFU\nVisual Edit for: Sheepy's Hunter Range Check",
+    "discrete_rotation": 0,
+    "enableGradient": false,
+    "frameStrata": 3,
+    "gradientOrientation": "HORIZONTAL",
+    "height": 18.000001907349,
+    "icon": false,
+    "iconSource": -1,
+    "icon_color": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "icon_side": "RIGHT",
+    "id": "Xyrec Hunter - Range Check",
+    "information": {
+      "forceEvents": true,
+      "ignoreOptionsEventErrors": true,
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "inverse": false,
+    "load": {
+      "class": {
+        "multi": [],
+        "single": "HUNTER"
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "spellknown": 2974,
+      "talent": {
+        "multi": []
+      },
+      "use_class": true,
+      "use_level": false,
+      "use_never": false,
+      "use_spellknown": false,
+      "zoneIds": ""
+    },
+    "mirror": false,
+    "orientation": "HORIZONTAL",
+    "preferToUpdate": false,
+    "progressSource": [
+      -1,
+      ""
+    ],
+    "regionType": "aurabar",
+    "rotate": false,
+    "rotation": 0,
+    "selfPoint": "BOTTOM",
+    "semver": "1.5.8",
+    "source": "import",
+    "spark": false,
+    "sparkBlendMode": "ADD",
+    "sparkColor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "sparkHeight": 30,
+    "sparkHidden": "NEVER",
+    "sparkOffsetX": 0,
+    "sparkOffsetY": 0,
+    "sparkRotation": 0,
+    "sparkRotationMode": "AUTO",
+    "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+    "sparkWidth": 10,
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "type": "subforeground"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "CENTER",
+        "rotateText": "NONE",
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 64,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 12,
+        "text_fontType": "OUTLINE",
+        "text_justify": "CENTER",
+        "text_selfPoint": "AUTO",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_shadowXOffset": 1,
+        "text_shadowYOffset": -1,
+        "text_text": "%c",
+        "text_text_format_c_format": "none",
+        "text_visible": true,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      },
+      {
+        "anchor_area": "bar",
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "type": "subborder"
+      }
+    ],
+    "texture": "Clean",
+    "textureSource": "LSM",
+    "textureWrapMode": "CLAMP",
+    "tocversion": 20505,
+    "toolTipArea": "ICON",
+    "triggers": {
+      "1": {
+        "trigger": {
+          "check": "update",
+          "custom": "@range-check--triggers-1-trigger-custom.lua",
+          "custom_type": "status",
+          "debuffType": "HELPFUL",
+          "duration": "1",
+          "event": "Health",
+          "events": "PLAYER_TARGET_CHANGED",
+          "names": [],
+          "spellIds": [],
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "custom",
+          "unevent": "auto",
+          "unit": "target",
+          "use_unit": true
+        },
+        "untrigger": []
+      },
+      "10": {
+        "trigger": {
+          "check": "update",
+          "custom": "@range-check--triggers-10-trigger-custom.lua",
+          "custom_type": "status",
+          "event": "Health",
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "custom"
+        },
+        "untrigger": []
+      },
+      "11": {
+        "trigger": {
+          "check": "update",
+          "custom": "@range-check--triggers-11-trigger-custom.lua",
+          "custom_type": "status",
+          "event": "Health",
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "custom"
+        },
+        "untrigger": []
+      },
+      "12": {
+        "trigger": {
+          "check": "update",
+          "custom": "@range-check--triggers-12-trigger-custom.lua",
+          "custom_type": "status",
+          "event": "Health",
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "custom"
+        },
+        "untrigger": []
+      },
+      "2": {
+        "trigger": {
+          "check": "update",
+          "custom": "@range-check--triggers-2-trigger-custom.lua",
+          "custom_hide": "timed",
+          "custom_type": "status",
+          "event": "Health",
+          "events": "PLAYER_TARGET_CHANGED",
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "custom"
+        },
+        "untrigger": []
+      },
+      "3": {
+        "trigger": {
+          "check": "update",
+          "custom": "@range-check--triggers-3-trigger-custom.lua",
+          "custom_type": "status",
+          "duration": "1",
+          "event": "Health",
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "custom",
+          "unevent": "auto",
+          "unit": "player",
+          "use_unit": true
+        },
+        "untrigger": []
+      },
+      "4": {
+        "trigger": {
+          "check": "update",
+          "custom": "@range-check--triggers-4-trigger-custom.lua",
+          "custom_type": "status",
+          "duration": "1",
+          "event": "Health",
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "custom",
+          "unevent": "auto",
+          "unit": "player",
+          "use_unit": true
+        },
+        "untrigger": []
+      },
+      "5": {
+        "trigger": {
+          "check": "update",
+          "custom": "@range-check--triggers-5-trigger-custom.lua",
+          "custom_type": "status",
+          "event": "Health",
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "custom"
+        },
+        "untrigger": []
+      },
+      "6": {
+        "trigger": {
+          "check": "update",
+          "custom": "@range-check--triggers-6-trigger-custom.lua",
+          "custom_type": "status",
+          "event": "Health",
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "custom"
+        },
+        "untrigger": []
+      },
+      "7": {
+        "trigger": {
+          "check": "update",
+          "custom": "@range-check--triggers-7-trigger-custom.lua",
+          "custom_type": "status",
+          "event": "Health",
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "custom"
+        },
+        "untrigger": []
+      },
+      "8": {
+        "trigger": {
+          "check": "update",
+          "custom": "@range-check--triggers-8-trigger-custom.lua",
+          "custom_type": "status",
+          "duration": "1",
+          "event": "Health",
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "custom",
+          "unevent": "auto",
+          "unit": "player",
+          "use_unit": true
+        },
+        "untrigger": []
+      },
+      "9": {
+        "trigger": {
+          "check": "update",
+          "custom": "@range-check--triggers-9-trigger-custom.lua",
+          "custom_type": "status",
+          "event": "Health",
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "custom"
+        },
+        "untrigger": []
+      },
+      "activeTriggerMode": -10,
+      "customTriggerLogic": "function(t) return t[1] end",
+      "disjunctive": "custom"
+    },
+    "url": "",
+    "useAdjustededMax": false,
+    "useAdjustededMin": false,
+    "version": 42,
+    "wagoID": "B2G4lZKVE",
+    "width": 266,
+    "xOffset": 7.62939453125e-06,
+    "yOffset": -9.5367431640625e-07,
+    "zoom": 0
+  },
+  "row": "loose"
+}

@@ -1,0 +1,453 @@
+{
+  "archetype": "bespoke",
+  "id": "Xyrec Hunter - Auto Shot Bar",
+  "lua": {
+    "actions.init.custom": "lua/auto-shot-bar--actions-init-custom.lua",
+    "triggers.1.trigger.custom": "lua/auto-shot-bar--triggers-1-trigger-custom.lua",
+    "triggers.2.trigger.custom": "lua/auto-shot-bar--triggers-2-trigger-custom.lua"
+  },
+  "payload": {
+    "actions": {
+      "finish": [],
+      "init": {
+        "custom": "@auto-shot-bar--actions-init-custom.lua",
+        "do_custom": true
+      },
+      "start": []
+    },
+    "adjustedMax": "3",
+    "adjustedMin": "",
+    "alpha": 0.3,
+    "anchorFrameFrame": "WeakAuras:Hunter - Mana Bars",
+    "anchorFrameParent": false,
+    "anchorFrameType": "SELECTFRAME",
+    "anchorPoint": "TOP",
+    "animation": {
+      "finish": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      },
+      "main": {
+        "alpha": 0,
+        "colorA": 1,
+        "colorB": 1,
+        "colorFunc": "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n    if spell == 75 then\n        return r1 + (progress * (r2 - r1)), g1 + (progress * (g2 - g1)), b1 + (progress * (b2 - b1)), a1 + (progress * (a2 - a1))\n    end\nend",
+        "colorG": 1,
+        "colorR": 1,
+        "colorType": "custom",
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "rotate": 0,
+        "scalex": 1,
+        "scaley": 1,
+        "type": "none",
+        "use_color": true,
+        "x": 0,
+        "y": 0
+      },
+      "start": {
+        "duration_type": "seconds",
+        "easeStrength": 3,
+        "easeType": "none",
+        "type": "none"
+      }
+    },
+    "authorOptions": [
+      {
+        "default": true,
+        "key": "show_auto_reload",
+        "name": "Show Autoshot Reload",
+        "type": "toggle",
+        "useDesc": false,
+        "width": 1
+      },
+      {
+        "default": true,
+        "key": "show_auto_cast",
+        "name": "Show Autoshot Cast",
+        "type": "toggle",
+        "useDesc": false,
+        "width": 1
+      }
+    ],
+    "auto": true,
+    "backgroundColor": [
+      0.67058825492859,
+      0.83137261867523,
+      0.45098042488098,
+      0.10000002384186
+    ],
+    "barColor": [
+      0.75294125080109,
+      0.50196081399918,
+      1,
+      1
+    ],
+    "barColor2": [
+      0.75294125080109,
+      0.50196081399918,
+      1,
+      1
+    ],
+    "conditions": [
+      {
+        "changes": [
+          {
+            "property": "barColor",
+            "value": [
+              0.75294125080109,
+              0.50196081399918,
+              1,
+              1
+            ]
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": 1,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "op": "==",
+              "trigger": 1,
+              "value": "Multi-Shot",
+              "variable": "name"
+            }
+          ],
+          "trigger": -2,
+          "variable": "AND"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "barColor",
+            "value": [
+              0.67058825492859,
+              0.83137261867523,
+              0.45098042488098,
+              1
+            ]
+          },
+          {
+            "property": "sub.3.text_visible"
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": 1,
+              "value": 0,
+              "variable": "show"
+            }
+          ],
+          "trigger": -2,
+          "variable": "AND"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "inverse"
+          }
+        ],
+        "check": {
+          "trigger": 1,
+          "value": 0,
+          "variable": "show"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "alpha",
+            "value": 1
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "attackabletarget"
+            },
+            {
+              "trigger": -1,
+              "value": 1,
+              "variable": "incombat"
+            }
+          ],
+          "trigger": -2,
+          "variable": "OR"
+        }
+      }
+    ],
+    "config": {
+      "show_auto_cast": true,
+      "show_auto_reload": true
+    },
+    "customText": "\n\n",
+    "customTextUpdate": "update",
+    "desaturate": false,
+    "desc": "https://wago.io/YSKP1xUe2\nVisual Edit for: Bouk's Hunter Castbar",
+    "enableGradient": false,
+    "frameStrata": 2,
+    "gradientOrientation": "HORIZONTAL",
+    "height": 18,
+    "icon": false,
+    "iconSource": -1,
+    "icon_color": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "icon_side": "LEFT",
+    "id": "Xyrec Hunter - Auto Shot Bar",
+    "information": {
+      "forceEvents": true,
+      "ignoreOptionsEventErrors": true,
+      "showNilIsFalse": true
+    },
+    "internalVersion": 90,
+    "inverse": true,
+    "load": {
+      "class": {
+        "multi": {
+          "HUNTER": true
+        },
+        "single": "HUNTER"
+      },
+      "race": {
+        "multi": []
+      },
+      "size": {
+        "multi": []
+      },
+      "spec": {
+        "multi": []
+      },
+      "talent": {
+        "multi": []
+      },
+      "use_class": true,
+      "use_never": false,
+      "zoneIds": ""
+    },
+    "orientation": "HORIZONTAL",
+    "overlayclip": true,
+    "overlays": [
+      [
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "overlaysTexture": [
+      "Clean"
+    ],
+    "preferToUpdate": false,
+    "progressSource": [
+      -1,
+      ""
+    ],
+    "regionType": "aurabar",
+    "selfPoint": "BOTTOM",
+    "semver": "1.5.8",
+    "smoothProgress": false,
+    "source": "import",
+    "spark": false,
+    "sparkBlendMode": "ADD",
+    "sparkColor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "sparkHeight": 30,
+    "sparkHidden": "NEVER",
+    "sparkOffsetX": 0,
+    "sparkOffsetY": 0,
+    "sparkRotation": 0,
+    "sparkRotationMode": "AUTO",
+    "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+    "sparkWidth": 15,
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "type": "subforeground"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "INNER_LEFT",
+        "rotateText": "NONE",
+        "text_anchorXOffset": 2,
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 64,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 12,
+        "text_fontType": "OUTLINE",
+        "text_justify": "CENTER",
+        "text_selfPoint": "AUTO",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_shadowXOffset": 1,
+        "text_shadowYOffset": -1,
+        "text_text": "%n",
+        "text_text_format_n_format": "none",
+        "text_visible": true,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "INNER_RIGHT",
+        "rotateText": "NONE",
+        "text_anchorXOffset": 0,
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 120,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 12,
+        "text_fontType": "OUTLINE",
+        "text_justify": "RIGHT",
+        "text_selfPoint": "AUTO",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_shadowXOffset": 1,
+        "text_shadowYOffset": -1,
+        "text_text": "%p",
+        "text_text_format_c1_format": "none",
+        "text_text_format_c2_format": "none",
+        "text_text_format_p_format": "timed",
+        "text_text_format_p_time_dynamic_threshold": 60,
+        "text_text_format_p_time_format": 0,
+        "text_text_format_p_time_legacy_floor": true,
+        "text_text_format_p_time_mod_rate": true,
+        "text_text_format_p_time_precision": 1,
+        "text_text_format_t_format": "timed",
+        "text_text_format_t_time_dynamic_threshold": 60,
+        "text_text_format_t_time_format": 0,
+        "text_text_format_t_time_precision": 1,
+        "text_visible": true,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      },
+      {
+        "anchor_area": "bar",
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "type": "subborder"
+      }
+    ],
+    "texture": "Clean",
+    "textureSource": "LSM",
+    "tocversion": 20505,
+    "toolTipArea": "ICON",
+    "triggers": {
+      "1": {
+        "trigger": {
+          "check": "event",
+          "custom": "@auto-shot-bar--triggers-1-trigger-custom.lua",
+          "customDuration": "function()\n    return aura_env.duration, aura_env.expiration_time\nend",
+          "customIcon": "function()\n    return aura_env.spell_icon\nend",
+          "customName": "function()\n    return aura_env.spell_name\nend\n\n\n",
+          "customOverlay1": "function()\n    return \"backward\", \"-\"..aura_env.pushback_total\nend",
+          "custom_hide": "timed",
+          "custom_type": "status",
+          "debuffType": "HELPFUL",
+          "duration": "3",
+          "event": "Cast",
+          "events": "CLEU:SPELL_CAST_START, CLEU:SPELL_CAST_SUCCESS, CLEU:SPELL_CAST_FAILED, CLEU:SWING_DAMAGE, CLEU:ENVIRONMENTAL_DAMAGE, CLEU:SPELL_DAMAGE",
+          "names": [],
+          "sourceUnit": "player",
+          "spell": "aimed shot",
+          "spellIds": [],
+          "spellName": "Aimed Shot",
+          "subeventPrefix": "SPELL",
+          "subeventSuffix": "_CAST_START",
+          "type": "custom",
+          "unevent": "auto",
+          "unit": "player",
+          "use_cloneId": false,
+          "use_sourceUnit": true,
+          "use_spell": true,
+          "use_spellName": true,
+          "use_unit": true
+        },
+        "untrigger": {
+          "custom": "function(event, _, cleu, _, _, source_name, _, _, _, _, _, _, _, spell_name, _, fail_type)\n    if source_name == UnitName(\"player\") and spell_name == aura_env.spell_name then\n        if cleu == \"SPELL_CAST_SUCCESS\" or (cleu == \"SPELL_CAST_FAILED\" and fail_type ~= getglobal(\"SPELL_FAILED_SPELL_IN_PROGRESS\")) then\n            aura_env.spell_name = nil\n            aura_env.casting = nil\n            return true\n        end\n    end\n    \n    if aura_env.expiration_time - GetTime() <= 0 then -- Fixes bar being stuck because SPELL_CAST_FAILED is not always fired\n        aura_env.spell_name = nil\n        aura_env.casting = nil\n        return true\n    end\nend"
+        }
+      },
+      "2": {
+        "trigger": {
+          "custom": "@auto-shot-bar--triggers-2-trigger-custom.lua",
+          "customDuration": "function()\n    local eWS = UnitRangedDamage(\"player\")\n    local haste = aura_env.haste() * (1 + GetRangedHaste() / 100)\n    local duration = eWS - .5 / haste\n    return duration, GetTime() + duration\nend\n\n\n",
+          "custom_hide": "timed",
+          "custom_type": "event",
+          "debuffType": "HELPFUL",
+          "dynamicDuration": true,
+          "event": "Swing Timer",
+          "events": "UNIT_SPELLCAST_SUCCEEDED:player",
+          "hand": "ranged",
+          "type": "custom",
+          "unit": "player",
+          "use_hand": true,
+          "use_inverse": false,
+          "use_remaining": false,
+          "use_unit": true
+        },
+        "untrigger": []
+      },
+      "activeTriggerMode": -10,
+      "disjunctive": "any"
+    },
+    "url": "",
+    "useAdjustededMax": false,
+    "useAdjustededMin": false,
+    "version": 42,
+    "wagoID": "B2G4lZKVE",
+    "width": 266,
+    "xOffset": 0,
+    "yOffset": 0,
+    "zoom": 0
+  },
+  "row": "loose"
+}

@@ -1,0 +1,140 @@
+{
+  "archetype": "cooldown_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        },
+        {
+          "property": "inverse",
+          "value": true
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 1,
+        "variable": "show"
+      }
+    }
+  ],
+  "id": "Xyrec Warrior - Shield Bash",
+  "load": {
+    "class": {
+      "multi": {},
+      "single": "WARRIOR"
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 72,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_not_spellknown": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "displayIcon": 132357
+  },
+  "row": "cooldowns",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "auranames": [],
+        "debuffType": "HELPFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showOnCooldown",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "realSpellName": "Shield Bash",
+        "spellIds": [],
+        "spellName": 72,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "spell",
+        "unevent": "auto",
+        "unit": "player",
+        "unitExists": true,
+        "useName": true,
+        "use_charges": false,
+        "use_genericShowOn": true,
+        "use_remaining": false,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways",
+        "track": "auto"
+      }
+    },
+    "2": {
+      "trigger": {
+        "auranames": [],
+        "debuffType": "HELPFUL",
+        "duration": "1",
+        "event": "Cooldown Progress (Spell)",
+        "genericShowOn": "showAlways",
+        "matchesShowOn": "showAlways",
+        "names": [],
+        "realSpellName": "Shield Bash",
+        "spellIds": [],
+        "spellName": 72,
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "track": "auto",
+        "type": "spell",
+        "unevent": "auto",
+        "unit": "player",
+        "unitExists": true,
+        "useName": true,
+        "use_charges": false,
+        "use_genericShowOn": true,
+        "use_remaining": false,
+        "use_spellName": true,
+        "use_track": true,
+        "use_unit": true
+      },
+      "untrigger": {
+        "genericShowOn": "showAlways",
+        "track": "auto"
+      }
+    },
+    "3": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Item Type Equipped",
+        "genericShowOn": "showOnCooldown",
+        "itemName": 0,
+        "itemTypeName": {
+          "multi": {
+            "1030": true
+          }
+        },
+        "type": "item",
+        "unit": "player",
+        "use_genericShowOn": true,
+        "use_itemName": true,
+        "use_itemTypeName": false,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": -10,
+    "customTriggerLogic": "function (t)\n    return t[1] or (t[2] and t[3])\nend",
+    "disjunctive": "custom"
+  }
+}
