@@ -1,7 +1,7 @@
 {
   "archetype": "cooldown_icon",
   "conditions": [],
-  "id": "Xyrec Warlock - Healthstone CD",
+  "id": "Warlock - Healthstone CD",
   "load": {
     "class": {
       "multi": {},

@@ -1,7 +1,7 @@
 {
   "archetype": "cooldown_icon",
   "conditions": [],
-  "id": "Xyrec Mage - Invisibility",
+  "id": "Mage - Invisibility",
   "load": {
     "class": {
       "multi": [],

@@ -57,7 +57,7 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Warrior - Enrage/CBR",
+        "Warrior - Enrage/CBR",
         "Rampage"
       ],
       "frameStrata": 1,
@@ -66,7 +66,7 @@
       "gridWidth": 5,
       "groupIcon": 133495,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Warrior - Enrage Bar",
+      "id": "Warrior - Enrage Bar",
       "information": {
         "showNilIsFalse": true
       },
@@ -121,7 +121,7 @@
           "untrigger": []
         }
       ],
-      "uid": "efVdIpcMt0x",
+      "uid": "7fO3q0OVByp",
       "url": "",
       "useLimit": false,
       "version": 38,
@@ -205,7 +205,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Enrage/CBR",
+      "id": "Warrior - Enrage/CBR",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -238,7 +238,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Enrage Bar",
+      "parent": "Warrior - Enrage Bar",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -331,7 +331,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "xDkhHDxczBo",
+      "uid": "OVVCkDZBKuS",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -452,7 +452,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Enrage Bar",
+      "parent": "Warrior - Enrage Bar",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -595,7 +595,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "qsbKAdAEL6a",
+      "uid": "SwLcvmZVnuO",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -664,18 +664,18 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Warrior - Mortal Strike",
-        "Xyrec Warrior - Bloodthrist",
-        "Xyrec Warrior - Shield Slam",
-        "Xyrec Warrior - Whirlwind",
-        "Xyrec Warrior - Overpower",
-        "Xyrec Warrior - Revenge",
-        "Xyrec Warrior - Shield Block",
-        "Xyrec Warrior - Execute",
-        "Xyrec Warrior - Devastate",
-        "Xyrec Warrior - Sunder Armor",
-        "Xyrec Warrior - Victory Rush",
-        "Xyrec Warrior - Rend"
+        "Warrior - Mortal Strike",
+        "Warrior - Bloodthrist",
+        "Warrior - Shield Slam",
+        "Warrior - Whirlwind",
+        "Warrior - Overpower",
+        "Warrior - Revenge",
+        "Warrior - Shield Block",
+        "Warrior - Execute",
+        "Warrior - Devastate",
+        "Warrior - Sunder Armor",
+        "Warrior - Victory Rush",
+        "Warrior - Rend"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -683,7 +683,7 @@
       "gridWidth": 5,
       "groupIcon": 132215,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Warrior - Core Abilities",
+      "id": "Warrior - Core Abilities",
       "information": {
         "showNilIsFalse": true
       },
@@ -753,7 +753,7 @@
           "untrigger": []
         }
       ],
-      "uid": "PAZ1Lf4tljK",
+      "uid": "mqsIihnCx1Q",
       "url": "",
       "useLimit": true,
       "version": 38,
@@ -865,7 +865,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Mortal Strike",
+      "id": "Warrior - Mortal Strike",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -897,7 +897,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Core Abilities",
+      "parent": "Warrior - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -998,7 +998,7 @@
         "customTriggerLogic": "function (t)\n     return t[1]\nend",
         "disjunctive": "any"
       },
-      "uid": "Kos9TAmApDG",
+      "uid": "6YfmReVhSDI",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1114,7 +1114,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Bloodthrist",
+      "id": "Warrior - Bloodthrist",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1146,7 +1146,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Core Abilities",
+      "parent": "Warrior - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1247,7 +1247,7 @@
         "customTriggerLogic": "function (t)\n     return t[1]\nend",
         "disjunctive": "any"
       },
-      "uid": "ODJdtpxDBUw",
+      "uid": "QvMzueX9L54",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1363,7 +1363,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Shield Slam",
+      "id": "Warrior - Shield Slam",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1395,7 +1395,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Core Abilities",
+      "parent": "Warrior - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1496,7 +1496,7 @@
         "customTriggerLogic": "function (t)\n     return t[1]\nend",
         "disjunctive": "any"
       },
-      "uid": "uCeqb2w3Aje",
+      "uid": "gRvr2iPinoN",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1612,7 +1612,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Whirlwind",
+      "id": "Warrior - Whirlwind",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1644,7 +1644,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Core Abilities",
+      "parent": "Warrior - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1763,7 +1763,7 @@
         "customTriggerLogic": "function (t)\n     return t[1]\nend",
         "disjunctive": "all"
       },
-      "uid": "k3Axsg06QRf",
+      "uid": "p942EeXUoV9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1895,7 +1895,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Overpower",
+      "id": "Warrior - Overpower",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1927,7 +1927,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Core Abilities",
+      "parent": "Warrior - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2047,7 +2047,7 @@
         "customTriggerLogic": "function (t)\n     return t[1] and t[2]\nend",
         "disjunctive": "all"
       },
-      "uid": "GliUk8WrvY8",
+      "uid": "ENET9LiZOkK",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2178,7 +2178,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Revenge",
+      "id": "Warrior - Revenge",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2210,7 +2210,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Core Abilities",
+      "parent": "Warrior - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2325,7 +2325,7 @@
         "customTriggerLogic": "function (t)\n     return t[1] and t[2]\nend",
         "disjunctive": "all"
       },
-      "uid": "XdGpFWq2Nor",
+      "uid": "KDNMHY2z7nn",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2450,7 +2450,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Shield Block",
+      "id": "Warrior - Shield Block",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2482,7 +2482,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Core Abilities",
+      "parent": "Warrior - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2675,7 +2675,7 @@
         "customTriggerLogic": "function (t)\n     return t[1] and t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "WQcrpj0fLdF",
+      "uid": "gIwLE5zntVG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2795,7 +2795,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Execute",
+      "id": "Warrior - Execute",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2827,7 +2827,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Core Abilities",
+      "parent": "Warrior - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2943,7 +2943,7 @@
         "customTriggerLogic": "function (t)\n     return t[1] and t[2]\nend",
         "disjunctive": "all"
       },
-      "uid": "D2wFXlZS0QD",
+      "uid": "tJyiwkiQPMe",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3046,7 +3046,7 @@
       "height": 32,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Warrior - Devastate",
+      "id": "Warrior - Devastate",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3078,7 +3078,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Core Abilities",
+      "parent": "Warrior - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -3258,7 +3258,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2]) and (t[3] and t[4])\nend",
         "disjunctive": "custom"
       },
-      "uid": "i01WuSnlXwK",
+      "uid": "YiMqykpabf0",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3361,7 +3361,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Sunder Armor",
+      "id": "Warrior - Sunder Armor",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3394,7 +3394,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Core Abilities",
+      "parent": "Warrior - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -3591,7 +3591,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2]) and not (t[3] and t[4] and t[5])\nend",
         "disjunctive": "custom"
       },
-      "uid": "wz3Dj5xfUqn",
+      "uid": "Lxfu1CEh9hu",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3728,7 +3728,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Victory Rush",
+      "id": "Warrior - Victory Rush",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3761,7 +3761,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Core Abilities",
+      "parent": "Warrior - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -3974,7 +3974,7 @@
         "customTriggerLogic": "function (t)\n     return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "eeHdgMdCGhx",
+      "uid": "UaXJyxDqyj7",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4077,7 +4077,7 @@
       "height": 32,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Warrior - Rend",
+      "id": "Warrior - Rend",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4109,7 +4109,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Core Abilities",
+      "parent": "Warrior - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -4229,7 +4229,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "rpYWndoF5Nj",
+      "uid": "5FkZgkM3AZm",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4292,13 +4292,12 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Xyrec Warrior - Overpower [Nameplates]",
-        "Xyrec Warrior - Swing Timer [MH]",
-        "Xyrec Warrior - Rage Bar"
+        "Warrior - Swing Timer [MH]",
+        "Warrior - Rage Bar"
       ],
       "frameStrata": 1,
       "groupIcon": 136009,
-      "id": "Xyrec Warrior - Resources",
+      "id": "Warrior - Resources",
       "information": {
         "showNilIsFalse": true
       },
@@ -4341,320 +4340,12 @@
           "untrigger": []
         }
       ],
-      "uid": "9dVkUUB2m8G",
+      "uid": "vokr2OyhXqU",
       "url": "",
       "version": 38,
       "wagoID": "HV-7izFl4",
       "xOffset": 0,
       "yOffset": 0
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": {
-          "custom": "aura_env.overpower = {\n    [7384] = true,\n    [7887] = true,\n    [11584] = true,\n    [11585] = true\n}\n\naura_env.units = {}",
-          "do_custom": true
-        },
-        "start": {
-          "custom": "\n\n",
-          "do_custom": false
-        }
-      },
-      "adjustedMax": "",
-      "adjustedMin": "",
-      "alpha": 0.3,
-      "anchorFrameFrame": "WeakAuras:Nameplate Point Anchor",
-      "anchorFrameType": "NAMEPLATE",
-      "anchorPoint": "LEFT",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [
-        {
-          "default": 0,
-          "key": "duration",
-          "max": 5,
-          "min": 0,
-          "name": "Duration",
-          "step": 1,
-          "type": "range",
-          "useDesc": false,
-          "width": 2
-        }
-      ],
-      "auto": false,
-      "blendMode": "BLEND",
-      "color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "sub.4.glow",
-              "value": false
-            },
-            {
-              "property": "desaturate",
-              "value": true
-            }
-          ],
-          "check": {
-            "trigger": 2,
-            "value": 1,
-            "variable": "onCooldown"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": {
-        "duration": 5
-      },
-      "cooldown": false,
-      "cooldownEdge": false,
-      "cooldownSwipe": true,
-      "cooldownTextDisabled": false,
-      "customText": "\n\n\n",
-      "customTextUpdate": "event",
-      "desaturate": false,
-      "discrete_rotation": 0,
-      "displayIcon": 132223,
-      "frameStrata": 1,
-      "height": 20,
-      "icon": true,
-      "iconSource": 0,
-      "id": "Xyrec Warrior - Overpower [Nameplates]",
-      "information": {
-        "forceEvents": true,
-        "ignoreOptionsEventErrors": true,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "inverse": false,
-      "keepAspectRatio": false,
-      "load": {
-        "class": {
-          "multi": [],
-          "single": "WARRIOR"
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": []
-        },
-        "spellknown": 7384,
-        "talent": {
-          "multi": []
-        },
-        "use_class": true,
-        "use_never": false,
-        "use_spellknown": true,
-        "zoneIds": ""
-      },
-      "mirror": false,
-      "parent": "Xyrec Warrior - Resources",
-      "preferToUpdate": false,
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "icon",
-      "rotate": true,
-      "rotation": 0,
-      "selfPoint": "RIGHT",
-      "semver": "1.4.7",
-      "source": "import",
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 12,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%1.p",
-          "text_text_format_1.p_format": "timed",
-          "text_text_format_1.p_time_dynamic_threshold": 0,
-          "text_text_format_1.p_time_format": 0,
-          "text_text_format_1.p_time_legacy_floor": false,
-          "text_text_format_1.p_time_mod_rate": true,
-          "text_text_format_1.p_time_precision": 1,
-          "text_text_format_2.p_format": "timed",
-          "text_text_format_2.p_time_dynamic_threshold": 60,
-          "text_text_format_2.p_time_format": 0,
-          "text_text_format_2.p_time_legacy_floor": true,
-          "text_text_format_2.p_time_mod_rate": true,
-          "text_text_format_2.p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "glow": true,
-          "glowBorder": false,
-          "glowColor": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "glowDuration": 1,
-          "glowFrequency": 0.25,
-          "glowLength": 10,
-          "glowLines": 6,
-          "glowScale": 1,
-          "glowThickness": 1,
-          "glowType": "Pixel",
-          "glowXOffset": 0,
-          "glowYOffset": 0,
-          "type": "subglow",
-          "useGlowColor": false
-        }
-      ],
-      "texture": "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura53",
-      "tocversion": 20505,
-      "triggers": {
-        "1": {
-          "trigger": {
-            "check": "event",
-            "custom": "function(allstates, event, unit, subEvent, spellID, sourceGUID, _, _, _, destGUID, _, destFlags, _, ...)\n    local changed = false\n    \n    if event==\"COMBAT_LOG_EVENT_UNFILTERED\" then\n        local missType = subEvent==\"SWING_MISSED\" and ... or select(4,...)\n        \n        if missType == \"DODGE\" and sourceGUID == UnitGUID(\"player\") then\n            allstates[destGUID] = {\n                changed = true,\n                show = true,          \n                autoHide = true,\n                progressType = \"timed\",\n                expirationTime = GetTime() + aura_env.config.duration,\n                duration = aura_env.config.duration,\n                unit = aura_env.units[destGUID]\n            }\n            changed = true\n        end\n    elseif event==\"UNIT_SPELLCAST_SUCCEEDED\" and aura_env.overpower[spellID] then\n        -- Clear all procs when we cast Overpower, since we can't cast it again before they expire\n        for _, state in pairs(allstates) do\n            state.show = false;\n            state.changed = true;\n        end\n        changed = true\n    elseif event==\"PLAYER_TARGET_CHANGED\" then\n        -- Clear all procs when we change targets\n        for _, state in pairs(allstates) do\n            state.show = false;\n            state.changed = true;\n        end\n        changed = true\n    elseif event==\"NAME_PLATE_UNIT_ADDED\" then\n        if unit then\n            aura_env.units[UnitGUID(unit)] = unit\n        end\n    elseif event==\"NAME_PLATE_UNIT_REMOVED\" then\n        if unit then\n            local guid = UnitGUID(unit)\n            aura_env.units[guid] = nil\n            \n            if allstates[guid] then\n                allstates[guid] = {\n                    changed = true,\n                    show = false\n                }\n                changed = true\n            end\n        end\n    end\n    \n    return changed\nend",
-            "custom_hide": "timed",
-            "custom_type": "stateupdate",
-            "debuffType": "HELPFUL",
-            "duration": "1",
-            "event": "Health",
-            "events": "CLEU:SWING_MISSED:SPELL_MISSED,UNIT_SPELLCAST_SUCCEEDED:player,NAME_PLATE_UNIT_ADDED,NAME_PLATE_UNIT_REMOVED,PLAYER_TARGET_CHANGED",
-            "genericShowOn": "showOnCooldown",
-            "names": [],
-            "realSpellName": 0,
-            "spellIds": [],
-            "spellName": 0,
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "custom",
-            "unevent": "auto",
-            "unit": "player",
-            "use_genericShowOn": true,
-            "use_spellName": true,
-            "use_track": true,
-            "use_unit": true
-          },
-          "untrigger": []
-        },
-        "2": {
-          "trigger": {
-            "duration": "1",
-            "event": "Cooldown Progress (Spell)",
-            "genericShowOn": "showAlways",
-            "realSpellName": "Overpower",
-            "spellName": 7887,
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "spell",
-            "unevent": "auto",
-            "unit": "player",
-            "use_genericShowOn": true,
-            "use_spellName": true,
-            "use_track": true,
-            "use_unit": true
-          },
-          "untrigger": {
-            "genericShowOn": "showAlways"
-          }
-        },
-        "activeTriggerMode": -10,
-        "disjunctive": "all"
-      },
-      "uid": "DPCCo5LuOcV",
-      "url": "",
-      "useAdjustededMax": false,
-      "useAdjustededMin": false,
-      "useCooldownModRate": true,
-      "version": 38,
-      "wagoID": "HV-7izFl4",
-      "width": 20,
-      "xOffset": -3,
-      "yOffset": 0,
-      "zoom": 0.3
     },
     {
       "actions": {
@@ -4871,7 +4562,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Warrior - Swing Timer [MH]",
+      "id": "Warrior - Swing Timer [MH]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4928,7 +4619,7 @@
           0.25
         ]
       ],
-      "parent": "Xyrec Warrior - Resources",
+      "parent": "Warrior - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -5102,7 +4793,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "sLEr1YSHJf0",
+      "uid": "MvQPwcKmFSm",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5278,7 +4969,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Warrior - Rage Bar",
+      "id": "Warrior - Rage Bar",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5339,7 +5030,7 @@
       "overlaysTexture": [
         "Clean"
       ],
-      "parent": "Xyrec Warrior - Resources",
+      "parent": "Warrior - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -5515,7 +5206,7 @@
         "customTriggerLogic": "function (t)\n     return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "PNNIcG1g7Kc",
+      "uid": "NuLYikq49YR",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -5583,37 +5274,37 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Warrior - Charge",
-        "Xyrec Warrior - Intercept",
-        "Xyrec Warrior - Intervene",
-        "Xyrec Warrior - Thunder Clap",
-        "Xyrec Warrior - Bloodrage",
-        "Xyrec Warrior - Berserker Rage",
-        "Xyrec Warrior - Perception",
-        "Xyrec Warrior - Stoneform",
-        "Xyrec Warrior - Escape Artist",
-        "Xyrec Warrior - Shadowmeld",
-        "Xyrec Warrior - Blood Fury",
-        "Xyrec Warrior - Berserking",
-        "Xyrec Warrior - Will of the Forsaken",
-        "Xyrec Warrior - War Stomp",
-        "Xyrec Warrior - Trinket 1 CD",
-        "Xyrec Warrior - Trinket 2 CD",
-        "Xyrec Warrior - Death Wish",
-        "Xyrec Warrior - Sweeping Strikes",
-        "Xyrec Warrior - Recklessness",
-        "Xyrec Warrior - Retaliation",
-        "Xyrec Warrior - Shield Wall",
-        "Xyrec Warrior - Last Stand",
-        "Xyrec Warrior - Frenzied Regeneration",
-        "Xyrec Warrior - Intimidating Shout",
-        "Xyrec Warrior - Disarm",
-        "Xyrec Warrior - Concussive Blow",
-        "Xyrec Warrior - Challenging Shout",
-        "Xyrec Warrior - Mocking Blow",
-        "Xyrec Warrior - Taunt",
-        "Xyrec Warrior - Shield Bash",
-        "Xyrec Warrior - Pummel"
+        "Warrior - Charge",
+        "Warrior - Intercept",
+        "Warrior - Intervene",
+        "Warrior - Thunder Clap",
+        "Warrior - Bloodrage",
+        "Warrior - Berserker Rage",
+        "Warrior - Perception",
+        "Warrior - Stoneform",
+        "Warrior - Escape Artist",
+        "Warrior - Shadowmeld",
+        "Warrior - Blood Fury",
+        "Warrior - Berserking",
+        "Warrior - Will of the Forsaken",
+        "Warrior - War Stomp",
+        "Warrior - Trinket 1 CD",
+        "Warrior - Trinket 2 CD",
+        "Warrior - Death Wish",
+        "Warrior - Sweeping Strikes",
+        "Warrior - Recklessness",
+        "Warrior - Retaliation",
+        "Warrior - Shield Wall",
+        "Warrior - Last Stand",
+        "Warrior - Frenzied Regeneration",
+        "Warrior - Intimidating Shout",
+        "Warrior - Disarm",
+        "Warrior - Concussive Blow",
+        "Warrior - Challenging Shout",
+        "Warrior - Mocking Blow",
+        "Warrior - Taunt",
+        "Warrior - Shield Bash",
+        "Warrior - Pummel"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -5621,7 +5312,7 @@
       "gridWidth": 5,
       "groupIcon": 132336,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Warrior - Cooldowns",
+      "id": "Warrior - Cooldowns",
       "information": {
         "showNilIsFalse": true
       },
@@ -5706,7 +5397,7 @@
           "untrigger": []
         }
       ],
-      "uid": "qDRAjap5NuF",
+      "uid": "h0SGKeYT6fd",
       "url": "",
       "useLimit": true,
       "version": 38,
@@ -5807,7 +5498,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Charge",
+      "id": "Warrior - Charge",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5840,7 +5531,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -5984,7 +5675,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or (t[2] and t[3] and t[4])\nend",
         "disjunctive": "custom"
       },
-      "uid": "T1Hpb1sO5Hz",
+      "uid": "O5kjkFMbFod",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6088,7 +5779,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Intercept",
+      "id": "Warrior - Intercept",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6121,7 +5812,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6265,7 +5956,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or (t[2] and t[3] and t[4])\nend",
         "disjunctive": "custom"
       },
-      "uid": "uOQ9PLYHmJI",
+      "uid": "sW2XgCW2dff",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6369,7 +6060,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Intervene",
+      "id": "Warrior - Intervene",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6402,7 +6093,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6546,7 +6237,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or (t[2] and t[3] and t[4])\nend",
         "disjunctive": "custom"
       },
-      "uid": "6NvcsZttLmS",
+      "uid": "NhwUNikoY5N",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6650,7 +6341,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Thunder Clap",
+      "id": "Warrior - Thunder Clap",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6689,7 +6380,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6791,7 +6482,7 @@
         "customTriggerLogic": "function (t)\n     return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "xon92JiQ8VK",
+      "uid": "DLQ2DiZAGKd",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6907,7 +6598,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Bloodrage",
+      "id": "Warrior - Bloodrage",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6940,7 +6631,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7063,7 +6754,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "cDUiIWH0RiE",
+      "uid": "37NEYkTc1Cj",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7179,7 +6870,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Berserker Rage",
+      "id": "Warrior - Berserker Rage",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7212,7 +6903,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7335,7 +7026,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "UpAGNBSR4Xc",
+      "uid": "wHqBoAfNzJU",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7451,7 +7142,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Perception",
+      "id": "Warrior - Perception",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7488,7 +7179,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7611,7 +7302,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ve9HgyoaoD7",
+      "uid": "9qKYdX6oNqz",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7727,7 +7418,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Stoneform",
+      "id": "Warrior - Stoneform",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7764,7 +7455,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7887,7 +7578,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "bea4sGmLDD9",
+      "uid": "mXNddkOTEnJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8003,7 +7694,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Escape Artist",
+      "id": "Warrior - Escape Artist",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8040,7 +7731,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8163,7 +7854,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "lOftAYm2Btb",
+      "uid": "tIkxN0dIOo6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8279,7 +7970,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Shadowmeld",
+      "id": "Warrior - Shadowmeld",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8316,7 +8007,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8439,7 +8130,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "olIHDCQ7mLE",
+      "uid": "weyn63pkzeR",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8555,7 +8246,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Blood Fury",
+      "id": "Warrior - Blood Fury",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8592,7 +8283,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8715,7 +8406,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "RXnQTvMf9gS",
+      "uid": "W3wtjI96JFa",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8831,7 +8522,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Berserking",
+      "id": "Warrior - Berserking",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8868,7 +8559,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8991,7 +8682,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Ki28M2DPqBN",
+      "uid": "GrA41sVC07g",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9107,7 +8798,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Will of the Forsaken",
+      "id": "Warrior - Will of the Forsaken",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9144,7 +8835,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9267,7 +8958,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ExI5gX5BQIb",
+      "uid": "7bvEuNRI892",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9371,7 +9062,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - War Stomp",
+      "id": "Warrior - War Stomp",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9408,7 +9099,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9509,7 +9200,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "T40BK7rI91A",
+      "uid": "MkhNRrrwcJX",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9613,7 +9304,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Warrior - Trinket 1 CD",
+      "id": "Warrior - Trinket 1 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9645,7 +9336,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9750,7 +9441,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "vw4N9nzPcqw",
+      "uid": "wfoM9ixdjQh",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9854,7 +9545,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Warrior - Trinket 2 CD",
+      "id": "Warrior - Trinket 2 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9886,7 +9577,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9991,7 +9682,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "rSPVKcYA0X7",
+      "uid": "rxZcpxOcd4R",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10107,7 +9798,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Death Wish",
+      "id": "Warrior - Death Wish",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10140,7 +9831,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10263,7 +9954,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "xnxnw0FuSP5",
+      "uid": "id42kx5kpjt",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10379,7 +10070,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Sweeping Strikes",
+      "id": "Warrior - Sweeping Strikes",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10412,7 +10103,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10576,7 +10267,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "gLQpIgt3qXU",
+      "uid": "3xTqJLRxCJT",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10692,7 +10383,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Recklessness",
+      "id": "Warrior - Recklessness",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10725,7 +10416,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10848,7 +10539,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "8vPEVePeSab",
+      "uid": "43fIVzVPyl3",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10964,7 +10655,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Retaliation",
+      "id": "Warrior - Retaliation",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10997,7 +10688,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11160,7 +10851,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "BdY3gqP6TqO",
+      "uid": "XtVXlpl66oL",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11276,7 +10967,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Shield Wall",
+      "id": "Warrior - Shield Wall",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11309,7 +11000,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11432,7 +11123,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "JDSINrLT9EZ",
+      "uid": "K71MYTIQSjf",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11548,7 +11239,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Last Stand",
+      "id": "Warrior - Last Stand",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11581,7 +11272,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11704,7 +11395,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "3wwdW2QbQHQ",
+      "uid": "JrM9iRLYZpX",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11791,7 +11482,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Frenzied Regeneration",
+      "id": "Warrior - Frenzied Regeneration",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11822,7 +11513,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11915,7 +11606,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "pbPAbUVfDT5",
+      "uid": "47eVRCbauHw",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12019,7 +11710,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Intimidating Shout",
+      "id": "Warrior - Intimidating Shout",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12051,7 +11742,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -12149,7 +11840,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "XaGQ91J44kH",
+      "uid": "rjEp2kUZCKY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12265,7 +11956,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Disarm",
+      "id": "Warrior - Disarm",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12298,7 +11989,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -12421,7 +12112,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "BYgkO6kpvM9",
+      "uid": "eKEmmFkFYAi",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12537,7 +12228,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Concussive Blow",
+      "id": "Warrior - Concussive Blow",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12570,7 +12261,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -12693,7 +12384,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Px9STEAvBjz",
+      "uid": "yk8GQWw9owy",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12809,7 +12500,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Challenging Shout",
+      "id": "Warrior - Challenging Shout",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12842,7 +12533,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -12965,7 +12656,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "msee7iPPM99",
+      "uid": "0XYWvwvPMnI",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13081,7 +12772,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Mocking Blow",
+      "id": "Warrior - Mocking Blow",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13114,7 +12805,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -13237,7 +12928,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "X1Arr8mKQHh",
+      "uid": "oSGdi3e95BP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13353,7 +13044,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Taunt",
+      "id": "Warrior - Taunt",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13386,7 +13077,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -13509,7 +13200,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "kGVofJzXkly",
+      "uid": "gzRzpr2DAUV",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13613,7 +13304,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Shield Bash",
+      "id": "Warrior - Shield Bash",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13646,7 +13337,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -13800,7 +13491,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or (t[2] and t[3])\nend",
         "disjunctive": "custom"
       },
-      "uid": "b1DZwU6frev",
+      "uid": "eGSZYdcNsA9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13904,7 +13595,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warrior - Pummel",
+      "id": "Warrior - Pummel",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13937,7 +13628,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Cooldowns",
+      "parent": "Warrior - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -14038,7 +13729,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "bgdpMk62xxu",
+      "uid": "LuhHoEGqcqZ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14106,9 +13797,9 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Warrior - Battle Shout",
-        "Xyrec Warrior - Commanding Shout",
-        "Xyrec Warrior - Demoralizing Shout"
+        "Warrior - Battle Shout",
+        "Warrior - Commanding Shout",
+        "Warrior - Demoralizing Shout"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -14116,7 +13807,7 @@
       "gridWidth": 5,
       "groupIcon": 132333,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Warrior - Reminders",
+      "id": "Warrior - Reminders",
       "information": {
         "showNilIsFalse": true
       },
@@ -14175,7 +13866,7 @@
           "untrigger": []
         }
       ],
-      "uid": "d8FfnQzhjax",
+      "uid": "KxBR2VB1HH5",
       "url": "",
       "useLimit": false,
       "version": 38,
@@ -14260,7 +13951,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Warrior - Battle Shout",
+      "id": "Warrior - Battle Shout",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -14297,7 +13988,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Reminders",
+      "parent": "Warrior - Reminders",
       "progressSource": [
         -1,
         ""
@@ -14470,7 +14161,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3] and t[4]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "biemhFWrLMA",
+      "uid": "cfFtJjFL2GX",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14558,7 +14249,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Warrior - Commanding Shout",
+      "id": "Warrior - Commanding Shout",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -14595,7 +14286,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Reminders",
+      "parent": "Warrior - Reminders",
       "progressSource": [
         -1,
         ""
@@ -14768,7 +14459,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3] and t[4]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "YIm20UG3Pdg",
+      "uid": "H7hHrCfRLU1",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14856,7 +14547,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Warrior - Demoralizing Shout",
+      "id": "Warrior - Demoralizing Shout",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -14898,7 +14589,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warrior - Reminders",
+      "parent": "Warrior - Reminders",
       "progressSource": [
         -1,
         ""
@@ -15059,7 +14750,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "lVNxhLPiooO",
+      "uid": "ehvvAhtpJnF",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -15122,11 +14813,11 @@
     "conditions": [],
     "config": [],
     "controlledChildren": [
-      "Xyrec Warrior - Enrage Bar",
-      "Xyrec Warrior - Core Abilities",
-      "Xyrec Warrior - Resources",
-      "Xyrec Warrior - Cooldowns",
-      "Xyrec Warrior - Reminders"
+      "Warrior - Enrage Bar",
+      "Warrior - Core Abilities",
+      "Warrior - Resources",
+      "Warrior - Cooldowns",
+      "Warrior - Reminders"
     ],
     "frameStrata": 1,
     "groupIcon": 135328,
@@ -15172,7 +14863,7 @@
         "untrigger": []
       }
     ],
-    "uid": "grgtQN7tuaR",
+    "uid": "89X59HNjYJG",
     "url": "",
     "version": 38,
     "wagoID": "HV-7izFl4",

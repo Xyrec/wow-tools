@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Mage - Wand Swing",
+  "id": "Mage - Wand Swing",
   "lua": {
     "customText": "lua/wand-swing--customText.lua"
   },
@@ -165,7 +165,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Mage - Wand Swing",
+    "id": "Mage - Wand Swing",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

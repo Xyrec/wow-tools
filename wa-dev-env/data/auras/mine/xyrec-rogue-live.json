@@ -57,16 +57,16 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Rogue - Riposte",
-        "Xyrec Rogue - Ghostly Strike",
-        "Xyrec Rogue - Envenom",
-        "Xyrec Rogue - Blade Dance",
-        "Xyrec Rogue - Slice and Dice",
-        "Xyrec Rogue - Expose Armor",
-        "Xyrec Rogue - Rupture & Garrote",
-        "Xyrec Rogue - Kidney & Cheap Shot",
-        "Xyrec Rogue - Shadowstrike",
-        "Xyrec Rogue - Mutilate"
+        "Rogue - Riposte",
+        "Rogue - Ghostly Strike",
+        "Rogue - Envenom",
+        "Rogue - Blade Dance",
+        "Rogue - Slice and Dice",
+        "Rogue - Expose Armor",
+        "Rogue - Rupture & Garrote",
+        "Rogue - Kidney & Cheap Shot",
+        "Rogue - Shadowstrike",
+        "Rogue - Mutilate"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -74,7 +74,7 @@
       "gridWidth": 5,
       "groupIcon": 132304,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Rogue - Core Abilities",
+      "id": "Rogue - Core Abilities",
       "information": {
         "showNilIsFalse": true
       },
@@ -140,7 +140,7 @@
           "untrigger": []
         }
       ],
-      "uid": "9UGvytSvcIk",
+      "uid": "zMOnRPsa6kG",
       "url": "",
       "useLimit": true,
       "version": 30,
@@ -363,7 +363,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Riposte",
+      "id": "Rogue - Riposte",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -395,7 +395,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Core Abilities",
+      "parent": "Rogue - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -653,7 +653,7 @@
         "customTriggerLogic": "function (t)\n     return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "39b8kH8TxnL",
+      "uid": "17BQ8zRrUfQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -790,7 +790,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Ghostly Strike",
+      "id": "Rogue - Ghostly Strike",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -823,7 +823,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Core Abilities",
+      "parent": "Rogue - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1043,7 +1043,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "fBrWVTnEpdb",
+      "uid": "io4AFagqxtd",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1157,7 +1157,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Envenom",
+      "id": "Rogue - Envenom",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1189,7 +1189,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Core Abilities",
+      "parent": "Rogue - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1353,7 +1353,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "cnBdu7gclWd",
+      "uid": "2nudv58Wryt",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1444,7 +1444,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Blade Dance",
+      "id": "Rogue - Blade Dance",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1475,7 +1475,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Rogue - Core Abilities",
+      "parent": "Rogue - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1568,7 +1568,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "vgOS6g7cjXS",
+      "uid": "RIH36HCqLjH",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1672,7 +1672,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Slice and Dice",
+      "id": "Rogue - Slice and Dice",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1704,7 +1704,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Core Abilities",
+      "parent": "Rogue - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1792,7 +1792,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "RPIvSExWcPo",
+      "uid": "JRthxjRbtVu",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1896,7 +1896,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Expose Armor",
+      "id": "Rogue - Expose Armor",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1930,7 +1930,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Core Abilities",
+      "parent": "Rogue - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2070,7 +2070,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "QjCsu31bVnx",
+      "uid": "DjwqYxqFDVF",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2174,7 +2174,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Rupture & Garrote",
+      "id": "Rogue - Rupture & Garrote",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2207,7 +2207,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Core Abilities",
+      "parent": "Rogue - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2309,7 +2309,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "YnWkJEPS1Z5",
+      "uid": "s0wMoDwJAgU",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2437,7 +2437,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Kidney & Cheap Shot",
+      "id": "Rogue - Kidney & Cheap Shot",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2471,7 +2471,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Core Abilities",
+      "parent": "Rogue - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2692,7 +2692,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "BlE9ToZz5gL",
+      "uid": "m4AliZH3BX5",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2838,7 +2838,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Shadowstrike",
+      "id": "Rogue - Shadowstrike",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2870,7 +2870,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Core Abilities",
+      "parent": "Rogue - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2985,7 +2985,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "1xcnwcZJjAQ",
+      "uid": "3cBuxn7RpzG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3123,7 +3123,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Mutilate",
+      "id": "Rogue - Mutilate",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3156,7 +3156,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Core Abilities",
+      "parent": "Rogue - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -3311,7 +3311,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "jqbNz3zj36e",
+      "uid": "aMitVsf7Qma",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3374,15 +3374,15 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Xyrec Rogue - Combo Points",
-        "Xyrec Rogue - Envenom Progress Bar",
-        "Xyrec Rogue - Swing Timer",
-        "Xyrec Rogue - Energy Bar",
-        "Xyrec Rogue - Energy Tick"
+        "Rogue - Combo Points",
+        "Rogue - Envenom Progress Bar",
+        "Rogue - Swing Timer",
+        "Rogue - Energy Bar",
+        "Rogue - Energy Tick"
       ],
       "frameStrata": 1,
       "groupIcon": 132320,
-      "id": "Xyrec Rogue - Resources",
+      "id": "Rogue - Resources",
       "information": {
         "showNilIsFalse": true
       },
@@ -3424,7 +3424,7 @@
           "untrigger": []
         }
       ],
-      "uid": "RRII8MGtTO2",
+      "uid": "qMTEIiUINJD",
       "url": "",
       "version": 30,
       "wagoID": "YWmuM5cC9",
@@ -3482,15 +3482,15 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Xyrec Rogue - CP1",
-        "Xyrec Rogue - CP2",
-        "Xyrec Rogue - CP3",
-        "Xyrec Rogue - CP4",
-        "Xyrec Rogue - CP5"
+        "Rogue - CP1",
+        "Rogue - CP2",
+        "Rogue - CP3",
+        "Rogue - CP4",
+        "Rogue - CP5"
       ],
       "frameStrata": 1,
       "groupIcon": 132320,
-      "id": "Xyrec Rogue - Combo Points",
+      "id": "Rogue - Combo Points",
       "information": {
         "showNilIsFalse": true
       },
@@ -3509,7 +3509,7 @@
           "multi": []
         }
       },
-      "parent": "Xyrec Rogue - Resources",
+      "parent": "Rogue - Resources",
       "preferToUpdate": false,
       "regionType": "group",
       "scale": 1,
@@ -3532,7 +3532,7 @@
           "untrigger": []
         }
       ],
-      "uid": "eVXziEbEVoW",
+      "uid": "6REMjl8DIFD",
       "url": "",
       "version": 30,
       "wagoID": "YWmuM5cC9",
@@ -3631,7 +3631,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Rogue - CP1",
+      "id": "Rogue - CP1",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3662,7 +3662,7 @@
         "use_never": false
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Rogue - Combo Points",
+      "parent": "Rogue - Combo Points",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -3743,7 +3743,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "dY3NDhXS4sq",
+      "uid": "RsspZ9N1KRS",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -3846,7 +3846,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Rogue - CP2",
+      "id": "Rogue - CP2",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3877,7 +3877,7 @@
         "use_never": false
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Rogue - Combo Points",
+      "parent": "Rogue - Combo Points",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -3957,7 +3957,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "dq9CFWHsEKS",
+      "uid": "9k9izGYCOPg",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -4060,7 +4060,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Rogue - CP3",
+      "id": "Rogue - CP3",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4091,7 +4091,7 @@
         "use_never": false
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Rogue - Combo Points",
+      "parent": "Rogue - Combo Points",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -4171,7 +4171,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "VBu0qen3K4c",
+      "uid": "E7Oe5EvGQme",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -4274,7 +4274,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Rogue - CP4",
+      "id": "Rogue - CP4",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4305,7 +4305,7 @@
         "use_never": false
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Rogue - Combo Points",
+      "parent": "Rogue - Combo Points",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -4386,7 +4386,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "7C22Q2tZgv3",
+      "uid": "6JnhWJisXzh",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -4489,7 +4489,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Rogue - CP5",
+      "id": "Rogue - CP5",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4520,7 +4520,7 @@
         "use_never": false
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Rogue - Combo Points",
+      "parent": "Rogue - Combo Points",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -4600,7 +4600,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "INEo3Bol1c9",
+      "uid": "WMAcvOKlGOn",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -4703,7 +4703,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Rogue - Envenom Progress Bar",
+      "id": "Rogue - Envenom Progress Bar",
       "information": {
         "showNilIsFalse": true
       },
@@ -4726,7 +4726,7 @@
         "use_class": true
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Rogue - Resources",
+      "parent": "Rogue - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -4795,7 +4795,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "K8OboGrAKt2",
+      "uid": "sVWnGzMPITv",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5001,7 +5001,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Rogue - Swing Timer",
+      "id": "Rogue - Swing Timer",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5059,7 +5059,7 @@
           0.25
         ]
       ],
-      "parent": "Xyrec Rogue - Resources",
+      "parent": "Rogue - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -5225,7 +5225,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "yax2DkX6C3n",
+      "uid": "fRizWIsZbO2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5366,7 +5366,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Rogue - Energy Bar",
+      "id": "Rogue - Energy Bar",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5424,7 +5424,7 @@
           0.25
         ]
       ],
-      "parent": "Xyrec Rogue - Resources",
+      "parent": "Rogue - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -5547,7 +5547,7 @@
         "customTriggerLogic": "",
         "disjunctive": "any"
       },
-      "uid": "99Ip8YkhPXe",
+      "uid": "rhac5CvJq3J",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5655,7 +5655,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Rogue - Energy Tick",
+      "id": "Rogue - Energy Tick",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5681,7 +5681,7 @@
         "use_never": false
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Rogue - Resources",
+      "parent": "Rogue - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -5751,7 +5751,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "Hifw1OGhXmk",
+      "uid": "KJl7qzee4QY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5819,28 +5819,28 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Rogue - Stealth",
-        "Xyrec Rogue - Feint",
-        "Xyrec Rogue - Distract",
-        "Xyrec Rogue - Perception",
-        "Xyrec Rogue - Escape Artist",
-        "Xyrec Rogue - Will of the Forsaken",
-        "Xyrec Rogue - Berserking",
-        "Xyrec Rogue - Blood Fury",
-        "Xyrec Rogue - Trinket 1 CD",
-        "Xyrec Rogue - Trinket 2 CD",
-        "Xyrec Rogue - Blind",
-        "Xyrec Rogue - Adrenaline Rush",
-        "Xyrec Rogue - Blade Flurry",
-        "Xyrec Rogue - Cold Blood",
-        "Xyrec Rogue - Premeditation",
-        "Xyrec Rogue - Preparation",
-        "Xyrec Rogue - Vanish",
-        "Xyrec Rogue - Evasion",
-        "Xyrec Rogue - Sprint",
-        "Xyrec Rogue - Shadowstep",
-        "Xyrec Rogue - Gouge",
-        "Xyrec Rogue - Kick"
+        "Rogue - Stealth",
+        "Rogue - Feint",
+        "Rogue - Distract",
+        "Rogue - Perception",
+        "Rogue - Escape Artist",
+        "Rogue - Will of the Forsaken",
+        "Rogue - Berserking",
+        "Rogue - Blood Fury",
+        "Rogue - Trinket 1 CD",
+        "Rogue - Trinket 2 CD",
+        "Rogue - Blind",
+        "Rogue - Adrenaline Rush",
+        "Rogue - Blade Flurry",
+        "Rogue - Cold Blood",
+        "Rogue - Premeditation",
+        "Rogue - Preparation",
+        "Rogue - Vanish",
+        "Rogue - Evasion",
+        "Rogue - Sprint",
+        "Rogue - Shadowstep",
+        "Rogue - Gouge",
+        "Rogue - Kick"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -5848,7 +5848,7 @@
       "gridWidth": 5,
       "groupIcon": 132350,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Rogue - Cooldowns",
+      "id": "Rogue - Cooldowns",
       "information": {
         "showNilIsFalse": true
       },
@@ -5926,7 +5926,7 @@
           "untrigger": []
         }
       ],
-      "uid": "RxOm6mYjA4i",
+      "uid": "nBDhfhc473s",
       "url": "",
       "useLimit": true,
       "version": 30,
@@ -6039,7 +6039,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Stealth",
+      "id": "Rogue - Stealth",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6072,7 +6072,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6195,7 +6195,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "UX8WQkbnOPh",
+      "uid": "NKLrR3QfZLJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6311,7 +6311,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Feint",
+      "id": "Rogue - Feint",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6344,7 +6344,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6467,7 +6467,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ud13Ut8rEHX",
+      "uid": "XOGROtr8DRG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6571,7 +6571,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Distract",
+      "id": "Rogue - Distract",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6604,7 +6604,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6705,7 +6705,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "LXv83SuvmH0",
+      "uid": "M2rw5PD6cUD",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6821,7 +6821,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Perception",
+      "id": "Rogue - Perception",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6858,7 +6858,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6981,7 +6981,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "3vhAY9RUJzA",
+      "uid": "Fe7NiDakWZV",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7097,7 +7097,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Escape Artist",
+      "id": "Rogue - Escape Artist",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7134,7 +7134,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7257,7 +7257,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "jwlAKI0hQEe",
+      "uid": "CP4t8W8UUSS",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7373,7 +7373,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Will of the Forsaken",
+      "id": "Rogue - Will of the Forsaken",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7410,7 +7410,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7533,7 +7533,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "mU76R0htB3G",
+      "uid": "BzykWeqK8qh",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7649,7 +7649,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Berserking",
+      "id": "Rogue - Berserking",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7686,7 +7686,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7809,7 +7809,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "unf0zjhwuot",
+      "uid": "WOAexsvCLVG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7925,7 +7925,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Blood Fury",
+      "id": "Rogue - Blood Fury",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7962,7 +7962,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8085,7 +8085,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "On4vwyCasNq",
+      "uid": "7VoNIH54YbN",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8189,7 +8189,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Rogue - Trinket 1 CD",
+      "id": "Rogue - Trinket 1 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8221,7 +8221,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8326,7 +8326,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "WEuFeYgNZEr",
+      "uid": "O4eXluxD3b8",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8430,7 +8430,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Rogue - Trinket 2 CD",
+      "id": "Rogue - Trinket 2 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8462,7 +8462,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8567,7 +8567,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "pH3xi7Qi5Xb",
+      "uid": "2OQL0Crccw9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8683,7 +8683,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Blind",
+      "id": "Rogue - Blind",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8716,7 +8716,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8839,7 +8839,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "jYLT3WQyiEu",
+      "uid": "psIGJmcFhWM",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8955,7 +8955,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Adrenaline Rush",
+      "id": "Rogue - Adrenaline Rush",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8988,7 +8988,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9111,7 +9111,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "wmXVolfxwfB",
+      "uid": "tSoUpxqyVZP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9227,7 +9227,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Blade Flurry",
+      "id": "Rogue - Blade Flurry",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9260,7 +9260,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9383,7 +9383,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "hjaTqRkc0zt",
+      "uid": "zS96P0GWP1C",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9499,7 +9499,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Cold Blood",
+      "id": "Rogue - Cold Blood",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9532,7 +9532,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9655,7 +9655,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "pTLRccltZhC",
+      "uid": "75stsS4LgFz",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9759,7 +9759,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Premeditation",
+      "id": "Rogue - Premeditation",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9792,7 +9792,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9893,7 +9893,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "jG4OLnXzzHz",
+      "uid": "ojxJNC3ztWh",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9997,7 +9997,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Preparation",
+      "id": "Rogue - Preparation",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10030,7 +10030,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10131,7 +10131,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "UXeO6wKCG9y",
+      "uid": "R1IDONvNTHl",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10247,7 +10247,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Vanish",
+      "id": "Rogue - Vanish",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10280,7 +10280,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10403,7 +10403,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "grpJsZeXSku",
+      "uid": "6nafBgM7eoG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10519,7 +10519,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Evasion",
+      "id": "Rogue - Evasion",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10552,7 +10552,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10675,7 +10675,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "qWewnnlImHn",
+      "uid": "hjZL9HfttTG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10791,7 +10791,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Sprint",
+      "id": "Rogue - Sprint",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10824,7 +10824,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10947,7 +10947,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "aGCPfdOrEwF",
+      "uid": "9OkbUgD0VpC",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11063,7 +11063,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Shadowstep",
+      "id": "Rogue - Shadowstep",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11096,7 +11096,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11219,7 +11219,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "oeulXj487If",
+      "uid": "nOXeMDS88OP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11335,7 +11335,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Gouge",
+      "id": "Rogue - Gouge",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11368,7 +11368,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11491,7 +11491,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "F8tOmhwbABu",
+      "uid": "sgnJkJDiZQ6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11595,7 +11595,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Rogue - Kick",
+      "id": "Rogue - Kick",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11628,7 +11628,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Cooldowns",
+      "parent": "Rogue - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11729,7 +11729,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ZFN7POJnZOK",
+      "uid": "AZCs6kl0GZ9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11797,8 +11797,8 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Rogue - Poison [MH - No Group]",
-        "Xyrec Rogue - Poison [OH]"
+        "Rogue - Poison [MH - No Group]",
+        "Rogue - Poison [OH]"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -11806,7 +11806,7 @@
       "gridWidth": 5,
       "groupIcon": 132290,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Rogue - Reminders",
+      "id": "Rogue - Reminders",
       "information": {
         "showNilIsFalse": true
       },
@@ -11860,7 +11860,7 @@
           "untrigger": []
         }
       ],
-      "uid": "V966Kzq3824",
+      "uid": "fMJJt7iuMtB",
       "url": "",
       "useLimit": false,
       "version": 30,
@@ -11959,7 +11959,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Rogue - Poison [MH - No Group]",
+      "id": "Rogue - Poison [MH - No Group]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12020,7 +12020,7 @@
         "zone": "",
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Reminders",
+      "parent": "Rogue - Reminders",
       "progressSource": [
         -1,
         ""
@@ -12266,7 +12266,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "IJrkZYJg4la",
+      "uid": "OaxkU4M28lU",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12368,7 +12368,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Rogue - Poison [OH]",
+      "id": "Rogue - Poison [OH]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12427,7 +12427,7 @@
         "zone": "",
         "zoneIds": ""
       },
-      "parent": "Xyrec Rogue - Reminders",
+      "parent": "Rogue - Reminders",
       "progressSource": [
         -1,
         ""
@@ -12673,7 +12673,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "dZ29n6rfLGx",
+      "uid": "wofjgwLErIs",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12806,7 +12806,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Rogue - Ammo [Drag]",
+      "id": "Rogue - Ammo [Drag]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12984,7 +12984,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "vTmIhV6ODZz",
+      "uid": "FEIJV8ZZs8R",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13048,11 +13048,11 @@
     "conditions": [],
     "config": [],
     "controlledChildren": [
-      "Xyrec Rogue - Core Abilities",
-      "Xyrec Rogue - Resources",
-      "Xyrec Rogue - Cooldowns",
-      "Xyrec Rogue - Reminders",
-      "Xyrec Rogue - Ammo [Drag]"
+      "Rogue - Core Abilities",
+      "Rogue - Resources",
+      "Rogue - Cooldowns",
+      "Rogue - Reminders",
+      "Rogue - Ammo [Drag]"
     ],
     "frameStrata": 1,
     "groupIcon": 135428,
@@ -13098,7 +13098,7 @@
         "untrigger": []
       }
     ],
-    "uid": "JNZaAn49TbA",
+    "uid": "iF7sCPIGZCc",
     "url": "",
     "version": 30,
     "wagoID": "YWmuM5cC9",

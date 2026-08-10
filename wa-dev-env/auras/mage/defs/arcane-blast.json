@@ -1,7 +1,7 @@
 {
   "archetype": "rotation_icon",
   "conditions": [],
-  "id": "Xyrec Mage - Arcane Blast",
+  "id": "Mage - Arcane Blast",
   "load": {
     "class": {
       "multi": [],

@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Warrior - Swing Timer [MH]",
+  "id": "Warrior - Swing Timer [MH]",
   "lua": {
     "customText": "lua/swing-timer-mh--customText.lua"
   },
@@ -219,7 +219,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Warrior - Swing Timer [MH]",
+    "id": "Warrior - Swing Timer [MH]",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

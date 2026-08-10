@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Shaman - Swing Timer Sync",
+  "id": "Shaman - Swing Timer Sync",
   "payload": {
     "actions": {
       "finish": [],
@@ -223,7 +223,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Shaman - Swing Timer Sync",
+    "id": "Shaman - Swing Timer Sync",
     "information": {
       "forceEvents": true
     },

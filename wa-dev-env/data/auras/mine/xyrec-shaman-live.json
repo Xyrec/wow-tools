@@ -58,13 +58,13 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Shaman - Totem Twist",
-        "Xyrec Shaman - Stormstrike",
-        "Xyrec Shaman - Fire Nova Totem",
-        "Xyrec Shaman - Flame Shock",
-        "Xyrec Shaman - Earth Shock",
-        "Xyrec Shaman - Chain Lightning",
-        "Xyrec Shaman - Earth Shield"
+        "Shaman - Totem Twist",
+        "Shaman - Stormstrike",
+        "Shaman - Fire Nova Totem",
+        "Shaman - Flame Shock",
+        "Shaman - Earth Shock",
+        "Shaman - Chain Lightning",
+        "Shaman - Earth Shield"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -72,7 +72,7 @@
       "gridWidth": 5,
       "groupIcon": 237582,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Shaman - Core Abilities",
+      "id": "Shaman - Core Abilities",
       "information": {
         "showNilIsFalse": true
       },
@@ -138,7 +138,7 @@
           "untrigger": []
         }
       ],
-      "uid": "CkdkMu7OBaf",
+      "uid": "VGobgygwKj5",
       "url": "",
       "useLimit": true,
       "version": 15,
@@ -266,7 +266,7 @@
       "height": 32,
       "icon": true,
       "iconSource": 2,
-      "id": "Xyrec Shaman - Totem Twist",
+      "id": "Shaman - Totem Twist",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -303,7 +303,7 @@
         "use_ingroup": true,
         "use_never": false
       },
-      "parent": "Xyrec Shaman - Core Abilities",
+      "parent": "Shaman - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -409,7 +409,7 @@
         "customTriggerLogic": "function(t)\n    return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "kUXIMC4JMac",
+      "uid": "iCsmHptTa07",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -562,7 +562,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Stormstrike",
+      "id": "Shaman - Stormstrike",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -594,7 +594,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Core Abilities",
+      "parent": "Shaman - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -694,7 +694,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "og7YujXgcrl",
+      "uid": "VG69YJf7DbX",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -828,7 +828,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Fire Nova Totem",
+      "id": "Shaman - Fire Nova Totem",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -861,7 +861,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Core Abilities",
+      "parent": "Shaman - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1003,7 +1003,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "87Hrw37dzLX",
+      "uid": "Jd3QQh8xwwk",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1172,7 +1172,7 @@
       "height": 32,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Shaman - Flame Shock",
+      "id": "Shaman - Flame Shock",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1205,7 +1205,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Core Abilities",
+      "parent": "Shaman - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1396,7 +1396,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "f7tVvuPNrnQ",
+      "uid": "kv05kHy4zLz",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1549,7 +1549,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Earth Shock",
+      "id": "Shaman - Earth Shock",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1581,7 +1581,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Core Abilities",
+      "parent": "Shaman - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1682,7 +1682,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "any"
       },
-      "uid": "nQcPkCLQRH0",
+      "uid": "WG4R22Q9JBI",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1835,7 +1835,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Chain Lightning",
+      "id": "Shaman - Chain Lightning",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1867,7 +1867,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Core Abilities",
+      "parent": "Shaman - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1967,7 +1967,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "crt94CtYrJl",
+      "uid": "QNYivTNxURd",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2135,7 +2135,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Earth Shield",
+      "id": "Shaman - Earth Shield",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2167,7 +2167,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Core Abilities",
+      "parent": "Shaman - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2380,7 +2380,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "dYTyxY9Bk44",
+      "uid": "6WL5t9wzbXc",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2443,13 +2443,13 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Xyrec Shaman - Mana Bar",
-        "Xyrec Shaman - Mana Tick",
-        "Xyrec Shaman - Swing Timer"
+        "Shaman - Mana Bar",
+        "Shaman - Mana Tick",
+        "Shaman - Swing Timer"
       ],
       "frameStrata": 1,
       "groupIcon": 135861,
-      "id": "Xyrec Shaman - Resources",
+      "id": "Shaman - Resources",
       "information": {
         "showNilIsFalse": true
       },
@@ -2490,7 +2490,7 @@
           "untrigger": []
         }
       ],
-      "uid": "jnfAI9P9MAp",
+      "uid": "kxJdF4FGuVm",
       "url": "",
       "version": 15,
       "xOffset": 0,
@@ -2635,7 +2635,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Shaman - Mana Bar",
+      "id": "Shaman - Mana Bar",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2695,7 +2695,7 @@
       "overlaysTexture": [
         "Clean"
       ],
-      "parent": "Xyrec Shaman - Resources",
+      "parent": "Shaman - Resources",
       "progressSource": [
         -1,
         ""
@@ -2826,7 +2826,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "rXUud3GozfZ",
+      "uid": "YAJ0MBcCxs3",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2851,7 +2851,7 @@
       "adjustedMax": "",
       "adjustedMin": "",
       "alpha": 0.3,
-      "anchorFrameFrame": "WeakAuras:Xyrec Shaman - Mana Bar",
+      "anchorFrameFrame": "WeakAuras:Shaman - Mana Bar",
       "anchorFrameType": "SELECTFRAME",
       "anchorPoint": "CENTER",
       "animation": {
@@ -2964,7 +2964,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Shaman - Mana Tick",
+      "id": "Shaman - Mana Tick",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2990,7 +2990,7 @@
         "zoneIds": ""
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Shaman - Resources",
+      "parent": "Shaman - Resources",
       "progressSource": [
         -1,
         ""
@@ -3094,7 +3094,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "MC39tpDKOCc",
+      "uid": "CNai1q3pkmY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3111,7 +3111,7 @@
         "start": []
       },
       "alpha": 1,
-      "anchorFrameFrame": "WeakAuras:Xyrec Shaman - Mana Bar",
+      "anchorFrameFrame": "WeakAuras:Shaman - Mana Bar",
       "anchorFrameType": "SELECTFRAME",
       "anchorPoint": "CENTER",
       "animation": {
@@ -3156,11 +3156,11 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Xyrec Shaman - Swing Timer MH",
-        "Xyrec Shaman - Swing Timer Sync"
+        "Shaman - Swing Timer MH",
+        "Shaman - Swing Timer Sync"
       ],
       "frameStrata": 3,
-      "id": "Xyrec Shaman - Swing Timer",
+      "id": "Shaman - Swing Timer",
       "information": {
         "forceEvents": true
       },
@@ -3206,7 +3206,7 @@
         "use_petbattle": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Resources",
+      "parent": "Shaman - Resources",
       "regionType": "group",
       "scale": 1,
       "selfPoint": "CENTER",
@@ -3228,7 +3228,7 @@
           "untrigger": []
         }
       ],
-      "uid": "DjxlzWWbx49",
+      "uid": "nQpuvQmdgip",
       "url": "",
       "version": 15,
       "xOffset": 0,
@@ -3418,7 +3418,7 @@
         1
       ],
       "icon_side": "LEFT",
-      "id": "Xyrec Shaman - Swing Timer MH",
+      "id": "Shaman - Swing Timer MH",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true
@@ -3467,7 +3467,7 @@
         "zoneIds": ""
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Shaman - Swing Timer",
+      "parent": "Shaman - Swing Timer",
       "progressSource": [
         -1,
         ""
@@ -3803,7 +3803,7 @@
         "customTriggerLogic": "function(t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "H43lPuBdQ1s",
+      "uid": "JqYI7HihBVz",
       "url": "",
       "useAdjustedMax": false,
       "useAdjustedMin": false,
@@ -4037,7 +4037,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Shaman - Swing Timer Sync",
+      "id": "Shaman - Swing Timer Sync",
       "information": {
         "forceEvents": true
       },
@@ -4085,7 +4085,7 @@
         "zoneIds": ""
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Shaman - Swing Timer",
+      "parent": "Shaman - Swing Timer",
       "progressSource": [
         -1,
         ""
@@ -4157,7 +4157,7 @@
         "customTriggerLogic": "function(trigger)\n    return trigger[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "DdJiIOfEPoN",
+      "uid": "dJ0HvCH5FNm",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4224,21 +4224,21 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Shaman - Windfury ICD",
-        "Xyrec Shaman - Shamanistic Rage",
-        "Xyrec Shaman - Elemental Mastery",
-        "Xyrec Shaman - Nature's Swiftness",
-        "Xyrec Shaman - Blood Fury",
-        "Xyrec Shaman - Berserking",
-        "Xyrec Shaman - War Stomp",
-        "Xyrec Shaman - Trinket 1 CD",
-        "Xyrec Shaman - Trinket 2 CD",
-        "Xyrec Shaman - Reincarnation",
-        "Xyrec Shaman - Mana Tide Totem",
-        "Xyrec Shaman - Stoneclaw Totem",
-        "Xyrec Shaman - Earthbind Totem",
-        "Xyrec Shaman - Grounding Totem",
-        "Xyrec Shaman - Personal Shield"
+        "Shaman - Windfury ICD",
+        "Shaman - Shamanistic Rage",
+        "Shaman - Elemental Mastery",
+        "Shaman - Nature's Swiftness",
+        "Shaman - Blood Fury",
+        "Shaman - Berserking",
+        "Shaman - War Stomp",
+        "Shaman - Trinket 1 CD",
+        "Shaman - Trinket 2 CD",
+        "Shaman - Reincarnation",
+        "Shaman - Mana Tide Totem",
+        "Shaman - Stoneclaw Totem",
+        "Shaman - Earthbind Totem",
+        "Shaman - Grounding Totem",
+        "Shaman - Personal Shield"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -4246,7 +4246,7 @@
       "gridWidth": 5,
       "groupIcon": 136115,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Shaman - Cooldowns",
+      "id": "Shaman - Cooldowns",
       "information": {
         "showNilIsFalse": true
       },
@@ -4313,7 +4313,7 @@
           "untrigger": []
         }
       ],
-      "uid": "2ok4oXo31nj",
+      "uid": "ZJjms4g7frS",
       "url": "",
       "useLimit": true,
       "version": 15,
@@ -4413,7 +4413,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Shaman - Windfury ICD",
+      "id": "Shaman - Windfury ICD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4446,7 +4446,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Cooldowns",
+      "parent": "Shaman - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -4540,7 +4540,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "iPnQh9omNuZ",
+      "uid": "9ZPa23cYckL",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4656,7 +4656,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Shamanistic Rage",
+      "id": "Shaman - Shamanistic Rage",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4689,7 +4689,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Cooldowns",
+      "parent": "Shaman - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -4812,7 +4812,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "qp3rAPmcYKb",
+      "uid": "6pibd5kG2T4",
       "url": "https://wago.io/8MyJNekEa/15",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4928,7 +4928,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Elemental Mastery",
+      "id": "Shaman - Elemental Mastery",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4961,7 +4961,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Cooldowns",
+      "parent": "Shaman - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -5084,7 +5084,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "qayiPROKP0m",
+      "uid": "hiBmREzHtXW",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5200,7 +5200,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Nature's Swiftness",
+      "id": "Shaman - Nature's Swiftness",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5233,7 +5233,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Cooldowns",
+      "parent": "Shaman - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -5356,7 +5356,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "M7yX8m6ApY7",
+      "uid": "5Omc2zzqG3j",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5472,7 +5472,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Blood Fury",
+      "id": "Shaman - Blood Fury",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5509,7 +5509,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Cooldowns",
+      "parent": "Shaman - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -5632,7 +5632,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "4Hm4QxcMgEe",
+      "uid": "NTAJS5CgFbT",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5748,7 +5748,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Berserking",
+      "id": "Shaman - Berserking",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5785,7 +5785,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Cooldowns",
+      "parent": "Shaman - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -5908,7 +5908,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "UpjfQ7V52e5",
+      "uid": "XCfqyaBAonQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6012,7 +6012,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - War Stomp",
+      "id": "Shaman - War Stomp",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6049,7 +6049,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Cooldowns",
+      "parent": "Shaman - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6150,7 +6150,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Tl7yHyUCZPu",
+      "uid": "w556YYowMOf",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6254,7 +6254,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Shaman - Trinket 1 CD",
+      "id": "Shaman - Trinket 1 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6286,7 +6286,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Cooldowns",
+      "parent": "Shaman - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6388,7 +6388,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "gWRMzrNYyRW",
+      "uid": "0ewoGXEG1ea",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6492,7 +6492,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Shaman - Trinket 2 CD",
+      "id": "Shaman - Trinket 2 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6524,7 +6524,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Cooldowns",
+      "parent": "Shaman - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6626,7 +6626,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "kFYPINrn0Gi",
+      "uid": "bxp0QO4dQlr",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6730,7 +6730,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Reincarnation",
+      "id": "Shaman - Reincarnation",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6763,7 +6763,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Cooldowns",
+      "parent": "Shaman - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6864,7 +6864,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "N0c2R3RNaYd",
+      "uid": "jVoiNeOp9Cy",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6968,7 +6968,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Mana Tide Totem",
+      "id": "Shaman - Mana Tide Totem",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7001,7 +7001,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Cooldowns",
+      "parent": "Shaman - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7102,7 +7102,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "JvMwklQmZvL",
+      "uid": "v6rQtBRHjJ3",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7206,7 +7206,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Stoneclaw Totem",
+      "id": "Shaman - Stoneclaw Totem",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7239,7 +7239,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Cooldowns",
+      "parent": "Shaman - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7340,7 +7340,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "IiesOq6ey5Q",
+      "uid": "sd68qWZLBxx",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7444,7 +7444,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Earthbind Totem",
+      "id": "Shaman - Earthbind Totem",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7477,7 +7477,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Cooldowns",
+      "parent": "Shaman - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7578,7 +7578,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "aKfoojCX1ri",
+      "uid": "5j77VOjLsyl",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7682,7 +7682,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Grounding Totem",
+      "id": "Shaman - Grounding Totem",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7715,7 +7715,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Cooldowns",
+      "parent": "Shaman - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7816,7 +7816,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "fh8xDnujZZV",
+      "uid": "PB7JBDrGjci",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7951,7 +7951,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Personal Shield",
+      "id": "Shaman - Personal Shield",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7984,7 +7984,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Cooldowns",
+      "parent": "Shaman - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8132,7 +8132,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "w8WYO9K0Q5H",
+      "uid": "qSvRd1GnXlY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8201,11 +8201,11 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Shaman - Drink Expiring",
-        "Xyrec Shaman - Imbue [MH]",
-        "Xyrec Shaman - Imbue [OH]",
-        "Xyrec Shaman - Lightning/Water Shield",
-        "Xyrec Shaman - Fire Totem Missing"
+        "Shaman - Drink Expiring",
+        "Shaman - Imbue [MH]",
+        "Shaman - Imbue [OH]",
+        "Shaman - Lightning/Water Shield",
+        "Shaman - Fire Totem Missing"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -8213,7 +8213,7 @@
       "gridWidth": 5,
       "groupIcon": 132315,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Shaman - Reminders",
+      "id": "Shaman - Reminders",
       "information": {
         "showNilIsFalse": true
       },
@@ -8269,7 +8269,7 @@
           "untrigger": []
         }
       ],
-      "uid": "QY39FTAfp1N",
+      "uid": "JRi81a3pPbo",
       "url": "",
       "useLimit": false,
       "version": 15,
@@ -8352,7 +8352,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Shaman - Drink Expiring",
+      "id": "Shaman - Drink Expiring",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8387,7 +8387,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Reminders",
+      "parent": "Shaman - Reminders",
       "progressSource": [
         -1,
         ""
@@ -8557,7 +8557,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "xdEwqT2xixK",
+      "uid": "onxd1F8Tlo5",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8662,7 +8662,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Shaman - Imbue [MH]",
+      "id": "Shaman - Imbue [MH]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8719,7 +8719,7 @@
         "zone": "",
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Reminders",
+      "parent": "Shaman - Reminders",
       "progressSource": [
         -1,
         ""
@@ -8963,7 +8963,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "WVFuWKlcrZk",
+      "uid": "3ylqptDGfAy",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9068,7 +9068,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Shaman - Imbue [OH]",
+      "id": "Shaman - Imbue [OH]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9127,7 +9127,7 @@
         "zone": "",
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Reminders",
+      "parent": "Shaman - Reminders",
       "progressSource": [
         -1,
         ""
@@ -9447,7 +9447,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3] and (t[4] or t[5] or t[6] or t[7])\nend",
         "disjunctive": "custom"
       },
-      "uid": "G6SqOgcSbHN",
+      "uid": "C1Vp9qWwxzC",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9534,7 +9534,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Shaman - Lightning/Water Shield",
+      "id": "Shaman - Lightning/Water Shield",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9572,7 +9572,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Reminders",
+      "parent": "Shaman - Reminders",
       "progressSource": [
         -1,
         ""
@@ -9743,7 +9743,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "YR5KWySZePf",
+      "uid": "2fbUrvx676i",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9848,7 +9848,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Shaman - Fire Totem Missing",
+      "id": "Shaman - Fire Totem Missing",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9905,7 +9905,7 @@
         "zone": "",
         "zoneIds": ""
       },
-      "parent": "Xyrec Shaman - Reminders",
+      "parent": "Shaman - Reminders",
       "progressSource": [
         -1,
         ""
@@ -10091,7 +10091,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "vYZQogIlVly",
+      "uid": "7Wl3zDZNCL3",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10154,10 +10154,10 @@
     "conditions": [],
     "config": [],
     "controlledChildren": [
-      "Xyrec Shaman - Core Abilities",
-      "Xyrec Shaman - Resources",
-      "Xyrec Shaman - Cooldowns",
-      "Xyrec Shaman - Reminders"
+      "Shaman - Core Abilities",
+      "Shaman - Resources",
+      "Shaman - Cooldowns",
+      "Shaman - Reminders"
     ],
     "frameStrata": 1,
     "groupIcon": "626006",
@@ -10201,7 +10201,7 @@
         "untrigger": []
       }
     ],
-    "uid": "DOBCCGJ89eI",
+    "uid": "I827yr9ipUx",
     "url": "",
     "version": 15,
     "xOffset": 0,

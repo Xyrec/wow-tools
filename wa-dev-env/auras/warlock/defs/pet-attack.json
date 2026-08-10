@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Warlock - Pet Attack",
+  "id": "Warlock - Pet Attack",
   "load": {
     "class": {
       "multi": {},

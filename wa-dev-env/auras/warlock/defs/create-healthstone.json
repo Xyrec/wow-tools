@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Warlock - Create Healthstone",
+  "id": "Warlock - Create Healthstone",
   "load": {
     "class": {
       "multi": {},

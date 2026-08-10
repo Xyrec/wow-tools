@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Hunter - Cover Bar",
+  "id": "Hunter - Cover Bar",
   "lua": {
     "triggers.1.trigger.custom": "lua/cover-bar--triggers-1-trigger-custom.lua"
   },
@@ -107,7 +107,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Hunter - Cover Bar",
+    "id": "Hunter - Cover Bar",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

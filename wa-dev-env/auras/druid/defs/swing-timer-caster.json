@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Druid - Swing Timer [Caster]",
+  "id": "Druid - Swing Timer [Caster]",
   "lua": {
     "customText": "lua/swing-timer-caster--customText.lua"
   },
@@ -129,7 +129,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Druid - Swing Timer [Caster]",
+    "id": "Druid - Swing Timer [Caster]",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Hunter - Auto Shot Bar",
+  "id": "Hunter - Auto Shot Bar",
   "lua": {
     "actions.init.custom": "lua/auto-shot-bar--actions-init-custom.lua",
     "triggers.1.trigger.custom": "lua/auto-shot-bar--triggers-1-trigger-custom.lua",
@@ -208,7 +208,7 @@
       1
     ],
     "icon_side": "LEFT",
-    "id": "Xyrec Hunter - Auto Shot Bar",
+    "id": "Hunter - Auto Shot Bar",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

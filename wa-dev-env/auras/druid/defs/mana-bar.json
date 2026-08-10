@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Druid - Mana Bar",
+  "id": "Druid - Mana Bar",
   "lua": {
     "customText": "lua/mana-bar--customText.lua"
   },
@@ -200,7 +200,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Druid - Mana Bar",
+    "id": "Druid - Mana Bar",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

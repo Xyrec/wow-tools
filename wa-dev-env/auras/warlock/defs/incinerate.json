@@ -1,7 +1,7 @@
 {
   "archetype": "rotation_icon",
   "conditions": [],
-  "id": "Xyrec Warlock - Incinerate",
+  "id": "Warlock - Incinerate",
   "load": {
     "class": {
       "multi": [],

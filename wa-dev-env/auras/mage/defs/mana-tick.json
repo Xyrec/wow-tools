@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Mage - Mana Tick",
+  "id": "Mage - Mana Tick",
   "lua": {
     "triggers.1.trigger.custom": "lua/mana-tick--triggers-1-trigger-custom.lua"
   },
@@ -133,7 +133,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Mage - Mana Tick",
+    "id": "Mage - Mana Tick",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Warrior - Enrage/CBR",
+  "id": "Warrior - Enrage/CBR",
   "payload": {
     "actions": {
       "finish": [],
@@ -77,7 +77,7 @@
     "height": 30,
     "icon": true,
     "iconSource": -1,
-    "id": "Xyrec Warrior - Enrage/CBR",
+    "id": "Warrior - Enrage/CBR",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

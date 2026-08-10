@@ -1,7 +1,7 @@
 {
   "archetype": "cooldown_icon",
   "conditions": [],
-  "id": "Xyrec Priest - Pain Suppression",
+  "id": "Priest - Pain Suppression",
   "load": {
     "class": {
       "multi": [],

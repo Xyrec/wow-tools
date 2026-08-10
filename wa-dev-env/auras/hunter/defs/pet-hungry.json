@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Hunter - Pet Hungry",
+  "id": "Hunter - Pet Hungry",
   "load": {
     "class": {
       "multi": {},

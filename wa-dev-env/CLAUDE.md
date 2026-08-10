@@ -44,6 +44,9 @@ In-game addon: `./tools/install-addon.sh` installs XyrecDump from `addon/`.
 
 Groups are DECLARATIVE: `styles/xyrec.json` (the look, as data) + archetypes
 + `auras/<class>/` (group.json, defs/, lua/) compose into full payloads.
+Naming: ONLY the root group carries the Xyrec prefix (`Xyrec - <Class>`);
+children keep natural `<Class> - <Thing>` names so by-name references
+between auras (`anchorFrameFrame` etc.) stay valid.
 The live snapshots under `data/auras/mine/` are pinned by parity tests —
 never hand-edit built output; edit defs/style and rebuild.
 - `python3 tools/build/build_group.py <class> -o out.json [--scrub] [--displays]`
@@ -56,8 +59,9 @@ Sabimaru donor packs (`data/auras/donors/`) are REFERENCE ONLY — inspiration
 and import inputs, never modified, never landed. Superseded imperative tools
 live in `tools/migrate/archive/`.
 
-Classes live so far: **shaman**, **paladin**, **mage** (each with parity
-tests). Remaining donors: druid, hunter, priest, rogue, warlock, warrior.
+All nine classes are live with parity tests. QA status: shaman is solid;
+paladin + mage are mid-QA; the other six are raw baselines awaiting
+in-game audits.
 
 ## Commands (codec / gates)
 
@@ -93,8 +97,9 @@ tests). Remaining donors: druid, hunter, priest, rogue, warlock, warrior.
   until the change is landed and the snapshot re-extracted. That's expected;
   land + extract + (if wiring changed) sync `group.json` `child_order` from
   the fresh snapshot's `c` order.
-- **`wa land --delete` only replaces incoming ids** — auras removed from a
-  group linger as orphans; `wa delete` them and re-check `audit.py`.
+- **`wa land --delete` replaces the whole old tree** — the root id collides,
+  and removal recurses through every old child (even ones the new build no
+  longer contains). Still re-check `audit.py` after structural changes.
 - **Ground truth refresh:** in-game `/xdump spells 1 400000` (covers the
   3xxxxx Anniversary backports; e.g. Seal of the Martyr 348700) +
   `/xdump talents`, `/reload`, then `./tools/wa pull-groundtruth`.

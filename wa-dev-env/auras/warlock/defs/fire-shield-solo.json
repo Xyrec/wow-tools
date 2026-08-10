@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Warlock - Fire Shield [Solo]",
+  "id": "Warlock - Fire Shield [Solo]",
   "load": {
     "class": {
       "multi": {},

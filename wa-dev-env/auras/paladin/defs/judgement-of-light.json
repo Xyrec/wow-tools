@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Paladin - Judgement of Light",
+  "id": "Paladin - Judgement of Light",
   "payload": {
     "actions": {
       "finish": [],
@@ -90,7 +90,7 @@
     "height": 26,
     "icon": true,
     "iconSource": -1,
-    "id": "Xyrec Paladin - Judgement of Light",
+    "id": "Paladin - Judgement of Light",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

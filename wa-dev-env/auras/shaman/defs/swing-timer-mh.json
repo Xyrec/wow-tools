@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Shaman - Swing Timer MH",
+  "id": "Shaman - Swing Timer MH",
   "lua": {
     "triggers.5.trigger.custom": "lua/swing-timer-mh--triggers-5-trigger-custom.lua"
   },
@@ -188,7 +188,7 @@
       1
     ],
     "icon_side": "LEFT",
-    "id": "Xyrec Shaman - Swing Timer MH",
+    "id": "Shaman - Swing Timer MH",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true

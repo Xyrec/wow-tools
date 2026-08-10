@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Rogue - CP4",
+  "id": "Rogue - CP4",
   "payload": {
     "actions": {
       "finish": [],
@@ -93,7 +93,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Rogue - CP4",
+    "id": "Rogue - CP4",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

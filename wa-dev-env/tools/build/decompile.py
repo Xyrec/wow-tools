@@ -150,7 +150,7 @@ def decompile(snapshot_path, class_name):
     style = style_mod.load()
     by_id = {c["id"]: c for c in snap["c"]}
     prefix_word = class_name.capitalize()
-    prefix = f"Xyrec {prefix_word} - "
+    prefix = f"{prefix_word} - "
 
     class_dir = REPO / "auras" / class_name
     defs_dir = class_dir / "defs"

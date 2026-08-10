@@ -1,7 +1,7 @@
 {
   "archetype": "rotation_icon",
   "conditions": [],
-  "id": "Xyrec Paladin - Crusader Strike",
+  "id": "Paladin - Crusader Strike",
   "load": {
     "class": {
       "multi": [],

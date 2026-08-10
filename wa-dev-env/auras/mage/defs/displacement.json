@@ -1,7 +1,7 @@
 {
   "archetype": "cooldown_icon",
   "conditions": [],
-  "id": "Xyrec Mage - Displacement",
+  "id": "Mage - Displacement",
   "load": {
     "class": {
       "multi": [],

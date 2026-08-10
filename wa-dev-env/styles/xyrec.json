@@ -201,7 +201,7 @@
       "yOffset": -242
     },
     "swing": {
-      "anchorFrameFrame": "WeakAuras:Xyrec Shaman - Mana Bar",
+      "anchorFrameFrame": "WeakAuras:Shaman - Mana Bar",
       "anchorFrameType": "SELECTFRAME",
       "anchorPoint": "CENTER",
       "frameStrata": 3,

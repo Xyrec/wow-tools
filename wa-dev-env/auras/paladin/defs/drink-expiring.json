@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Paladin - Drink Expiring",
+  "id": "Paladin - Drink Expiring",
   "load": {
     "class": {
       "multi": {

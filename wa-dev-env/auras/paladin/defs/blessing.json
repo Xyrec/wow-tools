@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Paladin - Blessing",
+  "id": "Paladin - Blessing",
   "load": {
     "class": {
       "multi": {

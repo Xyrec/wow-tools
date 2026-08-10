@@ -1,7 +1,7 @@
 {
   "archetype": "rotation_icon",
   "conditions": [],
-  "id": "Xyrec Priest - Shadow Word: Death",
+  "id": "Priest - Shadow Word: Death",
   "load": {
     "class": {
       "multi": [],

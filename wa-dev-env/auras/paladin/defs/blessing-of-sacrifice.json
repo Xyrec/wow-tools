@@ -1,7 +1,7 @@
 {
   "archetype": "cooldown_icon",
   "conditions": [],
-  "id": "Xyrec Paladin - Blessing of Sacrifice",
+  "id": "Paladin - Blessing of Sacrifice",
   "load": {
     "class": {
       "multi": {

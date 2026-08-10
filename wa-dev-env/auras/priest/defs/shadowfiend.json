@@ -1,7 +1,7 @@
 {
   "archetype": "cooldown_icon",
   "conditions": [],
-  "id": "Xyrec Priest - Shadowfiend",
+  "id": "Priest - Shadowfiend",
   "load": {
     "class": {
       "multi": [],

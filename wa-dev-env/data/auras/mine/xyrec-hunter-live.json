@@ -57,7 +57,7 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Hunter - Hunter's Mark"
+        "Hunter - Hunter's Mark"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -65,7 +65,7 @@
       "gridWidth": 5,
       "groupIcon": 132212,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Hunter - Passive Bar",
+      "id": "Hunter - Passive Bar",
       "information": {
         "showNilIsFalse": true
       },
@@ -122,7 +122,7 @@
           "untrigger": []
         }
       ],
-      "uid": "ZLLKxCYAzMF",
+      "uid": "RlHMOl6nKJP",
       "url": "",
       "useLimit": false,
       "version": 42,
@@ -219,7 +219,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Hunter's Mark",
+      "id": "Hunter - Hunter's Mark",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -252,7 +252,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Passive Bar",
+      "parent": "Hunter - Passive Bar",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -319,7 +319,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "GNhzk2B4vj6",
+      "uid": "OqjoyzIaDq9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -388,19 +388,19 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Hunter - Explosive Shot",
-        "Xyrec Hunter - Multi-Shot",
-        "Xyrec Hunter - Aimed Shot",
-        "Xyrec Hunter - Arcane Shot",
-        "Xyrec Hunter - Serpent Sting",
-        "Xyrec Hunter - Raptor Strike [Ranged]"
+        "Hunter - Explosive Shot",
+        "Hunter - Multi-Shot",
+        "Hunter - Aimed Shot",
+        "Hunter - Arcane Shot",
+        "Hunter - Serpent Sting",
+        "Hunter - Raptor Strike [Ranged]"
       ],
       "frameStrata": 1,
       "fullCircle": true,
       "gridType": "RD",
       "gridWidth": 5,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Hunter - Core Abilities",
+      "id": "Hunter - Core Abilities",
       "information": {
         "showNilIsFalse": true
       },
@@ -462,7 +462,7 @@
           "untrigger": []
         }
       ],
-      "uid": "45BGmxc8yli",
+      "uid": "EWH5n7qtr7f",
       "url": "",
       "useLimit": true,
       "version": 42,
@@ -549,7 +549,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Explosive Shot",
+      "id": "Hunter - Explosive Shot",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -580,7 +580,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Hunter - Core Abilities",
+      "parent": "Hunter - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -673,7 +673,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "UjGx6Z8mJDC",
+      "uid": "e8Tz3SnbqRR",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -826,7 +826,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Multi-Shot",
+      "id": "Hunter - Multi-Shot",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -859,7 +859,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Core Abilities",
+      "parent": "Hunter - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -959,7 +959,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "CJvkhgr34z6",
+      "uid": "oaXlnKtbPa1",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1112,7 +1112,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Aimed Shot",
+      "id": "Hunter - Aimed Shot",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1145,7 +1145,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Core Abilities",
+      "parent": "Hunter - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1245,7 +1245,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "xOsKdy8yqC9",
+      "uid": "lxeJ2JRdVGo",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1398,7 +1398,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Arcane Shot",
+      "id": "Hunter - Arcane Shot",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1431,7 +1431,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Core Abilities",
+      "parent": "Hunter - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1531,7 +1531,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "55KBfKHAA9V",
+      "uid": "F3M1QghVrFt",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1682,7 +1682,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Serpent Sting",
+      "id": "Hunter - Serpent Sting",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1715,7 +1715,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Core Abilities",
+      "parent": "Hunter - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1830,7 +1830,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "9sYcZHoTz4a",
+      "uid": "Gwbz3XlD3LY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1995,7 +1995,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Raptor Strike [Ranged]",
+      "id": "Hunter - Raptor Strike [Ranged]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2029,7 +2029,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Core Abilities",
+      "parent": "Hunter - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2161,7 +2161,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "yu64IWptQP0",
+      "uid": "LKWCv25RtC3",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2224,15 +2224,15 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Xyrec Hunter - Auto Shot Bars",
-        "Xyrec Hunter - Quick Shots Tick",
-        "Xyrec Hunter - Swing Timer [MH]",
-        "Xyrec Hunter - Mana Bars",
-        "Xyrec Hunter - Mana Tick"
+        "Hunter - Auto Shot Bars",
+        "Hunter - Quick Shots Tick",
+        "Hunter - Swing Timer [MH]",
+        "Hunter - Mana Bars",
+        "Hunter - Mana Tick"
       ],
       "frameStrata": 1,
       "groupIcon": 132157,
-      "id": "Xyrec Hunter - Resources",
+      "id": "Hunter - Resources",
       "information": {
         "showNilIsFalse": true
       },
@@ -2274,7 +2274,7 @@
           "untrigger": []
         }
       ],
-      "uid": "HISJt0q0da2",
+      "uid": "I1qV6DOirgE",
       "url": "",
       "version": 42,
       "wagoID": "B2G4lZKVE",
@@ -2333,14 +2333,14 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Xyrec Hunter - Auto Shot Bar",
-        "Xyrec Hunter - Range Check",
-        "Xyrec Hunter - Cover Bar"
+        "Hunter - Auto Shot Bar",
+        "Hunter - Range Check",
+        "Hunter - Cover Bar"
       ],
       "desc": "Bouk's Hunter Castbar: https://wago.io/YSKP1xUe2",
       "frameStrata": 3,
       "groupIcon": 132222,
-      "id": "Xyrec Hunter - Auto Shot Bars",
+      "id": "Hunter - Auto Shot Bars",
       "information": {
         "showNilIsFalse": true
       },
@@ -2359,7 +2359,7 @@
           "multi": []
         }
       },
-      "parent": "Xyrec Hunter - Resources",
+      "parent": "Hunter - Resources",
       "preferToUpdate": false,
       "regionType": "group",
       "scale": 1,
@@ -2383,7 +2383,7 @@
           "untrigger": []
         }
       ],
-      "uid": "fP6ymJ1ycvG",
+      "uid": "3NTugNRYSmd",
       "url": "",
       "version": 42,
       "wagoID": "B2G4lZKVE",
@@ -2592,7 +2592,7 @@
         1
       ],
       "icon_side": "LEFT",
-      "id": "Xyrec Hunter - Auto Shot Bar",
+      "id": "Hunter - Auto Shot Bar",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2636,7 +2636,7 @@
       "overlaysTexture": [
         "Clean"
       ],
-      "parent": "Xyrec Hunter - Auto Shot Bars",
+      "parent": "Hunter - Auto Shot Bars",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -2824,7 +2824,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "o7SdQngtwEo",
+      "uid": "jlZB5obMKUi",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3635,7 +3635,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Hunter - Range Check",
+      "id": "Hunter - Range Check",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3666,7 +3666,7 @@
       },
       "mirror": false,
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Hunter - Auto Shot Bars",
+      "parent": "Hunter - Auto Shot Bars",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -3924,7 +3924,7 @@
         "customTriggerLogic": "function(t) return t[1] end",
         "disjunctive": "custom"
       },
-      "uid": "07i5y43Q8fx",
+      "uid": "RM301jsVtnO",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4038,7 +4038,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Hunter - Cover Bar",
+      "id": "Hunter - Cover Bar",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4069,7 +4069,7 @@
       },
       "mirror": false,
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Hunter - Auto Shot Bars",
+      "parent": "Hunter - Auto Shot Bars",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -4163,7 +4163,7 @@
         "customTriggerLogic": "function (t)\n    return (not t[1] and t[2]) and t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "NU945bhIfmT",
+      "uid": "IAUskFL30T5",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4288,7 +4288,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Hunter - Quick Shots Tick",
+      "id": "Hunter - Quick Shots Tick",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4316,7 +4316,7 @@
         "zoneIds": ""
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Hunter - Resources",
+      "parent": "Hunter - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -4376,7 +4376,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "tiI0pQuSDcG",
+      "uid": "U3cO6ltAhVs",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4548,7 +4548,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Hunter - Swing Timer [MH]",
+      "id": "Hunter - Swing Timer [MH]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4606,7 +4606,7 @@
           0.25
         ]
       ],
-      "parent": "Xyrec Hunter - Resources",
+      "parent": "Hunter - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -4723,7 +4723,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "OQhi2LK27Rv",
+      "uid": "zomZI49HS42",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4860,7 +4860,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Hunter - Mana Bars",
+      "id": "Hunter - Mana Bars",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4921,7 +4921,7 @@
       "overlaysTexture": [
         "Clean"
       ],
-      "parent": "Xyrec Hunter - Resources",
+      "parent": "Hunter - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -5040,7 +5040,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "61VCjzh94se",
+      "uid": "uSK4KwDzV1V",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5179,7 +5179,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Hunter - Mana Tick",
+      "id": "Hunter - Mana Tick",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5206,7 +5206,7 @@
         "zoneIds": ""
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Hunter - Resources",
+      "parent": "Hunter - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -5272,7 +5272,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "klDj40wbONZ",
+      "uid": "Ah1rfbTWo5F",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5340,30 +5340,30 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Hunter - Hunter Traps",
-        "Xyrec Hunter - Flare",
-        "Xyrec Hunter - Scare Beast",
-        "Xyrec Hunter - Feign Death",
-        "Xyrec Hunter - Shadowmeld",
-        "Xyrec Hunter - Stoneform",
-        "Xyrec Hunter - Blood Fury",
-        "Xyrec Hunter - Berserking",
-        "Xyrec Hunter - War Stomp",
-        "Xyrec Hunter - Trinket 1 CD",
-        "Xyrec Hunter - Trinket 2 CD",
-        "Xyrec Hunter - Deterrence",
-        "Xyrec Hunter - Rapid Fire",
-        "Xyrec Hunter - Bestial Wrath",
-        "Xyrec Hunter - Kill Command",
-        "Xyrec Hunter - Volley",
-        "Xyrec Hunter - Wyvern Sting",
-        "Xyrec Hunter - Intimidation",
-        "Xyrec Hunter - Scatter Shot",
-        "Xyrec Hunter - Concussive Shot",
-        "Xyrec Hunter - Distracting Shot",
-        "Xyrec Hunter - Disengage",
-        "Xyrec Hunter - Growl",
-        "Xyrec Hunter - Counterattack"
+        "Hunter - Hunter Traps",
+        "Hunter - Flare",
+        "Hunter - Scare Beast",
+        "Hunter - Feign Death",
+        "Hunter - Shadowmeld",
+        "Hunter - Stoneform",
+        "Hunter - Blood Fury",
+        "Hunter - Berserking",
+        "Hunter - War Stomp",
+        "Hunter - Trinket 1 CD",
+        "Hunter - Trinket 2 CD",
+        "Hunter - Deterrence",
+        "Hunter - Rapid Fire",
+        "Hunter - Bestial Wrath",
+        "Hunter - Kill Command",
+        "Hunter - Volley",
+        "Hunter - Wyvern Sting",
+        "Hunter - Intimidation",
+        "Hunter - Scatter Shot",
+        "Hunter - Concussive Shot",
+        "Hunter - Distracting Shot",
+        "Hunter - Disengage",
+        "Hunter - Growl",
+        "Hunter - Counterattack"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -5371,7 +5371,7 @@
       "gridWidth": 5,
       "groupIcon": 132208,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Hunter - Cooldowns",
+      "id": "Hunter - Cooldowns",
       "information": {
         "showNilIsFalse": true
       },
@@ -5450,7 +5450,7 @@
           "untrigger": []
         }
       ],
-      "uid": "baZP2u5XbvY",
+      "uid": "8FLVEg86qMC",
       "url": "",
       "useLimit": true,
       "version": 42,
@@ -5551,7 +5551,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Hunter - Hunter Traps",
+      "id": "Hunter - Hunter Traps",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5585,7 +5585,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -5686,7 +5686,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "hhF95hRBNur",
+      "uid": "kD2xis3graI",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5790,7 +5790,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Flare",
+      "id": "Hunter - Flare",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5823,7 +5823,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -5924,7 +5924,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "yn70amAT7EH",
+      "uid": "jFh2A1V1d6t",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6040,7 +6040,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Scare Beast",
+      "id": "Hunter - Scare Beast",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6073,7 +6073,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6196,7 +6196,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "qlqW5GohO5h",
+      "uid": "eDQHLAu3coB",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6300,7 +6300,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Feign Death",
+      "id": "Hunter - Feign Death",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6333,7 +6333,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6434,7 +6434,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "s93gIUUlN2M",
+      "uid": "9vTFcD8ZUIn",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6550,7 +6550,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Shadowmeld",
+      "id": "Hunter - Shadowmeld",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6588,7 +6588,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6711,7 +6711,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "LuBlxEsZ0UO",
+      "uid": "6s7qqVFUkES",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6827,7 +6827,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Stoneform",
+      "id": "Hunter - Stoneform",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6864,7 +6864,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6987,7 +6987,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "RS2t5PLSndm",
+      "uid": "tzDNisx848M",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7103,7 +7103,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Blood Fury",
+      "id": "Hunter - Blood Fury",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7140,7 +7140,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7263,7 +7263,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "iyrka1SNHf4",
+      "uid": "ZQjcq6dNOFT",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7379,7 +7379,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Berserking",
+      "id": "Hunter - Berserking",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7416,7 +7416,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7539,7 +7539,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Ht9Glmd1Gop",
+      "uid": "H4v15qtH40m",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7643,7 +7643,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - War Stomp",
+      "id": "Hunter - War Stomp",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7680,7 +7680,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7781,7 +7781,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "nWKvJGKySNJ",
+      "uid": "yQF4TwNENv4",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7885,7 +7885,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Hunter - Trinket 1 CD",
+      "id": "Hunter - Trinket 1 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7917,7 +7917,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8022,7 +8022,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "iLFibExatch",
+      "uid": "92C936XBvko",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8126,7 +8126,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Hunter - Trinket 2 CD",
+      "id": "Hunter - Trinket 2 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8158,7 +8158,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8263,7 +8263,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "KN2RK4wMD37",
+      "uid": "00jp4tdcT4f",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8379,7 +8379,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Deterrence",
+      "id": "Hunter - Deterrence",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8412,7 +8412,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8535,7 +8535,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "7FHeNd0QzUU",
+      "uid": "o0XgIt4Uu8y",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8651,7 +8651,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Rapid Fire",
+      "id": "Hunter - Rapid Fire",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8684,7 +8684,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8807,7 +8807,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "g2y5TU1lKAz",
+      "uid": "YiIhsTTZlBu",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8923,7 +8923,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Bestial Wrath",
+      "id": "Hunter - Bestial Wrath",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8956,7 +8956,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9079,7 +9079,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ZtTfNztyYcA",
+      "uid": "NEhfPorwgy8",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9195,7 +9195,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Kill Command",
+      "id": "Hunter - Kill Command",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9228,7 +9228,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9392,7 +9392,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "WLuS9aTrtVW",
+      "uid": "ZKPfirPh68p",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9496,7 +9496,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Volley",
+      "id": "Hunter - Volley",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9529,7 +9529,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9630,7 +9630,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "oVVdxGDFZQk",
+      "uid": "p2uz7N7Lvkw",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9746,7 +9746,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Wyvern Sting",
+      "id": "Hunter - Wyvern Sting",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9779,7 +9779,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9902,7 +9902,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "lD14BwRziIA",
+      "uid": "xSwoZ3t3QLj",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10018,7 +10018,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Intimidation",
+      "id": "Hunter - Intimidation",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10051,7 +10051,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10174,7 +10174,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "605Q4AHUxAs",
+      "uid": "huDdaiQDWnq",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10290,7 +10290,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Scatter Shot",
+      "id": "Hunter - Scatter Shot",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10323,7 +10323,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10446,7 +10446,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "3IqERzUzs1E",
+      "uid": "jNETGmiegNJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10562,7 +10562,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Concussive Shot",
+      "id": "Hunter - Concussive Shot",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10595,7 +10595,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10718,7 +10718,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "uxjKzLE8OYm",
+      "uid": "hRUyNfYysgm",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10822,7 +10822,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Distracting Shot",
+      "id": "Hunter - Distracting Shot",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10855,7 +10855,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10956,7 +10956,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "s5PohCYnY0s",
+      "uid": "mjr4yC5F0HP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11060,7 +11060,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Disengage",
+      "id": "Hunter - Disengage",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11093,7 +11093,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11194,7 +11194,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "aIyQRDimtke",
+      "uid": "Bxmh95BIVms",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11298,7 +11298,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Growl",
+      "id": "Hunter - Growl",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11331,7 +11331,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11432,7 +11432,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "rUuAqpkrl8g",
+      "uid": "hRQVPLf1sdo",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11537,7 +11537,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Counterattack",
+      "id": "Hunter - Counterattack",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11570,7 +11570,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Cooldowns",
+      "parent": "Hunter - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11687,7 +11687,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "fUVO8VaH9CW",
+      "uid": "lHqTeRQIYEE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11755,15 +11755,15 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Hunter - Drink Expiring",
-        "Xyrec Hunter - Pet Hungry",
-        "Xyrec Hunter - Feeding Pet",
-        "Xyrec Hunter - No Pet",
-        "Xyrec Hunter - Revive Pet",
-        "Xyrec Hunter - Pet Attack",
-        "Xyrec Hunter - Aspect of the Pack",
-        "Xyrec Hunter - Aspects",
-        "Xyrec Hunter - Trueshot Aura"
+        "Hunter - Drink Expiring",
+        "Hunter - Pet Hungry",
+        "Hunter - Feeding Pet",
+        "Hunter - No Pet",
+        "Hunter - Revive Pet",
+        "Hunter - Pet Attack",
+        "Hunter - Aspect of the Pack",
+        "Hunter - Aspects",
+        "Hunter - Trueshot Aura"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -11771,7 +11771,7 @@
       "gridWidth": 5,
       "groupIcon": 132161,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Hunter - Reminders",
+      "id": "Hunter - Reminders",
       "information": {
         "showNilIsFalse": true
       },
@@ -11833,7 +11833,7 @@
           "untrigger": []
         }
       ],
-      "uid": "T9fJvi2fLFw",
+      "uid": "08vo0YHqZmA",
       "url": "",
       "useLimit": false,
       "version": 42,
@@ -11918,7 +11918,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Drink Expiring",
+      "id": "Hunter - Drink Expiring",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11953,7 +11953,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Reminders",
+      "parent": "Hunter - Reminders",
       "progressSource": [
         -1,
         ""
@@ -12112,7 +12112,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "WZecSGer0Pl",
+      "uid": "FG2yGoJXHel",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12201,7 +12201,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Pet Hungry",
+      "id": "Hunter - Pet Hungry",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12235,7 +12235,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Reminders",
+      "parent": "Hunter - Reminders",
       "progressSource": [
         -1,
         ""
@@ -12393,7 +12393,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "xmatWMzghHe",
+      "uid": "Df6WjCwzVR8",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12482,7 +12482,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Feeding Pet",
+      "id": "Hunter - Feeding Pet",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12516,7 +12516,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Reminders",
+      "parent": "Hunter - Reminders",
       "progressSource": [
         -1,
         ""
@@ -12647,7 +12647,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "5AnaKSt9940",
+      "uid": "yzyEioO56dh",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12736,7 +12736,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Hunter - No Pet",
+      "id": "Hunter - No Pet",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12772,7 +12772,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Reminders",
+      "parent": "Hunter - Reminders",
       "progressSource": [
         -1,
         ""
@@ -12922,7 +12922,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and not t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "gfoVTjXFWEe",
+      "uid": "hZC3xPrjtDV",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13011,7 +13011,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Hunter - Revive Pet",
+      "id": "Hunter - Revive Pet",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13045,7 +13045,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Reminders",
+      "parent": "Hunter - Reminders",
       "progressSource": [
         -1,
         ""
@@ -13185,7 +13185,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "9EwJD9dvmS8",
+      "uid": "B7bURvlGf0S",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13275,7 +13275,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Pet Attack",
+      "id": "Hunter - Pet Attack",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13304,7 +13304,7 @@
         "use_combat": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Reminders",
+      "parent": "Hunter - Reminders",
       "progressSource": [
         -1,
         ""
@@ -13451,7 +13451,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "pkdIhMkQweW",
+      "uid": "9w0eaEcQBom",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13540,7 +13540,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Aspect of the Pack",
+      "id": "Hunter - Aspect of the Pack",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13574,7 +13574,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Reminders",
+      "parent": "Hunter - Reminders",
       "progressSource": [
         -1,
         ""
@@ -13724,7 +13724,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "MZnKFKSUlv9",
+      "uid": "g0EUj0Vle56",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13813,7 +13813,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Aspects",
+      "id": "Hunter - Aspects",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13847,7 +13847,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Reminders",
+      "parent": "Hunter - Reminders",
       "progressSource": [
         -1,
         ""
@@ -13979,7 +13979,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "j0YnRJVdcfZ",
+      "uid": "y8sJP8Ipegh",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14068,7 +14068,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Hunter - Trueshot Aura",
+      "id": "Hunter - Trueshot Aura",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -14102,7 +14102,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Hunter - Reminders",
+      "parent": "Hunter - Reminders",
       "progressSource": [
         -1,
         ""
@@ -14235,7 +14235,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "FNo0UWIpFZT",
+      "uid": "W2d7Rl35vpx",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14369,7 +14369,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Hunter - Ammo [Drag]",
+      "id": "Hunter - Ammo [Drag]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -14534,7 +14534,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "0cQxQ87Lbxg",
+      "uid": "GOUgpqGYrhR",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14598,12 +14598,12 @@
     "conditions": [],
     "config": [],
     "controlledChildren": [
-      "Xyrec Hunter - Passive Bar",
-      "Xyrec Hunter - Core Abilities",
-      "Xyrec Hunter - Resources",
-      "Xyrec Hunter - Cooldowns",
-      "Xyrec Hunter - Reminders",
-      "Xyrec Hunter - Ammo [Drag]"
+      "Hunter - Passive Bar",
+      "Hunter - Core Abilities",
+      "Hunter - Resources",
+      "Hunter - Cooldowns",
+      "Hunter - Reminders",
+      "Hunter - Ammo [Drag]"
     ],
     "frameStrata": 1,
     "groupIcon": "626000",
@@ -14648,7 +14648,7 @@
         "untrigger": []
       }
     ],
-    "uid": "9unOab3PvZi",
+    "uid": "egmLPo3rOeF",
     "url": "",
     "version": 42,
     "wagoID": "B2G4lZKVE",

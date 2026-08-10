@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Paladin - Active Aura [Drag]",
+  "id": "Paladin - Active Aura [Drag]",
   "payload": {
     "actions": {
       "finish": [],
@@ -76,7 +76,7 @@
     "height": 30,
     "icon": true,
     "iconSource": -1,
-    "id": "Xyrec Paladin - Active Aura [Drag]",
+    "id": "Paladin - Active Aura [Drag]",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

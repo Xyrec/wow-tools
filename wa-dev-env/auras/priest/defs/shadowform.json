@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Priest - Shadowform",
+  "id": "Priest - Shadowform",
   "load": {
     "class": {
       "multi": {},

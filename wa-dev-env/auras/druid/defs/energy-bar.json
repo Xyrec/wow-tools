@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Druid - Energy Bar",
+  "id": "Druid - Energy Bar",
   "lua": {
     "customText": "lua/energy-bar--customText.lua"
   },
@@ -162,7 +162,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Druid - Energy Bar",
+    "id": "Druid - Energy Bar",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

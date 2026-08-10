@@ -52,11 +52,11 @@ def test_alpha_rule_matches_every_snapshot_leaf():
 
 def test_row_geometry_matches_snapshot_containers():
     rows = {
-        "core": "Xyrec Shaman - Core Abilities",
-        "resources": "Xyrec Shaman - Resources",
-        "swing": "Xyrec Shaman - Swing Timer",
-        "cooldowns": "Xyrec Shaman - Cooldowns",
-        "reminders": "Xyrec Shaman - Reminders",
+        "core": "Shaman - Core Abilities",
+        "resources": "Shaman - Resources",
+        "swing": "Shaman - Swing Timer",
+        "cooldowns": "Shaman - Cooldowns",
+        "reminders": "Shaman - Reminders",
     }
     for row, aura_id in rows.items():
         geo = STYLE["row_geometry"][row]
@@ -67,9 +67,9 @@ def test_row_geometry_matches_snapshot_containers():
 
 def test_row_sizes_match_snapshot_exemplars():
     exemplars = {
-        "core": "Xyrec Shaman - Stormstrike",
-        "cooldowns": "Xyrec Shaman - Shamanistic Rage",
-        "reminders": "Xyrec Shaman - Drink Expiring",
+        "core": "Shaman - Stormstrike",
+        "cooldowns": "Shaman - Shamanistic Rage",
+        "reminders": "Shaman - Drink Expiring",
     }
     for row, aura_id in exemplars.items():
         aura = BY_ID[aura_id]
@@ -89,7 +89,7 @@ def _r9(value):
 
 
 def test_bar_skin_matches_swing_bar():
-    mh = BY_ID["Xyrec Shaman - Swing Timer MH"]
+    mh = BY_ID["Shaman - Swing Timer MH"]
     skin = STYLE["bar_skin"]
     assert mh["texture"] == skin["texture"]
     assert _r9(mh["barColor"]) == _r9(STYLE["colors"]["swing_blue"])

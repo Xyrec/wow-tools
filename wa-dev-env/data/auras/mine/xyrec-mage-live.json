@@ -57,18 +57,18 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Mage - Regeneration",
-        "Xyrec Mage - Arcane Blast",
-        "Xyrec Mage - Improved Scorch",
-        "Xyrec Mage - Living Bomb",
-        "Xyrec Mage - Fire Blast",
-        "Xyrec Mage - Cone of Cold",
-        "Xyrec Mage - Ice Lance",
-        "Xyrec Mage - Fireball [1-15]",
-        "Xyrec Mage - Frostbolt [1-15]",
-        "Xyrec Mage - Arcane Missles [1-15]",
-        "Xyrec Mage - Water Elemental",
-        "Xyrec Mage - Dragon's Breath"
+        "Mage - Regeneration",
+        "Mage - Arcane Blast",
+        "Mage - Improved Scorch",
+        "Mage - Living Bomb",
+        "Mage - Fire Blast",
+        "Mage - Cone of Cold",
+        "Mage - Ice Lance",
+        "Mage - Fireball [1-15]",
+        "Mage - Frostbolt [1-15]",
+        "Mage - Arcane Missles [1-15]",
+        "Mage - Water Elemental",
+        "Mage - Dragon's Breath"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -76,7 +76,7 @@
       "gridWidth": 5,
       "groupIcon": 135808,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Mage - Core Abilities",
+      "id": "Mage - Core Abilities",
       "information": {
         "showNilIsFalse": true
       },
@@ -147,7 +147,7 @@
           "untrigger": []
         }
       ],
-      "uid": "In2QfE0mtq2",
+      "uid": "eg3lpVJvZXY",
       "url": "",
       "useLimit": true,
       "version": 35,
@@ -234,7 +234,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Regeneration",
+      "id": "Mage - Regeneration",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -265,7 +265,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Mage - Core Abilities",
+      "parent": "Mage - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -358,7 +358,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "roLTg4KEs3p",
+      "uid": "FIIB5ECT588",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -449,7 +449,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Arcane Blast",
+      "id": "Mage - Arcane Blast",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -480,7 +480,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Mage - Core Abilities",
+      "parent": "Mage - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -613,7 +613,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "SSEOWBJm4Rd",
+      "uid": "X3jQVall4Pd",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -752,7 +752,7 @@
       "height": 32,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Mage - Improved Scorch",
+      "id": "Mage - Improved Scorch",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -785,7 +785,7 @@
         "use_talent": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Core Abilities",
+      "parent": "Mage - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -944,7 +944,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "VglStCMMEww",
+      "uid": "zMfwf9HXGEH",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1083,7 +1083,7 @@
       "height": 32,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Mage - Living Bomb",
+      "id": "Mage - Living Bomb",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1116,7 +1116,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Core Abilities",
+      "parent": "Mage - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1344,7 +1344,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "aC8ysmpfIvM",
+      "uid": "BoHrHUbeQcr",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1497,7 +1497,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Fire Blast",
+      "id": "Mage - Fire Blast",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1529,7 +1529,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Core Abilities",
+      "parent": "Mage - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1629,7 +1629,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "xRTL1D9IrbV",
+      "uid": "LwjOapOBeCn",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1764,7 +1764,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Cone of Cold",
+      "id": "Mage - Cone of Cold",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1796,7 +1796,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Core Abilities",
+      "parent": "Mage - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1896,7 +1896,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "vId5uMQEGqM",
+      "uid": "UcY08WKjJXA",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1987,7 +1987,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Ice Lance",
+      "id": "Mage - Ice Lance",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2018,7 +2018,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Mage - Core Abilities",
+      "parent": "Mage - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2111,7 +2111,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "cdIC2Cbvy1u",
+      "uid": "XTktgEzqzWJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2251,7 +2251,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Fireball [1-15]",
+      "id": "Mage - Fireball [1-15]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2292,7 +2292,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Core Abilities",
+      "parent": "Mage - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2434,7 +2434,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "e8PFni35zvv",
+      "uid": "a9U9eqUyDgl",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2574,7 +2574,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Frostbolt [1-15]",
+      "id": "Mage - Frostbolt [1-15]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2615,7 +2615,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Core Abilities",
+      "parent": "Mage - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2748,7 +2748,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "2Fc8E1269ze",
+      "uid": "0zZTxPXpqJp",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2888,7 +2888,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Arcane Missles [1-15]",
+      "id": "Mage - Arcane Missles [1-15]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2930,7 +2930,7 @@
         "use_talent": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Core Abilities",
+      "parent": "Mage - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -3077,7 +3077,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "e20KKMHvpwx",
+      "uid": "zSrWbcCJbNM",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3230,7 +3230,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Water Elemental",
+      "id": "Mage - Water Elemental",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3262,7 +3262,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Core Abilities",
+      "parent": "Mage - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -3362,7 +3362,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "SLT3Zxs2nC1",
+      "uid": "0iLobL4Iuja",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3515,7 +3515,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Dragon's Breath",
+      "id": "Mage - Dragon's Breath",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3547,7 +3547,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Core Abilities",
+      "parent": "Mage - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -3647,7 +3647,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "5qGGcGBtBAW",
+      "uid": "vldcOw9LiRS",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3710,15 +3710,15 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Xyrec Mage - Arcane Blast Bars",
-        "Xyrec Mage - Improved Scorch Bars",
-        "Xyrec Mage - Wand Swing",
-        "Xyrec Mage - Mana Bar",
-        "Xyrec Mage - Mana Tick"
+        "Mage - Arcane Blast Bars",
+        "Mage - Improved Scorch Bars",
+        "Mage - Wand Swing",
+        "Mage - Mana Bar",
+        "Mage - Mana Tick"
       ],
       "frameStrata": 1,
       "groupIcon": 136075,
-      "id": "Xyrec Mage - Resources",
+      "id": "Mage - Resources",
       "information": {
         "showNilIsFalse": true
       },
@@ -3760,7 +3760,7 @@
           "untrigger": []
         }
       ],
-      "uid": "WfS1YMGSj4V",
+      "uid": "hGpi0Mn4PZV",
       "url": "",
       "version": 35,
       "wagoID": "6vNSif5yK",
@@ -3821,7 +3821,7 @@
       "controlledChildren": [],
       "frameStrata": 1,
       "groupIcon": 135735,
-      "id": "Xyrec Mage - Arcane Blast Bars",
+      "id": "Mage - Arcane Blast Bars",
       "information": {
         "forceEvents": true,
         "showNilIsFalse": true
@@ -3841,7 +3841,7 @@
           "multi": []
         }
       },
-      "parent": "Xyrec Mage - Resources",
+      "parent": "Mage - Resources",
       "preferToUpdate": false,
       "regionType": "group",
       "scale": 1,
@@ -3865,7 +3865,7 @@
           "untrigger": []
         }
       ],
-      "uid": "EZ7qKhbvhwh",
+      "uid": "ElOnGxgUsQJ",
       "url": "",
       "version": 35,
       "wagoID": "6vNSif5yK",
@@ -3924,15 +3924,15 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Xyrec Mage - IS1",
-        "Xyrec Mage - IS2",
-        "Xyrec Mage - IS3",
-        "Xyrec Mage - IS4",
-        "Xyrec Mage - IS5"
+        "Mage - IS1",
+        "Mage - IS2",
+        "Mage - IS3",
+        "Mage - IS4",
+        "Mage - IS5"
       ],
       "frameStrata": 1,
       "groupIcon": 135827,
-      "id": "Xyrec Mage - Improved Scorch Bars",
+      "id": "Mage - Improved Scorch Bars",
       "information": {
         "forceEvents": true,
         "showNilIsFalse": true
@@ -3952,7 +3952,7 @@
           "multi": []
         }
       },
-      "parent": "Xyrec Mage - Resources",
+      "parent": "Mage - Resources",
       "preferToUpdate": false,
       "regionType": "group",
       "scale": 1,
@@ -3976,7 +3976,7 @@
           "untrigger": []
         }
       ],
-      "uid": "CXx6pqaxEDs",
+      "uid": "7tTdmIeKFAi",
       "url": "",
       "version": 35,
       "wagoID": "6vNSif5yK",
@@ -4093,7 +4093,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Mage - IS1",
+      "id": "Mage - IS1",
       "information": {
         "forceEvents": false,
         "ignoreOptionsEventErrors": false,
@@ -4150,7 +4150,7 @@
         "zoneIds": ""
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Mage - Improved Scorch Bars",
+      "parent": "Mage - Improved Scorch Bars",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -4229,7 +4229,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "MzGS9D5rGTQ",
+      "uid": "y3Ccp4UvI7q",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -4350,7 +4350,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Mage - IS2",
+      "id": "Mage - IS2",
       "information": {
         "forceEvents": false,
         "ignoreOptionsEventErrors": false,
@@ -4407,7 +4407,7 @@
         "zoneIds": ""
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Mage - Improved Scorch Bars",
+      "parent": "Mage - Improved Scorch Bars",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -4486,7 +4486,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "EyEgVpKlwju",
+      "uid": "lOWr52YdXya",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -4607,7 +4607,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Mage - IS3",
+      "id": "Mage - IS3",
       "information": {
         "forceEvents": false,
         "ignoreOptionsEventErrors": false,
@@ -4664,7 +4664,7 @@
         "zoneIds": ""
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Mage - Improved Scorch Bars",
+      "parent": "Mage - Improved Scorch Bars",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -4743,7 +4743,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "j3AarjpAwlT",
+      "uid": "VRhasJuWRd9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -4864,7 +4864,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Mage - IS4",
+      "id": "Mage - IS4",
       "information": {
         "forceEvents": false,
         "ignoreOptionsEventErrors": false,
@@ -4921,7 +4921,7 @@
         "zoneIds": ""
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Mage - Improved Scorch Bars",
+      "parent": "Mage - Improved Scorch Bars",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -5000,7 +5000,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "txGNJdYwWpq",
+      "uid": "lfFCldqiACK",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -5121,7 +5121,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Mage - IS5",
+      "id": "Mage - IS5",
       "information": {
         "forceEvents": false,
         "ignoreOptionsEventErrors": false,
@@ -5178,7 +5178,7 @@
         "zoneIds": ""
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Mage - Improved Scorch Bars",
+      "parent": "Mage - Improved Scorch Bars",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -5257,7 +5257,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "yYeUL8Vro5d",
+      "uid": "QwGdi3PFDNs",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -5429,7 +5429,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Mage - Wand Swing",
+      "id": "Mage - Wand Swing",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5488,7 +5488,7 @@
           0.25
         ]
       ],
-      "parent": "Xyrec Mage - Resources",
+      "parent": "Mage - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -5624,7 +5624,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "SA0jplLzhcH",
+      "uid": "9YOc2lKKxdY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5774,7 +5774,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Mage - Mana Bar",
+      "id": "Mage - Mana Bar",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5834,7 +5834,7 @@
       "overlaysTexture": [
         "Clean"
       ],
-      "parent": "Xyrec Mage - Resources",
+      "parent": "Mage - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -5966,7 +5966,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "yibSnbToulc",
+      "uid": "qHg8QuQQKHw",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6106,7 +6106,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Mage - Mana Tick",
+      "id": "Mage - Mana Tick",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6132,7 +6132,7 @@
         "zoneIds": ""
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Mage - Resources",
+      "parent": "Mage - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -6198,7 +6198,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "aTWaf6ZHMBQ",
+      "uid": "koiHNLe3vtN",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6266,30 +6266,30 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Mage - Frostfire Ward",
-        "Xyrec Mage - Mana Shield",
-        "Xyrec Mage - Ice Barrier",
-        "Xyrec Mage - Ice Block",
-        "Xyrec Mage - Cold Snap",
-        "Xyrec Mage - Arcane Surge",
-        "Xyrec Mage - Evocation",
-        "Xyrec Mage - Perception",
-        "Xyrec Mage - Escape Artist",
-        "Xyrec Mage - Berserking",
-        "Xyrec Mage - Will of the Forsaken",
-        "Xyrec Mage - Trinket 1 CD",
-        "Xyrec Mage - Trinket 2 CD",
-        "Xyrec Mage - Arcane Power",
-        "Xyrec Mage - Presence of Mind",
-        "Xyrec Mage - Combustion",
-        "Xyrec Mage - Blast Wave",
-        "Xyrec Mage - Frost Nova",
-        "Xyrec Mage - Displacement",
-        "Xyrec Mage - Blink",
-        "Xyrec Mage - Polymorph",
-        "Xyrec Mage - Counterspell",
-        "Xyrec Mage - Spellsteal",
-        "Xyrec Mage - Invisibility"
+        "Mage - Frostfire Ward",
+        "Mage - Mana Shield",
+        "Mage - Ice Barrier",
+        "Mage - Ice Block",
+        "Mage - Cold Snap",
+        "Mage - Arcane Surge",
+        "Mage - Evocation",
+        "Mage - Perception",
+        "Mage - Escape Artist",
+        "Mage - Berserking",
+        "Mage - Will of the Forsaken",
+        "Mage - Trinket 1 CD",
+        "Mage - Trinket 2 CD",
+        "Mage - Arcane Power",
+        "Mage - Presence of Mind",
+        "Mage - Combustion",
+        "Mage - Blast Wave",
+        "Mage - Frost Nova",
+        "Mage - Displacement",
+        "Mage - Blink",
+        "Mage - Polymorph",
+        "Mage - Counterspell",
+        "Mage - Spellsteal",
+        "Mage - Invisibility"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -6297,7 +6297,7 @@
       "gridWidth": 5,
       "groupIcon": 135841,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Mage - Cooldowns",
+      "id": "Mage - Cooldowns",
       "information": {
         "showNilIsFalse": true
       },
@@ -6373,7 +6373,7 @@
           "untrigger": []
         }
       ],
-      "uid": "vjsYTcSTX6R",
+      "uid": "rKT7z1otox8",
       "url": "",
       "useLimit": true,
       "version": 35,
@@ -6486,7 +6486,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Frostfire Ward",
+      "id": "Mage - Frostfire Ward",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6519,7 +6519,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6643,7 +6643,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "X7Rl3PJ31iX",
+      "uid": "qVyAtRriwqR",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6730,7 +6730,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Mana Shield",
+      "id": "Mage - Mana Shield",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6763,7 +6763,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6854,7 +6854,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "pbUCG9Byy5V",
+      "uid": "aPQ8CDiZxx2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6970,7 +6970,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Ice Barrier",
+      "id": "Mage - Ice Barrier",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7003,7 +7003,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7126,7 +7126,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "L90lOtGkgpE",
+      "uid": "MVHIPobZbPu",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7242,7 +7242,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Ice Block",
+      "id": "Mage - Ice Block",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7275,7 +7275,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7398,7 +7398,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "C14QYQC0JjO",
+      "uid": "1cbR0ENOA14",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7502,7 +7502,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Cold Snap",
+      "id": "Mage - Cold Snap",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7535,7 +7535,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7636,7 +7636,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "fSEOhbO3e6E",
+      "uid": "4aMNmjTaypj",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7723,7 +7723,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Arcane Surge",
+      "id": "Mage - Arcane Surge",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7754,7 +7754,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7847,7 +7847,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ycz01hp2VMp",
+      "uid": "O4RczBoadlJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7951,7 +7951,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Evocation",
+      "id": "Mage - Evocation",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7984,7 +7984,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8085,7 +8085,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "JFF1eQQmYbA",
+      "uid": "lKHTmRsEpI0",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8201,7 +8201,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Perception",
+      "id": "Mage - Perception",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8238,7 +8238,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8361,7 +8361,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "3afjwJrpTqa",
+      "uid": "dHVvFIqLUNQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8477,7 +8477,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Escape Artist",
+      "id": "Mage - Escape Artist",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8514,7 +8514,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8637,7 +8637,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "0mxEVn0ugud",
+      "uid": "QupukCn3EPB",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8753,7 +8753,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Berserking",
+      "id": "Mage - Berserking",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8790,7 +8790,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8913,7 +8913,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "cOAUzb8HdIm",
+      "uid": "EremGCNApop",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9029,7 +9029,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Will of the Forsaken",
+      "id": "Mage - Will of the Forsaken",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9066,7 +9066,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9189,7 +9189,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Xb38AEptRFn",
+      "uid": "JrMHWrTAyMU",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9293,7 +9293,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Mage - Trinket 1 CD",
+      "id": "Mage - Trinket 1 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9325,7 +9325,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9430,7 +9430,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "uh2bYkxIbXp",
+      "uid": "gaBeUKZyNI7",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9534,7 +9534,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Mage - Trinket 2 CD",
+      "id": "Mage - Trinket 2 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9566,7 +9566,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9671,7 +9671,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ElNkG8Lq0ir",
+      "uid": "FQYll8xHmcL",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9787,7 +9787,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Arcane Power",
+      "id": "Mage - Arcane Power",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9820,7 +9820,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9943,7 +9943,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "nhfcL8u6x4A",
+      "uid": "MrOuZcTzsJD",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10059,7 +10059,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Presence of Mind",
+      "id": "Mage - Presence of Mind",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10092,7 +10092,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10215,7 +10215,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "hD9Kj1FKxpV",
+      "uid": "gLn1dDMCXqs",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10331,7 +10331,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Combustion",
+      "id": "Mage - Combustion",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10364,7 +10364,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10527,7 +10527,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "XJBz8hIBo6V",
+      "uid": "zxxVclRRp0W",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10643,7 +10643,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Blast Wave",
+      "id": "Mage - Blast Wave",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10676,7 +10676,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10799,7 +10799,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "JonnhH333O6",
+      "uid": "6CgqV9J7N2x",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10915,7 +10915,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Frost Nova",
+      "id": "Mage - Frost Nova",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10948,7 +10948,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11071,7 +11071,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "NiMnHBYFUaP",
+      "uid": "zdOjOd6ChC3",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11158,7 +11158,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Displacement",
+      "id": "Mage - Displacement",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11189,7 +11189,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11282,7 +11282,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "gzfQf3iADNR",
+      "uid": "P8EJ3HBf6pj",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11386,7 +11386,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Blink",
+      "id": "Mage - Blink",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11419,7 +11419,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11520,7 +11520,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "rYz2vGJ8KqL",
+      "uid": "A73Iii2ZD7f",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11636,7 +11636,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Polymorph",
+      "id": "Mage - Polymorph",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11669,7 +11669,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11793,7 +11793,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "z8WOaY0cpIj",
+      "uid": "w2JCeAwP4J3",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11909,7 +11909,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Counterspell",
+      "id": "Mage - Counterspell",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11942,7 +11942,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -12065,7 +12065,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "IsoSQliKDCs",
+      "uid": "LFcNo4zBhFH",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12152,7 +12152,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Spellsteal",
+      "id": "Mage - Spellsteal",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12183,7 +12183,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -12276,7 +12276,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "mexm58azuci",
+      "uid": "GPIJfpaH7JS",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12363,7 +12363,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Invisibility",
+      "id": "Mage - Invisibility",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12394,7 +12394,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Mage - Cooldowns",
+      "parent": "Mage - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -12487,7 +12487,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "XdsHKhGfhxo",
+      "uid": "XJ2RQHZ3uEj",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12555,10 +12555,10 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Mage - Drink Expiring",
-        "Xyrec Mage - Mana Gem",
-        "Xyrec Mage - Arcane Intellect",
-        "Xyrec Mage - Armor [Solo]"
+        "Mage - Drink Expiring",
+        "Mage - Mana Gem",
+        "Mage - Arcane Intellect",
+        "Mage - Armor [Solo]"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -12566,7 +12566,7 @@
       "gridWidth": 5,
       "groupIcon": 135932,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Mage - Reminders",
+      "id": "Mage - Reminders",
       "information": {
         "showNilIsFalse": true
       },
@@ -12625,7 +12625,7 @@
           "untrigger": []
         }
       ],
-      "uid": "ic8MOMVzVuV",
+      "uid": "hYFlLgPps2R",
       "url": "",
       "useLimit": false,
       "version": 35,
@@ -12710,7 +12710,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Mage - Drink Expiring",
+      "id": "Mage - Drink Expiring",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12745,7 +12745,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Reminders",
+      "parent": "Mage - Reminders",
       "progressSource": [
         -1,
         ""
@@ -12904,7 +12904,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "KXOMQTqEHdB",
+      "uid": "w1LbaIzgAET",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13005,7 +13005,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Mage - Mana Gem",
+      "id": "Mage - Mana Gem",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13047,7 +13047,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Reminders",
+      "parent": "Mage - Reminders",
       "progressSource": [
         -1,
         ""
@@ -13232,7 +13232,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "ODVtBvqXI6j",
+      "uid": "BjfcdVEnqhr",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13320,7 +13320,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Mage - Arcane Intellect",
+      "id": "Mage - Arcane Intellect",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13357,7 +13357,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Reminders",
+      "parent": "Mage - Reminders",
       "progressSource": [
         -1,
         ""
@@ -13517,7 +13517,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "zwexnBYKV1F",
+      "uid": "QorDsYwT2of",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13605,7 +13605,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Mage - Armor [Solo]",
+      "id": "Mage - Armor [Solo]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13642,7 +13642,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Reminders",
+      "parent": "Mage - Reminders",
       "progressSource": [
         -1,
         ""
@@ -13806,7 +13806,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "bFexOqKleFQ",
+      "uid": "s4qcXYxsgnS",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13874,7 +13874,7 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Mage - Arcane Brilliance [Group]"
+        "Mage - Arcane Brilliance [Group]"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -13882,7 +13882,7 @@
       "gridWidth": 5,
       "groupIcon": 135869,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Mage - Group Buffs",
+      "id": "Mage - Group Buffs",
       "information": {
         "forceEvents": true,
         "showNilIsFalse": true
@@ -13938,7 +13938,7 @@
           "untrigger": []
         }
       ],
-      "uid": "RKrVczZQQxg",
+      "uid": "wX9zXOTLkae",
       "url": "",
       "useLimit": true,
       "version": 35,
@@ -14034,7 +14034,7 @@
       "height": 36,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Mage - Arcane Brilliance [Group]",
+      "id": "Mage - Arcane Brilliance [Group]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -14091,7 +14091,7 @@
         "use_zone": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Mage - Group Buffs",
+      "parent": "Mage - Group Buffs",
       "progressSource": [
         -1,
         ""
@@ -14379,7 +14379,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "lKvbtBtB5gD",
+      "uid": "YAPJwoJdWd4",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14442,11 +14442,11 @@
     "conditions": [],
     "config": [],
     "controlledChildren": [
-      "Xyrec Mage - Core Abilities",
-      "Xyrec Mage - Resources",
-      "Xyrec Mage - Cooldowns",
-      "Xyrec Mage - Reminders",
-      "Xyrec Mage - Group Buffs"
+      "Mage - Core Abilities",
+      "Mage - Resources",
+      "Mage - Cooldowns",
+      "Mage - Reminders",
+      "Mage - Group Buffs"
     ],
     "frameStrata": 1,
     "groupIcon": "626001",
@@ -14491,7 +14491,7 @@
         "untrigger": []
       }
     ],
-    "uid": "mpxKuZiKAqf",
+    "uid": "hhDdgVQ5kKq",
     "url": "",
     "version": 35,
     "wagoID": "6vNSif5yK",

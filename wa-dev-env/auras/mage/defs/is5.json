@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Mage - IS5",
+  "id": "Mage - IS5",
   "payload": {
     "actions": {
       "finish": [],
@@ -111,7 +111,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Mage - IS5",
+    "id": "Mage - IS5",
     "information": {
       "forceEvents": false,
       "ignoreOptionsEventErrors": false,

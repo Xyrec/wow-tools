@@ -1,7 +1,7 @@
 {
   "archetype": "cooldown_icon",
   "conditions": [],
-  "id": "Xyrec Mage - Spellsteal",
+  "id": "Mage - Spellsteal",
   "load": {
     "class": {
       "multi": [],

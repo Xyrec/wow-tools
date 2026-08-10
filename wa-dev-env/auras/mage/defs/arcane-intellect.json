@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Mage - Arcane Intellect",
+  "id": "Mage - Arcane Intellect",
   "load": {
     "class": {
       "multi": {},

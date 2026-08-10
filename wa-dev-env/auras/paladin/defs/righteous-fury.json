@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Paladin - Righteous Fury",
+  "id": "Paladin - Righteous Fury",
   "load": {
     "class": {
       "multi": [],

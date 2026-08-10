@@ -1,7 +1,7 @@
 {
   "archetype": "groupbuff_icon",
   "conditions": [],
-  "id": "Xyrec Warlock - Fire Shield",
+  "id": "Warlock - Fire Shield",
   "load": {
     "class": {
       "multi": {},

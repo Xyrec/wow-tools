@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Hunter - Quick Shots Tick",
+  "id": "Hunter - Quick Shots Tick",
   "payload": {
     "actions": {
       "finish": {
@@ -115,7 +115,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Hunter - Quick Shots Tick",
+    "id": "Hunter - Quick Shots Tick",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

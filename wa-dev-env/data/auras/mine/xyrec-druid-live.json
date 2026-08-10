@@ -57,13 +57,13 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Druid - Faerie Fire [Caster]",
-        "Xyrec Druid - Moonfire",
-        "Xyrec Druid - Swiftmend",
-        "Xyrec Druid - Lifebloom",
-        "Xyrec Druid - Wild Growth",
-        "Xyrec Druid - Regrowth",
-        "Xyrec Druid - Rejuventation"
+        "Druid - Faerie Fire [Caster]",
+        "Druid - Moonfire",
+        "Druid - Swiftmend",
+        "Druid - Lifebloom",
+        "Druid - Wild Growth",
+        "Druid - Regrowth",
+        "Druid - Rejuventation"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -71,7 +71,7 @@
       "gridWidth": 5,
       "groupIcon": 135730,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Druid - Caster Abilities",
+      "id": "Druid - Caster Abilities",
       "information": {
         "showNilIsFalse": true
       },
@@ -135,7 +135,7 @@
           "untrigger": []
         }
       ],
-      "uid": "OxpFiw2AHr1",
+      "uid": "BnpDTt771b9",
       "url": "",
       "useLimit": true,
       "version": 45,
@@ -277,7 +277,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Faerie Fire [Caster]",
+      "id": "Druid - Faerie Fire [Caster]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -313,7 +313,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Caster Abilities",
+      "parent": "Druid - Caster Abilities",
       "progressSource": [
         -1,
         ""
@@ -457,7 +457,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "hNsnNtCsdiK",
+      "uid": "8hjTZvHR3nG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -603,7 +603,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Moonfire",
+      "id": "Druid - Moonfire",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -637,7 +637,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Caster Abilities",
+      "parent": "Druid - Caster Abilities",
       "progressSource": [
         -1,
         ""
@@ -794,7 +794,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "PFrH1BRJ0d8",
+      "uid": "YoTX2e08qGp",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -929,7 +929,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Swiftmend",
+      "id": "Druid - Swiftmend",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -961,7 +961,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Caster Abilities",
+      "parent": "Druid - Caster Abilities",
       "progressSource": [
         -1,
         ""
@@ -1087,7 +1087,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "BFllh2kH53C",
+      "uid": "6f4xzDFhfun",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1213,7 +1213,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Lifebloom",
+      "id": "Druid - Lifebloom",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1245,7 +1245,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Caster Abilities",
+      "parent": "Druid - Caster Abilities",
       "progressSource": [
         -1,
         ""
@@ -1421,7 +1421,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "kv0jSxkSehj",
+      "uid": "6asn2FSAkl6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1556,7 +1556,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Wild Growth",
+      "id": "Druid - Wild Growth",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1588,7 +1588,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Caster Abilities",
+      "parent": "Druid - Caster Abilities",
       "progressSource": [
         -1,
         ""
@@ -1714,7 +1714,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "3jNaydt1TeF",
+      "uid": "N4SNJb8cmtP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1853,7 +1853,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Regrowth",
+      "id": "Druid - Regrowth",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1885,7 +1885,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Caster Abilities",
+      "parent": "Druid - Caster Abilities",
       "progressSource": [
         -1,
         ""
@@ -2061,7 +2061,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "fxXEaqFtdHf",
+      "uid": "I9LRFf49mkW",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2200,7 +2200,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Rejuventation",
+      "id": "Druid - Rejuventation",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2232,7 +2232,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Caster Abilities",
+      "parent": "Druid - Caster Abilities",
       "progressSource": [
         -1,
         ""
@@ -2409,7 +2409,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "wFoVk0FFrrq",
+      "uid": "N7fmioXWmQE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2478,15 +2478,15 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Druid - Faerie Fire [Feral]",
-        "Xyrec Druid - Mangle [Cat]",
-        "Xyrec Druid - Rip",
-        "Xyrec Druid - Rake",
-        "Xyrec Druid - Mangle [Bear]",
-        "Xyrec Druid - Lacerate",
-        "Xyrec Druid - Growl",
-        "Xyrec Druid - Demoralizing Roar",
-        "Xyrec Druid - Feral Charge"
+        "Druid - Faerie Fire [Feral]",
+        "Druid - Mangle [Cat]",
+        "Druid - Rip",
+        "Druid - Rake",
+        "Druid - Mangle [Bear]",
+        "Druid - Lacerate",
+        "Druid - Growl",
+        "Druid - Demoralizing Roar",
+        "Druid - Feral Charge"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -2494,7 +2494,7 @@
       "gridWidth": 5,
       "groupIcon": 132135,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Druid - Feral Abilities",
+      "id": "Druid - Feral Abilities",
       "information": {
         "showNilIsFalse": true
       },
@@ -2559,7 +2559,7 @@
           "untrigger": []
         }
       ],
-      "uid": "16mBq8Kgp1t",
+      "uid": "jUOKIZg1YDP",
       "url": "",
       "useLimit": true,
       "version": 45,
@@ -2680,7 +2680,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Faerie Fire [Feral]",
+      "id": "Druid - Faerie Fire [Feral]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2715,7 +2715,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Feral Abilities",
+      "parent": "Druid - Feral Abilities",
       "progressSource": [
         -1,
         ""
@@ -2857,7 +2857,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "FTxZ3KDOh1x",
+      "uid": "c3IC9SKcQK7",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2961,7 +2961,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Mangle [Cat]",
+      "id": "Druid - Mangle [Cat]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2993,7 +2993,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Feral Abilities",
+      "parent": "Druid - Feral Abilities",
       "progressSource": [
         -1,
         ""
@@ -3144,7 +3144,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "lZqup7aarDo",
+      "uid": "SemRYNrhojd",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3248,7 +3248,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Rip",
+      "id": "Druid - Rip",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3281,7 +3281,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Feral Abilities",
+      "parent": "Druid - Feral Abilities",
       "progressSource": [
         -1,
         ""
@@ -3399,7 +3399,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "YBTvH5vieEw",
+      "uid": "KNWxtpd6sXR",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3503,7 +3503,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Rake",
+      "id": "Druid - Rake",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3536,7 +3536,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Feral Abilities",
+      "parent": "Druid - Feral Abilities",
       "progressSource": [
         -1,
         ""
@@ -3654,7 +3654,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "AZOy6NhvGLf",
+      "uid": "2LY01myqroo",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3789,7 +3789,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Mangle [Bear]",
+      "id": "Druid - Mangle [Bear]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3821,7 +3821,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Feral Abilities",
+      "parent": "Druid - Feral Abilities",
       "progressSource": [
         -1,
         ""
@@ -3946,7 +3946,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend\n    \n    ",
         "disjunctive": "all"
       },
-      "uid": "S9dArlNRyln",
+      "uid": "GDWaBufutSI",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4050,7 +4050,7 @@
       "height": 32,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Druid - Lacerate",
+      "id": "Druid - Lacerate",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4082,7 +4082,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Feral Abilities",
+      "parent": "Druid - Feral Abilities",
       "progressSource": [
         -1,
         ""
@@ -4244,7 +4244,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "7Facg4At3Ou",
+      "uid": "c5PBrIx2iPZ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4348,7 +4348,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Growl",
+      "id": "Druid - Growl",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4380,7 +4380,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Feral Abilities",
+      "parent": "Druid - Feral Abilities",
       "progressSource": [
         -1,
         ""
@@ -4500,7 +4500,7 @@
         "activeTriggerMode": 1,
         "disjunctive": "all"
       },
-      "uid": "keK1o2pgSPc",
+      "uid": "xhgStCj4FJh",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4616,7 +4616,7 @@
       "height": 32,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Druid - Demoralizing Roar",
+      "id": "Druid - Demoralizing Roar",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4649,7 +4649,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Feral Abilities",
+      "parent": "Druid - Feral Abilities",
       "progressSource": [
         -1,
         ""
@@ -4891,7 +4891,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "7o6DmWbOa8E",
+      "uid": "2RvD7ZiDodE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5013,7 +5013,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Feral Charge",
+      "id": "Druid - Feral Charge",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5045,7 +5045,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Feral Abilities",
+      "parent": "Druid - Feral Abilities",
       "progressSource": [
         -1,
         ""
@@ -5169,7 +5169,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "yQ8o3pSomAE",
+      "uid": "zZI9VRKABV9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5232,18 +5232,18 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Xyrec Druid - Combo Points",
-        "Xyrec Druid - Swing Timer [Caster]",
-        "Xyrec Druid - Swing Timer [Bear]",
-        "Xyrec Druid - Rage Bar",
-        "Xyrec Druid - Energy Bar",
-        "Xyrec Druid - Energy Tick",
-        "Xyrec Druid - Mana Bar",
-        "Xyrec Druid - Mana Tick"
+        "Druid - Combo Points",
+        "Druid - Swing Timer [Caster]",
+        "Druid - Swing Timer [Bear]",
+        "Druid - Rage Bar",
+        "Druid - Energy Bar",
+        "Druid - Energy Tick",
+        "Druid - Mana Bar",
+        "Druid - Mana Tick"
       ],
       "frameStrata": 1,
       "groupIcon": 136048,
-      "id": "Xyrec Druid - Resources",
+      "id": "Druid - Resources",
       "information": {
         "showNilIsFalse": true
       },
@@ -5286,7 +5286,7 @@
           "untrigger": []
         }
       ],
-      "uid": "amqZejNsIEO",
+      "uid": "hQfNVTHkEDr",
       "url": "",
       "version": 45,
       "wagoID": "bQynAWaKe",
@@ -5344,15 +5344,15 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Xyrec Druid - CP1",
-        "Xyrec Druid - CP2",
-        "Xyrec Druid - CP3",
-        "Xyrec Druid - CP4",
-        "Xyrec Druid - CP5"
+        "Druid - CP1",
+        "Druid - CP2",
+        "Druid - CP3",
+        "Druid - CP4",
+        "Druid - CP5"
       ],
       "frameStrata": 1,
       "groupIcon": 132142,
-      "id": "Xyrec Druid - Combo Points",
+      "id": "Druid - Combo Points",
       "information": {
         "showNilIsFalse": true
       },
@@ -5371,7 +5371,7 @@
           "multi": []
         }
       },
-      "parent": "Xyrec Druid - Resources",
+      "parent": "Druid - Resources",
       "preferToUpdate": false,
       "regionType": "group",
       "scale": 1,
@@ -5394,7 +5394,7 @@
           "untrigger": []
         }
       ],
-      "uid": "633oZ0rEsgn",
+      "uid": "sNo9Up1DDOX",
       "url": "",
       "version": 45,
       "wagoID": "bQynAWaKe",
@@ -5493,7 +5493,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Druid - CP1",
+      "id": "Druid - CP1",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5526,7 +5526,7 @@
         "use_never": false
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Druid - Combo Points",
+      "parent": "Druid - Combo Points",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -5625,7 +5625,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "95mYaYTyBpM",
+      "uid": "kDoOgel1WJB",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -5728,7 +5728,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Druid - CP2",
+      "id": "Druid - CP2",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5759,7 +5759,7 @@
         "use_never": false
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Druid - Combo Points",
+      "parent": "Druid - Combo Points",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -5857,7 +5857,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "lTtCTEMfmKm",
+      "uid": "iTgq4iNmROz",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -5960,7 +5960,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Druid - CP3",
+      "id": "Druid - CP3",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5991,7 +5991,7 @@
         "use_never": false
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Druid - Combo Points",
+      "parent": "Druid - Combo Points",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -6089,7 +6089,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "TV8UDtqdMhv",
+      "uid": "WY2t19G3tEg",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -6192,7 +6192,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Druid - CP4",
+      "id": "Druid - CP4",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6223,7 +6223,7 @@
         "use_never": false
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Druid - Combo Points",
+      "parent": "Druid - Combo Points",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -6322,7 +6322,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "BJv6TC1CvU1",
+      "uid": "b0mAPgUhxul",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -6425,7 +6425,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Druid - CP5",
+      "id": "Druid - CP5",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6456,7 +6456,7 @@
         "use_never": false
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Druid - Combo Points",
+      "parent": "Druid - Combo Points",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -6554,7 +6554,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "hvNiIBw8zqy",
+      "uid": "a5tDzswZIeP",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -6690,7 +6690,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Druid - Swing Timer [Caster]",
+      "id": "Druid - Swing Timer [Caster]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6750,7 +6750,7 @@
           0.25
         ]
       ],
-      "parent": "Xyrec Druid - Resources",
+      "parent": "Druid - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -6865,7 +6865,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "MImGC5TwKjZ",
+      "uid": "YmHbZ8p5oBW",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7001,7 +7001,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Druid - Swing Timer [Bear]",
+      "id": "Druid - Swing Timer [Bear]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7059,7 +7059,7 @@
           0.25
         ]
       ],
-      "parent": "Xyrec Druid - Resources",
+      "parent": "Druid - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -7172,7 +7172,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "NZnRoNjtsnU",
+      "uid": "7Ohm5uNjPRM",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7341,7 +7341,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Druid - Rage Bar",
+      "id": "Druid - Rage Bar",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7403,7 +7403,7 @@
       "overlaysTexture": [
         "Clean"
       ],
-      "parent": "Xyrec Druid - Resources",
+      "parent": "Druid - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -7563,7 +7563,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "rq31JnuHIfC",
+      "uid": "ELZXTjBMxpu",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7732,7 +7732,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Druid - Energy Bar",
+      "id": "Druid - Energy Bar",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7789,7 +7789,7 @@
           0.25
         ]
       ],
-      "parent": "Xyrec Druid - Resources",
+      "parent": "Druid - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -7943,7 +7943,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "TpftGBEDeOx",
+      "uid": "85SNR97WSIz",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8051,7 +8051,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Druid - Energy Tick",
+      "id": "Druid - Energy Tick",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8077,7 +8077,7 @@
         "use_never": false
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Druid - Resources",
+      "parent": "Druid - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -8156,7 +8156,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and t[2]\nend",
         "disjunctive": "all"
       },
-      "uid": "SzzKdngkvxc",
+      "uid": "Od2Qk1AXrkJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8363,7 +8363,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Druid - Mana Bar",
+      "id": "Druid - Mana Bar",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8423,7 +8423,7 @@
       "overlaysTexture": [
         "Clean"
       ],
-      "parent": "Xyrec Druid - Resources",
+      "parent": "Druid - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -8576,7 +8576,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "k4SaAiWdMoD",
+      "uid": "QuB8uGNQD2i",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8728,7 +8728,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Druid - Mana Tick",
+      "id": "Druid - Mana Tick",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8757,7 +8757,7 @@
         "zoneIds": ""
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Druid - Resources",
+      "parent": "Druid - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -8849,7 +8849,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "gpZrXmsotAy",
+      "uid": "AlQT0MVpw0p",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8917,26 +8917,26 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Druid - Prowl",
-        "Xyrec Druid - Shadowmeld",
-        "Xyrec Druid - War Stomp",
-        "Xyrec Druid - Cower",
-        "Xyrec Druid - Tiger's Fury",
-        "Xyrec Druid - Berserk",
-        "Xyrec Druid - Dash",
-        "Xyrec Druid - Trinket 1 CD",
-        "Xyrec Druid - Trinket 2 CD",
-        "Xyrec Druid - Hurricane",
-        "Xyrec Druid - Rebirth",
-        "Xyrec Druid - Tranquility",
-        "Xyrec Druid - Nature's Swiftness",
-        "Xyrec Druid - Innervate",
-        "Xyrec Druid - Nature's Grasp",
-        "Xyrec Druid - Survival Instincts",
-        "Xyrec Druid - Frenzied Regeneration",
-        "Xyrec Druid - Barkskin",
-        "Xyrec Druid - Enrage",
-        "Xyrec Druid - Bash"
+        "Druid - Prowl",
+        "Druid - Shadowmeld",
+        "Druid - War Stomp",
+        "Druid - Cower",
+        "Druid - Tiger's Fury",
+        "Druid - Berserk",
+        "Druid - Dash",
+        "Druid - Trinket 1 CD",
+        "Druid - Trinket 2 CD",
+        "Druid - Hurricane",
+        "Druid - Rebirth",
+        "Druid - Tranquility",
+        "Druid - Nature's Swiftness",
+        "Druid - Innervate",
+        "Druid - Nature's Grasp",
+        "Druid - Survival Instincts",
+        "Druid - Frenzied Regeneration",
+        "Druid - Barkskin",
+        "Druid - Enrage",
+        "Druid - Bash"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -8944,7 +8944,7 @@
       "gridWidth": 5,
       "groupIcon": 136097,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Druid - Cooldowns",
+      "id": "Druid - Cooldowns",
       "information": {
         "showNilIsFalse": true
       },
@@ -9018,7 +9018,7 @@
           "untrigger": []
         }
       ],
-      "uid": "eueo3T71uUo",
+      "uid": "YJJASFqgeqq",
       "url": "",
       "useLimit": true,
       "version": 45,
@@ -9131,7 +9131,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Prowl",
+      "id": "Druid - Prowl",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9164,7 +9164,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9287,7 +9287,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "sAFquFITXb5",
+      "uid": "cIkwN3NOUfe",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9403,7 +9403,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Shadowmeld",
+      "id": "Druid - Shadowmeld",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9440,7 +9440,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9563,7 +9563,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "N8mqogOavS8",
+      "uid": "VC9W8Nya2TL",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9667,7 +9667,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - War Stomp",
+      "id": "Druid - War Stomp",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9704,7 +9704,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9805,7 +9805,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "yvKrFvvotpU",
+      "uid": "FptiOyVkoi9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9909,7 +9909,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Cower",
+      "id": "Druid - Cower",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9942,7 +9942,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10043,7 +10043,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "EVGr0X8RJg1",
+      "uid": "qcFg4embmkn",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10159,7 +10159,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Tiger's Fury",
+      "id": "Druid - Tiger's Fury",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10192,7 +10192,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10315,7 +10315,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "PHxDI90hHKK",
+      "uid": "9aMh3Cg7LBe",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10431,7 +10431,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Berserk",
+      "id": "Druid - Berserk",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10464,7 +10464,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10587,7 +10587,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ftlPwDTIFQH",
+      "uid": "AfkzY5BhWWX",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10703,7 +10703,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Dash",
+      "id": "Druid - Dash",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10736,7 +10736,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -10859,7 +10859,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "UwkjiWJHjC3",
+      "uid": "VFX71Zet9c2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10963,7 +10963,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Druid - Trinket 1 CD",
+      "id": "Druid - Trinket 1 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10995,7 +10995,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11100,7 +11100,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "r6XA4ua4ux4",
+      "uid": "GoEl0nOHYY9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11204,7 +11204,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Druid - Trinket 2 CD",
+      "id": "Druid - Trinket 2 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11236,7 +11236,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11341,7 +11341,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "NxlVsInrc3K",
+      "uid": "oFU68FbgofO",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11445,7 +11445,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Hurricane",
+      "id": "Druid - Hurricane",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11478,7 +11478,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11579,7 +11579,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "qyXKh9s7rws",
+      "uid": "PIQYFv0DZe6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11683,7 +11683,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Rebirth",
+      "id": "Druid - Rebirth",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11716,7 +11716,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -11817,7 +11817,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "SyZc9iQLjFK",
+      "uid": "ilIvkWiUPbB",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11921,7 +11921,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Tranquility",
+      "id": "Druid - Tranquility",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11954,7 +11954,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -12055,7 +12055,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "MOX7kvv8bp6",
+      "uid": "bame6cOU4ka",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12171,7 +12171,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Nature's Swiftness",
+      "id": "Druid - Nature's Swiftness",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12204,7 +12204,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -12327,7 +12327,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Omhgx4kJNQI",
+      "uid": "VHW9JnShuTH",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12443,7 +12443,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Innervate",
+      "id": "Druid - Innervate",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12476,7 +12476,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -12602,7 +12602,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "XOWJuQ84iSa",
+      "uid": "1be6gVmaq7U",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12718,7 +12718,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Nature's Grasp",
+      "id": "Druid - Nature's Grasp",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12751,7 +12751,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -12874,7 +12874,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ershebb7Lxu",
+      "uid": "Sl3TJzyLMpW",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12990,7 +12990,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Survival Instincts",
+      "id": "Druid - Survival Instincts",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13023,7 +13023,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -13146,7 +13146,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "IMAcyFhXHKb",
+      "uid": "Tgmn18ug1sR",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13262,7 +13262,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Frenzied Regeneration",
+      "id": "Druid - Frenzied Regeneration",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13295,7 +13295,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -13418,7 +13418,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "5Ca8JKgNPHa",
+      "uid": "JnUwWtT7OeS",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13534,7 +13534,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Barkskin",
+      "id": "Druid - Barkskin",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13567,7 +13567,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -13694,7 +13694,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "L46c39YTLk2",
+      "uid": "uifyCFQBKUP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13810,7 +13810,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Enrage",
+      "id": "Druid - Enrage",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13843,7 +13843,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -13966,7 +13966,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "T8mXJgqRAVN",
+      "uid": "kTwdqstawUI",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14082,7 +14082,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Bash",
+      "id": "Druid - Bash",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -14115,7 +14115,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Cooldowns",
+      "parent": "Druid - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -14238,7 +14238,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "aJ5UZ0IaeXx",
+      "uid": "5Dfpeg63wKY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14306,11 +14306,11 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Druid - Drink Expiring",
-        "Xyrec Druid - Moonkin Form",
-        "Xyrec Druid - Mark of the Wild",
-        "Xyrec Druid - Thorns",
-        "Xyrec Druid - Omen of Clarity"
+        "Druid - Drink Expiring",
+        "Druid - Moonkin Form",
+        "Druid - Mark of the Wild",
+        "Druid - Thorns",
+        "Druid - Omen of Clarity"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -14318,7 +14318,7 @@
       "gridWidth": 5,
       "groupIcon": 136104,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Druid - Reminders",
+      "id": "Druid - Reminders",
       "information": {
         "showNilIsFalse": true
       },
@@ -14376,7 +14376,7 @@
           "untrigger": []
         }
       ],
-      "uid": "yJy7DvVKGAc",
+      "uid": "IMbaB4o1a8y",
       "url": "",
       "useLimit": false,
       "version": 45,
@@ -14461,7 +14461,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Drink Expiring",
+      "id": "Druid - Drink Expiring",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -14496,7 +14496,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Reminders",
+      "parent": "Druid - Reminders",
       "progressSource": [
         -1,
         ""
@@ -14655,7 +14655,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "4x5wKeM9NTl",
+      "uid": "Wns31qooEnu",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14743,7 +14743,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Druid - Moonkin Form",
+      "id": "Druid - Moonkin Form",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -14782,7 +14782,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Reminders",
+      "parent": "Druid - Reminders",
       "progressSource": [
         -1,
         ""
@@ -14920,7 +14920,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "EArVLnk83Bi",
+      "uid": "oOaSf9XdQdW",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -15008,7 +15008,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Druid - Mark of the Wild",
+      "id": "Druid - Mark of the Wild",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -15045,7 +15045,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Reminders",
+      "parent": "Druid - Reminders",
       "progressSource": [
         -1,
         ""
@@ -15205,7 +15205,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "exQ2rQU81cF",
+      "uid": "B8oiD149IPe",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -15293,7 +15293,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Druid - Thorns",
+      "id": "Druid - Thorns",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -15334,7 +15334,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Reminders",
+      "parent": "Druid - Reminders",
       "progressSource": [
         -1,
         ""
@@ -15493,7 +15493,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "cXLkRQidrSY",
+      "uid": "wAS4PHbHLGc",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -15581,7 +15581,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Druid - Omen of Clarity",
+      "id": "Druid - Omen of Clarity",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -15618,7 +15618,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Reminders",
+      "parent": "Druid - Reminders",
       "progressSource": [
         -1,
         ""
@@ -15776,7 +15776,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "j7nQGkh3YOW",
+      "uid": "sBhqKQkj5t1",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -15844,7 +15844,7 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Druid - Gift of the Wild [Group]"
+        "Druid - Gift of the Wild [Group]"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -15852,7 +15852,7 @@
       "gridWidth": 5,
       "groupIcon": 136078,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Druid - Group Buffs",
+      "id": "Druid - Group Buffs",
       "information": {
         "forceEvents": true,
         "showNilIsFalse": true
@@ -15908,7 +15908,7 @@
           "untrigger": []
         }
       ],
-      "uid": "qhDaKE8ab8i",
+      "uid": "eYcjTS6CEad",
       "url": "",
       "useLimit": true,
       "version": 45,
@@ -16004,7 +16004,7 @@
       "height": 36,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Druid - Gift of the Wild [Group]",
+      "id": "Druid - Gift of the Wild [Group]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -16061,7 +16061,7 @@
         "use_zone": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Druid - Group Buffs",
+      "parent": "Druid - Group Buffs",
       "progressSource": [
         -1,
         ""
@@ -16332,7 +16332,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "ZgKhhlQAvNr",
+      "uid": "rlpku2Qxox2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -16395,12 +16395,12 @@
     "conditions": [],
     "config": [],
     "controlledChildren": [
-      "Xyrec Druid - Caster Abilities",
-      "Xyrec Druid - Feral Abilities",
-      "Xyrec Druid - Resources",
-      "Xyrec Druid - Cooldowns",
-      "Xyrec Druid - Reminders",
-      "Xyrec Druid - Group Buffs"
+      "Druid - Caster Abilities",
+      "Druid - Feral Abilities",
+      "Druid - Resources",
+      "Druid - Cooldowns",
+      "Druid - Reminders",
+      "Druid - Group Buffs"
     ],
     "frameStrata": 1,
     "groupIcon": "625999",
@@ -16446,7 +16446,7 @@
         "untrigger": []
       }
     ],
-    "uid": "B8oWfmDOrmw",
+    "uid": "IvNdxissTqU",
     "url": "",
     "version": 45,
     "wagoID": "bQynAWaKe",

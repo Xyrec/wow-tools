@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Druid - Omen of Clarity",
+  "id": "Druid - Omen of Clarity",
   "load": {
     "class": {
       "multi": {},

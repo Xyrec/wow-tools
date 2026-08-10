@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Priest - Shadow Protection [Disabled]",
+  "id": "Priest - Shadow Protection [Disabled]",
   "load": {
     "class": {
       "multi": {},

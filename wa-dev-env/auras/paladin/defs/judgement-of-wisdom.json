@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Paladin - Judgement of Wisdom",
+  "id": "Paladin - Judgement of Wisdom",
   "payload": {
     "actions": {
       "finish": [],
@@ -90,7 +90,7 @@
     "height": 26,
     "icon": true,
     "iconSource": -1,
-    "id": "Xyrec Paladin - Judgement of Wisdom",
+    "id": "Paladin - Judgement of Wisdom",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

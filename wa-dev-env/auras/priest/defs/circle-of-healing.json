@@ -1,7 +1,7 @@
 {
   "archetype": "rotation_icon",
   "conditions": [],
-  "id": "Xyrec Priest - Circle of Healing",
+  "id": "Priest - Circle of Healing",
   "load": {
     "class": {
       "multi": [],

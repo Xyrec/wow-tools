@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Druid - Swing Timer [Bear]",
+  "id": "Druid - Swing Timer [Bear]",
   "lua": {
     "customText": "lua/swing-timer-bear--customText.lua"
   },
@@ -129,7 +129,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Druid - Swing Timer [Bear]",
+    "id": "Druid - Swing Timer [Bear]",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

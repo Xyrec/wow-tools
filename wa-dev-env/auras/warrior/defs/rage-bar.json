@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Warrior - Rage Bar",
+  "id": "Warrior - Rage Bar",
   "lua": {
     "customText": "lua/rage-bar--customText.lua"
   },
@@ -169,7 +169,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Warrior - Rage Bar",
+    "id": "Warrior - Rage Bar",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

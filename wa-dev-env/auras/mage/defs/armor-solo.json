@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Mage - Armor [Solo]",
+  "id": "Mage - Armor [Solo]",
   "load": {
     "class": {
       "multi": {},

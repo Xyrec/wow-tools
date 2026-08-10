@@ -1,7 +1,7 @@
 {
   "archetype": "rotation_icon",
   "conditions": [],
-  "id": "Xyrec Mage - Ice Lance",
+  "id": "Mage - Ice Lance",
   "load": {
     "class": {
       "multi": [],

@@ -1,7 +1,7 @@
 {
   "archetype": "cooldown_icon",
   "conditions": [],
-  "id": "Xyrec Mage - Arcane Surge",
+  "id": "Mage - Arcane Surge",
   "load": {
     "class": {
       "multi": [],

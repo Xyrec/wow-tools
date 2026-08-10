@@ -57,21 +57,21 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Priest - Shadow Word: Pain",
-        "Xyrec Priest - Mind Blast",
-        "Xyrec Priest - Shadow Word: Death",
-        "Xyrec Priest - Vampiric Embrace",
-        "Xyrec Priest - Circle of Healing",
-        "Xyrec Priest - Power Word: Shield",
-        "Xyrec Priest - Prayer of Mending",
-        "Xyrec Priest - Surge of Light"
+        "Priest - Shadow Word: Pain",
+        "Priest - Mind Blast",
+        "Priest - Shadow Word: Death",
+        "Priest - Vampiric Embrace",
+        "Priest - Circle of Healing",
+        "Priest - Power Word: Shield",
+        "Priest - Prayer of Mending",
+        "Priest - Surge of Light"
       ],
       "frameStrata": 1,
       "fullCircle": true,
       "gridType": "RD",
       "gridWidth": 5,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Priest - Core Abilities",
+      "id": "Priest - Core Abilities",
       "information": {
         "showNilIsFalse": true
       },
@@ -135,7 +135,7 @@
           "untrigger": []
         }
       ],
-      "uid": "skRieqS3uVb",
+      "uid": "RW3mnzJH4KE",
       "url": "",
       "useLimit": true,
       "version": 33,
@@ -283,7 +283,7 @@
       "height": 32,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Priest - Shadow Word: Pain",
+      "id": "Priest - Shadow Word: Pain",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -316,7 +316,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Core Abilities",
+      "parent": "Priest - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -544,7 +544,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "CXfNzUiJoRr",
+      "uid": "SWaVo0eup7K",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -697,7 +697,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Mind Blast",
+      "id": "Priest - Mind Blast",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -729,7 +729,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Core Abilities",
+      "parent": "Priest - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -829,7 +829,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "lF9KZPn7UGe",
+      "uid": "63LQdU4xh3t",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -920,7 +920,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Shadow Word: Death",
+      "id": "Priest - Shadow Word: Death",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -951,7 +951,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Priest - Core Abilities",
+      "parent": "Priest - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1044,7 +1044,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "DLJXUpNdNrK",
+      "uid": "u5McdM62FgO",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1187,7 +1187,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Vampiric Embrace",
+      "id": "Priest - Vampiric Embrace",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1219,7 +1219,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Core Abilities",
+      "parent": "Priest - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1440,7 +1440,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "LHphenrynRM",
+      "uid": "2CH1ZX6mAPQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1531,7 +1531,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Circle of Healing",
+      "id": "Priest - Circle of Healing",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1562,7 +1562,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Priest - Core Abilities",
+      "parent": "Priest - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1655,7 +1655,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Qi2VGaOKzjH",
+      "uid": "U8ctoliOBqU",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1821,7 +1821,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Power Word: Shield",
+      "id": "Priest - Power Word: Shield",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1853,7 +1853,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Core Abilities",
+      "parent": "Priest - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1982,7 +1982,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "4OuxtGHU43x",
+      "uid": "dm0LfHn0oI4",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2073,7 +2073,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Prayer of Mending",
+      "id": "Priest - Prayer of Mending",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2104,7 +2104,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Priest - Core Abilities",
+      "parent": "Priest - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2197,7 +2197,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "xuIPWPb8De9",
+      "uid": "Kv22n3YAmEM",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2337,7 +2337,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Surge of Light",
+      "id": "Priest - Surge of Light",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2369,7 +2369,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Core Abilities",
+      "parent": "Priest - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2473,7 +2473,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "oj3qtkXKvMx",
+      "uid": "MXIwlrZRomM",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2536,15 +2536,15 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Xyrec Priest - Mind Spike Bars",
-        "Xyrec Priest - Serendipity Bars",
-        "Xyrec Priest - Wand Swing [Flay Range]",
-        "Xyrec Priest - Mana Bar",
-        "Xyrec Priest - Mana Tick"
+        "Priest - Mind Spike Bars",
+        "Priest - Serendipity Bars",
+        "Priest - Wand Swing [Flay Range]",
+        "Priest - Mana Bar",
+        "Priest - Mana Tick"
       ],
       "frameStrata": 1,
       "groupIcon": 132317,
-      "id": "Xyrec Priest - Resources",
+      "id": "Priest - Resources",
       "information": {
         "showNilIsFalse": true
       },
@@ -2586,7 +2586,7 @@
           "untrigger": []
         }
       ],
-      "uid": "7ivgXwOLD8K",
+      "uid": "50JcozARcLI",
       "url": "",
       "version": 33,
       "wagoID": "gFd6I4vVo",
@@ -2647,7 +2647,7 @@
       "controlledChildren": [],
       "frameStrata": 1,
       "groupIcon": 136181,
-      "id": "Xyrec Priest - Mind Spike Bars",
+      "id": "Priest - Mind Spike Bars",
       "information": {
         "forceEvents": true,
         "showNilIsFalse": true
@@ -2667,7 +2667,7 @@
           "multi": []
         }
       },
-      "parent": "Xyrec Priest - Resources",
+      "parent": "Priest - Resources",
       "preferToUpdate": false,
       "regionType": "group",
       "scale": 1,
@@ -2691,7 +2691,7 @@
           "untrigger": []
         }
       ],
-      "uid": "TwKehg9C2KJ",
+      "uid": "REdW3NUrLME",
       "url": "",
       "version": 33,
       "wagoID": "gFd6I4vVo",
@@ -2751,7 +2751,7 @@
       "config": [],
       "controlledChildren": [],
       "frameStrata": 1,
-      "id": "Xyrec Priest - Serendipity Bars",
+      "id": "Priest - Serendipity Bars",
       "information": {
         "forceEvents": true,
         "showNilIsFalse": true
@@ -2771,7 +2771,7 @@
           "multi": []
         }
       },
-      "parent": "Xyrec Priest - Resources",
+      "parent": "Priest - Resources",
       "preferToUpdate": false,
       "regionType": "group",
       "scale": 1,
@@ -2795,7 +2795,7 @@
           "untrigger": []
         }
       ],
-      "uid": "RrWFup1l0ZE",
+      "uid": "y6PlqOwuTvR",
       "url": "",
       "version": 33,
       "wagoID": "gFd6I4vVo",
@@ -2956,7 +2956,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Priest - Wand Swing [Flay Range]",
+      "id": "Priest - Wand Swing [Flay Range]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3015,7 +3015,7 @@
           0.25
         ]
       ],
-      "parent": "Xyrec Priest - Resources",
+      "parent": "Priest - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -3159,7 +3159,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "8k5JbSjhXCL",
+      "uid": "jUt5WIpbXyU",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3282,7 +3282,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Priest - Mana Bar",
+      "id": "Priest - Mana Bar",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3342,7 +3342,7 @@
       "overlaysTexture": [
         "Clean"
       ],
-      "parent": "Xyrec Priest - Resources",
+      "parent": "Priest - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -3461,7 +3461,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "cXpIZPbWWTY",
+      "uid": "ACHOaLuT1U6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3600,7 +3600,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Priest - Mana Tick",
+      "id": "Priest - Mana Tick",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3626,7 +3626,7 @@
         "zoneIds": ""
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Priest - Resources",
+      "parent": "Priest - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -3692,7 +3692,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "cjWx7Pda9uI",
+      "uid": "e6CsECbAiGa",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3760,29 +3760,29 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Priest - Fade",
-        "Xyrec Priest - Will of the Forsaken",
-        "Xyrec Priest - Berserking",
-        "Xyrec Priest - Shadowmeld",
-        "Xyrec Priest - Perception",
-        "Xyrec Priest - Stoneform",
-        "Xyrec Priest - Touch of Weakness",
-        "Xyrec Priest - Devouring Plague",
-        "Xyrec Priest - Hex of Weakness",
-        "Xyrec Priest - Shadowguard",
-        "Xyrec Priest - Elune's Grace",
-        "Xyrec Priest - Feedback",
-        "Xyrec Priest - Desperate Prayer",
-        "Xyrec Priest - Fear Ward",
-        "Xyrec Priest - Trinket 1 CD",
-        "Xyrec Priest - Trinket 2 CD",
-        "Xyrec Priest - Power Infusion",
-        "Xyrec Priest - Inner Focus",
-        "Xyrec Priest - Lightwell",
-        "Xyrec Priest - Pain Suppression",
-        "Xyrec Priest - Shadowfiend",
-        "Xyrec Priest - Silence",
-        "Xyrec Priest - Pyshic Scream"
+        "Priest - Fade",
+        "Priest - Will of the Forsaken",
+        "Priest - Berserking",
+        "Priest - Shadowmeld",
+        "Priest - Perception",
+        "Priest - Stoneform",
+        "Priest - Touch of Weakness",
+        "Priest - Devouring Plague",
+        "Priest - Hex of Weakness",
+        "Priest - Shadowguard",
+        "Priest - Elune's Grace",
+        "Priest - Feedback",
+        "Priest - Desperate Prayer",
+        "Priest - Fear Ward",
+        "Priest - Trinket 1 CD",
+        "Priest - Trinket 2 CD",
+        "Priest - Power Infusion",
+        "Priest - Inner Focus",
+        "Priest - Lightwell",
+        "Priest - Pain Suppression",
+        "Priest - Shadowfiend",
+        "Priest - Silence",
+        "Priest - Pyshic Scream"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -3790,7 +3790,7 @@
       "gridWidth": 5,
       "groupIcon": 135939,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Priest - Cooldowns",
+      "id": "Priest - Cooldowns",
       "information": {
         "showNilIsFalse": true
       },
@@ -3870,7 +3870,7 @@
           "untrigger": []
         }
       ],
-      "uid": "I9k5t7jqKpR",
+      "uid": "mq3N5MUPPef",
       "url": "",
       "useLimit": true,
       "version": 33,
@@ -3983,7 +3983,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Fade",
+      "id": "Priest - Fade",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4016,7 +4016,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -4139,7 +4139,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "EOtihTKRZUo",
+      "uid": "IT2KdvLEZNq",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4255,7 +4255,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Will of the Forsaken",
+      "id": "Priest - Will of the Forsaken",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4292,7 +4292,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -4415,7 +4415,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "q08lVIIAhfP",
+      "uid": "NiZDVJSXpbW",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4531,7 +4531,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Berserking",
+      "id": "Priest - Berserking",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4568,7 +4568,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -4691,7 +4691,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "DErg95AZQFN",
+      "uid": "b33gLNFJf7m",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4807,7 +4807,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Shadowmeld",
+      "id": "Priest - Shadowmeld",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4844,7 +4844,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -4967,7 +4967,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "2sZ99CGkSZn",
+      "uid": "Hmm8gXSIXJJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5083,7 +5083,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Perception",
+      "id": "Priest - Perception",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5120,7 +5120,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -5243,7 +5243,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "IVjwpE9B3Pl",
+      "uid": "iOwL7h4IJgM",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5359,7 +5359,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Stoneform",
+      "id": "Priest - Stoneform",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5396,7 +5396,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -5519,7 +5519,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "VTXf8asF4LI",
+      "uid": "iiLlk2rxNIY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5606,7 +5606,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Touch of Weakness",
+      "id": "Priest - Touch of Weakness",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5644,7 +5644,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -5748,7 +5748,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "V8Hq8iHbTyA",
+      "uid": "c4ZKQp5YU1m",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5863,7 +5863,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Devouring Plague",
+      "id": "Priest - Devouring Plague",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5901,7 +5901,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6020,7 +6020,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "lCIDlwHpAxT",
+      "uid": "ujcO3fLHIq2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6107,7 +6107,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Hex of Weakness",
+      "id": "Priest - Hex of Weakness",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6145,7 +6145,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6249,7 +6249,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "4ef0jw8rJZt",
+      "uid": "4JPDF39uilb",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6336,7 +6336,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Shadowguard",
+      "id": "Priest - Shadowguard",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6374,7 +6374,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6465,7 +6465,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "QgbAzqhZX77",
+      "uid": "u3gy3o0yYMj",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6580,7 +6580,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Elune's Grace",
+      "id": "Priest - Elune's Grace",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6618,7 +6618,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6737,7 +6737,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "YXW5vsSV3FJ",
+      "uid": "jeScP57bKUw",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6852,7 +6852,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Feedback",
+      "id": "Priest - Feedback",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6890,7 +6890,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7009,7 +7009,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "gYP2FBfah4g",
+      "uid": "2Otsc93hJEz",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7113,7 +7113,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Desperate Prayer",
+      "id": "Priest - Desperate Prayer",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7147,7 +7147,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7248,7 +7248,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "c9666AQYnlv",
+      "uid": "XFdGxu9dv1L",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7352,7 +7352,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Fear Ward",
+      "id": "Priest - Fear Ward",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7390,7 +7390,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7491,7 +7491,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ukY1syzQ6VC",
+      "uid": "1DzuZhfdv1X",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7595,7 +7595,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Priest - Trinket 1 CD",
+      "id": "Priest - Trinket 1 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7627,7 +7627,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7732,7 +7732,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "U55m7Oor8PK",
+      "uid": "0ejAxeY87r7",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7836,7 +7836,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Priest - Trinket 2 CD",
+      "id": "Priest - Trinket 2 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7868,7 +7868,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7973,7 +7973,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "h9sjjae9Yz4",
+      "uid": "uHO8HpaE4Ro",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8089,7 +8089,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Power Infusion",
+      "id": "Priest - Power Infusion",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8122,7 +8122,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8248,7 +8248,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "S2IYkUaD0Uv",
+      "uid": "I3YgfWDwdPj",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8364,7 +8364,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Inner Focus",
+      "id": "Priest - Inner Focus",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8397,7 +8397,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8520,7 +8520,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "JNr7bvCHMNd",
+      "uid": "bsnT4wQw85Y",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8624,7 +8624,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Lightwell",
+      "id": "Priest - Lightwell",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8657,7 +8657,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8758,7 +8758,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "SpIo8FWOTkU",
+      "uid": "TxCCKTxBh4p",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8845,7 +8845,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Pain Suppression",
+      "id": "Priest - Pain Suppression",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8876,7 +8876,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8969,7 +8969,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "VKZ2upQwhvX",
+      "uid": "k9oGz8mhdSu",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9056,7 +9056,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Shadowfiend",
+      "id": "Priest - Shadowfiend",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9087,7 +9087,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9180,7 +9180,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "MqbKeh69TAS",
+      "uid": "XVspapl637W",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9296,7 +9296,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Silence",
+      "id": "Priest - Silence",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9329,7 +9329,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9452,7 +9452,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ytN5ComYSmR",
+      "uid": "rE3upPz15KA",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9568,7 +9568,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Pyshic Scream",
+      "id": "Priest - Pyshic Scream",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9601,7 +9601,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Cooldowns",
+      "parent": "Priest - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9724,7 +9724,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ZkDoIwvx9ut",
+      "uid": "00LdU9r1XBw",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9792,13 +9792,13 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Priest - Drink Expiring",
-        "Xyrec Priest - Shadowform",
-        "Xyrec Priest - Power Word: Fortitude",
-        "Xyrec Priest - Divine Spirit",
-        "Xyrec Priest - Shadow Protection [Disabled]",
-        "Xyrec Priest - Fear Ward [Self]",
-        "Xyrec Priest - Inner Fire"
+        "Priest - Drink Expiring",
+        "Priest - Shadowform",
+        "Priest - Power Word: Fortitude",
+        "Priest - Divine Spirit",
+        "Priest - Shadow Protection [Disabled]",
+        "Priest - Fear Ward [Self]",
+        "Priest - Inner Fire"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -9806,7 +9806,7 @@
       "gridWidth": 5,
       "groupIcon": 135987,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Priest - Reminders",
+      "id": "Priest - Reminders",
       "information": {
         "showNilIsFalse": true
       },
@@ -9867,7 +9867,7 @@
           "untrigger": []
         }
       ],
-      "uid": "yIyp9W3PrhX",
+      "uid": "RsCbHVbKd4W",
       "url": "",
       "useLimit": false,
       "version": 33,
@@ -9952,7 +9952,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Drink Expiring",
+      "id": "Priest - Drink Expiring",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9987,7 +9987,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Reminders",
+      "parent": "Priest - Reminders",
       "progressSource": [
         -1,
         ""
@@ -10146,7 +10146,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "ymcAxrtUnzj",
+      "uid": "MnLuZ7EHziy",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10234,7 +10234,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Priest - Shadowform",
+      "id": "Priest - Shadowform",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10271,7 +10271,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Reminders",
+      "parent": "Priest - Reminders",
       "progressSource": [
         -1,
         ""
@@ -10409,7 +10409,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "m8pkde8mryH",
+      "uid": "aDBXYduroA3",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10497,7 +10497,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Priest - Power Word: Fortitude",
+      "id": "Priest - Power Word: Fortitude",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10534,7 +10534,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Reminders",
+      "parent": "Priest - Reminders",
       "progressSource": [
         -1,
         ""
@@ -10694,7 +10694,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "bOvQQzLZbhl",
+      "uid": "xlJEIhd0P16",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10782,7 +10782,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Priest - Divine Spirit",
+      "id": "Priest - Divine Spirit",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10819,7 +10819,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Reminders",
+      "parent": "Priest - Reminders",
       "progressSource": [
         -1,
         ""
@@ -10979,7 +10979,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "W07rwbHyDww",
+      "uid": "pHZn95bWvEN",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11067,7 +11067,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Priest - Shadow Protection [Disabled]",
+      "id": "Priest - Shadow Protection [Disabled]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11106,7 +11106,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Reminders",
+      "parent": "Priest - Reminders",
       "progressSource": [
         -1,
         ""
@@ -11264,7 +11264,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "Q7nFdFnyypP",
+      "uid": "r9DEG1gC9Dj",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11352,7 +11352,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Priest - Fear Ward [Self]",
+      "id": "Priest - Fear Ward [Self]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11391,7 +11391,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Reminders",
+      "parent": "Priest - Reminders",
       "progressSource": [
         -1,
         ""
@@ -11549,7 +11549,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "TENoLxdEf1r",
+      "uid": "mjl34IEe9h7",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11637,7 +11637,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Priest - Inner Fire",
+      "id": "Priest - Inner Fire",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11674,7 +11674,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Reminders",
+      "parent": "Priest - Reminders",
       "progressSource": [
         -1,
         ""
@@ -11832,7 +11832,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "AS8q2XtfSPP",
+      "uid": "JPUlJiG6jTf",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11900,8 +11900,8 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Priest - Prayer of Fortitude [Group]",
-        "Xyrec Priest - Prayer of Spirit [Group]"
+        "Priest - Prayer of Fortitude [Group]",
+        "Priest - Prayer of Spirit [Group]"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -11909,7 +11909,7 @@
       "gridWidth": 5,
       "groupIcon": 135941,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Priest - Group Buffs",
+      "id": "Priest - Group Buffs",
       "information": {
         "forceEvents": true,
         "showNilIsFalse": true
@@ -11965,7 +11965,7 @@
           "untrigger": []
         }
       ],
-      "uid": "yrwEaJfoeOr",
+      "uid": "APx96r0Qxdc",
       "url": "",
       "useLimit": true,
       "version": 33,
@@ -12062,7 +12062,7 @@
       "height": 36,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Priest - Prayer of Fortitude [Group]",
+      "id": "Priest - Prayer of Fortitude [Group]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12119,7 +12119,7 @@
         "use_zone": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Group Buffs",
+      "parent": "Priest - Group Buffs",
       "progressSource": [
         -1,
         ""
@@ -12389,7 +12389,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "8SbubPRLBrS",
+      "uid": "wvFusEQQHLw",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12488,7 +12488,7 @@
       "height": 36,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Priest - Prayer of Spirit [Group]",
+      "id": "Priest - Prayer of Spirit [Group]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12545,7 +12545,7 @@
         "use_zone": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Priest - Group Buffs",
+      "parent": "Priest - Group Buffs",
       "progressSource": [
         -1,
         ""
@@ -12833,7 +12833,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "dCDbar1ao3y",
+      "uid": "j5q7dgiwYY2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12896,11 +12896,11 @@
     "conditions": [],
     "config": [],
     "controlledChildren": [
-      "Xyrec Priest - Core Abilities",
-      "Xyrec Priest - Resources",
-      "Xyrec Priest - Cooldowns",
-      "Xyrec Priest - Reminders",
-      "Xyrec Priest - Group Buffs"
+      "Priest - Core Abilities",
+      "Priest - Resources",
+      "Priest - Cooldowns",
+      "Priest - Reminders",
+      "Priest - Group Buffs"
     ],
     "frameStrata": 1,
     "groupIcon": "626004",
@@ -12945,7 +12945,7 @@
         "untrigger": []
       }
     ],
-    "uid": "WCGnp1DqoxO",
+    "uid": "IK8Ph5t3XfK",
     "url": "",
     "version": 33,
     "wagoID": "gFd6I4vVo",

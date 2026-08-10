@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Hunter - Range Check",
+  "id": "Hunter - Range Check",
   "lua": {
     "actions.init.custom": "lua/range-check--actions-init-custom.lua",
     "customText": "lua/range-check--customText.lua",
@@ -817,7 +817,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Hunter - Range Check",
+    "id": "Hunter - Range Check",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

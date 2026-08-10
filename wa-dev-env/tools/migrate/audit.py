@@ -20,8 +20,25 @@ CENTER_TEXT_SIZE_BY_WIDTH = {row["width"]: row["text_size"]
 ALPHA_RULE = _STYLE["alpha_rule"]
 
 
-def check_center_text(key, aura, issues):
-    if aura.get("regionType") != "icon" or not key.startswith("Xyrec"):
+def xyrec_keys(displays):
+    """Keys belonging to Xyrec groups: walk controlledChildren from the
+    'Xyrec - <Class>' roots (children keep their donor names, so the id
+    prefix no longer marks membership)."""
+    ours = set()
+    def walk(key):
+        if key in ours or key not in displays:
+            return
+        ours.add(key)
+        for child in displays[key].get("controlledChildren") or []:
+            walk(child)
+    for key in displays:
+        if key.startswith("Xyrec - "):
+            walk(key)
+    return ours
+
+
+def check_center_text(key, aura, ours, issues):
+    if aura.get("regionType") != "icon" or key not in ours:
         return
     canon = dict(CENTER_TEXT_CANON)
     size = CENTER_TEXT_SIZE_BY_WIDTH.get(aura.get("width"))
@@ -36,9 +53,9 @@ def check_center_text(key, aura, issues):
                                   f"{s.get(field)!r} (canon: {want!r})")
 
 
-def check_style_rules(key, aura, displays, issues):
+def check_style_rules(key, aura, displays, ours, issues):
     """Xyrec-group style-guide invariants beyond text canon."""
-    if not key.startswith("Xyrec"):
+    if key not in ours:
         return
     region = aura.get("regionType")
     if region in GROUP_TYPES:
@@ -70,10 +87,11 @@ def audit_displays(displays: dict) -> list:
     # built (pre-land) displays have no uids at all — that's fine; a MIX of
     # with/without uid in a live table is what indicates corruption
     any_uid = any(a.get("uid") for a in displays.values())
+    ours = xyrec_keys(displays)
     for key, aura in displays.items():
         aura_id = aura.get("id")
-        check_center_text(key, aura, issues)
-        check_style_rules(key, aura, displays, issues)
+        check_center_text(key, aura, ours, issues)
+        check_style_rules(key, aura, displays, ours, issues)
         if aura_id != key:
             issues.append(f"{key}: key/id mismatch (id={aura_id!r})")
         if not aura.get("uid"):

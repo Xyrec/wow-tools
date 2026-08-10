@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Warrior - Commanding Shout",
+  "id": "Warrior - Commanding Shout",
   "load": {
     "class": {
       "multi": {},

@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Priest - Wand Swing [Flay Range]",
+  "id": "Priest - Wand Swing [Flay Range]",
   "lua": {
     "customText": "lua/wand-swing-flay-range--customText.lua"
   },
@@ -158,7 +158,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Priest - Wand Swing [Flay Range]",
+    "id": "Priest - Wand Swing [Flay Range]",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

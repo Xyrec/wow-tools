@@ -1,7 +1,7 @@
 {
   "archetype": "cooldown_icon",
   "conditions": [],
-  "id": "Xyrec Warlock - Vengeance",
+  "id": "Warlock - Vengeance",
   "load": {
     "class": {
       "multi": [],

@@ -57,20 +57,20 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Warlock - Curse [Own]",
-        "Xyrec Warlock - Corruption",
-        "Xyrec Warlock - Unstable Affliction",
-        "Xyrec Warlock - Incinerate",
-        "Xyrec Warlock - Immolate",
-        "Xyrec Warlock - Conflagrate",
-        "Xyrec Warlock - Siphon Life"
+        "Warlock - Curse [Own]",
+        "Warlock - Corruption",
+        "Warlock - Unstable Affliction",
+        "Warlock - Incinerate",
+        "Warlock - Immolate",
+        "Warlock - Conflagrate",
+        "Warlock - Siphon Life"
       ],
       "frameStrata": 1,
       "fullCircle": true,
       "gridType": "RD",
       "gridWidth": 5,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Warlock - Core Abilities",
+      "id": "Warlock - Core Abilities",
       "information": {
         "showNilIsFalse": true
       },
@@ -134,7 +134,7 @@
           "untrigger": []
         }
       ],
-      "uid": "fg1Bf3SkewV",
+      "uid": "9a8V7c3Lono",
       "url": "",
       "useLimit": true,
       "version": 37,
@@ -309,7 +309,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Curse [Own]",
+      "id": "Warlock - Curse [Own]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -341,7 +341,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Core Abilities",
+      "parent": "Warlock - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -510,7 +510,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "rR7hugDqcFl",
+      "uid": "ZbdaswHEL2H",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -687,7 +687,7 @@
       "height": 32,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Warlock - Corruption",
+      "id": "Warlock - Corruption",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -720,7 +720,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Core Abilities",
+      "parent": "Warlock - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -963,7 +963,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "pvHmX1QFPCK",
+      "uid": "Hiv6127hqWD",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1115,7 +1115,7 @@
       "height": 32,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Warlock - Unstable Affliction",
+      "id": "Warlock - Unstable Affliction",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1148,7 +1148,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Core Abilities",
+      "parent": "Warlock - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1376,7 +1376,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "lQcRUR6Nxvm",
+      "uid": "SQzzgcJUYFS",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1467,7 +1467,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Incinerate",
+      "id": "Warlock - Incinerate",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1498,7 +1498,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Warlock - Core Abilities",
+      "parent": "Warlock - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1591,7 +1591,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "UKaCZt9cirP",
+      "uid": "TlNapgQLSzx",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1756,7 +1756,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Immolate",
+      "id": "Warlock - Immolate",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1790,7 +1790,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Core Abilities",
+      "parent": "Warlock - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1932,7 +1932,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "0P83PNgXNwY",
+      "uid": "ispFFncScKo",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2100,7 +2100,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Conflagrate",
+      "id": "Warlock - Conflagrate",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2132,7 +2132,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Core Abilities",
+      "parent": "Warlock - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2246,7 +2246,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "B6XVdQuFxsc",
+      "uid": "ReylPSIjTx5",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2424,7 +2424,7 @@
       "height": 32,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Warlock - Siphon Life",
+      "id": "Warlock - Siphon Life",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2457,7 +2457,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Core Abilities",
+      "parent": "Warlock - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2697,7 +2697,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "Rx8ZklluVw0",
+      "uid": "8xxAemw5ado",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2760,13 +2760,13 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Xyrec Warlock - Wand Swing [Fear Range 14+]",
-        "Xyrec Warlock - Mana Bar",
-        "Xyrec Warlock - Mana Tick"
+        "Warlock - Wand Swing [Fear Range 14+]",
+        "Warlock - Mana Bar",
+        "Warlock - Mana Tick"
       ],
       "frameStrata": 1,
       "groupIcon": 136126,
-      "id": "Xyrec Warlock - Resources",
+      "id": "Warlock - Resources",
       "information": {
         "showNilIsFalse": true
       },
@@ -2808,7 +2808,7 @@
           "untrigger": []
         }
       ],
-      "uid": "XFzjOZ7hkec",
+      "uid": "E3vpCa0SoDL",
       "url": "",
       "version": 37,
       "wagoID": "XejlH_0_F",
@@ -2969,7 +2969,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Warlock - Wand Swing [Fear Range 14+]",
+      "id": "Warlock - Wand Swing [Fear Range 14+]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3026,7 +3026,7 @@
           0.25
         ]
       ],
-      "parent": "Xyrec Warlock - Resources",
+      "parent": "Warlock - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -3207,7 +3207,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] and t[2]) or (t[3] and t[4])\nend",
         "disjunctive": "custom"
       },
-      "uid": "A1tUKjhSnos",
+      "uid": "walhVIj3A17",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3330,7 +3330,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Warlock - Mana Bar",
+      "id": "Warlock - Mana Bar",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3390,7 +3390,7 @@
       "overlaysTexture": [
         "Clean"
       ],
-      "parent": "Xyrec Warlock - Resources",
+      "parent": "Warlock - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -3509,7 +3509,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "KXVcVDwhkk3",
+      "uid": "ogp621ho8VX",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3648,7 +3648,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Warlock - Mana Tick",
+      "id": "Warlock - Mana Tick",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3674,7 +3674,7 @@
         "zoneIds": ""
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Warlock - Resources",
+      "parent": "Warlock - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -3740,7 +3740,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "hlfqaIjcqYD",
+      "uid": "u3F8XLUmz3u",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3808,28 +3808,28 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Warlock - Vengeance",
-        "Xyrec Warlock - Shadowflame",
-        "Xyrec Warlock - Shadowburn",
-        "Xyrec Warlock - Soul Fire",
-        "Xyrec Warlock - Amplify Curse",
-        "Xyrec Warlock - Perception",
-        "Xyrec Warlock - Escape Artist",
-        "Xyrec Warlock - Will of the Forsaken",
-        "Xyrec Warlock - Blood Fury",
-        "Xyrec Warlock - Trinket 1 CD",
-        "Xyrec Warlock - Trinket 2 CD",
-        "Xyrec Warlock - Healthstone CD",
-        "Xyrec Warlock - Soulstone CD",
-        "Xyrec Warlock - Fel Domination",
-        "Xyrec Warlock - Shadow Ward",
-        "Xyrec Warlock - Death Coil",
-        "Xyrec Warlock - Howl of Terror",
-        "Xyrec Warlock - Fear",
-        "Xyrec Warlock - Banish",
-        "Xyrec Warlock - Seduce",
-        "Xyrec Warlock - Devour Magic",
-        "Xyrec Warlock - Suffering"
+        "Warlock - Vengeance",
+        "Warlock - Shadowflame",
+        "Warlock - Shadowburn",
+        "Warlock - Soul Fire",
+        "Warlock - Amplify Curse",
+        "Warlock - Perception",
+        "Warlock - Escape Artist",
+        "Warlock - Will of the Forsaken",
+        "Warlock - Blood Fury",
+        "Warlock - Trinket 1 CD",
+        "Warlock - Trinket 2 CD",
+        "Warlock - Healthstone CD",
+        "Warlock - Soulstone CD",
+        "Warlock - Fel Domination",
+        "Warlock - Shadow Ward",
+        "Warlock - Death Coil",
+        "Warlock - Howl of Terror",
+        "Warlock - Fear",
+        "Warlock - Banish",
+        "Warlock - Seduce",
+        "Warlock - Devour Magic",
+        "Warlock - Suffering"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -3837,7 +3837,7 @@
       "gridWidth": 5,
       "groupIcon": 136145,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Warlock - Cooldowns",
+      "id": "Warlock - Cooldowns",
       "information": {
         "showNilIsFalse": true
       },
@@ -3915,7 +3915,7 @@
           "untrigger": []
         }
       ],
-      "uid": "ky5viyiSJEd",
+      "uid": "4jNGsQDVqFu",
       "url": "",
       "useLimit": true,
       "version": 37,
@@ -3999,7 +3999,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Vengeance",
+      "id": "Warlock - Vengeance",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4030,7 +4030,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -4123,7 +4123,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "jVSd9MZNa9k",
+      "uid": "7x2Pix1hPLa",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4210,7 +4210,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Shadowflame",
+      "id": "Warlock - Shadowflame",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4241,7 +4241,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -4334,7 +4334,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "qMkOzIFwlXB",
+      "uid": "FeijSv6jIkw",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4438,7 +4438,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Shadowburn",
+      "id": "Warlock - Shadowburn",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4471,7 +4471,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -4572,7 +4572,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "6bJsp7jGw3F",
+      "uid": "4h2VqKRAla5",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4676,7 +4676,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Soul Fire",
+      "id": "Warlock - Soul Fire",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4709,7 +4709,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -4810,7 +4810,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "KgyadUbHfqE",
+      "uid": "ZcSnJBH1eK2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4926,7 +4926,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Amplify Curse",
+      "id": "Warlock - Amplify Curse",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4959,7 +4959,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -5082,7 +5082,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "OWj7KDGq9Mj",
+      "uid": "EVKi1ztNedq",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5198,7 +5198,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Perception",
+      "id": "Warlock - Perception",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5235,7 +5235,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -5358,7 +5358,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Mxi6164nzCF",
+      "uid": "3UecGz5o7Y0",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5474,7 +5474,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Escape Artist",
+      "id": "Warlock - Escape Artist",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5511,7 +5511,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -5634,7 +5634,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "rgepnU8PLOe",
+      "uid": "xVVOCaBD7PB",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5750,7 +5750,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Will of the Forsaken",
+      "id": "Warlock - Will of the Forsaken",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5787,7 +5787,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -5910,7 +5910,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "miHbQ7ghS1E",
+      "uid": "09GvwtWZkFQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6026,7 +6026,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Blood Fury",
+      "id": "Warlock - Blood Fury",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6063,7 +6063,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6186,7 +6186,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "TOihzPUrC45",
+      "uid": "yKlE8H7jCjk",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6290,7 +6290,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Warlock - Trinket 1 CD",
+      "id": "Warlock - Trinket 1 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6322,7 +6322,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6427,7 +6427,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "B5j0NUZwOkC",
+      "uid": "OF7nxudtJhc",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6531,7 +6531,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Warlock - Trinket 2 CD",
+      "id": "Warlock - Trinket 2 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6563,7 +6563,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6668,7 +6668,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "gwFtt1bm1my",
+      "uid": "hlXvtmTHUdG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6755,7 +6755,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Warlock - Healthstone CD",
+      "id": "Warlock - Healthstone CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6798,7 +6798,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6999,7 +6999,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2] or t[3] or t[4] or t[5])\nend\n",
         "disjunctive": "custom"
       },
-      "uid": "F8M0nBeJKst",
+      "uid": "Bb2F0h40A1e",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7086,7 +7086,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Warlock - Soulstone CD",
+      "id": "Warlock - Soulstone CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7129,7 +7129,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7330,7 +7330,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2] or t[3] or t[4] or t[5])\nend\n",
         "disjunctive": "custom"
       },
-      "uid": "aqUWSIPRfWJ",
+      "uid": "Z0MaXt9ZNUV",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7434,7 +7434,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Fel Domination",
+      "id": "Warlock - Fel Domination",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7467,7 +7467,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7569,7 +7569,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "GoBv4aQr9np",
+      "uid": "FRWI4rM62yP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7685,7 +7685,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Shadow Ward",
+      "id": "Warlock - Shadow Ward",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7718,7 +7718,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7841,7 +7841,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "oCEXmHF0qTd",
+      "uid": "9VbDDZSsHGq",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7957,7 +7957,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Death Coil",
+      "id": "Warlock - Death Coil",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7990,7 +7990,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8114,7 +8114,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "meZCxlvRmT2",
+      "uid": "0kbWvQDtN1i",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8230,7 +8230,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Howl of Terror",
+      "id": "Warlock - Howl of Terror",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8263,7 +8263,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8387,7 +8387,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "HWvfSOGw0dC",
+      "uid": "bSeNkRJKHy7",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8503,7 +8503,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Fear",
+      "id": "Warlock - Fear",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8536,7 +8536,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8660,7 +8660,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "5DpBuQawS13",
+      "uid": "mOgsQLwArL7",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8776,7 +8776,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Banish",
+      "id": "Warlock - Banish",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8809,7 +8809,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8933,7 +8933,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "65xVnrpugnU",
+      "uid": "yC0QEKb8LEE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9049,7 +9049,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Seduce",
+      "id": "Warlock - Seduce",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9082,7 +9082,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9206,7 +9206,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "DpEoks7vhop",
+      "uid": "2ddANzaz3LH",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9310,7 +9310,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Devour Magic",
+      "id": "Warlock - Devour Magic",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9343,7 +9343,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9444,7 +9444,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "f5QCXSSxKcF",
+      "uid": "6hIyoTlIMvB",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9548,7 +9548,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Suffering",
+      "id": "Warlock - Suffering",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9581,7 +9581,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Cooldowns",
+      "parent": "Warlock - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -9682,7 +9682,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Q8IpiikuWsG",
+      "uid": "NF4MYzFC7lV",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9750,17 +9750,17 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Warlock - Drink Expiring",
-        "Xyrec Warlock - Create Healthstone",
-        "Xyrec Warlock - Create/Use Soulstone",
-        "Xyrec Warlock - Drain Soul",
-        "Xyrec Warlock - Pet Low Mana",
-        "Xyrec Warlock - Pet Attack",
-        "Xyrec Warlock - Summon Pet",
-        "Xyrec Warlock - Soul Link",
-        "Xyrec Warlock - Demon Armor",
-        "Xyrec Warlock - Demonic Sacrifice",
-        "Xyrec Warlock - Fire Shield [Solo]"
+        "Warlock - Drink Expiring",
+        "Warlock - Create Healthstone",
+        "Warlock - Create/Use Soulstone",
+        "Warlock - Drain Soul",
+        "Warlock - Pet Low Mana",
+        "Warlock - Pet Attack",
+        "Warlock - Summon Pet",
+        "Warlock - Soul Link",
+        "Warlock - Demon Armor",
+        "Warlock - Demonic Sacrifice",
+        "Warlock - Fire Shield [Solo]"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -9768,7 +9768,7 @@
       "gridWidth": 5,
       "groupIcon": 136185,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Warlock - Reminders",
+      "id": "Warlock - Reminders",
       "information": {
         "showNilIsFalse": true
       },
@@ -9833,7 +9833,7 @@
           "untrigger": []
         }
       ],
-      "uid": "FkzguUrxCJH",
+      "uid": "gpHtcoKQFWa",
       "url": "",
       "useLimit": false,
       "version": 37,
@@ -9918,7 +9918,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Drink Expiring",
+      "id": "Warlock - Drink Expiring",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9953,7 +9953,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Reminders",
+      "parent": "Warlock - Reminders",
       "progressSource": [
         -1,
         ""
@@ -10112,7 +10112,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "h48nyg2m1D9",
+      "uid": "E7u8MijtSOl",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10200,7 +10200,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Warlock - Create Healthstone",
+      "id": "Warlock - Create Healthstone",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10243,7 +10243,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Reminders",
+      "parent": "Warlock - Reminders",
       "progressSource": [
         -1,
         ""
@@ -10498,7 +10498,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] and t[2] and t[3] and t[4] and t[5] and t[6]) and t[7]\nend\n",
         "disjunctive": "custom"
       },
-      "uid": "32nwduoMfTn",
+      "uid": "f2OfPbeV6Ik",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10628,7 +10628,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Warlock - Create/Use Soulstone",
+      "id": "Warlock - Create/Use Soulstone",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10671,7 +10671,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Reminders",
+      "parent": "Warlock - Reminders",
       "progressSource": [
         -1,
         ""
@@ -11121,7 +11121,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] and t[2] and t[3] and t[4] and t[5] and t[6] and t[7]) or (t[8] and t[9] and t[10] and t[11] and t[12] and t[13] and t[6] and t[7]) and t[14]\nend\n",
         "disjunctive": "custom"
       },
-      "uid": "LEK1aQup3uy",
+      "uid": "cN3uCI7HYzu",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11209,7 +11209,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Warlock - Drain Soul",
+      "id": "Warlock - Drain Soul",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11252,7 +11252,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Reminders",
+      "parent": "Warlock - Reminders",
       "progressSource": [
         -1,
         ""
@@ -11465,7 +11465,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] and t[3]) or (t[2] and not t[3]) and t[4] and t[5] and not t[6]\nend\n",
         "disjunctive": "custom"
       },
-      "uid": "nB9UIcxnjH9",
+      "uid": "GGBVt2tAFJO",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11554,7 +11554,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Warlock - Pet Low Mana",
+      "id": "Warlock - Pet Low Mana",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11588,7 +11588,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Reminders",
+      "parent": "Warlock - Reminders",
       "progressSource": [
         -1,
         ""
@@ -11760,7 +11760,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "87NUJlq1VXk",
+      "uid": "pNsmsRJP0qJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11850,7 +11850,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Pet Attack",
+      "id": "Warlock - Pet Attack",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11880,7 +11880,7 @@
         "use_vehicle": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Reminders",
+      "parent": "Warlock - Reminders",
       "progressSource": [
         -1,
         ""
@@ -12044,7 +12044,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3] and not t[4]\nend",
         "disjunctive": "custom"
       },
-      "uid": "LG1whYn3gg7",
+      "uid": "ImlQ0FbLCbV",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12133,7 +12133,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Warlock - Summon Pet",
+      "id": "Warlock - Summon Pet",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12167,7 +12167,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Reminders",
+      "parent": "Warlock - Reminders",
       "progressSource": [
         -1,
         ""
@@ -12313,7 +12313,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "TXOiuUGoqqc",
+      "uid": "Alra9YiTQ9J",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12401,7 +12401,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Warlock - Soul Link",
+      "id": "Warlock - Soul Link",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12438,7 +12438,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Reminders",
+      "parent": "Warlock - Reminders",
       "progressSource": [
         -1,
         ""
@@ -12587,7 +12587,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and not t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "iS90VtvI5Bf",
+      "uid": "cnv9NApy7re",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12675,7 +12675,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Warlock - Demon Armor",
+      "id": "Warlock - Demon Armor",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12712,7 +12712,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Reminders",
+      "parent": "Warlock - Reminders",
       "progressSource": [
         -1,
         ""
@@ -12880,7 +12880,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "jLXE7O67SrM",
+      "uid": "KyGQXJJBn3q",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12969,7 +12969,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Warlock - Demonic Sacrifice",
+      "id": "Warlock - Demonic Sacrifice",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13003,7 +13003,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Reminders",
+      "parent": "Warlock - Reminders",
       "progressSource": [
         -1,
         ""
@@ -13131,7 +13131,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "Sq5vYV1y7ik",
+      "uid": "STNS10TmhMQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13219,7 +13219,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Warlock - Fire Shield [Solo]",
+      "id": "Warlock - Fire Shield [Solo]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13260,7 +13260,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Reminders",
+      "parent": "Warlock - Reminders",
       "progressSource": [
         -1,
         ""
@@ -13419,7 +13419,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "j25LNkkN0S4",
+      "uid": "nUQOGYa4q8k",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13487,7 +13487,7 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Warlock - Fire Shield"
+        "Warlock - Fire Shield"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -13495,7 +13495,7 @@
       "gridWidth": 5,
       "groupIcon": 135806,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Warlock - Group Buffs",
+      "id": "Warlock - Group Buffs",
       "information": {
         "forceEvents": true,
         "showNilIsFalse": true
@@ -13550,7 +13550,7 @@
           "untrigger": []
         }
       ],
-      "uid": "Nabw4vEqjZ1",
+      "uid": "rc1cICjmIrQ",
       "url": "",
       "useLimit": true,
       "version": 37,
@@ -13634,7 +13634,7 @@
       "height": 36,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Warlock - Fire Shield",
+      "id": "Warlock - Fire Shield",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -13691,7 +13691,7 @@
         "use_zone": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Warlock - Group Buffs",
+      "parent": "Warlock - Group Buffs",
       "progressSource": [
         -1,
         ""
@@ -13914,7 +13914,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "L9Lr2ERgfou",
+      "uid": "mo1Iv1Vtg6j",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14035,7 +14035,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Warlock - Soul Shard [Drag]",
+      "id": "Warlock - Soul Shard [Drag]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -14182,7 +14182,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "jUyFu3d3sqF",
+      "uid": "IrWTP6nmHw0",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14246,12 +14246,12 @@
     "conditions": [],
     "config": [],
     "controlledChildren": [
-      "Xyrec Warlock - Core Abilities",
-      "Xyrec Warlock - Resources",
-      "Xyrec Warlock - Cooldowns",
-      "Xyrec Warlock - Reminders",
-      "Xyrec Warlock - Group Buffs",
-      "Xyrec Warlock - Soul Shard [Drag]"
+      "Warlock - Core Abilities",
+      "Warlock - Resources",
+      "Warlock - Cooldowns",
+      "Warlock - Reminders",
+      "Warlock - Group Buffs",
+      "Warlock - Soul Shard [Drag]"
     ],
     "frameStrata": 1,
     "groupIcon": "626007",
@@ -14296,7 +14296,7 @@
         "untrigger": []
       }
     ],
-    "uid": "QNoI7QiO05W",
+    "uid": "lUc75GS0O8y",
     "url": "",
     "version": 37,
     "wagoID": "XejlH_0_F",

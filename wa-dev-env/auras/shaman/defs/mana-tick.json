@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Shaman - Mana Tick",
+  "id": "Shaman - Mana Tick",
   "lua": {
     "triggers.1.trigger.custom": "lua/mana-tick--triggers-1-trigger-custom.lua"
   },
@@ -19,7 +19,7 @@
     "adjustedMax": "",
     "adjustedMin": "",
     "alpha": 0.3,
-    "anchorFrameFrame": "WeakAuras:Xyrec Shaman - Mana Bar",
+    "anchorFrameFrame": "WeakAuras:Shaman - Mana Bar",
     "anchorFrameType": "SELECTFRAME",
     "anchorPoint": "CENTER",
     "animation": {
@@ -132,7 +132,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Shaman - Mana Tick",
+    "id": "Shaman - Mana Tick",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

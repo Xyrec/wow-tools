@@ -57,14 +57,14 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Paladin - Active Seal",
-        "Xyrec Paladin - Judgement",
-        "Xyrec Paladin - Crusader Strike",
-        "Xyrec Paladin - Avenger's Shield",
-        "Xyrec Paladin - Holy Shock",
-        "Xyrec Paladin - Holy Shield",
-        "Xyrec Paladin - Consecration",
-        "Xyrec Paladin - Light's Grace"
+        "Paladin - Active Seal",
+        "Paladin - Judgement",
+        "Paladin - Crusader Strike",
+        "Paladin - Avenger's Shield",
+        "Paladin - Holy Shock",
+        "Paladin - Holy Shield",
+        "Paladin - Consecration",
+        "Paladin - Light's Grace"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -72,7 +72,7 @@
       "gridWidth": 5,
       "groupIcon": 135891,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Paladin - Core Abilities",
+      "id": "Paladin - Core Abilities",
       "information": {
         "showNilIsFalse": true
       },
@@ -140,7 +140,7 @@
           "untrigger": []
         }
       ],
-      "uid": "rdLo99rDRc5",
+      "uid": "vepViUQsKrM",
       "url": "",
       "useLimit": true,
       "version": 32,
@@ -240,7 +240,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Active Seal",
+      "id": "Paladin - Active Seal",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -272,7 +272,7 @@
         "use_never": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Core Abilities",
+      "parent": "Paladin - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -368,7 +368,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "wV0UvH5Lst9",
+      "uid": "cXC8mEBnZco",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -519,7 +519,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Judgement",
+      "id": "Paladin - Judgement",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -553,7 +553,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Core Abilities",
+      "parent": "Paladin - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -681,7 +681,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "XiceLbdQFMi",
+      "uid": "dZLRrhKcLWw",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -772,7 +772,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Crusader Strike",
+      "id": "Paladin - Crusader Strike",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -803,7 +803,7 @@
         "use_never": false,
         "use_spellknown": true
       },
-      "parent": "Xyrec Paladin - Core Abilities",
+      "parent": "Paladin - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -896,7 +896,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "NaqObiDSfNm",
+      "uid": "r1lwfhkG7s8",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1070,7 +1070,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Avenger's Shield",
+      "id": "Paladin - Avenger's Shield",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1104,7 +1104,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Core Abilities",
+      "parent": "Paladin - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1225,7 +1225,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    ",
         "disjunctive": "custom"
       },
-      "uid": "zqc7ouR2gL6",
+      "uid": "R3UIgsrhQBu",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1378,7 +1378,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Holy Shock",
+      "id": "Paladin - Holy Shock",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1412,7 +1412,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Core Abilities",
+      "parent": "Paladin - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1513,7 +1513,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "any"
       },
-      "uid": "G6QAUzdzzYD",
+      "uid": "m0VyNecsgXE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1669,7 +1669,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Holy Shield",
+      "id": "Paladin - Holy Shield",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -1703,7 +1703,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Core Abilities",
+      "parent": "Paladin - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -1920,7 +1920,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    ",
         "disjunctive": "custom"
       },
-      "uid": "VDDXX9Hv1Nj",
+      "uid": "KdoqMtjiqWG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2055,7 +2055,7 @@
       "height": 32,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Paladin - Consecration",
+      "id": "Paladin - Consecration",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2089,7 +2089,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Core Abilities",
+      "parent": "Paladin - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2188,7 +2188,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "oCwm2tIXiNS",
+      "uid": "ECTvk28KQtY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2292,7 +2292,7 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Light's Grace",
+      "id": "Paladin - Light's Grace",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2326,7 +2326,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Core Abilities",
+      "parent": "Paladin - Core Abilities",
       "progressSource": [
         -1,
         ""
@@ -2429,7 +2429,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "FZRsTdPfWEo",
+      "uid": "s4Y10t4o42k",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2492,13 +2492,13 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Xyrec Paladin - Weapon Swing",
-        "Xyrec Paladin - Mana Bar",
-        "Xyrec Paladin - Mana Tick"
+        "Paladin - Weapon Swing",
+        "Paladin - Mana Bar",
+        "Paladin - Mana Tick"
       ],
       "frameStrata": 1,
       "groupIcon": 135960,
-      "id": "Xyrec Paladin - Resources",
+      "id": "Paladin - Resources",
       "information": {
         "showNilIsFalse": true
       },
@@ -2540,7 +2540,7 @@
           "untrigger": []
         }
       ],
-      "uid": "UInHfCjXumQ",
+      "uid": "VtJS0sd1TZ4",
       "url": "",
       "version": 32,
       "wagoID": "zLJ2R3Oua",
@@ -2798,7 +2798,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Paladin - Weapon Swing",
+      "id": "Paladin - Weapon Swing",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -2857,7 +2857,7 @@
           0.25
         ]
       ],
-      "parent": "Xyrec Paladin - Resources",
+      "parent": "Paladin - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -3135,7 +3135,7 @@
         "activeTriggerMode": 1,
         "disjunctive": "any"
       },
-      "uid": "CMJ8dWMh3e0",
+      "uid": "Br3xVtldTiA",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3276,7 +3276,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Paladin - Mana Bar",
+      "id": "Paladin - Mana Bar",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3338,7 +3338,7 @@
       "overlaysTexture": [
         "Clean"
       ],
-      "parent": "Xyrec Paladin - Resources",
+      "parent": "Paladin - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -3469,7 +3469,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "3YZelIxpe63",
+      "uid": "qJixrJG5h4F",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3608,7 +3608,7 @@
         1
       ],
       "icon_side": "RIGHT",
-      "id": "Xyrec Paladin - Mana Tick",
+      "id": "Paladin - Mana Tick",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -3634,7 +3634,7 @@
         "zoneIds": ""
       },
       "orientation": "HORIZONTAL",
-      "parent": "Xyrec Paladin - Resources",
+      "parent": "Paladin - Resources",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -3700,7 +3700,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "VXPLixGfYty",
+      "uid": "3JItAYjATdx",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3768,25 +3768,25 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Paladin - Avenging Wrath",
-        "Xyrec Paladin - Hammer of Wrath",
-        "Xyrec Paladin - Exorcism",
-        "Xyrec Paladin - Holy Wrath",
-        "Xyrec Paladin - Stoneform",
-        "Xyrec Paladin - Perception",
-        "Xyrec Paladin - Divine Favor",
-        "Xyrec Paladin - Divine Protection",
-        "Xyrec Paladin - Divine Shield",
-        "Xyrec Paladin - Lay on Hands",
-        "Xyrec Paladin - Trinket 1 CD",
-        "Xyrec Paladin - Trinket 2 CD",
-        "Xyrec Paladin - Reckoning",
-        "Xyrec Paladin - Blessing of Protection",
-        "Xyrec Paladin - Blessing of Freedom",
-        "Xyrec Paladin - Blessing of Sacrifice",
-        "Xyrec Paladin - Turn Undead",
-        "Xyrec Paladin - Repentence",
-        "Xyrec Paladin - Hammer of Justice"
+        "Paladin - Avenging Wrath",
+        "Paladin - Hammer of Wrath",
+        "Paladin - Exorcism",
+        "Paladin - Holy Wrath",
+        "Paladin - Stoneform",
+        "Paladin - Perception",
+        "Paladin - Divine Favor",
+        "Paladin - Divine Protection",
+        "Paladin - Divine Shield",
+        "Paladin - Lay on Hands",
+        "Paladin - Trinket 1 CD",
+        "Paladin - Trinket 2 CD",
+        "Paladin - Reckoning",
+        "Paladin - Blessing of Protection",
+        "Paladin - Blessing of Freedom",
+        "Paladin - Blessing of Sacrifice",
+        "Paladin - Turn Undead",
+        "Paladin - Repentence",
+        "Paladin - Hammer of Justice"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -3794,7 +3794,7 @@
       "gridWidth": 5,
       "groupIcon": 135896,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Paladin - Cooldowns",
+      "id": "Paladin - Cooldowns",
       "information": {
         "showNilIsFalse": true
       },
@@ -3869,7 +3869,7 @@
           "untrigger": []
         }
       ],
-      "uid": "00A9xObaquK",
+      "uid": "FkJIip0z4Ch",
       "url": "",
       "useLimit": true,
       "version": 32,
@@ -3982,7 +3982,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Avenging Wrath",
+      "id": "Paladin - Avenging Wrath",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4016,7 +4016,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -4139,7 +4139,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "569XkGUsJNe",
+      "uid": "2bXjkcsdoHJ",
       "url": "https://wago.io/8MyJNekEa/15",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4243,7 +4243,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Hammer of Wrath",
+      "id": "Paladin - Hammer of Wrath",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4280,7 +4280,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -4398,7 +4398,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "RIvMYzgSeza",
+      "uid": "6O8hUvRKMTt",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4502,7 +4502,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Exorcism",
+      "id": "Paladin - Exorcism",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4539,7 +4539,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -4656,7 +4656,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "5gNl7p031jV",
+      "uid": "VluNb0PWUxE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4760,7 +4760,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Holy Wrath",
+      "id": "Paladin - Holy Wrath",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -4797,7 +4797,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -4914,7 +4914,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "IBGkIPsz9rp",
+      "uid": "qTnE3pesiuu",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5030,7 +5030,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Stoneform",
+      "id": "Paladin - Stoneform",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5069,7 +5069,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -5192,7 +5192,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "WGexfYqLGES",
+      "uid": "DP5xnmoXRhz",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5308,7 +5308,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Perception",
+      "id": "Paladin - Perception",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5347,7 +5347,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -5470,7 +5470,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "kB71LSxoIWJ",
+      "uid": "G2W3HP4Pfk9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5586,7 +5586,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Divine Favor",
+      "id": "Paladin - Divine Favor",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5621,7 +5621,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -5744,7 +5744,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "rXyz4oEFYP4",
+      "uid": "9tgs1xIkNWh",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5860,7 +5860,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Divine Protection",
+      "id": "Paladin - Divine Protection",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -5896,7 +5896,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6019,7 +6019,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "cDuRTFl7jlf",
+      "uid": "lZXMl5BVcz7",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6135,7 +6135,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Divine Shield",
+      "id": "Paladin - Divine Shield",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6170,7 +6170,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6293,7 +6293,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "t3CMl33qFb4",
+      "uid": "MWuj1lOfqAU",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6397,7 +6397,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Lay on Hands",
+      "id": "Paladin - Lay on Hands",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6431,7 +6431,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6529,7 +6529,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "25ik3vzoAJ2",
+      "uid": "vSfE0JG7mm4",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6633,7 +6633,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Paladin - Trinket 1 CD",
+      "id": "Paladin - Trinket 1 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6667,7 +6667,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -6772,7 +6772,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "J82gAL4piSU",
+      "uid": "EQFneuHtVKr",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6876,7 +6876,7 @@
       "height": 30,
       "icon": true,
       "iconSource": 1,
-      "id": "Xyrec Paladin - Trinket 2 CD",
+      "id": "Paladin - Trinket 2 CD",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -6910,7 +6910,7 @@
         "use_spellknown": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7015,7 +7015,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "eO3KknhbJgl",
+      "uid": "tMTkxZj43JT",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7107,7 +7107,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Reckoning",
+      "id": "Paladin - Reckoning",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7138,7 +7138,7 @@
         "use_talent": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7301,7 +7301,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "hc3wBlBbFcL",
+      "uid": "gsLZlHLVPNZ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7417,7 +7417,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Blessing of Protection",
+      "id": "Paladin - Blessing of Protection",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7452,7 +7452,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7578,7 +7578,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "x11Uw1nuorn",
+      "uid": "PU8KRt60EJr",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7694,7 +7694,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Blessing of Freedom",
+      "id": "Paladin - Blessing of Freedom",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7729,7 +7729,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -7855,7 +7855,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "sDWFUjgXknY",
+      "uid": "orGV0Jgi3vC",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7942,7 +7942,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Blessing of Sacrifice",
+      "id": "Paladin - Blessing of Sacrifice",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -7977,7 +7977,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8071,7 +8071,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "LMvbe2MuqdK",
+      "uid": "SazHOnIQZul",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8175,7 +8175,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Turn Undead",
+      "id": "Paladin - Turn Undead",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8209,7 +8209,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8326,7 +8326,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "BuBOM2Lwexl",
+      "uid": "I85Ez9JzegJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8442,7 +8442,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Repentence",
+      "id": "Paladin - Repentence",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8477,7 +8477,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8600,7 +8600,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "wFGqRcwOVU7",
+      "uid": "OIiA2FZbbls",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8716,7 +8716,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Hammer of Justice",
+      "id": "Paladin - Hammer of Justice",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -8751,7 +8751,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Cooldowns",
+      "parent": "Paladin - Cooldowns",
       "progressSource": [
         -1,
         ""
@@ -8874,7 +8874,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "84ienoSdMS8",
+      "uid": "2hcCHzNc9Z4",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8942,11 +8942,11 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Paladin - Drink Expiring",
-        "Xyrec Paladin - Blessing",
-        "Xyrec Paladin - Aura",
-        "Xyrec Paladin - Sanctity Aura",
-        "Xyrec Paladin - Righteous Fury"
+        "Paladin - Drink Expiring",
+        "Paladin - Blessing",
+        "Paladin - Aura",
+        "Paladin - Sanctity Aura",
+        "Paladin - Righteous Fury"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -8954,7 +8954,7 @@
       "gridWidth": 5,
       "groupIcon": 135995,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Paladin - Reminders",
+      "id": "Paladin - Reminders",
       "information": {
         "showNilIsFalse": true
       },
@@ -9015,7 +9015,7 @@
           "untrigger": []
         }
       ],
-      "uid": "ypcGH7lFq3N",
+      "uid": "8DlxUzcJhFi",
       "url": "",
       "useLimit": false,
       "version": 32,
@@ -9100,7 +9100,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Drink Expiring",
+      "id": "Paladin - Drink Expiring",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9137,7 +9137,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Reminders",
+      "parent": "Paladin - Reminders",
       "progressSource": [
         -1,
         ""
@@ -9296,7 +9296,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "pTU7T9SBiNR",
+      "uid": "b8giQNSya9f",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9384,7 +9384,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Paladin - Blessing",
+      "id": "Paladin - Blessing",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9425,7 +9425,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Reminders",
+      "parent": "Paladin - Reminders",
       "progressSource": [
         -1,
         ""
@@ -9611,7 +9611,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "WJnNfIiXvK2",
+      "uid": "YUwafe5E1Q9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9699,7 +9699,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Aura",
+      "id": "Paladin - Aura",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9737,7 +9737,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Reminders",
+      "parent": "Paladin - Reminders",
       "progressSource": [
         -1,
         ""
@@ -9870,7 +9870,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "gqtKd97bjcQ",
+      "uid": "39ZGAbUdSXK",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9958,7 +9958,7 @@
       "height": 44,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Paladin - Sanctity Aura",
+      "id": "Paladin - Sanctity Aura",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -9995,7 +9995,7 @@
         "use_zoneIds": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Reminders",
+      "parent": "Paladin - Reminders",
       "progressSource": [
         -1,
         ""
@@ -10120,7 +10120,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "mNbgTnHXYfA",
+      "uid": "C1oQiwbkgYb",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10208,7 +10208,7 @@
       "height": 44,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Righteous Fury",
+      "id": "Paladin - Righteous Fury",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10250,7 +10250,7 @@
         "use_zone": false,
         "use_zoneIds": false
       },
-      "parent": "Xyrec Paladin - Reminders",
+      "parent": "Paladin - Reminders",
       "progressSource": [
         -1,
         ""
@@ -10416,7 +10416,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n\n",
         "disjunctive": "custom"
       },
-      "uid": "KTZyA9CgKHj",
+      "uid": "MNHZcRp8rOF",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10484,7 +10484,7 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Paladin - Greater Blessings"
+        "Paladin - Greater Blessings"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -10492,7 +10492,7 @@
       "gridWidth": 5,
       "groupIcon": 135993,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Paladin - Group Buffs",
+      "id": "Paladin - Group Buffs",
       "information": {
         "showNilIsFalse": true
       },
@@ -10545,7 +10545,7 @@
           "untrigger": []
         }
       ],
-      "uid": "JPrdhAyiqtX",
+      "uid": "3saabP6y5OV",
       "url": "",
       "useLimit": true,
       "version": 32,
@@ -10641,7 +10641,7 @@
       "height": 36,
       "icon": true,
       "iconSource": 0,
-      "id": "Xyrec Paladin - Greater Blessings",
+      "id": "Paladin - Greater Blessings",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -10698,7 +10698,7 @@
         "use_zone": false,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Group Buffs",
+      "parent": "Paladin - Group Buffs",
       "progressSource": [
         -1,
         ""
@@ -10993,7 +10993,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "LwGtlBwItVi",
+      "uid": "kbiNWHX8II6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11061,9 +11061,9 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Xyrec Paladin - Judgement of Wisdom",
-        "Xyrec Paladin - Judgement of the Crusade",
-        "Xyrec Paladin - Judgement of Light"
+        "Paladin - Judgement of Wisdom",
+        "Paladin - Judgement of the Crusade",
+        "Paladin - Judgement of Light"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -11071,7 +11071,7 @@
       "gridWidth": 5,
       "groupIcon": 135924,
       "grow": "HORIZONTAL",
-      "id": "Xyrec Paladin - Judgement Bar",
+      "id": "Paladin - Judgement Bar",
       "information": {
         "showNilIsFalse": true
       },
@@ -11126,7 +11126,7 @@
           "untrigger": []
         }
       ],
-      "uid": "2pVlTJgXmF0",
+      "uid": "Qw97G44fEwr",
       "url": "",
       "useLimit": true,
       "version": 32,
@@ -11223,7 +11223,7 @@
       "height": 26,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Judgement of Wisdom",
+      "id": "Paladin - Judgement of Wisdom",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11264,7 +11264,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Judgement Bar",
+      "parent": "Paladin - Judgement Bar",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -11364,7 +11364,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "SVGEoYKsKvt",
+      "uid": "ZHbzdFFT7ov",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11465,7 +11465,7 @@
       "height": 26,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Judgement of the Crusade",
+      "id": "Paladin - Judgement of the Crusade",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11506,7 +11506,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Judgement Bar",
+      "parent": "Paladin - Judgement Bar",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -11607,7 +11607,7 @@
         "customTriggerLogic": "\n",
         "disjunctive": "any"
       },
-      "uid": "k6oBms0CiRf",
+      "uid": "p31mLBwILXG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11708,7 +11708,7 @@
       "height": 26,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Judgement of Light",
+      "id": "Paladin - Judgement of Light",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -11749,7 +11749,7 @@
         "use_spellknown": true,
         "zoneIds": ""
       },
-      "parent": "Xyrec Paladin - Judgement Bar",
+      "parent": "Paladin - Judgement Bar",
       "preferToUpdate": false,
       "progressSource": [
         -1,
@@ -11850,7 +11850,7 @@
         "customTriggerLogic": "",
         "disjunctive": "any"
       },
-      "uid": "EQKdd07EM7S",
+      "uid": "MOh0mVtYMEk",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11937,7 +11937,7 @@
       "height": 30,
       "icon": true,
       "iconSource": -1,
-      "id": "Xyrec Paladin - Active Aura [Drag]",
+      "id": "Paladin - Active Aura [Drag]",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
@@ -12019,7 +12019,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "SrlVcDoTRkL",
+      "uid": "2NPxUUN69pr",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12083,13 +12083,13 @@
     "conditions": [],
     "config": [],
     "controlledChildren": [
-      "Xyrec Paladin - Core Abilities",
-      "Xyrec Paladin - Resources",
-      "Xyrec Paladin - Cooldowns",
-      "Xyrec Paladin - Reminders",
-      "Xyrec Paladin - Group Buffs",
-      "Xyrec Paladin - Judgement Bar",
-      "Xyrec Paladin - Active Aura [Drag]"
+      "Paladin - Core Abilities",
+      "Paladin - Resources",
+      "Paladin - Cooldowns",
+      "Paladin - Reminders",
+      "Paladin - Group Buffs",
+      "Paladin - Judgement Bar",
+      "Paladin - Active Aura [Drag]"
     ],
     "desc": "",
     "frameStrata": 1,
@@ -12136,7 +12136,7 @@
         "untrigger": []
       }
     ],
-    "uid": "Ms1WE4KyRqr",
+    "uid": "i0yaKXPECmH",
     "url": "",
     "version": 32,
     "wagoID": "zLJ2R3Oua",

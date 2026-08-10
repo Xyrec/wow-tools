@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Warlock - Demonic Sacrifice",
+  "id": "Warlock - Demonic Sacrifice",
   "load": {
     "class": {
       "multi": {},

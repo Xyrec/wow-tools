@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Priest - Power Word: Fortitude",
+  "id": "Priest - Power Word: Fortitude",
   "load": {
     "class": {
       "multi": {},

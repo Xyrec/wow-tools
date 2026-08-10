@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Rogue - Swing Timer",
+  "id": "Rogue - Swing Timer",
   "lua": {
     "customText": "lua/swing-timer--customText.lua"
   },
@@ -199,7 +199,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Rogue - Swing Timer",
+    "id": "Rogue - Swing Timer",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

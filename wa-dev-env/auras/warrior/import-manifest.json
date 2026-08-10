@@ -1,6 +1,6 @@
 {
-  "_notes": "Baseline. Enrage Bar + Resources bespoke; stance-gated triggers pass through untouched.",
-  "drop": [],
+  "_notes": "Baseline. Enrage Bar + Resources bespoke; stance-gated triggers pass through untouched. Overpower [Nameplates] dropped: Sabimaru-UI nameplate attachment, not ours.",
+  "drop": ["Warrior - Overpower [Nameplates]"],
   "rows": {
     "Warrior - Core Abilities": "core",
     "Warrior - Cooldowns": "cooldowns",

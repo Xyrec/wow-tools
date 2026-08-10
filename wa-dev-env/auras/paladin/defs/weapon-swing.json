@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Paladin - Weapon Swing",
+  "id": "Paladin - Weapon Swing",
   "lua": {
     "customText": "lua/weapon-swing--customText.lua"
   },
@@ -255,7 +255,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Paladin - Weapon Swing",
+    "id": "Paladin - Weapon Swing",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

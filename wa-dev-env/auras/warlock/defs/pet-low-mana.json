@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Warlock - Pet Low Mana",
+  "id": "Warlock - Pet Low Mana",
   "load": {
     "class": {
       "multi": {},

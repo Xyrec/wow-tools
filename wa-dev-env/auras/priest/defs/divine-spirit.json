@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Priest - Divine Spirit",
+  "id": "Priest - Divine Spirit",
   "load": {
     "class": {
       "multi": {},

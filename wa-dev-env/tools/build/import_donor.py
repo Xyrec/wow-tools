@@ -196,12 +196,13 @@ def apply(donor, class_name):
         raise SystemExit("unmapped GONE spell ids (add to spellmap.json or drop "
                          f"the aura in the manifest): {json.dumps(unmapped, indent=1)}")
 
-    prefix = info["prefix"]
     cap = class_name.capitalize()
     def rename(aura_id):
+        # Only the root group takes the Xyrec name; children keep their donor
+        # ids so name references between auras (anchorFrameFrame etc.) stay valid.
         if aura_id == donor["d"]["id"]:
             return f"Xyrec - {cap}"
-        return aura_id.replace(f"{prefix} - ", f"Xyrec {cap} - ", 1)
+        return aura_id
 
     drop = set(manifest.get("drop", []))
     def expand(aura_id):
@@ -229,7 +230,7 @@ def apply(donor, class_name):
                 row_of[child] = row
 
     stats = {"defs": 0, "bespoke": 0, "dropped": len(drop)}
-    new_prefix = f"Xyrec {cap} - "
+    new_prefix = f"{cap} - "
     for aura in donor["c"]:
         if aura["id"] in drop:
             continue

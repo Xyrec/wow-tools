@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Priest - Mana Bar",
+  "id": "Priest - Mana Bar",
   "lua": {
     "customText": "lua/mana-bar--customText.lua"
   },
@@ -116,7 +116,7 @@
       1
     ],
     "icon_side": "RIGHT",
-    "id": "Xyrec Priest - Mana Bar",
+    "id": "Priest - Mana Bar",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

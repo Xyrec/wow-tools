@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Priest - Fear Ward [Self]",
+  "id": "Priest - Fear Ward [Self]",
   "load": {
     "class": {
       "multi": {},

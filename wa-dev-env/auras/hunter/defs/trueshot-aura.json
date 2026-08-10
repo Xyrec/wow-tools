@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Hunter - Trueshot Aura",
+  "id": "Hunter - Trueshot Aura",
   "load": {
     "class": {
       "multi": {},

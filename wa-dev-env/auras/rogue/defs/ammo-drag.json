@@ -1,6 +1,6 @@
 {
   "archetype": "bespoke",
-  "id": "Xyrec Rogue - Ammo [Drag]",
+  "id": "Rogue - Ammo [Drag]",
   "payload": {
     "actions": {
       "finish": [],
@@ -123,7 +123,7 @@
     "height": 30,
     "icon": true,
     "iconSource": 0,
-    "id": "Xyrec Rogue - Ammo [Drag]",
+    "id": "Rogue - Ammo [Drag]",
     "information": {
       "forceEvents": true,
       "ignoreOptionsEventErrors": true,

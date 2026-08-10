@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Warrior - Demoralizing Shout",
+  "id": "Warrior - Demoralizing Shout",
   "load": {
     "class": {
       "multi": {},

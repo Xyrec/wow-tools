@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Priest - Drink Expiring",
+  "id": "Priest - Drink Expiring",
   "load": {
     "class": {
       "multi": {},

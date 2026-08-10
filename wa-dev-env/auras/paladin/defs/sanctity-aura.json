@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Paladin - Sanctity Aura",
+  "id": "Paladin - Sanctity Aura",
   "load": {
     "class": {
       "multi": {

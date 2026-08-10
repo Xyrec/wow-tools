@@ -49,9 +49,9 @@ def test_base_auras_are_fresh_copies():
 def test_pilot_parity_against_live_snapshot():
     """The three pilot defs must reproduce their snapshot auras byte-exact."""
     pilot_ids = [
-        "Xyrec Shaman - Stormstrike",
-        "Xyrec Shaman - Nature's Swiftness",
-        "Xyrec Shaman - Fire Totem Missing",
+        "Shaman - Stormstrike",
+        "Shaman - Nature's Swiftness",
+        "Shaman - Fire Totem Missing",
     ]
     built = build_group.build("shaman", allow_missing=True)
     snapshot = json.loads(

@@ -1,7 +1,7 @@
 {
   "archetype": "reminder_icon",
   "conditions": [],
-  "id": "Xyrec Druid - Mark of the Wild",
+  "id": "Druid - Mark of the Wild",
   "load": {
     "class": {
       "multi": {},
