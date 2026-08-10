@@ -147,7 +147,7 @@
           "untrigger": []
         }
       ],
-      "uid": "eg3lpVJvZXY",
+      "uid": "8JhKU5PZJ4N",
       "url": "",
       "useLimit": true,
       "version": 35,
@@ -358,7 +358,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "FIIB5ECT588",
+      "uid": "UoBv1p91VYS",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -613,7 +613,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "X3jQVall4Pd",
+      "uid": "RyFigz2cXGO",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -746,7 +746,7 @@
       "cooldownEdge": true,
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
-      "desaturate": false,
+      "desaturate": true,
       "displayIcon": 135827,
       "frameStrata": 1,
       "height": 32,
@@ -944,7 +944,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "zMfwf9HXGEH",
+      "uid": "xo59dZp5HNn",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1077,7 +1077,7 @@
       "cooldownEdge": true,
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
-      "desaturate": false,
+      "desaturate": true,
       "displayIcon": "",
       "frameStrata": 1,
       "height": 32,
@@ -1344,7 +1344,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "BoHrHUbeQcr",
+      "uid": "MaJD8VhzO6y",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1629,7 +1629,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "LwjOapOBeCn",
+      "uid": "aFqc5ox57kS",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1896,7 +1896,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "UcY08WKjJXA",
+      "uid": "4BJX6lHVJnq",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2111,7 +2111,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "XTktgEzqzWJ",
+      "uid": "1x7qzaRYRmm",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2434,7 +2434,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "a9U9eqUyDgl",
+      "uid": "RILUiAyiBjg",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2748,7 +2748,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "0zZTxPXpqJp",
+      "uid": "QAOy6PHv0dT",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3077,7 +3077,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "zSrWbcCJbNM",
+      "uid": "3Sy59yklZuh",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3362,7 +3362,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "0iLobL4Iuja",
+      "uid": "lArN4wROt9l",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3647,7 +3647,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "vldcOw9LiRS",
+      "uid": "IJM6viuhhk6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3760,7 +3760,7 @@
           "untrigger": []
         }
       ],
-      "uid": "hGpi0Mn4PZV",
+      "uid": "URgked09Q09",
       "url": "",
       "version": 35,
       "wagoID": "6vNSif5yK",
@@ -3865,7 +3865,7 @@
           "untrigger": []
         }
       ],
-      "uid": "ElOnGxgUsQJ",
+      "uid": "TwuG0N9Ra1x",
       "url": "",
       "version": 35,
       "wagoID": "6vNSif5yK",
@@ -3976,7 +3976,7 @@
           "untrigger": []
         }
       ],
-      "uid": "7tTdmIeKFAi",
+      "uid": "n7F3YBa07kF",
       "url": "",
       "version": 35,
       "wagoID": "6vNSif5yK",
@@ -4229,7 +4229,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "y3Ccp4UvI7q",
+      "uid": "Euiow1RV6Lk",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -4486,7 +4486,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "lOWr52YdXya",
+      "uid": "csnWY8uJ9tq",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -4743,7 +4743,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "VRhasJuWRd9",
+      "uid": "IX04X2KgLBD",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -5000,7 +5000,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "lfFCldqiACK",
+      "uid": "Zdnv0zHco1d",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -5257,7 +5257,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "QwGdi3PFDNs",
+      "uid": "H2UendzlE04",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -5624,7 +5624,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "9YOc2lKKxdY",
+      "uid": "8TXFS1uH0bF",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5966,7 +5966,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "qHg8QuQQKHw",
+      "uid": "jnhH3oFO6NR",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6198,7 +6198,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "koiHNLe3vtN",
+      "uid": "hX2DQv3q4zk",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6373,7 +6373,7 @@
           "untrigger": []
         }
       ],
-      "uid": "rKT7z1otox8",
+      "uid": "doCPS5G3KSi",
       "url": "",
       "useLimit": true,
       "version": 35,
@@ -6643,7 +6643,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "qVyAtRriwqR",
+      "uid": "xsRAA7TrGKy",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6854,7 +6854,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "aPQ8CDiZxx2",
+      "uid": "BcpfSOiotNP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7126,7 +7126,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "MVHIPobZbPu",
+      "uid": "23bwy3N3EIw",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7398,7 +7398,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "1cbR0ENOA14",
+      "uid": "ekmremWd7O6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7636,7 +7636,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "4aMNmjTaypj",
+      "uid": "DtC0RoSLBxi",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7847,7 +7847,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "O4RczBoadlJ",
+      "uid": "liUZaWf1PSC",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8085,7 +8085,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "lKHTmRsEpI0",
+      "uid": "17V9LkRx2L8",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8361,7 +8361,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "dHVvFIqLUNQ",
+      "uid": "qDFdWYE8ekM",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8637,7 +8637,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "QupukCn3EPB",
+      "uid": "WlIxyd3rQUL",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8913,7 +8913,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "EremGCNApop",
+      "uid": "GDW18jjrVWa",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9189,7 +9189,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "JrMHWrTAyMU",
+      "uid": "bhU9A02ZdH0",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9430,7 +9430,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "gaBeUKZyNI7",
+      "uid": "ljvozwQ9N47",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9671,7 +9671,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "FQYll8xHmcL",
+      "uid": "IMQ75IqepQO",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9943,7 +9943,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "MrOuZcTzsJD",
+      "uid": "rcpBRTqqaZE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10215,7 +10215,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "gLn1dDMCXqs",
+      "uid": "PhH7SqMd0Vo",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10527,7 +10527,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "zxxVclRRp0W",
+      "uid": "PDftp7ZFYC4",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10799,7 +10799,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "6CgqV9J7N2x",
+      "uid": "9UwTj3gixUF",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11071,7 +11071,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "zdOjOd6ChC3",
+      "uid": "49P7s341lt5",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11282,7 +11282,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "P8EJ3HBf6pj",
+      "uid": "7HW2xL4oDCZ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11520,7 +11520,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "A73Iii2ZD7f",
+      "uid": "LwGBuJ1PwkO",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11793,7 +11793,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "w2JCeAwP4J3",
+      "uid": "8oR31fiijUV",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12065,7 +12065,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "LFcNo4zBhFH",
+      "uid": "3HfOjaSnztk",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12276,7 +12276,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "GPIJfpaH7JS",
+      "uid": "Kn4VM2a7up0",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12487,7 +12487,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "XJ2RQHZ3uEj",
+      "uid": "DmT1AOrQMDh",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12625,7 +12625,7 @@
           "untrigger": []
         }
       ],
-      "uid": "hYFlLgPps2R",
+      "uid": "9BWhW1anGQi",
       "url": "",
       "useLimit": false,
       "version": 35,
@@ -12904,7 +12904,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "w1LbaIzgAET",
+      "uid": "VnDlWWV2j1o",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13232,7 +13232,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "BjfcdVEnqhr",
+      "uid": "Q8fywpmr9ge",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13517,7 +13517,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "QorDsYwT2of",
+      "uid": "QHHCQHb892G",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13806,7 +13806,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "s4qcXYxsgnS",
+      "uid": "HF2yVcCNtcu",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13938,7 +13938,7 @@
           "untrigger": []
         }
       ],
-      "uid": "wX9zXOTLkae",
+      "uid": "1iSyz2idOC6",
       "url": "",
       "useLimit": true,
       "version": 35,
@@ -14028,7 +14028,7 @@
       "cooldownEdge": false,
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
-      "desaturate": false,
+      "desaturate": true,
       "displayIcon": 135869,
       "frameStrata": 1,
       "height": 36,
@@ -14379,7 +14379,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "YAPJwoJdWd4",
+      "uid": "B5WJQ9pDEIE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14491,7 +14491,7 @@
         "untrigger": []
       }
     ],
-    "uid": "hhDdgVQ5kKq",
+    "uid": "9GJjpYRr3qq",
     "url": "",
     "version": 35,
     "wagoID": "6vNSif5yK",

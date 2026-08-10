@@ -36,6 +36,7 @@
     "use_zoneIds": false
   },
   "overrides": {
+    "desaturate": true,
     "displayIcon": 135962,
     "subRegions": [
       {

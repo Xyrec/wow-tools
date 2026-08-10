@@ -76,6 +76,7 @@
     "zoneIds": ""
   },
   "overrides": {
+    "desaturate": true,
     "iconSource": 0,
     "subRegions": [
       {

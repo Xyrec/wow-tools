@@ -50,6 +50,7 @@
     "zoneIds": ""
   },
   "overrides": {
+    "desaturate": true,
     "subRegions": [
       {
         "type": "subbackground"

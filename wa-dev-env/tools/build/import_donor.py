@@ -36,7 +36,10 @@ import style_fields  # noqa: E402
 REPO = pathlib.Path(__file__).resolve().parents[2]
 
 # per-aura fields that survive the restyle even though they look visual
-_SEMANTIC_KEEP = {"iconSource", "displayIcon", "icon", "desc"}
+# desaturate is STATE, not style: usable-gating icons rest desaturated and a
+# spellUsable/insufficientResources condition clears it — dropping the base
+# value makes rage/range-gated abilities look permanently castable
+_SEMANTIC_KEEP = {"iconSource", "displayIcon", "icon", "desc", "desaturate"}
 
 
 def donor_prefix(donor):

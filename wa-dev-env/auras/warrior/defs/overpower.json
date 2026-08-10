@@ -67,6 +67,9 @@
     "use_spellknown": true,
     "zoneIds": ""
   },
+  "overrides": {
+    "desaturate": true
+  },
   "row": "core",
   "triggers": {
     "1": {

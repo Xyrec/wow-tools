@@ -89,6 +89,7 @@
     "zoneIds": ""
   },
   "overrides": {
+    "desaturate": true,
     "displayIcon": 136207,
     "iconSource": 0,
     "subRegions": [
