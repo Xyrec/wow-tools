@@ -41,6 +41,7 @@
   },
   "overrides": {
     "desaturate": true,
+    "inverse": false,
     "subRegions": [
       {
         "type": "subbackground"

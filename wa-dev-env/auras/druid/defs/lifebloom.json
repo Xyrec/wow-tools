@@ -62,6 +62,7 @@
     "zoneIds": ""
   },
   "overrides": {
+    "inverse": false,
     "subRegions": [
       {
         "type": "subbackground"

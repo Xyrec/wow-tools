@@ -36,10 +36,15 @@ import style_fields  # noqa: E402
 REPO = pathlib.Path(__file__).resolve().parents[2]
 
 # per-aura fields that survive the restyle even though they look visual
-# desaturate is STATE, not style: usable-gating icons rest desaturated and a
-# spellUsable/insufficientResources condition clears it — dropping the base
-# value makes rage/range-gated abilities look permanently castable
-_SEMANTIC_KEEP = {"iconSource", "displayIcon", "icon", "desc", "desaturate"}
+# These are STATE, not style — donor values are per-aura semantics:
+# - desaturate: usable-gating icons rest desaturated; a spellUsable /
+#   insufficientResources condition clears it. Dropping the base value makes
+#   rage/range-gated abilities look permanently castable.
+# - inverse / cooldown / cooldownEdge / cooldownTextDisabled: which sweep an
+#   icon shows (buff-duration vs cooldown), whether it shows one at all, and
+#   whether Blizzard cooldown text renders — the donor tunes these per aura.
+_SEMANTIC_KEEP = {"iconSource", "displayIcon", "icon", "desc", "desaturate",
+                  "inverse", "cooldown", "cooldownEdge", "cooldownTextDisabled"}
 
 
 def donor_prefix(donor):
@@ -132,26 +137,43 @@ def report(donor, class_name):
 
 
 def label_subregions(style, archetype, aura):
-    """Canonical subRegions plus the donor's extra label texts (restyled).
+    """Restyle donor subRegions IN PLACE: same types, same order, same count.
 
-    Labels like 'Bless'/'-RF' and unitName readouts are SEMANTIC — a blank
-    reminder icon loses its meaning — so every donor subtext beyond the
-    canonical %p is carried over, wearing the pack font. Returns None when
-    the canonical set already covers the donor (no override needed)."""
+    Conditions address subregions by index (sub.N), so the layout is LOGIC —
+    dropping the donor's subglow or reordering texts silently retargets or
+    breaks those conditions. Per entry: subborder wears the canon border,
+    the donor's %p center timer becomes the canon subtext, label texts
+    ('Bless'/'-RF', unitName readouts — SEMANTIC, a blank reminder icon
+    loses its meaning) keep their content wearing the pack font, and
+    subbackground/subglow/subtick pass through verbatim. A canon %p subtext
+    is appended (index-safe) when the donor had no text at all. Returns None
+    when the result already equals the archetype's canonical set."""
     base = archetypes.base_aura(style, archetype)
-    extras = []
+    canon = {s["type"]: s for s in reversed(base["subRegions"])}
+    out = []
+    has_text = False
     for sub in aura.get("subRegions") or []:
-        if sub.get("type") != "subtext" or sub.get("text_text") == "%p":
-            continue
-        kept = copy.deepcopy(sub)
-        kept["text_font"] = style["fonts"]["family"]
-        kept["text_fontType"] = style["fonts"]["type"]
-        kept["text_shadowXOffset"] = style["fonts"]["shadow"]["x"]
-        kept["text_shadowYOffset"] = style["fonts"]["shadow"]["y"]
-        extras.append(kept)
-    if not extras:
+        kind = sub.get("type")
+        if kind == "subborder":
+            out.append(copy.deepcopy(canon["subborder"]))
+        elif kind == "subtext":
+            has_text = True
+            if sub.get("text_text") == "%p":
+                out.append(copy.deepcopy(canon["subtext"]))
+            else:
+                kept = copy.deepcopy(sub)
+                kept["text_font"] = style["fonts"]["family"]
+                kept["text_fontType"] = style["fonts"]["type"]
+                kept["text_shadowXOffset"] = style["fonts"]["shadow"]["x"]
+                kept["text_shadowYOffset"] = style["fonts"]["shadow"]["y"]
+                out.append(kept)
+        else:
+            out.append(copy.deepcopy(sub))
+    if not has_text:
+        out.append(copy.deepcopy(canon["subtext"]))
+    if out == base["subRegions"]:
         return None
-    return base["subRegions"] + extras
+    return out
 
 
 def restyle_leaf(style, aura, row, archetype):

@@ -24,6 +24,10 @@
     "use_never": false,
     "use_spellknown": true
   },
+  "overrides": {
+    "cooldownEdge": true,
+    "inverse": true
+  },
   "row": "cooldowns",
   "triggers": {
     "1": {

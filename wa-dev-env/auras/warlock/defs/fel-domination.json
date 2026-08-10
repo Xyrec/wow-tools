@@ -45,7 +45,8 @@
     "zoneIds": ""
   },
   "overrides": {
-    "displayIcon": 136082
+    "displayIcon": 136082,
+    "inverse": true
   },
   "row": "cooldowns",
   "triggers": {

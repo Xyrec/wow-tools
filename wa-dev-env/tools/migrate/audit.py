@@ -53,6 +53,45 @@ def check_center_text(key, aura, ours, issues):
                                   f"{s.get(field)!r} (canon: {want!r})")
 
 
+_SUBREF_RE = None
+_SUB_PROP_TYPE = {"glow": "subglow", "border_visible": "subborder"}
+
+
+def check_condition_subrefs(key, aura, ours, issues):
+    """Condition changes address subregions by 1-based index (sub.N.prop);
+    a dropped or reordered subregion silently retargets them."""
+    global _SUBREF_RE
+    if _SUBREF_RE is None:
+        import re
+        _SUBREF_RE = re.compile(r"^sub\.(\d+)\.(.+)$")
+    if key not in ours:
+        return
+    subs = aura.get("subRegions") or []
+    for cond in aura.get("conditions") or []:
+        if not isinstance(cond, dict):
+            continue
+        for change in cond.get("changes") or []:
+            if not isinstance(change, dict):
+                continue
+            m = _SUBREF_RE.match(str(change.get("property") or ""))
+            if not m:
+                continue
+            idx, prop = int(m.group(1)), m.group(2)
+            if not 1 <= idx <= len(subs):
+                issues.append(f"{key}: condition targets sub.{idx}.{prop} "
+                              f"but only {len(subs)} subregions exist")
+                continue
+            want = _SUB_PROP_TYPE.get(prop)
+            if want is None and prop.startswith("text_"):
+                want = "subtext"
+            elif want is None and prop.startswith("tick_"):
+                want = "subtick"
+            have = subs[idx - 1].get("type")
+            if want and have != want:
+                issues.append(f"{key}: condition targets sub.{idx}.{prop} "
+                              f"but subregion {idx} is {have!r} (want {want})")
+
+
 def check_style_rules(key, aura, displays, ours, issues):
     """Xyrec-group style-guide invariants beyond text canon."""
     if key not in ours:
@@ -92,6 +131,7 @@ def audit_displays(displays: dict) -> list:
         aura_id = aura.get("id")
         check_center_text(key, aura, ours, issues)
         check_style_rules(key, aura, displays, ours, issues)
+        check_condition_subrefs(key, aura, ours, issues)
         if aura_id != key:
             issues.append(f"{key}: key/id mismatch (id={aura_id!r})")
         if not aura.get("uid"):

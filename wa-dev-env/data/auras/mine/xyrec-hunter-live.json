@@ -122,7 +122,7 @@
           "untrigger": []
         }
       ],
-      "uid": "jmjBN34bIVf",
+      "uid": "zySefsRxvUi",
       "url": "",
       "useLimit": false,
       "version": 42,
@@ -319,7 +319,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "BK8SEj95uC0",
+      "uid": "4JWvH4nV9un",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -462,7 +462,7 @@
           "untrigger": []
         }
       ],
-      "uid": "R7hVJ8FtfFJ",
+      "uid": "jPCvgUZ1Dbj",
       "url": "",
       "useLimit": true,
       "version": 42,
@@ -673,7 +673,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "IefsFNpEdJb",
+      "uid": "eisF6Rmz6HI",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -959,7 +959,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "WaASoAbxAXH",
+      "uid": "nrAFVcAY7Aa",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1245,7 +1245,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "dOvnE7PoDHE",
+      "uid": "TwLjdW9OqFZ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1531,7 +1531,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "llk8g3e8nAv",
+      "uid": "GIHLcTBriBF",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1689,7 +1689,7 @@
         "showNilIsFalse": true
       },
       "internalVersion": 90,
-      "inverse": true,
+      "inverse": false,
       "keepAspectRatio": true,
       "load": {
         "class": {
@@ -1830,7 +1830,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "ZxQikakNvaH",
+      "uid": "jI8gUN8pYhJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2161,7 +2161,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "TdhxudZGDEO",
+      "uid": "05Q54ELOG1P",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2274,7 +2274,7 @@
           "untrigger": []
         }
       ],
-      "uid": "TW4BX72pSwj",
+      "uid": "FakOBTP2E1l",
       "url": "",
       "version": 42,
       "wagoID": "B2G4lZKVE",
@@ -2383,7 +2383,7 @@
           "untrigger": []
         }
       ],
-      "uid": "wojF7gz5GRk",
+      "uid": "kfeZf1CxNZZ",
       "url": "",
       "version": 42,
       "wagoID": "B2G4lZKVE",
@@ -2824,7 +2824,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ztrvKFN7Z8F",
+      "uid": "JxQVSQxocV5",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3924,7 +3924,7 @@
         "customTriggerLogic": "function(t) return t[1] end",
         "disjunctive": "custom"
       },
-      "uid": "H1GjCRZ15mo",
+      "uid": "3tmygK4NODY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4163,7 +4163,7 @@
         "customTriggerLogic": "function (t)\n    return (not t[1] and t[2]) and t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "tjrTOFoNRGx",
+      "uid": "842ihaTgU1K",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4376,7 +4376,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "N1lCnQnZEm2",
+      "uid": "rOkmyTf0FBm",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4723,7 +4723,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "ohi5gsniEtB",
+      "uid": "22myOUnPjWK",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5040,7 +5040,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "bqQYe5TxzFB",
+      "uid": "W2JfSmMVTaI",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5272,7 +5272,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "cSvuLytlcgp",
+      "uid": "I03bCUd88Uv",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5450,7 +5450,7 @@
           "untrigger": []
         }
       ],
-      "uid": "WJLkrjasf1X",
+      "uid": "4586oomNhJh",
       "url": "",
       "useLimit": true,
       "version": 42,
@@ -5686,7 +5686,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "l7QduLa5mxI",
+      "uid": "8FNKFF27gFK",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5924,7 +5924,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "nTrSPlGPbBW",
+      "uid": "58KwcHJWe4H",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6196,7 +6196,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "qzU1geKrVCZ",
+      "uid": "gwNjjfGJvKi",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6434,7 +6434,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "vr7MvykPQkG",
+      "uid": "JgdjbdzUwgb",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6711,7 +6711,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "SpamLTIEBIP",
+      "uid": "UeRoViqSJhJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6987,7 +6987,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Vrplj40jwIZ",
+      "uid": "YrFZK2ykeRX",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7263,7 +7263,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "UFQpM5oFOty",
+      "uid": "ZBwJZbNZZSl",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7539,7 +7539,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "q2arDpB7C3l",
+      "uid": "9HgtyxBbWvQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7781,7 +7781,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "iI6vUTzMekH",
+      "uid": "rcktO0EjgIy",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8022,7 +8022,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "vaSUdx4MYUY",
+      "uid": "7A3uxy1Uu9M",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8263,7 +8263,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "6uQyGmuH9Np",
+      "uid": "HIjEtH7nuV2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8535,7 +8535,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "3m138jyWooC",
+      "uid": "a6WFrunYKX3",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8807,7 +8807,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "d5WBS28bY3h",
+      "uid": "DfEgmKGFZNu",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9079,7 +9079,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "t0HGFnjYmFV",
+      "uid": "FbgTHBAoO4C",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9392,7 +9392,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "5KfVi5NOKYG",
+      "uid": "Vx2ahBQdbfn",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9630,7 +9630,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "MnElhWB4Et8",
+      "uid": "oiX8MZMze82",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9902,7 +9902,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Gl2dHmPxlnF",
+      "uid": "yRjonNBYPw2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10174,7 +10174,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ql2qQgUOVFL",
+      "uid": "dTsek7gYvEl",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10446,7 +10446,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "5sszET4HxuM",
+      "uid": "IsHWMC2c977",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10718,7 +10718,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "mDvfl6IcKW1",
+      "uid": "v0kSY0kC608",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10956,7 +10956,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "8z9TgEH9xkq",
+      "uid": "fxPqP9KkhDo",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11194,7 +11194,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "BMcqNWDY1fA",
+      "uid": "5BOxEpCImiZ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11432,7 +11432,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "PWAgtASFbJs",
+      "uid": "aXFBDoMM721",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11687,7 +11687,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "gKX0NJ6ZJOw",
+      "uid": "D5uQ06oLL51",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11833,7 +11833,7 @@
           "untrigger": []
         }
       ],
-      "uid": "FxoAT1YtROn",
+      "uid": "AqCLEqtcKNY",
       "url": "",
       "useLimit": false,
       "version": 42,
@@ -11908,7 +11908,7 @@
         }
       ],
       "config": [],
-      "cooldown": false,
+      "cooldown": true,
       "cooldownEdge": false,
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
@@ -12112,7 +12112,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "PmFH3WCM4Bu",
+      "uid": "EeKv3VnFCjE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12264,43 +12264,6 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
           "text_anchorYOffset": -12,
@@ -12393,7 +12356,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "wsTroJS1oIl",
+      "uid": "JVHPjsdPap0",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12471,7 +12434,7 @@
         }
       ],
       "config": [],
-      "cooldown": false,
+      "cooldown": true,
       "cooldownEdge": false,
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
@@ -12647,7 +12610,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "5LJlH7d3MZI",
+      "uid": "JJvOkRsjSAe",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12725,7 +12688,7 @@
         }
       ],
       "config": [],
-      "cooldown": false,
+      "cooldown": true,
       "cooldownEdge": false,
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
@@ -12797,43 +12760,6 @@
           "border_size": 1,
           "border_visible": true,
           "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
         },
         {
           "anchorXOffset": 0,
@@ -12922,7 +12848,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and not t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "4FPWMZiX0NF",
+      "uid": "2cmwl6GbvkJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13074,43 +13000,6 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
           "text_anchorYOffset": -12,
@@ -13185,7 +13074,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "Hrd1x78M5ZF",
+      "uid": "f06fT5ueHi2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13263,10 +13152,10 @@
         }
       ],
       "config": [],
-      "cooldown": false,
+      "cooldown": true,
       "cooldownEdge": false,
       "cooldownSwipe": true,
-      "cooldownTextDisabled": true,
+      "cooldownTextDisabled": false,
       "customTextUpdate": "update",
       "desaturate": false,
       "desc": "",
@@ -13329,43 +13218,6 @@
           "border_size": 1,
           "border_visible": true,
           "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
         },
         {
           "anchorXOffset": 0,
@@ -13451,7 +13303,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "y6DIujS40hy",
+      "uid": "i43JMpg8TzE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13603,43 +13455,6 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
           "text_anchorYOffset": -12,
@@ -13724,7 +13539,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "NBTx56skl1i",
+      "uid": "5NceepNuGxg",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13876,43 +13691,6 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
           "text_anchorYOffset": -12,
@@ -13979,7 +13757,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "U1u0keQw1IF",
+      "uid": "8pTbA1uQTOb",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14131,43 +13909,6 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
           "text_anchorYOffset": -12,
@@ -14235,7 +13976,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "fPoEEG3w41u",
+      "uid": "QlnfjoNugFJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14534,7 +14275,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "xer7M37Yjql",
+      "uid": "4waFt55qksX",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14648,7 +14389,7 @@
         "untrigger": []
       }
     ],
-    "uid": "Ps6XqBOcF5b",
+    "uid": "CWGfDgEX0PQ",
     "url": "",
     "version": 42,
     "wagoID": "B2G4lZKVE",

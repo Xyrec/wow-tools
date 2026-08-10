@@ -28,6 +28,7 @@
     "zoneIds": ""
   },
   "overrides": {
+    "cooldown": true,
     "customTextUpdate": "update",
     "subRegions": [
       {

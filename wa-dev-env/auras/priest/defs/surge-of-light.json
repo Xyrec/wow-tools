@@ -76,7 +76,8 @@
     "zoneIds": ""
   },
   "overrides": {
-    "displayIcon": "135981"
+    "displayIcon": "135981",
+    "inverse": false
   },
   "row": "core",
   "triggers": {

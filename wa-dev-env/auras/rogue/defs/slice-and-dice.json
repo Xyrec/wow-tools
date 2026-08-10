@@ -39,6 +39,9 @@
     "use_spellknown": true,
     "zoneIds": ""
   },
+  "overrides": {
+    "inverse": false
+  },
   "row": "core",
   "triggers": {
     "1": {

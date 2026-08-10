@@ -38,7 +38,8 @@
   },
   "overrides": {
     "displayIcon": 136210,
-    "iconSource": 1
+    "iconSource": 1,
+    "inverse": true
   },
   "row": "cooldowns",
   "triggers": {

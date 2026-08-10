@@ -43,6 +43,7 @@
   },
   "overrides": {
     "displayIcon": 132302,
+    "inverse": false,
     "subRegions": [
       {
         "type": "subbackground"

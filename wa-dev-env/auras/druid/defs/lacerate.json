@@ -43,6 +43,7 @@
     "desaturate": true,
     "displayIcon": 132131,
     "iconSource": 0,
+    "inverse": false,
     "subRegions": [
       {
         "type": "subbackground"

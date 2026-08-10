@@ -30,6 +30,7 @@
     "zoneIds": ""
   },
   "overrides": {
+    "cooldown": true,
     "customTextUpdate": "update",
     "displayIcon": 132161,
     "iconSource": 0,
@@ -49,43 +50,6 @@
         "border_size": 1,
         "border_visible": true,
         "type": "subborder"
-      },
-      {
-        "anchorXOffset": 0,
-        "anchorYOffset": 0,
-        "anchor_point": "CENTER",
-        "rotateText": "NONE",
-        "text_automaticWidth": "Auto",
-        "text_color": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "text_fixedWidth": 64,
-        "text_font": "PT Sans Narrow",
-        "text_fontSize": 20,
-        "text_fontType": "OUTLINE",
-        "text_justify": "CENTER",
-        "text_selfPoint": "AUTO",
-        "text_shadowColor": [
-          0,
-          0,
-          0,
-          1
-        ],
-        "text_shadowXOffset": 0,
-        "text_shadowYOffset": 0,
-        "text_text": "%p",
-        "text_text_format_p_format": "timed",
-        "text_text_format_p_time_dynamic_threshold": 0,
-        "text_text_format_p_time_format": 0,
-        "text_text_format_p_time_legacy_floor": false,
-        "text_text_format_p_time_mod_rate": true,
-        "text_text_format_p_time_precision": 1,
-        "text_visible": true,
-        "text_wordWrap": "WordWrap",
-        "type": "subtext"
       },
       {
         "anchorXOffset": 0,

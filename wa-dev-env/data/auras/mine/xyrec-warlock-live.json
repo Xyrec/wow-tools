@@ -134,7 +134,7 @@
           "untrigger": []
         }
       ],
-      "uid": "hs0DUZlrDci",
+      "uid": "86wYzOdEdni",
       "url": "",
       "useLimit": true,
       "version": 37,
@@ -316,7 +316,7 @@
         "showNilIsFalse": true
       },
       "internalVersion": 90,
-      "inverse": true,
+      "inverse": false,
       "keepAspectRatio": true,
       "load": {
         "class": {
@@ -366,6 +366,27 @@
           "border_size": 1,
           "border_visible": true,
           "type": "subborder"
+        },
+        {
+          "glow": false,
+          "glowBorder": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowDuration": 1,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowLines": 8,
+          "glowScale": 1,
+          "glowThickness": 1,
+          "glowType": "Pixel",
+          "glowXOffset": -0.5,
+          "glowYOffset": 0,
+          "type": "subglow",
+          "useGlowColor": false
         },
         {
           "anchorXOffset": 0,
@@ -510,7 +531,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "y9PA8TrP8Mx",
+      "uid": "5O3UWYetpMo",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -694,7 +715,7 @@
         "showNilIsFalse": true
       },
       "internalVersion": 90,
-      "inverse": true,
+      "inverse": false,
       "keepAspectRatio": true,
       "load": {
         "class": {
@@ -747,41 +768,25 @@
           "type": "subborder"
         },
         {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
+          "glow": false,
+          "glowBorder": false,
+          "glowColor": [
             1,
             1,
             1,
             1
           ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 18,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
+          "glowDuration": 1,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowLines": 8,
+          "glowScale": 1,
+          "glowThickness": 1,
+          "glowType": "Pixel",
+          "glowXOffset": -0.5,
+          "glowYOffset": 0,
+          "type": "subglow",
+          "useGlowColor": false
         },
         {
           "anchorXOffset": 0,
@@ -963,7 +968,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "VpOXGQls5OH",
+      "uid": "VY7UnWEMQnL",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1122,7 +1127,7 @@
         "showNilIsFalse": true
       },
       "internalVersion": 90,
-      "inverse": true,
+      "inverse": false,
       "keepAspectRatio": true,
       "load": {
         "class": {
@@ -1173,43 +1178,6 @@
           "border_size": 1,
           "border_visible": true,
           "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 18,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
         },
         {
           "anchorXOffset": 0,
@@ -1376,7 +1344,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "ovkes6Llx9L",
+      "uid": "0pU0oHv7ceC",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1591,7 +1559,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "sQ7shUV0A6R",
+      "uid": "f6SHFDUjk1N",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1763,7 +1731,7 @@
         "showNilIsFalse": true
       },
       "internalVersion": 90,
-      "inverse": true,
+      "inverse": false,
       "keepAspectRatio": true,
       "load": {
         "class": {
@@ -1815,6 +1783,27 @@
           "border_size": 1,
           "border_visible": true,
           "type": "subborder"
+        },
+        {
+          "glow": false,
+          "glowBorder": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowDuration": 1,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowLines": 8,
+          "glowScale": 1,
+          "glowThickness": 1,
+          "glowType": "Pixel",
+          "glowXOffset": -0.5,
+          "glowYOffset": 0,
+          "type": "subglow",
+          "useGlowColor": false
         },
         {
           "anchorXOffset": 0,
@@ -1932,7 +1921,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "Z6PU1wvNIXg",
+      "uid": "2IyW4cA3ZtT",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2246,7 +2235,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "pHm63ZG5Aqv",
+      "uid": "hVo1sY8W0HP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2431,7 +2420,7 @@
         "showNilIsFalse": true
       },
       "internalVersion": 90,
-      "inverse": true,
+      "inverse": false,
       "keepAspectRatio": true,
       "load": {
         "class": {
@@ -2484,41 +2473,25 @@
           "type": "subborder"
         },
         {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
+          "glow": false,
+          "glowBorder": false,
+          "glowColor": [
             1,
             1,
             1,
             1
           ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 18,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
+          "glowDuration": 1,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowLines": 8,
+          "glowScale": 1,
+          "glowThickness": 1,
+          "glowType": "Pixel",
+          "glowXOffset": -0.5,
+          "glowYOffset": 0,
+          "type": "subglow",
+          "useGlowColor": false
         },
         {
           "anchorXOffset": 0,
@@ -2697,7 +2670,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "ANnha2WygDX",
+      "uid": "IqP56CrJlrY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2808,7 +2781,7 @@
           "untrigger": []
         }
       ],
-      "uid": "oR4METNsrIu",
+      "uid": "RrqQwCkwe9t",
       "url": "",
       "version": 37,
       "wagoID": "XejlH_0_F",
@@ -3207,7 +3180,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] and t[2]) or (t[3] and t[4])\nend",
         "disjunctive": "custom"
       },
-      "uid": "210PHfLX3st",
+      "uid": "sXjjGLkLDKh",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3509,7 +3482,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "XWMAv1VYoky",
+      "uid": "nI5e0jwu12i",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3740,7 +3713,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "q6tLd30ccQm",
+      "uid": "mIqfIyphg7Q",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3915,7 +3888,7 @@
           "untrigger": []
         }
       ],
-      "uid": "jssxE2JoYIS",
+      "uid": "SqgSQ2AdlUZ",
       "url": "",
       "useLimit": true,
       "version": 37,
@@ -3990,7 +3963,7 @@
       ],
       "config": [],
       "cooldown": true,
-      "cooldownEdge": false,
+      "cooldownEdge": true,
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
       "desaturate": false,
@@ -4006,7 +3979,7 @@
         "showNilIsFalse": true
       },
       "internalVersion": 90,
-      "inverse": false,
+      "inverse": true,
       "keepAspectRatio": false,
       "load": {
         "class": {
@@ -4123,7 +4096,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "dP4TSBh88Yb",
+      "uid": "6epi5JE29nh",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4201,7 +4174,7 @@
       ],
       "config": [],
       "cooldown": true,
-      "cooldownEdge": false,
+      "cooldownEdge": true,
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
       "desaturate": false,
@@ -4217,7 +4190,7 @@
         "showNilIsFalse": true
       },
       "internalVersion": 90,
-      "inverse": false,
+      "inverse": true,
       "keepAspectRatio": false,
       "load": {
         "class": {
@@ -4334,7 +4307,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "YIBNfxxnWGF",
+      "uid": "Yo2tyazfSMb",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4572,7 +4545,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "vWV2ggNpb0Q",
+      "uid": "HmugT5D79i1",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4810,7 +4783,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "7zoW2ILy6sa",
+      "uid": "4R8TX5UaA6P",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5082,7 +5055,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "36nn6OPmODt",
+      "uid": "H6i23SvRnmI",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5358,7 +5331,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "DnnzTL8uWyg",
+      "uid": "EczpOuhAEeG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5634,7 +5607,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "XoEwk6weA2v",
+      "uid": "BxusgOpzsMx",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5910,7 +5883,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "9JNZD3oF7Gk",
+      "uid": "WZV7cIuonp4",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6186,7 +6159,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Td4VLXxM5GZ",
+      "uid": "NKqMOFp1Ms5",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6427,7 +6400,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "54PCHG1M8qK",
+      "uid": "fFbpS7ALS8s",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6668,7 +6641,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "NpDSSm7e5h0",
+      "uid": "G7YI6zdlU4L",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6762,7 +6735,7 @@
         "showNilIsFalse": true
       },
       "internalVersion": 90,
-      "inverse": false,
+      "inverse": true,
       "keepAspectRatio": false,
       "load": {
         "class": {
@@ -6999,7 +6972,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2] or t[3] or t[4] or t[5])\nend\n",
         "disjunctive": "custom"
       },
-      "uid": "3rWHkE4N4WW",
+      "uid": "0x0RNQeRiQs",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7093,7 +7066,7 @@
         "showNilIsFalse": true
       },
       "internalVersion": 90,
-      "inverse": false,
+      "inverse": true,
       "keepAspectRatio": false,
       "load": {
         "class": {
@@ -7330,7 +7303,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2] or t[3] or t[4] or t[5])\nend\n",
         "disjunctive": "custom"
       },
-      "uid": "4gBNSGJ2ToX",
+      "uid": "SVZh4uByuBZ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7441,7 +7414,7 @@
         "showNilIsFalse": true
       },
       "internalVersion": 90,
-      "inverse": false,
+      "inverse": true,
       "keepAspectRatio": false,
       "load": {
         "class": {
@@ -7569,7 +7542,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "tMc3bCb2bMH",
+      "uid": "hnolnvyLtS9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7841,7 +7814,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "IJZsOkjYAaR",
+      "uid": "qCJZHZQc2Jh",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8114,7 +8087,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "d5jV23hHsqO",
+      "uid": "DhapEFhLjXj",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8387,7 +8360,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "iwsQmsPAjcH",
+      "uid": "j7OaTe6lpR6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8660,7 +8633,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "95pEB5f1iWr",
+      "uid": "v1UDyYKvwRX",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8933,7 +8906,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "Hz0pNyAyCYF",
+      "uid": "8ZyDHdmYEN7",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9206,7 +9179,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "0zPx6f1DOTK",
+      "uid": "LbORkDIwRz4",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9444,7 +9417,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "0UYNo9HtfTF",
+      "uid": "o7vT7lw9obN",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9682,7 +9655,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "N5feMxx7uAl",
+      "uid": "TqKDB4YwVeR",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9833,7 +9806,7 @@
           "untrigger": []
         }
       ],
-      "uid": "vQ1uBmk5ymx",
+      "uid": "7QgCTp1RpvS",
       "url": "",
       "useLimit": false,
       "version": 37,
@@ -9908,7 +9881,7 @@
         }
       ],
       "config": [],
-      "cooldown": false,
+      "cooldown": true,
       "cooldownEdge": false,
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
@@ -10112,7 +10085,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "6IySUKwB7jn",
+      "uid": "lCaikDwo39D",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10190,7 +10163,7 @@
         }
       ],
       "config": [],
-      "cooldown": false,
+      "cooldown": true,
       "cooldownEdge": false,
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
@@ -10268,43 +10241,6 @@
           "border_size": 1,
           "border_visible": true,
           "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
         },
         {
           "anchorXOffset": 0,
@@ -10498,7 +10434,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] and t[2] and t[3] and t[4] and t[5] and t[6]) and t[7]\nend\n",
         "disjunctive": "custom"
       },
-      "uid": "V2GQM5wEVus",
+      "uid": "kA2UBKdArSs",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10696,43 +10632,6 @@
           "border_size": 1,
           "border_visible": true,
           "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
         },
         {
           "anchorXOffset": 0,
@@ -11121,7 +11020,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] and t[2] and t[3] and t[4] and t[5] and t[6] and t[7]) or (t[8] and t[9] and t[10] and t[11] and t[12] and t[13] and t[6] and t[7]) and t[14]\nend\n",
         "disjunctive": "custom"
       },
-      "uid": "hZMklizUMAj",
+      "uid": "Ohn19GpAyoH",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11281,43 +11180,6 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
           "text_anchorYOffset": -12,
@@ -11465,7 +11327,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] and t[3]) or (t[2] and not t[3]) and t[4] and t[5] and not t[6]\nend\n",
         "disjunctive": "custom"
       },
-      "uid": "i86Y14LVRLT",
+      "uid": "V2LQAN4Salt",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11617,43 +11479,6 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
           "text_anchorYOffset": -12,
@@ -11760,7 +11585,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "jhfuBTZq0Uv",
+      "uid": "icBkTEKCZVt",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11838,10 +11663,10 @@
         }
       ],
       "config": [],
-      "cooldown": false,
+      "cooldown": true,
       "cooldownEdge": false,
       "cooldownSwipe": true,
-      "cooldownTextDisabled": true,
+      "cooldownTextDisabled": false,
       "customTextUpdate": "update",
       "desaturate": false,
       "desc": "",
@@ -11905,43 +11730,6 @@
           "border_size": 1,
           "border_visible": true,
           "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
         },
         {
           "anchorXOffset": 0,
@@ -12044,7 +11832,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3] and not t[4]\nend",
         "disjunctive": "custom"
       },
-      "uid": "9siQPdFMena",
+      "uid": "wtsQl1TOe8v",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12196,43 +11984,6 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
           "text_anchorYOffset": -12,
@@ -12313,7 +12064,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "zGxkuxJ8ZuZ",
+      "uid": "nG2Is9okdkZ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12467,43 +12218,6 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
           "text_anchorYOffset": -12,
@@ -12587,7 +12301,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and not t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "4IkJGAvmEFE",
+      "uid": "CgOvAa9yzFL",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12665,7 +12379,7 @@
         }
       ],
       "config": [],
-      "cooldown": false,
+      "cooldown": true,
       "cooldownEdge": false,
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
@@ -12880,7 +12594,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "qQG60WxFFg6",
+      "uid": "oC8rv5Cq5xc",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12958,7 +12672,7 @@
         }
       ],
       "config": [],
-      "cooldown": false,
+      "cooldown": true,
       "cooldownEdge": false,
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
@@ -13131,7 +12845,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "k5XuHjDbZhx",
+      "uid": "C2RkVFa6pkF",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13209,7 +12923,7 @@
         }
       ],
       "config": [],
-      "cooldown": false,
+      "cooldown": true,
       "cooldownEdge": false,
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
@@ -13419,7 +13133,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "K5Y8zXYnBY1",
+      "uid": "q6tDM99lwc4",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13550,7 +13264,7 @@
           "untrigger": []
         }
       ],
-      "uid": "UtklUuWErWu",
+      "uid": "EfERHc1nfgV",
       "url": "",
       "useLimit": true,
       "version": 37,
@@ -13624,7 +13338,7 @@
         }
       ],
       "config": [],
-      "cooldown": true,
+      "cooldown": false,
       "cooldownEdge": false,
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
@@ -13705,56 +13419,6 @@
           "type": "subbackground"
         },
         {
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
@@ -13802,6 +13466,56 @@
           "text_visible": true,
           "text_wordWrap": "WordWrap",
           "type": "subtext"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 14,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%p",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
         }
       ],
       "tocversion": 20506,
@@ -13914,7 +13628,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "iPxiGfbQqns",
+      "uid": "EOkgjKMkai7",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14182,7 +13896,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "15Va6nkMjyL",
+      "uid": "Sv9TUnSfVYx",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14296,7 +14010,7 @@
         "untrigger": []
       }
     ],
-    "uid": "X2l4U2mti3D",
+    "uid": "2A8OjKmwz6N",
     "url": "",
     "version": 37,
     "wagoID": "XejlH_0_F",
