@@ -96,6 +96,72 @@
       {
         "changes": [
           {
+            "property": "barColor",
+            "value": [
+              0.75294125080109,
+              0.50196081399918,
+              1,
+              1
+            ]
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": 1,
+              "value": 1,
+              "variable": "show"
+            },
+            {
+              "op": "==",
+              "trigger": 1,
+              "value": "Multi-Shot",
+              "variable": "name"
+            }
+          ],
+          "trigger": -2,
+          "variable": "AND"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "barColor",
+            "value": [
+              0.67058825492859,
+              0.83137261867523,
+              0.45098042488098,
+              1
+            ]
+          }
+        ],
+        "check": {
+          "checks": [
+            {
+              "trigger": 1,
+              "value": 0,
+              "variable": "show"
+            }
+          ],
+          "trigger": -2,
+          "variable": "AND"
+        }
+      },
+      {
+        "changes": [
+          {
+            "property": "inverse"
+          }
+        ],
+        "check": {
+          "trigger": 1,
+          "value": 0,
+          "variable": "show"
+        }
+      },
+      {
+        "changes": [
+          {
             "property": "alpha",
             "value": 1
           }
