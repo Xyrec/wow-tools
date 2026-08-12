@@ -122,7 +122,7 @@
     "enableGradient": false,
     "frameStrata": 4,
     "gradientOrientation": "HORIZONTAL",
-    "height": 8,
+    "height": 12,
     "icon": false,
     "iconSource": -1,
     "icon_color": [
@@ -177,14 +177,14 @@
       1,
       1
     ],
-    "sparkHeight": 16,
+    "sparkHeight": 24,
     "sparkHidden": "NEVER",
     "sparkOffsetX": 0,
     "sparkOffsetY": 0,
     "sparkRotation": 0,
     "sparkRotationMode": "AUTO",
     "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-    "sparkWidth": 8,
+    "sparkWidth": 12,
     "stickyDuration": false,
     "subRegions": [
       {
@@ -229,9 +229,9 @@
     "useAdjustededMin": false,
     "version": 42,
     "wagoID": "B2G4lZKVE",
-    "width": 260,
-    "xOffset": 0.0001220703125,
-    "yOffset": -6.103515625e-05,
+    "width": 390,
+    "xOffset": 0,
+    "yOffset": 0,
     "zoom": 0
   },
   "row": "loose"

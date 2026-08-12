@@ -178,7 +178,7 @@
     "fontFlags": "OUTLINE",
     "frameStrata": 3,
     "gradientOrientation": "HORIZONTAL",
-    "height": 7,
+    "height": 10,
     "icon": false,
     "iconSource": -1,
     "icon_color": [
@@ -254,14 +254,14 @@
       1
     ],
     "sparkDesature": false,
-    "sparkHeight": 15,
+    "sparkHeight": 22,
     "sparkHidden": "NEVER",
     "sparkOffsetX": 0,
     "sparkOffsetY": 0,
     "sparkRotation": 0,
     "sparkRotationMode": "AUTO",
     "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-    "sparkWidth": 10,
+    "sparkWidth": 16,
     "stickyDuration": false,
     "subRegions": [
       {
@@ -283,9 +283,9 @@
           1,
           1
         ],
-        "text_fixedWidth": 64,
+        "text_fixedWidth": 96,
         "text_font": "PEPSI",
-        "text_fontSize": 14,
+        "text_fontSize": 22,
         "text_fontType": "None",
         "text_justify": "CENTER",
         "text_selfPoint": "CENTER",
@@ -295,8 +295,8 @@
           0,
           1
         ],
-        "text_shadowXOffset": 1,
-        "text_shadowYOffset": -1,
+        "text_shadowXOffset": 2,
+        "text_shadowYOffset": -2,
         "text_text": "%p",
         "text_text_format_p_format": "timed",
         "text_text_format_p_time_dynamic_threshold": 60,
@@ -314,7 +314,7 @@
         "anchor_point": "INNER_CENTER",
         "rotateText": "NONE",
         "text_anchorXOffset": 0,
-        "text_anchorYOffset": 60,
+        "text_anchorYOffset": 90,
         "text_automaticWidth": "Auto",
         "text_color": [
           1,
@@ -322,9 +322,9 @@
           1,
           1
         ],
-        "text_fixedWidth": 64,
+        "text_fixedWidth": 96,
         "text_font": "PEPSI",
-        "text_fontSize": 14,
+        "text_fontSize": 22,
         "text_fontType": "None",
         "text_justify": "CENTER",
         "text_selfPoint": "AUTO",
@@ -334,8 +334,8 @@
           0,
           1
         ],
-        "text_shadowXOffset": 1,
-        "text_shadowYOffset": -1,
+        "text_shadowXOffset": 2,
+        "text_shadowYOffset": -2,
         "text_text": "%p",
         "text_text_format_p_format": "timed",
         "text_text_format_p_time_dynamic_threshold": 60,
@@ -378,7 +378,7 @@
           1
         ],
         "tick_desaturate": false,
-        "tick_length": 7,
+        "tick_length": 10,
         "tick_mirror": false,
         "tick_placement_mode": "AtPercent",
         "tick_placements": [
@@ -386,7 +386,7 @@
         ],
         "tick_rotation": 0,
         "tick_texture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-        "tick_thickness": 1,
+        "tick_thickness": 2,
         "tick_visible": false,
         "tick_xOffset": 0,
         "tick_yOffset": 0,
@@ -409,7 +409,7 @@
           1
         ],
         "tick_desaturate": false,
-        "tick_length": 7,
+        "tick_length": 10,
         "tick_mirror": false,
         "tick_placement_mode": "AtPercent",
         "tick_placements": [
@@ -417,7 +417,7 @@
         ],
         "tick_rotation": 0,
         "tick_texture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-        "tick_thickness": 1,
+        "tick_thickness": 2,
         "tick_visible": false,
         "tick_xOffset": 0,
         "tick_yOffset": 0,
@@ -578,7 +578,7 @@
     "useAdjustededMax": false,
     "useAdjustededMin": false,
     "version": 15,
-    "width": 266,
+    "width": 400,
     "xOffset": 0,
     "yOffset": 0,
     "zoom": 0

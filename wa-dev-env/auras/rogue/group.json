@@ -104,7 +104,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -148,10 +148,10 @@
       },
       "parent": "Xyrec - Rogue",
       "preferToUpdate": false,
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.4.3",
@@ -197,7 +197,7 @@
       "version": 30,
       "wagoID": "YWmuM5cC9",
       "xOffset": 0,
-      "yOffset": 46
+      "yOffset": 70
     },
     {
       "actions": {
@@ -411,7 +411,7 @@
       "version": 30,
       "wagoID": "YWmuM5cC9",
       "xOffset": 0,
-      "yOffset": 23.5
+      "yOffset": 36
     },
     {
       "actions": {
@@ -465,7 +465,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -521,10 +521,10 @@
       },
       "parent": "Xyrec - Rogue",
       "preferToUpdate": false,
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.4.3",
@@ -582,7 +582,7 @@
       "version": 30,
       "wagoID": "YWmuM5cC9",
       "xOffset": 0,
-      "yOffset": -26
+      "yOffset": -40
     },
     {
       "actions": {
@@ -636,7 +636,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -672,10 +672,10 @@
       },
       "parent": "Xyrec - Rogue",
       "preferToUpdate": false,
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.4.3",
@@ -709,7 +709,7 @@
       "version": 30,
       "wagoID": "YWmuM5cC9",
       "xOffset": 0,
-      "yOffset": -475
+      "yOffset": -712
     }
   ],
   "root": {
@@ -793,7 +793,7 @@
     },
     "preferToUpdate": false,
     "regionType": "group",
-    "scale": 1.5,
+    "scale": 1,
     "selfPoint": "CENTER",
     "semver": "1.4.3",
     "subRegions": [],
@@ -817,7 +817,7 @@
     "version": 30,
     "wagoID": "YWmuM5cC9",
     "xOffset": 0,
-    "yOffset": -242
+    "yOffset": -364
   },
   "wa_version": "5.21.8"
 }

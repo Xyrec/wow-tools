@@ -116,7 +116,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -157,10 +157,10 @@
       },
       "parent": "Xyrec - Druid",
       "preferToUpdate": false,
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.5.8",
@@ -204,7 +204,7 @@
       "version": 45,
       "wagoID": "bQynAWaKe",
       "xOffset": 0,
-      "yOffset": 35
+      "yOffset": 52
     },
     {
       "actions": {
@@ -258,7 +258,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -301,10 +301,10 @@
       },
       "parent": "Xyrec - Druid",
       "preferToUpdate": false,
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.5.8",
@@ -349,7 +349,7 @@
       "version": 45,
       "wagoID": "bQynAWaKe",
       "xOffset": 0,
-      "yOffset": 46
+      "yOffset": 70
     },
     {
       "actions": {
@@ -567,7 +567,7 @@
       "version": 45,
       "wagoID": "bQynAWaKe",
       "xOffset": 0,
-      "yOffset": 24
+      "yOffset": 36
     },
     {
       "actions": {
@@ -621,7 +621,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -675,10 +675,10 @@
       },
       "parent": "Xyrec - Druid",
       "preferToUpdate": false,
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.5.8",
@@ -732,7 +732,7 @@
       "version": 45,
       "wagoID": "bQynAWaKe",
       "xOffset": 0,
-      "yOffset": -26
+      "yOffset": -40
     },
     {
       "actions": {
@@ -786,7 +786,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -825,10 +825,10 @@
       },
       "parent": "Xyrec - Druid",
       "preferToUpdate": false,
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.5.8",
@@ -866,7 +866,7 @@
       "version": 45,
       "wagoID": "bQynAWaKe",
       "xOffset": 0,
-      "yOffset": -475
+      "yOffset": -712
     },
     {
       "actions": {
@@ -920,7 +920,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -956,10 +956,10 @@
       },
       "parent": "Xyrec - Druid",
       "preferToUpdate": false,
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.5.8",
@@ -969,7 +969,7 @@
         "Druid - Thorns [Tank]": false
       },
       "source": "import",
-      "space": 1,
+      "space": 2,
       "stagger": 0,
       "stepAngle": 15,
       "subRegions": [],
@@ -994,7 +994,7 @@
       "version": 45,
       "wagoID": "bQynAWaKe",
       "xOffset": 0,
-      "yOffset": -540
+      "yOffset": -810
     }
   ],
   "root": {
@@ -1078,7 +1078,7 @@
     },
     "preferToUpdate": false,
     "regionType": "group",
-    "scale": 1.5,
+    "scale": 1,
     "selfPoint": "CENTER",
     "semver": "1.5.8",
     "source": "import",
@@ -1103,7 +1103,7 @@
     "version": 45,
     "wagoID": "bQynAWaKe",
     "xOffset": 0,
-    "yOffset": -242
+    "yOffset": -364
   },
   "wa_version": "5.21.8"
 }

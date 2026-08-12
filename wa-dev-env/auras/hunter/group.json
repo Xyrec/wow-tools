@@ -109,7 +109,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -144,10 +144,10 @@
       },
       "parent": "Xyrec - Hunter",
       "preferToUpdate": false,
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.5.8",
@@ -159,7 +159,7 @@
         "Hunter - Raptor's Fury": false,
         "Hunter - Sniper Training": false
       },
-      "space": 2,
+      "space": 4,
       "stagger": 0,
       "stepAngle": 15,
       "subRegions": [],
@@ -184,7 +184,7 @@
       "version": 42,
       "wagoID": "B2G4lZKVE",
       "xOffset": 0,
-      "yOffset": 79
+      "yOffset": 118
     },
     {
       "actions": {
@@ -238,7 +238,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -277,10 +277,10 @@
       },
       "parent": "Xyrec - Hunter",
       "preferToUpdate": false,
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.5.8",
@@ -322,7 +322,7 @@
       "version": 42,
       "wagoID": "B2G4lZKVE",
       "xOffset": 0,
-      "yOffset": 46
+      "yOffset": 70
     },
     {
       "actions": {
@@ -591,7 +591,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -649,10 +649,10 @@
       },
       "parent": "Xyrec - Hunter",
       "preferToUpdate": false,
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.5.8",
@@ -711,7 +711,7 @@
       "version": 42,
       "wagoID": "B2G4lZKVE",
       "xOffset": 0,
-      "yOffset": -26
+      "yOffset": -40
     },
     {
       "actions": {
@@ -765,7 +765,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -808,10 +808,10 @@
       },
       "parent": "Xyrec - Hunter",
       "preferToUpdate": false,
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.5.8",
@@ -853,7 +853,7 @@
       "version": 42,
       "wagoID": "B2G4lZKVE",
       "xOffset": 0,
-      "yOffset": -475
+      "yOffset": -712
     }
   ],
   "root": {
@@ -937,7 +937,7 @@
     },
     "preferToUpdate": false,
     "regionType": "group",
-    "scale": 1.5,
+    "scale": 1,
     "selfPoint": "CENTER",
     "semver": "1.5.8",
     "subRegions": [],
@@ -961,7 +961,7 @@
     "version": 42,
     "wagoID": "B2G4lZKVE",
     "xOffset": 0,
-    "yOffset": -242
+    "yOffset": -364
   },
   "wa_version": "5.21.8"
 }

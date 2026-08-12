@@ -63,9 +63,9 @@
           1,
           1
         ],
-        "text_fixedWidth": 64,
+        "text_fixedWidth": 96,
         "text_font": "PT Sans Narrow",
-        "text_fontSize": 20,
+        "text_fontSize": 30,
         "text_fontType": "OUTLINE",
         "text_justify": "CENTER",
         "text_selfPoint": "CENTER",
@@ -104,7 +104,7 @@
         "anchorYOffset": 0,
         "anchor_point": "OUTER_BOTTOM",
         "rotateText": "NONE",
-        "text_anchorYOffset": -12,
+        "text_anchorYOffset": -18,
         "text_automaticWidth": "Auto",
         "text_color": [
           1,
@@ -112,9 +112,9 @@
           1,
           1
         ],
-        "text_fixedWidth": 64,
+        "text_fixedWidth": 96,
         "text_font": "PT Sans Narrow",
-        "text_fontSize": 14,
+        "text_fontSize": 22,
         "text_fontType": "OUTLINE",
         "text_justify": "CENTER",
         "text_selfPoint": "BOTTOM",

@@ -72,15 +72,15 @@
         "changes": [
           {
             "property": "height",
-            "value": 10
+            "value": 16
           },
           {
             "property": "yOffsetRelative",
-            "value": -5
+            "value": -8
           },
           {
             "property": "sub.4.text_fontSize",
-            "value": 12
+            "value": 18
           }
         ],
         "check": {
@@ -190,7 +190,7 @@
     "fontFlags": "OUTLINE",
     "frameStrata": 3,
     "gradientOrientation": "HORIZONTAL",
-    "height": 20,
+    "height": 30,
     "icon": false,
     "iconSource": -1,
     "icon_color": [
@@ -278,14 +278,14 @@
       1
     ],
     "sparkDesature": false,
-    "sparkHeight": 30,
+    "sparkHeight": 46,
     "sparkHidden": "NEVER",
     "sparkOffsetX": 0,
     "sparkOffsetY": 0,
     "sparkRotation": 0,
     "sparkRotationMode": "AUTO",
     "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-    "sparkWidth": 10,
+    "sparkWidth": 16,
     "stickyDuration": false,
     "subRegions": [
       {
@@ -321,9 +321,9 @@
           1,
           1
         ],
-        "text_fixedWidth": 64,
+        "text_fixedWidth": 96,
         "text_font": "PT Sans Narrow",
-        "text_fontSize": 14,
+        "text_fontSize": 22,
         "text_fontType": "OUTLINE",
         "text_justify": "CENTER",
         "text_selfPoint": "CENTER",
@@ -333,8 +333,8 @@
           0,
           0.49999988079071
         ],
-        "text_shadowXOffset": 1,
-        "text_shadowYOffset": -1,
+        "text_shadowXOffset": 2,
+        "text_shadowYOffset": -2,
         "text_text": "%1.power",
         "text_text_format_1.power_big_number_format": "AbbreviateNumbers",
         "text_text_format_1.power_decimal_precision": 1,
@@ -417,7 +417,7 @@
     "useAdjustededMin": false,
     "version": 45,
     "wagoID": "bQynAWaKe",
-    "width": 266,
+    "width": 400,
     "xOffset": 0,
     "yOffset": 0,
     "zoom": 0

@@ -104,9 +104,9 @@
           1,
           1
         ],
-        "text_fixedWidth": 64,
+        "text_fixedWidth": 96,
         "text_font": "PT Sans Narrow",
-        "text_fontSize": 18,
+        "text_fontSize": 28,
         "text_fontType": "OUTLINE",
         "text_justify": "CENTER",
         "text_selfPoint": "AUTO",
@@ -147,9 +147,9 @@
           1,
           1
         ],
-        "text_fixedWidth": 64,
+        "text_fixedWidth": 96,
         "text_font": "PT Sans Narrow",
-        "text_fontSize": 18,
+        "text_fontSize": 28,
         "text_fontType": "OUTLINE",
         "text_justify": "CENTER",
         "text_selfPoint": "AUTO",

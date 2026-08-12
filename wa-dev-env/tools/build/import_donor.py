@@ -27,6 +27,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import archetypes  # noqa: E402
 import decompile  # noqa: E402
+import scale as scale_mod  # noqa: E402
 import scrub  # noqa: E402
 import style as style_mod  # noqa: E402
 
@@ -256,10 +257,15 @@ def apply(donor, class_name):
 
     stats = {"defs": 0, "bespoke": 0, "dropped": len(drop)}
     new_prefix = f"{cap} - "
+    # Xyrec groups run at scale 1; donors are authored at root scale 1.5 —
+    # bake the factor into pixel values so imported auras keep their size
+    donor_scale = donor["d"].get("scale") or 1
     for aura in donor["c"]:
         if aura["id"] in drop:
             continue
         aura = copy.deepcopy(aura)
+        if donor_scale != 1:
+            scale_mod.transform(aura, donor_scale)
         scrub.repoint_ids(aura, spellmap)
         aura, _ = scrub.apply_scrub(aura)
         old_id = aura["id"]
@@ -304,6 +310,8 @@ def apply(donor, class_name):
 
     # root + group.json: our root shape, donor membership
     root = copy.deepcopy(donor["d"])
+    if donor_scale != 1:
+        scale_mod.transform(root, donor_scale)
     root.pop("uid", None)
     root["id"] = rename(donor["d"]["id"])
     root["controlledChildren"] = [rename(c) for c in root.get("controlledChildren", [])

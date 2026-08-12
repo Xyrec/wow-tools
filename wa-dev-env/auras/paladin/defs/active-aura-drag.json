@@ -73,7 +73,7 @@
     "desaturate": false,
     "displayIcon": 135893,
     "frameStrata": 1,
-    "height": 30,
+    "height": 46,
     "icon": true,
     "iconSource": -1,
     "id": "Paladin - Active Aura [Drag]",
@@ -163,9 +163,9 @@
     "useCooldownModRate": true,
     "version": 32,
     "wagoID": "zLJ2R3Oua",
-    "width": 30,
-    "xOffset": -393,
-    "yOffset": -207,
+    "width": 46,
+    "xOffset": -590,
+    "yOffset": -310,
     "zoom": 0.3
   },
   "row": "loose"

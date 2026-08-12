@@ -127,7 +127,7 @@
           },
           {
             "property": "sparkWidth",
-            "value": 2
+            "value": 4
           }
         ],
         "check": {
@@ -149,7 +149,7 @@
           },
           {
             "property": "sparkWidth",
-            "value": 2
+            "value": 4
           }
         ],
         "check": {
@@ -171,7 +171,7 @@
           },
           {
             "property": "sparkWidth",
-            "value": 2
+            "value": 4
           }
         ],
         "check": {
@@ -213,7 +213,7 @@
     "enableGradient": false,
     "frameStrata": 3,
     "gradientOrientation": "HORIZONTAL",
-    "height": 7,
+    "height": 10,
     "icon": false,
     "iconSource": -1,
     "icon_color": [
@@ -286,14 +286,14 @@
       0.039215686,
       1
     ],
-    "sparkHeight": 7,
+    "sparkHeight": 10,
     "sparkHidden": "FULL",
     "sparkOffsetX": 0,
     "sparkOffsetY": 0,
     "sparkRotation": 0,
     "sparkRotationMode": "AUTO",
     "sparkTexture": "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
-    "sparkWidth": 2,
+    "sparkWidth": 4,
     "subRegions": [
       {
         "type": "subbackground"
@@ -346,7 +346,7 @@
     "useAdjustededMax": false,
     "useAdjustededMin": false,
     "version": 15,
-    "width": 266,
+    "width": 400,
     "xOffset": 0,
     "yOffset": 0,
     "zoom": 0

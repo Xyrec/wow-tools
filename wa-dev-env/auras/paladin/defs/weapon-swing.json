@@ -245,7 +245,7 @@
     "fontFlags": "OUTLINE",
     "frameStrata": 3,
     "gradientOrientation": "HORIZONTAL",
-    "height": 7,
+    "height": 10,
     "icon": false,
     "iconSource": -1,
     "icon_color": [
@@ -332,7 +332,7 @@
       1
     ],
     "sparkDesature": false,
-    "sparkHeight": 15,
+    "sparkHeight": 22,
     "sparkHidden": "NEVER",
     "sparkMirror": false,
     "sparkOffsetX": 0,
@@ -340,7 +340,7 @@
     "sparkRotation": 0,
     "sparkRotationMode": "AUTO",
     "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-    "sparkWidth": 10,
+    "sparkWidth": 16,
     "stickyDuration": false,
     "subRegions": [
       {
@@ -379,7 +379,7 @@
           1
         ],
         "tick_desaturate": false,
-        "tick_length": 30,
+        "tick_length": 46,
         "tick_mirror": false,
         "tick_placement_mode": "AtValue",
         "tick_placements": [
@@ -387,7 +387,7 @@
         ],
         "tick_rotation": 0,
         "tick_texture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-        "tick_thickness": 2,
+        "tick_thickness": 4,
         "tick_visible": true,
         "tick_xOffset": 0,
         "tick_yOffset": 0,
@@ -410,7 +410,7 @@
           1
         ],
         "tick_desaturate": false,
-        "tick_length": 30,
+        "tick_length": 46,
         "tick_mirror": false,
         "tick_placement_mode": "AtValue",
         "tick_placements": [
@@ -418,7 +418,7 @@
         ],
         "tick_rotation": 0,
         "tick_texture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-        "tick_thickness": 2,
+        "tick_thickness": 4,
         "tick_visible": true,
         "tick_xOffset": 0,
         "tick_yOffset": 0,
@@ -441,7 +441,7 @@
           1
         ],
         "tick_desaturate": false,
-        "tick_length": 30,
+        "tick_length": 46,
         "tick_mirror": false,
         "tick_placement_mode": "AtValue",
         "tick_placements": [
@@ -449,7 +449,7 @@
         ],
         "tick_rotation": 0,
         "tick_texture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-        "tick_thickness": 2,
+        "tick_thickness": 4,
         "tick_visible": true,
         "tick_xOffset": 0,
         "tick_yOffset": 0,
@@ -596,9 +596,9 @@
     "useAdjustededMin": false,
     "version": 32,
     "wagoID": "zLJ2R3Oua",
-    "width": 266,
+    "width": 400,
     "xOffset": 0,
-    "yOffset": 14,
+    "yOffset": 22,
     "zoom": 0
   },
   "row": "loose"

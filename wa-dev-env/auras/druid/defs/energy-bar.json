@@ -152,7 +152,7 @@
     "fontFlags": "OUTLINE",
     "frameStrata": 1,
     "gradientOrientation": "HORIZONTAL",
-    "height": 17,
+    "height": 26,
     "icon": false,
     "iconSource": -1,
     "icon_color": [
@@ -237,14 +237,14 @@
       1
     ],
     "sparkDesature": false,
-    "sparkHeight": 35,
+    "sparkHeight": 52,
     "sparkHidden": "NEVER",
     "sparkOffsetX": 0,
     "sparkOffsetY": 0,
     "sparkRotation": 0,
     "sparkRotationMode": "AUTO",
     "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-    "sparkWidth": 20,
+    "sparkWidth": 30,
     "stickyDuration": false,
     "subRegions": [
       {
@@ -280,9 +280,9 @@
           1,
           1
         ],
-        "text_fixedWidth": 64,
+        "text_fixedWidth": 96,
         "text_font": "PT Sans Narrow",
-        "text_fontSize": 14,
+        "text_fontSize": 22,
         "text_fontType": "OUTLINE",
         "text_justify": "CENTER",
         "text_selfPoint": "AUTO",
@@ -292,8 +292,8 @@
           0,
           1
         ],
-        "text_shadowXOffset": 1,
-        "text_shadowYOffset": -1,
+        "text_shadowXOffset": 2,
+        "text_shadowYOffset": -2,
         "text_text": "%1.power",
         "text_text_format_1.power_format": "none",
         "text_text_format_n_format": "none",
@@ -377,9 +377,9 @@
     "useAdjustededMin": false,
     "version": 45,
     "wagoID": "bQynAWaKe",
-    "width": 266,
+    "width": 400,
     "xOffset": 0,
-    "yOffset": 1,
+    "yOffset": 2,
     "zoom": 0
   },
   "row": "loose"

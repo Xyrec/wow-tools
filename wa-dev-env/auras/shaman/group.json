@@ -92,7 +92,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -132,10 +132,10 @@
         }
       },
       "parent": "Xyrec - Shaman",
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.4.4",
@@ -181,7 +181,7 @@
       "useLimit": true,
       "version": 15,
       "xOffset": 0,
-      "yOffset": 35
+      "yOffset": 52
     },
     {
       "actions": {
@@ -413,7 +413,7 @@
       "url": "",
       "version": 15,
       "xOffset": 0,
-      "yOffset": 14
+      "yOffset": 22
     },
     {
       "actions": {
@@ -467,7 +467,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -515,10 +515,10 @@
         }
       },
       "parent": "Xyrec - Shaman",
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.4.4",
@@ -565,7 +565,7 @@
       "useLimit": true,
       "version": 15,
       "xOffset": 0,
-      "yOffset": -26
+      "yOffset": -40
     },
     {
       "actions": {
@@ -619,7 +619,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 1,
+      "columnSpace": 2,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -657,10 +657,10 @@
         }
       },
       "parent": "Xyrec - Shaman",
-      "radius": 200,
+      "radius": 300,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 1,
+      "rowSpace": 2,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.4.4",
@@ -696,7 +696,7 @@
       "useLimit": false,
       "version": 15,
       "xOffset": 0,
-      "yOffset": -475
+      "yOffset": -712
     }
   ],
   "root": {
@@ -777,7 +777,7 @@
       }
     },
     "regionType": "group",
-    "scale": 1.5,
+    "scale": 1,
     "selfPoint": "CENTER",
     "semver": "1.4.4",
     "subRegions": [],
@@ -800,7 +800,7 @@
     "url": "",
     "version": 15,
     "xOffset": 0,
-    "yOffset": -242
+    "yOffset": -364
   },
   "wa_version": "5.21.8"
 }

@@ -122,7 +122,7 @@
     "enableGradient": false,
     "frameStrata": 4,
     "gradientOrientation": "HORIZONTAL",
-    "height": 20,
+    "height": 30,
     "icon": false,
     "iconSource": -1,
     "icon_color": [
@@ -175,14 +175,14 @@
       1,
       1
     ],
-    "sparkHeight": 30,
+    "sparkHeight": 46,
     "sparkHidden": "NEVER",
     "sparkOffsetX": 0,
     "sparkOffsetY": 0,
     "sparkRotation": 0,
     "sparkRotationMode": "AUTO",
     "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-    "sparkWidth": 20,
+    "sparkWidth": 30,
     "stickyDuration": false,
     "subRegions": [
       {
@@ -196,8 +196,8 @@
         "anchorYOffset": 0,
         "anchor_point": "SPARK",
         "rotateText": "NONE",
-        "text_anchorXOffset": 15,
-        "text_anchorYOffset": -10,
+        "text_anchorXOffset": 22,
+        "text_anchorYOffset": -16,
         "text_automaticWidth": "Auto",
         "text_color": [
           1,
@@ -205,9 +205,9 @@
           1,
           1
         ],
-        "text_fixedWidth": 64,
+        "text_fixedWidth": 96,
         "text_font": "PT Sans Narrow",
-        "text_fontSize": 20,
+        "text_fontSize": 30,
         "text_fontType": "None",
         "text_justify": "CENTER",
         "text_selfPoint": "AUTO",
@@ -217,8 +217,8 @@
           0,
           1
         ],
-        "text_shadowXOffset": 1,
-        "text_shadowYOffset": -1,
+        "text_shadowXOffset": 2,
+        "text_shadowYOffset": -2,
         "text_text": "%p",
         "text_text_format_p_format": "timed",
         "text_text_format_p_time_dynamic_threshold": 60,
@@ -265,7 +265,7 @@
     "useAdjustededMax": false,
     "useAdjustededMin": false,
     "version": 15,
-    "width": 260,
+    "width": 390,
     "xOffset": 0,
     "yOffset": 0,
     "zoom": 0
