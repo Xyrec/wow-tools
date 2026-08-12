@@ -96,75 +96,6 @@
       {
         "changes": [
           {
-            "property": "barColor",
-            "value": [
-              0.75294125080109,
-              0.50196081399918,
-              1,
-              1
-            ]
-          }
-        ],
-        "check": {
-          "checks": [
-            {
-              "trigger": 1,
-              "value": 1,
-              "variable": "show"
-            },
-            {
-              "op": "==",
-              "trigger": 1,
-              "value": "Multi-Shot",
-              "variable": "name"
-            }
-          ],
-          "trigger": -2,
-          "variable": "AND"
-        }
-      },
-      {
-        "changes": [
-          {
-            "property": "barColor",
-            "value": [
-              0.67058825492859,
-              0.83137261867523,
-              0.45098042488098,
-              1
-            ]
-          },
-          {
-            "property": "sub.3.text_visible"
-          }
-        ],
-        "check": {
-          "checks": [
-            {
-              "trigger": 1,
-              "value": 0,
-              "variable": "show"
-            }
-          ],
-          "trigger": -2,
-          "variable": "AND"
-        }
-      },
-      {
-        "changes": [
-          {
-            "property": "inverse"
-          }
-        ],
-        "check": {
-          "trigger": 1,
-          "value": 0,
-          "variable": "show"
-        }
-      },
-      {
-        "changes": [
-          {
             "property": "alpha",
             "value": 1
           }
@@ -284,39 +215,6 @@
       },
       {
         "type": "subforeground"
-      },
-      {
-        "anchorXOffset": 0,
-        "anchorYOffset": 0,
-        "anchor_point": "INNER_LEFT",
-        "rotateText": "NONE",
-        "text_anchorXOffset": 2,
-        "text_automaticWidth": "Auto",
-        "text_color": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "text_fixedWidth": 64,
-        "text_font": "PT Sans Narrow",
-        "text_fontSize": 12,
-        "text_fontType": "OUTLINE",
-        "text_justify": "CENTER",
-        "text_selfPoint": "AUTO",
-        "text_shadowColor": [
-          0,
-          0,
-          0,
-          1
-        ],
-        "text_shadowXOffset": 1,
-        "text_shadowYOffset": -1,
-        "text_text": "%n",
-        "text_text_format_n_format": "none",
-        "text_visible": true,
-        "text_wordWrap": "WordWrap",
-        "type": "subtext"
       },
       {
         "anchorXOffset": 0,
