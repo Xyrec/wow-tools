@@ -90,6 +90,10 @@ in-game audits.
   and `grep -q` it: `./tools/wa land X > tmp/land.log 2>&1; grep -q "^landed:" tmp/land.log || ...`
 - **Shutdown lag:** the client keeps running ~5–20s after the user exits;
   the guard rightly blocks. Retry pattern: loop 2–3 times with `sleep 6`.
+- **Don't blame WeakAuras updates for breakage.** Addon updates very rarely
+  break auras — only Blizzard API changes tend to, and those are rare too.
+  When something regresses, suspect our own data/pipeline first, then donor
+  logic, and only then the environment.
 - **The user is often in-game while reporting.** Prepare everything, attempt
   the land; if the guard blocks, say "exit and say go" and wait. NEVER work
   around the guard — an in-game session clobbers landed changes on logout.
