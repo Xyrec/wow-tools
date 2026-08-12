@@ -319,9 +319,15 @@ def apply(donor, class_name):
             old_id = next(k for k in info["containers"] if rename(k) == aura["id"])
             row = rows.get(old_id) or info["row_guess"].get(old_id)
             if row and row in style["row_geometry"]:
+                # row_geometry contributes STYLE (grow/space/align/...); row
+                # POSITION is per-class semantics — the donor tunes offsets to
+                # the class's resource-stack height (hunter core sits 11px
+                # higher than shaman's), so donor position fields survive
                 for key, value in style["row_geometry"][row].items():
-                    if key != "regionType":
-                        aura[key] = copy.deepcopy(value)
+                    if key in ("regionType", "xOffset", "yOffset", "anchorPoint",
+                               "selfPoint", "anchorFrameType", "anchorFrameFrame"):
+                        continue
+                    aura[key] = copy.deepcopy(value)
             containers_out.append(aura)
 
     group = {"class": class_name, "wa_version": donor.get("s", "5.21.8"),
