@@ -80,7 +80,7 @@
         "border_color": [],
         "rotateText": "NONE",
         "text_anchorXOffset": 0,
-        "text_anchorYOffset": -8,
+        "text_anchorYOffset": -5,
         "text_automaticWidth": "Auto",
         "text_color": [
           1,
@@ -88,9 +88,9 @@
           1,
           1
         ],
-        "text_fixedWidth": 96,
+        "text_fixedWidth": 64,
         "text_font": "PT Sans Narrow",
-        "text_fontSize": 22,
+        "text_fontSize": 14,
         "text_fontType": "OUTLINE",
         "text_justify": "CENTER",
         "text_selfPoint": "CENTER",
@@ -129,7 +129,7 @@
         "border_color": [],
         "rotateText": "NONE",
         "text_anchorXOffset": 0,
-        "text_anchorYOffset": -8,
+        "text_anchorYOffset": -5,
         "text_automaticWidth": "Auto",
         "text_color": [
           1,
@@ -137,9 +137,9 @@
           1,
           1
         ],
-        "text_fixedWidth": 96,
+        "text_fixedWidth": 64,
         "text_font": "PT Sans Narrow",
-        "text_fontSize": 22,
+        "text_fontSize": 14,
         "text_fontType": "OUTLINE",
         "text_justify": "CENTER",
         "text_selfPoint": "CENTER",
@@ -188,9 +188,9 @@
           1,
           1
         ],
-        "text_fixedWidth": 96,
+        "text_fixedWidth": 64,
         "text_font": "PT Sans Narrow",
-        "text_fontSize": 22,
+        "text_fontSize": 14,
         "text_fontType": "OUTLINE",
         "text_justify": "CENTER",
         "text_selfPoint": "AUTO",

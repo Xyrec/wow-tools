@@ -138,7 +138,7 @@
           "untrigger": []
         }
       ],
-      "uid": "CHo3aaKaKB0",
+      "uid": "RPiRrb66cFP",
       "url": "",
       "useLimit": true,
       "version": 15,
@@ -409,7 +409,7 @@
         "customTriggerLogic": "function(t)\n    return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "26VdJN6NAIq",
+      "uid": "AMNLNhkBecS",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -694,7 +694,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "tLyNC8jCcH1",
+      "uid": "WENdGQNSte2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1003,7 +1003,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "C07jTNcoFKJ",
+      "uid": "xDTgVUz11O8",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1396,7 +1396,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "ReuqYF3hzdz",
+      "uid": "Fh87R21uAwg",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1682,7 +1682,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "any"
       },
-      "uid": "Tp4zsQiU5px",
+      "uid": "iOOuygUCOEw",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1967,7 +1967,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "bXRv0kIvFsk",
+      "uid": "OYkPGExeNW0",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2380,7 +2380,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "cJzfHuHSWVh",
+      "uid": "M2JUYQThIth",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2490,7 +2490,7 @@
           "untrigger": []
         }
       ],
-      "uid": "ZcHmhNPRghS",
+      "uid": "yBmCHhkL5X8",
       "url": "",
       "version": 15,
       "xOffset": 0,
@@ -2826,7 +2826,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "CvjjW5zjyo2",
+      "uid": "y680uvEFaTM",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3094,7 +3094,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "D90KBj7WU8I",
+      "uid": "zvtl0PLlDNm",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3228,7 +3228,7 @@
           "untrigger": []
         }
       ],
-      "uid": "eeaBMVaPEaO",
+      "uid": "VWMNsDtR6Uq",
       "url": "",
       "version": 15,
       "xOffset": 0,
@@ -3803,7 +3803,7 @@
         "customTriggerLogic": "function(t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "j3Xipzuecvw",
+      "uid": "ZpXcUnFAxdY",
       "url": "",
       "useAdjustedMax": false,
       "useAdjustedMin": false,
@@ -4157,7 +4157,7 @@
         "customTriggerLogic": "function(trigger)\n    return trigger[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "NMCTgUCbhSe",
+      "uid": "TiPhhL51vPo",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4313,7 +4313,7 @@
           "untrigger": []
         }
       ],
-      "uid": "Hr8uTQeZcdb",
+      "uid": "ptRFNrNdl02",
       "url": "",
       "useLimit": true,
       "version": 15,
@@ -4540,7 +4540,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "U6JNVIzQmBd",
+      "uid": "tBggQwmWmmL",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4812,7 +4812,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "fICxj33uZ9p",
+      "uid": "N8eQcsyxRLR",
       "url": "https://wago.io/8MyJNekEa/15",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5084,7 +5084,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "VIp218iORFo",
+      "uid": "OXxxcVW1jDT",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5356,7 +5356,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "wiWwmGlqnEB",
+      "uid": "5hmdGXvvbLj",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5632,7 +5632,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "QiN0VK47EZL",
+      "uid": "LgRQCOOdFne",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5908,7 +5908,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ecN45j7OdFh",
+      "uid": "DB08zoqHeQ2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6150,7 +6150,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "vVXf2GoP0l2",
+      "uid": "0F9vWczZxuw",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6388,7 +6388,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "LvGDbuUIH6V",
+      "uid": "lv4wfs7P1W6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6626,7 +6626,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "u3endElOKO0",
+      "uid": "QfjVfgar3Bz",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6864,7 +6864,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "qihhqY0fNNU",
+      "uid": "pPW0r9eOGJB",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7102,7 +7102,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "19cF5jI9N2O",
+      "uid": "v5hHd3Gkb4Z",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7340,7 +7340,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "cYbGpY9ye3B",
+      "uid": "9nBjmMuP1j6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7578,7 +7578,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "CxJq8SeTIdw",
+      "uid": "NHZtTqITeDz",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7816,7 +7816,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "RKCtKxAcEYq",
+      "uid": "GxV5hTvtkv5",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8132,7 +8132,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "KseiH6TXm6O",
+      "uid": "O5L7sWlsAXT",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8152,8 +8152,8 @@
       },
       "align": "CENTER",
       "alpha": 1,
-      "anchorFrameType": "UIPARENT",
-      "anchorPoint": "TOP",
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
       "animate": false,
       "animation": {
         "finish": {
@@ -8196,7 +8196,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 2,
+      "columnSpace": 1,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -8234,10 +8234,10 @@
         }
       },
       "parent": "Xyrec - Shaman",
-      "radius": 300,
+      "radius": 200,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 2,
+      "rowSpace": 1,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.4.4",
@@ -8269,12 +8269,12 @@
           "untrigger": []
         }
       ],
-      "uid": "uxXyQCRQak5",
+      "uid": "T1FjrpH69Rv",
       "url": "",
       "useLimit": false,
       "version": 15,
       "xOffset": 0,
-      "yOffset": -712
+      "yOffset": 600
     },
     {
       "actions": {
@@ -8349,7 +8349,7 @@
       "desaturate": false,
       "displayIcon": 136200,
       "frameStrata": 1,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": -1,
       "id": "Shaman - Drink Expiring",
@@ -8425,9 +8425,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -8466,7 +8466,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -8474,9 +8474,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -8557,13 +8557,13 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "npr56Y2O9yF",
+      "uid": "F1rX3OBAUqJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -8659,7 +8659,7 @@
       "desc": "When entering a dungeon, reloading your UI, or logging in: you may need to equip and un-equip your weapon for the tracker to begin working again.",
       "displayIcon": 136086,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": 0,
       "id": "Shaman - Imbue [MH]",
@@ -8761,9 +8761,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -8793,8 +8793,8 @@
           "anchor_point": "BOTTOMRIGHT",
           "border_color": [],
           "rotateText": "NONE",
-          "text_anchorXOffset": -2,
-          "text_anchorYOffset": 2,
+          "text_anchorXOffset": -1,
+          "text_anchorYOffset": 1,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -8802,9 +8802,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOMRIGHT",
@@ -8835,7 +8835,7 @@
           "border_color": [],
           "rotateText": "NONE",
           "text_anchorXOffset": 0,
-          "text_anchorYOffset": -8,
+          "text_anchorYOffset": -5,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -8843,9 +8843,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -8963,13 +8963,13 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "wBHKKHmLnqv",
+      "uid": "2zfUC1ODMs0",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -9065,7 +9065,7 @@
       "desc": "When entering a dungeon, reloading your UI, or logging in: you may need to equip and un-equip your weapon for the tracker to begin working again.",
       "displayIcon": 135814,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": 0,
       "id": "Shaman - Imbue [OH]",
@@ -9169,9 +9169,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -9201,8 +9201,8 @@
           "anchor_point": "BOTTOMRIGHT",
           "border_color": [],
           "rotateText": "NONE",
-          "text_anchorXOffset": -2,
-          "text_anchorYOffset": 2,
+          "text_anchorXOffset": -1,
+          "text_anchorYOffset": 1,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -9210,9 +9210,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOMRIGHT",
@@ -9243,7 +9243,7 @@
           "border_color": [],
           "rotateText": "NONE",
           "text_anchorXOffset": 0,
-          "text_anchorYOffset": -8,
+          "text_anchorYOffset": -5,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -9251,9 +9251,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -9447,13 +9447,13 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3] and (t[4] or t[5] or t[6] or t[7])\nend",
         "disjunctive": "custom"
       },
-      "uid": "KAg42kxZrNV",
+      "uid": "fKDTXI8aKT2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -9531,7 +9531,7 @@
       "desaturate": false,
       "displayIcon": 135932,
       "frameStrata": 1,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": 1,
       "id": "Shaman - Lightning/Water Shield",
@@ -9610,9 +9610,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -9651,7 +9651,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -9659,9 +9659,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -9743,13 +9743,13 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "gRd57ECkzu2",
+      "uid": "NLNkeXxBHeJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -9845,7 +9845,7 @@
       "desc": "When entering a dungeon, reloading your UI, or logging in: you may need to equip and un-equip your weapon for the tracker to begin working again.",
       "displayIcon": 135825,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": 0,
       "id": "Shaman - Fire Totem Missing",
@@ -9947,9 +9947,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -9979,8 +9979,8 @@
           "anchor_point": "BOTTOMRIGHT",
           "border_color": [],
           "rotateText": "NONE",
-          "text_anchorXOffset": -2,
-          "text_anchorYOffset": 2,
+          "text_anchorXOffset": -1,
+          "text_anchorYOffset": 1,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -9988,9 +9988,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOMRIGHT",
@@ -10021,7 +10021,7 @@
           "border_color": [],
           "rotateText": "NONE",
           "text_anchorXOffset": 0,
-          "text_anchorYOffset": -8,
+          "text_anchorYOffset": -5,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -10029,9 +10029,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -10091,13 +10091,13 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "GTSx8eJxEth",
+      "uid": "03fu1CQr3fX",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -10201,7 +10201,7 @@
         "untrigger": []
       }
     ],
-    "uid": "NJcYidar4VU",
+    "uid": "ZDsAuxyga8R",
     "url": "",
     "version": 15,
     "xOffset": 0,

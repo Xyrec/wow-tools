@@ -135,7 +135,7 @@
           "untrigger": []
         }
       ],
-      "uid": "U1TikbYFMWe",
+      "uid": "28FTpX2Tick",
       "url": "",
       "useLimit": true,
       "version": 45,
@@ -457,7 +457,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "UVu86682l0s",
+      "uid": "P9lOHXKAOfv",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -794,7 +794,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "c0tiUXJlGtM",
+      "uid": "W9p6ZPCZ23l",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1087,7 +1087,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "r2acwGefwvx",
+      "uid": "Yh1UOBKQNIa",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1421,7 +1421,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "i980JAOUvDA",
+      "uid": "lHGirXDaxBV",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1714,7 +1714,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "YRdE6LkvB7j",
+      "uid": "Jksk8fO0Q9V",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2061,7 +2061,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "pOxVLtneEWZ",
+      "uid": "ilcqnnBKQUr",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2409,7 +2409,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "Nv8DEtBtbDU",
+      "uid": "bVKhLMYOEOO",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2559,7 +2559,7 @@
           "untrigger": []
         }
       ],
-      "uid": "bTSLFI70K7x",
+      "uid": "XLghlF4Lxhj",
       "url": "",
       "useLimit": true,
       "version": 45,
@@ -2857,7 +2857,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "mexdOh9NCqF",
+      "uid": "puzR8RjMRDJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3144,7 +3144,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "F6uASAqkxay",
+      "uid": "5ggTRZqy6bD",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3399,7 +3399,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "fFuhs4MeqjR",
+      "uid": "BMfs6MBK6Hk",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3654,7 +3654,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "hkdiA90zoNm",
+      "uid": "52O528ndaHl",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3946,7 +3946,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend\n    \n    ",
         "disjunctive": "all"
       },
-      "uid": "FxMKlEDBrx9",
+      "uid": "LFVZlGtmTXK",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4244,7 +4244,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "uKX01kzqzK5",
+      "uid": "3RAxa1Mhrdm",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4500,7 +4500,7 @@
         "activeTriggerMode": 1,
         "disjunctive": "all"
       },
-      "uid": "VO8IuL4lGFU",
+      "uid": "ZivOLvOvA3e",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4854,7 +4854,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "lseQOunSUxR",
+      "uid": "6nF6oFq3hZ1",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5132,7 +5132,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "EMkU9t48w0R",
+      "uid": "JUUdPzQ0L4z",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5249,7 +5249,7 @@
           "untrigger": []
         }
       ],
-      "uid": "pyCiReJ6MeI",
+      "uid": "vXDZXaQpGVM",
       "url": "",
       "version": 45,
       "wagoID": "bQynAWaKe",
@@ -5357,7 +5357,7 @@
           "untrigger": []
         }
       ],
-      "uid": "yJAfH3ipr82",
+      "uid": "xbFlSm5WSY8",
       "url": "",
       "version": 45,
       "wagoID": "bQynAWaKe",
@@ -5588,7 +5588,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "iuH0lOmKfzR",
+      "uid": "kqy3pmMEeb6",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -5820,7 +5820,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "M1Cetpx1du0",
+      "uid": "WwhoAcHKe6K",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -6052,7 +6052,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "wTEPr6KwKD7",
+      "uid": "KJrJi33MSZH",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -6285,7 +6285,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "XQ1hCk7BycR",
+      "uid": "pvqhMklkHjb",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -6517,7 +6517,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "vobR3t0JofB",
+      "uid": "YSOxu9msszV",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -6828,7 +6828,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "WlqwWvyueLf",
+      "uid": "t0x6m7UjzUt",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7135,7 +7135,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "ZiWGroUdjLZ",
+      "uid": "uqQ8peb4ABE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7526,7 +7526,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "TiDIdVu5IIH",
+      "uid": "N4Rbby1vOKi",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7906,7 +7906,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "11GaCQS9ufx",
+      "uid": "137ZIpDItTw",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8119,7 +8119,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and t[2]\nend",
         "disjunctive": "all"
       },
-      "uid": "uJMEfvmemGa",
+      "uid": "LrkBuYhrIVS",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8539,7 +8539,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "PvpjlA4vPli",
+      "uid": "jHktGrUYjGy",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8812,7 +8812,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "VbrZB5TxKOJ",
+      "uid": "nLVDLsRsM0H",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8981,7 +8981,7 @@
           "untrigger": []
         }
       ],
-      "uid": "bVqH0aVH53o",
+      "uid": "tkM1OSJABUh",
       "url": "",
       "useLimit": true,
       "version": 45,
@@ -9250,7 +9250,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "oqr61i9lhkD",
+      "uid": "hyXVY3tXTrP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9526,7 +9526,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "THK2TgfpHT7",
+      "uid": "BgkBBF0FqGt",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9768,7 +9768,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ZfItuTAU7B7",
+      "uid": "MLkr7CDXcmi",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10006,7 +10006,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Z68867lEW2R",
+      "uid": "zqfx4CJ2f0F",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10278,7 +10278,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "1h6RgptI7um",
+      "uid": "I5tnr5H8b1M",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10550,7 +10550,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "hSkDROojI8t",
+      "uid": "RxHMIpJK4Nc",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10822,7 +10822,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Z0JRHoOr0gu",
+      "uid": "nnMBWVwBxQL",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11063,7 +11063,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "LFDjGrniIrV",
+      "uid": "XLK9vo7QGv9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11304,7 +11304,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "f333KBJNoA9",
+      "uid": "lE3L7WLjOOO",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11542,7 +11542,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "My923f33SFO",
+      "uid": "uWFTe20ZVYL",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11780,7 +11780,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "jFQA62WMTFc",
+      "uid": "4OnFKNI25bi",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12018,7 +12018,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "dG11k0d4egO",
+      "uid": "CNEF5hCHxb6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12290,7 +12290,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "QFtPkMluwb0",
+      "uid": "ppUc3iaZ8jB",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12565,7 +12565,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "s8S8IEA48VO",
+      "uid": "31TKkZQqTYL",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12837,7 +12837,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "qcOD4fLHHuZ",
+      "uid": "7pKsdarnwVE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13109,7 +13109,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Usk7XjT0Xl5",
+      "uid": "lOfGOGza6YP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13381,7 +13381,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "PXaSPmJB9On",
+      "uid": "TAUDb3NNyVk",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13657,7 +13657,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "umoiLZX7Q47",
+      "uid": "tBgh11JEFDx",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13929,7 +13929,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "NgF7vjriaNB",
+      "uid": "aQvpJZiMQ3q",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14201,7 +14201,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "IKL7lUXPTh0",
+      "uid": "oX9PtrSGMwe",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14220,8 +14220,8 @@
       },
       "align": "CENTER",
       "alpha": 1,
-      "anchorFrameType": "UIPARENT",
-      "anchorPoint": "TOP",
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
       "animate": false,
       "animation": {
         "finish": {
@@ -14264,7 +14264,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 2,
+      "columnSpace": 1,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -14303,10 +14303,10 @@
       },
       "parent": "Xyrec - Druid",
       "preferToUpdate": false,
-      "radius": 300,
+      "radius": 200,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 2,
+      "rowSpace": 1,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.5.8",
@@ -14339,13 +14339,13 @@
           "untrigger": []
         }
       ],
-      "uid": "DnlmrmZ9ucv",
+      "uid": "7O9imNxYwmZ",
       "url": "",
       "useLimit": false,
       "version": 45,
       "wagoID": "bQynAWaKe",
       "xOffset": 0,
-      "yOffset": -712
+      "yOffset": 600
     },
     {
       "actions": {
@@ -14421,7 +14421,7 @@
       "desaturate": false,
       "displayIcon": 136200,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": -1,
       "id": "Druid - Drink Expiring",
@@ -14497,9 +14497,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -14527,7 +14527,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -14535,9 +14535,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -14618,13 +14618,13 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "EdT8VwfdBkk",
+      "uid": "oy1TQ5oEUn0",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -14703,7 +14703,7 @@
       "desaturate": false,
       "displayIcon": 136200,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": -1,
       "id": "Druid - Moonkin Form",
@@ -14783,9 +14783,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -14813,7 +14813,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -14821,9 +14821,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -14883,13 +14883,13 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "JEksqACBVHX",
+      "uid": "xqw52tJyvjN",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -14968,7 +14968,7 @@
       "desaturate": false,
       "displayIcon": 136078,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": 1,
       "id": "Druid - Mark of the Wild",
@@ -15046,9 +15046,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -15076,7 +15076,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -15084,9 +15084,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -15168,13 +15168,13 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "grzShjBQrNO",
+      "uid": "TgYIzVvup6Z",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -15253,7 +15253,7 @@
       "desaturate": false,
       "displayIcon": 136104,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": 1,
       "id": "Druid - Thorns",
@@ -15335,9 +15335,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -15365,7 +15365,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -15373,9 +15373,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -15456,13 +15456,13 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "Mg4XQJRz5VU",
+      "uid": "wnsX7mYv0ck",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -15541,7 +15541,7 @@
       "desaturate": false,
       "displayIcon": 136017,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": 1,
       "id": "Druid - Omen of Clarity",
@@ -15619,9 +15619,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -15649,7 +15649,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -15657,9 +15657,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -15739,13 +15739,13 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "MEeXyihIJBB",
+      "uid": "euSLoW9Jh4J",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -15758,8 +15758,8 @@
       },
       "align": "CENTER",
       "alpha": 1,
-      "anchorFrameType": "UIPARENT",
-      "anchorPoint": "TOP",
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
       "animate": false,
       "animation": {
         "finish": {
@@ -15802,7 +15802,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 2,
+      "columnSpace": 1,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -15838,10 +15838,10 @@
       },
       "parent": "Xyrec - Druid",
       "preferToUpdate": false,
-      "radius": 300,
+      "radius": 200,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 2,
+      "rowSpace": 1,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.5.8",
@@ -15851,7 +15851,7 @@
         "Druid - Thorns [Tank]": false
       },
       "source": "import",
-      "space": 2,
+      "space": 1,
       "stagger": 0,
       "stepAngle": 15,
       "subRegions": [],
@@ -15871,13 +15871,13 @@
           "untrigger": []
         }
       ],
-      "uid": "HjFO0TMaoQo",
+      "uid": "Nfw8wqADO53",
       "url": "",
       "useLimit": true,
       "version": 45,
       "wagoID": "bQynAWaKe",
       "xOffset": 0,
-      "yOffset": -810
+      "yOffset": 540
     },
     {
       "actions": {
@@ -15964,7 +15964,7 @@
       "desaturate": true,
       "displayIcon": 136078,
       "frameStrata": 1,
-      "height": 54,
+      "height": 36,
       "icon": true,
       "iconSource": 0,
       "id": "Druid - Gift of the Wild [Group]",
@@ -16044,7 +16044,7 @@
           "border_color": [],
           "rotateText": "NONE",
           "text_anchorXOffset": 0,
-          "text_anchorYOffset": -8,
+          "text_anchorYOffset": -5,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -16052,9 +16052,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -16093,7 +16093,7 @@
           "border_color": [],
           "rotateText": "NONE",
           "text_anchorXOffset": 0,
-          "text_anchorYOffset": -8,
+          "text_anchorYOffset": -5,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -16101,9 +16101,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -16152,9 +16152,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -16295,13 +16295,13 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "OP1XroqMjFq",
+      "uid": "TPfq7bLr443",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 54,
+      "width": 36,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -16409,7 +16409,7 @@
         "untrigger": []
       }
     ],
-    "uid": "EAP2JlKCoVi",
+    "uid": "3bCzMdlH0sQ",
     "url": "",
     "version": 45,
     "wagoID": "bQynAWaKe",

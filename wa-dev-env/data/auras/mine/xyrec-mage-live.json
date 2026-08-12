@@ -147,7 +147,7 @@
           "untrigger": []
         }
       ],
-      "uid": "150dOzhdEv5",
+      "uid": "HUVvT7lLnsJ",
       "url": "",
       "useLimit": true,
       "version": 35,
@@ -358,7 +358,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "vpCWtUQMJI6",
+      "uid": "35xa09MEDF5",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -613,7 +613,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "G25c3euFDlh",
+      "uid": "3r6ltF9JtiB",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -944,7 +944,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "6GhCZYtk1BD",
+      "uid": "m6QtV6cGslH",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1307,7 +1307,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "RqZu7bNpQDH",
+      "uid": "gJupI6F5a3K",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1592,7 +1592,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "GIxFmHg8QQE",
+      "uid": "NZ8higm6AXc",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1859,7 +1859,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "L9ApI2vbY7x",
+      "uid": "9RW0oTVlyGG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2074,7 +2074,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "PLnfP5vNGYW",
+      "uid": "2XDTsuDgpfP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2397,7 +2397,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "SVjV2JsAgSB",
+      "uid": "wSTicgPrMLk",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2711,7 +2711,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "sxJobnOAch5",
+      "uid": "3mTsKzlYN7r",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3040,7 +3040,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "ZtEDYgHtxym",
+      "uid": "ZN6mmq6Ha4b",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3325,7 +3325,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "XJpP0J2kfV2",
+      "uid": "Mw5yEb5Vty7",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3610,7 +3610,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "2BXQnkc461Z",
+      "uid": "sBYavqazNOM",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3723,7 +3723,7 @@
           "untrigger": []
         }
       ],
-      "uid": "NBtzZEytuq4",
+      "uid": "Y6B3cdIej1n",
       "url": "",
       "version": 35,
       "wagoID": "6vNSif5yK",
@@ -3828,7 +3828,7 @@
           "untrigger": []
         }
       ],
-      "uid": "uipM7tkeTNH",
+      "uid": "8wl0Uh8bIqV",
       "url": "",
       "version": 35,
       "wagoID": "6vNSif5yK",
@@ -3939,7 +3939,7 @@
           "untrigger": []
         }
       ],
-      "uid": "VRz7QtwFyHx",
+      "uid": "1wO2M5i5KOi",
       "url": "",
       "version": 35,
       "wagoID": "6vNSif5yK",
@@ -4192,7 +4192,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "VuBk4poLKNr",
+      "uid": "pPFHQzbwYiR",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -4449,7 +4449,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "OAkv5ZVxJVG",
+      "uid": "3lib0FOIdkE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -4706,7 +4706,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "r1IpVB3dnMH",
+      "uid": "VDiSCWOpw5b",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -4963,7 +4963,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "JFYT2YU0mTI",
+      "uid": "8XRqkeFfhd9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -5220,7 +5220,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "fyumTVwW6n1",
+      "uid": "uZWFZlViqy2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": true,
@@ -5587,7 +5587,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "q57IdV4r7Pv",
+      "uid": "pwYflUwGHDw",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5929,7 +5929,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "jiYfVTx9atj",
+      "uid": "8jP4HTcVeew",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6161,7 +6161,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "z9pqTCKiCp2",
+      "uid": "exRjpGAiizv",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6336,7 +6336,7 @@
           "untrigger": []
         }
       ],
-      "uid": "DsTw5bgq4a3",
+      "uid": "uDGDj76RNLR",
       "url": "",
       "useLimit": true,
       "version": 35,
@@ -6606,7 +6606,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "nAXZe67dSju",
+      "uid": "EtV7TiiLmno",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6817,7 +6817,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ksQUipKctW7",
+      "uid": "41ps5mQSJWQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7089,7 +7089,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Y2mtrTFkNhH",
+      "uid": "ZoYA2olDQeX",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7361,7 +7361,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "prunCJevOA7",
+      "uid": "J1SMU6QxHai",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7599,7 +7599,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "sslgoelHXUr",
+      "uid": "xDEFTUirPKv",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7810,7 +7810,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "4YZ0No1fcoW",
+      "uid": "0hBPZKwasXs",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8048,7 +8048,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "fyPMLzFe8Ce",
+      "uid": "qg4fg1sYe60",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8324,7 +8324,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "M29nFYVaK5S",
+      "uid": "8bAeFvuftvy",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8600,7 +8600,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "XWrBRqTqHi3",
+      "uid": "XCtvj4OTulW",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8876,7 +8876,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "2DdRP7nexSY",
+      "uid": "ACNp9GEKUif",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9152,7 +9152,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "wIGFhqZcqJy",
+      "uid": "QZtOua6Wwhc",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9393,7 +9393,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Wlk61WQn4Uh",
+      "uid": "Jb6c7OGiXjO",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9634,7 +9634,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "9q42q6sb6XC",
+      "uid": "9Lf1SYBfsrf",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9906,7 +9906,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Xd3ccFWhzFl",
+      "uid": "ihPC0FNScE6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10178,7 +10178,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "CouYoyL1CU8",
+      "uid": "IsM77Bg5rpl",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10490,7 +10490,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "UefgNXMXsN3",
+      "uid": "vFsToRCiA5z",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10762,7 +10762,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "e8FJSTkBC5X",
+      "uid": "niZDMv4BYa4",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11034,7 +11034,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Nh5wct795g8",
+      "uid": "rN4VfQj4HU9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11245,7 +11245,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ucpYSK0Qxun",
+      "uid": "hOq8prF2To7",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11483,7 +11483,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "1qEeRUg8zKk",
+      "uid": "AWwtgzsMdxm",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11756,7 +11756,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "ZqJm1Lyu0r8",
+      "uid": "d8J7HpQRRCZ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12028,7 +12028,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "9lZnW3fZ97l",
+      "uid": "UGxsmV93xoq",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12239,7 +12239,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "hGC8BvHdkNc",
+      "uid": "iFbw2NBWRR6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12450,7 +12450,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "FHIoxMQnvcB",
+      "uid": "dAXsTYglUIc",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12469,8 +12469,8 @@
       },
       "align": "CENTER",
       "alpha": 1,
-      "anchorFrameType": "UIPARENT",
-      "anchorPoint": "TOP",
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
       "animate": false,
       "animation": {
         "finish": {
@@ -12513,7 +12513,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 2,
+      "columnSpace": 1,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -12551,10 +12551,10 @@
       },
       "parent": "Xyrec - Mage",
       "preferToUpdate": false,
-      "radius": 300,
+      "radius": 200,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 2,
+      "rowSpace": 1,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.4.4",
@@ -12588,13 +12588,13 @@
           "untrigger": []
         }
       ],
-      "uid": "bKf56R9kJxI",
+      "uid": "smh4KdjurAs",
       "url": "",
       "useLimit": false,
       "version": 35,
       "wagoID": "6vNSif5yK",
       "xOffset": 0,
-      "yOffset": -712
+      "yOffset": 600
     },
     {
       "actions": {
@@ -12670,7 +12670,7 @@
       "desaturate": false,
       "displayIcon": 136200,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": -1,
       "id": "Mage - Drink Expiring",
@@ -12746,9 +12746,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -12776,7 +12776,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -12784,9 +12784,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -12867,13 +12867,13 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "SbhSjW73DJc",
+      "uid": "QZt6tW6FSvK",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -12965,7 +12965,7 @@
       "desaturate": false,
       "displayIcon": 134134,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": 0,
       "id": "Mage - Mana Gem",
@@ -13041,7 +13041,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -13049,9 +13049,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -13195,13 +13195,13 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "JjnTKtGnfLr",
+      "uid": "gqjMNAMxtxc",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -13280,7 +13280,7 @@
       "desaturate": false,
       "displayIcon": 135932,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": 1,
       "id": "Mage - Arcane Intellect",
@@ -13358,9 +13358,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -13388,7 +13388,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -13396,9 +13396,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -13480,13 +13480,13 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "P5Rdf9wj6bA",
+      "uid": "Z4mPBoiMF6k",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -13565,7 +13565,7 @@
       "desaturate": false,
       "displayIcon": 135932,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": 1,
       "id": "Mage - Armor [Solo]",
@@ -13643,9 +13643,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -13673,7 +13673,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -13681,9 +13681,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -13769,13 +13769,13 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "5Vg1lLPjjfj",
+      "uid": "LIs93xuYnaR",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -13788,8 +13788,8 @@
       },
       "align": "CENTER",
       "alpha": 1,
-      "anchorFrameType": "UIPARENT",
-      "anchorPoint": "TOP",
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
       "animate": false,
       "animation": {
         "finish": {
@@ -13832,7 +13832,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 2,
+      "columnSpace": 1,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -13868,10 +13868,10 @@
       },
       "parent": "Xyrec - Mage",
       "preferToUpdate": false,
-      "radius": 300,
+      "radius": 200,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 2,
+      "rowSpace": 1,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.4.4",
@@ -13881,7 +13881,7 @@
         "Mage - Arcane Brilliance [Group]": false
       },
       "source": "import",
-      "space": 2,
+      "space": 1,
       "stagger": 0,
       "stepAngle": 15,
       "subRegions": [],
@@ -13901,13 +13901,13 @@
           "untrigger": []
         }
       ],
-      "uid": "ELLeHHzkHyz",
+      "uid": "oAx392trRC5",
       "url": "",
       "useLimit": true,
       "version": 35,
       "wagoID": "6vNSif5yK",
       "xOffset": 0,
-      "yOffset": -810
+      "yOffset": 540
     },
     {
       "actions": {
@@ -13994,7 +13994,7 @@
       "desaturate": true,
       "displayIcon": 135869,
       "frameStrata": 1,
-      "height": 54,
+      "height": 36,
       "icon": true,
       "iconSource": 0,
       "id": "Mage - Arcane Brilliance [Group]",
@@ -14074,7 +14074,7 @@
           "border_color": [],
           "rotateText": "NONE",
           "text_anchorXOffset": 0,
-          "text_anchorYOffset": -8,
+          "text_anchorYOffset": -5,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -14082,9 +14082,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -14123,7 +14123,7 @@
           "border_color": [],
           "rotateText": "NONE",
           "text_anchorXOffset": 0,
-          "text_anchorYOffset": -8,
+          "text_anchorYOffset": -5,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -14131,9 +14131,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -14182,9 +14182,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -14342,13 +14342,13 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "arE2DJkMegM",
+      "uid": "rRQ06GpQJ2D",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 54,
+      "width": 36,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -14454,7 +14454,7 @@
         "untrigger": []
       }
     ],
-    "uid": "f5KzALAg9EF",
+    "uid": "JXzkzla2C2k",
     "url": "",
     "version": 35,
     "wagoID": "6vNSif5yK",

@@ -258,13 +258,22 @@ def apply(donor, class_name):
     stats = {"defs": 0, "bespoke": 0, "dropped": len(drop)}
     new_prefix = f"{cap} - "
     # Xyrec groups run at scale 1; donors are authored at root scale 1.5 —
-    # bake the factor into pixel values so imported auras keep their size
+    # bake the factor into pixel values so imported auras keep their size.
+    # EXCEPT UIPARENT-anchored subtrees: WA reparents those to UIParent, so
+    # they never inherited the donor's root scale — their values are already
+    # physical (see scale.py; reminders/group-buff rows + drag icons).
     donor_scale = donor["d"].get("scale") or 1
+    unscaled = set()
+    for cid, container in info["containers"].items():
+        if container.get("anchorFrameType") == "UIPARENT":
+            unscaled.add(cid)
+            unscaled.update(container.get("controlledChildren") or [])
     for aura in donor["c"]:
         if aura["id"] in drop:
             continue
         aura = copy.deepcopy(aura)
-        if donor_scale != 1:
+        if (donor_scale != 1 and aura["id"] not in unscaled
+                and aura.get("anchorFrameType") != "UIPARENT"):
             scale_mod.transform(aura, donor_scale)
         scrub.repoint_ids(aura, spellmap)
         aura, _ = scrub.apply_scrub(aura)

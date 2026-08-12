@@ -122,7 +122,7 @@
           "untrigger": []
         }
       ],
-      "uid": "vMjpUxTP9eI",
+      "uid": "AVouoVCr7JH",
       "url": "",
       "useLimit": false,
       "version": 42,
@@ -356,7 +356,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "FgFqrBNTtwO",
+      "uid": "I5XUXTfPFgE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -499,7 +499,7 @@
           "untrigger": []
         }
       ],
-      "uid": "s9VVF57qn2l",
+      "uid": "tKBzSTL4JJS",
       "url": "",
       "useLimit": true,
       "version": 42,
@@ -710,7 +710,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "TCiEIxqBswj",
+      "uid": "pOmeP6Ceyii",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -996,7 +996,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "1q8oEjGQ2ss",
+      "uid": "evkc9bdLYG8",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1282,7 +1282,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "F64zZfL9bjZ",
+      "uid": "r996K8w6cs8",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1568,7 +1568,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "16NE9sDnAzQ",
+      "uid": "sfSgYYbkLwL",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1867,7 +1867,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "7sS8qUVPEMc",
+      "uid": "9Z2FXkBD492",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2198,7 +2198,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "i1Q0C2sfpj0",
+      "uid": "mHN0ROZoLvQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2311,7 +2311,7 @@
           "untrigger": []
         }
       ],
-      "uid": "fruwj0dZMUc",
+      "uid": "dQzoU3I3bWK",
       "url": "",
       "version": 42,
       "wagoID": "B2G4lZKVE",
@@ -2420,7 +2420,7 @@
           "untrigger": []
         }
       ],
-      "uid": "DVvlpzrHvVt",
+      "uid": "LrA5WlV7gMo",
       "url": "",
       "version": 42,
       "wagoID": "B2G4lZKVE",
@@ -2825,7 +2825,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "M9G6rlT97tg",
+      "uid": "C5SA30u5yAF",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3925,7 +3925,7 @@
         "customTriggerLogic": "function(t) return t[1] end",
         "disjunctive": "custom"
       },
-      "uid": "e19skcpdENK",
+      "uid": "EmDPubkYoPy",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4164,7 +4164,7 @@
         "customTriggerLogic": "function (t)\n    return (not t[1] and t[2]) and t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "9FmIP1btrIO",
+      "uid": "kke4zfGcd2J",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4377,7 +4377,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "T5yyXCctxMJ",
+      "uid": "srhGlyhSDN1",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4724,7 +4724,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "kdUK5VykRYT",
+      "uid": "JskdCqNfOqP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5041,7 +5041,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "9GnOQjmg1QI",
+      "uid": "2vgRC443VEE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5273,7 +5273,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "1rfOcCeI4ZX",
+      "uid": "jXdY7MgfgtW",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5451,7 +5451,7 @@
           "untrigger": []
         }
       ],
-      "uid": "JLcQXMnHhCt",
+      "uid": "LliJGuKyosM",
       "url": "",
       "useLimit": true,
       "version": 42,
@@ -5687,7 +5687,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "moo0iFRzT88",
+      "uid": "7wQB76wSCmP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5925,7 +5925,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "5qx0CBD7s9Y",
+      "uid": "zAgovWl0fdj",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6197,7 +6197,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "TiJ5e6SJ6rH",
+      "uid": "g6kF5yPqo2e",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6435,7 +6435,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "RMpigcUD4lW",
+      "uid": "tBGULi4phHa",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6712,7 +6712,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "k4mygLqSXu9",
+      "uid": "ruSf1jvfxuk",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6988,7 +6988,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "WjJTD9Bo7m0",
+      "uid": "9PIBlYITlDz",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7264,7 +7264,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "EVvn9F6cII3",
+      "uid": "AxmQiKEqynU",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7540,7 +7540,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "to4nRkfh7zJ",
+      "uid": "hSIyZxmcBdo",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7782,7 +7782,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "5RaknJCdXTt",
+      "uid": "2gtyytnssfO",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8023,7 +8023,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "YVHM6qbHfkZ",
+      "uid": "4fvNKygigc4",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8264,7 +8264,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "n8Mkjfp48hI",
+      "uid": "VU5yO8autMF",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8536,7 +8536,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "d3cTdLe4sKB",
+      "uid": "9AC0VnbEzYV",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8808,7 +8808,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "XGzLfdDcJsk",
+      "uid": "Teh7zZIchqS",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9080,7 +9080,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "myV0ad2hRTc",
+      "uid": "lChsKSibK1H",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9393,7 +9393,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Qua95n3rFj8",
+      "uid": "MXeE64wI5pY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9631,7 +9631,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "eSwmgi71yJj",
+      "uid": "qMglrghy2cR",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9903,7 +9903,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "dZDz8Pjmvou",
+      "uid": "saAQfDeQute",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10175,7 +10175,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "nGA23zkvsqn",
+      "uid": "YUH354hRhpk",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10447,7 +10447,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "fXnw5ltRctr",
+      "uid": "ypuArjgGz8w",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10719,7 +10719,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "CkgFoYfNWLu",
+      "uid": "Sp5PgRdG89a",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10957,7 +10957,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "0mJ3OTO90oM",
+      "uid": "4OnNiheqgZ6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11195,7 +11195,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "dlqHRuAhjlh",
+      "uid": "r0VsSiQSKnm",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11433,7 +11433,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "pmOSuKYDJCd",
+      "uid": "Vz3iKL3UYcS",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11688,7 +11688,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "g9Mc3XR24Yq",
+      "uid": "Xl9lHxokgEQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11707,8 +11707,8 @@
       },
       "align": "CENTER",
       "alpha": 1,
-      "anchorFrameType": "UIPARENT",
-      "anchorPoint": "TOP",
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
       "animate": false,
       "animation": {
         "finish": {
@@ -11751,7 +11751,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 2,
+      "columnSpace": 1,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -11794,10 +11794,10 @@
       },
       "parent": "Xyrec - Hunter",
       "preferToUpdate": false,
-      "radius": 300,
+      "radius": 200,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 2,
+      "rowSpace": 1,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.5.8",
@@ -11834,13 +11834,13 @@
           "untrigger": []
         }
       ],
-      "uid": "rmFnleGbbG8",
+      "uid": "Ao5Be4A41Tb",
       "url": "",
       "useLimit": false,
       "version": 42,
       "wagoID": "B2G4lZKVE",
       "xOffset": 0,
-      "yOffset": -712
+      "yOffset": 600
     },
     {
       "actions": {
@@ -11916,7 +11916,7 @@
       "desaturate": false,
       "displayIcon": 136200,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": -1,
       "id": "Hunter - Drink Expiring",
@@ -11992,9 +11992,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -12022,7 +12022,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -12030,9 +12030,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -12113,13 +12113,13 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "hO8NFKmSPxS",
+      "uid": "fS6cbJiuSYN",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -12199,7 +12199,7 @@
       "desaturate": false,
       "displayIcon": 132278,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": -1,
       "id": "Hunter - Pet Hungry",
@@ -12267,7 +12267,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -12275,9 +12275,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -12357,13 +12357,13 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "yNfIKnjlFZT",
+      "uid": "yEZ5ly9tlGg",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -12443,7 +12443,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": -1,
       "id": "Hunter - Feeding Pet",
@@ -12518,9 +12518,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -12548,7 +12548,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -12556,9 +12556,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -12611,13 +12611,13 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "pon9rsZu3R1",
+      "uid": "oc61DsTzVBf",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -12697,7 +12697,7 @@
       "desaturate": false,
       "displayIcon": 132161,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": 0,
       "id": "Hunter - No Pet",
@@ -12767,7 +12767,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -12775,9 +12775,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -12849,13 +12849,13 @@
         "customTriggerLogic": "function (t)\n    return t[1] and not t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "yVYDo4RI59K",
+      "uid": "aAXZTc86mOT",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -12935,7 +12935,7 @@
       "desaturate": false,
       "displayIcon": 132163,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": 0,
       "id": "Hunter - Revive Pet",
@@ -13003,7 +13003,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -13011,9 +13011,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -13075,13 +13075,13 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "Rz3w4oeGifJ",
+      "uid": "1Qg5uyyAbgD",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -13162,7 +13162,7 @@
       "desc": "",
       "displayIcon": 132152,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": -1,
       "id": "Hunter - Pet Attack",
@@ -13225,7 +13225,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -13233,9 +13233,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -13304,13 +13304,13 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "QowSXsiNhhL",
+      "uid": "UGA0dyxkkXl",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -13390,7 +13390,7 @@
       "desaturate": false,
       "displayIcon": 132185,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": -1,
       "id": "Hunter - Aspect of the Pack",
@@ -13458,7 +13458,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -13466,9 +13466,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -13540,13 +13540,13 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "QvEfLBY9Jy6",
+      "uid": "Q7vUGK8s2Ft",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -13626,7 +13626,7 @@
       "desaturate": false,
       "displayIcon": "",
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": -1,
       "id": "Hunter - Aspects",
@@ -13694,7 +13694,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -13702,9 +13702,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -13758,13 +13758,13 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "SczPFav8Hw0",
+      "uid": "o1qacgLds9Q",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -13844,7 +13844,7 @@
       "desaturate": false,
       "displayIcon": 132185,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": -1,
       "id": "Hunter - Trueshot Aura",
@@ -13912,7 +13912,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -13920,9 +13920,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -13977,13 +13977,13 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "TgK9lT5q3DG",
+      "uid": "EEAcoJeSQzT",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -13997,7 +13997,7 @@
       "adjustedMax": "",
       "adjustedMin": "",
       "alpha": 0.3,
-      "anchorFrameType": "UIPARENT",
+      "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
         "finish": {
@@ -14108,7 +14108,7 @@
       "desaturate": false,
       "displayIcon": 132329,
       "frameStrata": 1,
-      "height": 46,
+      "height": 30,
       "icon": true,
       "iconSource": 0,
       "id": "Hunter - Ammo [Drag]",
@@ -14184,9 +14184,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 18,
+          "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOMRIGHT",
@@ -14221,12 +14221,12 @@
           ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
-          "glowLength": 16,
+          "glowLength": 10,
           "glowLines": 7,
           "glowScale": 1,
-          "glowThickness": 2,
+          "glowThickness": 1,
           "glowType": "Pixel",
-          "glowXOffset": 0,
+          "glowXOffset": -0.5,
           "glowYOffset": 0,
           "type": "subglow",
           "useGlowColor": false
@@ -14276,16 +14276,16 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "fEXJRmawNCd",
+      "uid": "Lf1wVkqXig0",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 42,
       "wagoID": "B2G4lZKVE",
-      "width": 46,
-      "xOffset": -590,
-      "yOffset": -310,
+      "width": 30,
+      "xOffset": -394,
+      "yOffset": 158,
       "zoom": 0.3
     }
   ],
@@ -14390,7 +14390,7 @@
         "untrigger": []
       }
     ],
-    "uid": "X4jo7wOMjkU",
+    "uid": "O8Lj2U0OWWr",
     "url": "",
     "version": 42,
     "wagoID": "B2G4lZKVE",

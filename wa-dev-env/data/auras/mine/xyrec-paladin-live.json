@@ -140,7 +140,7 @@
           "untrigger": []
         }
       ],
-      "uid": "Stn7PYGttQ7",
+      "uid": "gKirhjbnvKi",
       "url": "",
       "useLimit": true,
       "version": 32,
@@ -368,7 +368,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "NyXUafa4sVv",
+      "uid": "RnY1qzTnHdv",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -681,7 +681,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "FZm8Zu005Ny",
+      "uid": "WEQi4y6Xox2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -896,7 +896,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "TyIXT6Atp3F",
+      "uid": "685BSLcSxGz",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1225,7 +1225,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    ",
         "disjunctive": "custom"
       },
-      "uid": "IeqaT1QxWgr",
+      "uid": "YGZiU66tYGQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1513,7 +1513,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "any"
       },
-      "uid": "tLolXYJSfJm",
+      "uid": "cc9Uugq4948",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1883,7 +1883,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    ",
         "disjunctive": "custom"
       },
-      "uid": "sFYvJsZU9QC",
+      "uid": "LJaSt9i0PvK",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2151,7 +2151,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "xwip3DQU6Rt",
+      "uid": "Qer7ESw9rqe",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2392,7 +2392,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "ErAOVdP81H0",
+      "uid": "kCQiASyNVsl",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2503,7 +2503,7 @@
           "untrigger": []
         }
       ],
-      "uid": "AnXjTiu906p",
+      "uid": "gSijIRbi0mZ",
       "url": "",
       "version": 32,
       "wagoID": "zLJ2R3Oua",
@@ -3098,7 +3098,7 @@
         "activeTriggerMode": 1,
         "disjunctive": "any"
       },
-      "uid": "VnBtAgwNsAQ",
+      "uid": "0KwMYtmW9Mn",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3432,7 +3432,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "JOrk66R2P9q",
+      "uid": "pS0MCjC2FCX",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3663,7 +3663,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "Xjczbek7d3J",
+      "uid": "U3fw9pKmhQy",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3832,7 +3832,7 @@
           "untrigger": []
         }
       ],
-      "uid": "qYtUwRSFfn3",
+      "uid": "OdMub4B6VCX",
       "url": "",
       "useLimit": true,
       "version": 32,
@@ -4102,7 +4102,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "WrRLpyGiIH8",
+      "uid": "sdsw5YaeQt8",
       "url": "https://wago.io/8MyJNekEa/15",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4361,7 +4361,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "9yMFP9kYCU1",
+      "uid": "hdjmyR71pkF",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4619,7 +4619,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "OJ9xJpJ6rEl",
+      "uid": "VgK6uu8hYye",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4877,7 +4877,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "4ijDPNSHpr6",
+      "uid": "QlwRFddJgin",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5155,7 +5155,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "AxnenzfTilr",
+      "uid": "ctldl44MGdi",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5433,7 +5433,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "uqCfZLQP179",
+      "uid": "yoDyRr0Zt2N",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5707,7 +5707,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "FWfuc9f3J9Z",
+      "uid": "P9JHgmqouZ6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5982,7 +5982,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "lb6RiabSfLm",
+      "uid": "Tq1wPHJg6bY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6256,7 +6256,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "luyZqSOE4mN",
+      "uid": "TbzHWR7wje0",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6492,7 +6492,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Thpx8eSXfvP",
+      "uid": "hjDeeKVFr31",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6735,7 +6735,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "9s2kSuLTcM8",
+      "uid": "w7hcNXh5BPc",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6978,7 +6978,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "8ehTHlb6qQK",
+      "uid": "IvlMgnO1VKG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7227,7 +7227,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "3GQR2IncWfv",
+      "uid": "4HAtMw87CyP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7504,7 +7504,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "BQDBYdt3CQA",
+      "uid": "OnstYAzvvqf",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7781,7 +7781,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "z2bWkMU3zUb",
+      "uid": "5zawCB53Nhi",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7997,7 +7997,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "FWVUK4HJnEI",
+      "uid": "CfSKqXiHkIe",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8252,7 +8252,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "2ZKIYVgmHMz",
+      "uid": "dwaddVDctj7",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8526,7 +8526,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "VPra2pJ3Ll0",
+      "uid": "cfxFuTKiL9O",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8800,7 +8800,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "R3c24Jz5Eub",
+      "uid": "REzfE6mxuxv",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8819,8 +8819,8 @@
       },
       "align": "CENTER",
       "alpha": 1,
-      "anchorFrameType": "UIPARENT",
-      "anchorPoint": "TOP",
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
       "animate": false,
       "animation": {
         "finish": {
@@ -8863,7 +8863,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 2,
+      "columnSpace": 1,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -8902,10 +8902,10 @@
       },
       "parent": "Xyrec - Paladin",
       "preferToUpdate": false,
-      "radius": 300,
+      "radius": 200,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 2,
+      "rowSpace": 1,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.4.5",
@@ -8941,13 +8941,13 @@
           "untrigger": []
         }
       ],
-      "uid": "ewcsS0GtEG3",
+      "uid": "7arq1R9MEgT",
       "url": "",
       "useLimit": false,
       "version": 32,
       "wagoID": "zLJ2R3Oua",
       "xOffset": 0,
-      "yOffset": -712
+      "yOffset": 600
     },
     {
       "actions": {
@@ -9023,7 +9023,7 @@
       "desaturate": false,
       "displayIcon": 136200,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": -1,
       "id": "Paladin - Drink Expiring",
@@ -9101,9 +9101,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -9131,7 +9131,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -9139,9 +9139,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -9222,13 +9222,13 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "k1L941PK3XU",
+      "uid": "dykDjS8gMlb",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -9307,7 +9307,7 @@
       "desaturate": false,
       "displayIcon": 135995,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": 0,
       "id": "Paladin - Blessing",
@@ -9389,9 +9389,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -9419,7 +9419,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -9427,9 +9427,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -9537,13 +9537,13 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "0uCa4TvnnXi",
+      "uid": "keYLFDwfnr3",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -9623,7 +9623,7 @@
       "desaturate": false,
       "displayIcon": 135893,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": -1,
       "id": "Paladin - Aura",
@@ -9702,9 +9702,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -9732,7 +9732,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -9740,9 +9740,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -9797,13 +9797,13 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "vmcpd6g1lij",
+      "uid": "3NbgiHbNYvQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -9883,7 +9883,7 @@
       "desaturate": false,
       "displayIcon": 135934,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": 0,
       "id": "Paladin - Sanctity Aura",
@@ -9961,9 +9961,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -9991,7 +9991,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -9999,9 +9999,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -10048,13 +10048,13 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "9OlmQhGERQF",
+      "uid": "5wyfc4e0TJu",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -10133,7 +10133,7 @@
       "desaturate": true,
       "displayIcon": 135962,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": -1,
       "id": "Paladin - Righteous Fury",
@@ -10209,7 +10209,7 @@
           "anchorYOffset": 0,
           "anchor_point": "OUTER_BOTTOM",
           "rotateText": "NONE",
-          "text_anchorYOffset": -18,
+          "text_anchorYOffset": -12,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -10217,9 +10217,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOM",
@@ -10307,13 +10307,13 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend\n\n",
         "disjunctive": "custom"
       },
-      "uid": "JOF1Vylk5SB",
+      "uid": "oJfXIvR6hmx",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -10326,8 +10326,8 @@
       },
       "align": "CENTER",
       "alpha": 1,
-      "anchorFrameType": "UIPARENT",
-      "anchorPoint": "TOP",
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
       "animate": false,
       "animation": {
         "finish": {
@@ -10370,7 +10370,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 2,
+      "columnSpace": 1,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -10405,10 +10405,10 @@
       },
       "parent": "Xyrec - Paladin",
       "preferToUpdate": false,
-      "radius": 300,
+      "radius": 200,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 2,
+      "rowSpace": 1,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.4.5",
@@ -10416,7 +10416,7 @@
       "sortHybridTable": {
         "Paladin - Greater Blessings": false
       },
-      "space": 2,
+      "space": 1,
       "stagger": 0,
       "stepAngle": 15,
       "subRegions": [],
@@ -10436,13 +10436,13 @@
           "untrigger": []
         }
       ],
-      "uid": "oEy4rKi2AbZ",
+      "uid": "zhuqVNgJP0M",
       "url": "",
       "useLimit": true,
       "version": 32,
       "wagoID": "zLJ2R3Oua",
       "xOffset": 0,
-      "yOffset": -810
+      "yOffset": 540
     },
     {
       "actions": {
@@ -10529,7 +10529,7 @@
       "desaturate": true,
       "displayIcon": 135993,
       "frameStrata": 1,
-      "height": 54,
+      "height": 36,
       "icon": true,
       "iconSource": 0,
       "id": "Paladin - Greater Blessings",
@@ -10609,7 +10609,7 @@
           "border_color": [],
           "rotateText": "NONE",
           "text_anchorXOffset": 0,
-          "text_anchorYOffset": -8,
+          "text_anchorYOffset": -5,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -10617,9 +10617,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -10658,7 +10658,7 @@
           "border_color": [],
           "rotateText": "NONE",
           "text_anchorXOffset": 0,
-          "text_anchorYOffset": -8,
+          "text_anchorYOffset": -5,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -10666,9 +10666,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -10717,9 +10717,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -10884,13 +10884,13 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "Y6tU1Wax6zB",
+      "uid": "FPntfSNPXLT",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 54,
+      "width": 36,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -11017,7 +11017,7 @@
           "untrigger": []
         }
       ],
-      "uid": "IVocRrmMs0s",
+      "uid": "C3ukjZfoywJ",
       "url": "",
       "useLimit": true,
       "version": 32,
@@ -11255,7 +11255,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "cIu6OXUVMPt",
+      "uid": "ZMEXG2DNxJ2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11498,7 +11498,7 @@
         "customTriggerLogic": "\n",
         "disjunctive": "any"
       },
-      "uid": "MaHfLKqlQhc",
+      "uid": "dKDaRB460kd",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11741,7 +11741,7 @@
         "customTriggerLogic": "",
         "disjunctive": "any"
       },
-      "uid": "pZJCJPIlDHB",
+      "uid": "EfVtSWLivGA",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11762,7 +11762,7 @@
       "adjustedMax": "",
       "adjustedMin": "",
       "alpha": 0.3,
-      "anchorFrameType": "UIPARENT",
+      "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
         "finish": {
@@ -11825,7 +11825,7 @@
       "desaturate": false,
       "displayIcon": 135893,
       "frameStrata": 1,
-      "height": 46,
+      "height": 30,
       "icon": true,
       "iconSource": -1,
       "id": "Paladin - Active Aura [Drag]",
@@ -11910,16 +11910,16 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "jGHeEH7Ps5m",
+      "uid": "Ur5V0Z7z1Gd",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 32,
       "wagoID": "zLJ2R3Oua",
-      "width": 46,
-      "xOffset": -590,
-      "yOffset": -310,
+      "width": 30,
+      "xOffset": -394,
+      "yOffset": 158,
       "zoom": 0.3
     }
   ],
@@ -12027,7 +12027,7 @@
         "untrigger": []
       }
     ],
-    "uid": "OMy3S6AFRUZ",
+    "uid": "4b02ilkqOxj",
     "url": "",
     "version": 32,
     "wagoID": "zLJ2R3Oua",

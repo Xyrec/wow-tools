@@ -691,8 +691,8 @@
       },
       "align": "CENTER",
       "alpha": 1,
-      "anchorFrameType": "UIPARENT",
-      "anchorPoint": "TOP",
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
       "animate": false,
       "animation": {
         "finish": {
@@ -735,7 +735,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 2,
+      "columnSpace": 1,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -776,10 +776,10 @@
       },
       "parent": "Xyrec - Priest",
       "preferToUpdate": false,
-      "radius": 300,
+      "radius": 200,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 2,
+      "rowSpace": 1,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.4.4",
@@ -820,7 +820,7 @@
       "version": 33,
       "wagoID": "gFd6I4vVo",
       "xOffset": 0,
-      "yOffset": -712
+      "yOffset": 600
     },
     {
       "actions": {
@@ -830,8 +830,8 @@
       },
       "align": "CENTER",
       "alpha": 1,
-      "anchorFrameType": "UIPARENT",
-      "anchorPoint": "TOP",
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
       "animate": false,
       "animation": {
         "finish": {
@@ -874,7 +874,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 2,
+      "columnSpace": 1,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -911,10 +911,10 @@
       },
       "parent": "Xyrec - Priest",
       "preferToUpdate": false,
-      "radius": 300,
+      "radius": 200,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 2,
+      "rowSpace": 1,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.4.4",
@@ -924,7 +924,7 @@
         "Priest - Prayer of Spirit [Group]": false
       },
       "source": "import",
-      "space": 2,
+      "space": 1,
       "stagger": 0,
       "stepAngle": 15,
       "subRegions": [],
@@ -949,7 +949,7 @@
       "version": 33,
       "wagoID": "gFd6I4vVo",
       "xOffset": 0,
-      "yOffset": -810
+      "yOffset": 540
     }
   ],
   "root": {

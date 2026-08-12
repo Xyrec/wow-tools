@@ -140,7 +140,7 @@
           "untrigger": []
         }
       ],
-      "uid": "E5YbBiBxfC7",
+      "uid": "LZ2SnFfdAwK",
       "url": "",
       "useLimit": true,
       "version": 30,
@@ -653,7 +653,7 @@
         "customTriggerLogic": "function (t)\n     return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "a0e0pAiAWMQ",
+      "uid": "WBlnUxleAVy",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1006,7 +1006,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "8aV2KTS02YK",
+      "uid": "49RD0dbcRzr",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1316,7 +1316,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "OCEcVe0QZI8",
+      "uid": "eFxJhShdukp",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1531,7 +1531,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "vZWCRwFy2bn",
+      "uid": "JbXEWRbo9Bp",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1755,7 +1755,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "zgbk5lqTKHT",
+      "uid": "G5A5hgmGLyH",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2033,7 +2033,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "SSKkjgL8QQJ",
+      "uid": "qOGAc5bLusf",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2272,7 +2272,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "AcBl7GxXclw",
+      "uid": "cxy1vrW8fj1",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2639,7 +2639,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "ub8rWh7Yviv",
+      "uid": "tF0h7GqYI2B",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2932,7 +2932,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "42nE2D96yhT",
+      "uid": "nSaUV3RNE4i",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3258,7 +3258,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "K2ODLpus951",
+      "uid": "Idpw9gfW0zm",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3371,7 +3371,7 @@
           "untrigger": []
         }
       ],
-      "uid": "3qDX9emxjTD",
+      "uid": "cPZuOhmNWca",
       "url": "",
       "version": 30,
       "wagoID": "YWmuM5cC9",
@@ -3479,7 +3479,7 @@
           "untrigger": []
         }
       ],
-      "uid": "Y2L1CRHPj1g",
+      "uid": "7Swn9mbUu4A",
       "url": "",
       "version": 30,
       "wagoID": "YWmuM5cC9",
@@ -3690,7 +3690,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "ASegPsfxCan",
+      "uid": "gVCX58ZYyjF",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -3904,7 +3904,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "ZOcqIcbS7hM",
+      "uid": "39hf20Znllh",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -4118,7 +4118,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "9VcrFDADbV9",
+      "uid": "ZFS2lcMedg1",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -4333,7 +4333,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "WvB9OPkfhID",
+      "uid": "dj3S5TVzint",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -4547,7 +4547,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "0XkVNzBRxIn",
+      "uid": "5iMNkQXQyuu",
       "url": "",
       "useAdjustededMax": true,
       "useAdjustededMin": true,
@@ -4742,7 +4742,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "5RjZxJzjGk4",
+      "uid": "rjXWh0huQhl",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5172,7 +5172,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "yzkxWkR1WvW",
+      "uid": "v8UZwscBncB",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5494,7 +5494,7 @@
         "customTriggerLogic": "",
         "disjunctive": "any"
       },
-      "uid": "N1z1KaLXSI9",
+      "uid": "CbewEpvD4S3",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5698,7 +5698,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "UAOFhE2dTGx",
+      "uid": "aXkVmkPArw3",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5873,7 +5873,7 @@
           "untrigger": []
         }
       ],
-      "uid": "DnELKbJjoFH",
+      "uid": "zaBGZXCA7zz",
       "url": "",
       "useLimit": true,
       "version": 30,
@@ -6142,7 +6142,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "xB0Os578Yac",
+      "uid": "06KyAWWbQYo",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6414,7 +6414,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "AFLhbdpi8Ne",
+      "uid": "5j9GtogqOM4",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6652,7 +6652,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "2ZauzIZIX6Y",
+      "uid": "4cp8z05uECW",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6928,7 +6928,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "kumIYP1jOm8",
+      "uid": "pBH8Cyyn4y5",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7204,7 +7204,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "sEt28B8sZoc",
+      "uid": "XAqc4mp4WAF",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7480,7 +7480,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "mE4dFECkg5D",
+      "uid": "hoPu3WiL1HI",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7756,7 +7756,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Z15T84MycoL",
+      "uid": "VGF40Bc7Z39",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8032,7 +8032,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "t20jB54liC9",
+      "uid": "9Hy3Ruf6OmN",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8273,7 +8273,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "grLyTiAkUo7",
+      "uid": "D0YZWjBwEHa",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8514,7 +8514,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ujzRAnLMD4I",
+      "uid": "EIJ9FXVIBKa",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8786,7 +8786,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "slXeH7US6we",
+      "uid": "T8LEaVJXZVr",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9058,7 +9058,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "wYnJDvArCcQ",
+      "uid": "jUO0i8P8T5k",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9330,7 +9330,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "kcANKiF9ZJN",
+      "uid": "dnZB5bHIikE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9602,7 +9602,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "iMxm9c0rkPx",
+      "uid": "6M9Hh9vdQRT",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9840,7 +9840,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "wusOHd6D3WU",
+      "uid": "Hs6K0SuD9yL",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10078,7 +10078,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "JlUdFe7CrKR",
+      "uid": "t0MpBe8vLZQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10350,7 +10350,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "aaVBjAPPoJ3",
+      "uid": "u2oSNdOR0tz",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10622,7 +10622,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "tiXFVQRJG30",
+      "uid": "SHVin8HKRE1",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10894,7 +10894,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "L751E1YnMtO",
+      "uid": "IQ4aaCULKtH",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11166,7 +11166,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "g4YK01XaAxA",
+      "uid": "Wj4ziqQ6oWb",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11438,7 +11438,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ltq2L5BU6RU",
+      "uid": "cPTIeEh8gfg",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11676,7 +11676,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "dmcPk9QbXCR",
+      "uid": "6HRaonh0T4w",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11695,8 +11695,8 @@
       },
       "align": "CENTER",
       "alpha": 1,
-      "anchorFrameType": "UIPARENT",
-      "anchorPoint": "TOP",
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
       "animate": false,
       "animation": {
         "finish": {
@@ -11739,7 +11739,7 @@
       "borderOffset": 4,
       "borderSize": 2,
       "centerType": "LR",
-      "columnSpace": 2,
+      "columnSpace": 1,
       "conditions": [],
       "config": [],
       "constantFactor": "RADIUS",
@@ -11775,10 +11775,10 @@
       },
       "parent": "Xyrec - Rogue",
       "preferToUpdate": false,
-      "radius": 300,
+      "radius": 200,
       "regionType": "dynamicgroup",
       "rotation": 0,
-      "rowSpace": 2,
+      "rowSpace": 1,
       "scale": 1,
       "selfPoint": "CENTER",
       "semver": "1.4.3",
@@ -11807,13 +11807,13 @@
           "untrigger": []
         }
       ],
-      "uid": "zIC9PeCFp66",
+      "uid": "7Ui1RDtNe2i",
       "url": "",
       "useLimit": false,
       "version": 30,
       "wagoID": "YWmuM5cC9",
       "xOffset": 0,
-      "yOffset": -712
+      "yOffset": 600
     },
     {
       "actions": {
@@ -11903,7 +11903,7 @@
       "desc": "When entering a dungeon, reloading your UI, or logging in: you may need to equip and un-equip your weapon for the tracker to begin working again.",
       "displayIcon": 132273,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": 0,
       "id": "Rogue - Poison [MH - No Group]",
@@ -12005,9 +12005,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -12036,8 +12036,8 @@
           "anchor_point": "BOTTOMRIGHT",
           "border_color": [],
           "rotateText": "NONE",
-          "text_anchorXOffset": -2,
-          "text_anchorYOffset": 2,
+          "text_anchorXOffset": -1,
+          "text_anchorYOffset": 1,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -12045,9 +12045,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOMRIGHT",
@@ -12078,7 +12078,7 @@
           "border_color": [],
           "rotateText": "NONE",
           "text_anchorXOffset": 0,
-          "text_anchorYOffset": -8,
+          "text_anchorYOffset": -5,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -12086,9 +12086,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -12213,13 +12213,13 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "ztRRmsdFPef",
+      "uid": "0khQRO5zKy2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -12312,7 +12312,7 @@
       "desc": "When entering a dungeon, reloading your UI, or logging in: you may need to equip and un-equip your weapon for the tracker to begin working again.",
       "displayIcon": 132290,
       "frameStrata": 3,
-      "height": 66,
+      "height": 44,
       "icon": true,
       "iconSource": 0,
       "id": "Rogue - Poison [OH]",
@@ -12412,9 +12412,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 30,
+          "text_fontSize": 20,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
@@ -12443,8 +12443,8 @@
           "anchor_point": "BOTTOMRIGHT",
           "border_color": [],
           "rotateText": "NONE",
-          "text_anchorXOffset": -2,
-          "text_anchorYOffset": 2,
+          "text_anchorXOffset": -1,
+          "text_anchorYOffset": 1,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -12452,9 +12452,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOMRIGHT",
@@ -12485,7 +12485,7 @@
           "border_color": [],
           "rotateText": "NONE",
           "text_anchorXOffset": 0,
-          "text_anchorYOffset": -8,
+          "text_anchorYOffset": -5,
           "text_automaticWidth": "Auto",
           "text_color": [
             1,
@@ -12493,9 +12493,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 22,
+          "text_fontSize": 14,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "CENTER",
@@ -12620,13 +12620,13 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "B0rHYQ0NgVd",
+      "uid": "hV9zbrlRkZH",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 15,
-      "width": 66,
+      "width": 44,
       "xOffset": 0,
       "yOffset": 0,
       "zoom": 0.3
@@ -12640,7 +12640,7 @@
       "adjustedMax": "",
       "adjustedMin": "",
       "alpha": 0.3,
-      "anchorFrameType": "UIPARENT",
+      "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
       "animation": {
         "finish": {
@@ -12750,7 +12750,7 @@
       "desaturate": false,
       "displayIcon": 132329,
       "frameStrata": 1,
-      "height": 46,
+      "height": 30,
       "icon": true,
       "iconSource": 0,
       "id": "Rogue - Ammo [Drag]",
@@ -12839,9 +12839,9 @@
             1,
             1
           ],
-          "text_fixedWidth": 96,
+          "text_fixedWidth": 64,
           "text_font": "PT Sans Narrow",
-          "text_fontSize": 18,
+          "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "BOTTOMRIGHT",
@@ -12876,10 +12876,10 @@
           ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
-          "glowLength": 16,
+          "glowLength": 10,
           "glowLines": 8,
           "glowScale": 1,
-          "glowThickness": 2,
+          "glowThickness": 1,
           "glowType": "Pixel",
           "glowXOffset": 0,
           "glowYOffset": 0,
@@ -12931,16 +12931,16 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "0foojcPfF3F",
+      "uid": "ykvVqENfV31",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
       "version": 30,
       "wagoID": "YWmuM5cC9",
-      "width": 46,
-      "xOffset": -590,
-      "yOffset": -310,
+      "width": 30,
+      "xOffset": -394,
+      "yOffset": 158,
       "zoom": 0.3
     }
   ],
@@ -13045,7 +13045,7 @@
         "untrigger": []
       }
     ],
-    "uid": "ujwpKUBHqQ8",
+    "uid": "smwG1dDaW74",
     "url": "",
     "version": 30,
     "wagoID": "YWmuM5cC9",

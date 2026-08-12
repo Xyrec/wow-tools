@@ -129,14 +129,14 @@
     },
     "groupbuffs": {
       "_note": "from donor corpus; no shaman exemplar yet",
-      "height": 54,
-      "text_size": 22,
-      "width": 54
+      "height": 36,
+      "text_size": 14,
+      "width": 36
     },
     "reminders": {
-      "height": 66,
-      "text_size": 30,
-      "width": 66
+      "height": 44,
+      "text_size": 20,
+      "width": 44
     }
   },
   "row_geometry": {
@@ -170,8 +170,8 @@
     },
     "reminders": {
       "align": "CENTER",
-      "anchorFrameType": "UIPARENT",
-      "anchorPoint": "TOP",
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
       "frameStrata": 1,
       "grow": "HORIZONTAL",
       "limit": 5,
@@ -180,7 +180,7 @@
       "space": 0,
       "useLimit": false,
       "xOffset": 0,
-      "yOffset": -712
+      "yOffset": 600
     },
     "resources": {
       "anchorFrameType": "SCREEN",
