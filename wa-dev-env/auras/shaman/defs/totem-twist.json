@@ -70,7 +70,7 @@
     },
     "use_alive": true,
     "use_class": true,
-    "use_ingroup": true,
+    "use_ingroup": false,
     "use_never": false
   },
   "lua": {
