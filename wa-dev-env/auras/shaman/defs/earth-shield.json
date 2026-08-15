@@ -101,6 +101,18 @@
         "trigger": -2,
         "variable": "AND"
       }
+    },
+    {
+      "changes": [
+        {
+          "property": "sub.3.text_visible"
+        }
+      ],
+      "check": {
+        "trigger": 1,
+        "value": 0,
+        "variable": "show"
+      }
     }
   ],
   "id": "Shaman - Earth Shield",
