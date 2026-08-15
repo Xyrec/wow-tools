@@ -1,0 +1,14 @@
+# Secrets — never commit
+.env
+
+# Python
+.venv/
+__pycache__/
+
+# Node
+node_modules/
+dist/
+
+# Fetched data cache + API token
+data/raw/
+data/.token.json
