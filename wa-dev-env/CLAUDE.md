@@ -63,6 +63,19 @@ All nine classes are live with parity tests. QA status: shaman is solid;
 paladin + mage are mid-QA; the other six are raw baselines awaiting
 in-game audits.
 
+## Glow rules ("press this" pixel ring — rollout in progress)
+
+An ability's icon gets the canonical Pixel subglow iff BOTH: (1) it is vital
+that it stays active/on cooldown during combat, and (2) it is in the spec's
+combat rotation (wowtbc.gg guides). Mechanics: glow conditions ALWAYS include
+the global `incombat` check (no AFK noise) and, for spells shared across
+specs, a hidden `Spell Known: <spec-marker talent>` trigger (e.g. Stormstrike
+= enhancement). Patterns: on-CD abilities glow on `spellUsable`; DoTs glow on
+`expirationTime < 6` (donor-style lead-in) AND when fully missing. NO
+cooldown lead-in (glow before ready) — no donor precedent, and the sweep +
+countdown already communicate it. Status: shaman/enhancement done; other
+specs + classes pending per-spec audits.
+
 ## Commands (codec / gates)
 
 - `./tools/wa decode <string|@file>` / `./tools/wa encode <json>` — !WA:2! codec

@@ -107,6 +107,36 @@
         "trigger": -2,
         "variable": "AND"
       }
+    },
+    {
+      "changes": [
+        {
+          "property": "sub.5.glow",
+          "value": true
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "op": "<",
+            "trigger": 1,
+            "value": "6",
+            "variable": "expirationTime"
+          },
+          {
+            "trigger": 5,
+            "value": 1,
+            "variable": "show"
+          },
+          {
+            "trigger": -1,
+            "value": 1,
+            "variable": "incombat"
+          }
+        ],
+        "trigger": -2,
+        "variable": "AND"
+      }
     }
   ],
   "id": "Shaman - Flame Shock",
