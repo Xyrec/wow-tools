@@ -139,6 +139,12 @@ def enrich_zone(zone_tag: str) -> Path:
     ENRICHED_DIR.mkdir(parents=True, exist_ok=True)
     out_path = ENRICHED_DIR / f"{zone_tag}.json"
     out_path.write_text(json.dumps(result, indent=1))
+
+    # Keep the web app's data in sync automatically.
+    app_data = PROJECT_ROOT / "app" / "src" / "data"
+    if app_data.is_dir():
+        (app_data / f"{zone_tag}.json").write_text(json.dumps(result))
+        log.info("synced to app/src/data/%s.json", zone_tag)
     log.info(
         "enriched %s: %d items (%d dropped as non-TBC) -> %s",
         zone_tag,

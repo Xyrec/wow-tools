@@ -26,9 +26,10 @@ import json
 import logging
 from collections import Counter
 from datetime import UTC, datetime
+from functools import cache
 from pathlib import Path
 
-from .config import RAW_DIR, REGIONS, ZONES
+from .config import MAX_PAGE, META_DIR, RAW_DIR, REGIONS, ZONES
 
 log = logging.getLogger(__name__)
 
@@ -60,12 +61,44 @@ MIN_PCT = 0.5
 MIN_COUNT = 5
 
 
-def _iter_region_pages(region_dir: Path, max_pages: int):
+def _iter_pages(slice_dir: Path, max_pages: int):
     for page in range(1, max_pages + 1):
-        page_file = region_dir / f"page-{page:02d}.json"
+        page_file = slice_dir / f"page-{page:02d}.json"
         if not page_file.exists():
             return
         yield json.loads(page_file.read_text())
+
+
+@cache
+def _server_count(region: str) -> int:
+    servers = json.loads((META_DIR / "regions_servers.json").read_text())
+    return len(servers[region])
+
+
+def _iter_slice(region_dir: Path, region: str, max_pages: int):
+    """Yield pages for one (spec, region) slice.
+
+    A SATURATED region slice is REPLACED by its per-server slices — but only
+    when the server descent is complete (every server of the region has a
+    `_done` marker). Mid-fetch, fall back to the capped region pages so a
+    partial descent never undercounts relative to the basic set.
+    """
+    if (region_dir / "SATURATED").exists():
+        server_dirs = sorted(region_dir.glob("server-*"))
+        done = [d for d in server_dirs if (d / "_done").exists()]
+        if server_dirs and len(done) == _server_count(region):
+            for server_dir in done:
+                if (server_dir / "SATURATED").exists():
+                    log.warning("server slice saturated (>2000 rows capped): %s", server_dir)
+                yield from _iter_pages(server_dir, MAX_PAGE)
+            return
+        log.warning(
+            "%s: saturated but server descent incomplete (%d/%d) — using capped region pages",
+            region_dir,
+            len(done),
+            _server_count(region),
+        )
+    yield from _iter_pages(region_dir, max_pages)
 
 
 def aggregate_zone(zone_tag: str, max_pages: int) -> Path:
@@ -83,7 +116,7 @@ def aggregate_zone(zone_tag: str, max_pages: int) -> Path:
         for spec_dir in sorted(p for p in enc_dir.glob("p*/[A-Z]*") if p.is_dir()):
             spec_key = spec_dir.name
             for region in REGIONS:
-                for payload in _iter_region_pages(spec_dir / region, max_pages):
+                for payload in _iter_slice(spec_dir / region, region, max_pages):
                     for row in payload["rankings"]:
                         samples[spec_key] += 1
                         for idx, gear in enumerate(row.get("gear", [])):
