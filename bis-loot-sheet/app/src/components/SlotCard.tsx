@@ -66,11 +66,6 @@ export function SlotCard({ slot, label, entries, items }: Props) {
                     >
                       {item.name}
                     </a>
-                    {isBis && (
-                      <Badge className="h-4 bg-amber-400/90 px-1 text-[10px] font-bold text-black">
-                        BiS
-                      </Badge>
-                    )}
                     {item.setId && (
                       <Badge variant="outline" className="h-4 px-1 text-[10px] text-emerald-400">
                         {item.token ? "Token" : "Set Piece"}
