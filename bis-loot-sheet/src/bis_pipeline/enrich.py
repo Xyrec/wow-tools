@@ -15,7 +15,7 @@ import sqlite3
 from pathlib import Path
 
 from .aggregate import AGGREGATED_DIR
-from .config import PROJECT_ROOT
+from .config import META_DIR, PROJECT_ROOT
 
 log = logging.getLogger(__name__)
 
@@ -90,6 +90,30 @@ def _item_facts(row: sqlite3.Row) -> dict:
     return facts
 
 
+def _fetch_icons(item_ids: list[int]) -> dict[int, str]:
+    """Icon names for items absent from gear data, via WCL gameData (cached)."""
+    cache_file = META_DIR / "icons.json"
+    cache: dict[str, str] = json.loads(cache_file.read_text()) if cache_file.exists() else {}
+
+    missing = [i for i in item_ids if str(i) not in cache]
+    if missing:
+        from .client import WCLClient
+
+        client = WCLClient()
+        for chunk_start in range(0, len(missing), 50):
+            chunk = missing[chunk_start : chunk_start + 50]
+            aliases = " ".join(f"i{i}: item(id: {i}) {{ icon }}" for i in chunk)
+            data = client.query(f"gameData {{ {aliases} }}")
+            for i in chunk:
+                node = data["gameData"].get(f"i{i}")
+                if node and node.get("icon"):
+                    cache[str(i)] = node["icon"]
+        cache_file.write_text(json.dumps(cache, indent=1))
+        log.info("fetched %d icons from WCL gameData", len(missing))
+
+    return {i: cache[str(i)] for i in item_ids if str(i) in cache}
+
+
 def enrich_zone(zone_tag: str) -> Path:
     src = AGGREGATED_DIR / f"{zone_tag}.json"
     data = json.loads(src.read_text())
@@ -132,7 +156,35 @@ def enrich_zone(zone_tag: str) -> Path:
             slots[slot] = kept
         specs[spec_key] = {"sampleSize": spec_data["sampleSize"], "slots": slots}
 
+    from .lootmap import build_lootmap
+
+    lootmap = build_lootmap(zone_tag)
+    encounters = {eid: e["name"] for eid, e in lootmap.items()}
+
+    # Drop-only items (tier tokens above all — nobody *wears* a token, but
+    # they ARE what the loot council assigns) still need item facts.
+    drop_only = {
+        item_id for enc in lootmap.values() for item_id in enc["items"] if item_id not in items
+    }
+    if drop_only:
+        placeholders = ",".join("?" * len(drop_only))
+        for row in con.execute(
+            f"SELECT entry, name, Quality, ItemLevel, InventoryType, AllowableClass, "
+            f"Flags, maxcount, class, subclass FROM item_template "
+            f"WHERE entry IN ({placeholders})",
+            sorted(drop_only),
+        ):
+            items[row["entry"]] = {**_item_facts(row), "dropOnly": True}
+        for item_id, icon in _fetch_icons(sorted(drop_only)).items():
+            items[item_id]["icon"] = icon
+
+    for eid, enc in lootmap.items():
+        for item_id in enc["items"]:
+            if item_id in items:
+                items[item_id].setdefault("sources", []).append(int(eid))
+
     result = {k: v for k, v in data.items() if k != "specs"}
+    result["encounters"] = encounters
     result["items"] = items
     result["specs"] = specs
 
