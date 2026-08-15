@@ -29,6 +29,7 @@ class WCLClient:
         self._http = httpx.Client(timeout=60.0)
         self._token = self._obtain_token()
         self.last_rate_limit: dict | None = None
+        self._last_status_log = 0.0
 
     def _obtain_token(self) -> str:
         if TOKEN_CACHE.exists():
@@ -106,6 +107,16 @@ class WCLClient:
         if not rl:
             return
         remaining = rl["limitPerHour"] - rl["pointsSpentThisHour"]
+        now = time.monotonic()
+        if now - self._last_status_log >= 120:
+            self._last_status_log = now
+            log.info(
+                "rate limit: %.0f points left (~%d queries) | window resets in %dm%02ds",
+                remaining,
+                int(remaining / 1.3),  # ~1.3 points per rankings page, observed
+                rl["pointsResetIn"] // 60,
+                rl["pointsResetIn"] % 60,
+            )
         if remaining < POINTS_SAFETY_MARGIN:
             wait = rl["pointsResetIn"] + 5
             log.info(

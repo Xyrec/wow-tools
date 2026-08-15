@@ -37,6 +37,11 @@ HEALER_SPECS = {"Restoration", "Holy", "Discipline"}
 # do not exist in TBC and would only produce empty (but billed) queries.
 EXCLUDED_CLASSES = {"Death Knight", "Monk"}
 
+# Xyrec directive 2026-08-15: only US and EU data. KR/TW/CN roughly double the
+# cost and describe player populations on a client/patch that never overlapped
+# with the Anniversary meta.
+REGIONS = ("US", "EU")
+
 
 def metric_for_spec(spec_name: str) -> str:
     return "hps" if spec_name in HEALER_SPECS else "dps"

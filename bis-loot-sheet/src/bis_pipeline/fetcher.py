@@ -20,7 +20,7 @@ import logging
 from pathlib import Path
 
 from .client import WCLClient
-from .config import EXCLUDED_CLASSES, MAX_PAGE, RAW_DIR, ZONES, metric_for_spec
+from .config import EXCLUDED_CLASSES, MAX_PAGE, RAW_DIR, REGIONS, ZONES, metric_for_spec
 from .discovery import class_specs, regions_servers, zone_encounters
 
 log = logging.getLogger(__name__)
@@ -72,20 +72,31 @@ class SliceFetcher:
         region: str | None = None,
         server: str | None = None,
         probe_first: bool = False,
+        max_pages: int = MAX_PAGE,
     ) -> bool:
-        """Fetch all pages for one filter combination. Returns True if saturated.
+        """Fetch up to max_pages pages for one filter combination.
 
-        With probe_first (used for populous regions), page 20 is fetched before
-        pages 1-19: a saturated slice gets replaced by server slices anyway, so
-        detecting saturation up front skips 19 redundant page fetches.
+        Returns True if saturated (only possible at full depth). The `_done`
+        marker records the depth a slice was fetched to, so a shallow "basic"
+        pass (max_pages < 20) is later deepened for free: already-cached pages
+        are reused and only the missing tail is fetched.
+
+        With probe_first (used at full depth for populous regions), page 20 is
+        fetched before pages 1-19: a saturated slice gets replaced by server
+        slices anyway, so detecting saturation up front skips 19 doomed fetches.
         """
         done_marker = slice_dir / "_done"
         if done_marker.exists():
-            return (slice_dir / "SATURATED").exists()
+            text = done_marker.read_text().strip()
+            # Legacy empty markers predate depth tracking; they were full-depth.
+            meta = json.loads(text) if text else {"max_pages": MAX_PAGE, "exhausted": False}
+            if meta["exhausted"] or meta["max_pages"] >= max_pages:
+                return (slice_dir / "SATURATED").exists()
+            # Otherwise: deepen a previously shallow slice (cached pages reused).
 
         slice_dir.mkdir(parents=True, exist_ok=True)
 
-        if probe_first:
+        if probe_first and max_pages == MAX_PAGE:
             payload = self._get_page(
                 slice_dir,
                 encounter_id,
@@ -99,11 +110,12 @@ class SliceFetcher:
             )
             if payload and payload.get("rankings") and payload.get("hasMorePages"):
                 (slice_dir / "SATURATED").touch()
-                done_marker.touch()
+                done_marker.write_text(json.dumps({"max_pages": MAX_PAGE, "exhausted": False}))
                 return True
 
         saturated = False
-        for page in range(1, MAX_PAGE + 1):
+        exhausted = False
+        for page in range(1, max_pages + 1):
             payload = self._get_page(
                 slice_dir,
                 encounter_id,
@@ -116,15 +128,17 @@ class SliceFetcher:
                 server,
             )
             if payload is None or not payload.get("rankings"):
+                exhausted = True
                 break
             if not payload.get("hasMorePages"):
+                exhausted = True
                 break
         else:
-            saturated = True
+            saturated = max_pages == MAX_PAGE
 
         if saturated:
             (slice_dir / "SATURATED").touch()
-        done_marker.touch()
+        done_marker.write_text(json.dumps({"max_pages": max_pages, "exhausted": exhausted}))
         return saturated
 
     def _get_page(
@@ -157,6 +171,16 @@ class SliceFetcher:
             return None  # empty page: don't persist noise files
         page_file.write_text(json.dumps(payload))
         self.pages_fetched += 1
+        if self.pages_fetched % 100 == 0:
+            rl = self.client.last_rate_limit or {}
+            log.info(
+                "progress: %d pages fetched | %.0f/%.0f points, reset in %ds | at %s",
+                self.pages_fetched,
+                rl.get("pointsSpentThisHour", 0),
+                rl.get("limitPerHour", 3600),
+                rl.get("pointsResetIn", 0),
+                slice_dir.relative_to(RAW_DIR),
+            )
         return payload
 
 
@@ -167,6 +191,7 @@ def fetch_encounter(
     specs: list[dict],
     servers_by_region: dict[str, list[str]],
     regions: list[str],
+    max_pages: int = MAX_PAGE,
 ) -> dict:
     """Fetch every spec x region slice for one encounter, descending on saturation."""
     zone = ZONES[zone_tag]
@@ -193,8 +218,9 @@ def fetch_encounter(
                 # Populous regions frequently exceed the 2,000-row window; probe
                 # page 20 first there to skip straight to server descent.
                 probe_first=region in {"US", "EU", "CN"},
+                max_pages=max_pages,
             )
-            if saturated:
+            if saturated and max_pages == MAX_PAGE:
                 stats["saturated"] += 1
                 log.info(
                     "SATURATED: %s %s/%s %s — descending to %d servers",
@@ -225,12 +251,13 @@ def fetch_zone(
     client: WCLClient,
     zone_tag: str,
     only_encounter: int | None = None,
+    max_pages: int = MAX_PAGE,
 ) -> None:
     zone = ZONES[zone_tag]
     encounters = zone_encounters(client, zone["zone_id"])
     specs = [p for p in class_specs(client) if p["class"] not in EXCLUDED_CLASSES]
     servers_by_region = regions_servers(client)
-    regions = list(servers_by_region.keys())
+    regions = [r for r in servers_by_region if r in REGIONS]
     log.info(
         "zone %s (id %d, partition %d): %d encounters, %d class/spec pairs, regions %s",
         zone_tag,
@@ -243,7 +270,9 @@ def fetch_zone(
     for encounter in encounters:
         if only_encounter is not None and encounter["id"] != only_encounter:
             continue
-        stats = fetch_encounter(client, zone_tag, encounter, specs, servers_by_region, regions)
+        stats = fetch_encounter(
+            client, zone_tag, encounter, specs, servers_by_region, regions, max_pages=max_pages
+        )
         rl = client.last_rate_limit or {}
         log.info(
             "%s done: %s | points spent this hour: %.1f",

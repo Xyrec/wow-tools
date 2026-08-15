@@ -25,6 +25,15 @@ def main() -> None:
     fetch.add_argument(
         "--encounter", type=int, default=None, help="only this encounter id (for estimates)"
     )
+    fetch.add_argument(
+        "--max-pages",
+        type=int,
+        default=20,
+        choices=range(1, 21),
+        metavar="1-20",
+        help="pages per slice (100 rows each). <20 = shallow 'basic' pass, "
+        "deepened for free later; 20 = full depth with server descent",
+    )
 
     args = parser.parse_args()
     client = WCLClient()
@@ -43,4 +52,4 @@ def main() -> None:
         for region, slugs in servers.items():
             print(f"{region}: {len(slugs)} servers")
     elif args.command == "fetch":
-        fetch_zone(client, args.zone, only_encounter=args.encounter)
+        fetch_zone(client, args.zone, only_encounter=args.encounter, max_pages=args.max_pages)
