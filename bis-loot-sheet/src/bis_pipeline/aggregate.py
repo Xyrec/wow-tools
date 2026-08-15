@@ -113,7 +113,11 @@ def aggregate_zone(zone_tag: str, max_pages: int) -> Path:
     samples: Counter = Counter()
 
     for enc_dir in sorted(zone_dir.glob("enc-*")):
-        for spec_dir in sorted(p for p in enc_dir.glob("p*/[A-Z]*") if p.is_dir()):
+        # Pin to the configured partition — other partitions may exist on disk
+        # (e.g. the progression-era p4 data kept for later comparisons).
+        for spec_dir in sorted(
+            p for p in enc_dir.glob(f"p{zone['partition']}/[A-Z]*") if p.is_dir()
+        ):
             spec_key = spec_dir.name
             for region in REGIONS:
                 for payload in _iter_slice(spec_dir / region, region, max_pages):
