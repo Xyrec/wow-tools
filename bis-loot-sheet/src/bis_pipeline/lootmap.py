@@ -23,7 +23,9 @@ log = logging.getLogger(__name__)
 # encounter id -> creature entries carrying the loot, where name-match fails.
 CREATURE_OVERRIDES: dict[int, list[int]] = {
     606: [23420],  # Reliquary of Souls -> Essence of Anger (final essence)
-    608: [22949],  # The Illidari Council -> Gathios the Shatterer
+    # Illidari Council: items ride on Zerevor (ref 36135), the T6 legs token
+    # group (ref 36136) on the other three — Gathios covers it once.
+    608: [22949, 22950],
 }
 
 

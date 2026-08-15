@@ -161,7 +161,7 @@ def enrich_zone(zone_tag: str) -> Path:
             slots[slot] = kept
         specs[spec_key] = {"sampleSize": spec_data["sampleSize"], "slots": slots}
 
-    from .lootmap import build_lootmap
+    from .lootmap import build_lootmap, load_lootmap
 
     lootmap = build_lootmap(zone_tag)
     encounters = {eid: e["name"] for eid, e in lootmap.items()}
@@ -187,6 +187,21 @@ def enrich_zone(zone_tag: str) -> Path:
         for item_id in enc["items"]:
             if item_id in items:
                 items[item_id].setdefault("sources", []).append(int(eid))
+
+    # Zones sharing a partition can leak later-phase gear into the worn data
+    # (ZA inside "P3.5 & P4"). Flag anything dropping in a later-phase raid so
+    # the app and prio logic can mark it unobtainable in this Anniversary phase.
+    from .config import ZONES
+
+    own_phase = ZONES[zone_tag]["anniversary_phase"]
+    for other_tag, other in ZONES.items():
+        if other["anniversary_phase"] <= own_phase:
+            continue
+        other_map = load_lootmap(other_tag) or build_lootmap(other_tag)
+        for enc in other_map.values():
+            for item_id in enc["items"]:
+                if item_id in items:
+                    items[item_id]["laterPhase"] = other_tag
 
     result = {k: v for k, v in data.items() if k != "specs"}
     result["encounters"] = encounters

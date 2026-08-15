@@ -13,6 +13,7 @@ export interface ItemFacts {
   token?: boolean
   dropOnly?: boolean
   sources?: number[]
+  laterPhase?: string
 }
 
 export interface SlotEntry {

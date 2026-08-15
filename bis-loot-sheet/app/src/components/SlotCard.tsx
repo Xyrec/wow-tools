@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { DISPLAY_FLOOR_PCT, QUALITY_COLORS, iconUrl, wowheadUrl } from "@/lib/wow"
+import { DISPLAY_FLOOR_PCT, QUALITY_COLORS, ZONE_PHASES, iconUrl, wowheadUrl } from "@/lib/wow"
 import { cn } from "@/lib/utils"
 import type { ItemFacts, SlotEntry } from "@/types"
 
@@ -66,6 +66,11 @@ export function SlotCard({ slot, label, entries, items }: Props) {
                     >
                       {item.name}
                     </a>
+                    {item.laterPhase && (
+                      <Badge variant="destructive" className="h-4 px-1 text-[10px]">
+                        P{ZONE_PHASES[item.laterPhase] ?? "?"} item
+                      </Badge>
+                    )}
                     {item.setId && (
                       <Badge variant="outline" className="h-4 px-1 text-[10px] text-emerald-400">
                         {item.token ? "Token" : "Set Piece"}

@@ -79,6 +79,15 @@ export function wowheadUrl(itemId: number): string {
   return `https://www.wowhead.com/tbc/item=${itemId}`
 }
 
+export const ZONE_PHASES: Record<string, number> = {
+  karazhan: 1,
+  "gruul-magtheridon": 1,
+  "ssc-tk": 2,
+  "bt-hyjal": 3,
+  "zul-aman": 4,
+  sunwell: 5,
+}
+
 export const ZONE_LABELS: Record<string, string> = {
   karazhan: "Karazhan",
   "gruul-magtheridon": "Gruul / Magtheridon",
