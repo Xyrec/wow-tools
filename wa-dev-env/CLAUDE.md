@@ -72,7 +72,10 @@ the global `incombat` check (no AFK noise) and, for spells shared across
 specs, a hidden `Spell Known: <spec-marker talent>` trigger (e.g. Stormstrike
 = enhancement). Patterns: on-CD abilities glow on `spellUsable` AND `onCooldown==0`
 (spellUsable is IsUsableSpell — resources only, NOT cooldown); DoTs glow on
-`expirationTime < 6` (donor-style lead-in) AND when fully missing. NO
+an `expirationTime <` lead-in AND when fully missing — the lead-in window
+must be SHORTER than the refresh spell's own cooldown cadence (Flame
+Shock uses 3s because the shared shock CD is 6s; the donor's 6s made
+Flame Shock's warning overlap Earth Shock's ready-glow every cycle). NO
 cooldown lead-in (glow before ready) — no donor precedent, and the sweep +
 countdown already communicate it. Status: shaman done (enh/ele/resto); other classes pending per-spec audits.
 
