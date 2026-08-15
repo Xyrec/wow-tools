@@ -73,6 +73,40 @@
         "value": 1,
         "variable": "insufficientResources"
       }
+    },
+    {
+      "changes": [
+        {
+          "property": "sub.5.glow",
+          "value": true
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 1,
+            "value": 0,
+            "variable": "show"
+          },
+          {
+            "trigger": 4,
+            "value": 1,
+            "variable": "spellUsable"
+          },
+          {
+            "trigger": 5,
+            "value": 1,
+            "variable": "show"
+          },
+          {
+            "trigger": -1,
+            "value": 1,
+            "variable": "incombat"
+          }
+        ],
+        "trigger": -2,
+        "variable": "AND"
+      }
     }
   ],
   "id": "Shaman - Flame Shock",
@@ -232,6 +266,27 @@
         "text_visible": true,
         "text_wordWrap": "WordWrap",
         "type": "subtext"
+      },
+      {
+        "glow": false,
+        "glowBorder": false,
+        "glowColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "glowDuration": 1,
+        "glowFrequency": 0.25,
+        "glowLength": 16,
+        "glowLines": 8,
+        "glowScale": 1,
+        "glowThickness": 2,
+        "glowType": "Pixel",
+        "glowXOffset": 0,
+        "glowYOffset": 0,
+        "type": "subglow",
+        "useGlowColor": false
       }
     ]
   },
@@ -293,6 +348,21 @@
         "genericShowOn": "showAlways",
         "realSpellName": "Flame Shock",
         "spellName": 8050,
+        "type": "spell",
+        "unit": "player",
+        "use_genericShowOn": true,
+        "use_spellName": true,
+        "use_track": true
+      },
+      "untrigger": []
+    },
+    "5": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Spell Known",
+        "genericShowOn": "showOnCooldown",
+        "realSpellName": "Stormstrike",
+        "spellName": 17364,
         "type": "spell",
         "unit": "player",
         "use_genericShowOn": true,
