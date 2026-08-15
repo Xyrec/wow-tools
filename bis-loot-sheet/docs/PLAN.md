@@ -86,9 +86,17 @@ roster-agnostic; roster tailoring is a parameterized app feature, not baked into
   (EU/US return distinct rankings), serverSlug slicing (firemaw works), and omitting
   className returns all classes with each row labeled `class`/`spec` (bucket
   client-side). Regions: US 53 servers, EU 54, KR 8, TW 11, CN 113.
+- **Two-tier fetch strategy** (Xyrec, 2026-08-15 evening): full-population fetch
+  proved expensive (~30-35h for BT/Hyjal alone; CN descents were a big driver).
+  Revised: **US + EU only** (KR/TW/CN dropped — see `REGIONS` in config.py), and a
+  shallow **basic pass** first (`fetch <zone> --max-pages 5` = top 500/region/spec)
+  to unblock building aggregation + the app, deepened to the full data set later.
+  `_done` markers record fetch depth, so deepening reuses every cached page; server
+  descent only triggers at full depth (--max-pages 20).
 - **Fetcher design — region-first, per-spec, adaptive server descent** (Xyrec
-  directives: get ALL the data, never a subset of the top; ALWAYS filter by spec —
-  the BiS list is spec-based and other specs must not poison the data):
+  directives: get ALL the data (within US/EU), never a subset of the top; ALWAYS
+  filter by spec — the BiS list is spec-based and other specs must not poison the
+  data):
   1. Per (zone, encounter, earliest partition, metric, region, class+spec): fetch
      pages 1–20 while `hasMorePages`, `includeCombatantInfo: true`. 5 regions
      (US/EU/KR/TW/CN) × 2,000 cap per spec per boss ≈ up to 10k/spec/boss. Context:
@@ -168,8 +176,21 @@ Netherbane** — phase-pure data immediately contradicts the officers' Rod-only 
 - Discovery cached: 28 TBC class/spec pairs; encounters — kara 10, gruul-mag 3,
   ssc-tk 10, bt-hyjal 14 (Naj'entus 601 … Illidan 609, Winterchill 618 … Archimonde
   622), zul-aman 6, sunwell 6; servers US 53 / EU 54 / KR 8 / TW 11 / CN 113.
-- Estimate run in progress: Naj'entus (601), all specs × regions, to measure real
-  points cost per boss before unleashing the full scrape.
+- **Basic data set COMPLETE for bt-hyjal** (2026-08-15 late evening):
+  `fetch bt-hyjal --max-pages 5` — all 14 bosses, US+EU, top 500/region/spec =
+  ~327k ranking rows. Full-depth pass (`--max-pages 20`) deferred until later;
+  deepening reuses all cached pages.
+- **Aggregation COMPLETE**: `aggregate <zone> [--max-pages 5]` pools region pages
+  into per-spec per-slot item usage distributions → `data/aggregated/bt-hyjal.json`
+  (~670KB, 28 specs). Gear array index→slot mapping verified live (index 3 = shirt,
+  skipped; 10/11 ring, 12/13 trinket pooled). Floor: pct ≥ 0.5% AND count ≥ 5 kept;
+  the app applies the 2% display floor on top.
+- **First QA validates the whole thesis** (P3 basic data): Enhancement main hand =
+  Talon of the Phoenix 28.4% with Rod of the Sun King off hand 60.7% (the exact
+  "Talon + Rod" combo from the Discord argument; Dragonstrike, the blacksmithing
+  mace, is a 19.6% minority). Resto Shaman chest in P3 = Cataclysm Chestguard (T5!)
+  at 78.2% — hard evidence for cross-phase persistence / "don't roll on Vashj chest
+  if it leaves you" discussions.
 
 ## Needs from Xyrec
 

@@ -7,6 +7,7 @@ from .aggregate import aggregate_zone
 from .client import WCLClient
 from .config import ZONES
 from .discovery import class_specs, regions_servers, zone_encounters
+from .enrich import enrich_zone
 from .fetcher import fetch_zone
 
 
@@ -47,10 +48,16 @@ def main() -> None:
         help="read at most this many pages per slice (match the fetch depth)",
     )
 
+    enrich = sub.add_parser("enrich", help="join aggregated data with cmangos item facts")
+    enrich.add_argument("zone", choices=sorted(ZONES), help="zone tag")
+
     args = parser.parse_args()
 
     if args.command == "aggregate":  # offline; needs no API client
         aggregate_zone(args.zone, max_pages=args.max_pages)
+        return
+    if args.command == "enrich":  # offline; needs no API client
+        enrich_zone(args.zone)
         return
 
     client = WCLClient()
