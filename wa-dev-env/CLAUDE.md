@@ -73,8 +73,7 @@ specs, a hidden `Spell Known: <spec-marker talent>` trigger (e.g. Stormstrike
 = enhancement). Patterns: on-CD abilities glow on `spellUsable`; DoTs glow on
 `expirationTime < 6` (donor-style lead-in) AND when fully missing. NO
 cooldown lead-in (glow before ready) — no donor precedent, and the sweep +
-countdown already communicate it. Status: shaman/enhancement done; other
-specs + classes pending per-spec audits.
+countdown already communicate it. Status: shaman done (enh/ele/resto); other classes pending per-spec audits.
 
 ## Commands (codec / gates)
 

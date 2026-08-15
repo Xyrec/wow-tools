@@ -77,6 +77,30 @@
         "value": 1,
         "variable": "insufficientResources"
       }
+    },
+    {
+      "changes": [
+        {
+          "property": "sub.6.glow",
+          "value": true
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 1,
+            "value": 0,
+            "variable": "show"
+          },
+          {
+            "trigger": -1,
+            "value": 1,
+            "variable": "incombat"
+          }
+        ],
+        "trigger": -2,
+        "variable": "AND"
+      }
     }
   ],
   "id": "Shaman - Earth Shield",
@@ -243,6 +267,27 @@
         "text_visible": true,
         "text_wordWrap": "WordWrap",
         "type": "subtext"
+      },
+      {
+        "glow": false,
+        "glowBorder": false,
+        "glowColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "glowDuration": 1,
+        "glowFrequency": 0.25,
+        "glowLength": 16,
+        "glowLines": 8,
+        "glowScale": 1,
+        "glowThickness": 2,
+        "glowType": "Pixel",
+        "glowXOffset": 0,
+        "glowYOffset": 0,
+        "type": "subglow",
+        "useGlowColor": false
       }
     ]
   },
