@@ -3,6 +3,7 @@
 import argparse
 import logging
 
+from .aggregate import aggregate_zone
 from .client import WCLClient
 from .config import ZONES
 from .discovery import class_specs, regions_servers, zone_encounters
@@ -35,7 +36,23 @@ def main() -> None:
         "deepened for free later; 20 = full depth with server descent",
     )
 
+    agg = sub.add_parser("aggregate", help="aggregate raw pages into per-spec distributions")
+    agg.add_argument("zone", choices=sorted(ZONES), help="zone tag")
+    agg.add_argument(
+        "--max-pages",
+        type=int,
+        default=5,
+        choices=range(1, 21),
+        metavar="1-20",
+        help="read at most this many pages per slice (match the fetch depth)",
+    )
+
     args = parser.parse_args()
+
+    if args.command == "aggregate":  # offline; needs no API client
+        aggregate_zone(args.zone, max_pages=args.max_pages)
+        return
+
     client = WCLClient()
 
     if args.command == "status":

@@ -86,13 +86,19 @@ class SliceFetcher:
         slices anyway, so detecting saturation up front skips 19 doomed fetches.
         """
         done_marker = slice_dir / "_done"
+        prev = {"max_pages": 0, "exhausted": False}
         if done_marker.exists():
             text = done_marker.read_text().strip()
             # Legacy empty markers predate depth tracking; they were full-depth.
-            meta = json.loads(text) if text else {"max_pages": MAX_PAGE, "exhausted": False}
-            if meta["exhausted"] or meta["max_pages"] >= max_pages:
+            prev = json.loads(text) if text else {"max_pages": MAX_PAGE, "exhausted": False}
+            # Probe-first saturated slices have only page-20 on disk, so depth
+            # alone doesn't prove pages 1..max_pages exist — verify the files.
+            pages_present = prev["exhausted"] or all(
+                (slice_dir / f"page-{p:02d}.json").exists() for p in range(1, max_pages + 1)
+            )
+            if pages_present and (prev["exhausted"] or prev["max_pages"] >= max_pages):
                 return (slice_dir / "SATURATED").exists()
-            # Otherwise: deepen a previously shallow slice (cached pages reused).
+            # Otherwise: deepen or backfill a previous pass (cached pages reused).
 
         slice_dir.mkdir(parents=True, exist_ok=True)
 
@@ -138,8 +144,17 @@ class SliceFetcher:
 
         if saturated:
             (slice_dir / "SATURATED").touch()
-        done_marker.write_text(json.dumps({"max_pages": max_pages, "exhausted": exhausted}))
-        return saturated
+        # Never downgrade a marker: a backfill at shallow depth must not erase
+        # the record of an earlier full-depth pass.
+        done_marker.write_text(
+            json.dumps(
+                {
+                    "max_pages": max(max_pages, prev["max_pages"]),
+                    "exhausted": exhausted or prev["exhausted"],
+                }
+            )
+        )
+        return saturated or (slice_dir / "SATURATED").exists()
 
     def _get_page(
         self,
