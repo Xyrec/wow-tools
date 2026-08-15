@@ -38,8 +38,9 @@ def _rankings_query(
 ) -> str:
     args = [
         f"partition: {partition}",
-        f'className: "{class_name}"',
-        f'specName: "{spec_name}"',
+        # The API wants slug form: "Beast Mastery" -> "BeastMastery".
+        f'className: "{class_name.replace(" ", "")}"',
+        f'specName: "{spec_name.replace(" ", "")}"',
         f"metric: {metric}",
         f"page: {page}",
         "includeCombatantInfo: true",
@@ -189,9 +190,9 @@ def fetch_encounter(
                 spec_name,
                 metric,
                 region=region,
-                # US/EU frequently exceed the 2,000-row window; probe page 20
-                # first there to skip straight to server descent.
-                probe_first=region in {"US", "EU"},
+                # Populous regions frequently exceed the 2,000-row window; probe
+                # page 20 first there to skip straight to server descent.
+                probe_first=region in {"US", "EU", "CN"},
             )
             if saturated:
                 stats["saturated"] += 1
