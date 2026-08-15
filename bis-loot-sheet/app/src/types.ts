@@ -9,6 +9,10 @@ export interface ItemFacts {
   wclName?: string
   armorType?: string
   allowableClasses?: string[]
+  setId?: number
+  token?: boolean
+  dropOnly?: boolean
+  sources?: number[]
 }
 
 export interface SlotEntry {
@@ -30,6 +34,7 @@ export interface ZoneData {
   regions: string[]
   maxPages: number
   generatedAt: string
+  encounters: Record<string, string>
   items: Record<string, ItemFacts>
   specs: Record<string, SpecData>
 }

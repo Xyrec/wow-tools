@@ -1,4 +1,10 @@
-import { useMemo, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
+
+declare global {
+  interface Window {
+    $WowheadPower?: { refreshLinks: () => void }
+  }
+}
 import { SlotCard } from "@/components/SlotCard"
 import { SpecSidebar } from "@/components/SpecSidebar"
 import { Badge } from "@/components/ui/badge"
@@ -26,11 +32,17 @@ export default function App() {
   const spec = zone?.specs[specKey]
   const role = specRole(specKey)
 
+  // Wowhead's tooltip script only scans on load; re-scan after re-renders.
+  useEffect(() => {
+    const id = setTimeout(() => window.$WowheadPower?.refreshLinks(), 50)
+    return () => clearTimeout(id)
+  }, [zoneTag, specKey])
+
   if (!zone) return <main className="p-8">No data generated yet — run the pipeline.</main>
 
   return (
-    <div className="mx-auto flex h-screen max-w-7xl flex-col gap-4 p-4">
-      <header className="flex flex-wrap items-center justify-between gap-3">
+    <div className="mx-auto max-w-7xl p-4">
+      <header className="mb-4 flex flex-wrap items-center justify-between gap-3">
         <div>
           <h1 className="text-xl font-bold">TBC BiS — from Warcraft Logs</h1>
           <p className="text-xs text-muted-foreground">
@@ -49,10 +61,13 @@ export default function App() {
         </Tabs>
       </header>
 
-      <div className="flex min-h-0 flex-1 gap-4">
-        <SpecSidebar zone={zone} selected={specKey} onSelect={setSpecKey} />
+      <div className="flex items-start gap-4">
+        {/* Sticky sidebar with its own scrollbar; the item list scrolls with the page. */}
+        <div className="sticky top-4 max-h-[calc(100vh-2rem)] w-48 shrink-0 overflow-y-auto overscroll-contain pr-2">
+          <SpecSidebar zone={zone} selected={specKey} onSelect={setSpecKey} />
+        </div>
 
-        <main className="min-w-0 flex-1 overflow-y-auto">
+        <main className="min-w-0 flex-1">
           {spec ? (
             <>
               <div className="mb-3 flex flex-wrap items-center gap-3">
@@ -78,6 +93,7 @@ export default function App() {
                 {SLOT_ORDER.map(([slot, label]) => (
                   <SlotCard
                     key={slot}
+                    slot={slot}
                     label={label}
                     entries={spec.slots[slot] ?? []}
                     items={zone.items}

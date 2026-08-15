@@ -12,7 +12,7 @@ interface Props {
 export function SpecSidebar({ zone, selected, onSelect }: Props) {
   const byClass = specKeysByClass(zone)
   return (
-    <nav className="w-48 shrink-0 space-y-4 overflow-y-auto pr-2">
+    <nav className="space-y-4">
       {[...byClass.entries()].map(([cls, specKeys]) => (
         <div key={cls}>
           <div

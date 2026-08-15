@@ -84,6 +84,10 @@ def _item_facts(row: sqlite3.Row) -> dict:
     }
     if row["class"] == 4 and row["subclass"] in ARMOR_SUBCLASSES:
         facts["armorType"] = ARMOR_SUBCLASSES[row["subclass"]]
+    if row["itemset"]:
+        facts["setId"] = row["itemset"]
+    if row["class"] == 15 and row["Quality"] >= 4:
+        facts["token"] = True
     allowable = _allowable_classes(row["AllowableClass"])
     if allowable:
         facts["allowableClasses"] = allowable
@@ -128,7 +132,8 @@ def enrich_zone(zone_tag: str) -> Path:
     placeholders = ",".join("?" * len(ids))
     rows = con.execute(
         f"SELECT entry, name, Quality, ItemLevel, InventoryType, AllowableClass, "
-        f"Flags, maxcount, class, subclass FROM item_template WHERE entry IN ({placeholders})",
+        f"Flags, maxcount, class, subclass, itemset FROM item_template "
+        f"WHERE entry IN ({placeholders})",
         sorted(ids),
     ).fetchall()
     items = {row["entry"]: _item_facts(row) for row in rows}
@@ -170,7 +175,7 @@ def enrich_zone(zone_tag: str) -> Path:
         placeholders = ",".join("?" * len(drop_only))
         for row in con.execute(
             f"SELECT entry, name, Quality, ItemLevel, InventoryType, AllowableClass, "
-            f"Flags, maxcount, class, subclass FROM item_template "
+            f"Flags, maxcount, class, subclass, itemset FROM item_template "
             f"WHERE entry IN ({placeholders})",
             sorted(drop_only),
         ):
