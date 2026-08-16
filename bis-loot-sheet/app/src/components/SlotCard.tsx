@@ -79,7 +79,7 @@ export function SlotCard({ slot, label, entries, items }: Props) {
                       </Badge>
                     )}
                     {item.pvp && (
-                      <Badge variant="outline" className="h-4 px-1 text-[10px] text-sky-400">
+                      <Badge variant="outline" className="h-4 px-1 text-[10px] text-red-400">
                         PvP
                       </Badge>
                     )}
