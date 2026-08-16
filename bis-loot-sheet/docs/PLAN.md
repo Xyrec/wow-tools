@@ -116,6 +116,16 @@ roster-agnostic; roster tailoring is a parameterized app feature, not baked into
      429s; every raw response cached to disk keyed by full query params; fully
      resumable; aggregation is a separate offline step over the cache.
   4. Fetch order: BT/Hyjal (P3 — near-term deliverable) first, then remaining raids.
+- **Row-level phase purity (Xyrec, 2026-08-16):** WCL's merged late partitions
+  ("P3.5 & P4") admit rows wearing next-tier gear. Rather than flagging items,
+  the aggregator now DROPS every ranking row containing any later-phase raid drop
+  (poison set = union of later-phase zones' lootmaps). Result: distributions only
+  describe loadouts achievable in the phase ("what did top parsers wear, using
+  only gear available in the set phase"). bt-hyjal: 23.5% of rows dropped.
+  Limits: covers raid drops only — later-phase vendor/badge additions and PvP
+  season timing aren't in raid lootmaps; the app's red "P4 item" badge remains
+  as a canary (post-filter it should never appear; if it does, we found such a
+  case).
 - Kill durations: not used for filtering now. Every row carries `duration`, so once
   data is in we can plot the kill-time bell curve and compare the guild's own kill
   times against the top-20-pages-per-spec distribution.

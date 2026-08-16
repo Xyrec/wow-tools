@@ -5,6 +5,7 @@ declare global {
     $WowheadPower?: { refreshLinks: () => void }
   }
 }
+import { Overview } from "@/components/Overview"
 import { SlotCard } from "@/components/SlotCard"
 import { SpecSidebar } from "@/components/SpecSidebar"
 import { Badge } from "@/components/ui/badge"
@@ -28,8 +29,8 @@ const ROLE_CAVEATS: Record<string, string> = {
 export default function App() {
   const [zoneTag, setZoneTag] = useState(zones[0]?.zone)
   const zone = useMemo(() => zones.find((z) => z.zone === zoneTag) ?? zones[0], [zoneTag])
-  const [specKey, setSpecKey] = useState("Shaman-Enhancement")
-  const spec = zone?.specs[specKey]
+  const [specKey, setSpecKey] = useState("")
+  const spec = specKey ? zone?.specs[specKey] : undefined
   const role = specRole(specKey)
 
   // Wowhead's tooltip script only scans on load; re-scan after re-renders.
@@ -68,7 +69,9 @@ export default function App() {
         </div>
 
         <main className="min-w-0 flex-1">
-          {spec ? (
+          {specKey === "" ? (
+            <Overview zone={zone} />
+          ) : spec ? (
             <>
               <div className="mb-3 flex flex-wrap items-center gap-3">
                 <h2

@@ -120,8 +120,19 @@ def aggregate_zone(zone_tag: str, max_pages: int) -> Path:
     items: dict[int, dict] = {}
     samples: Counter = Counter()
     dropped_rows: Counter = Counter()
+    # Per-encounter stats for the app's overview page: kept-row counts and
+    # kill-duration histograms (15s bins, milliseconds in the raw rows).
+    DURATION_BIN_MS = 15_000
+    enc_names = {
+        e["id"]: e["name"]
+        for e in json.loads((META_DIR / f"encounters-{zone['zone_id']}.json").read_text())
+    }
+    enc_rows: Counter = Counter()
+    enc_durations: dict[int, Counter] = {}
+    enc_duration_sums: Counter = Counter()
 
     for enc_dir in sorted(zone_dir.glob("enc-*")):
+        enc_id = int(enc_dir.name.split("-")[1])
         # Pin to the configured partition — other partitions may exist on disk
         # (e.g. the progression-era p4 data kept for later comparisons).
         for spec_dir in sorted(
@@ -135,6 +146,12 @@ def aggregate_zone(zone_tag: str, max_pages: int) -> Path:
                             dropped_rows[spec_key] += 1
                             continue
                         samples[spec_key] += 1
+                        enc_rows[enc_id] += 1
+                        duration = row.get("duration")
+                        if duration:
+                            bin_s = (duration // DURATION_BIN_MS) * 15
+                            enc_durations.setdefault(enc_id, Counter())[bin_s] += 1
+                            enc_duration_sums[enc_id] += duration
                         for idx, gear in enumerate(row.get("gear", [])):
                             slot = SLOT_BY_INDEX.get(idx)
                             if slot is None or not gear.get("id"):
@@ -161,8 +178,26 @@ def aggregate_zone(zone_tag: str, max_pages: int) -> Path:
             out_slots[slot] = entries
         specs[spec_key] = {"sampleSize": sample, "slots": out_slots}
 
+    stats = {
+        "rowsKept": sum(samples.values()),
+        "rowsDropped": sum(dropped_rows.values()),
+        "encounters": {
+            str(eid): {
+                "name": enc_names.get(eid, str(eid)),
+                "rows": enc_rows[eid],
+                "avgKillMs": int(
+                    enc_duration_sums[eid] / max(1, sum(enc_durations.get(eid, Counter()).values()))
+                ),
+                # sparse histogram: [bin start in seconds, kill count]
+                "durations": sorted(enc_durations.get(eid, Counter()).items()),
+            }
+            for eid in sorted(enc_rows)
+        },
+    }
+
     result = {
         "zone": zone_tag,
+        "stats": stats,
         "zoneId": zone["zone_id"],
         "partition": zone["partition"],
         "anniversaryPhase": zone["anniversary_phase"],

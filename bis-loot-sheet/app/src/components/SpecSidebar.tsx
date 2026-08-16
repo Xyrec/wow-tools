@@ -13,6 +13,16 @@ export function SpecSidebar({ zone, selected, onSelect }: Props) {
   const byClass = specKeysByClass(zone)
   return (
     <nav className="space-y-4">
+      <button
+        type="button"
+        onClick={() => onSelect("")}
+        className={cn(
+          "w-full rounded px-2 py-1 text-left text-sm font-semibold text-muted-foreground hover:bg-accent hover:text-foreground",
+          selected === "" && "bg-accent text-foreground",
+        )}
+      >
+        Overview
+      </button>
       {[...byClass.entries()].map(([cls, specKeys]) => (
         <div key={cls}>
           <div

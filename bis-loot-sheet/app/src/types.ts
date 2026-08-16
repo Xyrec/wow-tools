@@ -27,8 +27,23 @@ export interface SpecData {
   slots: Record<string, SlotEntry[]>
 }
 
+export interface EncounterStats {
+  name: string
+  rows: number
+  avgKillMs: number
+  /** Sparse histogram: [bin start in seconds (15s bins), kill count]. */
+  durations: [number, number][]
+}
+
+export interface ZoneStats {
+  rowsKept: number
+  rowsDropped: number
+  encounters: Record<string, EncounterStats>
+}
+
 export interface ZoneData {
   zone: string
+  stats: ZoneStats
   zoneId: number
   partition: number
   anniversaryPhase: number
