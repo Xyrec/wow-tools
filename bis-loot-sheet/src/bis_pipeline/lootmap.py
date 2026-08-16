@@ -104,3 +104,19 @@ def build_lootmap(zone_tag: str) -> dict:
 def load_lootmap(zone_tag: str) -> dict | None:
     path = META_DIR / f"lootmap-{zone_tag}.json"
     return json.loads(path.read_text()) if path.exists() else None
+
+
+def later_phase_items(zone_tag: str) -> set[int]:
+    """All raid-dropped item ids from zones of a LATER anniversary phase.
+
+    Used to purge poisoned ranking rows: a player wearing any of these was
+    logged after the next tier released and does not represent this phase.
+    """
+    own_phase = ZONES[zone_tag]["anniversary_phase"]
+    ids: set[int] = set()
+    for other_tag, other in ZONES.items():
+        if other["anniversary_phase"] > own_phase:
+            other_map = load_lootmap(other_tag) or build_lootmap(other_tag)
+            for enc in other_map.values():
+                ids.update(enc["items"])
+    return ids

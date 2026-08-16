@@ -102,15 +102,24 @@ def _iter_slice(region_dir: Path, region: str, max_pages: int):
 
 
 def aggregate_zone(zone_tag: str, max_pages: int) -> Path:
+    from .lootmap import later_phase_items
+
     zone = ZONES[zone_tag]
     zone_dir = RAW_DIR / f"zone-{zone['zone_id']}"
     specs: dict[str, dict] = {}
+
+    # WCL's late-TBC partitions merge eras ("P3.5 & P4"), so rows logged after
+    # the next tier released can wear next-phase gear. Any row containing a
+    # later-phase raid drop is discarded entirely — the distributions must
+    # only describe loadouts achievable within this phase (Xyrec directive).
+    poison = later_phase_items(zone_tag)
 
     # spec -> slot -> Counter of item id; plus one exemplar per item id for
     # name/quality/icon (WCL repeats them on every row).
     counts: dict[str, dict[str, Counter]] = {}
     items: dict[int, dict] = {}
     samples: Counter = Counter()
+    dropped_rows: Counter = Counter()
 
     for enc_dir in sorted(zone_dir.glob("enc-*")):
         # Pin to the configured partition — other partitions may exist on disk
@@ -122,6 +131,9 @@ def aggregate_zone(zone_tag: str, max_pages: int) -> Path:
             for region in REGIONS:
                 for payload in _iter_slice(spec_dir / region, region, max_pages):
                     for row in payload["rankings"]:
+                        if any(g.get("id") in poison for g in row.get("gear", [])):
+                            dropped_rows[spec_key] += 1
+                            continue
                         samples[spec_key] += 1
                         for idx, gear in enumerate(row.get("gear", [])):
                             slot = SLOT_BY_INDEX.get(idx)
@@ -162,11 +174,16 @@ def aggregate_zone(zone_tag: str, max_pages: int) -> Path:
     AGGREGATED_DIR.mkdir(parents=True, exist_ok=True)
     out_path = AGGREGATED_DIR / f"{zone_tag}.json"
     out_path.write_text(json.dumps(result, indent=1))
+    total_dropped = sum(dropped_rows.values())
+    total_kept = sum(samples.values())
     log.info(
-        "aggregated %s: %d specs, %d total rows -> %s",
+        "aggregated %s: %d specs, %d rows kept, %d rows dropped (%.1f%%) for "
+        "wearing later-phase raid gear -> %s",
         zone_tag,
         len(specs),
-        sum(samples.values()),
+        total_kept,
+        total_dropped,
+        100.0 * total_dropped / max(1, total_kept + total_dropped),
         out_path,
     )
     return out_path
