@@ -171,7 +171,12 @@ class SliceFetcher:
         """Fetch one page (cached). Returns None on error or empty page."""
         page_file = slice_dir / f"page-{page:02d}.json"
         if page_file.exists():
-            return json.loads(page_file.read_text())
+            try:
+                return json.loads(page_file.read_text())
+            except json.JSONDecodeError:
+                # Truncated write (e.g. power loss mid-fetch): drop and refetch.
+                log.warning("corrupt cached page %s — refetching", page_file)
+                page_file.unlink()
         query = _rankings_query(
             encounter_id, partition, class_name, spec_name, metric, page, region, server
         )
