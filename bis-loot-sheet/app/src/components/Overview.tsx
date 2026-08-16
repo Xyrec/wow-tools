@@ -85,7 +85,7 @@ export function Overview({ zone }: { zone: ZoneData }) {
         <StatTile
           label="Parses analyzed"
           value={stats.rowsKept.toLocaleString()}
-          sub="phase-pure ranking rows"
+          sub="best parse per player, per boss & spec"
         />
         <StatTile
           label="Poisoned rows removed"
