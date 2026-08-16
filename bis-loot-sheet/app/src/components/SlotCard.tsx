@@ -74,27 +74,27 @@ export function SlotCard({ slot, label, entries, items }: Props) {
                       {item.name}
                     </a>
                     {item.laterPhase && (
-                      <Badge variant="destructive" className="h-4 px-1 text-[10px]">
+                      <Badge variant="destructive" className="h-4 px-1 text-xs">
                         P{ZONE_PHASES[item.laterPhase] ?? "?"} item
                       </Badge>
                     )}
                     {item.pvp && (
-                      <Badge variant="outline" className="h-4 px-1 text-[10px] text-red-400">
+                      <Badge variant="outline" className="h-4 px-1 text-xs text-red-400">
                         PvP
                       </Badge>
                     )}
                     {item.setId && (
-                      <Badge variant="outline" className="h-4 px-1 text-[10px] text-emerald-400">
-                        {item.token ? "Token" : "Set Piece"}
+                      <Badge variant="outline" className="h-4 px-1 text-xs text-emerald-400">
+                        {item.token ? "Token" : "Set"}
                       </Badge>
                     )}
                     {showUnique && item.unique && (
-                      <Badge variant="outline" className="h-4 px-1 text-[10px] text-amber-400">
+                      <Badge variant="outline" className="h-4 px-1 text-xs text-amber-400">
                         Unique
                       </Badge>
                     )}
                     {showUnique && item.uniqueEquipped && (
-                      <Badge variant="outline" className="h-4 px-1 text-[10px] text-amber-400">
+                      <Badge variant="outline" className="h-4 px-1 text-xs text-amber-400">
                         Unique-Equipped
                       </Badge>
                     )}

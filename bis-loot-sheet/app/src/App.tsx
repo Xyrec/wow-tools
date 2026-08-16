@@ -64,7 +64,7 @@ export default function App() {
 
       <div className="flex items-start gap-4">
         {/* Sticky sidebar with its own scrollbar; the item list scrolls with the page. */}
-        <div className="sticky top-4 max-h-[calc(100vh-2rem)] w-48 shrink-0 overflow-y-auto overscroll-contain pr-2">
+        <div className="sticky top-0 max-h-dvh w-48 shrink-0 overflow-y-auto overscroll-contain py-4 pr-2">
           <SpecSidebar zone={zone} selected={specKey} onSelect={setSpecKey} />
         </div>
 
