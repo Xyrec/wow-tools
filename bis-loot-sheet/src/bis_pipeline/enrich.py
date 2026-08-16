@@ -68,8 +68,7 @@ ARMOR_SUBCLASSES = {1: "cloth", 2: "leather", 3: "mail", 4: "plate", 6: "shield"
 
 ITEM_COLUMNS = (
     "entry, name, Quality, ItemLevel, InventoryType, AllowableClass, "
-    "Flags, maxcount, class, subclass, itemset, "
-    + ", ".join(f"stat_type{i}" for i in range(1, 11))
+    "Flags, maxcount, class, subclass, itemset, " + ", ".join(f"stat_type{i}" for i in range(1, 11))
 )
 
 ITEM_MOD_RESILIENCE = 35
@@ -145,8 +144,9 @@ def enrich_zone(zone_tag: str) -> Path:
 
     ids: set[int] = set()
     for spec_data in data["specs"].values():
-        for entries in spec_data["slots"].values():
-            ids.update(e["id"] for e in entries)
+        for band in spec_data["bands"].values():
+            for entries in band["slots"].values():
+                ids.update(e["id"] for e in entries)
 
     con = sqlite3.connect(CMANGOS_DB)
     con.row_factory = sqlite3.Row
@@ -163,22 +163,25 @@ def enrich_zone(zone_tag: str) -> Path:
 
     specs = {}
     for spec_key, spec_data in data["specs"].items():
-        slots = {}
-        for slot, entries in spec_data["slots"].items():
-            kept = [
-                {"id": e["id"], "count": e["count"], "pct": e["pct"]}
-                for e in entries
-                if e["id"] in items
-            ]
-            # Preserve WCL's icon (cmangos stores display ids, not icon names)
-            # and note WCL display names that differ from 2.4.3 canonical.
-            for e in entries:
-                if e["id"] in items:
-                    items[e["id"]].setdefault("icon", e["icon"])
-                    if e["name"] != items[e["id"]]["name"]:
-                        items[e["id"]].setdefault("wclName", e["name"])
-            slots[slot] = kept
-        specs[spec_key] = {"sampleSize": spec_data["sampleSize"], "slots": slots}
+        bands = {}
+        for band_key, band in spec_data["bands"].items():
+            slots = {}
+            for slot, entries in band["slots"].items():
+                kept = [
+                    {"id": e["id"], "count": e["count"], "pct": e["pct"]}
+                    for e in entries
+                    if e["id"] in items
+                ]
+                # Preserve WCL's icon (cmangos stores display ids, not icon
+                # names) and note WCL names that differ from 2.4.3 canonical.
+                for e in entries:
+                    if e["id"] in items:
+                        items[e["id"]].setdefault("icon", e["icon"])
+                        if e["name"] != items[e["id"]]["name"]:
+                            items[e["id"]].setdefault("wclName", e["name"])
+                slots[slot] = kept
+            bands[band_key] = {"sampleSize": band["sampleSize"], "slots": slots}
+        specs[spec_key] = {"bands": bands}
 
     from .lootmap import build_lootmap, load_lootmap
 

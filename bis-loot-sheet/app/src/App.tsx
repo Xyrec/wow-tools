@@ -19,6 +19,13 @@ import {
   specName,
   specRole,
 } from "@/lib/wow"
+import type { BandKey } from "@/types"
+
+const BAND_LABELS: Record<BandKey, string> = {
+  top10: "Top 10%",
+  mid50: "Mid 50%",
+  all: "Everyone",
+}
 
 const ROLE_CAVEATS: Record<string, string> = {
   healer:
@@ -30,14 +37,16 @@ export default function App() {
   const [zoneTag, setZoneTag] = useState(zones[0]?.zone)
   const zone = useMemo(() => zones.find((z) => z.zone === zoneTag) ?? zones[0], [zoneTag])
   const [specKey, setSpecKey] = useState("")
+  const [band, setBand] = useState<BandKey>("top10")
   const spec = specKey ? zone?.specs[specKey] : undefined
+  const bandData = spec?.bands[band]
   const role = specRole(specKey)
 
   // Wowhead's tooltip script only scans on load; re-scan after re-renders.
   useEffect(() => {
     const id = setTimeout(() => window.$WowheadPower?.refreshLinks(), 50)
     return () => clearTimeout(id)
-  }, [zoneTag, specKey])
+  }, [zoneTag, specKey, band])
 
   if (!zone) return <main className="p-8">No data generated yet — run the pipeline.</main>
 
@@ -71,7 +80,7 @@ export default function App() {
         <main className="min-w-0 flex-1">
           {specKey === "" ? (
             <Overview zone={zone} />
-          ) : spec ? (
+          ) : spec && bandData ? (
             <>
               <div className="mb-3 flex flex-wrap items-center gap-3">
                 <h2
@@ -80,8 +89,19 @@ export default function App() {
                 >
                   {specName(specKey)} {specClass(specKey)}
                 </h2>
+                {/* Player band: who the distributions describe, by parse
+                    percentile within each (spec, boss) population. */}
+                <Tabs value={band} onValueChange={(v) => setBand(v as BandKey)}>
+                  <TabsList>
+                    {(Object.keys(BAND_LABELS) as BandKey[]).map((key) => (
+                      <TabsTrigger key={key} value={key}>
+                        {BAND_LABELS[key]}
+                      </TabsTrigger>
+                    ))}
+                  </TabsList>
+                </Tabs>
                 <Badge variant="secondary">
-                  {spec.sampleSize.toLocaleString()} parses sampled
+                  {bandData.sampleSize.toLocaleString()} parses sampled
                 </Badge>
                 <span className="text-xs text-muted-foreground">
                   generated {new Date(zone.generatedAt).toLocaleString()}
@@ -94,7 +114,7 @@ export default function App() {
               )}
               <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
                 {(() => {
-                  const slots = splitWeapons(spec.slots, zone.items)
+                  const slots = splitWeapons(bandData.slots, zone.items)
                   return SLOT_ORDER.map(([slot, label]) => (
                     <SlotCard
                       key={slot}

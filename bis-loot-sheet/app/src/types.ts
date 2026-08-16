@@ -23,9 +23,15 @@ export interface SlotEntry {
   pct: number
 }
 
-export interface SpecData {
+export type BandKey = "top10" | "mid50" | "all"
+
+export interface BandData {
   sampleSize: number
   slots: Record<string, SlotEntry[]>
+}
+
+export interface SpecData {
+  bands: Record<BandKey, BandData>
 }
 
 export interface EncounterStats {
