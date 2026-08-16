@@ -2713,6 +2713,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "icon": "inv_misc_cape_16.jpg"
   },
   "24259": {
@@ -2844,6 +2845,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 567,
+   "pvp": true,
    "allowableClasses": [
     "Warrior"
    ],
@@ -2858,6 +2860,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 567,
+   "pvp": true,
    "allowableClasses": [
     "Warrior"
    ],
@@ -2872,6 +2875,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 567,
+   "pvp": true,
    "allowableClasses": [
     "Warrior"
    ],
@@ -2884,6 +2888,7 @@
    "slot": "two_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_sword_70.jpg"
   },
   "24552": {
@@ -2895,6 +2900,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 568,
+   "pvp": true,
    "allowableClasses": [
     "Warlock"
    ],
@@ -2909,6 +2915,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 568,
+   "pvp": true,
    "allowableClasses": [
     "Warlock"
    ],
@@ -2923,6 +2930,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 568,
+   "pvp": true,
    "allowableClasses": [
     "Warlock"
    ],
@@ -2937,6 +2945,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 568,
+   "pvp": true,
    "allowableClasses": [
     "Warlock"
    ],
@@ -2949,6 +2958,7 @@
    "slot": "two_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_staff_53.jpg"
   },
   "24692": {
@@ -3353,6 +3363,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 577,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -3367,6 +3378,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 577,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -3381,6 +3393,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 577,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -3395,6 +3408,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 577,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -3409,6 +3423,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 577,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -3433,6 +3448,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 579,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -3447,6 +3463,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 579,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -3461,6 +3478,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 579,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -3475,6 +3493,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 579,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -3489,6 +3508,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 579,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -3907,6 +3927,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 583,
+   "pvp": true,
    "allowableClasses": [
     "Paladin"
    ],
@@ -3921,6 +3942,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 583,
+   "pvp": true,
    "allowableClasses": [
     "Paladin"
    ],
@@ -3989,6 +4011,7 @@
    "slot": "trinket",
    "unique": false,
    "uniqueEquipped": true,
+   "pvp": true,
    "icon": "inv_potion_130.jpg"
   },
   "27903": {
@@ -4254,6 +4277,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 584,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -4268,6 +4292,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 584,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -4461,6 +4486,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -4473,6 +4499,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -4485,6 +4512,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Paladin"
    ],
@@ -4497,6 +4525,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Hunter"
    ],
@@ -4509,6 +4538,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -4521,6 +4551,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -4533,6 +4564,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -4545,6 +4577,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -4557,6 +4590,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Paladin"
    ],
@@ -4569,6 +4603,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Hunter"
    ],
@@ -4659,6 +4694,7 @@
    "slot": "ranged",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_crossbow_10.jpg"
   },
   "28295": {
@@ -4668,6 +4704,7 @@
    "slot": "one_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_sword_71.jpg"
   },
   "28296": {
@@ -4686,6 +4723,7 @@
    "slot": "main_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_shortblade_26.jpg"
   },
   "28300": {
@@ -4695,6 +4733,7 @@
    "slot": "two_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_halberd15.jpg"
   },
   "28302": {
@@ -4704,6 +4743,7 @@
    "slot": "off_hand_weapon",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_mace_36.jpg"
   },
   "28305": {
@@ -4713,6 +4753,7 @@
    "slot": "one_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_mace_36.jpg"
   },
   "28307": {
@@ -4722,6 +4763,7 @@
    "slot": "off_hand_weapon",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_sword_71.jpg"
   },
   "28308": {
@@ -4731,6 +4773,7 @@
    "slot": "one_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_axe_54.jpg"
   },
   "28310": {
@@ -4740,6 +4783,7 @@
    "slot": "off_hand_weapon",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_shortblade_45.jpg"
   },
   "28312": {
@@ -4749,6 +4793,7 @@
    "slot": "one_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_shortblade_45.jpg"
   },
   "28313": {
@@ -4758,6 +4803,7 @@
    "slot": "main_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_hand_13.jpg",
    "wclName": "Gladiator's Ripper"
   },
@@ -4768,6 +4814,7 @@
    "slot": "off_hand_weapon",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_hand_13.jpg",
    "wclName": "Gladiator's Fleshslicer"
   },
@@ -4787,6 +4834,7 @@
    "slot": "thrown",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_axe_03.jpg"
   },
   "28320": {
@@ -4796,6 +4844,7 @@
    "slot": "ranged",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_wand_09.jpg"
   },
   "28327": {
@@ -4816,6 +4865,7 @@
    "uniqueEquipped": false,
    "armorType": "mail",
    "setId": 586,
+   "pvp": true,
    "allowableClasses": [
     "Hunter"
    ],
@@ -4830,6 +4880,7 @@
    "uniqueEquipped": false,
    "armorType": "mail",
    "setId": 586,
+   "pvp": true,
    "allowableClasses": [
     "Hunter"
    ],
@@ -4844,6 +4895,7 @@
    "uniqueEquipped": false,
    "armorType": "mail",
    "setId": 586,
+   "pvp": true,
    "allowableClasses": [
     "Hunter"
    ],
@@ -4858,6 +4910,7 @@
    "uniqueEquipped": false,
    "armorType": "mail",
    "setId": 586,
+   "pvp": true,
    "allowableClasses": [
     "Hunter"
    ],
@@ -4872,6 +4925,7 @@
    "uniqueEquipped": false,
    "armorType": "mail",
    "setId": 586,
+   "pvp": true,
    "allowableClasses": [
     "Hunter"
    ],
@@ -4904,6 +4958,7 @@
    "slot": "held_off_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_misc_book_06.jpg"
   },
   "28370": {
@@ -4933,6 +4988,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "icon": "inv_misc_cape_07.jpg"
   },
   "28378": {
@@ -4943,6 +4999,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "icon": "inv_misc_cape_07.jpg"
   },
   "28386": {
@@ -4990,6 +5047,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "icon": "inv_bracer_07.jpg"
   },
   "28412": {
@@ -5018,6 +5076,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "leather",
+   "pvp": true,
    "icon": "inv_belt_17.jpg"
   },
   "28424": {
@@ -5028,6 +5087,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "leather",
+   "pvp": true,
    "icon": "inv_bracer_07.jpg"
   },
   "28430": {
@@ -5093,6 +5153,7 @@
    "slot": "two_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_mace_52.jpg"
   },
   "28477": {
@@ -5394,6 +5455,7 @@
    "slot": "finger",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_ring_60.jpg"
   },
   "28555": {
@@ -5403,6 +5465,7 @@
    "slot": "finger",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_ring_60.jpg"
   },
   "28565": {
@@ -6789,6 +6852,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "icon": "inv_bracer_07.jpg"
   },
   "29011": {
@@ -7918,6 +7982,7 @@
    "slot": "one_hand",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_sword_draenei_01.jpg"
   },
   "29126": {
@@ -7954,6 +8019,7 @@
    "slot": "ranged",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_rifle_02.jpg"
   },
   "29152": {
@@ -8081,6 +8147,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_datacrystal02.jpg"
   },
   "29183": {
@@ -9961,6 +10028,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "mail",
+   "pvp": true,
    "icon": "inv_chest_plate09.jpg"
   },
   "30055": {
@@ -11666,6 +11734,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Warlock"
    ],
@@ -11678,6 +11747,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Warrior"
    ],
@@ -11690,6 +11760,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Shaman"
    ],
@@ -11702,6 +11773,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Priest"
    ],
@@ -11714,6 +11786,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Warlock"
    ],
@@ -11726,6 +11799,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Priest"
    ],
@@ -11738,6 +11812,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Warrior"
    ],
@@ -11750,6 +11825,7 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Shaman"
    ],
@@ -11851,6 +11927,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 567,
+   "pvp": true,
    "allowableClasses": [
     "Warrior"
    ],
@@ -11865,6 +11942,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 567,
+   "pvp": true,
    "allowableClasses": [
     "Warrior"
    ],
@@ -11879,6 +11957,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 567,
+   "pvp": true,
    "allowableClasses": [
     "Warrior"
    ],
@@ -11893,6 +11972,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 567,
+   "pvp": true,
    "allowableClasses": [
     "Warrior"
    ],
@@ -11907,6 +11987,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 567,
+   "pvp": true,
    "allowableClasses": [
     "Warrior"
    ],
@@ -14660,6 +14741,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 685,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -14674,6 +14756,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 685,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -14717,6 +14800,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 690,
+   "pvp": true,
    "allowableClasses": [
     "Paladin"
    ],
@@ -14859,6 +14943,7 @@
    "slot": "off_hand_weapon",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_mace_36.jpg"
   },
   "31960": {
@@ -14870,6 +14955,7 @@
    "uniqueEquipped": false,
    "armorType": "mail",
    "setId": 586,
+   "pvp": true,
    "allowableClasses": [
     "Hunter"
    ],
@@ -14884,6 +14970,7 @@
    "uniqueEquipped": false,
    "armorType": "mail",
    "setId": 586,
+   "pvp": true,
    "allowableClasses": [
     "Hunter"
    ],
@@ -14898,6 +14985,7 @@
    "uniqueEquipped": false,
    "armorType": "mail",
    "setId": 586,
+   "pvp": true,
    "allowableClasses": [
     "Hunter"
    ],
@@ -14912,6 +15000,7 @@
    "uniqueEquipped": false,
    "armorType": "mail",
    "setId": 586,
+   "pvp": true,
    "allowableClasses": [
     "Hunter"
    ],
@@ -14926,6 +15015,7 @@
    "uniqueEquipped": false,
    "armorType": "mail",
    "setId": 586,
+   "pvp": true,
    "allowableClasses": [
     "Hunter"
    ],
@@ -14938,6 +15028,7 @@
    "slot": "one_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_axe_54.jpg"
   },
   "31968": {
@@ -14949,6 +15040,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 584,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -14963,6 +15055,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 584,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -14977,6 +15070,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 568,
+   "pvp": true,
    "allowableClasses": [
     "Warlock"
    ],
@@ -14991,6 +15085,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 568,
+   "pvp": true,
    "allowableClasses": [
     "Warlock"
    ],
@@ -15005,6 +15100,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 568,
+   "pvp": true,
    "allowableClasses": [
     "Warlock"
    ],
@@ -15017,6 +15113,7 @@
    "slot": "held_off_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_misc_book_06.jpg"
   },
   "31986": {
@@ -15026,6 +15123,7 @@
    "slot": "ranged",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_crossbow_10.jpg"
   },
   "31987": {
@@ -15037,6 +15135,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 685,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -15051,6 +15150,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 685,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -15065,6 +15165,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 685,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -15079,6 +15180,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 685,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -15093,6 +15195,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 685,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -15107,6 +15210,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 577,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -15121,6 +15225,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 577,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -15135,6 +15240,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 577,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -15149,6 +15255,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 577,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -15163,6 +15270,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 577,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -15175,6 +15283,7 @@
    "slot": "off_hand_weapon",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_hand_13.jpg",
    "wclName": "Merciless Gladiator's Fleshslicer"
   },
@@ -15185,6 +15294,7 @@
    "slot": "two_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_mace_52.jpg"
   },
   "32017": {
@@ -15196,6 +15306,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 687,
+   "pvp": true,
    "allowableClasses": [
     "Priest"
    ],
@@ -15210,6 +15321,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 687,
+   "pvp": true,
    "allowableClasses": [
     "Priest"
    ],
@@ -15224,6 +15336,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 687,
+   "pvp": true,
    "allowableClasses": [
     "Priest"
    ],
@@ -15238,6 +15351,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 690,
+   "pvp": true,
    "allowableClasses": [
     "Paladin"
    ],
@@ -15250,6 +15364,7 @@
    "slot": "one_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_mace_36.jpg"
   },
   "32027": {
@@ -15259,6 +15374,7 @@
    "slot": "off_hand_weapon",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_sword_71.jpg"
   },
   "32039": {
@@ -15270,6 +15386,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 583,
+   "pvp": true,
    "allowableClasses": [
     "Paladin"
    ],
@@ -15284,6 +15401,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 583,
+   "pvp": true,
    "allowableClasses": [
     "Paladin"
    ],
@@ -15298,6 +15416,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 583,
+   "pvp": true,
    "allowableClasses": [
     "Paladin"
    ],
@@ -15310,6 +15429,7 @@
    "slot": "one_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_shortblade_45.jpg"
   },
   "32045": {
@@ -15320,6 +15440,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "shield",
+   "pvp": true,
    "icon": "inv_shield_31.jpg"
   },
   "32046": {
@@ -15329,6 +15450,7 @@
    "slot": "off_hand_weapon",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_shortblade_45.jpg"
   },
   "32047": {
@@ -15340,6 +15462,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 579,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -15354,6 +15477,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 579,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -15368,6 +15492,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 579,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -15382,6 +15507,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 579,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -15396,6 +15522,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 579,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -15408,6 +15535,7 @@
    "slot": "one_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_sword_71.jpg"
   },
   "32053": {
@@ -15417,6 +15545,7 @@
    "slot": "main_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_shortblade_26.jpg"
   },
   "32054": {
@@ -15426,6 +15555,7 @@
    "slot": "thrown",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_axe_03.jpg"
   },
   "32055": {
@@ -15435,6 +15565,7 @@
    "slot": "two_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_staff_53.jpg"
   },
   "32078": {
@@ -16855,6 +16986,7 @@
    "slot": "main_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_mace_47.jpg"
   },
   "32451": {
@@ -16864,6 +16996,7 @@
    "slot": "main_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_mace_47.jpg"
   },
   "32461": {
@@ -17715,6 +17848,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "leather",
+   "pvp": true,
    "icon": "inv_boots_08.jpg"
   },
   "32793": {
@@ -17725,6 +17859,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "plate",
+   "pvp": true,
    "icon": "inv_boots_plate_04.jpg"
   },
   "32795": {
@@ -17735,6 +17870,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "icon": "inv_boots_05.jpg"
   },
   "32797": {
@@ -17745,6 +17881,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "mail",
+   "pvp": true,
    "icon": "inv_belt_20.jpg"
   },
   "32802": {
@@ -17755,6 +17892,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "leather",
+   "pvp": true,
    "icon": "inv_belt_17.jpg"
   },
   "32805": {
@@ -17765,6 +17903,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "plate",
+   "pvp": true,
    "icon": "inv_belt_14.jpg"
   },
   "32809": {
@@ -17775,6 +17914,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "mail",
+   "pvp": true,
    "icon": "inv_bracer_16.jpg"
   },
   "32810": {
@@ -17785,6 +17925,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "leather",
+   "pvp": true,
    "icon": "inv_bracer_07.jpg"
   },
   "32811": {
@@ -17795,6 +17936,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "icon": "inv_bracer_07.jpg"
   },
   "32812": {
@@ -17805,6 +17947,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "leather",
+   "pvp": true,
    "icon": "inv_bracer_07.jpg"
   },
   "32814": {
@@ -17815,6 +17958,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "leather",
+   "pvp": true,
    "icon": "inv_bracer_07.jpg"
   },
   "32817": {
@@ -17825,6 +17969,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "mail",
+   "pvp": true,
    "icon": "inv_bracer_16.jpg"
   },
   "32818": {
@@ -17835,6 +17980,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "plate",
+   "pvp": true,
    "icon": "inv_bracer_19.jpg"
   },
   "32820": {
@@ -17845,6 +17991,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "icon": "inv_bracer_07.jpg"
   },
   "32837": {
@@ -17935,6 +18082,7 @@
    "slot": "held_off_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_misc_book_06.jpg"
   },
   "32962": {
@@ -17944,6 +18092,7 @@
    "slot": "ranged",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_wand_09.jpg"
   },
   "32963": {
@@ -17953,6 +18102,7 @@
    "slot": "main_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_mace_47.jpg"
   },
   "32964": {
@@ -17962,6 +18112,7 @@
    "slot": "main_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_mace_47.jpg"
   },
   "33054": {
@@ -17971,6 +18122,7 @@
    "slot": "finger",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_ring_39.jpg"
   },
   "33055": {
@@ -17980,6 +18132,7 @@
    "slot": "finger",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_ring_71.jpg"
   },
   "33056": {
@@ -17989,6 +18142,7 @@
    "slot": "finger",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_ring_60.jpg"
   },
   "33057": {
@@ -17998,6 +18152,7 @@
    "slot": "finger",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_ring_60.jpg"
   },
   "33058": {
@@ -18007,6 +18162,7 @@
    "slot": "finger",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_ring_43.jpg"
   },
   "33065": {
@@ -18016,6 +18172,7 @@
    "slot": "neck",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_necklace_36.jpg"
   },
   "33066": {
@@ -18025,6 +18182,7 @@
    "slot": "neck",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_necklace_36.jpg"
   },
   "33067": {
@@ -18034,6 +18192,7 @@
    "slot": "neck",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_necklace_36.jpg"
   },
   "33068": {
@@ -18043,6 +18202,7 @@
    "slot": "neck",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_necklace_36.jpg"
   },
   "33122": {
@@ -18143,6 +18303,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "icon": "inv_misc_cape_20.jpg"
   },
   "33309": {
@@ -18153,6 +18314,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "shield",
+   "pvp": true,
    "icon": "inv_shield_31.jpg"
   },
   "33313": {
@@ -18163,6 +18325,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "shield",
+   "pvp": true,
    "icon": "inv_shield_31.jpg"
   },
   "33324": {
@@ -18213,6 +18376,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "icon": "inv_misc_cape_06.jpg"
   },
   "33334": {
@@ -18401,6 +18565,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "icon": "inv_misc_cape_20.jpg"
   },
   "33489": {
@@ -18510,6 +18675,7 @@
    "slot": "finger",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_ring_61.jpg"
   },
   "33502": {
@@ -18952,6 +19118,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "shield",
+   "pvp": true,
    "icon": "inv_shield_31.jpg"
   },
   "33662": {
@@ -18961,6 +19128,7 @@
    "slot": "off_hand_weapon",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_mace_41.jpg"
   },
   "33664": {
@@ -18972,6 +19140,7 @@
    "uniqueEquipped": false,
    "armorType": "mail",
    "setId": 586,
+   "pvp": true,
    "allowableClasses": [
     "Hunter"
    ],
@@ -18986,6 +19155,7 @@
    "uniqueEquipped": false,
    "armorType": "mail",
    "setId": 586,
+   "pvp": true,
    "allowableClasses": [
     "Hunter"
    ],
@@ -19000,6 +19170,7 @@
    "uniqueEquipped": false,
    "armorType": "mail",
    "setId": 586,
+   "pvp": true,
    "allowableClasses": [
     "Hunter"
    ],
@@ -19014,6 +19185,7 @@
    "uniqueEquipped": false,
    "armorType": "mail",
    "setId": 586,
+   "pvp": true,
    "allowableClasses": [
     "Hunter"
    ],
@@ -19026,6 +19198,7 @@
    "slot": "one_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_axe_84.jpg"
   },
   "33671": {
@@ -19037,6 +19210,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 584,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -19051,6 +19225,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 584,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -19065,6 +19240,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 584,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -19079,6 +19255,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 568,
+   "pvp": true,
    "allowableClasses": [
     "Warlock"
    ],
@@ -19091,6 +19268,7 @@
    "slot": "main_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_mace_56.jpg"
   },
   "33690": {
@@ -19102,6 +19280,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 685,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -19116,6 +19295,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 685,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -19130,6 +19310,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 685,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -19144,6 +19325,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 685,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -19158,6 +19340,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 685,
+   "pvp": true,
    "allowableClasses": [
     "Druid"
    ],
@@ -19172,6 +19355,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 577,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -19186,6 +19370,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 577,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -19200,6 +19385,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 577,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -19214,6 +19400,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 577,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -19228,6 +19415,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 577,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -19240,6 +19428,7 @@
    "slot": "off_hand_weapon",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_hand_13.jpg",
    "wclName": "Vengeful Gladiator's Fleshslicer"
   },
@@ -19250,6 +19439,7 @@
    "slot": "two_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_staff_60.jpg"
   },
   "33717": {
@@ -19261,6 +19451,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 687,
+   "pvp": true,
    "allowableClasses": [
     "Priest"
    ],
@@ -19275,6 +19466,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 687,
+   "pvp": true,
    "allowableClasses": [
     "Priest"
    ],
@@ -19289,6 +19481,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 687,
+   "pvp": true,
    "allowableClasses": [
     "Priest"
    ],
@@ -19303,6 +19496,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 687,
+   "pvp": true,
    "allowableClasses": [
     "Priest"
    ],
@@ -19317,6 +19511,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 690,
+   "pvp": true,
    "allowableClasses": [
     "Paladin"
    ],
@@ -19331,6 +19526,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 567,
+   "pvp": true,
    "allowableClasses": [
     "Warrior"
    ],
@@ -19345,6 +19541,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 567,
+   "pvp": true,
    "allowableClasses": [
     "Warrior"
    ],
@@ -19359,6 +19556,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 567,
+   "pvp": true,
    "allowableClasses": [
     "Warrior"
    ],
@@ -19373,6 +19571,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 567,
+   "pvp": true,
    "allowableClasses": [
     "Warrior"
    ],
@@ -19387,6 +19586,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 567,
+   "pvp": true,
    "allowableClasses": [
     "Warrior"
    ],
@@ -19399,6 +19599,7 @@
    "slot": "one_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_mace_41.jpg"
   },
   "33734": {
@@ -19408,6 +19609,7 @@
    "slot": "off_hand_weapon",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_sword_89.jpg"
   },
   "33736": {
@@ -19417,6 +19619,7 @@
    "slot": "held_off_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_misc_book_06.jpg"
   },
   "33737": {
@@ -19426,6 +19629,7 @@
    "slot": "main_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_hand_13.jpg",
    "wclName": "Vengeful Gladiator's Ripper"
   },
@@ -19436,6 +19640,7 @@
    "slot": "main_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_mace_56.jpg"
   },
   "33749": {
@@ -19447,6 +19652,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 583,
+   "pvp": true,
    "allowableClasses": [
     "Paladin"
    ],
@@ -19461,6 +19667,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 583,
+   "pvp": true,
    "allowableClasses": [
     "Paladin"
    ],
@@ -19475,6 +19682,7 @@
    "uniqueEquipped": false,
    "armorType": "plate",
    "setId": 583,
+   "pvp": true,
    "allowableClasses": [
     "Paladin"
    ],
@@ -19487,6 +19695,7 @@
    "slot": "off_hand_weapon",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_shortblade_62.jpg"
   },
   "33757": {
@@ -19498,6 +19707,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 579,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -19512,6 +19722,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 579,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -19526,6 +19737,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 579,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -19540,6 +19752,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 579,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -19554,6 +19767,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 579,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -19566,6 +19780,7 @@
    "slot": "one_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_sword_89.jpg"
   },
   "33763": {
@@ -19575,6 +19790,7 @@
    "slot": "main_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_shortblade_51.jpg"
   },
   "33765": {
@@ -19584,6 +19800,7 @@
    "slot": "thrown",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_axe_03.jpg"
   },
   "33801": {
@@ -19593,6 +19810,7 @@
    "slot": "off_hand_weapon",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_shortblade_62.jpg"
   },
   "33805": {
@@ -19613,6 +19831,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "plate",
+   "pvp": true,
    "allowableClasses": [
     "Warrior",
     "Paladin"
@@ -19627,6 +19846,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "plate",
+   "pvp": true,
    "allowableClasses": [
     "Warrior",
     "Paladin"
@@ -19641,6 +19861,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "plate",
+   "pvp": true,
    "allowableClasses": [
     "Warrior",
     "Paladin"
@@ -19681,6 +19902,7 @@
    "slot": "finger",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_ring_60.jpg"
   },
   "33876": {
@@ -19691,6 +19913,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "mail",
+   "pvp": true,
    "allowableClasses": [
     "Hunter",
     "Shaman"
@@ -19705,6 +19928,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "mail",
+   "pvp": true,
    "allowableClasses": [
     "Hunter",
     "Shaman"
@@ -19719,6 +19943,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "mail",
+   "pvp": true,
    "allowableClasses": [
     "Hunter",
     "Shaman"
@@ -19733,6 +19958,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "leather",
+   "pvp": true,
    "allowableClasses": [
     "Rogue",
     "Druid"
@@ -19747,6 +19973,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "leather",
+   "pvp": true,
    "allowableClasses": [
     "Rogue",
     "Druid"
@@ -19761,6 +19988,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "leather",
+   "pvp": true,
    "allowableClasses": [
     "Rogue",
     "Druid"
@@ -19775,6 +20003,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "allowableClasses": [
     "Priest",
     "Mage",
@@ -19790,6 +20019,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "allowableClasses": [
     "Priest",
     "Mage",
@@ -19805,6 +20035,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "allowableClasses": [
     "Priest",
     "Mage",
@@ -19820,6 +20051,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "leather",
+   "pvp": true,
    "allowableClasses": [
     "Rogue",
     "Druid"
@@ -19834,6 +20066,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "leather",
+   "pvp": true,
    "allowableClasses": [
     "Rogue",
     "Druid"
@@ -19848,6 +20081,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "leather",
+   "pvp": true,
    "allowableClasses": [
     "Rogue",
     "Druid"
@@ -19862,6 +20096,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "plate",
+   "pvp": true,
    "allowableClasses": [
     "Warrior",
     "Paladin"
@@ -19876,6 +20111,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "leather",
+   "pvp": true,
    "allowableClasses": [
     "Rogue",
     "Druid"
@@ -19890,6 +20126,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "leather",
+   "pvp": true,
    "allowableClasses": [
     "Rogue",
     "Druid"
@@ -19904,6 +20141,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "leather",
+   "pvp": true,
    "allowableClasses": [
     "Rogue",
     "Druid"
@@ -19918,6 +20156,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "mail",
+   "pvp": true,
    "allowableClasses": [
     "Hunter",
     "Shaman"
@@ -19932,6 +20171,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "mail",
+   "pvp": true,
    "allowableClasses": [
     "Hunter",
     "Shaman"
@@ -19946,6 +20186,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "mail",
+   "pvp": true,
    "allowableClasses": [
     "Hunter",
     "Shaman"
@@ -19960,6 +20201,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "mail",
+   "pvp": true,
    "allowableClasses": [
     "Hunter",
     "Shaman"
@@ -19974,6 +20216,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "mail",
+   "pvp": true,
    "allowableClasses": [
     "Hunter",
     "Shaman"
@@ -19988,6 +20231,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "allowableClasses": [
     "Priest",
     "Mage",
@@ -20003,6 +20247,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "allowableClasses": [
     "Priest",
     "Mage",
@@ -20018,6 +20263,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "allowableClasses": [
     "Priest",
     "Mage",
@@ -20033,6 +20279,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "plate",
+   "pvp": true,
    "allowableClasses": [
     "Warrior",
     "Paladin"
@@ -20047,6 +20294,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "plate",
+   "pvp": true,
    "allowableClasses": [
     "Warrior",
     "Paladin"
@@ -20061,6 +20309,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "plate",
+   "pvp": true,
    "allowableClasses": [
     "Warrior",
     "Paladin"
@@ -20075,6 +20324,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "mail",
+   "pvp": true,
    "allowableClasses": [
     "Hunter",
     "Shaman"
@@ -20089,6 +20339,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "mail",
+   "pvp": true,
    "allowableClasses": [
     "Hunter",
     "Shaman"
@@ -20103,6 +20354,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "plate",
+   "pvp": true,
    "allowableClasses": [
     "Warrior",
     "Paladin"
@@ -20117,6 +20369,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "plate",
+   "pvp": true,
    "allowableClasses": [
     "Warrior",
     "Paladin"
@@ -20131,6 +20384,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "plate",
+   "pvp": true,
    "allowableClasses": [
     "Warrior",
     "Paladin"
@@ -20145,6 +20399,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "allowableClasses": [
     "Priest",
     "Mage",
@@ -20160,6 +20415,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "allowableClasses": [
     "Priest",
     "Mage",
@@ -20175,6 +20431,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "allowableClasses": [
     "Priest",
     "Mage",
@@ -20189,6 +20446,7 @@
    "slot": "finger",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_ring_60.jpg"
   },
   "33919": {
@@ -20198,6 +20456,7 @@
    "slot": "finger",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_ring_60.jpg"
   },
   "33920": {
@@ -20207,6 +20466,7 @@
    "slot": "neck",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_necklace_36.jpg"
   },
   "33921": {
@@ -20216,6 +20476,7 @@
    "slot": "neck",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_necklace_36.jpg"
   },
   "33922": {
@@ -20225,6 +20486,7 @@
    "slot": "neck",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_necklace_36.jpg"
   },
   "33923": {
@@ -20234,6 +20496,7 @@
    "slot": "neck",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_necklace_36.jpg"
   },
   "33965": {
@@ -20323,6 +20586,7 @@
    "slot": "two_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "allowableClasses": [
     "Hunter"
    ],
@@ -20335,6 +20599,7 @@
    "slot": "off_hand_weapon",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_axe_84.jpg"
   },
   "34016": {
@@ -20344,6 +20609,7 @@
    "slot": "off_hand_weapon",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_hand_13.jpg",
    "wclName": "Vengeful Gladiator's Slasher"
   },
@@ -20354,6 +20620,7 @@
    "slot": "held_off_hand",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_misc_book_06.jpg"
   },
   "34049": {
@@ -20381,6 +20648,7 @@
    "slot": "ranged",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_wand_09.jpg"
   },
   "34066": {
@@ -20390,6 +20658,7 @@
    "slot": "ranged",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_wand_09.jpg"
   },
   "34073": {
@@ -20426,6 +20695,7 @@
    "slot": "ranged",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_bow_20.jpg"
   },
   "34530": {
@@ -20435,6 +20705,7 @@
    "slot": "ranged",
    "unique": false,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_weapon_rifle_15.jpg"
   },
   "34576": {
@@ -20489,6 +20760,7 @@
    "slot": "neck",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_necklace_36.jpg"
   },
   "35319": {
@@ -20498,6 +20770,7 @@
    "slot": "neck",
    "unique": true,
    "uniqueEquipped": false,
+   "pvp": true,
    "icon": "inv_jewelry_necklace_36.jpg"
   },
   "35321": {
@@ -20508,6 +20781,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "icon": "inv_misc_cape_20.jpg"
   },
   "35324": {
@@ -20518,6 +20792,7 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
+   "pvp": true,
    "icon": "inv_misc_cape_06.jpg"
   },
   "35326": {
@@ -20538,6 +20813,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 738,
+   "pvp": true,
    "allowableClasses": [
     "Warlock"
    ],
@@ -20552,6 +20828,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 741,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -20566,6 +20843,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 741,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -20580,6 +20858,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 741,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -20594,6 +20873,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 741,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -20608,6 +20888,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 741,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],
@@ -20622,6 +20903,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 745,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -20636,6 +20918,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 745,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -20650,6 +20933,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 745,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -20664,6 +20948,7 @@
    "uniqueEquipped": false,
    "armorType": "leather",
    "setId": 745,
+   "pvp": true,
    "allowableClasses": [
     "Rogue"
    ],
@@ -20678,6 +20963,7 @@
    "uniqueEquipped": false,
    "armorType": "cloth",
    "setId": 741,
+   "pvp": true,
    "allowableClasses": [
     "Mage"
    ],

@@ -11,6 +11,7 @@ classic partition) are logged and dropped.
 
 import json
 import logging
+import re
 import sqlite3
 from pathlib import Path
 
@@ -65,6 +66,24 @@ INVENTORY_TYPES = {
 
 ARMOR_SUBCLASSES = {1: "cloth", 2: "leather", 3: "mail", 4: "plate", 6: "shield"}
 
+ITEM_COLUMNS = (
+    "entry, name, Quality, ItemLevel, InventoryType, AllowableClass, "
+    "Flags, maxcount, class, subclass, itemset, "
+    + ", ".join(f"stat_type{i}" for i in range(1, 11))
+)
+
+ITEM_MOD_RESILIENCE = 35
+# Honor/arena gear naming, for PvP pieces that predate resilience.
+PVP_NAME_RE = re.compile(
+    r"gladiator's|\bmarshal's|\bgeneral's|high warlord's|veteran's|vindicator's|sergeant's",
+    re.IGNORECASE,
+)
+
+
+def _is_pvp(row: sqlite3.Row) -> bool:
+    stats = (row[f"stat_type{i}"] for i in range(1, 11))
+    return ITEM_MOD_RESILIENCE in stats or bool(PVP_NAME_RE.search(row["name"]))
+
 
 def _allowable_classes(mask: int) -> list[str] | None:
     """None means usable by all classes."""
@@ -86,6 +105,8 @@ def _item_facts(row: sqlite3.Row) -> dict:
         facts["armorType"] = ARMOR_SUBCLASSES[row["subclass"]]
     if row["itemset"]:
         facts["setId"] = row["itemset"]
+    if _is_pvp(row):
+        facts["pvp"] = True
     if row["class"] == 15 and row["Quality"] >= 4:
         facts["token"] = True
     allowable = _allowable_classes(row["AllowableClass"])
@@ -131,9 +152,7 @@ def enrich_zone(zone_tag: str) -> Path:
     con.row_factory = sqlite3.Row
     placeholders = ",".join("?" * len(ids))
     rows = con.execute(
-        f"SELECT entry, name, Quality, ItemLevel, InventoryType, AllowableClass, "
-        f"Flags, maxcount, class, subclass, itemset FROM item_template "
-        f"WHERE entry IN ({placeholders})",
+        f"SELECT {ITEM_COLUMNS} FROM item_template WHERE entry IN ({placeholders})",
         sorted(ids),
     ).fetchall()
     items = {row["entry"]: _item_facts(row) for row in rows}
@@ -174,9 +193,7 @@ def enrich_zone(zone_tag: str) -> Path:
     if drop_only:
         placeholders = ",".join("?" * len(drop_only))
         for row in con.execute(
-            f"SELECT entry, name, Quality, ItemLevel, InventoryType, AllowableClass, "
-            f"Flags, maxcount, class, subclass, itemset FROM item_template "
-            f"WHERE entry IN ({placeholders})",
+            f"SELECT {ITEM_COLUMNS} FROM item_template WHERE entry IN ({placeholders})",
             sorted(drop_only),
         ):
             items[row["entry"]] = {**_item_facts(row), "dropOnly": True}

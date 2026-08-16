@@ -10,6 +10,7 @@ export interface ItemFacts {
   armorType?: string
   allowableClasses?: string[]
   setId?: number
+  pvp?: boolean
   token?: boolean
   dropOnly?: boolean
   sources?: number[]

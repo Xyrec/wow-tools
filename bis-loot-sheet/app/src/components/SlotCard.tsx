@@ -78,6 +78,11 @@ export function SlotCard({ slot, label, entries, items }: Props) {
                         P{ZONE_PHASES[item.laterPhase] ?? "?"} item
                       </Badge>
                     )}
+                    {item.pvp && (
+                      <Badge variant="outline" className="h-4 px-1 text-[10px] text-sky-400">
+                        PvP
+                      </Badge>
+                    )}
                     {item.setId && (
                       <Badge variant="outline" className="h-4 px-1 text-[10px] text-emerald-400">
                         {item.token ? "Token" : "Set Piece"}
