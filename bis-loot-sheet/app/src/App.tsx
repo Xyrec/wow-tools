@@ -9,7 +9,7 @@ import { SlotCard } from "@/components/SlotCard"
 import { SpecSidebar } from "@/components/SpecSidebar"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { zones } from "@/lib/data"
+import { splitWeapons, zones } from "@/lib/data"
 import {
   CLASS_COLORS,
   SLOT_ORDER,
@@ -90,15 +90,18 @@ export default function App() {
                 </p>
               )}
               <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-                {SLOT_ORDER.map(([slot, label]) => (
-                  <SlotCard
-                    key={slot}
-                    slot={slot}
-                    label={label}
-                    entries={spec.slots[slot] ?? []}
-                    items={zone.items}
-                  />
-                ))}
+                {(() => {
+                  const slots = splitWeapons(spec.slots, zone.items)
+                  return SLOT_ORDER.map(([slot, label]) => (
+                    <SlotCard
+                      key={slot}
+                      slot={slot}
+                      label={label}
+                      entries={slots[slot] ?? []}
+                      items={zone.items}
+                    />
+                  ))
+                })()}
               </div>
             </>
           ) : (

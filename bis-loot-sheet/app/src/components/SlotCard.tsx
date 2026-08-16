@@ -1,6 +1,13 @@
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { DISPLAY_FLOOR_PCT, QUALITY_COLORS, ZONE_PHASES, iconUrl, wowheadUrl } from "@/lib/wow"
+import {
+  BIS_TIE_WINDOW,
+  DISPLAY_FLOOR_PCT,
+  QUALITY_COLORS,
+  ZONE_PHASES,
+  iconUrl,
+  wowheadUrl,
+} from "@/lib/wow"
 import { cn } from "@/lib/utils"
 import type { ItemFacts, SlotEntry } from "@/types"
 
@@ -35,7 +42,7 @@ export function SlotCard({ slot, label, entries, items }: Props) {
         <ul className="space-y-1">
           {visible.map((entry, rank) => {
             const item = items[entry.id]
-            const isBis = rank === 0
+            const isBis = topPct - entry.pct <= BIS_TIE_WINDOW
             return (
               <li
                 key={entry.id}

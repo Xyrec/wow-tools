@@ -45,10 +45,14 @@ export const SLOT_ORDER: [string, string][] = [
   ["feet", "Feet"],
   ["ring", "Rings"],
   ["trinket", "Trinkets"],
+  ["two_hand", "Two Hand"],
   ["main_hand", "Main Hand"],
   ["off_hand", "Off Hand"],
   ["ranged", "Ranged / Relic"],
 ]
+
+/** Percentage-point window below the top item within which items co-rank as BiS. */
+export const BIS_TIE_WINDOW = 5.0
 
 const HEALER_SPECS = new Set(["Restoration", "Holy", "Discipline"])
 const TANK_SPECS = new Set(["Warrior-Protection", "Paladin-Protection", "Druid-Guardian"])
