@@ -10,10 +10,13 @@ import {
 import {
   Select,
   SelectContent,
+  SelectGroup,
   SelectItem,
+  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { raidOfEncounter } from "@/lib/wow"
 import type { ZoneData } from "@/types"
 
 // Validated against the dark chart surface (dataviz six-checks: all pass).
@@ -76,29 +79,23 @@ export function Overview({ zone }: { zone: ZoneData }) {
     return out
   }, [encounter])
 
-  const totalRows = stats.rowsKept + stats.rowsDropped
-  const fullDepthBosses = Object.values(stats.encounters).filter((e) => e.rows > 30_000).length
+  const raidGroups = useMemo(() => {
+    const groups = new Map<string, string[]>()
+    for (const id of encounterIds) {
+      const raid = raidOfEncounter(Number(id))
+      groups.set(raid, [...(groups.get(raid) ?? []), id])
+    }
+    return groups
+  }, [encounterIds])
 
   return (
     <div className="space-y-4">
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-6">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <StatTile
           label="Parses analyzed"
           value={stats.rowsKept.toLocaleString()}
           sub="best parse per player, per boss & spec"
         />
-        <StatTile
-          label="Poisoned rows removed"
-          value={`${((100 * stats.rowsDropped) / Math.max(1, totalRows)).toFixed(1)}%`}
-          sub={`${stats.rowsDropped.toLocaleString()} wore later-phase gear`}
-        />
-        <StatTile
-          label="Bosses"
-          value={String(Object.keys(stats.encounters).length)}
-          sub={`${fullDepthBosses} at full population`}
-        />
-        <StatTile label="Specs" value={String(Object.keys(zone.specs).length)} />
-        <StatTile label="Items tracked" value={String(Object.keys(zone.items).length)} />
         <StatTile
           label="Data updated"
           value={new Date(zone.generatedAt).toLocaleDateString()}
@@ -123,10 +120,15 @@ export function Overview({ zone }: { zone: ZoneData }) {
               <SelectValue>{encounter?.name}</SelectValue>
             </SelectTrigger>
             <SelectContent>
-              {encounterIds.map((id) => (
-                <SelectItem key={id} value={id}>
-                  {stats.encounters[id].name}
-                </SelectItem>
+              {[...raidGroups.entries()].map(([raid, ids]) => (
+                <SelectGroup key={raid}>
+                  <SelectLabel>{raid}</SelectLabel>
+                  {ids.map((id) => (
+                    <SelectItem key={id} value={id}>
+                      {stats.encounters[id].name}
+                    </SelectItem>
+                  ))}
+                </SelectGroup>
               ))}
             </SelectContent>
           </Select>

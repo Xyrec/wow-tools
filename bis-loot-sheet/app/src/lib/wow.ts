@@ -92,6 +92,20 @@ export const ZONE_PHASES: Record<string, number> = {
   sunwell: 5,
 }
 
+/** Raid instance per WCL encounter id, for grouping multi-raid zones. */
+export function raidOfEncounter(encounterId: number): string {
+  if (encounterId >= 601 && encounterId <= 609) return "Black Temple"
+  if (encounterId >= 618 && encounterId <= 622) return "Hyjal Summit"
+  if (encounterId >= 623 && encounterId <= 628) return "Serpentshrine Cavern"
+  if (encounterId >= 730 && encounterId <= 733) return "Tempest Keep"
+  if (encounterId >= 649 && encounterId <= 650) return "Gruul's Lair"
+  if (encounterId === 651) return "Magtheridon's Lair"
+  if (encounterId >= 652 && encounterId <= 662) return "Karazhan"
+  if (encounterId >= 1189 && encounterId <= 1194) return "Zul'Aman"
+  if (encounterId >= 724 && encounterId <= 729) return "Sunwell Plateau"
+  return "Other"
+}
+
 export const ZONE_LABELS: Record<string, string> = {
   karazhan: "Karazhan",
   "gruul-magtheridon": "Gruul / Magtheridon",
