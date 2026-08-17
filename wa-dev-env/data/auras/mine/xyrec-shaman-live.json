@@ -139,7 +139,7 @@
           "untrigger": []
         }
       ],
-      "uid": "PPxeAuGSrxM",
+      "uid": "jfq7ZR3SgvK",
       "url": "",
       "useLimit": true,
       "version": 15,
@@ -410,7 +410,7 @@
         "customTriggerLogic": "function(t)\n    return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "BzecTEMeha7",
+      "uid": "DaHairoKhay",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -745,7 +745,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "zLmnBJu7BiY",
+      "uid": "QAQZzsc79o0",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1066,7 +1066,7 @@
         "activeTriggerMode": 1,
         "disjunctive": "any"
       },
-      "uid": "Ao8SSvJ9SsO",
+      "uid": "oSDT8gkHxAH",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1366,7 +1366,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "CMNCsOPS3yg",
+      "uid": "AtGp2q1ebe6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1865,7 +1865,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "b2x2G92NgOq",
+      "uid": "aHLJXbT8m0q",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2221,7 +2221,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "any"
       },
-      "uid": "BzM7tlUjAps",
+      "uid": "OIqU02wH22d",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2576,7 +2576,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "wkvLFjIwh9m",
+      "uid": "0yPKtFFIujP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3046,7 +3046,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "dDnbK6StX1M",
+      "uid": "4KJybDTfihi",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3156,7 +3156,7 @@
           "untrigger": []
         }
       ],
-      "uid": "TdaNqumUVbv",
+      "uid": "0bO3Pl1mLsY",
       "url": "",
       "version": 15,
       "xOffset": 0,
@@ -3492,7 +3492,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "72cdgk8w4Tx",
+      "uid": "VbWpF5ujaGU",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3760,7 +3760,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "kdc2D2IDATT",
+      "uid": "1560ul6ISnr",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3894,7 +3894,7 @@
           "untrigger": []
         }
       ],
-      "uid": "zADdzrJNbyi",
+      "uid": "5IILHDfamIP",
       "url": "",
       "version": 15,
       "xOffset": 0,
@@ -4469,7 +4469,7 @@
         "customTriggerLogic": "function(t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "yrj9gWXKf7D",
+      "uid": "ZlXLDOSH4rk",
       "url": "",
       "useAdjustedMax": false,
       "useAdjustedMin": false,
@@ -4823,7 +4823,7 @@
         "customTriggerLogic": "function(trigger)\n    return trigger[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "O4966vsWkUL",
+      "uid": "ZtXgBuxl66F",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4899,6 +4899,8 @@
         "Shaman - War Stomp",
         "Shaman - Trinket 1 CD",
         "Shaman - Trinket 2 CD",
+        "Shaman - Fire Elemental",
+        "Shaman - Earth Elemental",
         "Shaman - Reincarnation",
         "Shaman - Mana Tide Totem",
         "Shaman - Stoneclaw Totem",
@@ -4979,7 +4981,7 @@
           "untrigger": []
         }
       ],
-      "uid": "nN26naOozaP",
+      "uid": "67DYqnYnnoM",
       "url": "",
       "useLimit": true,
       "version": 15,
@@ -5206,7 +5208,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "XcjAS2jCKkY",
+      "uid": "S83XuPMrAnE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5478,7 +5480,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "jDX0LjLtMaS",
+      "uid": "sGAWcW03avE",
       "url": "https://wago.io/8MyJNekEa/15",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5750,7 +5752,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ut1024YB5Dp",
+      "uid": "XWbzOHQVWRl",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6022,7 +6024,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "3FWm0KpYWYv",
+      "uid": "YRxraGoCfH2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6298,7 +6300,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "aOGHuoM8Riw",
+      "uid": "DJjFkBcdQrH",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6574,7 +6576,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "hDE7ul1kguj",
+      "uid": "xiQsM5nqSid",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6816,7 +6818,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "e1hBukunxs6",
+      "uid": "Ql9xyR6Z3aw",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6870,18 +6872,51 @@
         {
           "changes": [
             {
-              "property": "desaturate",
-              "value": true
-            },
+              "property": "sub.3.text_visible"
+            }
+          ],
+          "check": {
+            "op": "<",
+            "trigger": 1,
+            "value": "2",
+            "variable": "duration"
+          }
+        },
+        {
+          "changes": [
             {
-              "property": "inverse",
+              "property": "desaturate",
               "value": true
             }
           ],
           "check": {
             "trigger": 1,
             "value": 1,
-            "variable": "show"
+            "variable": "onCooldown"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "sub.4.glow",
+              "value": true
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": 1,
+                "value": 0,
+                "variable": "onCooldown"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "AND"
           }
         },
         {
@@ -6947,7 +6982,6 @@
           "multi": []
         },
         "use_class": true,
-        "use_never": true,
         "use_not_spellknown": false,
         "use_spellknown": false,
         "zoneIds": ""
@@ -7014,6 +7048,27 @@
           "text_visible": true,
           "text_wordWrap": "WordWrap",
           "type": "subtext"
+        },
+        {
+          "glow": false,
+          "glowBorder": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowDuration": 1,
+          "glowFrequency": 0.25,
+          "glowLength": 16,
+          "glowLines": 8,
+          "glowScale": 1,
+          "glowThickness": 2,
+          "glowType": "Pixel",
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "type": "subglow",
+          "useGlowColor": false
         }
       ],
       "tocversion": 20506,
@@ -7023,7 +7078,7 @@
             "debuffType": "HELPFUL",
             "duration": "1",
             "event": "Cooldown Progress (Equipment Slot)",
-            "genericShowOn": "showOnCooldown",
+            "genericShowOn": "showAlways",
             "itemName": 0,
             "itemSlot": 13,
             "matchesShowOn": "showAlways",
@@ -7043,6 +7098,7 @@
             "use_itemSlot": true,
             "use_remaining": false,
             "use_spellName": true,
+            "use_testForCooldown": true,
             "use_track": true,
             "use_unit": true
           },
@@ -7054,7 +7110,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "cDEiaRZ7aBs",
+      "uid": "OeCAtrSCNDK",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7108,18 +7164,51 @@
         {
           "changes": [
             {
-              "property": "desaturate",
-              "value": true
-            },
+              "property": "sub.3.text_visible"
+            }
+          ],
+          "check": {
+            "op": "<",
+            "trigger": 1,
+            "value": "2",
+            "variable": "duration"
+          }
+        },
+        {
+          "changes": [
             {
-              "property": "inverse",
+              "property": "desaturate",
               "value": true
             }
           ],
           "check": {
             "trigger": 1,
             "value": 1,
-            "variable": "show"
+            "variable": "onCooldown"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "sub.4.glow",
+              "value": true
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": 1,
+                "value": 0,
+                "variable": "onCooldown"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "AND"
           }
         },
         {
@@ -7185,9 +7274,567 @@
           "multi": []
         },
         "use_class": true,
-        "use_never": true,
         "use_not_spellknown": false,
         "use_spellknown": false,
+        "zoneIds": ""
+      },
+      "parent": "Shaman - Cooldowns",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 22,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%p",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        },
+        {
+          "glow": false,
+          "glowBorder": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowDuration": 1,
+          "glowFrequency": 0.25,
+          "glowLength": 16,
+          "glowLines": 8,
+          "glowScale": 1,
+          "glowThickness": 2,
+          "glowType": "Pixel",
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "type": "subglow",
+          "useGlowColor": false
+        }
+      ],
+      "tocversion": 20506,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "duration": "1",
+            "event": "Cooldown Progress (Equipment Slot)",
+            "genericShowOn": "showAlways",
+            "itemName": 0,
+            "itemSlot": 14,
+            "matchesShowOn": "showAlways",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "track": "auto",
+            "type": "item",
+            "unevent": "auto",
+            "unit": "player",
+            "unitExists": true,
+            "useName": true,
+            "use_charges": false,
+            "use_genericShowOn": true,
+            "use_itemName": true,
+            "use_itemSlot": true,
+            "use_remaining": false,
+            "use_spellName": true,
+            "use_testForCooldown": true,
+            "use_track": true,
+            "use_unit": true
+          },
+          "untrigger": {
+            "genericShowOn": "showAlways",
+            "track": "auto"
+          }
+        },
+        "activeTriggerMode": -10,
+        "disjunctive": "any"
+      },
+      "uid": "T8bLCM5bflM",
+      "url": "",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 15,
+      "width": 46,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "sub.3.text_visible"
+            }
+          ],
+          "check": {
+            "op": "<",
+            "trigger": 1,
+            "value": "2",
+            "variable": "duration"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 1,
+            "variable": "onCooldown"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "sub.4.glow",
+              "value": true
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": 1,
+                "value": 0,
+                "variable": "onCooldown"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "AND"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "displayIcon": "",
+      "frameStrata": 1,
+      "height": 46,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Shaman - Fire Elemental",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": false,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": [],
+          "single": "SHAMAN"
+        },
+        "race": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "spellknown": 2894,
+        "talent": {
+          "multi": []
+        },
+        "use_class": true,
+        "use_never": false,
+        "use_spellknown": true,
+        "zoneIds": ""
+      },
+      "parent": "Shaman - Cooldowns",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 22,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%p",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        },
+        {
+          "glow": false,
+          "glowBorder": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowDuration": 1,
+          "glowFrequency": 0.25,
+          "glowLength": 16,
+          "glowLines": 8,
+          "glowScale": 1,
+          "glowThickness": 2,
+          "glowType": "Pixel",
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "type": "subglow",
+          "useGlowColor": false
+        }
+      ],
+      "tocversion": 20506,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "auranames": [],
+            "debuffType": "HARMFUL",
+            "duration": "1",
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showAlways",
+            "matchesShowOn": "showAlways",
+            "names": [],
+            "realSpellName": "Fire Elemental Totem",
+            "spellIds": [],
+            "spellName": 2894,
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "track": "auto",
+            "type": "spell",
+            "unevent": "auto",
+            "unit": "target",
+            "unitExists": true,
+            "useName": true,
+            "use_genericShowOn": true,
+            "use_remaining": false,
+            "use_showgcd": true,
+            "use_spellName": true,
+            "use_track": true,
+            "use_unit": true
+          },
+          "untrigger": {
+            "genericShowOn": "showAlways"
+          }
+        },
+        "activeTriggerMode": 1,
+        "disjunctive": "any"
+      },
+      "uid": "RCliIQpz6P5",
+      "url": "",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 15,
+      "width": 46,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "sub.3.text_visible"
+            }
+          ],
+          "check": {
+            "op": "<",
+            "trigger": 1,
+            "value": "2",
+            "variable": "duration"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 1,
+            "variable": "onCooldown"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "displayIcon": "",
+      "frameStrata": 1,
+      "height": 46,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Shaman - Earth Elemental",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": false,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": [],
+          "single": "SHAMAN"
+        },
+        "race": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "spellknown": 2062,
+        "talent": {
+          "multi": []
+        },
+        "use_class": true,
+        "use_never": false,
+        "use_spellknown": true,
         "zoneIds": ""
       },
       "parent": "Shaman - Cooldowns",
@@ -7258,41 +7905,39 @@
       "triggers": {
         "1": {
           "trigger": {
-            "debuffType": "HELPFUL",
+            "auranames": [],
+            "debuffType": "HARMFUL",
             "duration": "1",
-            "event": "Cooldown Progress (Equipment Slot)",
-            "genericShowOn": "showOnCooldown",
-            "itemName": 0,
-            "itemSlot": 14,
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showAlways",
             "matchesShowOn": "showAlways",
             "names": [],
+            "realSpellName": "Earth Elemental Totem",
             "spellIds": [],
+            "spellName": 2062,
             "subeventPrefix": "SPELL",
             "subeventSuffix": "_CAST_START",
             "track": "auto",
-            "type": "item",
+            "type": "spell",
             "unevent": "auto",
-            "unit": "player",
+            "unit": "target",
             "unitExists": true,
             "useName": true,
-            "use_charges": false,
             "use_genericShowOn": true,
-            "use_itemName": true,
-            "use_itemSlot": true,
             "use_remaining": false,
+            "use_showgcd": true,
             "use_spellName": true,
             "use_track": true,
             "use_unit": true
           },
           "untrigger": {
-            "genericShowOn": "showAlways",
-            "track": "auto"
+            "genericShowOn": "showAlways"
           }
         },
-        "activeTriggerMode": -10,
+        "activeTriggerMode": 1,
         "disjunctive": "any"
       },
-      "uid": "rI4QCtGuOZD",
+      "uid": "aQavqBD07PE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7530,7 +8175,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "EePAM7v5v2B",
+      "uid": "G1p3DStZQA0",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7768,7 +8413,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "jtTfivMyc7c",
+      "uid": "ugx6daQ7yoF",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8006,7 +8651,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "cGBckdNJNV6",
+      "uid": "TVBRyCArpfP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8244,7 +8889,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "JLZhJJIKlBb",
+      "uid": "Bl0GuOeElAS",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8482,7 +9127,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "tqh8EDroi7H",
+      "uid": "ZJPFSa4HQTW",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8798,7 +9443,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "t7LiFKZltd4",
+      "uid": "1yCgLdUkkZ1",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8870,7 +9515,8 @@
         "Shaman - Drink Expiring",
         "Shaman - Imbue [MH]",
         "Shaman - Imbue [OH]",
-        "Shaman - Lightning/Water Shield"
+        "Shaman - Lightning/Water Shield",
+        "Shaman - Ankh"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -8934,7 +9580,7 @@
           "untrigger": []
         }
       ],
-      "uid": "qW64y4EU8hH",
+      "uid": "4hZDJnc0aqT",
       "url": "",
       "useLimit": false,
       "version": 15,
@@ -9222,7 +9868,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "N2InH1pzkuQ",
+      "uid": "tPjUWrBAhaa",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9628,7 +10274,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "oC8VY6YD6UO",
+      "uid": "ZGrM2L2wxHG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10112,7 +10758,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3] and (t[4] or t[5] or t[6] or t[7])\nend",
         "disjunctive": "custom"
       },
-      "uid": "pJPpNL0PnVX",
+      "uid": "l2ZUoDcoeHy",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10408,7 +11054,262 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "IXtiLmXuxwJ",
+      "uid": "FngxiJzY1zQ",
+      "url": "",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 15,
+      "width": 44,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameParent": false,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": true,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": false,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "displayIcon": "",
+      "frameStrata": 3,
+      "height": 44,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Shaman - Ankh",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": false,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": [],
+          "single": "SHAMAN"
+        },
+        "race": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "spellknown": 20608,
+        "talent": {
+          "multi": []
+        },
+        "use_class": true,
+        "use_never": false,
+        "use_resting": true,
+        "use_spellknown": true,
+        "zoneIds": ""
+      },
+      "parent": "Shaman - Reminders",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 20,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "CENTER",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%p",
+          "text_text_format_p_abbreviate": false,
+          "text_text_format_p_abbreviate_max": 8,
+          "text_text_format_p_big_number_format": "AbbreviateNumbers",
+          "text_text_format_p_color": true,
+          "text_text_format_p_decimal_precision": 1,
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_gcd_cast": false,
+          "text_text_format_p_gcd_channel": false,
+          "text_text_format_p_gcd_gcd": true,
+          "text_text_format_p_gcd_hide_zero": false,
+          "text_text_format_p_realm_name": "never",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_text_format_s_format": "none",
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "OUTER_BOTTOM",
+          "rotateText": "NONE",
+          "text_anchorYOffset": -12,
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 14,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "BOTTOM",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "Ankh",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 60,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        }
+      ],
+      "tocversion": 20506,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "count": "0",
+            "count_operator": "==",
+            "debuffType": "HELPFUL",
+            "event": "Item Count",
+            "itemName": 17030,
+            "type": "item",
+            "unit": "player",
+            "use_count": true,
+            "use_exact_itemName": false,
+            "use_itemName": true,
+            "use_track": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": 1,
+        "disjunctive": "any"
+      },
+      "uid": "E72cw8SiXei",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10518,7 +11419,7 @@
         "untrigger": []
       }
     ],
-    "uid": "ZQgQj1eYBOZ",
+    "uid": "yuYzO6kIzFv",
     "url": "",
     "version": 15,
     "xOffset": 0,

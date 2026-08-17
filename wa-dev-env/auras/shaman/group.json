@@ -25,6 +25,8 @@
     "Shaman - War Stomp",
     "Shaman - Trinket 1 CD",
     "Shaman - Trinket 2 CD",
+    "Shaman - Fire Elemental",
+    "Shaman - Earth Elemental",
     "Shaman - Reincarnation",
     "Shaman - Mana Tide Totem",
     "Shaman - Stoneclaw Totem",
@@ -35,7 +37,8 @@
     "Shaman - Drink Expiring",
     "Shaman - Imbue [MH]",
     "Shaman - Imbue [OH]",
-    "Shaman - Lightning/Water Shield"
+    "Shaman - Lightning/Water Shield",
+    "Shaman - Ankh"
   ],
   "class": "shaman",
   "containers": [
@@ -482,6 +485,8 @@
         "Shaman - War Stomp",
         "Shaman - Trinket 1 CD",
         "Shaman - Trinket 2 CD",
+        "Shaman - Fire Elemental",
+        "Shaman - Earth Elemental",
         "Shaman - Reincarnation",
         "Shaman - Mana Tide Totem",
         "Shaman - Stoneclaw Totem",
@@ -628,7 +633,8 @@
         "Shaman - Drink Expiring",
         "Shaman - Imbue [MH]",
         "Shaman - Imbue [OH]",
-        "Shaman - Lightning/Water Shield"
+        "Shaman - Lightning/Water Shield",
+        "Shaman - Ankh"
       ],
       "frameStrata": 1,
       "fullCircle": true,
