@@ -38,7 +38,7 @@ export default function App() {
   const [zoneTag, setZoneTag] = useState(zones[0]?.zone)
   const zone = useMemo(() => zones.find((z) => z.zone === zoneTag) ?? zones[0], [zoneTag])
   const [specKey, setSpecKey] = useState("")
-  const [band, setBand] = useState<BandKey>("top2000")
+  const [band, setBand] = useState<BandKey>("top10")
   const spec = specKey ? zone?.specs[specKey] : undefined
   const bandData = spec?.bands[band]
   const role = specRole(specKey)
