@@ -1,5 +1,5 @@
 {
- "zone": "ssc-tk",
+ "zone": "phase-2",
  "stats": {
   "rowsKept": 947431,
   "rowsDropped": 0,
@@ -1664,15 +1664,16 @@
    }
   }
  },
- "zoneId": 1010,
- "partition": 3,
+ "zones": [
+  "ssc-tk"
+ ],
  "anniversaryPhase": 2,
  "regions": [
   "US",
   "EU"
  ],
  "maxPages": 20,
- "generatedAt": "2026-08-17T13:23:44+00:00",
+ "generatedAt": "2026-08-17T18:28:06+00:00",
  "specs": {
   "Druid-Balance": {
    "bands": {

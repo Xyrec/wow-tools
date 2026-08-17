@@ -1,5 +1,5 @@
 {
- "zone": "bt-hyjal",
+ "zone": "phase-3",
  "stats": {
   "rowsKept": 999519,
   "rowsDropped": 304323,
@@ -1652,15 +1652,16 @@
    }
   }
  },
- "zoneId": 1011,
- "partition": 5,
+ "zones": [
+  "bt-hyjal"
+ ],
  "anniversaryPhase": 3,
  "regions": [
   "US",
   "EU"
  ],
  "maxPages": 20,
- "generatedAt": "2026-08-17T13:22:37+00:00",
+ "generatedAt": "2026-08-17T18:29:35+00:00",
  "encounters": {
   "601": "High Warlord Naj'entus",
   "602": "Supremus",
@@ -18786,7 +18787,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "23621": {
    "name": "Plans: Gauntlets of the Iron Tower",
@@ -18804,7 +18805,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "23622": {
    "name": "Plans: Steelgrip Gauntlets",
@@ -18822,7 +18823,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "23623": {
    "name": "Plans: Storm Helm",
@@ -18840,7 +18841,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "23624": {
    "name": "Plans: Helm of the Stalwart Defender",
@@ -18858,7 +18859,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "23625": {
    "name": "Plans: Oathkeeper's Helm",
@@ -18876,7 +18877,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "23626": {
    "name": "Plans: Black Felsteel Bracers",
@@ -18894,7 +18895,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "23627": {
    "name": "Plans: Bracers of the Green Fortress",
@@ -18912,7 +18913,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "23628": {
    "name": "Plans: Blessed Bracers",
@@ -18930,7 +18931,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "23629": {
    "name": "Plans: Felsteel Longblade",
@@ -18948,7 +18949,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "23630": {
    "name": "Plans: Khorium Champion",
@@ -18966,7 +18967,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "23631": {
    "name": "Plans: Fel Edged Battleaxe",
@@ -18984,7 +18985,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "23632": {
    "name": "Plans: Felsteel Reaper",
@@ -19002,7 +19003,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "23633": {
    "name": "Plans: Runic Hammer",
@@ -19020,7 +19021,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "23634": {
    "name": "Plans: Fel Hardened Maul",
@@ -19038,7 +19039,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "23635": {
    "name": "Plans: Eternium Runed Blade",
@@ -19056,7 +19057,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "23636": {
    "name": "Plans: Dirge",
@@ -19074,7 +19075,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "23637": {
    "name": "Plans: Hand of Eternity",
@@ -19092,7 +19093,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "24302": {
    "name": "Pattern: Unyielding Girdle",
@@ -19110,7 +19111,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "24303": {
    "name": "Pattern: Girdle of Ruination",
@@ -19128,7 +19129,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "24304": {
    "name": "Pattern: Black Belt of Knowledge",
@@ -19146,7 +19147,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "24305": {
    "name": "Pattern: Resolute Cape",
@@ -19164,7 +19165,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "24306": {
    "name": "Pattern: Vengeance Wrap",
@@ -19182,7 +19183,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "24307": {
    "name": "Pattern: Manaweave Cloak",
@@ -19200,7 +19201,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "29434": {
    "name": "Badge of Justice",
@@ -19228,7 +19229,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "29723": {
    "name": "Pattern: Cobrascale Hood",
@@ -19246,7 +19247,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "29724": {
    "name": "Pattern: Cobrascale Gloves",
@@ -19264,7 +19265,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "29725": {
    "name": "Pattern: Windscale Hood",
@@ -19282,7 +19283,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "29726": {
    "name": "Pattern: Hood of Primal Life",
@@ -19300,7 +19301,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "29727": {
    "name": "Pattern: Gloves of the Living Touch",
@@ -19318,7 +19319,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "29728": {
    "name": "Pattern: Windslayer Wraps",
@@ -19336,7 +19337,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "29729": {
    "name": "Pattern: Living Dragonscale Helm",
@@ -19354,7 +19355,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "29730": {
    "name": "Pattern: Earthen Netherscale Boots",
@@ -19372,7 +19373,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "29731": {
    "name": "Pattern: Windstrike Gloves",
@@ -19390,7 +19391,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "29732": {
    "name": "Pattern: Netherdrake Helm",
@@ -19408,7 +19409,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "29733": {
    "name": "Pattern: Netherdrake Gloves",
@@ -19426,7 +19427,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "29734": {
    "name": "Pattern: Thick Netherscale Breastplate",
@@ -19444,7 +19445,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "31089": {
    "name": "Chestguard of the Forgotten Conqueror",
@@ -19897,7 +19898,7 @@
     621,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   },
   "34544": {
    "name": "Essence of the Immortals",
@@ -19913,7 +19914,7 @@
     609,
     622
    ],
-   "laterPhase": "sunwell"
+   "laterPhase": "phase-5"
   }
  },
  "specs": {

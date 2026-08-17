@@ -84,12 +84,11 @@ export function wowheadUrl(itemId: number): string {
 }
 
 export const ZONE_PHASES: Record<string, number> = {
-  karazhan: 1,
-  "gruul-magtheridon": 1,
-  "ssc-tk": 2,
-  "bt-hyjal": 3,
-  "zul-aman": 4,
-  sunwell: 5,
+  "phase-1": 1,
+  "phase-2": 2,
+  "phase-3": 3,
+  "phase-4": 4,
+  "phase-5": 5,
 }
 
 /** Raid instance per WCL encounter id, for grouping multi-raid zones. */
@@ -107,12 +106,11 @@ export function raidOfEncounter(encounterId: number): string {
 }
 
 export const ZONE_LABELS: Record<string, string> = {
-  karazhan: "Karazhan",
-  "gruul-magtheridon": "Gruul / Magtheridon",
-  "ssc-tk": "SSC / TK",
-  "bt-hyjal": "Hyjal / Black Temple",
-  "zul-aman": "Zul'Aman",
-  sunwell: "Sunwell Plateau",
+  "phase-1": "Kara · Gruul · Mag",
+  "phase-2": "SSC / TK",
+  "phase-3": "Hyjal / Black Temple",
+  "phase-4": "Zul'Aman",
+  "phase-5": "Sunwell Plateau",
 }
 
 /** Display floor from docs/PLAN.md: usage under 2% is considered noise. */

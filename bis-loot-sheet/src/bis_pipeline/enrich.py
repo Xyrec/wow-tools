@@ -138,8 +138,12 @@ def _fetch_icons(item_ids: list[int]) -> dict[int, str]:
     return {i: cache[str(i)] for i in item_ids if str(i) in cache}
 
 
-def enrich_zone(zone_tag: str) -> Path:
-    src = AGGREGATED_DIR / f"{zone_tag}.json"
+def enrich_zone(tag: str) -> Path:
+    """Enrich one anniversary phase (accepts phase tag or member zone tag)."""
+    from .config import PHASES, phase_number, resolve_phase
+
+    phase_tag = resolve_phase(tag)
+    src = AGGREGATED_DIR / f"{phase_tag}.json"
     data = json.loads(src.read_text())
 
     ids: set[int] = set()
@@ -185,7 +189,11 @@ def enrich_zone(zone_tag: str) -> Path:
 
     from .lootmap import build_lootmap, load_lootmap
 
-    lootmap = build_lootmap(zone_tag)
+    # Merge the lootmaps of every zone in this phase (encounter ids are
+    # globally unique on WCL, so a plain dict union is safe).
+    lootmap: dict = {}
+    for zone_tag in PHASES[phase_tag]:
+        lootmap.update(build_lootmap(zone_tag))
     encounters = {eid: e["name"] for eid, e in lootmap.items()}
 
     # Drop-only items (tier tokens above all — nobody *wears* a token, but
@@ -213,7 +221,7 @@ def enrich_zone(zone_tag: str) -> Path:
     # the app and prio logic can mark it unobtainable in this Anniversary phase.
     from .config import ZONES
 
-    own_phase = ZONES[zone_tag]["anniversary_phase"]
+    own_phase = phase_number(phase_tag)
     for other_tag, other in ZONES.items():
         if other["anniversary_phase"] <= own_phase:
             continue
@@ -221,7 +229,7 @@ def enrich_zone(zone_tag: str) -> Path:
         for enc in other_map.values():
             for item_id in enc["items"]:
                 if item_id in items:
-                    items[item_id]["laterPhase"] = other_tag
+                    items[item_id]["laterPhase"] = f"phase-{other['anniversary_phase']}"
 
     result = {k: v for k, v in data.items() if k != "specs"}
     result["encounters"] = encounters
@@ -229,7 +237,7 @@ def enrich_zone(zone_tag: str) -> Path:
     result["specs"] = specs
 
     ENRICHED_DIR.mkdir(parents=True, exist_ok=True)
-    out_path = ENRICHED_DIR / f"{zone_tag}.json"
+    out_path = ENRICHED_DIR / f"{phase_tag}.json"
     out_path.write_text(json.dumps(result, indent=1))
 
     # Keep the web app's data in sync automatically. The app copy is a diet
@@ -240,23 +248,24 @@ def enrich_zone(zone_tag: str) -> Path:
     if app_data.is_dir():
         app_specs = {k: v["bands"]["top2000"] for k, v in specs.items()}
         referenced = {
-            e["id"] for sd in app_specs.values() for entries in sd["slots"].values() for e in entries
+            e["id"]
+            for sd in app_specs.values()
+            for entries in sd["slots"].values()
+            for e in entries
         }
         app_items = {
-            iid: facts
-            for iid, facts in items.items()
-            if iid in referenced or facts.get("sources")
+            iid: facts for iid, facts in items.items() if iid in referenced or facts.get("sources")
         }
         app_copy = {**result, "specs": app_specs, "items": app_items}
-        (app_data / f"{zone_tag}.json").write_text(json.dumps(app_copy))
+        (app_data / f"{phase_tag}.json").write_text(json.dumps(app_copy))
         log.info(
             "synced diet copy to app/src/data/%s.json (%d items, top2000 only)",
-            zone_tag,
+            phase_tag,
             len(app_items),
         )
     log.info(
         "enriched %s: %d items (%d dropped as non-TBC) -> %s",
-        zone_tag,
+        phase_tag,
         len(items),
         len(dropped),
         out_path,

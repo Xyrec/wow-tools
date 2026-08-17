@@ -35,6 +35,32 @@ ZONES: dict[str, dict] = {
     "sunwell": {"zone_id": 1013, "partition": 6, "anniversary_phase": 5},
 }
 
+# Anniversary phases -> the WCL zones whose raids belong to that gear era.
+# Output datasets (aggregated/enriched/app) are keyed by phase, pooling all of
+# the phase's zones; only phase 1 spans two WCL zones.
+PHASES: dict[str, list[str]] = {
+    "phase-1": ["karazhan", "gruul-magtheridon"],
+    "phase-2": ["ssc-tk"],
+    "phase-3": ["bt-hyjal"],
+    "phase-4": ["zul-aman"],
+    "phase-5": ["sunwell"],
+}
+
+
+def resolve_phase(tag: str) -> str:
+    """Accept a phase tag or a zone tag; return the phase tag."""
+    if tag in PHASES:
+        return tag
+    for phase_tag, zone_tags in PHASES.items():
+        if tag in zone_tags:
+            return phase_tag
+    raise KeyError(f"unknown phase/zone tag: {tag}")
+
+
+def phase_number(phase_tag: str) -> int:
+    return int(phase_tag.split("-")[1])
+
+
 # Specs ranked by HPS on Warcraft Logs; everything else ranks by DPS.
 HEALER_SPECS = {"Restoration", "Holy", "Discipline"}
 

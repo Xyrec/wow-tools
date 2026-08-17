@@ -5,7 +5,7 @@ import logging
 
 from .aggregate import aggregate_zone
 from .client import WCLClient
-from .config import ZONES
+from .config import PHASES, ZONES
 from .discovery import class_specs, regions_servers, zone_encounters
 from .enrich import enrich_zone
 from .fetcher import fetch_zone
@@ -44,7 +44,7 @@ def main() -> None:
     )
 
     agg = sub.add_parser("aggregate", help="aggregate raw pages into per-spec distributions")
-    agg.add_argument("zone", choices=sorted(ZONES), help="zone tag")
+    agg.add_argument("zone", choices=sorted(ZONES) + sorted(PHASES), help="phase or zone tag")
     agg.add_argument(
         "--max-pages",
         type=int,
@@ -55,7 +55,7 @@ def main() -> None:
     )
 
     enrich = sub.add_parser("enrich", help="join aggregated data with cmangos item facts")
-    enrich.add_argument("zone", choices=sorted(ZONES), help="zone tag")
+    enrich.add_argument("zone", choices=sorted(ZONES) + sorted(PHASES), help="phase or zone tag")
 
     args = parser.parse_args()
 

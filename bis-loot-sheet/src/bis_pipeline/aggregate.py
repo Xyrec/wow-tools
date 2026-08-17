@@ -106,35 +106,43 @@ def _iter_slice(region_dir: Path, region: str, max_pages: int):
     yield from _iter_pages(region_dir, max_pages)
 
 
-def aggregate_zone(zone_tag: str, max_pages: int) -> Path:
+def aggregate_zone(tag: str, max_pages: int) -> Path:
+    """Aggregate one anniversary PHASE (pooling all its WCL zones' raw data).
+
+    Accepts a phase tag ("phase-1") or any zone tag belonging to it.
+    """
+    from .config import PHASES, phase_number, resolve_phase
     from .lootmap import later_phase_items
 
-    zone = ZONES[zone_tag]
-    zone_dir = RAW_DIR / f"zone-{zone['zone_id']}"
+    phase_tag = resolve_phase(tag)
+    phase_zones = [ZONES[z] for z in PHASES[phase_tag]]
     specs: dict[str, dict] = {}
 
     # WCL's late-TBC partitions merge eras ("P3.5 & P4"), so rows logged after
     # the next tier released can wear next-phase gear. Any row containing a
     # later-phase raid drop is discarded entirely — the distributions must
     # only describe loadouts achievable within this phase (Xyrec directive).
-    poison = later_phase_items(zone_tag)
+    poison = later_phase_items(phase_tag)
 
     def iter_kept_rows():
-        """Yield (enc_id, spec_key, row) for every phase-pure ranking row."""
-        for enc_dir in sorted(zone_dir.glob("enc-*")):
-            enc_id = int(enc_dir.name.split("-")[1])
-            # Pin to the configured partition — other partitions may exist on
-            # disk (e.g. the progression-era p4 data kept for comparisons).
-            for spec_dir in sorted(
-                p for p in enc_dir.glob(f"p{zone['partition']}/[A-Z]*") if p.is_dir()
-            ):
-                for region in REGIONS:
-                    for payload in _iter_slice(spec_dir / region, region, max_pages):
-                        for row in payload["rankings"]:
-                            if any(g.get("id") in poison for g in row.get("gear", [])):
-                                dropped_rows[spec_dir.name] += 1
-                                continue
-                            yield enc_id, spec_dir.name, row
+        """Yield (enc_id, spec_key, row) for every phase-pure ranking row,
+        pooled across all of the phase's zones."""
+        for zone in phase_zones:
+            zone_dir = RAW_DIR / f"zone-{zone['zone_id']}"
+            for enc_dir in sorted(zone_dir.glob("enc-*")):
+                enc_id = int(enc_dir.name.split("-")[1])
+                # Pin to the configured partition — other partitions may exist
+                # on disk (e.g. progression-era data kept for comparisons).
+                for spec_dir in sorted(
+                    p for p in enc_dir.glob(f"p{zone['partition']}/[A-Z]*") if p.is_dir()
+                ):
+                    for region in REGIONS:
+                        for payload in _iter_slice(spec_dir / region, region, max_pages):
+                            for row in payload["rankings"]:
+                                if any(g.get("id") in poison for g in row.get("gear", [])):
+                                    dropped_rows[spec_dir.name] += 1
+                                    continue
+                                yield enc_id, spec_dir.name, row
 
     dropped_rows: Counter = Counter()
 
@@ -165,6 +173,7 @@ def aggregate_zone(zone_tag: str, max_pages: int) -> Path:
     DURATION_BIN_MS = 15_000
     enc_names = {
         e["id"]: e["name"]
+        for zone in phase_zones
         for e in json.loads((META_DIR / f"encounters-{zone['zone_id']}.json").read_text())
     }
     enc_rows: Counter = Counter()
@@ -199,27 +208,29 @@ def aggregate_zone(zone_tag: str, max_pages: int) -> Path:
 
     # Pass 3: the "top2000" band — region pages only (contiguous from page 1),
     # skipping the server-descent data entirely. Poison-filtered like the rest.
-    for enc_dir in sorted(zone_dir.glob("enc-*")):
-        for spec_dir in sorted(
-            p for p in enc_dir.glob(f"p{zone['partition']}/[A-Z]*") if p.is_dir()
-        ):
-            spec_key = spec_dir.name
-            for region in REGIONS:
-                for payload in _iter_pages(spec_dir / region, MAX_PAGE):
-                    for row in payload["rankings"]:
-                        if any(g.get("id") in poison for g in row.get("gear", [])):
-                            continue
-                        samples["top2000"][spec_key] += 1
-                        for idx, gear in enumerate(row.get("gear", [])):
-                            slot = SLOT_BY_INDEX.get(idx)
-                            if slot is None or not gear.get("id"):
+    for zone in phase_zones:
+        zone_dir = RAW_DIR / f"zone-{zone['zone_id']}"
+        for enc_dir in sorted(zone_dir.glob("enc-*")):
+            for spec_dir in sorted(
+                p for p in enc_dir.glob(f"p{zone['partition']}/[A-Z]*") if p.is_dir()
+            ):
+                spec_key = spec_dir.name
+                for region in REGIONS:
+                    for payload in _iter_pages(spec_dir / region, MAX_PAGE):
+                        for row in payload["rankings"]:
+                            if any(g.get("id") in poison for g in row.get("gear", [])):
                                 continue
-                            counts["top2000"].setdefault(spec_key, {}).setdefault(slot, Counter())[
-                                gear["id"]
-                            ] += 1
-                            items.setdefault(
-                                gear["id"], {k: gear[k] for k in ("name", "quality", "icon")}
-                            )
+                            samples["top2000"][spec_key] += 1
+                            for idx, gear in enumerate(row.get("gear", [])):
+                                slot = SLOT_BY_INDEX.get(idx)
+                                if slot is None or not gear.get("id"):
+                                    continue
+                                counts["top2000"].setdefault(spec_key, {}).setdefault(
+                                    slot, Counter()
+                                )[gear["id"]] += 1
+                                items.setdefault(
+                                    gear["id"], {k: gear[k] for k in ("name", "quality", "icon")}
+                                )
 
     for spec_key in sorted(counts["all"]):
         out_bands: dict[str, dict] = {}
@@ -257,25 +268,24 @@ def aggregate_zone(zone_tag: str, max_pages: int) -> Path:
     }
 
     result = {
-        "zone": zone_tag,
+        "zone": phase_tag,
         "stats": stats,
-        "zoneId": zone["zone_id"],
-        "partition": zone["partition"],
-        "anniversaryPhase": zone["anniversary_phase"],
+        "zones": PHASES[phase_tag],
+        "anniversaryPhase": phase_number(phase_tag),
         "regions": list(REGIONS),
         "maxPages": max_pages,
         "generatedAt": datetime.now(UTC).isoformat(timespec="seconds"),
         "specs": specs,
     }
     AGGREGATED_DIR.mkdir(parents=True, exist_ok=True)
-    out_path = AGGREGATED_DIR / f"{zone_tag}.json"
+    out_path = AGGREGATED_DIR / f"{phase_tag}.json"
     out_path.write_text(json.dumps(result, indent=1))
     total_dropped = sum(dropped_rows.values())
     total_kept = sum(samples["all"].values())
     log.info(
         "aggregated %s: %d specs, %d rows kept, %d rows dropped (%.1f%%) for "
         "wearing later-phase raid gear -> %s",
-        zone_tag,
+        phase_tag,
         len(specs),
         total_kept,
         total_dropped,

@@ -1,5 +1,5 @@
 {
- "zone": "bt-hyjal",
+ "zone": "phase-3",
  "stats": {
   "rowsKept": 999519,
   "rowsDropped": 304323,
@@ -1652,15 +1652,16 @@
    }
   }
  },
- "zoneId": 1011,
- "partition": 5,
+ "zones": [
+  "bt-hyjal"
+ ],
  "anniversaryPhase": 3,
  "regions": [
   "US",
   "EU"
  ],
  "maxPages": 20,
- "generatedAt": "2026-08-17T13:22:37+00:00",
+ "generatedAt": "2026-08-17T18:29:35+00:00",
  "specs": {
   "Druid-Balance": {
    "bands": {
