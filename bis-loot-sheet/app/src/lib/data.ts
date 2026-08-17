@@ -1,14 +1,56 @@
+import { useEffect, useState } from "react"
 import type { ItemFacts, SlotEntry, ZoneData } from "@/types"
-import { CLASS_ORDER, specClass } from "./wow"
+import { CLASS_ORDER, ZONE_PHASES, specClass } from "./wow"
 
-const modules = import.meta.glob("../data/*.json", { eager: true }) as Record<
+// Non-eager: each zone JSON becomes its own hashed chunk, fetched on demand.
+// Cloudflare serves hashed assets immutably, so unchanged zones stay cached
+// across deploys; only re-aggregated zones get new hashes.
+const modules = import.meta.glob("../data/*.json") as Record<
   string,
-  { default: ZoneData }
+  () => Promise<{ default: ZoneData }>
 >
 
-export const zones: ZoneData[] = Object.values(modules)
-  .map((m) => m.default)
-  .sort((a, b) => a.anniversaryPhase - b.anniversaryPhase)
+const tagOf = (path: string) => path.replace("../data/", "").replace(".json", "")
+
+/** Zone tags present in the build, ordered by anniversary phase. */
+export const zoneTags = Object.keys(modules)
+  .map(tagOf)
+  .sort((a, b) => (ZONE_PHASES[a] ?? 99) - (ZONE_PHASES[b] ?? 99))
+
+const cache = new Map<string, ZoneData>()
+
+export async function loadZone(tag: string): Promise<ZoneData> {
+  const cached = cache.get(tag)
+  if (cached) return cached
+  const path = `../data/${tag}.json`
+  const zone = (await modules[path]()).default
+  cache.set(tag, zone)
+  return zone
+}
+
+/** Load a zone's data; returns undefined while the chunk is in flight. */
+export function useZone(tag: string | undefined): ZoneData | undefined {
+  const [zone, setZone] = useState<ZoneData | undefined>(() =>
+    tag ? cache.get(tag) : undefined,
+  )
+  useEffect(() => {
+    if (!tag) return
+    let stale = false
+    const cached = cache.get(tag)
+    if (cached) {
+      setZone(cached)
+      return
+    }
+    setZone(undefined)
+    loadZone(tag).then((z) => {
+      if (!stale) setZone(z)
+    })
+    return () => {
+      stale = true
+    }
+  }, [tag])
+  return zone
+}
 
 /**
  * WCL's gear array puts two-handers in the main-hand slot, which reads as

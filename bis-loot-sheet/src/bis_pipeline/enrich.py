@@ -232,11 +232,28 @@ def enrich_zone(zone_tag: str) -> Path:
     out_path = ENRICHED_DIR / f"{zone_tag}.json"
     out_path.write_text(json.dumps(result, indent=1))
 
-    # Keep the web app's data in sync automatically.
+    # Keep the web app's data in sync automatically. The app copy is a diet
+    # version: only the top2000 band (flattened — the app has no band concept),
+    # and only items that band or the lootmap actually references. The full
+    # multi-band data stays in data/enriched/ for pipeline/analysis use.
     app_data = PROJECT_ROOT / "app" / "src" / "data"
     if app_data.is_dir():
-        (app_data / f"{zone_tag}.json").write_text(json.dumps(result))
-        log.info("synced to app/src/data/%s.json", zone_tag)
+        app_specs = {k: v["bands"]["top2000"] for k, v in specs.items()}
+        referenced = {
+            e["id"] for sd in app_specs.values() for entries in sd["slots"].values() for e in entries
+        }
+        app_items = {
+            iid: facts
+            for iid, facts in items.items()
+            if iid in referenced or facts.get("sources")
+        }
+        app_copy = {**result, "specs": app_specs, "items": app_items}
+        (app_data / f"{zone_tag}.json").write_text(json.dumps(app_copy))
+        log.info(
+            "synced diet copy to app/src/data/%s.json (%d items, top2000 only)",
+            zone_tag,
+            len(app_items),
+        )
     log.info(
         "enriched %s: %d items (%d dropped as non-TBC) -> %s",
         zone_tag,
