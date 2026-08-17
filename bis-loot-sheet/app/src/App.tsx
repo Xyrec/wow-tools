@@ -21,11 +21,13 @@ import {
 } from "@/lib/wow"
 import type { BandKey } from "@/types"
 
-const BAND_LABELS: Record<BandKey, string> = {
+// Only top2000 has a complete, uniformly-defined data set under the
+// region-only fetch strategy; re-enable the others when their data is full.
+const BAND_LABELS: Partial<Record<BandKey, string>> = {
   top2000: "Top 2000",
-  top10: "Top 10%",
-  mid50: "Mid 50%",
-  all: "Everyone",
+  // top10: "Top 10%",
+  // mid50: "Mid 50%",
+  // all: "Everyone",
 }
 
 const ROLE_CAVEATS: Record<string, string> = {
