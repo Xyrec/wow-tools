@@ -57,8 +57,7 @@ export default function App() {
         <div>
           <h1 className="text-xl font-bold">TBC BiS — from Warcraft Logs</h1>
           <p className="text-xs text-muted-foreground">
-            What top parsers actually wore, per phase-pure partition ({zone.regions.join("+")},
-            top {zone.maxPages * 100}/region/spec/boss{zone.maxPages < 20 ? " — basic data set" : ""})
+            Built from real gear data scraped from Warcraft Logs — may disagree with other BiS lists.
           </p>
         </div>
         <Tabs value={zone.zone} onValueChange={setZoneTag}>
