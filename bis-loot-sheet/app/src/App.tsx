@@ -12,6 +12,7 @@ import { Badge } from "@/components/ui/badge"
 import {
   Select,
   SelectContent,
+  SelectGroup,
   SelectItem,
   SelectTrigger,
   SelectValue,
@@ -61,18 +62,25 @@ export default function App() {
             curated BiS lists may differ.
           </p>
         </div>
-        <Select value={zoneTag} onValueChange={(v) => v && setZoneTag(v)}>
+        <Select
+          items={zoneTags.map((tag) => ({
+            label: `P${ZONE_PHASES[tag] ?? "?"} · ${ZONE_LABELS[tag] ?? tag}`,
+            value: tag,
+          }))}
+          value={zoneTag}
+          onValueChange={(v) => v && setZoneTag(v)}
+        >
           <SelectTrigger className="w-64">
-            <SelectValue>
-              {zoneTag ? `P${ZONE_PHASES[zoneTag] ?? "?"} · ${ZONE_LABELS[zoneTag] ?? zoneTag}` : ""}
-            </SelectValue>
+            <SelectValue />
           </SelectTrigger>
           <SelectContent>
-            {zoneTags.map((tag) => (
-              <SelectItem key={tag} value={tag}>
-                P{ZONE_PHASES[tag] ?? "?"} · {ZONE_LABELS[tag] ?? tag}
-              </SelectItem>
-            ))}
+            <SelectGroup>
+              {zoneTags.map((tag) => (
+                <SelectItem key={tag} value={tag}>
+                  P{ZONE_PHASES[tag] ?? "?"} · {ZONE_LABELS[tag] ?? tag}
+                </SelectItem>
+              ))}
+            </SelectGroup>
           </SelectContent>
         </Select>
       </header>

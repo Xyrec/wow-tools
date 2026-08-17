@@ -13,6 +13,7 @@ import {
   SelectGroup,
   SelectItem,
   SelectLabel,
+  SelectSeparator,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
@@ -115,13 +116,18 @@ export function Overview({ zone }: { zone: ZoneData }) {
               </p>
             )}
           </div>
-          <Select value={encounterId} onValueChange={(v) => v && setEncounterId(v)}>
+          <Select
+            items={encounterIds.map((id) => ({ label: stats.encounters[id].name, value: id }))}
+            value={encounterId}
+            onValueChange={(v) => v && setEncounterId(v)}
+          >
             <SelectTrigger className="w-56">
-              <SelectValue>{encounter?.name}</SelectValue>
+              <SelectValue />
             </SelectTrigger>
             <SelectContent>
-              {[...raidGroups.entries()].map(([raid, ids]) => (
+              {[...raidGroups.entries()].map(([raid, ids], groupIndex) => (
                 <SelectGroup key={raid}>
+                  {groupIndex > 0 && <SelectSeparator />}
                   <SelectLabel>{raid}</SelectLabel>
                   {ids.map((id) => (
                     <SelectItem key={id} value={id}>
