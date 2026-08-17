@@ -51,7 +51,7 @@ def test_pilot_parity_against_live_snapshot():
     pilot_ids = [
         "Shaman - Stormstrike",
         "Shaman - Nature's Swiftness",
-        "Shaman - Fire Totem Missing",
+        "Shaman - Drink Expiring",
     ]
     built = build_group.build("shaman", allow_missing=True)
     snapshot = json.loads(
