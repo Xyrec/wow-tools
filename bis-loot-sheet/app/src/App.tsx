@@ -19,16 +19,6 @@ import {
   specName,
   specRole,
 } from "@/lib/wow"
-import type { BandKey } from "@/types"
-
-// Only top2000 has a complete, uniformly-defined data set under the
-// region-only fetch strategy; re-enable the others when their data is full.
-const BAND_LABELS: Partial<Record<BandKey, string>> = {
-  top2000: "Top 2000",
-  // top10: "Top 10%",
-  // mid50: "Mid 50%",
-  // all: "Everyone",
-}
 
 const ROLE_CAVEATS: Record<string, string> = {
   healer:
@@ -40,16 +30,17 @@ export default function App() {
   const [zoneTag, setZoneTag] = useState(zones.at(-1)?.zone) // default: latest phase
   const zone = useMemo(() => zones.find((z) => z.zone === zoneTag) ?? zones[0], [zoneTag])
   const [specKey, setSpecKey] = useState("")
-  const [band, setBand] = useState<BandKey>("top2000")
+  // Only the top2000 band (region windows, top ~2000/region) is complete and
+  // exposed; the other bands remain in the data for future use.
   const spec = specKey ? zone?.specs[specKey] : undefined
-  const bandData = spec?.bands[band]
+  const bandData = spec?.bands.top2000
   const role = specRole(specKey)
 
   // Wowhead's tooltip script only scans on load; re-scan after re-renders.
   useEffect(() => {
     const id = setTimeout(() => window.$WowheadPower?.refreshLinks(), 50)
     return () => clearTimeout(id)
-  }, [zoneTag, specKey, band])
+  }, [zoneTag, specKey])
 
   if (!zone) return <main className="p-8">No data generated yet — run the pipeline.</main>
 
@@ -91,17 +82,6 @@ export default function App() {
                 >
                   {specName(specKey)} {specClass(specKey)}
                 </h2>
-                {/* Player band: who the distributions describe, by parse
-                    percentile within each (spec, boss) population. */}
-                <Tabs value={band} onValueChange={(v) => setBand(v as BandKey)}>
-                  <TabsList>
-                    {(Object.keys(BAND_LABELS) as BandKey[]).map((key) => (
-                      <TabsTrigger key={key} value={key}>
-                        {BAND_LABELS[key]}
-                      </TabsTrigger>
-                    ))}
-                  </TabsList>
-                </Tabs>
                 <Badge variant="secondary">
                   {bandData.sampleSize.toLocaleString()} parses sampled
                 </Badge>
