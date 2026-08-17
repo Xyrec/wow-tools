@@ -35,7 +35,7 @@ const ROLE_CAVEATS: Record<string, string> = {
 }
 
 export default function App() {
-  const [zoneTag, setZoneTag] = useState(zones[0]?.zone)
+  const [zoneTag, setZoneTag] = useState(zones.at(-1)?.zone) // default: latest phase
   const zone = useMemo(() => zones.find((z) => z.zone === zoneTag) ?? zones[0], [zoneTag])
   const [specKey, setSpecKey] = useState("")
   const [band, setBand] = useState<BandKey>("top2000")
