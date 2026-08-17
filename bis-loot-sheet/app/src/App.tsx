@@ -9,7 +9,13 @@ import { Overview } from "@/components/Overview"
 import { SlotCard } from "@/components/SlotCard"
 import { SpecSidebar } from "@/components/SpecSidebar"
 import { Badge } from "@/components/ui/badge"
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 import { splitWeapons, useZone, zoneTags } from "@/lib/data"
 import {
   CLASS_COLORS,
@@ -55,15 +61,20 @@ export default function App() {
             curated BiS lists may differ.
           </p>
         </div>
-        <Tabs value={zoneTag} onValueChange={setZoneTag}>
-          <TabsList>
+        <Select value={zoneTag} onValueChange={(v) => v && setZoneTag(v)}>
+          <SelectTrigger className="w-64">
+            <SelectValue>
+              {zoneTag ? `P${ZONE_PHASES[zoneTag] ?? "?"} · ${ZONE_LABELS[zoneTag] ?? zoneTag}` : ""}
+            </SelectValue>
+          </SelectTrigger>
+          <SelectContent>
             {zoneTags.map((tag) => (
-              <TabsTrigger key={tag} value={tag}>
+              <SelectItem key={tag} value={tag}>
                 P{ZONE_PHASES[tag] ?? "?"} · {ZONE_LABELS[tag] ?? tag}
-              </TabsTrigger>
+              </SelectItem>
             ))}
-          </TabsList>
-        </Tabs>
+          </SelectContent>
+        </Select>
       </header>
 
       {!zone ? (
