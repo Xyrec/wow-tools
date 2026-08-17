@@ -66,6 +66,7 @@ def regions_servers(client: WCLClient) -> dict[str, list[str]]:
             if all(len(result[name]) >= totals[name] for name in totals):
                 break
             page += 1
-        return result
+        # WCL can list a server twice (e.g. US 'maladath'); dedupe, order-stable.
+        return {region: list(dict.fromkeys(slugs)) for region, slugs in result.items()}
 
     return _cached(META_DIR / "regions_servers.json", fetch)
