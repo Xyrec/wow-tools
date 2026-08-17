@@ -26,6 +26,9 @@ CREATURE_OVERRIDES: dict[int, list[int]] = {
     # Illidari Council: items ride on Zerevor (ref 36135), the T6 legs token
     # group (ref 36136) on the other three — Gathios covers it once.
     608: [22949, 22950],
+    # WCL names ZA's final boss "Daakara" (Cataclysm-era); in 2.4.3 the boss
+    # and loot are Zul'jin.
+    1194: [23863],
 }
 
 
