@@ -26,7 +26,7 @@
         {
           "rank": "Optional",
           "name": "The Fel Barrier",
-          "source": "Mana-Tombs (HC) — Nexus-Prince Shaffar — 25%"
+          "source": "Mana-Tombs (H) — Nexus-Prince Shaffar — 25%"
         }
       ],
       "weapons": [
@@ -141,12 +141,12 @@
         {
           "rank": "BiS",
           "name": "Girdle of Valorous Deeds",
-          "source": "The Black Morass (HC) — Aeonus — 25%"
+          "source": "The Black Morass (H) — Aeonus — 25%"
         },
         {
           "rank": "Optional",
           "name": "Girdle of the Immovable",
-          "source": "Slave Pens (HC) — Quagmirran — 16%"
+          "source": "Slave Pens (H) — Quagmirran — 16%"
         },
         {
           "rank": "Optional",
@@ -168,7 +168,7 @@
         {
           "rank": "BiS",
           "name": "Boots of the Righteous Path",
-          "source": "The Shattered Halls (HC) — Warchief Kargath Bladefist — 25%"
+          "source": "The Shattered Halls (H) — Warchief Kargath Bladefist — 25%"
         },
         {
           "rank": "Optional",
@@ -183,7 +183,7 @@
         {
           "rank": "Optional",
           "name": "Boots of the Colossus",
-          "source": "Mana-Tombs (HC) — Pandemonius — 17%"
+          "source": "Mana-Tombs (H) — Pandemonius — 17%"
         },
         {
           "rank": "Optional",
@@ -205,12 +205,12 @@
         {
           "rank": "Optional",
           "name": "Spaulders of Dementia",
-          "source": "Sethekk Halls (HC) — Talon King Ikiss — 25%"
+          "source": "Sethekk Halls (H) — Talon King Ikiss — 25%"
         },
         {
           "rank": "Optional",
           "name": "Fanblade Pauldrons",
-          "source": "Auchenai Crypts (HC) — Shirrak the Dead Watcher — 17%"
+          "source": "Auchenai Crypts (H) — Shirrak the Dead Watcher — 17%"
         },
         {
           "rank": "Optional",
@@ -222,7 +222,7 @@
         {
           "rank": "Optional",
           "name": "Gauntlets of Dissension",
-          "source": "The Botanica (HC) — Warp Splinter — 25%"
+          "source": "The Botanica (H) — Warp Splinter — 25%"
         },
         {
           "rank": "Optional",
@@ -249,7 +249,7 @@
         {
           "rank": "BiS",
           "name": "Bracers of Dignity",
-          "source": "Arcatraz (HC) — Harbinger Skyriss — 25%"
+          "source": "Arcatraz (H) — Harbinger Skyriss — 25%"
         },
         {
           "rank": "Optional",
@@ -264,12 +264,12 @@
         {
           "rank": "Optional",
           "name": "Amber Bands of the Aggressor",
-          "source": "The Steamvault (HC) — Warlord Kalithresh — 25%"
+          "source": "The Steamvault (H) — Warlord Kalithresh — 25%"
         },
         {
           "rank": "Optional",
           "name": "Vambraces of Daring",
-          "source": "Hellfire Ramparts (HC) — Vazruden the Herald"
+          "source": "Hellfire Ramparts (H) — Vazruden the Herald"
         }
       ],
       "rings": [
@@ -323,7 +323,7 @@
         {
           "rank": "Optional",
           "name": "Ironscale War Cloak",
-          "source": "Slave Pens (HC) — Rokmar the Crackler — 17%"
+          "source": "Slave Pens (H) — Rokmar the Crackler — 17%"
         }
       ],
       "neck": [
@@ -345,7 +345,7 @@
         {
           "rank": "Optional",
           "name": "Maladaar's Blessed Chaplet",
-          "source": "Auchenai Crypts (HC) — Exarch Maladaar — 17%"
+          "source": "Auchenai Crypts (H) — Exarch Maladaar — 17%"
         },
         {
           "rank": "Optional",
@@ -558,7 +558,7 @@
         {
           "rank": "Optional",
           "name": "Spaulders of Dementia",
-          "source": "Sethekk Halls (HC) — Talon King Ikiss — 25%"
+          "source": "Sethekk Halls (H) — Talon King Ikiss — 25%"
         }
       ],
       "waist": [
@@ -570,12 +570,12 @@
         {
           "rank": "Optional",
           "name": "Girdle of Valorous Deeds",
-          "source": "The Black Morass (HC) — Aeonus — 25%"
+          "source": "The Black Morass (H) — Aeonus — 25%"
         },
         {
           "rank": "Optional",
           "name": "Girdle of the Immovable",
-          "source": "Slave Pens (HC) — Quagmirran — 16%"
+          "source": "Slave Pens (H) — Quagmirran — 16%"
         },
         {
           "rank": "Optional",
@@ -607,7 +607,7 @@
         {
           "rank": "Optional",
           "name": "Gauntlets of Dissension",
-          "source": "The Botanica (HC) — Warp Splinter — 25%"
+          "source": "The Botanica (H) — Warp Splinter — 25%"
         },
         {
           "rank": "Optional",
@@ -624,7 +624,7 @@
         {
           "rank": "Optional",
           "name": "Boots of the Righteous Path",
-          "source": "The Shattered Halls (HC) — Warchief Kargath Bladefist — 25%"
+          "source": "The Shattered Halls (H) — Warchief Kargath Bladefist — 25%"
         },
         {
           "rank": "Optional",
@@ -646,7 +646,7 @@
         {
           "rank": "BiS",
           "name": "Bracers of Dignity",
-          "source": "Arcatraz (HC) — Harbinger Skyriss — 25%"
+          "source": "Arcatraz (H) — Harbinger Skyriss — 25%"
         },
         {
           "rank": "Optional",
@@ -666,7 +666,7 @@
         {
           "rank": "Optional",
           "name": "Amber Bands of the Aggressor",
-          "source": "The Steamvault (HC) — Warlord Kalithresh — 25%"
+          "source": "The Steamvault (H) — Warlord Kalithresh — 25%"
         }
       ],
       "rings": [
@@ -720,7 +720,7 @@
         {
           "rank": "Optional",
           "name": "Maladaar's Blessed Chaplet",
-          "source": "Auchenai Crypts (HC) — Exarch Maladaar — 17%"
+          "source": "Auchenai Crypts (H) — Exarch Maladaar — 17%"
         }
       ],
       "back": [
@@ -796,34 +796,12 @@
       ]
     },
     "phase-2": {
-      "weapons": [
+      "offhands": [
         {
           "rank": "Optional",
-          "name": "Merciless Gladiator's Gavel",
+          "name": "Merciless Gladiator's Barrier",
           "source": "PvP — Arena Season 2"
         },
-        {
-          "rank": "BiS",
-          "name": "Fang of the Leviathan",
-          "source": "SSC — Leotheras the Blind — 17%"
-        },
-        {
-          "rank": "Optional",
-          "name": "Bloodmaw Magus-Blade",
-          "source": "Gruul's Lair — Gruul the Dragonkiller — 33%"
-        },
-        {
-          "rank": "Optional",
-          "name": "Gavel of Unearthed Secrets",
-          "source": "Reputation — Lower City - Exalted"
-        },
-        {
-          "rank": "Optional",
-          "name": "Stormcaller",
-          "source": "Reputation — Thrallmar - Exalted (H)"
-        }
-      ],
-      "offhands": [
         {
           "rank": "BiS",
           "name": "Aldori Legacy Defender",
@@ -843,11 +821,33 @@
           "rank": "Optional",
           "name": "Azure-Shield of Coldarra",
           "source": "Vendor — Badge of Justice (33)"
+        }
+      ],
+      "weapons": [
+        {
+          "rank": "Optional",
+          "name": "Merciless Gladiator's Gavel",
+          "source": "PvP — Arena Season 2"
+        },
+        {
+          "rank": "BiS",
+          "name": "Fang of the Leviathan",
+          "source": "SSC — Leotheras the Blind — 17%"
         },
         {
           "rank": "Optional",
-          "name": "Dragonheart Flameshield",
-          "source": "Karazhan — Nightbane — 16%"
+          "name": "Gladiator's Gavel",
+          "source": "PvP — Arena Season 1"
+        },
+        {
+          "rank": "Optional",
+          "name": "Bloodmaw Magus-Blade",
+          "source": "Gruul's Lair — Gruul the Dragonkiller — 33%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Gavel of Unearthed Secrets",
+          "source": "Reputation — Lower City - Exalted"
         }
       ],
       "legs": [
@@ -1009,17 +1009,17 @@
         {
           "rank": "Optional",
           "name": "Boots of the Righteous Path",
-          "source": "The Shattered Halls (HC) — Warchief Kargath Bladefist — 25%"
+          "source": "The Shattered Halls (H) — Warchief Kargath Bladefist — 25%"
         }
       ],
       "waist": [
         {
-          "rank": "Optional",
+          "rank": "BiS",
           "name": "Belt of the Guardian",
           "source": "Blacksmithing — BoP Pattern (375)"
         },
         {
-          "rank": "BiS",
+          "rank": "Optional",
           "name": "Girdle of the Invulnerable",
           "source": "SSC — Leotheras the Blind — 17%"
         },
@@ -1031,12 +1031,12 @@
         {
           "rank": "Optional",
           "name": "Girdle of Valorous Deeds",
-          "source": "The Black Morass (HC) — Aeonus — 25%"
+          "source": "The Black Morass (H) — Aeonus — 25%"
         },
         {
           "rank": "Optional",
           "name": "Girdle of the Immovable",
-          "source": "Slave Pens (HC) — Quagmirran — 16%"
+          "source": "Slave Pens (H) — Quagmirran — 16%"
         }
       ],
       "wrists": [
@@ -1048,7 +1048,7 @@
         {
           "rank": "Optional",
           "name": "Bracers of Dignity",
-          "source": "Arcatraz (HC) — Harbinger Skyriss — 25%"
+          "source": "Arcatraz (H) — Harbinger Skyriss — 25%"
         },
         {
           "rank": "Optional",
@@ -1068,12 +1068,12 @@
       ],
       "neck": [
         {
-          "rank": "Optional",
+          "rank": "BiS",
           "name": "The Darkener's Grasp",
           "source": "Quest Reward — Kael'thas and the Verdant Sphere"
         },
         {
-          "rank": "BiS",
+          "rank": "Optional",
           "name": "Veteran's Pendant of Dominance",
           "source": "PvP — Honor & EotS Marks"
         },
@@ -1243,8 +1243,8 @@
         },
         {
           "rank": "Optional",
-          "name": "Bloodmaw Magus-Blade",
-          "source": "Gruul's Lair — Gruul the Dragonkiller — 33%"
+          "name": "Gladiator's Gavel",
+          "source": "PvP — Arena Season 1"
         }
       ],
       "chest": [
@@ -1460,7 +1460,7 @@
         {
           "rank": "Optional",
           "name": "Bracers of Dignity",
-          "source": "Arcatraz (HC) — Harbinger Skyriss — 25%"
+          "source": "Arcatraz (H) — Harbinger Skyriss — 25%"
         }
       ],
       "neck": [
@@ -1862,7 +1862,7 @@
         {
           "rank": "Optional",
           "name": "Bracers of Dignity",
-          "source": "Arcatraz (HC) — Harbinger Skyriss — 25%"
+          "source": "Arcatraz (H) — Harbinger Skyriss — 25%"
         }
       ],
       "neck": [
@@ -2025,8 +2025,8 @@
         },
         {
           "rank": "Optional",
-          "name": "Illidari Runeshield",
-          "source": "Black Temple — Trash Drop — 2%"
+          "name": "Vengeful Gladiator's Barrier",
+          "source": "PvP — Arena Season 3"
         }
       ],
       "weapons": [
@@ -2047,13 +2047,13 @@
         },
         {
           "rank": "Optional",
-          "name": "Hammer of Judgement",
-          "source": "Hyjal Summit — Trash Drop — 1%"
+          "name": "Vengeful Gladiator's Gavel",
+          "source": "PvP — Arena Season 3"
         },
         {
           "rank": "Optional",
-          "name": "Amani Punisher",
-          "source": "Zul'Aman — Akil'zon — 12%"
+          "name": "Hammer of Judgement",
+          "source": "Hyjal Summit — Trash Drop — 1%"
         }
       ],
       "chest": [

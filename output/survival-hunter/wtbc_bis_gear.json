@@ -846,12 +846,12 @@
     "phase-2": {
       "chest": [
         {
-          "rank": "BiS",
+          "rank": "Optional",
           "name": "Rift Stalker Hauberk",
           "source": "Tempest Keep — Kael'thas Sunstrider — 56%"
         },
         {
-          "rank": "Optional",
+          "rank": "BiS",
           "name": "Ranger-General's Chestguard",
           "source": "SSC — Hydross the Unstable — 14%"
         },
@@ -878,7 +878,7 @@
           "source": "World Boss — Doom Lord Kazzak — 19%"
         },
         {
-          "rank": "Optional",
+          "rank": "BiS",
           "name": "Void Reaver Greaves",
           "source": "Tempest Keep — Void Reaver — 14%"
         },
@@ -893,7 +893,7 @@
           "source": "Karazhan — Netherspite — 16%"
         },
         {
-          "rank": "BiS",
+          "rank": "Optional",
           "name": "Rift Stalker Leggings",
           "source": "SSC — Fathom-Lord Karathress — 56%"
         }
@@ -1127,11 +1127,6 @@
         },
         {
           "rank": "Optional",
-          "name": "Choker of Vile Intent",
-          "source": "Vendor — Badge of Justice (25)"
-        },
-        {
-          "rank": "Optional",
           "name": "Worgen Claw Necklace",
           "source": "Karazhan — Attumen the Huntsman — 16%"
         },
@@ -1139,6 +1134,11 @@
           "rank": "Optional",
           "name": "Prestor's Talisman of Connivery",
           "source": "Blackwing Lair — Nefarian — 19%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Saberclaw Talisman",
+          "source": "Karazhan — Shade of Aran — 16%"
         }
       ],
       "rings": [
@@ -1148,19 +1148,19 @@
           "source": "SSC — Hydross the Unstable — 14%"
         },
         {
-          "rank": "Optional",
+          "rank": "BiS",
           "name": "Ring of Lethality",
           "source": "SSC — Hydross the Unstable — 14%"
-        },
-        {
-          "rank": "BiS",
-          "name": "Band of Eternity v2",
-          "source": "Quest Reward — The Vials of Eternity"
         },
         {
           "rank": "Optional",
           "name": "Ring of the Recalcitrant",
           "source": "Quest Reward — The Fall of Magtheridon"
+        },
+        {
+          "rank": "Optional",
+          "name": "Pathfinder's Band",
+          "source": "Auction House — BoE World Drop"
         },
         {
           "rank": "Optional",

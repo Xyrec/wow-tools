@@ -280,6 +280,11 @@
         },
         {
           "rank": "Optional",
+          "name": "Shapeshifter's Signet",
+          "source": "Reputation — Lower City - Exalted"
+        },
+        {
+          "rank": "Optional",
           "name": "Shaffar's Band of Brutality",
           "source": "Mana-Tombs (H) — Yor (Summoned Boss) — 2%"
         },
@@ -292,11 +297,6 @@
           "rank": "Optional",
           "name": "Ring of Arathi Warlords",
           "source": "Vendor — Badge of Justice (25)"
-        },
-        {
-          "rank": "Optional",
-          "name": "Band of Unnatural Forces",
-          "source": "Naxxramas — Loatheb — 19%"
         }
       ],
       "neck": [

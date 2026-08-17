@@ -1210,12 +1210,12 @@
       ],
       "head": [
         {
-          "rank": "BiS",
+          "rank": "Optional",
           "name": "Thunderheart Cover",
           "source": "Hyjal Summit — Archimonde — 56%"
         },
         {
-          "rank": "Optional",
+          "rank": "BiS",
           "name": "Vengeful Gladiator's Dragonhide Helm",
           "source": "PvP — Arena Season 3"
         },
@@ -1388,8 +1388,8 @@
         },
         {
           "rank": "Optional",
-          "name": "A'dal's Signet of Defense",
-          "source": "Quest Reward — The Fall of Magtheridon"
+          "name": "Ring of Deceitful Intent",
+          "source": "Black Temple — Shade of Akama — 22%"
         },
         {
           "rank": "Optional",
@@ -1817,8 +1817,8 @@
         },
         {
           "rank": "Optional",
-          "name": "A'dal's Signet of Defense",
-          "source": "Quest Reward — The Fall of Magtheridon"
+          "name": "Ring of Deceitful Intent",
+          "source": "Black Temple — Shade of Akama — 22%"
         },
         {
           "rank": "Optional",

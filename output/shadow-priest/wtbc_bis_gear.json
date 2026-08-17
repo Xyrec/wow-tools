@@ -59,11 +59,6 @@
       "head": [
         {
           "rank": "Optional",
-          "name": "Destruction Holo-Gogs",
-          "source": "Engineering — Trainer (375)"
-        },
-        {
-          "rank": "Optional",
           "name": "Elementalist Skullcap of Shadow Wrath",
           "source": "Auction House — BoE World Drop"
         },
@@ -81,6 +76,11 @@
           "rank": "Optional",
           "name": "Gnomish Power Goggles",
           "source": "Engineering — Trainer (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Hood of Oblivion",
+          "source": "Arcatraz — Harbinger Skyriss — 16%"
         }
       ],
       "legs": [
@@ -312,11 +312,6 @@
         },
         {
           "rank": "Optional",
-          "name": "Crystalweave Bracers",
-          "source": "Apexis Crystal Infusion — Apexis Shard (50)"
-        },
-        {
-          "rank": "Optional",
           "name": "General's Silk Cuffs",
           "source": "Vendor — Honor & WSG Marks"
         },
@@ -324,6 +319,11 @@
           "rank": "Optional",
           "name": "Shattrath Wraps",
           "source": "Quest Reward — The Soul Devices"
+        },
+        {
+          "rank": "Optional",
+          "name": "Arcanium Signet Bands",
+          "source": "Underbog (H) — Hungarfen — 17%"
         }
       ],
       "rings": [
@@ -463,33 +463,6 @@
           "source": "PvP — Arena Season 1"
         }
       ],
-      "head": [
-        {
-          "rank": "Optional",
-          "name": "Destruction Holo-Gogs",
-          "source": "Engineering — Trainer (375)"
-        },
-        {
-          "rank": "Optional",
-          "name": "Elementalist Skullcap of Shadow Wrath",
-          "source": "Auction House — BoE World Drop"
-        },
-        {
-          "rank": "BiS",
-          "name": "Spellstrike Hood",
-          "source": "Tailoring — BoP Pattern (375)"
-        },
-        {
-          "rank": "Optional",
-          "name": "Collar of Cho'gall",
-          "source": "Gruul's Lair — Gruul the Dragonkiller — 33%"
-        },
-        {
-          "rank": "Optional",
-          "name": "Evoker's Helmet of Second Sight",
-          "source": "Quest Reward — Teron Gorefiend, I am..."
-        }
-      ],
       "legs": [
         {
           "rank": "Optional",
@@ -515,6 +488,33 @@
           "rank": "Optional",
           "name": "Kirin Tor Master's Trousers",
           "source": "Shadow Labyrinth (H) — Murmur — 25%"
+        }
+      ],
+      "head": [
+        {
+          "rank": "Optional",
+          "name": "Elementalist Skullcap of Shadow Wrath",
+          "source": "Auction House — BoE World Drop"
+        },
+        {
+          "rank": "BiS",
+          "name": "Spellstrike Hood",
+          "source": "Tailoring — BoP Pattern (375)"
+        },
+        {
+          "rank": "Optional",
+          "name": "Collar of Cho'gall",
+          "source": "Gruul's Lair — Gruul the Dragonkiller — 33%"
+        },
+        {
+          "rank": "Optional",
+          "name": "Evoker's Helmet of Second Sight",
+          "source": "Quest Reward — Teron Gorefiend, I am..."
+        },
+        {
+          "rank": "Optional",
+          "name": "Gnomish Power Goggles",
+          "source": "Engineering — Trainer (375)"
         }
       ],
       "feet": [
@@ -643,13 +643,13 @@
         },
         {
           "rank": "Optional",
-          "name": "Crystalweave Bracers",
-          "source": "Apexis Crystal Infusion — Apexis Shard (50)"
+          "name": "Bands of Nefarious Deeds",
+          "source": "Karazhan — Maiden of Virtue — 16%"
         },
         {
           "rank": "Optional",
-          "name": "Bands of Nefarious Deeds",
-          "source": "Karazhan — Maiden of Virtue — 16%"
+          "name": "General's Silk Cuffs",
+          "source": "Vendor — Honor & WSG Marks"
         }
       ],
       "neck": [
