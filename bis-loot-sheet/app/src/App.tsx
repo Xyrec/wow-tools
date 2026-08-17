@@ -22,8 +22,8 @@ import {
 import type { BandKey } from "@/types"
 
 const BAND_LABELS: Record<BandKey, string> = {
-  top10: "Top 10%",
   top2000: "Top 2000",
+  top10: "Top 10%",
   mid50: "Mid 50%",
   all: "Everyone",
 }
@@ -38,7 +38,7 @@ export default function App() {
   const [zoneTag, setZoneTag] = useState(zones[0]?.zone)
   const zone = useMemo(() => zones.find((z) => z.zone === zoneTag) ?? zones[0], [zoneTag])
   const [specKey, setSpecKey] = useState("")
-  const [band, setBand] = useState<BandKey>("top10")
+  const [band, setBand] = useState<BandKey>("top2000")
   const spec = specKey ? zone?.specs[specKey] : undefined
   const bandData = spec?.bands[band]
   const role = specRole(specKey)

@@ -16,6 +16,9 @@ const MAX_ROWS = 8
 // Unique matters where a player could otherwise equip two of the same item.
 const DUPLICATE_SLOTS = new Set(["ring", "trinket", "main_hand", "off_hand"])
 
+// Two of these are worn at once, so the top TWO items are BiS (plus ties).
+const PAIR_SLOTS = new Set(["ring", "trinket"])
+
 interface Props {
   slot: string
   label: string
@@ -30,6 +33,11 @@ export function SlotCard({ slot, label, entries, items }: Props) {
   if (visible.length === 0) return null
   const topPct = visible[0].pct
   const showUnique = DUPLICATE_SLOTS.has(slot)
+  // BiS reference: the last guaranteed-BiS rank (2nd item for paired slots),
+  // with the tie window extending highlights below it.
+  const bisRefPct = PAIR_SLOTS.has(slot) ? (visible[1] ?? visible[0]).pct : topPct
+  const isBisRank = (rank: number, pct: number) =>
+    (PAIR_SLOTS.has(slot) && rank <= 1) || bisRefPct - pct <= BIS_TIE_WINDOW
 
   return (
     <Card className="gap-3 py-4">
@@ -42,7 +50,7 @@ export function SlotCard({ slot, label, entries, items }: Props) {
         <ul className="space-y-1">
           {visible.map((entry, rank) => {
             const item = items[entry.id]
-            const isBis = topPct - entry.pct <= BIS_TIE_WINDOW
+            const isBis = isBisRank(rank, entry.pct)
             return (
               <li
                 key={entry.id}
