@@ -96,7 +96,7 @@ export default function App() {
 
           <main className="min-w-0 flex-1">
             {specKey === "" ? (
-              <Overview zone={zone} />
+              <Overview key={zone.zone} zone={zone} />
             ) : spec ? (
               <>
                 <div className="mb-3 flex flex-wrap items-center gap-3">
