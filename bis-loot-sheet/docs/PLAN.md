@@ -86,6 +86,14 @@ roster-agnostic; roster tailoring is a parameterized app feature, not baked into
   (EU/US return distinct rankings), serverSlug slicing (firemaw works), and omitting
   className returns all classes with each row labeled `class`/`spec` (bucket
   client-side). Regions: US 53 servers, EU 54, KR 8, TW 11, CN 113.
+- **CANONICAL DATASET (Xyrec, 2026-08-17): top-2000 region windows only.** After
+  full exploration of per-server population fetching (since deleted), the standing
+  strategy is `fetch <zone> --max-pages 20 --region-only`: first 20 pages per
+  US/EU region per spec per boss, phase-pure partition, poison-filtered. It
+  cross-validated nearly as well as percentile bands, is uniform across zones,
+  ~1-2h and a few hundred MB per zone, and keeps weak logs out. The app exposes
+  only this band. Deep per-server fetches are exploration-only, on explicit
+  request. (Historical strategies below kept for context.)
 - **Two-tier fetch strategy** (Xyrec, 2026-08-15 evening): full-population fetch
   proved expensive (~30-35h for BT/Hyjal alone; CN descents were a big driver).
   Revised: **US + EU only** (KR/TW/CN dropped — see `REGIONS` in config.py), and a
