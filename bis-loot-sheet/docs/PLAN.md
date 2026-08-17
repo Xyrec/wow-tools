@@ -126,6 +126,14 @@ roster-agnostic; roster tailoring is a parameterized app feature, not baked into
   season timing aren't in raid lootmaps; the app's red "P4 item" badge remains
   as a canary (post-filter it should never appear; if it does, we found such a
   case).
+- **Percentile bands (2026-08-17):** the full-population fetch made the pooled
+  lists drift from "top parsers" toward "everyone" (Cursed Vision 47.9% elite vs
+  Cataclysm Helm 43% population). The aggregator now computes exact per-(spec,
+  boss) parse-percentile thresholds in a first pass (full populations are on
+  disk) and emits three bands per spec: `top10` (>= p90), `mid50` (p25–p75),
+  `all`. The app has a Top 10% / Mid 50% / Everyone toggle, defaulting to Top
+  10% — restoring the founding "top 10% of parses" thesis, with the mid band
+  answering the officers' speed-parse-skew objection by comparison.
 - Kill durations: not used for filtering now. Every row carries `duration`, so once
   data is in we can plot the kill-time bell curve and compare the guild's own kill
   times against the top-20-pages-per-spec distribution.

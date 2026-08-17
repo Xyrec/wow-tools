@@ -212,6 +212,7 @@ def fetch_encounter(
     servers_by_region: dict[str, list[str]],
     regions: list[str],
     max_pages: int = MAX_PAGE,
+    region_only: bool = False,
 ) -> dict:
     """Fetch every spec x region slice for one encounter, descending on saturation."""
     zone = ZONES[zone_tag]
@@ -237,10 +238,12 @@ def fetch_encounter(
                 region=region,
                 # Populous regions frequently exceed the 2,000-row window; probe
                 # page 20 first there to skip straight to server descent.
-                probe_first=region in {"US", "EU", "CN"},
+                # no_probe forces sequential pages 1-20 (backfills the full
+                # region window, e.g. for the top2000 band).
+                probe_first=not region_only and region in {"US", "EU", "CN"},
                 max_pages=max_pages,
             )
-            if saturated and max_pages == MAX_PAGE:
+            if saturated and max_pages == MAX_PAGE and not region_only:
                 stats["saturated"] += 1
                 log.info(
                     "SATURATED: %s %s/%s %s — descending to %d servers",
@@ -272,6 +275,7 @@ def fetch_zone(
     zone_tag: str,
     only_encounter: int | None = None,
     max_pages: int = MAX_PAGE,
+    region_only: bool = False,
 ) -> None:
     zone = ZONES[zone_tag]
     encounters = zone_encounters(client, zone["zone_id"])
@@ -291,7 +295,14 @@ def fetch_zone(
         if only_encounter is not None and encounter["id"] != only_encounter:
             continue
         stats = fetch_encounter(
-            client, zone_tag, encounter, specs, servers_by_region, regions, max_pages=max_pages
+            client,
+            zone_tag,
+            encounter,
+            specs,
+            servers_by_region,
+            regions,
+            max_pages=max_pages,
+            region_only=region_only,
         )
         rl = client.last_rate_limit or {}
         log.info(

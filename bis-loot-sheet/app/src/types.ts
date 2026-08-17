@@ -23,7 +23,7 @@ export interface SlotEntry {
   pct: number
 }
 
-export type BandKey = "top10" | "mid50" | "all"
+export type BandKey = "top10" | "top2000" | "mid50" | "all"
 
 export interface BandData {
   sampleSize: number

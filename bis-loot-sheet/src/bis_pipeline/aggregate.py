@@ -60,8 +60,10 @@ SLOT_BY_INDEX = {
 MIN_PCT = 0.5
 MIN_COUNT = 5
 
-# Player bands by parse percentile within each (spec, encounter) population.
-BANDS = ("top10", "mid50", "all")
+# Player bands. top10/mid50/all are parse-percentile cuts over the full
+# population; top2000 is source-based — the capped region windows (pages 1-20
+# per US/EU region) exactly as WCL's site shows them, no server descent.
+BANDS = ("top10", "top2000", "mid50", "all")
 
 
 def _iter_pages(slice_dir: Path, max_pages: int):
@@ -194,6 +196,30 @@ def aggregate_zone(zone_tag: str, max_pages: int) -> Path:
             for band in bands:
                 counts[band].setdefault(spec_key, {}).setdefault(slot, Counter())[gear["id"]] += 1
             items.setdefault(gear["id"], {k: gear[k] for k in ("name", "quality", "icon")})
+
+    # Pass 3: the "top2000" band — region pages only (contiguous from page 1),
+    # skipping the server-descent data entirely. Poison-filtered like the rest.
+    for enc_dir in sorted(zone_dir.glob("enc-*")):
+        for spec_dir in sorted(
+            p for p in enc_dir.glob(f"p{zone['partition']}/[A-Z]*") if p.is_dir()
+        ):
+            spec_key = spec_dir.name
+            for region in REGIONS:
+                for payload in _iter_pages(spec_dir / region, MAX_PAGE):
+                    for row in payload["rankings"]:
+                        if any(g.get("id") in poison for g in row.get("gear", [])):
+                            continue
+                        samples["top2000"][spec_key] += 1
+                        for idx, gear in enumerate(row.get("gear", [])):
+                            slot = SLOT_BY_INDEX.get(idx)
+                            if slot is None or not gear.get("id"):
+                                continue
+                            counts["top2000"].setdefault(spec_key, {}).setdefault(slot, Counter())[
+                                gear["id"]
+                            ] += 1
+                            items.setdefault(
+                                gear["id"], {k: gear[k] for k in ("name", "quality", "icon")}
+                            )
 
     for spec_key in sorted(counts["all"]):
         out_bands: dict[str, dict] = {}

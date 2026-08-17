@@ -23,6 +23,7 @@ import type { BandKey } from "@/types"
 
 const BAND_LABELS: Record<BandKey, string> = {
   top10: "Top 10%",
+  top2000: "Top 2000",
   mid50: "Mid 50%",
   all: "Everyone",
 }

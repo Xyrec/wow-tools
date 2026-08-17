@@ -28,6 +28,12 @@ def main() -> None:
         "--encounter", type=int, default=None, help="only this encounter id (for estimates)"
     )
     fetch.add_argument(
+        "--region-only",
+        action="store_true",
+        help="fetch only the region-level windows (pages 1-20 per US/EU): no "
+        "page-20 probe, no server descent — completes the top-2000 band",
+    )
+    fetch.add_argument(
         "--max-pages",
         type=int,
         default=20,
@@ -76,4 +82,10 @@ def main() -> None:
         for region, slugs in servers.items():
             print(f"{region}: {len(slugs)} servers")
     elif args.command == "fetch":
-        fetch_zone(client, args.zone, only_encounter=args.encounter, max_pages=args.max_pages)
+        fetch_zone(
+            client,
+            args.zone,
+            only_encounter=args.encounter,
+            max_pages=args.max_pages,
+            region_only=args.region_only,
+        )
