@@ -1,242 +1,180 @@
-# BiS Loot Sheet — Project Plan
+# TBC Item Distribution — Project State & Plan
 
-Living document. Captures decisions from the planning interview (2026-08-15) so work
-survives context compaction. Update as decisions land.
+Living document. **The "Current state" section is authoritative**; the decision
+history at the bottom explains how we got here. Last full rewrite: 2026-08-18.
 
-## Background / Motivation
+## What this is
 
-Guild (Fel Good Inc.) loot prio sheets are hand-made by officers cross-referencing
-BiS lists from memory; sourcing is untraceable and public lists (Wowhead, Icy Veins,
-wowtbc.gg, AtlasLoot) disagree and borrow from each other. Concrete failure found:
-Phase 2 sheet lists unique-equip Rod of the Sun King as the *only* enhancement shaman
-weapon (roster-tailored to one blacksmith), missing Talon of Azshara/fist prio.
-Full Discord context: `../ORIGINAL_CONVO.txt`.
+An **item distribution site** for the guild (Fel Good Inc.), built from real
+Warcraft Logs gear data of the 2021–22 TBC Classic run: for each spec and each
+Anniversary phase, what the top ~2,000 ranked players (US+EU) actually wore,
+per slot, with usage percentages. Higher % ⇒ more likely *the* BiS. It exists to
+replace untraceable hand-made BiS sourcing for the guild's loot prio sheets
+(origin story: `../ORIGINAL_CONVO.txt` — the unique-equip Rod of the Sun King
+mistake).
 
-Thesis: **logs don't lie.** The 2021–2022 TBC Classic run's data still exists on
-classic.warcraftlogs.com — derive BiS empirically from what top players actually wore.
+**Live site:** https://bis-loot-sheet.itsgonnabealongnight.workers.dev
+(Cloudflare Workers static assets; **every push to `main` redeploys** via
+Workers Builds — project path `bis-loot-sheet/app`, build `npm run build`,
+deploy `npx wrangler deploy`, config `app/wrangler.jsonc`.)
 
-Current guild run: TBC Anniversary (fresh.warcraftlogs.com), currently late Phase 2,
-Phase 3 (Hyjal/BT) sheet is the near-term deliverable, but project covers **all phases**.
+## Current state (2026-08-18)
 
-## Architecture: two mechanisms
+### Canonical dataset — COMPLETE, all 5 phases
 
-### Mechanism 1 — the BiS list (build first)
+- **Top-2000 region windows only** (Xyrec's standing decision): per phase, per
+  spec, per boss — WCL region-level ranking pages 1–20 for US and EU, phase-pure
+  partition, **no per-server data, no KR/TW/CN** (explored, then deliberately
+  deleted: too granular, admits weak logs; and the cross-validation below showed
+  the window ≈ elite band anyway).
+- Datasets are keyed by **Anniversary phase, not WCL zone** (`phase-1`…`phase-5`;
+  phase-1 pools the two WCL zones Kara + Gruul/Mag — see `PHASES` in `config.py`).
+- ~4.2M phase-pure parse records across 49 bosses; raw cache ~6.9 GB in
+  `data/raw/` (gitignored), one JSON file per WCL API page, fully resumable.
+- Each record = one player's best kill of one boss on one spec, incl. 18-slot
+  gear snapshot. **Row-level phase purity**: any row wearing ANY later-phase
+  raid drop is dropped at aggregation (poison set = later phases' lootmaps).
+  P3 drops 35.7% of its partition rows this way; phases whose partitions predate
+  the next tier drop 0% (a good consistency check).
 
-1. **Scrape/parse**: query classic.warcraftlogs.com (v2 GraphQL API) for gear worn by
-   ranked players, per spec per boss, and aggregate into per-slot item usage
-   distributions.
-2. **Site**: Vite + shadcn web app showcasing the BiS list. Look-and-feel inspiration:
-   wowtbc.gg BiS pages.
-3. **QA**: app shows the % distribution of each item per slot — highest % is *the*
-   BiS item; anything **< 2% usage is noise and ignored**.
+### Pipeline (Python 3.14, uv, ruff — `src/bis_pipeline/`)
 
-### Mechanism 2 — the loot prio sheet/data (build second, on top of 1)
+```
+uv run bis-pipeline status                   # API points budget
+uv run bis-pipeline discover                 # cache spec/encounter/server metadata
+uv run bis-pipeline fetch <zone> --max-pages 20 --region-only   # canonical fetch
+uv run bis-pipeline aggregate <phase|zone> --max-pages 20       # raw -> distributions
+uv run bis-pipeline enrich <phase|zone>                         # + cmangos facts, app sync
+```
 
-1. Figure out the guild roster (class/spec combinations we run).
-2. Adjust the BiS data to suit that roster.
-3. QA/validate — Xyrec previews to officer/GM team; nothing is handed over until
-   correct.
-4. Iterate. Key weighting rule: cross-spec priority comes from *relative* usage —
-   e.g. a trinket used by 99% of spec A but 68% of spec B → spec A gets higher prio.
+- `client.py` — OAuth client-credentials (token cached ~1yr, creds in `../.env`,
+  gitignored: `WCL_CLIENT_ID`/`WCL_CLIENT_SECRET`); every query piggybacks
+  `rateLimitData`; sleeps to hourly reset when <20 of 3,600 points remain;
+  429/5xx backoff; 2-min budget heartbeat in logs.
+- `fetcher.py` — page cache with `_done` depth markers (never downgraded),
+  corrupt-page self-healing, `--region-only` = no probe & no server descent
+  (the canonical mode). Legacy full-depth/server-descent code paths still exist
+  but are exploration-only on explicit request.
+- `aggregate.py` — pools a PHASE's zones; two-pass percentile banding
+  (`top10`/`mid50`/`all`) plus the source-based `top2000` band; per-encounter
+  kill-duration histograms (15s bins) for the overview; floors pct≥0.5 & count≥5.
+- `enrich.py` — joins cmangos 2.4.3 sqlite (`../../sources/cmangos-tbc-db/`):
+  quality, ilvl, inventory slot, armor type, unique/unique-equipped, set id,
+  tier-token detection (class 15 q4), PvP flag (resilience stat 35 OR
+  gladiator/marshal/etc. name), allowable classes; merges the phase's lootmaps
+  (boss → droppable items, incl. drop-only tier tokens with WCL-fetched icons);
+  `laterPhase` marks items from future phases. Writes full multi-band JSON to
+  `data/enriched/` AND a **diet app copy** to `app/src/data/{phase}.json`
+  (top2000 band only, flattened — the app has NO band concept — items pruned to
+  referenced ones; ~480 KB/phase).
+- `lootmap.py` — encounter→loot via creature name-match + `CREATURE_OVERRIDES`
+  for fights whose loot rides on a differently-named body: Reliquary→Essence of
+  Anger, Illidari Council→Zerevor+Gathios, ZA "Daakara"→Zul'jin, Kalecgos→
+  Sathrovarr, Eredar Twins→Sacrolash+Alythess, M'uru→Entropius. **When adding a
+  zone, verify every boss appears in the lootmap** (missing ones under-fill the
+  poison set for earlier phases).
+- Known data quirks: WCL lists US server `maladath` twice (deduped in
+  discovery); WCL gear arrays put two-handers in the main-hand index (split at
+  display time); some "Main Hand" tooltips (Dragonstrike, The Decapitator) are
+  genuinely One-Hand in final-patch data — dual-wielding them is real; one
+  Anniversary-era item id (185988) polluted a classic partition (dropped, with
+  warning, by enrich).
 
-**Roster-builder idea (adopted direction):** the site lets you *create* a roster —
-select main/off tanks, healers, DPS, each with spec (and maybe professions) — and
-generates the loot prio list from the BiS data + roster. So the data core stays
-roster-agnostic; roster tailoring is a parameterized app feature, not baked into data.
+### Web app (`app/` — Vite 8, React 19, Tailwind 4, shadcn/Base UI)
 
-## Decisions so far
+- Title: **"TBC Item Distribution — from Warcraft Logs"** ("BiS" only in the URL).
+- Phase picker: Select (top right), defaults to latest phase present; per-phase
+  **lazy chunks** via non-eager `import.meta.glob` + `useZone` hook (main bundle
+  ~220 KB gzip; each phase ~70 KB gzip, immutably cached by hash across deploys).
+- Overview (default view): stat tiles (parses analyzed, data updated) +
+  kill-time histogram per boss (15s bins, 99.5% tail trim, dataviz-validated
+  amber #d97706); boss Select grouped by raid with labels + separators
+  (`raidOfEncounter` in `lib/wow.ts` maps encounter-id ranges to raid names).
+- Spec pages: slot cards with item icons, quality colors, usage bars; BiS
+  highlight = top item + anything within 5pp (rings/trinkets highlight top TWO
+  + ties, since two are worn); badges: Set/Token (emerald), PvP (red text),
+  Unique/Unique-Equipped (amber, only on ring/trinket/weapon slots), red
+  "P4 item" laterPhase badge kept as a **canary** — post-filter it should never
+  render; if seen, a non-raid contamination path exists (vendor/badge gear, PvP
+  season timing — those aren't in raid lootmaps).
+- Wowhead tooltips via their official `tooltips.js` (links are wowhead item
+  URLs; SPA re-scans after renders). Tank/healer pages carry metric caveats.
+- Selects follow canonical Base UI shape: `items` prop + childless
+  `<SelectValue/>`, groups, separators between labeled groups,
+  `alignItemWithTrigger=false` default in `ui/select.tsx`.
+- No arbitrary Tailwind values in our code (vendored `ui/` excepted).
 
-| Decision | Choice |
-|---|---|
-| Deliverables | Web app (latest Vite + shadcn) + JSON/CSV export importable into Google Sheets. All phases, not just Phase 3. |
-| Phase purity | classic WCL has per-phase **partitions**: P1, P2, P2.5, P3, "P3.5 & P4", P5, Pre-Patch (ignore Pre-Patch — WotLK class changes). **CORRECTED 2026-08-16:** a raid's earliest partition holds only the progression window (verified: 1011/p4 "P3" = Jan–Feb 2022, everyone still in P2 gear — Xyrec caught the output looking like P2 BiS). Phase BiS = farm status = the **latest partition before the NEXT tier releases**: Kara & Gruul/Mag→p1, SSC/TK→p3 (P2.5), BT/Hyjal→p5 ("P3.5 & P4"), ZA→p5, Sunwell→p6 (P5). ZA leaking into BT/Hyjal's shared partition is handled by `laterPhase` lootmap flagging, not partition avoidance. |
-| Anniversary mapping | fresh.warcraftlogs: Phase 1 = Kara/Gruul/Mag, Phase 2 = SSC/TK, Phase 3 = Hyjal+BT (upcoming). No later phases exist there yet. |
-| Sample cut | **Two-band comparison**: top ~10% AND a mid-band (~25th–75th percentile) per spec per boss. Primary BiS from top band; mid-band exposes elite-vs-population divergence (answers officers' "speed-parse skew" objection). |
-| Role metrics | All roles by their default WCL parse metric (dps/hps), one uniform pipeline. Tank & healer lists carry a visible caveat: "assumes maximizing tank DPS / HPS". Officers apply judgment — this is a first draft. |
-| Noise floor | Items under 2% usage within a spec's band are ignored. |
-| Pipeline tech | **Python 3.14** project in `bis-loot-sheet/` (init with `uv`, lint with `ruff`): WCL scraping, aggregation, cmangos sqlite enrichment (stdlib `sqlite3`) → static JSON. |
-| Prio logic | **TypeScript, in the app.** Python produces facts (distributions + item metadata: unique-equip, class restrictions, token mappings baked into JSON); TS applies policy — roster builder computes prio chains client-side and exports CSV/JSON for Google Sheets. No backend. |
-| Hosting | Cloudflare Pages eventually; **local dev only for now** — deployment is a very-late-stage concern. Fully static build. |
-| Tier tokens | Static token→{class: item} mapping (~15 tokens T4–T6, cross-checked against cmangos DB). BiS view shows pieces (what logs contain); prio sheet shows the token with its chain derived from each redeeming spec's usage% of their piece. **Never assume 4pc is best** — some set bonuses are bad (e.g. T5 resto shaman 4pc); usage data decides. |
-| Gems/enchants | Pipeline **stores raw gear snapshots** (gems/enchants included, no re-scrape needed later); aggregation + app v1 are **items-only**. Gem/enchant views are a later feature. |
+### Validation (2026-08-17, scripts/compare_wowtbc.py)
 
-## Also in scope (settled, no interview needed)
+Against freshly-scraped wowtbc.gg lists (parent repo `cargo run -- scrape`;
+their phase keys: phase-0=Pre-Raid, 1=T4, 2=T5, 3=T6, 4=ZA, 5=SWP):
+strict = their BiS within our co-BiS set; loose = within our top 3.
 
-- **Cross-phase persistence**: since all phases are collected, flag items that stay
-  equipped in later phases' data ("repeated items per phase" → higher prio).
-- **Unique-equip awareness**: from cmangos DB; the Rod/Talon failure mode must be
-  visible in prio output (e.g. warn when a spec's only listed weapon is unique).
-- Spec taxonomy: WCL's spec names as-is (all specs that appear in rankings).
+| band | T6 vs our P3 | T5 vs our P2 |
+|---|---|---|
+| top10 | 69.0 / 88.5 | 79.5 / 95.2 |
+| top2000 | 60.5 / 82.6 | 70.6 / 92.7 |
+| mid50 | 50.8 / 76.2 | 69.6 / 89.4 |
+| all | 51.4 / 77.7 | 73.2 / 94.2 |
 
-## API exploration findings (2026-08-15, verified live)
+Top-10% matches curated lists best; **Xyrec still chose top2000 as the only
+exposed dataset** (uniform definition, cheap, keeps weak logs out) — respect
+that; the multi-band data remains in `data/enriched/` if the question reopens.
+Largest curated-vs-logs disagreements: Marksmanship, Holy Paladin/Priest.
+P4≈P3 similarity is genuine history (85% identical top items; the diffs are
+the famous ZA pieces — Amani Longbow, Brooch of Nature's Mercy, etc.).
 
-- Auth works: client-credentials against `https://www.warcraftlogs.com/oauth/token`,
-  token valid ~1 year. Credentials in `../.env` (gitignored). Classic endpoint:
-  `https://classic.warcraftlogs.com/api/v2/client`.
-- **Gear comes inline with rankings**: `Encounter.characterRankings(partition, className,
-  specName, metric, page, includeCombatantInfo: true)` returns per-character `gear`
-  (18 slots, `{id, name, quality, icon}`) plus name, amount, duration, startTime,
-  faction, talents, report code. No per-report combatantInfo fetches needed.
-- **No gems/enchants in rankings gear** — only id/name/quality/icon. Gem/enchant data
-  would require per-report fetches; deferred indefinitely (amends earlier decision:
-  nothing to "store for later" from this endpoint beyond what we aggregate).
-- **Pagination: 100/page, hard cap at page 20 — but PER FILTER COMBINATION.** Each
-  distinct combination of (encounter, partition, metric, serverRegion, serverSlug,
-  className, specName, …) gets its own 2,000-row window. Verified live: region slicing
-  (EU/US return distinct rankings), serverSlug slicing (firemaw works), and omitting
-  className returns all classes with each row labeled `class`/`spec` (bucket
-  client-side). Regions: US 53 servers, EU 54, KR 8, TW 11, CN 113.
-- **CANONICAL DATASET (Xyrec, 2026-08-17): top-2000 region windows only.** After
-  full exploration of per-server population fetching (since deleted), the standing
-  strategy is `fetch <zone> --max-pages 20 --region-only`: first 20 pages per
-  US/EU region per spec per boss, phase-pure partition, poison-filtered. It
-  cross-validated nearly as well as percentile bands, is uniform across zones,
-  ~1-2h and a few hundred MB per zone, and keeps weak logs out. The app exposes
-  only this band. Deep per-server fetches are exploration-only, on explicit
-  request. (Historical strategies below kept for context.)
-- **Two-tier fetch strategy** (Xyrec, 2026-08-15 evening): full-population fetch
-  proved expensive (~30-35h for BT/Hyjal alone; CN descents were a big driver).
-  Revised: **US + EU only** (KR/TW/CN dropped — see `REGIONS` in config.py), and a
-  shallow **basic pass** first (`fetch <zone> --max-pages 5` = top 500/region/spec)
-  to unblock building aggregation + the app, deepened to the full data set later.
-  `_done` markers record fetch depth, so deepening reuses every cached page; server
-  descent only triggers at full depth (--max-pages 20).
-- **Fetcher design — region-first, per-spec, adaptive server descent** (Xyrec
-  directives: get ALL the data (within US/EU), never a subset of the top; ALWAYS
-  filter by spec — the BiS list is spec-based and other specs must not poison the
-  data):
-  1. Per (zone, encounter, earliest partition, metric, region, class+spec): fetch
-     pages 1–20 while `hasMorePages`, `includeCombatantInfo: true`. 5 regions
-     (US/EU/KR/TW/CN) × 2,000 cap per spec per boss ≈ up to 10k/spec/boss. Context:
-     even the GLOBAL top-2000 for the most-played spec (Arcane on Kael'thas) reaches
-     the 91st percentile, so region slicing comfortably covers the top 10%.
-  2. If a (region, spec, boss) slice saturates (page 20 AND `hasMorePages`),
-     re-fetch that combo at server granularity within the region and **replace** the
-     region slice with the server slices (not union — ranking rows carry no `server`
-     field, so cross-slice character dedup is unreliable; replacement sidesteps it).
-     Blanket per-server fetching was rejected: ~287k mostly-empty probe queries.
-     **Probe-first optimization**: for US/EU, fetch page 20 FIRST — if it's full and
-     `hasMorePages`, mark saturated and descend immediately, skipping 19 region pages
-     that replacement would discard anyway. First live run showed saturation is
-     common for popular specs in US/EU (Balance/US saturated on the first spec
-     tried), so this saves on the order of a day of API budget across the scrape.
-  3. Rate-limited token bucket targeting ~3,400 of the 3,600 points/hour, backoff on
-     429s; every raw response cached to disk keyed by full query params; fully
-     resumable; aggregation is a separate offline step over the cache.
-  4. Fetch order: BT/Hyjal (P3 — near-term deliverable) first, then remaining raids.
-- **Row-level phase purity (Xyrec, 2026-08-16):** WCL's merged late partitions
-  ("P3.5 & P4") admit rows wearing next-tier gear. Rather than flagging items,
-  the aggregator now DROPS every ranking row containing any later-phase raid drop
-  (poison set = union of later-phase zones' lootmaps). Result: distributions only
-  describe loadouts achievable in the phase ("what did top parsers wear, using
-  only gear available in the set phase"). bt-hyjal: 23.5% of rows dropped.
-  Limits: covers raid drops only — later-phase vendor/badge additions and PvP
-  season timing aren't in raid lootmaps; the app's red "P4 item" badge remains
-  as a canary (post-filter it should never appear; if it does, we found such a
-  case).
-- **Percentile bands (2026-08-17):** the full-population fetch made the pooled
-  lists drift from "top parsers" toward "everyone" (Cursed Vision 47.9% elite vs
-  Cataclysm Helm 43% population). The aggregator now computes exact per-(spec,
-  boss) parse-percentile thresholds in a first pass (full populations are on
-  disk) and emits three bands per spec: `top10` (>= p90), `mid50` (p25–p75),
-  `all`. The app has a Top 10% / Mid 50% / Everyone toggle, defaulting to Top
-  10% — restoring the founding "top 10% of parses" thesis, with the mid band
-  answering the officers' speed-parse-skew objection by comparison.
-- Kill durations: not used for filtering now. Every row carries `duration`, so once
-  data is in we can plot the kill-time bell curve and compare the guild's own kill
-  times against the top-20-pages-per-spec distribution.
-- **Consequence: true percentile bands are back.** With the full population fetched
-  per spec/boss, the original decision stands exactly as made: top 10% band and
-  25th–75th mid-band computed from real population counts. Kill-time bell curves also
-  computable (every row carries `duration`). The earlier "rank-based bands" amendment
-  is void.
-- Rate limit: 3,600 points/hour (~2–3 points per 100-row page with combatant info).
-  Points spent scale with rows actually retrieved, so adaptive slicing wastes almost
-  nothing on empty slices. Whole-history scrape may take days of budget; caching
-  makes it incremental and restartable — exact populations are discovered as we go.
+### Scripts (`scripts/`)
 
-### Classic (2021 run) zone/partition map — verified via API
+- `compare_wowtbc.py <phase-tag> <wowtbc-phase-key>` — the validation above.
+- `audit_raw.py [zone-tag ...]` — verifies every (boss, spec, region) slice is
+  complete (contiguous pages, exhausted-or-20). Run after any fetch.
 
-Expansion "The Burning Crusade" id 1001. The 2021-run zones are the frozen ones with
-7 partitions [1:P1, 2:P2, 3:P2.5, 4:P3, 5:"P3.5 & P4", 6:P5, 7:Pre-Patch].
-**Earliest partition per raid** (confirmed by site defaults):
+## NEXT UP — Mechanism 2: the loot prio sheet (not started)
 
-| Raid | Zone id | Earliest partition | Anniversary phase it informs |
-|---|---|---|---|
-| Karazhan | 1007 | 1 (P1) | Phase 1 |
-| Gruul / Magtheridon | 1008 | 1 (P1) | Phase 1 |
-| SSC / TK | 1010 | 2 (P2) | Phase 2 |
-| BT / Hyjal | 1011 | 4 (P3) | Phase 3 ← near-term goal |
-| Zul'Aman | 1012 | 5 (P3.5 & P4) | Phase 4 |
-| Sunwell Plateau | 1013 | 6 (P5) | Phase 5 |
+The officer-facing deliverable. All ingredients exist in the app data:
+1. **Roster builder** (TS, in-app): pick tanks/healers/DPS + specs (maybe
+   professions); stored client-side.
+2. **Prio-chain generation** (TS, client-side, no backend): per droppable item
+   (incl. tier tokens via lootmap/sources), order specs by *relative* usage
+   (99% vs 68% ⇒ 99% first), `=` within an epsilon, `MS > OS` tail; only
+   rostered specs; unique-equip conflicts surfaced (the Rod/Talon failure mode);
+   cross-phase persistence (item still worn in later phases ⇒ boost) is
+   derivable from the per-phase JSONs.
+3. **Export** CSV/JSON in the officers' sheet shape (`../old-data/*.csv`:
+   per-boss sections, `Item, Spec > Spec = Spec > MS > OS`).
+4. QA loop with Xyrec → officers. Nothing handed over until correct.
+Needs from Xyrec: the guild roster when starting.
 
-SSC/TK encounter ids: Hydross 623, Lurker 624, Leotheras 625, Karathress 626,
-Morogrim 627, Vashj 628, Al'ar 730, Void Reaver 731, Solarian 732, Kael'thas 733.
+## Decision history (condensed — details in git log)
 
-Non-frozen zones 1047/1048/1056/1060 (partitions P1/P2/P3) appear to be the current
-Anniversary zones mirrored on the classic endpoint — potentially useful later to
-compare the current run against the 2021 run.
+- 2026-08-15: /grill-me interview → two mechanisms; Python pipeline + TS app
+  split; phase-pure partitions. First fetch + first QA validated the thesis
+  (dual Netherbane, Talon+Rod exactly as the Discord argument predicted).
+- 2026-08-16: partition rule corrected — a raid's *earliest* partition is
+  progression-only (P3 partition = Jan–Feb 2022, everyone in P2 gear); phase
+  BiS = **latest partition before the NEXT tier**: Kara/Gruul-Mag→p1, SSC/TK→p3
+  (P2.5), BT/Hyjal & ZA→p5 ("P3.5 & P4"), Sunwell→p6. Row-level poison purge
+  replaces item flagging. (PC crash mid-fetch → corrupt-page self-healing.)
+- 2026-08-16/17: explored full per-server population fetching (US/EU descents,
+  ~16 GB); built percentile bands from it; cross-validated vs wowtbc.gg; then
+  **deleted all non-top-2000 data** — canonical dataset = region windows only.
+  Bands removed from the app; band toggle removed; top2000 is the app.
+- 2026-08-17: deployed to Cloudflare Workers (push-to-deploy); bundle diet +
+  lazy chunks; datasets re-keyed by phase (P1 merges Kara+Gruul+Mag); all five
+  phases shipped one at a time; ZA/Sunwell lootmap overrides fixed (their
+  absence had under-filled the poison set — P3 purge went 23.3%→35.7%).
 
-Early sanity check: #1 Enhancement parse on Kael'thas (P2 partition) wears **dual
-Netherbane** — phase-pure data immediately contradicts the officers' Rod-only sheet.
-
-## Open implementation questions
-
-- Confirm amended rank-based banding with Xyrec (see above).
-- Prio chain synthesis defaults: `=` when usage within some epsilon, `>` otherwise,
-  `MS > OS` tail always appended. Tune during Mechanism-2 QA with officers' feedback.
-- Faction-specific drops, if any, per raid (rankings include `faction`, so testable).
-- Spec list per class as WCL names them (query `gameData` or observe from rankings).
-
-## Build status (2026-08-15)
-
-- Python package `bis-pipeline` scaffolded in `bis-loot-sheet/` (uv, Python 3.14,
-  httpx runtime dep, ruff dev dep; `uv run ruff check` clean).
-- Modules: `config.py` (zone/partition map, healer-spec metric mapping, TBC class
-  exclusions — classic gameData includes DK/Monk which don't exist in TBC),
-  `client.py` (OAuth client-credentials with token cache; every query piggybacks
-  rateLimitData; sleeps until window reset when <20 points remain; 429/5xx backoff),
-  `discovery.py` (cached spec list / encounters / servers under `data/meta/`),
-  `fetcher.py` (slicing engine as designed above), `cli.py`
-  (`uv run bis-pipeline status|discover|fetch <zone> [--encounter ID]`).
-- Discovery cached: 28 TBC class/spec pairs; encounters — kara 10, gruul-mag 3,
-  ssc-tk 10, bt-hyjal 14 (Naj'entus 601 … Illidan 609, Winterchill 618 … Archimonde
-  622), zul-aman 6, sunwell 6; servers US 53 / EU 54 / KR 8 / TW 11 / CN 113.
-- **Basic data set COMPLETE for bt-hyjal** (2026-08-15 late evening):
-  `fetch bt-hyjal --max-pages 5` — all 14 bosses, US+EU, top 500/region/spec =
-  ~327k ranking rows. Full-depth pass (`--max-pages 20`) deferred until later;
-  deepening reuses all cached pages.
-- **Aggregation COMPLETE**: `aggregate <zone> [--max-pages 5]` pools region pages
-  into per-spec per-slot item usage distributions → `data/aggregated/bt-hyjal.json`
-  (~670KB, 28 specs). Gear array index→slot mapping verified live (index 3 = shirt,
-  skipped; 10/11 ring, 12/13 trinket pooled). Floor: pct ≥ 0.5% AND count ≥ 5 kept;
-  the app applies the 2% display floor on top.
-- **First QA validates the whole thesis** (P3 basic data): Enhancement main hand =
-  Talon of the Phoenix 28.4% with Rod of the Sun King off hand 60.7% (the exact
-  "Talon + Rod" combo from the Discord argument; Dragonstrike, the blacksmithing
-  mace, is a 19.6% minority). Resto Shaman chest in P3 = Cataclysm Chestguard (T5!)
-  at 78.2% — hard evidence for cross-phase persistence / "don't roll on Vashj chest
-  if it leaves you" discussions.
-
-## Needs from Xyrec
-
-- WCL API client credentials (create at https://classic.warcraftlogs.com/api/clients),
-  for the v2 GraphQL API (client-credentials flow works for public data).
-- Headed agent-browser login to classic.warcraftlogs.com when browsing old TBC
-  content on the website itself (Classic is currently in MoP; old data needs login).
-- The guild roster (class/spec/professions) when Mechanism 2 starts.
-
-## Reference material
+## Reference
 
 - `../ORIGINAL_CONVO.txt` — Discord conversation that started this.
-- `../old-data/Fel Good Inc. Loot Prio - Phase 2 {SSC,TK}.csv` — existing officer
-  sheet format. Structure: per-boss sections, rows = `Item Name, Bias chain…` where
-  chains look like `Survival > Enhancement > MS > OS`, `Resto = Holy > MS > OS`,
-  including conditionals ("Feral tank until expertise cap", "Mage until 2p T5") and
-  specials (Disenchant, PvP item = open for any, BiS > Non BiS for tokens).
-  Tanks/healers are first-class in these chains (~⅓ of named-spec lines).
-- WCL API docs: https://www.warcraftlogs.com/v2-api-docs/warcraft/ and
-  https://www.warcraftlogs.com/api/docs
-- wow-tools (parent repo): scraped BiS lists (wowtbc.gg etc.) for cross-validation;
-  cmangos TBC sqlite DB (`sources/cmangos-tbc-db/tbcmangos.sqlite`) for item stats,
-  unique-equip flags, allowable classes.
+- `../old-data/*.csv` — the officers' existing sheet format (prio-chain target).
+- WCL API: https://www.warcraftlogs.com/v2-api-docs/warcraft/ — GraphQL,
+  self-describing via introspection. Rankings page cap: 20 pages per filter
+  combination. Classic endpoint: https://classic.warcraftlogs.com/api/v2/client.
+- Classic 2021 zones (frozen, 7 partitions [1:P1 2:P2 3:P2.5 4:P3 5:"P3.5&P4"
+  6:P5 7:Pre-Patch]): Kara 1007, Gruul/Mag 1008, SSC/TK 1010, BT/Hyjal 1011,
+  ZA 1012, Sunwell 1013. Non-frozen 1047/1048/1056/1060 mirror the Anniversary
+  run (potential future comparison).
+- Parent repo: wowtbc.gg scraper (`cargo run -- scrape` → `output/*/
+  wtbc_bis_gear.json`), cmangos TBC sqlite.
