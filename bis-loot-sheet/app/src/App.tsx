@@ -49,8 +49,11 @@ export default function App() {
       <header className="mb-4 flex flex-wrap items-center justify-between gap-3">
         <div>
           <h1 className="text-xl font-bold">TBC BiS — from Warcraft Logs</h1>
-          <p className="text-xs text-muted-foreground">
-            Built from real gear data scraped from Warcraft Logs — may disagree with other BiS lists.
+          <p className="max-w-2xl text-xs text-muted-foreground">
+            An item distribution list built from Warcraft Logs: what the top ~2,000 ranked players
+            of each spec actually wore, and how usage splits between items. The higher an
+            item&apos;s equipped&nbsp;%, the more likely it is <em>the</em> BiS for that slot —
+            curated BiS lists may differ.
           </p>
         </div>
         <Tabs value={zone.zone} onValueChange={setZoneTag}>
