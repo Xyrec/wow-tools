@@ -8,6 +8,636 @@
       },
       "align": "CENTER",
       "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 2,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Shaman - Tremor Pulse",
+        "Shaman - Poison Pulse",
+        "Shaman - Disease Pulse"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 136115,
+      "grow": "HORIZONTAL",
+      "id": "Shaman - Totems",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 9,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Shaman",
+      "radius": 300,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 2,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "sort": "none",
+      "sortHybridTable": {
+        "Shaman - Ancestral Guidance": false,
+        "Shaman - Berserking": false,
+        "Shaman - Blood Fury": false,
+        "Shaman - Decoy Totem": false,
+        "Shaman - Earthbind Totem": false,
+        "Shaman - Elemental Mastery": false,
+        "Shaman - Fire Nova Totem": false,
+        "Shaman - Grounding Totem": false,
+        "Shaman - Mana Tide Totem": false,
+        "Shaman - Nature's Swiftness": false,
+        "Shaman - Reincarnation": false,
+        "Shaman - Shamanistic Rage": false,
+        "Shaman - Stoneclaw Totem": false,
+        "Shaman - Trinket 1 CD": false,
+        "Shaman - Trinket 2 CD": false,
+        "Shaman - War Stomp": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20506,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "uid": "bWIx32wmzYK",
+      "url": "",
+      "useLimit": true,
+      "version": 15,
+      "xOffset": 0,
+      "yOffset": 98
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "displayIcon": "",
+      "frameStrata": 1,
+      "height": 46,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Shaman - Tremor Pulse",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": false,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": [],
+          "single": "SHAMAN"
+        },
+        "race": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "spellknown": 8143,
+        "talent": {
+          "multi": []
+        },
+        "use_class": true,
+        "use_never": false,
+        "use_spellknown": true,
+        "zoneIds": ""
+      },
+      "parent": "Shaman - Totems",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        }
+      ],
+      "tocversion": 20506,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "check": "event",
+            "custom": "function(allstates, event)\n    local have, name, startTime, duration, icon = GetTotemInfo(2)\n    if have and name and name:find(\"Tremor Totem\", 1, true) then\n        local interval = 3\n        local elapsed = GetTime() - startTime\n        local nextIn = interval - (elapsed % interval)\n        allstates[\"\"] = {\n            show = true, changed = true,\n            progressType = \"timed\",\n            duration = interval,\n            expirationTime = GetTime() + nextIn,\n            autoHide = false,\n            icon = icon, name = name,\n        }\n        if not aura_env.tickTimer or aura_env.tickTimer:IsCancelled() then\n            aura_env.tickTimer = C_Timer.NewTimer(nextIn + 0.05, function()\n                aura_env.tickTimer = nil\n                WeakAuras.ScanEvents(\"XYREC_TOTEM_TICK\")\n            end)\n        end\n    else\n        if aura_env.tickTimer then aura_env.tickTimer:Cancel(); aura_env.tickTimer = nil end\n        allstates[\"\"] = { show = false, changed = true }\n    end\n    return true\nend",
+            "custom_type": "stateupdate",
+            "debuffType": "HELPFUL",
+            "events": "PLAYER_TOTEM_UPDATE XYREC_TOTEM_TICK PLAYER_ENTERING_WORLD",
+            "type": "custom",
+            "unit": "player"
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": 1,
+        "disjunctive": "any"
+      },
+      "uid": "AQg4f4Li2Fr",
+      "url": "",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 15,
+      "width": 46,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "displayIcon": "",
+      "frameStrata": 1,
+      "height": 46,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Shaman - Poison Pulse",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": false,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": [],
+          "single": "SHAMAN"
+        },
+        "race": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "spellknown": 8166,
+        "talent": {
+          "multi": []
+        },
+        "use_class": true,
+        "use_never": false,
+        "use_spellknown": true,
+        "zoneIds": ""
+      },
+      "parent": "Shaman - Totems",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        }
+      ],
+      "tocversion": 20506,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "check": "event",
+            "custom": "function(allstates, event)\n    local have, name, startTime, duration, icon = GetTotemInfo(3)\n    if have and name and name:find(\"Poison Cleansing Totem\", 1, true) then\n        local interval = 5\n        local elapsed = GetTime() - startTime\n        local nextIn = interval - (elapsed % interval)\n        allstates[\"\"] = {\n            show = true, changed = true,\n            progressType = \"timed\",\n            duration = interval,\n            expirationTime = GetTime() + nextIn,\n            autoHide = false,\n            icon = icon, name = name,\n        }\n        if not aura_env.tickTimer or aura_env.tickTimer:IsCancelled() then\n            aura_env.tickTimer = C_Timer.NewTimer(nextIn + 0.05, function()\n                aura_env.tickTimer = nil\n                WeakAuras.ScanEvents(\"XYREC_TOTEM_TICK\")\n            end)\n        end\n    else\n        if aura_env.tickTimer then aura_env.tickTimer:Cancel(); aura_env.tickTimer = nil end\n        allstates[\"\"] = { show = false, changed = true }\n    end\n    return true\nend",
+            "custom_type": "stateupdate",
+            "debuffType": "HELPFUL",
+            "events": "PLAYER_TOTEM_UPDATE XYREC_TOTEM_TICK PLAYER_ENTERING_WORLD",
+            "type": "custom",
+            "unit": "player"
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": 1,
+        "disjunctive": "any"
+      },
+      "uid": "ZCKM8izyhtv",
+      "url": "",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 15,
+      "width": 46,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "displayIcon": "",
+      "frameStrata": 1,
+      "height": 46,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Shaman - Disease Pulse",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": false,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": [],
+          "single": "SHAMAN"
+        },
+        "race": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "spellknown": 8170,
+        "talent": {
+          "multi": []
+        },
+        "use_class": true,
+        "use_never": false,
+        "use_spellknown": true,
+        "zoneIds": ""
+      },
+      "parent": "Shaman - Totems",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        }
+      ],
+      "tocversion": 20506,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "check": "event",
+            "custom": "function(allstates, event)\n    local have, name, startTime, duration, icon = GetTotemInfo(3)\n    if have and name and name:find(\"Disease Cleansing Totem\", 1, true) then\n        local interval = 5\n        local elapsed = GetTime() - startTime\n        local nextIn = interval - (elapsed % interval)\n        allstates[\"\"] = {\n            show = true, changed = true,\n            progressType = \"timed\",\n            duration = interval,\n            expirationTime = GetTime() + nextIn,\n            autoHide = false,\n            icon = icon, name = name,\n        }\n        if not aura_env.tickTimer or aura_env.tickTimer:IsCancelled() then\n            aura_env.tickTimer = C_Timer.NewTimer(nextIn + 0.05, function()\n                aura_env.tickTimer = nil\n                WeakAuras.ScanEvents(\"XYREC_TOTEM_TICK\")\n            end)\n        end\n    else\n        if aura_env.tickTimer then aura_env.tickTimer:Cancel(); aura_env.tickTimer = nil end\n        allstates[\"\"] = { show = false, changed = true }\n    end\n    return true\nend",
+            "custom_type": "stateupdate",
+            "debuffType": "HELPFUL",
+            "events": "PLAYER_TOTEM_UPDATE XYREC_TOTEM_TICK PLAYER_ENTERING_WORLD",
+            "type": "custom",
+            "unit": "player"
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": 1,
+        "disjunctive": "any"
+      },
+      "uid": "cLfXbJtKuou",
+      "url": "",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 15,
+      "width": 46,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
       "anchorFrameParent": true,
       "anchorFrameType": "SCREEN",
       "anchorPoint": "CENTER",
@@ -139,7 +769,7 @@
           "untrigger": []
         }
       ],
-      "uid": "jfq7ZR3SgvK",
+      "uid": "bqsiv8oTqYs",
       "url": "",
       "useLimit": true,
       "version": 15,
@@ -410,7 +1040,7 @@
         "customTriggerLogic": "function(t)\n    return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "DaHairoKhay",
+      "uid": "nIx91JmbbDi",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -745,7 +1375,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "QAQZzsc79o0",
+      "uid": "pmQBBPqmDiM",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1066,7 +1696,7 @@
         "activeTriggerMode": 1,
         "disjunctive": "any"
       },
-      "uid": "oSDT8gkHxAH",
+      "uid": "MHWkwdvBUMg",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1366,7 +1996,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "AtGp2q1ebe6",
+      "uid": "6Dpd7gx6YE5",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1865,7 +2495,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "aHLJXbT8m0q",
+      "uid": "C3T0TiqJKI0",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2221,7 +2851,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "any"
       },
-      "uid": "OIqU02wH22d",
+      "uid": "aZVjIe2ygOr",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2576,7 +3206,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "0yPKtFFIujP",
+      "uid": "n5WBftCLL83",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3046,7 +3676,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "4KJybDTfihi",
+      "uid": "j0s35WDS3AH",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3156,7 +3786,7 @@
           "untrigger": []
         }
       ],
-      "uid": "0bO3Pl1mLsY",
+      "uid": "dyki9sDjmUs",
       "url": "",
       "version": 15,
       "xOffset": 0,
@@ -3492,7 +4122,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "VbWpF5ujaGU",
+      "uid": "Iqox8ZVtvaM",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3760,7 +4390,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "1560ul6ISnr",
+      "uid": "VIb3aUjJVpX",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3894,7 +4524,7 @@
           "untrigger": []
         }
       ],
-      "uid": "5IILHDfamIP",
+      "uid": "XnK7DCUgEEW",
       "url": "",
       "version": 15,
       "xOffset": 0,
@@ -4469,7 +5099,7 @@
         "customTriggerLogic": "function(t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "ZlXLDOSH4rk",
+      "uid": "uhaBn0L00zE",
       "url": "",
       "useAdjustedMax": false,
       "useAdjustedMin": false,
@@ -4823,7 +5453,7 @@
         "customTriggerLogic": "function(trigger)\n    return trigger[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "ZtXgBuxl66F",
+      "uid": "SuDxB4hMg8p",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4981,7 +5611,7 @@
           "untrigger": []
         }
       ],
-      "uid": "67DYqnYnnoM",
+      "uid": "LScU4QSEG0A",
       "url": "",
       "useLimit": true,
       "version": 15,
@@ -5208,7 +5838,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "S83XuPMrAnE",
+      "uid": "ljxkU5Atzj5",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5480,7 +6110,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "sGAWcW03avE",
+      "uid": "rQY0NHFcLsw",
       "url": "https://wago.io/8MyJNekEa/15",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5752,7 +6382,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "XWbzOHQVWRl",
+      "uid": "kc0v1nsj28d",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6024,7 +6654,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "YRxraGoCfH2",
+      "uid": "3JQRqMT7buv",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6300,7 +6930,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "DJjFkBcdQrH",
+      "uid": "0xadHimdAZR",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6576,7 +7206,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "xiQsM5nqSid",
+      "uid": "lvfxemdWtDx",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6818,7 +7448,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Ql9xyR6Z3aw",
+      "uid": "BSwIk9kV1Uf",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7110,7 +7740,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "OeCAtrSCNDK",
+      "uid": "WeZgpU50Rx2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7402,7 +8032,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "T8bLCM5bflM",
+      "uid": "UdoHUoKORdy",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7692,7 +8322,7 @@
         "activeTriggerMode": 1,
         "disjunctive": "any"
       },
-      "uid": "RCliIQpz6P5",
+      "uid": "8ToawpZPpo2",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7937,7 +8567,7 @@
         "activeTriggerMode": 1,
         "disjunctive": "any"
       },
-      "uid": "aQavqBD07PE",
+      "uid": "bUtyE0q2zif",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8175,7 +8805,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "G1p3DStZQA0",
+      "uid": "vaaP3XeAGBN",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8413,7 +9043,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ugx6daQ7yoF",
+      "uid": "UQmX6tFRqGs",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8651,7 +9281,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "TVBRyCArpfP",
+      "uid": "hHOmAH5X9un",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8889,7 +9519,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Bl0GuOeElAS",
+      "uid": "o6SdzEBfixd",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9127,7 +9757,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ZJPFSa4HQTW",
+      "uid": "oyXbcD8PqPu",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9443,7 +10073,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "1yCgLdUkkZ1",
+      "uid": "EN027IMXpCb",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9580,7 +10210,7 @@
           "untrigger": []
         }
       ],
-      "uid": "4hZDJnc0aqT",
+      "uid": "iBiHOjPJBkR",
       "url": "",
       "useLimit": false,
       "version": 15,
@@ -9868,7 +10498,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "tPjUWrBAhaa",
+      "uid": "dfU8mO9XgxZ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10274,7 +10904,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "ZGrM2L2wxHG",
+      "uid": "cYNkRSXFGKQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10758,7 +11388,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3] and (t[4] or t[5] or t[6] or t[7])\nend",
         "disjunctive": "custom"
       },
-      "uid": "l2ZUoDcoeHy",
+      "uid": "vc5vCYPfRGw",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11054,7 +11684,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "FngxiJzY1zQ",
+      "uid": "JFVElT7wJ0v",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11309,7 +11939,7 @@
         "activeTriggerMode": 1,
         "disjunctive": "any"
       },
-      "uid": "E72cw8SiXei",
+      "uid": "D0JtNRvHbgx",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11372,6 +12002,7 @@
     "conditions": [],
     "config": [],
     "controlledChildren": [
+      "Shaman - Totems",
       "Shaman - Core Abilities",
       "Shaman - Resources",
       "Shaman - Cooldowns",
@@ -11419,7 +12050,7 @@
         "untrigger": []
       }
     ],
-    "uid": "yuYzO6kIzFv",
+    "uid": "P1cKZ4kCiES",
     "url": "",
     "version": 15,
     "xOffset": 0,

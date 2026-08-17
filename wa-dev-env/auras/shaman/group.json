@@ -1,5 +1,9 @@
 {
   "child_order": [
+    "Shaman - Totems",
+    "Shaman - Tremor Pulse",
+    "Shaman - Poison Pulse",
+    "Shaman - Disease Pulse",
     "Shaman - Core Abilities",
     "Shaman - Totem Twist",
     "Shaman - Stormstrike",
@@ -703,6 +707,146 @@
       "version": 15,
       "xOffset": 0,
       "yOffset": 600
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 2,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "Shaman - Tremor Pulse",
+        "Shaman - Poison Pulse",
+        "Shaman - Disease Pulse"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "RD",
+      "gridWidth": 5,
+      "groupIcon": 136115,
+      "grow": "HORIZONTAL",
+      "id": "Shaman - Totems",
+      "information": {
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "limit": 9,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Xyrec - Shaman",
+      "radius": 300,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 2,
+      "scale": 1,
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "sort": "none",
+      "sortHybridTable": {
+        "Shaman - Ancestral Guidance": false,
+        "Shaman - Berserking": false,
+        "Shaman - Blood Fury": false,
+        "Shaman - Decoy Totem": false,
+        "Shaman - Earthbind Totem": false,
+        "Shaman - Elemental Mastery": false,
+        "Shaman - Fire Nova Totem": false,
+        "Shaman - Grounding Totem": false,
+        "Shaman - Mana Tide Totem": false,
+        "Shaman - Nature's Swiftness": false,
+        "Shaman - Reincarnation": false,
+        "Shaman - Shamanistic Rage": false,
+        "Shaman - Stoneclaw Totem": false,
+        "Shaman - Trinket 1 CD": false,
+        "Shaman - Trinket 2 CD": false,
+        "Shaman - War Stomp": false
+      },
+      "space": 0,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 20506,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "url": "",
+      "useLimit": true,
+      "version": 15,
+      "xOffset": 0,
+      "yOffset": 98
     }
   ],
   "root": {
@@ -756,6 +900,7 @@
     "conditions": [],
     "config": [],
     "controlledChildren": [
+      "Shaman - Totems",
       "Shaman - Core Abilities",
       "Shaman - Resources",
       "Shaman - Cooldowns",

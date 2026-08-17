@@ -1,0 +1,68 @@
+{
+  "archetype": "cooldown_icon",
+  "conditions": [],
+  "id": "Shaman - Tremor Pulse",
+  "load": {
+    "class": {
+      "multi": [],
+      "single": "SHAMAN"
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 8143,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "lua": {
+    "triggers.1.trigger.custom": "lua/tremor-pulse--triggers-1-trigger-custom.lua"
+  },
+  "overrides": {
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "type": "subborder"
+      }
+    ]
+  },
+  "row": "totems",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "check": "event",
+        "custom": "@tremor-pulse--triggers-1-trigger-custom.lua",
+        "custom_type": "stateupdate",
+        "debuffType": "HELPFUL",
+        "events": "PLAYER_TOTEM_UPDATE XYREC_TOTEM_TICK PLAYER_ENTERING_WORLD",
+        "type": "custom",
+        "unit": "player"
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": 1,
+    "disjunctive": "any"
+  }
+}
