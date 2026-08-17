@@ -61,6 +61,7 @@
         "Shaman - Totem Twist",
         "Shaman - Stormstrike",
         "Shaman - Fire Nova Totem",
+        "Shaman - Fire Totem",
         "Shaman - Flame Shock",
         "Shaman - Earth Shock",
         "Shaman - Chain Lightning",
@@ -138,7 +139,7 @@
           "untrigger": []
         }
       ],
-      "uid": "l0Qxz9M8dzb",
+      "uid": "PPxeAuGSrxM",
       "url": "",
       "useLimit": true,
       "version": 15,
@@ -409,7 +410,7 @@
         "customTriggerLogic": "function(t)\n    return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "RqCTDRMF0Bb",
+      "uid": "BzecTEMeha7",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -744,7 +745,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "NnXO4J19p4k",
+      "uid": "zLmnBJu7BiY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -760,7 +761,10 @@
       "actions": {
         "finish": [],
         "init": [],
-        "start": []
+        "start": {
+          "do_custom": false,
+          "do_glow": false
+        }
       },
       "adjustedMax": "",
       "adjustedMin": "",
@@ -799,31 +803,324 @@
         {
           "changes": [
             {
+              "property": "sub.3.text_visible"
+            }
+          ],
+          "check": {
+            "op": "<",
+            "trigger": 1,
+            "value": "2",
+            "variable": "duration"
+          }
+        },
+        {
+          "changes": [
+            {
               "property": "desaturate",
               "value": true
-            },
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 1,
+            "variable": "onCooldown"
+          }
+        },
+        {
+          "changes": [
             {
-              "property": "inverse",
+              "property": "sub.4.glow",
               "value": true
             }
           ],
           "check": {
             "checks": [
               {
-                "trigger": 2,
+                "trigger": 1,
                 "value": 1,
-                "variable": "onCooldown"
+                "variable": "spellUsable"
               },
               {
                 "trigger": 1,
                 "value": 0,
+                "variable": "onCooldown"
+              },
+              {
+                "trigger": 2,
+                "value": 1,
                 "variable": "show"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
               }
             ],
             "trigger": -2,
             "variable": "AND"
           }
         },
+        {
+          "changes": [
+            {
+              "property": "alpha",
+              "value": 1
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "attackabletarget"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "OR"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": true,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": true,
+      "desaturate": false,
+      "displayIcon": "",
+      "frameStrata": 1,
+      "height": 48,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Shaman - Fire Nova Totem",
+      "information": {
+        "forceEvents": true,
+        "ignoreOptionsEventErrors": true,
+        "showNilIsFalse": true
+      },
+      "internalVersion": 90,
+      "inverse": true,
+      "keepAspectRatio": true,
+      "load": {
+        "class": {
+          "multi": [],
+          "single": "SHAMAN"
+        },
+        "race": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "spellknown": 1535,
+        "talent": {
+          "multi": []
+        },
+        "use_class": true,
+        "use_never": false,
+        "use_not_spellknown": false,
+        "use_spellknown": true,
+        "zoneIds": ""
+      },
+      "parent": "Shaman - Core Abilities",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.4.4",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 1,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "CENTER",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "PT Sans Narrow",
+          "text_fontSize": 28,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%p",
+          "text_text_format_p_format": "timed",
+          "text_text_format_p_time_dynamic_threshold": 0,
+          "text_text_format_p_time_format": 0,
+          "text_text_format_p_time_legacy_floor": false,
+          "text_text_format_p_time_mod_rate": true,
+          "text_text_format_p_time_precision": 1,
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        },
+        {
+          "glow": false,
+          "glowBorder": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowDuration": 1,
+          "glowFrequency": 0.25,
+          "glowLength": 16,
+          "glowLines": 8,
+          "glowScale": 1,
+          "glowThickness": 2,
+          "glowType": "Pixel",
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "type": "subglow",
+          "useGlowColor": false
+        }
+      ],
+      "tocversion": 20506,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "auranames": [],
+            "debuffType": "HELPFUL",
+            "duration": "1",
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showAlways",
+            "matchesShowOn": "showAlways",
+            "names": [],
+            "realSpellName": "Fire Nova Totem",
+            "spellIds": [],
+            "spellName": 1535,
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "track": "auto",
+            "type": "spell",
+            "unevent": "auto",
+            "unit": "player",
+            "unitExists": true,
+            "useName": true,
+            "use_charges": false,
+            "use_genericShowOn": true,
+            "use_remaining": false,
+            "use_spellName": true,
+            "use_track": true,
+            "use_unit": true
+          },
+          "untrigger": {
+            "genericShowOn": "showAlways",
+            "track": "auto"
+          }
+        },
+        "2": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Spell Known",
+            "genericShowOn": "showOnCooldown",
+            "realSpellName": "Stormstrike",
+            "spellName": 17364,
+            "type": "spell",
+            "unit": "player",
+            "use_genericShowOn": true,
+            "use_spellName": true,
+            "use_track": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": 1,
+        "disjunctive": "any"
+      },
+      "uid": "Ao8SSvJ9SsO",
+      "url": "",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "useTooltip": false,
+      "version": 15,
+      "width": 58,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": {
+          "do_custom": false,
+          "do_glow": false
+        }
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 0.3,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "auto": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
         {
           "changes": [
             {
@@ -838,6 +1135,39 @@
           ],
           "check": {
             "trigger": 3,
+            "value": 1,
+            "variable": "show"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "desaturate",
+              "value": true
+            },
+            {
+              "property": "color",
+              "value": [
+                1,
+                0.29411765933037,
+                0.36862745881081,
+                1
+              ]
+            },
+            {
+              "property": "iconSource",
+              "value": 0
+            },
+            {
+              "property": "displayIcon",
+              "value": 135825
+            },
+            {
+              "property": "sub.3.text_visible"
+            }
+          ],
+          "check": {
+            "trigger": 2,
             "value": 1,
             "variable": "show"
           }
@@ -869,7 +1199,7 @@
       ],
       "config": [],
       "cooldown": true,
-      "cooldownEdge": false,
+      "cooldownEdge": true,
       "cooldownSwipe": true,
       "cooldownTextDisabled": true,
       "desaturate": false,
@@ -878,14 +1208,14 @@
       "height": 48,
       "icon": true,
       "iconSource": -1,
-      "id": "Shaman - Fire Nova Totem",
+      "id": "Shaman - Fire Totem",
       "information": {
         "forceEvents": true,
         "ignoreOptionsEventErrors": true,
         "showNilIsFalse": true
       },
       "internalVersion": 90,
-      "inverse": false,
+      "inverse": true,
       "keepAspectRatio": true,
       "load": {
         "class": {
@@ -985,12 +1315,9 @@
             "spellIds": [],
             "subeventPrefix": "SPELL",
             "subeventSuffix": "_CAST_START",
-            "totemNamePattern": "Fire Nova Totem",
-            "totemNamePattern_operator": "find('%s')",
             "totemType": 1,
             "type": "spell",
             "unit": "player",
-            "use_totemNamePattern": true,
             "use_totemType": true,
             "use_unit": true
           },
@@ -998,35 +1325,21 @@
         },
         "2": {
           "trigger": {
-            "auranames": [],
             "debuffType": "HELPFUL",
-            "duration": "1",
-            "event": "Cooldown Progress (Spell)",
-            "genericShowOn": "showAlways",
-            "matchesShowOn": "showAlways",
+            "event": "Totem",
+            "inverse": true,
             "names": [],
-            "realSpellName": "Fire Nova Totem",
             "spellIds": [],
-            "spellName": 1535,
             "subeventPrefix": "SPELL",
             "subeventSuffix": "_CAST_START",
-            "track": "auto",
+            "totemType": 1,
             "type": "spell",
-            "unevent": "auto",
             "unit": "player",
-            "unitExists": true,
-            "useName": true,
-            "use_charges": false,
-            "use_genericShowOn": true,
-            "use_remaining": false,
-            "use_spellName": true,
-            "use_track": true,
+            "use_inverse": true,
+            "use_totemType": true,
             "use_unit": true
           },
-          "untrigger": {
-            "genericShowOn": "showAlways",
-            "track": "auto"
-          }
+          "untrigger": []
         },
         "3": {
           "trigger": {
@@ -1053,11 +1366,12 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "mn1Dgb01Lf4",
+      "uid": "CMNCsOPS3yg",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
+      "useTooltip": false,
       "version": 15,
       "width": 58,
       "xOffset": 0,
@@ -1551,7 +1865,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "sS7Sg5itvFc",
+      "uid": "b2x2G92NgOq",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1907,7 +2221,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "any"
       },
-      "uid": "7GXUZYBPdw1",
+      "uid": "BzM7tlUjAps",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2262,7 +2576,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "vM7tPa67iph",
+      "uid": "wkvLFjIwh9m",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2732,7 +3046,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "1hZMXowWUCM",
+      "uid": "dDnbK6StX1M",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2842,7 +3156,7 @@
           "untrigger": []
         }
       ],
-      "uid": "IV5CaBCg80S",
+      "uid": "TdaNqumUVbv",
       "url": "",
       "version": 15,
       "xOffset": 0,
@@ -3178,7 +3492,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "1Lt77RgFqHX",
+      "uid": "72cdgk8w4Tx",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3446,7 +3760,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "EhYapmRCR1Y",
+      "uid": "kdc2D2IDATT",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3580,7 +3894,7 @@
           "untrigger": []
         }
       ],
-      "uid": "0oDareuW9RI",
+      "uid": "zADdzrJNbyi",
       "url": "",
       "version": 15,
       "xOffset": 0,
@@ -4155,7 +4469,7 @@
         "customTriggerLogic": "function(t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "njn90nKSKe7",
+      "uid": "yrj9gWXKf7D",
       "url": "",
       "useAdjustedMax": false,
       "useAdjustedMin": false,
@@ -4509,7 +4823,7 @@
         "customTriggerLogic": "function(trigger)\n    return trigger[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "dMpp6SBQbfc",
+      "uid": "O4966vsWkUL",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4665,7 +4979,7 @@
           "untrigger": []
         }
       ],
-      "uid": "tNRZ92k5R0D",
+      "uid": "nN26naOozaP",
       "url": "",
       "useLimit": true,
       "version": 15,
@@ -4892,7 +5206,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "4U3PrnRMDsJ",
+      "uid": "XcjAS2jCKkY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5164,7 +5478,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "6ZurEPTlg4l",
+      "uid": "jDX0LjLtMaS",
       "url": "https://wago.io/8MyJNekEa/15",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5436,7 +5750,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "3TOCHHg1eua",
+      "uid": "ut1024YB5Dp",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5708,7 +6022,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Fvs1pipLvND",
+      "uid": "3FWm0KpYWYv",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5984,7 +6298,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "wjFDhuSZ1G3",
+      "uid": "aOGHuoM8Riw",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6260,7 +6574,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "clN9w6U0ZFq",
+      "uid": "hDE7ul1kguj",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6502,7 +6816,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "IkjOpogRbeV",
+      "uid": "e1hBukunxs6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6740,7 +7054,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "oEswAHBUUsC",
+      "uid": "cDEiaRZ7aBs",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6978,7 +7292,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "DPyQv2vwD42",
+      "uid": "rI4QCtGuOZD",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7216,7 +7530,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "W7CRPNAg6Cy",
+      "uid": "EePAM7v5v2B",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7454,7 +7768,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "RwFnYAGIMZ0",
+      "uid": "jtTfivMyc7c",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7692,7 +8006,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "B7aampSYDUK",
+      "uid": "cGBckdNJNV6",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7930,7 +8244,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "hPIMKgoiGgw",
+      "uid": "JLZhJJIKlBb",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8168,7 +8482,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "UuQXqUmVFZF",
+      "uid": "tqh8EDroi7H",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8484,7 +8798,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "vJB0Cl32cJS",
+      "uid": "t7LiFKZltd4",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8556,8 +8870,7 @@
         "Shaman - Drink Expiring",
         "Shaman - Imbue [MH]",
         "Shaman - Imbue [OH]",
-        "Shaman - Lightning/Water Shield",
-        "Shaman - Fire Totem Missing"
+        "Shaman - Lightning/Water Shield"
       ],
       "frameStrata": 1,
       "fullCircle": true,
@@ -8621,7 +8934,7 @@
           "untrigger": []
         }
       ],
-      "uid": "z3BjIOtUFro",
+      "uid": "qW64y4EU8hH",
       "url": "",
       "useLimit": false,
       "version": 15,
@@ -8909,7 +9222,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "Zl8TEl4uhnn",
+      "uid": "N2InH1pzkuQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9315,7 +9628,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "DdnTHteE0nP",
+      "uid": "oC8VY6YD6UO",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9799,7 +10112,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2]) and t[3] and (t[4] or t[5] or t[6] or t[7])\nend",
         "disjunctive": "custom"
       },
-      "uid": "BJCicN2gAzy",
+      "uid": "pJPpNL0PnVX",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10095,355 +10408,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "QpimrCWcTHJ",
-      "url": "",
-      "useAdjustededMax": false,
-      "useAdjustededMin": false,
-      "useCooldownModRate": true,
-      "version": 15,
-      "width": 44,
-      "xOffset": 0,
-      "yOffset": 0,
-      "zoom": 0.3
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": {
-          "custom": "\n\n",
-          "do_custom": false
-        },
-        "start": []
-      },
-      "adjustedMax": "",
-      "adjustedMin": "",
-      "alpha": 0.3,
-      "anchorFrameParent": false,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "auto": true,
-      "color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "desaturate",
-              "value": true
-            }
-          ],
-          "check": {
-            "trigger": 1,
-            "value": 1,
-            "variable": "show"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": [],
-      "cooldown": false,
-      "cooldownEdge": false,
-      "cooldownSwipe": true,
-      "cooldownTextDisabled": true,
-      "desaturate": false,
-      "desc": "When entering a dungeon, reloading your UI, or logging in: you may need to equip and un-equip your weapon for the tracker to begin working again.",
-      "displayIcon": 135825,
-      "frameStrata": 3,
-      "height": 44,
-      "icon": true,
-      "iconSource": 0,
-      "id": "Shaman - Fire Totem Missing",
-      "information": {
-        "forceEvents": true,
-        "ignoreOptionsEventErrors": true,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "inverse": false,
-      "keepAspectRatio": false,
-      "load": {
-        "class": {
-          "multi": [],
-          "single": "SHAMAN"
-        },
-        "difficulty": {
-          "multi": []
-        },
-        "faction": {
-          "multi": []
-        },
-        "ingroup": {
-          "multi": []
-        },
-        "pvptalent": {
-          "multi": []
-        },
-        "race": {
-          "multi": []
-        },
-        "role": {
-          "multi": []
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": [],
-          "single": 1
-        },
-        "spellknown": 3599,
-        "talent": {
-          "multi": []
-        },
-        "talent2": {
-          "multi": []
-        },
-        "use_alive": true,
-        "use_class": true,
-        "use_never": false,
-        "use_spec": true,
-        "use_spellknown": true,
-        "use_vehicle": false,
-        "use_vehicleUi": false,
-        "use_zone": false,
-        "zone": "",
-        "zoneIds": ""
-      },
-      "parent": "Shaman - Reminders",
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "icon",
-      "selfPoint": "CENTER",
-      "semver": "1.4.4",
-      "source": "import",
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "text_color": [],
-          "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "border_color": [],
-          "rotateText": "NONE",
-          "text_anchorXOffset": 0,
-          "text_anchorYOffset": 0,
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 20,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_text_format_s_format": "none",
-          "text_visible": false,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "BOTTOMRIGHT",
-          "border_color": [],
-          "rotateText": "NONE",
-          "text_anchorXOffset": -1,
-          "text_anchorYOffset": 1,
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "BOTTOMRIGHT",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%s",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": true,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_text_format_s_format": "none",
-          "text_visible": false,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "OUTER_BOTTOM",
-          "border_color": [],
-          "rotateText": "NONE",
-          "text_anchorXOffset": 0,
-          "text_anchorYOffset": -5,
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "CENTER",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "FIRE",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": true,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_text_format_s_format": "none",
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        }
-      ],
-      "tocversion": 20506,
-      "triggers": {
-        "1": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "event": "Totem",
-            "inverse": true,
-            "names": [],
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "totemType": 1,
-            "type": "spell",
-            "unit": "player",
-            "use_inverse": true,
-            "use_totemType": true,
-            "use_unit": true
-          },
-          "untrigger": []
-        },
-        "2": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "event": "Conditions",
-            "type": "unit",
-            "unit": "player",
-            "use_attackable": true,
-            "use_incombat": true,
-            "use_unit": true
-          },
-          "untrigger": []
-        },
-        "activeTriggerMode": -10,
-        "disjunctive": "all"
-      },
-      "uid": "XMBScE8iipa",
+      "uid": "IXtiLmXuxwJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10553,7 +10518,7 @@
         "untrigger": []
       }
     ],
-    "uid": "Bi7qkAURcs9",
+    "uid": "ZQgQj1eYBOZ",
     "url": "",
     "version": 15,
     "xOffset": 0,

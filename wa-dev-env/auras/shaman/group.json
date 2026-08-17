@@ -4,6 +4,7 @@
     "Shaman - Totem Twist",
     "Shaman - Stormstrike",
     "Shaman - Fire Nova Totem",
+    "Shaman - Fire Totem",
     "Shaman - Flame Shock",
     "Shaman - Earth Shock",
     "Shaman - Chain Lightning",
@@ -34,8 +35,7 @@
     "Shaman - Drink Expiring",
     "Shaman - Imbue [MH]",
     "Shaman - Imbue [OH]",
-    "Shaman - Lightning/Water Shield",
-    "Shaman - Fire Totem Missing"
+    "Shaman - Lightning/Water Shield"
   ],
   "class": "shaman",
   "containers": [
@@ -100,6 +100,7 @@
         "Shaman - Totem Twist",
         "Shaman - Stormstrike",
         "Shaman - Fire Nova Totem",
+        "Shaman - Fire Totem",
         "Shaman - Flame Shock",
         "Shaman - Earth Shock",
         "Shaman - Chain Lightning",
@@ -627,8 +628,7 @@
         "Shaman - Drink Expiring",
         "Shaman - Imbue [MH]",
         "Shaman - Imbue [OH]",
-        "Shaman - Lightning/Water Shield",
-        "Shaman - Fire Totem Missing"
+        "Shaman - Lightning/Water Shield"
       ],
       "frameStrata": 1,
       "fullCircle": true,

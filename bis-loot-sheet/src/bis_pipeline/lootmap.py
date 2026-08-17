@@ -29,6 +29,10 @@ CREATURE_OVERRIDES: dict[int, list[int]] = {
     # WCL names ZA's final boss "Daakara" (Cataclysm-era); in 2.4.3 the boss
     # and loot are Zul'jin.
     1194: [23863],
+    # Sunwell: loot rides on the fight's second body.
+    724: [24892],  # Kalecgos -> Sathrovarr the Corruptor
+    727: [25165, 25166],  # Eredar Twins -> Sacrolash + Alythess
+    728: [25840],  # M'uru -> Entropius
 }
 
 

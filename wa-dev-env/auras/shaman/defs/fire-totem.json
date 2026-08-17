@@ -1,0 +1,199 @@
+{
+  "archetype": "rotation_icon",
+  "conditions": [
+    {
+      "changes": [
+        {
+          "property": "sub.3.text_color",
+          "value": [
+            0.25,
+            1,
+            0.25,
+            1
+          ]
+        }
+      ],
+      "check": {
+        "trigger": 3,
+        "value": 1,
+        "variable": "show"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "desaturate",
+          "value": true
+        },
+        {
+          "property": "color",
+          "value": [
+            1,
+            0.29411765933037,
+            0.36862745881081,
+            1
+          ]
+        },
+        {
+          "property": "iconSource",
+          "value": 0
+        },
+        {
+          "property": "displayIcon",
+          "value": 135825
+        },
+        {
+          "property": "sub.3.text_visible"
+        }
+      ],
+      "check": {
+        "trigger": 2,
+        "value": 1,
+        "variable": "show"
+      }
+    }
+  ],
+  "id": "Shaman - Fire Totem",
+  "load": {
+    "class": {
+      "multi": [],
+      "single": "SHAMAN"
+    },
+    "race": {
+      "multi": []
+    },
+    "size": {
+      "multi": []
+    },
+    "spec": {
+      "multi": []
+    },
+    "spellknown": 1535,
+    "talent": {
+      "multi": []
+    },
+    "use_class": true,
+    "use_never": false,
+    "use_not_spellknown": false,
+    "use_spellknown": true,
+    "zoneIds": ""
+  },
+  "overrides": {
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "type": "subborder"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "CENTER",
+        "rotateText": "NONE",
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 64,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 28,
+        "text_fontType": "OUTLINE",
+        "text_justify": "CENTER",
+        "text_selfPoint": "AUTO",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_shadowXOffset": 0,
+        "text_shadowYOffset": 0,
+        "text_text": "%p",
+        "text_text_format_p_format": "timed",
+        "text_text_format_p_time_dynamic_threshold": 0,
+        "text_text_format_p_time_format": 0,
+        "text_text_format_p_time_legacy_floor": false,
+        "text_text_format_p_time_mod_rate": true,
+        "text_text_format_p_time_precision": 1,
+        "text_visible": true,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      }
+    ]
+  },
+  "row": "core",
+  "triggers": {
+    "1": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Totem",
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "totemType": 1,
+        "type": "spell",
+        "unit": "player",
+        "use_totemType": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "2": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Totem",
+        "inverse": true,
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "totemType": 1,
+        "type": "spell",
+        "unit": "player",
+        "use_inverse": true,
+        "use_totemType": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "3": {
+      "trigger": {
+        "debuffType": "HELPFUL",
+        "event": "Totem",
+        "names": [],
+        "remaining": "1",
+        "remaining_operator": "<",
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
+        "totemNamePattern": "Fire Nova Totem",
+        "totemNamePattern_operator": "find('%s')",
+        "totemType": 1,
+        "type": "spell",
+        "unit": "player",
+        "use_remaining": true,
+        "use_totemNamePattern": true,
+        "use_totemType": true,
+        "use_unit": true
+      },
+      "untrigger": []
+    },
+    "activeTriggerMode": -10,
+    "disjunctive": "any"
+  }
+}
