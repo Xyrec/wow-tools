@@ -23,15 +23,6 @@
     {
       "changes": [
         {
-          "property": "color",
-          "value": [
-            1,
-            0.294117659,
-            0.368627459,
-            1
-          ]
-        },
-        {
           "property": "sub.3.text_visible",
           "value": false
         }
