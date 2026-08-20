@@ -1,4 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 import { cn } from "@/lib/utils"
 import { BIS_TIE_WINDOW, DISPLAY_FLOOR_PCT, QUALITY_COLORS, iconUrl, wowheadUrl } from "@/lib/wow"
 import type { ItemFacts, PairEntry } from "@/types"
@@ -51,12 +56,14 @@ export function PairCard({ label, entries, items, n }: Props) {
           {label}
         </CardTitle>
         {n !== undefined && (
-          <span
-            className="text-xs tabular-nums text-muted-foreground"
-            title="Phase-pure player loadouts contributing to these combinations"
-          >
-            n = {n.toLocaleString()}
-          </span>
+          <Tooltip>
+            <TooltipTrigger
+              render={<span className="text-xs tabular-nums text-muted-foreground" />}
+            >
+              n = {n.toLocaleString()}
+            </TooltipTrigger>
+            <TooltipContent>Phase-pure player loadouts contributing to these combinations</TooltipContent>
+          </Tooltip>
         )}
       </CardHeader>
       <CardContent className="px-4">

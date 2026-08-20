@@ -1,6 +1,11 @@
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
+import {
   BIS_TIE_WINDOW,
   DISPLAY_FLOOR_PCT,
   QUALITY_COLORS,
@@ -47,12 +52,14 @@ export function SlotCard({ slot, label, entries, items, n }: Props) {
           {label}
         </CardTitle>
         {n !== undefined && (
-          <span
-            className="text-xs tabular-nums text-muted-foreground"
-            title="Phase-pure observations in this slot (after filtering out players wearing later-phase gear)"
-          >
-            n = {n.toLocaleString()}
-          </span>
+          <Tooltip>
+            <TooltipTrigger
+              render={<span className="text-xs tabular-nums text-muted-foreground" />}
+            >
+              n = {n.toLocaleString()}
+            </TooltipTrigger>
+            <TooltipContent>Phase-pure observations in this slot (after filtering out players wearing later-phase gear)</TooltipContent>
+          </Tooltip>
         )}
       </CardHeader>
       <CardContent className="px-4">
