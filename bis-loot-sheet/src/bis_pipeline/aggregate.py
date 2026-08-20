@@ -59,6 +59,28 @@ SLOT_BY_INDEX = {
 
 MIN_PCT = 0.5
 MIN_COUNT = 5
+MAX_PAIRS = 12
+
+# Two-slot categories: gear indices and whether the pair is unordered.
+PAIR_CATEGORIES = {
+    "ring": (10, 11, True),
+    "trinket": (12, 13, True),
+    "weapon": (15, 16, False),  # (main hand, off hand); 2H -> off hand empty
+}
+
+
+def _pair_keys(gear: list) -> list[tuple[str, tuple[int, int]]]:
+    out = []
+    for cat, (i, j, unordered) in PAIR_CATEGORIES.items():
+        a = gear[i].get("id", 0) if len(gear) > i else 0
+        b = gear[j].get("id", 0) if len(gear) > j else 0
+        if not a and not b:
+            continue
+        if unordered:
+            a, b = sorted((a, b), reverse=True)  # present item first, 0 last
+        out.append((cat, (a, b)))
+    return out
+
 
 # Player bands. top10/mid50/all are parse-percentile cuts over the full
 # population; top2000 is source-based — the capped region windows (pages 1-20
@@ -166,6 +188,7 @@ def aggregate_zone(tag: str, max_pages: int) -> Path:
     # Pass 2: bucket rows into bands and count item usage per band.
     # band -> spec -> slot -> Counter; band -> spec -> sample size.
     counts: dict[str, dict[str, dict[str, Counter]]] = {b: {} for b in BANDS}
+    pair_counts: dict[str, dict[str, dict[str, Counter]]] = {b: {} for b in BANDS}
     samples: dict[str, Counter] = {b: Counter() for b in BANDS}
     items: dict[int, dict] = {}
     # Per-encounter stats for the app's overview page: kept-row counts and
@@ -198,6 +221,9 @@ def aggregate_zone(tag: str, max_pages: int) -> Path:
 
         for band in bands:
             samples[band][spec_key] += 1
+        for cat, key in _pair_keys(row.get("gear", [])):
+            for band in bands:
+                pair_counts[band].setdefault(spec_key, {}).setdefault(cat, Counter())[key] += 1
         for idx, gear in enumerate(row.get("gear", [])):
             slot = SLOT_BY_INDEX.get(idx)
             if slot is None or not gear.get("id"):
@@ -247,7 +273,16 @@ def aggregate_zone(tag: str, max_pages: int) -> Path:
                         {"id": item_id, **items[item_id], "count": count, "pct": round(pct, 2)}
                     )
                 out_slots[slot] = entries
-            out_bands[band] = {"sampleSize": sample, "slots": out_slots}
+            out_pairs: dict[str, list[dict]] = {}
+            for cat, counter in pair_counts[band].get(spec_key, {}).items():
+                entries = []
+                for (a, b), count in counter.most_common(MAX_PAIRS * 3):
+                    pct = 100.0 * count / max(1, sample)
+                    if pct < MIN_PCT or count < MIN_COUNT or len(entries) >= MAX_PAIRS:
+                        continue
+                    entries.append({"a": a, "b": b or None, "count": count, "pct": round(pct, 2)})
+                out_pairs[cat] = entries
+            out_bands[band] = {"sampleSize": sample, "slots": out_slots, "pairs": out_pairs}
         specs[spec_key] = {"bands": out_bands}
 
     stats = {

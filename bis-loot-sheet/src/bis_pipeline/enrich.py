@@ -151,6 +151,11 @@ def enrich_zone(tag: str) -> Path:
         for band in spec_data["bands"].values():
             for entries in band["slots"].values():
                 ids.update(e["id"] for e in entries)
+            for entries in band.get("pairs", {}).values():
+                for e in entries:
+                    ids.add(e["a"])
+                    if e["b"]:
+                        ids.add(e["b"])
 
     con = sqlite3.connect(CMANGOS_DB)
     con.row_factory = sqlite3.Row
@@ -184,7 +189,11 @@ def enrich_zone(tag: str) -> Path:
                         if e["name"] != items[e["id"]]["name"]:
                             items[e["id"]].setdefault("wclName", e["name"])
                 slots[slot] = kept
-            bands[band_key] = {"sampleSize": band["sampleSize"], "slots": slots}
+            pairs = {
+                cat: [e for e in entries if e["a"] in items and (e["b"] is None or e["b"] in items)]
+                for cat, entries in band.get("pairs", {}).items()
+            }
+            bands[band_key] = {"sampleSize": band["sampleSize"], "slots": slots, "pairs": pairs}
         specs[spec_key] = {"bands": bands}
 
     from .lootmap import build_lootmap, load_lootmap

@@ -129,4 +129,17 @@ def later_phase_items(tag: str) -> set[int]:
             other_map = load_lootmap(other_tag) or build_lootmap(other_tag)
             for enc in other_map.values():
                 ids.update(enc["items"])
+
+    # Raid lootmaps miss patch-gated non-raid items (badge vendor, crafted).
+    # Wowhead's per-item phase tags cover those — see item_phases.py.
+    from .item_phases import load_item_phases
+
+    phases = load_item_phases()
+    if phases is None:
+        log.warning(
+            "item phase cache missing — run `bis-pipeline item-phases`; "
+            "poison set covers raid drops only"
+        )
+    else:
+        ids.update(int(i) for i, ph in phases.items() if ph and ph > own_phase)
     return ids

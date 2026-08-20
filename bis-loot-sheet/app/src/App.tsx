@@ -6,6 +6,7 @@ declare global {
   }
 }
 import { Overview } from "@/components/Overview"
+import { PairCard } from "@/components/PairCard"
 import { SlotCard } from "@/components/SlotCard"
 import { SpecSidebar } from "@/components/SpecSidebar"
 import { Badge } from "@/components/ui/badge"
@@ -121,15 +122,35 @@ export default function App() {
                 <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
                   {(() => {
                     const slots = splitWeapons(spec.slots, zone.items)
-                    return SLOT_ORDER.map(([slot, label]) => (
-                      <SlotCard
-                        key={slot}
-                        slot={slot}
-                        label={label}
-                        entries={slots[slot] ?? []}
-                        items={zone.items}
-                      />
-                    ))
+                    // Pair-distribution cards follow their singles category.
+                    const pairAfter: Record<string, [string, string]> = {
+                      ring: ["ring", "Ring Combinations"],
+                      trinket: ["trinket", "Trinket Combinations"],
+                      off_hand: ["weapon", "Weapon Combinations"],
+                    }
+                    return SLOT_ORDER.flatMap(([slot, label]) => {
+                      const cards = [
+                        <SlotCard
+                          key={slot}
+                          slot={slot}
+                          label={label}
+                          entries={slots[slot] ?? []}
+                          items={zone.items}
+                        />,
+                      ]
+                      const pair = pairAfter[slot]
+                      if (pair && spec.pairs?.[pair[0]]?.length) {
+                        cards.push(
+                          <PairCard
+                            key={`pair-${pair[0]}`}
+                            label={pair[1]}
+                            entries={spec.pairs[pair[0]]}
+                            items={zone.items}
+                          />,
+                        )
+                      }
+                      return cards
+                    })
                   })()}
                 </div>
               </>

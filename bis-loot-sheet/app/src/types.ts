@@ -23,9 +23,18 @@ export interface SlotEntry {
   pct: number
 }
 
+export interface PairEntry {
+  a: number
+  /** Second item; null = empty slot (e.g. a two-hander's off hand). */
+  b: number | null
+  count: number
+  pct: number
+}
+
 export interface SpecData {
   sampleSize: number
   slots: Record<string, SlotEntry[]>
+  pairs?: Record<string, PairEntry[]>
 }
 
 export interface EncounterStats {

@@ -54,6 +54,8 @@ def main() -> None:
         help="read at most this many pages per slice (match the fetch depth)",
     )
 
+    sub.add_parser("item-phases", help="fetch/refresh per-item release phases from wowhead")
+
     enrich = sub.add_parser("enrich", help="join aggregated data with cmangos item facts")
     enrich.add_argument("zone", choices=sorted(ZONES) + sorted(PHASES), help="phase or zone tag")
 
@@ -64,6 +66,11 @@ def main() -> None:
         return
     if args.command == "enrich":  # offline; needs no API client
         enrich_zone(args.zone)
+        return
+    if args.command == "item-phases":  # wowhead, not WCL — no client needed
+        from .item_phases import build_item_phases
+
+        build_item_phases()
         return
 
     client = WCLClient()
