@@ -37,7 +37,9 @@ const ROLE_CAVEATS: Record<string, string> = {
 
 export default function App() {
   // Default to the latest phase present in the build.
-  const [zoneTag, setZoneTag] = useState(zoneTags.at(-1))
+  const [zoneTag, setZoneTag] = useState(
+    zoneTags.includes("phase-3") ? "phase-3" : zoneTags.at(-1),
+  ) // default: the guild's current phase
   const zone = useZone(zoneTag)
   const [specKey, setSpecKey] = useState("")
   const spec = zone && specKey ? zone.specs[specKey] : undefined

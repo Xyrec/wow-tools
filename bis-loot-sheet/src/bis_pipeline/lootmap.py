@@ -132,7 +132,12 @@ def later_phase_items(tag: str) -> set[int]:
 
     # Raid lootmaps miss patch-gated non-raid items (badge vendor, crafted).
     # Wowhead's per-item phase tags cover those — see item_phases.py.
-    from .item_phases import load_item_phases
+    from .item_phases import (
+        build_observed_clearance,
+        effective_phase,
+        load_clearance,
+        load_item_phases,
+    )
 
     phases = load_item_phases()
     if phases is None:
@@ -141,5 +146,11 @@ def later_phase_items(tag: str) -> set[int]:
             "poison set covers raid drops only"
         )
     else:
-        ids.update(int(i) for i, ph in phases.items() if ph and ph > own_phase)
+        clearance = load_clearance()
+        if clearance is None:
+            clearance = build_observed_clearance()
+        for i in phases:
+            eff = effective_phase(i, phases, clearance)
+            if eff and eff > own_phase:
+                ids.add(int(i))
     return ids
