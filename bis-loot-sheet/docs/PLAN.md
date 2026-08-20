@@ -63,7 +63,16 @@ uv run bis-pipeline enrich <phase|zone>                         # + cmangos fact
   tier-token detection (class 15 q4), PvP flag (resilience stat 35 OR
   gladiator/marshal/etc. name), allowable classes; merges the phase's lootmaps
   (boss → droppable items, incl. drop-only tier tokens with WCL-fetched icons);
-  `laterPhase` marks items from future phases. Writes full multi-band JSON to
+  `laterPhase` marks items from future phases. **Phase purity is three-layered
+  (2026-08-18):** (1) raid lootmaps, (2) wowhead per-item phase tags
+  (`item_phases.py`, tooltip endpoint dataEnv=5, cache `meta/item_phases.json`,
+  refresh `bis-pipeline item-phases`) catching non-raid additions like 2.3
+  badge gear (the Carved Witch Doctor's Stick case), (3) **empirical clearance**
+  (`meta/item_clearance.json`): items worn >=20x in the P1/P2 partitions —
+  which verifiably predate the next tier — are cleared down to that phase,
+  because wowhead tags are sometimes wrong vs classic reality (Band of
+  Eternity: tagged P3, demonstrably worn Dec 2021). Effective phase =
+  min(tag, clearance). Writes full multi-band JSON to
   `data/enriched/` AND a **diet app copy** to `app/src/data/{phase}.json`
   (top2000 band only, flattened — the app has NO band concept — items pruned to
   referenced ones; ~480 KB/phase).
