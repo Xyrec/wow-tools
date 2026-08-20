@@ -89,16 +89,6 @@
             "variable": "show"
           },
           {
-            "trigger": 4,
-            "value": 0,
-            "variable": "onCooldown"
-          },
-          {
-            "trigger": 4,
-            "value": 1,
-            "variable": "spellUsable"
-          },
-          {
             "trigger": 5,
             "value": 1,
             "variable": "show"

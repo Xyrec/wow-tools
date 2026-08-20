@@ -104,6 +104,7 @@
       "multi": [],
       "single": "SHAMAN"
     },
+    "not_spellknown": 17364,
     "race": {
       "multi": []
     },
@@ -119,6 +120,7 @@
     },
     "use_class": true,
     "use_never": false,
+    "use_not_spellknown": true,
     "use_spellknown": true,
     "zoneIds": ""
   },
