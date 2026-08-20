@@ -1,4 +1,6 @@
 import { Badge } from "@/components/ui/badge"
+import { Info } from "lucide-react"
+import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import {
   Tooltip,
@@ -54,11 +56,16 @@ export function SlotCard({ slot, label, entries, items, n }: Props) {
         {n !== undefined && (
           <Tooltip>
             <TooltipTrigger
-              render={<span className="text-xs tabular-nums text-muted-foreground" />}
+              render={
+                <Button variant="ghost" size="icon-sm" className="text-muted-foreground" />
+              }
             >
-              n = {n.toLocaleString()}
+              <Info />
+              <span className="sr-only">Sample size</span>
             </TooltipTrigger>
-            <TooltipContent>Phase-pure observations in this slot (after filtering out players wearing later-phase gear)</TooltipContent>
+            <TooltipContent>
+              n = {n.toLocaleString()} — phase-pure observations in this slot (after filtering out players wearing later-phase gear)
+            </TooltipContent>
           </Tooltip>
         )}
       </CardHeader>
