@@ -35,6 +35,9 @@ export interface SpecData {
   sampleSize: number
   slots: Record<string, SlotEntry[]>
   pairs?: Record<string, PairEntry[]>
+  /** Phase-pure observations per slot / pair category. */
+  slotN?: Record<string, number>
+  pairN?: Record<string, number>
 }
 
 export interface EncounterStats {

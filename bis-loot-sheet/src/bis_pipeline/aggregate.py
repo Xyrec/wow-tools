@@ -286,7 +286,20 @@ def aggregate_zone(tag: str, max_pages: int) -> Path:
                         continue
                     entries.append({"a": a, "b": b or None, "count": count, "pct": round(pct, 2)})
                 out_pairs[cat] = entries
-            out_bands[band] = {"sampleSize": sample, "slots": out_slots, "pairs": out_pairs}
+            out_bands[band] = {
+                "sampleSize": sample,
+                "slots": out_slots,
+                "pairs": out_pairs,
+                # Observations per slot / pair category (post phase-purity).
+                "slotN": {
+                    slot: counter.total()
+                    for slot, counter in counts[band].get(spec_key, {}).items()
+                },
+                "pairN": {
+                    cat: counter.total()
+                    for cat, counter in pair_counts[band].get(spec_key, {}).items()
+                },
+            }
         specs[spec_key] = {"bands": out_bands}
 
     stats = {

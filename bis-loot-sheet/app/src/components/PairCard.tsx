@@ -32,11 +32,12 @@ interface Props {
   label: string
   entries: PairEntry[]
   items: Record<string, ItemFacts>
+  n?: number
 }
 
 /** Distribution of item COMBINATIONS for two-slot categories (rings,
  *  trinkets, weapons) — which exact pair top players actually run. */
-export function PairCard({ label, entries, items }: Props) {
+export function PairCard({ label, entries, items, n }: Props) {
   const visible = entries
     .filter((e) => e.pct >= DISPLAY_FLOOR_PCT && items[e.a] && (e.b === null || items[e.b]))
     .slice(0, MAX_ROWS)
@@ -45,10 +46,18 @@ export function PairCard({ label, entries, items }: Props) {
 
   return (
     <Card className="gap-3 py-4">
-      <CardHeader className="px-4">
+      <CardHeader className="flex flex-row items-baseline justify-between px-4">
         <CardTitle className="text-sm uppercase tracking-wider text-muted-foreground">
           {label}
         </CardTitle>
+        {n !== undefined && (
+          <span
+            className="text-xs tabular-nums text-muted-foreground"
+            title="Phase-pure player loadouts contributing to these combinations"
+          >
+            n = {n.toLocaleString()}
+          </span>
+        )}
       </CardHeader>
       <CardContent className="px-4">
         <ul className="space-y-1">

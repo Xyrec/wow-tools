@@ -193,7 +193,13 @@ def enrich_zone(tag: str) -> Path:
                 cat: [e for e in entries if e["a"] in items and (e["b"] is None or e["b"] in items)]
                 for cat, entries in band.get("pairs", {}).items()
             }
-            bands[band_key] = {"sampleSize": band["sampleSize"], "slots": slots, "pairs": pairs}
+            bands[band_key] = {
+                "sampleSize": band["sampleSize"],
+                "slots": slots,
+                "pairs": pairs,
+                "slotN": band.get("slotN", {}),
+                "pairN": band.get("pairN", {}),
+            }
         specs[spec_key] = {"bands": bands}
 
     from .lootmap import build_lootmap, load_lootmap

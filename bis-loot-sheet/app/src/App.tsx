@@ -131,6 +131,9 @@ export default function App() {
                       off_hand: ["weapon", "Weapon Combinations"],
                     }
                     return SLOT_ORDER.flatMap(([slot, label]) => {
+                      // 2H/MH cards derive from the shared main-hand pool.
+                      const nSlot =
+                        slot === "two_hand" || slot === "main_hand" ? "main_hand" : slot
                       const cards = [
                         <SlotCard
                           key={slot}
@@ -138,6 +141,7 @@ export default function App() {
                           label={label}
                           entries={slots[slot] ?? []}
                           items={zone.items}
+                          n={spec.slotN?.[nSlot]}
                         />,
                       ]
                       const pair = pairAfter[slot]
@@ -148,6 +152,7 @@ export default function App() {
                             label={pair[1]}
                             entries={spec.pairs[pair[0]]}
                             items={zone.items}
+                            n={spec.pairN?.[pair[0]]}
                           />,
                         )
                       }

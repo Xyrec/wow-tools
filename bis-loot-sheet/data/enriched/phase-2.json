@@ -1673,7 +1673,7 @@
   "EU"
  ],
  "maxPages": 20,
- "generatedAt": "2026-08-20T21:06:03+00:00",
+ "generatedAt": "2026-08-20T22:09:23+00:00",
  "encounters": {
   "623": "Hydross the Unstable",
   "624": "The Lurker Below",
@@ -20057,6 +20057,28 @@
         "pct": 0.67
        }
       ]
+     },
+     "slotN": {
+      "head": 3833,
+      "neck": 3833,
+      "shoulder": 3833,
+      "chest": 3833,
+      "waist": 3833,
+      "legs": 3833,
+      "feet": 3833,
+      "wrist": 3833,
+      "hands": 3833,
+      "ring": 7666,
+      "trinket": 7666,
+      "back": 3833,
+      "main_hand": 3832,
+      "ranged": 3833,
+      "off_hand": 1950
+     },
+     "pairN": {
+      "ring": 3833,
+      "trinket": 3833,
+      "weapon": 3832
      }
     },
     "top2000": {
@@ -20819,6 +20841,28 @@
         "pct": 0.51
        }
       ]
+     },
+     "slotN": {
+      "head": 37836,
+      "neck": 37836,
+      "shoulder": 37836,
+      "chest": 37836,
+      "waist": 37836,
+      "legs": 37836,
+      "feet": 37836,
+      "wrist": 37835,
+      "hands": 37836,
+      "ring": 75672,
+      "trinket": 75672,
+      "back": 37836,
+      "main_hand": 37809,
+      "ranged": 37825,
+      "off_hand": 22957
+     },
+     "pairN": {
+      "ring": 37836,
+      "trinket": 37836,
+      "weapon": 37812
      }
     },
     "mid50": {
@@ -21576,6 +21620,28 @@
         "pct": 0.52
        }
       ]
+     },
+     "slotN": {
+      "head": 19065,
+      "neck": 19065,
+      "shoulder": 19065,
+      "chest": 19065,
+      "waist": 19065,
+      "legs": 19065,
+      "feet": 19065,
+      "wrist": 19065,
+      "hands": 19065,
+      "ring": 38130,
+      "trinket": 38130,
+      "back": 19065,
+      "main_hand": 19052,
+      "ranged": 19061,
+      "off_hand": 11741
+     },
+     "pairN": {
+      "ring": 19065,
+      "trinket": 19065,
+      "weapon": 19054
      }
     },
     "all": {
@@ -22338,6 +22404,28 @@
         "pct": 0.51
        }
       ]
+     },
+     "slotN": {
+      "head": 37836,
+      "neck": 37836,
+      "shoulder": 37836,
+      "chest": 37836,
+      "waist": 37836,
+      "legs": 37836,
+      "feet": 37836,
+      "wrist": 37835,
+      "hands": 37836,
+      "ring": 75672,
+      "trinket": 75672,
+      "back": 37836,
+      "main_hand": 37809,
+      "ranged": 37825,
+      "off_hand": 22957
+     },
+     "pairN": {
+      "ring": 37836,
+      "trinket": 37836,
+      "weapon": 37812
      }
     }
    }
@@ -22990,6 +23078,28 @@
         "pct": 0.65
        }
       ]
+     },
+     "slotN": {
+      "head": 3760,
+      "neck": 3760,
+      "shoulder": 3760,
+      "chest": 3760,
+      "waist": 3760,
+      "legs": 3760,
+      "feet": 3760,
+      "wrist": 3760,
+      "hands": 3760,
+      "ring": 7520,
+      "trinket": 7520,
+      "back": 3760,
+      "main_hand": 3760,
+      "ranged": 3759,
+      "off_hand": 1
+     },
+     "pairN": {
+      "ring": 3760,
+      "trinket": 3760,
+      "weapon": 3760
      }
     },
     "top2000": {
@@ -23934,6 +24044,28 @@
         "pct": 0.57
        }
       ]
+     },
+     "slotN": {
+      "head": 37724,
+      "neck": 37724,
+      "shoulder": 37724,
+      "chest": 37724,
+      "waist": 37724,
+      "legs": 37724,
+      "feet": 37724,
+      "wrist": 37724,
+      "hands": 37724,
+      "ring": 75448,
+      "trinket": 75444,
+      "back": 37724,
+      "main_hand": 37695,
+      "ranged": 37695,
+      "off_hand": 12
+     },
+     "pairN": {
+      "ring": 37724,
+      "trinket": 37723,
+      "weapon": 37695
      }
     },
     "mid50": {
@@ -24857,6 +24989,28 @@
         "pct": 0.65
        }
       ]
+     },
+     "slotN": {
+      "head": 18943,
+      "neck": 18943,
+      "shoulder": 18943,
+      "chest": 18943,
+      "waist": 18943,
+      "legs": 18943,
+      "feet": 18943,
+      "wrist": 18943,
+      "hands": 18943,
+      "ring": 37886,
+      "trinket": 37886,
+      "back": 18943,
+      "main_hand": 18931,
+      "ranged": 18938,
+      "off_hand": 4
+     },
+     "pairN": {
+      "ring": 18943,
+      "trinket": 18943,
+      "weapon": 18931
      }
     },
     "all": {
@@ -25801,6 +25955,28 @@
         "pct": 0.57
        }
       ]
+     },
+     "slotN": {
+      "head": 37724,
+      "neck": 37724,
+      "shoulder": 37724,
+      "chest": 37724,
+      "waist": 37724,
+      "legs": 37724,
+      "feet": 37724,
+      "wrist": 37724,
+      "hands": 37724,
+      "ring": 75448,
+      "trinket": 75444,
+      "back": 37724,
+      "main_hand": 37695,
+      "ranged": 37695,
+      "off_hand": 12
+     },
+     "pairN": {
+      "ring": 37724,
+      "trinket": 37723,
+      "weapon": 37695
      }
     }
    }
@@ -26620,6 +26796,27 @@
         "pct": 0.97
        }
       ]
+     },
+     "slotN": {
+      "head": 3707,
+      "neck": 3707,
+      "shoulder": 3707,
+      "chest": 3707,
+      "waist": 3707,
+      "legs": 3707,
+      "feet": 3707,
+      "wrist": 3707,
+      "hands": 3707,
+      "ring": 7414,
+      "trinket": 7414,
+      "back": 3707,
+      "main_hand": 3706,
+      "ranged": 3707
+     },
+     "pairN": {
+      "ring": 3707,
+      "trinket": 3707,
+      "weapon": 3706
      }
     },
     "top2000": {
@@ -27580,6 +27777,27 @@
         "pct": 2.66
        }
       ]
+     },
+     "slotN": {
+      "head": 37482,
+      "neck": 37482,
+      "shoulder": 37482,
+      "chest": 37482,
+      "waist": 37482,
+      "legs": 37482,
+      "feet": 37482,
+      "wrist": 37482,
+      "hands": 37482,
+      "ring": 74964,
+      "trinket": 74963,
+      "back": 37482,
+      "main_hand": 37468,
+      "ranged": 37475
+     },
+     "pairN": {
+      "ring": 37482,
+      "trinket": 37482,
+      "weapon": 37468
      }
     },
     "mid50": {
@@ -28530,6 +28748,27 @@
         "pct": 2.36
        }
       ]
+     },
+     "slotN": {
+      "head": 18836,
+      "neck": 18836,
+      "shoulder": 18836,
+      "chest": 18836,
+      "waist": 18836,
+      "legs": 18836,
+      "feet": 18836,
+      "wrist": 18836,
+      "hands": 18836,
+      "ring": 37672,
+      "trinket": 37671,
+      "back": 18836,
+      "main_hand": 18829,
+      "ranged": 18832
+     },
+     "pairN": {
+      "ring": 18836,
+      "trinket": 18836,
+      "weapon": 18829
      }
     },
     "all": {
@@ -29490,6 +29729,27 @@
         "pct": 2.66
        }
       ]
+     },
+     "slotN": {
+      "head": 37482,
+      "neck": 37482,
+      "shoulder": 37482,
+      "chest": 37482,
+      "waist": 37482,
+      "legs": 37482,
+      "feet": 37482,
+      "wrist": 37482,
+      "hands": 37482,
+      "ring": 74964,
+      "trinket": 74963,
+      "back": 37482,
+      "main_hand": 37468,
+      "ranged": 37475
+     },
+     "pairN": {
+      "ring": 37482,
+      "trinket": 37482,
+      "weapon": 37468
      }
     }
    }
@@ -30252,6 +30512,28 @@
         "pct": 1.2
        }
       ]
+     },
+     "slotN": {
+      "head": 3854,
+      "neck": 3854,
+      "shoulder": 3854,
+      "chest": 3854,
+      "waist": 3854,
+      "legs": 3854,
+      "feet": 3854,
+      "wrist": 3854,
+      "hands": 3854,
+      "ring": 7708,
+      "trinket": 7708,
+      "back": 3854,
+      "main_hand": 3848,
+      "off_hand": 3313,
+      "ranged": 3854
+     },
+     "pairN": {
+      "ring": 3854,
+      "trinket": 3854,
+      "weapon": 3853
      }
     },
     "top2000": {
@@ -31126,6 +31408,28 @@
         "pct": 1.97
        }
       ]
+     },
+     "slotN": {
+      "head": 38383,
+      "neck": 38383,
+      "shoulder": 38383,
+      "chest": 38383,
+      "waist": 38383,
+      "legs": 38383,
+      "feet": 38383,
+      "wrist": 38383,
+      "hands": 38383,
+      "ring": 76766,
+      "trinket": 76764,
+      "back": 38383,
+      "main_hand": 38328,
+      "off_hand": 32033,
+      "ranged": 38378
+     },
+     "pairN": {
+      "ring": 38383,
+      "trinket": 38382,
+      "weapon": 38381
      }
     },
     "mid50": {
@@ -31990,6 +32294,28 @@
         "pct": 2.01
        }
       ]
+     },
+     "slotN": {
+      "head": 19299,
+      "neck": 19299,
+      "shoulder": 19299,
+      "chest": 19299,
+      "waist": 19299,
+      "legs": 19299,
+      "feet": 19299,
+      "wrist": 19299,
+      "hands": 19299,
+      "ring": 38598,
+      "trinket": 38598,
+      "back": 19299,
+      "main_hand": 19272,
+      "off_hand": 16054,
+      "ranged": 19295
+     },
+     "pairN": {
+      "ring": 19299,
+      "trinket": 19299,
+      "weapon": 19299
      }
     },
     "all": {
@@ -32864,6 +33190,28 @@
         "pct": 1.97
        }
       ]
+     },
+     "slotN": {
+      "head": 38383,
+      "neck": 38383,
+      "shoulder": 38383,
+      "chest": 38383,
+      "waist": 38383,
+      "legs": 38383,
+      "feet": 38383,
+      "wrist": 38383,
+      "hands": 38383,
+      "ring": 76766,
+      "trinket": 76764,
+      "back": 38383,
+      "main_hand": 38328,
+      "off_hand": 32033,
+      "ranged": 38378
+     },
+     "pairN": {
+      "ring": 38383,
+      "trinket": 38382,
+      "weapon": 38381
      }
     }
    }
@@ -33486,6 +33834,28 @@
         "pct": 0.92
        }
       ]
+     },
+     "slotN": {
+      "head": 3789,
+      "neck": 3789,
+      "shoulder": 3789,
+      "chest": 3789,
+      "waist": 3789,
+      "legs": 3789,
+      "feet": 3789,
+      "wrist": 3789,
+      "hands": 3789,
+      "ring": 7578,
+      "trinket": 7578,
+      "back": 3789,
+      "main_hand": 3789,
+      "off_hand": 2979,
+      "ranged": 3789
+     },
+     "pairN": {
+      "ring": 3789,
+      "trinket": 3789,
+      "weapon": 3789
      }
     },
     "top2000": {
@@ -34165,6 +34535,28 @@
         "pct": 1.05
        }
       ]
+     },
+     "slotN": {
+      "head": 37942,
+      "neck": 37942,
+      "shoulder": 37942,
+      "chest": 37942,
+      "waist": 37942,
+      "legs": 37942,
+      "feet": 37941,
+      "wrist": 37942,
+      "hands": 37942,
+      "ring": 75884,
+      "trinket": 75884,
+      "back": 37942,
+      "main_hand": 37937,
+      "off_hand": 31021,
+      "ranged": 37932
+     },
+     "pairN": {
+      "ring": 37942,
+      "trinket": 37942,
+      "weapon": 37940
      }
     },
     "mid50": {
@@ -34839,6 +35231,28 @@
         "pct": 1.09
        }
       ]
+     },
+     "slotN": {
+      "head": 19094,
+      "neck": 19094,
+      "shoulder": 19094,
+      "chest": 19094,
+      "waist": 19094,
+      "legs": 19094,
+      "feet": 19093,
+      "wrist": 19094,
+      "hands": 19094,
+      "ring": 38188,
+      "trinket": 38188,
+      "back": 19094,
+      "main_hand": 19094,
+      "off_hand": 15826,
+      "ranged": 19089
+     },
+     "pairN": {
+      "ring": 19094,
+      "trinket": 19094,
+      "weapon": 19094
      }
     },
     "all": {
@@ -35518,6 +35932,28 @@
         "pct": 1.05
        }
       ]
+     },
+     "slotN": {
+      "head": 37942,
+      "neck": 37942,
+      "shoulder": 37942,
+      "chest": 37942,
+      "waist": 37942,
+      "legs": 37942,
+      "feet": 37941,
+      "wrist": 37942,
+      "hands": 37942,
+      "ring": 75884,
+      "trinket": 75884,
+      "back": 37942,
+      "main_hand": 37937,
+      "off_hand": 31021,
+      "ranged": 37932
+     },
+     "pairN": {
+      "ring": 37942,
+      "trinket": 37942,
+      "weapon": 37940
      }
     }
    }
@@ -36041,6 +36477,28 @@
         "pct": 1.65
        }
       ]
+     },
+     "slotN": {
+      "head": 363,
+      "neck": 363,
+      "shoulder": 363,
+      "chest": 363,
+      "waist": 363,
+      "legs": 363,
+      "feet": 363,
+      "wrist": 363,
+      "hands": 363,
+      "ring": 726,
+      "trinket": 726,
+      "back": 363,
+      "main_hand": 363,
+      "off_hand": 267,
+      "ranged": 363
+     },
+     "pairN": {
+      "ring": 363,
+      "trinket": 363,
+      "weapon": 363
      }
     },
     "top2000": {
@@ -37330,6 +37788,28 @@
         "pct": 1.29
        }
       ]
+     },
+     "slotN": {
+      "head": 3476,
+      "neck": 3476,
+      "shoulder": 3476,
+      "chest": 3476,
+      "waist": 3476,
+      "legs": 3476,
+      "feet": 3476,
+      "wrist": 3476,
+      "hands": 3476,
+      "ring": 6952,
+      "trinket": 6949,
+      "back": 3476,
+      "main_hand": 3471,
+      "off_hand": 1811,
+      "ranged": 3472
+     },
+     "pairN": {
+      "ring": 3476,
+      "trinket": 3476,
+      "weapon": 3474
      }
     },
     "mid50": {
@@ -38569,6 +39049,28 @@
         "pct": 1.43
        }
       ]
+     },
+     "slotN": {
+      "head": 1744,
+      "neck": 1744,
+      "shoulder": 1744,
+      "chest": 1744,
+      "waist": 1744,
+      "legs": 1744,
+      "feet": 1744,
+      "wrist": 1744,
+      "hands": 1744,
+      "ring": 3488,
+      "trinket": 3485,
+      "back": 1744,
+      "main_hand": 1741,
+      "off_hand": 929,
+      "ranged": 1740
+     },
+     "pairN": {
+      "ring": 1744,
+      "trinket": 1744,
+      "weapon": 1743
      }
     },
     "all": {
@@ -39858,6 +40360,28 @@
         "pct": 1.29
        }
       ]
+     },
+     "slotN": {
+      "head": 3476,
+      "neck": 3476,
+      "shoulder": 3476,
+      "chest": 3476,
+      "waist": 3476,
+      "legs": 3476,
+      "feet": 3476,
+      "wrist": 3476,
+      "hands": 3476,
+      "ring": 6952,
+      "trinket": 6949,
+      "back": 3476,
+      "main_hand": 3471,
+      "off_hand": 1811,
+      "ranged": 3472
+     },
+     "pairN": {
+      "ring": 3476,
+      "trinket": 3476,
+      "weapon": 3474
      }
     }
    }
@@ -40499,6 +41023,28 @@
         "pct": 1.95
        }
       ]
+     },
+     "slotN": {
+      "head": 3807,
+      "neck": 3807,
+      "shoulder": 3807,
+      "chest": 3807,
+      "waist": 3807,
+      "legs": 3807,
+      "feet": 3807,
+      "wrist": 3807,
+      "hands": 3807,
+      "ring": 7614,
+      "trinket": 7614,
+      "back": 3807,
+      "main_hand": 3804,
+      "off_hand": 2790,
+      "ranged": 3804
+     },
+     "pairN": {
+      "ring": 3807,
+      "trinket": 3807,
+      "weapon": 3805
      }
     },
     "top2000": {
@@ -41235,6 +41781,28 @@
         "pct": 2.33
        }
       ]
+     },
+     "slotN": {
+      "head": 37861,
+      "neck": 37861,
+      "shoulder": 37861,
+      "chest": 37861,
+      "waist": 37861,
+      "legs": 37861,
+      "feet": 37861,
+      "wrist": 37861,
+      "hands": 37861,
+      "ring": 75722,
+      "trinket": 75722,
+      "back": 37861,
+      "main_hand": 37834,
+      "off_hand": 28249,
+      "ranged": 37835
+     },
+     "pairN": {
+      "ring": 37861,
+      "trinket": 37861,
+      "weapon": 37850
      }
     },
     "mid50": {
@@ -41966,6 +42534,28 @@
         "pct": 2.38
        }
       ]
+     },
+     "slotN": {
+      "head": 19083,
+      "neck": 19083,
+      "shoulder": 19083,
+      "chest": 19083,
+      "waist": 19083,
+      "legs": 19083,
+      "feet": 19083,
+      "wrist": 19083,
+      "hands": 19083,
+      "ring": 38166,
+      "trinket": 38166,
+      "back": 19083,
+      "main_hand": 19071,
+      "off_hand": 14393,
+      "ranged": 19070
+     },
+     "pairN": {
+      "ring": 19083,
+      "trinket": 19083,
+      "weapon": 19079
      }
     },
     "all": {
@@ -42702,6 +43292,28 @@
         "pct": 2.33
        }
       ]
+     },
+     "slotN": {
+      "head": 37861,
+      "neck": 37861,
+      "shoulder": 37861,
+      "chest": 37861,
+      "waist": 37861,
+      "legs": 37861,
+      "feet": 37861,
+      "wrist": 37861,
+      "hands": 37861,
+      "ring": 75722,
+      "trinket": 75722,
+      "back": 37861,
+      "main_hand": 37834,
+      "off_hand": 28249,
+      "ranged": 37835
+     },
+     "pairN": {
+      "ring": 37861,
+      "trinket": 37861,
+      "weapon": 37850
      }
     }
    }
@@ -43318,6 +43930,28 @@
         "pct": 0.8
        }
       ]
+     },
+     "slotN": {
+      "head": 3783,
+      "neck": 3783,
+      "shoulder": 3783,
+      "chest": 3783,
+      "waist": 3783,
+      "legs": 3783,
+      "feet": 3783,
+      "wrist": 3783,
+      "hands": 3783,
+      "ring": 7566,
+      "trinket": 7566,
+      "back": 3783,
+      "main_hand": 3783,
+      "off_hand": 1460,
+      "ranged": 3783
+     },
+     "pairN": {
+      "ring": 3783,
+      "trinket": 3783,
+      "weapon": 3783
      }
     },
     "top2000": {
@@ -43977,6 +44611,28 @@
         "pct": 1.18
        }
       ]
+     },
+     "slotN": {
+      "head": 37568,
+      "neck": 37567,
+      "shoulder": 37568,
+      "chest": 37568,
+      "waist": 37568,
+      "legs": 37568,
+      "feet": 37568,
+      "wrist": 37566,
+      "hands": 37568,
+      "ring": 75134,
+      "trinket": 75136,
+      "back": 37566,
+      "main_hand": 37564,
+      "off_hand": 19457,
+      "ranged": 37566
+     },
+     "pairN": {
+      "ring": 37568,
+      "trinket": 37568,
+      "weapon": 37565
      }
     },
     "mid50": {
@@ -44630,6 +45286,28 @@
         "pct": 1.09
        }
       ]
+     },
+     "slotN": {
+      "head": 18987,
+      "neck": 18987,
+      "shoulder": 18987,
+      "chest": 18987,
+      "waist": 18987,
+      "legs": 18987,
+      "feet": 18987,
+      "wrist": 18987,
+      "hands": 18987,
+      "ring": 37974,
+      "trinket": 37974,
+      "back": 18987,
+      "main_hand": 18983,
+      "off_hand": 10061,
+      "ranged": 18987
+     },
+     "pairN": {
+      "ring": 18987,
+      "trinket": 18987,
+      "weapon": 18984
      }
     },
     "all": {
@@ -45289,6 +45967,28 @@
         "pct": 1.18
        }
       ]
+     },
+     "slotN": {
+      "head": 37568,
+      "neck": 37567,
+      "shoulder": 37568,
+      "chest": 37568,
+      "waist": 37568,
+      "legs": 37568,
+      "feet": 37568,
+      "wrist": 37566,
+      "hands": 37568,
+      "ring": 75134,
+      "trinket": 75136,
+      "back": 37566,
+      "main_hand": 37564,
+      "off_hand": 19457,
+      "ranged": 37566
+     },
+     "pairN": {
+      "ring": 37568,
+      "trinket": 37568,
+      "weapon": 37565
      }
     }
    }
@@ -46107,6 +46807,28 @@
         "pct": 1.19
        }
       ]
+     },
+     "slotN": {
+      "head": 3619,
+      "neck": 3619,
+      "shoulder": 3619,
+      "chest": 3619,
+      "waist": 3619,
+      "legs": 3619,
+      "feet": 3619,
+      "wrist": 3619,
+      "hands": 3619,
+      "ring": 7238,
+      "trinket": 7238,
+      "back": 3619,
+      "main_hand": 3616,
+      "off_hand": 3304,
+      "ranged": 3619
+     },
+     "pairN": {
+      "ring": 3619,
+      "trinket": 3619,
+      "weapon": 3616
      }
     },
     "top2000": {
@@ -47331,6 +48053,28 @@
         "pct": 1.21
        }
       ]
+     },
+     "slotN": {
+      "head": 35926,
+      "neck": 35927,
+      "shoulder": 35927,
+      "chest": 35926,
+      "waist": 35927,
+      "legs": 35925,
+      "feet": 35927,
+      "wrist": 35927,
+      "hands": 35927,
+      "ring": 71853,
+      "trinket": 71843,
+      "back": 35927,
+      "main_hand": 35881,
+      "off_hand": 30520,
+      "ranged": 35926
+     },
+     "pairN": {
+      "ring": 35927,
+      "trinket": 35927,
+      "weapon": 35882
      }
     },
     "mid50": {
@@ -48515,6 +49259,28 @@
         "pct": 1.4
        }
       ]
+     },
+     "slotN": {
+      "head": 17983,
+      "neck": 17984,
+      "shoulder": 17984,
+      "chest": 17984,
+      "waist": 17984,
+      "legs": 17983,
+      "feet": 17984,
+      "wrist": 17984,
+      "hands": 17984,
+      "ring": 35968,
+      "trinket": 35962,
+      "back": 17984,
+      "main_hand": 17963,
+      "off_hand": 15484,
+      "ranged": 17983
+     },
+     "pairN": {
+      "ring": 17984,
+      "trinket": 17984,
+      "weapon": 17963
      }
     },
     "all": {
@@ -49739,6 +50505,28 @@
         "pct": 1.21
        }
       ]
+     },
+     "slotN": {
+      "head": 35926,
+      "neck": 35927,
+      "shoulder": 35927,
+      "chest": 35926,
+      "waist": 35927,
+      "legs": 35925,
+      "feet": 35927,
+      "wrist": 35927,
+      "hands": 35927,
+      "ring": 71853,
+      "trinket": 71843,
+      "back": 35927,
+      "main_hand": 35881,
+      "off_hand": 30520,
+      "ranged": 35926
+     },
+     "pairN": {
+      "ring": 35927,
+      "trinket": 35927,
+      "weapon": 35882
      }
     }
    }
@@ -50912,6 +51700,28 @@
         "pct": 1.67
        }
       ]
+     },
+     "slotN": {
+      "head": 1465,
+      "neck": 1465,
+      "shoulder": 1465,
+      "chest": 1465,
+      "waist": 1465,
+      "legs": 1465,
+      "feet": 1465,
+      "wrist": 1465,
+      "hands": 1465,
+      "ring": 2930,
+      "trinket": 2930,
+      "back": 1465,
+      "main_hand": 1465,
+      "off_hand": 1327,
+      "ranged": 1465
+     },
+     "pairN": {
+      "ring": 1465,
+      "trinket": 1465,
+      "weapon": 1465
      }
     },
     "top2000": {
@@ -52631,6 +53441,28 @@
         "pct": 1.55
        }
       ]
+     },
+     "slotN": {
+      "head": 14502,
+      "neck": 14502,
+      "shoulder": 14502,
+      "chest": 14502,
+      "waist": 14502,
+      "legs": 14502,
+      "feet": 14502,
+      "wrist": 14502,
+      "hands": 14502,
+      "ring": 29004,
+      "trinket": 28928,
+      "back": 14502,
+      "main_hand": 14475,
+      "off_hand": 11221,
+      "ranged": 14498
+     },
+     "pairN": {
+      "ring": 14502,
+      "trinket": 14478,
+      "weapon": 14476
      }
     },
     "mid50": {
@@ -54245,6 +55077,28 @@
         "pct": 1.67
        }
       ]
+     },
+     "slotN": {
+      "head": 7227,
+      "neck": 7227,
+      "shoulder": 7227,
+      "chest": 7227,
+      "waist": 7227,
+      "legs": 7227,
+      "feet": 7227,
+      "wrist": 7227,
+      "hands": 7227,
+      "ring": 14454,
+      "trinket": 14450,
+      "back": 7227,
+      "main_hand": 7214,
+      "ranged": 7223,
+      "off_hand": 5621
+     },
+     "pairN": {
+      "ring": 7227,
+      "trinket": 7227,
+      "weapon": 7215
      }
     },
     "all": {
@@ -55964,6 +56818,28 @@
         "pct": 1.55
        }
       ]
+     },
+     "slotN": {
+      "head": 14502,
+      "neck": 14502,
+      "shoulder": 14502,
+      "chest": 14502,
+      "waist": 14502,
+      "legs": 14502,
+      "feet": 14502,
+      "wrist": 14502,
+      "hands": 14502,
+      "ring": 29004,
+      "trinket": 28928,
+      "back": 14502,
+      "main_hand": 14475,
+      "off_hand": 11221,
+      "ranged": 14498
+     },
+     "pairN": {
+      "ring": 14502,
+      "trinket": 14478,
+      "weapon": 14476
      }
     }
    }
@@ -56787,6 +57663,28 @@
         "pct": 1.07
        }
       ]
+     },
+     "slotN": {
+      "head": 3814,
+      "neck": 3814,
+      "shoulder": 3814,
+      "chest": 3814,
+      "waist": 3814,
+      "legs": 3814,
+      "feet": 3814,
+      "wrist": 3814,
+      "hands": 3814,
+      "ring": 7628,
+      "trinket": 7628,
+      "back": 3814,
+      "main_hand": 3809,
+      "off_hand": 3777,
+      "ranged": 3814
+     },
+     "pairN": {
+      "ring": 3814,
+      "trinket": 3814,
+      "weapon": 3814
      }
     },
     "top2000": {
@@ -57691,6 +58589,28 @@
         "pct": 1.13
        }
       ]
+     },
+     "slotN": {
+      "head": 38149,
+      "neck": 38149,
+      "shoulder": 38149,
+      "chest": 38149,
+      "waist": 38148,
+      "legs": 38149,
+      "feet": 38149,
+      "wrist": 38148,
+      "hands": 38149,
+      "ring": 76298,
+      "trinket": 76298,
+      "back": 38149,
+      "main_hand": 38100,
+      "off_hand": 37770,
+      "ranged": 38138
+     },
+     "pairN": {
+      "ring": 38149,
+      "trinket": 38149,
+      "weapon": 38148
      }
     },
     "mid50": {
@@ -58595,6 +59515,28 @@
         "pct": 1.07
        }
       ]
+     },
+     "slotN": {
+      "head": 19146,
+      "neck": 19146,
+      "shoulder": 19146,
+      "chest": 19146,
+      "waist": 19145,
+      "legs": 19146,
+      "feet": 19146,
+      "wrist": 19145,
+      "hands": 19146,
+      "ring": 38292,
+      "trinket": 38292,
+      "back": 19146,
+      "main_hand": 19117,
+      "off_hand": 18957,
+      "ranged": 19138
+     },
+     "pairN": {
+      "ring": 19146,
+      "trinket": 19146,
+      "weapon": 19145
      }
     },
     "all": {
@@ -59499,6 +60441,28 @@
         "pct": 1.13
        }
       ]
+     },
+     "slotN": {
+      "head": 38149,
+      "neck": 38149,
+      "shoulder": 38149,
+      "chest": 38149,
+      "waist": 38148,
+      "legs": 38149,
+      "feet": 38149,
+      "wrist": 38148,
+      "hands": 38149,
+      "ring": 76298,
+      "trinket": 76298,
+      "back": 38149,
+      "main_hand": 38100,
+      "off_hand": 37770,
+      "ranged": 38138
+     },
+     "pairN": {
+      "ring": 38149,
+      "trinket": 38149,
+      "weapon": 38148
      }
     }
    }
@@ -60407,6 +61371,28 @@
         "pct": 1.6
        }
       ]
+     },
+     "slotN": {
+      "head": 3784,
+      "neck": 3784,
+      "shoulder": 3784,
+      "chest": 3784,
+      "waist": 3784,
+      "legs": 3784,
+      "feet": 3784,
+      "wrist": 3784,
+      "hands": 3784,
+      "ring": 7568,
+      "trinket": 7568,
+      "back": 3784,
+      "main_hand": 3784,
+      "ranged": 3784,
+      "off_hand": 3697
+     },
+     "pairN": {
+      "ring": 3784,
+      "trinket": 3784,
+      "weapon": 3784
      }
     },
     "top2000": {
@@ -61306,6 +62292,28 @@
         "pct": 1.59
        }
       ]
+     },
+     "slotN": {
+      "head": 37786,
+      "neck": 37786,
+      "shoulder": 37786,
+      "chest": 37786,
+      "waist": 37786,
+      "legs": 37786,
+      "feet": 37786,
+      "wrist": 37786,
+      "hands": 37786,
+      "ring": 75571,
+      "trinket": 75572,
+      "back": 37786,
+      "main_hand": 37783,
+      "ranged": 37781,
+      "off_hand": 37226
+     },
+     "pairN": {
+      "ring": 37786,
+      "trinket": 37786,
+      "weapon": 37783
      }
     },
     "mid50": {
@@ -62200,6 +63208,28 @@
         "pct": 1.65
        }
       ]
+     },
+     "slotN": {
+      "head": 18968,
+      "neck": 18968,
+      "shoulder": 18968,
+      "chest": 18968,
+      "waist": 18968,
+      "legs": 18968,
+      "feet": 18968,
+      "wrist": 18968,
+      "hands": 18968,
+      "ring": 37935,
+      "trinket": 37936,
+      "back": 18968,
+      "main_hand": 18966,
+      "off_hand": 18703,
+      "ranged": 18965
+     },
+     "pairN": {
+      "ring": 18968,
+      "trinket": 18968,
+      "weapon": 18966
      }
     },
     "all": {
@@ -63099,6 +64129,28 @@
         "pct": 1.59
        }
       ]
+     },
+     "slotN": {
+      "head": 37786,
+      "neck": 37786,
+      "shoulder": 37786,
+      "chest": 37786,
+      "waist": 37786,
+      "legs": 37786,
+      "feet": 37786,
+      "wrist": 37786,
+      "hands": 37786,
+      "ring": 75571,
+      "trinket": 75572,
+      "back": 37786,
+      "main_hand": 37783,
+      "ranged": 37781,
+      "off_hand": 37226
+     },
+     "pairN": {
+      "ring": 37786,
+      "trinket": 37786,
+      "weapon": 37783
      }
     }
    }
@@ -63648,6 +64700,28 @@
         "pct": 0.62
        }
       ]
+     },
+     "slotN": {
+      "head": 3789,
+      "neck": 3789,
+      "shoulder": 3789,
+      "chest": 3789,
+      "waist": 3789,
+      "legs": 3789,
+      "feet": 3789,
+      "wrist": 3789,
+      "hands": 3789,
+      "ring": 7578,
+      "trinket": 7577,
+      "back": 3789,
+      "main_hand": 3782,
+      "ranged": 3788,
+      "off_hand": 2
+     },
+     "pairN": {
+      "ring": 3789,
+      "trinket": 3789,
+      "weapon": 3782
      }
     },
     "top2000": {
@@ -64342,6 +65416,28 @@
         "pct": 0.77
        }
       ]
+     },
+     "slotN": {
+      "head": 37831,
+      "neck": 37831,
+      "shoulder": 37831,
+      "chest": 37831,
+      "waist": 37831,
+      "legs": 37831,
+      "feet": 37831,
+      "wrist": 37831,
+      "hands": 37831,
+      "ring": 75662,
+      "trinket": 75661,
+      "back": 37831,
+      "main_hand": 37777,
+      "ranged": 37787,
+      "off_hand": 15
+     },
+     "pairN": {
+      "ring": 37831,
+      "trinket": 37831,
+      "weapon": 37778
      }
     },
     "mid50": {
@@ -65041,6 +66137,28 @@
         "pct": 0.75
        }
       ]
+     },
+     "slotN": {
+      "head": 19018,
+      "neck": 19018,
+      "shoulder": 19018,
+      "chest": 19018,
+      "waist": 19018,
+      "legs": 19018,
+      "feet": 19018,
+      "wrist": 19018,
+      "hands": 19018,
+      "ring": 38036,
+      "trinket": 38036,
+      "back": 19018,
+      "main_hand": 19001,
+      "ranged": 18992,
+      "off_hand": 7
+     },
+     "pairN": {
+      "ring": 19018,
+      "trinket": 19018,
+      "weapon": 19002
      }
     },
     "all": {
@@ -65735,6 +66853,28 @@
         "pct": 0.77
        }
       ]
+     },
+     "slotN": {
+      "head": 37831,
+      "neck": 37831,
+      "shoulder": 37831,
+      "chest": 37831,
+      "waist": 37831,
+      "legs": 37831,
+      "feet": 37831,
+      "wrist": 37831,
+      "hands": 37831,
+      "ring": 75662,
+      "trinket": 75661,
+      "back": 37831,
+      "main_hand": 37777,
+      "ranged": 37787,
+      "off_hand": 15
+     },
+     "pairN": {
+      "ring": 37831,
+      "trinket": 37831,
+      "weapon": 37778
      }
     }
    }
@@ -66498,6 +67638,28 @@
         "pct": 1.1
        }
       ]
+     },
+     "slotN": {
+      "head": 3076,
+      "neck": 3076,
+      "shoulder": 3076,
+      "chest": 3076,
+      "waist": 3075,
+      "legs": 3076,
+      "feet": 3076,
+      "wrist": 3076,
+      "hands": 3076,
+      "ring": 6152,
+      "trinket": 6152,
+      "back": 3076,
+      "main_hand": 3074,
+      "off_hand": 2214,
+      "ranged": 3076
+     },
+     "pairN": {
+      "ring": 3076,
+      "trinket": 3076,
+      "weapon": 3075
      }
     },
     "top2000": {
@@ -67627,6 +68789,28 @@
         "pct": 2.34
        }
       ]
+     },
+     "slotN": {
+      "head": 30586,
+      "neck": 30586,
+      "shoulder": 30586,
+      "chest": 30586,
+      "waist": 30583,
+      "legs": 30586,
+      "feet": 30586,
+      "wrist": 30586,
+      "hands": 30586,
+      "ring": 61169,
+      "trinket": 61164,
+      "back": 30586,
+      "main_hand": 30490,
+      "off_hand": 21712,
+      "ranged": 30584
+     },
+     "pairN": {
+      "ring": 30586,
+      "trinket": 30582,
+      "weapon": 30570
      }
     },
     "mid50": {
@@ -68641,6 +69825,28 @@
         "pct": 2.09
        }
       ]
+     },
+     "slotN": {
+      "head": 15361,
+      "neck": 15361,
+      "shoulder": 15361,
+      "chest": 15361,
+      "waist": 15360,
+      "legs": 15361,
+      "feet": 15361,
+      "wrist": 15361,
+      "hands": 15361,
+      "ring": 30722,
+      "trinket": 30722,
+      "back": 15361,
+      "main_hand": 15314,
+      "off_hand": 10827,
+      "ranged": 15359
+     },
+     "pairN": {
+      "ring": 15361,
+      "trinket": 15361,
+      "weapon": 15358
      }
     },
     "all": {
@@ -69770,6 +70976,28 @@
         "pct": 2.34
        }
       ]
+     },
+     "slotN": {
+      "head": 30586,
+      "neck": 30586,
+      "shoulder": 30586,
+      "chest": 30586,
+      "waist": 30583,
+      "legs": 30586,
+      "feet": 30586,
+      "wrist": 30586,
+      "hands": 30586,
+      "ring": 61169,
+      "trinket": 61164,
+      "back": 30586,
+      "main_hand": 30490,
+      "off_hand": 21712,
+      "ranged": 30584
+     },
+     "pairN": {
+      "ring": 30586,
+      "trinket": 30582,
+      "weapon": 30570
      }
     }
    }
@@ -70468,6 +71696,28 @@
         "pct": 0.8
        }
       ]
+     },
+     "slotN": {
+      "head": 3804,
+      "neck": 3804,
+      "shoulder": 3804,
+      "chest": 3804,
+      "waist": 3804,
+      "legs": 3804,
+      "feet": 3804,
+      "wrist": 3804,
+      "hands": 3804,
+      "ring": 7608,
+      "trinket": 7608,
+      "back": 3804,
+      "main_hand": 3801,
+      "off_hand": 2897,
+      "ranged": 3804
+     },
+     "pairN": {
+      "ring": 3804,
+      "trinket": 3804,
+      "weapon": 3804
      }
     },
     "top2000": {
@@ -71227,6 +72477,28 @@
         "pct": 1.16
        }
       ]
+     },
+     "slotN": {
+      "head": 38044,
+      "neck": 38044,
+      "shoulder": 38043,
+      "chest": 38044,
+      "waist": 38044,
+      "legs": 38044,
+      "feet": 38044,
+      "wrist": 38044,
+      "hands": 38044,
+      "ring": 76088,
+      "trinket": 76088,
+      "back": 38043,
+      "main_hand": 38008,
+      "off_hand": 28117,
+      "ranged": 38043
+     },
+     "pairN": {
+      "ring": 38044,
+      "trinket": 38044,
+      "weapon": 38038
      }
     },
     "mid50": {
@@ -71981,6 +73253,28 @@
         "pct": 1.24
        }
       ]
+     },
+     "slotN": {
+      "head": 19101,
+      "neck": 19101,
+      "shoulder": 19100,
+      "chest": 19101,
+      "waist": 19101,
+      "legs": 19101,
+      "feet": 19101,
+      "wrist": 19101,
+      "hands": 19101,
+      "ring": 38202,
+      "trinket": 38202,
+      "back": 19101,
+      "main_hand": 19079,
+      "off_hand": 14033,
+      "ranged": 19100
+     },
+     "pairN": {
+      "ring": 19101,
+      "trinket": 19101,
+      "weapon": 19097
      }
     },
     "all": {
@@ -72740,6 +74034,28 @@
         "pct": 1.16
        }
       ]
+     },
+     "slotN": {
+      "head": 38044,
+      "neck": 38044,
+      "shoulder": 38043,
+      "chest": 38044,
+      "waist": 38044,
+      "legs": 38044,
+      "feet": 38044,
+      "wrist": 38044,
+      "hands": 38044,
+      "ring": 76088,
+      "trinket": 76088,
+      "back": 38043,
+      "main_hand": 38008,
+      "off_hand": 28117,
+      "ranged": 38043
+     },
+     "pairN": {
+      "ring": 38044,
+      "trinket": 38044,
+      "weapon": 38038
      }
     }
    }
@@ -73356,6 +74672,28 @@
         "pct": 0.57
        }
       ]
+     },
+     "slotN": {
+      "head": 3804,
+      "neck": 3804,
+      "shoulder": 3804,
+      "chest": 3804,
+      "waist": 3804,
+      "legs": 3804,
+      "feet": 3804,
+      "wrist": 3804,
+      "hands": 3804,
+      "ring": 7608,
+      "trinket": 7608,
+      "back": 3804,
+      "main_hand": 3804,
+      "off_hand": 3715,
+      "ranged": 3804
+     },
+     "pairN": {
+      "ring": 3804,
+      "trinket": 3804,
+      "weapon": 3804
      }
     },
     "top2000": {
@@ -74076,6 +75414,28 @@
         "pct": 0.64
        }
       ]
+     },
+     "slotN": {
+      "head": 37673,
+      "neck": 37673,
+      "shoulder": 37673,
+      "chest": 37673,
+      "waist": 37673,
+      "legs": 37673,
+      "feet": 37673,
+      "wrist": 37673,
+      "hands": 37673,
+      "ring": 75346,
+      "trinket": 75346,
+      "back": 37673,
+      "main_hand": 37653,
+      "off_hand": 36463,
+      "ranged": 37672
+     },
+     "pairN": {
+      "ring": 37673,
+      "trinket": 37673,
+      "weapon": 37656
      }
     },
     "mid50": {
@@ -74816,6 +76176,28 @@
         "pct": 0.6
        }
       ]
+     },
+     "slotN": {
+      "head": 19048,
+      "neck": 19048,
+      "shoulder": 19048,
+      "chest": 19048,
+      "waist": 19048,
+      "legs": 19048,
+      "feet": 19048,
+      "wrist": 19048,
+      "hands": 19048,
+      "ring": 38096,
+      "trinket": 38096,
+      "back": 19048,
+      "main_hand": 19037,
+      "off_hand": 18458,
+      "ranged": 19047
+     },
+     "pairN": {
+      "ring": 19048,
+      "trinket": 19048,
+      "weapon": 19039
      }
     },
     "all": {
@@ -75536,6 +76918,28 @@
         "pct": 0.64
        }
       ]
+     },
+     "slotN": {
+      "head": 37673,
+      "neck": 37673,
+      "shoulder": 37673,
+      "chest": 37673,
+      "waist": 37673,
+      "legs": 37673,
+      "feet": 37673,
+      "wrist": 37673,
+      "hands": 37673,
+      "ring": 75346,
+      "trinket": 75346,
+      "back": 37673,
+      "main_hand": 37653,
+      "off_hand": 36463,
+      "ranged": 37672
+     },
+     "pairN": {
+      "ring": 37673,
+      "trinket": 37673,
+      "weapon": 37656
      }
     }
    }
@@ -76053,6 +77457,28 @@
         "pct": 2.15
        }
       ]
+     },
+     "slotN": {
+      "head": 264,
+      "neck": 264,
+      "shoulder": 264,
+      "chest": 264,
+      "waist": 264,
+      "legs": 264,
+      "feet": 264,
+      "wrist": 264,
+      "hands": 264,
+      "ring": 528,
+      "trinket": 528,
+      "back": 264,
+      "main_hand": 264,
+      "off_hand": 261,
+      "ranged": 264
+     },
+     "pairN": {
+      "ring": 264,
+      "trinket": 264,
+      "weapon": 264
      }
     },
     "top2000": {
@@ -77272,6 +78698,28 @@
         "pct": 0.83
        }
       ]
+     },
+     "slotN": {
+      "head": 2552,
+      "neck": 2552,
+      "shoulder": 2552,
+      "chest": 2552,
+      "waist": 2552,
+      "legs": 2552,
+      "feet": 2552,
+      "wrist": 2552,
+      "hands": 2552,
+      "ring": 5104,
+      "trinket": 5104,
+      "back": 2552,
+      "main_hand": 2551,
+      "off_hand": 2522,
+      "ranged": 2552
+     },
+     "pairN": {
+      "ring": 2552,
+      "trinket": 2552,
+      "weapon": 2552
      }
     },
     "mid50": {
@@ -78356,6 +79804,28 @@
         "pct": 0.98
        }
       ]
+     },
+     "slotN": {
+      "head": 1284,
+      "neck": 1284,
+      "shoulder": 1284,
+      "chest": 1284,
+      "waist": 1284,
+      "legs": 1284,
+      "feet": 1284,
+      "wrist": 1284,
+      "hands": 1284,
+      "ring": 2568,
+      "trinket": 2568,
+      "back": 1284,
+      "main_hand": 1284,
+      "off_hand": 1268,
+      "ranged": 1284
+     },
+     "pairN": {
+      "ring": 1284,
+      "trinket": 1284,
+      "weapon": 1284
      }
     },
     "all": {
@@ -79575,6 +81045,28 @@
         "pct": 0.83
        }
       ]
+     },
+     "slotN": {
+      "head": 2552,
+      "neck": 2552,
+      "shoulder": 2552,
+      "chest": 2552,
+      "waist": 2552,
+      "legs": 2552,
+      "feet": 2552,
+      "wrist": 2552,
+      "hands": 2552,
+      "ring": 5104,
+      "trinket": 5104,
+      "back": 2552,
+      "main_hand": 2551,
+      "off_hand": 2522,
+      "ranged": 2552
+     },
+     "pairN": {
+      "ring": 2552,
+      "trinket": 2552,
+      "weapon": 2552
      }
     }
    }
@@ -80126,6 +81618,28 @@
         "pct": 0.55
        }
       ]
+     },
+     "slotN": {
+      "head": 3803,
+      "neck": 3803,
+      "shoulder": 3803,
+      "chest": 3803,
+      "waist": 3803,
+      "legs": 3803,
+      "feet": 3803,
+      "wrist": 3803,
+      "hands": 3803,
+      "ring": 7606,
+      "trinket": 7606,
+      "back": 3803,
+      "main_hand": 3800,
+      "off_hand": 3750,
+      "ranged": 3803
+     },
+     "pairN": {
+      "ring": 3803,
+      "trinket": 3803,
+      "weapon": 3803
      }
     },
     "top2000": {
@@ -80808,6 +82322,28 @@
         "pct": 0.67
        }
       ]
+     },
+     "slotN": {
+      "head": 37729,
+      "neck": 37729,
+      "shoulder": 37729,
+      "chest": 37729,
+      "waist": 37729,
+      "legs": 37729,
+      "feet": 37729,
+      "wrist": 37729,
+      "hands": 37729,
+      "ring": 75458,
+      "trinket": 75458,
+      "back": 37729,
+      "main_hand": 37716,
+      "off_hand": 37114,
+      "ranged": 37726
+     },
+     "pairN": {
+      "ring": 37729,
+      "trinket": 37729,
+      "weapon": 37724
      }
     },
     "mid50": {
@@ -81490,6 +83026,28 @@
         "pct": 0.73
        }
       ]
+     },
+     "slotN": {
+      "head": 18975,
+      "neck": 18975,
+      "shoulder": 18975,
+      "chest": 18975,
+      "waist": 18975,
+      "legs": 18975,
+      "feet": 18975,
+      "wrist": 18975,
+      "hands": 18975,
+      "ring": 37950,
+      "trinket": 37950,
+      "back": 18975,
+      "main_hand": 18970,
+      "off_hand": 18657,
+      "ranged": 18974
+     },
+     "pairN": {
+      "ring": 18975,
+      "trinket": 18975,
+      "weapon": 18972
      }
     },
     "all": {
@@ -82172,6 +83730,28 @@
         "pct": 0.67
        }
       ]
+     },
+     "slotN": {
+      "head": 37729,
+      "neck": 37729,
+      "shoulder": 37729,
+      "chest": 37729,
+      "waist": 37729,
+      "legs": 37729,
+      "feet": 37729,
+      "wrist": 37729,
+      "hands": 37729,
+      "ring": 75458,
+      "trinket": 75458,
+      "back": 37729,
+      "main_hand": 37716,
+      "off_hand": 37114,
+      "ranged": 37726
+     },
+     "pairN": {
+      "ring": 37729,
+      "trinket": 37729,
+      "weapon": 37724
      }
     }
    }
@@ -82893,6 +84473,28 @@
         "pct": 1.82
        }
       ]
+     },
+     "slotN": {
+      "head": 428,
+      "neck": 428,
+      "shoulder": 428,
+      "chest": 428,
+      "waist": 428,
+      "legs": 428,
+      "feet": 428,
+      "wrist": 428,
+      "hands": 428,
+      "ring": 856,
+      "trinket": 856,
+      "back": 428,
+      "main_hand": 428,
+      "off_hand": 425,
+      "ranged": 428
+     },
+     "pairN": {
+      "ring": 428,
+      "trinket": 428,
+      "weapon": 428
      }
     },
     "top2000": {
@@ -84537,6 +86139,28 @@
         "pct": 1.5
        }
       ]
+     },
+     "slotN": {
+      "head": 4139,
+      "neck": 4132,
+      "shoulder": 4139,
+      "chest": 4149,
+      "waist": 4149,
+      "legs": 4139,
+      "feet": 4149,
+      "wrist": 4139,
+      "hands": 4143,
+      "ring": 8283,
+      "trinket": 8256,
+      "back": 4139,
+      "main_hand": 4144,
+      "off_hand": 4123,
+      "ranged": 4133
+     },
+     "pairN": {
+      "ring": 4149,
+      "trinket": 4132,
+      "weapon": 4145
      }
     },
     "mid50": {
@@ -86081,6 +87705,28 @@
         "pct": 1.97
        }
       ]
+     },
+     "slotN": {
+      "head": 2089,
+      "neck": 2089,
+      "shoulder": 2089,
+      "chest": 2089,
+      "waist": 2089,
+      "legs": 2089,
+      "feet": 2089,
+      "wrist": 2089,
+      "hands": 2089,
+      "ring": 4178,
+      "trinket": 4177,
+      "back": 2089,
+      "main_hand": 2086,
+      "off_hand": 2076,
+      "ranged": 2088
+     },
+     "pairN": {
+      "ring": 2089,
+      "trinket": 2089,
+      "weapon": 2086
      }
     },
     "all": {
@@ -87725,6 +89371,28 @@
         "pct": 1.5
        }
       ]
+     },
+     "slotN": {
+      "head": 4139,
+      "neck": 4132,
+      "shoulder": 4139,
+      "chest": 4149,
+      "waist": 4149,
+      "legs": 4139,
+      "feet": 4149,
+      "wrist": 4139,
+      "hands": 4143,
+      "ring": 8283,
+      "trinket": 8256,
+      "back": 4139,
+      "main_hand": 4144,
+      "off_hand": 4123,
+      "ranged": 4133
+     },
+     "pairN": {
+      "ring": 4149,
+      "trinket": 4132,
+      "weapon": 4145
      }
     }
    }
@@ -88292,6 +89960,28 @@
         "pct": 0.67
        }
       ]
+     },
+     "slotN": {
+      "head": 3785,
+      "neck": 3785,
+      "shoulder": 3785,
+      "chest": 3785,
+      "waist": 3785,
+      "legs": 3785,
+      "feet": 3785,
+      "wrist": 3785,
+      "hands": 3785,
+      "ring": 7570,
+      "trinket": 7570,
+      "back": 3785,
+      "main_hand": 3783,
+      "ranged": 3785,
+      "off_hand": 2187
+     },
+     "pairN": {
+      "ring": 3785,
+      "trinket": 3785,
+      "weapon": 3784
      }
     },
     "top2000": {
@@ -88974,6 +90664,28 @@
         "pct": 0.53
        }
       ]
+     },
+     "slotN": {
+      "head": 37660,
+      "neck": 37660,
+      "shoulder": 37660,
+      "chest": 37660,
+      "waist": 37660,
+      "legs": 37660,
+      "feet": 37660,
+      "wrist": 37660,
+      "hands": 37660,
+      "ring": 75320,
+      "trinket": 75320,
+      "back": 37660,
+      "main_hand": 37646,
+      "ranged": 37654,
+      "off_hand": 25586
+     },
+     "pairN": {
+      "ring": 37660,
+      "trinket": 37660,
+      "weapon": 37647
      }
     },
     "mid50": {
@@ -89656,6 +91368,28 @@
         "pct": 0.55
        }
       ]
+     },
+     "slotN": {
+      "head": 18963,
+      "neck": 18963,
+      "shoulder": 18963,
+      "chest": 18963,
+      "waist": 18963,
+      "legs": 18963,
+      "feet": 18963,
+      "wrist": 18963,
+      "hands": 18963,
+      "ring": 37926,
+      "trinket": 37926,
+      "back": 18963,
+      "main_hand": 18956,
+      "off_hand": 12995,
+      "ranged": 18958
+     },
+     "pairN": {
+      "ring": 18963,
+      "trinket": 18963,
+      "weapon": 18956
      }
     },
     "all": {
@@ -90338,6 +92072,28 @@
         "pct": 0.53
        }
       ]
+     },
+     "slotN": {
+      "head": 37660,
+      "neck": 37660,
+      "shoulder": 37660,
+      "chest": 37660,
+      "waist": 37660,
+      "legs": 37660,
+      "feet": 37660,
+      "wrist": 37660,
+      "hands": 37660,
+      "ring": 75320,
+      "trinket": 75320,
+      "back": 37660,
+      "main_hand": 37646,
+      "ranged": 37654,
+      "off_hand": 25586
+     },
+     "pairN": {
+      "ring": 37660,
+      "trinket": 37660,
+      "weapon": 37647
      }
     }
    }
@@ -91044,6 +92800,28 @@
         "pct": 1.17
        }
       ]
+     },
+     "slotN": {
+      "head": 3774,
+      "neck": 3774,
+      "shoulder": 3774,
+      "chest": 3774,
+      "waist": 3774,
+      "legs": 3774,
+      "feet": 3774,
+      "wrist": 3774,
+      "hands": 3774,
+      "ring": 7548,
+      "trinket": 7548,
+      "back": 3774,
+      "main_hand": 3774,
+      "off_hand": 3720,
+      "ranged": 3770
+     },
+     "pairN": {
+      "ring": 3774,
+      "trinket": 3774,
+      "weapon": 3774
      }
     },
     "top2000": {
@@ -91862,6 +93640,28 @@
         "pct": 1.57
        }
       ]
+     },
+     "slotN": {
+      "head": 37414,
+      "neck": 37412,
+      "shoulder": 37414,
+      "chest": 37414,
+      "waist": 37414,
+      "legs": 37414,
+      "feet": 37414,
+      "wrist": 37414,
+      "hands": 37414,
+      "ring": 74828,
+      "trinket": 74827,
+      "back": 37414,
+      "main_hand": 37414,
+      "off_hand": 36987,
+      "ranged": 37378
+     },
+     "pairN": {
+      "ring": 37414,
+      "trinket": 37414,
+      "weapon": 37414
      }
     },
     "mid50": {
@@ -92664,6 +94464,28 @@
         "pct": 1.6
        }
       ]
+     },
+     "slotN": {
+      "head": 18836,
+      "neck": 18834,
+      "shoulder": 18836,
+      "chest": 18836,
+      "waist": 18836,
+      "legs": 18836,
+      "feet": 18836,
+      "wrist": 18836,
+      "hands": 18836,
+      "ring": 37672,
+      "trinket": 37672,
+      "back": 18836,
+      "main_hand": 18836,
+      "off_hand": 18635,
+      "ranged": 18822
+     },
+     "pairN": {
+      "ring": 18836,
+      "trinket": 18836,
+      "weapon": 18836
      }
     },
     "all": {
@@ -93482,6 +95304,28 @@
         "pct": 1.57
        }
       ]
+     },
+     "slotN": {
+      "head": 37414,
+      "neck": 37412,
+      "shoulder": 37414,
+      "chest": 37414,
+      "waist": 37414,
+      "legs": 37414,
+      "feet": 37414,
+      "wrist": 37414,
+      "hands": 37414,
+      "ring": 74828,
+      "trinket": 74827,
+      "back": 37414,
+      "main_hand": 37414,
+      "off_hand": 36987,
+      "ranged": 37378
+     },
+     "pairN": {
+      "ring": 37414,
+      "trinket": 37414,
+      "weapon": 37414
      }
     }
    }
@@ -94268,6 +96112,28 @@
         "pct": 0.85
        }
       ]
+     },
+     "slotN": {
+      "head": 3871,
+      "neck": 3871,
+      "shoulder": 3871,
+      "chest": 3871,
+      "waist": 3871,
+      "legs": 3871,
+      "feet": 3871,
+      "wrist": 3871,
+      "hands": 3871,
+      "ring": 7742,
+      "trinket": 7742,
+      "back": 3871,
+      "main_hand": 3869,
+      "off_hand": 3784,
+      "ranged": 3869
+     },
+     "pairN": {
+      "ring": 3871,
+      "trinket": 3871,
+      "weapon": 3871
      }
     },
     "top2000": {
@@ -95142,6 +97008,28 @@
         "pct": 0.98
        }
       ]
+     },
+     "slotN": {
+      "head": 38182,
+      "neck": 38182,
+      "shoulder": 38182,
+      "chest": 38182,
+      "waist": 38182,
+      "legs": 38182,
+      "feet": 38181,
+      "wrist": 38182,
+      "hands": 38182,
+      "ring": 76364,
+      "trinket": 76364,
+      "back": 38182,
+      "main_hand": 38141,
+      "off_hand": 36936,
+      "ranged": 38148
+     },
+     "pairN": {
+      "ring": 38182,
+      "trinket": 38182,
+      "weapon": 38181
      }
     },
     "mid50": {
@@ -96031,6 +97919,28 @@
         "pct": 1.0
        }
       ]
+     },
+     "slotN": {
+      "head": 19188,
+      "neck": 19188,
+      "shoulder": 19188,
+      "chest": 19188,
+      "waist": 19188,
+      "legs": 19188,
+      "feet": 19188,
+      "wrist": 19188,
+      "hands": 19188,
+      "ring": 38376,
+      "trinket": 38376,
+      "back": 19188,
+      "main_hand": 19161,
+      "off_hand": 18546,
+      "ranged": 19174
+     },
+     "pairN": {
+      "ring": 19188,
+      "trinket": 19188,
+      "weapon": 19188
      }
     },
     "all": {
@@ -96905,6 +98815,28 @@
         "pct": 0.98
        }
       ]
+     },
+     "slotN": {
+      "head": 38182,
+      "neck": 38182,
+      "shoulder": 38182,
+      "chest": 38182,
+      "waist": 38182,
+      "legs": 38182,
+      "feet": 38181,
+      "wrist": 38182,
+      "hands": 38182,
+      "ring": 76364,
+      "trinket": 76364,
+      "back": 38182,
+      "main_hand": 38141,
+      "off_hand": 36936,
+      "ranged": 38148
+     },
+     "pairN": {
+      "ring": 38182,
+      "trinket": 38182,
+      "weapon": 38181
      }
     }
    }
@@ -97597,6 +99529,28 @@
         "pct": 2.54
        }
       ]
+     },
+     "slotN": {
+      "head": 3941,
+      "neck": 3941,
+      "shoulder": 3941,
+      "chest": 3941,
+      "waist": 3941,
+      "legs": 3941,
+      "feet": 3940,
+      "wrist": 3941,
+      "hands": 3941,
+      "ring": 7882,
+      "trinket": 7882,
+      "back": 3941,
+      "main_hand": 3940,
+      "off_hand": 3745,
+      "ranged": 3941
+     },
+     "pairN": {
+      "ring": 3941,
+      "trinket": 3941,
+      "weapon": 3940
      }
     },
     "top2000": {
@@ -98456,6 +100410,28 @@
         "pct": 3.43
        }
       ]
+     },
+     "slotN": {
+      "head": 38993,
+      "neck": 38993,
+      "shoulder": 38993,
+      "chest": 38993,
+      "waist": 38993,
+      "legs": 38993,
+      "feet": 38992,
+      "wrist": 38993,
+      "hands": 38993,
+      "ring": 77986,
+      "trinket": 77983,
+      "back": 38993,
+      "main_hand": 38977,
+      "off_hand": 36564,
+      "ranged": 38990
+     },
+     "pairN": {
+      "ring": 38993,
+      "trinket": 38993,
+      "weapon": 38978
      }
     },
     "mid50": {
@@ -99305,6 +101281,28 @@
         "pct": 3.66
        }
       ]
+     },
+     "slotN": {
+      "head": 19578,
+      "neck": 19578,
+      "shoulder": 19578,
+      "chest": 19578,
+      "waist": 19578,
+      "legs": 19578,
+      "feet": 19578,
+      "wrist": 19578,
+      "hands": 19578,
+      "ring": 39156,
+      "trinket": 39153,
+      "back": 19578,
+      "main_hand": 19567,
+      "off_hand": 18366,
+      "ranged": 19577
+     },
+     "pairN": {
+      "ring": 19578,
+      "trinket": 19578,
+      "weapon": 19567
      }
     },
     "all": {
@@ -100164,6 +102162,28 @@
         "pct": 3.43
        }
       ]
+     },
+     "slotN": {
+      "head": 38993,
+      "neck": 38993,
+      "shoulder": 38993,
+      "chest": 38993,
+      "waist": 38993,
+      "legs": 38993,
+      "feet": 38992,
+      "wrist": 38993,
+      "hands": 38993,
+      "ring": 77986,
+      "trinket": 77983,
+      "back": 38993,
+      "main_hand": 38977,
+      "off_hand": 36564,
+      "ranged": 38990
+     },
+     "pairN": {
+      "ring": 38993,
+      "trinket": 38993,
+      "weapon": 38978
      }
     }
    }
@@ -100952,6 +102972,28 @@
         "pct": 2.55
        }
       ]
+     },
+     "slotN": {
+      "head": 1341,
+      "neck": 1341,
+      "shoulder": 1341,
+      "chest": 1341,
+      "waist": 1341,
+      "legs": 1341,
+      "feet": 1341,
+      "wrist": 1341,
+      "hands": 1341,
+      "ring": 2682,
+      "trinket": 2682,
+      "back": 1341,
+      "main_hand": 1341,
+      "off_hand": 1226,
+      "ranged": 1341
+     },
+     "pairN": {
+      "ring": 1341,
+      "trinket": 1341,
+      "weapon": 1341
      }
     },
     "top2000": {
@@ -102211,6 +104253,28 @@
         "pct": 2.51
        }
       ]
+     },
+     "slotN": {
+      "head": 13269,
+      "neck": 13269,
+      "shoulder": 13269,
+      "chest": 13269,
+      "waist": 13269,
+      "legs": 13269,
+      "feet": 13266,
+      "wrist": 13269,
+      "hands": 13269,
+      "ring": 26538,
+      "trinket": 26537,
+      "back": 13269,
+      "main_hand": 13253,
+      "off_hand": 11659,
+      "ranged": 13255
+     },
+     "pairN": {
+      "ring": 13269,
+      "trinket": 13269,
+      "weapon": 13253
      }
     },
     "mid50": {
@@ -103315,6 +105379,28 @@
         "pct": 2.83
        }
       ]
+     },
+     "slotN": {
+      "head": 6628,
+      "neck": 6628,
+      "shoulder": 6628,
+      "chest": 6628,
+      "waist": 6628,
+      "legs": 6628,
+      "feet": 6625,
+      "wrist": 6628,
+      "hands": 6628,
+      "ring": 13256,
+      "trinket": 13256,
+      "back": 6628,
+      "main_hand": 6621,
+      "off_hand": 5986,
+      "ranged": 6626
+     },
+     "pairN": {
+      "ring": 6628,
+      "trinket": 6628,
+      "weapon": 6621
      }
     },
     "all": {
@@ -104574,6 +106660,28 @@
         "pct": 2.51
        }
       ]
+     },
+     "slotN": {
+      "head": 13269,
+      "neck": 13269,
+      "shoulder": 13269,
+      "chest": 13269,
+      "waist": 13269,
+      "legs": 13269,
+      "feet": 13266,
+      "wrist": 13269,
+      "hands": 13269,
+      "ring": 26538,
+      "trinket": 26537,
+      "back": 13269,
+      "main_hand": 13253,
+      "off_hand": 11659,
+      "ranged": 13255
+     },
+     "pairN": {
+      "ring": 13269,
+      "trinket": 13269,
+      "weapon": 13253
      }
     }
    }
@@ -105199,6 +107307,28 @@
         "pct": 1.82
        }
       ]
+     },
+     "slotN": {
+      "head": 3784,
+      "neck": 3784,
+      "shoulder": 3784,
+      "chest": 3784,
+      "waist": 3784,
+      "legs": 3784,
+      "feet": 3784,
+      "wrist": 3784,
+      "hands": 3784,
+      "ring": 7568,
+      "trinket": 7568,
+      "back": 3784,
+      "main_hand": 3784,
+      "off_hand": 3624,
+      "ranged": 3784
+     },
+     "pairN": {
+      "ring": 3784,
+      "trinket": 3784,
+      "weapon": 3784
      }
     },
     "top2000": {
@@ -105867,6 +107997,28 @@
         "pct": 2.36
        }
       ]
+     },
+     "slotN": {
+      "head": 37615,
+      "neck": 37614,
+      "shoulder": 37615,
+      "chest": 37615,
+      "waist": 37615,
+      "legs": 37615,
+      "feet": 37615,
+      "wrist": 37615,
+      "hands": 37615,
+      "ring": 75232,
+      "trinket": 75232,
+      "back": 37616,
+      "main_hand": 37607,
+      "off_hand": 35956,
+      "ranged": 37615
+     },
+     "pairN": {
+      "ring": 37616,
+      "trinket": 37616,
+      "weapon": 37607
      }
     },
     "mid50": {
@@ -106540,6 +108692,28 @@
         "pct": 2.58
        }
       ]
+     },
+     "slotN": {
+      "head": 18945,
+      "neck": 18943,
+      "shoulder": 18945,
+      "chest": 18945,
+      "waist": 18945,
+      "legs": 18945,
+      "feet": 18945,
+      "wrist": 18945,
+      "hands": 18945,
+      "ring": 37890,
+      "trinket": 37890,
+      "back": 18945,
+      "main_hand": 18941,
+      "off_hand": 18091,
+      "ranged": 18945
+     },
+     "pairN": {
+      "ring": 18945,
+      "trinket": 18945,
+      "weapon": 18941
      }
     },
     "all": {
@@ -107208,6 +109382,28 @@
         "pct": 2.36
        }
       ]
+     },
+     "slotN": {
+      "head": 37615,
+      "neck": 37614,
+      "shoulder": 37615,
+      "chest": 37615,
+      "waist": 37615,
+      "legs": 37615,
+      "feet": 37615,
+      "wrist": 37615,
+      "hands": 37615,
+      "ring": 75232,
+      "trinket": 75232,
+      "back": 37616,
+      "main_hand": 37607,
+      "off_hand": 35956,
+      "ranged": 37615
+     },
+     "pairN": {
+      "ring": 37616,
+      "trinket": 37616,
+      "weapon": 37607
      }
     }
    }
@@ -108011,6 +110207,28 @@
         "pct": 0.75
        }
       ]
+     },
+     "slotN": {
+      "head": 3785,
+      "neck": 3785,
+      "shoulder": 3785,
+      "chest": 3785,
+      "waist": 3785,
+      "legs": 3785,
+      "feet": 3785,
+      "wrist": 3785,
+      "hands": 3785,
+      "ring": 7570,
+      "trinket": 7570,
+      "back": 3785,
+      "main_hand": 3784,
+      "ranged": 3782,
+      "off_hand": 999
+     },
+     "pairN": {
+      "ring": 3785,
+      "trinket": 3785,
+      "weapon": 3784
      }
     },
     "top2000": {
@@ -108965,6 +111183,28 @@
         "pct": 1.01
        }
       ]
+     },
+     "slotN": {
+      "head": 37942,
+      "neck": 37942,
+      "shoulder": 37942,
+      "chest": 37942,
+      "waist": 37942,
+      "legs": 37942,
+      "feet": 37942,
+      "wrist": 37942,
+      "hands": 37942,
+      "ring": 75884,
+      "trinket": 75884,
+      "back": 37942,
+      "main_hand": 37922,
+      "ranged": 37915,
+      "off_hand": 12546
+     },
+     "pairN": {
+      "ring": 37942,
+      "trinket": 37942,
+      "weapon": 37925
      }
     },
     "mid50": {
@@ -109919,6 +112159,28 @@
         "pct": 1.08
        }
       ]
+     },
+     "slotN": {
+      "head": 19081,
+      "neck": 19081,
+      "shoulder": 19081,
+      "chest": 19081,
+      "waist": 19081,
+      "legs": 19081,
+      "feet": 19081,
+      "wrist": 19081,
+      "hands": 19081,
+      "ring": 38162,
+      "trinket": 38162,
+      "back": 19081,
+      "main_hand": 19070,
+      "ranged": 19072,
+      "off_hand": 6463
+     },
+     "pairN": {
+      "ring": 19081,
+      "trinket": 19081,
+      "weapon": 19071
      }
     },
     "all": {
@@ -110873,6 +113135,28 @@
         "pct": 1.01
        }
       ]
+     },
+     "slotN": {
+      "head": 37942,
+      "neck": 37942,
+      "shoulder": 37942,
+      "chest": 37942,
+      "waist": 37942,
+      "legs": 37942,
+      "feet": 37942,
+      "wrist": 37942,
+      "hands": 37942,
+      "ring": 75884,
+      "trinket": 75884,
+      "back": 37942,
+      "main_hand": 37922,
+      "ranged": 37915,
+      "off_hand": 12546
+     },
+     "pairN": {
+      "ring": 37942,
+      "trinket": 37942,
+      "weapon": 37925
      }
     }
    }
@@ -111564,6 +113848,28 @@
         "pct": 0.57
        }
       ]
+     },
+     "slotN": {
+      "head": 3754,
+      "neck": 3754,
+      "shoulder": 3754,
+      "chest": 3754,
+      "waist": 3754,
+      "legs": 3754,
+      "feet": 3753,
+      "wrist": 3754,
+      "hands": 3754,
+      "ring": 7508,
+      "trinket": 7508,
+      "back": 3754,
+      "main_hand": 3750,
+      "off_hand": 3697,
+      "ranged": 3754
+     },
+     "pairN": {
+      "ring": 3754,
+      "trinket": 3754,
+      "weapon": 3753
      }
     },
     "top2000": {
@@ -112373,6 +114679,28 @@
         "pct": 0.66
        }
       ]
+     },
+     "slotN": {
+      "head": 37674,
+      "neck": 37674,
+      "shoulder": 37674,
+      "chest": 37674,
+      "waist": 37674,
+      "legs": 37674,
+      "feet": 37673,
+      "wrist": 37673,
+      "hands": 37674,
+      "ring": 75348,
+      "trinket": 75347,
+      "back": 37674,
+      "main_hand": 37662,
+      "off_hand": 37086,
+      "ranged": 37666
+     },
+     "pairN": {
+      "ring": 37674,
+      "trinket": 37674,
+      "weapon": 37669
      }
     },
     "mid50": {
@@ -113187,6 +115515,28 @@
         "pct": 0.74
        }
       ]
+     },
+     "slotN": {
+      "head": 18997,
+      "neck": 18997,
+      "shoulder": 18997,
+      "chest": 18997,
+      "waist": 18997,
+      "legs": 18997,
+      "feet": 18997,
+      "wrist": 18997,
+      "hands": 18997,
+      "ring": 37994,
+      "trinket": 37993,
+      "back": 18997,
+      "main_hand": 18992,
+      "off_hand": 18701,
+      "ranged": 18992
+     },
+     "pairN": {
+      "ring": 18997,
+      "trinket": 18997,
+      "weapon": 18996
      }
     },
     "all": {
@@ -113996,6 +116346,28 @@
         "pct": 0.66
        }
       ]
+     },
+     "slotN": {
+      "head": 37674,
+      "neck": 37674,
+      "shoulder": 37674,
+      "chest": 37674,
+      "waist": 37674,
+      "legs": 37674,
+      "feet": 37673,
+      "wrist": 37673,
+      "hands": 37674,
+      "ring": 75348,
+      "trinket": 75347,
+      "back": 37674,
+      "main_hand": 37662,
+      "off_hand": 37086,
+      "ranged": 37666
+     },
+     "pairN": {
+      "ring": 37674,
+      "trinket": 37674,
+      "weapon": 37669
      }
     }
    }
@@ -115174,6 +117546,28 @@
         "pct": 0.87
        }
       ]
+     },
+     "slotN": {
+      "head": 3786,
+      "neck": 3786,
+      "shoulder": 3786,
+      "chest": 3786,
+      "waist": 3786,
+      "legs": 3786,
+      "feet": 3786,
+      "wrist": 3786,
+      "hands": 3786,
+      "ring": 7572,
+      "trinket": 7572,
+      "back": 3786,
+      "main_hand": 3785,
+      "off_hand": 3755,
+      "ranged": 3786
+     },
+     "pairN": {
+      "ring": 3786,
+      "trinket": 3786,
+      "weapon": 3785
      }
     },
     "top2000": {
@@ -116348,6 +118742,28 @@
         "pct": 0.61
        }
       ]
+     },
+     "slotN": {
+      "head": 37818,
+      "neck": 37818,
+      "shoulder": 37818,
+      "chest": 37818,
+      "waist": 37818,
+      "legs": 37818,
+      "feet": 37818,
+      "wrist": 37818,
+      "hands": 37818,
+      "ring": 75636,
+      "trinket": 75636,
+      "back": 37818,
+      "main_hand": 37809,
+      "off_hand": 37469,
+      "ranged": 37817
+     },
+     "pairN": {
+      "ring": 37818,
+      "trinket": 37818,
+      "weapon": 37812
      }
     },
     "mid50": {
@@ -117502,6 +119918,28 @@
         "pct": 0.65
        }
       ]
+     },
+     "slotN": {
+      "head": 19033,
+      "neck": 19033,
+      "shoulder": 19033,
+      "chest": 19033,
+      "waist": 19033,
+      "legs": 19033,
+      "feet": 19033,
+      "wrist": 19033,
+      "hands": 19033,
+      "ring": 38066,
+      "trinket": 38066,
+      "back": 19033,
+      "main_hand": 19029,
+      "off_hand": 18870,
+      "ranged": 19032
+     },
+     "pairN": {
+      "ring": 19033,
+      "trinket": 19033,
+      "weapon": 19030
      }
     },
     "all": {
@@ -118676,6 +121114,28 @@
         "pct": 0.61
        }
       ]
+     },
+     "slotN": {
+      "head": 37818,
+      "neck": 37818,
+      "shoulder": 37818,
+      "chest": 37818,
+      "waist": 37818,
+      "legs": 37818,
+      "feet": 37818,
+      "wrist": 37818,
+      "hands": 37818,
+      "ring": 75636,
+      "trinket": 75636,
+      "back": 37818,
+      "main_hand": 37809,
+      "off_hand": 37469,
+      "ranged": 37817
+     },
+     "pairN": {
+      "ring": 37818,
+      "trinket": 37818,
+      "weapon": 37812
      }
     }
    }
