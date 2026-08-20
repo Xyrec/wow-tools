@@ -247,6 +247,10 @@ def aggregate_zone(tag: str, max_pages: int) -> Path:
                             if any(g.get("id") in poison for g in row.get("gear", [])):
                                 continue
                             samples["top2000"][spec_key] += 1
+                            for cat, key in _pair_keys(row.get("gear", [])):
+                                pair_counts["top2000"].setdefault(spec_key, {}).setdefault(
+                                    cat, Counter()
+                                )[key] += 1
                             for idx, gear in enumerate(row.get("gear", [])):
                                 slot = SLOT_BY_INDEX.get(idx)
                                 if slot is None or not gear.get("id"):
