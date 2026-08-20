@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { Info } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -45,6 +46,7 @@ interface Props {
 /** Distribution of item COMBINATIONS for two-slot categories (rings,
  *  trinkets, weapons) — which exact pair top players actually run. */
 export function PairCard({ label, entries, items, n }: Props) {
+  const [tipOpen, setTipOpen] = useState(false)
   const visible = entries
     .filter((e) => e.pct >= DISPLAY_FLOOR_PCT && items[e.a] && (e.b === null || items[e.b]))
     .slice(0, MAX_ROWS)
@@ -52,16 +54,29 @@ export function PairCard({ label, entries, items, n }: Props) {
   const topPct = visible[0].pct
 
   return (
-    <Card className="gap-3 py-4">
-      <CardHeader className="flex flex-row items-baseline justify-between px-4">
+    <Card className="gap-2 py-3">
+      <CardHeader className="flex min-h-7 flex-row items-center justify-between px-4">
         <CardTitle className="text-sm uppercase tracking-wider text-muted-foreground">
           {label}
         </CardTitle>
         {n !== undefined && (
-          <Tooltip>
+          <Tooltip
+            open={tipOpen}
+            onOpenChange={(o, details) => {
+              // Clicking the trigger should show the tooltip, not dismiss it.
+              if (!o && details?.reason === "trigger-press") return
+              setTipOpen(o)
+            }}
+          >
             <TooltipTrigger
+              delay={0}
               render={
-                <Button variant="ghost" size="icon-sm" className="text-muted-foreground" />
+                <Button
+                  variant="ghost"
+                  size="icon-sm"
+                  className="-my-1 text-muted-foreground"
+                  onClick={() => setTipOpen(true)}
+                />
               }
             >
               <Info />
