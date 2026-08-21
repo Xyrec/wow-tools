@@ -13,6 +13,80 @@
         "value": 1,
         "variable": "buffed"
       }
+    },
+    {
+      "changes": [
+        {
+          "property": "sub.5.glow",
+          "value": true
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 1,
+            "value": 0,
+            "variable": "buffed"
+          },
+          {
+            "trigger": -1,
+            "value": 1,
+            "variable": "incombat"
+          }
+        ],
+        "trigger": -2,
+        "variable": "AND"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "sub.5.glow",
+          "value": true
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "op": "<",
+            "trigger": 1,
+            "value": "5",
+            "variable": "stacks"
+          },
+          {
+            "trigger": -1,
+            "value": 1,
+            "variable": "incombat"
+          }
+        ],
+        "trigger": -2,
+        "variable": "AND"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "sub.5.glow",
+          "value": true
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "op": "<",
+            "trigger": 1,
+            "value": "3",
+            "variable": "expirationTime"
+          },
+          {
+            "trigger": -1,
+            "value": 1,
+            "variable": "incombat"
+          }
+        ],
+        "trigger": -2,
+        "variable": "AND"
+      }
     }
   ],
   "id": "Druid - Lacerate",
@@ -137,6 +211,27 @@
         "text_visible": true,
         "text_wordWrap": "WordWrap",
         "type": "subtext"
+      },
+      {
+        "glow": false,
+        "glowBorder": false,
+        "glowColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "glowDuration": 1,
+        "glowFrequency": 0.25,
+        "glowLength": 16,
+        "glowLines": 8,
+        "glowScale": 1,
+        "glowThickness": 2,
+        "glowType": "Pixel",
+        "glowXOffset": 0,
+        "glowYOffset": 0,
+        "type": "subglow",
+        "useGlowColor": false
       }
     ]
   },

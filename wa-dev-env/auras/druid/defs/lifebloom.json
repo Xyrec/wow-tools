@@ -35,6 +35,31 @@
         "value": 1,
         "variable": "insufficientResources"
       }
+    },
+    {
+      "changes": [
+        {
+          "property": "sub.5.glow",
+          "value": true
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "op": "<",
+            "trigger": 1,
+            "value": "2",
+            "variable": "expirationTime"
+          },
+          {
+            "trigger": -1,
+            "value": 1,
+            "variable": "incombat"
+          }
+        ],
+        "trigger": -2,
+        "variable": "AND"
+      }
     }
   ],
   "id": "Druid - Lifebloom",
@@ -156,6 +181,27 @@
         "text_visible": true,
         "text_wordWrap": "WordWrap",
         "type": "subtext"
+      },
+      {
+        "glow": false,
+        "glowBorder": false,
+        "glowColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "glowDuration": 1,
+        "glowFrequency": 0.25,
+        "glowLength": 16,
+        "glowLines": 8,
+        "glowScale": 1,
+        "glowThickness": 2,
+        "glowType": "Pixel",
+        "glowXOffset": 0,
+        "glowYOffset": 0,
+        "type": "subglow",
+        "useGlowColor": false
       }
     ]
   },
@@ -169,6 +215,7 @@
         "debuffType": "HELPFUL",
         "event": "Health",
         "group_countOperator": ">",
+        "matchesShowOn": "showAlways",
         "names": [],
         "ownOnly": true,
         "spellIds": [],

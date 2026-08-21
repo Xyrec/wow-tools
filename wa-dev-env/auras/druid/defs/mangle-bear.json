@@ -44,6 +44,35 @@
         "value": 1,
         "variable": "insufficientResources"
       }
+    },
+    {
+      "changes": [
+        {
+          "property": "sub.4.glow",
+          "value": true
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 1,
+            "value": 1,
+            "variable": "spellUsable"
+          },
+          {
+            "trigger": 1,
+            "value": 0,
+            "variable": "onCooldown"
+          },
+          {
+            "trigger": -1,
+            "value": 1,
+            "variable": "incombat"
+          }
+        ],
+        "trigger": -2,
+        "variable": "AND"
+      }
     }
   ],
   "id": "Druid - Mangle [Bear]",
@@ -69,6 +98,84 @@
     "use_never": false,
     "use_spellknown": true,
     "zoneIds": ""
+  },
+  "overrides": {
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "type": "subborder"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "CENTER",
+        "rotateText": "NONE",
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 64,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 28,
+        "text_fontType": "OUTLINE",
+        "text_justify": "CENTER",
+        "text_selfPoint": "AUTO",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_shadowXOffset": 0,
+        "text_shadowYOffset": 0,
+        "text_text": "%p",
+        "text_text_format_p_format": "timed",
+        "text_text_format_p_time_dynamic_threshold": 0,
+        "text_text_format_p_time_format": 0,
+        "text_text_format_p_time_legacy_floor": false,
+        "text_text_format_p_time_mod_rate": true,
+        "text_text_format_p_time_precision": 1,
+        "text_visible": true,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      },
+      {
+        "glow": false,
+        "glowBorder": false,
+        "glowColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "glowDuration": 1,
+        "glowFrequency": 0.25,
+        "glowLength": 16,
+        "glowLines": 8,
+        "glowScale": 1,
+        "glowThickness": 2,
+        "glowType": "Pixel",
+        "glowXOffset": 0,
+        "glowYOffset": 0,
+        "type": "subglow",
+        "useGlowColor": false
+      }
+    ]
   },
   "row": "core",
   "triggers": {

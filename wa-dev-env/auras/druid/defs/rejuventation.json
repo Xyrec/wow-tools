@@ -183,6 +183,7 @@
         "debuffType": "HELPFUL",
         "event": "Health",
         "group_countOperator": ">",
+        "matchesShowOn": "showAlways",
         "names": [],
         "ownOnly": true,
         "spellIds": [],
