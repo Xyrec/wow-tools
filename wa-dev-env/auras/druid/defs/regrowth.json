@@ -182,7 +182,6 @@
         "combineMode": "showLowest",
         "debuffType": "HELPFUL",
         "event": "Health",
-        "group_count": "0",
         "group_countOperator": ">",
         "names": [],
         "ownOnly": true,
@@ -190,8 +189,7 @@
         "subeventPrefix": "SPELL",
         "subeventSuffix": "_CAST_START",
         "type": "aura2",
-        "unit": "group",
-        "useGroup_count": false,
+        "unit": "target",
         "useMatch_count": false,
         "useName": true
       },
