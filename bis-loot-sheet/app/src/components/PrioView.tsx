@@ -240,20 +240,55 @@ export function PrioView({ zone }: { zone: ZoneData }) {
       const iid = Number(iidStr);
       itemInfo.set(iid, { facts, scores: scoreItem(iid, zones, zone.items) });
     }
-    // One prio per spec per slot across the whole sheet: each spec keeps only
-    // the item where its score is highest; it drops out of the others' chains.
-    const best = new Map<string, { iid: number; score: number }>();
+    // One prio per spec per slot across the whole sheet. Dedup by NAMED chain
+    // appearances, not raw scores: a spec named on several items in a group
+    // keeps only its best appearance; removing it elsewhere can promote other
+    // specs into those chains, so iterate until stable. This way a spec whose
+    // top-scoring item crowds it out (e.g. a shared tier token capped at 4
+    // names) still lands on the next item down instead of losing the slot.
+    const byGroup = new Map<string, number[]>();
     for (const [iid, info] of itemInfo) {
       const grp = slotGroup(info.facts, allItems);
-      for (const s of info.scores) {
-        const key = `${s.spec}|${grp}`;
-        const cur = best.get(key);
-        if (
-          !cur ||
-          s.score > cur.score ||
-          (s.score === cur.score && iid < cur.iid)
-        )
-          best.set(key, { iid, score: s.score });
+      byGroup.set(grp, [...(byGroup.get(grp) ?? []), iid]);
+    }
+    const removed = new Map<number, Set<string>>();
+    const keptScores = (iid: number): SpecScore[] => {
+      const info = itemInfo.get(iid);
+      if (!info) return [];
+      const gone = removed.get(iid);
+      return gone ? info.scores.filter((s) => !gone.has(s.spec)) : info.scores;
+    };
+    for (const iids of byGroup.values()) {
+      for (let changed = true; changed; ) {
+        changed = false;
+        const bestApp = new Map<string, { iid: number; score: number }>();
+        const apps = new Map<string, number[]>();
+        for (const iid of iids) {
+          const info = itemInfo.get(iid);
+          if (!info) continue;
+          for (const s of buildChain(keptScores(iid), Boolean(info.facts.token))
+            .named) {
+            apps.set(s.spec, [...(apps.get(s.spec) ?? []), iid]);
+            const cur = bestApp.get(s.spec);
+            if (
+              !cur ||
+              s.score > cur.score ||
+              (s.score === cur.score && iid < cur.iid)
+            )
+              bestApp.set(s.spec, { iid, score: s.score });
+          }
+        }
+        for (const [spec, list] of apps) {
+          for (const iid of list) {
+            if (iid === bestApp.get(spec)?.iid) continue;
+            const gone = removed.get(iid) ?? new Set<string>();
+            if (!gone.has(spec)) {
+              gone.add(spec);
+              removed.set(iid, gone);
+              changed = true;
+            }
+          }
+        }
       }
     }
     // Rows per encounter with dedup-filtered chains.
@@ -262,10 +297,7 @@ export function PrioView({ zone }: { zone: ZoneData }) {
       { id: number; item: ItemFacts; scores: SpecScore[]; chain: Chain }[]
     >();
     for (const [iid, info] of itemInfo) {
-      const grp = slotGroup(info.facts, allItems);
-      const kept = info.scores.filter(
-        (s) => best.get(`${s.spec}|${grp}`)?.iid === iid,
-      );
+      const kept = keptScores(iid);
       const chain = buildChain(kept, Boolean(info.facts.token));
       for (const eid of info.facts.sources ?? []) {
         const key = String(eid);
