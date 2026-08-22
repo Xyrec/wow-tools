@@ -8,6 +8,30 @@ export const PRIO_FLOOR = 10
 export const PRIO_CAP = 4
 export const PRIO_BREAK_RATIO = 0.5
 export const PRIO_TIE_REL = 0.08
+/** Specs sampled below this fraction of the phase's median sample size are
+ *  excluded from that phase — too few players for the distribution to mean
+ *  anything (P3: MM Hunter, Frost, Assa, Sub, Demo all fall under 1/3). */
+export const PRIO_MIN_SAMPLE_RATIO = 1 / 3
+
+const sampledCache = new WeakMap<ZoneData, Set<string>>()
+
+/** Specs with a large enough sample in this zone to be scored. */
+export function wellSampled(zone: ZoneData): Set<string> {
+  let set = sampledCache.get(zone)
+  if (!set) {
+    const sizes = Object.values(zone.specs)
+      .map((sd) => sd.sampleSize)
+      .sort((a, b) => a - b)
+    const median = sizes[Math.floor(sizes.length / 2)] ?? 0
+    set = new Set(
+      Object.entries(zone.specs)
+        .filter(([, sd]) => sd.sampleSize >= PRIO_MIN_SAMPLE_RATIO * median)
+        .map(([k]) => k),
+    )
+    sampledCache.set(zone, set)
+  }
+  return set
+}
 
 const PAIR_SLOTS = new Set(["ring", "trinket"])
 
@@ -31,7 +55,7 @@ export interface SpecScore {
 
 function needIn(zone: ZoneData, spec: string, itemId: number): PhaseNeed | null {
   const sd = zone.specs[spec]
-  if (!sd) return null
+  if (!sd || !wellSampled(zone).has(spec)) return null
   for (const [slot, entries] of Object.entries(sd.slots)) {
     const mine = entries.find((e) => e.id === itemId)
     if (!mine) continue
@@ -61,7 +85,11 @@ export function scoreItem(
 ): SpecScore[] {
   const facts = items[itemId]
   const candidates = facts?.redeems?.length ? facts.redeems : [itemId]
-  const specs = Object.keys(zones[0]?.specs ?? {})
+  // A spec must be adequately sampled in the sheet's own phase to be named
+  // at all; per-phase gating in needIn drops its under-sampled future terms.
+  const specs = Object.keys(zones[0]?.specs ?? {}).filter((s) =>
+    zones[0] ? wellSampled(zones[0]).has(s) : true,
+  )
   const out: SpecScore[] = []
   for (const spec of specs) {
     let best: SpecScore | null = null

@@ -13,26 +13,26 @@ export function SpecSidebar({ zone, selected, onSelect }: Props) {
   const byClass = specKeysByClass(zone)
   return (
     <nav className="space-y-4">
-      <button
-        type="button"
-        onClick={() => onSelect("")}
-        className={cn(
-          "w-full rounded px-2 py-1 text-left text-sm font-semibold text-muted-foreground hover:bg-accent hover:text-foreground",
-          selected === "" && "bg-accent text-foreground",
-        )}
-      >
-        Overview
-      </button>
-      <button
-        type="button"
-        onClick={() => onSelect("::prio")}
-        className={cn(
-          "w-full rounded px-2 py-1 text-left text-sm font-semibold text-muted-foreground hover:bg-accent hover:text-foreground",
-          selected === "::prio" && "bg-accent text-foreground",
-        )}
-      >
-        Loot priority
-      </button>
+      <div>
+        {(
+          [
+            ["", "Overview"],
+            ["::prio", "Loot priority"],
+          ] as const
+        ).map(([key, label]) => (
+          <button
+            key={key}
+            type="button"
+            onClick={() => onSelect(key)}
+            className={cn(
+              "w-full rounded px-2 py-1 text-left text-sm font-semibold text-muted-foreground hover:bg-accent hover:text-foreground",
+              selected === key && "bg-accent text-foreground",
+            )}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
       {[...byClass.entries()].map(([cls, specKeys]) => (
         <div key={cls}>
           <div

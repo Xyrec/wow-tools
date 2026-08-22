@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { useZone } from "@/lib/data"
-import { buildChain, scoreItem, type Chain, type SpecScore } from "@/lib/prio"
+import { buildChain, scoreItem, wellSampled, type Chain, type SpecScore } from "@/lib/prio"
 import {
   CLASS_COLORS,
   QUALITY_COLORS,
@@ -172,6 +172,18 @@ export function PrioView({ zone }: { zone: ZoneData }) {
         summed need across P{zone.anniversaryPhase}–P5, where need = usage + how far the item
         leads that spec&apos;s best alternative. Objective data only — adjust for tanks,
         professions and roster before use. Expand a row to see the evidence.
+        {(() => {
+          const cut = Object.keys(zone.specs)
+            .filter((s) => !wellSampled(zone).has(s))
+            .map((s) => SPEC_SHORT[s] ?? s)
+          return cut.length > 0 ? (
+            <>
+              {" "}
+              Excluded for too-small samples (under a third of the phase median):{" "}
+              {cut.join(", ")}.
+            </>
+          ) : null
+        })()}
       </p>
       {[...computed.byRaid.entries()].map(([raid, encounters]) => (
         <section key={raid}>
