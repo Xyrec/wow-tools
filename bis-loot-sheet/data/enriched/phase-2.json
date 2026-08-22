@@ -1673,7 +1673,7 @@
   "EU"
  ],
  "maxPages": 20,
- "generatedAt": "2026-08-20T22:09:23+00:00",
+ "generatedAt": "2026-08-22T21:51:18+00:00",
  "encounters": {
   "623": "Hydross the Unstable",
   "624": "The Lurker Below",
@@ -1684,7 +1684,9 @@
   "730": "Al'ar",
   "731": "Void Reaver",
   "732": "High Astromancer Solarian",
-  "733": "Kael'thas Sunstrider"
+  "733": "Kael'thas Sunstrider",
+  "900548": "Trash",
+  "900550": "Trash"
  },
  "items": {
   "8345": {
@@ -11592,7 +11594,10 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
-   "icon": "inv_belt_03.jpg"
+   "icon": "inv_belt_03.jpg",
+   "sources": [
+    900550
+   ]
   },
   "30021": {
    "name": "Wildfury Greatstaff",
@@ -11601,7 +11606,10 @@
    "slot": "two_hand",
    "unique": true,
    "uniqueEquipped": false,
-   "icon": "inv_staff_50.jpg"
+   "icon": "inv_staff_50.jpg",
+   "sources": [
+    900548
+   ]
   },
   "30022": {
    "name": "Pendant of the Perilous",
@@ -11610,7 +11618,10 @@
    "slot": "neck",
    "unique": false,
    "uniqueEquipped": false,
-   "icon": "inv_jewelry_necklace_ahnqiraj_01.jpg"
+   "icon": "inv_jewelry_necklace_ahnqiraj_01.jpg",
+   "sources": [
+    900548
+   ]
   },
   "30023": {
    "name": "Totem of the Maelstrom",
@@ -11619,7 +11630,10 @@
    "slot": "relic",
    "unique": true,
    "uniqueEquipped": false,
-   "icon": "spell_nature_earthbind.jpg"
+   "icon": "spell_nature_earthbind.jpg",
+   "sources": [
+    900548
+   ]
   },
   "30024": {
    "name": "Mantle of the Elven Kings",
@@ -11629,7 +11643,10 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "cloth",
-   "icon": "inv_shoulder_25.jpg"
+   "icon": "inv_shoulder_25.jpg",
+   "sources": [
+    900550
+   ]
   },
   "30025": {
    "name": "Serpentshrine Shuriken",
@@ -11638,7 +11655,10 @@
    "slot": "thrown",
    "unique": false,
    "uniqueEquipped": false,
-   "icon": "inv_throwingknife_06.jpg"
+   "icon": "inv_throwingknife_06.jpg",
+   "sources": [
+    900548
+   ]
   },
   "30026": {
    "name": "Bands of the Celestial Archer",
@@ -11648,7 +11668,10 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "mail",
-   "icon": "inv_bracer_17.jpg"
+   "icon": "inv_bracer_17.jpg",
+   "sources": [
+    900550
+   ]
   },
   "30027": {
    "name": "Boots of Courage Unending",
@@ -11658,7 +11681,10 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "plate",
-   "icon": "inv_boots_chain_08.jpg"
+   "icon": "inv_boots_chain_08.jpg",
+   "sources": [
+    900548
+   ]
   },
   "30028": {
    "name": "Seventh Ring of the Tirisfalen",
@@ -11667,7 +11693,10 @@
    "slot": "finger",
    "unique": true,
    "uniqueEquipped": false,
-   "icon": "inv_jewelry_ring_24.jpg"
+   "icon": "inv_jewelry_ring_24.jpg",
+   "sources": [
+    900550
+   ]
   },
   "30029": {
    "name": "Bark-Gloves of Ancient Wisdom",
@@ -11677,7 +11706,10 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "leather",
-   "icon": "inv_gauntlets_25.jpg"
+   "icon": "inv_gauntlets_25.jpg",
+   "sources": [
+    900550
+   ]
   },
   "30030": {
    "name": "Girdle of Fallen Stars",
@@ -11687,7 +11719,10 @@
    "unique": false,
    "uniqueEquipped": false,
    "armorType": "mail",
-   "icon": "inv_belt_22.jpg"
+   "icon": "inv_belt_22.jpg",
+   "sources": [
+    900550
+   ]
   },
   "30031": {
    "name": "Red Havoc Boots",
@@ -14194,7 +14229,10 @@
    "slot": "trinket",
    "unique": true,
    "uniqueEquipped": false,
-   "icon": "inv_misc_spyglass_02.jpg"
+   "icon": "inv_misc_spyglass_02.jpg",
+   "sources": [
+    900548
+   ]
   },
   "30626": {
    "name": "Sextant of Unstable Currents",
@@ -17953,858 +17991,6 @@
    "uniqueEquipped": false,
    "icon": "inv_misc_pipe_01.jpg"
   },
-  "23620": {
-   "name": "Plans: Felfury Gauntlets",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "23621": {
-   "name": "Plans: Gauntlets of the Iron Tower",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "23622": {
-   "name": "Plans: Steelgrip Gauntlets",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "23623": {
-   "name": "Plans: Storm Helm",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "23624": {
-   "name": "Plans: Helm of the Stalwart Defender",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "23625": {
-   "name": "Plans: Oathkeeper's Helm",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "23626": {
-   "name": "Plans: Black Felsteel Bracers",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "23627": {
-   "name": "Plans: Bracers of the Green Fortress",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "23628": {
-   "name": "Plans: Blessed Bracers",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "23629": {
-   "name": "Plans: Felsteel Longblade",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "23630": {
-   "name": "Plans: Khorium Champion",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "23631": {
-   "name": "Plans: Fel Edged Battleaxe",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "23632": {
-   "name": "Plans: Felsteel Reaper",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "23633": {
-   "name": "Plans: Runic Hammer",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "23634": {
-   "name": "Plans: Fel Hardened Maul",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "23635": {
-   "name": "Plans: Eternium Runed Blade",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "23636": {
-   "name": "Plans: Dirge",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "23637": {
-   "name": "Plans: Hand of Eternity",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "24302": {
-   "name": "Pattern: Unyielding Girdle",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_05.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "24303": {
-   "name": "Pattern: Girdle of Ruination",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_05.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "24304": {
-   "name": "Pattern: Black Belt of Knowledge",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_05.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "24305": {
-   "name": "Pattern: Resolute Cape",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_05.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "24306": {
-   "name": "Pattern: Vengeance Wrap",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_05.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "24307": {
-   "name": "Pattern: Manaweave Cloak",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_05.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "29434": {
-   "name": "Badge of Justice",
-   "quality": 4,
-   "itemLevel": 70,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "token": true,
-   "dropOnly": true,
-   "icon": "spell_holy_championsbond.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "29723": {
-   "name": "Pattern: Cobrascale Hood",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "29724": {
-   "name": "Pattern: Cobrascale Gloves",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "29725": {
-   "name": "Pattern: Windscale Hood",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "29726": {
-   "name": "Pattern: Hood of Primal Life",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "29727": {
-   "name": "Pattern: Gloves of the Living Touch",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "29728": {
-   "name": "Pattern: Windslayer Wraps",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "29729": {
-   "name": "Pattern: Living Dragonscale Helm",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "29730": {
-   "name": "Pattern: Earthen Netherscale Boots",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "29731": {
-   "name": "Pattern: Windstrike Gloves",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "29732": {
-   "name": "Pattern: Netherdrake Helm",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "29733": {
-   "name": "Pattern: Netherdrake Gloves",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
-  "29734": {
-   "name": "Pattern: Thick Netherscale Breastplate",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
-  },
   "30183": {
    "name": "Nether Vortex",
    "quality": 4,
@@ -18836,6 +18022,15 @@
    "icon": "inv_chest_chain_03.jpg",
    "sources": [
     733
+   ],
+   "redeems": [
+    30123,
+    30129,
+    30134,
+    30144,
+    30164,
+    30169,
+    30185
    ]
   },
   "30237": {
@@ -18855,6 +18050,15 @@
    "icon": "inv_chest_chain_03.jpg",
    "sources": [
     733
+   ],
+   "redeems": [
+    30113,
+    30118,
+    30150,
+    30159,
+    30216,
+    30222,
+    30231
    ]
   },
   "30238": {
@@ -18874,6 +18078,11 @@
    "icon": "inv_chest_chain_03.jpg",
    "sources": [
     733
+   ],
+   "redeems": [
+    30139,
+    30196,
+    30214
    ]
   },
   "30239": {
@@ -18893,6 +18102,15 @@
    "icon": "inv_gauntlets_27.jpg",
    "sources": [
     625
+   ],
+   "redeems": [
+    30124,
+    30130,
+    30135,
+    30145,
+    30165,
+    30170,
+    30189
    ]
   },
   "30240": {
@@ -18912,6 +18130,15 @@
    "icon": "inv_gauntlets_27.jpg",
    "sources": [
     625
+   ],
+   "redeems": [
+    30114,
+    30119,
+    30151,
+    30160,
+    30217,
+    30223,
+    30232
    ]
   },
   "30241": {
@@ -18931,6 +18158,11 @@
    "icon": "inv_gauntlets_27.jpg",
    "sources": [
     625
+   ],
+   "redeems": [
+    30140,
+    30205,
+    30211
    ]
   },
   "30242": {
@@ -18950,6 +18182,15 @@
    "icon": "inv_helmet_24.jpg",
    "sources": [
     628
+   ],
+   "redeems": [
+    30125,
+    30131,
+    30136,
+    30146,
+    30166,
+    30171,
+    30190
    ]
   },
   "30243": {
@@ -18969,6 +18210,15 @@
    "icon": "inv_helmet_24.jpg",
    "sources": [
     628
+   ],
+   "redeems": [
+    30115,
+    30120,
+    30152,
+    30161,
+    30219,
+    30228,
+    30233
    ]
   },
   "30244": {
@@ -18988,6 +18238,11 @@
    "icon": "inv_helmet_24.jpg",
    "sources": [
     628
+   ],
+   "redeems": [
+    30141,
+    30206,
+    30212
    ]
   },
   "30245": {
@@ -19007,6 +18262,15 @@
    "icon": "inv_pants_plate_17.jpg",
    "sources": [
     626
+   ],
+   "redeems": [
+    30126,
+    30132,
+    30137,
+    30148,
+    30167,
+    30172,
+    30192
    ]
   },
   "30246": {
@@ -19026,6 +18290,15 @@
    "icon": "inv_pants_plate_17.jpg",
    "sources": [
     626
+   ],
+   "redeems": [
+    30116,
+    30121,
+    30153,
+    30162,
+    30220,
+    30229,
+    30234
    ]
   },
   "30247": {
@@ -19045,6 +18318,11 @@
    "icon": "inv_pants_plate_17.jpg",
    "sources": [
     626
+   ],
+   "redeems": [
+    30142,
+    30207,
+    30213
    ]
   },
   "30248": {
@@ -19064,6 +18342,15 @@
    "icon": "inv_shoulder_22.jpg",
    "sources": [
     731
+   ],
+   "redeems": [
+    30127,
+    30133,
+    30138,
+    30149,
+    30168,
+    30173,
+    30194
    ]
   },
   "30249": {
@@ -19083,6 +18370,15 @@
    "icon": "inv_shoulder_22.jpg",
    "sources": [
     731
+   ],
+   "redeems": [
+    30117,
+    30122,
+    30154,
+    30163,
+    30221,
+    30230,
+    30235
    ]
   },
   "30250": {
@@ -19102,6 +18398,11 @@
    "icon": "inv_shoulder_22.jpg",
    "sources": [
     731
+   ],
+   "redeems": [
+    30143,
+    30210,
+    30215
    ]
   },
   "30621": {
@@ -19144,29 +18445,6 @@
    "sources": [
     733
    ]
-  },
-  "33954": {
-   "name": "Plans: Hammer of Righteous Might",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    730,
-    731,
-    732,
-    733
-   ],
-   "laterPhase": "phase-5"
   },
   "34544": {
    "name": "Essence of the Immortals",
@@ -19356,71 +18634,6 @@
    "pvp": true,
    "dropOnly": true,
    "icon": "inv_misc_cape_20.jpg",
-   "sources": [
-    733
-   ]
-  },
-  "35300": {
-   "name": "Pattern: Windstrike Gloves",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    733
-   ]
-  },
-  "35301": {
-   "name": "Pattern: Netherdrake Gloves",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    733
-   ]
-  },
-  "35302": {
-   "name": "Pattern: Cobrascale Gloves",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    733
-   ]
-  },
-  "35303": {
-   "name": "Pattern: Gloves of the Living Touch",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_04.jpg",
-   "sources": [
-    733
-   ]
-  },
-  "35309": {
-   "name": "Pattern: Unyielding Girdle",
-   "quality": 4,
-   "itemLevel": 73,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "dropOnly": true,
-   "icon": "inv_scroll_05.jpg",
    "sources": [
     733
    ]

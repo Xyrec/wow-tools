@@ -91,8 +91,54 @@ export const ZONE_PHASES: Record<string, number> = {
   "phase-5": 5,
 }
 
+/** Short, unambiguous spec names for prio chains and CSV export. */
+export const SPEC_SHORT: Record<string, string> = {
+  "Druid-Balance": "Balance",
+  "Druid-Feral": "Feral DPS",
+  "Druid-Guardian": "Feral Tank",
+  "Druid-Restoration": "Resto Druid",
+  "Hunter-Beast Mastery": "BM Hunter",
+  "Hunter-Marksmanship": "MM Hunter",
+  "Hunter-Survival": "Survival",
+  "Mage-Arcane": "Arcane Mage",
+  "Mage-Fire": "Fire Mage",
+  "Mage-Frost": "Frost Mage",
+  "Paladin-Holy": "Holy Paladin",
+  "Paladin-Protection": "Prot Paladin",
+  "Paladin-Retribution": "Retribution",
+  "Priest-Discipline": "Disc Priest",
+  "Priest-Holy": "Holy Priest",
+  "Priest-Shadow": "Shadow Priest",
+  "Rogue-Assassination": "Assa Rogue",
+  "Rogue-Combat": "Combat Rogue",
+  "Rogue-Subtlety": "Sub Rogue",
+  "Shaman-Elemental": "Elemental",
+  "Shaman-Enhancement": "Enhancement",
+  "Shaman-Restoration": "Resto Shaman",
+  "Warlock-Affliction": "Affli Lock",
+  "Warlock-Demonology": "Demo Lock",
+  "Warlock-Destruction": "Destro Lock",
+  "Warrior-Arms": "Arms",
+  "Warrior-Fury": "Fury",
+  "Warrior-Protection": "Prot Warrior",
+}
+
+// Trash pseudo-encounters: 900000 + raid map id (see pipeline lootmap.py).
+const TRASH_RAIDS: Record<number, string> = {
+  900532: "Karazhan",
+  900534: "Hyjal Summit",
+  900544: "Magtheridon's Lair",
+  900548: "Serpentshrine Cavern",
+  900550: "Tempest Keep",
+  900564: "Black Temple",
+  900565: "Gruul's Lair",
+  900568: "Zul'Aman",
+  900580: "Sunwell Plateau",
+}
+
 /** Raid instance per WCL encounter id, for grouping multi-raid zones. */
 export function raidOfEncounter(encounterId: number): string {
+  if (encounterId in TRASH_RAIDS) return TRASH_RAIDS[encounterId]
   if (encounterId >= 601 && encounterId <= 609) return "Black Temple"
   if (encounterId >= 618 && encounterId <= 622) return "Hyjal Summit"
   if (encounterId >= 623 && encounterId <= 628) return "Serpentshrine Cavern"

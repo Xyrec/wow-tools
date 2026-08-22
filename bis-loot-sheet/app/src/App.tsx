@@ -7,6 +7,7 @@ declare global {
 }
 import { Overview } from "@/components/Overview"
 import { PairCard } from "@/components/PairCard"
+import { PrioView } from "@/components/PrioView"
 import { SlotCard } from "@/components/SlotCard"
 import { SpecSidebar } from "@/components/SpecSidebar"
 import { Badge } from "@/components/ui/badge"
@@ -100,6 +101,8 @@ export default function App() {
           <main className="min-w-0 flex-1">
             {specKey === "" ? (
               <Overview key={zone.zone} zone={zone} />
+            ) : specKey === "::prio" ? (
+              <PrioView key={zone.zone} zone={zone} />
             ) : spec ? (
               <>
                 <div className="mb-3 flex flex-wrap items-center gap-3">

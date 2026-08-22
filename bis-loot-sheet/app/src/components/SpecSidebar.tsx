@@ -23,6 +23,16 @@ export function SpecSidebar({ zone, selected, onSelect }: Props) {
       >
         Overview
       </button>
+      <button
+        type="button"
+        onClick={() => onSelect("::prio")}
+        className={cn(
+          "w-full rounded px-2 py-1 text-left text-sm font-semibold text-muted-foreground hover:bg-accent hover:text-foreground",
+          selected === "::prio" && "bg-accent text-foreground",
+        )}
+      >
+        Loot priority
+      </button>
       {[...byClass.entries()].map(([cls, specKeys]) => (
         <div key={cls}>
           <div

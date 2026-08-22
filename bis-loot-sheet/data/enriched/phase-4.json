@@ -745,14 +745,15 @@
   "EU"
  ],
  "maxPages": 20,
- "generatedAt": "2026-08-20T22:11:29+00:00",
+ "generatedAt": "2026-08-22T21:54:00+00:00",
  "encounters": {
   "1189": "Akil'zon",
   "1190": "Nalorakk",
   "1191": "Jan'alai",
   "1192": "Halazzi",
   "1193": "Hex Lord Malacrass",
-  "1194": "Daakara"
+  "1194": "Daakara",
+  "900568": "Trash"
  },
  "items": {
   "8345": {
@@ -20290,26 +20291,6 @@
    "unique": true,
    "uniqueEquipped": false,
    "icon": "inv_misc_pipe_01.jpg"
-  },
-  "29434": {
-   "name": "Badge of Justice",
-   "quality": 4,
-   "itemLevel": 70,
-   "slot": "type-0",
-   "unique": false,
-   "uniqueEquipped": false,
-   "token": true,
-   "dropOnly": true,
-   "icon": "spell_holy_championsbond.jpg",
-   "sources": [
-    1189,
-    1190,
-    1191,
-    1192,
-    1193,
-    1194
-   ],
-   "laterPhase": "phase-5"
   },
   "33102": {
    "name": "Blood of Zul'jin",

@@ -14,6 +14,8 @@ export interface ItemFacts {
   token?: boolean
   dropOnly?: boolean
   sources?: number[]
+  /** Tier tokens: item ids of the pieces this token redeems into. */
+  redeems?: number[]
   laterPhase?: string
 }
 

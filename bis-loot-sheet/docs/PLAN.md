@@ -139,21 +139,47 @@ the famous ZA pieces — Amani Longbow, Brooch of Nature's Mercy, etc.).
 - `audit_raw.py [zone-tag ...]` — verifies every (boss, spec, region) slice is
   complete (contiguous pages, exhausted-or-20). Run after any fetch.
 
-## NEXT UP — Mechanism 2: the loot prio sheet (not started)
+## IN PROGRESS — Mechanism 2: the loot prio sheet (spec LOCKED 2026-08-21)
 
-The officer-facing deliverable. All ingredients exist in the app data:
-1. **Roster builder** (TS, in-app): pick tanks/healers/DPS + specs (maybe
-   professions); stored client-side.
-2. **Prio-chain generation** (TS, client-side, no backend): per droppable item
-   (incl. tier tokens via lootmap/sources), order specs by *relative* usage
-   (99% vs 68% ⇒ 99% first), `=` within an epsilon, `MS > OS` tail; only
-   rostered specs; unique-equip conflicts surfaced (the Rod/Talon failure mode);
-   cross-phase persistence (item still worn in later phases ⇒ boost) is
-   derivable from the per-phase JSONs.
-3. **Export** CSV/JSON in the officers' sheet shape (`../old-data/*.csv`:
-   per-boss sections, `Item, Spec > Spec = Spec > MS > OS`).
-4. QA loop with Xyrec → officers. Nothing handed over until correct.
-Needs from Xyrec: the guild roster when starting.
+Grilled and ratified with Xyrec (incl. a 3-subagent formula review, 2-1 keep +
+unanimous equal weights). **P3 only for now; objective data only — no roster,
+no professions, no fitting to past sheets** (officers do the last 20%: tank
+priority, professions). P2 back-test vs the officers' CSVs was calibration of
+conventions only (their sheets name 0-4 specs; tails "MS > OS" / tokens
+"BiS > Non BiS" / Disenchant).
+
+**Scoring (v1, locked):**
+`score(spec) = Σ over current..P5 phases of [usage + max(0, usage − best_alt)]`
+— equal phase weights (sum IS the persistence reward); best_alt = strongest
+other item in the spec's slot (2nd-strongest-other for rings/trinkets);
+usage from top2000 band. "=" within 8% relative; deterministic tiebreak
+(current-phase need, then spec name).
+
+**Chain membership:** name specs in score order while score ≥ 10 AND position
+≤ 4 AND score ≥ 50% of previously named (the "mishmash break" — a cluster of
+comparable low scores collectively folds into the tail so none randomly wins).
+All three constants QA-tunable. Tail always emitted: "> MS > OS" ("> BiS >
+Non BiS" for tier tokens). Spec names: unambiguous short forms ("Resto
+Shaman", "Prot Warrior", "Feral Tank"); the old sheet's bare "Resto" relied
+on cell colors that CSV strips.
+
+**Evidence UI:** each row = item + chain + expandable per-spec detail (usage
+per phase, gap, and the best-alternative item BY NAME — the formula can't
+know if an alternative is easy badge gear vs contested raid loot; officers
+override with that visible).
+
+**Structure/export:** "Loot priority" sidebar link under Overview. Per-raid
+sections in encounter order + a "Trash" pseudo-encounter last (lootmap map
+sweep; validate SSC/TK trash lists against the officers' CSVs). Export one
+CSV per raid (P3 = Hyjal + Black Temple) mirroring the officers' format:
+per-boss sections, bias cells with ">"/"=" as separate cells, trailing
+"Main Raid,Split 1,Split 2" columns left empty. Tokens scored via their
+class pieces (token→piece from cmangos: parse token name → slot+tier+group,
+group→classes, piece = class-restricted itemset piece of that tier+slot).
+Computation client-side (prio view loads P3+P4+P5 chunks).
+
+**Remaining build:** trash lootmap + token→piece in pipeline → scorer +
+view + CSV export in app → QA with Xyrec before officers see it.
 
 ## Decision history (condensed — details in git log)
 

@@ -231,6 +231,19 @@ def enrich_zone(tag: str) -> Path:
             if item_id in items:
                 items[item_id].setdefault("sources", []).append(int(eid))
 
+    # Tier tokens: which pieces they redeem into (drives token prio scoring).
+    from .lootmap import build_token_pieces
+
+    token_pieces_path = META_DIR / "token_pieces.json"
+    token_pieces = (
+        json.loads(token_pieces_path.read_text())
+        if token_pieces_path.exists()
+        else build_token_pieces()
+    )
+    for tid, piece_ids in token_pieces.items():
+        if int(tid) in items:
+            items[int(tid)]["redeems"] = piece_ids
+
     # Zones sharing a partition can leak later-phase gear into the worn data
     # (ZA inside "P3.5 & P4"). Flag anything dropping in a later-phase raid so
     # the app and prio logic can mark it unobtainable in this Anniversary phase.
