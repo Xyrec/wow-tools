@@ -181,7 +181,7 @@ export function PrioView({ zone }: { zone: ZoneData }) {
   // Future phases for persistence scoring; chunks load lazily.
   const p4 = useZone("phase-4")
   const p5 = useZone("phase-5")
-  const [expanded, setExpanded] = useState<string | null>(null)
+  const [expanded, setExpanded] = useState<Set<string>>(new Set())
 
   const futureReady = p4 !== undefined && p5 !== undefined
   const computed = useMemo(() => {
@@ -304,7 +304,7 @@ export function PrioView({ zone }: { zone: ZoneData }) {
                     <ul className="space-y-1">
                       {encRows.map(({ id, item, scores, chain }) => {
                         const key = `${eid}-${id}`
-                        const open = expanded === key
+                        const open = expanded.has(key)
                         return (
                           <li key={key} className="rounded-md px-2 py-1.5 hover:bg-accent/40">
                             <div className="flex items-center gap-3">
@@ -312,7 +312,14 @@ export function PrioView({ zone }: { zone: ZoneData }) {
                                 variant="ghost"
                                 size="icon-xs"
                                 className="text-muted-foreground"
-                                onClick={() => setExpanded(open ? null : key)}
+                                onClick={() =>
+                                  setExpanded((prev) => {
+                                    const next = new Set(prev)
+                                    if (open) next.delete(key)
+                                    else next.add(key)
+                                    return next
+                                  })
+                                }
                               >
                                 {open ? <ChevronDown /> : <ChevronRight />}
                               </Button>
