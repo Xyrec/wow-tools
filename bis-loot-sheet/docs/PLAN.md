@@ -148,12 +148,16 @@ priority, professions). P2 back-test vs the officers' CSVs was calibration of
 conventions only (their sheets name 0-4 specs; tails "MS > OS" / tokens
 "BiS > Non BiS" / Disenchant).
 
-**Scoring (v1, locked):**
-`score(spec) = Σ over current..P5 phases of [usage + max(0, usage − best_alt)]`
-— equal phase weights (sum IS the persistence reward); best_alt = strongest
-other item in the spec's slot (2nd-strongest-other for rings/trinkets);
-usage from top2000 band. "=" within 8% relative; deterministic tiebreak
-(current-phase need, then spec name).
+**Scoring (v2, after Xyrec's QA):**
+`score(spec) = Σ over current..P5 phases of [usage + max(0, usage − best_alt)] · 1.5^(phase − current)`
+— future phases weigh ×1.5 more per step (PRIO_PHASE_MULT; user decision
+2026-08-23 superseding the v1 equal-weights panel verdict: future-useful
+items are the sheet's whole point). best_alt = strongest other item in the
+spec's slot (2nd-strongest-other for rings/trinkets); usage from top2000
+band. "=" within 8% relative; deterministic tiebreak (current-phase need,
+then spec name). Specs sampled under ⅓ of the phase's median sample are
+excluded per phase (P3 cuts MM Hunter, Frost Mage, Assa/Sub Rogue, Demo
+Lock), and a spec must be well-sampled in the sheet's own phase to be named.
 
 **Chain membership:** name specs in score order while score ≥ 10 AND position
 ≤ 4 AND score ≥ 50% of previously named (the "mishmash break" — a cluster of
@@ -162,6 +166,17 @@ All three constants QA-tunable. Tail always emitted: "> MS > OS" ("> BiS >
 Non BiS" for tier tokens). Spec names: unambiguous short forms ("Resto
 Shaman", "Prot Warrior", "Feral Tank"); the old sheet's bare "Resto" relied
 on cell colors that CSV strips.
+
+**One prio per spec per worn slot (sheet-wide):** dedup by NAMED chain
+appearances, iterated to a fixed point — a spec named on several items it
+wears in the same slot keeps only the best appearance; its removal can
+promote other specs, repeat until stable (so a spec capped out of a shared
+tier token still lands on the next item down). The competition group is the
+slot the SPEC wears the item in per its distribution (a 1H sword a rogue
+wears off-hand competes with off-hands for the rogue only) — dual-wielders
+hold one MH and one OH prio, matching the officers' Talon+Claw precedent.
+Items sorted in spec-page slot order within each boss; tokens sort/compete
+as the slot they redeem into.
 
 **Evidence UI:** each row = item + chain + expandable per-spec detail (usage
 per phase, gap, and the best-alternative item BY NAME — the formula can't
@@ -178,8 +193,10 @@ class pieces (token→piece from cmangos: parse token name → slot+tier+group,
 group→classes, piece = class-restricted itemset piece of that tier+slot).
 Computation client-side (prio view loads P3+P4+P5 chunks).
 
-**Remaining build:** trash lootmap + token→piece in pipeline → scorer +
-view + CSV export in app → QA with Xyrec before officers see it.
+**Build status:** shipped and deployed — trash lootmaps (SSC/TK validated
+exactly vs officers' CSVs), token→piece, scorer, prio view (raid selector,
+multi-expand evidence, slot-ordered rows), per-raid CSV export (Sheets-safe
+`="="` separators). In Xyrec's QA now; officers next.
 
 ## Decision history (condensed — details in git log)
 
