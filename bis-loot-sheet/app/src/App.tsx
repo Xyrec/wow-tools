@@ -55,50 +55,53 @@ export default function App() {
     return <main className="p-8">No data generated yet — run the pipeline.</main>
 
   return (
-    <div className="mx-auto max-w-7xl p-4">
-      <header className="mb-4 flex flex-wrap items-center justify-between gap-3">
-        <div>
-          <h1 className="text-xl font-bold">TBC Item Distribution — from Warcraft Logs</h1>
-          <p className="max-w-2xl text-xs text-muted-foreground">
-            An item distribution list built from Warcraft Logs: what the top ~2,000 ranked players
-            of each spec actually wore, and how usage splits between items. The higher an
-            item&apos;s equipped&nbsp;%, the more likely it is <em>the</em> BiS for that slot —
-            curated BiS lists may differ.
-          </p>
+    <div className="mx-auto flex max-w-7xl items-start gap-4 px-4">
+      {/* Full-height sticky sidebar with its own scrollbar, pinned to the very
+          top of the viewport so its bottom is never pushed offscreen. */}
+      {zone && (
+        <div className="sticky top-0 max-h-dvh w-48 shrink-0 overflow-y-auto overscroll-contain py-4 pr-2">
+          <SpecSidebar zone={zone} selected={specKey} onSelect={setSpecKey} />
         </div>
-        <Select
-          items={zoneTags.map((tag) => ({
-            label: `P${ZONE_PHASES[tag] ?? "?"} · ${ZONE_LABELS[tag] ?? tag}`,
-            value: tag,
-          }))}
-          value={zoneTag}
-          onValueChange={(v) => v && setZoneTag(v)}
-        >
-          <SelectTrigger className="w-64">
-            <SelectValue />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
-              {zoneTags.map((tag) => (
-                <SelectItem key={tag} value={tag}>
-                  P{ZONE_PHASES[tag] ?? "?"} · {ZONE_LABELS[tag] ?? tag}
-                </SelectItem>
-              ))}
-            </SelectGroup>
-          </SelectContent>
-        </Select>
-      </header>
+      )}
 
-      {!zone ? (
-        <p className="p-8 text-sm text-muted-foreground">Loading zone data…</p>
-      ) : (
-        <div className="flex items-start gap-4">
-          {/* Sticky sidebar with its own scrollbar; the item list scrolls with the page. */}
-          <div className="sticky top-0 max-h-dvh w-48 shrink-0 overflow-y-auto overscroll-contain py-4 pr-2">
-            <SpecSidebar zone={zone} selected={specKey} onSelect={setSpecKey} />
+      <div className="min-w-0 flex-1 py-4">
+        <header className="mb-4 flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h1 className="text-xl font-bold">TBC Item Distribution — from Warcraft Logs</h1>
+            <p className="max-w-2xl text-xs text-muted-foreground">
+              An item distribution list built from Warcraft Logs: what the top ~2,000 ranked
+              players of each spec actually wore, and how usage splits between items. The higher
+              an item&apos;s equipped&nbsp;%, the more likely it is <em>the</em> BiS for that
+              slot — curated BiS lists may differ.
+            </p>
           </div>
+          <Select
+            items={zoneTags.map((tag) => ({
+              label: `P${ZONE_PHASES[tag] ?? "?"} · ${ZONE_LABELS[tag] ?? tag}`,
+              value: tag,
+            }))}
+            value={zoneTag}
+            onValueChange={(v) => v && setZoneTag(v)}
+          >
+            <SelectTrigger className="w-64">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                {zoneTags.map((tag) => (
+                  <SelectItem key={tag} value={tag}>
+                    P{ZONE_PHASES[tag] ?? "?"} · {ZONE_LABELS[tag] ?? tag}
+                  </SelectItem>
+                ))}
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+        </header>
 
-          <main className="min-w-0 flex-1">
+        {!zone ? (
+          <p className="p-8 text-sm text-muted-foreground">Loading zone data…</p>
+        ) : (
+          <main className="min-w-0">
             {specKey === "" ? (
               <Overview key={zone.zone} zone={zone} />
             ) : specKey === "::prio" ? (
@@ -168,8 +171,8 @@ export default function App() {
               <p className="text-muted-foreground">No data for this spec in this zone.</p>
             )}
           </main>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   )
 }
