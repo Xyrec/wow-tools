@@ -1,13 +1,18 @@
 import type { ItemFacts, ZoneData } from "@/types"
 
-/** Locked v1 loot-priority model (see docs/PLAN.md, grilled 2026-08-21):
- *  score(spec) = Σ over current..P5 of [usage + max(0, usage − best_alt)]
- *  equal phase weights; membership: floor, cap, 50% break; "=" within 8%. */
+/** Loot-priority model (see docs/PLAN.md; v1 grilled 2026-08-21, phase
+ *  multiplier added on user decision 2026-08-23):
+ *  score(spec) = Σ over current..P5 of [usage + max(0, usage − best_alt)] · mult^(phase − current)
+ *  membership: floor, cap, 50% break; "=" within 8%. */
 
 export const PRIO_FLOOR = 10
 export const PRIO_CAP = 4
 export const PRIO_BREAK_RATIO = 0.5
 export const PRIO_TIE_REL = 0.08
+/** Future-phase weight: each phase past the current one multiplies that
+ *  phase's need by this factor (P3 sheet: P3 ×1, P4 ×1.5, P5 ×2.25) —
+ *  items that stay useful in future phases are the sheet's whole point. */
+export const PRIO_PHASE_MULT = 1.5
 /** Specs sampled below this fraction of the phase's median sample size are
  *  excluded from that phase — too few players for the distribution to mean
  *  anything (P3: MM Hunter, Frost, Assa, Sub, Demo all fall under 1/3). */
@@ -42,6 +47,8 @@ export interface PhaseNeed {
   alt: number
   altId: number | null
   need: number
+  /** Future-phase multiplier applied to `need` in the score sum. */
+  weight: number
 }
 
 export interface SpecScore {
@@ -53,7 +60,12 @@ export interface SpecScore {
   viaItem: number
 }
 
-function needIn(zone: ZoneData, spec: string, itemId: number): PhaseNeed | null {
+function needIn(
+  zone: ZoneData,
+  spec: string,
+  itemId: number,
+  currentPhase: number,
+): PhaseNeed | null {
   const sd = zone.specs[spec]
   if (!sd || !wellSampled(zone).has(spec)) return null
   for (const [slot, entries] of Object.entries(sd.slots)) {
@@ -71,6 +83,7 @@ function needIn(zone: ZoneData, spec: string, itemId: number): PhaseNeed | null 
       alt,
       altId: others[k]?.id ?? null,
       need: mine.pct + Math.max(0, mine.pct - alt),
+      weight: PRIO_PHASE_MULT ** (zone.anniversaryPhase - currentPhase),
     }
   }
   return null
@@ -94,10 +107,11 @@ export function scoreItem(
   for (const spec of specs) {
     let best: SpecScore | null = null
     for (const cand of candidates) {
+      const currentPhase = zones[0]?.anniversaryPhase ?? 0
       const needs = zones
-        .map((z) => needIn(z, spec, cand))
+        .map((z) => needIn(z, spec, cand, currentPhase))
         .filter((n): n is PhaseNeed => n !== null)
-      const score = needs.reduce((acc, n) => acc + n.need, 0)
+      const score = needs.reduce((acc, n) => acc + n.need * n.weight, 0)
       if (!best || score > best.score) {
         best = {
           spec,

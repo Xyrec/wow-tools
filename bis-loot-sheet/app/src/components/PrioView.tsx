@@ -92,7 +92,7 @@ function Evidence({
                 {s.needs
                   .map(
                     (n) =>
-                      `P${n.phase}: ${n.usage.toFixed(1)}%` +
+                      `P${n.phase}${n.weight !== 1 ? `×${n.weight}` : ""}: ${n.usage.toFixed(1)}%` +
                       (n.altId
                         ? ` (alt: ${items[n.altId]?.name ?? "?"} ${n.alt.toFixed(1)}%)`
                         : ""),
@@ -147,20 +147,14 @@ function slotRank(item: ItemFacts, items: Record<string, ItemFacts>): number {
   return idx === -1 ? PRIO_SLOT_ORDER.length : idx;
 }
 
-/** Competition group for the one-prio-per-slot-per-spec rule. */
-function slotGroup(item: ItemFacts, items: Record<string, ItemFacts>): string {
-  const slot = effectiveSlot(item, items);
-  if (
-    slot === "two_hand" ||
-    slot === "main_hand" ||
-    slot === "one_hand" ||
-    slot === "off_hand_weapon"
-  )
-    return "weapon";
-  if (slot === "shield" || slot === "held_off_hand") return "offhand";
-  if (slot === "ranged" || slot === "thrown" || slot === "relic")
-    return "ranged";
-  return slot;
+/** Competition group for the one-prio-per-slot-per-spec rule: the slot this
+ *  spec actually WEARS the item in (from its distribution data), so a 1H
+ *  sword a rogue wears off-hand competes with off-hands for the rogue while
+ *  competing with main-hands for a spec that wears it main-hand. Dual-
+ *  wielders thus hold one main-hand prio and one off-hand prio. */
+function wornSlot(s: SpecScore, currentPhase: number): string {
+  const n = s.needs.find((x) => x.phase === currentPhase) ?? s.needs[0];
+  return n?.slot ?? "?";
 }
 
 function csvEscape(v: string): string {
@@ -240,17 +234,14 @@ export function PrioView({ zone }: { zone: ZoneData }) {
       const iid = Number(iidStr);
       itemInfo.set(iid, { facts, scores: scoreItem(iid, zones, zone.items) });
     }
-    // One prio per spec per slot across the whole sheet. Dedup by NAMED chain
-    // appearances, not raw scores: a spec named on several items in a group
-    // keeps only its best appearance; removing it elsewhere can promote other
-    // specs into those chains, so iterate until stable. This way a spec whose
-    // top-scoring item crowds it out (e.g. a shared tier token capped at 4
-    // names) still lands on the next item down instead of losing the slot.
-    const byGroup = new Map<string, number[]>();
-    for (const [iid, info] of itemInfo) {
-      const grp = slotGroup(info.facts, allItems);
-      byGroup.set(grp, [...(byGroup.get(grp) ?? []), iid]);
-    }
+    // One prio per spec per worn slot across the whole sheet. Dedup by NAMED
+    // chain appearances, not raw scores: a spec named on several items it
+    // wears in the same slot keeps only its best appearance; removing it
+    // elsewhere can promote other specs into those chains, so iterate until
+    // stable. This way a spec whose top-scoring item crowds it out (e.g. a
+    // shared tier token capped at 4 names) still lands on the next item down
+    // instead of losing the slot.
+    const currentPhase = zone.anniversaryPhase;
     const removed = new Map<number, Set<string>>();
     const keptScores = (iid: number): SpecScore[] => {
       const info = itemInfo.get(iid);
@@ -258,35 +249,33 @@ export function PrioView({ zone }: { zone: ZoneData }) {
       const gone = removed.get(iid);
       return gone ? info.scores.filter((s) => !gone.has(s.spec)) : info.scores;
     };
-    for (const iids of byGroup.values()) {
-      for (let changed = true; changed; ) {
-        changed = false;
-        const bestApp = new Map<string, { iid: number; score: number }>();
-        const apps = new Map<string, number[]>();
-        for (const iid of iids) {
-          const info = itemInfo.get(iid);
-          if (!info) continue;
-          for (const s of buildChain(keptScores(iid), Boolean(info.facts.token))
-            .named) {
-            apps.set(s.spec, [...(apps.get(s.spec) ?? []), iid]);
-            const cur = bestApp.get(s.spec);
-            if (
-              !cur ||
-              s.score > cur.score ||
-              (s.score === cur.score && iid < cur.iid)
-            )
-              bestApp.set(s.spec, { iid, score: s.score });
-          }
+    for (let changed = true; changed; ) {
+      changed = false;
+      const bestApp = new Map<string, { iid: number; score: number }>();
+      const apps = new Map<string, number[]>();
+      for (const [iid, info] of itemInfo) {
+        for (const s of buildChain(keptScores(iid), Boolean(info.facts.token))
+          .named) {
+          const key = `${s.spec}|${wornSlot(s, currentPhase)}`;
+          apps.set(key, [...(apps.get(key) ?? []), iid]);
+          const cur = bestApp.get(key);
+          if (
+            !cur ||
+            s.score > cur.score ||
+            (s.score === cur.score && iid < cur.iid)
+          )
+            bestApp.set(key, { iid, score: s.score });
         }
-        for (const [spec, list] of apps) {
-          for (const iid of list) {
-            if (iid === bestApp.get(spec)?.iid) continue;
-            const gone = removed.get(iid) ?? new Set<string>();
-            if (!gone.has(spec)) {
-              gone.add(spec);
-              removed.set(iid, gone);
-              changed = true;
-            }
+      }
+      for (const [key, list] of apps) {
+        const spec = key.slice(0, key.indexOf("|"));
+        for (const iid of list) {
+          if (iid === bestApp.get(key)?.iid) continue;
+          const gone = removed.get(iid) ?? new Set<string>();
+          if (!gone.has(spec)) {
+            gone.add(spec);
+            removed.set(iid, gone);
+            changed = true;
           }
         }
       }
@@ -328,7 +317,9 @@ export function PrioView({ zone }: { zone: ZoneData }) {
       <p className="max-w-3xl text-xs text-muted-foreground">
         Auto-generated loot priority for Phase {zone.anniversaryPhase}: specs
         are ranked by summed need across P{zone.anniversaryPhase}–P5, where need
-        = usage + how far the item leads that spec&apos;s best alternative.
+        = usage + how far the item leads that spec&apos;s best alternative, and
+        each future phase weighs ×1.5 more than the last — items that stay
+        useful later are worth more now.
         Objective data only — adjust for tanks, professions and roster before
         use. Expand a row to see the evidence.
         {(() => {
