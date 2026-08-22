@@ -109,12 +109,31 @@ const PRIO_SLOT_ORDER = [
   "relic",
 ]
 
+function effectiveSlot(item: ItemFacts, items: Record<string, ItemFacts>): string {
+  // Tokens (slot "type-0") take the slot of the gear they redeem into.
+  return item.token && item.redeems?.length
+    ? (items[item.redeems[0]]?.slot ?? item.slot)
+    : item.slot
+}
+
 function slotRank(item: ItemFacts, items: Record<string, ItemFacts>): number {
-  // Tokens (slot "type-0") sort by the slot of the gear they redeem into.
-  const slot =
-    item.token && item.redeems?.length ? (items[item.redeems[0]]?.slot ?? item.slot) : item.slot
-  const idx = PRIO_SLOT_ORDER.indexOf(slot)
+  const idx = PRIO_SLOT_ORDER.indexOf(effectiveSlot(item, items))
   return idx === -1 ? PRIO_SLOT_ORDER.length : idx
+}
+
+/** Competition group for the one-prio-per-slot-per-spec rule. */
+function slotGroup(item: ItemFacts, items: Record<string, ItemFacts>): string {
+  const slot = effectiveSlot(item, items)
+  if (
+    slot === "two_hand" ||
+    slot === "main_hand" ||
+    slot === "one_hand" ||
+    slot === "off_hand_weapon"
+  )
+    return "weapon"
+  if (slot === "shield" || slot === "held_off_hand") return "offhand"
+  if (slot === "ranged" || slot === "thrown" || slot === "relic") return "ranged"
+  return slot
 }
 
 function csvEscape(v: string): string {
@@ -180,16 +199,37 @@ export function PrioView({ zone }: { zone: ZoneData }) {
       const raid = raidOfEncounter(Number(eid))
       byRaid.set(raid, [...(byRaid.get(raid) ?? []), [eid, name]])
     }
-    // Rows per encounter: every lootmap item with its chain.
-    const rows = new Map<string, { id: number; item: ItemFacts; scores: SpecScore[]; chain: Chain }[]>()
+    // Score every droppable item once.
+    const itemInfo = new Map<number, { facts: ItemFacts; scores: SpecScore[] }>()
     for (const [iidStr, facts] of Object.entries(zone.items)) {
       if (!facts.sources?.length) continue
       const iid = Number(iidStr)
-      const scores = scoreItem(iid, zones, zone.items)
-      const chain = buildChain(scores, Boolean(facts.token))
-      for (const eid of facts.sources) {
+      itemInfo.set(iid, { facts, scores: scoreItem(iid, zones, zone.items) })
+    }
+    // One prio per spec per slot across the whole sheet: each spec keeps only
+    // the item where its score is highest; it drops out of the others' chains.
+    const best = new Map<string, { iid: number; score: number }>()
+    for (const [iid, info] of itemInfo) {
+      const grp = slotGroup(info.facts, allItems)
+      for (const s of info.scores) {
+        const key = `${s.spec}|${grp}`
+        const cur = best.get(key)
+        if (!cur || s.score > cur.score || (s.score === cur.score && iid < cur.iid))
+          best.set(key, { iid, score: s.score })
+      }
+    }
+    // Rows per encounter with dedup-filtered chains.
+    const rows = new Map<string, { id: number; item: ItemFacts; scores: SpecScore[]; chain: Chain }[]>()
+    for (const [iid, info] of itemInfo) {
+      const grp = slotGroup(info.facts, allItems)
+      const kept = info.scores.filter((s) => best.get(`${s.spec}|${grp}`)?.iid === iid)
+      const chain = buildChain(kept, Boolean(info.facts.token))
+      for (const eid of info.facts.sources ?? []) {
         const key = String(eid)
-        rows.set(key, [...(rows.get(key) ?? []), { id: iid, item: facts, scores, chain }])
+        rows.set(key, [
+          ...(rows.get(key) ?? []),
+          { id: iid, item: info.facts, scores: kept, chain },
+        ])
       }
     }
     for (const list of rows.values())
