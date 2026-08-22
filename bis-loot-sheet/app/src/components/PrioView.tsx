@@ -84,6 +84,39 @@ function Evidence({
   )
 }
 
+/** Spec-page slot order (SLOT_ORDER), expanded to the raw item slot values. */
+const PRIO_SLOT_ORDER = [
+  "head",
+  "neck",
+  "shoulder",
+  "back",
+  "chest",
+  "wrist",
+  "hands",
+  "waist",
+  "legs",
+  "feet",
+  "finger",
+  "trinket",
+  "two_hand",
+  "main_hand",
+  "one_hand",
+  "off_hand_weapon",
+  "held_off_hand",
+  "shield",
+  "ranged",
+  "thrown",
+  "relic",
+]
+
+function slotRank(item: ItemFacts, items: Record<string, ItemFacts>): number {
+  // Tokens (slot "type-0") sort by the slot of the gear they redeem into.
+  const slot =
+    item.token && item.redeems?.length ? (items[item.redeems[0]]?.slot ?? item.slot) : item.slot
+  const idx = PRIO_SLOT_ORDER.indexOf(slot)
+  return idx === -1 ? PRIO_SLOT_ORDER.length : idx
+}
+
 function csvEscape(v: string): string {
   return /[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v
 }
@@ -158,7 +191,11 @@ export function PrioView({ zone }: { zone: ZoneData }) {
       }
     }
     for (const list of rows.values())
-      list.sort((a, b) => (b.chain.named[0]?.score ?? 0) - (a.chain.named[0]?.score ?? 0))
+      list.sort(
+        (a, b) =>
+          slotRank(a.item, allItems) - slotRank(b.item, allItems) ||
+          (b.chain.named[0]?.score ?? 0) - (a.chain.named[0]?.score ?? 0),
+      )
     return { byRaid, rows, allItems }
   }, [zone, p4, p5, futureReady])
 
