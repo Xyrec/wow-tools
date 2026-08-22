@@ -134,7 +134,9 @@ function raidCsv(
     for (const { item, chain } of encRows) {
       const cells: string[] = [csvEscape(item.name)]
       chain.named.forEach((s, i) => {
-        if (i > 0) cells.push(chain.seps[i - 1])
+        // A bare "=" cell imports into Sheets/Excel as a broken formula;
+        // ="=" is a formula that renders the literal equals sign.
+        if (i > 0) cells.push(chain.seps[i - 1] === "=" ? '"=""="""' : chain.seps[i - 1])
         cells.push(SPEC_SHORT[s.spec] ?? s.spec)
       })
       if (chain.named.length > 0) cells.push(">")
