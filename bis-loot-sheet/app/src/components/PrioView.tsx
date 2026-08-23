@@ -510,17 +510,6 @@ export function PrioView({
                                   </a>
                                   <ChainText chain={chain} splits={splits} />
                                 </div>
-                                {displaced.size > 0 && (
-                                  <p className="ml-9 mt-0.5 text-xs text-muted-foreground/70">
-                                    Also used by:{" "}
-                                    {[...displaced.entries()]
-                                      .map(
-                                        ([spec, held]) =>
-                                          `${SPEC_SHORT[spec] ?? spec} (prio held on ${computed.allItems[held]?.name ?? held})`,
-                                      )
-                                      .join(", ")}
-                                  </p>
-                                )}
                                 {open && (
                                   <Evidence
                                     scores={scores}
