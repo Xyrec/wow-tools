@@ -87,7 +87,10 @@ uv run bis-pipeline enrich <phase|zone>                         # + cmangos fact
   display time); some "Main Hand" tooltips (Dragonstrike, The Decapitator) are
   genuinely One-Hand in final-patch data - dual-wielding them is real; one
   Anniversary-era item id (185988) polluted a classic partition (dropped, with
-  warning, by enrich).
+  warning, by enrich); ring/trinket pct counts equipped COPIES per player, so a
+  farmable non-unique item can exceed 100% (Blessed Band of Karabor, BT trash,
+  112.7% for P5 resto shamans - 13k of 24k players wear two; verified real,
+  NOT a bug - Xyrec ruled the display stays).
 
 ### Web app (`app/` - Vite 8, React 19, Tailwind 4, shadcn/Base UI)
 
