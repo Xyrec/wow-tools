@@ -1,37 +1,39 @@
-import { specKeysByClass } from "@/lib/data"
-import { CLASS_COLORS, specName } from "@/lib/wow"
-import type { ZoneData } from "@/types"
-import { cn } from "@/lib/utils"
+import { Link } from "@tanstack/react-router";
+import { specKeysByClass } from "@/lib/data";
+import { CLASS_COLORS, slugify, specName } from "@/lib/wow";
+import type { ZoneData } from "@/types";
 
 interface Props {
-  zone: ZoneData
-  selected: string
-  onSelect: (specKey: string) => void
+  zone: ZoneData;
+  phase: string;
 }
 
-export function SpecSidebar({ zone, selected, onSelect }: Props) {
-  const byClass = specKeysByClass(zone)
+const linkClass =
+  "block w-full rounded px-2 py-1 text-left text-sm text-muted-foreground hover:bg-accent hover:text-foreground";
+const activeClass = "bg-accent font-semibold text-foreground";
+
+export function SpecSidebar({ zone, phase }: Props) {
+  const byClass = specKeysByClass(zone);
   return (
     <nav className="space-y-4">
       <div>
-        {(
-          [
-            ["", "Overview"],
-            ["::prio", "Loot priority"],
-          ] as const
-        ).map(([key, label]) => (
-          <button
-            key={key}
-            type="button"
-            onClick={() => onSelect(key)}
-            className={cn(
-              "w-full rounded px-2 py-1 text-left text-sm font-semibold text-muted-foreground hover:bg-accent hover:text-foreground",
-              selected === key && "bg-accent text-foreground",
-            )}
-          >
-            {label}
-          </button>
-        ))}
+        <Link
+          to="/$phase"
+          params={{ phase }}
+          activeOptions={{ exact: true }}
+          className={`${linkClass} font-semibold`}
+          activeProps={{ className: activeClass }}
+        >
+          Overview
+        </Link>
+        <Link
+          to="/$phase/prio"
+          params={{ phase }}
+          className={`${linkClass} font-semibold`}
+          activeProps={{ className: activeClass }}
+        >
+          Loot priority
+        </Link>
       </div>
       {[...byClass.entries()].map(([cls, specKeys]) => (
         <div key={cls}>
@@ -44,21 +46,19 @@ export function SpecSidebar({ zone, selected, onSelect }: Props) {
           <ul>
             {specKeys.map((key) => (
               <li key={key}>
-                <button
-                  type="button"
-                  onClick={() => onSelect(key)}
-                  className={cn(
-                    "w-full rounded px-2 py-1 text-left text-sm text-muted-foreground hover:bg-accent hover:text-foreground",
-                    key === selected && "bg-accent font-semibold text-foreground",
-                  )}
+                <Link
+                  to="/$phase/$spec"
+                  params={{ phase, spec: slugify(key) }}
+                  className={linkClass}
+                  activeProps={{ className: activeClass }}
                 >
                   {specName(key)}
-                </button>
+                </Link>
               </li>
             ))}
           </ul>
         </div>
       ))}
     </nav>
-  )
+  );
 }

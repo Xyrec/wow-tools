@@ -83,6 +83,15 @@ export function wowheadUrl(itemId: number): string {
   return `https://www.wowhead.com/tbc/item=${itemId}`
 }
 
+/** URL slug for spec keys and raid names ("Hunter-Beast Mastery" →
+ *  "hunter-beast-mastery", "Gruul's Lair" → "gruul-s-lair"). */
+export function slugify(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
+}
+
 export const ZONE_PHASES: Record<string, number> = {
   "phase-1": 1,
   "phase-2": 2,

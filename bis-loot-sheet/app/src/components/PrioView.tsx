@@ -11,7 +11,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { useZone } from "@/lib/data";
 import { exportPhaseXlsx } from "@/lib/xlsx";
 import {
   buildChain,
@@ -26,6 +25,7 @@ import {
   SPEC_SHORT,
   iconUrl,
   raidOfEncounter,
+  slugify,
   specClass,
   wowheadUrl,
 } from "@/lib/wow";
@@ -161,24 +161,30 @@ function wornSlot(s: SpecScore, currentPhase: number): string {
   return n?.slot ?? "?";
 }
 
-export function PrioView({ zone }: { zone: ZoneData }) {
-  // Future phases for persistence scoring; chunks load lazily.
-  const p4 = useZone("phase-4");
-  const p5 = useZone("phase-5");
-  const [expanded, setExpanded] = useState<Set<string>>(new Set());
-  const [raid, setRaid] = useState<string>("");
+interface PrioViewProps {
+  zone: ZoneData;
+  /** Later phases' zones (route loader provides them), for persistence scoring. */
+  futureZones: ZoneData[];
+  /** Selected raid as a URL slug (search param). */
+  raidSlug?: string;
+  onRaidChange: (slug: string) => void;
+}
 
-  const futureReady = p4 !== undefined && p5 !== undefined;
+export function PrioView({
+  zone,
+  futureZones,
+  raidSlug,
+  onRaidChange,
+}: PrioViewProps) {
+  const [expanded, setExpanded] = useState<Set<string>>(new Set());
+
   const computed = useMemo(() => {
-    if (!futureReady) return null;
-    const zones = [zone, p4, p5].filter((z): z is ZoneData => z !== undefined);
+    const zones = [zone, ...futureZones];
     // Item facts across all scored phases (current phase wins) so evidence
     // can name alternatives that only exist in later phases' tables.
-    const allItems: Record<string, ItemFacts> = {
-      ...(p5?.items ?? {}),
-      ...(p4?.items ?? {}),
-      ...zone.items,
-    };
+    const allItems: Record<string, ItemFacts> = {};
+    for (const z of [...futureZones].reverse()) Object.assign(allItems, z.items);
+    Object.assign(allItems, zone.items);
     const byRaid = new Map<string, [string, string][]>();
     for (const [eid, name] of Object.entries(zone.encounters)) {
       const raid = raidOfEncounter(Number(eid));
@@ -281,14 +287,7 @@ export function PrioView({ zone }: { zone: ZoneData }) {
           (b.chain.named[0]?.score ?? 0) - (a.chain.named[0]?.score ?? 0),
       );
     return { byRaid, rows, allItems };
-  }, [zone, p4, p5, futureReady]);
-
-  if (!computed)
-    return (
-      <p className="p-8 text-sm text-muted-foreground">
-        Loading future-phase data…
-      </p>
-    );
+  }, [zone, futureZones]);
 
   return (
     <div className="space-y-6">
@@ -315,7 +314,8 @@ export function PrioView({ zone }: { zone: ZoneData }) {
       </p>
       {(() => {
         const raidNames = [...computed.byRaid.keys()];
-        const active = computed.byRaid.has(raid) ? raid : (raidNames[0] ?? "");
+        const active =
+          raidNames.find((r) => slugify(r) === raidSlug) ?? raidNames[0] ?? "";
         const encounters = computed.byRaid.get(active) ?? [];
         return (
           <section key={active}>
@@ -323,7 +323,7 @@ export function PrioView({ zone }: { zone: ZoneData }) {
               <Select
                 items={raidNames.map((r) => ({ label: r, value: r }))}
                 value={active}
-                onValueChange={(v) => v && setRaid(v)}
+                onValueChange={(v) => v && onRaidChange(slugify(v))}
               >
                 <SelectTrigger className="w-64">
                   <SelectValue />
