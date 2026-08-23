@@ -6,7 +6,7 @@ import re
 import subprocess
 import sys
 
-# NOTE: custom_hide is an option string ("timed"/"custom"), not code — excluded.
+# NOTE: custom_hide is an option string ("timed"/"custom"), not code - excluded.
 CODE_KEYS = {"custom", "customDuration", "customName", "customIcon", "customTexture",
              "customStacks", "customVariables", "customText", "customTriggerLogic"}
 # fields whose value is a Lua EXPRESSION (table literal etc.), not statements

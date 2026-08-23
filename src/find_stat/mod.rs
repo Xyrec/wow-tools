@@ -404,7 +404,7 @@ fn find_stat_upgrades(
         if remaining_pct <= 0.0 {
             println!("  CRIT CAPPED!");
             if total_empty > 0 {
-                println!("\n  ({total_empty} empty gem sockets — cap reached without them)");
+                println!("\n  ({total_empty} empty gem sockets - cap reached without them)");
             }
             println!();
             return Ok(());
@@ -724,7 +724,7 @@ pub fn run(file: &str, stat: &str, target: f64, source: &str) -> Result<()> {
 
     let source_filter = if source == "all" { None } else { Some(source) };
 
-    // Load character — need item name resolver from wowsims
+    // Load character - need item name resolver from wowsims
     let items_path = root.join("sources").join("wowsims-tbc").join("items.json");
     let name_resolver: Option<HashMap<u32, String>> = std::fs::read_to_string(&items_path)
         .ok()

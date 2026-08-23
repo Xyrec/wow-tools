@@ -529,7 +529,7 @@ fn build_dungeon_item_lookup(root: &Path) -> HashMap<u32, String> {
                 } else if max_players <= 5 {
                     format!("Drop: {boss_name}{heroic_tag} ({inst_name})")
                 } else {
-                    format!("Drop: {boss_name} — {inst_name}")
+                    format!("Drop: {boss_name} - {inst_name}")
                 };
 
                 result.insert(item_id, source);
@@ -765,7 +765,7 @@ fn classify_item_sources(
                 let source = if max_players <= 5 {
                     format!("Drop: {creature_name} ({inst})")
                 } else {
-                    format!("Drop: {creature_name} — {inst}")
+                    format!("Drop: {creature_name} - {inst}")
                 };
                 sources.insert(item_id, source);
                 remaining.remove(&item_id);
@@ -806,7 +806,7 @@ fn classify_item_sources(
                         )
                         .unwrap_or_else(|_| format!("Faction {faction_id}"));
                     let rank_name = rep_rank_name(rank_id);
-                    sources.insert(item_id, format!("{faction_name} — {rank_name}"));
+                    sources.insert(item_id, format!("{faction_name} - {rank_name}"));
                     remaining.remove(&item_id);
                 }
             }
@@ -890,7 +890,7 @@ fn classify_item_sources(
                         tier_token_source(&vname_lower, inv_type)
                     })
                 {
-                    sources.insert(*item_id, format!("Drop: {_boss} — {_inst} (Tier Token)"));
+                    sources.insert(*item_id, format!("Drop: {_boss} - {_inst} (Tier Token)"));
                     remaining.remove(item_id);
                     break;
                 } else if TIER_TOKEN_SOURCES
@@ -964,7 +964,7 @@ fn classify_item_sources(
                         tier_token_source(&vendor_lower, inv_type)
                     })
                 {
-                    sources.insert(*item_id, format!("Drop: {boss} — {inst} (Tier Token)"));
+                    sources.insert(*item_id, format!("Drop: {boss} - {inst} (Tier Token)"));
                 } else {
                     sources.insert(*item_id, format!("Vendor: {vname}"));
                 }
@@ -1071,7 +1071,7 @@ fn classify_item_sources(
             }) {
                 for row in rows.flatten() {
                     if row.1 == 2 {
-                        sources.insert(row.0, "Auction House — BoE World Drop".to_string());
+                        sources.insert(row.0, "Auction House - BoE World Drop".to_string());
                         remaining.remove(&row.0);
                     }
                 }

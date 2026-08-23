@@ -2,7 +2,7 @@
 
 Monte Carlo simulator for the "tank TBC heroics for Primal Nethers + unwanted blues,
 craft and sell on the AH" gold strategy, per profession, on Thunderstrike-Horde
-(Anniversary, SSC/TK phase — Primal Nether is BoP).
+(Anniversary, SSC/TK phase - Primal Nether is BoP).
 
 ## Run
 
@@ -38,7 +38,7 @@ expire worthless (conservative).
   (regenerate via `lua extract_recipes.lua` there when recipes change)
 - TSM AppHelper `AppData.lua` + TSM `VendorSell.lua` from the game AddOns folder
   (refresh by letting TSMApplication sync)
-- `data/dungeons.json` — curated boss counts (cross-checked against AtlasLoot)
+- `data/dungeons.json` - curated boss counts (cross-checked against AtlasLoot)
 
 ## Known simplifications
 

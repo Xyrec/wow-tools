@@ -15,7 +15,7 @@ const MAX_ROWS = 8
 
 function PairItem({ id, items }: { id: number | null; items: Record<string, ItemFacts> }) {
   if (id === null)
-    return <span className="text-xs italic text-muted-foreground">— (two-handed)</span>
+    return <span className="text-xs italic text-muted-foreground">- (two-handed)</span>
   const item = items[id]
   if (!item) return null
   return (
@@ -44,7 +44,7 @@ interface Props {
 }
 
 /** Distribution of item COMBINATIONS for two-slot categories (rings,
- *  trinkets, weapons) — which exact pair top players actually run. */
+ *  trinkets, weapons) - which exact pair top players actually run. */
 export function PairCard({ label, entries, items, n }: Props) {
   const [tipOpen, setTipOpen] = useState(false)
   const visible = entries
@@ -83,7 +83,7 @@ export function PairCard({ label, entries, items, n }: Props) {
               <span className="sr-only">Sample size</span>
             </TooltipTrigger>
             <TooltipContent>
-              n = {n.toLocaleString()} — phase-pure player loadouts contributing to these combinations
+              n = {n.toLocaleString()} - phase-pure player loadouts contributing to these combinations
             </TooltipContent>
           </Tooltip>
         )}

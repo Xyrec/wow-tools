@@ -44,7 +44,7 @@ pub fn load_character(
         return normalize_wse(&data, item_name_resolver);
     }
 
-    // Classic format — may or may not have a "character" wrapper
+    // Classic format - may or may not have a "character" wrapper
     let char_data = if data.get("character").is_some() {
         &data["character"]
     } else {
@@ -125,7 +125,7 @@ fn normalize_wse(
         };
 
         // An empty slot (null entry or missing id) is recorded with item_id 0
-        // and name "(empty)" so the checker can recommend gear for it —
+        // and name "(empty)" so the checker can recommend gear for it -
         // anything in that slot's BiS list is an upgrade over nothing.
         if item_id == 0 {
             equipped.push(EquippedItem {

@@ -31,7 +31,7 @@ def main() -> None:
         "--region-only",
         action="store_true",
         help="fetch only the region-level windows (pages 1-20 per US/EU): no "
-        "page-20 probe, no server descent — completes the top-2000 band",
+        "page-20 probe, no server descent - completes the top-2000 band",
     )
     fetch.add_argument(
         "--max-pages",
@@ -67,7 +67,7 @@ def main() -> None:
     if args.command == "enrich":  # offline; needs no API client
         enrich_zone(args.zone)
         return
-    if args.command == "item-phases":  # wowhead, not WCL — no client needed
+    if args.command == "item-phases":  # wowhead, not WCL - no client needed
         from .item_phases import build_item_phases
 
         build_item_phases()

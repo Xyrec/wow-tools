@@ -31,7 +31,7 @@ class GroundTruth:
                     db2_names[row["ID"]] = {"name": row["Name_lang"]}
         if not ingame and not db2_names:
             raise FileNotFoundError(
-                f"no ground truth in {gt_dir} — run /xdump in-game + wa pull-groundtruth, "
+                f"no ground truth in {gt_dir} - run /xdump in-game + wa pull-groundtruth, "
                 f"and/or tools/migrate/fetch_db2.py")
         return cls(ingame, db2_names)
 

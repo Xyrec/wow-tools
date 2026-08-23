@@ -1,7 +1,7 @@
 """Per-item release phases from Wowhead's TBC Classic tooltip data.
 
 Wowhead's tooltip endpoint (the same one their on-site tooltips use) tags each
-item with its release phase for the classic progression — `dataEnv=5` is TBC
+item with its release phase for the classic progression - `dataEnv=5` is TBC
 Classic, whose phase numbering matches the Anniversary phases. This catches
 later-phase items that raid lootmaps can't see: badge-vendor gear, crafted
 additions, and anything else patch-gated (e.g. Carved Witch Doctor's Stick,
@@ -47,7 +47,7 @@ def build_observed_clearance() -> dict[str, int]:
     thousands during classic P2.5, pre-BT).
 
     Only phases whose partitions verifiably END before the next tier released
-    (phase 1 and phase 2 — confirmed by row dates and zero later-raid gear)
+    (phase 1 and phase 2 - confirmed by row dates and zero later-raid gear)
     grant clearance: an item worn >= CLEARANCE_MIN_COUNT times there is
     obtainable in that phase, whatever wowhead says.
     """
@@ -81,7 +81,7 @@ def load_clearance() -> dict[str, int] | None:
 
 
 def effective_phase(item_id: str, phases: dict, clearance: dict) -> int | None:
-    """min(wowhead tag, observed clearance) — reality wins over metadata."""
+    """min(wowhead tag, observed clearance) - reality wins over metadata."""
     tag = phases.get(item_id)
     seen = clearance.get(item_id)
     if tag is None:
@@ -125,10 +125,10 @@ def build_item_phases() -> dict[str, int | None]:
                 match = PHASE_RE.search(resp.json().get("tooltip", ""))
                 cache[str(item_id)] = int(match.group(1)) if match else None
             else:
-                log.warning("item %d: HTTP %d — left unknown", item_id, resp.status_code)
+                log.warning("item %d: HTTP %d - left unknown", item_id, resp.status_code)
                 cache[str(item_id)] = None
         except httpx.HTTPError as exc:
-            log.warning("item %d: %s — left unknown", item_id, exc)
+            log.warning("item %d: %s - left unknown", item_id, exc)
             cache[str(item_id)] = None
         if n % 250 == 0:
             log.info("item phases: %d/%d fetched", n, len(missing))

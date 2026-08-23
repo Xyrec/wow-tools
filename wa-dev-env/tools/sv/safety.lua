@@ -8,7 +8,7 @@ function M.assert_game_closed()
   local p = io.popen(require("machines").guard_cmd)
   local out = p:read("*a"); p:close()
   if out and out:match("%d") then
-    error("World of Warcraft is running — it overwrites SavedVariables on logout. "
+    error("World of Warcraft is running - it overwrites SavedVariables on logout. "
       .. "Close the game (or set CCWOW_ALLOW_RUNNING=1 if you know what you're doing).")
   end
 end

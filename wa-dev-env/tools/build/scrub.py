@@ -6,7 +6,7 @@ and the resulting build diff is reviewed before the one cleanup land.
 New-class imports scrub immediately (no parity target exists).
 
 Every rule returns (json_path, value, rule_name) tuples; apply order is
-deterministic. Rules only ever REMOVE unused data — anything load-bearing
+deterministic. Rules only ever REMOVE unused data - anything load-bearing
 (use_* flag actually set) is untouched.
 """
 import copy
@@ -120,7 +120,7 @@ def normalize_resource_alpha(aura, style):
 
 def normalize_tick_alpha(aura, style):
     """Tick-spark bars (custom stateupdate): bright whenever the spark is
-    active — its states only exist while the resource is moving."""
+    active - its states only exist while the resource is moving."""
     if " Tick" not in aura.get("id", "") or aura.get("regionType") != "aurabar":
         return False
     cond = copy.deepcopy(style["alpha_rule"]["condition"])

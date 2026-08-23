@@ -40,7 +40,7 @@ SLOT_BY_INDEX = {
     0: "head",
     1: "neck",
     2: "shoulder",
-    # 3 = shirt, cosmetic — skipped
+    # 3 = shirt, cosmetic - skipped
     4: "chest",
     5: "waist",
     6: "legs",
@@ -83,7 +83,7 @@ def _pair_keys(gear: list) -> list[tuple[str, tuple[int, int]]]:
 
 
 # Player bands. top10/mid50/all are parse-percentile cuts over the full
-# population; top2000 is source-based — the capped region windows (pages 1-20
+# population; top2000 is source-based - the capped region windows (pages 1-20
 # per US/EU region) exactly as WCL's site shows them, no server descent.
 BANDS = ("top10", "top2000", "mid50", "all")
 
@@ -105,7 +105,7 @@ def _server_count(region: str) -> int:
 def _iter_slice(region_dir: Path, region: str, max_pages: int):
     """Yield pages for one (spec, region) slice.
 
-    A SATURATED region slice is REPLACED by its per-server slices — but only
+    A SATURATED region slice is REPLACED by its per-server slices - but only
     when the server descent is complete (every server of the region has a
     `_done` marker). Mid-fetch, fall back to the capped region pages so a
     partial descent never undercounts relative to the basic set.
@@ -120,7 +120,7 @@ def _iter_slice(region_dir: Path, region: str, max_pages: int):
                 yield from _iter_pages(server_dir, MAX_PAGE)
             return
         log.warning(
-            "%s: saturated but server descent incomplete (%d/%d) — using capped region pages",
+            "%s: saturated but server descent incomplete (%d/%d) - using capped region pages",
             region_dir,
             len(done),
             _server_count(region),
@@ -142,7 +142,7 @@ def aggregate_zone(tag: str, max_pages: int) -> Path:
 
     # WCL's late-TBC partitions merge eras ("P3.5 & P4"), so rows logged after
     # the next tier released can wear next-phase gear. Any row containing a
-    # later-phase raid drop is discarded entirely — the distributions must
+    # later-phase raid drop is discarded entirely - the distributions must
     # only describe loadouts achievable within this phase (Xyrec directive).
     poison = later_phase_items(phase_tag)
 
@@ -153,7 +153,7 @@ def aggregate_zone(tag: str, max_pages: int) -> Path:
             zone_dir = RAW_DIR / f"zone-{zone['zone_id']}"
             for enc_dir in sorted(zone_dir.glob("enc-*")):
                 enc_id = int(enc_dir.name.split("-")[1])
-                # Pin to the configured partition — other partitions may exist
+                # Pin to the configured partition - other partitions may exist
                 # on disk (e.g. progression-era data kept for comparisons).
                 for spec_dir in sorted(
                     p for p in enc_dir.glob(f"p{zone['partition']}/[A-Z]*") if p.is_dir()
@@ -232,7 +232,7 @@ def aggregate_zone(tag: str, max_pages: int) -> Path:
                 counts[band].setdefault(spec_key, {}).setdefault(slot, Counter())[gear["id"]] += 1
             items.setdefault(gear["id"], {k: gear[k] for k in ("name", "quality", "icon")})
 
-    # Pass 3: the "top2000" band — region pages only (contiguous from page 1),
+    # Pass 3: the "top2000" band - region pages only (contiguous from page 1),
     # skipping the server-descent data entirely. Poison-filtered like the rest.
     for zone in phase_zones:
         zone_dir = RAW_DIR / f"zone-{zone['zone_id']}"

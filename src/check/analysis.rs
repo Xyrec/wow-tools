@@ -153,7 +153,7 @@ pub struct EquippedCategories {
     pub old_bis: Vec<EquippedDisplay>,
     pub old_option: Vec<EquippedDisplay>,
     pub not_listed: Vec<EquippedDisplay>,
-    /// Slots with nothing equipped — every BiS item is an upgrade.
+    /// Slots with nothing equipped - every BiS item is an upgrade.
     pub empty: Vec<EquippedDisplay>,
     pub all_upgrades: Vec<Upgrade>,
     pub no_upgrade: Vec<EquippedDisplay>,
@@ -520,7 +520,7 @@ pub fn build_dungeon_priority(
                 }
             }
         } else {
-            // No heroic entry — create one if there's rep synergy
+            // No heroic entry - create one if there's rep synergy
             let faction = dungeon_actions[&key].rep_faction.clone();
             if let Some(ref fac) = faction {
                 if rep_needs.contains_key(fac) {

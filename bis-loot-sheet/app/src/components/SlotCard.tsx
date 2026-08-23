@@ -79,7 +79,7 @@ export function SlotCard({ slot, label, entries, items, n }: Props) {
               <span className="sr-only">Sample size</span>
             </TooltipTrigger>
             <TooltipContent>
-              n = {n.toLocaleString()} — phase-pure observations in this slot (after filtering out players wearing later-phase gear)
+              n = {n.toLocaleString()} - phase-pure observations in this slot (after filtering out players wearing later-phase gear)
             </TooltipContent>
           </Tooltip>
         )}

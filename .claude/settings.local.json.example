@@ -1,5 +1,5 @@
 {
-  "_comment": "Local overrides — this file is gitignored. Copy settings.local.json.example to settings.local.json and customize.",
+  "_comment": "Local overrides - this file is gitignored. Copy settings.local.json.example to settings.local.json and customize.",
   "env": {
     "RUST_CHECK_MAX_ERRORS": "30",
     "RUST_CHECK_MAX_WARNINGS": "10",

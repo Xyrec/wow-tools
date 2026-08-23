@@ -1,12 +1,12 @@
 """Bake a group scale factor into pixel values (Xyrec groups run at scale 1).
 
 The packs were authored at root-group scale 1.5, which renders 1px borders at
-1.5 physical pixels — they flicker between 1 and 2 depending on screen
+1.5 physical pixels - they flicker between 1 and 2 depending on screen
 position. The fix: multiply every pixel-valued field by the factor and snap
-to EVEN integers (odd exact results get +1 away from zero — Xyrec's rule, so
+to EVEN integers (odd exact results get +1 away from zero - Xyrec's rule, so
 center-anchored frames keep integer edges), then run the group at scale 1.
 
-Border fields are deliberately EXEMPT: border_size/border_offset stay 1 —
+Border fields are deliberately EXEMPT: border_size/border_offset stay 1 -
 crisp ElvUI-style hairlines are the point of the whole exercise. Ratios,
 counts, times, ids and colors are not pixel values and are never touched.
 """

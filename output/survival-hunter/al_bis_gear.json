@@ -44,13 +44,13 @@
         {
           "rank": "Optional",
           "name": "Veteran's Musket",
-          "source": "Honor Hold — Exalted",
+          "source": "Honor Hold - Exalted",
           "item_id": 29151
         },
         {
           "rank": "Optional",
           "name": "Marksman's Bow",
-          "source": "Thrallmar — Exalted",
+          "source": "Thrallmar - Exalted",
           "item_id": 29152
         },
         {
@@ -108,7 +108,7 @@
         {
           "rank": "Optional",
           "name": "Void-Talon",
-          "source": "Auction House — BoE World Drop",
+          "source": "Auction House - BoE World Drop",
           "item_id": 29372
         },
         {
@@ -270,7 +270,7 @@
         {
           "rank": "Optional",
           "name": "Guile of Khoraazi",
-          "source": "The Consortium — Exalted",
+          "source": "The Consortium - Exalted",
           "item_id": 29121
         },
         {
@@ -446,7 +446,7 @@
         {
           "rank": "Optional",
           "name": "Skulker's Greaves",
-          "source": "Drop: Netherspite — Karazhan",
+          "source": "Drop: Netherspite - Karazhan",
           "item_id": 28741
         },
         {
@@ -460,13 +460,13 @@
         {
           "rank": "BiS",
           "name": "Edgewalker Longboots",
-          "source": "Drop: Moroes — Karazhan",
+          "source": "Drop: Moroes - Karazhan",
           "item_id": 28545
         },
         {
           "rank": "Optional",
           "name": "Fiend Slayer Boots",
-          "source": "Drop: Chess Event — Karazhan",
+          "source": "Drop: Chess Event - Karazhan",
           "item_id": 28746
         },
         {
@@ -478,7 +478,7 @@
         {
           "rank": "Optional",
           "name": "Rapscallion Boots",
-          "source": "Drop: Shade of Aran — Karazhan",
+          "source": "Drop: Shade of Aran - Karazhan",
           "item_id": 28669
         }
       ],
@@ -492,7 +492,7 @@
         {
           "rank": "Optional",
           "name": "Legacy",
-          "source": "Drop: The Wizard of Oz — Karazhan",
+          "source": "Drop: The Wizard of Oz - Karazhan",
           "item_id": 28587
         },
         {
@@ -510,7 +510,7 @@
         {
           "rank": "Optional",
           "name": "Emerald Ripper",
-          "source": "Drop: Moroes — Karazhan",
+          "source": "Drop: Moroes - Karazhan",
           "item_id": 28524
         }
       ],
@@ -524,7 +524,7 @@
         {
           "rank": "Optional",
           "name": "Sunfury Bow of the Phoenix",
-          "source": "Drop: Prince Malchezaar — Karazhan",
+          "source": "Drop: Prince Malchezaar - Karazhan",
           "item_id": 28772
         },
         {
@@ -536,13 +536,13 @@
         {
           "rank": "Optional",
           "name": "Wolfslayer Sniper Rifle",
-          "source": "Drop: The Big Bad Wolf — Karazhan",
+          "source": "Drop: The Big Bad Wolf - Karazhan",
           "item_id": 28581
         },
         {
           "rank": "Optional",
           "name": "Steelhawk Crossbow",
-          "source": "Drop: Attumen the Huntsman — Karazhan",
+          "source": "Drop: Attumen the Huntsman - Karazhan",
           "item_id": 28504
         }
       ],
@@ -564,13 +564,13 @@
         {
           "rank": "Optional",
           "name": "Worgen Claw Necklace",
-          "source": "Drop: Attumen the Huntsman — Karazhan",
+          "source": "Drop: Attumen the Huntsman - Karazhan",
           "item_id": 28509
         },
         {
           "rank": "Optional",
           "name": "Saberclaw Talisman",
-          "source": "Drop: Shade of Aran — Karazhan",
+          "source": "Drop: Shade of Aran - Karazhan",
           "item_id": 28674
         }
       ],
@@ -598,7 +598,7 @@
         {
           "rank": "Optional",
           "name": "Garona's Signet Ring",
-          "source": "Drop: The Curator — Karazhan",
+          "source": "Drop: The Curator - Karazhan",
           "item_id": 28649
         },
         {
@@ -610,7 +610,7 @@
         {
           "rank": "Optional",
           "name": "Ring of a Thousand Marks",
-          "source": "Drop: Prince Malchezaar — Karazhan",
+          "source": "Drop: Prince Malchezaar - Karazhan",
           "item_id": 28757
         }
       ],
@@ -626,7 +626,7 @@
         {
           "rank": "BiS",
           "name": "Drape of the Dark Reavers",
-          "source": "Drop: Shade of Aran — Karazhan",
+          "source": "Drop: Shade of Aran - Karazhan",
           "item_id": 28672
         },
         {
@@ -638,7 +638,7 @@
         {
           "rank": "Optional",
           "name": "Cloak of the Pit Stalker",
-          "source": "Drop: Magtheridon — Magtheridon's Lair",
+          "source": "Drop: Magtheridon - Magtheridon's Lair",
           "item_id": 28777
         }
       ],
@@ -652,13 +652,13 @@
         {
           "rank": "Optional",
           "name": "Gloves of Dexterous Manipulation",
-          "source": "Drop: Attumen the Huntsman — Karazhan",
+          "source": "Drop: Attumen the Huntsman - Karazhan",
           "item_id": 28506
         },
         {
           "rank": "Optional",
           "name": "Gauntlets of the Dragonslayer",
-          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
+          "source": "Drop: Gruul the Dragonkiller - Gruul's Lair",
           "item_id": 28827
         },
         {
@@ -672,7 +672,7 @@
         {
           "rank": "BiS",
           "name": "Blade of the Unrequited",
-          "source": "Drop: Romulo and Julianne — Karazhan",
+          "source": "Drop: Romulo and Julianne - Karazhan",
           "item_id": 28572
         }
       ],
@@ -686,7 +686,7 @@
         {
           "rank": "Optional",
           "name": "Demon Stalker Greathelm",
-          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
+          "source": "Drop: Prince Malchezaar - Karazhan (Tier Token)",
           "item_id": 29081
         }
       ],
@@ -694,7 +694,7 @@
         {
           "rank": "BiS",
           "name": "Girdle of Treachery",
-          "source": "Drop: Chess Event — Karazhan",
+          "source": "Drop: Chess Event - Karazhan",
           "item_id": 28750
         },
         {
@@ -712,13 +712,13 @@
         {
           "rank": "Optional",
           "name": "Girdle of the Prowler",
-          "source": "Drop: Terestian Illhoof — Karazhan",
+          "source": "Drop: Terestian Illhoof - Karazhan",
           "item_id": 28656
         },
         {
           "rank": "Optional",
           "name": "Gronn-Stitched Girdle",
-          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
+          "source": "Drop: Gruul the Dragonkiller - Gruul's Lair",
           "item_id": 28828
         }
       ],
@@ -726,7 +726,7 @@
         {
           "rank": "BiS",
           "name": "Dragonspine Trophy",
-          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
+          "source": "Drop: Gruul the Dragonkiller - Gruul's Lair",
           "item_id": 28830
         },
         {
@@ -748,7 +748,7 @@
         {
           "rank": "BiS",
           "name": "Rift Stalker Leggings",
-          "source": "Drop: Fathom-Lord Karathress — Serpentshrine Cavern (Tier Token)",
+          "source": "Drop: Fathom-Lord Karathress - Serpentshrine Cavern (Tier Token)",
           "item_id": 30142
         },
         {
@@ -760,7 +760,7 @@
         {
           "rank": "Optional",
           "name": "Void Reaver Greaves",
-          "source": "Drop: Void Reaver — Tempest Keep",
+          "source": "Drop: Void Reaver - Tempest Keep",
           "item_id": 29985
         }
       ],
@@ -768,13 +768,13 @@
         {
           "rank": "BiS",
           "name": "Vambraces of Ending",
-          "source": "Drop: High Astromancer Solarian — Tempest Keep",
+          "source": "Drop: High Astromancer Solarian - Tempest Keep",
           "item_id": 29966
         },
         {
           "rank": "Optional",
           "name": "Bands of the Celestial Archer",
-          "source": "Drop: Trash — Tempest Keep",
+          "source": "Drop: Trash - Tempest Keep",
           "item_id": 30026
         }
       ],
@@ -782,13 +782,13 @@
         {
           "rank": "BiS",
           "name": "Netherbane",
-          "source": "Drop: Al'ar — Tempest Keep",
+          "source": "Drop: Al'ar - Tempest Keep",
           "item_id": 29924
         },
         {
           "rank": "Optional",
           "name": "Twinblade of the Phoenix",
-          "source": "Drop: Kael'thas Sunstrider — Tempest Keep",
+          "source": "Drop: Kael'thas Sunstrider - Tempest Keep",
           "item_id": 29993
         },
         {
@@ -820,7 +820,7 @@
         {
           "rank": "Optional",
           "name": "Belt of One-Hundred Deaths",
-          "source": "Drop: Lady Vashj — Serpentshrine Cavern",
+          "source": "Drop: Lady Vashj - Serpentshrine Cavern",
           "item_id": 30106
         },
         {
@@ -834,7 +834,7 @@
         {
           "rank": "BiS",
           "name": "Rift Stalker Mantle",
-          "source": "Drop: Void Reaver — Tempest Keep (Tier Token)",
+          "source": "Drop: Void Reaver - Tempest Keep (Tier Token)",
           "item_id": 30143
         },
         {
@@ -846,13 +846,13 @@
         {
           "rank": "Optional",
           "name": "Shoulderpads of the Stranger",
-          "source": "Drop: Hydross the Unstable — Serpentshrine Cavern",
+          "source": "Drop: Hydross the Unstable - Serpentshrine Cavern",
           "item_id": 30055
         },
         {
           "rank": "Optional",
           "name": "Mantle of the Tireless Tracker",
-          "source": "Drop: Morogrim Tidewalker — Serpentshrine Cavern",
+          "source": "Drop: Morogrim Tidewalker - Serpentshrine Cavern",
           "item_id": 30085
         }
       ],
@@ -880,7 +880,7 @@
         {
           "rank": "BiS",
           "name": "Dragonspine Trophy",
-          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
+          "source": "Drop: Gruul the Dragonkiller - Gruul's Lair",
           "item_id": 28830
         },
         {
@@ -892,7 +892,7 @@
         {
           "rank": "Optional",
           "name": "Tsunami Talisman",
-          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern",
+          "source": "Drop: Leotheras the Blind - Serpentshrine Cavern",
           "item_id": 30627
         }
       ],
@@ -900,7 +900,7 @@
         {
           "rank": "BiS",
           "name": "Rift Stalker Hauberk",
-          "source": "Drop: Kael'thas Sunstrider — Tempest Keep (Tier Token)",
+          "source": "Drop: Kael'thas Sunstrider - Tempest Keep (Tier Token)",
           "item_id": 30139
         },
         {
@@ -914,13 +914,13 @@
         {
           "rank": "BiS",
           "name": "Cobra-Lash Boots",
-          "source": "Drop: Lady Vashj — Serpentshrine Cavern",
+          "source": "Drop: Lady Vashj - Serpentshrine Cavern",
           "item_id": 30104
         },
         {
           "rank": "Optional",
           "name": "Star-Strider Boots",
-          "source": "Drop: High Astromancer Solarian — Tempest Keep",
+          "source": "Drop: High Astromancer Solarian - Tempest Keep",
           "item_id": 29951
         }
       ],
@@ -928,7 +928,7 @@
         {
           "rank": "BiS",
           "name": "Rift Stalker Helm",
-          "source": "Drop: Lady Vashj — Serpentshrine Cavern (Tier Token)",
+          "source": "Drop: Lady Vashj - Serpentshrine Cavern (Tier Token)",
           "item_id": 30141
         },
         {
@@ -954,7 +954,7 @@
         {
           "rank": "Optional",
           "name": "Ring of Lethality",
-          "source": "Drop: Hydross the Unstable — Serpentshrine Cavern",
+          "source": "Drop: Hydross the Unstable - Serpentshrine Cavern",
           "item_id": 30052
         },
         {
@@ -968,13 +968,13 @@
         {
           "rank": "BiS",
           "name": "Serpent Spine Longbow",
-          "source": "Drop: Lady Vashj — Serpentshrine Cavern",
+          "source": "Drop: Lady Vashj - Serpentshrine Cavern",
           "item_id": 30105
         },
         {
           "rank": "Optional",
           "name": "Arcanite Steam-Pistol",
-          "source": "Drop: Al'ar — Tempest Keep",
+          "source": "Drop: Al'ar - Tempest Keep",
           "item_id": 29949
         },
         {
@@ -986,7 +986,7 @@
         {
           "rank": "Optional",
           "name": "Sunfury Bow of the Phoenix",
-          "source": "Drop: Prince Malchezaar — Karazhan",
+          "source": "Drop: Prince Malchezaar - Karazhan",
           "item_id": 28772
         }
       ],
@@ -994,13 +994,13 @@
         {
           "rank": "BiS",
           "name": "Claw of the Phoenix",
-          "source": "Drop: Al'ar — Tempest Keep",
+          "source": "Drop: Al'ar - Tempest Keep",
           "item_id": 29948
         },
         {
           "rank": "Optional",
           "name": "Blade of the Unrequited",
-          "source": "Drop: Romulo and Julianne — Karazhan",
+          "source": "Drop: Romulo and Julianne - Karazhan",
           "item_id": 28572
         }
       ],
@@ -1008,7 +1008,7 @@
         {
           "rank": "BiS",
           "name": "Gloves of Dexterous Manipulation",
-          "source": "Drop: Attumen the Huntsman — Karazhan",
+          "source": "Drop: Attumen the Huntsman - Karazhan",
           "item_id": 28506
         },
         {
@@ -1022,13 +1022,13 @@
         {
           "rank": "BiS",
           "name": "Thalassian Wildercloak",
-          "source": "Drop: Kael'thas Sunstrider — Tempest Keep",
+          "source": "Drop: Kael'thas Sunstrider - Tempest Keep",
           "item_id": 29994
         },
         {
           "rank": "Optional",
           "name": "Drape of the Dark Reavers",
-          "source": "Drop: Shade of Aran — Karazhan",
+          "source": "Drop: Shade of Aran - Karazhan",
           "item_id": 28672
         }
       ]

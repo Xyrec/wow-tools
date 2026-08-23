@@ -3,7 +3,7 @@
 its logic verbatim, our old Swing Timer [MH]'s skin & exact slot.
 
 The wago MH aura already tracks BOTH hands (t1 main / t3 off swing) and the
-OHTick sync spark has its own independent swing triggers — wago's separate
+OHTick sync spark has its own independent swing triggers - wago's separate
 OHBar readout is redundant and is dropped entirely (2026-07-22, user call).
 
 Keeps from wago: all triggers, sync/WF/imbue conditions, config + Learning Mode
@@ -11,7 +11,7 @@ Keeps from wago: all triggers, sync/WF/imbue conditions, config + Learning Mode
 the old bar's slot above the Mana Bar, Clean texture, blue palette, 1px borders,
 protruding white leading spark, global-alpha dimming, load, versions. Wago's own
 out-of-combat styling condition is replaced by our alpha pattern. Text overlays
-are hidden (not removed — sub.N condition indices must stay valid).
+are hidden (not removed - sub.N condition indices must stay valid).
 """
 import json
 import pathlib
@@ -92,7 +92,7 @@ def main() -> int:
         for s in a.get("subRegions", []):
             if s.get("type") == "subborder" and old_border:
                 # wago ships border_visible=false/edge "None"; adopt the old
-                # bar's 1px black border wholesale (update in place — sub.N
+                # bar's 1px black border wholesale (update in place - sub.N
                 # condition indices must stay valid)
                 for k in ("border_color", "border_edge", "border_offset",
                           "border_size", "border_visible"):

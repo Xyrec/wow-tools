@@ -21,7 +21,7 @@ assert(eq, "SV round-trip mismatch at " .. tostring(path))
 -- Scoped to Xyrec trees: decode coerces digit object keys to numbers, which
 -- is deliberately lossy for foreign auras that use digit STRING keys (e.g.
 -- Fojji's itemTypeName.multi["1030"]). Harmless in WA (multiselect keys only
--- feed string.format) and foreign auras never travel our JSON path — full-SV
+-- feed string.format) and foreign auras never travel our JSON path - full-SV
 -- writes go through the Lua serializer, which preserves them byte-exact.
 local d1 = {}
 local function claim(id)

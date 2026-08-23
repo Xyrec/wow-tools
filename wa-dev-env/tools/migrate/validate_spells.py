@@ -9,7 +9,7 @@ from groundtruth import GroundTruth
 GT_DIR = pathlib.Path(__file__).resolve().parents[2] / "data" / "ground-truth"
 
 # trigger keys whose value is a spell NAME / a spell ID / a list of either.
-# combatlog triggers store spellId/spellName as LISTS; others as scalars —
+# combatlog triggers store spellId/spellName as LISTS; others as scalars -
 # scalar keys therefore also accept list values in _walk.
 NAME_KEYS = {"spellName", "realSpellName", "itemName"}
 NAME_LIST_KEYS = {"auranames"}
@@ -89,7 +89,7 @@ def main() -> int:
         mark = "OK " if f["status"] == "ok" else "?? "
         if f["status"] != "ok":
             bad += 1
-        print(f'{mark} {f["aura"]}: {f["kind"]}={f["value"]!r} at {f["path"]} — {f["note"]}')
+        print(f'{mark} {f["aura"]}: {f["kind"]}={f["value"]!r} at {f["path"]} - {f["note"]}')
     print(f'{len(findings)} refs, {bad} unknown')
     return 1 if bad else 0
 

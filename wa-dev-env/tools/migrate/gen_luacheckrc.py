@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Generate .luacheckrc-wow: union of Blizzard_APIDocumentationGenerated names
-(classic_anniversary — client-exact) and WeakAuras2's proven globals list,
+(classic_anniversary - client-exact) and WeakAuras2's proven globals list,
 plus WA custom-code injected globals."""
 import pathlib
 import re

@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")({
   },
   component: () => (
     <p className="p-8 text-sm text-muted-foreground">
-      No data generated yet — run the pipeline.
+      No data generated yet - run the pipeline.
     </p>
   ),
 });

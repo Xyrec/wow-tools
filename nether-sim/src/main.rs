@@ -44,7 +44,7 @@ struct Args {
     #[arg(long, default_value_t = 2.0)]
     headroom: f64,
     /// Badges per nether at G'eras (0 = vendor not available this phase, the
-    /// current SSC/TK situation — badges then only buy gear, not nethers)
+    /// current SSC/TK situation - badges then only buy gear, not nethers)
     #[arg(long, default_value_t = 0)]
     badges_per_nether: u32,
     #[arg(long, default_value_t = 42)]

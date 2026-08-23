@@ -1,6 +1,6 @@
 """Full-group parity: built priest == live snapshot, byte-exact modulo uid.
 
-Same contract as the shaman test — the snapshot re-pins after every
+Same contract as the shaman test - the snapshot re-pins after every
 QA land + extract cycle.
 """
 import json

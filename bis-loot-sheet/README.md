@@ -4,7 +4,7 @@ Item distribution site + data pipeline: what the top ~2,000 ranked players per
 spec actually wore in each TBC Anniversary phase, from Warcraft Logs data of the
 2021–22 TBC Classic run.
 
-**Read `docs/PLAN.md` first** — it is the authoritative current-state document.
+**Read `docs/PLAN.md` first** - it is the authoritative current-state document.
 
 Live: https://bis-loot-sheet.itsgonnabealongnight.workers.dev
 (auto-deploys on push to `main` via Cloudflare Workers Builds)

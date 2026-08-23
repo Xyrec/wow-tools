@@ -4,7 +4,7 @@
 Proper migration, replacing the old ad-hoc tool's output:
 - rename all ids (Sabimaru/SoD -> Xyrec) so the group lands alongside the old one
 - drop SoD-only auras and subtrees (runes, tank-role, proc textures, totem section,
-  maelstrom) — subtree drops mirror the user's established preferences
+  maelstrom) - subtree drops mirror the user's established preferences
 - re-point SoD spell ids to their TBC equivalents (trigger fields AND load gates)
 - strip SoD-only load gates that are vacuous in TBC (not_spellknown on rune ids)
 - strip uid (regenerated on land) and wagoID (this is a personal fork)
@@ -76,7 +76,7 @@ def tweak_mana_bar_alpha(aura, report):
 # all fire UNIT_POWER_FREQUENT and reset the classic tick animation. Those are
 # attributable SPELL_(PERIODIC_)ENERGIZE combat-log events; the global 2s
 # spirit/mp5 regen tick is a silent gain. Track energize amounts per instant
-# and consume them against gains — only the unexplained remainder is the tick.
+# and consume them against gains - only the unexplained remainder is the tick.
 MANA_TICK_EVENTS = ("UNIT_SPELLCAST_SUCCEEDED:player UNIT_POWER_FREQUENT:player"
                     " CLEU:SPELL_ENERGIZE CLEU:SPELL_PERIODIC_ENERGIZE")
 MANA_TICK_CUSTOM = """function(a, e, ...)
@@ -191,7 +191,7 @@ def repoint_tree(node):
 
 def clean_item_trigger_residue(aura, report):
     """Item-type triggers (Weapon Enchant / equipment cooldowns) ignore spell
-    fields entirely — strip the stale ones so future analysis stays clean."""
+    fields entirely - strip the stale ones so future analysis stays clean."""
     trigs = aura.get("triggers")
     if not isinstance(trigs, dict):
         return
@@ -204,12 +204,12 @@ def clean_item_trigger_residue(aura, report):
                 for f in removed:
                     tr.pop(f)
                 if removed:
-                    report.append(f'{aura["id"]}: t{key} item trigger — stripped residue {removed}')
+                    report.append(f'{aura["id"]}: t{key} item trigger - stripped residue {removed}')
 
 
 def fix_swing_timer_proc(aura, report):
     """t3 tracked SoD Power Surge (415105) by exact id to color the bar red
-    during the haste proc. TBC equivalent proc is Flurry — track by name
+    during the haste proc. TBC equivalent proc is Flurry - track by name
     (rank-agnostic); the barColor condition on trigger 3 keeps working."""
     if not aura["id"].endswith("Swing Timer [MH]"):
         return
@@ -233,12 +233,12 @@ def fix_load(aura, report):
     sk = load.get("spellknown")
     if load.get("use_spellknown") and isinstance(sk, (int, float)) and sk >= 400000:
         # would never load in TBC; REPOINT should have caught mapped ones
-        report.append(f'{aura["id"]}: WARNING spellknown={int(sk)} still SoD — aura will never load')
+        report.append(f'{aura["id"]}: WARNING spellknown={int(sk)} still SoD - aura will never load')
 
 
 LIVE_SRC = REPO / "data" / "auras" / "mine" / "sabimaru-live.json"
 
-# fields that carry the properly-migrated logic — NEVER ported from live
+# fields that carry the properly-migrated logic - NEVER ported from live
 LOGIC_KEEP = {"id", "uid", "parent", "controlledChildren", "wagoID", "triggers", "load"}
 
 # the user's group-wide "dim to 0.3 unless (attackable target OR in combat)" tweak
@@ -272,7 +272,7 @@ def port_live_tweaks(aura, old_id, live_by_id, report):
         conds = aura.setdefault("conditions", [])
         if not any("attackabletarget" in json.dumps(c) for c in conds):
             conds.append(json.loads(json.dumps(GLOBAL_ALPHA_CONDITION)))
-        report.append(f'{aura["id"]}: no live counterpart — applied group alpha pattern')
+        report.append(f'{aura["id"]}: no live counterpart - applied group alpha pattern')
         return
     ported = 0
     for key, value in live.items():
@@ -285,7 +285,7 @@ def port_live_tweaks(aura, old_id, live_by_id, report):
         if trigger_keys(aura) == trigger_keys(live):
             aura["conditions"] = json.loads(json.dumps(live["conditions"]))
         else:
-            report.append(f'{aura["id"]}: trigger layout differs from live — conditions NOT ported, review')
+            report.append(f'{aura["id"]}: trigger layout differs from live - conditions NOT ported, review')
     if ported:
         report.append(f'{aura["id"]}: ported {ported} presentation fields from live')
 
@@ -365,7 +365,7 @@ def main() -> int:
             tweak(aura, report)
         if aura.get("parent"):
             if aura["parent"] in drop:
-                raise SystemExit(f"{old_id}: parent {aura['parent']} was dropped — inconsistent DROP set")
+                raise SystemExit(f"{old_id}: parent {aura['parent']} was dropped - inconsistent DROP set")
             aura["parent"] = rename(aura["parent"])
         if aura.get("controlledChildren") is not None:
             aura["controlledChildren"] = [rename(c) for c in aura["controlledChildren"] if c not in drop]

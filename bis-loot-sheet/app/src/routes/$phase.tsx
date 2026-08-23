@@ -59,13 +59,13 @@ function PhaseLayout() {
         <header className="mb-4 flex flex-wrap items-center justify-between gap-3">
           <div>
             <h1 className="text-xl font-bold">
-              TBC Item Distribution — from Warcraft Logs
+              TBC Item Distribution - from Warcraft Logs
             </h1>
             <p className="max-w-2xl text-xs text-muted-foreground">
               An item distribution list built from Warcraft Logs: what the top
               ~2,000 ranked players of each spec actually wore, and how usage
               splits between items. The higher an item&apos;s equipped&nbsp;%,
-              the more likely it is <em>the</em> BiS for that slot — curated BiS
+              the more likely it is <em>the</em> BiS for that slot - curated BiS
               lists may differ.
             </p>
           </div>

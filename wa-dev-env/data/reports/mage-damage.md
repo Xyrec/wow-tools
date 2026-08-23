@@ -106,7 +106,7 @@
 
 ## Mage - Mana Tick (aurabar)
   load: class=MAGE
-  t1 [custom/Health]: custom code trigger — lint via extract_custom_code
+  t1 [custom/Health]: custom code trigger - lint via extract_custom_code
 
 ## Mage - Cooldowns (dynamicgroup)
 

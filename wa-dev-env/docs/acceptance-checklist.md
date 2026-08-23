@@ -1,4 +1,4 @@
-# End-to-end acceptance (requires the game — user-driven)
+# End-to-end acceptance (requires the game - user-driven)
 
 1. Codec vs the real importer:
    - `./tools/wa extract "Xyrec Shaman - Stormstrike" -o tmp/ss.json`
@@ -15,13 +15,13 @@
    - `./tools/wa pull-groundtruth`
    - `python3 -c "import json;d=json.load(open('data/ground-truth/spells.json'));print(len(d))"`
      MUST be > 10000.
-   - Spot-check the Ice Lance lesson: search spells.json for "Ice Lance" — record the
+   - Spot-check the Ice Lance lesson: search spells.json for "Ice Lance" - record the
      actual IDs in data/ground-truth/README.md.
-4. Round-trip write safety (uses the live file — game CLOSED):
+4. Round-trip write safety (uses the live file - game CLOSED):
    - `./tools/wa backup`
    - `./tools/wa extract "Xyrec Shaman - Stormstrike" -o tmp/ss.json`
    - `./tools/wa land tmp/ss.json --parent "Shaman - Core Abilities" --delete`
      (lands the identical aura back onto itself)
-   - `python3 tools/migrate/audit.py` — issue count MUST NOT increase vs tmp/audit-baseline.txt
+   - `python3 tools/migrate/audit.py` - issue count MUST NOT increase vs tmp/audit-baseline.txt
    - Launch game: aura renders as before, BugSack clean.
 5. `./tests/run.sh` passes end to end.

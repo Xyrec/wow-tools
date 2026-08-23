@@ -10,11 +10,11 @@ export const PRIO_CAP = 4
 export const PRIO_BREAK_RATIO = 0.5
 export const PRIO_TIE_REL = 0.08
 /** Future-phase weight: each phase past the current one multiplies that
- *  phase's need by this factor (P3 sheet: P3 ×1, P4 ×1.5, P5 ×2.25) —
+ *  phase's need by this factor (P3 sheet: P3 ×1, P4 ×1.5, P5 ×2.25) -
  *  items that stay useful in future phases are the sheet's whole point. */
 export const PRIO_PHASE_MULT = 1.5
 /** Specs sampled below this fraction of the phase's median sample size are
- *  excluded from that phase — too few players for the distribution to mean
+ *  excluded from that phase - too few players for the distribution to mean
  *  anything (P3: MM Hunter, Frost, Assa, Sub, Demo all fall under 1/3). */
 export const PRIO_MIN_SAMPLE_RATIO = 1 / 3
 

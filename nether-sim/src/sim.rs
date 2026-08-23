@@ -83,7 +83,7 @@ pub fn run_iteration(
         for (i, c) in crafts.iter().enumerate() {
             let cap = c.region_sold_per_day * p.share;
             if cap <= 0.0 {
-                continue; // market never absorbs it — don't craft
+                continue; // market never absorbs it - don't craft
             }
             // ceil: even slow items may keep one unit listed
             let room = ((cap * p.headroom).ceil() as i64 - inv[i] as i64).max(0) as u32;

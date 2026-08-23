@@ -68,7 +68,7 @@
 
 ## Shaman - Mana Tick (aurabar)
   load: class=SHAMAN
-  t1 [custom/Health]: custom code trigger — lint via extract_custom_code
+  t1 [custom/Health]: custom code trigger - lint via extract_custom_code
 
 ## Shaman - Cooldowns (dynamicgroup)
 

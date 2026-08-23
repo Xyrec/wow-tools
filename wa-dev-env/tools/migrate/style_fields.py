@@ -14,14 +14,14 @@ LOGIC_FIELDS = [
     "iconSource", "displayIcon", "icon",  # which icon to show follows the trigger
     "adjustedMax", "adjustedMin", "useAdjustededMax", "useAdjustededMin",
     # 2026-07 triage of previously-unclassified corpus fields:
-    "customText",        # Lua code (a %c closure) — behavior, not looks
+    "customText",        # Lua code (a %c closure) - behavior, not looks
     "customTextUpdate",  # update cadence of that code
-    "progressSource",    # which trigger drives progress — trigger wiring
-    "auto",              # automatic icon selection — pairs with iconSource
+    "progressSource",    # which trigger drives progress - trigger wiring
+    "auto",              # automatic icon selection - pairs with iconSource
     "useTooltip",        # hover interaction behavior
     "toolTipArea",       # hover interaction behavior (bar hit area)
     "stickyDuration",    # state-duration handling, not presentation
-    "preferToUpdate",    # WA import-matching preference — metadata
+    "preferToUpdate",    # WA import-matching preference - metadata
 ]
 
 _COMMON_STYLE = [
@@ -29,7 +29,7 @@ _COMMON_STYLE = [
     "anchorFrameFrame", "selfPoint", "frameStrata", "scale", "alpha", "color",
     "desaturate", "inverse", "subRegions", "actions", "animation",
     # 2026-07 triage of previously-unclassified corpus fields (visual only):
-    "anchorFrameParent",  # frame-parenting flag — belongs with the anchor set
+    "anchorFrameParent",  # frame-parenting flag - belongs with the anchor set
 ]
 
 STYLE_FIELDS = {
@@ -45,7 +45,7 @@ STYLE_FIELDS = {
                 "borderOffset", "borderSize", "zoom",
                 # 2026-07 triage (all pure presentation):
                 "sparkBlendMode", "sparkOffsetX", "sparkOffsetY", "sparkRotation",
-                "sparkRotationMode", "sparkDesature",  # (sic — WA's own typo)
+                "sparkRotationMode", "sparkDesature",  # (sic - WA's own typo)
                 "enableGradient", "gradientOrientation",
                 "overlays", "overlaysTexture",
                 "backdropInFront", "borderInFront",

@@ -1,7 +1,7 @@
 """Adaptive ranking fetcher.
 
 Slicing strategy (see docs/PLAN.md):
-- Always filter by class AND spec — the BiS data is spec-based.
+- Always filter by class AND spec - the BiS data is spec-based.
 - Default slice: one query series per (encounter, partition, metric, region).
 - If a region slice saturates (page 20 and still hasMorePages), descend to
   per-server slices within that region and REPLACE the region slice (ranking
@@ -92,7 +92,7 @@ class SliceFetcher:
             # Legacy empty markers predate depth tracking; they were full-depth.
             prev = json.loads(text) if text else {"max_pages": MAX_PAGE, "exhausted": False}
             # Probe-first saturated slices have only page-20 on disk, so depth
-            # alone doesn't prove pages 1..max_pages exist — verify the files.
+            # alone doesn't prove pages 1..max_pages exist - verify the files.
             pages_present = prev["exhausted"] or all(
                 (slice_dir / f"page-{p:02d}.json").exists() for p in range(1, max_pages + 1)
             )
@@ -175,7 +175,7 @@ class SliceFetcher:
                 return json.loads(page_file.read_text())
             except json.JSONDecodeError:
                 # Truncated write (e.g. power loss mid-fetch): drop and refetch.
-                log.warning("corrupt cached page %s — refetching", page_file)
+                log.warning("corrupt cached page %s - refetching", page_file)
                 page_file.unlink()
         query = _rankings_query(
             encounter_id, partition, class_name, spec_name, metric, page, region, server
@@ -246,7 +246,7 @@ def fetch_encounter(
             if saturated and max_pages == MAX_PAGE and not region_only:
                 stats["saturated"] += 1
                 log.info(
-                    "SATURATED: %s %s/%s %s — descending to %d servers",
+                    "SATURATED: %s %s/%s %s - descending to %d servers",
                     encounter["name"],
                     class_name,
                     spec_name,

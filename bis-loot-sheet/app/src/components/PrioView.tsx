@@ -115,7 +115,7 @@ function Evidence({
         % = how many of that spec&apos;s top 2,000 players wore this
         {isToken ? " (via the listed piece)" : ""} in that phase. The score
         also rewards items with no good alternative, and counts later phases
-        extra — gear that stays best is worth more.
+        extra - gear that stays best is worth more.
       </p>
     </div>
   );
@@ -305,9 +305,9 @@ export function PrioView({
         Auto-generated loot priority for Phase {zone.anniversaryPhase}: specs
         are ranked by summed need across P{zone.anniversaryPhase}–P5, where need
         = usage + how far the item leads that spec&apos;s best alternative, and
-        each future phase weighs ×1.5 more than the last — items that stay
+        each future phase weighs ×1.5 more than the last - items that stay
         useful later are worth more now.
-        Objective data only — adjust for tanks, professions and roster before
+        Objective data only - adjust for tanks, professions and roster before
         use. Expand a row to see the evidence.
         {(() => {
           const cut = Object.keys(zone.specs)

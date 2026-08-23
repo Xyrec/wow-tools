@@ -83,7 +83,7 @@ fn parse_phase_file(
 
         let mut item_count = 0u32;
         for item_div in card.select(&item_sel) {
-            // Get item name — need the direct .item__name div, not .item__name__wrapper
+            // Get item name - need the direct .item__name div, not .item__name__wrapper
             let name: String = item_div
                 .select(&name_sel)
                 .filter(|el| {
@@ -122,7 +122,7 @@ fn parse_phase_file(
                 .to_string();
 
             let source = match (instance.is_empty(), boss.is_empty()) {
-                (false, false) => format!("{instance} — {boss}"),
+                (false, false) => format!("{instance} - {boss}"),
                 (false, true) => instance,
                 (true, false) => boss,
                 (true, true) => String::new(),

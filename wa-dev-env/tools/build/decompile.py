@@ -2,7 +2,7 @@
 
 Inverse of build_group.compose_leaf: subtract the archetype baseline from
 each leaf; logic tables (triggers/load/conditions) go into the def verbatim
-(cruft included — Phase A must stay parity-exact), the remaining residue
+(cruft included - Phase A must stay parity-exact), the remaining residue
 becomes `overrides`. Leaves outside the icon archetypes become bespoke
 payload passthroughs. Multiline Lua bodies are externalized to lua/.
 
@@ -117,7 +117,7 @@ def decompile_leaf(style, aura, row, archetype, prefix, lua_dir):
     conds = copy.deepcopy(target.get("conditions", []))
     alpha_idx = next((i for i, c in enumerate(conds) if c == alpha), None)
     if alpha_idx is None:
-        raise SystemExit(f"{target['id']}: canonical alpha condition not found — "
+        raise SystemExit(f"{target['id']}: canonical alpha condition not found - "
                          "decompile as bespoke or fix the aura")
     conds.pop(alpha_idx)
     d = {"id": target["id"], "archetype": archetype, "row": row,

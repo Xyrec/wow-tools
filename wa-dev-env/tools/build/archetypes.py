@@ -3,7 +3,7 @@
 An archetype's base is the CANONICAL shape of one aura family; per-aura
 deviations (extra triggers, subtext variants, tocversion relics) ride in
 the definition's `overrides` layer, never here. Field sets are derived
-from the live shaman exemplars — key presence matters for parity (e.g.
+from the live shaman exemplars - key presence matters for parity (e.g.
 rotation icons carry `useTooltip`, cooldown icons don't).
 """
 import copy

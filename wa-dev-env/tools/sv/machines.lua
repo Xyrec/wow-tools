@@ -12,7 +12,7 @@ end
 
 local CONFIGS = {
   -- CachyOS PC (Lutris/Proton). Process name is "WoWClassic.exe" (capital O,
-  -- unlike the on-disk file); name-matching is the only probe that works —
+  -- unlike the on-disk file); name-matching is the only probe that works -
   -- -f cmdline probes self-match anything quoting the exe path.
   Linux = {
     wow_root = "/home/xyrec/Games/battlenet/drive_c/Program Files (x86)/World of Warcraft/_anniversary_",

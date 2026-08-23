@@ -19,7 +19,7 @@ PAGE_SIZE = 100
 
 # 2021 TBC Classic run zones (the frozen 7-partition ones) and, per raid, the
 # LATEST partition before the NEXT tier released. A raid's earliest partition
-# only holds the progression window (people still in last tier's gear —
+# only holds the progression window (people still in last tier's gear -
 # verified: zone 1011 partition 4 "P3" is Jan-Feb 2022 only); the nerf-era
 # sub-partitions (P2.5, "P3.5 & P4") hold the farm-status parses that define
 # phase BiS. Items from a LATER-phase raid inside a shared partition (ZA in

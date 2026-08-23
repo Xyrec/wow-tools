@@ -6,6 +6,6 @@ Layout:
   auras/<class>/defs/*.json   one semantic definition per leaf aura
   auras/<class>/lua/*.lua     real Lua bodies, re-inlined at build time
 
-Sabimaru donor packs (data/auras/donors/) are reference material only —
+Sabimaru donor packs (data/auras/donors/) are reference material only -
 they are inputs to import_donor.py, never to the build itself.
 """

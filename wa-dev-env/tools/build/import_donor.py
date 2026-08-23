@@ -37,13 +37,13 @@ import style_fields  # noqa: E402
 REPO = pathlib.Path(__file__).resolve().parents[2]
 
 # per-aura fields that survive the restyle even though they look visual
-# These are STATE, not style — donor values are per-aura semantics:
+# These are STATE, not style - donor values are per-aura semantics:
 # - desaturate: usable-gating icons rest desaturated; a spellUsable /
 #   insufficientResources condition clears it. Dropping the base value makes
 #   rage/range-gated abilities look permanently castable.
 # - inverse / cooldown / cooldownEdge / cooldownTextDisabled: which sweep an
 #   icon shows (buff-duration vs cooldown), whether it shows one at all, and
-#   whether Blizzard cooldown text renders — the donor tunes these per aura.
+#   whether Blizzard cooldown text renders - the donor tunes these per aura.
 _SEMANTIC_KEEP = {"iconSource", "displayIcon", "icon", "desc", "desaturate",
                   "inverse", "cooldown", "cooldownEdge", "cooldownTextDisabled"}
 
@@ -62,7 +62,7 @@ def collect_spell_ids(node, out):
     if isinstance(node, dict):
         for k, v in node.items():
             if k == "itemName":
-                continue  # item id, not a spell — no item ground truth to check
+                continue  # item id, not a spell - no item ground truth to check
             if k in scrub._SPELL_ID_FIELDS and isinstance(v, (int, str)) \
                     and str(v).isdigit() and int(str(v)) > 0:
                 out.add(int(str(v)))
@@ -122,7 +122,7 @@ def report(donor, class_name):
     for cid, c in info["containers"].items():
         n = len(c.get("controlledChildren") or [])
         row = info["row_guess"].get(cid, "??? (map in manifest or drop)")
-        dead = "  [EMPTY — propose drop]" if cid in info["dead_groups"] else ""
+        dead = "  [EMPTY - propose drop]" if cid in info["dead_groups"] else ""
         print(f"  {cid}  ({c['regionType']}, {n} children) -> row {row}{dead}")
     loose = [a["id"] for a in donor["c"]
              if a["id"] not in info["containers"]
@@ -130,7 +130,7 @@ def report(donor, class_name):
     if loose:
         print(f"\nloose top-level auras (propose bespoke or drop): {loose}")
     print(f"\nauras with spell ids NOT in TBC ground truth "
-          f"({len(info['unknown_spells'])}) — every id needs a spellmap entry:")
+          f"({len(info['unknown_spells'])}) - every id needs a spellmap entry:")
     for aura_id, gone in sorted(info["unknown_spells"].items()):
         print(f"  {aura_id}: {gone}")
     cruft_total = sum(len(scrub.find_cruft(a)) for a in donor["c"])
@@ -140,11 +140,11 @@ def report(donor, class_name):
 def label_subregions(style, archetype, aura):
     """Restyle donor subRegions IN PLACE: same types, same order, same count.
 
-    Conditions address subregions by index (sub.N), so the layout is LOGIC —
+    Conditions address subregions by index (sub.N), so the layout is LOGIC -
     dropping the donor's subglow or reordering texts silently retargets or
     breaks those conditions. Per entry: subborder wears the canon border,
     the donor's %p center timer becomes the canon subtext, label texts
-    ('Bless'/'-RF', unitName readouts — SEMANTIC, a blank reminder icon
+    ('Bless'/'-RF', unitName readouts - SEMANTIC, a blank reminder icon
     loses its meaning) keep their content wearing the pack font, and
     subbackground/subglow/subtick pass through verbatim. A canon %p subtext
     is appended (index-safe) when the donor had no text at all. Returns None
@@ -257,10 +257,10 @@ def apply(donor, class_name):
 
     stats = {"defs": 0, "bespoke": 0, "dropped": len(drop)}
     new_prefix = f"{cap} - "
-    # Xyrec groups run at scale 1; donors are authored at root scale 1.5 —
+    # Xyrec groups run at scale 1; donors are authored at root scale 1.5 -
     # bake the factor into pixel values so imported auras keep their size.
     # EXCEPT UIPARENT-anchored subtrees: WA reparents those to UIParent, so
-    # they never inherited the donor's root scale — their values are already
+    # they never inherited the donor's root scale - their values are already
     # physical (see scale.py; reminders/group-buff rows + drag icons).
     donor_scale = donor["d"].get("scale") or 1
     unscaled = set()
@@ -337,7 +337,7 @@ def apply(donor, class_name):
             row = rows.get(old_id) or info["row_guess"].get(old_id)
             if row and row in style["row_geometry"]:
                 # row_geometry contributes STYLE (grow/space/align/...); row
-                # POSITION is per-class semantics — the donor tunes offsets to
+                # POSITION is per-class semantics - the donor tunes offsets to
                 # the class's resource-stack height (hunter core sits 11px
                 # higher than shaman's), so donor position fields survive
                 for key, value in style["row_geometry"][row].items():

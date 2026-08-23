@@ -114,7 +114,7 @@
         {
           "rank": "Optional",
           "name": "Crystal Orb of Enlightenment",
-          "source": "Ogri'la — Exalted",
+          "source": "Ogri'la - Exalted",
           "item_id": 32651
         },
         {
@@ -254,7 +254,7 @@
         {
           "rank": "Optional",
           "name": "Blade of the Archmage",
-          "source": "Honor Hold — Exalted",
+          "source": "Honor Hold - Exalted",
           "item_id": 29153
         }
       ],
@@ -300,7 +300,7 @@
         {
           "rank": "Optional",
           "name": "Scryer's Bloodgem",
-          "source": "The Scryers — Revered",
+          "source": "The Scryers - Revered",
           "item_id": 29132
         },
         {
@@ -460,7 +460,7 @@
         {
           "rank": "Optional",
           "name": "Ashyen's Gift",
-          "source": "Cenarion Expedition — Exalted",
+          "source": "Cenarion Expedition - Exalted",
           "item_id": 29172
         },
         {
@@ -488,7 +488,7 @@
         {
           "rank": "BiS",
           "name": "Ruby Drape of the Mysticant",
-          "source": "Drop: Prince Malchezaar — Karazhan",
+          "source": "Drop: Prince Malchezaar - Karazhan",
           "item_id": 28766
         },
         {
@@ -500,13 +500,13 @@
         {
           "rank": "Optional",
           "name": "Brute Cloak of the Ogre-Magi",
-          "source": "Drop: High King Maulgar — Gruul's Lair",
+          "source": "Drop: High King Maulgar - Gruul's Lair",
           "item_id": 28797
         },
         {
           "rank": "Optional",
           "name": "Shadow-Cloak of Dalaran",
-          "source": "Drop: Moroes — Karazhan",
+          "source": "Drop: Moroes - Karazhan",
           "item_id": 28570
         }
       ],
@@ -526,13 +526,13 @@
         {
           "rank": "Optional",
           "name": "Legwraps of the Aldor",
-          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair (Tier Token)",
+          "source": "Drop: Gruul the Dragonkiller - Gruul's Lair (Tier Token)",
           "item_id": 29078
         },
         {
           "rank": "Optional",
           "name": "Trial-Fire Trousers",
-          "source": "Drop: The Wizard of Oz — Karazhan",
+          "source": "Drop: The Wizard of Oz - Karazhan",
           "item_id": 28594
         }
       ],
@@ -546,7 +546,7 @@
         {
           "rank": "Optional",
           "name": "Pauldrons of the Aldor",
-          "source": "Drop: High King Maulgar — Gruul's Lair (Tier Token)",
+          "source": "Drop: High King Maulgar - Gruul's Lair (Tier Token)",
           "item_id": 29079
         }
       ],
@@ -560,13 +560,13 @@
         {
           "rank": "Optional",
           "name": "Ruby Slippers",
-          "source": "Drop: The Wizard of Oz — Karazhan",
+          "source": "Drop: The Wizard of Oz - Karazhan",
           "item_id": 28585
         },
         {
           "rank": "Optional",
           "name": "Boots of Foretelling",
-          "source": "Drop: Maiden of Virtue — Karazhan",
+          "source": "Drop: Maiden of Virtue - Karazhan",
           "item_id": 28517
         }
       ],
@@ -580,19 +580,19 @@
         {
           "rank": "Optional",
           "name": "Handwraps of Flowing Thought",
-          "source": "Drop: Attumen the Huntsman — Karazhan",
+          "source": "Drop: Attumen the Huntsman - Karazhan",
           "item_id": 28507
         },
         {
           "rank": "Optional",
           "name": "Gloves of the Aldor",
-          "source": "Drop: The Curator — Karazhan (Tier Token)",
+          "source": "Drop: The Curator - Karazhan (Tier Token)",
           "item_id": 29080
         },
         {
           "rank": "Optional",
           "name": "Soul-Eater's Handwraps",
-          "source": "Drop: Magtheridon — Magtheridon's Lair",
+          "source": "Drop: Magtheridon - Magtheridon's Lair",
           "item_id": 28780
         },
         {
@@ -606,13 +606,13 @@
         {
           "rank": "BiS",
           "name": "Tirisfal Wand of Ascendancy",
-          "source": "Drop: Shade of Aran — Karazhan",
+          "source": "Drop: Shade of Aran - Karazhan",
           "item_id": 28673
         },
         {
           "rank": "Optional",
           "name": "Eredar Wand of Obliteration",
-          "source": "Drop: Magtheridon — Magtheridon's Lair",
+          "source": "Drop: Magtheridon - Magtheridon's Lair",
           "item_id": 28783
         },
         {
@@ -632,19 +632,19 @@
         {
           "rank": "Optional",
           "name": "Jewel of Infinite Possibilities",
-          "source": "Drop: Netherspite — Karazhan",
+          "source": "Drop: Netherspite - Karazhan",
           "item_id": 28734
         },
         {
           "rank": "Optional",
           "name": "Karaborian Talisman",
-          "source": "Drop: Magtheridon — Magtheridon's Lair",
+          "source": "Drop: Magtheridon - Magtheridon's Lair",
           "item_id": 28781
         },
         {
           "rank": "Optional",
           "name": "Talisman of Nightbane",
-          "source": "Drop: Nightbane — Karazhan",
+          "source": "Drop: Nightbane - Karazhan",
           "item_id": 28603
         }
       ],
@@ -658,19 +658,19 @@
         {
           "rank": "Optional",
           "name": "Inferno Waist Cord",
-          "source": "Drop: Trash — Karazhan",
+          "source": "Drop: Trash - Karazhan",
           "item_id": 30673
         },
         {
           "rank": "Optional",
           "name": "Belt of Divine Inspiration",
-          "source": "Drop: High King Maulgar — Gruul's Lair",
+          "source": "Drop: High King Maulgar - Gruul's Lair",
           "item_id": 28799
         },
         {
           "rank": "Optional",
           "name": "Malefic Girdle",
-          "source": "Drop: Terestian Illhoof — Karazhan",
+          "source": "Drop: Terestian Illhoof - Karazhan",
           "item_id": 28654
         }
       ],
@@ -684,13 +684,13 @@
         {
           "rank": "Optional",
           "name": "Staff of Infinite Mysteries",
-          "source": "Drop: The Curator — Karazhan",
+          "source": "Drop: The Curator - Karazhan",
           "item_id": 28633
         },
         {
           "rank": "Optional",
           "name": "Bloodmaw Magus-Blade",
-          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
+          "source": "Drop: Gruul the Dragonkiller - Gruul's Lair",
           "item_id": 28802
         },
         {
@@ -702,7 +702,7 @@
         {
           "rank": "Optional",
           "name": "Nathrezim Mindblade",
-          "source": "Drop: Prince Malchezaar — Karazhan",
+          "source": "Drop: Prince Malchezaar - Karazhan",
           "item_id": 28770
         }
       ],
@@ -716,13 +716,13 @@
         {
           "rank": "Optional",
           "name": "Brooch of Unquenchable Fury",
-          "source": "Drop: Moroes — Karazhan",
+          "source": "Drop: Moroes - Karazhan",
           "item_id": 28530
         },
         {
           "rank": "Optional",
           "name": "Adornment of Stolen Souls",
-          "source": "Drop: Prince Malchezaar — Karazhan",
+          "source": "Drop: Prince Malchezaar - Karazhan",
           "item_id": 28762
         },
         {
@@ -748,13 +748,13 @@
         {
           "rank": "Optional",
           "name": "Collar of the Aldor",
-          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
+          "source": "Drop: Prince Malchezaar - Karazhan (Tier Token)",
           "item_id": 29076
         },
         {
           "rank": "Optional",
           "name": "Uni-Mind Headdress",
-          "source": "Drop: Netherspite — Karazhan",
+          "source": "Drop: Netherspite - Karazhan",
           "item_id": 28744
         }
       ],
@@ -768,7 +768,7 @@
         {
           "rank": "Optional",
           "name": "Scryer's Bloodgem",
-          "source": "The Scryers — Revered",
+          "source": "The Scryers - Revered",
           "item_id": 29132
         },
         {
@@ -800,7 +800,7 @@
         {
           "rank": "Optional",
           "name": "Ashyen's Gift",
-          "source": "Cenarion Expedition — Exalted",
+          "source": "Cenarion Expedition - Exalted",
           "item_id": 29172
         },
         {
@@ -826,13 +826,13 @@
         {
           "rank": "Optional",
           "name": "Vestments of the Aldor",
-          "source": "Drop: Magtheridon — Magtheridon's Lair (Tier Token)",
+          "source": "Drop: Magtheridon - Magtheridon's Lair (Tier Token)",
           "item_id": 29077
         },
         {
           "rank": "Optional",
           "name": "Robe of the Elder Scribes",
-          "source": "Drop: Nightbane — Karazhan",
+          "source": "Drop: Nightbane - Karazhan",
           "item_id": 28602
         }
       ],
@@ -846,13 +846,13 @@
         {
           "rank": "Optional",
           "name": "Bands of Nefarious Deeds",
-          "source": "Drop: Maiden of Virtue — Karazhan",
+          "source": "Drop: Maiden of Virtue - Karazhan",
           "item_id": 28515
         },
         {
           "rank": "Optional",
           "name": "Harbinger Bands",
-          "source": "Drop: Attumen the Huntsman — Karazhan",
+          "source": "Drop: Attumen the Huntsman - Karazhan",
           "item_id": 28477
         }
       ]
@@ -880,13 +880,13 @@
         {
           "rank": "Optional",
           "name": "Serpent-Coil Braid",
-          "source": "Drop: Morogrim Tidewalker — Serpentshrine Cavern",
+          "source": "Drop: Morogrim Tidewalker - Serpentshrine Cavern",
           "item_id": 30720
         },
         {
           "rank": "Optional",
           "name": "Scryer's Bloodgem",
-          "source": "The Scryers — Revered",
+          "source": "The Scryers - Revered",
           "item_id": 29132
         }
       ],
@@ -906,19 +906,19 @@
         {
           "rank": "Optional",
           "name": "Brooch of Unquenchable Fury",
-          "source": "Drop: Moroes — Karazhan",
+          "source": "Drop: Moroes - Karazhan",
           "item_id": 28530
         },
         {
           "rank": "Optional",
           "name": "Adornment of Stolen Souls",
-          "source": "Drop: Prince Malchezaar — Karazhan",
+          "source": "Drop: Prince Malchezaar - Karazhan",
           "item_id": 28762
         },
         {
           "rank": "Optional",
           "name": "Pendant of the Lost Ages",
-          "source": "Drop: Morogrim Tidewalker — Serpentshrine Cavern",
+          "source": "Drop: Morogrim Tidewalker - Serpentshrine Cavern",
           "item_id": 30008
         }
       ],
@@ -926,13 +926,13 @@
         {
           "rank": "BiS",
           "name": "Fang of the Leviathan",
-          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern",
+          "source": "Drop: Leotheras the Blind - Serpentshrine Cavern",
           "item_id": 30095
         },
         {
           "rank": "Optional",
           "name": "The Nexus Key",
-          "source": "Drop: Kael'thas Sunstrider — Tempest Keep",
+          "source": "Drop: Kael'thas Sunstrider - Tempest Keep",
           "item_id": 29988
         },
         {
@@ -944,7 +944,7 @@
         {
           "rank": "Optional",
           "name": "Staff of Infinite Mysteries",
-          "source": "Drop: The Curator — Karazhan",
+          "source": "Drop: The Curator - Karazhan",
           "item_id": 28633
         }
       ],
@@ -958,13 +958,13 @@
         {
           "rank": "Optional",
           "name": "Gauntlets of the Sun King",
-          "source": "Drop: Kael'thas Sunstrider — Tempest Keep",
+          "source": "Drop: Kael'thas Sunstrider - Tempest Keep",
           "item_id": 29987
         },
         {
           "rank": "Optional",
           "name": "Gloves of Tirisfal",
-          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern (Tier Token)",
+          "source": "Drop: Leotheras the Blind - Serpentshrine Cavern (Tier Token)",
           "item_id": 30205
         }
       ],
@@ -978,13 +978,13 @@
         {
           "rank": "Optional",
           "name": "Leggings of Tirisfal",
-          "source": "Drop: Fathom-Lord Karathress — Serpentshrine Cavern (Tier Token)",
+          "source": "Drop: Fathom-Lord Karathress - Serpentshrine Cavern (Tier Token)",
           "item_id": 30207
         },
         {
           "rank": "Optional",
           "name": "Trousers of the Astromancer",
-          "source": "Drop: High Astromancer Solarian — Tempest Keep",
+          "source": "Drop: High Astromancer Solarian - Tempest Keep",
           "item_id": 29972
         }
       ],
@@ -998,7 +998,7 @@
         {
           "rank": "Optional",
           "name": "Cord of Screaming Terrors",
-          "source": "Drop: The Lurker Below — Serpentshrine Cavern",
+          "source": "Drop: The Lurker Below - Serpentshrine Cavern",
           "item_id": 30064
         },
         {
@@ -1012,7 +1012,7 @@
         {
           "rank": "BiS",
           "name": "Mindstorm Wristbands",
-          "source": "Drop: Al'ar — Tempest Keep",
+          "source": "Drop: Al'ar - Tempest Keep",
           "item_id": 29918
         },
         {
@@ -1026,7 +1026,7 @@
         {
           "rank": "BiS",
           "name": "Ring of Endless Coils",
-          "source": "Drop: Lady Vashj — Serpentshrine Cavern",
+          "source": "Drop: Lady Vashj - Serpentshrine Cavern",
           "item_id": 30109
         },
         {
@@ -1038,13 +1038,13 @@
         {
           "rank": "Optional",
           "name": "Ring of Recurrence",
-          "source": "Drop: Chess Event — Karazhan",
+          "source": "Drop: Chess Event - Karazhan",
           "item_id": 28753
         },
         {
           "rank": "Optional",
           "name": "Ashyen's Gift",
-          "source": "Cenarion Expedition — Exalted",
+          "source": "Cenarion Expedition - Exalted",
           "item_id": 29172
         },
         {
@@ -1058,19 +1058,19 @@
         {
           "rank": "BiS",
           "name": "Wand of the Forgotten Star",
-          "source": "Drop: High Astromancer Solarian — Tempest Keep",
+          "source": "Drop: High Astromancer Solarian - Tempest Keep",
           "item_id": 29982
         },
         {
           "rank": "Optional",
           "name": "Tirisfal Wand of Ascendancy",
-          "source": "Drop: Shade of Aran — Karazhan",
+          "source": "Drop: Shade of Aran - Karazhan",
           "item_id": 28673
         },
         {
           "rank": "Optional",
           "name": "Eredar Wand of Obliteration",
-          "source": "Drop: Magtheridon — Magtheridon's Lair",
+          "source": "Drop: Magtheridon - Magtheridon's Lair",
           "item_id": 28783
         }
       ],
@@ -1084,13 +1084,13 @@
         {
           "rank": "Optional",
           "name": "Cowl of the Grand Engineer",
-          "source": "Drop: Void Reaver — Tempest Keep",
+          "source": "Drop: Void Reaver - Tempest Keep",
           "item_id": 29986
         },
         {
           "rank": "Optional",
           "name": "Cowl of Tirisfal",
-          "source": "Drop: Lady Vashj — Serpentshrine Cavern (Tier Token)",
+          "source": "Drop: Lady Vashj - Serpentshrine Cavern (Tier Token)",
           "item_id": 30206
         }
       ],
@@ -1104,7 +1104,7 @@
         {
           "rank": "Optional",
           "name": "Fathomstone",
-          "source": "Drop: Hydross the Unstable — Serpentshrine Cavern",
+          "source": "Drop: Hydross the Unstable - Serpentshrine Cavern",
           "item_id": 30049
         }
       ],
@@ -1112,13 +1112,13 @@
         {
           "rank": "BiS",
           "name": "Ruby Drape of the Mysticant",
-          "source": "Drop: Prince Malchezaar — Karazhan",
+          "source": "Drop: Prince Malchezaar - Karazhan",
           "item_id": 28766
         },
         {
           "rank": "Optional",
           "name": "Royal Cloak of the Sunstriders",
-          "source": "Drop: Kael'thas Sunstrider — Tempest Keep",
+          "source": "Drop: Kael'thas Sunstrider - Tempest Keep",
           "item_id": 29992
         },
         {
@@ -1132,13 +1132,13 @@
         {
           "rank": "BiS",
           "name": "Mantle of Tirisfal",
-          "source": "Drop: Void Reaver — Tempest Keep (Tier Token)",
+          "source": "Drop: Void Reaver - Tempest Keep (Tier Token)",
           "item_id": 30210
         },
         {
           "rank": "Optional",
           "name": "Mantle of the Elven Kings",
-          "source": "Drop: Trash — Tempest Keep",
+          "source": "Drop: Trash - Tempest Keep",
           "item_id": 30024
         },
         {
@@ -1150,7 +1150,7 @@
         {
           "rank": "Optional",
           "name": "Illidari Shoulderpads",
-          "source": "Drop: Morogrim Tidewalker — Serpentshrine Cavern",
+          "source": "Drop: Morogrim Tidewalker - Serpentshrine Cavern",
           "item_id": 30079
         }
       ],
@@ -1170,7 +1170,7 @@
         {
           "rank": "Optional",
           "name": "Velvet Boots of the Guardian",
-          "source": "Drop: The Lurker Below — Serpentshrine Cavern",
+          "source": "Drop: The Lurker Below - Serpentshrine Cavern",
           "item_id": 30067
         }
       ],
@@ -1178,7 +1178,7 @@
         {
           "rank": "BiS",
           "name": "Vestments of the Sea-Witch",
-          "source": "Drop: Lady Vashj — Serpentshrine Cavern",
+          "source": "Drop: Lady Vashj - Serpentshrine Cavern",
           "item_id": 30107
         },
         {
@@ -1190,13 +1190,13 @@
         {
           "rank": "Optional",
           "name": "Robes of Tirisfal",
-          "source": "Drop: Kael'thas Sunstrider — Tempest Keep (Tier Token)",
+          "source": "Drop: Kael'thas Sunstrider - Tempest Keep (Tier Token)",
           "item_id": 30196
         },
         {
           "rank": "Optional",
           "name": "Robe of Hateful Echoes",
-          "source": "Drop: Hydross the Unstable — Serpentshrine Cavern",
+          "source": "Drop: Hydross the Unstable - Serpentshrine Cavern",
           "item_id": 30056
         }
       ]

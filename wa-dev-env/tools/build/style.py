@@ -3,7 +3,7 @@
 The style guide (styles/xyrec.json) holds the pack's LOOK as data: fonts,
 color vocabulary, per-row icon sizes and text sizes, the bar skin, the global
 alpha-dim rule, and row geometry. Values are byte-exact copies from the live
-snapshot — never retype them by hand; group parity depends on exactness.
+snapshot - never retype them by hand; group parity depends on exactness.
 """
 import copy
 import json
@@ -42,7 +42,7 @@ def text_subregion(style, size):
     """The canonical centered %p subtext at the given size.
 
     Field set matches the live exemplars exactly (incl. the %p time-format
-    block) — a built canonical text is byte-identical to a snapshot one.
+    block) - a built canonical text is byte-identical to a snapshot one.
     """
     f = style["fonts"]
     return {

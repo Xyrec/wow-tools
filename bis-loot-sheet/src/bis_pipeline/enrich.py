@@ -211,7 +211,7 @@ def enrich_zone(tag: str) -> Path:
         lootmap.update(build_lootmap(zone_tag))
     encounters = {eid: e["name"] for eid, e in lootmap.items()}
 
-    # Drop-only items (tier tokens above all — nobody *wears* a token, but
+    # Drop-only items (tier tokens above all - nobody *wears* a token, but
     # they ARE what the loot council assigns) still need item facts.
     drop_only = {
         item_id for enc in lootmap.values() for item_id in enc["items"] if item_id not in items
@@ -269,7 +269,7 @@ def enrich_zone(tag: str) -> Path:
     out_path.write_text(json.dumps(result, indent=1))
 
     # Keep the web app's data in sync automatically. The app copy is a diet
-    # version: only the top2000 band (flattened — the app has no band concept),
+    # version: only the top2000 band (flattened - the app has no band concept),
     # and only items that band or the lootmap actually references. The full
     # multi-band data stays in data/enriched/ for pipeline/analysis use.
     app_data = PROJECT_ROOT / "app" / "src" / "data"

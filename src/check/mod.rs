@@ -392,7 +392,7 @@ pub fn build_dungeon_reputation(
             result.insert(d.to_string(), f.to_string());
         }
     } else {
-        // Unknown faction — include both
+        // Unknown faction - include both
         for &(d, f) in &[
             ("The Blood Furnace", "Honor Hold"),
             ("Hellfire Ramparts", "Honor Hold"),

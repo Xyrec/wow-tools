@@ -12,7 +12,7 @@ wow-tools/
   data/
     resto.json            # Resto Shaman character data (paste updated exports here)
     elemental.json        # Elemental Shaman character data
-    current-phase.txt     # Single line like "phase-1" — which phase to check against
+    current-phase.txt     # Single line like "phase-1" - which phase to check against
     soft-reserves.txt     # Soft-reserve counts per raid (0 = master looter)
   output/
     resto-shaman/
@@ -31,7 +31,7 @@ wow-tools/
       resto-shaman/       # phase-0.html through phase-5.html (Resto BiS pages)
       elemental-shaman/   # phase-0.html through phase-5.html (Elemental BiS pages)
     cmangos-tbc-db/       # TBC 2.4.3 SQLite database + source headers
-      tbcmangos.sqlite    # Main world DB — items, creatures, loot, spells, factions
+      tbcmangos.sqlite    # Main world DB - items, creatures, loot, spells, factions
       src/                # C++ headers parsed at runtime for enum mappings
         SpellAuraDefines.h  # AuraType enum (262 aura IDs → stat names)
 ```
@@ -106,11 +106,11 @@ The current phase (from `current-phase.txt`) is **authoritative**. Phase 0 is on
 
 The script outputs these sections in order:
 
-1. **{Phase} BiS (you're set)** — Slots where equipped gear is BiS in the current phase.
-2. **{Phase} Option (upgrade available this phase)** — Slots where equipped gear is listed as an Option in the current phase.
-3. **Phase 0 Only (outdated)** — Slots where gear was BiS/Option in Phase 0 but isn't listed in the current phase at all.
-4. **Not on Any BiS List** — Slots where equipped gear doesn't appear on any checked BiS list.
-5. **Priority: Dungeons to Run** — Dungeons ranked by value-per-run score, with a breakdown of what contributes to each score. Scoring:
+1. **{Phase} BiS (you're set)** - Slots where equipped gear is BiS in the current phase.
+2. **{Phase} Option (upgrade available this phase)** - Slots where equipped gear is listed as an Option in the current phase.
+3. **Phase 0 Only (outdated)** - Slots where gear was BiS/Option in Phase 0 but isn't listed in the current phase at all.
+4. **Not on Any BiS List** - Slots where equipped gear doesn't appear on any checked BiS list.
+5. **Priority: Dungeons to Run** - Dungeons ranked by value-per-run score, with a breakdown of what contributes to each score. Scoring:
    - Scores use a 100-point scale with phase decay (each phase behind current halves the score):
    - Current-phase BiS: **100**, Option: **80**
    - 1 phase behind BiS: **50**, Option: **40**
@@ -118,11 +118,11 @@ The script outputs these sections in order:
    - Heroic badges toward badge vendor items: **+10% of total badge vendor item scores**
    - Rep toward needed faction vendor items: **sum of those items' individual scores**
    Shows what drops in that dungeon, and what reputation vendor items the run also earns progress toward.
-6. **Reputation Goals** — Factions to grind, what vendor items they unlock, total rep needed to the required standing (e.g. "need Exalted, ~8,415 rep to go"), and which dungeons give that rep.
-7. **All Upgrades by Slot** — Full per-slot breakdown with `(H)` for heroic-only. Each item shows its source (dungeon drop, reputation vendor, badges, crafted, quest, world boss, etc.). Shows rep progress for reputation items.
-8. **Raid Upgrades** — Raid BiS/Option items grouped by raid instance (or grouped raids like Gruul+Mag). Shows soft-reserve count from `data/soft-reserves.txt` (0 = "master looter", N = "N soft reserves"). Items sorted by score within each raid.
-9. **No Dungeon/Rep/Raid Upgrade** — Slots needing crafting, world bosses, etc.
-10. **Summary** — Slot counts by tier and upgrade availability (dungeon/rep and raid counted separately).
+6. **Reputation Goals** - Factions to grind, what vendor items they unlock, total rep needed to the required standing (e.g. "need Exalted, ~8,415 rep to go"), and which dungeons give that rep.
+7. **All Upgrades by Slot** - Full per-slot breakdown with `(H)` for heroic-only. Each item shows its source (dungeon drop, reputation vendor, badges, crafted, quest, world boss, etc.). Shows rep progress for reputation items.
+8. **Raid Upgrades** - Raid BiS/Option items grouped by raid instance (or grouped raids like Gruul+Mag). Shows soft-reserve count from `data/soft-reserves.txt` (0 = "master looter", N = "N soft reserves"). Items sorted by score within each raid.
+9. **No Dungeon/Rep/Raid Upgrade** - Slots needing crafting, world bosses, etc.
+10. **Summary** - Slot counts by tier and upgrade availability (dungeon/rep and raid counted separately).
 
 Items are deduplicated across phases and across shared slots (rings, trinkets). Items already equipped in another slot are excluded from upgrade recommendations. World drops, classic raids, PvP, and profession-only items are filtered out of the upgrade list. Raid items (Karazhan, Gruul's Lair, etc.) are shown in their own section. The script auto-detects Alliance/Horde based on reputation data for Hellfire dungeon faction mapping.
 
@@ -143,18 +143,18 @@ serpentshrine-cavern=0              # 0 = master looter (no SR info shown)
 
 ## When the User Asks to Check Gear
 
-1. **Ask which spec** if the user hasn't specified: "Which spec should I check — Resto or Elemental?"
-2. Run `cargo run -- check --spec resto` or `cargo run -- check --spec ele` (no filename needed — defaults to `data/resto.json` or `data/elemental.json`).
+1. **Ask which spec** if the user hasn't specified: "Which spec should I check - Resto or Elemental?"
+2. Run `cargo run -- check --spec resto` or `cargo run -- check --spec ele` (no filename needed - defaults to `data/resto.json` or `data/elemental.json`).
 3. Present the results to the user with a concise summary. Focus on:
    - How many slots are already BiS vs. have available upgrades.
-   - The **top 3 priority dungeons** from the ranked list — explain *why* each is high value (e.g. "Heroic Old Hillsbrad drops 2 upgrades AND gives Keepers of Time rep toward your BiS wrist").
+   - The **top 3 priority dungeons** from the ranked list - explain *why* each is high value (e.g. "Heroic Old Hillsbrad drops 2 upgrades AND gives Keepers of Time rep toward your BiS wrist").
    - Any reputation goals that are close to completion (small remaining rep).
    - Call out any normal-mode dungeon drops (no heroic key needed) as easy wins.
-   - Highlight notable **raid upgrades** — mention the raid instance, how many soft reserves the user has, and the highest-value items. If SR count is 0, note it's master looter.
-   - For each raid with SR > 0, provide a **soft-reserve priority list**: rank ALL upgrade items from that raid by value (BiS before Option, higher score first), not just the top N matching the SR count. The user needs to see the full ranked list so they can pick alternatives if someone else has already soft-reserved their top choice. Format as a numbered list like "1. Light's Justice [BiS] (main hand) 2. Jade Ring [BiS] (ring) 3. ..." with a note like "With 2 SRs, your best picks are #1 and #2 — but if either is taken, #3-#5 are strong fallbacks."
+   - Highlight notable **raid upgrades** - mention the raid instance, how many soft reserves the user has, and the highest-value items. If SR count is 0, note it's master looter.
+   - For each raid with SR > 0, provide a **soft-reserve priority list**: rank ALL upgrade items from that raid by value (BiS before Option, higher score first), not just the top N matching the SR count. The user needs to see the full ranked list so they can pick alternatives if someone else has already soft-reserved their top choice. Format as a numbered list like "1. Light's Justice [BiS] (main hand) 2. Jade Ring [BiS] (ring) 3. ..." with a note like "With 2 SRs, your best picks are #1 and #2 - but if either is taken, #3-#5 are strong fallbacks."
    - Single items can be soft-reserved more than once. This lets the player roll on that item multiple times and increases their odds of winning it. High-value items will often be soft-reserved more than once by the same player in a single raid, so take that into consideration when recommending SR priorities.
-   - **IMPORTANT: Always specify which phase an item's rank comes from.** Items marked `[Phase 0 only]` in the script output are outdated — they were BiS/Option in Phase 0 but are NOT on the current phase's list. Never call something just "BiS" or "Option" without saying which phase. For example, say "Phase 1 BiS wrists" or "Phase 0 only Option (outdated)" — not just "BiS wrists" or "an Option".
-4. Do NOT read `bis_gear.json` or the source code manually — the binary handles all the logic.
+   - **IMPORTANT: Always specify which phase an item's rank comes from.** Items marked `[Phase 0 only]` in the script output are outdated - they were BiS/Option in Phase 0 but are NOT on the current phase's list. Never call something just "BiS" or "Option" without saying which phase. For example, say "Phase 1 BiS wrists" or "Phase 0 only Option (outdated)" - not just "BiS wrists" or "an Option".
+4. Do NOT read `bis_gear.json` or the source code manually - the binary handles all the logic.
 5. If the user pastes character JSON directly in chat instead of updating the spec file, save it to `data/resto.json` or `data/elemental.json` (ask which spec if unclear), then run the command.
 
 ## Item Lookup Tool (`lookup`)
@@ -169,7 +169,7 @@ Features:
 
 ## Stat Finder Tool (`find-stat`)
 
-Finds gear upgrades for a specific stat target (e.g. defense cap for tanks). Works with any class — filters by `AllowableClass` bitmask automatically.
+Finds gear upgrades for a specific stat target (e.g. defense cap for tanks). Works with any class - filters by `AllowableClass` bitmask automatically.
 
 Source filters:
 - `--source easy` (default): Normal/heroic dungeon drops + Honored-or-lower rep items + Rare BoE items. Excludes raids.
@@ -189,10 +189,10 @@ The BiS JSON uses these slot keys: `head`, `shoulders`, `back`, `chest`, `wrists
 # Rust Development Rules
 
 ## Build Commands
-- `cargo check` — fast compilation verification (preferred over `cargo build`)
-- `cargo clippy --all-targets --all-features -- -D warnings` — linting (zero warnings allowed)
-- `cargo test` — run test suite
-- `cargo fmt` — format code
+- `cargo check` - fast compilation verification (preferred over `cargo build`)
+- `cargo clippy --all-targets --all-features -- -D warnings` - linting (zero warnings allowed)
+- `cargo test` - run test suite
+- `cargo fmt` - format code
 
 ## Compilation Feedback
 Rely on the built-in Rust LSP diagnostics while editing. Run `cargo check` before
@@ -202,7 +202,7 @@ before committing.
 ## Code Conventions
 - Error handling: use `thiserror` for library error types, `anyhow` for binary/application code
 - **Never** use `.unwrap()` in production code. Use `.expect("invariant: reason")` only when the invariant is documented.
-- Propagate errors with `?` — do not catch and re-wrap unless adding meaningful context
+- Propagate errors with `?` - do not catch and re-wrap unless adding meaningful context
 - Async runtime: `tokio`. Logging: `tracing` crate.
 - Prefer `impl Trait` in argument position over generic type parameters when the type is used once
 
@@ -210,7 +210,7 @@ before committing.
 - Keep files under 500 lines. Split into submodules if a file grows beyond this.
 - Define types and traits first, implement logic second.
 - One public type per module unless types are tightly coupled.
-- Feature flags for optional functionality — do not use `cfg` blocks inline, isolate behind module boundaries.
+- Feature flags for optional functionality - do not use `cfg` blocks inline, isolate behind module boundaries.
 
 ## What NOT to Do
 - Do not add dependencies without asking. Check if an existing dependency covers the need.

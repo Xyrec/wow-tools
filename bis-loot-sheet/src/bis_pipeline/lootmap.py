@@ -24,7 +24,7 @@ log = logging.getLogger(__name__)
 CREATURE_OVERRIDES: dict[int, list[int]] = {
     606: [23420],  # Reliquary of Souls -> Essence of Anger (final essence)
     # Illidari Council: items ride on Zerevor (ref 36135), the T6 legs token
-    # group (ref 36136) on the other three — Gathios covers it once.
+    # group (ref 36136) on the other three - Gathios covers it once.
     608: [22949, 22950],
     # WCL names ZA's final boss "Daakara" (Cataclysm-era); in 2.4.3 the boss
     # and loot are Zul'jin.
@@ -36,11 +36,11 @@ CREATURE_OVERRIDES: dict[int, list[int]] = {
 }
 
 
-BADGE_OF_JUSTICE = 29434  # epic-quality currency, drops everywhere — not loot-sheet material
+BADGE_OF_JUSTICE = 29434  # epic-quality currency, drops everywhere - not loot-sheet material
 
 
 def _keep(quality: int, item_class: int, entry: int = 0) -> bool:
-    # class 3 = gems, class 9 = recipes — drop from raid trash but aren't gear
+    # class 3 = gems, class 9 = recipes - drop from raid trash but aren't gear
     if item_class in (3, 9) or entry == BADGE_OF_JUSTICE:
         return False
     return quality >= 4 or (quality == 3 and item_class in (2, 4))
@@ -236,7 +236,7 @@ def later_phase_items(tag: str) -> set[int]:
                 ids.update(enc["items"])
 
     # Raid lootmaps miss patch-gated non-raid items (badge vendor, crafted).
-    # Wowhead's per-item phase tags cover those — see item_phases.py.
+    # Wowhead's per-item phase tags cover those - see item_phases.py.
     from .item_phases import (
         build_observed_clearance,
         effective_phase,
@@ -247,7 +247,7 @@ def later_phase_items(tag: str) -> set[int]:
     phases = load_item_phases()
     if phases is None:
         log.warning(
-            "item phase cache missing — run `bis-pipeline item-phases`; "
+            "item phase cache missing - run `bis-pipeline item-phases`; "
             "poison set covers raid drops only"
         )
     else:

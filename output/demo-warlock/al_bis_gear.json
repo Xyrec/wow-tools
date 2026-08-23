@@ -32,7 +32,7 @@
         {
           "rank": "Optional",
           "name": "Scryer's Bloodgem",
-          "source": "The Scryers — Revered",
+          "source": "The Scryers - Revered",
           "item_id": 29132
         }
       ],
@@ -306,13 +306,13 @@
         {
           "rank": "Optional",
           "name": "Stormcaller",
-          "source": "Thrallmar — Exalted",
+          "source": "Thrallmar - Exalted",
           "item_id": 29155
         },
         {
           "rank": "Optional",
           "name": "Blade of the Archmage",
-          "source": "Honor Hold — Exalted",
+          "source": "Honor Hold - Exalted",
           "item_id": 29153
         }
       ],
@@ -320,7 +320,7 @@
         {
           "rank": "BiS",
           "name": "Ashyen's Gift",
-          "source": "Cenarion Expedition — Exalted",
+          "source": "Cenarion Expedition - Exalted",
           "item_id": 29172
         },
         {
@@ -338,7 +338,7 @@
         {
           "rank": "Optional",
           "name": "Seer's Signet",
-          "source": "The Scryers — Exalted",
+          "source": "The Scryers - Exalted",
           "item_id": 29126
         },
         {
@@ -386,13 +386,13 @@
         {
           "rank": "BiS",
           "name": "Royal Cloak of the Sunstriders",
-          "source": "Drop: Kael'thas Sunstrider — Tempest Keep",
+          "source": "Drop: Kael'thas Sunstrider - Tempest Keep",
           "item_id": 29992
         },
         {
           "rank": "Optional",
           "name": "Ruby Drape of the Mysticant",
-          "source": "Drop: Prince Malchezaar — Karazhan",
+          "source": "Drop: Prince Malchezaar - Karazhan",
           "item_id": 28766
         },
         {
@@ -404,7 +404,7 @@
         {
           "rank": "Optional",
           "name": "Shadow-Cloak of Dalaran",
-          "source": "Drop: Moroes — Karazhan",
+          "source": "Drop: Moroes - Karazhan",
           "item_id": 28570
         }
       ],
@@ -412,25 +412,25 @@
         {
           "rank": "BiS",
           "name": "Voidheart Mantle",
-          "source": "Drop: High King Maulgar — Gruul's Lair (Tier Token)",
+          "source": "Drop: High King Maulgar - Gruul's Lair (Tier Token)",
           "item_id": 28967
         },
         {
           "rank": "Optional",
           "name": "Mantle of the Corruptor",
-          "source": "Drop: Void Reaver — Tempest Keep (Tier Token)",
+          "source": "Drop: Void Reaver - Tempest Keep (Tier Token)",
           "item_id": 30215
         },
         {
           "rank": "Optional",
           "name": "Mantle of the Elven Kings",
-          "source": "Drop: Trash — Tempest Keep",
+          "source": "Drop: Trash - Tempest Keep",
           "item_id": 30024
         },
         {
           "rank": "Optional",
           "name": "Illidari Shoulderpads",
-          "source": "Drop: Morogrim Tidewalker — Serpentshrine Cavern",
+          "source": "Drop: Morogrim Tidewalker - Serpentshrine Cavern",
           "item_id": 30079
         }
       ],
@@ -438,7 +438,7 @@
         {
           "rank": "BiS",
           "name": "Void Star Talisman",
-          "source": "Drop: High Astromancer Solarian — Tempest Keep",
+          "source": "Drop: High Astromancer Solarian - Tempest Keep",
           "item_id": 30449
         },
         {
@@ -456,13 +456,13 @@
         {
           "rank": "Optional",
           "name": "Eye of Magtheridon",
-          "source": "Drop: Magtheridon — Magtheridon's Lair",
+          "source": "Drop: Magtheridon - Magtheridon's Lair",
           "item_id": 28789
         },
         {
           "rank": "Optional",
           "name": "Scryer's Bloodgem",
-          "source": "The Scryers — Revered",
+          "source": "The Scryers - Revered",
           "item_id": 29132
         }
       ],
@@ -470,19 +470,19 @@
         {
           "rank": "BiS",
           "name": "Wand of the Forgotten Star",
-          "source": "Drop: High Astromancer Solarian — Tempest Keep",
+          "source": "Drop: High Astromancer Solarian - Tempest Keep",
           "item_id": 29982
         },
         {
           "rank": "Optional",
           "name": "Eredar Wand of Obliteration",
-          "source": "Drop: Magtheridon — Magtheridon's Lair",
+          "source": "Drop: Magtheridon - Magtheridon's Lair",
           "item_id": 28783
         },
         {
           "rank": "Optional",
           "name": "Tirisfal Wand of Ascendancy",
-          "source": "Drop: Shade of Aran — Karazhan",
+          "source": "Drop: Shade of Aran - Karazhan",
           "item_id": 28673
         },
         {
@@ -508,19 +508,19 @@
         {
           "rank": "Optional",
           "name": "Ritssyn's Lost Pendant",
-          "source": "Drop: Trash — Karazhan",
+          "source": "Drop: Trash - Karazhan",
           "item_id": 30666
         },
         {
           "rank": "Optional",
           "name": "Brooch of Unquenchable Fury",
-          "source": "Drop: Moroes — Karazhan",
+          "source": "Drop: Moroes - Karazhan",
           "item_id": 28530
         },
         {
           "rank": "Optional",
           "name": "Pendant of the Lost Ages",
-          "source": "Drop: Morogrim Tidewalker — Serpentshrine Cavern",
+          "source": "Drop: Morogrim Tidewalker - Serpentshrine Cavern",
           "item_id": 30008
         }
       ],
@@ -528,25 +528,25 @@
         {
           "rank": "BiS",
           "name": "Vestments of the Sea-Witch",
-          "source": "Drop: Lady Vashj — Serpentshrine Cavern",
+          "source": "Drop: Lady Vashj - Serpentshrine Cavern",
           "item_id": 30107
         },
         {
           "rank": "Optional",
           "name": "Robe of the Corruptor",
-          "source": "Drop: Kael'thas Sunstrider — Tempest Keep (Tier Token)",
+          "source": "Drop: Kael'thas Sunstrider - Tempest Keep (Tier Token)",
           "item_id": 30214
         },
         {
           "rank": "Optional",
           "name": "Robe of Hateful Echoes",
-          "source": "Drop: Hydross the Unstable — Serpentshrine Cavern",
+          "source": "Drop: Hydross the Unstable - Serpentshrine Cavern",
           "item_id": 30056
         },
         {
           "rank": "Optional",
           "name": "Voidheart Robe",
-          "source": "Drop: Magtheridon — Magtheridon's Lair (Tier Token)",
+          "source": "Drop: Magtheridon - Magtheridon's Lair (Tier Token)",
           "item_id": 28964
         }
       ],
@@ -572,13 +572,13 @@
         {
           "rank": "Optional",
           "name": "Fang of the Leviathan",
-          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern",
+          "source": "Drop: Leotheras the Blind - Serpentshrine Cavern",
           "item_id": 30095
         },
         {
           "rank": "Optional",
           "name": "The Nexus Key",
-          "source": "Drop: Kael'thas Sunstrider — Tempest Keep",
+          "source": "Drop: Kael'thas Sunstrider - Tempest Keep",
           "item_id": 29988
         }
       ],
@@ -586,7 +586,7 @@
         {
           "rank": "BiS",
           "name": "Mindstorm Wristbands",
-          "source": "Drop: Al'ar — Tempest Keep",
+          "source": "Drop: Al'ar - Tempest Keep",
           "item_id": 29918
         },
         {
@@ -606,7 +606,7 @@
         {
           "rank": "BiS",
           "name": "Leggings of the Corruptor",
-          "source": "Drop: Fathom-Lord Karathress — Serpentshrine Cavern (Tier Token)",
+          "source": "Drop: Fathom-Lord Karathress - Serpentshrine Cavern (Tier Token)",
           "item_id": 30213
         },
         {
@@ -624,7 +624,7 @@
         {
           "rank": "Optional",
           "name": "Trousers of the Astromancer",
-          "source": "Drop: High Astromancer Solarian — Tempest Keep",
+          "source": "Drop: High Astromancer Solarian - Tempest Keep",
           "item_id": 29972
         }
       ],
@@ -638,13 +638,13 @@
         {
           "rank": "Optional",
           "name": "Gauntlets of the Sun King",
-          "source": "Drop: Kael'thas Sunstrider — Tempest Keep",
+          "source": "Drop: Kael'thas Sunstrider - Tempest Keep",
           "item_id": 29987
         },
         {
           "rank": "Optional",
           "name": "Gloves of the Corruptor",
-          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern (Tier Token)",
+          "source": "Drop: Leotheras the Blind - Serpentshrine Cavern (Tier Token)",
           "item_id": 30211
         }
       ],
@@ -652,7 +652,7 @@
         {
           "rank": "BiS",
           "name": "Boots of the Shifting Nightmare",
-          "source": "Drop: Hydross the Unstable — Serpentshrine Cavern",
+          "source": "Drop: Hydross the Unstable - Serpentshrine Cavern",
           "item_id": 30050
         },
         {
@@ -670,7 +670,7 @@
         {
           "rank": "Optional",
           "name": "Velvet Boots of the Guardian",
-          "source": "Drop: The Lurker Below — Serpentshrine Cavern",
+          "source": "Drop: The Lurker Below - Serpentshrine Cavern",
           "item_id": 30067
         }
       ],
@@ -690,7 +690,7 @@
         {
           "rank": "Optional",
           "name": "Fathomstone",
-          "source": "Drop: Hydross the Unstable — Serpentshrine Cavern",
+          "source": "Drop: Hydross the Unstable - Serpentshrine Cavern",
           "item_id": 30049
         }
       ],
@@ -704,19 +704,19 @@
         {
           "rank": "Optional",
           "name": "Hood of the Corruptor",
-          "source": "Drop: Lady Vashj — Serpentshrine Cavern (Tier Token)",
+          "source": "Drop: Lady Vashj - Serpentshrine Cavern (Tier Token)",
           "item_id": 30212
         },
         {
           "rank": "Optional",
           "name": "Voidheart Crown",
-          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
+          "source": "Drop: Prince Malchezaar - Karazhan (Tier Token)",
           "item_id": 28963
         },
         {
           "rank": "Optional",
           "name": "Cowl of the Grand Engineer",
-          "source": "Drop: Void Reaver — Tempest Keep",
+          "source": "Drop: Void Reaver - Tempest Keep",
           "item_id": 29986
         }
       ],
@@ -730,7 +730,7 @@
         {
           "rank": "Optional",
           "name": "Cord of Screaming Terrors",
-          "source": "Drop: The Lurker Below — Serpentshrine Cavern",
+          "source": "Drop: The Lurker Below - Serpentshrine Cavern",
           "item_id": 30064
         },
         {
@@ -744,7 +744,7 @@
         {
           "rank": "BiS",
           "name": "Ring of Endless Coils",
-          "source": "Drop: Lady Vashj — Serpentshrine Cavern",
+          "source": "Drop: Lady Vashj - Serpentshrine Cavern",
           "item_id": 30109
         },
         {
@@ -768,7 +768,7 @@
         {
           "rank": "Optional",
           "name": "Band of Al'ar",
-          "source": "Drop: Al'ar — Tempest Keep",
+          "source": "Drop: Al'ar - Tempest Keep",
           "item_id": 29922
         }
       ]

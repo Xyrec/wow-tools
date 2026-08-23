@@ -143,7 +143,7 @@ pub fn classify_source(source: &str, dungeon_reputation: &HashMap<String, String
         tags.push("reputation".to_string());
     }
 
-    // Heroic detection — only when not already classified as reputation
+    // Heroic detection - only when not already classified as reputation
     if !tags.contains(&"reputation".to_string())
         && (s.contains("heroic") || s.contains("(h)") || s.contains("(hc)"))
     {

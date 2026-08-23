@@ -82,7 +82,7 @@ fn format_source(item: &serde_json::Value) -> String {
             parts.push(format!("{:.0}%", chance * 100.0));
         }
     }
-    parts.join(" — ")
+    parts.join(" - ")
 }
 
 fn convert_spec(data: &serde_json::Value) -> Result<ParsedOutput> {

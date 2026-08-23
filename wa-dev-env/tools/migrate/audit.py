@@ -123,7 +123,7 @@ def check_style_rules(key, aura, displays, ours, issues):
 def audit_displays(displays: dict) -> list:
     issues = []
     uids = {}
-    # built (pre-land) displays have no uids at all — that's fine; a MIX of
+    # built (pre-land) displays have no uids at all - that's fine; a MIX of
     # with/without uid in a live table is what indicates corruption
     any_uid = any(a.get("uid") for a in displays.values())
     ours = xyrec_keys(displays)

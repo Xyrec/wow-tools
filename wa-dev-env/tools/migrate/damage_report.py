@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Per-aura damage report, ACTIVITY-AWARE: only fields the trigger's type
 actually uses are treated as live; everything else is residue (WA keeps stale
-fields when the author switches trigger type — harmless at runtime).
+fields when the author switches trigger type - harmless at runtime).
 Read-only analysis for review before migration work."""
 import json
 import pathlib
@@ -39,10 +39,10 @@ def active_refs(tr: dict):
     if ttype == "item":
         return refs, f"item trigger ({tr.get('event')}); spell fields are residue"
     if ttype == "custom":
-        return refs, "custom code trigger — lint via extract_custom_code"
+        return refs, "custom code trigger - lint via extract_custom_code"
     if ttype == "unit":
         return refs, None
-    return refs, f"unhandled trigger type {ttype!r} — review manually"
+    return refs, f"unhandled trigger type {ttype!r} - review manually"
 
 
 def load_summary(aura):

@@ -21,7 +21,7 @@ function M.decode(s)
     return payload
   end
   if s:sub(1, 1) == "!" or #s > 0 then
-    error("legacy (pre-!WA:2!) export string — not supported (spec §7); re-export from a current WeakAuras")
+    error("legacy (pre-!WA:2!) export string - not supported (spec §7); re-export from a current WeakAuras")
   end
   error("empty input")
 end

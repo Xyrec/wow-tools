@@ -10,7 +10,7 @@ Semantics:
   - inputs are never mutated; output contains no shared references
 
 Definitions supply triggers/load/conditions as WHOLE values (replace, not
-merge) — trigger tables are verbatim WA data, merging inside them would
+merge) - trigger tables are verbatim WA data, merging inside them would
 invite silent half-updates.
 """
 import copy

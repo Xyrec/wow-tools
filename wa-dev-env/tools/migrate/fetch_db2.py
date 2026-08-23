@@ -3,7 +3,7 @@
 
 .build.info lives at the WoW ROOT (covers all installed products); the header
 line is |-separated column specs like "Version!STRING:0"; data lines are
-|-separated values. We select the wow_anniversary product row explicitly —
+|-separated values. We select the wow_anniversary product row explicitly -
 other products (e.g. wow_classic_era) share the file.
 """
 import argparse
@@ -62,7 +62,7 @@ def main() -> int:
             print(f"  {table}: {out} ({out.stat().st_size} bytes)")
         except Exception as exc:  # graceful per-table failure (spec §8 risk)
             failures.append(table)
-            print(f"  {table}: FAILED ({exc}) — in-game dumps remain authoritative; "
+            print(f"  {table}: FAILED ({exc}) - in-game dumps remain authoritative; "
                   f"retry later or try the nearest 2.5.x build on wago.tools", file=sys.stderr)
     return 1 if failures else 0
 

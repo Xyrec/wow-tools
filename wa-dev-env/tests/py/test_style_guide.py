@@ -81,7 +81,7 @@ def test_row_sizes_match_snapshot_exemplars():
 
 
 def _r9(value):
-    """Round floats like the parity harness — Lua serialization round-trips
+    """Round floats like the parity harness - Lua serialization round-trips
     perturb the 15th digit; 9 digits is the equality contract."""
     if isinstance(value, list):
         return [_r9(v) for v in value]

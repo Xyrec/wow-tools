@@ -30,7 +30,7 @@
         {
           "rank": "Optional",
           "name": "Watcher's Cowl",
-          "source": "Cenarion Expedition — Revered",
+          "source": "Cenarion Expedition - Revered",
           "item_id": 29174
         }
       ],
@@ -98,19 +98,19 @@
         {
           "rank": "BiS",
           "name": "Gift of the Talonpriests",
-          "source": "Auction House — BoE World Drop",
+          "source": "Auction House - BoE World Drop",
           "item_id": 32535
         },
         {
           "rank": "Optional",
           "name": "Ring of Convalescence",
-          "source": "Honor Hold — Revered",
+          "source": "Honor Hold - Revered",
           "item_id": 29169
         },
         {
           "rank": "Optional",
           "name": "Ancestral Band",
-          "source": "Thrallmar — Revered",
+          "source": "Thrallmar - Revered",
           "item_id": 29168
         },
         {
@@ -136,7 +136,7 @@
         {
           "rank": "Optional",
           "name": "Bindings of the Timewalker",
-          "source": "Keepers of Time — Exalted",
+          "source": "Keepers of Time - Exalted",
           "item_id": 29183
         },
         {
@@ -194,7 +194,7 @@
         {
           "rank": "Optional",
           "name": "Lower City Prayerbook",
-          "source": "Lower City — Revered",
+          "source": "Lower City - Revered",
           "item_id": 30841
         },
         {
@@ -344,7 +344,7 @@
         {
           "rank": "Optional",
           "name": "Gavel of Pure Light",
-          "source": "The Sha'tar — Exalted",
+          "source": "The Sha'tar - Exalted",
           "item_id": 29175
         }
       ],
@@ -362,7 +362,7 @@
         {
           "rank": "BiS",
           "name": "Cyclone Headdress",
-          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
+          "source": "Drop: Prince Malchezaar - Karazhan (Tier Token)",
           "item_id": 29028
         },
         {
@@ -382,13 +382,13 @@
         {
           "rank": "BiS",
           "name": "Heart-Flame Leggings",
-          "source": "Drop: Chess Event — Karazhan",
+          "source": "Drop: Chess Event - Karazhan",
           "item_id": 28751
         },
         {
           "rank": "Optional",
           "name": "Earthsoul Leggings",
-          "source": "Drop: The Wizard of Oz — Karazhan",
+          "source": "Drop: The Wizard of Oz - Karazhan",
           "item_id": 28591
         },
         {
@@ -408,7 +408,7 @@
         {
           "rank": "Optional",
           "name": "Whirlwind Bracers",
-          "source": "Drop: Attumen the Huntsman — Karazhan",
+          "source": "Drop: Attumen the Huntsman - Karazhan",
           "item_id": 28503
         }
       ],
@@ -428,7 +428,7 @@
         {
           "rank": "Optional",
           "name": "Cyclone Hauberk",
-          "source": "Drop: Magtheridon — Magtheridon's Lair (Tier Token)",
+          "source": "Drop: Magtheridon - Magtheridon's Lair (Tier Token)",
           "item_id": 29029
         }
       ],
@@ -436,19 +436,19 @@
         {
           "rank": "BiS",
           "name": "Gloves of Centering",
-          "source": "Drop: Maiden of Virtue — Karazhan",
+          "source": "Drop: Maiden of Virtue - Karazhan",
           "item_id": 28520
         },
         {
           "rank": "Optional",
           "name": "Mitts of the Treemender",
-          "source": "Drop: Maiden of Virtue — Karazhan",
+          "source": "Drop: Maiden of Virtue - Karazhan",
           "item_id": 28521
         },
         {
           "rank": "Optional",
           "name": "Cyclone Gloves",
-          "source": "Drop: The Curator — Karazhan (Tier Token)",
+          "source": "Drop: The Curator - Karazhan (Tier Token)",
           "item_id": 29032
         }
       ],
@@ -462,7 +462,7 @@
         {
           "rank": "Optional",
           "name": "Forestlord Striders",
-          "source": "Drop: Chess Event — Karazhan",
+          "source": "Drop: Chess Event - Karazhan",
           "item_id": 28752
         }
       ],
@@ -470,19 +470,19 @@
         {
           "rank": "BiS",
           "name": "Aegis of the Vindicator",
-          "source": "Drop: Magtheridon — Magtheridon's Lair",
+          "source": "Drop: Magtheridon - Magtheridon's Lair",
           "item_id": 29458
         },
         {
           "rank": "Optional",
           "name": "Aran's Soothing Sapphire",
-          "source": "Drop: Shade of Aran — Karazhan",
+          "source": "Drop: Shade of Aran - Karazhan",
           "item_id": 28728
         },
         {
           "rank": "Optional",
           "name": "Triptych Shield of the Ancients",
-          "source": "Drop: Chess Event — Karazhan",
+          "source": "Drop: Chess Event - Karazhan",
           "item_id": 28754
         }
       ],
@@ -490,7 +490,7 @@
         {
           "rank": "BiS",
           "name": "Totem of Healing Rains",
-          "source": "Drop: Maiden of Virtue — Karazhan",
+          "source": "Drop: Maiden of Virtue - Karazhan",
           "item_id": 28523
         },
         {
@@ -516,7 +516,7 @@
         {
           "rank": "Optional",
           "name": "Belt of Gale Force",
-          "source": "Drop: Moroes — Karazhan",
+          "source": "Drop: Moroes - Karazhan",
           "item_id": 28567
         }
       ],
@@ -538,7 +538,7 @@
         {
           "rank": "BiS",
           "name": "Stainless Cloak of the Pure Hearted",
-          "source": "Drop: Prince Malchezaar — Karazhan",
+          "source": "Drop: Prince Malchezaar - Karazhan",
           "item_id": 28765
         },
         {
@@ -552,7 +552,7 @@
         {
           "rank": "BiS",
           "name": "Light's Justice",
-          "source": "Drop: Prince Malchezaar — Karazhan",
+          "source": "Drop: Prince Malchezaar - Karazhan",
           "item_id": 28771
         },
         {
@@ -564,7 +564,7 @@
         {
           "rank": "Optional",
           "name": "Shard of the Virtuous",
-          "source": "Drop: Maiden of Virtue — Karazhan",
+          "source": "Drop: Maiden of Virtue - Karazhan",
           "item_id": 28522
         }
       ],
@@ -572,7 +572,7 @@
         {
           "rank": "BiS",
           "name": "Cyclone Shoulderpads",
-          "source": "Drop: High King Maulgar — Gruul's Lair (Tier Token)",
+          "source": "Drop: High King Maulgar - Gruul's Lair (Tier Token)",
           "item_id": 29031
         },
         {
@@ -584,7 +584,7 @@
         {
           "rank": "Optional",
           "name": "Dragon-Quake Shoulderguards",
-          "source": "Drop: The Curator — Karazhan",
+          "source": "Drop: The Curator - Karazhan",
           "item_id": 28631
         }
       ],
@@ -592,7 +592,7 @@
         {
           "rank": "BiS",
           "name": "Emberspur Talisman",
-          "source": "Drop: Nightbane — Karazhan",
+          "source": "Drop: Nightbane - Karazhan",
           "item_id": 28609
         },
         {
@@ -604,7 +604,7 @@
         {
           "rank": "Optional",
           "name": "Teeth of Gruul",
-          "source": "Drop: Gruul the Dragonkiller — Gruul's Lair",
+          "source": "Drop: Gruul the Dragonkiller - Gruul's Lair",
           "item_id": 28822
         }
       ],
@@ -612,7 +612,7 @@
         {
           "rank": "BiS",
           "name": "Jade Ring of the Everliving",
-          "source": "Drop: Prince Malchezaar — Karazhan",
+          "source": "Drop: Prince Malchezaar - Karazhan",
           "item_id": 28763
         },
         {
@@ -624,13 +624,13 @@
         {
           "rank": "Optional",
           "name": "Ring of Convalescence",
-          "source": "Honor Hold — Revered",
+          "source": "Honor Hold - Revered",
           "item_id": 29169
         },
         {
           "rank": "Optional",
           "name": "Ancestral Band",
-          "source": "Thrallmar — Revered",
+          "source": "Thrallmar - Revered",
           "item_id": 29168
         },
         {
@@ -646,19 +646,19 @@
         {
           "rank": "BiS",
           "name": "Sunhawk Leggings",
-          "source": "Drop: Kael'thas Sunstrider — Tempest Keep",
+          "source": "Drop: Kael'thas Sunstrider - Tempest Keep",
           "item_id": 29991
         },
         {
           "rank": "Optional",
           "name": "Cataclysm Legguards",
-          "source": "Drop: Fathom-Lord Karathress — Serpentshrine Cavern (Tier Token)",
+          "source": "Drop: Fathom-Lord Karathress - Serpentshrine Cavern (Tier Token)",
           "item_id": 30167
         },
         {
           "rank": "Optional",
           "name": "Heart-Flame Leggings",
-          "source": "Drop: Chess Event — Karazhan",
+          "source": "Drop: Chess Event - Karazhan",
           "item_id": 28751
         }
       ],
@@ -666,13 +666,13 @@
         {
           "rank": "BiS",
           "name": "Blackfathom Warbands",
-          "source": "Drop: Hydross the Unstable — Serpentshrine Cavern",
+          "source": "Drop: Hydross the Unstable - Serpentshrine Cavern",
           "item_id": 30047
         },
         {
           "rank": "Optional",
           "name": "Wraps of Purification",
-          "source": "Drop: Hydross the Unstable — Serpentshrine Cavern",
+          "source": "Drop: Hydross the Unstable - Serpentshrine Cavern",
           "item_id": 32516
         },
         {
@@ -686,7 +686,7 @@
         {
           "rank": "BiS",
           "name": "Girdle of Fallen Stars",
-          "source": "Drop: Trash — Tempest Keep",
+          "source": "Drop: Trash - Tempest Keep",
           "item_id": 30030
         },
         {
@@ -712,13 +712,13 @@
         {
           "rank": "Optional",
           "name": "Orca-Hide Boots",
-          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern",
+          "source": "Drop: Leotheras the Blind - Serpentshrine Cavern",
           "item_id": 30092
         },
         {
           "rank": "Optional",
           "name": "Tempest-Strider Boots",
-          "source": "Drop: The Lurker Below — Serpentshrine Cavern",
+          "source": "Drop: The Lurker Below - Serpentshrine Cavern",
           "item_id": 30066
         }
       ],
@@ -726,19 +726,19 @@
         {
           "rank": "BiS",
           "name": "Worldstorm Gauntlets",
-          "source": "Drop: High Astromancer Solarian — Tempest Keep",
+          "source": "Drop: High Astromancer Solarian - Tempest Keep",
           "item_id": 29976
         },
         {
           "rank": "Optional",
           "name": "Cataclysm Gloves",
-          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern (Tier Token)",
+          "source": "Drop: Leotheras the Blind - Serpentshrine Cavern (Tier Token)",
           "item_id": 30165
         },
         {
           "rank": "Optional",
           "name": "Gloves of Centering",
-          "source": "Drop: Maiden of Virtue — Karazhan",
+          "source": "Drop: Maiden of Virtue - Karazhan",
           "item_id": 28520
         }
       ],
@@ -758,13 +758,13 @@
         {
           "rank": "Optional",
           "name": "Ribbon of Sacrifice",
-          "source": "Drop: The Wizard of Oz — Karazhan",
+          "source": "Drop: The Wizard of Oz - Karazhan",
           "item_id": 28590
         },
         {
           "rank": "Optional",
           "name": "Lower City Prayerbook",
-          "source": "Lower City — Revered",
+          "source": "Lower City - Revered",
           "item_id": 30841
         }
       ],
@@ -772,7 +772,7 @@
         {
           "rank": "BiS",
           "name": "Lightfathom Scepter",
-          "source": "Drop: Lady Vashj — Serpentshrine Cavern",
+          "source": "Drop: Lady Vashj - Serpentshrine Cavern",
           "item_id": 30108
         },
         {
@@ -784,7 +784,7 @@
         {
           "rank": "Optional",
           "name": "Light's Justice",
-          "source": "Drop: Prince Malchezaar — Karazhan",
+          "source": "Drop: Prince Malchezaar - Karazhan",
           "item_id": 28771
         }
       ],
@@ -792,7 +792,7 @@
         {
           "rank": "BiS",
           "name": "Cataclysm Headguard",
-          "source": "Drop: Lady Vashj — Serpentshrine Cavern (Tier Token)",
+          "source": "Drop: Lady Vashj - Serpentshrine Cavern (Tier Token)",
           "item_id": 30166
         },
         {
@@ -804,7 +804,7 @@
         {
           "rank": "Optional",
           "name": "Cyclone Headdress",
-          "source": "Drop: Prince Malchezaar — Karazhan (Tier Token)",
+          "source": "Drop: Prince Malchezaar - Karazhan (Tier Token)",
           "item_id": 29028
         }
       ],
@@ -812,19 +812,19 @@
         {
           "rank": "BiS",
           "name": "Cataclysm Shoulderguards",
-          "source": "Drop: Void Reaver — Tempest Keep (Tier Token)",
+          "source": "Drop: Void Reaver - Tempest Keep (Tier Token)",
           "item_id": 30168
         },
         {
           "rank": "Optional",
           "name": "Coral-Barbed Shoulderpads",
-          "source": "Drop: Leotheras the Blind — Serpentshrine Cavern",
+          "source": "Drop: Leotheras the Blind - Serpentshrine Cavern",
           "item_id": 30097
         },
         {
           "rank": "Optional",
           "name": "Cyclone Shoulderpads",
-          "source": "Drop: High King Maulgar — Gruul's Lair (Tier Token)",
+          "source": "Drop: High King Maulgar - Gruul's Lair (Tier Token)",
           "item_id": 29031
         }
       ],
@@ -832,7 +832,7 @@
         {
           "rank": "BiS",
           "name": "Totem of Healing Rains",
-          "source": "Drop: Maiden of Virtue — Karazhan",
+          "source": "Drop: Maiden of Virtue - Karazhan",
           "item_id": 28523
         }
       ],
@@ -846,7 +846,7 @@
         {
           "rank": "Optional",
           "name": "Emberspur Talisman",
-          "source": "Drop: Nightbane — Karazhan",
+          "source": "Drop: Nightbane - Karazhan",
           "item_id": 28609
         }
       ],
@@ -854,13 +854,13 @@
         {
           "rank": "BiS",
           "name": "Aegis of the Vindicator",
-          "source": "Drop: Magtheridon — Magtheridon's Lair",
+          "source": "Drop: Magtheridon - Magtheridon's Lair",
           "item_id": 29458
         },
         {
           "rank": "Optional",
           "name": "Talisman of the Sun King",
-          "source": "Drop: Al'ar — Tempest Keep",
+          "source": "Drop: Al'ar - Tempest Keep",
           "item_id": 29923
         }
       ],
@@ -868,7 +868,7 @@
         {
           "rank": "BiS",
           "name": "Phoenix-Ring of Rebirth",
-          "source": "Drop: Al'ar — Tempest Keep",
+          "source": "Drop: Al'ar - Tempest Keep",
           "item_id": 29920
         },
         {
@@ -886,13 +886,13 @@
         {
           "rank": "Optional",
           "name": "Jade Ring of the Everliving",
-          "source": "Drop: Prince Malchezaar — Karazhan",
+          "source": "Drop: Prince Malchezaar - Karazhan",
           "item_id": 28763
         },
         {
           "rank": "Optional",
           "name": "Coral Band of the Revived",
-          "source": "Drop: Lady Vashj — Serpentshrine Cavern",
+          "source": "Drop: Lady Vashj - Serpentshrine Cavern",
           "item_id": 30110
         }
       ],
@@ -900,13 +900,13 @@
         {
           "rank": "BiS",
           "name": "Sunshower Light Cloak",
-          "source": "Drop: Kael'thas Sunstrider — Tempest Keep",
+          "source": "Drop: Kael'thas Sunstrider - Tempest Keep",
           "item_id": 29989
         },
         {
           "rank": "Optional",
           "name": "Stainless Cloak of the Pure Hearted",
-          "source": "Drop: Prince Malchezaar — Karazhan",
+          "source": "Drop: Prince Malchezaar - Karazhan",
           "item_id": 28765
         }
       ],
@@ -914,13 +914,13 @@
         {
           "rank": "BiS",
           "name": "Cataclysm Chestguard",
-          "source": "Drop: Kael'thas Sunstrider — Tempest Keep (Tier Token)",
+          "source": "Drop: Kael'thas Sunstrider - Tempest Keep (Tier Token)",
           "item_id": 30164
         },
         {
           "rank": "Optional",
           "name": "Fire Crest Breastplate",
-          "source": "Drop: Al'ar — Tempest Keep",
+          "source": "Drop: Al'ar - Tempest Keep",
           "item_id": 29921
         },
         {
