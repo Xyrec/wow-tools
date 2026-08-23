@@ -1,6 +1,5 @@
 import { useMemo, useState } from "react";
 import { ChevronDown, ChevronRight, Download } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -73,12 +72,14 @@ function Evidence({
           <tr className="text-muted-foreground">
             <th className="pr-6 text-left font-medium">Spec</th>
             {isToken && <th className="pr-6 text-left font-medium">Gets</th>}
+            <th className="border-r border-border pr-4 text-right font-medium">
+              Score
+            </th>
             {phases.map((p) => (
-              <th key={p} className="pr-6 text-right font-medium">
+              <th key={p} className="pl-6 text-right font-medium">
                 Phase {p}
               </th>
             ))}
-            <th className="text-right font-medium">Score</th>
           </tr>
         </thead>
         <tbody>
@@ -95,17 +96,17 @@ function Evidence({
                 {isToken && (
                   <td className="pr-6">{items[s.viaItem]?.name ?? s.viaItem}</td>
                 )}
+                <td className="border-r border-border pr-4 text-right tabular-nums">
+                  {Math.round(s.score)}
+                </td>
                 {phases.map((p) => {
                   const n = byPhase.get(p);
                   return (
-                    <td key={p} className="pr-6 text-right tabular-nums">
+                    <td key={p} className="pl-6 text-right tabular-nums">
                       {n ? `${n.usage.toFixed(1)}%` : "–"}
                     </td>
                   );
                 })}
-                <td className="text-right tabular-nums">
-                  {Math.round(s.score)}
-                </td>
               </tr>
             );
           })}
@@ -432,14 +433,6 @@ export function PrioView({
                                 >
                                   {item.name}
                                 </a>
-                                {item.token && (
-                                  <Badge
-                                    variant="outline"
-                                    className="h-4 shrink-0 px-1 text-xs text-emerald-400"
-                                  >
-                                    Token
-                                  </Badge>
-                                )}
                                 <ChainText chain={chain} />
                               </div>
                               {open && (
