@@ -237,6 +237,19 @@ export function PrioView({ zone }: { zone: ZoneData }) {
         }
       }
     }
+    // Items sharing a name (the two Warglaives) get their hand appended so
+    // the sheet says which is which.
+    const nameCount = new Map<string, number>();
+    for (const { facts } of itemInfo.values())
+      nameCount.set(facts.name, (nameCount.get(facts.name) ?? 0) + 1);
+    const HAND_LABEL: Record<string, string> = {
+      two_hand: "Two Hand",
+      main_hand: "Main Hand",
+      one_hand: "One Hand",
+      off_hand_weapon: "Off Hand",
+      held_off_hand: "Off Hand",
+      shield: "Off Hand",
+    };
     // Rows per encounter with dedup-filtered chains.
     const rows = new Map<
       string,
@@ -245,11 +258,16 @@ export function PrioView({ zone }: { zone: ZoneData }) {
     for (const [iid, info] of itemInfo) {
       const kept = keptScores(iid);
       const chain = buildChain(kept, Boolean(info.facts.token));
+      const item =
+        (nameCount.get(info.facts.name) ?? 0) > 1 &&
+        HAND_LABEL[info.facts.slot]
+          ? { ...info.facts, name: `${info.facts.name} (${HAND_LABEL[info.facts.slot]})` }
+          : info.facts;
       for (const eid of info.facts.sources ?? []) {
         const key = String(eid);
         rows.set(key, [
           ...(rows.get(key) ?? []),
-          { id: iid, item: info.facts, scores: kept, chain },
+          { id: iid, item, scores: kept, chain },
         ]);
       }
     }
