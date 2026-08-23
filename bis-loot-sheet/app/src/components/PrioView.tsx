@@ -63,50 +63,60 @@ function Evidence({
   items: Record<string, ItemFacts>;
   isToken: boolean;
 }) {
+  const phases = [
+    ...new Set(scores.flatMap((s) => s.needs.map((n) => n.phase))),
+  ].sort();
   return (
-    <div className="mt-2 overflow-x-auto rounded border border-border bg-muted/30 p-2">
-      <table className="w-full text-xs">
+    <div className="mt-2 overflow-x-auto rounded border border-border bg-muted/30 p-3">
+      <table className="text-xs">
         <thead>
-          <tr className="text-left text-muted-foreground">
-            <th className="pr-3 font-medium">Spec</th>
-            <th className="pr-3 font-medium">Score</th>
-            {isToken && <th className="pr-3 font-medium">Via piece</th>}
-            <th className="pr-3 font-medium">
-              Per phase: usage / best alternative
-            </th>
+          <tr className="text-muted-foreground">
+            <th className="pr-6 text-left font-medium">Spec</th>
+            {isToken && <th className="pr-6 text-left font-medium">Gets</th>}
+            {phases.map((p) => (
+              <th key={p} className="pr-6 text-right font-medium">
+                Phase {p}
+              </th>
+            ))}
+            <th className="text-right font-medium">Score</th>
           </tr>
         </thead>
         <tbody>
-          {scores.slice(0, 8).map((s) => (
-            <tr key={s.spec}>
-              <td
-                className="pr-3 align-top"
-                style={{ color: CLASS_COLORS[specClass(s.spec)] }}
-              >
-                {SPEC_SHORT[s.spec] ?? s.spec}
-              </td>
-              <td className="pr-3 align-top tabular-nums">
-                {Math.round(s.score)}
-              </td>
-              {isToken && (
-                <td className="pr-3 align-top">
-                  {items[s.viaItem]?.name ?? s.viaItem}
+          {scores.slice(0, 8).map((s) => {
+            const byPhase = new Map(s.needs.map((n) => [n.phase, n]));
+            return (
+              <tr key={s.spec}>
+                <td
+                  className="pr-6"
+                  style={{ color: CLASS_COLORS[specClass(s.spec)] }}
+                >
+                  {SPEC_SHORT[s.spec] ?? s.spec}
                 </td>
-              )}
-              <td className="pr-3">
-                {s.needs.map((n) => (
-                  <div key={n.phase} className="whitespace-nowrap">
-                    {`P${n.phase}${n.weight !== 1 ? `×${n.weight}` : ""}: ${n.usage.toFixed(1)}%` +
-                      (n.altId
-                        ? ` (alt: ${items[n.altId]?.name ?? "?"} ${n.alt.toFixed(1)}%)`
-                        : "")}
-                  </div>
-                ))}
-              </td>
-            </tr>
-          ))}
+                {isToken && (
+                  <td className="pr-6">{items[s.viaItem]?.name ?? s.viaItem}</td>
+                )}
+                {phases.map((p) => {
+                  const n = byPhase.get(p);
+                  return (
+                    <td key={p} className="pr-6 text-right tabular-nums">
+                      {n ? `${n.usage.toFixed(1)}%` : "–"}
+                    </td>
+                  );
+                })}
+                <td className="text-right tabular-nums">
+                  {Math.round(s.score)}
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
+      <p className="mt-2 text-xs text-muted-foreground">
+        % = how many of that spec&apos;s top 2,000 players wore this
+        {isToken ? " (via the listed piece)" : ""} in that phase. The score
+        also rewards items with no good alternative, and counts later phases
+        extra — gear that stays best is worth more.
+      </p>
     </div>
   );
 }
