@@ -12,6 +12,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useZone } from "@/lib/data";
+import { exportPhaseXlsx } from "@/lib/xlsx";
 import {
   buildChain,
   scoreItem,
@@ -155,50 +156,6 @@ function slotRank(item: ItemFacts, items: Record<string, ItemFacts>): number {
 function wornSlot(s: SpecScore, currentPhase: number): string {
   const n = s.needs.find((x) => x.phase === currentPhase) ?? s.needs[0];
   return n?.slot ?? "?";
-}
-
-function csvEscape(v: string): string {
-  return /[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v;
-}
-
-function raidCsv(
-  encounters: [string, string][],
-  rows: Map<string, { item: ItemFacts; chain: Chain }[]>,
-): string {
-  const lines: string[] = [];
-  for (const [eid, encName] of encounters) {
-    const encRows = rows.get(eid) ?? [];
-    if (encRows.length === 0) continue;
-    lines.push(csvEscape(encName));
-    lines.push("Item Name,Bias,,,,,,,,Main Raid,Split 1,Split 2");
-    for (const { item, chain } of encRows) {
-      const cells: string[] = [csvEscape(item.name)];
-      chain.named.forEach((s, i) => {
-        // A bare "=" cell imports into Sheets/Excel as a broken formula;
-        // ="=" is a formula that renders the literal equals sign.
-        if (i > 0)
-          cells.push(
-            chain.seps[i - 1] === "=" ? '"=""="""' : chain.seps[i - 1],
-          );
-        cells.push(SPEC_SHORT[s.spec] ?? s.spec);
-      });
-      if (chain.named.length > 0) cells.push(">");
-      cells.push(chain.tail);
-      lines.push(cells.join(","));
-    }
-    lines.push("");
-  }
-  return lines.join("\n");
-}
-
-function download(filename: string, content: string) {
-  const blob = new Blob([content], { type: "text/csv;charset=utf-8" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = filename;
-  a.click();
-  URL.revokeObjectURL(url);
 }
 
 export function PrioView({ zone }: { zone: ZoneData }) {
@@ -364,26 +321,24 @@ export function PrioView({ zone }: { zone: ZoneData }) {
                 variant="outline"
                 size="sm"
                 onClick={() =>
-                  download(
-                    `Loot Prio - Phase ${zone.anniversaryPhase} - ${active}.csv`,
-                    raidCsv(
-                      encounters,
-                      new Map(
-                        encounters.map(([eid]) => [
+                  exportPhaseXlsx(
+                    zone.anniversaryPhase,
+                    [...computed.byRaid.entries()].map(([raid, encs]) => ({
+                      raid,
+                      encounters: encs,
+                      rows: new Map(
+                        encs.map(([eid]) => [
                           eid,
                           (computed.rows.get(eid) ?? []).map(
-                            ({ item, chain }) => ({
-                              item,
-                              chain,
-                            }),
+                            ({ item, chain }) => ({ item, chain }),
                           ),
                         ]),
                       ),
-                    ),
+                    })),
                   )
                 }
               >
-                <Download /> Export CSV
+                <Download /> Export XLSX
               </Button>
             </div>
             <div className="space-y-4">
