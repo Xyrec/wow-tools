@@ -80,25 +80,28 @@ function Evidence({
           {scores.slice(0, 8).map((s) => (
             <tr key={s.spec}>
               <td
-                className="pr-3"
+                className="pr-3 align-top"
                 style={{ color: CLASS_COLORS[specClass(s.spec)] }}
               >
                 {SPEC_SHORT[s.spec] ?? s.spec}
               </td>
-              <td className="pr-3 tabular-nums">{Math.round(s.score)}</td>
+              <td className="pr-3 align-top tabular-nums">
+                {Math.round(s.score)}
+              </td>
               {isToken && (
-                <td className="pr-3">{items[s.viaItem]?.name ?? s.viaItem}</td>
+                <td className="pr-3 align-top">
+                  {items[s.viaItem]?.name ?? s.viaItem}
+                </td>
               )}
               <td className="pr-3">
-                {s.needs
-                  .map(
-                    (n) =>
-                      `P${n.phase}${n.weight !== 1 ? `×${n.weight}` : ""}: ${n.usage.toFixed(1)}%` +
+                {s.needs.map((n) => (
+                  <div key={n.phase} className="whitespace-nowrap">
+                    {`P${n.phase}${n.weight !== 1 ? `×${n.weight}` : ""}: ${n.usage.toFixed(1)}%` +
                       (n.altId
                         ? ` (alt: ${items[n.altId]?.name ?? "?"} ${n.alt.toFixed(1)}%)`
-                        : ""),
-                  )
-                  .join("  ·  ")}
+                        : "")}
+                  </div>
+                ))}
               </td>
             </tr>
           ))}
