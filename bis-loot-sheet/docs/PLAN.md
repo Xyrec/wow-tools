@@ -87,10 +87,7 @@ uv run bis-pipeline enrich <phase|zone>                         # + cmangos fact
   display time); some "Main Hand" tooltips (Dragonstrike, The Decapitator) are
   genuinely One-Hand in final-patch data - dual-wielding them is real; one
   Anniversary-era item id (185988) polluted a classic partition (dropped, with
-  warning, by enrich); ring/trinket pct counts equipped COPIES per player, so a
-  farmable non-unique item can exceed 100% (Blessed Band of Karabor, BT trash,
-  112.7% for P5 resto shamans - 13k of 24k players wear two; verified real,
-  NOT a bug - Xyrec ruled the display stays).
+  warning, by enrich).
 
 ### Web app (`app/` - Vite 8, React 19, Tailwind 4, shadcn/Base UI)
 
@@ -180,6 +177,26 @@ wears off-hand competes with off-hands for the rogue only) - dual-wielders
 hold one MH and one OH prio, matching the officers' Talon+Claw precedent.
 Items sorted in spec-page slot order within each boss; tokens sort/compete
 as the slot they redeem into.
+
+**Panel refinements (2026-08-23, 3 blind Fable agents, byte-identical
+prompt, no hinted solutions - trigger: OH Warglaive lost Combat Rogue to
+Blade of Savagery on a 3% margin and the display hid it entirely):**
+- *Immutable evidence* (3-0): evidence tables show RAW membership scores,
+  never pruned by allocation; displaced specs render greyed with a
+  "Prio held on <item>" column.
+- *Tie-band split* (3-0): a spec whose top two same-slot items score within
+  the existing 8% tie epsilon keeps BOTH, marked "⇄" - receiving either
+  voids the other at award time (officers strike it). Reuses PRIO_TIE_REL;
+  no new constant.
+- *Legendary carve-out* (2-1): quality-5 items sit outside the prio budget
+  in both directions - legendary worn-% is supply-capped (most players
+  never see the drop), so cross-item score comparisons vs farmable epics
+  measure availability, not preference.
+- *Cross-reference lines* (2-1): a chain that lost a spec to the budget
+  shows a grey "Also used by: <spec> (prio held on <item>)" line.
+All four adopted; scoring and membership rules untouched (the panel
+unanimously declined to patch the formula - without drop-rate data the
+availability bias is only fixable at the allocation/display layer).
 
 **Evidence UI:** each row = item + chain + expandable per-spec detail (usage
 per phase, gap, and the best-alternative item BY NAME - the formula can't

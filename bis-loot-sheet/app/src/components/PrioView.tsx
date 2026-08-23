@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/select";
 import { exportPhaseXlsx } from "@/lib/xlsx";
 import {
+  PRIO_TIE_REL,
   buildChain,
   scoreItem,
   wellSampled,
@@ -30,7 +31,7 @@ import {
 } from "@/lib/wow";
 import type { ItemFacts, ZoneData } from "@/types";
 
-function ChainText({ chain }: { chain: Chain }) {
+function ChainText({ chain, splits }: { chain: Chain; splits: Set<string> }) {
   if (chain.named.length === 0)
     return <span className="text-sm text-muted-foreground">{chain.tail}</span>;
   return (
@@ -45,6 +46,14 @@ function ChainText({ chain }: { chain: Chain }) {
           <span style={{ color: CLASS_COLORS[specClass(s.spec)] }}>
             {SPEC_SHORT[s.spec] ?? s.spec}
           </span>
+          {splits.has(s.spec) && (
+            <span
+              className="ml-0.5 text-muted-foreground"
+              title="Split prio - this spec holds a near-tied claim on another item in this slot; receiving either voids the other."
+            >
+              ⇄
+            </span>
+          )}
         </span>
       ))}
       <span className="mx-1 text-muted-foreground">&gt;</span>
@@ -57,14 +66,19 @@ function Evidence({
   scores,
   items,
   isToken,
+  displaced,
 }: {
+  /** RAW membership scores - never pruned by prio allocation. */
   scores: SpecScore[];
   items: Record<string, ItemFacts>;
   isToken: boolean;
+  /** Specs whose prio the one-per-slot rule moved elsewhere: spec -> held item id. */
+  displaced: Map<string, number>;
 }) {
   const phases = [
     ...new Set(scores.flatMap((s) => s.needs.map((n) => n.phase))),
   ].sort();
+  const hasDisplaced = scores.slice(0, 8).some((s) => displaced.has(s.spec));
   return (
     <div className="mt-2 overflow-x-auto rounded border border-border bg-muted/30 p-3">
       <table className="text-xs">
@@ -80,13 +94,17 @@ function Evidence({
                 Phase {p}
               </th>
             ))}
+            {hasDisplaced && (
+              <th className="pl-6 text-left font-medium">Prio held on</th>
+            )}
           </tr>
         </thead>
         <tbody>
           {scores.slice(0, 8).map((s) => {
             const byPhase = new Map(s.needs.map((n) => [n.phase, n]));
+            const heldOn = displaced.get(s.spec);
             return (
-              <tr key={s.spec}>
+              <tr key={s.spec} className={heldOn ? "opacity-50" : undefined}>
                 <td
                   className="pr-6"
                   style={{ color: CLASS_COLORS[specClass(s.spec)] }}
@@ -94,7 +112,9 @@ function Evidence({
                   {SPEC_SHORT[s.spec] ?? s.spec}
                 </td>
                 {isToken && (
-                  <td className="pr-6">{items[s.viaItem]?.name ?? s.viaItem}</td>
+                  <td className="pr-6">
+                    {items[s.viaItem]?.name ?? s.viaItem}
+                  </td>
                 )}
                 <td className="border-r border-border pr-4 text-right tabular-nums">
                   {Math.round(s.score)}
@@ -107,6 +127,11 @@ function Evidence({
                     </td>
                   );
                 })}
+                {hasDisplaced && (
+                  <td className="pl-6 text-muted-foreground">
+                    {heldOn ? (items[heldOn]?.name ?? heldOn) : ""}
+                  </td>
+                )}
               </tr>
             );
           })}
@@ -114,9 +139,10 @@ function Evidence({
       </table>
       <p className="mt-2 text-xs text-muted-foreground">
         % = how many of that spec&apos;s top 2,000 players wore this
-        {isToken ? " (via the listed piece)" : ""} in that phase. The score
-        also rewards items with no good alternative, and counts later phases
-        extra - gear that stays best is worth more.
+        {isToken ? " (via the listed piece)" : ""} in that phase. The score also
+        rewards items with no good alternative, and counts later phases extra -
+        gear that stays best is worth more. Greyed specs use this item too but
+        hold their prio on another item in the slot.
       </p>
     </div>
   );
@@ -194,7 +220,8 @@ export function PrioView({
     // Item facts across all scored phases (current phase wins) so evidence
     // can name alternatives that only exist in later phases' tables.
     const allItems: Record<string, ItemFacts> = {};
-    for (const z of [...futureZones].reverse()) Object.assign(allItems, z.items);
+    for (const z of [...futureZones].reverse())
+      Object.assign(allItems, z.items);
     Object.assign(allItems, zone.items);
     const byRaid = new Map<string, [string, string][]>();
     for (const [eid, name] of Object.entries(zone.encounters)) {
@@ -211,13 +238,18 @@ export function PrioView({
       const iid = Number(iidStr);
       itemInfo.set(iid, { facts, scores: scoreItem(iid, zones, zone.items) });
     }
-    // One prio per spec per worn slot across the whole sheet. Dedup by NAMED
-    // chain appearances, not raw scores: a spec named on several items it
-    // wears in the same slot keeps only its best appearance; removing it
-    // elsewhere can promote other specs into those chains, so iterate until
-    // stable. This way a spec whose top-scoring item crowds it out (e.g. a
-    // shared tier token capped at 4 names) still lands on the next item down
-    // instead of losing the slot.
+    // One prio per spec per worn slot across the whole sheet, per the
+    // three-agent panel design (2026-08-23):
+    //  - Legendary carve-out: legendary items sit outside the prio budget in
+    //    both directions - their worn-% is supply-capped, not preference.
+    //  - Tie-band split: a spec whose top two same-slot items score within
+    //    the 8% tie band keeps BOTH (marked with a split glyph; receiving
+    //    either voids the other at award time). Outside the band,
+    //    winner-take-all as before.
+    //  - Dedup acts on NAMED chain appearances, iterated to a fixed point so
+    //    removals can promote waiting specs; and it only ever edits chains -
+    //    evidence tables always show the raw scores.
+    const LEGENDARY = 5;
     const currentPhase = zone.anniversaryPhase;
     const removed = new Map<number, Set<string>>();
     const keptScores = (iid: number): SpecScore[] => {
@@ -226,34 +258,55 @@ export function PrioView({
       const gone = removed.get(iid);
       return gone ? info.scores.filter((s) => !gone.has(s.spec)) : info.scores;
     };
-    for (let changed = true; changed; ) {
-      changed = false;
-      const bestApp = new Map<string, { iid: number; score: number }>();
-      const apps = new Map<string, number[]>();
+    const collectApps = () => {
+      const apps = new Map<string, { iid: number; score: number }[]>();
       for (const [iid, info] of itemInfo) {
+        if (info.facts.quality === LEGENDARY) continue;
         for (const s of buildChain(keptScores(iid), Boolean(info.facts.token))
           .named) {
           const key = `${s.spec}|${wornSlot(s, currentPhase)}`;
-          apps.set(key, [...(apps.get(key) ?? []), iid]);
-          const cur = bestApp.get(key);
-          if (
-            !cur ||
-            s.score > cur.score ||
-            (s.score === cur.score && iid < cur.iid)
-          )
-            bestApp.set(key, { iid, score: s.score });
+          apps.set(key, [...(apps.get(key) ?? []), { iid, score: s.score }]);
         }
       }
-      for (const [key, list] of apps) {
+      for (const list of apps.values())
+        list.sort((a, b) => b.score - a.score || a.iid - b.iid);
+      return apps;
+    };
+    for (let changed = true; changed;) {
+      changed = false;
+      for (const [key, list] of collectApps()) {
+        if (list.length < 2) continue;
         const spec = key.slice(0, key.indexOf("|"));
-        for (const iid of list) {
-          if (iid === bestApp.get(key)?.iid) continue;
+        const anchor = list[0];
+        const keep = new Set([anchor.iid]);
+        if (
+          list[1] &&
+          (anchor.score - list[1].score) / anchor.score <= PRIO_TIE_REL
+        )
+          keep.add(list[1].iid);
+        for (const { iid } of list) {
+          if (keep.has(iid)) continue;
           const gone = removed.get(iid) ?? new Set<string>();
           if (!gone.has(spec)) {
             gone.add(spec);
             removed.set(iid, gone);
             changed = true;
           }
+        }
+      }
+    }
+    // Post-convergence bookkeeping: split pairs (spec named on two banded
+    // same-slot items) and, per item, where each removed spec's prio went.
+    const splitsOf = new Map<number, Set<string>>();
+    const heldFor = new Map<string, number>(); // spec|slot -> anchor item
+    for (const [key, list] of collectApps()) {
+      const spec = key.slice(0, key.indexOf("|"));
+      heldFor.set(key, list[0]?.iid ?? -1);
+      if (list.length >= 2) {
+        for (const { iid } of list) {
+          const set = splitsOf.get(iid) ?? new Set<string>();
+          set.add(spec);
+          splitsOf.set(iid, set);
         }
       }
     }
@@ -270,24 +323,43 @@ export function PrioView({
       held_off_hand: "Off Hand",
       shield: "Off Hand",
     };
-    // Rows per encounter with dedup-filtered chains.
+    // Rows per encounter: chains are dedup-filtered, evidence keeps the raw
+    // scores, and removed specs are cross-referenced to where their prio went.
     const rows = new Map<
       string,
-      { id: number; item: ItemFacts; scores: SpecScore[]; chain: Chain }[]
+      {
+        id: number;
+        item: ItemFacts;
+        scores: SpecScore[];
+        chain: Chain;
+        splits: Set<string>;
+        displaced: Map<string, number>;
+      }[]
     >();
     for (const [iid, info] of itemInfo) {
       const kept = keptScores(iid);
       const chain = buildChain(kept, Boolean(info.facts.token));
+      const splits = splitsOf.get(iid) ?? new Set<string>();
+      const displaced = new Map<string, number>();
+      for (const spec of removed.get(iid) ?? []) {
+        const s = info.scores.find((x) => x.spec === spec);
+        if (!s) continue;
+        const held = heldFor.get(`${spec}|${wornSlot(s, currentPhase)}`);
+        if (held !== undefined && held !== -1 && held !== iid)
+          displaced.set(spec, held);
+      }
       const item =
-        (nameCount.get(info.facts.name) ?? 0) > 1 &&
-        HAND_LABEL[info.facts.slot]
-          ? { ...info.facts, name: `${info.facts.name} (${HAND_LABEL[info.facts.slot]})` }
+        (nameCount.get(info.facts.name) ?? 0) > 1 && HAND_LABEL[info.facts.slot]
+          ? {
+              ...info.facts,
+              name: `${info.facts.name} (${HAND_LABEL[info.facts.slot]})`,
+            }
           : info.facts;
       for (const eid of info.facts.sources ?? []) {
         const key = String(eid);
         rows.set(key, [
           ...(rows.get(key) ?? []),
-          { id: iid, item, scores: kept, chain },
+          { id: iid, item, scores: info.scores, chain, splits, displaced },
         ]);
       }
     }
@@ -307,9 +379,11 @@ export function PrioView({
         are ranked by summed need across P{zone.anniversaryPhase}–P5, where need
         = usage + how far the item leads that spec&apos;s best alternative, and
         each future phase weighs ×1.5 more than the last - items that stay
-        useful later are worth more now.
-        Objective data only - adjust for tanks, professions and roster before
-        use. Expand a row to see the evidence.
+        useful later are worth more now. Objective data only - adjust for tanks,
+        professions and roster before use. Expand a row to see the evidence.
+        Each spec holds prio on one item per slot; ⇄ marks a split prio (two
+        near-tied items - receiving either voids the other), and legendary items
+        are exempt from the one-prio rule.
         {(() => {
           const cut = Object.keys(zone.specs)
             .filter((s) => !wellSampled(zone).has(s))
@@ -386,65 +460,79 @@ export function PrioView({
                     </CardHeader>
                     <CardContent className="px-4">
                       <ul className="space-y-1">
-                        {encRows.map(({ id, item, scores, chain }) => {
-                          const key = `${eid}-${id}`;
-                          const open = expanded.has(key);
-                          return (
-                            <li
-                              key={key}
-                              className="rounded-md px-2 py-1.5 hover:bg-accent/40"
-                            >
-                              <div className="flex items-center gap-3">
-                                <Button
-                                  variant="ghost"
-                                  size="icon-xs"
-                                  className="text-muted-foreground"
-                                  onClick={() =>
-                                    setExpanded((prev) => {
-                                      const next = new Set(prev);
-                                      if (open) next.delete(key);
-                                      else next.add(key);
-                                      return next;
-                                    })
-                                  }
-                                >
-                                  {open ? <ChevronDown /> : <ChevronRight />}
-                                </Button>
-                                <a
-                                  href={wowheadUrl(id)}
-                                  target="_blank"
-                                  rel="noreferrer"
-                                >
-                                  <img
-                                    src={iconUrl(item.icon)}
-                                    alt=""
-                                    loading="lazy"
-                                    className="size-6 rounded border border-border"
+                        {encRows.map(
+                          ({ id, item, scores, chain, splits, displaced }) => {
+                            const key = `${eid}-${id}`;
+                            const open = expanded.has(key);
+                            return (
+                              <li
+                                key={key}
+                                className="rounded-md px-2 py-1.5 hover:bg-accent/40"
+                              >
+                                <div className="flex items-center gap-3">
+                                  <Button
+                                    variant="ghost"
+                                    size="icon-xs"
+                                    className="text-muted-foreground"
+                                    onClick={() =>
+                                      setExpanded((prev) => {
+                                        const next = new Set(prev);
+                                        if (open) next.delete(key);
+                                        else next.add(key);
+                                        return next;
+                                      })
+                                    }
+                                  >
+                                    {open ? <ChevronDown /> : <ChevronRight />}
+                                  </Button>
+                                  <a
+                                    href={wowheadUrl(id)}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    <img
+                                      src={iconUrl(item.icon)}
+                                      alt=""
+                                      loading="lazy"
+                                      className="size-6 rounded border border-border"
+                                    />
+                                  </a>
+                                  <a
+                                    href={wowheadUrl(id)}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="w-64 shrink-0 truncate text-sm font-medium hover:underline"
+                                    style={{
+                                      color: QUALITY_COLORS[item.quality],
+                                    }}
+                                  >
+                                    {item.name}
+                                  </a>
+                                  <ChainText chain={chain} splits={splits} />
+                                </div>
+                                {displaced.size > 0 && (
+                                  <p className="ml-9 mt-0.5 text-xs text-muted-foreground/70">
+                                    Also used by:{" "}
+                                    {[...displaced.entries()]
+                                      .map(
+                                        ([spec, held]) =>
+                                          `${SPEC_SHORT[spec] ?? spec} (prio held on ${computed.allItems[held]?.name ?? held})`,
+                                      )
+                                      .join(", ")}
+                                  </p>
+                                )}
+                                {open && (
+                                  <Evidence
+                                    scores={scores}
+                                    items={computed.allItems}
+                                    isToken={Boolean(item.token)}
+                                    displaced={displaced}
                                   />
-                                </a>
-                                <a
-                                  href={wowheadUrl(id)}
-                                  target="_blank"
-                                  rel="noreferrer"
-                                  className="w-64 shrink-0 truncate text-sm font-medium hover:underline"
-                                  style={{
-                                    color: QUALITY_COLORS[item.quality],
-                                  }}
-                                >
-                                  {item.name}
-                                </a>
-                                <ChainText chain={chain} />
-                              </div>
-                              {open && (
-                                <Evidence
-                                  scores={scores}
-                                  items={computed.allItems}
-                                  isToken={Boolean(item.token)}
-                                />
-                              )}
-                            </li>
-                          );
-                        })}
+                                )}
+                              </li>
+                            );
+                          },
+                        )}
                       </ul>
                     </CardContent>
                   </Card>
