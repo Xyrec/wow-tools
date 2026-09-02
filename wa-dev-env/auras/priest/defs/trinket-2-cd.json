@@ -4,18 +4,51 @@
     {
       "changes": [
         {
-          "property": "desaturate",
-          "value": true
-        },
+          "property": "sub.3.text_visible"
+        }
+      ],
+      "check": {
+        "op": "<",
+        "trigger": 1,
+        "value": "2",
+        "variable": "duration"
+      }
+    },
+    {
+      "changes": [
         {
-          "property": "inverse",
+          "property": "desaturate",
           "value": true
         }
       ],
       "check": {
         "trigger": 1,
         "value": 1,
-        "variable": "show"
+        "variable": "onCooldown"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "sub.4.glow",
+          "value": true
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 1,
+            "value": 0,
+            "variable": "onCooldown"
+          },
+          {
+            "trigger": -1,
+            "value": 1,
+            "variable": "incombat"
+          }
+        ],
+        "trigger": -2,
+        "variable": "AND"
       }
     }
   ],
@@ -38,14 +71,89 @@
       "multi": []
     },
     "use_class": true,
-    "use_never": true,
     "use_not_spellknown": false,
     "use_spellknown": false,
     "zoneIds": ""
   },
   "overrides": {
     "displayIcon": "133453",
-    "iconSource": 1
+    "iconSource": 1,
+    "subRegions": [
+      {
+        "type": "subbackground"
+      },
+      {
+        "border_color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "border_edge": "Square Full White",
+        "border_offset": 1,
+        "border_size": 1,
+        "border_visible": true,
+        "type": "subborder"
+      },
+      {
+        "anchorXOffset": 0,
+        "anchorYOffset": 0,
+        "anchor_point": "CENTER",
+        "rotateText": "NONE",
+        "text_automaticWidth": "Auto",
+        "text_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "text_fixedWidth": 64,
+        "text_font": "PT Sans Narrow",
+        "text_fontSize": 22,
+        "text_fontType": "OUTLINE",
+        "text_justify": "CENTER",
+        "text_selfPoint": "AUTO",
+        "text_shadowColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_shadowXOffset": 0,
+        "text_shadowYOffset": 0,
+        "text_text": "%p",
+        "text_text_format_p_format": "timed",
+        "text_text_format_p_time_dynamic_threshold": 0,
+        "text_text_format_p_time_format": 0,
+        "text_text_format_p_time_legacy_floor": false,
+        "text_text_format_p_time_mod_rate": true,
+        "text_text_format_p_time_precision": 1,
+        "text_visible": true,
+        "text_wordWrap": "WordWrap",
+        "type": "subtext"
+      },
+      {
+        "glow": false,
+        "glowBorder": false,
+        "glowColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "glowDuration": 1,
+        "glowFrequency": 0.25,
+        "glowLength": 16,
+        "glowLines": 8,
+        "glowScale": 1,
+        "glowThickness": 2,
+        "glowType": "Pixel",
+        "glowXOffset": 0,
+        "glowYOffset": 0,
+        "type": "subglow",
+        "useGlowColor": false
+      }
+    ]
   },
   "row": "cooldowns",
   "triggers": {
@@ -55,7 +163,7 @@
         "debuffType": "HELPFUL",
         "duration": "1",
         "event": "Cooldown Progress (Equipment Slot)",
-        "genericShowOn": "showOnCooldown",
+        "genericShowOn": "showAlways",
         "itemName": 0,
         "itemSlot": 14,
         "matchesShowOn": "showAlways",
@@ -77,6 +185,7 @@
         "use_itemSlot": true,
         "use_remaining": false,
         "use_spellName": true,
+        "use_testForCooldown": true,
         "use_track": true,
         "use_unit": true
       },

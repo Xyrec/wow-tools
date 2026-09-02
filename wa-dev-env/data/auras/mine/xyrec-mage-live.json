@@ -63,7 +63,6 @@
         "Mage - Living Bomb",
         "Mage - Fire Blast",
         "Mage - Cone of Cold",
-        "Mage - Ice Lance",
         "Mage - Fireball [1-15]",
         "Mage - Frostbolt [1-15]",
         "Mage - Arcane Missles [1-15]",
@@ -147,7 +146,7 @@
           "untrigger": []
         }
       ],
-      "uid": "HUVvT7lLnsJ",
+      "uid": "C9a811XfH6q",
       "url": "",
       "useLimit": true,
       "version": 35,
@@ -358,7 +357,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "35xa09MEDF5",
+      "uid": "hlK1CaFuKnp",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -613,7 +612,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "3r6ltF9JtiB",
+      "uid": "DbPCzPDMYIa",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -944,7 +943,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "m6QtV6cGslH",
+      "uid": "YAgIemqkcgj",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1307,7 +1306,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "gJupI6F5a3K",
+      "uid": "WywGaQwcUjt",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1592,7 +1591,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "NZ8higm6AXc",
+      "uid": "hEuIlXfm9UG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1859,222 +1858,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "9RW0oTVlyGG",
-      "url": "",
-      "useAdjustededMax": false,
-      "useAdjustededMin": false,
-      "useCooldownModRate": true,
-      "useTooltip": false,
-      "version": 15,
-      "width": 58,
-      "xOffset": 0,
-      "yOffset": 0,
-      "zoom": 0.3
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": {
-          "do_custom": false,
-          "do_glow": false
-        }
-      },
-      "adjustedMax": "",
-      "adjustedMin": "",
-      "alpha": 0.3,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "auto": false,
-      "color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": [],
-      "cooldown": true,
-      "cooldownEdge": true,
-      "cooldownSwipe": true,
-      "cooldownTextDisabled": true,
-      "desaturate": false,
-      "displayIcon": "",
-      "frameStrata": 1,
-      "height": 48,
-      "icon": true,
-      "iconSource": -1,
-      "id": "Mage - Ice Lance",
-      "information": {
-        "forceEvents": true,
-        "ignoreOptionsEventErrors": true,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "inverse": true,
-      "keepAspectRatio": true,
-      "load": {
-        "class": {
-          "multi": [],
-          "single": "MAGE"
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": []
-        },
-        "spellknown": 30455,
-        "talent": {
-          "multi": []
-        },
-        "use_class": {
-          "multi": [],
-          "single": "MAGE"
-        },
-        "use_never": false,
-        "use_spellknown": true
-      },
-      "parent": "Mage - Core Abilities",
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "icon",
-      "selfPoint": "CENTER",
-      "semver": "1.4.4",
-      "source": "import",
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "CENTER",
-          "rotateText": "NONE",
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 28,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%p",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 0,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        }
-      ],
-      "tocversion": 20506,
-      "triggers": {
-        "1": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "duration": "1",
-            "event": "Cooldown Progress (Spell)",
-            "genericShowOn": "showAlways",
-            "names": [],
-            "realSpellName": "Ice Lance",
-            "spellIds": [],
-            "spellName": 30455,
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "spell",
-            "unevent": "auto",
-            "unit": "player",
-            "use_genericShowOn": true,
-            "use_spellName": true,
-            "use_track": true,
-            "use_unit": true
-          },
-          "untrigger": {
-            "genericShowOn": "showAlways"
-          }
-        },
-        "activeTriggerMode": -10,
-        "disjunctive": "any"
-      },
-      "uid": "2XDTsuDgpfP",
+      "uid": "4z8pHlGtPC9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2397,7 +2181,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "wSTicgPrMLk",
+      "uid": "uqZesJIliya",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2711,7 +2495,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "3mTsKzlYN7r",
+      "uid": "KIX3pfHsOGM",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3040,7 +2824,7 @@
         "customTriggerLogic": "function (t)\n   return t[1] and not t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "ZN6mmq6Ha4b",
+      "uid": "6n9J1GeEqvL",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3155,6 +2939,35 @@
             "trigger": 1,
             "value": 1,
             "variable": "insufficientResources"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "sub.4.glow",
+              "value": true
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": 1,
+                "value": 1,
+                "variable": "spellUsable"
+              },
+              {
+                "trigger": 1,
+                "value": 0,
+                "variable": "onCooldown"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "AND"
           }
         },
         {
@@ -3287,6 +3100,27 @@
           "text_visible": true,
           "text_wordWrap": "WordWrap",
           "type": "subtext"
+        },
+        {
+          "glow": false,
+          "glowBorder": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowDuration": 1,
+          "glowFrequency": 0.25,
+          "glowLength": 16,
+          "glowLines": 8,
+          "glowScale": 1,
+          "glowThickness": 2,
+          "glowType": "Pixel",
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "type": "subglow",
+          "useGlowColor": false
         }
       ],
       "tocversion": 20506,
@@ -3325,7 +3159,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Mw5yEb5Vty7",
+      "uid": "XPhXGvMTv4v",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3610,7 +3444,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "sBYavqazNOM",
+      "uid": "BljBcANVXPy",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3673,8 +3507,6 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Mage - Arcane Blast Bars",
-        "Mage - Improved Scorch Bars",
         "Mage - Wand Swing",
         "Mage - Mana Bar",
         "Mage - Mana Tick"
@@ -3723,1513 +3555,12 @@
           "untrigger": []
         }
       ],
-      "uid": "Y6B3cdIej1n",
+      "uid": "qVFKzOdUPkv",
       "url": "",
       "version": 35,
       "wagoID": "6vNSif5yK",
       "xOffset": 0,
       "yOffset": 0
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": []
-      },
-      "alpha": 1,
-      "anchorFrameFrame": "WeakAuras:Mage - Mana Bar",
-      "anchorFrameType": "SELECTFRAME",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "backdropColor": [
-        1,
-        1,
-        1,
-        0.5
-      ],
-      "border": false,
-      "borderBackdrop": "None",
-      "borderColor": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "borderEdge": "Square Full White",
-      "borderInset": 0,
-      "borderOffset": 0,
-      "borderSize": 1,
-      "conditions": [],
-      "config": [],
-      "controlledChildren": [],
-      "frameStrata": 1,
-      "groupIcon": 135735,
-      "id": "Mage - Arcane Blast Bars",
-      "information": {
-        "forceEvents": true,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "load": {
-        "class": {
-          "multi": []
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": []
-        },
-        "talent": {
-          "multi": []
-        }
-      },
-      "parent": "Mage - Resources",
-      "preferToUpdate": false,
-      "regionType": "group",
-      "scale": 1,
-      "selfPoint": "CENTER",
-      "semver": "1.4.4",
-      "source": "import",
-      "subRegions": [],
-      "tocversion": 20505,
-      "triggers": [
-        {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "event": "Health",
-            "names": [],
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "aura2",
-            "unit": "player"
-          },
-          "untrigger": []
-        }
-      ],
-      "uid": "8wl0Uh8bIqV",
-      "url": "",
-      "version": 35,
-      "wagoID": "6vNSif5yK",
-      "xOffset": 0,
-      "yOffset": 22
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": []
-      },
-      "alpha": 1,
-      "anchorFrameFrame": "WeakAuras:Mage - Mana Bar",
-      "anchorFrameType": "SELECTFRAME",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "backdropColor": [
-        1,
-        1,
-        1,
-        0.5
-      ],
-      "border": false,
-      "borderBackdrop": "None",
-      "borderColor": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "borderEdge": "Square Full White",
-      "borderInset": 0,
-      "borderOffset": 0,
-      "borderSize": 1,
-      "conditions": [],
-      "config": [],
-      "controlledChildren": [
-        "Mage - IS1",
-        "Mage - IS2",
-        "Mage - IS3",
-        "Mage - IS4",
-        "Mage - IS5"
-      ],
-      "frameStrata": 1,
-      "groupIcon": 135827,
-      "id": "Mage - Improved Scorch Bars",
-      "information": {
-        "forceEvents": true,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "load": {
-        "class": {
-          "multi": []
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": []
-        },
-        "talent": {
-          "multi": []
-        }
-      },
-      "parent": "Mage - Resources",
-      "preferToUpdate": false,
-      "regionType": "group",
-      "scale": 1,
-      "selfPoint": "CENTER",
-      "semver": "1.4.4",
-      "source": "import",
-      "subRegions": [],
-      "tocversion": 20505,
-      "triggers": [
-        {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "event": "Health",
-            "names": [],
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "aura2",
-            "unit": "player"
-          },
-          "untrigger": []
-        }
-      ],
-      "uid": "1wO2M5i5KOi",
-      "url": "",
-      "version": 35,
-      "wagoID": "6vNSif5yK",
-      "xOffset": 0,
-      "yOffset": 22
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": []
-      },
-      "adjustedMax": "",
-      "adjustedMin": "100",
-      "alpha": 0.3,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "backgroundColor": [
-        0.50196081399918,
-        0.50196081399918,
-        0.50196081399918,
-        0.30000001192093
-      ],
-      "barColor": [
-        1,
-        0.50196081399918,
-        0.25098040699959,
-        1
-      ],
-      "barColor2": [
-        1,
-        1,
-        0,
-        1
-      ],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "barColor",
-              "value": [
-                1,
-                1,
-                1,
-                0
-              ]
-            }
-          ],
-          "check": {
-            "op": "<",
-            "trigger": 1,
-            "value": "1",
-            "variable": "stacks"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": [],
-      "desaturate": false,
-      "enableGradient": false,
-      "frameStrata": 1,
-      "gradientOrientation": "HORIZONTAL",
-      "height": 10,
-      "icon": false,
-      "iconSource": -1,
-      "icon_color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "icon_side": "RIGHT",
-      "id": "Mage - IS1",
-      "information": {
-        "forceEvents": false,
-        "ignoreOptionsEventErrors": false,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "inverse": false,
-      "load": {
-        "class": {
-          "multi": {
-            "MAGE": true
-          },
-          "single": "MAGE"
-        },
-        "difficulty": {
-          "multi": []
-        },
-        "faction": {
-          "multi": []
-        },
-        "ingroup": {
-          "multi": []
-        },
-        "not_spellknown": 0,
-        "pvptalent": {
-          "multi": []
-        },
-        "race": {
-          "multi": []
-        },
-        "role": {
-          "multi": []
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": [],
-          "single": 1
-        },
-        "talent": {
-          "multi": []
-        },
-        "talent2": {
-          "multi": []
-        },
-        "use_class": true,
-        "use_never": false,
-        "use_not_spellknown": true,
-        "use_spec": true,
-        "use_spellknown": false,
-        "use_talent": false,
-        "use_vehicleUi": false,
-        "zoneIds": ""
-      },
-      "orientation": "HORIZONTAL",
-      "parent": "Mage - Improved Scorch Bars",
-      "preferToUpdate": false,
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "aurabar",
-      "selfPoint": "CENTER",
-      "semver": "1.4.4",
-      "source": "import",
-      "spark": false,
-      "sparkBlendMode": "ADD",
-      "sparkColor": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "sparkHeight": 46,
-      "sparkHidden": "NEVER",
-      "sparkOffsetX": 0,
-      "sparkOffsetY": 0,
-      "sparkRotation": 0,
-      "sparkRotationMode": "AUTO",
-      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-      "sparkWidth": 16,
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "type": "subforeground"
-        },
-        {
-          "anchor_area": "bar",
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "type": "subborder"
-        }
-      ],
-      "texture": "Clean",
-      "textureSource": "LSM",
-      "tocversion": 20505,
-      "toolTipArea": "ICON",
-      "triggers": {
-        "1": {
-          "trigger": {
-            "auranames": [
-              "22959"
-            ],
-            "debuffType": "HARMFUL",
-            "event": "Health",
-            "match_count": "1",
-            "match_countOperator": "==",
-            "matchesShowOn": "showAlways",
-            "names": [],
-            "spellIds": [],
-            "stacks": "1",
-            "stacksOperator": ">=",
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "aura2",
-            "unit": "target",
-            "unitExists": true,
-            "useName": true,
-            "useStacks": true
-          },
-          "untrigger": []
-        },
-        "activeTriggerMode": -10
-      },
-      "uid": "pPFHQzbwYiR",
-      "url": "",
-      "useAdjustededMax": false,
-      "useAdjustededMin": true,
-      "version": 35,
-      "wagoID": "6vNSif5yK",
-      "width": 80,
-      "xOffset": -160,
-      "yOffset": 0,
-      "zoom": 0
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": []
-      },
-      "adjustedMax": "",
-      "adjustedMin": "100",
-      "alpha": 0.3,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "backgroundColor": [
-        0.50196081399918,
-        0.50196081399918,
-        0.50196081399918,
-        0.30000001192093
-      ],
-      "barColor": [
-        1,
-        0.50196081399918,
-        0.25098040699959,
-        1
-      ],
-      "barColor2": [
-        1,
-        1,
-        0,
-        1
-      ],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "barColor",
-              "value": [
-                1,
-                1,
-                1,
-                0
-              ]
-            }
-          ],
-          "check": {
-            "op": "<",
-            "trigger": 1,
-            "value": "2",
-            "variable": "stacks"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": [],
-      "desaturate": false,
-      "enableGradient": false,
-      "frameStrata": 1,
-      "gradientOrientation": "HORIZONTAL",
-      "height": 10,
-      "icon": false,
-      "iconSource": -1,
-      "icon_color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "icon_side": "RIGHT",
-      "id": "Mage - IS2",
-      "information": {
-        "forceEvents": false,
-        "ignoreOptionsEventErrors": false,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "inverse": false,
-      "load": {
-        "class": {
-          "multi": {
-            "MAGE": true
-          },
-          "single": "MAGE"
-        },
-        "difficulty": {
-          "multi": []
-        },
-        "faction": {
-          "multi": []
-        },
-        "ingroup": {
-          "multi": []
-        },
-        "not_spellknown": 0,
-        "pvptalent": {
-          "multi": []
-        },
-        "race": {
-          "multi": []
-        },
-        "role": {
-          "multi": []
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": [],
-          "single": 1
-        },
-        "talent": {
-          "multi": []
-        },
-        "talent2": {
-          "multi": []
-        },
-        "use_class": true,
-        "use_never": false,
-        "use_not_spellknown": true,
-        "use_spec": true,
-        "use_spellknown": false,
-        "use_talent": false,
-        "use_vehicleUi": false,
-        "zoneIds": ""
-      },
-      "orientation": "HORIZONTAL",
-      "parent": "Mage - Improved Scorch Bars",
-      "preferToUpdate": false,
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "aurabar",
-      "selfPoint": "CENTER",
-      "semver": "1.4.4",
-      "source": "import",
-      "spark": false,
-      "sparkBlendMode": "ADD",
-      "sparkColor": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "sparkHeight": 46,
-      "sparkHidden": "NEVER",
-      "sparkOffsetX": 0,
-      "sparkOffsetY": 0,
-      "sparkRotation": 0,
-      "sparkRotationMode": "AUTO",
-      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-      "sparkWidth": 16,
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "type": "subforeground"
-        },
-        {
-          "anchor_area": "bar",
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "type": "subborder"
-        }
-      ],
-      "texture": "Clean",
-      "textureSource": "LSM",
-      "tocversion": 20505,
-      "toolTipArea": "ICON",
-      "triggers": {
-        "1": {
-          "trigger": {
-            "auranames": [
-              "22959"
-            ],
-            "debuffType": "HARMFUL",
-            "event": "Health",
-            "match_count": "1",
-            "match_countOperator": "==",
-            "matchesShowOn": "showAlways",
-            "names": [],
-            "spellIds": [],
-            "stacks": "2",
-            "stacksOperator": ">=",
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "aura2",
-            "unit": "target",
-            "unitExists": true,
-            "useName": true,
-            "useStacks": true
-          },
-          "untrigger": []
-        },
-        "activeTriggerMode": -10
-      },
-      "uid": "3lib0FOIdkE",
-      "url": "",
-      "useAdjustededMax": false,
-      "useAdjustededMin": true,
-      "version": 35,
-      "wagoID": "6vNSif5yK",
-      "width": 80,
-      "xOffset": -80,
-      "yOffset": 0,
-      "zoom": 0
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": []
-      },
-      "adjustedMax": "",
-      "adjustedMin": "100",
-      "alpha": 0.3,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "backgroundColor": [
-        0.50196081399918,
-        0.50196081399918,
-        0.50196081399918,
-        0.30000001192093
-      ],
-      "barColor": [
-        1,
-        0.50196081399918,
-        0.25098040699959,
-        1
-      ],
-      "barColor2": [
-        1,
-        1,
-        0,
-        1
-      ],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "barColor",
-              "value": [
-                1,
-                1,
-                1,
-                0
-              ]
-            }
-          ],
-          "check": {
-            "op": "<",
-            "trigger": 1,
-            "value": "3",
-            "variable": "stacks"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": [],
-      "desaturate": false,
-      "enableGradient": false,
-      "frameStrata": 1,
-      "gradientOrientation": "HORIZONTAL",
-      "height": 10,
-      "icon": false,
-      "iconSource": -1,
-      "icon_color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "icon_side": "RIGHT",
-      "id": "Mage - IS3",
-      "information": {
-        "forceEvents": false,
-        "ignoreOptionsEventErrors": false,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "inverse": false,
-      "load": {
-        "class": {
-          "multi": {
-            "MAGE": true
-          },
-          "single": "MAGE"
-        },
-        "difficulty": {
-          "multi": []
-        },
-        "faction": {
-          "multi": []
-        },
-        "ingroup": {
-          "multi": []
-        },
-        "not_spellknown": 0,
-        "pvptalent": {
-          "multi": []
-        },
-        "race": {
-          "multi": []
-        },
-        "role": {
-          "multi": []
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": [],
-          "single": 1
-        },
-        "talent": {
-          "multi": []
-        },
-        "talent2": {
-          "multi": []
-        },
-        "use_class": true,
-        "use_never": false,
-        "use_not_spellknown": true,
-        "use_spec": true,
-        "use_spellknown": false,
-        "use_talent": false,
-        "use_vehicleUi": false,
-        "zoneIds": ""
-      },
-      "orientation": "HORIZONTAL",
-      "parent": "Mage - Improved Scorch Bars",
-      "preferToUpdate": false,
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "aurabar",
-      "selfPoint": "CENTER",
-      "semver": "1.4.4",
-      "source": "import",
-      "spark": false,
-      "sparkBlendMode": "ADD",
-      "sparkColor": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "sparkHeight": 46,
-      "sparkHidden": "NEVER",
-      "sparkOffsetX": 0,
-      "sparkOffsetY": 0,
-      "sparkRotation": 0,
-      "sparkRotationMode": "AUTO",
-      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-      "sparkWidth": 16,
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "type": "subforeground"
-        },
-        {
-          "anchor_area": "bar",
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "type": "subborder"
-        }
-      ],
-      "texture": "Clean",
-      "textureSource": "LSM",
-      "tocversion": 20505,
-      "toolTipArea": "ICON",
-      "triggers": {
-        "1": {
-          "trigger": {
-            "auranames": [
-              "22959"
-            ],
-            "debuffType": "HARMFUL",
-            "event": "Health",
-            "match_count": "1",
-            "match_countOperator": "==",
-            "matchesShowOn": "showAlways",
-            "names": [],
-            "spellIds": [],
-            "stacks": "3",
-            "stacksOperator": ">=",
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "aura2",
-            "unit": "target",
-            "unitExists": true,
-            "useName": true,
-            "useStacks": true
-          },
-          "untrigger": []
-        },
-        "activeTriggerMode": -10
-      },
-      "uid": "VDiSCWOpw5b",
-      "url": "",
-      "useAdjustededMax": false,
-      "useAdjustededMin": true,
-      "version": 35,
-      "wagoID": "6vNSif5yK",
-      "width": 80,
-      "xOffset": 0,
-      "yOffset": 0,
-      "zoom": 0
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": []
-      },
-      "adjustedMax": "",
-      "adjustedMin": "100",
-      "alpha": 0.3,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "backgroundColor": [
-        0.50196081399918,
-        0.50196081399918,
-        0.50196081399918,
-        0.30000001192093
-      ],
-      "barColor": [
-        1,
-        0.50196081399918,
-        0.25098040699959,
-        1
-      ],
-      "barColor2": [
-        1,
-        1,
-        0,
-        1
-      ],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "barColor",
-              "value": [
-                1,
-                1,
-                1,
-                0
-              ]
-            }
-          ],
-          "check": {
-            "op": "<",
-            "trigger": 1,
-            "value": "4",
-            "variable": "stacks"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": [],
-      "desaturate": false,
-      "enableGradient": false,
-      "frameStrata": 1,
-      "gradientOrientation": "HORIZONTAL",
-      "height": 10,
-      "icon": false,
-      "iconSource": -1,
-      "icon_color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "icon_side": "RIGHT",
-      "id": "Mage - IS4",
-      "information": {
-        "forceEvents": false,
-        "ignoreOptionsEventErrors": false,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "inverse": false,
-      "load": {
-        "class": {
-          "multi": {
-            "MAGE": true
-          },
-          "single": "MAGE"
-        },
-        "difficulty": {
-          "multi": []
-        },
-        "faction": {
-          "multi": []
-        },
-        "ingroup": {
-          "multi": []
-        },
-        "not_spellknown": 0,
-        "pvptalent": {
-          "multi": []
-        },
-        "race": {
-          "multi": []
-        },
-        "role": {
-          "multi": []
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": [],
-          "single": 1
-        },
-        "talent": {
-          "multi": []
-        },
-        "talent2": {
-          "multi": []
-        },
-        "use_class": true,
-        "use_never": false,
-        "use_not_spellknown": true,
-        "use_spec": true,
-        "use_spellknown": false,
-        "use_talent": false,
-        "use_vehicleUi": false,
-        "zoneIds": ""
-      },
-      "orientation": "HORIZONTAL",
-      "parent": "Mage - Improved Scorch Bars",
-      "preferToUpdate": false,
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "aurabar",
-      "selfPoint": "CENTER",
-      "semver": "1.4.4",
-      "source": "import",
-      "spark": false,
-      "sparkBlendMode": "ADD",
-      "sparkColor": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "sparkHeight": 46,
-      "sparkHidden": "NEVER",
-      "sparkOffsetX": 0,
-      "sparkOffsetY": 0,
-      "sparkRotation": 0,
-      "sparkRotationMode": "AUTO",
-      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-      "sparkWidth": 16,
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "type": "subforeground"
-        },
-        {
-          "anchor_area": "bar",
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "type": "subborder"
-        }
-      ],
-      "texture": "Clean",
-      "textureSource": "LSM",
-      "tocversion": 20505,
-      "toolTipArea": "ICON",
-      "triggers": {
-        "1": {
-          "trigger": {
-            "auranames": [
-              "22959"
-            ],
-            "debuffType": "HARMFUL",
-            "event": "Health",
-            "match_count": "1",
-            "match_countOperator": "==",
-            "matchesShowOn": "showAlways",
-            "names": [],
-            "spellIds": [],
-            "stacks": "4",
-            "stacksOperator": "==",
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "aura2",
-            "unit": "target",
-            "unitExists": true,
-            "useName": true,
-            "useStacks": true
-          },
-          "untrigger": []
-        },
-        "activeTriggerMode": -10
-      },
-      "uid": "8XRqkeFfhd9",
-      "url": "",
-      "useAdjustededMax": false,
-      "useAdjustededMin": true,
-      "version": 35,
-      "wagoID": "6vNSif5yK",
-      "width": 80,
-      "xOffset": 80,
-      "yOffset": 0,
-      "zoom": 0
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": []
-      },
-      "adjustedMax": "",
-      "adjustedMin": "100",
-      "alpha": 0.3,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "backgroundColor": [
-        0.50196081399918,
-        0.50196081399918,
-        0.50196081399918,
-        0.30000001192093
-      ],
-      "barColor": [
-        1,
-        0.25098040699959,
-        0,
-        1
-      ],
-      "barColor2": [
-        1,
-        1,
-        0,
-        1
-      ],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "barColor",
-              "value": [
-                1,
-                1,
-                1,
-                0
-              ]
-            }
-          ],
-          "check": {
-            "op": "<",
-            "trigger": 1,
-            "value": "5",
-            "variable": "stacks"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": [],
-      "desaturate": false,
-      "enableGradient": false,
-      "frameStrata": 1,
-      "gradientOrientation": "HORIZONTAL",
-      "height": 10,
-      "icon": false,
-      "iconSource": -1,
-      "icon_color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "icon_side": "RIGHT",
-      "id": "Mage - IS5",
-      "information": {
-        "forceEvents": false,
-        "ignoreOptionsEventErrors": false,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "inverse": false,
-      "load": {
-        "class": {
-          "multi": {
-            "MAGE": true
-          },
-          "single": "MAGE"
-        },
-        "difficulty": {
-          "multi": []
-        },
-        "faction": {
-          "multi": []
-        },
-        "ingroup": {
-          "multi": []
-        },
-        "not_spellknown": 0,
-        "pvptalent": {
-          "multi": []
-        },
-        "race": {
-          "multi": []
-        },
-        "role": {
-          "multi": []
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": [],
-          "single": 1
-        },
-        "talent": {
-          "multi": []
-        },
-        "talent2": {
-          "multi": []
-        },
-        "use_class": true,
-        "use_never": false,
-        "use_not_spellknown": true,
-        "use_spec": true,
-        "use_spellknown": false,
-        "use_talent": false,
-        "use_vehicleUi": false,
-        "zoneIds": ""
-      },
-      "orientation": "HORIZONTAL",
-      "parent": "Mage - Improved Scorch Bars",
-      "preferToUpdate": false,
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "aurabar",
-      "selfPoint": "CENTER",
-      "semver": "1.4.4",
-      "source": "import",
-      "spark": false,
-      "sparkBlendMode": "ADD",
-      "sparkColor": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "sparkHeight": 46,
-      "sparkHidden": "NEVER",
-      "sparkOffsetX": 0,
-      "sparkOffsetY": 0,
-      "sparkRotation": 0,
-      "sparkRotationMode": "AUTO",
-      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-      "sparkWidth": 16,
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "type": "subforeground"
-        },
-        {
-          "anchor_area": "bar",
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "type": "subborder"
-        }
-      ],
-      "texture": "Clean",
-      "textureSource": "LSM",
-      "tocversion": 20505,
-      "toolTipArea": "ICON",
-      "triggers": {
-        "1": {
-          "trigger": {
-            "auranames": [
-              "22959"
-            ],
-            "debuffType": "HARMFUL",
-            "event": "Health",
-            "match_count": "1",
-            "match_countOperator": "==",
-            "matchesShowOn": "showAlways",
-            "names": [],
-            "spellIds": [],
-            "stacks": "4",
-            "stacksOperator": "==",
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "aura2",
-            "unit": "target",
-            "unitExists": true,
-            "useName": true,
-            "useStacks": true
-          },
-          "untrigger": []
-        },
-        "activeTriggerMode": -10
-      },
-      "uid": "uZWFZlViqy2",
-      "url": "",
-      "useAdjustededMax": false,
-      "useAdjustededMin": true,
-      "version": 35,
-      "wagoID": "6vNSif5yK",
-      "width": 80,
-      "xOffset": 160,
-      "yOffset": 0,
-      "zoom": 0
     },
     {
       "actions": {
@@ -5587,7 +3918,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "pwYflUwGHDw",
+      "uid": "fFTw9kcJhZQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5929,7 +4260,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "8jP4HTcVeew",
+      "uid": "DrygXympKsM",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6161,7 +4492,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "exRjpGAiizv",
+      "uid": "Uhm12HLcp3i",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6336,7 +4667,7 @@
           "untrigger": []
         }
       ],
-      "uid": "uDGDj76RNLR",
+      "uid": "OlQWsRevPcj",
       "url": "",
       "useLimit": true,
       "version": 35,
@@ -6606,7 +4937,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "EtV7TiiLmno",
+      "uid": "aOHNZ2wy5NS",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6817,7 +5148,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "41ps5mQSJWQ",
+      "uid": "N37rG66zmig",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7089,7 +5420,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ZoYA2olDQeX",
+      "uid": "yGiigmOoFz7",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7361,7 +5692,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "J1SMU6QxHai",
+      "uid": "4a5OOZhkxRd",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7599,7 +5930,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "xDEFTUirPKv",
+      "uid": "VZeoNDqOmuV",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7810,7 +6141,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "0hBPZKwasXs",
+      "uid": "rs2KcHThu8X",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8048,7 +6379,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "qg4fg1sYe60",
+      "uid": "p0RP0qfqlkn",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8324,7 +6655,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "8bAeFvuftvy",
+      "uid": "ZV8BWSCsszG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8600,7 +6931,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "XCtvj4OTulW",
+      "uid": "IDeDLodUDb7",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8876,7 +7207,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ACNp9GEKUif",
+      "uid": "m4yF69jArgq",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9152,7 +7483,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "QZtOua6Wwhc",
+      "uid": "LRXeccrmQOW",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9206,18 +7537,51 @@
         {
           "changes": [
             {
-              "property": "desaturate",
-              "value": true
-            },
+              "property": "sub.3.text_visible"
+            }
+          ],
+          "check": {
+            "op": "<",
+            "trigger": 1,
+            "value": "2",
+            "variable": "duration"
+          }
+        },
+        {
+          "changes": [
             {
-              "property": "inverse",
+              "property": "desaturate",
               "value": true
             }
           ],
           "check": {
             "trigger": 1,
             "value": 1,
-            "variable": "show"
+            "variable": "onCooldown"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "sub.4.glow",
+              "value": true
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": 1,
+                "value": 0,
+                "variable": "onCooldown"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "AND"
           }
         },
         {
@@ -9283,7 +7647,6 @@
           "multi": []
         },
         "use_class": true,
-        "use_never": true,
         "use_not_spellknown": false,
         "use_spellknown": false,
         "zoneIds": ""
@@ -9350,6 +7713,27 @@
           "text_visible": true,
           "text_wordWrap": "WordWrap",
           "type": "subtext"
+        },
+        {
+          "glow": false,
+          "glowBorder": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowDuration": 1,
+          "glowFrequency": 0.25,
+          "glowLength": 16,
+          "glowLines": 8,
+          "glowScale": 1,
+          "glowThickness": 2,
+          "glowType": "Pixel",
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "type": "subglow",
+          "useGlowColor": false
         }
       ],
       "tocversion": 20506,
@@ -9360,7 +7744,7 @@
             "debuffType": "HELPFUL",
             "duration": "1",
             "event": "Cooldown Progress (Equipment Slot)",
-            "genericShowOn": "showOnCooldown",
+            "genericShowOn": "showAlways",
             "itemName": 0,
             "itemSlot": 13,
             "matchesShowOn": "showAlways",
@@ -9382,6 +7766,7 @@
             "use_itemSlot": true,
             "use_remaining": false,
             "use_spellName": true,
+            "use_testForCooldown": true,
             "use_track": true,
             "use_unit": true
           },
@@ -9393,7 +7778,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Jb6c7OGiXjO",
+      "uid": "qOHaPYX17iO",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9447,18 +7832,51 @@
         {
           "changes": [
             {
-              "property": "desaturate",
-              "value": true
-            },
+              "property": "sub.3.text_visible"
+            }
+          ],
+          "check": {
+            "op": "<",
+            "trigger": 1,
+            "value": "2",
+            "variable": "duration"
+          }
+        },
+        {
+          "changes": [
             {
-              "property": "inverse",
+              "property": "desaturate",
               "value": true
             }
           ],
           "check": {
             "trigger": 1,
             "value": 1,
-            "variable": "show"
+            "variable": "onCooldown"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "sub.4.glow",
+              "value": true
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": 1,
+                "value": 0,
+                "variable": "onCooldown"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "AND"
           }
         },
         {
@@ -9524,7 +7942,6 @@
           "multi": []
         },
         "use_class": true,
-        "use_never": true,
         "use_not_spellknown": false,
         "use_spellknown": false,
         "zoneIds": ""
@@ -9591,6 +8008,27 @@
           "text_visible": true,
           "text_wordWrap": "WordWrap",
           "type": "subtext"
+        },
+        {
+          "glow": false,
+          "glowBorder": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowDuration": 1,
+          "glowFrequency": 0.25,
+          "glowLength": 16,
+          "glowLines": 8,
+          "glowScale": 1,
+          "glowThickness": 2,
+          "glowType": "Pixel",
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "type": "subglow",
+          "useGlowColor": false
         }
       ],
       "tocversion": 20506,
@@ -9601,7 +8039,7 @@
             "debuffType": "HELPFUL",
             "duration": "1",
             "event": "Cooldown Progress (Equipment Slot)",
-            "genericShowOn": "showOnCooldown",
+            "genericShowOn": "showAlways",
             "itemName": 0,
             "itemSlot": 14,
             "matchesShowOn": "showAlways",
@@ -9623,6 +8061,7 @@
             "use_itemSlot": true,
             "use_remaining": false,
             "use_spellName": true,
+            "use_testForCooldown": true,
             "use_track": true,
             "use_unit": true
           },
@@ -9634,7 +8073,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "9Lf1SYBfsrf",
+      "uid": "Tv5JDnJP4GI",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9906,7 +8345,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ihPC0FNScE6",
+      "uid": "6X1YDWZbd1p",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10178,7 +8617,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "IsM77Bg5rpl",
+      "uid": "YyD9IQQRXa5",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10490,7 +8929,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "vFsToRCiA5z",
+      "uid": "vywnWzJ7V7T",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10762,7 +9201,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "niZDMv4BYa4",
+      "uid": "7b9wIXq33B9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11034,7 +9473,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "rN4VfQj4HU9",
+      "uid": "h4z7anGQacY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11245,7 +9684,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "hOq8prF2To7",
+      "uid": "wglopI6EGjU",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11483,7 +9922,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "AWwtgzsMdxm",
+      "uid": "f1A4KPCzu52",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11756,7 +10195,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "d8J7HpQRRCZ",
+      "uid": "894DhTT1fas",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12028,7 +10467,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "UGxsmV93xoq",
+      "uid": "CcRpaK0nq99",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12239,7 +10678,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "iFbw2NBWRR6",
+      "uid": "jvTDAhQvAsG",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12450,7 +10889,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "dAXsTYglUIc",
+      "uid": "Ve0W32beWre",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12588,7 +11027,7 @@
           "untrigger": []
         }
       ],
-      "uid": "smh4KdjurAs",
+      "uid": "33Xfnyhvroq",
       "url": "",
       "useLimit": false,
       "version": 35,
@@ -12867,7 +11306,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "QZt6tW6FSvK",
+      "uid": "O1KjByPv3Om",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13195,7 +11634,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "gqjMNAMxtxc",
+      "uid": "wkFgs3b4oDt",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13480,7 +11919,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "Z4mPBoiMF6k",
+      "uid": "4IQacQVUpX4",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13769,7 +12208,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "LIs93xuYnaR",
+      "uid": "wLWbSaCtpIj",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13901,7 +12340,7 @@
           "untrigger": []
         }
       ],
-      "uid": "oAx392trRC5",
+      "uid": "xLGaP1VqsdU",
       "url": "",
       "useLimit": true,
       "version": 35,
@@ -14342,7 +12781,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "rRQ06GpQJ2D",
+      "uid": "fZ3lKPDPpOh",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14454,7 +12893,7 @@
         "untrigger": []
       }
     ],
-    "uid": "JXzkzla2C2k",
+    "uid": "LZJtnbswOtt",
     "url": "",
     "version": 35,
     "wagoID": "6vNSif5yK",
