@@ -33,6 +33,11 @@
             "trigger": 1,
             "value": "6",
             "variable": "expirationTime"
+          },
+          {
+            "trigger": -1,
+            "value": 1,
+            "variable": "incombat"
           }
         ],
         "trigger": -2,
@@ -73,6 +78,35 @@
         "trigger": 2,
         "value": 1,
         "variable": "insufficientResources"
+      }
+    },
+    {
+      "changes": [
+        {
+          "property": "sub.3.glow",
+          "value": true
+        }
+      ],
+      "check": {
+        "checks": [
+          {
+            "trigger": 1,
+            "value": 0,
+            "variable": "show"
+          },
+          {
+            "trigger": 3,
+            "value": 1,
+            "variable": "show"
+          },
+          {
+            "trigger": -1,
+            "value": 1,
+            "variable": "incombat"
+          }
+        ],
+        "trigger": -2,
+        "variable": "AND"
       }
     }
   ],

@@ -9,7 +9,6 @@
     "Warlock - Conflagrate",
     "Warlock - Siphon Life",
     "Warlock - Resources",
-    "Warlock - Wand Swing [Fear Range 14+]",
     "Warlock - Mana Bar",
     "Warlock - Mana Tick",
     "Warlock - Cooldowns",
@@ -39,7 +38,6 @@
     "Warlock - Drink Expiring",
     "Warlock - Create Healthstone",
     "Warlock - Create/Use Soulstone",
-    "Warlock - Drain Soul",
     "Warlock - Pet Low Mana",
     "Warlock - Pet Attack",
     "Warlock - Summon Pet",
@@ -192,7 +190,7 @@
       "version": 37,
       "wagoID": "XejlH_0_F",
       "xOffset": 0,
-      "yOffset": 52
+      "yOffset": 42
     },
     {
       "actions": {
@@ -245,7 +243,6 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Warlock - Wand Swing [Fear Range 14+]",
         "Warlock - Mana Bar",
         "Warlock - Mana Tick"
       ],
@@ -530,7 +527,6 @@
         "Warlock - Drink Expiring",
         "Warlock - Create Healthstone",
         "Warlock - Create/Use Soulstone",
-        "Warlock - Drain Soul",
         "Warlock - Pet Low Mana",
         "Warlock - Pet Attack",
         "Warlock - Summon Pet",

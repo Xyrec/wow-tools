@@ -134,13 +134,13 @@
           "untrigger": []
         }
       ],
-      "uid": "VGZv49sCsuR",
+      "uid": "1Dkt3h6DJgX",
       "url": "",
       "useLimit": true,
       "version": 37,
       "wagoID": "XejlH_0_F",
       "xOffset": 0,
-      "yOffset": 52
+      "yOffset": 42
     },
     {
       "actions": {
@@ -231,6 +231,11 @@
                 "trigger": 3,
                 "value": "6",
                 "variable": "expirationTime"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
               }
             ],
             "trigger": -2,
@@ -271,6 +276,35 @@
             "trigger": 2,
             "value": 1,
             "variable": "insufficientResources"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "sub.3.glow",
+              "value": true
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": 3,
+                "value": 0,
+                "variable": "show"
+              },
+              {
+                "trigger": 4,
+                "value": 1,
+                "variable": "show"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "AND"
           }
         },
         {
@@ -531,7 +565,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "467uOxEB1SF",
+      "uid": "r1GfFiLZsRQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -630,6 +664,11 @@
                 "trigger": 1,
                 "value": "6",
                 "variable": "expirationTime"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
               }
             ],
             "trigger": -2,
@@ -670,6 +709,35 @@
             "trigger": 4,
             "value": 1,
             "variable": "insufficientResources"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "sub.3.glow",
+              "value": true
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": 1,
+                "value": 0,
+                "variable": "show"
+              },
+              {
+                "trigger": 5,
+                "value": 1,
+                "variable": "show"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "AND"
           }
         },
         {
@@ -968,7 +1036,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "SIOdytF8iXx",
+      "uid": "kQ8Ax2Sj4Ny",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1344,7 +1412,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "JPWBi0X4pfX",
+      "uid": "Qlbf51vOleP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1559,7 +1627,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "lIz7ZuRRu51",
+      "uid": "pR1KTyaR2Pp",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -1646,6 +1714,11 @@
                 "trigger": 1,
                 "value": "6",
                 "variable": "expirationTime"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
               }
             ],
             "trigger": -2,
@@ -1686,6 +1759,35 @@
             "trigger": 2,
             "value": 1,
             "variable": "insufficientResources"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "sub.3.glow",
+              "value": true
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": 1,
+                "value": 0,
+                "variable": "show"
+              },
+              {
+                "trigger": 3,
+                "value": 1,
+                "variable": "show"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "AND"
           }
         },
         {
@@ -1921,7 +2023,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend\n    \n    ",
         "disjunctive": "custom"
       },
-      "uid": "wVEvFHhrxvO",
+      "uid": "vQCwcIxhE9F",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2235,7 +2337,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "aH61x6JQ6Cl",
+      "uid": "7sGNsQNagUS",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2334,6 +2436,11 @@
                 "trigger": 1,
                 "value": "6",
                 "variable": "expirationTime"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
               }
             ],
             "op": "<",
@@ -2375,6 +2482,35 @@
             "trigger": 4,
             "value": 1,
             "variable": "insufficientResources"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "sub.3.glow",
+              "value": true
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": 1,
+                "value": 0,
+                "variable": "show"
+              },
+              {
+                "trigger": 5,
+                "value": 1,
+                "variable": "show"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "AND"
           }
         },
         {
@@ -2670,7 +2806,7 @@
         "customTriggerLogic": "function (t)\n     return (t[1] or t[2])\nend",
         "disjunctive": "custom"
       },
-      "uid": "iEaLdY1Orrn",
+      "uid": "9bhNOemShSp",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -2733,7 +2869,6 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Warlock - Wand Swing [Fear Range 14+]",
         "Warlock - Mana Bar",
         "Warlock - Mana Tick"
       ],
@@ -2781,415 +2916,12 @@
           "untrigger": []
         }
       ],
-      "uid": "aNur7fx5fnT",
+      "uid": "HtMNse5Xb2B",
       "url": "",
       "version": 37,
       "wagoID": "XejlH_0_F",
       "xOffset": 0,
       "yOffset": 0
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": {
-          "custom": "\n\n",
-          "do_custom": false
-        },
-        "start": []
-      },
-      "adjustedMax": "",
-      "adjustedMin": "",
-      "alpha": 0.3,
-      "anchorFrameFrame": "WeakAuras:Warlock - Mana Bar",
-      "anchorFrameType": "SELECTFRAME",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "auto": true,
-      "backdropColor": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "backdropInFront": false,
-      "backgroundColor": [
-        0.50196081399918,
-        0.50196081399918,
-        0.50196081399918,
-        0.30000001192093
-      ],
-      "barColor": [
-        0.52941179275513,
-        0.52941179275513,
-        0.92941182851791,
-        1
-      ],
-      "barColor2": [
-        1,
-        1,
-        0,
-        1
-      ],
-      "borderBackdrop": "None",
-      "borderInFront": true,
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "sparkColor",
-              "value": [
-                1,
-                1,
-                1,
-                0
-              ]
-            }
-          ],
-          "check": {
-            "trigger": -1,
-            "value": 0,
-            "variable": "incombat"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "barColor",
-              "value": [
-                0.50196081399918,
-                0,
-                1,
-                1
-              ]
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": 5,
-                "value": 1,
-                "variable": "show"
-              },
-              {
-                "trigger": 6,
-                "value": 1,
-                "variable": "spellInRange"
-              }
-            ],
-            "trigger": -2,
-            "variable": "AND"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": [],
-      "customText": "function()\n    if aura_env.region then\n        local mana = UnitPower(\"player\", Enum.PowerType.Mana)\n        aura_env.region.text3:SetText(mana)\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n",
-      "desaturate": false,
-      "enableGradient": false,
-      "fontFlags": "OUTLINE",
-      "frameStrata": 3,
-      "gradientOrientation": "HORIZONTAL",
-      "height": 10,
-      "icon": false,
-      "iconSource": -1,
-      "icon_color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "icon_side": "RIGHT",
-      "id": "Warlock - Wand Swing [Fear Range 14+]",
-      "information": {
-        "forceEvents": true,
-        "ignoreOptionsEventErrors": true,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "inverse": true,
-      "load": {
-        "class": {
-          "multi": [],
-          "single": "WARLOCK"
-        },
-        "difficulty": {
-          "multi": []
-        },
-        "faction": {
-          "multi": []
-        },
-        "ingroup": {
-          "multi": []
-        },
-        "pvptalent": {
-          "multi": []
-        },
-        "race": {
-          "multi": []
-        },
-        "role": {
-          "multi": []
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": []
-        },
-        "talent": {
-          "multi": []
-        },
-        "talent2": {
-          "multi": []
-        },
-        "use_class": true,
-        "use_never": false,
-        "use_petbattle": false,
-        "zoneIds": ""
-      },
-      "orientation": "HORIZONTAL",
-      "overlays": [
-        [
-          0.43529411764706,
-          0,
-          1,
-          0.25
-        ]
-      ],
-      "parent": "Warlock - Resources",
-      "preferToUpdate": false,
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "aurabar",
-      "selfPoint": "CENTER",
-      "semver": "1.4.8",
-      "source": "import",
-      "spark": false,
-      "sparkBlendMode": "ADD",
-      "sparkColor": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "sparkDesature": false,
-      "sparkHeight": 22,
-      "sparkHidden": "NEVER",
-      "sparkOffsetX": 0,
-      "sparkOffsetY": 0,
-      "sparkRotation": 0,
-      "sparkRotationMode": "AUTO",
-      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
-      "sparkWidth": 16,
-      "stickyDuration": false,
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "type": "subforeground"
-        },
-        {
-          "anchor_area": "bar",
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "type": "subborder"
-        }
-      ],
-      "texture": "Clean",
-      "textureSource": "LSM",
-      "tocversion": 20505,
-      "toolTipArea": "ICON",
-      "triggers": {
-        "1": {
-          "trigger": {
-            "custom_hide": "timed",
-            "debuffType": "HELPFUL",
-            "duration": "1",
-            "event": "Swing Timer",
-            "genericShowOn": "showOnActive",
-            "hand": "main",
-            "health": "0",
-            "health_operator": ">=",
-            "names": [],
-            "powertype": 0,
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "unit",
-            "unevent": "auto",
-            "unit": "player",
-            "use_hand": true,
-            "use_health": true,
-            "use_inverse": false,
-            "use_power": false,
-            "use_powertype": false,
-            "use_remaining": false,
-            "use_showCost": false,
-            "use_unit": true
-          },
-          "untrigger": []
-        },
-        "2": {
-          "trigger": {
-            "auranames": [],
-            "debuffType": "HELPFUL",
-            "event": "Health",
-            "names": [],
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "aura2",
-            "unit": "player",
-            "useName": true
-          },
-          "untrigger": []
-        },
-        "3": {
-          "trigger": {
-            "custom_hide": "timed",
-            "debuffType": "HELPFUL",
-            "duration": "1",
-            "event": "Swing Timer",
-            "genericShowOn": "showOnActive",
-            "hand": "ranged",
-            "health": "0",
-            "health_operator": ">=",
-            "names": [],
-            "powertype": 0,
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "unit",
-            "unevent": "auto",
-            "unit": "player",
-            "use_hand": true,
-            "use_health": true,
-            "use_inverse": false,
-            "use_power": false,
-            "use_powertype": false,
-            "use_remaining": false,
-            "use_showCost": false,
-            "use_unit": true
-          },
-          "untrigger": []
-        },
-        "4": {
-          "trigger": {
-            "auranames": [],
-            "debuffType": "HELPFUL",
-            "event": "Health",
-            "matchesShowOn": "showOnMissing",
-            "names": [],
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "aura2",
-            "unit": "player",
-            "useName": true
-          },
-          "untrigger": []
-        },
-        "5": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "event": "Spell Known",
-            "genericShowOn": "showOnCooldown",
-            "realSpellName": 0,
-            "spellName": 689,
-            "type": "spell",
-            "unit": "player",
-            "use_genericShowOn": true,
-            "use_spellName": true,
-            "use_track": true
-          },
-          "untrigger": []
-        },
-        "6": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "event": "Action Usable",
-            "genericShowOn": "showAlways",
-            "realSpellName": "Drain Life",
-            "spellName": 689,
-            "track": "auto",
-            "type": "spell",
-            "unit": "player",
-            "use_genericShowOn": true,
-            "use_showgcd": true,
-            "use_spellName": true,
-            "use_targetRequired": true,
-            "use_track": true
-          },
-          "untrigger": []
-        },
-        "activeTriggerMode": 1,
-        "customTriggerLogic": "function (t)\n    return (t[1] and t[2]) or (t[3] and t[4])\nend",
-        "disjunctive": "custom"
-      },
-      "uid": "7o3UwBAWsml",
-      "url": "",
-      "useAdjustededMax": false,
-      "useAdjustededMin": false,
-      "version": 37,
-      "wagoID": "XejlH_0_F",
-      "width": 400,
-      "xOffset": 0,
-      "yOffset": 22,
-      "zoom": 0
     },
     {
       "actions": {
@@ -3482,7 +3214,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "all"
       },
-      "uid": "OZPreJv9pmC",
+      "uid": "0hWK4F7nzpE",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3713,7 +3445,7 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "X4DB6NNz1H9",
+      "uid": "nmyNXIdKAWl",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -3888,7 +3620,7 @@
           "untrigger": []
         }
       ],
-      "uid": "9S5J0QW44gG",
+      "uid": "tEooQcAcAOA",
       "url": "",
       "useLimit": true,
       "version": 37,
@@ -4096,7 +3828,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "wfiPysByhAF",
+      "uid": "fSZ226LQdpq",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4307,7 +4039,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "pL2fi3EPnSY",
+      "uid": "P2l2YPXOhTB",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4545,7 +4277,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "Doweh7gUPTu",
+      "uid": "hb0jOgeqC44",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -4783,7 +4515,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "vyaU0zxSfsG",
+      "uid": "BAR2HIswOtQ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5055,7 +4787,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "U8zEuukqBVq",
+      "uid": "ZOhByZNY25E",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5331,7 +5063,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "QSasX27orWe",
+      "uid": "0XCfybsPiYI",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5607,7 +5339,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "HNxGrGfavTI",
+      "uid": "krSwECJ4SUC",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -5883,7 +5615,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "eNsskVkB7Mr",
+      "uid": "p6ktAjCIva9",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6159,7 +5891,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "rp9UNVvXcpt",
+      "uid": "vIGXaZJdIAp",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6454,7 +6186,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "PltecNrVz3R",
+      "uid": "C95HGBpnXlx",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -6749,7 +6481,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "v8kDmL33wh7",
+      "uid": "zdZONxLjdd7",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7080,7 +6812,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2] or t[3] or t[4] or t[5])\nend\n",
         "disjunctive": "custom"
       },
-      "uid": "yS5zqUWBfiF",
+      "uid": "1UGiGcPCQ12",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7411,7 +7143,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] or t[2] or t[3] or t[4] or t[5])\nend\n",
         "disjunctive": "custom"
       },
-      "uid": "Z8sKrfhqLsc",
+      "uid": "iX0vQlRmCYk",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7650,7 +7382,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "FRMzwks8X9P",
+      "uid": "I9NqqQRjLaf",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -7922,7 +7654,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "c72LkdXXBvy",
+      "uid": "voXPkQ2EDQL",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8195,7 +7927,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "JW7UvUlhB3z",
+      "uid": "Ob50ZwHZojh",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8468,7 +8200,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "jhm2Ee6DXEm",
+      "uid": "w1NJvXXDnsU",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -8741,7 +8473,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "9A5vGfKO0MD",
+      "uid": "qQeiG0MQ5AJ",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9014,7 +8746,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "TC5dZX1LN4i",
+      "uid": "cBUjAnu8h1O",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9287,7 +9019,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "xyTgaTKUgdj",
+      "uid": "nGMdnhbJR7T",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9525,7 +9257,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "kbMsvPM1JSF",
+      "uid": "CQj5MB946TI",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9763,7 +9495,7 @@
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": "ix9CKJII5Bw",
+      "uid": "Y6MXaPiHWWj",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -9834,7 +9566,6 @@
         "Warlock - Drink Expiring",
         "Warlock - Create Healthstone",
         "Warlock - Create/Use Soulstone",
-        "Warlock - Drain Soul",
         "Warlock - Pet Low Mana",
         "Warlock - Pet Attack",
         "Warlock - Summon Pet",
@@ -9914,7 +9645,7 @@
           "untrigger": []
         }
       ],
-      "uid": "3qDCi71r0a5",
+      "uid": "lXapqsVUOGj",
       "url": "",
       "useLimit": false,
       "version": 37,
@@ -10193,7 +9924,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "8Ic1tj4i102",
+      "uid": "jeWgJlJAnkW",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -10542,7 +10273,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] and t[2] and t[3] and t[4] and t[5] and t[6]) and t[7]\nend\n",
         "disjunctive": "custom"
       },
-      "uid": "RX1r2SzEnCG",
+      "uid": "PwGGC5Qy9Le",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11128,314 +10859,7 @@
         "customTriggerLogic": "function (t)\n   return (t[1] and t[2] and t[3] and t[4] and t[5] and t[6] and t[7]) or (t[8] and t[9] and t[10] and t[11] and t[12] and t[13] and t[6] and t[7]) and t[14]\nend\n",
         "disjunctive": "custom"
       },
-      "uid": "KzZNgDBYXg7",
-      "url": "",
-      "useAdjustededMax": false,
-      "useAdjustededMin": false,
-      "useCooldownModRate": true,
-      "version": 15,
-      "width": 44,
-      "xOffset": 0,
-      "yOffset": 0,
-      "zoom": 0.3
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": []
-      },
-      "adjustedMax": "",
-      "adjustedMin": "",
-      "alpha": 0.3,
-      "anchorFrameParent": false,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "auto": true,
-      "color": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "alpha",
-              "value": 1
-            }
-          ],
-          "check": {
-            "checks": [
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "attackabletarget"
-              },
-              {
-                "trigger": -1,
-                "value": 1,
-                "variable": "incombat"
-              }
-            ],
-            "trigger": -2,
-            "variable": "OR"
-          }
-        }
-      ],
-      "config": [],
-      "cooldown": false,
-      "cooldownEdge": false,
-      "cooldownSwipe": true,
-      "cooldownTextDisabled": true,
-      "desaturate": false,
-      "displayIcon": 136163,
-      "frameStrata": 3,
-      "height": 44,
-      "icon": true,
-      "iconSource": 0,
-      "id": "Warlock - Drain Soul",
-      "information": {
-        "forceEvents": true,
-        "ignoreOptionsEventErrors": true,
-        "showNilIsFalse": true
-      },
-      "internalVersion": 90,
-      "inverse": false,
-      "keepAspectRatio": false,
-      "load": {
-        "class": {
-          "multi": [],
-          "single": "WARLOCK"
-        },
-        "ingroup": [],
-        "level": [],
-        "level_operator": [
-          "<"
-        ],
-        "race": {
-          "multi": []
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": []
-        },
-        "spellknown": 1120,
-        "talent": {
-          "multi": []
-        },
-        "use_alive": true,
-        "use_class": true,
-        "use_level": false,
-        "use_never": false,
-        "use_not_spellknown": false,
-        "use_spellknown": true,
-        "use_vehicle": false,
-        "use_zone": false,
-        "use_zoneIds": false,
-        "zoneIds": ""
-      },
-      "parent": "Warlock - Reminders",
-      "progressSource": [
-        -1,
-        ""
-      ],
-      "regionType": "icon",
-      "selfPoint": "CENTER",
-      "semver": "1.4.4",
-      "source": "import",
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "border_color": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "border_edge": "Square Full White",
-          "border_offset": 1,
-          "border_size": 1,
-          "border_visible": true,
-          "type": "subborder"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "anchor_point": "OUTER_BOTTOM",
-          "rotateText": "NONE",
-          "text_anchorYOffset": -12,
-          "text_automaticWidth": "Auto",
-          "text_color": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "text_fixedWidth": 64,
-          "text_font": "PT Sans Narrow",
-          "text_fontSize": 14,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "BOTTOM",
-          "text_shadowColor": [
-            0,
-            0,
-            0,
-            1
-          ],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "Drain",
-          "text_text_format_p_format": "timed",
-          "text_text_format_p_time_dynamic_threshold": 60,
-          "text_text_format_p_time_format": 0,
-          "text_text_format_p_time_legacy_floor": false,
-          "text_text_format_p_time_mod_rate": true,
-          "text_text_format_p_time_precision": 1,
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        }
-      ],
-      "tocversion": 20506,
-      "triggers": {
-        "1": {
-          "trigger": {
-            "count": "4",
-            "count_operator": "<",
-            "debuffType": "HELPFUL",
-            "event": "Item Count",
-            "genericShowOn": "showOnCooldown",
-            "itemName": 6265,
-            "names": [],
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "item",
-            "unit": "player",
-            "use_count": true,
-            "use_genericShowOn": true,
-            "use_itemName": true
-          },
-          "untrigger": []
-        },
-        "2": {
-          "trigger": {
-            "count": "8",
-            "count_operator": "<",
-            "debuffType": "HELPFUL",
-            "event": "Item Count",
-            "genericShowOn": "showOnCooldown",
-            "itemName": 6265,
-            "names": [],
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "item",
-            "unit": "player",
-            "use_count": true,
-            "use_genericShowOn": true,
-            "use_itemName": true
-          },
-          "untrigger": []
-        },
-        "3": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "event": "Experience",
-            "level": [
-              "18"
-            ],
-            "level_operator": [
-              "<"
-            ],
-            "names": [],
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "unit",
-            "unit": "player",
-            "use_level": true,
-            "use_unit": true
-          },
-          "untrigger": []
-        },
-        "4": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "event": "Conditions",
-            "names": [],
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "unit",
-            "unit": "player",
-            "use_incombat": true,
-            "use_unit": true
-          },
-          "untrigger": []
-        },
-        "5": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "event": "Health",
-            "percenthealth": [
-              "25"
-            ],
-            "percenthealth_operator": [
-              "<"
-            ],
-            "type": "unit",
-            "unit": "target",
-            "use_percenthealth": true,
-            "use_unit": true
-          },
-          "untrigger": []
-        },
-        "6": {
-          "trigger": {
-            "auranames": [
-              "1120"
-            ],
-            "debuffType": "HARMFUL",
-            "type": "aura2",
-            "unit": "target",
-            "useName": true
-          },
-          "untrigger": []
-        },
-        "activeTriggerMode": -10,
-        "customTriggerLogic": "function (t)\n   return (t[1] and t[3]) or (t[2] and not t[3]) and t[4] and t[5] and not t[6]\nend\n",
-        "disjunctive": "custom"
-      },
-      "uid": "1HCUfFuszXL",
+      "uid": "lHG7UCwjVBn",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11693,7 +11117,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and not t[3]\nend",
         "disjunctive": "custom"
       },
-      "uid": "lzxLu7u0WCD",
+      "uid": "XwNk4bjzCLc",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -11940,7 +11364,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and t[3] and not t[4]\nend",
         "disjunctive": "custom"
       },
-      "uid": "iNT5c4C1vgT",
+      "uid": "HIL1fM0ygiU",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12172,7 +11596,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "2jI8HDJlKP8",
+      "uid": "8TDfAS6uFWI",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12409,7 +11833,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] and t[2] and not t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "JTJMyWgoBwh",
+      "uid": "bbY9F3pGzz8",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12702,7 +12126,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "nk6xPf0sRy8",
+      "uid": "IsxZ3YQND5y",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -12953,7 +12377,7 @@
         "customTriggerLogic": "function (t)\n    return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "i9ECufEH7De",
+      "uid": "sXDxoDnyUbR",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13241,7 +12665,7 @@
         "customTriggerLogic": "function (t)\n    return (t[1] or t[2]) and t[3]\nend    \n\n",
         "disjunctive": "custom"
       },
-      "uid": "16iEwoFGJ8C",
+      "uid": "jflqT9OYfgY",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -13372,7 +12796,7 @@
           "untrigger": []
         }
       ],
-      "uid": "T38DANwYOyb",
+      "uid": "FKiPrNY8ENr",
       "url": "",
       "useLimit": true,
       "version": 37,
@@ -13736,7 +13160,7 @@
         "customTriggerLogic": "function (t)\n    return t[1] or t[2]\nend",
         "disjunctive": "custom"
       },
-      "uid": "T8SUvnXnAop",
+      "uid": "iT4Z03wwnZP",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14004,7 +13428,7 @@
         "customTriggerLogic": "function (t)\n   return t[1]\nend",
         "disjunctive": "custom"
       },
-      "uid": "dz9tMfzgiMV",
+      "uid": "FgkLaj7sXot",
       "url": "",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
@@ -14118,7 +13542,7 @@
         "untrigger": []
       }
     ],
-    "uid": "vmgGDqsmmaa",
+    "uid": "EuTme0rgYMQ",
     "url": "",
     "version": 37,
     "wagoID": "XejlH_0_F",
