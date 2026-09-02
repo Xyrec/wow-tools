@@ -110,6 +110,17 @@ countdown already communicate it. Status: shaman done (enh/ele/resto); other cla
   break auras - only Blizzard API changes tend to, and those are rare too.
   When something regresses, suspect our own data/pipeline first, then donor
   logic, and only then the environment.
+- **WA "heals" landed data on its first save — and can break on first load.**
+  Hand-authored minimal triggers (missing names/spellIds/subevent defaults)
+  loaded fine for months, then one WA update choked on four of them: region
+  construction aborted pack-wide (blank texts, nil-setter condition crashes),
+  and the user's /reload "fixed" it because WA re-saved with defaults filled.
+  Rules: when hand-writing a trigger, clone the FULL field set from a donor
+  or healed trigger, never a minimal dict; after the first in-game session
+  following a land that added new triggers, re-extract and diff against the
+  committed snapshot — any delta is WA's heal and must be folded into defs
+  (an exact heal-rule audit gate was tried and removed: WA's fill logic is
+  not reproducible from data shape alone).
 - **The user is often in-game while reporting.** Prepare everything, attempt
   the land; if the guard blocks, say "exit and say go" and wait. NEVER work
   around the guard - an in-game session clobbers landed changes on logout.

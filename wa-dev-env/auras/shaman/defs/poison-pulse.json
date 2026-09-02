@@ -56,7 +56,12 @@
         "custom": "@poison-pulse--triggers-1-trigger-custom.lua",
         "custom_type": "stateupdate",
         "debuffType": "HELPFUL",
+        "event": "Health",
         "events": "PLAYER_TOTEM_UPDATE XYREC_TOTEM_TICK PLAYER_ENTERING_WORLD",
+        "names": [],
+        "spellIds": [],
+        "subeventPrefix": "SPELL",
+        "subeventSuffix": "_CAST_START",
         "type": "custom",
         "unit": "player"
       },
