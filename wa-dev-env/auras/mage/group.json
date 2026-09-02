@@ -13,7 +13,6 @@
     "Mage - Water Elemental",
     "Mage - Dragon's Breath",
     "Mage - Resources",
-    "Mage - Wand Swing",
     "Mage - Mana Bar",
     "Mage - Mana Tick",
     "Mage - Cooldowns",
@@ -202,7 +201,7 @@
       "version": 35,
       "wagoID": "6vNSif5yK",
       "xOffset": 0,
-      "yOffset": 52
+      "yOffset": 42
     },
     {
       "actions": {
@@ -255,7 +254,6 @@
       "conditions": [],
       "config": [],
       "controlledChildren": [
-        "Mage - Wand Swing",
         "Mage - Mana Bar",
         "Mage - Mana Tick"
       ],
