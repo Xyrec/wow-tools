@@ -1,9 +1,12 @@
 import type { ItemFacts, ZoneData } from "@/types"
 
 /** Loot-priority model (see docs/PLAN.md; v1 grilled 2026-08-21, phase
- *  multiplier added on user decision 2026-08-23):
- *  score(spec) = Σ over current..P5 of [usage + max(0, usage − best_alt)] · mult^(phase − current)
- *  membership: floor, cap, 50% break; "=" within 8%. */
+ *  multiplier added 2026-08-23, trend gating added 2026-09-11):
+ *  score(spec) = Σ over current..P5 of [usage + max(0, usage − best_alt)] · w(phase)
+ *  where w = mult^(phase − current) while the spec's usage held or grew vs
+ *  the previous phase (within the 8% relative tie band), else 1 - a phase
+ *  where usage FELL earns no future bonus, since decline signals the spec
+ *  is replacing the item. Membership: floor, cap, 50% break; "=" within 8%. */
 
 export const PRIO_FLOOR = 10
 export const PRIO_CAP = 4
@@ -47,7 +50,8 @@ export interface PhaseNeed {
   alt: number
   altId: number | null
   need: number
-  /** Future-phase multiplier applied to `need` in the score sum. */
+  /** Weight applied to `need` in the score sum: the future-phase multiplier,
+   *  or 1 when this phase's usage fell vs the previous phase (trend-gated). */
   weight: number
 }
 
@@ -83,10 +87,23 @@ function needIn(
       alt,
       altId: others[k]?.id ?? null,
       need: mine.pct + Math.max(0, mine.pct - alt),
+      // Provisional; scoreItem trend-gates this against the previous phase.
       weight: PRIO_PHASE_MULT ** (zone.anniversaryPhase - currentPhase),
     }
   }
   return null
+}
+
+/** Trend gating: a phase whose usage fell more than the tie band (8%
+ *  relative) below the previous phase forfeits its future-phase multiplier -
+ *  decline means the spec is replacing the item, so that phase's need still
+ *  counts, but earns no persistence bonus. Needs must be in phase order. */
+function applyTrendGate(needs: PhaseNeed[]): void {
+  let prev: number | null = null
+  for (const n of needs) {
+    if (prev !== null && prev - n.usage > PRIO_TIE_REL * prev) n.weight = 1
+    prev = n.usage
+  }
 }
 
 /** Score every spec for one droppable item across current..P5 zones.
@@ -111,6 +128,7 @@ export function scoreItem(
       const needs = zones
         .map((z) => needIn(z, spec, cand, currentPhase))
         .filter((n): n is PhaseNeed => n !== null)
+      applyTrendGate(needs)
       const score = needs.reduce((acc, n) => acc + n.need * n.weight, 0)
       if (!best || score > best.score) {
         best = {

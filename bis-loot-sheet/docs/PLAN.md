@@ -148,8 +148,15 @@ priority, professions). P2 back-test vs the officers' CSVs was calibration of
 conventions only (their sheets name 0-4 specs; tails "MS > OS" / tokens
 "BiS > Non BiS" / Disenchant).
 
-**Scoring (v2, after Xyrec's QA):**
-`score(spec) = Σ over current..P5 phases of [usage + max(0, usage − best_alt)] · 1.5^(phase − current)`
+**Scoring (v3, after live-usage feedback):**
+`score(spec) = Σ over current..P5 phases of [usage + max(0, usage − best_alt)] · w(phase)`
+- w = 1.5^(phase − current) while the spec's usage held or grew vs the
+previous phase; a phase whose usage FELL more than 8% relative (the tie
+band, PRIO_TIE_REL - so a 0.1pp wobble never triggers) gets w = 1: decline
+means the spec is replacing the item, so that phase still counts but earns
+no persistence bonus ("trend gating", user decision 2026-09-11; changed
+37/193 P3 chains, mostly reordering fading specs below rising ones on
+shared items; evidence marks gated phases with "↓").
 - future phases weigh ×1.5 more per step (PRIO_PHASE_MULT; user decision
 2026-08-23 superseding the v1 equal-weights panel verdict: future-useful
 items are the sheet's whole point). best_alt = strongest other item in the
