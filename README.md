@@ -1,3 +1,3 @@
 # wow-tools
 
-Personal WoW TBC Anniversary tooling: a Rust BiS-gear checker (repo root - see `AGENTS.md`), a declarative WeakAura build environment (`wa-dev-env/` - see its `CLAUDE.md`), and a dungeon-farming simulator (`nether-sim/`).
+Personal WoW tooling: a collection of a bunch of random tools I've used to create various projects surrounding the game I love.
